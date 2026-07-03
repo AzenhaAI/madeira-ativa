@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madeira Trails Map</title>
+<link rel="icon" href="/madeira/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/madeira/icon-192.png?v=5e8787d">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: #0a0a0a;
+  color: #e8e8e8;
+}
+
+#map {
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+.header-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: linear-gradient(135deg, #1a5c2a 0%, #1a6b8a 100%);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+
+.header-bar h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.3px;
+}
+
+.header-bar .stats {
+  font-size: 13px;
+  color: rgba(255,255,255,0.8);
+  display: flex;
+  gap: 16px;
+}
+
+.header-bar .stats span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.header-bar .stats .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-personal { background: #00d4ff; }
+.dot-race { background: #ff6b35; }
+.dot-heat { background: #ffdd00; }
+.dot-walk { background: #2e9e5b; }
+.btn-walk { background: rgba(46,158,91,0.15); color: #2e9e5b; }
+.btn-walk:hover { background: rgba(46,158,91,0.25); }
+.btn-walk.active { background: rgba(46,158,91,0.3); }
+.btn-walk.off { background: rgba(100,100,100,0.15); color: #666; }
+.btn-walk.off .dot { background: #666 !important; }
+.dot-closed { background: #e23b2e; }
+.btn-closed { background: rgba(226,59,46,0.15); color: #e23b2e; }
+.btn-closed:hover { background: rgba(226,59,46,0.25); }
+.btn-closed.active { background: rgba(226,59,46,0.3); }
+.btn-closed.off { background: rgba(100,100,100,0.15); color: #666; }
+.btn-closed.off .dot { background: #666 !important; }
+.btn-ovl { background: rgba(120,120,120,0.15); color: #888; }
+.btn-ovl:hover { background: rgba(120,120,120,0.25); }
+.btn-ovl.active { background: rgba(31,77,50,0.22); color: #1F4D32; }
+
+.controls {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  gap: 8px;
+  background: rgba(20, 20, 20, 0.9);
+  backdrop-filter: blur(12px);
+  padding: 8px 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.controls button {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.controls button .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.btn-personal { background: rgba(0,212,255,0.15); color: #00d4ff; }
+.btn-personal:hover { background: rgba(0,212,255,0.25); }
+.btn-personal.active { background: rgba(0,212,255,0.3); }
+.btn-personal.off { background: rgba(100,100,100,0.15); color: #666; }
+.btn-personal.off .dot { background: #666 !important; }
+
+.btn-race { background: rgba(255,107,53,0.15); color: #ff6b35; }
+.btn-race:hover { background: rgba(255,107,53,0.25); }
+.btn-race.active { background: rgba(255,107,53,0.3); }
+.btn-race.off { background: rgba(100,100,100,0.15); color: #666; }
+.btn-race.off .dot { background: #666 !important; }
+
+.btn-heat { background: rgba(255,221,0,0.15); color: #ffdd00; }
+.btn-heat:hover { background: rgba(255,221,0,0.25); }
+.btn-heat.active { background: rgba(255,221,0,0.3); }
+.btn-heat.off { background: rgba(100,100,100,0.15); color: #666; }
+.btn-heat.off .dot { background: #666 !important; }
+
+.back-link {
+  position: fixed;
+  top: 56px;
+  left: 12px;
+  z-index: 1000;
+  background: rgba(20,20,20,0.85);
+  backdrop-filter: blur(8px);
+  color: #ccc;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: all 0.2s;
+}
+.back-link:hover { color: #fff; background: rgba(40,40,40,0.9); }
+
+[lang="pt"] [data-lang="en"],
+[lang="en"] [data-lang="pt"] { display: none !important; }
+.lang-toggle {
+  position: fixed;
+  top: 56px;
+  right: 12px;
+  z-index: 1000;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(20,20,20,0.85);
+  backdrop-filter: blur(8px);
+  color: #ccc;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.lang-toggle:hover { color: #fff; background: rgba(40,40,40,0.9); }
+
+.trail-tip {
+  background: rgba(20,20,20,0.92) !important;
+  color: #e8e8e8 !important;
+  border: 1px solid rgba(255,107,53,0.3) !important;
+  border-radius: 8px !important;
+  padding: 6px 10px !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 12px !important;
+  white-space: pre-line !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4) !important;
+}
+.trail-tip::before { border-top-color: rgba(20,20,20,0.92) !important; }
+
+.race-popup .leaflet-popup-content-wrapper {
+  background: rgba(20,20,20,0.95);
+  color: #e8e8e8;
+  border-radius: 10px;
+  border: 1px solid rgba(255,107,53,0.3);
+}
+.race-popup .leaflet-popup-tip { background: rgba(20,20,20,0.95); }
+.race-popup .leaflet-popup-content { margin: 10px 14px; }
+.race-popup h3 { font-size: 14px; color: #ff6b35; margin-bottom: 4px; }
+.race-popup p { font-size: 12px; color: #aaa; }
+
+.embed-title {
+  position: fixed;
+  top: 16px;
+  left: 20px;
+  z-index: 1000;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1F4D32;
+  letter-spacing: -0.3px;
+}
+
+@media (max-width: 480px) {
+  .header-bar { padding: 10px 14px; }
+  .header-bar h1 { font-size: 15px; }
+  .header-bar .stats { font-size: 11px; gap: 10px; }
+  .controls { bottom: 16px; gap: 6px; padding: 6px 10px; }
+  .controls button { font-size: 12px; padding: 7px 12px; }
+}
+</style>
+</head>
+<body>
+
+<div class="header-bar">
+  <h1><span data-lang="en">Madeira Trails</span><span data-lang="pt">Trilhos da Madeira</span></h1>
+  <div class="stats">
+    <span><span class="dot dot-race"></span> <span id="stat-total">0</span> <span data-lang="en">trails</span><span data-lang="pt">trilhos</span></span>
+  </div>
+</div>
+
+<a href="./" class="back-link"><span data-lang="en">← Events</span><span data-lang="pt">← Eventos</span></a>
+<button class="lang-toggle" onclick="toggleLang()" aria-label="Switch language">PT</button>
+
+<div class="embed-title" style="display:none;"><span data-lang="en">Popular Trails on Madeira</span><span data-lang="pt">Trilhos Populares na Madeira</span></div>
+
+<div id="map"></div>
+
+<div class="controls">
+  <button class="btn-race" onclick="pickLayer('race')">
+    <span class="dot dot-race"></span> <span data-lang="en">Race</span><span data-lang="pt">Corrida</span>
+  </button>
+  <button class="btn-heat" onclick="pickLayer('heat')">
+    <span class="dot dot-heat"></span> <span data-lang="en">Popularity</span><span data-lang="pt">Popularidade</span>
+  </button>
+  <button class="btn-walk" id="btn-walk" onclick="pickLayer('walk')" style="display:none;">
+    <span class="dot dot-walk"></span> <span data-lang="en">Walking trails</span><span data-lang="pt">Percursos pedestres</span>
+  </button>
+  <button class="btn-closed" id="btn-closures" onclick="pickLayer('closures')" style="display:none;">
+    <span class="dot dot-closed"></span> <span data-lang="en">Closures</span><span data-lang="pt">Encerrados</span>
+  </button>
+  <button class="btn-ovl" id="btn-all" onclick="toggleOverlay('all', this)" style="display:none;">
+    <span class="dot" style="background:#1f78b4"></span> <span data-lang="en">All levadas</span><span data-lang="pt">Todas as levadas</span>
+  </button>
+  <button class="btn-ovl" onclick="toggleOverlay('cities', this)">
+    <span class="dot" style="background:#3b6ea5"></span> <span data-lang="en">Cities</span><span data-lang="pt">Cidades</span>
+  </button>
+  <button class="btn-ovl" onclick="toggleOverlay('roads', this)">
+    <span class="dot" style="background:#a5762e"></span> <span data-lang="en">Roads</span><span data-lang="pt">Estradas</span>
+  </button>
+  <button class="btn-ovl" onclick="toggleOverlay('tunnels', this)">
+    <span class="dot" style="background:#9a4fd0"></span> <span data-lang="en">Tunnels</span><span data-lang="pt">Túneis</span>
+  </button>
+</div>
+
+<script>
+const params = new URLSearchParams(location.search);
+const isLight = params.get('theme') === 'light';
+const isEmbed = params.get('embed') === '1';
+
+if (isLight) {
+  document.body.style.background = '#F5F2EA';
+  document.querySelector('.header-bar').style.display = 'none';
+  document.querySelector('.back-link').style.display = 'none';
+  document.querySelector('.embed-title').style.display = 'block';
+  document.querySelector('.controls').style.background = 'rgba(245,242,234,0.92)';
+  document.querySelector('.controls').style.border = '1px solid rgba(0,0,0,0.1)';
+  document.querySelector('.controls').style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
+  document.querySelectorAll('.controls button').forEach(b => {
+    b.style.color = '#1F4D32';
+  });
+  const style = document.createElement('style');
+  style.textContent = `
+    .trail-tip { background: rgba(255,255,255,0.95) !important; color: #1F4D32 !important; border: 1px solid rgba(255,107,53,0.3) !important; box-shadow: 0 2px 8px rgba(0,0,0,0.12) !important; }
+    .trail-tip::before { border-top-color: rgba(255,255,255,0.95) !important; }
+    .race-popup .leaflet-popup-content-wrapper { background: rgba(255,255,255,0.97); color: #333; border: 1px solid rgba(255,107,53,0.25); }
+    .race-popup .leaflet-popup-tip { background: rgba(255,255,255,0.97); }
+    .race-popup p { color: #666; }
+    .controls button.off { background: rgba(0,0,0,0.05) !important; color: #aaa !important; }
+  `;
+  document.head.appendChild(style);
+}
+if (isLight) {
+  const lt = document.querySelector('.lang-toggle');
+  if (lt) { lt.style.background = 'rgba(245,242,234,0.92)'; lt.style.color = '#1F4D32'; lt.style.border = '1px solid #DAD3C5'; }
+}
+if (isEmbed) {
+  document.querySelector('.header-bar').style.display = 'none';
+  document.querySelector('.back-link').style.display = 'none';
+  const lt2 = document.querySelector('.lang-toggle');
+  if (lt2) lt2.style.display = 'none';
+  // Keep the embed preview minimal — no extra overlay toggles.
+  document.querySelectorAll('.btn-ovl').forEach(b => b.style.display = 'none');
+  // When the embed is locked to a specific layer (e.g. the levada guide),
+  // hide the layer controls — it is a static preview.
+  if (['race', 'walk', 'closures', 'heat'].includes(params.get('layer'))) {
+    const ctr = document.querySelector('.controls');
+    if (ctr) ctr.style.display = 'none';
+  }
+}
+
+const map = L.map('map', {
+  center: [32.75, -16.95],
+  zoom: 11,
+  zoomControl: false,
+  attributionControl: false,
+});
+
+L.control.zoom({ position: 'topright' }).addTo(map);
+L.control.attribution({ position: 'bottomright', prefix: false })
+  .addAttribution('&copy; <a href="https://openstreetmap.org">OSM</a>')
+  .addTo(map);
+
+const tileUrl = isLight
+  ? 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png'
+  : 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
+L.tileLayer(tileUrl, { maxZoom: 18 }).addTo(map);
+
+// Independent overlays (Cities/Roads = Esri reference tiles; All levadas/Tunnels = OSM, lazy)
+const esriCities = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}', { maxZoom: 18 });
+const esriRoads = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}', { maxZoom: 18 });
+let allLevadasLayer = null, tunnelsLayer = null;
+
+function loadOverpassLayer(name, btn) {
+  const body = name === 'all'
+    ? '(way["waterway"]["name"~"[Ll]evada"](area.a););'
+    : '(way["tunnel"="yes"]["highway"](area.a););';
+  const q = '[out:json][timeout:120];area["ISO3166-2"="PT-30"]->.a;' + body + 'out geom;';
+  fetch('https://overpass-api.de/api/interpreter', { method: 'POST', body: 'data=' + encodeURIComponent(q) })
+    .then(r => r.json())
+    .then(d => {
+      const feats = (d.elements || []).filter(e => e.geometry).map(e => ({
+        type: 'Feature', properties: {}, geometry: { type: 'LineString', coordinates: e.geometry.map(p => [p.lon, p.lat]) }
+      }));
+      const style = name === 'all'
+        ? { color: '#1f78b4', weight: 1.5, opacity: 0.7 }
+        : { color: '#9a4fd0', weight: 2, opacity: 0.85, dashArray: '4,4' };
+      const layer = L.geoJSON({ type: 'FeatureCollection', features: feats }, { style });
+      if (name === 'all') allLevadasLayer = layer; else tunnelsLayer = layer;
+      if (btn.classList.contains('active')) layer.addTo(map);
+    }).catch(() => {});
+}
+
+function toggleOverlay(name, btn) {
+  const on = !btn.classList.contains('active');
+  btn.classList.toggle('active', on);
+  if (name === 'cities') { on ? esriCities.addTo(map) : map.removeLayer(esriCities); }
+  else if (name === 'roads') { on ? esriRoads.addTo(map) : map.removeLayer(esriRoads); }
+  else if (name === 'all') {
+    if (on) { allLevadasLayer ? allLevadasLayer.addTo(map) : loadOverpassLayer('all', btn); }
+    else if (allLevadasLayer) map.removeLayer(allLevadasLayer);
+  } else if (name === 'tunnels') {
+    if (on) { tunnelsLayer ? tunnelsLayer.addTo(map) : loadOverpassLayer('tunnels', btn); }
+    else if (tunnelsLayer) map.removeLayer(tunnelsLayer);
+  }
+}
+
+let raceLayer = L.layerGroup();
+let heatLayer = null;
+let walkLayer = L.layerGroup();
+let closuresLayer = L.layerGroup();
+
+const BTN = { race: '.btn-race', walk: '.btn-walk', closures: '.btn-closed', heat: '.btn-heat' };
+const LYR = { race: () => raceLayer, walk: () => walkLayer, closures: () => closuresLayer, heat: () => heatLayer };
+
+// Layer selection. Race + Popularity are about running and can be shown
+// together; Walking trails and Closures are exclusive trail views.
+// ?layer=race|walk|closures|heat (e.g. the Levadas button) sets the start view.
+const VALID_LAYERS = ['race', 'walk', 'closures', 'heat'];
+const ADDITIVE = ['race', 'heat'];
+const reqLayer = params.get('layer');
+
+// Full map: per-layer on/off state.
+const sel = { race: false, heat: false, walk: false, closures: false };
+if (VALID_LAYERS.includes(reqLayer)) sel[reqLayer] = true; else sel.race = true;
+
+// Embed (homepage preview): keep the original additive Race + Popularity look,
+// unless an explicit ?layer= is requested (e.g. the levada guide embeds walk).
+const embedOn = { race: true, heat: true, walk: false, closures: false };
+if (isEmbed && VALID_LAYERS.includes(reqLayer)) {
+  Object.keys(embedOn).forEach(k => { embedOn[k] = (k === reqLayer); });
+}
+
+function applySelection() {
+  Object.keys(LYR).forEach(k => {
+    const lyr = LYR[k]();
+    const on = isEmbed ? embedOn[k] : sel[k];
+    if (lyr) (on ? map.addLayer(lyr) : map.removeLayer(lyr));
+    const btn = document.querySelector(BTN[k]);
+    if (btn) { btn.classList.toggle('active', on); btn.classList.toggle('off', !on); }
+  });
+}
+
+function pickLayer(name) {
+  if (isEmbed) {
+    embedOn[name] = !embedOn[name];
+  } else if (ADDITIVE.includes(name)) {
+    // Toggle within the running pair; leave the other running layer as-is,
+    // but switch away from the exclusive trail views.
+    sel[name] = !sel[name];
+    sel.walk = false;
+    sel.closures = false;
+  } else {
+    // Exclusive trail view: show only this layer.
+    Object.keys(sel).forEach(k => { sel[k] = false; });
+    sel[name] = true;
+  }
+  applySelection();
+}
+
+const isPtLang = () => (document.documentElement.lang || 'en') === 'pt';
+
+const WALK_STYLE = {
+  open:    { color: '#2e9e5b', dash: null,  label: { en: 'Open', pt: 'Aberto' } },
+  partial: { color: '#e0902a', dash: '7,6', label: { en: 'Partially open', pt: 'Parcialmente aberto' } },
+  closed:  { color: '#e23b2e', dash: null,  label: { en: 'Closed', pt: 'Encerrado' } },
+};
+
+const trailPolys = {};   // code -> [polylines] (walk layer, for focus/highlight)
+const trailBounds = {};   // code -> L.latLngBounds
+
+function codeKey(c) { return String(c || '').replace(/\s+/g, '').toUpperCase(); }
+
+function drawTrail(t, layer, register) {
+  const s = WALK_STYLE[t.status] || WALK_STYLE.open;
+  const weight = t.status === 'open' ? 3 : 4;
+  const lang = isPtLang() ? 'pt' : 'en';
+  const key = codeKey(t.code);
+  t.lines.forEach(line => {
+    const pl = L.polyline(line, {
+      color: s.color, weight, opacity: 0.85, smoothFactor: 1, dashArray: s.dash,
+    }).addTo(layer);
+    pl.bindTooltip(`${t.code} — ${t.name}`, { sticky: true, className: 'trail-tip' });
+    pl.bindPopup(
+      `<h3>${t.code} — ${t.name}</h3><p style="color:${s.color};font-weight:700;">${s.label[lang]}</p>`,
+      { className: 'race-popup' }
+    );
+    pl.on('mouseover', function() { this.setStyle({ weight: weight + 2, opacity: 1 }); });
+    pl.on('mouseout', function() { this.setStyle({ weight, opacity: 0.85 }); });
+    if (register) {
+      (trailPolys[key] = trailPolys[key] || []).push({ pl, weight });
+      trailBounds[key] = trailBounds[key] ? trailBounds[key].extend(pl.getBounds()) : pl.getBounds();
+    }
+  });
+}
+
+function focusTrail(code) {
+  const key = codeKey(code);
+  if (!trailBounds[key]) return;
+  if (!map.hasLayer(walkLayer)) pickLayer('walk');
+  // Dim everything, emphasise the focused trail.
+  Object.keys(trailPolys).forEach(k => {
+    trailPolys[k].forEach(o => o.pl.setStyle({ opacity: k === key ? 1 : 0.18, weight: k === key ? o.weight + 3 : o.weight }));
+    if (k === key) trailPolys[k].forEach(o => o.pl.bringToFront());
+  });
+  map.fitBounds(trailBounds[key], { padding: [40, 40], maxZoom: 15 });
+}
+
+window.addEventListener('message', e => {
+  if (e.data && e.data.focusTrail) focusTrail(e.data.focusTrail);
+});
+
+fetch('trails_geo.json')
+  .then(r => r.json())
+  .then(data => {
+    const trails = data.trails || [];
+    if (!trails.length) return;
+    trails.forEach(t => {
+      drawTrail(t, walkLayer, true);
+      if (t.status === 'closed' || t.status === 'partial') drawTrail(t, closuresLayer);
+    });
+    if (!isEmbed) {
+      document.getElementById('btn-walk').style.display = '';
+      document.getElementById('btn-closures').style.display = '';
+      document.getElementById('btn-all').style.display = '';
+    }
+    applySelection();
+    const reqFocus = params.get('focus');
+    if (reqFocus) focusTrail(reqFocus);
+  })
+  .catch(() => {});
+
+fetch('tracks.json')
+  .then(r => r.json())
+  .then(data => {
+    document.getElementById('stat-total').textContent = data.garmin.length + data.races.length;
+
+    const heatPoints = [];
+
+    // Personal Garmin hikes feed the popularity heatmap only (no separate lines).
+    data.garmin.forEach(track => {
+      if (track.points.length < 2) return;
+      track.points.forEach(p => heatPoints.push([p[0], p[1], 0.4]));
+    });
+
+    data.races.forEach(track => {
+      if (track.points.length < 2) return;
+      const name = track.name.replace(/_/g, ' ');
+      const km = estimateKm(track.points);
+      const line = L.polyline(track.points, {
+        color: '#ff6b35',
+        weight: 3,
+        opacity: 0.7,
+        smoothFactor: 1,
+      }).addTo(raceLayer);
+
+      line.bindTooltip(name, { sticky: true, className: 'trail-tip' });
+
+      let popupHtml = `<h3>${name}</h3><p>~${km} km (longest route)</p>`;
+      if (track.variants && track.variants.length) {
+        popupHtml += `<p style="margin-top:4px;color:#ccc;">Also: ${track.variants.join(', ')}</p>`;
+      }
+      line.bindPopup(popupHtml, { className: 'race-popup' });
+
+      line.on('mouseover', function() { this.setStyle({ weight: 5, opacity: 1 }); });
+      line.on('mouseout', function() { this.setStyle({ weight: 3, opacity: 0.7 }); });
+
+      track.points.forEach(p => heatPoints.push([p[0], p[1], 0.5]));
+    });
+
+    heatLayer = L.heatLayer(heatPoints, {
+      radius: 14,
+      blur: 20,
+      maxZoom: 15,
+      max: 1.0,
+      gradient: {
+        0.1: '#0d0887',
+        0.3: '#7e03a8',
+        0.5: '#cc4778',
+        0.7: '#f89540',
+        1.0: '#f0f921',
+      }
+    });
+    applySelection();
+  });
+
+function estimateKm(pts) {
+  let total = 0;
+  for (let i = 1; i < pts.length; i++) {
+    const dLat = (pts[i][0] - pts[i-1][0]) * Math.PI / 180;
+    const dLon = (pts[i][1] - pts[i-1][1]) * Math.PI / 180;
+    const a = Math.sin(dLat/2)**2 +
+              Math.cos(pts[i-1][0]*Math.PI/180) *
+              Math.cos(pts[i][0]*Math.PI/180) *
+              Math.sin(dLon/2)**2;
+    total += 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+  }
+  return Math.round(total);
+}
+
+function getLang() { return document.documentElement.lang || 'en'; }
+function toggleLang() {
+  const html = document.documentElement;
+  const btn = document.querySelector('.lang-toggle');
+  if (html.lang === 'en') {
+    html.lang = 'pt';
+    btn.textContent = 'EN';
+    localStorage.setItem('lang', 'pt');
+  } else {
+    html.lang = 'en';
+    btn.textContent = 'PT';
+    localStorage.setItem('lang', 'en');
+  }
+}
+(function() {
+  const saved = localStorage.getItem('lang');
+  if (saved === 'pt') {
+    document.documentElement.lang = 'pt';
+    const btn = document.querySelector('.lang-toggle');
+    if (btn) btn.textContent = 'EN';
+  }
+})();
+</script>
+</body>
+</html>

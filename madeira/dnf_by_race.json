@@ -1,0 +1,2186 @@
+[
+  {
+    "race": "Madeira Backyard Ultra",
+    "distance_bucket": "Ultra 100+",
+    "started": 153,
+    "finished": 2,
+    "dnf": 151,
+    "dnf_pct": 98.7
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2018",
+    "distance_bucket": "Ultra 100+",
+    "started": 783,
+    "finished": 496,
+    "dnf": 287,
+    "dnf_pct": 36.7
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2009",
+    "distance_bucket": "Ultra 100+",
+    "started": 47,
+    "finished": 32,
+    "dnf": 15,
+    "dnf_pct": 31.9
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2016",
+    "distance_bucket": "Ultra 100+",
+    "started": 551,
+    "finished": 379,
+    "dnf": 172,
+    "dnf_pct": 31.2
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2013",
+    "distance_bucket": "Ultra 100+",
+    "started": 94,
+    "finished": 65,
+    "dnf": 29,
+    "dnf_pct": 30.9
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2014",
+    "distance_bucket": "Ultra 100+",
+    "started": 182,
+    "finished": 128,
+    "dnf": 54,
+    "dnf_pct": 29.7
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2008",
+    "distance_bucket": "Ultra 100+",
+    "started": 98,
+    "finished": 69,
+    "dnf": 29,
+    "dnf_pct": 29.6
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2021",
+    "distance_bucket": "Ultra 100+",
+    "started": 298,
+    "finished": 210,
+    "dnf": 88,
+    "dnf_pct": 29.5
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2019",
+    "distance_bucket": "Ultra 100+",
+    "started": 907,
+    "finished": 640,
+    "dnf": 267,
+    "dnf_pct": 29.4
+  },
+  {
+    "race": "Ecotrail Funchal - Madeira 2019",
+    "distance_bucket": "Ultra 75-99",
+    "started": 42,
+    "finished": 30,
+    "dnf": 12,
+    "dnf_pct": 28.6
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2015",
+    "distance_bucket": "Ultra 100+",
+    "started": 376,
+    "finished": 284,
+    "dnf": 92,
+    "dnf_pct": 24.5
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2023",
+    "distance_bucket": "Ultra 100+",
+    "started": 859,
+    "finished": 652,
+    "dnf": 207,
+    "dnf_pct": 24.1
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2024",
+    "distance_bucket": "Ultra 100+",
+    "started": 917,
+    "finished": 697,
+    "dnf": 220,
+    "dnf_pct": 24.0
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2017",
+    "distance_bucket": "Ultra 100+",
+    "started": 773,
+    "finished": 590,
+    "dnf": 183,
+    "dnf_pct": 23.7
+  },
+  {
+    "race": "V Maxi Race Madeira 2023",
+    "distance_bucket": "Ultra 100+",
+    "started": 38,
+    "finished": 29,
+    "dnf": 9,
+    "dnf_pct": 23.7
+  },
+  {
+    "race": "III Maxi Race Madeira 2021",
+    "distance_bucket": "Ultra 100+",
+    "started": 26,
+    "finished": 20,
+    "dnf": 6,
+    "dnf_pct": 23.1
+  },
+  {
+    "race": "VII Maxi Race Madeira 2025",
+    "distance_bucket": "Ultra 100+",
+    "started": 35,
+    "finished": 27,
+    "dnf": 8,
+    "dnf_pct": 22.9
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2013",
+    "distance_bucket": "Ultra 75-99",
+    "started": 71,
+    "finished": 55,
+    "dnf": 16,
+    "dnf_pct": 22.5
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2026",
+    "distance_bucket": "Ultra 100+",
+    "started": 747,
+    "finished": 581,
+    "dnf": 166,
+    "dnf_pct": 22.2
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2022",
+    "distance_bucket": "Ultra 100+",
+    "started": 715,
+    "finished": 560,
+    "dnf": 155,
+    "dnf_pct": 21.7
+  },
+  {
+    "race": "Ecotrail Funchal - Madeira Compressport 2017",
+    "distance_bucket": "Ultra 75-99",
+    "started": 56,
+    "finished": 44,
+    "dnf": 12,
+    "dnf_pct": 21.4
+  },
+  {
+    "race": "Ecotrail Funchal - Madeira 2020",
+    "distance_bucket": "Ultra 75-99",
+    "started": 44,
+    "finished": 35,
+    "dnf": 9,
+    "dnf_pct": 20.5
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2025",
+    "distance_bucket": "Ultra 100+",
+    "started": 423,
+    "finished": 338,
+    "dnf": 85,
+    "dnf_pct": 20.1
+  },
+  {
+    "race": "IV Maxi Race Madeira 2022",
+    "distance_bucket": "Ultra 100+",
+    "started": 25,
+    "finished": 20,
+    "dnf": 5,
+    "dnf_pct": 20.0
+  },
+  {
+    "race": "Ultra Skyrunning Madeira 2019",
+    "distance_bucket": "Long 50-74",
+    "started": 251,
+    "finished": 203,
+    "dnf": 48,
+    "dnf_pct": 19.1
+  },
+  {
+    "race": "VI Maxi Race Madeira 2024",
+    "distance_bucket": "Ultra 100+",
+    "started": 38,
+    "finished": 31,
+    "dnf": 7,
+    "dnf_pct": 18.4
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2012",
+    "distance_bucket": "Long 50-74",
+    "started": 94,
+    "finished": 77,
+    "dnf": 17,
+    "dnf_pct": 18.1
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2012",
+    "distance_bucket": "Ultra 100+",
+    "started": 80,
+    "finished": 66,
+    "dnf": 14,
+    "dnf_pct": 17.5
+  },
+  {
+    "race": "Ecotrail Madeira 2025",
+    "distance_bucket": "Marathon 35-49",
+    "started": 44,
+    "finished": 37,
+    "dnf": 7,
+    "dnf_pct": 15.9
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2015",
+    "distance_bucket": "Ultra 75-99",
+    "started": 173,
+    "finished": 146,
+    "dnf": 27,
+    "dnf_pct": 15.6
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2016",
+    "distance_bucket": "Ultra 75-99",
+    "started": 283,
+    "finished": 239,
+    "dnf": 44,
+    "dnf_pct": 15.5
+  },
+  {
+    "race": "VI Trail C\u00e2mara de Lobos",
+    "distance_bucket": "Long 50-74",
+    "started": 58,
+    "finished": 49,
+    "dnf": 9,
+    "dnf_pct": 15.5
+  },
+  {
+    "race": "Ultra Trail Porto Moniz e S\u00e3o Vicente 2016",
+    "distance_bucket": "Marathon 35-49",
+    "started": 133,
+    "finished": 113,
+    "dnf": 20,
+    "dnf_pct": 15.0
+  },
+  {
+    "race": "Ecotur\u00b2 SkyMarathon PM 2025",
+    "distance_bucket": "Marathon 35-49",
+    "started": 20,
+    "finished": 17,
+    "dnf": 3,
+    "dnf_pct": 15.0
+  },
+  {
+    "race": "III Trail C\u00e2mara de Lobos",
+    "distance_bucket": "Marathon 35-49",
+    "started": 104,
+    "finished": 89,
+    "dnf": 15,
+    "dnf_pct": 14.4
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2019",
+    "distance_bucket": "Ultra 75-99",
+    "started": 457,
+    "finished": 394,
+    "dnf": 63,
+    "dnf_pct": 13.8
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2014",
+    "distance_bucket": "Ultra 75-99",
+    "started": 162,
+    "finished": 140,
+    "dnf": 22,
+    "dnf_pct": 13.6
+  },
+  {
+    "race": "XI Trail Porto da Cruz Natura 2024",
+    "distance_bucket": "Long 50-74",
+    "started": 59,
+    "finished": 51,
+    "dnf": 8,
+    "dnf_pct": 13.6
+  },
+  {
+    "race": "III Maxi Race Madeira 2021",
+    "distance_bucket": "Long 50-74",
+    "started": 37,
+    "finished": 32,
+    "dnf": 5,
+    "dnf_pct": 13.5
+  },
+  {
+    "race": "Ecotrail Funchal - Madeira Compressport 2016",
+    "distance_bucket": "Ultra 75-99",
+    "started": 83,
+    "finished": 72,
+    "dnf": 11,
+    "dnf_pct": 13.3
+  },
+  {
+    "race": "VII Trail Porto da Cruz Natura 2020",
+    "distance_bucket": "Long 50-74",
+    "started": 60,
+    "finished": 52,
+    "dnf": 8,
+    "dnf_pct": 13.3
+  },
+  {
+    "race": "Ecotur\u00b2 SkyMarathon PM 2025",
+    "distance_bucket": "Medium 20-34",
+    "started": 30,
+    "finished": 26,
+    "dnf": 4,
+    "dnf_pct": 13.3
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2018",
+    "distance_bucket": "Ultra 75-99",
+    "started": 402,
+    "finished": 351,
+    "dnf": 51,
+    "dnf_pct": 12.7
+  },
+  {
+    "race": "Ronda dos Picos Skyrace",
+    "distance_bucket": "Medium 20-34",
+    "started": 105,
+    "finished": 92,
+    "dnf": 13,
+    "dnf_pct": 12.4
+  },
+  {
+    "race": "V Trail Porto da Cruz Natura 2018",
+    "distance_bucket": "Long 50-74",
+    "started": 139,
+    "finished": 122,
+    "dnf": 17,
+    "dnf_pct": 12.2
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2017",
+    "distance_bucket": "Ultra 75-99",
+    "started": 403,
+    "finished": 355,
+    "dnf": 48,
+    "dnf_pct": 11.9
+  },
+  {
+    "race": "Ecotrail Funchal - Madeira 2019",
+    "distance_bucket": "Marathon 35-49",
+    "started": 69,
+    "finished": 61,
+    "dnf": 8,
+    "dnf_pct": 11.6
+  },
+  {
+    "race": "IX Trail Porto da Cruz Natura 2022",
+    "distance_bucket": "Long 50-74",
+    "started": 78,
+    "finished": 69,
+    "dnf": 9,
+    "dnf_pct": 11.5
+  },
+  {
+    "race": "V Maxi Race Madeira 2023",
+    "distance_bucket": "Long 50-74",
+    "started": 79,
+    "finished": 70,
+    "dnf": 9,
+    "dnf_pct": 11.4
+  },
+  {
+    "race": "V Trail C\u00e2mara de Lobos",
+    "distance_bucket": "Marathon 35-49",
+    "started": 81,
+    "finished": 72,
+    "dnf": 9,
+    "dnf_pct": 11.1
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2011",
+    "distance_bucket": "Ultra 100+",
+    "started": 46,
+    "finished": 41,
+    "dnf": 5,
+    "dnf_pct": 10.9
+  },
+  {
+    "race": "VI Trail Porto da Cruz Natura 2019",
+    "distance_bucket": "Long 50-74",
+    "started": 111,
+    "finished": 99,
+    "dnf": 12,
+    "dnf_pct": 10.8
+  },
+  {
+    "race": "II Maxi Race Madeira 2019",
+    "distance_bucket": "Long 50-74",
+    "started": 66,
+    "finished": 59,
+    "dnf": 7,
+    "dnf_pct": 10.6
+  },
+  {
+    "race": "Trail do Porto Moniz 2018",
+    "distance_bucket": "Marathon 35-49",
+    "started": 114,
+    "finished": 102,
+    "dnf": 12,
+    "dnf_pct": 10.5
+  },
+  {
+    "race": "I Maxi Race Madeira 2018",
+    "distance_bucket": "Ultra 100+",
+    "started": 29,
+    "finished": 26,
+    "dnf": 3,
+    "dnf_pct": 10.3
+  },
+  {
+    "race": "Ultra Skymarathon Madeira 2014",
+    "distance_bucket": "Long 50-74",
+    "started": 90,
+    "finished": 81,
+    "dnf": 9,
+    "dnf_pct": 10.0
+  },
+  {
+    "race": "Madeira Backyard Ultra",
+    "distance_bucket": "Marathon 35-49",
+    "started": 20,
+    "finished": 18,
+    "dnf": 2,
+    "dnf_pct": 10.0
+  },
+  {
+    "race": "III Trail Porto da Cruz Natura 2016",
+    "distance_bucket": "Marathon 35-49",
+    "started": 163,
+    "finished": 147,
+    "dnf": 16,
+    "dnf_pct": 9.8
+  },
+  {
+    "race": "Ecotrail Funchal - Madeira 2018",
+    "distance_bucket": "Ultra 75-99",
+    "started": 51,
+    "finished": 46,
+    "dnf": 5,
+    "dnf_pct": 9.8
+  },
+  {
+    "race": "I Trail Porto da Cruz Natura 2014",
+    "distance_bucket": "Marathon 35-49",
+    "started": 97,
+    "finished": 88,
+    "dnf": 9,
+    "dnf_pct": 9.3
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2021",
+    "distance_bucket": "Ultra 75-99",
+    "started": 99,
+    "finished": 90,
+    "dnf": 9,
+    "dnf_pct": 9.1
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2023",
+    "distance_bucket": "Ultra 75-99",
+    "started": 440,
+    "finished": 400,
+    "dnf": 40,
+    "dnf_pct": 9.1
+  },
+  {
+    "race": "XII Trail Porto da Cruz Natura 2025",
+    "distance_bucket": "Long 50-74",
+    "started": 44,
+    "finished": 40,
+    "dnf": 4,
+    "dnf_pct": 9.1
+  },
+  {
+    "race": "VIII Trail Porto da Cruz Natura 2021",
+    "distance_bucket": "Long 50-74",
+    "started": 146,
+    "finished": 133,
+    "dnf": 13,
+    "dnf_pct": 8.9
+  },
+  {
+    "race": "X Trail Porto da Cruz Natura 2023",
+    "distance_bucket": "Long 50-74",
+    "started": 45,
+    "finished": 41,
+    "dnf": 4,
+    "dnf_pct": 8.9
+  },
+  {
+    "race": "I Trail da Calheta 2015",
+    "distance_bucket": "Medium 20-34",
+    "started": 160,
+    "finished": 146,
+    "dnf": 14,
+    "dnf_pct": 8.8
+  },
+  {
+    "race": "Trail do Porto Moniz 2017",
+    "distance_bucket": "Marathon 35-49",
+    "started": 137,
+    "finished": 125,
+    "dnf": 12,
+    "dnf_pct": 8.8
+  },
+  {
+    "race": "Trail do Porto Moniz 2023",
+    "distance_bucket": "Marathon 35-49",
+    "started": 104,
+    "finished": 95,
+    "dnf": 9,
+    "dnf_pct": 8.7
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2025",
+    "distance_bucket": "Ultra 75-99",
+    "started": 242,
+    "finished": 221,
+    "dnf": 21,
+    "dnf_pct": 8.7
+  },
+  {
+    "race": "VI Trail C\u00e2mara de Lobos",
+    "distance_bucket": "Medium 20-34",
+    "started": 130,
+    "finished": 119,
+    "dnf": 11,
+    "dnf_pct": 8.5
+  },
+  {
+    "race": "Ultra SkyMarathon Madeira 2018",
+    "distance_bucket": "Long 50-74",
+    "started": 242,
+    "finished": 222,
+    "dnf": 20,
+    "dnf_pct": 8.3
+  },
+  {
+    "race": "Columbus Ultra Trail 2016",
+    "distance_bucket": "Marathon 35-49",
+    "started": 61,
+    "finished": 56,
+    "dnf": 5,
+    "dnf_pct": 8.2
+  },
+  {
+    "race": "II Cristo Rei Trail",
+    "distance_bucket": "Medium 20-34",
+    "started": 149,
+    "finished": 137,
+    "dnf": 12,
+    "dnf_pct": 8.1
+  },
+  {
+    "race": "I Maxi Race Madeira 2018",
+    "distance_bucket": "Long 50-74",
+    "started": 37,
+    "finished": 34,
+    "dnf": 3,
+    "dnf_pct": 8.1
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2022",
+    "distance_bucket": "Ultra 75-99",
+    "started": 369,
+    "finished": 339,
+    "dnf": 30,
+    "dnf_pct": 8.1
+  },
+  {
+    "race": "X Trail C\u00e2mara de Lobos 2023",
+    "distance_bucket": "Marathon 35-49",
+    "started": 62,
+    "finished": 57,
+    "dnf": 5,
+    "dnf_pct": 8.1
+  },
+  {
+    "race": "Ecotrail Funchal - Madeira Compressport 2017",
+    "distance_bucket": "Marathon 35-49",
+    "started": 87,
+    "finished": 80,
+    "dnf": 7,
+    "dnf_pct": 8.0
+  },
+  {
+    "race": "Ultra SkyMarathon Madeira",
+    "distance_bucket": "Long 50-74",
+    "started": 165,
+    "finished": 152,
+    "dnf": 13,
+    "dnf_pct": 7.9
+  },
+  {
+    "race": "Trail do Porto Moniz 2023",
+    "distance_bucket": "Medium 20-34",
+    "started": 210,
+    "finished": 194,
+    "dnf": 16,
+    "dnf_pct": 7.6
+  },
+  {
+    "race": "II Trail C\u00e2mara de Lobos",
+    "distance_bucket": "Marathon 35-49",
+    "started": 80,
+    "finished": 74,
+    "dnf": 6,
+    "dnf_pct": 7.5
+  },
+  {
+    "race": "Ecotrail Madeira 2024",
+    "distance_bucket": "Marathon 35-49",
+    "started": 41,
+    "finished": 38,
+    "dnf": 3,
+    "dnf_pct": 7.3
+  },
+  {
+    "race": "IV Trail C\u00e2mara de Lobos - Rota dos Vinhos",
+    "distance_bucket": "Marathon 35-49",
+    "started": 83,
+    "finished": 77,
+    "dnf": 6,
+    "dnf_pct": 7.2
+  },
+  {
+    "race": "Trail do Porto Moniz 2024",
+    "distance_bucket": "Marathon 35-49",
+    "started": 97,
+    "finished": 90,
+    "dnf": 7,
+    "dnf_pct": 7.2
+  },
+  {
+    "race": "XI Trail Porto da Cruz Natura 2024",
+    "distance_bucket": "Medium 20-34",
+    "started": 139,
+    "finished": 129,
+    "dnf": 10,
+    "dnf_pct": 7.2
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2024",
+    "distance_bucket": "Ultra 75-99",
+    "started": 465,
+    "finished": 432,
+    "dnf": 33,
+    "dnf_pct": 7.1
+  },
+  {
+    "race": "Trail Ludens Machico 2014",
+    "distance_bucket": "Marathon 35-49",
+    "started": 76,
+    "finished": 71,
+    "dnf": 5,
+    "dnf_pct": 6.6
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2021",
+    "distance_bucket": "Marathon 35-49",
+    "started": 187,
+    "finished": 175,
+    "dnf": 12,
+    "dnf_pct": 6.4
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2026",
+    "distance_bucket": "Ultra 75-99",
+    "started": 421,
+    "finished": 394,
+    "dnf": 27,
+    "dnf_pct": 6.4
+  },
+  {
+    "race": "Trail do Porto Moniz 2020",
+    "distance_bucket": "Marathon 35-49",
+    "started": 127,
+    "finished": 119,
+    "dnf": 8,
+    "dnf_pct": 6.3
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2023",
+    "distance_bucket": "Long 50-74",
+    "started": 377,
+    "finished": 354,
+    "dnf": 23,
+    "dnf_pct": 6.1
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2014",
+    "distance_bucket": "Marathon 35-49",
+    "started": 166,
+    "finished": 156,
+    "dnf": 10,
+    "dnf_pct": 6.0
+  },
+  {
+    "race": "IV Trail Porto da Cruz Natura 2017",
+    "distance_bucket": "Marathon 35-49",
+    "started": 134,
+    "finished": 126,
+    "dnf": 8,
+    "dnf_pct": 6.0
+  },
+  {
+    "race": "Ecotrail Funchal - Madeira 2020",
+    "distance_bucket": "Medium 20-34",
+    "started": 108,
+    "finished": 102,
+    "dnf": 6,
+    "dnf_pct": 5.6
+  },
+  {
+    "race": "ADN Race 2025",
+    "distance_bucket": "Medium 20-34",
+    "started": 73,
+    "finished": 69,
+    "dnf": 4,
+    "dnf_pct": 5.5
+  },
+  {
+    "race": "Trail do Porto Moniz 2020",
+    "distance_bucket": "Medium 20-34",
+    "started": 211,
+    "finished": 200,
+    "dnf": 11,
+    "dnf_pct": 5.2
+  },
+  {
+    "race": "Machico - Madeira Trail Series 2017",
+    "distance_bucket": "Short 10-19",
+    "started": 59,
+    "finished": 56,
+    "dnf": 3,
+    "dnf_pct": 5.1
+  },
+  {
+    "race": "X Trail Porto da Cruz Natura 2023",
+    "distance_bucket": "Medium 20-34",
+    "started": 136,
+    "finished": 129,
+    "dnf": 7,
+    "dnf_pct": 5.1
+  },
+  {
+    "race": "ADN Race Ponta do Sol 2017",
+    "distance_bucket": "Medium 20-34",
+    "started": 40,
+    "finished": 38,
+    "dnf": 2,
+    "dnf_pct": 5.0
+  },
+  {
+    "race": "Trail do Porto Moniz 2019",
+    "distance_bucket": "Marathon 35-49",
+    "started": 120,
+    "finished": 114,
+    "dnf": 6,
+    "dnf_pct": 5.0
+  },
+  {
+    "race": "III Maxi Race Madeira 2021",
+    "distance_bucket": "Short 10-19",
+    "started": 81,
+    "finished": 77,
+    "dnf": 4,
+    "dnf_pct": 4.9
+  },
+  {
+    "race": "Trail Porto Moniz 2014",
+    "distance_bucket": "Marathon 35-49",
+    "started": 124,
+    "finished": 118,
+    "dnf": 6,
+    "dnf_pct": 4.8
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2016",
+    "distance_bucket": "Marathon 35-49",
+    "started": 551,
+    "finished": 526,
+    "dnf": 25,
+    "dnf_pct": 4.5
+  },
+  {
+    "race": "Trail do Porto Moniz 2024",
+    "distance_bucket": "Medium 20-34",
+    "started": 154,
+    "finished": 147,
+    "dnf": 7,
+    "dnf_pct": 4.5
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2026",
+    "distance_bucket": "Long 50-74",
+    "started": 462,
+    "finished": 441,
+    "dnf": 21,
+    "dnf_pct": 4.5
+  },
+  {
+    "race": "IX Trail C\u00e2mara de Lobos",
+    "distance_bucket": "Marathon 35-49",
+    "started": 70,
+    "finished": 67,
+    "dnf": 3,
+    "dnf_pct": 4.3
+  },
+  {
+    "race": "Ultra Trail S\u00e3o Vicente e Porto Moniz 2015",
+    "distance_bucket": "Marathon 35-49",
+    "started": 95,
+    "finished": 91,
+    "dnf": 4,
+    "dnf_pct": 4.2
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2018",
+    "distance_bucket": "Marathon 35-49",
+    "started": 554,
+    "finished": 531,
+    "dnf": 23,
+    "dnf_pct": 4.2
+  },
+  {
+    "race": "Trail do Porto Moniz 2019",
+    "distance_bucket": "Medium 20-34",
+    "started": 260,
+    "finished": 249,
+    "dnf": 11,
+    "dnf_pct": 4.2
+  },
+  {
+    "race": "Ultra Skyrunning Madeira 2019",
+    "distance_bucket": "Medium 20-34",
+    "started": 190,
+    "finished": 182,
+    "dnf": 8,
+    "dnf_pct": 4.2
+  },
+  {
+    "race": "VIII Trail Porto da Cruz Natura 2021",
+    "distance_bucket": "Medium 20-34",
+    "started": 168,
+    "finished": 161,
+    "dnf": 7,
+    "dnf_pct": 4.2
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2021",
+    "distance_bucket": "Long 50-74",
+    "started": 95,
+    "finished": 91,
+    "dnf": 4,
+    "dnf_pct": 4.2
+  },
+  {
+    "race": "VII Maxi Race Madeira 2025",
+    "distance_bucket": "Long 50-74",
+    "started": 72,
+    "finished": 69,
+    "dnf": 3,
+    "dnf_pct": 4.2
+  },
+  {
+    "race": "VI Trail Porto da Cruz Natura 2019",
+    "distance_bucket": "Medium 20-34",
+    "started": 171,
+    "finished": 164,
+    "dnf": 7,
+    "dnf_pct": 4.1
+  },
+  {
+    "race": "ADN Race Ponta do Sol 2022",
+    "distance_bucket": "Medium 20-34",
+    "started": 73,
+    "finished": 70,
+    "dnf": 3,
+    "dnf_pct": 4.1
+  },
+  {
+    "race": "Ecotrail Funchal - Madeira Compressport 2016",
+    "distance_bucket": "Marathon 35-49",
+    "started": 150,
+    "finished": 144,
+    "dnf": 6,
+    "dnf_pct": 4.0
+  },
+  {
+    "race": "XII Trail Porto da Cruz Natura 2025",
+    "distance_bucket": "Medium 20-34",
+    "started": 125,
+    "finished": 120,
+    "dnf": 5,
+    "dnf_pct": 4.0
+  },
+  {
+    "race": "Trail do Porto Moniz 2026",
+    "distance_bucket": "Marathon 35-49",
+    "started": 75,
+    "finished": 72,
+    "dnf": 3,
+    "dnf_pct": 4.0
+  },
+  {
+    "race": "Ecotrail Funchal - Madeira Compressport 2016",
+    "distance_bucket": "Short 10-19",
+    "started": 232,
+    "finished": 223,
+    "dnf": 9,
+    "dnf_pct": 3.9
+  },
+  {
+    "race": "Ecotrail Funchal - Madeira 2018",
+    "distance_bucket": "Marathon 35-49",
+    "started": 76,
+    "finished": 73,
+    "dnf": 3,
+    "dnf_pct": 3.9
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2019",
+    "distance_bucket": "Marathon 35-49",
+    "started": 596,
+    "finished": 573,
+    "dnf": 23,
+    "dnf_pct": 3.9
+  },
+  {
+    "race": "II Maxi Race Madeira 2019",
+    "distance_bucket": "Medium 20-34",
+    "started": 76,
+    "finished": 73,
+    "dnf": 3,
+    "dnf_pct": 3.9
+  },
+  {
+    "race": "Machico - Madeira Trail Series 2017",
+    "distance_bucket": "Medium 20-34",
+    "started": 26,
+    "finished": 25,
+    "dnf": 1,
+    "dnf_pct": 3.8
+  },
+  {
+    "race": "VI Maxi Race Madeira 2024",
+    "distance_bucket": "Long 50-74",
+    "started": 109,
+    "finished": 105,
+    "dnf": 4,
+    "dnf_pct": 3.7
+  },
+  {
+    "race": "Ecotrail Funchal - Madeira 2020",
+    "distance_bucket": "Marathon 35-49",
+    "started": 84,
+    "finished": 81,
+    "dnf": 3,
+    "dnf_pct": 3.6
+  },
+  {
+    "race": "IX Trail Porto da Cruz Natura 2022",
+    "distance_bucket": "Medium 20-34",
+    "started": 111,
+    "finished": 107,
+    "dnf": 4,
+    "dnf_pct": 3.6
+  },
+  {
+    "race": "Volcanoes Trail 2016",
+    "distance_bucket": "Marathon 35-49",
+    "started": 58,
+    "finished": 56,
+    "dnf": 2,
+    "dnf_pct": 3.4
+  },
+  {
+    "race": "Ultra Trail Porto Moniz e S\u00e3o Vicente 2016",
+    "distance_bucket": "Short 10-19",
+    "started": 304,
+    "finished": 294,
+    "dnf": 10,
+    "dnf_pct": 3.3
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2011",
+    "distance_bucket": "Medium 20-34",
+    "started": 31,
+    "finished": 30,
+    "dnf": 1,
+    "dnf_pct": 3.2
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2013",
+    "distance_bucket": "Marathon 35-49",
+    "started": 128,
+    "finished": 124,
+    "dnf": 4,
+    "dnf_pct": 3.1
+  },
+  {
+    "race": "Ecotrail Funchal - Madeira 2019",
+    "distance_bucket": "Medium 20-34",
+    "started": 160,
+    "finished": 155,
+    "dnf": 5,
+    "dnf_pct": 3.1
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2017",
+    "distance_bucket": "Marathon 35-49",
+    "started": 579,
+    "finished": 562,
+    "dnf": 17,
+    "dnf_pct": 2.9
+  },
+  {
+    "race": "ADN Race Ponta do Sol 2021",
+    "distance_bucket": "Medium 20-34",
+    "started": 70,
+    "finished": 68,
+    "dnf": 2,
+    "dnf_pct": 2.9
+  },
+  {
+    "race": "Trail do Porto Moniz 2025",
+    "distance_bucket": "Marathon 35-49",
+    "started": 103,
+    "finished": 100,
+    "dnf": 3,
+    "dnf_pct": 2.9
+  },
+  {
+    "race": "Ultra Trail S\u00e3o Vicente e Porto Moniz 2015",
+    "distance_bucket": "Medium 20-34",
+    "started": 176,
+    "finished": 171,
+    "dnf": 5,
+    "dnf_pct": 2.8
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2025",
+    "distance_bucket": "Long 50-74",
+    "started": 389,
+    "finished": 378,
+    "dnf": 11,
+    "dnf_pct": 2.8
+  },
+  {
+    "race": "III Trail Porto da Cruz Natura 2016",
+    "distance_bucket": "Short 10-19",
+    "started": 333,
+    "finished": 324,
+    "dnf": 9,
+    "dnf_pct": 2.7
+  },
+  {
+    "race": "Santana \u2013 Madeira Trail Series 2017",
+    "distance_bucket": "Medium 20-34",
+    "started": 74,
+    "finished": 72,
+    "dnf": 2,
+    "dnf_pct": 2.7
+  },
+  {
+    "race": "Ecotrail Madeira 2025",
+    "distance_bucket": "Medium 20-34",
+    "started": 74,
+    "finished": 72,
+    "dnf": 2,
+    "dnf_pct": 2.7
+  },
+  {
+    "race": "III Cristo Rei Trail",
+    "distance_bucket": "Marathon 35-49",
+    "started": 39,
+    "finished": 38,
+    "dnf": 1,
+    "dnf_pct": 2.6
+  },
+  {
+    "race": "XI Trail de C\u00e2mara de Lobos 2024",
+    "distance_bucket": "Medium 20-34",
+    "started": 115,
+    "finished": 112,
+    "dnf": 3,
+    "dnf_pct": 2.6
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2024",
+    "distance_bucket": "Long 50-74",
+    "started": 481,
+    "finished": 469,
+    "dnf": 12,
+    "dnf_pct": 2.5
+  },
+  {
+    "race": "I Trail de Cora\u00e7\u00e3o na Natureza 2015",
+    "distance_bucket": "Medium 20-34",
+    "started": 94,
+    "finished": 92,
+    "dnf": 2,
+    "dnf_pct": 2.1
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2022",
+    "distance_bucket": "Marathon 35-49",
+    "started": 574,
+    "finished": 562,
+    "dnf": 12,
+    "dnf_pct": 2.1
+  },
+  {
+    "race": "VI Maxi Race Madeira 2024",
+    "distance_bucket": "Medium 20-34",
+    "started": 142,
+    "finished": 139,
+    "dnf": 3,
+    "dnf_pct": 2.1
+  },
+  {
+    "race": "III Trail Porto da Cruz Natura 2016",
+    "distance_bucket": "Medium 20-34",
+    "started": 204,
+    "finished": 200,
+    "dnf": 4,
+    "dnf_pct": 2.0
+  },
+  {
+    "race": "Trail do Porto Moniz 2017",
+    "distance_bucket": "Medium 20-34",
+    "started": 152,
+    "finished": 149,
+    "dnf": 3,
+    "dnf_pct": 2.0
+  },
+  {
+    "race": "Porto Moniz - Madeira Trail Series 2017",
+    "distance_bucket": "Medium 20-34",
+    "started": 51,
+    "finished": 50,
+    "dnf": 1,
+    "dnf_pct": 2.0
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2023",
+    "distance_bucket": "Marathon 35-49",
+    "started": 607,
+    "finished": 595,
+    "dnf": 12,
+    "dnf_pct": 2.0
+  },
+  {
+    "race": "X Trail C\u00e2mara de Lobos 2023",
+    "distance_bucket": "Medium 20-34",
+    "started": 99,
+    "finished": 97,
+    "dnf": 2,
+    "dnf_pct": 2.0
+  },
+  {
+    "race": "V Maxi Race Madeira 2023",
+    "distance_bucket": "Medium 20-34",
+    "started": 148,
+    "finished": 145,
+    "dnf": 3,
+    "dnf_pct": 2.0
+  },
+  {
+    "race": "Trail do Porto Moniz 2019",
+    "distance_bucket": "Short 10-19",
+    "started": 264,
+    "finished": 259,
+    "dnf": 5,
+    "dnf_pct": 1.9
+  },
+  {
+    "race": "ADN Race Ponta do Sol 2022",
+    "distance_bucket": "Short 10-19",
+    "started": 159,
+    "finished": 156,
+    "dnf": 3,
+    "dnf_pct": 1.9
+  },
+  {
+    "race": "Trail do Porto Moniz 2018",
+    "distance_bucket": "Medium 20-34",
+    "started": 171,
+    "finished": 168,
+    "dnf": 3,
+    "dnf_pct": 1.8
+  },
+  {
+    "race": "ADN Race Ponta do Sol 2019",
+    "distance_bucket": "Short 10-19",
+    "started": 165,
+    "finished": 162,
+    "dnf": 3,
+    "dnf_pct": 1.8
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2022",
+    "distance_bucket": "Long 50-74",
+    "started": 383,
+    "finished": 376,
+    "dnf": 7,
+    "dnf_pct": 1.8
+  },
+  {
+    "race": "Ronda dos Picos Skyrace",
+    "distance_bucket": "Short 10-19",
+    "started": 121,
+    "finished": 119,
+    "dnf": 2,
+    "dnf_pct": 1.7
+  },
+  {
+    "race": "Ecotrail Madeira 2024",
+    "distance_bucket": "Medium 20-34",
+    "started": 60,
+    "finished": 59,
+    "dnf": 1,
+    "dnf_pct": 1.7
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2015",
+    "distance_bucket": "Marathon 35-49",
+    "started": 373,
+    "finished": 367,
+    "dnf": 6,
+    "dnf_pct": 1.6
+  },
+  {
+    "race": "Ultra SkyMarathon Madeira 2018",
+    "distance_bucket": "Short 10-19",
+    "started": 313,
+    "finished": 308,
+    "dnf": 5,
+    "dnf_pct": 1.6
+  },
+  {
+    "race": "Ecotur Trail Porto Moniz 2024",
+    "distance_bucket": "Medium 20-34",
+    "started": 62,
+    "finished": 61,
+    "dnf": 1,
+    "dnf_pct": 1.6
+  },
+  {
+    "race": "Trail do Porto Moniz 2018",
+    "distance_bucket": "Short 10-19",
+    "started": 133,
+    "finished": 131,
+    "dnf": 2,
+    "dnf_pct": 1.5
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2025",
+    "distance_bucket": "Marathon 35-49",
+    "started": 714,
+    "finished": 703,
+    "dnf": 11,
+    "dnf_pct": 1.5
+  },
+  {
+    "race": "Ecotrail Funchal - Madeira Compressport 2016",
+    "distance_bucket": "Medium 20-34",
+    "started": 219,
+    "finished": 216,
+    "dnf": 3,
+    "dnf_pct": 1.4
+  },
+  {
+    "race": "I Maxi Race Madeira 2018",
+    "distance_bucket": "Medium 20-34",
+    "started": 73,
+    "finished": 72,
+    "dnf": 1,
+    "dnf_pct": 1.4
+  },
+  {
+    "race": "XI Trail de C\u00e2mara de Lobos 2024",
+    "distance_bucket": "Marathon 35-49",
+    "started": 70,
+    "finished": 69,
+    "dnf": 1,
+    "dnf_pct": 1.4
+  },
+  {
+    "race": "Trail Ludens Machico 2014",
+    "distance_bucket": "Short 10-19",
+    "started": 157,
+    "finished": 155,
+    "dnf": 2,
+    "dnf_pct": 1.3
+  },
+  {
+    "race": "Ultra Trail S\u00e3o Vicente e Porto Moniz 2015",
+    "distance_bucket": "Short 10-19",
+    "started": 76,
+    "finished": 75,
+    "dnf": 1,
+    "dnf_pct": 1.3
+  },
+  {
+    "race": "VIII Trail C\u00e2mara de Lobos",
+    "distance_bucket": "Marathon 35-49",
+    "started": 77,
+    "finished": 76,
+    "dnf": 1,
+    "dnf_pct": 1.3
+  },
+  {
+    "race": "ADN Race 2023",
+    "distance_bucket": "Medium 20-34",
+    "started": 78,
+    "finished": 77,
+    "dnf": 1,
+    "dnf_pct": 1.3
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2024",
+    "distance_bucket": "Marathon 35-49",
+    "started": 704,
+    "finished": 695,
+    "dnf": 9,
+    "dnf_pct": 1.3
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2014",
+    "distance_bucket": "Medium 20-34",
+    "started": 166,
+    "finished": 164,
+    "dnf": 2,
+    "dnf_pct": 1.2
+  },
+  {
+    "race": "Santana \u2013 Madeira Trail Series 2017",
+    "distance_bucket": "Short 10-19",
+    "started": 83,
+    "finished": 82,
+    "dnf": 1,
+    "dnf_pct": 1.2
+  },
+  {
+    "race": "Ecotrail Funchal - Madeira Compressport 2017",
+    "distance_bucket": "Medium 20-34",
+    "started": 165,
+    "finished": 163,
+    "dnf": 2,
+    "dnf_pct": 1.2
+  },
+  {
+    "race": "V Trail Porto da Cruz Natura 2018",
+    "distance_bucket": "Medium 20-34",
+    "started": 169,
+    "finished": 167,
+    "dnf": 2,
+    "dnf_pct": 1.2
+  },
+  {
+    "race": "VII Trail C\u00e2mara de Lobos",
+    "distance_bucket": "Marathon 35-49",
+    "started": 82,
+    "finished": 81,
+    "dnf": 1,
+    "dnf_pct": 1.2
+  },
+  {
+    "race": "X Trail C\u00e2mara de Lobos 2023",
+    "distance_bucket": "Short 10-19",
+    "started": 173,
+    "finished": 171,
+    "dnf": 2,
+    "dnf_pct": 1.2
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2012",
+    "distance_bucket": "Medium 20-34",
+    "started": 88,
+    "finished": 87,
+    "dnf": 1,
+    "dnf_pct": 1.1
+  },
+  {
+    "race": "Trail Porto Moniz 2014",
+    "distance_bucket": "Medium 20-34",
+    "started": 181,
+    "finished": 179,
+    "dnf": 2,
+    "dnf_pct": 1.1
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2019",
+    "distance_bucket": "Short 10-19",
+    "started": 370,
+    "finished": 366,
+    "dnf": 4,
+    "dnf_pct": 1.1
+  },
+  {
+    "race": "VII Trail Porto da Cruz Natura 2020",
+    "distance_bucket": "Medium 20-34",
+    "started": 87,
+    "finished": 86,
+    "dnf": 1,
+    "dnf_pct": 1.1
+  },
+  {
+    "race": "VII Trail Porto da Cruz Natura 2020",
+    "distance_bucket": "Short 10-19",
+    "started": 93,
+    "finished": 92,
+    "dnf": 1,
+    "dnf_pct": 1.1
+  },
+  {
+    "race": "Ecotur Trail Porto Moniz 2024",
+    "distance_bucket": "Short 10-19",
+    "started": 87,
+    "finished": 86,
+    "dnf": 1,
+    "dnf_pct": 1.1
+  },
+  {
+    "race": "Ecotrail Madeira 2025",
+    "distance_bucket": "Short 10-19",
+    "started": 182,
+    "finished": 180,
+    "dnf": 2,
+    "dnf_pct": 1.1
+  },
+  {
+    "race": "Ultra Skymarathon Madeira 2014",
+    "distance_bucket": "Short 10-19",
+    "started": 196,
+    "finished": 194,
+    "dnf": 2,
+    "dnf_pct": 1.0
+  },
+  {
+    "race": "Ultra SkyMarathon Madeira",
+    "distance_bucket": "Short 10-19",
+    "started": 202,
+    "finished": 200,
+    "dnf": 2,
+    "dnf_pct": 1.0
+  },
+  {
+    "race": "VI Trail C\u00e2mara de Lobos",
+    "distance_bucket": "Short 10-19",
+    "started": 197,
+    "finished": 195,
+    "dnf": 2,
+    "dnf_pct": 1.0
+  },
+  {
+    "race": "Ecotrail Funchal - Madeira 2019",
+    "distance_bucket": "Short 10-19",
+    "started": 208,
+    "finished": 206,
+    "dnf": 2,
+    "dnf_pct": 1.0
+  },
+  {
+    "race": "IX Trail Porto da Cruz Natura 2022",
+    "distance_bucket": "Short 10-19",
+    "started": 210,
+    "finished": 208,
+    "dnf": 2,
+    "dnf_pct": 1.0
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2026",
+    "distance_bucket": "Marathon 35-49",
+    "started": 675,
+    "finished": 668,
+    "dnf": 7,
+    "dnf_pct": 1.0
+  },
+  {
+    "race": "Ultra SkyMarathon Madeira",
+    "distance_bucket": "Medium 20-34",
+    "started": 235,
+    "finished": 233,
+    "dnf": 2,
+    "dnf_pct": 0.9
+  },
+  {
+    "race": "III Cristo Rei Trail",
+    "distance_bucket": "Medium 20-34",
+    "started": 112,
+    "finished": 111,
+    "dnf": 1,
+    "dnf_pct": 0.9
+  },
+  {
+    "race": "V Trail C\u00e2mara de Lobos",
+    "distance_bucket": "Medium 20-34",
+    "started": 221,
+    "finished": 219,
+    "dnf": 2,
+    "dnf_pct": 0.9
+  },
+  {
+    "race": "IV Maxi Race Madeira 2022",
+    "distance_bucket": "Short 10-19",
+    "started": 114,
+    "finished": 113,
+    "dnf": 1,
+    "dnf_pct": 0.9
+  },
+  {
+    "race": "I Cristo Rei Trail",
+    "distance_bucket": "Short 10-19",
+    "started": 123,
+    "finished": 122,
+    "dnf": 1,
+    "dnf_pct": 0.8
+  },
+  {
+    "race": "Ultra Skyrunning Madeira 2019",
+    "distance_bucket": "Short 10-19",
+    "started": 263,
+    "finished": 261,
+    "dnf": 2,
+    "dnf_pct": 0.8
+  },
+  {
+    "race": "VII Maxi Race Madeira 2025",
+    "distance_bucket": "Medium 20-34",
+    "started": 128,
+    "finished": 127,
+    "dnf": 1,
+    "dnf_pct": 0.8
+  },
+  {
+    "race": "II Trail Porto da Cruz Natura 2015",
+    "distance_bucket": "Marathon 35-49",
+    "started": 153,
+    "finished": 152,
+    "dnf": 1,
+    "dnf_pct": 0.7
+  },
+  {
+    "race": "II Trail Porto da Cruz Natura 2015",
+    "distance_bucket": "Medium 20-34",
+    "started": 270,
+    "finished": 268,
+    "dnf": 2,
+    "dnf_pct": 0.7
+  },
+  {
+    "race": "I Cristo Rei Trail",
+    "distance_bucket": "Medium 20-34",
+    "started": 149,
+    "finished": 148,
+    "dnf": 1,
+    "dnf_pct": 0.7
+  },
+  {
+    "race": "III Trail C\u00e2mara de Lobos",
+    "distance_bucket": "Medium 20-34",
+    "started": 271,
+    "finished": 269,
+    "dnf": 2,
+    "dnf_pct": 0.7
+  },
+  {
+    "race": "ADN Race 2023",
+    "distance_bucket": "Short 10-19",
+    "started": 147,
+    "finished": 146,
+    "dnf": 1,
+    "dnf_pct": 0.7
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2016",
+    "distance_bucket": "Short 10-19",
+    "started": 356,
+    "finished": 354,
+    "dnf": 2,
+    "dnf_pct": 0.6
+  },
+  {
+    "race": "IV Trail C\u00e2mara de Lobos - Rota dos Vinhos",
+    "distance_bucket": "Medium 20-34",
+    "started": 178,
+    "finished": 177,
+    "dnf": 1,
+    "dnf_pct": 0.6
+  },
+  {
+    "race": "VII Trail C\u00e2mara de Lobos",
+    "distance_bucket": "Medium 20-34",
+    "started": 163,
+    "finished": 162,
+    "dnf": 1,
+    "dnf_pct": 0.6
+  },
+  {
+    "race": "ADN Race Ponta do Sol 2021",
+    "distance_bucket": "Short 10-19",
+    "started": 173,
+    "finished": 172,
+    "dnf": 1,
+    "dnf_pct": 0.6
+  },
+  {
+    "race": "II Trail C\u00e2mara de Lobos",
+    "distance_bucket": "Medium 20-34",
+    "started": 210,
+    "finished": 209,
+    "dnf": 1,
+    "dnf_pct": 0.5
+  },
+  {
+    "race": "I Trail da Calheta 2015",
+    "distance_bucket": "Short 10-19",
+    "started": 198,
+    "finished": 197,
+    "dnf": 1,
+    "dnf_pct": 0.5
+  },
+  {
+    "race": "V Trail Ludens Machico 2016",
+    "distance_bucket": "Short 10-19",
+    "started": 201,
+    "finished": 200,
+    "dnf": 1,
+    "dnf_pct": 0.5
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2017",
+    "distance_bucket": "Short 10-19",
+    "started": 433,
+    "finished": 431,
+    "dnf": 2,
+    "dnf_pct": 0.5
+  },
+  {
+    "race": "IV Trail Porto da Cruz Natura 2017",
+    "distance_bucket": "Medium 20-34",
+    "started": 204,
+    "finished": 203,
+    "dnf": 1,
+    "dnf_pct": 0.5
+  },
+  {
+    "race": "VIII Trail C\u00e2mara de Lobos",
+    "distance_bucket": "Short 10-19",
+    "started": 185,
+    "finished": 184,
+    "dnf": 1,
+    "dnf_pct": 0.5
+  },
+  {
+    "race": "X Trail Porto da Cruz Natura 2023",
+    "distance_bucket": "Short 10-19",
+    "started": 222,
+    "finished": 221,
+    "dnf": 1,
+    "dnf_pct": 0.5
+  },
+  {
+    "race": "II Cristo Rei Trail",
+    "distance_bucket": "Short 10-19",
+    "started": 233,
+    "finished": 232,
+    "dnf": 1,
+    "dnf_pct": 0.4
+  },
+  {
+    "race": "Trail do Porto Moniz 2020",
+    "distance_bucket": "Short 10-19",
+    "started": 250,
+    "finished": 249,
+    "dnf": 1,
+    "dnf_pct": 0.4
+  },
+  {
+    "race": "Trail do Porto Moniz 2024",
+    "distance_bucket": "Short 10-19",
+    "started": 249,
+    "finished": 248,
+    "dnf": 1,
+    "dnf_pct": 0.4
+  },
+  {
+    "race": "ADN Race 2025",
+    "distance_bucket": "Short 10-19",
+    "started": 233,
+    "finished": 232,
+    "dnf": 1,
+    "dnf_pct": 0.4
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2022",
+    "distance_bucket": "Short 10-19",
+    "started": 394,
+    "finished": 393,
+    "dnf": 1,
+    "dnf_pct": 0.3
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2026",
+    "distance_bucket": "Short 10-19",
+    "started": 555,
+    "finished": 554,
+    "dnf": 1,
+    "dnf_pct": 0.2
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2008",
+    "distance_bucket": "Long 50-74",
+    "started": 26,
+    "finished": 26,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2009",
+    "distance_bucket": "Long 50-74",
+    "started": 26,
+    "finished": 26,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2011",
+    "distance_bucket": "Long 50-74",
+    "started": 44,
+    "finished": 44,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2013",
+    "distance_bucket": "Medium 20-34",
+    "started": 94,
+    "finished": 94,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "I Trail Porto da Cruz Natura 2014",
+    "distance_bucket": "Medium 20-34",
+    "started": 129,
+    "finished": 129,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Ultra Skymarathon Madeira 2014",
+    "distance_bucket": "Medium 20-34",
+    "started": 209,
+    "finished": 209,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2015",
+    "distance_bucket": "Short 10-19",
+    "started": 282,
+    "finished": 282,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "I Trail de Cora\u00e7\u00e3o na Natureza 2015",
+    "distance_bucket": "Short 10-19",
+    "started": 125,
+    "finished": 125,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Trail Noturno Cani\u00e7al 2015",
+    "distance_bucket": "Short 10-19",
+    "started": 171,
+    "finished": 171,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Columbus Ultra Trail 2016",
+    "distance_bucket": "Ultra 75-99",
+    "started": 24,
+    "finished": 24,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "V Trail Ludens Machico 2016",
+    "distance_bucket": "Medium 20-34",
+    "started": 185,
+    "finished": 185,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Trail do Porto Moniz 2017",
+    "distance_bucket": "Short 10-19",
+    "started": 145,
+    "finished": 145,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Trail do Curral das Freiras",
+    "distance_bucket": "Medium 20-34",
+    "started": 94,
+    "finished": 94,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Trail do Curral das Freiras",
+    "distance_bucket": "Short 10-19",
+    "started": 114,
+    "finished": 114,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Ribeira Brava - Madeira Trail Series 2017",
+    "distance_bucket": "Medium 20-34",
+    "started": 27,
+    "finished": 27,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Ribeira Brava - Madeira Trail Series 2017",
+    "distance_bucket": "Short 10-19",
+    "started": 49,
+    "finished": 49,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "IV Trail Porto da Cruz Natura 2017",
+    "distance_bucket": "Short 10-19",
+    "started": 191,
+    "finished": 191,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "ADN Race Ponta do Sol 2017",
+    "distance_bucket": "Short 10-19",
+    "started": 71,
+    "finished": 71,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Porto Moniz - Madeira Trail Series 2017",
+    "distance_bucket": "Short 10-19",
+    "started": 100,
+    "finished": 100,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Ecotrail Funchal - Madeira Compressport 2017",
+    "distance_bucket": "Short 10-19",
+    "started": 237,
+    "finished": 237,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Porto Santo - Madeira Trail Series 2017",
+    "distance_bucket": "Short 10-19",
+    "started": 36,
+    "finished": 36,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2018",
+    "distance_bucket": "Short 10-19",
+    "started": 389,
+    "finished": 389,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Ultra SkyMarathon Madeira 2018",
+    "distance_bucket": "Medium 20-34",
+    "started": 232,
+    "finished": 232,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "V Trail Porto da Cruz Natura 2018",
+    "distance_bucket": "Short 10-19",
+    "started": 237,
+    "finished": 237,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Ecotrail Funchal - Madeira 2018",
+    "distance_bucket": "Medium 20-34",
+    "started": 93,
+    "finished": 93,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Ecotrail Funchal - Madeira 2018",
+    "distance_bucket": "Short 10-19",
+    "started": 176,
+    "finished": 176,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "VI Trail Porto da Cruz Natura 2019",
+    "distance_bucket": "Short 10-19",
+    "started": 246,
+    "finished": 246,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "ADN Race Ponta do Sol 2019",
+    "distance_bucket": "Medium 20-34",
+    "started": 57,
+    "finished": 57,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "VII Trail C\u00e2mara de Lobos",
+    "distance_bucket": "Short 10-19",
+    "started": 192,
+    "finished": 192,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "II Maxi Race Madeira 2019",
+    "distance_bucket": "Short 10-19",
+    "started": 55,
+    "finished": 55,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Ecotrail Funchal - Madeira 2020",
+    "distance_bucket": "Short 10-19",
+    "started": 203,
+    "finished": 203,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "VIII Trail Porto da Cruz Natura 2021",
+    "distance_bucket": "Short 10-19",
+    "started": 183,
+    "finished": 183,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2021",
+    "distance_bucket": "Short 10-19",
+    "started": 183,
+    "finished": 183,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "III Maxi Race Madeira 2021",
+    "distance_bucket": "Medium 20-34",
+    "started": 68,
+    "finished": 68,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "VIII Trail C\u00e2mara de Lobos",
+    "distance_bucket": "Medium 20-34",
+    "started": 110,
+    "finished": 110,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "IX Trail C\u00e2mara de Lobos",
+    "distance_bucket": "Medium 20-34",
+    "started": 124,
+    "finished": 124,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "IX Trail C\u00e2mara de Lobos",
+    "distance_bucket": "Short 10-19",
+    "started": 195,
+    "finished": 195,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "IV Maxi Race Madeira 2022",
+    "distance_bucket": "Long 50-74",
+    "started": 39,
+    "finished": 39,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "IV Maxi Race Madeira 2022",
+    "distance_bucket": "Medium 20-34",
+    "started": 105,
+    "finished": 105,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Trail do Porto Moniz 2023",
+    "distance_bucket": "Short 10-19",
+    "started": 248,
+    "finished": 248,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2023",
+    "distance_bucket": "Short 10-19",
+    "started": 342,
+    "finished": 342,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "V Maxi Race Madeira 2023",
+    "distance_bucket": "Short 10-19",
+    "started": 145,
+    "finished": 145,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2024",
+    "distance_bucket": "Short 10-19",
+    "started": 432,
+    "finished": 432,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "XI Trail Porto da Cruz Natura 2024",
+    "distance_bucket": "Short 10-19",
+    "started": 270,
+    "finished": 270,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Ecotrail Madeira 2024",
+    "distance_bucket": "Short 10-19",
+    "started": 199,
+    "finished": 199,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "XI Trail de C\u00e2mara de Lobos 2024",
+    "distance_bucket": "Short 10-19",
+    "started": 175,
+    "finished": 175,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "VI Maxi Race Madeira 2024",
+    "distance_bucket": "Short 10-19",
+    "started": 96,
+    "finished": 96,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Trail do Porto Moniz 2025",
+    "distance_bucket": "Medium 20-34",
+    "started": 181,
+    "finished": 181,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Trail do Porto Moniz 2025",
+    "distance_bucket": "Short 10-19",
+    "started": 287,
+    "finished": 287,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Madeira Island Ultra Trail 2025",
+    "distance_bucket": "Short 10-19",
+    "started": 444,
+    "finished": 444,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "XII Trail Porto da Cruz Natura 2025",
+    "distance_bucket": "Short 10-19",
+    "started": 317,
+    "finished": 317,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Ecotur\u00b2 SkyMarathon PM 2025",
+    "distance_bucket": "Short 10-19",
+    "started": 66,
+    "finished": 66,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "VII Maxi Race Madeira 2025",
+    "distance_bucket": "Short 10-19",
+    "started": 67,
+    "finished": 67,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Trail do Porto Moniz 2026",
+    "distance_bucket": "Medium 20-34",
+    "started": 159,
+    "finished": 159,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  },
+  {
+    "race": "Trail do Porto Moniz 2026",
+    "distance_bucket": "Short 10-19",
+    "started": 294,
+    "finished": 294,
+    "dnf": 0,
+    "dnf_pct": 0.0
+  }
+]

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Madeira water mill icon">
+  <rect width="512" height="512" rx="112" fill="#1f4d32"/>
+  <g transform="translate(86 54) scale(1.55)" fill="none" stroke="#f5f2ea" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <g>
+      <circle cx="110" cy="110" r="90"/>
+      <circle cx="110" cy="110" r="76" stroke-dasharray="5 12" stroke-opacity="0.58"/>
+      <circle cx="110" cy="110" r="7" fill="#f5f2ea" stroke="none"/>
+      <line x1="20" y1="110" x2="200" y2="110"/>
+      <line x1="110" y1="20" x2="110" y2="200"/>
+      <line x1="46.4" y1="46.4" x2="173.6" y2="173.6"/>
+      <line x1="46.4" y1="173.6" x2="173.6" y2="46.4"/>
+    </g>
+    <path d="M0 232C30 222 50 244 80 232S130 222 160 232S200 244 220 232"/>
+    <path d="M0 248C30 238 50 260 80 248S130 238 160 248S200 260 220 248" stroke-opacity="0.58"/>
+  </g>
+</svg>

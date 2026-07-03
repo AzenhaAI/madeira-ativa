@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Levadas — Madeira walking trails</title>
+<link rel="icon" href="/madeira/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/madeira/icon-192.png?v=5e8787d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F5F2EA; --accent: #1F4D32; --soft: #6B8763; --line: #DAD3C5; --ink: #15201A;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: Inter, system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 20px 18px 60px; }
+  .topbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
+  .back { color: var(--soft); text-decoration: none; font-size: 15px; }
+  .back:hover { color: var(--accent); }
+  .lang { display: flex; gap: 4px; }
+  .lang button {
+    border: 1px solid var(--line); background: none; color: var(--soft);
+    border-radius: 999px; padding: 4px 11px; font: inherit; font-size: 13px; cursor: pointer;
+  }
+  .lang button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .brand-bar { display: flex; justify-content: space-between; align-items: center; padding: 6px 0 10px; }
+  .brand-link { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; transition: opacity 0.2s; }
+  .brand-link:hover { opacity: 0.8; }
+  .brand-icon { width: 32px; height: 32px; border-radius: 7px; flex-shrink: 0; }
+  .brand-name { font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 18px; color: var(--accent); letter-spacing: -0.01em; }
+  .section-nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(245,242,234,0.92);
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+    margin: 0 -18px 18px; padding: 0 18px;
+  }
+  .section-nav-inner { display: flex; overflow-x: auto; scrollbar-width: none; }
+  .section-nav-inner::-webkit-scrollbar { display: none; }
+  .section-nav a {
+    flex-shrink: 0; padding: 12px 14px; font-size: 13px; font-weight: 600;
+    color: var(--soft); text-decoration: none; border-bottom: 2px solid transparent;
+    white-space: nowrap; cursor: pointer; transition: all 0.2s;
+  }
+  .section-nav a:hover { color: var(--accent); }
+  .section-nav a.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .nav-spacer { flex: 1; min-width: 12px; }
+  .section-nav a.nav-3d { color: #fff; background: var(--accent); border-radius: 999px; padding: 5px 12px; margin: 6px 0 6px 6px; font-size: 12px; border-bottom: 0; }
+  .section-nav a.nav-3d:hover { background: #163d27; color: #fff; }
+  .section-nav a.nav-2d { color: var(--accent); background: none; border: 1px solid var(--accent); border-radius: 999px; padding: 4px 11px; margin: 6px 0 6px 6px; font-size: 12px; border-bottom: 1px solid var(--accent); }
+  .section-nav a.nav-2d:hover { background: rgba(31,77,50,0.08); color: var(--accent); }
+  h1 {
+    font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: clamp(30px, 6vw, 46px);
+    letter-spacing: -0.02em; margin: 0 0 6px;
+  }
+  .sub { color: var(--soft); font-size: 16px; margin: 0 0 18px; }
+  .map-card {
+    border: 1px solid var(--line); border-radius: 12px; overflow: hidden; margin-bottom: 8px;
+    position: relative; background: #e9e4d8;
+  }
+  .map-card iframe { width: 100%; height: 320px; border: 0; display: block; }
+  .map-open {
+    position: absolute; right: 10px; bottom: 10px; background: var(--accent); color: #fff;
+    text-decoration: none; font-size: 13px; font-weight: 600; padding: 7px 12px; border-radius: 8px;
+  }
+  .counts { display: flex; gap: 16px; font-size: 14px; color: var(--soft); margin: 12px 2px 18px; flex-wrap: wrap; }
+  .counts b { color: var(--ink); }
+  .filters { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; margin-bottom: 18px; }
+  .filters::-webkit-scrollbar { display: none; }
+  .filters button {
+    flex-shrink: 0; border: 1px solid var(--line); background: none; color: var(--ink);
+    border-radius: 999px; padding: 7px 14px; font: inherit; font-size: 14px; font-weight: 500; cursor: pointer;
+  }
+  .filters button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .card {
+    border: 1px solid var(--line); border-radius: 12px; padding: 16px 16px 14px;
+    margin-bottom: 12px; background: #fbf9f4;
+  }
+  .card-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .card-code { font-weight: 700; color: var(--soft); font-size: 13px; }
+  .card-title { font-family: Fraunces, Georgia, serif; font-size: 23px; font-weight: 600; line-height: 1.1; flex: 1; min-width: 60%; }
+  .badge { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; padding: 3px 9px; border-radius: 999px; white-space: nowrap; }
+  .badge.open { color: #2e7d4f; background: rgba(46,158,91,0.14); }
+  .badge.partial { color: #9a6a16; background: rgba(224,144,42,0.16); }
+  .badge.closed { color: #b23a2e; background: rgba(226,59,46,0.13); }
+  .stats { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 12px 0 10px; font-size: 14px; }
+  .stat { color: var(--soft); }
+  .stat b { color: var(--ink); font-weight: 700; }
+  .route { font-size: 14px; color: var(--ink); margin: 6px 0; }
+  .route .arrow { color: var(--soft); margin: 0 6px; }
+  .route .lbl { color: var(--soft); }
+  .desc { font-size: 14px; color: #3c4a40; line-height: 1.45; margin: 8px 0 0; }
+  .diff { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: var(--soft); }
+  .diff-meter { display: inline-flex; gap: 2px; }
+  .diff-seg { width: 14px; height: 5px; border-radius: 2px; background: var(--line); }
+  .spark { width: 100%; height: 46px; margin: 10px 0 4px; display: block; }
+  .spark-cap { font-size: 11px; color: var(--soft); display: flex; justify-content: space-between; margin-bottom: 8px; }
+  .diff-filter { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; margin-bottom: 16px; }
+  .diff-filter::-webkit-scrollbar { display: none; }
+  .diff-filter button {
+    flex-shrink: 0; border: 1px solid var(--line); background: none; color: var(--ink);
+    border-radius: 999px; padding: 6px 13px; font: inherit; font-size: 13px; font-weight: 500; cursor: pointer;
+  }
+  .diff-filter button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .scatter-card { border: 1px solid var(--line); border-radius: 12px; padding: 14px 14px 6px; margin-bottom: 18px; background: #fbf9f4; }
+  .scatter-title { font-size: 13px; font-weight: 600; color: var(--accent); margin-bottom: 2px; }
+  .scatter-sub { font-size: 12px; color: var(--soft); margin-bottom: 6px; }
+  .scatter { width: 100%; height: 240px; display: block; }
+  .scatter circle { cursor: pointer; transition: r 0.1s; }
+  .card.flash { box-shadow: 0 0 0 2px var(--accent); }
+  .card-links { display: flex; gap: 14px; margin-top: 12px; flex-wrap: wrap; }
+  .card-links button { background: none; border: 0; padding: 0; font: inherit; color: var(--accent); font-size: 14px; font-weight: 600; cursor: pointer; }
+  .card-links button:hover { text-decoration: underline; }
+  .card-links a { color: var(--accent); text-decoration: none; font-size: 14px; font-weight: 600; }
+  .card-links a:hover { text-decoration: underline; }
+  .mark { display: inline-block; width: 10px; height: 10px; border-radius: 50%; vertical-align: middle; margin-right: 4px; border: 1px solid rgba(0,0,0,0.15); }
+  .src { color: var(--soft); font-size: 12px; margin-top: 26px; text-align: center; }
+  .src a { color: var(--soft); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand-bar">
+    <a class="brand-link" href="/madeira/">
+      <svg class="brand-icon" viewBox="0 0 512 512" aria-hidden="true">
+        <rect width="512" height="512" rx="112" fill="#1f4d32"/>
+        <g transform="translate(86 54) scale(1.55)" fill="none" stroke="#f5f2ea" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="110" cy="110" r="90"/>
+          <circle cx="110" cy="110" r="76" stroke-dasharray="5 12" stroke-opacity="0.58"/>
+          <circle cx="110" cy="110" r="7" fill="#f5f2ea" stroke="none"/>
+          <line x1="20" y1="110" x2="200" y2="110"/>
+          <line x1="110" y1="20" x2="110" y2="200"/>
+          <line x1="46.4" y1="46.4" x2="173.6" y2="173.6"/>
+          <line x1="46.4" y1="173.6" x2="173.6" y2="46.4"/>
+          <path d="M0 232C30 222 50 244 80 232S130 222 160 232S200 244 220 232"/>
+          <path d="M0 248C30 238 50 260 80 248S130 238 160 248S200 260 220 248" stroke-opacity="0.58"/>
+        </g>
+      </svg>
+      <span class="brand-name">Madeira Ative</span>
+    </a>
+    <div class="lang">
+      <button data-set-lang="en">EN</button>
+      <button data-set-lang="pt">PT</button>
+    </div>
+  </div>
+
+  <nav class="section-nav">
+    <div class="section-nav-inner" id="nav">
+      <a data-nav="map"><span data-lang="en">Map</span><span data-lang="pt">Mapa</span></a>
+      <a data-nav="all" class="active"><span data-lang="en">All</span><span data-lang="pt">Todos</span></a>
+      <a data-nav="open"><span data-lang="en">Open</span><span data-lang="pt">Abertos</span></a>
+      <a data-nav="partial"><span data-lang="en">Restricted</span><span data-lang="pt">Restritos</span></a>
+      <a data-nav="closed"><span data-lang="en">Closed</span><span data-lang="pt">Encerrados</span></a>
+      <span class="nav-spacer"></span>
+      <a class="nav-2d" href="/madeira/map?layer=walk">2D ↗</a>
+      <a class="nav-3d" href="/madeira/map3d">3D ↗</a>
+      <a class="nav-3d" href="/madeira/mapfly"><span data-lang="en">Fly ↗</span><span data-lang="pt">Voo ↗</span></a>
+      <a class="nav-3d" href="/madeira/mapbay"><span data-lang="en">Aerial ↗</span><span data-lang="pt">Aéreo ↗</span></a>
+    </div>
+  </nav>
+
+  <h1>Levadas</h1>
+  <p class="sub">
+    <span data-lang="en">Madeira's classified walking trails — distance, ascent, how to get there and current status.</span>
+    <span data-lang="pt">Percursos pedestres classificados da Madeira — distância, subida, como chegar e estado atual.</span>
+  </p>
+
+  <div class="map-card">
+    <iframe id="map-frame" title="Madeira walking trails map" loading="lazy"></iframe>
+    <a class="map-open" id="map-open" href="/madeira/map?layer=walk" target="_blank" rel="noopener">
+      <span data-lang="en">Open full map ↗</span><span data-lang="pt">Abrir mapa ↗</span>
+    </a>
+  </div>
+
+  <div class="scatter-card">
+    <div class="scatter-title" data-lang="en" style="display:none">Distance × climb</div>
+    <div class="scatter-title" data-lang="pt" style="display:none">Distância × subida</div>
+    <div class="scatter-sub">
+      <span data-lang="en" style="display:none">Each dot is a trail — colour by status, size by difficulty. Tap to jump to it.</span>
+      <span data-lang="pt" style="display:none">Cada ponto é um percurso — cor por estado, tamanho por dificuldade. Toque para ir até ele.</span>
+    </div>
+    <svg class="scatter" id="scatter" viewBox="0 0 600 240" preserveAspectRatio="xMidYMid meet"></svg>
+  </div>
+
+  <div class="counts" id="counts"></div>
+
+  <div class="diff-filter" id="diff-filter">
+    <button data-diff="0" class="active"><span data-lang="en">Any difficulty</span><span data-lang="pt">Qualquer dificuldade</span></button>
+    <button data-diff="1"><span data-lang="en">Easy</span><span data-lang="pt">Fácil</span></button>
+    <button data-diff="2"><span data-lang="en">Moderate</span><span data-lang="pt">Moderado</span></button>
+    <button data-diff="3"><span data-lang="en">Hard</span><span data-lang="pt">Difícil</span></button>
+    <button data-diff="4"><span data-lang="en">Severe</span><span data-lang="pt">Severo</span></button>
+  </div>
+
+  <div id="list"></div>
+
+  <p class="src" id="src"></p>
+</div>
+
+<script>
+var VALID = ['en', 'pt'];
+var urlLang = new URLSearchParams(location.search).get('lang');
+var lang = VALID.indexOf(urlLang) !== -1 ? urlLang : 'en';
+var data = null;
+var filter = 'all';
+var sortBy = null;
+var diffFilter = 0;
+var STATUS_ORDER = { open: 0, partial: 1, closed: 2 };
+
+var STATUS_LABEL = {
+  open:    { en: 'Open', pt: 'Aberto' },
+  partial: { en: 'Restricted', pt: 'Parcial' },
+  closed:  { en: 'Closed', pt: 'Encerrado' },
+};
+var T = {
+  dist:  { en: 'km', pt: 'km' },
+  asc:   { en: 'climb', pt: 'subida' },
+  loop:  { en: 'Loop', pt: 'Circular' },
+  oneway:{ en: 'One way', pt: 'Ida' },
+  start: { en: 'Start', pt: 'Início' },
+  end:   { en: 'End', pt: 'Fim' },
+  fee:   { en: 'Ticket required', pt: 'Bilhete obrigatório' },
+  guide: { en: 'Guide & photos ↗', pt: 'Guia e fotos ↗' },
+  onmap: { en: 'Show on map', pt: 'Ver no mapa' },
+};
+var DIFF = [
+  { max: 8,   level: 1, en: 'Easy',     pt: 'Fácil',    color: '#2e9e5b' },
+  { max: 15,  level: 2, en: 'Moderate', pt: 'Moderado', color: '#c8912f' },
+  { max: 24,  level: 3, en: 'Hard',     pt: 'Difícil',  color: '#d2691e' },
+  { max: 1e9, level: 4, en: 'Severe',   pt: 'Severo',   color: '#b23a2e' },
+];
+function effort(l) { return (l.distance_km || 0) + (l.ascent_m || 0) / 100; }
+function difficulty(l) { var e = effort(l); for (var i = 0; i < DIFF.length; i++) if (e < DIFF[i].max) return DIFF[i]; return DIFF[3]; }
+
+function sparkline(profile) {
+  if (!profile || profile.length < 2) return '';
+  var w = 300, h = 46, pad = 3;
+  var min = Math.min.apply(null, profile), max = Math.max.apply(null, profile);
+  var span = max - min || 1;
+  var pts = profile.map(function (e, i) {
+    var x = pad + i * (w - 2 * pad) / (profile.length - 1);
+    var y = h - pad - (e - min) / span * (h - 2 * pad);
+    return x.toFixed(1) + ',' + y.toFixed(1);
+  });
+  var area = 'M' + pad + ',' + (h - pad) + ' L' + pts.join(' L') + ' L' + (w - pad) + ',' + (h - pad) + ' Z';
+  return '<svg class="spark" viewBox="0 0 ' + w + ' ' + h + '" preserveAspectRatio="none">' +
+    '<path d="' + area + '" fill="rgba(31,77,50,0.10)"/>' +
+    '<polyline points="' + pts.join(' ') + '" fill="none" stroke="#1F4D32" stroke-width="1.6" stroke-linejoin="round"/>' +
+    '</svg>';
+}
+
+function focusOnMap(code) {
+  var f = document.getElementById('map-frame');
+  if (f && f.contentWindow) f.contentWindow.postMessage({ focusTrail: code }, '*');
+  document.querySelector('.map-card').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function renderScatter() {
+  var svg = document.getElementById('scatter');
+  var W = 600, H = 240, ml = 38, mr = 12, mt = 10, mb = 28;
+  var ls = data.levadas.filter(function (l) { return l.distance_km && l.ascent_m != null; });
+  var maxD = Math.max.apply(null, ls.map(function (l) { return l.distance_km; }));
+  var maxA = Math.max.apply(null, ls.map(function (l) { return l.ascent_m; }));
+  var x = function (d) { return ml + d / maxD * (W - ml - mr); };
+  var y = function (a) { return H - mb - a / maxA * (H - mt - mb); };
+  var COL = { open: '#2e9e5b', partial: '#e0902a', closed: '#e23b2e' };
+  var g = '';
+  // axes
+  g += '<line x1="' + ml + '" y1="' + (H - mb) + '" x2="' + (W - mr) + '" y2="' + (H - mb) + '" stroke="#DAD3C5"/>';
+  g += '<line x1="' + ml + '" y1="' + mt + '" x2="' + ml + '" y2="' + (H - mb) + '" stroke="#DAD3C5"/>';
+  g += '<text x="' + (W - mr) + '" y="' + (H - 10) + '" text-anchor="end" font-size="10" fill="#6B8763">' + (lang === 'pt' ? 'distância (km) →' : 'distance (km) →') + '</text>';
+  g += '<text x="' + ml + '" y="' + (mt + 2) + '" font-size="10" fill="#6B8763">↑ ' + (lang === 'pt' ? 'subida (m)' : 'climb (m)') + '</text>';
+  ls.forEach(function (l) {
+    var d = difficulty(l);
+    var r = 4 + d.level * 1.6;
+    g += '<circle cx="' + x(l.distance_km).toFixed(1) + '" cy="' + y(l.ascent_m).toFixed(1) + '" r="' + r +
+      '" fill="' + COL[l.status] + '" fill-opacity="0.7" stroke="#fff" stroke-width="1" data-code="' + esc(l.code) + '">' +
+      '<title>' + esc(l.code + ' — ' + l.name) + ' · ' + l.distance_km + ' km · ↑' + l.ascent_m + ' m</title></circle>';
+  });
+  svg.innerHTML = g;
+  svg.querySelectorAll('circle').forEach(function (c) {
+    c.addEventListener('click', function () { jumpToCard(c.getAttribute('data-code')); });
+  });
+}
+
+function jumpToCard(code) {
+  var card = document.querySelector('.card[data-code="' + code + '"]');
+  if (!card) { filter = 'all'; setActiveNav('all'); render(); card = document.querySelector('.card[data-code="' + code + '"]'); }
+  if (card) {
+    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    card.classList.add('flash');
+    setTimeout(function () { card.classList.remove('flash'); }, 1600);
+  }
+}
+
+function setActiveNav(f) {
+  document.querySelectorAll('#nav [data-nav]').forEach(function (x) {
+    var n = x.getAttribute('data-nav');
+    if (['all', 'open', 'partial', 'closed'].indexOf(n) !== -1) x.classList.toggle('active', n === f);
+  });
+}
+
+function applyLang() {
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-lang]').forEach(function (el) {
+    el.style.display = el.getAttribute('data-lang') === lang ? '' : 'none';
+  });
+  document.querySelectorAll('.lang button').forEach(function (b) {
+    b.classList.toggle('active', b.getAttribute('data-set-lang') === lang);
+  });
+  document.getElementById('map-frame').src =
+    '/madeira/map.html?embed=1&theme=light&layer=walk&lang=' + lang;
+  document.getElementById('map-open').href = '/madeira/map?layer=walk&lang=' + lang;
+  if (data) render();
+}
+
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+    return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+  });
+}
+
+function render() {
+  var items = data.levadas.slice();
+  if (filter !== 'all') items = items.filter(function (l) { return l.status === filter; });
+  if (diffFilter) items = items.filter(function (l) { return difficulty(l).level === diffFilter; });
+  if (sortBy === 'dist') items.sort(function (a, b) { return (b.distance_km || 0) - (a.distance_km || 0); });
+  else if (sortBy === 'climb') items.sort(function (a, b) { return (b.ascent_m || 0) - (a.ascent_m || 0); });
+  else if (sortBy === 'diff') items.sort(function (a, b) { return effort(b) - effort(a); });
+  else items.sort(function (a, b) { return (STATUS_ORDER[a.status] - STATUS_ORDER[b.status]) || a.code.localeCompare(b.code); });
+
+  var html = items.map(function (l) {
+    var sl = STATUS_LABEL[l.status] || STATUS_LABEL.open;
+    var df = difficulty(l);
+    var desc = lang === 'pt' ? l.desc_pt : l.desc_en;
+    var url = lang === 'pt' ? (l.url_pt || l.url_en) : (l.url_en || l.url_pt);
+    var stats = [];
+    if (l.distance_km) stats.push('<span class="stat"><b>' + l.distance_km + '</b> ' + T.dist[lang] + '</span>');
+    if (l.ascent_m != null) stats.push('<span class="stat">↑ <b>' + l.ascent_m + '</b> m ' + T.asc[lang] + '</span>');
+    stats.push('<span class="stat">' + (l.roundtrip ? T.loop[lang] : T.oneway[lang]) + '</span>');
+    if (l.fee) stats.push('<span class="stat">🎟 ' + T.fee[lang] + (l.charge ? ' · ' + esc(l.charge) : '') + '</span>');
+
+    var meter = '';
+    for (var i = 1; i <= 4; i++) meter += '<span class="diff-seg" style="background:' + (i <= df.level ? df.color : '') + '"></span>';
+    var diffEl = '<span class="diff" style="color:' + df.color + '"><span class="diff-meter">' + meter + '</span>' + df[lang] + '</span>';
+
+    var spark = l.profile && l.profile.length > 1
+      ? '<div class="spark-cap"><span>' + T.asc[lang] + ' ↑' + (l.ascent_m || 0) + ' m</span><span>↓' + (l.descent_m || 0) + ' m</span></div>' + sparkline(l.profile)
+      : '';
+
+    var route = '';
+    if (l.from || l.to) {
+      route = '<div class="route">';
+      if (l.marking) route += '<span class="mark" style="background:' + esc(l.marking) + '"></span>';
+      if (l.from) route += '<span class="lbl">' + T.start[lang] + ':</span> ' + esc(l.from);
+      if (l.to) route += '<span class="arrow">→</span><span class="lbl">' + T.end[lang] + ':</span> ' + esc(l.to);
+      route += '</div>';
+    }
+
+    var links = '<button data-focus="' + esc(l.code) + '">📍 ' + T.onmap[lang] + '</button>';
+    if (url) links += '<a href="' + esc(url) + '" target="_blank" rel="noopener">' + T.guide[lang] + '</a>';
+
+    return '<div class="card" data-code="' + esc(l.code) + '">' +
+      '<div class="card-head">' +
+        '<span class="card-code">' + esc(l.code) + '</span>' +
+        '<span class="card-title">' + esc(l.name) + '</span>' +
+        '<span class="badge ' + l.status + '">' + sl[lang] + '</span>' +
+      '</div>' +
+      '<div class="stats">' + stats.join('') + diffEl + '</div>' +
+      spark +
+      route +
+      (desc ? '<p class="desc">' + esc(desc) + '</p>' : '') +
+      '<div class="card-links">' + links + '</div>' +
+    '</div>';
+  }).join('');
+
+  var listEl = document.getElementById('list');
+  listEl.innerHTML = html ||
+    '<p class="sub">' + (lang === 'pt' ? 'Sem percursos para este filtro.' : 'No trails for this filter.') + '</p>';
+  listEl.querySelectorAll('[data-focus]').forEach(function (b) {
+    b.addEventListener('click', function () { focusOnMap(b.getAttribute('data-focus')); });
+  });
+
+  var c = { open: 0, partial: 0, closed: 0 };
+  data.levadas.forEach(function (l) { c[l.status] = (c[l.status] || 0) + 1; });
+  document.getElementById('counts').innerHTML =
+    '<span><b>' + data.levadas.length + '</b> ' + (lang === 'pt' ? 'percursos' : 'trails') + '</span>' +
+    '<span style="color:#2e7d4f"><b>' + c.open + '</b> ' + STATUS_LABEL.open[lang] + '</span>' +
+    '<span style="color:#9a6a16"><b>' + c.partial + '</b> ' + STATUS_LABEL.partial[lang] + '</span>' +
+    '<span style="color:#b23a2e"><b>' + c.closed + '</b> ' + STATUS_LABEL.closed[lang] + '</span>';
+
+  renderScatter();
+}
+
+document.querySelectorAll('.lang button').forEach(function (b) {
+  b.onclick = function () { lang = b.getAttribute('data-set-lang'); applyLang(); };
+});
+document.getElementById('diff-filter').addEventListener('click', function (e) {
+  var b = e.target.closest('[data-diff]');
+  if (!b) return;
+  diffFilter = parseInt(b.getAttribute('data-diff'), 10);
+  document.querySelectorAll('#diff-filter button').forEach(function (x) { x.classList.toggle('active', x === b); });
+  render();
+});
+document.getElementById('nav').addEventListener('click', function (e) {
+  var a = e.target.closest('[data-nav]');
+  if (!a) return;
+  e.preventDefault();
+  var nav = a.getAttribute('data-nav');
+  if (nav === 'map') {
+    document.querySelector('.map-card').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    return;
+  }
+  filter = nav;
+  setActiveNav(nav);
+  document.getElementById('list').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  render();
+});
+
+fetch('levadas.json').then(function (r) { return r.json(); }).then(function (d) {
+  data = d;
+  document.getElementById('src').innerHTML = esc(d.attribution || '');
+  render();
+}).catch(function () {
+  document.getElementById('list').innerHTML = '<p class="sub">Could not load levadas.</p>';
+});
+
+applyLang();
+</script>
+</body>
+</html>

@@ -1,0 +1,334 @@
+[
+  {
+    "locality": "Funchal",
+    "finishers": 4949,
+    "clubs": 76,
+    "top_clubs": [
+      "CLUBE DE MONTANHA DO FUNCHAL",
+      "CLUBE AVENTURA DA MADEIRA",
+      "NATURE HIGH RUNNING",
+      "MADEIRA TRAIL TEAM",
+      "CENTRO CULTURAL E DESPORTIVO DA CÂMARA MUNICIPAL DO FUNCHAL"
+    ]
+  },
+  {
+    "locality": "Porto da Cruz",
+    "finishers": 1369,
+    "clubs": 13,
+    "top_clubs": [
+      "Associação Porto da Cruz Trail Team",
+      "Porto da Cruz Trail Team",
+      "CLUBE DESPORTIVO ESCOLA DO PORTO DA CRUZ",
+      "CLUBE DESPORTIVO ESCOLA PORTO DA CRUZ",
+      "ASSOCIAÇAO PORTO DA CRUZ TRAIL TEAM"
+    ]
+  },
+  {
+    "locality": "Santana",
+    "finishers": 1031,
+    "clubs": 16,
+    "top_clubs": [
+      "CLUBE DESPORTIVO ESCOLA DE SANTANA",
+      "CLUBE DESPORTIVO ESCOLA DE SANTANA - CDES",
+      "CLUBE DESPORTIVO ESCOLA SANTANA - CDES",
+      "CLUBE DESPORTIVO ESCOLA DE SANTANA - QUINTA DO FURÃO",
+      "Clube Desportivo Escola Santana"
+    ]
+  },
+  {
+    "locality": "Jardim da Serra",
+    "finishers": 1024,
+    "clubs": 5,
+    "top_clubs": [
+      "ACD JARDIM DA SERRA",
+      "ASSOCIAÇÃO CULTURAL E DESPORTIVA DO JARDIM DA SERRA",
+      "A.C.D. JARDIM DA SERRA",
+      "Jardim da Serra",
+      "ASSOCIAÇÃO JARDIM DA SERRA"
+    ]
+  },
+  {
+    "locality": "São Vicente",
+    "finishers": 996,
+    "clubs": 8,
+    "top_clubs": [
+      "CLUBE NAVAL DE SÃO VICENTE",
+      "Clube Naval São Vicente",
+      "ASSOCIAÇÃO CULTURAL E DESPORTIVA SÃO VICENTE",
+      "GRUPO DESPORTIVO DE SÃO VICENTE FERREIRA",
+      "ACD SÃO VICENTE"
+    ]
+  },
+  {
+    "locality": "Caniço",
+    "finishers": 958,
+    "clubs": 15,
+    "top_clubs": [
+      "GRUPO RECREATIVO CRUZADO CANICENSE",
+      "ASSOCIAÇÃO DESPORTIVA GALOMAR",
+      "CLUBE KARATÉ CANIÇO",
+      "Clube Karaté do Caniço",
+      "AD GALOMAR"
+    ]
+  },
+  {
+    "locality": "Câmara de Lobos",
+    "finishers": 874,
+    "clubs": 8,
+    "top_clubs": [
+      "CLUBE DESPORTIVO INFANTE",
+      "CASA DO POVO DE CÂMARA DE LOBOS",
+      "EB23 Estreito de Câmara de Lobos",
+      "CLUBE ESCOLA DA LEVADA",
+      "EB23 Estreito Câmara de Lobos"
+    ]
+  },
+  {
+    "locality": "Porto Moniz",
+    "finishers": 821,
+    "clubs": 11,
+    "top_clubs": [
+      "Clube desportivo e cultural do Porto Moniz",
+      "CDC Porto Moniz",
+      "CLUBE CULTURAL E DESPORTIVO DO PORTO MONIZ",
+      "CLUBE DESPORTIVO E CULTURAL DE PORTO MONIZ",
+      "CASA DO POVO DO PORTO MONIZ"
+    ]
+  },
+  {
+    "locality": "Estreito",
+    "finishers": 816,
+    "clubs": 11,
+    "top_clubs": [
+      "Clube Escola do Estreito - Madeira",
+      "Clube Escola do Estreito",
+      "GRUPO DESPORTIVO DO ESTREITO",
+      "CLUBE ESCOLA DO ESTREITO - CEE",
+      "CLUBE ESCOLA DO ESTREITO / CEE-M"
+    ]
+  },
+  {
+    "locality": "Ribeira Brava",
+    "finishers": 720,
+    "clubs": 2,
+    "top_clubs": [
+      "ADRAP",
+      "CLUBE DESPORTIVO MAR E SERRA"
+    ]
+  },
+  {
+    "locality": "Corticeiras",
+    "finishers": 707,
+    "clubs": 11,
+    "top_clubs": [
+      "GRUPO DESPORTIVO DAS CORTICEIRAS",
+      "Grupo Desportivo Corticeiras",
+      "GRUPO DESPORTIVOS DAS CORTICEIRAS",
+      "GD CORTICEIRAS",
+      "Clube desportivo das corticeiras"
+    ]
+  },
+  {
+    "locality": "Machico",
+    "finishers": 609,
+    "clubs": 17,
+    "top_clubs": [
+      "LUDENS CLUBE DE MACHICO",
+      "Machicorent",
+      "LUDENS CLUBE MACHICO",
+      "CÂMARA MUNICIPAL DE MACHICO",
+      "LUDENS MACHICO"
+    ]
+  },
+  {
+    "locality": "Camacha",
+    "finishers": 463,
+    "clubs": 11,
+    "top_clubs": [
+      "Associação Desportiva da Camacha",
+      "CASA DO POVO DA CAMACHA",
+      "AD CAMACHA",
+      "ADCAMACHA",
+      "ASSOCIAÇÃO DESPORTIVO DA CAMACHA"
+    ]
+  },
+  {
+    "locality": "Santa Cruz",
+    "finishers": 211,
+    "clubs": 4,
+    "top_clubs": [
+      "SPORTING CLUB SANTACRUZENSE",
+      "AEROPORTOS DA MADEIRA - SSLCI",
+      "SANTA CRUZ",
+      "SANTA CRUZ TEAM - SEIA"
+    ]
+  },
+  {
+    "locality": "Ponta do Sol",
+    "finishers": 205,
+    "clubs": 3,
+    "top_clubs": [
+      "ADN Ponta do Sol",
+      "ADN - PONTA DO SOL",
+      "CTM PONTA DO SOL"
+    ]
+  },
+  {
+    "locality": "Santo António",
+    "finishers": 164,
+    "clubs": 7,
+    "top_clubs": [
+      "ASSOCIAÇÃO DESPORTIVA E CULTURAL DE SANTO ANTÓNIO DA SERRA",
+      "ADC SANTO ANTÓNIO DA SERRA",
+      "A. D. C. SANTO ANTÓNIO DA SERRA",
+      "JUNTA DE FREGUESIA DE SANTO ANTÓNIO DA SERRA",
+      "ASSOCIAÇÃO DESPORTIVA E CULTURAL SANTO ANTÓNIO DA SERRA"
+    ]
+  },
+  {
+    "locality": "Faial",
+    "finishers": 141,
+    "clubs": 1,
+    "top_clubs": [
+      "ATLAFA"
+    ]
+  },
+  {
+    "locality": "Calheta",
+    "finishers": 95,
+    "clubs": 10,
+    "top_clubs": [
+      "ESTRELA DA CALHETA FC",
+      "MELCALHETA",
+      "ESTRELA DA CALHETA FUTEBOL CLUBE",
+      "Mel Calheta",
+      "HortiCalheta Unip. Lda"
+    ]
+  },
+  {
+    "locality": "Campanário",
+    "finishers": 84,
+    "clubs": 1,
+    "top_clubs": [
+      "CF Carvalheiro"
+    ]
+  },
+  {
+    "locality": "Prazeres",
+    "finishers": 69,
+    "clubs": 5,
+    "top_clubs": [
+      "C.D.R. PRAZERES",
+      "CDR PRAZERES",
+      "CLUBE DESPORTIVO E RECREATIVO DOS PRAZERES",
+      "CDR-PRAZERES",
+      "C.D.R.PRAZERES/RESTAURANTE ROCHA MAR"
+    ]
+  },
+  {
+    "locality": "Monte",
+    "finishers": 61,
+    "clubs": 16,
+    "top_clubs": [
+      "CLUBE DESPORTIVO INFANTE /ESCOTEIROS DO MONTE",
+      "O QUE QUEREMOS É MONTE",
+      "PÉ NO MONTE",
+      "LOBOS DO MONTE RUN",
+      "CONFRARIA TROTAMONTES"
+    ]
+  },
+  {
+    "locality": "Água de Pena",
+    "finishers": 59,
+    "clubs": 2,
+    "top_clubs": [
+      "ASSOCIAÇÃO DESPORTIVA E RECREATIVA DE ÁGUA DE PENA",
+      "Associação Desportiva Recreativa Água de Pena"
+    ]
+  },
+  {
+    "locality": "Gaula",
+    "finishers": 59,
+    "clubs": 6,
+    "top_clubs": [
+      "Clube Sport Juventude De Gaula",
+      "CLUBE SPORT JUVENTUDE GAULA",
+      "CLUB SPORT JUVENTUDE DE GAULA",
+      "CS JUVENTUDE DE GAULA",
+      "CSJG CLUB SPORT JUVENTUDE DE GAULA"
+    ]
+  },
+  {
+    "locality": "Curral das Freiras",
+    "finishers": 58,
+    "clubs": 3,
+    "top_clubs": [
+      "CLUBE DESPORTIVO DO CURRAL DAS FREIRAS",
+      "CLUBE DESPORTIVO CURRAL DAS FREIRAS",
+      "Clube Escola Curral das Freiras"
+    ]
+  },
+  {
+    "locality": "Boaventura",
+    "finishers": 29,
+    "clubs": 8,
+    "top_clubs": [
+      "Junta de Freguesia de Boaventura",
+      "ACD BOAVENTURA",
+      "Acdboaventura",
+      "BOAVENTURA TRAIL RUNNER",
+      "BOAVENTURA TRAIL"
+    ]
+  },
+  {
+    "locality": "Seixal",
+    "finishers": 17,
+    "clubs": 2,
+    "top_clubs": [
+      "CLUBE NAVAL DO SEIXAL",
+      "CLUBE NAVAL SEIXAL"
+    ]
+  },
+  {
+    "locality": "Porto Santo",
+    "finishers": 8,
+    "clubs": 2,
+    "top_clubs": [
+      "GINÁSIO CLUBE PORTO SANTO",
+      "SPORTING CLUBE PORTO SANTO"
+    ]
+  },
+  {
+    "locality": "São Martinho",
+    "finishers": 4,
+    "clubs": 1,
+    "top_clubs": [
+      "C.D.C. SÃO MARTINHO DA GÂNDARA"
+    ]
+  },
+  {
+    "locality": "Ponta Delgada",
+    "finishers": 2,
+    "clubs": 1,
+    "top_clubs": [
+      "ADR PONTA DELGADA"
+    ]
+  },
+  {
+    "locality": "Caniçal",
+    "finishers": 2,
+    "clubs": 2,
+    "top_clubs": [
+      "CLUBE FUTEBOL CANIÇAL",
+      "Caniçal Trail Running"
+    ]
+  },
+  {
+    "locality": "Lombada",
+    "finishers": 1,
+    "clubs": 1,
+    "top_clubs": [
+      "Lombada Aventura Team"
+    ]
+  }
+]

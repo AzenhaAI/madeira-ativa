@@ -1,0 +1,1045 @@
+{
+  "generated_at": "2026-07-02",
+  "events": [
+    {
+      "mode": "swim",
+      "name": "Start List Triatlo Cidade de Machico 2026",
+      "date": "2026-07-02",
+      "location": "Machico",
+      "url": "https://triatlomadeira.com/2026/07/start-list-triatlo-cidade-de-machico-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "trail",
+      "name": "LXIV Pontinha - Casa da Luz",
+      "date": "2026-07-02",
+      "location": "Funchal",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
+    },
+    {
+      "mode": "pro",
+      "name": "Campeonato \"Pedro Fino\" (P25m)",
+      "date": "2026-07-03",
+      "location": "Funchal",
+      "url": "https://www.anatacaodamadeira.pt/index.php/associacao/associados/documentacao-geral/send/4-calendario-desportivo/158-calendario-desportivo-25-26-lista",
+      "event_type": "swimming_pro"
+    },
+    {
+      "mode": "kids",
+      "name": "Campeonatos Regionais de Sub-14",
+      "date": "2026-07-04",
+      "location": "Funchal e Ribeira Brava",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
+    },
+    {
+      "mode": "kids",
+      "name": "Encontro Regional de Escolas BTT",
+      "date": "2026-07-04",
+      "location": "Ponta do Pargo, Calheta",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
+      "event_type": "cycling_kids"
+    },
+    {
+      "mode": "kids",
+      "name": "VIII Festival Madeira e Nadar - AD Galomar",
+      "date": "2026-07-04",
+      "location": "Santa Cruz",
+      "url": "https://www.anatacaodamadeira.pt/index.php/associacao/associados/documentacao-geral/send/4-calendario-desportivo/158-calendario-desportivo-25-26-lista",
+      "event_type": "swimming_kids"
+    },
+    {
+      "mode": "pro",
+      "name": "3ª Taça da Madeira de XCO",
+      "date": "2026-07-04",
+      "location": "Ponta do Pargo, Calheta",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
+      "event_type": "cycling_pro"
+    },
+    {
+      "mode": "road",
+      "name": "Pontinha - Casa da Luz (2.443 m)",
+      "date": "2026-07-04",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: Troféu de Orientação São Vicente (Pedestre)",
+      "date": "2026-07-04",
+      "location": "São Vicente",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "kids",
+      "name": "Encontro Regional de Escolas CE - Brisa Sem Açúcar",
+      "date": "2026-07-05",
+      "location": "Ponta do Pargo, Calheta",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
+      "event_type": "cycling_kids"
+    },
+    {
+      "mode": "road",
+      "name": "Corrida Solidaria AFA (5.3 km)",
+      "date": "2026-07-05",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "swim",
+      "name": "Triatlo Sprint Cidade de Machico",
+      "date": "2026-07-05",
+      "location": "Machico",
+      "url": "https://triatlomadeira.com/wp-content/uploads/2026/03/Calendario-Provas-Triatlo-Madeira-e-Porto-Santo-2026-V.-06-03-2026.pdf",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "festivals",
+      "name": "Funchal Jazz Festival (09/07-11/07): Duarte Ventura Quintet + Joel Ross Good Vibes; Immanuel Wilkins Quartet + Joe Lovano & Antonio Faraò Explorations; Ledisi + Jason Moran & Orquestra de Jazz do Funchal play Duke Ellington - 21:30",
+      "date": "2026-07-09",
+      "location": "Parque de Santa Catarina, Funchal",
+      "url": "https://www.funchal.pt/",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Ethnographic display Camacha de Ontem - Madeira de Sempre",
+      "date": "2026-07-11",
+      "location": "Largo da Achada, Camacha, Santa Cruz",
+      "url": "https://eventsmadeira.com/en/event/ethnographic-display-camacha-de-ontem-madeira-de-sempre-yesterdays-camacha-all-time-madeira/",
+      "event_type": "festival"
+    },
+    {
+      "mode": "pro",
+      "name": "3ª Taça da Madeira de Enduro e Mini Enduro - Globalgest",
+      "date": "2026-07-11",
+      "location": "Fanal, Porto Moniz",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
+      "event_type": "cycling_pro"
+    },
+    {
+      "mode": "pro",
+      "name": "Campeonatos Regionais de Veteranos - Verão",
+      "date": "2026-07-11",
+      "location": "Funchal e Ribeira Brava",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
+    },
+    {
+      "mode": "pro",
+      "name": "XXII Circuito dos Horários do Funchal",
+      "date": "2026-07-11",
+      "location": "Funchal",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
+    },
+    {
+      "mode": "road",
+      "name": "XXII Circuito dos Horários do Funchal",
+      "date": "2026-07-11",
+      "location": "Funchal",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
+    },
+    {
+      "mode": "road",
+      "name": "Horarios do Funchal (distance TBC)",
+      "date": "2026-07-12",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "pro",
+      "name": "51ª Volta à Madeira em Bicicleta",
+      "date": "2026-07-15",
+      "location": "Madeira",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
+      "event_type": "cycling_pro"
+    },
+    {
+      "mode": "kids",
+      "name": "Campeonato do Jovem Nadador Completo (P25m)",
+      "date": "2026-07-18",
+      "location": "Machico",
+      "url": "https://www.anatacaodamadeira.pt/index.php/associacao/associados/documentacao-geral/send/4-calendario-desportivo/158-calendario-desportivo-25-26-lista",
+      "event_type": "swimming_kids"
+    },
+    {
+      "mode": "pro",
+      "name": "I Milha do Porto do Funchal / Campeonatos Regionais de Milha em Estrada - 2026",
+      "date": "2026-07-18",
+      "location": "Funchal",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
+    },
+    {
+      "mode": "road",
+      "name": "I Milha do Porto do Funchal / Campeonatos Regionais de Milha em Estrada - 2026",
+      "date": "2026-07-18",
+      "location": "Funchal",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
+    },
+    {
+      "mode": "road",
+      "name": "Milha do Dia do Porto / CR Milha (1.609 m)",
+      "date": "2026-07-18",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: Vila Ribeira Brava (Urbana)",
+      "date": "2026-07-18",
+      "location": "Ribeira Brava",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "pro",
+      "name": "Circuito de Sao Roque (8 km)",
+      "date": "2026-07-19",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Circuito de Sao Roque (8 km)",
+      "date": "2026-07-19",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "swim",
+      "name": "Triatlo Sprint Cidade de Machico",
+      "date": "2026-07-19",
+      "location": "Machico",
+      "url": "https://triatlomadeira.com/wp-content/uploads/2026/03/Calendario-Provas-Triatlo-Madeira-e-Porto-Santo-2026-V.-06-03-2026.pdf",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "swim",
+      "name": "XII Prova de Mar de São Martinho",
+      "date": "2026-07-19",
+      "location": "Funchal",
+      "url": "https://www.anatacaodamadeira.pt/index.php/associacao/associados/documentacao-geral/send/4-calendario-desportivo/158-calendario-desportivo-25-26-lista",
+      "event_type": "swimming"
+    },
+    {
+      "mode": "trail",
+      "name": "Trail Porto da Cruz Natura (12/24/50 km)",
+      "date": "2026-07-19",
+      "location": "Porto da Cruz, Madeira",
+      "url": "https://www.trail-natura.com/",
+      "event_type": "trail"
+    },
+    {
+      "mode": "festivals",
+      "name": "Classics at Magnolia",
+      "date": "2026-07-25",
+      "location": "Funchal, Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: MOSS (Extra) (25/07-26/07)",
+      "date": "2026-07-25",
+      "location": "Madeira",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "road",
+      "name": "Santana - Ilha - Sao Jorge (14 km)",
+      "date": "2026-07-26",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "pro",
+      "name": "Campeonato dos Recordistas (P25m)",
+      "date": "2026-07-28",
+      "location": "Funchal",
+      "url": "https://www.anatacaodamadeira.pt/index.php/associacao/associados/documentacao-geral/send/4-calendario-desportivo/158-calendario-desportivo-25-26-lista",
+      "event_type": "swimming_pro"
+    },
+    {
+      "mode": "cycling",
+      "name": "Rali da Madeira / Madeira Wine Rally",
+      "date": "2026-07-30",
+      "location": "Madeira",
+      "url": "https://ralidamadeira.com/2026/en/frontpage",
+      "event_type": "motorsport"
+    },
+    {
+      "mode": "trail",
+      "name": "Camacha Trail",
+      "date": "2026-08-02",
+      "location": "Camacha,Madeira",
+      "url": "https://atletismodamadeira.pt/event/camacha-trail-3/",
+      "event_type": ""
+    },
+    {
+      "mode": "trail",
+      "name": "Camacha Trail (9/15/26 km)",
+      "date": "2026-08-02",
+      "location": "Camacha, Madeira",
+      "url": "https://atletismodamadeira.pt/event/camacha-trail-3/",
+      "event_type": "trail"
+    },
+    {
+      "mode": "festivals",
+      "name": "Art' Camacha",
+      "date": "2026-08-07",
+      "location": "Camacha, Santa Cruz",
+      "url": "https://eventsmadeira.com/en/event/art-camacha/",
+      "event_type": "festival"
+    },
+    {
+      "mode": "road",
+      "name": "Corrida das Castanhas (4.5 km)",
+      "date": "2026-08-08",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Art' Camacha (5.6 km)",
+      "date": "2026-08-16",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "pro",
+      "name": "Campeonato da Madeira de DHU e Mini DHU - Brisa Sem Açúcar",
+      "date": "2026-08-22",
+      "location": "Funchal",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
+      "event_type": "cycling_pro"
+    },
+    {
+      "mode": "festivals",
+      "name": "European Folklore Week",
+      "date": "2026-08-23",
+      "location": "Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Madeira Wine Festival",
+      "date": "2026-08-23",
+      "location": "Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "road",
+      "name": "G.P. Sao Vicente (7 km)",
+      "date": "2026-08-23",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "swim",
+      "name": "XXXI Prova de Mar José da Silva \"SACA\"",
+      "date": "2026-08-23",
+      "location": "Funchal",
+      "url": "https://www.anatacaodamadeira.pt/index.php/associacao/associados/documentacao-geral/send/4-calendario-desportivo/158-calendario-desportivo-25-26-lista",
+      "event_type": "swimming"
+    },
+    {
+      "mode": "road",
+      "name": "Ecotur Skymarathon Porto Moniz",
+      "date": "2026-08-30",
+      "location": "Porto Moniz, Madeira",
+      "url": "https://lap2go.com/pt/event/ecotur-skymarathon-porto-moniz-2026",
+      "event_type": ""
+    },
+    {
+      "mode": "road",
+      "name": "Madalena - Ponta do Sol (distance TBC)",
+      "date": "2026-08-30",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "swim",
+      "name": "Triatlo Sprint Cidade do Funchal",
+      "date": "2026-08-30",
+      "location": "Funchal",
+      "url": "https://triatlomadeira.com/wp-content/uploads/2026/03/Calendario-Provas-Triatlo-Madeira-e-Porto-Santo-2026-V.-06-03-2026.pdf",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: Orientação Aventura Ponta Sol (Rogaine)",
+      "date": "2026-09-05",
+      "location": "Ponta do Sol",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "pro",
+      "name": "Campeonato da Madeira de DHI e Mini-DHI - A Confeitaria",
+      "date": "2026-09-06",
+      "location": "Camacha, Santa Cruz",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
+      "event_type": "cycling_pro"
+    },
+    {
+      "mode": "road",
+      "name": "GP Bombeiros (8.2 km)",
+      "date": "2026-09-06",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "pro",
+      "name": "Campeonato da Madeira de Enduro e Mini Enduro - Globalgest",
+      "date": "2026-09-12",
+      "location": "São Jorge, Santana",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
+      "event_type": "cycling_pro"
+    },
+    {
+      "mode": "swim",
+      "name": "Frente MarFunchal SWIM - 12 Horas a Nadar / Prova de Mar Frente MarFunchal SWIM (AA)",
+      "date": "2026-09-12",
+      "location": "Funchal",
+      "url": "https://www.anatacaodamadeira.pt/index.php/associacao/associados/documentacao-geral/send/4-calendario-desportivo/158-calendario-desportivo-25-26-lista",
+      "event_type": "swimming"
+    },
+    {
+      "mode": "cycling",
+      "name": "Duatlo BTT do Funchal",
+      "date": "2026-09-13",
+      "location": "Funchal",
+      "url": "https://triatlomadeira.com/wp-content/uploads/2026/03/Calendario-Provas-Triatlo-Madeira-e-Porto-Santo-2026-V.-06-03-2026.pdf",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "road",
+      "name": "Vindimas (4.7 km)",
+      "date": "2026-09-13",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "swim",
+      "name": "Duatlo BTT do Funchal",
+      "date": "2026-09-13",
+      "location": "Funchal",
+      "url": "https://triatlomadeira.com/wp-content/uploads/2026/03/Calendario-Provas-Triatlo-Madeira-e-Porto-Santo-2026-V.-06-03-2026.pdf",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "festivals",
+      "name": "Columbus Festival - Porto Santo Island",
+      "date": "2026-09-17",
+      "location": "Porto Santo, Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "trail",
+      "name": "Trail de Camara de Lobos (15/22/39 km)",
+      "date": "2026-09-19",
+      "location": "Camara de Lobos, Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/02/TM_26-Quadro.pdf",
+      "event_type": "trail"
+    },
+    {
+      "mode": "cycling",
+      "name": "Granfondo Calheta ADC Ponta do Pargo",
+      "date": "2026-09-20",
+      "location": "Calheta",
+      "url": "https://acmadeira.pt/evento/granfondo-calheta-2026/",
+      "event_type": "cycling"
+    },
+    {
+      "mode": "pro",
+      "name": "Circuito da Festa do Pero (distance TBC)",
+      "date": "2026-09-20",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Circuito da Festa do Pero (distance TBC)",
+      "date": "2026-09-20",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "RG3 (5.5 km)",
+      "date": "2026-09-26",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: Orientação Câmara de Lobos (Urbana)",
+      "date": "2026-09-26",
+      "location": "Câmara de Lobos",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "pro",
+      "name": "4ª Taça da Madeira de XCO",
+      "date": "2026-09-27",
+      "location": "Bica da Cana, Ponta do Sol",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
+      "event_type": "cycling_pro"
+    },
+    {
+      "mode": "road",
+      "name": "Corrida do Aeroporto (6 km)",
+      "date": "2026-09-27",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "pro",
+      "name": "Trans Madeira Autumn - Madeira Enduro",
+      "date": "2026-09-28",
+      "location": "Madeira / Porto Santo",
+      "url": "https://trans-madeira.com/the-race/",
+      "event_type": "cycling_pro"
+    },
+    {
+      "mode": "festivals",
+      "name": "XXXIX Apple Festival",
+      "date": "2026-10-02",
+      "location": "Camacha, Santa Cruz",
+      "url": "https://eventsmadeira.com/en/event/xxxix-apple-festival/",
+      "event_type": "festival"
+    },
+    {
+      "mode": "cycling",
+      "name": "Eco Rally Madeira",
+      "date": "2026-10-03",
+      "location": "Madeira",
+      "url": "https://www.fia.com/championship/events/fia-ecorally-cup/season-2026/eco-rally-madeira",
+      "event_type": "motorsport"
+    },
+    {
+      "mode": "swim",
+      "name": "Triatlo Olimpico Porto Santo",
+      "date": "2026-10-03",
+      "location": "Porto Santo",
+      "url": "https://triatlomadeira.com/wp-content/uploads/2026/03/Calendario-Provas-Triatlo-Madeira-e-Porto-Santo-2026-V.-06-03-2026.pdf",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: XXXII Troféu Orientação CAMadeira (Pedestre)",
+      "date": "2026-10-03",
+      "location": "Madeira",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "pro",
+      "name": "Camp. Regional de Equipas de Estafetas de Triatlo",
+      "date": "2026-10-04",
+      "location": "Porto Santo",
+      "url": "https://triatlomadeira.com/wp-content/uploads/2026/03/Calendario-Provas-Triatlo-Madeira-e-Porto-Santo-2026-V.-06-03-2026.pdf",
+      "event_type": "triathlon_pro"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: 4.º Ori-Trail Rogaine Festa da Maçã 2026 (Rogaine)",
+      "date": "2026-10-04",
+      "location": "Camacha",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "cycling",
+      "name": "Bike Marathon Madeira",
+      "date": "2026-10-05",
+      "location": "Funchal",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
+      "event_type": "cycling"
+    },
+    {
+      "mode": "road",
+      "name": "Bike Marathon Madeira",
+      "date": "2026-10-05",
+      "location": "Funchal",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
+      "event_type": "cycling"
+    },
+    {
+      "mode": "festivals",
+      "name": "Madeira Nature Festival",
+      "date": "2026-10-06",
+      "location": "Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "100 Miles - Historic Rally",
+      "date": "2026-10-10",
+      "location": "Santa Cruz / Machico",
+      "url": "https://eventsmadeira.com/en/location/santa-cruz-en/?post_type=event",
+      "event_type": "festival"
+    },
+    {
+      "mode": "pro",
+      "name": "Campeonato da Madeira de CE - Brisa Sem Açúcar",
+      "date": "2026-10-11",
+      "location": "São Vicente",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
+      "event_type": "cycling_pro"
+    },
+    {
+      "mode": "trail",
+      "name": "EcoTrail Madeira 15 km",
+      "date": "2026-10-17",
+      "location": "Funchal, Madeira",
+      "url": "https://madeira.ecotrail.com/",
+      "event_type": "trail"
+    },
+    {
+      "mode": "trail",
+      "name": "EcoTrail Madeira 30 km",
+      "date": "2026-10-17",
+      "location": "Funchal, Madeira",
+      "url": "https://madeira.ecotrail.com/",
+      "event_type": "trail"
+    },
+    {
+      "mode": "trail",
+      "name": "EcoTrail Madeira 45 km",
+      "date": "2026-10-17",
+      "location": "Funchal, Madeira",
+      "url": "https://madeira.ecotrail.com/",
+      "event_type": "trail"
+    },
+    {
+      "mode": "trail",
+      "name": "EcoTrail Madeira 60 km",
+      "date": "2026-10-17",
+      "location": "Funchal, Madeira",
+      "url": "https://madeira.ecotrail.com/",
+      "event_type": "trail"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: I Rogaine do Estreito (Rogaine)",
+      "date": "2026-10-17",
+      "location": "Estreito de Câmara de Lobos",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "cycling",
+      "name": "Rally Madeira Legend",
+      "date": "2026-10-22",
+      "location": "Madeira",
+      "url": "https://rallymadeiralegend.pt/",
+      "event_type": "motorsport"
+    },
+    {
+      "mode": "kids",
+      "name": "3º Encontro de Escolas de BTT",
+      "date": "2026-10-25",
+      "location": "Porto Santo",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
+      "event_type": "cycling_kids"
+    },
+    {
+      "mode": "pro",
+      "name": "Campeonato da Madeira de XCO",
+      "date": "2026-10-25",
+      "location": "Porto Santo",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
+      "event_type": "cycling_pro"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: Vila Ponta do Sol (noturno) (Urbana)",
+      "date": "2026-10-31",
+      "location": "Ponta do Sol",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "trail",
+      "name": "Ultra X Madeira 110 km",
+      "date": "2026-10-31",
+      "location": "Madeira",
+      "url": "https://ultra-x.co/pt/madeira/",
+      "event_type": "trail"
+    },
+    {
+      "mode": "trail",
+      "name": "Ultra X Madeira 25 km",
+      "date": "2026-10-31",
+      "location": "Madeira",
+      "url": "https://ultra-x.co/pt/madeira/",
+      "event_type": "trail"
+    },
+    {
+      "mode": "trail",
+      "name": "Ultra X Madeira 50 km",
+      "date": "2026-10-31",
+      "location": "Madeira",
+      "url": "https://ultra-x.co/pt/madeira/",
+      "event_type": "trail"
+    },
+    {
+      "mode": "trail",
+      "name": "Ultra X Madeira 60 km",
+      "date": "2026-10-31",
+      "location": "Madeira",
+      "url": "https://ultra-x.co/pt/madeira/",
+      "event_type": "trail"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: Floresta Poiso (Pedestre)",
+      "date": "2026-11-01",
+      "location": "Poiso",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "pro",
+      "name": "4ª Taça da Madeira de Enduro e Mini Enduro - Globalgest",
+      "date": "2026-11-07",
+      "location": "Calheta",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
+      "event_type": "cycling_pro"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: 10.º Funchal City Race (Urbana)",
+      "date": "2026-11-08",
+      "location": "Funchal",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: Sprint Jardim do Mar (Urbana)",
+      "date": "2026-11-14",
+      "location": "Jardim do Mar, Calheta",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: V Ori dos Castanheiros (Urbana)",
+      "date": "2026-11-15",
+      "location": "Madeira",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: Orientação Calheta (Urbana)",
+      "date": "2026-11-28",
+      "location": "Calheta",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "festivals",
+      "name": "Christmas Market",
+      "date": "2026-12-01",
+      "location": "Funchal",
+      "url": "https://eventsmadeira.com/en/event/christmas-market/",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Christmas and End of the Year Festivities",
+      "date": "2026-12-01",
+      "location": "Funchal, Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Ethnographic Village",
+      "date": "2026-12-01",
+      "location": "Funchal",
+      "url": "https://eventsmadeira.com/en/event/ethnographic-village/",
+      "event_type": "festival"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: Madeira Rogaining Race (Rogaine)",
+      "date": "2026-12-01",
+      "location": "Madeira",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "kids",
+      "name": "Christmas Village",
+      "date": "2026-12-04",
+      "location": "Funchal",
+      "url": "https://eventsmadeira.com/en/event/christmas-village/",
+      "event_type": "children"
+    },
+    {
+      "mode": "pro",
+      "name": "XVIII Edição da Avalanche Raposeira",
+      "date": "2026-12-06",
+      "location": "Raposeira, Calheta",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
+      "event_type": "cycling_pro"
+    },
+    {
+      "mode": "cycling",
+      "name": "Passeio Luzes de Natal - A Confeitaria",
+      "date": "2026-12-12",
+      "location": "Funchal",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
+      "event_type": "cycling"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: XMAS (Extra)",
+      "date": "2026-12-12",
+      "location": "Madeira",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "festivals",
+      "name": "Childbirth Masses (Missas do Parto)",
+      "date": "2026-12-15",
+      "location": "Madeira",
+      "url": "https://eventsmadeira.com/en/event/childbirth-masses-missas-do-parto/",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Market Night",
+      "date": "2026-12-23",
+      "location": "Funchal",
+      "url": "https://www.madeira-web.com/en/whats-on/madeira-events.html",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "New Year's Eve Firework Display",
+      "date": "2026-12-31",
+      "location": "Funchal, Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "road",
+      "name": "Madeira Marathon",
+      "date": "2027-01-31",
+      "location": "Funchal, Madeira",
+      "url": "https://www.madeiramarathon.com/",
+      "event_type": "running"
+    },
+    {
+      "mode": "festivals",
+      "name": "Carnival Festivities",
+      "date": "2027-02-03",
+      "location": "Funchal, Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Carnival in Santa Cruz",
+      "date": "2027-02-03",
+      "location": "Santa Cruz",
+      "url": "https://eventsmadeira.com/en/location/santa-cruz-en/?post_type=event",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Madeira Flower Festival",
+      "date": "2027-04-29",
+      "location": "Funchal, Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "cycling",
+      "name": "Rat Race Madeira Coast to Coast (bike/foot/kayak)",
+      "date": "2027-05-06",
+      "location": "Madeira",
+      "url": "https://www.ratrace.com/madeira",
+      "event_type": "cycling"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Festival",
+      "date": "2027-06-04",
+      "location": "Funchal, Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Classics at Magnolia",
+      "date": "2027-07-31",
+      "location": "Funchal, Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "European Folklore Week",
+      "date": "2027-08-22",
+      "location": "Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Madeira Wine Festival",
+      "date": "2027-08-22",
+      "location": "Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Columbus Festival - Porto Santo Island",
+      "date": "2027-09-23",
+      "location": "Porto Santo, Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Madeira Nature Festival",
+      "date": "2027-10-05",
+      "location": "Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Christmas and End of the Year Festivities",
+      "date": "2027-12-01",
+      "location": "Funchal, Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "New Year's Eve Firework Display",
+      "date": "2027-12-31",
+      "location": "Funchal, Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Carnival Festivities",
+      "date": "2028-02-23",
+      "location": "Funchal, Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Madeira Flower Festival",
+      "date": "2028-05-04",
+      "location": "Funchal, Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Festival",
+      "date": "2028-06-03",
+      "location": "Funchal, Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "European Folklore Week",
+      "date": "2028-08-20",
+      "location": "Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Madeira Wine Festival",
+      "date": "2028-08-20",
+      "location": "Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Classics at Magnolia",
+      "date": "2028-08-29",
+      "location": "Funchal, Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Columbus Festival - Porto Santo Island",
+      "date": "2028-09-21",
+      "location": "Porto Santo, Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Madeira Nature Festival",
+      "date": "2028-10-03",
+      "location": "Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Christmas and End of the Year Festivities",
+      "date": "2028-12-01",
+      "location": "Funchal, Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "New Year's Eve Firework Display",
+      "date": "2028-12-31",
+      "location": "Funchal, Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    }
+  ]
+}
