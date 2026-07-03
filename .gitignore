@@ -3,6 +3,10 @@ __pycache__/
 .DS_Store
 .venv/
 node_modules/
+# secrets — real values live in .env / GitHub Secrets, never in git
+.env
+.env.local
+*.env
 # build artifacts (native/PWA wrappers are published elsewhere)
 *.apk
 *.exe
