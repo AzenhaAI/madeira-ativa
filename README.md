@@ -88,7 +88,7 @@ skip gracefully when a secret is not configured.
 
 Static HTML · vanilla JS · [Leaflet](https://leafletjs.com) (2D) ·
 [MapLibre GL](https://maplibre.org) + Terrarium DEM (3D) · Python parsers ·
-GitHub Actions · deployed on Vercel behind Cloudflare.
+GitHub Actions · deployed on Cloudflare Pages.
 
 ## Licence
 
