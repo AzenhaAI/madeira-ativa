@@ -230,6 +230,11 @@
     .site-nav .nav-soon { color: #B9B3A6; cursor: default; }
     .nav-ico { margin-right: 4px; }
     @media (max-width: 640px) { .nav-ico { display: none; } }
+    .nav-spacer { flex: 1; min-width: 12px; }
+    .site-nav .nav-lang {
+      flex-shrink: 0; margin: 6px 0; padding: 3px 11px;
+      border-bottom: 1px solid var(--line);
+    }
     .trail-stats {
       display: flex;
       gap: 6px;
@@ -701,14 +706,6 @@
 </head>
 <body>
   <div class="wrap">
-    <nav class="top">
-      <a href="/madeira/">shpara.com/madeira</a>
-      <div class="top-right">
-        <a href="mailto:azenha.agent@gmail.com"><span data-lang="en">Contact</span><span data-lang="pt">Contacto</span></a>
-        <button class="lang-toggle" onclick="toggleLang()" aria-label="Switch language">PT</button>
-      </div>
-    </nav>
-
     <nav class="site-nav">
       <div class="site-nav-inner">
         <a href="/madeira/madeira_stat.html"><span class="nav-ico">🏃</span>Trails</a>
@@ -718,6 +715,8 @@
         <a href="#" onclick="window.location.href='/madeira/madeira_festas.html?lang='+(document.documentElement.lang||'en'); return false;"><span class="nav-ico">🎆</span>Festas</a>
         <a href="#" onclick="window.location.href='/madeira/madeira_news.html?lang='+(document.documentElement.lang||'en'); return false;"><span class="nav-ico">📰</span><span data-lang="en">News</span><span data-lang="pt">Notícias</span></a>
         <a href="#" onclick="window.location.href='/madeira/madeira_history.html?lang='+(document.documentElement.lang||'en'); return false;"><span class="nav-ico">📜</span><span data-lang="en">History</span><span data-lang="pt">História</span></a>
+        <span class="nav-spacer"></span>
+        <button class="lang-toggle nav-lang" onclick="toggleLang()" aria-label="Switch language">PT</button>
       </div>
     </nav>
 
@@ -846,6 +845,7 @@
         <a href="https://ecotrailmadeira.com" target="_blank">EcoTrail Madeira</a>
         <a href="https://trailportomoniz.com" target="_blank">Trail Porto Moniz</a>
         <a href="https://adnrace.pt" target="_blank">ADN Race</a>
+        <a href="mailto:azenha.agent@gmail.com"><span data-lang="en">Contact</span><span data-lang="pt">Contacto</span></a>
       </div>
     </footer>
   </div>
