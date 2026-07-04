@@ -79,6 +79,9 @@
     box-shadow: 0 2px 8px rgba(21,32,26,0.14); transition: transform 0.15s;
   }
   .chip:hover { transform: translateY(-2px); }
+  .chapter { margin: 6px 0 10px; }
+  .chapter:not(:first-child) { margin-top: 26px; padding-top: 18px; border-top: 1px dashed var(--line); }
+  .chapter-h { font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: clamp(19px, 3.5vw, 24px); margin: 2px 0 0; color: var(--accent); }
   .album-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 14px; }
   @media (max-width: 620px) { .album-grid { grid-template-columns: 1fr; } }
   .album-grid figure { margin: 0; }
@@ -130,13 +133,11 @@
       <a href="/madeira/">🏠 Main</a>
       <span class="nav-here">📜 <span data-lang="en">History</span><span data-lang="pt">História</span></span>
       <a href="#levadas">Levadas</a>
-      <a href="#wine"><span data-lang="en">Wine</span><span data-lang="pt">Vinho</span></a>
-      <a href="#rum"><span data-lang="en">Rum &amp; poncha</span><span data-lang="pt">Rum e poncha</span></a>
-      <a href="#bananas"><span data-lang="en">Bananas</span><span data-lang="pt">Bananas</span></a>
-      <a href="#flowers"><span data-lang="en">Flowers</span><span data-lang="pt">Flores</span></a>
-      <a href="#ships"><span data-lang="en">Caravels</span><span data-lang="pt">Caravelas</span></a>
-      <a href="#wheels"><span data-lang="en">Transport</span><span data-lang="pt">Transportes</span></a>
+      <a href="#transport"><span data-lang="en">Transport</span><span data-lang="pt">Transportes</span></a>
+      <a href="#flora">Flora</a>
       <a href="#festas-story">Festas</a>
+      <a href="#kitchen"><span data-lang="en">Food</span><span data-lang="pt">Comida</span></a>
+      <a href="#drinks"><span data-lang="en">Drinks</span><span data-lang="pt">Bebidas</span></a>
       <a href="#album">🖼 <span data-lang="en">Album</span><span data-lang="pt">Álbum</span></a>
     </div>
   </nav>
@@ -152,24 +153,29 @@
 
   <div class="themes">
     <a class="chip" href="#levadas" style="background:#1F4D32">🥾 Levadas</a>
-    <a class="chip" href="#ships" style="background:linear-gradient(140deg,#123a6b,#2a7ab0)">⛵ <span data-lang="en">Caravels</span><span data-lang="pt">Caravelas</span></a>
-    <a class="chip" href="#wheels" style="background:linear-gradient(140deg,#263238,#6b8763)">🚂 <span data-lang="en">Transport</span><span data-lang="pt">Transportes</span></a>
+    <a class="chip" href="#transport" style="background:linear-gradient(140deg,#123a6b,#6b8763)">⛵ <span data-lang="en">Transport</span><span data-lang="pt">Transportes</span></a>
+    <a class="chip" href="#flora" style="background:linear-gradient(140deg,#b0176c,#2e7d4f)">🌺 Flora</a>
     <a class="chip" href="#festas-story" style="background:linear-gradient(140deg,#b0176c,#d4a017)">🎉 Festas</a>
-    <a class="chip" href="#wine" style="background:linear-gradient(140deg,#5c1030,#a33555)">🍷 <span data-lang="en">Wine</span><span data-lang="pt">Vinho</span></a>
-    <a class="chip" href="#rum" style="background:linear-gradient(140deg,#4d2e14,#c9862e)">🥃 <span data-lang="en">Rum &amp; poncha</span><span data-lang="pt">Rum e poncha</span></a>
-    <a class="chip" href="#kitchen" style="background:linear-gradient(140deg,#7a3b10,#c26b2e)">🍽 <span data-lang="en">Island kitchen</span><span data-lang="pt">Cozinha da ilha</span></a>
-    <a class="chip" href="#bananas" style="background:#6B8763">🍌 Bananas</a>
-    <a class="chip" href="#flowers" style="background:linear-gradient(140deg,#b0176c,#2e7d4f)">🌺 <span data-lang="en">Flowers</span><span data-lang="pt">Flores</span></a>
+    <a class="chip" href="#kitchen" style="background:linear-gradient(140deg,#7a3b10,#c26b2e)">🍽 <span data-lang="en">Food</span><span data-lang="pt">Comida</span></a>
+    <a class="chip" href="#drinks" style="background:linear-gradient(140deg,#5c1030,#c9862e)">🍷 <span data-lang="en">Drinks</span><span data-lang="pt">Bebidas</span></a>
     <a class="chip" href="#album" style="background:#15201A">🖼 <span data-lang="en">Album</span><span data-lang="pt">Álbum</span></a>
   </div>
 
-  <div class="story" id="ships">
-    <div class="story-head" style="background: linear-gradient(140deg, #123a6b, #2a7ab0 130%)">
+  
+  
+  
+  
+  
+  
+  
+    <div class="story" id="transport">
+    <div class="story-head" style="background: linear-gradient(140deg, #123a6b, #6b8763 150%)">
       <span class="s-emoji">⛵</span>
-      <div><span class="s-kicker"><span data-lang="en">1419 – 1600s</span><span data-lang="pt">1419 – séc. XVII</span></span>
-      <h3><span data-lang="en">Caravels, Columbus &amp; corsairs</span><span data-lang="pt">Caravelas, Colombo e corsários</span></h3></div>
+      <div><span class="s-kicker">1419 – 1964</span>
+      <h3><span data-lang="en">Transport — sails to wings</span><span data-lang="pt">Transportes — da vela às asas</span></h3></div>
     </div>
     <div class="story-body">
+      <div class="chapter" id="ships"><span class="era-years"><span data-lang="en">1419 – 1600s</span><span data-lang="pt">1419 – séc. XVII</span></span><h3 class="chapter-h"><span data-lang="en">Caravels, Columbus &amp; corsairs</span><span data-lang="pt">Caravelas, Colombo e corsários</span></h3></div>
       <figure>
         <img loading="lazy" src="/madeira/history/1547-astrolabe-funchal.jpg" alt="Pilot measuring the stars with a cross-staff aboard a carrack off Funchal, woodcut 1547">
         <figcaption><span data-lang="en">A pilot climbs the mainmast of a four-master to take the height of the sun with a cross-staff, sea monsters curling in the waves below — coloured woodcut printed at Funchal's latitude, 1547. Public domain.</span><span data-lang="pt">Um piloto trepa ao mastro grande de uma nau de quatro mastros para medir a altura do sol com a balestilha, monstros marinhos nas ondas — xilogravura colorida, 1547. Domínio público.</span></figcaption>
@@ -183,73 +189,7 @@
         <figcaption><span data-lang="en">How the world saw Madeira in 1693 — Vincenzo Coronelli, cosmographer of the Venetian Republic, engraved the island with its rhumb lines, the Canaries below, and a little panorama of Funchal from the sea. You can stand in front of this very map at the Banana Museum in Funchal. Arquivo Regional da Madeira, CC BY-SA 4.0.</span><span data-lang="pt">Como o mundo via a Madeira em 1693 — Vincenzo Coronelli, cosmógrafo da República de Veneza, gravou a ilha com as suas linhas de rumo, as Canárias em baixo e um pequeno panorama do Funchal visto do mar. Este mapa pode ver-se ao vivo no Museu da Banana, no Funchal. Arquivo Regional da Madeira, CC BY-SA 4.0.</span></figcaption>
       </figure>
       <a class="story-link" href="#album"><span data-lang="en">→ More pictures &amp; stories in the Album</span><span data-lang="pt">→ Mais imagens e histórias no Álbum</span></a>
-    </div>
-  </div>
-
-  <div class="story" id="rum">
-    <div class="story-head" style="background: linear-gradient(140deg, #4d2e14, #c9862e 130%)">
-      <span class="s-emoji">🥃</span>
-      <div><span class="s-kicker"><span data-lang="en">1425 – today</span><span data-lang="pt">1425 – hoje</span></span>
-      <h3><span data-lang="en">Sugar, rum &amp; poncha</span><span data-lang="pt">Açúcar, rum e poncha</span></h3></div>
-    </div>
-    <div class="story-body">
-      <figure>
-        <img loading="lazy" src="/madeira/history/1960-torreao-sugar-factory.jpg" alt="The chimney of the Torreão sugar factory over Funchal rooftops, circa 1960">
-        <figcaption><span data-lang="en">The brick chimney of the Torreão (Hinton) sugar factory towering over Funchal's rooftops like a lighthouse of industry, c. 1960 — cane was still being milled in the middle of the city within living memory. ABM. Public domain.</span><span data-lang="pt">A chaminé de tijolo da fábrica do Torreão (Hinton) por cima dos telhados do Funchal, c. 1960 — ainda se moía cana no meio da cidade em memória viva. ABM. Domínio público.</span></figcaption>
-      </figure>
-      <p data-lang="en">Sugar built Madeira twice. The first boom sweetened Renaissance Europe; the second, in the 1800s, turned cane juice into something better: <b>aguardente de cana</b> — Madeiran rum, distilled where the cane grows. The Hinton factory's chimney ruled Funchal's skyline until the 1980s, and in <b>Porto da Cruz</b> the steam-driven Engenho do Norte still fires up every spring harvest, one of Europe's last working steam distilleries.</p>
-      <p data-lang="en">And the fisherman's dose of it became the island's password: <b>poncha</b> — rum, honey and lemon beaten with the wooden <i>caralhinho</i> in the taverns of Câmara de Lobos, drunk “to kill the germs” before the boats went out. Order one after a levada and you are drinking five centuries of cane in a glass.</p>
-      <p data-lang="pt">O açúcar construiu a Madeira duas vezes. O primeiro ciclo adoçou a Europa do Renascimento; o segundo, no séc. XIX, transformou o sumo da cana em algo melhor: a <b>aguardente de cana</b>, destilada onde a cana cresce. A chaminé da fábrica Hinton mandou no céu do Funchal até aos anos 1980, e no <b>Porto da Cruz</b> o Engenho do Norte, a vapor, ainda acorda a cada apanha — uma das últimas destilarias a vapor da Europa.</p>
-      <p data-lang="pt">E a dose do pescador virou senha da ilha: a <b>poncha</b> — aguardente, mel e limão batidos com o caralhinho nas tascas de Câmara de Lobos, bebida «para matar o bicho» antes de os barcos saírem. Peça uma depois de uma levada e está a beber cinco séculos de cana num copo.</p>
-      <a class="story-link" href="#album"><span data-lang="en">→ More pictures &amp; stories in the Album</span><span data-lang="pt">→ Mais imagens e histórias no Álbum</span></a>
-    </div>
-  </div>
-
-  <div class="story" id="wine">
-    <div class="story-head" style="background: linear-gradient(140deg, #5c1030, #a33555 125%)">
-      <span class="s-emoji">🍷</span>
-      <div><span class="s-kicker"><span data-lang="en">1600s – today</span><span data-lang="pt">séc. XVII – hoje</span></span>
-      <h3><span data-lang="en">Madeira — the immortal wine</span><span data-lang="pt">Madeira — o vinho imortal</span></h3></div>
-    </div>
-    <div class="story-body">
-      <figure>
-        <img loading="lazy" src="/madeira/history/1900-borracheiros-cossart.jpg" alt="Borracheiros queueing with goatskins of wine at Cossart Gordon warehouses, circa 1900">
-        <figcaption><span data-lang="en">A file of <i>borracheiros</i> under the vine pergola at Cossart Gordon &amp; Co. — each man with a full goatskin of young wine on his shoulders and a walking staff, the lodge's great casks waiting on the right. Tinted postcard, c. 1900. Public domain.</span><span data-lang="pt">Fila de <b>borracheiros</b> sob a latada nos armazéns da Cossart Gordon &amp; Co. — cada homem com um borracho cheio de vinho ao ombro e o seu bordão, os cascos grandes à espera, à direita. Postal colorido, c. 1900. Domínio público.</span></figcaption>
-      </figure>
-      <p data-lang="en">Madeira wine was made immortal by accident. Casks shipped through the tropics arrived tasting <i>better</i> — cooked and rocked for months — and merchants began sending wine on round trips just to age it (<i>vinho da roda</i>). Ashore, the voyage was recreated with sun-warmed lofts (<b>canteiro</b>) and heated stores (<b>estufa</b>). The result barely dies: 18th-century bottles are opened and drunk today.</p>
-      <p data-lang="en">It was the toast of the <b>American Declaration of Independence</b> in 1776, Shakespeare had a duke drown in a butt of its malmsey, and Napoleon's ship picked up a cask on the way to exile. Not bad for grapes grown on cliff terraces you can still run past above Câmara de Lobos.</p>
-      <p data-lang="pt">O vinho Madeira tornou-se imortal por acidente. Os cascos que atravessavam os trópicos chegavam <i>melhores</i> — cozidos e embalados meses a fio — e os mercadores passaram a mandá-lo dar a volta só para envelhecer (o vinho da roda). Em terra, a viagem recriou-se com o <b>canteiro</b> ao sol e a <b>estufa</b>. O resultado quase não morre: ainda hoje se abrem garrafas do séc. XVIII.</p>
-      <p data-lang="pt">Foi o brinde da <b>Independência americana</b> em 1776, Shakespeare afogou um duque num tonel de malvasia, e o navio de Napoleão levou um casco a caminho do exílio. Nada mau para uvas de socalcos suspensos que ainda hoje se correm, acima de Câmara de Lobos.</p>
-      <a class="story-link" href="#album"><span data-lang="en">→ More pictures &amp; stories in the Album</span><span data-lang="pt">→ Mais imagens e histórias no Álbum</span></a>
-    </div>
-  </div>
-
-  <div class="story" id="flowers">
-    <div class="story-head" style="background: linear-gradient(140deg, #b0176c, #2e7d4f 145%)">
-      <span class="s-emoji">🌺</span>
-      <div><span class="s-kicker"><span data-lang="en">1800s – today</span><span data-lang="pt">séc. XIX – hoje</span></span>
-      <h3><span data-lang="en">Flowers off the ships</span><span data-lang="pt">Flores vindas dos navios</span></h3></div>
-    </div>
-    <div class="story-body">
-      <figure>
-        <img loading="lazy" src="/madeira/history/1900-monte-palace-gardens.jpg" alt="Boating on the lake of Monte Palace Hotel gardens, postcard circa 1905">
-        <figcaption><span data-lang="en">Sunday at the Monte Palace Hotel lake — a rowing party on the water, a fountain, a folly tower on the rocks and gentlemen in hats on the garden benches; Funchal postage stamps of 1905 on the corner. Tinted postcard. Public domain.</span><span data-lang="pt">Domingo no lago do Monte Palace Hotel — um passeio de barco, o repuxo, a torre-miradouro sobre as rochas e senhores de chapéu nos bancos do jardim; selos do Funchal de 1905 ao canto. Postal colorido. Domínio público.</span></figcaption>
-      </figure>
-      <p data-lang="en">Every ship that watered at Funchal left something growing. Captains, botanists and the English wine families filled their <i>quintas</i> with trophies of the whole Empire's routes: <b>strelitzias from South Africa, jacarandás and orchids from Brazil, proteas, camellias from Japan, agapanthus</b> that now line every levada in June. On an island with no frost, nothing ever asked to leave.</p>
-      <p data-lang="en">The hobby became an identity. The gardens of Monte and Palheiro turned into pilgrimage sites, agapanthus and hydrangeas escaped the gardens and colonised the roadsides — and each spring the whole collection parades down Funchal's avenue as the <b>Festa da Flor</b>.</p>
-      <p data-lang="pt">Cada navio que fazia aguada no Funchal deixava algo a crescer. Capitães, botânicos e as famílias inglesas do vinho encheram as suas quintas com troféus de todas as rotas: <b>estrelícias da África do Sul, jacarandás e orquídeas do Brasil, proteas, camélias do Japão, agapantos</b> que hoje bordam todas as levadas em junho. Numa ilha sem geada, nada pediu para voltar.</p>
-      <p data-lang="pt">O passatempo virou identidade. Os jardins do Monte e do Palheiro tornaram-se lugares de romaria, os agapantos e as hortênsias fugiram dos jardins para as bermas — e cada primavera a coleção inteira desfila pela avenida do Funchal na <b>Festa da Flor</b>.</p>
-      <a class="story-link" href="/madeira/festas"><span data-lang="en">→ The festival year, incl. Festa da Flor</span><span data-lang="pt">→ O ano das festas, incl. Festa da Flor</span></a>
-    </div>
-  </div>
-
-  <div class="story" id="wheels">
-    <div class="story-head" style="background: linear-gradient(140deg, #263238, #6b8763 145%)">
-      <span class="s-emoji">🚂</span>
-      <div><span class="s-kicker">1893 – 1964</span>
-      <h3><span data-lang="en">Rails, wheels &amp; wings</span><span data-lang="pt">Carris, rodas e asas</span></h3></div>
-    </div>
-    <div class="story-body">
+      <div class="chapter" id="wheels"><span class="era-years"><span data-lang="en">1893 – 1964</span><span data-lang="pt">1893 – 1964</span></span><h3 class="chapter-h"><span data-lang="en">Rails, wheels &amp; wings</span><span data-lang="pt">Carris, rodas e asas</span></h3></div>
       <div class="fig-pair">
         <figure>
           <img loading="lazy" src="/madeira/history/1910-monte-railway.jpg" alt="The Monte rack railway below the church, steam rising from a train, postcard circa 1910">
@@ -268,7 +208,30 @@
     </div>
   </div>
 
-  <div class="story" id="festas-story">
+  <div class="story" id="flora">
+    <div class="story-head" style="background: linear-gradient(140deg, #b0176c, #2e7d4f 145%)">
+      <span class="s-emoji">🌺</span>
+      <div><span class="s-kicker"><span data-lang="en">1800s – today</span><span data-lang="pt">séc. XIX – hoje</span></span>
+      <h3><span data-lang="en">Flora — flowers &amp; bananas</span><span data-lang="pt">Flora — flores e bananas</span></h3></div>
+    </div>
+    <div class="story-body">
+      <div class="chapter" id="flowers"><span class="era-years"><span data-lang="en">1800s – today</span><span data-lang="pt">séc. XIX – hoje</span></span><h3 class="chapter-h"><span data-lang="en">Flowers off the ships</span><span data-lang="pt">Flores vindas dos navios</span></h3></div>
+      <figure>
+        <img loading="lazy" src="/madeira/history/1900-monte-palace-gardens.jpg" alt="Boating on the lake of Monte Palace Hotel gardens, postcard circa 1905">
+        <figcaption><span data-lang="en">Sunday at the Monte Palace Hotel lake — a rowing party on the water, a fountain, a folly tower on the rocks and gentlemen in hats on the garden benches; Funchal postage stamps of 1905 on the corner. Tinted postcard. Public domain.</span><span data-lang="pt">Domingo no lago do Monte Palace Hotel — um passeio de barco, o repuxo, a torre-miradouro sobre as rochas e senhores de chapéu nos bancos do jardim; selos do Funchal de 1905 ao canto. Postal colorido. Domínio público.</span></figcaption>
+      </figure>
+      <p data-lang="en">Every ship that watered at Funchal left something growing. Captains, botanists and the English wine families filled their <i>quintas</i> with trophies of the whole Empire's routes: <b>strelitzias from South Africa, jacarandás and orchids from Brazil, proteas, camellias from Japan, agapanthus</b> that now line every levada in June. On an island with no frost, nothing ever asked to leave.</p>
+      <p data-lang="en">The hobby became an identity. The gardens of Monte and Palheiro turned into pilgrimage sites, agapanthus and hydrangeas escaped the gardens and colonised the roadsides — and each spring the whole collection parades down Funchal's avenue as the <b>Festa da Flor</b>.</p>
+      <p data-lang="pt">Cada navio que fazia aguada no Funchal deixava algo a crescer. Capitães, botânicos e as famílias inglesas do vinho encheram as suas quintas com troféus de todas as rotas: <b>estrelícias da África do Sul, jacarandás e orquídeas do Brasil, proteas, camélias do Japão, agapantos</b> que hoje bordam todas as levadas em junho. Numa ilha sem geada, nada pediu para voltar.</p>
+      <p data-lang="pt">O passatempo virou identidade. Os jardins do Monte e do Palheiro tornaram-se lugares de romaria, os agapantos e as hortênsias fugiram dos jardins para as bermas — e cada primavera a coleção inteira desfila pela avenida do Funchal na <b>Festa da Flor</b>.</p>
+      <a class="story-link" href="/madeira/festas"><span data-lang="en">→ The festival year, incl. Festa da Flor</span><span data-lang="pt">→ O ano das festas, incl. Festa da Flor</span></a>
+      <p data-lang="en">And the most travelled plant of all is in the timeline below: the <b>banana</b>, which climbed off the ships in the 19th century, took over the warm coastal poios and ended up giving its field to the airport runway.</p>
+      <p data-lang="pt">E a planta mais viajada de todas está na linha do tempo, mais abaixo: a <b>banana</b>, que saiu dos navios no séc. XIX, tomou os poios quentes da costa e acabou por dar o seu campo à pista do aeroporto.</p>
+      <a class="story-link" href="#bananas"><span data-lang="en">→ The banana chapter in the timeline</span><span data-lang="pt">→ O capítulo da banana na linha do tempo</span></a>
+    </div>
+  </div>
+
+<div class="story" id="festas-story">
     <div class="story-head" style="background: linear-gradient(140deg, #b0176c, #d4a017 145%)">
       <span class="s-emoji">🎉</span>
       <div><span class="s-kicker">1419 – <span data-lang="en">today</span><span data-lang="pt">hoje</span></span>
@@ -293,7 +256,7 @@
     </div>
   </div>
 
-  <div class="story" id="kitchen">
+<div class="story" id="kitchen">
     <div class="story-head" style="background: linear-gradient(140deg, #7a3b10, #c26b2e 140%)">
       <span class="s-emoji">🍽</span>
       <div><span class="s-kicker">1450 – <span data-lang="en">today</span><span data-lang="pt">hoje</span></span>
@@ -314,11 +277,41 @@
       <p data-lang="en">Wash it down the historic way: wine from the terraces or a poncha beaten with the <i>caralhinho</i> — both have their own stories above.</p>
       <p data-lang="pt">A comida da Madeira foi inventada por gente que trabalhava encostas o dia inteiro: densa, portátil, feita ao lume. A <b>espetada</b> — vaca em pau de louro sobre brasas — é comida de arraial; o <b>bolo do caco</b> com manteiga de alho também, cozido onde uma pedra aquece. O <b>milho frito</b> alimentava os dias de fazenda, as <b>lapas</b> grelhadas a costa, e o peixe-espada preto subia de um quilómetro de fundo em linhas de mão. O doce mais antigo da mesa, o <b>bolo de mel</b>, faz-se com mel de cana — descendente direto dos engenhos, ainda amassado pelo Natal e partido à mão, nunca à faca.</p>
       <p data-lang="pt">Para acompanhar, o vinho dos socalcos ou uma poncha batida com o caralhinho — ambos têm as suas histórias mais acima.</p>
-      <a class="story-link" href="#rum"><span data-lang="en">→ Rum &amp; poncha: the story</span><span data-lang="pt">→ Rum e poncha: a história</span></a>
+      <a class="story-link" href="#drinks"><span data-lang="en">→ Drinks: the story</span><span data-lang="pt">→ Rum e poncha: a história</span></a>
     </div>
   </div>
 
-    <h2 class="stories-title"><span data-lang="en">The timeline</span><span data-lang="pt">A linha do tempo</span></h2>
+  <div class="story" id="drinks">
+    <div class="story-head" style="background: linear-gradient(140deg, #5c1030, #c9862e 150%)">
+      <span class="s-emoji">🍷</span>
+      <div><span class="s-kicker">1425 – <span data-lang="en">today</span><span data-lang="pt">hoje</span></span>
+      <h3><span data-lang="en">Drinks — wine, rum &amp; poncha</span><span data-lang="pt">Bebidas — vinho, rum e poncha</span></h3></div>
+    </div>
+    <div class="story-body">
+      <div class="chapter" id="wine"><span class="era-years"><span data-lang="en">1600s – today</span><span data-lang="pt">séc. XVII – hoje</span></span><h3 class="chapter-h"><span data-lang="en">Madeira — the immortal wine</span><span data-lang="pt">Madeira — o vinho imortal</span></h3></div>
+      <figure>
+        <img loading="lazy" src="/madeira/history/1900-borracheiros-cossart.jpg" alt="Borracheiros queueing with goatskins of wine at Cossart Gordon warehouses, circa 1900">
+        <figcaption><span data-lang="en">A file of <i>borracheiros</i> under the vine pergola at Cossart Gordon &amp; Co. — each man with a full goatskin of young wine on his shoulders and a walking staff, the lodge's great casks waiting on the right. Tinted postcard, c. 1900. Public domain.</span><span data-lang="pt">Fila de <b>borracheiros</b> sob a latada nos armazéns da Cossart Gordon &amp; Co. — cada homem com um borracho cheio de vinho ao ombro e o seu bordão, os cascos grandes à espera, à direita. Postal colorido, c. 1900. Domínio público.</span></figcaption>
+      </figure>
+      <p data-lang="en">Madeira wine was made immortal by accident. Casks shipped through the tropics arrived tasting <i>better</i> — cooked and rocked for months — and merchants began sending wine on round trips just to age it (<i>vinho da roda</i>). Ashore, the voyage was recreated with sun-warmed lofts (<b>canteiro</b>) and heated stores (<b>estufa</b>). The result barely dies: 18th-century bottles are opened and drunk today.</p>
+      <p data-lang="en">It was the toast of the <b>American Declaration of Independence</b> in 1776, Shakespeare had a duke drown in a butt of its malmsey, and Napoleon's ship picked up a cask on the way to exile. Not bad for grapes grown on cliff terraces you can still run past above Câmara de Lobos.</p>
+      <p data-lang="pt">O vinho Madeira tornou-se imortal por acidente. Os cascos que atravessavam os trópicos chegavam <i>melhores</i> — cozidos e embalados meses a fio — e os mercadores passaram a mandá-lo dar a volta só para envelhecer (o vinho da roda). Em terra, a viagem recriou-se com o <b>canteiro</b> ao sol e a <b>estufa</b>. O resultado quase não morre: ainda hoje se abrem garrafas do séc. XVIII.</p>
+      <p data-lang="pt">Foi o brinde da <b>Independência americana</b> em 1776, Shakespeare afogou um duque num tonel de malvasia, e o navio de Napoleão levou um casco a caminho do exílio. Nada mau para uvas de socalcos suspensos que ainda hoje se correm, acima de Câmara de Lobos.</p>
+      <a class="story-link" href="#album"><span data-lang="en">→ More pictures &amp; stories in the Album</span><span data-lang="pt">→ Mais imagens e histórias no Álbum</span></a>
+      <div class="chapter" id="rum"><span class="era-years"><span data-lang="en">1425 – today</span><span data-lang="pt">1425 – hoje</span></span><h3 class="chapter-h"><span data-lang="en">Sugar, rum &amp; poncha</span><span data-lang="pt">Açúcar, rum e poncha</span></h3></div>
+      <figure>
+        <img loading="lazy" src="/madeira/history/1960-torreao-sugar-factory.jpg" alt="The chimney of the Torreão sugar factory over Funchal rooftops, circa 1960">
+        <figcaption><span data-lang="en">The brick chimney of the Torreão (Hinton) sugar factory towering over Funchal's rooftops like a lighthouse of industry, c. 1960 — cane was still being milled in the middle of the city within living memory. ABM. Public domain.</span><span data-lang="pt">A chaminé de tijolo da fábrica do Torreão (Hinton) por cima dos telhados do Funchal, c. 1960 — ainda se moía cana no meio da cidade em memória viva. ABM. Domínio público.</span></figcaption>
+      </figure>
+      <p data-lang="en">Sugar built Madeira twice. The first boom sweetened Renaissance Europe; the second, in the 1800s, turned cane juice into something better: <b>aguardente de cana</b> — Madeiran rum, distilled where the cane grows. The Hinton factory's chimney ruled Funchal's skyline until the 1980s, and in <b>Porto da Cruz</b> the steam-driven Engenho do Norte still fires up every spring harvest, one of Europe's last working steam distilleries.</p>
+      <p data-lang="en">And the fisherman's dose of it became the island's password: <b>poncha</b> — rum, honey and lemon beaten with the wooden <i>caralhinho</i> in the taverns of Câmara de Lobos, drunk “to kill the germs” before the boats went out. Order one after a levada and you are drinking five centuries of cane in a glass.</p>
+      <p data-lang="pt">O açúcar construiu a Madeira duas vezes. O primeiro ciclo adoçou a Europa do Renascimento; o segundo, no séc. XIX, transformou o sumo da cana em algo melhor: a <b>aguardente de cana</b>, destilada onde a cana cresce. A chaminé da fábrica Hinton mandou no céu do Funchal até aos anos 1980, e no <b>Porto da Cruz</b> o Engenho do Norte, a vapor, ainda acorda a cada apanha — uma das últimas destilarias a vapor da Europa.</p>
+      <p data-lang="pt">E a dose do pescador virou senha da ilha: a <b>poncha</b> — aguardente, mel e limão batidos com o caralhinho nas tascas de Câmara de Lobos, bebida «para matar o bicho» antes de os barcos saírem. Peça uma depois de uma levada e está a beber cinco séculos de cana num copo.</p>
+      <a class="story-link" href="#album"><span data-lang="en">→ More pictures &amp; stories in the Album</span><span data-lang="pt">→ Mais imagens e histórias no Álbum</span></a>
+    </div>
+  </div>
+
+  <h2 class="stories-title"><span data-lang="en">The timeline</span><span data-lang="pt">A linha do tempo</span></h2>
   <p class="stories-sub"><span data-lang="en">Six hundred years in six chapters — worth a slow scroll.</span><span data-lang="pt">Seiscentos anos em seis capítulos — vale a pena descer devagar.</span></p>
 
   <div class="era">
@@ -477,7 +470,8 @@ document.querySelectorAll('.story-head').forEach(function (h) {
 function revealTarget(id) {
   var t = document.getElementById(id);
   if (!t) return false;
-  if (t.classList.contains('story')) t.classList.add('open');
+  var card = t.closest('.story');
+  if (card) card.classList.add('open');
   t.scrollIntoView({ behavior: 'smooth', block: 'start' });
   return true;
 }
@@ -489,7 +483,7 @@ document.querySelectorAll('a[href^="#"]').forEach(function (a) {
 });
 if (location.hash) {
   var t0 = document.getElementById(location.hash.slice(1));
-  if (t0 && t0.classList.contains('story')) t0.classList.add('open');
+  if (t0) { var c0 = t0.closest('.story'); if (c0) c0.classList.add('open'); }
 }
 </script>
 </body>
