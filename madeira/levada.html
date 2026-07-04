@@ -122,6 +122,20 @@
   .mark { display: inline-block; width: 10px; height: 10px; border-radius: 50%; vertical-align: middle; margin-right: 4px; border: 1px solid rgba(0,0,0,0.15); }
   .src { color: var(--soft); font-size: 12px; margin-top: 26px; text-align: center; }
   .src a { color: var(--soft); }
+  .today { border: 1px solid var(--line); border-radius: 12px; background: linear-gradient(160deg, #f2efe4, #fbf9f4); padding: 16px 16px 12px; margin-bottom: 18px; }
+  .today-title { font-family: Fraunces, Georgia, serif; font-size: 21px; font-weight: 600; margin: 0 0 2px; color: var(--accent); }
+  .today-sub { font-size: 13px; color: var(--soft); margin: 0 0 12px; }
+  .today-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+  .today-pick { border: 1px solid var(--line); border-radius: 10px; background: #fff; padding: 12px 12px 10px; display: flex; flex-direction: column; gap: 6px; }
+  .today-wx { font-size: 22px; line-height: 1; }
+  .today-name { font-weight: 700; font-size: 14.5px; line-height: 1.25; }
+  .today-name .code { color: var(--soft); font-weight: 600; font-size: 12px; margin-right: 5px; }
+  .today-meta { font-size: 12.5px; color: var(--soft); }
+  .today-meta b { color: var(--ink); }
+  .today-actions { display: flex; gap: 12px; margin-top: 2px; }
+  .today-actions a, .today-actions button { background: none; border: 0; padding: 0; font: inherit; font-size: 12.5px; font-weight: 700; color: var(--accent); cursor: pointer; text-decoration: none; }
+  .today-actions a:hover, .today-actions button:hover { text-decoration: underline; }
+  .today-rank { font-size: 10px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: #9a6a16; }
 </style>
 </head>
 <body>
@@ -170,6 +184,12 @@
     <span data-lang="en">Madeira's classified walking trails — distance, ascent, how to get there and current status.</span>
     <span data-lang="pt">Percursos pedestres classificados da Madeira — distância, subida, como chegar e estado atual.</span>
   </p>
+
+  <div class="today" id="today" hidden>
+    <h2 class="today-title" id="today-title"></h2>
+    <p class="today-sub" id="today-sub"></p>
+    <div class="today-grid" id="today-grid"></div>
+  </div>
 
   <div class="map-card">
     <iframe id="map-frame" title="Madeira walking trails map" loading="lazy"></iframe>
@@ -228,6 +248,12 @@ var T = {
   fee:   { en: 'Ticket required', pt: 'Bilhete obrigatório' },
   guide: { en: 'Guide & photos ↗', pt: 'Guia e fotos ↗' },
   onmap: { en: 'Show on map', pt: 'Ver no mapa' },
+  fly:   { en: 'Fly in 3D', pt: 'Voar em 3D' },
+  todayTitle: { en: 'Where to go today?', pt: 'Onde ir hoje?' },
+  todaySub:   { en: 'Open trails ranked by today’s weather along the route — rain, wind and IFCN status combined.', pt: 'Percursos abertos ordenados pelo tempo de hoje no trilho — chuva, vento e estado IFCN.' },
+  todayRain:  { en: 'rain', pt: 'chuva' },
+  todayWind:  { en: 'wind', pt: 'vento' },
+  todayErr:   { en: 'Weather service unavailable — check the trail list below.', pt: 'Meteo indisponível — veja a lista abaixo.' },
 };
 var DIFF = [
   { max: 8,   level: 1, en: 'Easy',     pt: 'Fácil',    color: '#2e9e5b' },
@@ -318,6 +344,7 @@ function applyLang() {
     '/madeira/map.html?embed=1&theme=light&layer=walk&lang=' + lang;
   document.getElementById('map-open').href = '/madeira/map?layer=walk&lang=' + lang;
   if (data) render();
+  if (window._todayPicks) renderToday(window._todayPicks);
 }
 
 function esc(s) {
@@ -364,6 +391,7 @@ function render() {
     }
 
     var links = '<button data-focus="' + esc(l.code) + '">📍 ' + T.onmap[lang] + '</button>';
+    links += '<a href="/madeira/mapfly?trail=' + encodeURIComponent(l.code) + '">▶ ' + T.fly[lang] + '</a>';
     if (url) links += '<a href="' + esc(url) + '" target="_blank" rel="noopener">' + T.guide[lang] + '</a>';
 
     return '<div class="card" data-code="' + esc(l.code) + '">' +
@@ -423,10 +451,84 @@ document.getElementById('nav').addEventListener('click', function (e) {
   render();
 });
 
+function wxEmoji(code) {
+  if (code >= 95) return '⛈'; if (code >= 80) return '🌧'; if (code >= 71) return '🌨';
+  if (code >= 61) return '🌧'; if (code >= 51) return '🌦'; if (code >= 45) return '🌫';
+  if (code === 3) return '☁️'; if (code >= 1) return '🌤'; return '☀️';
+}
+
+function renderToday(picks) {
+  var box = document.getElementById('today');
+  document.getElementById('today-title').textContent = T.todayTitle[lang];
+  document.getElementById('today-sub').textContent = T.todaySub[lang];
+  var RANK = lang === 'pt' ? ['melhor escolha', 'boa opção', 'também bom'] : ['best pick', 'good option', 'also good'];
+  document.getElementById('today-grid').innerHTML = picks.map(function (p, i) {
+    var df = difficulty(p.l);
+    return '<div class="today-pick">' +
+      '<span class="today-rank">' + RANK[i] + '</span>' +
+      '<span class="today-wx">' + wxEmoji(p.code) + ' <b style="font-size:15px">' + Math.round(p.temp) + '°</b>' +
+        ' <span class="today-meta">' + p.rain + '% ' + T.todayRain[lang] + ' · ' + Math.round(p.wind) + ' km/h ' + T.todayWind[lang] + '</span></span>' +
+      '<span class="today-name"><span class="code">' + esc(p.l.code) + '</span>' + esc(p.l.name) + '</span>' +
+      '<span class="today-meta"><b>' + (p.l.distance_km || '?') + '</b> km · ↑<b>' + (p.l.ascent_m || 0) + '</b> m · ' +
+        '<span style="color:' + df.color + ';font-weight:700">' + df[lang] + '</span></span>' +
+      '<span class="today-actions">' +
+        '<button data-focus="' + esc(p.l.code) + '">📍 ' + T.onmap[lang] + '</button>' +
+        '<a href="/madeira/mapfly?trail=' + encodeURIComponent(p.l.code) + '">▶ ' + T.fly[lang] + '</a>' +
+      '</span></div>';
+  }).join('');
+  box.hidden = false;
+  box.querySelectorAll('[data-focus]').forEach(function (b) {
+    b.addEventListener('click', function () { focusOnMap(b.getAttribute('data-focus')); });
+  });
+}
+
+function loadToday() {
+  var cands = data.levadas.filter(function (l) { return l.status !== 'closed' && l.center; });
+  if (!cands.length) return;
+  var lats = cands.map(function (l) { return l.center[0].toFixed(4); }).join(',');
+  var lons = cands.map(function (l) { return l.center[1].toFixed(4); }).join(',');
+  var url = 'https://api.open-meteo.com/v1/forecast?latitude=' + lats + '&longitude=' + lons +
+    '&hourly=temperature_2m,precipitation_probability,windspeed_10m,weathercode' +
+    '&forecast_days=1&timezone=Europe%2FLisbon';
+  fetch(url).then(function (r) { return r.json(); }).then(function (res) {
+    var arr = Array.isArray(res) ? res : [res];
+    var scored = cands.map(function (l, i) {
+      var h = (arr[i] || {}).hourly || {};
+      var rain = 0, wind = 0, temp = 20, code = 0, n = 0;
+      for (var k = 9; k <= 17; k++) {
+        if (!h.temperature_2m || h.temperature_2m[k] == null) continue;
+        rain += h.precipitation_probability ? (h.precipitation_probability[k] || 0) : 0;
+        wind = Math.max(wind, h.windspeed_10m ? (h.windspeed_10m[k] || 0) : 0);
+        if (k === 13) { temp = h.temperature_2m[k]; code = h.weathercode ? (h.weathercode[k] || 0) : 0; }
+        n++;
+      }
+      rain = n ? Math.round(rain / n) : 50;
+      var score = rain * 1.3 + wind * 0.7 + (l.status === 'partial' ? 30 : 0);
+      return { l: l, rain: rain, wind: wind, temp: temp, code: code, score: score };
+    }).sort(function (a, b) { return a.score - b.score; });
+    // top-3, preferring different difficulty levels
+    var picks = [], used = {};
+    scored.forEach(function (p) {
+      if (picks.length >= 3) return;
+      var lv = difficulty(p.l).level;
+      if (!used[lv]) { used[lv] = 1; picks.push(p); }
+    });
+    scored.forEach(function (p) { if (picks.length < 3 && picks.indexOf(p) === -1) picks.push(p); });
+    window._todayPicks = picks;
+    if (picks.length) renderToday(picks);
+  }).catch(function () {
+    var box = document.getElementById('today');
+    document.getElementById('today-title').textContent = T.todayTitle[lang];
+    document.getElementById('today-sub').textContent = T.todayErr[lang];
+    box.hidden = false;
+  });
+}
+
 fetch('levadas.json').then(function (r) { return r.json(); }).then(function (d) {
   data = d;
   document.getElementById('src').innerHTML = esc(d.attribution || '');
   render();
+  loadToday();
 }).catch(function () {
   document.getElementById('list').innerHTML = '<p class="sub">Could not load levadas.</p>';
 });

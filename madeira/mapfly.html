@@ -140,6 +140,14 @@ function build(features) {
   });
   MAP = map;
   map.addControl(new maplibregl.NavigationControl({ visualizePitch: true }), 'top-right');
+  let pendingDone = false;
+  const tryPendingFly = () => {
+    if (pendingDone || window._pendingFly === null) return;
+    pendingDone = true;
+    setTimeout(() => window._fly(window._pendingFly), 500);
+  };
+  map.on('load', tryPendingFly);
+  setTimeout(tryPendingFly, 2500); // fallback: slow tiles must not block the flyover
 
   map.on('click', 'levadas-line', e => {
     const p = e.features[0].properties;
@@ -192,13 +200,17 @@ function build(features) {
 
 window._flyData = [];
 window._fly = function (fid) { flyAlong(window._flyData[fid]); };
+window._pendingFly = null;
 
 fetch('trails_geo.json').then(r => r.json()).then(data => {
+  const norm = s => String(s || '').replace(/[\s.]/g, '').toLowerCase();
+  const want = norm(new URLSearchParams(location.search).get('trail'));
   const features = (data.trails || []).map((t, idx) => {
     // longest segment = the main route for flyover
     const longest = (t.lines || []).slice().sort((a, b) => b.length - a.length)[0] || [];
     const coords = longest.map(p => [p[1], p[0]]);
     window._flyData[idx] = coords;
+    if (want && norm(t.code) === want && window._pendingFly === null) window._pendingFly = idx;
     return {
       type: 'Feature',
       properties: { code: t.code, name: t.name, status: t.status, color: STATUS_COLOR[t.status] || '#34d27b', fid: idx, coords: JSON.stringify(coords) },

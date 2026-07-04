@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>History — how Madeira learned to move</title>
+<meta name="description" content="A short illustrated history of active Madeira: sugar cane, wine, levada building, bananas — and how working paths became walking trails.">
+<link rel="icon" href="/madeira/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/madeira/icon-192.png?v=5e8787d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F5F2EA; --accent: #1F4D32; --soft: #6B8763; --line: #DAD3C5; --ink: #15201A; --gold: #9a6a16;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 20px 18px 60px; }
+  .topbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+  .brand-link { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
+  .brand-link:hover { opacity: 0.8; }
+  .brand-icon { width: 32px; height: 32px; border-radius: 7px; flex-shrink: 0; }
+  .brand-name { font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 18px; color: var(--accent); letter-spacing: -0.01em; }
+  .lang { display: flex; gap: 4px; }
+  .lang button { border: 1px solid var(--line); background: none; color: var(--soft); border-radius: 999px; padding: 4px 11px; font: inherit; font-size: 13px; cursor: pointer; }
+  .lang button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  h1 { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: clamp(30px, 6vw, 46px); letter-spacing: -0.02em; margin: 18px 0 6px; }
+  .sub { color: var(--soft); font-size: 16px; margin: 0 0 30px; line-height: 1.5; }
+  .era {
+    border-left: 3px solid var(--line); padding: 4px 0 8px 22px; margin: 0 0 38px; position: relative;
+  }
+  .era::before {
+    content: ''; position: absolute; left: -8px; top: 10px; width: 13px; height: 13px;
+    border-radius: 50%; background: var(--accent); border: 3px solid var(--bg);
+  }
+  .era-years { font-size: 12px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); }
+  .era h2 { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: clamp(22px, 4vw, 30px); margin: 4px 0 12px; letter-spacing: -0.01em; }
+  figure { margin: 14px 0 6px; }
+  figure img {
+    width: 100%; border-radius: 12px; border: 1px solid var(--line); display: block;
+    background: #e9e4d8; min-height: 120px;
+  }
+  figcaption { font-size: 12px; color: var(--soft); margin-top: 7px; line-height: 1.45; }
+  .era p { font-size: 15.5px; line-height: 1.62; margin: 12px 0; color: #26332b; }
+  .era p b { color: var(--ink); }
+  .fig-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 560px) { .fig-pair { grid-template-columns: 1fr; } }
+  .now {
+    border: 1px solid var(--line); border-radius: 14px; padding: 20px 20px 16px;
+    background: linear-gradient(160deg, #eef2e6, #fbf9f4); margin-top: 6px;
+  }
+  .now h2 { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 24px; margin: 0 0 10px; color: var(--accent); }
+  .now p { font-size: 15.5px; line-height: 1.6; margin: 8px 0; color: #26332b; }
+  .now-links { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+  .now-links a {
+    background: var(--accent); color: #fff; text-decoration: none; font-size: 13.5px; font-weight: 600;
+    padding: 8px 14px; border-radius: 999px;
+  }
+  .now-links a.ghost { background: none; color: var(--accent); border: 1px solid var(--accent); }
+  .src { color: var(--soft); font-size: 12px; margin-top: 34px; text-align: center; line-height: 1.5; }
+  .src a { color: var(--soft); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="brand-link" href="/madeira/">
+      <svg class="brand-icon" viewBox="0 0 512 512" aria-hidden="true">
+        <rect width="512" height="512" rx="112" fill="#1f4d32"/>
+        <g transform="translate(86 54) scale(1.55)" fill="none" stroke="#f5f2ea" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="110" cy="110" r="90"/>
+          <circle cx="110" cy="110" r="76" stroke-dasharray="5 12" stroke-opacity="0.58"/>
+          <circle cx="110" cy="110" r="7" fill="#f5f2ea" stroke="none"/>
+          <line x1="20" y1="110" x2="200" y2="110"/>
+          <line x1="110" y1="20" x2="110" y2="200"/>
+          <line x1="46.4" y1="46.4" x2="173.6" y2="173.6"/>
+          <line x1="46.4" y1="173.6" x2="173.6" y2="46.4"/>
+          <path d="M0 232C30 222 50 244 80 232S130 222 160 232S200 244 220 232"/>
+          <path d="M0 248C30 238 50 260 80 248S130 238 160 248S200 260 220 248" stroke-opacity="0.58"/>
+        </g>
+      </svg>
+      <span class="brand-name">Madeira Ative</span>
+    </a>
+    <div class="lang">
+      <button data-set-lang="en">EN</button>
+      <button data-set-lang="pt">PT</button>
+    </div>
+  </div>
+
+  <h1><span data-lang="en">How Madeira learned to move</span><span data-lang="pt">Como a Madeira aprendeu a mover-se</span></h1>
+  <p class="sub">
+    <span data-lang="en">Six hundred years of hard, active living on a vertical island — clearing forests, cutting water channels into cliffs, hauling wine on shoulders and racing wicker sledges downhill. The story of why Madeira is a natural home for trail running and mountain walking.</span>
+    <span data-lang="pt">Seiscentos anos de vida ativa numa ilha vertical — arrotear florestas, rasgar canais de água na rocha, carregar vinho aos ombros e descer de carro de cesto. A história de porque é que a Madeira é a casa natural do trail e da caminhada.</span>
+  </p>
+
+  <div class="era">
+    <div class="era-years">1419 – 1500s</div>
+    <h2><span data-lang="en">Clearing a vertical island</span><span data-lang="pt">Arrotear uma ilha vertical</span></h2>
+    <figure>
+      <img src="/madeira/history/1821-rural-occupations.jpg" alt="Rural occupations on Madeira — plate from A History of Madeira, 1821">
+      <figcaption><span data-lang="en">Rural occupations — hand-coloured plate from “A History of Madeira”, London, 1821. Public domain.</span><span data-lang="pt">Ocupações rurais — gravura de “A History of Madeira”, Londres, 1821. Domínio público.</span></figcaption>
+    </figure>
+    <p data-lang="en">When Zarco's caravels reached the island in 1419, it was one dense laurel forest — <i>madeira</i> means “wood”. Settlers burned and cleared, then did something remarkable: instead of giving up on slopes too steep to plough, they carved them into thousands of tiny stone-walled terraces, the <b>poios</b>. Every basket of soil and every harvest travelled on someone's back, up and down paths that today's runners know as race courses.</p>
+    <p data-lang="pt">Quando as caravelas de Zarco chegaram em 1419, a ilha era uma floresta Laurissilva cerrada — daí o nome <i>Madeira</i>. Os povoadores queimaram e arrotearam, e fizeram algo notável: em vez de desistir das encostas íngremes demais para arar, talharam-nas em milhares de socalcos murados, os <b>poios</b>. Cada cesto de terra e cada colheita viajou às costas de alguém, por veredas que os corredores de hoje conhecem como percursos de prova.</p>
+  </div>
+
+  <div class="era">
+    <div class="era-years">1450 – 1600</div>
+    <h2><span data-lang="en">White gold — sugar cane</span><span data-lang="pt">Ouro branco — a cana-de-açúcar</span></h2>
+    <figure>
+      <img loading="lazy" src="/madeira/history/1900-sugar-cane-harvest.jpg" alt="Sugar cane harvest on Madeira — Bazar do Povo postcard, circa 1900">
+      <figcaption><span data-lang="en">“Apanha de canas” — sugar-cane harvest, Bazar do Povo postcard, c. 1900. Public domain.</span><span data-lang="pt">“Apanha de canas”, postal do Bazar do Povo, c. 1900. Domínio público.</span></figcaption>
+    </figure>
+    <p data-lang="en">By the mid-1400s Madeira was Europe's first great sugar island. Cane from Sicily loved the warm south coast, water-driven <b>engenhos</b> crushed it, and Funchal sugar reached Flanders and Venice — for a while the island produced most of the sugar sold in Western Europe. Christopher Columbus came here as a sugar buyer and married into a settler family on Porto Santo. Sugar built Funchal's first churches and its first fortunes, before Brazil's plantations undercut it a century later.</p>
+    <p data-lang="pt">Em meados de Quatrocentos a Madeira era a primeira grande ilha do açúcar da Europa. A cana da Sicília deu-se bem na costa sul, os <b>engenhos</b> de água moíam-na, e o açúcar do Funchal chegava à Flandres e a Veneza — durante décadas a ilha produziu a maior parte do açúcar vendido na Europa ocidental. Cristóvão Colombo veio cá como comprador de açúcar e casou com uma família povoadora do Porto Santo. O açúcar ergueu as primeiras igrejas e fortunas do Funchal, até as plantações do Brasil o baterem no preço um século depois.</p>
+  </div>
+
+  <div class="era">
+    <div class="era-years">1600 – 1900</div>
+    <h2><span data-lang="en">Wine carried on shoulders</span><span data-lang="pt">Vinho levado aos ombros</span></h2>
+    <figure>
+      <img loading="lazy" src="/madeira/history/1828-wine-carriers.jpg" alt="Peasants of Madeira conveying wine in goatskins, 1828 print">
+      <figcaption><span data-lang="en">Peasants conveying wine in goatskins — print, 1828. Public domain.</span><span data-lang="pt">Camponeses a transportar vinho em borrachos — gravura, 1828. Domínio público.</span></figcaption>
+    </figure>
+    <p data-lang="en">After sugar came the vine. Madeira wine crossed every ocean — heated and rocked in ships' holds, it only got better, and it was raised in toasts to American independence in 1776. On the island itself every drop moved by muscle: the <b>borracheiros</b> carried ~40-litre goatskins of wine on their shoulders from mountain vineyards down to the Funchal lodges, walking distances that would count as a respectable trail race today.</p>
+    <p data-lang="pt">Depois do açúcar veio a vinha. O vinho Madeira cruzou todos os oceanos — aquecido e embalado nos porões, só melhorava, e brindou-se com ele a independência americana em 1776. Na ilha, cada gota movia-se a músculo: os <b>borracheiros</b> desciam das vinhas até aos armazéns do Funchal com borrachos de ~40 litros ao ombro, percorrendo distâncias que hoje dariam uma boa prova de trail.</p>
+  </div>
+
+  <div class="era">
+    <div class="era-years">1461 – today</div>
+    <h2><span data-lang="en">Levadas — water walking on cliffs</span><span data-lang="pt">Levadas — água a caminhar nas arribas</span></h2>
+    <figure>
+      <img loading="lazy" src="/madeira/history/1890-levada-path.jpg" alt="A levada channel with its footpath — 19th-century photograph, Rijksmuseum collection">
+      <figcaption><span data-lang="en">A levada and its maintenance path — 19th-century photograph, Rijksmuseum collection. Public domain.</span><span data-lang="pt">Uma levada e a sua vereda — fotografia do séc. XIX, coleção do Rijksmuseum. Domínio público.</span></figcaption>
+    </figure>
+    <p data-lang="en">Rain falls on the north side of Madeira; the sun and the farms are on the south. The answer, started in the 1460s and still growing five centuries later, was the <b>levadas</b>: over 3,000 km of hand-cut water channels that contour the island through cliffs and tunnels. Builders — the <i>rocheiros</i> — worked hanging from wicker baskets on ropes over the void. Beside every channel runs the narrow path the <i>levadeiro</i> walked daily to keep the water flowing. Those maintenance paths are exactly what you hike today: the levada trails are a 550-year-old workplace.</p>
+    <p data-lang="pt">A chuva cai no norte da Madeira; o sol e as fazendas estão no sul. A resposta, começada na década de 1460 e ainda a crescer cinco séculos depois, foram as <b>levadas</b>: mais de 3 000 km de canais talhados à mão, contornando arribas e furando túneis. Os <i>rocheiros</i> trabalhavam pendurados em cestos de vime sobre o abismo. Ao lado de cada canal corre a vereda estreita que o <i>levadeiro</i> percorria todos os dias. São essas veredas de serviço que hoje se caminham: os trilhos das levadas são um local de trabalho com 550 anos.</p>
+  </div>
+
+  <div class="era">
+    <div class="era-years">1600s – 1930s</div>
+    <h2><span data-lang="en">Moving without wheels</span><span data-lang="pt">Mover-se sem rodas</span></h2>
+    <div class="fig-pair">
+      <figure>
+        <img loading="lazy" src="/madeira/history/1821-hammock-travel.jpg" alt="Travelling by hammock on Madeira — plate from A History of Madeira, 1821">
+        <figcaption><span data-lang="en">Travelling by hammock (<i>rede</i>) — 1821. Public domain.</span><span data-lang="pt">Viajar de rede — 1821. Domínio público.</span></figcaption>
+      </figure>
+      <figure>
+        <img loading="lazy" src="/madeira/history/1900-monte-toboggan.jpg" alt="Monte toboggan sledge — Bazar do Povo postcard, circa 1900">
+        <figcaption><span data-lang="en">The Monte toboggan — postcard, c. 1900. Public domain.</span><span data-lang="pt">Carro do Monte — postal, c. 1900. Domínio público.</span></figcaption>
+      </figure>
+    </div>
+    <p data-lang="en">Until the 20th century Madeira had almost no roads a wheel could use — everything was too steep. People and goods moved by hammock slung on two carriers' shoulders, by ox-drawn runner sledges on the polished basalt streets, and, from about 1850, by the famous <b>Monte toboggan</b>: a wicker basket on wooden runners, steered downhill at speed by two <i>carreiros</i> in straw hats. Hemingway called it one of the most exhilarating rides of his life. It still runs every day — the world's oldest downhill ride.</p>
+    <p data-lang="pt">Até ao século XX a Madeira quase não tinha estradas para rodas — tudo era íngreme demais. Pessoas e cargas moviam-se de rede ao ombro de dois carregadores, em corsas puxadas a bois sobre o basalto polido e, desde cerca de 1850, no famoso <b>carro do Monte</b>: um cesto de vime sobre patins de madeira, guiado a alta velocidade por dois <i>carreiros</i> de chapéu de palha. Hemingway chamou-lhe uma das descidas mais emocionantes da sua vida. Ainda desce todos os dias — o transporte de descida mais antigo do mundo.</p>
+  </div>
+
+  <div class="era">
+    <div class="era-years">1900s – 1970s</div>
+    <h2><span data-lang="en">Bananas take the terraces</span><span data-lang="pt">A banana toma os socalcos</span></h2>
+    <figure>
+      <img loading="lazy" src="/madeira/history/1961-banana-field-airport.jpg" alt="Demolition starting for Funchal airport in a banana field, 5 June 1961">
+      <figcaption><span data-lang="en">A banana field making way for Funchal airport — 5 June 1961, Arquivo Regional da Madeira. Public domain.</span><span data-lang="pt">Um campo de bananeiras a dar lugar ao aeroporto do Funchal — 5 de junho de 1961, ABM. Domínio público.</span></figcaption>
+    </figure>
+    <p data-lang="en">The 20th century belonged to the banana. The warm coastal poios below 300 m turned into a green staircase of plantations, and bananas — small, sweet, silver-skinned — became the south coast's cash crop, shipped to Lisbon by the boatload. The photo above captures a turning point: in 1961 a banana field at Santa Catarina was cleared for the new airport, the moment subsistence-farming Madeira started becoming the trail-tourism Madeira of today.</p>
+    <p data-lang="pt">O século XX foi da banana. Os poios quentes abaixo dos 300 m tornaram-se uma escadaria verde de fazendas, e a banana da Madeira — pequena, doce — passou a ser a cultura de exportação da costa sul, embarcada para Lisboa. A foto acima capta uma viragem: em 1961 um campo de bananeiras em Santa Catarina foi arroteado para o novo aeroporto — o momento em que a Madeira agrícola começou a tornar-se a Madeira do trail e do turismo de hoje.</p>
+  </div>
+
+  <div class="now">
+    <h2><span data-lang="en">Today: the workplace became a playground</span><span data-lang="pt">Hoje: o local de trabalho virou recreio</span></h2>
+    <p data-lang="en">Everything above is still under your feet. The poios are the switchbacks, the levadeiro's path is your walking trail, the borracheiro's descent is a race segment, and the routes of MIUT — one of the world's great ultra-trails — cross the island the way islanders always had to: over the top. When you run or walk Madeira, you are retracing 600 years of working legs.</p>
+    <p data-lang="pt">Tudo o que está acima continua debaixo dos seus pés. Os poios são as curvas do trilho, a vereda do levadeiro é o seu passeio, a descida do borracheiro é um segmento de prova, e o MIUT — um dos grandes ultra-trails do mundo — cruza a ilha como os madeirenses sempre tiveram de a cruzar: por cima. Correr ou caminhar na Madeira é refazer 600 anos de pernas que trabalham.</p>
+    <div class="now-links">
+      <a href="/madeira/levada"><span data-lang="en">Walk the levadas</span><span data-lang="pt">Caminhar as levadas</span></a>
+      <a href="/madeira/madeira_stat.html" class="ghost"><span data-lang="en">Trail stats & races</span><span data-lang="pt">Provas de trail</span></a>
+      <a href="/madeira/mapfly" class="ghost"><span data-lang="en">Fly over the island in 3D</span><span data-lang="pt">Sobrevoar a ilha em 3D</span></a>
+    </div>
+  </div>
+
+  <p class="src">
+    <span data-lang="en">Illustrations: public-domain prints, postcards and photographs via <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a> — “A History of Madeira” (1821), Bazar do Povo postcards (c. 1900), Rijksmuseum collection, Arquivo Regional da Madeira.</span>
+    <span data-lang="pt">Ilustrações: gravuras, postais e fotografias em domínio público via <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a> — “A History of Madeira” (1821), postais do Bazar do Povo (c. 1900), Rijksmuseum, Arquivo Regional da Madeira.</span>
+  </p>
+</div>
+
+<script>
+var VALID = ['en', 'pt'];
+var urlLang = new URLSearchParams(location.search).get('lang');
+var lang = VALID.indexOf(urlLang) !== -1 ? urlLang : 'en';
+function applyLang() {
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-lang]').forEach(function (el) {
+    el.style.display = el.getAttribute('data-lang') === lang ? '' : 'none';
+  });
+  document.querySelectorAll('.lang button').forEach(function (b) {
+    b.classList.toggle('active', b.getAttribute('data-set-lang') === lang);
+  });
+}
+document.querySelectorAll('.lang button').forEach(function (b) {
+  b.onclick = function () { lang = b.getAttribute('data-set-lang'); applyLang(); };
+});
+applyLang();
+</script>
+</body>
+</html>
