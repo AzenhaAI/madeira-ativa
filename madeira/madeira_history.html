@@ -67,6 +67,18 @@
   .story-body p b { color: var(--ink); }
   .story-link { display: inline-block; margin-top: 4px; color: var(--accent); font-size: 13.5px; font-weight: 700; text-decoration: none; }
   .story-link:hover { text-decoration: underline; }
+  .story-head { cursor: pointer; user-select: none; }
+  .story-head::after { content: '▾'; margin-left: auto; font-size: 20px; opacity: 0.85; transition: transform 0.2s; }
+  .story.open .story-head::after { transform: rotate(180deg); }
+  .story .story-body { display: none; }
+  .story.open .story-body { display: block; }
+  .themes { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 20px; }
+  .chip {
+    border: 0; cursor: pointer; font: inherit; font-size: 13px; font-weight: 700; color: #fff;
+    padding: 7px 14px; border-radius: 999px; text-decoration: none; display: inline-block;
+    box-shadow: 0 2px 8px rgba(21,32,26,0.14); transition: transform 0.15s;
+  }
+  .chip:hover { transform: translateY(-2px); }
   .album-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 14px; }
   @media (max-width: 620px) { .album-grid { grid-template-columns: 1fr; } }
   .album-grid figure { margin: 0; }
@@ -220,7 +232,20 @@
   </div>
 
   <h2 class="stories-title"><span data-lang="en">Island stories</span><span data-lang="pt">Histórias da ilha</span></h2>
-  <p class="stories-sub"><span data-lang="en">Four bright threads that run through everything above.</span><span data-lang="pt">Quatro fios vivos que atravessam tudo o que ficou para trás.</span></p>
+  <p class="stories-sub"><span data-lang="en">Pick a thread — each one opens into its own story.</span><span data-lang="pt">Escolha um fio — cada um abre a sua própria história.</span></p>
+
+  <div class="themes">
+    <a class="chip" href="#levadas" style="background:#1F4D32">🥾 Levadas</a>
+    <a class="chip" href="#ships" style="background:linear-gradient(140deg,#123a6b,#2a7ab0)">⛵ <span data-lang="en">Caravels</span><span data-lang="pt">Caravelas</span></a>
+    <a class="chip" href="#wheels" style="background:linear-gradient(140deg,#263238,#6b8763)">🚂 <span data-lang="en">Transport</span><span data-lang="pt">Transportes</span></a>
+    <a class="chip" href="#festas-story" style="background:linear-gradient(140deg,#b0176c,#d4a017)">🎉 Festas</a>
+    <a class="chip" href="#wine" style="background:linear-gradient(140deg,#5c1030,#a33555)">🍷 <span data-lang="en">Wine</span><span data-lang="pt">Vinho</span></a>
+    <a class="chip" href="#rum" style="background:linear-gradient(140deg,#4d2e14,#c9862e)">🥃 <span data-lang="en">Rum &amp; poncha</span><span data-lang="pt">Rum e poncha</span></a>
+    <a class="chip" href="#kitchen" style="background:linear-gradient(140deg,#7a3b10,#c26b2e)">🍽 <span data-lang="en">Island kitchen</span><span data-lang="pt">Cozinha da ilha</span></a>
+    <a class="chip" href="#bananas" style="background:#6B8763">🍌 Bananas</a>
+    <a class="chip" href="#flowers" style="background:linear-gradient(140deg,#b0176c,#2e7d4f)">🌺 <span data-lang="en">Flowers</span><span data-lang="pt">Flores</span></a>
+    <a class="chip" href="#album" style="background:#15201A">🖼 <span data-lang="en">Album</span><span data-lang="pt">Álbum</span></a>
+  </div>
 
   <div class="story" id="ships">
     <div class="story-head" style="background: linear-gradient(140deg, #123a6b, #2a7ab0 130%)">
@@ -352,6 +377,31 @@
     </div>
   </div>
 
+  <div class="story" id="kitchen">
+    <div class="story-head" style="background: linear-gradient(140deg, #7a3b10, #c26b2e 140%)">
+      <span class="s-emoji">🍽</span>
+      <div><span class="s-kicker">1450 – <span data-lang="en">today</span><span data-lang="pt">hoje</span></span>
+      <h3><span data-lang="en">The island kitchen</span><span data-lang="pt">A cozinha da ilha</span></h3></div>
+    </div>
+    <div class="story-body">
+      <div class="fig-pair">
+        <figure>
+          <img loading="lazy" src="/madeira/history/2012-bolo-do-caco.jpg" alt="Baker in a traditional carapuça hat turning bolo do caco flatbreads on the griddle at a bamboo stall">
+          <figcaption><span data-lang="en">A baker in the traditional <i>carapuça</i> cap turns <b>bolo do caco</b> rounds on the hot plate of a bamboo festa stall — the sweet-potato flatbread was originally baked on a shard (<i>caco</i>) of basalt. Photo: Stephen Colebourne, CC BY 2.0.</span><span data-lang="pt">Um padeiro de carapuça vira <b>bolos do caco</b> na chapa de uma banca de festa em bambu — o pão de batata-doce cozia-se originalmente sobre um caco de basalto. Foto: Stephen Colebourne, CC BY 2.0.</span></figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="/madeira/history/2012-arraial.jpg" alt="Night arraial in Santo António, Funchal — strings of lights, paper garlands and an espetada fire">
+          <figcaption><span data-lang="en">An arraial after dark in Santo António — strings of bulbs, paper garlands, and on the left the fire where the espetada skewers glow. This is where the island's kitchen lives. Photo: PESP / Wikimedia, CC BY-SA 3.0.</span><span data-lang="pt">Arraial noturno em Santo António — lâmpadas em fio, grinaldas de papel e, à esquerda, o fogo onde as espetadas brilham. É aqui que mora a cozinha da ilha. Foto: PESP / Wikimedia, CC BY-SA 3.0.</span></figcaption>
+        </figure>
+      </div>
+      <p data-lang="en">Madeira's food was invented by people who worked slopes all day: dense, portable, cooked over fire. <b>Espetada</b> — beef on a fresh laurel branch over embers — is arraial food; so is <b>bolo do caco</b> with garlic butter, baked where a stone gets hot. <b>Milho frito</b> (fried cornmeal cubes) fuelled field days, <b>lapas</b> (grilled limpets) fed the coast, and the black-scabbard fish came up from a kilometre down on hand lines. The oldest sweet on the table, <b>bolo de mel</b>, is made with sugar-cane molasses — a direct descendant of the engenhos, still kneaded for Christmas and traditionally broken by fist, never cut.</p>
+      <p data-lang="en">Wash it down the historic way: wine from the terraces or a poncha beaten with the <i>caralhinho</i> — both have their own stories above.</p>
+      <p data-lang="pt">A comida da Madeira foi inventada por gente que trabalhava encostas o dia inteiro: densa, portátil, feita ao lume. A <b>espetada</b> — vaca em pau de louro sobre brasas — é comida de arraial; o <b>bolo do caco</b> com manteiga de alho também, cozido onde uma pedra aquece. O <b>milho frito</b> alimentava os dias de fazenda, as <b>lapas</b> grelhadas a costa, e o peixe-espada preto subia de um quilómetro de fundo em linhas de mão. O doce mais antigo da mesa, o <b>bolo de mel</b>, faz-se com mel de cana — descendente direto dos engenhos, ainda amassado pelo Natal e partido à mão, nunca à faca.</p>
+      <p data-lang="pt">Para acompanhar, o vinho dos socalcos ou uma poncha batida com o caralhinho — ambos têm as suas histórias mais acima.</p>
+      <a class="story-link" href="#rum"><span data-lang="en">→ Rum &amp; poncha: the story</span><span data-lang="pt">→ Rum e poncha: a história</span></a>
+    </div>
+  </div>
+
   <h2 class="stories-title" id="album">🖼 <span data-lang="en">The Album</span><span data-lang="pt">O Álbum</span></h2>
   <p class="stories-sub"><span data-lang="en">Finds from the archives, annotated — the pile grows as we keep digging.</span><span data-lang="pt">Achados dos arquivos, anotados — a pilha cresce à medida que escavamos.</span></p>
 
@@ -416,6 +466,28 @@ document.querySelectorAll('.lang button').forEach(function (b) {
   b.onclick = function () { lang = b.getAttribute('data-set-lang'); applyLang(); };
 });
 applyLang();
+
+// collapsible stories + theme cloud
+document.querySelectorAll('.story-head').forEach(function (h) {
+  h.addEventListener('click', function () { h.parentElement.classList.toggle('open'); });
+});
+function revealTarget(id) {
+  var t = document.getElementById(id);
+  if (!t) return false;
+  if (t.classList.contains('story')) t.classList.add('open');
+  t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  return true;
+}
+document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+  a.addEventListener('click', function (e) {
+    var id = a.getAttribute('href').slice(1);
+    if (revealTarget(id)) { e.preventDefault(); history.replaceState(null, '', '#' + id); }
+  });
+});
+if (location.hash) {
+  var t0 = document.getElementById(location.hash.slice(1));
+  if (t0 && t0.classList.contains('story')) t0.classList.add('open');
+}
 </script>
 </body>
 </html>
