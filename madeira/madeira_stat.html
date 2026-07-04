@@ -3473,7 +3473,30 @@ function drawAllCountriesBar(canvasId, events, aliases, height, limit, minVal) {
 
   window.addEventListener('trailcal:lang', function () { renderMini(); if (!document.getElementById('trailCalOverlay').hidden) renderTable(); });
 
-  fetch('trail_calendar.json').then(function (r) { return r.json(); }).then(function (d) { TC = d; renderMini(); });
+  fetch('trail_calendar.json').then(function (r) { return r.json(); }).then(function (d) {
+    TC = d; renderMini();
+    if (location.hash === '#calendar') {
+      var el = document.getElementById('trailCalMini');
+      if (el) {
+        setTimeout(function () {
+          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          el.style.boxShadow = '0 0 0 3px #1F4D32';
+          setTimeout(function () { el.style.boxShadow = ''; }, 2200);
+        }, 350);
+        // charts above render for a few seconds and shift the layout —
+        // silently re-anchor until the calendar sits in the viewport
+        var tries = 0;
+        var anchor = setInterval(function () {
+          var vh = window.innerHeight || document.documentElement.clientHeight;
+          if (vh > 0) {
+            var r = el.getBoundingClientRect();
+            if (r.top < 0 || r.bottom > vh) el.scrollIntoView({ block: 'center' });
+          }
+          if (++tries >= 8) clearInterval(anchor);
+        }, 800);
+      }
+    }
+  });
 })();
 </script>
 </body>
