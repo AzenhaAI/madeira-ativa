@@ -25,6 +25,14 @@
   .lang { display: flex; gap: 4px; }
   .lang button { border: 1px solid var(--line); background: none; color: var(--soft); border-radius: 999px; padding: 4px 11px; font: inherit; font-size: 13px; cursor: pointer; }
   .lang button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  html { scroll-behavior: smooth; }
+  .site-nav { position: sticky; top: 0; z-index: 100; background: rgba(245,242,234,0.92); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); margin: 8px -18px 0; padding: 0 18px; }
+  .site-nav-inner { display: flex; overflow-x: auto; scrollbar-width: none; }
+  .site-nav-inner::-webkit-scrollbar { display: none; }
+  .site-nav a { flex-shrink: 0; padding: 11px 8px; font-size: 12.5px; font-weight: 600; color: var(--soft); text-decoration: none; border-bottom: 2px solid transparent; white-space: nowrap; }
+  .site-nav a:hover { color: var(--accent); }
+  .site-nav .nav-here { flex-shrink: 0; padding: 11px 8px; font-size: 12.5px; font-weight: 800; color: var(--accent); border-bottom: 2px solid var(--accent); white-space: nowrap; }
+  .era, .story { scroll-margin-top: 56px; }
   h1 { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: clamp(30px, 6vw, 46px); letter-spacing: -0.02em; margin: 18px 0 6px; }
   .sub { color: var(--soft); font-size: 16px; margin: 0 0 30px; line-height: 1.5; }
   .era {
@@ -46,6 +54,19 @@
   .era p b { color: var(--ink); }
   .fig-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
   @media (max-width: 560px) { .fig-pair { grid-template-columns: 1fr; } }
+  h2.stories-title { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: clamp(26px, 5vw, 36px); margin: 46px 0 4px; letter-spacing: -0.01em; }
+  .stories-sub { color: var(--soft); font-size: 15px; margin: 0 0 20px; }
+  .story { border-radius: 16px; overflow: hidden; border: 1px solid var(--line); margin-bottom: 24px; background: #fbf9f4; box-shadow: 0 4px 14px rgba(21,32,26,0.07); }
+  .story-head { padding: 15px 18px 13px; color: #fff; display: flex; gap: 12px; align-items: center; }
+  .story-head .s-emoji { font-size: 30px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25)); }
+  .story-head h3 { font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: clamp(20px, 4vw, 26px); margin: 0; line-height: 1.1; text-shadow: 0 1px 5px rgba(0,0,0,0.25); }
+  .story-head .s-kicker { display: block; font-family: Inter, sans-serif; font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.9; margin-bottom: 3px; }
+  .story-body { padding: 16px 18px 16px; }
+  .story-body figure { margin: 0 0 6px; }
+  .story-body p { font-size: 15.5px; line-height: 1.62; margin: 12px 0; color: #26332b; }
+  .story-body p b { color: var(--ink); }
+  .story-link { display: inline-block; margin-top: 4px; color: var(--accent); font-size: 13.5px; font-weight: 700; text-decoration: none; }
+  .story-link:hover { text-decoration: underline; }
   .now {
     border: 1px solid var(--line); border-radius: 14px; padding: 20px 20px 16px;
     background: linear-gradient(160deg, #eef2e6, #fbf9f4); margin-top: 6px;
@@ -88,6 +109,19 @@
     </div>
   </div>
 
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="/madeira/">🏠 Main</a>
+      <span class="nav-here">📜 <span data-lang="en">History</span><span data-lang="pt">História</span></span>
+      <a href="#levadas">Levadas</a>
+      <a href="#wine"><span data-lang="en">Wine</span><span data-lang="pt">Vinho</span></a>
+      <a href="#rum"><span data-lang="en">Rum &amp; poncha</span><span data-lang="pt">Rum e poncha</span></a>
+      <a href="#bananas"><span data-lang="en">Bananas</span><span data-lang="pt">Bananas</span></a>
+      <a href="#flowers"><span data-lang="en">Flowers</span><span data-lang="pt">Flores</span></a>
+      <a href="#ships"><span data-lang="en">Caravels</span><span data-lang="pt">Caravelas</span></a>
+    </div>
+  </nav>
+
   <h1><span data-lang="en">How Madeira learned to move</span><span data-lang="pt">Como a Madeira aprendeu a mover-se</span></h1>
   <p class="sub">
     <span data-lang="en">Six hundred years of hard, active living on a vertical island — clearing forests, cutting water channels into cliffs, hauling wine on shoulders and racing wicker sledges downhill. The story of why Madeira is a natural home for trail running and mountain walking.</span>
@@ -99,7 +133,7 @@
     <h2><span data-lang="en">Clearing a vertical island</span><span data-lang="pt">Arrotear uma ilha vertical</span></h2>
     <figure>
       <img src="/madeira/history/1821-rural-occupations.jpg" alt="Rural occupations on Madeira — plate from A History of Madeira, 1821">
-      <figcaption><span data-lang="en">Rural occupations — hand-coloured plate from “A History of Madeira”, London, 1821. Public domain.</span><span data-lang="pt">Ocupações rurais — gravura de “A History of Madeira”, Londres, 1821. Domínio público.</span></figcaption>
+      <figcaption><span data-lang="en">Three women at their daily chores outside a stone cottage among young banana plants: one kneads in a wicker basin, the old woman in the middle spins wool with a drop spindle — a cat asleep on her lap — and the third grinds grain at a small hand mill. Hand-coloured plate from “A History of Madeira”, London, 1821. Public domain.</span><span data-lang="pt">Três mulheres nas lidas diárias junto a uma casa de pedra, entre bananeiras novas: uma amassa numa gamela de vime, a velhinha ao centro fia lã com um fuso — um gato ao colo — e a terceira mói grão num moinho de mão. Gravura aguarelada de “A History of Madeira”, Londres, 1821. Domínio público.</span></figcaption>
     </figure>
     <p data-lang="en">When Zarco's caravels reached the island in 1419, it was one dense laurel forest — <i>madeira</i> means “wood”. Settlers burned and cleared, then did something remarkable: instead of giving up on slopes too steep to plough, they carved them into thousands of tiny stone-walled terraces, the <b>poios</b>. Every basket of soil and every harvest travelled on someone's back, up and down paths that today's runners know as race courses.</p>
     <p data-lang="pt">Quando as caravelas de Zarco chegaram em 1419, a ilha era uma floresta Laurissilva cerrada — daí o nome <i>Madeira</i>. Os povoadores queimaram e arrotearam, e fizeram algo notável: em vez de desistir das encostas íngremes demais para arar, talharam-nas em milhares de socalcos murados, os <b>poios</b>. Cada cesto de terra e cada colheita viajou às costas de alguém, por veredas que os corredores de hoje conhecem como percursos de prova.</p>
@@ -110,7 +144,7 @@
     <h2><span data-lang="en">White gold — sugar cane</span><span data-lang="pt">Ouro branco — a cana-de-açúcar</span></h2>
     <figure>
       <img loading="lazy" src="/madeira/history/1900-sugar-cane-harvest.jpg" alt="Sugar cane harvest on Madeira — Bazar do Povo postcard, circa 1900">
-      <figcaption><span data-lang="en">“Apanha de canas” — sugar-cane harvest, Bazar do Povo postcard, c. 1900. Public domain.</span><span data-lang="pt">“Apanha de canas”, postal do Bazar do Povo, c. 1900. Domínio público.</span></figcaption>
+      <figcaption><span data-lang="en">“Sugar-cane cutting” — a whole family in the cane field, long canes over shoulders, the cut bundles packed into woven baskets for the walk to the mill; a quinta watches from the hill. Postcard, c. 1900. Public domain.</span><span data-lang="pt">“Apanha de canas” — uma família inteira no canavial, canas ao ombro, os molhos atados em cestos de vime para a caminhada até ao engenho; uma quinta espreita do alto. Postal, c. 1900. Domínio público.</span></figcaption>
     </figure>
     <p data-lang="en">By the mid-1400s Madeira was Europe's first great sugar island. Cane from Sicily loved the warm south coast, water-driven <b>engenhos</b> crushed it, and Funchal sugar reached Flanders and Venice — for a while the island produced most of the sugar sold in Western Europe. Christopher Columbus came here as a sugar buyer and married into a settler family on Porto Santo. Sugar built Funchal's first churches and its first fortunes, before Brazil's plantations undercut it a century later.</p>
     <p data-lang="pt">Em meados de Quatrocentos a Madeira era a primeira grande ilha do açúcar da Europa. A cana da Sicília deu-se bem na costa sul, os <b>engenhos</b> de água moíam-na, e o açúcar do Funchal chegava à Flandres e a Veneza — durante décadas a ilha produziu a maior parte do açúcar vendido na Europa ocidental. Cristóvão Colombo veio cá como comprador de açúcar e casou com uma família povoadora do Porto Santo. O açúcar ergueu as primeiras igrejas e fortunas do Funchal, até as plantações do Brasil o baterem no preço um século depois.</p>
@@ -121,18 +155,18 @@
     <h2><span data-lang="en">Wine carried on shoulders</span><span data-lang="pt">Vinho levado aos ombros</span></h2>
     <figure>
       <img loading="lazy" src="/madeira/history/1828-wine-carriers.jpg" alt="Peasants of Madeira conveying wine in goatskins, 1828 print">
-      <figcaption><span data-lang="en">Peasants conveying wine in goatskins — print, 1828. Public domain.</span><span data-lang="pt">Camponeses a transportar vinho em borrachos — gravura, 1828. Domínio público.</span></figcaption>
+      <figcaption><span data-lang="en">No wheels, no problem: a wine cask lashed to a wooden runner-sledge (<i>corsa</i>) and dragged by a yoke of oxen, one driver walking ahead with the goad, another steadying the barrel. Wood engraving, 1828. Public domain.</span><span data-lang="pt">Sem rodas, sem problema: um casco de vinho amarrado a uma corsa de madeira, puxado por uma junta de bois — um homem à frente com a aguilhada, outro a segurar o barril. Xilogravura, 1828. Domínio público.</span></figcaption>
     </figure>
     <p data-lang="en">After sugar came the vine. Madeira wine crossed every ocean — heated and rocked in ships' holds, it only got better, and it was raised in toasts to American independence in 1776. On the island itself every drop moved by muscle: the <b>borracheiros</b> carried ~40-litre goatskins of wine on their shoulders from mountain vineyards down to the Funchal lodges, walking distances that would count as a respectable trail race today.</p>
     <p data-lang="pt">Depois do açúcar veio a vinha. O vinho Madeira cruzou todos os oceanos — aquecido e embalado nos porões, só melhorava, e brindou-se com ele a independência americana em 1776. Na ilha, cada gota movia-se a músculo: os <b>borracheiros</b> desciam das vinhas até aos armazéns do Funchal com borrachos de ~40 litros ao ombro, percorrendo distâncias que hoje dariam uma boa prova de trail.</p>
   </div>
 
-  <div class="era">
+  <div class="era" id="levadas">
     <div class="era-years">1461 – today</div>
     <h2><span data-lang="en">Levadas — water walking on cliffs</span><span data-lang="pt">Levadas — água a caminhar nas arribas</span></h2>
     <figure>
       <img loading="lazy" src="/madeira/history/1890-levada-path.jpg" alt="A levada channel with its footpath — 19th-century photograph, Rijksmuseum collection">
-      <figcaption><span data-lang="en">A levada and its maintenance path — 19th-century photograph, Rijksmuseum collection. Public domain.</span><span data-lang="pt">Uma levada e a sua vereda — fotografia do séc. XIX, coleção do Rijksmuseum. Domínio público.</span></figcaption>
+      <figcaption><span data-lang="en">“Lavada road” — a walled water-lane above Funchal, quintas and cypresses on the ridge, two carriers with a shoulder pole in the middle of the road. Albumen photograph, 1890s, Rijksmuseum collection. Public domain.</span><span data-lang="pt">“Lavada road” — um caminho murado sobre o Funchal, quintas e ciprestes no cimo, dois carregadores com um pau ao ombro no meio da estrada. Fotografia em albumina, anos 1890, coleção do Rijksmuseum. Domínio público.</span></figcaption>
     </figure>
     <p data-lang="en">Rain falls on the north side of Madeira; the sun and the farms are on the south. The answer, started in the 1460s and still growing five centuries later, was the <b>levadas</b>: over 3,000 km of hand-cut water channels that contour the island through cliffs and tunnels. Builders — the <i>rocheiros</i> — worked hanging from wicker baskets on ropes over the void. Beside every channel runs the narrow path the <i>levadeiro</i> walked daily to keep the water flowing. Those maintenance paths are exactly what you hike today: the levada trails are a 550-year-old workplace.</p>
     <p data-lang="pt">A chuva cai no norte da Madeira; o sol e as fazendas estão no sul. A resposta, começada na década de 1460 e ainda a crescer cinco séculos depois, foram as <b>levadas</b>: mais de 3 000 km de canais talhados à mão, contornando arribas e furando túneis. Os <i>rocheiros</i> trabalhavam pendurados em cestos de vime sobre o abismo. Ao lado de cada canal corre a vereda estreita que o <i>levadeiro</i> percorria todos os dias. São essas veredas de serviço que hoje se caminham: os trilhos das levadas são um local de trabalho com 550 anos.</p>
@@ -144,26 +178,102 @@
     <div class="fig-pair">
       <figure>
         <img loading="lazy" src="/madeira/history/1821-hammock-travel.jpg" alt="Travelling by hammock on Madeira — plate from A History of Madeira, 1821">
-        <figcaption><span data-lang="en">Travelling by hammock (<i>rede</i>) — 1821. Public domain.</span><span data-lang="pt">Viajar de rede — 1821. Domínio público.</span></figcaption>
+        <figcaption><span data-lang="en">A lady reclines in a fringed hammock slung from a single pole, two barefoot carriers at either end; behind, a gentleman follows on horseback while his groom trots alongside holding the horse's tail uphill. Plate, 1821. Public domain.</span><span data-lang="pt">Uma senhora recostada numa rede franjada, pendurada num só pau, com dois carregadores descalços; atrás, um cavalheiro a cavalo, com o arrieiro agarrado à cauda na subida. Gravura, 1821. Domínio público.</span></figcaption>
       </figure>
       <figure>
         <img loading="lazy" src="/madeira/history/1900-monte-toboggan.jpg" alt="Monte toboggan sledge — Bazar do Povo postcard, circa 1900">
-        <figcaption><span data-lang="en">The Monte toboggan — postcard, c. 1900. Public domain.</span><span data-lang="pt">Carro do Monte — postal, c. 1900. Domínio público.</span></figcaption>
+        <figcaption><span data-lang="en">Two <i>carreiros</i> in whites and red sashes haul their wicker sledge back up the polished, rutted lane past the gates of Reid's Mount Park Hotel, ready for the next run down. Postcard, c. 1900. Public domain.</span><span data-lang="pt">Dois carreiros de branco e faixa vermelha puxam o carro de cesto pela calçada polida, junto ao portão do Reid's Mount Park Hotel, prontos para a próxima descida. Postal, c. 1900. Domínio público.</span></figcaption>
       </figure>
     </div>
     <p data-lang="en">Until the 20th century Madeira had almost no roads a wheel could use — everything was too steep. People and goods moved by hammock slung on two carriers' shoulders, by ox-drawn runner sledges on the polished basalt streets, and, from about 1850, by the famous <b>Monte toboggan</b>: a wicker basket on wooden runners, steered downhill at speed by two <i>carreiros</i> in straw hats. Hemingway called it one of the most exhilarating rides of his life. It still runs every day — the world's oldest downhill ride.</p>
     <p data-lang="pt">Até ao século XX a Madeira quase não tinha estradas para rodas — tudo era íngreme demais. Pessoas e cargas moviam-se de rede ao ombro de dois carregadores, em corsas puxadas a bois sobre o basalto polido e, desde cerca de 1850, no famoso <b>carro do Monte</b>: um cesto de vime sobre patins de madeira, guiado a alta velocidade por dois <i>carreiros</i> de chapéu de palha. Hemingway chamou-lhe uma das descidas mais emocionantes da sua vida. Ainda desce todos os dias — o transporte de descida mais antigo do mundo.</p>
   </div>
 
-  <div class="era">
+  <div class="era" id="bananas">
     <div class="era-years">1900s – 1970s</div>
     <h2><span data-lang="en">Bananas take the terraces</span><span data-lang="pt">A banana toma os socalcos</span></h2>
     <figure>
       <img loading="lazy" src="/madeira/history/1961-banana-field-airport.jpg" alt="Demolition starting for Funchal airport in a banana field, 5 June 1961">
-      <figcaption><span data-lang="en">A banana field making way for Funchal airport — 5 June 1961, Arquivo Regional da Madeira. Public domain.</span><span data-lang="pt">Um campo de bananeiras a dar lugar ao aeroporto do Funchal — 5 de junho de 1961, ABM. Domínio público.</span></figcaption>
+      <figcaption><span data-lang="en">A bulldozer noses through the banana grove while officials in suits look on from beside a thatched <i>palheiro</i> — first day of demolition for Funchal's airfield, 5 June 1961. Photo: Atelier Vicente's, Madeira Photography Museum / ABM. Public domain.</span><span data-lang="pt">Um bulldozer rasga o bananal sob o olhar de senhores de fato, junto a um palheiro de colmo — primeiro dia das demolições para o aeródromo do Funchal, 5 de junho de 1961. Foto: Atelier Vicente's, Museu de Fotografia da Madeira / ABM. Domínio público.</span></figcaption>
     </figure>
     <p data-lang="en">The 20th century belonged to the banana. The warm coastal poios below 300 m turned into a green staircase of plantations, and bananas — small, sweet, silver-skinned — became the south coast's cash crop, shipped to Lisbon by the boatload. The photo above captures a turning point: in 1961 a banana field at Santa Catarina was cleared for the new airport, the moment subsistence-farming Madeira started becoming the trail-tourism Madeira of today.</p>
     <p data-lang="pt">O século XX foi da banana. Os poios quentes abaixo dos 300 m tornaram-se uma escadaria verde de fazendas, e a banana da Madeira — pequena, doce — passou a ser a cultura de exportação da costa sul, embarcada para Lisboa. A foto acima capta uma viragem: em 1961 um campo de bananeiras em Santa Catarina foi arroteado para o novo aeroporto — o momento em que a Madeira agrícola começou a tornar-se a Madeira do trail e do turismo de hoje.</p>
+  </div>
+
+  <h2 class="stories-title"><span data-lang="en">Island stories</span><span data-lang="pt">Histórias da ilha</span></h2>
+  <p class="stories-sub"><span data-lang="en">Four bright threads that run through everything above.</span><span data-lang="pt">Quatro fios vivos que atravessam tudo o que ficou para trás.</span></p>
+
+  <div class="story" id="ships">
+    <div class="story-head" style="background: linear-gradient(140deg, #123a6b, #2a7ab0 130%)">
+      <span class="s-emoji">⛵</span>
+      <div><span class="s-kicker"><span data-lang="en">1419 – 1600s</span><span data-lang="pt">1419 – séc. XVII</span></span>
+      <h3><span data-lang="en">Caravels, Columbus &amp; corsairs</span><span data-lang="pt">Caravelas, Colombo e corsários</span></h3></div>
+    </div>
+    <div class="story-body">
+      <figure>
+        <img loading="lazy" src="/madeira/history/1547-astrolabe-funchal.jpg" alt="Pilot measuring the stars with a cross-staff aboard a carrack off Funchal, woodcut 1547">
+        <figcaption><span data-lang="en">A pilot climbs the mainmast of a four-master to take the height of the sun with a cross-staff, sea monsters curling in the waves below — coloured woodcut printed at Funchal's latitude, 1547. Public domain.</span><span data-lang="pt">Um piloto trepa ao mastro grande de uma nau de quatro mastros para medir a altura do sol com a balestilha, monstros marinhos nas ondas — xilogravura colorida, 1547. Domínio público.</span></figcaption>
+      </figure>
+      <p data-lang="en">Madeira sat on the great sailing highway: catch the trade winds south past the island and the Atlantic carries you to Africa, India or Brazil. Every fleet of the Age of Discovery — Magellan's generation included — watched Madeira's peaks rise and sink on the horizon. <b>Columbus</b> did more than pass: he came in the 1470s as a sugar buyer, married Filipa Moniz, daughter of Porto Santo's first captain, and lived on the little golden island where his son Diego was born. His house still stands there.</p>
+      <p data-lang="en">Wealth attracted sharper visitors. In 1566 the French corsair <b>Bertrand de Montluc</b> landed a thousand men, sacked Funchal for a fortnight and stripped its churches. The crown's answer was stone: the <b>São Tiago fortress</b> and the seafront batteries you still walk past on the marina promenade.</p>
+      <p data-lang="pt">A Madeira ficava na grande autoestrada da vela: apanhados os alísios a sul da ilha, o Atlântico levava-o a África, à Índia ou ao Brasil. Todas as frotas dos Descobrimentos — a geração de Magalhães incluída — viram os picos da Madeira erguer-se e afundar-se no horizonte. <b>Colombo</b> fez mais do que passar: veio nos anos 1470 comprar açúcar, casou com Filipa Moniz, filha do primeiro capitão do Porto Santo, e viveu na ilha dourada, onde nasceu o filho Diego. A casa ainda lá está.</p>
+      <p data-lang="pt">A riqueza atraiu visitas mais afiadas. Em 1566 o corsário francês <b>Bertrand de Montluc</b> desembarcou mil homens e saqueou o Funchal durante duas semanas. A resposta da coroa foi em pedra: a <b>fortaleza de São Tiago</b> e as baterias da frente-mar por onde ainda hoje se passeia.</p>
+    </div>
+  </div>
+
+  <div class="story" id="rum">
+    <div class="story-head" style="background: linear-gradient(140deg, #4d2e14, #c9862e 130%)">
+      <span class="s-emoji">🥃</span>
+      <div><span class="s-kicker"><span data-lang="en">1425 – today</span><span data-lang="pt">1425 – hoje</span></span>
+      <h3><span data-lang="en">Sugar, rum &amp; poncha</span><span data-lang="pt">Açúcar, rum e poncha</span></h3></div>
+    </div>
+    <div class="story-body">
+      <figure>
+        <img loading="lazy" src="/madeira/history/1960-torreao-sugar-factory.jpg" alt="The chimney of the Torreão sugar factory over Funchal rooftops, circa 1960">
+        <figcaption><span data-lang="en">The brick chimney of the Torreão (Hinton) sugar factory towering over Funchal's rooftops like a lighthouse of industry, c. 1960 — cane was still being milled in the middle of the city within living memory. ABM. Public domain.</span><span data-lang="pt">A chaminé de tijolo da fábrica do Torreão (Hinton) por cima dos telhados do Funchal, c. 1960 — ainda se moía cana no meio da cidade em memória viva. ABM. Domínio público.</span></figcaption>
+      </figure>
+      <p data-lang="en">Sugar built Madeira twice. The first boom sweetened Renaissance Europe; the second, in the 1800s, turned cane juice into something better: <b>aguardente de cana</b> — Madeiran rum, distilled where the cane grows. The Hinton factory's chimney ruled Funchal's skyline until the 1980s, and in <b>Porto da Cruz</b> the steam-driven Engenho do Norte still fires up every spring harvest, one of Europe's last working steam distilleries.</p>
+      <p data-lang="en">And the fisherman's dose of it became the island's password: <b>poncha</b> — rum, honey and lemon beaten with the wooden <i>caralhinho</i> in the taverns of Câmara de Lobos, drunk “to kill the germs” before the boats went out. Order one after a levada and you are drinking five centuries of cane in a glass.</p>
+      <p data-lang="pt">O açúcar construiu a Madeira duas vezes. O primeiro ciclo adoçou a Europa do Renascimento; o segundo, no séc. XIX, transformou o sumo da cana em algo melhor: a <b>aguardente de cana</b>, destilada onde a cana cresce. A chaminé da fábrica Hinton mandou no céu do Funchal até aos anos 1980, e no <b>Porto da Cruz</b> o Engenho do Norte, a vapor, ainda acorda a cada apanha — uma das últimas destilarias a vapor da Europa.</p>
+      <p data-lang="pt">E a dose do pescador virou senha da ilha: a <b>poncha</b> — aguardente, mel e limão batidos com o caralhinho nas tascas de Câmara de Lobos, bebida «para matar o bicho» antes de os barcos saírem. Peça uma depois de uma levada e está a beber cinco séculos de cana num copo.</p>
+    </div>
+  </div>
+
+  <div class="story" id="wine">
+    <div class="story-head" style="background: linear-gradient(140deg, #5c1030, #a33555 125%)">
+      <span class="s-emoji">🍷</span>
+      <div><span class="s-kicker"><span data-lang="en">1600s – today</span><span data-lang="pt">séc. XVII – hoje</span></span>
+      <h3><span data-lang="en">Madeira — the immortal wine</span><span data-lang="pt">Madeira — o vinho imortal</span></h3></div>
+    </div>
+    <div class="story-body">
+      <figure>
+        <img loading="lazy" src="/madeira/history/1900-borracheiros-cossart.jpg" alt="Borracheiros queueing with goatskins of wine at Cossart Gordon warehouses, circa 1900">
+        <figcaption><span data-lang="en">A file of <i>borracheiros</i> under the vine pergola at Cossart Gordon &amp; Co. — each man with a full goatskin of young wine on his shoulders and a walking staff, the lodge's great casks waiting on the right. Tinted postcard, c. 1900. Public domain.</span><span data-lang="pt">Fila de <b>borracheiros</b> sob a latada nos armazéns da Cossart Gordon &amp; Co. — cada homem com um borracho cheio de vinho ao ombro e o seu bordão, os cascos grandes à espera, à direita. Postal colorido, c. 1900. Domínio público.</span></figcaption>
+      </figure>
+      <p data-lang="en">Madeira wine was made immortal by accident. Casks shipped through the tropics arrived tasting <i>better</i> — cooked and rocked for months — and merchants began sending wine on round trips just to age it (<i>vinho da roda</i>). Ashore, the voyage was recreated with sun-warmed lofts (<b>canteiro</b>) and heated stores (<b>estufa</b>). The result barely dies: 18th-century bottles are opened and drunk today.</p>
+      <p data-lang="en">It was the toast of the <b>American Declaration of Independence</b> in 1776, Shakespeare had a duke drown in a butt of its malmsey, and Napoleon's ship picked up a cask on the way to exile. Not bad for grapes grown on cliff terraces you can still run past above Câmara de Lobos.</p>
+      <p data-lang="pt">O vinho Madeira tornou-se imortal por acidente. Os cascos que atravessavam os trópicos chegavam <i>melhores</i> — cozidos e embalados meses a fio — e os mercadores passaram a mandá-lo dar a volta só para envelhecer (o vinho da roda). Em terra, a viagem recriou-se com o <b>canteiro</b> ao sol e a <b>estufa</b>. O resultado quase não morre: ainda hoje se abrem garrafas do séc. XVIII.</p>
+      <p data-lang="pt">Foi o brinde da <b>Independência americana</b> em 1776, Shakespeare afogou um duque num tonel de malvasia, e o navio de Napoleão levou um casco a caminho do exílio. Nada mau para uvas de socalcos suspensos que ainda hoje se correm, acima de Câmara de Lobos.</p>
+    </div>
+  </div>
+
+  <div class="story" id="flowers">
+    <div class="story-head" style="background: linear-gradient(140deg, #b0176c, #2e7d4f 145%)">
+      <span class="s-emoji">🌺</span>
+      <div><span class="s-kicker"><span data-lang="en">1800s – today</span><span data-lang="pt">séc. XIX – hoje</span></span>
+      <h3><span data-lang="en">Flowers off the ships</span><span data-lang="pt">Flores vindas dos navios</span></h3></div>
+    </div>
+    <div class="story-body">
+      <figure>
+        <img loading="lazy" src="/madeira/history/1900-monte-palace-gardens.jpg" alt="Boating on the lake of Monte Palace Hotel gardens, postcard circa 1905">
+        <figcaption><span data-lang="en">Sunday at the Monte Palace Hotel lake — a rowing party on the water, a fountain, a folly tower on the rocks and gentlemen in hats on the garden benches; Funchal postage stamps of 1905 on the corner. Tinted postcard. Public domain.</span><span data-lang="pt">Domingo no lago do Monte Palace Hotel — um passeio de barco, o repuxo, a torre-miradouro sobre as rochas e senhores de chapéu nos bancos do jardim; selos do Funchal de 1905 ao canto. Postal colorido. Domínio público.</span></figcaption>
+      </figure>
+      <p data-lang="en">Every ship that watered at Funchal left something growing. Captains, botanists and the English wine families filled their <i>quintas</i> with trophies of the whole Empire's routes: <b>strelitzias from South Africa, jacarandás and orchids from Brazil, proteas, camellias from Japan, agapanthus</b> that now line every levada in June. On an island with no frost, nothing ever asked to leave.</p>
+      <p data-lang="en">The hobby became an identity. The gardens of Monte and Palheiro turned into pilgrimage sites, agapanthus and hydrangeas escaped the gardens and colonised the roadsides — and each spring the whole collection parades down Funchal's avenue as the <b>Festa da Flor</b>.</p>
+      <p data-lang="pt">Cada navio que fazia aguada no Funchal deixava algo a crescer. Capitães, botânicos e as famílias inglesas do vinho encheram as suas quintas com troféus de todas as rotas: <b>estrelícias da África do Sul, jacarandás e orquídeas do Brasil, proteas, camélias do Japão, agapantos</b> que hoje bordam todas as levadas em junho. Numa ilha sem geada, nada pediu para voltar.</p>
+      <p data-lang="pt">O passatempo virou identidade. Os jardins do Monte e do Palheiro tornaram-se lugares de romaria, os agapantos e as hortênsias fugiram dos jardins para as bermas — e cada primavera a coleção inteira desfila pela avenida do Funchal na <b>Festa da Flor</b>.</p>
+      <a class="story-link" href="/madeira/festas"><span data-lang="en">→ The festival year, incl. Festa da Flor</span><span data-lang="pt">→ O ano das festas, incl. Festa da Flor</span></a>
+    </div>
   </div>
 
   <div class="now">

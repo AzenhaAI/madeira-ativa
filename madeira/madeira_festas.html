@@ -23,6 +23,14 @@
   .lang { display: flex; gap: 4px; }
   .lang button { border: 1px solid var(--line); background: none; color: var(--soft); border-radius: 999px; padding: 4px 11px; font: inherit; font-size: 13px; cursor: pointer; }
   .lang button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .site-nav { position: sticky; top: 0; z-index: 100; background: rgba(245,242,234,0.92); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); margin: 8px -18px 0; padding: 0 18px; }
+  .site-nav-inner { display: flex; overflow-x: auto; scrollbar-width: none; }
+  .site-nav-inner::-webkit-scrollbar { display: none; }
+  .site-nav a { flex-shrink: 0; padding: 11px 8px; font-size: 12.5px; font-weight: 600; color: var(--soft); text-decoration: none; border-bottom: 2px solid transparent; white-space: nowrap; cursor: pointer; }
+  .site-nav a:hover { color: var(--accent); }
+  .site-nav a.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .site-nav .nav-here { flex-shrink: 0; padding: 11px 8px; font-size: 12.5px; font-weight: 800; color: var(--accent); border-bottom: 2px solid var(--accent); white-space: nowrap; }
+  .festa.hide, .up-row.hide { display: none; }
   h1 { font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: clamp(32px, 6vw, 50px); letter-spacing: -0.02em; margin: 18px 0 6px; }
   .sub { color: var(--soft); font-size: 16px; margin: 0 0 26px; line-height: 1.5; max-width: 640px; }
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; margin-bottom: 40px; }
@@ -93,6 +101,17 @@
     </div>
   </div>
 
+  <nav class="site-nav">
+    <div class="site-nav-inner" id="cat-nav">
+      <a href="/madeira/">🏠 Main</a>
+      <span class="nav-here">🎆 Festas</span>
+      <a class="cat active" data-cat="all"><span data-lang="en">All</span><span data-lang="pt">Todas</span></a>
+      <a class="cat" data-cat="festa"><span data-lang="en">Big festas</span><span data-lang="pt">Grandes festas</span></a>
+      <a class="cat" data-cat="music"><span data-lang="en">Music</span><span data-lang="pt">Música</span></a>
+      <a class="cat" data-cat="religious"><span data-lang="en">Religious</span><span data-lang="pt">Religiosas</span></a>
+    </div>
+  </nav>
+
   <h1>Festas</h1>
   <p class="sub">
     <span data-lang="en">Madeira never really stops celebrating — fireworks over the bay, flower carpets, jazz under the palms, wine pressed by foot and the loudest New Year on the Atlantic. The island's festival year, month by month.</span>
@@ -100,84 +119,84 @@
   </p>
 
   <div class="grid">
-    <div class="festa" style="background: linear-gradient(150deg, #123a6b, #d4a017 130%)">
+    <div class="festa" data-cat="music" style="background: linear-gradient(150deg, #123a6b, #d4a017 130%)">
       <span class="month">5–6 Jan</span><span class="emoji">🎶</span>
       <h3>Cantar os Reis</h3>
       <div class="fdesc"><span data-lang="en">Singing of the Kings — carol groups fill downtown Funchal on Epiphany eve, the last night of Madeira's long Christmas.</span><span data-lang="pt">Grupos de cantares enchem a baixa do Funchal na véspera de Reis — a última noite do longo Natal madeirense.</span></div>
       <div class="fplace">📍 Funchal</div>
     </div>
 
-    <div class="festa" style="background: linear-gradient(150deg, #b0176c, #f2a03d 120%)">
+    <div class="festa" data-cat="festa" style="background: linear-gradient(150deg, #b0176c, #f2a03d 120%)">
       <span class="month">Feb–Mar</span><span class="emoji">🎭</span>
       <h3>Carnaval</h3>
       <div class="fdesc"><span data-lang="en">Rio-style allegoric parade on Saturday, the anything-goes Trapalhão parade on Shrove Tuesday. Samba, sequins, whole city out.</span><span data-lang="pt">Cortejo alegórico ao sábado e o Trapalhão na terça-feira gorda. Samba, lantejoulas, a cidade inteira na rua.</span></div>
       <div class="fplace">📍 Funchal</div>
     </div>
 
-    <div class="festa" style="background: linear-gradient(150deg, #d84a8b, #4a9e57 130%)">
+    <div class="festa" data-cat="festa" style="background: linear-gradient(150deg, #d84a8b, #4a9e57 130%)">
       <span class="month">Apr–May</span><span class="emoji">🌺</span>
       <h3><span data-lang="en">Flower Festival</span><span data-lang="pt">Festa da Flor</span></h3>
       <div class="fdesc"><span data-lang="en">Festa da Flor — flower carpets, the children's Wall of Hope and a grand floral parade three weeks after Easter.</span><span data-lang="pt">Tapetes de flores, o Muro da Esperança das crianças e o grande cortejo florido, três semanas após a Páscoa.</span></div>
       <div class="fplace">📍 Funchal</div>
     </div>
 
-    <div class="festa" style="background: linear-gradient(160deg, #0b1d3a, #e0662a 145%)">
+    <div class="festa" data-cat="festa" style="background: linear-gradient(160deg, #0b1d3a, #e0662a 145%)">
       <span class="month">Jun</span><span class="emoji">🎆</span>
       <h3><span data-lang="en">Atlantic Festival</span><span data-lang="pt">Festival do Atlântico</span></h3>
       <div class="fdesc"><span data-lang="en">Every June Saturday an international pyromusical — fireworks choreographed to music over Funchal bay.</span><span data-lang="pt">Todos os sábados de junho, um piromusical internacional sobre a baía do Funchal.</span></div>
       <div class="fplace">📍 Funchal bay</div>
     </div>
 
-    <div class="festa" style="background: linear-gradient(150deg, #2a1a4d, #7a4dbf 120%)">
+    <div class="festa" data-cat="music" style="background: linear-gradient(150deg, #2a1a4d, #7a4dbf 120%)">
       <span class="month">Jul</span><span class="emoji">🎷</span>
       <h3>Funchal Jazz</h3>
       <div class="fdesc"><span data-lang="en">Three warm nights of international jazz under the palms of Santa Catarina Park — one of Europe's prettiest small festivals.</span><span data-lang="pt">Três noites de jazz internacional sob as palmeiras do Parque de Santa Catarina.</span></div>
       <div class="fplace">📍 Parque Santa Catarina</div>
     </div>
 
-    <div class="festa" style="background: linear-gradient(150deg, #8a2b1d, #e0a63a 130%)">
+    <div class="festa" data-cat="religious" style="background: linear-gradient(150deg, #8a2b1d, #e0a63a 130%)">
       <span class="month">14–15 Aug</span><span class="emoji">⛪</span>
       <h3><span data-lang="en">Festa do Monte</span><span data-lang="pt">Nossa Sra. do Monte</span></h3>
       <div class="fdesc"><span data-lang="en">Madeira's biggest religious feast and its liveliest arraial — procession, espetada smoke and dancing till dawn above Funchal.</span><span data-lang="pt">A maior festa religiosa da Madeira e o seu arraial mais vivo — procissão, fumo de espetada e bailinho até de manhã.</span></div>
       <div class="fplace">📍 Monte</div>
     </div>
 
-    <div class="festa" style="background: linear-gradient(150deg, #5c1030, #b03060 115%)">
+    <div class="festa" data-cat="festa" style="background: linear-gradient(150deg, #5c1030, #b03060 115%)">
       <span class="month">Aug–Sep</span><span class="emoji">🍇</span>
       <h3><span data-lang="en">Wine Festival</span><span data-lang="pt">Festa do Vinho</span></h3>
       <div class="fdesc"><span data-lang="en">Harvest season — grapes trodden barefoot in Estreito de Câmara de Lobos, tastings and folklore in downtown Funchal.</span><span data-lang="pt">Vindimas — pisa da uva no Estreito de Câmara de Lobos, provas e folclore na baixa do Funchal.</span></div>
       <div class="fplace">📍 Estreito · Funchal</div>
     </div>
 
-    <div class="festa" style="background: linear-gradient(150deg, #1d4d6b, #7fb2d0 135%)">
+    <div class="festa" data-cat="religious" style="background: linear-gradient(150deg, #1d4d6b, #7fb2d0 135%)">
       <span class="month">Sep–Oct</span><span class="emoji">🕯</span>
       <h3><span data-lang="en">Great pilgrimages</span><span data-lang="pt">Romarias</span></h3>
       <div class="fdesc"><span data-lang="en">Bom Jesus in Ponta Delgada (1st Sept Sunday) and Senhor dos Milagres in Machico (8–9 Oct) — candlelit processions whole villages walk to.</span><span data-lang="pt">Bom Jesus na Ponta Delgada (1.º domingo de set.) e Senhor dos Milagres em Machico (8–9 out.) — procissões à luz de velas.</span></div>
       <div class="fplace">📍 Ponta Delgada · Machico</div>
     </div>
 
-    <div class="festa" style="background: linear-gradient(150deg, #3a2a12, #c99a2e 130%)">
+    <div class="festa" data-cat="music" style="background: linear-gradient(150deg, #3a2a12, #c99a2e 130%)">
       <span class="month">Oct</span><span class="emoji">🎹</span>
       <h3><span data-lang="en">Organ Festival</span><span data-lang="pt">Festival de Órgão</span></h3>
       <div class="fdesc"><span data-lang="en">Ten days of concerts on the historic pipe organs of Madeira's churches — Sé cathedral, Colégio, São Pedro and beyond.</span><span data-lang="pt">Dez dias de concertos nos órgãos históricos das igrejas da Madeira — Sé, Colégio, São Pedro e mais.</span></div>
       <div class="fplace">📍 <span data-lang="en">Churches of Madeira</span><span data-lang="pt">Igrejas da Madeira</span></div>
     </div>
 
-    <div class="festa" style="background: linear-gradient(150deg, #4d2e14, #8a6a3a 125%)">
+    <div class="festa" data-cat="festa" style="background: linear-gradient(150deg, #4d2e14, #8a6a3a 125%)">
       <span class="month">1 Nov</span><span class="emoji">🌰</span>
       <h3><span data-lang="en">Chestnut Festival</span><span data-lang="pt">Festa da Castanha</span></h3>
       <div class="fdesc"><span data-lang="en">Curral das Freiras roasts, bakes and distils everything chestnut in the valley of the nuns.</span><span data-lang="pt">O Curral das Freiras assa, coze e destila tudo o que é castanha, no vale das freiras.</span></div>
       <div class="fplace">📍 Curral das Freiras</div>
     </div>
 
-    <div class="festa" style="background: linear-gradient(150deg, #0f3d2a, #c23b2e 135%)">
+    <div class="festa" data-cat="festa" style="background: linear-gradient(150deg, #0f3d2a, #c23b2e 135%)">
       <span class="month">Dec</span><span class="emoji">🎄</span>
       <h3><span data-lang="en">Christmas — “A Festa”</span><span data-lang="pt">Natal — «A Festa»</span></h3>
       <div class="fdesc"><span data-lang="en">A million lights from 1 December, nativity scenes, and Noite do Mercado on the 23rd — the market sings all night.</span><span data-lang="pt">Um milhão de luzes desde 1 de dezembro, presépios, e a Noite do Mercado a 23 — o mercado canta a noite toda.</span></div>
       <div class="fplace">📍 <span data-lang="en">All island</span><span data-lang="pt">Toda a ilha</span></div>
     </div>
 
-    <div class="festa" style="background: linear-gradient(160deg, #10102e, #d4a017 150%)">
+    <div class="festa" data-cat="festa" style="background: linear-gradient(160deg, #10102e, #d4a017 150%)">
       <span class="month">31 Dec</span><span class="emoji">🎇</span>
       <h3><span data-lang="en">New Year fireworks</span><span data-lang="pt">Fogo de fim de ano</span></h3>
       <div class="fdesc"><span data-lang="en">Eight minutes of fire over the whole amphitheatre of Funchal — once a Guinness record, still the Atlantic's grandest midnight.</span><span data-lang="pt">Oito minutos de fogo sobre o anfiteatro do Funchal — já foi recorde do Guinness, continua a maior meia-noite do Atlântico.</span></div>
@@ -225,6 +244,24 @@ var VALID = ['en', 'pt'];
 var urlLang = new URLSearchParams(location.search).get('lang');
 var lang = VALID.indexOf(urlLang) !== -1 ? urlLang : 'en';
 var EVS = null;
+var CAT = 'all';
+
+function eventCat(name) {
+  var n = String(name || '').toLowerCase();
+  if (/jazz|org[aã]o|organ|classic|cl[aá]ssic|concert|m[uú]sica|filarm|coro|choir|recital|banda/.test(n)) return 'music';
+  if (/senhor|nossa|sant[oa] |s[aã]o |romaria|peregrin|bom jesus|milagres|f[aá]tima|padroeir|igreja|cap[e]la|procession|prociss/.test(n)) return 'religious';
+  return 'festa';
+}
+
+function applyCat() {
+  document.querySelectorAll('.festa[data-cat]').forEach(function (c) {
+    c.classList.toggle('hide', CAT !== 'all' && c.getAttribute('data-cat') !== CAT);
+  });
+  document.querySelectorAll('#cat-nav .cat').forEach(function (a) {
+    a.classList.toggle('active', a.getAttribute('data-cat') === CAT);
+  });
+  renderUp();
+}
 
 function esc(s) {
   return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
@@ -244,6 +281,7 @@ function renderUp() {
   if (!EVS) return;
   var today = new Date().toISOString().slice(0, 10);
   var items = EVS.filter(function (e) { return e.mode === 'festivals' && e.date >= today; })
+    .filter(function (e) { return CAT === 'all' || eventCat(e.name) === CAT; })
     .sort(function (a, b) { return a.date < b.date ? -1 : 1; })
     .slice(0, 12);
   if (!items.length) {
@@ -272,6 +310,13 @@ function applyLang() {
 }
 document.querySelectorAll('.lang button').forEach(function (b) {
   b.onclick = function () { lang = b.getAttribute('data-set-lang'); applyLang(); };
+});
+document.getElementById('cat-nav').addEventListener('click', function (e) {
+  var a = e.target.closest('.cat');
+  if (!a) return;
+  e.preventDefault();
+  CAT = a.getAttribute('data-cat');
+  applyCat();
 });
 
 fetch('events.json').then(function (r) { return r.json(); }).then(function (d) {

@@ -211,6 +211,8 @@
     }
     .site-nav a:hover { color: var(--accent); }
     .site-nav .nav-soon { color: #B9B3A6; cursor: default; }
+    .nav-ico { margin-right: 4px; }
+    @media (max-width: 640px) { .nav-ico { display: none; } }
     .trail-stats {
       display: flex;
       gap: 6px;
@@ -692,13 +694,13 @@
 
     <nav class="site-nav">
       <div class="site-nav-inner">
-        <a href="/madeira/madeira_stat.html#calendar">Trails</a>
-        <a href="/madeira/levada">Levadas</a>
-        <a href="/madeira/map?layer=race"><span data-lang="en">Map</span><span data-lang="pt">Mapa</span></a>
-        <a href="/madeira/map3d"><span data-lang="en">3D map</span><span data-lang="pt">Mapa 3D</span></a>
-        <a href="#" onclick="window.location.href='/madeira/madeira_festas.html?lang='+(document.documentElement.lang||'en'); return false;">Festas</a>
-        <a href="#" onclick="window.location.href='/madeira/madeira_news.html?lang='+(document.documentElement.lang||'en'); return false;"><span data-lang="en">News</span><span data-lang="pt">Notícias</span></a>
-        <a href="#" onclick="window.location.href='/madeira/madeira_history.html?lang='+(document.documentElement.lang||'en'); return false;"><span data-lang="en">History</span><span data-lang="pt">História</span></a>
+        <a href="/madeira/madeira_stat.html"><span class="nav-ico">🏃</span>Trails</a>
+        <a href="/madeira/levada"><span class="nav-ico">🥾</span>Levadas</a>
+        <a href="/madeira/map?layer=race"><span class="nav-ico">🗺</span><span data-lang="en">Map</span><span data-lang="pt">Mapa</span></a>
+        <a href="/madeira/map3d"><span class="nav-ico">⛰</span><span data-lang="en">3D map</span><span data-lang="pt">Mapa 3D</span></a>
+        <a href="#" onclick="window.location.href='/madeira/madeira_festas.html?lang='+(document.documentElement.lang||'en'); return false;"><span class="nav-ico">🎆</span>Festas</a>
+        <a href="#" onclick="window.location.href='/madeira/madeira_news.html?lang='+(document.documentElement.lang||'en'); return false;"><span class="nav-ico">📰</span><span data-lang="en">News</span><span data-lang="pt">Notícias</span></a>
+        <a href="#" onclick="window.location.href='/madeira/madeira_history.html?lang='+(document.documentElement.lang||'en'); return false;"><span class="nav-ico">📜</span><span data-lang="en">History</span><span data-lang="pt">História</span></a>
       </div>
     </nav>
 
