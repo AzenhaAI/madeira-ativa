@@ -72,13 +72,6 @@
   .story.open .story-head::after { transform: rotate(180deg); }
   .story .story-body { display: none; }
   .story.open .story-body { display: block; }
-  .themes { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 20px; }
-  .chip {
-    border: 0; cursor: pointer; font: inherit; font-size: 13px; font-weight: 700; color: #fff;
-    padding: 7px 14px; border-radius: 999px; text-decoration: none; display: inline-block;
-    box-shadow: 0 2px 8px rgba(21,32,26,0.14); transition: transform 0.15s;
-  }
-  .chip:hover { transform: translateY(-2px); }
   .chapter { margin: 6px 0 10px; }
   .chapter:not(:first-child) { margin-top: 26px; padding-top: 18px; border-top: 1px dashed var(--line); }
   .chapter-h { font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: clamp(19px, 3.5vw, 24px); margin: 2px 0 0; color: var(--accent); }
@@ -150,16 +143,6 @@
 
 <h2 class="stories-title"><span data-lang="en">Island stories</span><span data-lang="pt">Histórias da ilha</span></h2>
   <p class="stories-sub"><span data-lang="en">Pick a thread — each one opens into its own story.</span><span data-lang="pt">Escolha um fio — cada um abre a sua própria história.</span></p>
-
-  <div class="themes">
-    <a class="chip" href="#levadas" style="background:#1F4D32">🥾 Levadas</a>
-    <a class="chip" href="#transport" style="background:linear-gradient(140deg,#123a6b,#6b8763)">⛵ <span data-lang="en">Transport</span><span data-lang="pt">Transportes</span></a>
-    <a class="chip" href="#flora" style="background:linear-gradient(140deg,#b0176c,#2e7d4f)">🌺 Flora</a>
-    <a class="chip" href="#festas-story" style="background:linear-gradient(140deg,#b0176c,#d4a017)">🎉 Festas</a>
-    <a class="chip" href="#kitchen" style="background:linear-gradient(140deg,#7a3b10,#c26b2e)">🍽 <span data-lang="en">Food</span><span data-lang="pt">Comida</span></a>
-    <a class="chip" href="#drinks" style="background:linear-gradient(140deg,#5c1030,#c9862e)">🍷 <span data-lang="en">Drinks</span><span data-lang="pt">Bebidas</span></a>
-    <a class="chip" href="#album" style="background:#15201A">🖼 <span data-lang="en">Album</span><span data-lang="pt">Álbum</span></a>
-  </div>
 
   
   
