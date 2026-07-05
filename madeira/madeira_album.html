@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Album — Madeira in old pictures</title>
+<meta name="description" content="An annotated gallery of old Madeira — engravings, postcards and photographs from the archives, each with the story of what it shows.">
+<link rel="icon" href="/madeira/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/madeira/icon-192.png?v=5e8787d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #F5F2EA; --accent: #1F4D32; --soft: #6B8763; --line: #DAD3C5; --ink: #15201A; --gold: #9a6a16; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 20px 18px 60px; }
+  .topbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+  .brand-link { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
+  .brand-link:hover { opacity: 0.8; }
+  .brand-icon { width: 32px; height: 32px; border-radius: 7px; flex-shrink: 0; }
+  .brand-name { font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 18px; color: var(--accent); letter-spacing: -0.01em; }
+  .lang { display: flex; gap: 4px; }
+  .lang button { border: 1px solid var(--line); background: none; color: var(--soft); border-radius: 999px; padding: 4px 11px; font: inherit; font-size: 13px; cursor: pointer; }
+  .lang button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .site-nav { position: sticky; top: 0; z-index: 100; background: rgba(245,242,234,0.92); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); margin: 8px -18px 18px; padding: 0 18px; }
+  .site-nav-inner { display: flex; overflow-x: auto; scrollbar-width: none; }
+  .site-nav-inner::-webkit-scrollbar { display: none; }
+  .site-nav a { flex-shrink: 0; padding: 11px 8px; font-size: 12.5px; font-weight: 600; color: var(--soft); text-decoration: none; border-bottom: 2px solid transparent; white-space: nowrap; }
+  .site-nav a:hover { color: var(--accent); }
+  .site-nav .nav-here { flex-shrink: 0; padding: 11px 8px; font-size: 12.5px; font-weight: 800; color: var(--accent); border-bottom: 2px solid var(--accent); white-space: nowrap; }
+  h1 { font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: clamp(30px, 6vw, 46px); letter-spacing: -0.02em; margin: 12px 0 6px; }
+  .sub { color: var(--soft); font-size: 16px; margin: 0 0 26px; line-height: 1.5; max-width: 640px; }
+  .album-grid { columns: 2; column-gap: 16px; }
+  @media (max-width: 620px) { .album-grid { columns: 1; } }
+  figure { margin: 0 0 16px; break-inside: avoid; }
+  figure img { width: 100%; border-radius: 12px; border: 1px solid var(--line); display: block; background: #e9e4d8; cursor: zoom-in; transition: filter 0.15s; }
+  figure img:hover { filter: brightness(1.04); }
+  figcaption { font-size: 12px; color: var(--soft); margin-top: 7px; line-height: 1.45; }
+  figcaption b { color: var(--ink); }
+  .src { color: var(--soft); font-size: 12px; margin-top: 34px; text-align: center; line-height: 1.5; }
+  .src a { color: var(--soft); }
+  /* lightbox */
+  .lb { position: fixed; inset: 0; z-index: 200; background: rgba(15,20,17,0.94); display: none; align-items: center; justify-content: center; padding: 24px; cursor: zoom-out; }
+  .lb.open { display: flex; }
+  .lb img { max-width: 100%; max-height: 86vh; border-radius: 8px; box-shadow: 0 10px 40px rgba(0,0,0,0.5); }
+  .lb-cap { position: absolute; bottom: 14px; left: 50%; transform: translateX(-50%); max-width: 90%; color: #e7ded0; font-size: 13px; text-align: center; line-height: 1.4; background: rgba(15,20,17,0.7); padding: 8px 14px; border-radius: 8px; }
+  .lb-close { position: absolute; top: 14px; right: 18px; color: #fff; font-size: 30px; line-height: 1; cursor: pointer; opacity: 0.8; }
+  .lb-close:hover { opacity: 1; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="brand-link" href="/madeira/">
+      <svg class="brand-icon" viewBox="0 0 512 512" aria-hidden="true">
+        <rect width="512" height="512" rx="112" fill="#1f4d32"/>
+        <g transform="translate(86 54) scale(1.55)" fill="none" stroke="#f5f2ea" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="110" cy="110" r="90"/>
+          <circle cx="110" cy="110" r="76" stroke-dasharray="5 12" stroke-opacity="0.58"/>
+          <circle cx="110" cy="110" r="7" fill="#f5f2ea" stroke="none"/>
+          <line x1="20" y1="110" x2="200" y2="110"/>
+          <line x1="110" y1="20" x2="110" y2="200"/>
+          <line x1="46.4" y1="46.4" x2="173.6" y2="173.6"/>
+          <line x1="46.4" y1="173.6" x2="173.6" y2="46.4"/>
+          <path d="M0 232C30 222 50 244 80 232S130 222 160 232S200 244 220 232"/>
+          <path d="M0 248C30 238 50 260 80 248S130 238 160 248S200 260 220 248" stroke-opacity="0.58"/>
+        </g>
+      </svg>
+      <span class="brand-name">Madeira Ative</span>
+    </a>
+    <div class="lang">
+      <button data-set-lang="en">EN</button>
+      <button data-set-lang="pt">PT</button>
+    </div>
+  </div>
+
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="/madeira/">🏠 Main</a>
+      <a href="/madeira/history"><span data-lang="en">History</span><span data-lang="pt">História</span></a>
+      <span class="nav-here">🖼 <span data-lang="en">Album</span><span data-lang="pt">Álbum</span></span>
+    </div>
+  </nav>
+
+  <h1>🖼 <span data-lang="en">The Album</span><span data-lang="pt">O Álbum</span></h1>
+  <p class="sub">
+    <span data-lang="en">Old Madeira in engravings, postcards and photographs — finds from the archives, each with a note on what it shows. Tap any picture to enlarge. The pile keeps growing.</span>
+    <span data-lang="pt">A Madeira antiga em gravuras, postais e fotografias — achados dos arquivos, cada um com uma nota sobre o que mostra. Toque numa imagem para ampliar. A pilha continua a crescer.</span>
+  </p>
+
+  <div class="album-grid" id="grid">
+    <figure>
+      <img loading="lazy" src="/madeira/history/1874-funchal-bay-iln.jpg" alt="The bay and town of Funchal with tall ships at anchor, engraving 1874">
+      <figcaption><span data-lang="en"><b>Funchal, 1874</b> — the whole amphitheatre in one engraving: tall ships rolling in the open roadstead, the Loo Rock fort on the left, rowing boats heading for the beach. There was no harbour wall yet — every visitor, every piano and every barrel landed through the surf. “Illustrated London News”. Public domain.</span><span data-lang="pt"><b>Funchal, 1874</b> — o anfiteatro inteiro numa gravura: veleiros ao largo na baía aberta, o forte do Ilhéu à esquerda, botes a remos rumo ao calhau. Ainda não havia molhe — cada visitante, cada piano e cada pipa desembarcava pela rebentação. “Illustrated London News”. Domínio público.</span></figcaption>
+    </figure>
+    <figure>
+      <img loading="lazy" src="/madeira/history/1842-creole-wreck-storm.jpg" alt="The brig Creole wrecked on the rocks at Madeira during the storm of 1842, ink and wash">
+      <figcaption><span data-lang="en"><b>The great storm, 26 Oct 1842</b> — an eyewitness ink-and-wash of the American brig <i>Créole</i>, a slave-trading ship, thrown onto the rocks right under the quintas; Funchal is the smudge of towers in the distance. That one night wrecked a dozen ships in the bay. Public domain.</span><span data-lang="pt"><b>O grande temporal, 26 out 1842</b> — aguada de testemunha ocular do brigue americano <i>Créole</i>, um navio negreiro, atirado às rochas mesmo sob as quintas; o Funchal é a mancha de torres ao fundo. Uma só noite deu cabo de uma dúzia de navios na baía. Domínio público.</span></figcaption>
+    </figure>
+    <figure>
+      <img loading="lazy" src="/madeira/history/1909-borachos-wine-skins.jpg" alt="Men carrying goatskins of wine between walls of casks inside a Funchal wine lodge, 1909">
+      <figcaption><span data-lang="en"><b>Inside a wine lodge, 1909</b> — canyon walls of Madeira casks, and in the doorway men arriving with full goatskins (<i>borrachos</i>) of young wine carried down from the country vineyards. The skin kept the wine in; the man kept the skin's shape on his back. Public domain.</span><span data-lang="pt"><b>Dentro de um armazém de vinho, 1909</b> — paredes de cascos de Madeira em desfiladeiro e, à porta, homens a chegar com borrachos cheios de vinho novo, descidos das vinhas da serra. O borracho segurava o vinho; o homem ficava com a forma do borracho nas costas. Domínio público.</span></figcaption>
+    </figure>
+    <figure>
+      <img loading="lazy" src="/madeira/history/1910-mercado-d-pedro.jpg" alt="Mercado D. Pedro V in Funchal around 1910 — banana bunches, wicker baskets, women in capes">
+      <figcaption><span data-lang="en"><b>Mercado D. Pedro V, c. 1910</b> — bananas sold by the whole branch, towers of wicker overhead, women in hooded capes by the fountain and a dandy in a waistcoat guarding his stall. This square fed Funchal before the Mercado dos Lavradores existed (1940). Tinted postcard. Public domain.</span><span data-lang="pt"><b>Mercado D. Pedro V, c. 1910</b> — bananas vendidas ao cacho inteiro, torres de vime no ar, mulheres de capote junto ao chafariz e um janota de colete a guardar a banca. Esta praça alimentou o Funchal antes de existir o Mercado dos Lavradores (1940). Postal colorido. Domínio público.</span></figcaption>
+    </figure>
+    <figure>
+      <img loading="lazy" src="/madeira/history/1900s-whale-ashore.jpg" alt="A whale ashore below the walls of a fort, crowd with poles and try-pots, early 1900s">
+      <figcaption><span data-lang="en"><b>“Body of a whale”, early 1900s</b> — a whale ashore under the walls of a fort, and half the parish already down on the shingle in their Sunday hats, flensing poles and iron try-pots at the ready. Whaling only became an industry at Caniçal in the 1940s; a stranding was a whole town's event. Public domain.</span><span data-lang="pt"><b>«Body of a whale», início do séc. XX</b> — uma baleia dada à costa sob as muralhas de um forte, e meia freguesia já no calhau, de chapéu domingueiro, com varas e caldeirões a postos. A baleação só virou indústria no Caniçal nos anos 1940; um encalhe era acontecimento de terra inteira. Domínio público.</span></figcaption>
+    </figure>
+    <figure>
+      <img loading="lazy" src="/madeira/history/1900-rede-hammock.jpg" alt="Tourist hammock ride: two carriers in straw hats, a child and a small dog in the hammock, circa 1900">
+      <figcaption><span data-lang="en"><b>The rede goes touristic, c. 1900</b> — two carriers in whites and straw boaters, mother posing in her Sunday blue, and in the pink hammock: one small child and the family dog. By 1900 the hammock was already less transport than photo opportunity — the ancestor of every Madeira selfie. Public domain.</span><span data-lang="pt"><b>A rede vira turismo, c. 1900</b> — dois carregadores de branco e palhinhas, a mãe a posar de azul domingueiro e, na rede cor-de-rosa, uma criança pequena e o cão da família. Em 1900 a rede já era menos transporte do que fotografia — a antepassada de todas as selfies da Madeira. Domínio público.</span></figcaption>
+    </figure>
+  </div>
+
+  <p class="src">
+    <span data-lang="en">Public-domain and openly-licensed images via <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a>, Arquivo Regional da Madeira, Rijksmuseum and others — credited in each caption.</span>
+    <span data-lang="pt">Imagens em domínio público e de licença aberta via <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a>, Arquivo Regional da Madeira, Rijksmuseum e outros — creditadas em cada legenda.</span>
+  </p>
+</div>
+
+<div class="lb" id="lb"><span class="lb-close" id="lbClose">&times;</span><img id="lbImg" alt=""><div class="lb-cap" id="lbCap"></div></div>
+
+<script>
+var VALID = ['en', 'pt'];
+var urlLang = new URLSearchParams(location.search).get('lang');
+var lang = VALID.indexOf(urlLang) !== -1 ? urlLang : 'en';
+function applyLang() {
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-lang]').forEach(function (el) {
+    el.style.display = el.getAttribute('data-lang') === lang ? '' : 'none';
+  });
+  document.querySelectorAll('.lang button').forEach(function (b) {
+    b.classList.toggle('active', b.getAttribute('data-set-lang') === lang);
+  });
+}
+document.querySelectorAll('.lang button').forEach(function (b) {
+  b.onclick = function () { lang = b.getAttribute('data-set-lang'); applyLang(); };
+});
+applyLang();
+
+// lightbox
+var lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap');
+document.getElementById('grid').addEventListener('click', function (e) {
+  var img = e.target.closest('img');
+  if (!img) return;
+  lbImg.src = img.src; lbImg.alt = img.alt;
+  var cap = img.parentElement.querySelector('figcaption span[data-lang="' + lang + '"]');
+  lbCap.textContent = cap ? cap.textContent : '';
+  lb.classList.add('open');
+});
+function closeLb() { lb.classList.remove('open'); lbImg.src = ''; }
+lb.addEventListener('click', function (e) { if (e.target !== lbImg) closeLb(); });
+document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLb(); });
+</script>
+</body>
+</html>
