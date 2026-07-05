@@ -1,54 +1,6 @@
 {
-  "generated_at": "2026-07-04",
+  "generated_at": "2026-07-05",
   "events": [
-    {
-      "mode": "kids",
-      "name": "Campeonatos Regionais de Sub-14",
-      "date": "2026-07-04",
-      "location": "Funchal e Ribeira Brava",
-      "url": "https://fpacompeticoes.pt/",
-      "event_type": "running"
-    },
-    {
-      "mode": "kids",
-      "name": "Encontro Regional de Escolas BTT",
-      "date": "2026-07-04",
-      "location": "Ponta do Pargo, Calheta",
-      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
-      "event_type": "cycling_kids"
-    },
-    {
-      "mode": "kids",
-      "name": "VIII Festival Madeira e Nadar - AD Galomar",
-      "date": "2026-07-04",
-      "location": "Santa Cruz",
-      "url": "https://www.anatacaodamadeira.pt/index.php/associacao/associados/documentacao-geral/send/4-calendario-desportivo/158-calendario-desportivo-25-26-lista",
-      "event_type": "swimming_kids"
-    },
-    {
-      "mode": "pro",
-      "name": "3ª Taça da Madeira de XCO",
-      "date": "2026-07-04",
-      "location": "Ponta do Pargo, Calheta",
-      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
-      "event_type": "cycling_pro"
-    },
-    {
-      "mode": "road",
-      "name": "Pontinha - Casa da Luz (2.443 m)",
-      "date": "2026-07-04",
-      "location": "Madeira",
-      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
-      "event_type": "road_run"
-    },
-    {
-      "mode": "trail",
-      "name": "Orientação: Troféu de Orientação São Vicente (Pedestre)",
-      "date": "2026-07-04",
-      "location": "São Vicente",
-      "url": "https://aoram.pt/calendario/",
-      "event_type": "orienteering"
-    },
     {
       "mode": "kids",
       "name": "Encontro Regional de Escolas CE - Brisa Sem Açúcar",
@@ -144,6 +96,14 @@
       "location": "Machico",
       "url": "https://www.anatacaodamadeira.pt/index.php/associacao/associados/documentacao-geral/send/4-calendario-desportivo/158-calendario-desportivo-25-26-lista",
       "event_type": "swimming_kids"
+    },
+    {
+      "mode": "pro",
+      "name": "Campeonatos Nacionais de Sub-23 Ar Livre",
+      "date": "2026-07-18",
+      "location": "Seixal",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
     },
     {
       "mode": "pro",
