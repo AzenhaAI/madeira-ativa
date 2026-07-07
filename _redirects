@@ -5,5 +5,5 @@
 /madeira/festas/   /madeira/madeira_festas.html    200
 /madeira/news      /madeira/madeira_news.html      200
 /madeira/news/     /madeira/madeira_news.html      200
-/madeira/album     /madeira/madeira_album.html     200
-/madeira/album/    /madeira/madeira_album.html     200
+/madeira/album     /madeira/history                301
+/madeira/album/    /madeira/history                301

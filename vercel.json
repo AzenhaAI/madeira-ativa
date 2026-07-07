@@ -70,11 +70,11 @@
     },
     {
       "source": "/madeira/album",
-      "destination": "/madeira/madeira_album.html"
+      "destination": "/madeira/madeira_history.html"
     },
     {
       "source": "/madeira/album/",
-      "destination": "/madeira/madeira_album.html"
+      "destination": "/madeira/madeira_history.html"
     }
   ]
 }
