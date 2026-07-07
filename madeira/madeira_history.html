@@ -74,6 +74,17 @@
   .story.open .story-body { display: block; }
   .gal { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin: 14px 0 6px; }
   .gal figure { margin: 0; }
+  .timearrow { position: relative; display: flex; justify-content: space-between; margin: 18px 6px 34px; }
+  .timearrow .ta-track { position: absolute; left: 8px; right: 20px; top: 30px; height: 3px; border-radius: 2px;
+    background: linear-gradient(90deg, #1F4D32, #6B8763 22%, #c8912f 60%, #b23a2e); }
+  .timearrow::after { content: ''; position: absolute; right: 4px; top: 25px; width: 0; height: 0;
+    border-left: 13px solid #b23a2e; border-top: 6.5px solid transparent; border-bottom: 6.5px solid transparent; }
+  .ta-stop { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; flex: 0 0 auto; }
+  .ta-ico { font-size: clamp(15px, 3.2vw, 21px); height: 26px; line-height: 26px; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.15)); }
+  .ta-dot { width: 11px; height: 11px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); box-shadow: 0 0 0 1px var(--line); }
+  .ta-yr { font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: clamp(10px, 2.4vw, 13px); color: var(--accent); margin-top: 5px; }
+  .ta-stop:last-child .ta-dot { background: #b23a2e; }
+  .ta-stop:last-child .ta-yr { color: #b23a2e; }
   .tl-gal-title { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: clamp(19px, 3.6vw, 24px); color: var(--accent); margin: 4px 0 2px; }
   .tl-gal-sub { color: var(--soft); font-size: 13px; margin: 0 0 8px; }
   .chapter { margin: 6px 0 10px; }
@@ -129,13 +140,13 @@
     <div class="site-nav-inner">
       <a href="/madeira/">🏠 Main</a>
       <span class="nav-here">📜 <span data-lang="en">History</span><span data-lang="pt">História</span></span>
+      <a href="#timeline">⏳ <span data-lang="en">Timeline</span><span data-lang="pt">Cronologia</span></a>
       <a href="#levadas-story">Levadas</a>
       <a href="#transport"><span data-lang="en">Transport</span><span data-lang="pt">Transportes</span></a>
       <a href="#flora">Flora</a>
       <a href="#festas-story">Festas</a>
       <a href="#kitchen"><span data-lang="en">Food</span><span data-lang="pt">Comida</span></a>
       <a href="#drinks"><span data-lang="en">Drinks</span><span data-lang="pt">Bebidas</span></a>
-      <a href="#timeline"><span data-lang="en">Timeline</span><span data-lang="pt">Cronologia</span></a>
     </div>
   </nav>
 
@@ -402,6 +413,17 @@
 
   <h2 class="stories-title" id="timeline"><span data-lang="en">The timeline</span><span data-lang="pt">A linha do tempo</span></h2>
   <p class="stories-sub"><span data-lang="en">Six hundred years in six chapters — worth a slow scroll.</span><span data-lang="pt">Seiscentos anos em seis capítulos — vale a pena descer devagar.</span></p>
+
+  <div class="timearrow" aria-hidden="true">
+    <div class="ta-track"></div>
+    <div class="ta-stop"><span class="ta-ico">🚢</span><span class="ta-dot"></span><span class="ta-yr">1419</span></div>
+    <div class="ta-stop"><span class="ta-ico">🍬</span><span class="ta-dot"></span><span class="ta-yr">1452</span></div>
+    <div class="ta-stop"><span class="ta-ico">💧</span><span class="ta-dot"></span><span class="ta-yr">1461</span></div>
+    <div class="ta-stop"><span class="ta-ico">🍷</span><span class="ta-dot"></span><span class="ta-yr">1600</span></div>
+    <div class="ta-stop"><span class="ta-ico">🛷</span><span class="ta-dot"></span><span class="ta-yr">1850</span></div>
+    <div class="ta-stop"><span class="ta-ico">🍌</span><span class="ta-dot"></span><span class="ta-yr">1900</span></div>
+    <div class="ta-stop"><span class="ta-ico">🏃</span><span class="ta-dot"></span><span class="ta-yr">2026</span></div>
+  </div>
 
   <h3 class="tl-gal-title"><span data-lang="en">Funchal through the artists’ eyes</span><span data-lang="pt">O Funchal pelos olhos dos artistas</span></h3>
   <p class="tl-gal-sub"><span data-lang="en">Two centuries of the bay, from hand-coloured plate to watercolour.</span><span data-lang="pt">Dois séculos da baía, da gravura aguarelada à aguarela.</span></p>
