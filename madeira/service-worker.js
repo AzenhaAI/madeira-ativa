@@ -1,4 +1,4 @@
-const CACHE_NAME = "madeira-ative-v46";
+const CACHE_NAME = "madeira-ative-v47";
 const CORE_ASSETS = [
   "/madeira/",
   "/madeira/index.html",
