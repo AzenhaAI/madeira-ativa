@@ -29,7 +29,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install -r requirements-madeira.txt
+        run: pip install -r requirements.txt
 
       - name: Fetch news (RSS + translations)
         run: python scripts/fetch_news.py

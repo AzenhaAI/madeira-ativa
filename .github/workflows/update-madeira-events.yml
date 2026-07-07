@@ -29,7 +29,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install -r requirements-madeira.txt
+        run: pip install -r requirements.txt
 
       - name: Export Madeira events
         run: python scripts/export_madeira_events.py
