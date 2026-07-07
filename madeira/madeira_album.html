@@ -31,6 +31,9 @@
   .site-nav .nav-here { flex-shrink: 0; padding: 11px 8px; font-size: 12.5px; font-weight: 800; color: var(--accent); border-bottom: 2px solid var(--accent); white-space: nowrap; }
   h1 { font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: clamp(30px, 6vw, 46px); letter-spacing: -0.02em; margin: 12px 0 6px; }
   .sub { color: var(--soft); font-size: 16px; margin: 0 0 26px; line-height: 1.5; max-width: 640px; }
+  .album-sec { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: clamp(21px, 4vw, 27px); color: var(--accent); margin: 36px 0 2px; letter-spacing: -0.01em; }
+  #gallery > .album-sec:first-child { margin-top: 6px; }
+  .album-sec-date { font-size: 11.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--soft); margin: 0 0 14px; }
   .album-grid { columns: 2; column-gap: 16px; }
   @media (max-width: 620px) { .album-grid { columns: 1; } }
   figure { margin: 0 0 16px; break-inside: avoid; }
@@ -85,34 +88,25 @@
 
   <h1>🖼 <span data-lang="en">The Album</span><span data-lang="pt">O Álbum</span></h1>
   <p class="sub">
-    <span data-lang="en">Old Madeira in engravings, postcards and photographs — finds from the archives, each with a note on what it shows. Tap any picture to enlarge. The pile keeps growing.</span>
-    <span data-lang="pt">A Madeira antiga em gravuras, postais e fotografias — achados dos arquivos, cada um com uma nota sobre o que mostra. Toque numa imagem para ampliar. A pilha continua a crescer.</span>
+    <span data-lang="en">Old Madeira in engravings, postcards and photographs — grouped by theme and running, within each, from the earliest drawings to the later photographs. Each has a note on what it shows and who made it; tap any picture to enlarge.</span>
+    <span data-lang="pt">A Madeira antiga em gravuras, postais e fotografias — agrupadas por tema e, dentro de cada, dos primeiros desenhos às fotografias mais tardias. Cada uma com uma nota sobre o que mostra e quem a fez; toque para ampliar.</span>
   </p>
 
-  <div class="album-grid" id="grid">
+  <div id="gallery">
+    <h2 class="album-sec"><span data-lang="en">Ships, the bay &amp; the sea</span><span data-lang="pt">Navios, a baía e o mar</span></h2>
+    <p class="album-sec-date">early 1800s – 1874 · drawings &amp; engravings</p>
+    <div class="album-grid">
     <figure>
-      <img loading="lazy" src="/madeira/history/art-costume-peasants-1821.jpg" alt="Hand-coloured 1821 plate: a woman with a basket and a man playing a machete under a tree">
-      <figcaption><span data-lang="en"><b>Peasants in usual costume</b> — a woman with a laden basket, a man strumming the <i>machete</i> (the little Madeiran guitar that fathered the ukulele). Hand-coloured aquatint from <i>A History of Madeira</i> (verses by William Combe), published by Rudolph Ackermann, London, <b>1821</b>; the plates are unsigned. Public domain.</span><span data-lang="pt"><b>Camponeses em traje comum</b> — uma mulher com um cesto e um homem a tocar <i>machete</i> (a viola madeirense que deu origem ao ukulele). Água-tinta aguarelada de <i>A History of Madeira</i> (versos de William Combe), editada por Rudolph Ackermann, Londres, <b>1821</b>; gravuras não assinadas. Domínio público.</span></figcaption>
+      <img loading="lazy" src="/madeira/history/art-funchal-beach-aquatint.jpg" alt="Hand-coloured aquatint of Funchal beach with seafront forts, boats and ships in the bay">
+      <figcaption><span data-lang="en"><b>Funchal beach &amp; forts</b> — boats drawn up on the shingle, the little seafront batteries, ships riding in the roadstead. Hand-coloured aquatint, <b>early 19th century</b>; artist unrecorded. Public domain.</span><span data-lang="pt"><b>Praia e fortes do Funchal</b> — botes puxados para o calhau, as pequenas baterias da frente-mar, navios fundeados. Água-tinta aguarelada, <b>início do séc. XIX</b>; autor não identificado. Domínio público.</span></figcaption>
     </figure>
     <figure>
-      <img loading="lazy" src="/madeira/history/art-costume-western-1821.jpg" alt="Hand-coloured 1821 plate of a couple in the costume of western Madeira">
-      <figcaption><span data-lang="en"><b>Costume of the western island</b> — a couple from Madeira's far west in their Sunday best. Hand-coloured plate from <i>A History of Madeira</i>, R. Ackermann, London, <b>1821</b>. Public domain.</span><span data-lang="pt"><b>Traje do poente da ilha</b> — um casal do extremo oeste da Madeira em traje domingueiro. Gravura aguarelada de <i>A History of Madeira</i>, R. Ackermann, Londres, <b>1821</b>. Domínio público.</span></figcaption>
+      <img loading="lazy" src="/madeira/history/1842-creole-wreck-storm.jpg" alt="Brown-ink drawing of the brig Creole wrecked on the rocks at Madeira, 1842">
+      <figcaption><span data-lang="en"><b>The great storm of 1842</b> — the American slave-brig <i>Créole</i> thrown onto the rocks below the quintas on 26 October 1842. Brown-ink drawing attributed to <b>Emily Geneviève Smith</b>, <b>1842</b> (Museu Quinta das Cruzes, Funchal). Public domain.</span><span data-lang="pt"><b>O grande temporal de 1842</b> — o brigue negreiro americano <i>Créole</i> atirado às rochas sob as quintas a 26 de outubro de 1842. Desenho a tinta castanha atribuído a <b>Emily Geneviève Smith</b>, <b>1842</b> (Museu Quinta das Cruzes, Funchal). Domínio público.</span></figcaption>
     </figure>
     <figure>
-      <img loading="lazy" src="/madeira/history/art-farmer-daughter-1821.jpg" alt="Hand-coloured 1821 plate: a farmer and his daughter on the way to town">
-      <figcaption><span data-lang="en"><b>“A Farmer &amp; his Daughter going to Town”</b> — over the mountain to Funchal market in Sunday clothes. Plate from <i>A History of Madeira</i>, R. Ackermann, London, <b>1821</b>. Public domain.</span><span data-lang="pt"><b>“Um lavrador e a sua filha a caminho da vila”</b> — pela serra até ao mercado do Funchal, em traje domingueiro. Gravura de <i>A History of Madeira</i>, R. Ackermann, Londres, <b>1821</b>. Domínio público.</span></figcaption>
-    </figure>
-    <figure>
-      <img loading="lazy" src="/madeira/history/art-arrieiro-1821.jpg" alt="Hand-coloured 1821 plate of an arrieiro carrying a heavy load on a mountain path">
-      <figcaption><span data-lang="en"><b>“An Arrieiro upon the Road”</b> — a carrier bent under a full load on a cliff path; before wheels, everything on Madeira moved on a back. Plate from <i>A History of Madeira</i>, R. Ackermann, London, <b>1821</b>. Public domain.</span><span data-lang="pt"><b>“Um arrieiro na estrada”</b> — um carregador curvado sob a carga numa vereda; antes das rodas, tudo se movia às costas. Gravura de <i>A History of Madeira</i>, R. Ackermann, Londres, <b>1821</b>. Domínio público.</span></figcaption>
-    </figure>
-    <figure>
-      <img loading="lazy" src="/madeira/history/art-cottage-interior-1821.jpg" alt="Hand-coloured 1821 plate showing the interior of a Madeiran cottage">
-      <figcaption><span data-lang="en"><b>Interior of a cottage</b> — the one-room world of a country family, hearth and bed and all. Hand-coloured plate from <i>A History of Madeira</i>, R. Ackermann, London, <b>1821</b>. Public domain.</span><span data-lang="pt"><b>Interior de uma casa</b> — o mundo de uma só divisão de uma família do campo, lareira e cama. Gravura aguarelada de <i>A History of Madeira</i>, R. Ackermann, Londres, <b>1821</b>. Domínio público.</span></figcaption>
-    </figure>
-    <figure>
-      <img loading="lazy" src="/madeira/history/art-monte-sledge-c1900.jpg" alt="Colour postcard of the Monte toboggan with two carreiros and a passenger">
-      <figcaption><span data-lang="en"><b>The Monte toboggan</b> — two <i>carreiros</i> in whites steer the wicker sledge downhill, a passenger aboard. Tinted picture postcard, publisher unrecorded, <b>c. 1900</b>. Public domain.</span><span data-lang="pt"><b>O carro do Monte</b> — dois <i>carreiros</i> de branco guiam o carro de vime na descida, com um passageiro. Bilhete-postal colorido, editor não identificado, <b>c. 1900</b>. Domínio público.</span></figcaption>
+      <img loading="lazy" src="/madeira/history/art-bay-funchal-steel-engraving.jpg" alt="Hand-coloured steel engraving of Funchal bay with a red lateen-sailed boat among the fleet">
+      <figcaption><span data-lang="en"><b>The Bay and Town of Funchal</b> — a boat with a red lateen sail among the anchored fleet under the mountains. Hand-coloured steel engraving, <b>mid-19th century</b>; artist unrecorded. Public domain.</span><span data-lang="pt"><b>A baía e a cidade do Funchal</b> — um barco de vela latina vermelha entre a frota fundeada sob as montanhas. Gravura a aço aguarelada, <b>meados do séc. XIX</b>; autor não identificado. Domínio público.</span></figcaption>
     </figure>
     <figure>
       <img loading="lazy" src="/madeira/history/art-bay-ships-litho.jpg" alt="Colour lithograph of Funchal bay with sailing ships and mountains">
@@ -127,6 +121,30 @@
       <figcaption><span data-lang="en"><b>Landing through the surf</b> — before the harbour wall, everyone came ashore in boats hauled up the beach through the swell. Watercolour, <b>19th century</b>; artist unrecorded. Public domain.</span><span data-lang="pt"><b>Desembarcar na rebentação</b> — antes do molhe, chegava-se a terra em botes puxados para o calhau. Aguarela, <b>séc. XIX</b>; autor não identificado. Domínio público.</span></figcaption>
     </figure>
     <figure>
+      <img loading="lazy" src="/madeira/history/1874-funchal-bay-iln.jpg" alt="Engraving of the bay and town of Funchal with tall ships, Illustrated London News 1874">
+      <figcaption><span data-lang="en"><b>The Bay and Town of Funchal</b> — the town's amphitheatre and tall ships in the open roadstead, before any harbour wall. Wood engraving, <i>The Illustrated London News</i>, <b>28 February 1874</b> (p. 201); unsigned. Public domain.</span><span data-lang="pt"><b>A baía e a cidade do Funchal</b> — o anfiteatro da cidade e veleiros na baía aberta, antes de qualquer molhe. Gravura em madeira, <i>The Illustrated London News</i>, <b>28 de fevereiro de 1874</b> (p. 201); não assinada. Domínio público.</span></figcaption>
+    </figure>
+    </div>
+    <h2 class="album-sec"><span data-lang="en">Town &amp; country life</span><span data-lang="pt">A cidade e a vida do campo</span></h2>
+    <p class="album-sec-date">1821 – 1877 · hand-coloured plates &amp; watercolours</p>
+    <div class="album-grid">
+    <figure>
+      <img loading="lazy" src="/madeira/history/art-costume-peasants-1821.jpg" alt="Hand-coloured 1821 plate: a woman with a basket and a man playing a machete under a tree">
+      <figcaption><span data-lang="en"><b>Peasants in usual costume</b> — a woman with a laden basket, a man strumming the <i>machete</i> (the little Madeiran guitar that fathered the ukulele). Hand-coloured aquatint from <i>A History of Madeira</i> (verses by William Combe), published by Rudolph Ackermann, London, <b>1821</b>; the plates are unsigned. Public domain.</span><span data-lang="pt"><b>Camponeses em traje comum</b> — uma mulher com um cesto e um homem a tocar <i>machete</i> (a viola madeirense que deu origem ao ukulele). Água-tinta aguarelada de <i>A History of Madeira</i> (versos de William Combe), editada por Rudolph Ackermann, Londres, <b>1821</b>; gravuras não assinadas. Domínio público.</span></figcaption>
+    </figure>
+    <figure>
+      <img loading="lazy" src="/madeira/history/art-costume-western-1821.jpg" alt="Hand-coloured 1821 plate of a couple in the costume of western Madeira">
+      <figcaption><span data-lang="en"><b>Costume of the western island</b> — a couple from Madeira's far west in their Sunday best. Hand-coloured plate from <i>A History of Madeira</i>, R. Ackermann, London, <b>1821</b>. Public domain.</span><span data-lang="pt"><b>Traje do poente da ilha</b> — um casal do extremo oeste da Madeira em traje domingueiro. Gravura aguarelada de <i>A History of Madeira</i>, R. Ackermann, Londres, <b>1821</b>. Domínio público.</span></figcaption>
+    </figure>
+    <figure>
+      <img loading="lazy" src="/madeira/history/art-farmer-daughter-1821.jpg" alt="Hand-coloured 1821 plate: a farmer and his daughter on the way to town">
+      <figcaption><span data-lang="en"><b>“A Farmer &amp; his Daughter going to Town”</b> — over the mountain to Funchal market in Sunday clothes. Plate from <i>A History of Madeira</i>, R. Ackermann, London, <b>1821</b>. Public domain.</span><span data-lang="pt"><b>“Um lavrador e a sua filha a caminho da vila”</b> — pela serra até ao mercado do Funchal, em traje domingueiro. Gravura de <i>A History of Madeira</i>, R. Ackermann, Londres, <b>1821</b>. Domínio público.</span></figcaption>
+    </figure>
+    <figure>
+      <img loading="lazy" src="/madeira/history/art-cottage-interior-1821.jpg" alt="Hand-coloured 1821 plate showing the interior of a Madeiran cottage">
+      <figcaption><span data-lang="en"><b>Interior of a cottage</b> — the one-room world of a country family, hearth and bed and all. Hand-coloured plate from <i>A History of Madeira</i>, R. Ackermann, London, <b>1821</b>. Public domain.</span><span data-lang="pt"><b>Interior de uma casa</b> — o mundo de uma só divisão de uma família do campo, lareira e cama. Gravura aguarelada de <i>A History of Madeira</i>, R. Ackermann, Londres, <b>1821</b>. Domínio público.</span></figcaption>
+    </figure>
+    <figure>
       <img loading="lazy" src="/madeira/history/art-picken-funchal-1840.jpg" alt="Lithograph of Funchal above the bay with a basket-seller and a family picnicking, Andrew Picken 1840">
       <figcaption><span data-lang="en"><b>Funchal above the bay, 1840</b> — a basket-seller and a family at their meal on the cliff, the town and its chimneys below. Lithograph drawn from nature and on stone by <b>Andrew Picken</b> (1815–1845), printed by Day &amp; Haghe, from <i>Madeira Illustrated</i>, London, <b>1840</b>. Public domain.</span><span data-lang="pt"><b>O Funchal sobre a baía, 1840</b> — um vendedor de cestos e uma família à refeição na arriba, a cidade e as chaminés em baixo. Litografia desenhada do natural e sobre pedra por <b>Andrew Picken</b> (1815–1845), impressa por Day &amp; Haghe, de <i>Madeira Illustrated</i>, Londres, <b>1840</b>. Domínio público.</span></figcaption>
     </figure>
@@ -134,25 +152,29 @@
       <img loading="lazy" src="/madeira/history/art-funchal-watercolor-1877.jpg" alt="Watercolour over Funchal's tiled roofs and a church spire to the terraced hills, dated 1877">
       <figcaption><span data-lang="en"><b>Funchal rooftops, 1877</b> — a fine watercolour over the tiled roofs and a church spire to the terraced hills behind. Signed with the artist's monogram and dated <b>1877</b>. Public domain.</span><span data-lang="pt"><b>Telhados do Funchal, 1877</b> — uma bela aguarela sobre os telhados e um coruchéu de igreja até às encostas em socalcos. Assinada com o monograma do autor e datada de <b>1877</b>. Domínio público.</span></figcaption>
     </figure>
+    </div>
+    <h2 class="album-sec"><span data-lang="en">Getting around</span><span data-lang="pt">Andar por aí</span></h2>
+    <p class="album-sec-date">1821 – c. 1900 · from plate to postcard</p>
+    <div class="album-grid">
     <figure>
-      <img loading="lazy" src="/madeira/history/art-funchal-beach-aquatint.jpg" alt="Hand-coloured aquatint of Funchal beach with seafront forts, boats and ships in the bay">
-      <figcaption><span data-lang="en"><b>Funchal beach &amp; forts</b> — boats drawn up on the shingle, the little seafront batteries, ships riding in the roadstead. Hand-coloured aquatint, <b>early 19th century</b>; artist unrecorded. Public domain.</span><span data-lang="pt"><b>Praia e fortes do Funchal</b> — botes puxados para o calhau, as pequenas baterias da frente-mar, navios fundeados. Água-tinta aguarelada, <b>início do séc. XIX</b>; autor não identificado. Domínio público.</span></figcaption>
+      <img loading="lazy" src="/madeira/history/art-arrieiro-1821.jpg" alt="Hand-coloured 1821 plate of an arrieiro carrying a heavy load on a mountain path">
+      <figcaption><span data-lang="en"><b>“An Arrieiro upon the Road”</b> — a carrier bent under a full load on a cliff path; before wheels, everything on Madeira moved on a back. Plate from <i>A History of Madeira</i>, R. Ackermann, London, <b>1821</b>. Public domain.</span><span data-lang="pt"><b>“Um arrieiro na estrada”</b> — um carregador curvado sob a carga numa vereda; antes das rodas, tudo se movia às costas. Gravura de <i>A History of Madeira</i>, R. Ackermann, Londres, <b>1821</b>. Domínio público.</span></figcaption>
     </figure>
     <figure>
-      <img loading="lazy" src="/madeira/history/art-bay-funchal-steel-engraving.jpg" alt="Hand-coloured steel engraving of Funchal bay with a red lateen-sailed boat among the fleet">
-      <figcaption><span data-lang="en"><b>The Bay and Town of Funchal</b> — a boat with a red lateen sail among the anchored fleet under the mountains. Hand-coloured steel engraving, <b>mid-19th century</b>; artist unrecorded. Public domain.</span><span data-lang="pt"><b>A baía e a cidade do Funchal</b> — um barco de vela latina vermelha entre a frota fundeada sob as montanhas. Gravura a aço aguarelada, <b>meados do séc. XIX</b>; autor não identificado. Domínio público.</span></figcaption>
+      <img loading="lazy" src="/madeira/history/art-monte-sledge-c1900.jpg" alt="Colour postcard of the Monte toboggan with two carreiros and a passenger">
+      <figcaption><span data-lang="en"><b>The Monte toboggan</b> — two <i>carreiros</i> in whites steer the wicker sledge downhill, a passenger aboard. Tinted picture postcard, publisher unrecorded, <b>c. 1900</b>. Public domain.</span><span data-lang="pt"><b>O carro do Monte</b> — dois <i>carreiros</i> de branco guiam o carro de vime na descida, com um passageiro. Bilhete-postal colorido, editor não identificado, <b>c. 1900</b>. Domínio público.</span></figcaption>
     </figure>
     <figure>
-      <img loading="lazy" src="/madeira/history/art-flower-sellers-figueira.jpg" alt="Four Madeiran flower sellers in striped skirts with flower baskets on their heads, photo postcard c.1940">
-      <figcaption><span data-lang="en"><b>Flower sellers, Funchal</b> — four <i>vendedeiras</i> in striped skirts and leather boots, flower baskets balanced on their heads. Real-photo postcard signed J. Figueira, <b>c. 1940</b>. Public domain.</span><span data-lang="pt"><b>Vendedeiras de flores, Funchal</b> — quatro <i>vendedeiras</i> de saia listada e botas de couro, cestos de flores à cabeça. Bilhete-postal fotográfico assinado J. Figueira, <b>c. 1940</b>. Domínio público.</span></figcaption>
+      <img loading="lazy" src="/madeira/history/1900-rede-hammock.jpg" alt="A girl and her chaperone with a hammock and two carriers in a Funchal garden, postcard circa 1900">
+      <figcaption><span data-lang="en"><b>The rede (hammock)</b> — a girl and her chaperone in the Municipal Garden, carriers at each end of the swinging hammock — Funchal's taxi. Animated postcard, <b>Bazar do Povo no. 100</b> (João Anacleto Rodrigues), <b>c. 1900</b>. Public domain.</span><span data-lang="pt"><b>A rede</b> — uma menina e a sua dama de companhia no Jardim Municipal, carregadores nas pontas da rede — o táxi do Funchal. Bilhete-postal animado, <b>Bazar do Povo n.º 100</b> (João Anacleto Rodrigues), <b>c. 1900</b>. Domínio público.</span></figcaption>
     </figure>
+    </div>
+    <h2 class="album-sec"><span data-lang="en">Work, trade &amp; flowers</span><span data-lang="pt">Trabalho, comércio e flores</span></h2>
+    <p class="album-sec-date">c. 1900 – c. 1940 · early photographs</p>
+    <div class="album-grid">
     <figure>
-      <img loading="lazy" src="/madeira/history/1874-funchal-bay-iln.jpg" alt="Engraving of the bay and town of Funchal with tall ships, Illustrated London News 1874">
-      <figcaption><span data-lang="en"><b>The Bay and Town of Funchal</b> — the town's amphitheatre and tall ships in the open roadstead, before any harbour wall. Wood engraving, <i>The Illustrated London News</i>, <b>28 February 1874</b> (p. 201); unsigned. Public domain.</span><span data-lang="pt"><b>A baía e a cidade do Funchal</b> — o anfiteatro da cidade e veleiros na baía aberta, antes de qualquer molhe. Gravura em madeira, <i>The Illustrated London News</i>, <b>28 de fevereiro de 1874</b> (p. 201); não assinada. Domínio público.</span></figcaption>
-    </figure>
-    <figure>
-      <img loading="lazy" src="/madeira/history/1842-creole-wreck-storm.jpg" alt="Brown-ink drawing of the brig Creole wrecked on the rocks at Madeira, 1842">
-      <figcaption><span data-lang="en"><b>The great storm of 1842</b> — the American slave-brig <i>Créole</i> thrown onto the rocks below the quintas on 26 October 1842. Brown-ink drawing attributed to <b>Emily Geneviève Smith</b>, <b>1842</b> (Museu Quinta das Cruzes, Funchal). Public domain.</span><span data-lang="pt"><b>O grande temporal de 1842</b> — o brigue negreiro americano <i>Créole</i> atirado às rochas sob as quintas a 26 de outubro de 1842. Desenho a tinta castanha atribuído a <b>Emily Geneviève Smith</b>, <b>1842</b> (Museu Quinta das Cruzes, Funchal). Domínio público.</span></figcaption>
+      <img loading="lazy" src="/madeira/history/1900s-whale-ashore.jpg" alt="A whale being butchered on the shingle at Porto Moniz, photograph circa 1900">
+      <figcaption><span data-lang="en"><b>Butchering a whale, Porto Moniz</b> — a stranded whale flensed on the shingle below the fort, half the parish watching. Photograph by <b>João Anacleto Rodrigues</b>, published by Bazar do Povo, <b>c. 1900</b>. Public domain.</span><span data-lang="pt"><b>Esquartejar uma baleia, Porto Moniz</b> — uma baleia dada à costa, no calhau sob o forte, meia freguesia a ver. Fotografia de <b>João Anacleto Rodrigues</b>, edição Bazar do Povo, <b>c. 1900</b>. Domínio público.</span></figcaption>
     </figure>
     <figure>
       <img loading="lazy" src="/madeira/history/1909-borachos-wine-skins.jpg" alt="Men carrying goatskins of wine between walls of casks in a Funchal wine lodge, 1909">
@@ -163,13 +185,10 @@
       <figcaption><span data-lang="en"><b>Mercado D. Pedro V, Funchal</b> — bananas by the branch and towers of wicker, thirty years before the Mercado dos Lavradores opened (1940). Picture postcard, author unknown, <b>c. 1910</b>. Public domain.</span><span data-lang="pt"><b>Mercado D. Pedro V, Funchal</b> — bananas ao cacho e torres de vime, trinta anos antes de abrir o Mercado dos Lavradores (1940). Bilhete-postal, autor desconhecido, <b>c. 1910</b>. Domínio público.</span></figcaption>
     </figure>
     <figure>
-      <img loading="lazy" src="/madeira/history/1900s-whale-ashore.jpg" alt="A whale being butchered on the shingle at Porto Moniz, photograph circa 1900">
-      <figcaption><span data-lang="en"><b>Butchering a whale, Porto Moniz</b> — a stranded whale flensed on the shingle below the fort, half the parish watching. Photograph by <b>João Anacleto Rodrigues</b>, published by Bazar do Povo, <b>c. 1900</b>. Public domain.</span><span data-lang="pt"><b>Esquartejar uma baleia, Porto Moniz</b> — uma baleia dada à costa, no calhau sob o forte, meia freguesia a ver. Fotografia de <b>João Anacleto Rodrigues</b>, edição Bazar do Povo, <b>c. 1900</b>. Domínio público.</span></figcaption>
+      <img loading="lazy" src="/madeira/history/art-flower-sellers-figueira.jpg" alt="Four Madeiran flower sellers in striped skirts with flower baskets on their heads, photo postcard c.1940">
+      <figcaption><span data-lang="en"><b>Flower sellers, Funchal</b> — four <i>vendedeiras</i> in striped skirts and leather boots, flower baskets balanced on their heads. Real-photo postcard signed J. Figueira, <b>c. 1940</b>. Public domain.</span><span data-lang="pt"><b>Vendedeiras de flores, Funchal</b> — quatro <i>vendedeiras</i> de saia listada e botas de couro, cestos de flores à cabeça. Bilhete-postal fotográfico assinado J. Figueira, <b>c. 1940</b>. Domínio público.</span></figcaption>
     </figure>
-    <figure>
-      <img loading="lazy" src="/madeira/history/1900-rede-hammock.jpg" alt="A girl and her chaperone with a hammock and two carriers in a Funchal garden, postcard circa 1900">
-      <figcaption><span data-lang="en"><b>The rede (hammock)</b> — a girl and her chaperone in the Municipal Garden, carriers at each end of the swinging hammock — Funchal's taxi. Animated postcard, <b>Bazar do Povo no. 100</b> (João Anacleto Rodrigues), <b>c. 1900</b>. Public domain.</span><span data-lang="pt"><b>A rede</b> — uma menina e a sua dama de companhia no Jardim Municipal, carregadores nas pontas da rede — o táxi do Funchal. Bilhete-postal animado, <b>Bazar do Povo n.º 100</b> (João Anacleto Rodrigues), <b>c. 1900</b>. Domínio público.</span></figcaption>
-    </figure>
+    </div>
   </div>
 
   <p class="src">
@@ -200,7 +219,7 @@ applyLang();
 
 // lightbox
 var lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap');
-document.getElementById('grid').addEventListener('click', function (e) {
+document.getElementById('gallery').addEventListener('click', function (e) {
   var img = e.target.closest('img');
   if (!img) return;
   lbImg.src = img.src; lbImg.alt = img.alt;
