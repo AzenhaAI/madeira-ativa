@@ -74,6 +74,12 @@
   .story.open .story-body { display: block; }
   .gal { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin: 14px 0 6px; }
   .gal figure { margin: 0; }
+  .tl-chip { display: flex; align-items: center; gap: 12px; text-decoration: none; color: #fff; margin: 0 0 22px; padding: 12px 16px; border-radius: 14px; background: linear-gradient(90deg, #1F4D32, #6B8763 30%, #c8912f 70%, #b23a2e); box-shadow: 0 4px 14px rgba(21,32,26,0.16); transition: transform 0.15s, box-shadow 0.15s; }
+  .tl-chip:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(21,32,26,0.22); }
+  .tl-chip-ico { font-size: 22px; flex-shrink: 0; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.25)); }
+  .tl-chip-txt { flex: 1; font-size: 14.5px; line-height: 1.35; text-shadow: 0 1px 3px rgba(0,0,0,0.22); }
+  .tl-chip-txt b { font-family: Fraunces, Georgia, serif; font-weight: 700; }
+  .tl-chip-arr { font-size: 20px; font-weight: 700; flex-shrink: 0; }
   .timearrow { position: relative; display: flex; justify-content: space-between; margin: 18px 6px 34px; }
   .timearrow .ta-track { position: absolute; left: 8px; right: 20px; top: 30px; height: 3px; border-radius: 2px;
     background: linear-gradient(90deg, #1F4D32, #6B8763 22%, #c8912f 60%, #b23a2e); }
@@ -158,6 +164,12 @@
 
 <h2 class="stories-title"><span data-lang="en">Island stories</span><span data-lang="pt">Histórias da ilha</span></h2>
   <p class="stories-sub"><span data-lang="en">Pick a thread — each one opens into its own story.</span><span data-lang="pt">Escolha um fio — cada um abre a sua própria história.</span></p>
+
+  <a class="tl-chip" href="#timeline">
+    <span class="tl-chip-ico">⏳</span>
+    <span class="tl-chip-txt"><b><span data-lang="en">The whole timeline</span><span data-lang="pt">A cronologia completa</span></b> — <span data-lang="en">six centuries at a glance, 1419 → 2026</span><span data-lang="pt">seis séculos num relance, 1419 → 2026</span></span>
+    <span class="tl-chip-arr">→</span>
+  </a>
 
   
   
