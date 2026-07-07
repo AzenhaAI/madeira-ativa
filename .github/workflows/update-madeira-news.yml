@@ -2,11 +2,16 @@ name: Update Madeira news & broadcasts
 
 on:
   schedule:
-    - cron: "17 5 * * *"
+    - cron: "40 5 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
+
+# Serialize with the events workflow so the two never push to main at once
+concurrency:
+  group: madeira-data-commit
+  cancel-in-progress: false
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -24,7 +29,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r requirements-madeira.txt
 
       - name: Fetch news (RSS + translations)
         run: python scripts/fetch_news.py
@@ -54,7 +59,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update Madeira news, broadcasts & trail status"
-          commit_user_name: Kirill Shpara
-          commit_user_email: 125877659+kirshp@users.noreply.github.com
-          commit_author: Kirill Shpara <125877659+kirshp@users.noreply.github.com>
           file_pattern: madeira/news_feed.json madeira/tv_broadcasts.json madeira/trails_status.json madeira/trails_geo.json madeira/levadas.json madeira/trail_calendar.json
