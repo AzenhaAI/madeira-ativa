@@ -34,8 +34,17 @@ jobs:
       - name: Export Madeira events
         run: python scripts/export_madeira_events.py
 
-      - name: Commit updated events
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Update Madeira events"
-          file_pattern: madeira/events.json
+      - name: Commit & push (rebase-safe)
+        run: |
+          git config user.name "Kirill Shpara"
+          git config user.email "125877659+kirshp@users.noreply.github.com"
+          git add madeira/events.json
+          if git diff --cached --quiet; then echo "No changes — nothing to commit."; exit 0; fi
+          git commit -m "Update Madeira events"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase -X theirs origin/main || { git rebase --abort; sleep 3; continue; }
+            if git push origin HEAD:main; then echo "Pushed on attempt $attempt."; exit 0; fi
+            echo "Push rejected — main moved; retry $attempt."; sleep $((attempt * 4))
+          done
+          echo "Could not push after retries."; exit 1
