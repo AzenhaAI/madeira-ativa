@@ -229,7 +229,7 @@
     .site-nav a:hover { color: var(--accent); }
     .site-nav .nav-soon { color: #B9B3A6; cursor: default; }
     .nav-ico { margin-right: 4px; }
-    @media (max-width: 640px) { .nav-ico { display: none; } }
+    @media (max-width: 640px) { .nav-ico { display: none; } .theme-btn { display: none; } }
     .nav-spacer { flex: 1; min-width: 12px; }
     .burger {
       flex-shrink: 0; margin: 4px 0 4px 8px; padding: 2px 10px 4px;
@@ -777,6 +777,9 @@ html.dark{--x:0}
 
   .drawer[hidden],.drawer-back[hidden]{display:none}
 .theme-btn{flex-shrink:0;margin-left:6px;padding:2px 9px 4px;background:none;border:1px solid #DAD3C5;border-radius:8px;font-size:15px;line-height:1.5;cursor:pointer}.theme-btn:hover{border-color:#1F4D32}
+@media(max-width:640px){.theme-btn{display:none}}
+@media(max-width:640px){.ev-search{display:none}}
+.drawer-search{padding:10px 16px 2px}.drawer-search input{width:100%;padding:9px 12px;font:inherit;font-size:14px;background:none;border:1px solid #DAD3C5;border-radius:10px;outline:none;color:inherit}
 </style>
 <script>(function(){var t=localStorage.getItem("ma-theme");if(t==="dark")document.documentElement.classList.add("dark");else if(t==="light")document.documentElement.classList.add("light");})();</script>
 </head>
@@ -786,8 +789,7 @@ html.dark{--x:0}
       <div class="site-nav-inner">
         <a href="/madeira/madeira_stat.html"><span class="nav-ico">🏃</span>Trails</a>
         <a href="/madeira/levada"><span class="nav-ico">🥾</span>Levadas</a>
-        <a href="/madeira/map?layer=race"><span class="nav-ico">🗺</span><span data-lang="en">Map</span><span data-lang="pt">Mapa</span></a>
-        <a href="/madeira/map3d"><span class="nav-ico">⛰</span><span data-lang="en">3D map</span><span data-lang="pt">Mapa 3D</span></a>
+        <a href="/madeira/map?layer=race"><span class="nav-ico">🗺</span><span data-lang="en">Maps</span><span data-lang="pt">Mapas</span></a>
         <a href="#" onclick="window.location.href='/madeira/madeira_festas.html?lang='+(document.documentElement.lang||'en'); return false;"><span class="nav-ico">🎆</span>Festas</a>
         <a href="#" onclick="window.location.href='/madeira/madeira_news.html?lang='+(document.documentElement.lang||'en'); return false;"><span class="nav-ico">📰</span><span data-lang="en">News</span><span data-lang="pt">Notícias</span></a>
         <a href="#" onclick="window.location.href='/madeira/madeira_history.html?lang='+(document.documentElement.lang||'en'); return false;"><span class="nav-ico">📜</span><span data-lang="en">History</span><span data-lang="pt">História</span></a>
@@ -803,9 +805,12 @@ html.dark{--x:0}
         <span class="drawer-title">Madeira Ative</span>
         <button class="drawer-close" id="drawerClose" aria-label="Close">&times;</button>
       </div>
+      <div class="drawer-search"><input type="search" id="evSearchDrawer" placeholder="🔎 Search events…" autocomplete="off"></div>
       <nav class="drawer-nav">
         <a href="/madeira/madeira_stat.html">🏃 Trails</a>
         <a href="/madeira/levada">🥾 Levadas</a>
+        <a href="#" id="drawerSearch">🔎 <span data-lang="en">Search events</span><span data-lang="pt">Procurar eventos</span></a>
+        <div class="drawer-sep"></div>
         <a href="/madeira/map?layer=race">🗺 <span data-lang="en">Map</span><span data-lang="pt">Mapa</span></a>
         <a href="/madeira/map3d">⛰ <span data-lang="en">3D map</span><span data-lang="pt">Mapa 3D</span></a>
         <a href="/madeira/mapfly">🛩 <span data-lang="en">3D flyover</span><span data-lang="pt">Sobrevoo 3D</span></a>
@@ -832,6 +837,12 @@ html.dark{--x:0}
         back.addEventListener('click', closeDrawer);
         document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeDrawer(); });
         drawer.addEventListener('click', function (e) { if (e.target.closest('a')) closeDrawer(); });
+        var ds = document.getElementById('drawerSearch');
+        if (ds) ds.addEventListener('click', function (e) {
+          e.preventDefault(); closeDrawer();
+          var s = document.getElementById('evSearch');
+          if (s) { s.scrollIntoView({behavior:'smooth', block:'center'}); setTimeout(function(){ s.focus(); }, 400); }
+        });
       })();
     </script>
 
@@ -1550,10 +1561,11 @@ t.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})
 </script>
 
 <script>
-(function(){var i=document.getElementById('evSearch');if(!i)return;
-i.addEventListener('input',function(){var q=i.value.trim().toLowerCase();
+(function(){function f(q){q=q.trim().toLowerCase();
 document.querySelectorAll('#events article.event').forEach(function(a){
-a.style.display=(!q||a.textContent.toLowerCase().indexOf(q)!==-1)?'':'none';});});})();
+a.style.display=(!q||a.textContent.toLowerCase().indexOf(q)!==-1)?'':'none';});}
+['evSearch','evSearchDrawer'].forEach(function(id){var i=document.getElementById(id);
+if(i)i.addEventListener('input',function(){f(i.value);});});})();
 </script>
 <script>
 (function(){var h=document.documentElement,b=document.getElementById('themeBtn'),d=document.getElementById('themeDrawer');
