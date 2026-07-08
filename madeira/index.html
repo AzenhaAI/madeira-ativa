@@ -788,6 +788,13 @@ html.dark{--x:0}
   .lang button{font-size:11.5px;padding:3px 9px}
   .lang-toggle{font-size:11.5px;padding:2px 7px}
 }
+
+@media (prefers-color-scheme: dark){
+  html:not(.light) #modes,html:not(.light) #periods,html:not(.light) .controls{background:rgba(255,255,255,0.05);border-color:#2c352c}
+  html:not(.light) button{background:rgba(255,255,255,0.06)}
+}
+html.dark #modes,html.dark #periods,html.dark .controls{background:rgba(255,255,255,0.05);border-color:#2c352c}
+html.dark button{background:rgba(255,255,255,0.06)}
 </style>
 <script>(function(){var t=localStorage.getItem("ma-theme");if(t==="dark")document.documentElement.classList.add("dark");else if(t==="light")document.documentElement.classList.add("light");})();</script>
 </head>
