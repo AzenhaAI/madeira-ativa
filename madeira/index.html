@@ -750,6 +750,21 @@
     .skel-d{width:72px;height:14px}
     .skel-t{flex:1;max-width:420px;height:16px}
     @keyframes skel{from{background-position:200% 0}to{background-position:-200% 0}}
+
+@media (prefers-color-scheme: dark){
+  :root{--bg:#141b16;--ink:#e7ded0;--accent:#8fbf9a;--soft:#93a892;--line:#2c352c;--panel:rgba(255,255,255,0.05)}
+  .site-nav,.section-nav{background:rgba(20,27,22,0.92)!important}
+  .drawer{background:#141b16}
+  .drawer-nav a{color:#e7ded0}
+  img{opacity:.92}
+
+  .viz-panel canvas{background:#efece2}
+  .tv-card{background:rgba(255,255,255,0.07);border-color:rgba(255,255,255,0.08)}
+  .tv-banner{background:rgba(255,255,255,0.04)}
+  .source-chip{background:rgba(255,255,255,0.05)}
+  .festa .month{background:rgba(20,27,22,0.85);color:#e7ded0}
+}
+  .drawer[hidden],.drawer-back[hidden]{display:none}
 </style>
 </head>
 <body>

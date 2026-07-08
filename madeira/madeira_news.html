@@ -120,6 +120,26 @@ h2 { font-family: 'Fraunces', serif; font-size: clamp(18px, 3.5vw, 24px); color:
   .totop{position:fixed;right:16px;bottom:18px;z-index:250;width:44px;height:44px;border-radius:50%;border:1px solid #DAD3C5;background:rgba(31,77,50,0.92);color:#fff;font-size:20px;line-height:1;cursor:pointer;box-shadow:0 4px 14px rgba(21,32,26,0.3);opacity:0;pointer-events:none;transition:opacity .25s}
   .totop.show{opacity:1;pointer-events:auto}
   .totop:hover{background:#163d27}
+
+@media (prefers-color-scheme: dark){
+  body{background:#141b16;color:#e7ded0}
+  h1,h2,.brand-bar .bn,.tv-banner-header,.source-chip-name,.source-cat-title{color:#8fbf9a}
+  .site-nav{background:rgba(20,27,22,0.92)}
+  .site-nav a{color:#93a892}
+  .site-nav a:hover,.site-nav a.active{color:#8fbf9a}
+  .news-item a:hover{background:rgba(255,255,255,0.05)}
+  .news-title{color:#e7ded0}
+  .news-dot{background:#141b16}
+  .tv-banner{background:rgba(255,255,255,0.04);border-color:#2c352c}
+  .tv-card{background:rgba(255,255,255,0.07);border-color:rgba(255,255,255,0.08)}
+  .tv-card-name{color:#e7ded0}
+  .source-chip{background:rgba(255,255,255,0.05);border-color:#2c352c}
+  .lang-btn,.pill-btn,.show-more-btn{border-color:#2c352c;color:#93a892}
+  .drawer{background:#141b16}
+  .drawer-nav a{color:#e7ded0}
+  img{opacity:.92}
+}
+  .drawer[hidden],.drawer-back[hidden]{display:none}
 </style>
 </head>
 <body>
