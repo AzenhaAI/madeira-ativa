@@ -93,18 +93,29 @@
   .totop:hover{background:#163d27}
 
 @media (prefers-color-scheme: dark){
-  :root{--bg:#141b16;--ink:#e7ded0;--accent:#8fbf9a;--soft:#93a892;--line:#2c352c;--panel:rgba(255,255,255,0.05)}
-  .site-nav,.section-nav{background:rgba(20,27,22,0.92)!important}
-  .drawer{background:#141b16}
-  .drawer-nav a{color:#e7ded0}
-  img{opacity:.92}
-
-  .up{background:#1b241d}
-  .up-name a{color:#e7ded0}
-  .festa .month{background:rgba(20,27,22,0.85);color:#e7ded0}
+  html:not(.light){--bg:#141b16;--ink:#e7ded0;--accent:#8fbf9a;--soft:#93a892;--line:#2c352c;--panel:rgba(255,255,255,0.05)}
+  html:not(.light) .site-nav, html:not(.light) .section-nav{background:rgba(20,27,22,0.92)!important}
+  html:not(.light) .drawer{background:#141b16}
+  html:not(.light) .drawer-nav a{color:#e7ded0}
+  html:not(.light) img{opacity:.92}
+  html:not(.light) .up{background:#1b241d}
+  html:not(.light) .up-name a{color:#e7ded0}
+  html:not(.light) .festa .month{background:rgba(20,27,22,0.85);color:#e7ded0}
 }
+html.dark{--x:0}
+  html.dark{--bg:#141b16;--ink:#e7ded0;--accent:#8fbf9a;--soft:#93a892;--line:#2c352c;--panel:rgba(255,255,255,0.05)}
+  html.dark .site-nav, html.dark .section-nav{background:rgba(20,27,22,0.92)!important}
+  html.dark .drawer{background:#141b16}
+  html.dark .drawer-nav a{color:#e7ded0}
+  html.dark img{opacity:.92}
+  html.dark .up{background:#1b241d}
+  html.dark .up-name a{color:#e7ded0}
+  html.dark .festa .month{background:rgba(20,27,22,0.85);color:#e7ded0}
+
   .drawer[hidden],.drawer-back[hidden]{display:none}
+.theme-btn{flex-shrink:0;margin-left:6px;padding:2px 9px 4px;background:none;border:1px solid #DAD3C5;border-radius:8px;font-size:15px;line-height:1.5;cursor:pointer}.theme-btn:hover{border-color:#1F4D32}
 </style>
+<script>(function(){var t=localStorage.getItem("ma-theme");if(t==="dark")document.documentElement.classList.add("dark");else if(t==="light")document.documentElement.classList.add("light");})();</script>
 </head>
 <body>
 <div class="wrap">
@@ -129,7 +140,7 @@
     <div class="lang">
       <button data-set-lang="en">EN</button>
       <button data-set-lang="pt">PT</button>
-    </div><button class="burger" id="burgerBtn" aria-label="Menu" aria-expanded="false">☰</button>
+    </div><button class="burger" id="burgerBtn" aria-label="Menu" aria-expanded="false">☰</button><button class="theme-btn" id="themeBtn" aria-label="Theme">🌙</button>
   </div>
 
   <nav class="site-nav">
@@ -377,6 +388,7 @@ applyLang();
     <div class="drawer-sep"></div>
     <a href="https://t.me/madeira_ebot" target="_blank" rel="noopener">✈️ Telegram bot</a>
     <a href="mailto:azenha.agent@gmail.com">✉️ Contact</a>
+        <a href="#" id="themeDrawer">🌙 Dark theme</a>
         <a href="https://github.com/kirshp/madeira-ative" target="_blank" rel="noopener">⭐ GitHub — open source</a>
   </nav>
 </aside>
@@ -395,5 +407,13 @@ d.addEventListener('click',function(e){if(e.target.closest('a'))c();});})();
 window.addEventListener('scroll',function(){t.classList.toggle('show',window.scrollY>600);},{passive:true});
 t.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();
 </script>
-</body>
+<script>
+(function(){var h=document.documentElement,b=document.getElementById('themeBtn'),d=document.getElementById('themeDrawer');
+function eff(){return h.classList.contains('dark')||(!h.classList.contains('light')&&matchMedia('(prefers-color-scheme: dark)').matches);}
+function paint(){var dk=eff();if(b)b.textContent=dk?'☀️':'🌙';if(d)d.textContent=dk?'☀️ Light theme':'🌙 Dark theme';}
+function flip(){var dk=eff();h.classList.remove('dark','light');h.classList.add(dk?'light':'dark');localStorage.setItem('ma-theme',dk?'light':'dark');paint();}
+if(b)b.addEventListener('click',flip);
+if(d)d.addEventListener('click',function(e){e.preventDefault();flip();});
+paint();})();
+</script></body>
 </html>

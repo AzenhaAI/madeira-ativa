@@ -122,25 +122,45 @@ h2 { font-family: 'Fraunces', serif; font-size: clamp(18px, 3.5vw, 24px); color:
   .totop:hover{background:#163d27}
 
 @media (prefers-color-scheme: dark){
-  body{background:#141b16;color:#e7ded0}
-  h1,h2,.brand-bar .bn,.tv-banner-header,.source-chip-name,.source-cat-title{color:#8fbf9a}
-  .site-nav{background:rgba(20,27,22,0.92)}
-  .site-nav a{color:#93a892}
-  .site-nav a:hover,.site-nav a.active{color:#8fbf9a}
-  .news-item a:hover{background:rgba(255,255,255,0.05)}
-  .news-title{color:#e7ded0}
-  .news-dot{background:#141b16}
-  .tv-banner{background:rgba(255,255,255,0.04);border-color:#2c352c}
-  .tv-card{background:rgba(255,255,255,0.07);border-color:rgba(255,255,255,0.08)}
-  .tv-card-name{color:#e7ded0}
-  .source-chip{background:rgba(255,255,255,0.05);border-color:#2c352c}
-  .lang-btn,.pill-btn,.show-more-btn{border-color:#2c352c;color:#93a892}
-  .drawer{background:#141b16}
-  .drawer-nav a{color:#e7ded0}
-  img{opacity:.92}
+  html:not(.light) body{background:#141b16;color:#e7ded0}
+  html:not(.light) h1, html:not(.light) h2, html:not(.light) .brand-bar .bn, html:not(.light) .tv-banner-header, html:not(.light) .source-chip-name, html:not(.light) .source-cat-title{color:#8fbf9a}
+  html:not(.light) .site-nav{background:rgba(20,27,22,0.92)}
+  html:not(.light) .site-nav a{color:#93a892}
+  html:not(.light) .site-nav a:hover, html:not(.light) .site-nav a.active{color:#8fbf9a}
+  html:not(.light) .news-item a:hover{background:rgba(255,255,255,0.05)}
+  html:not(.light) .news-title{color:#e7ded0}
+  html:not(.light) .news-dot{background:#141b16}
+  html:not(.light) .tv-banner{background:rgba(255,255,255,0.04);border-color:#2c352c}
+  html:not(.light) .tv-card{background:rgba(255,255,255,0.07);border-color:rgba(255,255,255,0.08)}
+  html:not(.light) .tv-card-name{color:#e7ded0}
+  html:not(.light) .source-chip{background:rgba(255,255,255,0.05);border-color:#2c352c}
+  html:not(.light) .lang-btn, html:not(.light) .pill-btn, html:not(.light) .show-more-btn{border-color:#2c352c;color:#93a892}
+  html:not(.light) .drawer{background:#141b16}
+  html:not(.light) .drawer-nav a{color:#e7ded0}
+  html:not(.light) img{opacity:.92}
 }
+html.dark{--x:0}
+  html.dark body{background:#141b16;color:#e7ded0}
+  html.dark h1, html.dark h2, html.dark .brand-bar .bn, html.dark .tv-banner-header, html.dark .source-chip-name, html.dark .source-cat-title{color:#8fbf9a}
+  html.dark .site-nav{background:rgba(20,27,22,0.92)}
+  html.dark .site-nav a{color:#93a892}
+  html.dark .site-nav a:hover, html.dark .site-nav a.active{color:#8fbf9a}
+  html.dark .news-item a:hover{background:rgba(255,255,255,0.05)}
+  html.dark .news-title{color:#e7ded0}
+  html.dark .news-dot{background:#141b16}
+  html.dark .tv-banner{background:rgba(255,255,255,0.04);border-color:#2c352c}
+  html.dark .tv-card{background:rgba(255,255,255,0.07);border-color:rgba(255,255,255,0.08)}
+  html.dark .tv-card-name{color:#e7ded0}
+  html.dark .source-chip{background:rgba(255,255,255,0.05);border-color:#2c352c}
+  html.dark .lang-btn, html.dark .pill-btn, html.dark .show-more-btn{border-color:#2c352c;color:#93a892}
+  html.dark .drawer{background:#141b16}
+  html.dark .drawer-nav a{color:#e7ded0}
+  html.dark img{opacity:.92}
+
   .drawer[hidden],.drawer-back[hidden]{display:none}
+.theme-btn{flex-shrink:0;margin-left:6px;padding:2px 9px 4px;background:none;border:1px solid #DAD3C5;border-radius:8px;font-size:15px;line-height:1.5;cursor:pointer}.theme-btn:hover{border-color:#1F4D32}
 </style>
+<script>(function(){var t=localStorage.getItem("ma-theme");if(t==="dark")document.documentElement.classList.add("dark");else if(t==="light")document.documentElement.classList.add("light");})();</script>
 </head>
 <body>
 <div class="wrap">
@@ -170,7 +190,7 @@ h2 { font-family: 'Fraunces', serif; font-size: clamp(18px, 3.5vw, 24px); color:
       <button class="lang-btn" data-lang="de">DE</button>
       <button class="lang-btn" data-lang="pl">PL</button>
       <button class="lang-btn" data-lang="uk">UA</button>
-      <button class="lang-btn" data-lang="ru">RU</button><button class="burger" id="burgerBtn" aria-label="Menu" aria-expanded="false">☰</button>
+      <button class="lang-btn" data-lang="ru">RU</button><button class="burger" id="burgerBtn" aria-label="Menu" aria-expanded="false">☰</button><button class="theme-btn" id="themeBtn" aria-label="Theme">🌙</button>
     </div>
   </div>
   <p class="subtitle" id="subtitle">Notícias da Madeira — desporto, cultura, sociedade. Clique para ler no seu idioma.</p>
@@ -455,6 +475,7 @@ renderSources('src-social', SRC.social);
     <div class="drawer-sep"></div>
     <a href="https://t.me/madeira_ebot" target="_blank" rel="noopener">✈️ Telegram bot</a>
     <a href="mailto:azenha.agent@gmail.com">✉️ Contact</a>
+        <a href="#" id="themeDrawer">🌙 Dark theme</a>
         <a href="https://github.com/kirshp/madeira-ative" target="_blank" rel="noopener">⭐ GitHub — open source</a>
   </nav>
 </aside>
@@ -473,5 +494,13 @@ d.addEventListener('click',function(e){if(e.target.closest('a'))c();});})();
 window.addEventListener('scroll',function(){t.classList.toggle('show',window.scrollY>600);},{passive:true});
 t.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();
 </script>
-</body>
+<script>
+(function(){var h=document.documentElement,b=document.getElementById('themeBtn'),d=document.getElementById('themeDrawer');
+function eff(){return h.classList.contains('dark')||(!h.classList.contains('light')&&matchMedia('(prefers-color-scheme: dark)').matches);}
+function paint(){var dk=eff();if(b)b.textContent=dk?'☀️':'🌙';if(d)d.textContent=dk?'☀️ Light theme':'🌙 Dark theme';}
+function flip(){var dk=eff();h.classList.remove('dark','light');h.classList.add(dk?'light':'dark');localStorage.setItem('ma-theme',dk?'light':'dark');paint();}
+if(b)b.addEventListener('click',flip);
+if(d)d.addEventListener('click',function(e){e.preventDefault();flip();});
+paint();})();
+</script></body>
 </html>
