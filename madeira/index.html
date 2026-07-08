@@ -731,7 +731,26 @@
         font-size: 13px;
       }
     }
-  </style>
+  
+  .totop{position:fixed;right:16px;bottom:18px;z-index:250;width:44px;height:44px;border-radius:50%;border:1px solid #DAD3C5;background:rgba(31,77,50,0.92);color:#fff;font-size:20px;line-height:1;cursor:pointer;box-shadow:0 4px 14px rgba(21,32,26,0.3);opacity:0;pointer-events:none;transition:opacity .25s}
+  .totop.show{opacity:1;pointer-events:auto}
+  .totop:hover{background:#163d27}
+
+    .wx-strip{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:12px 0 0;font-size:13.5px;font-weight:600;color:var(--soft);background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px 12px}
+    .wx-strip .wx-dot{opacity:.5}
+    .wx-strip a{color:var(--accent);text-decoration:none}
+    .wx-strip a:hover{text-decoration:underline}
+
+    .ev-search{margin:6px 0 10px}
+    .ev-search input{width:100%;max-width:420px;padding:9px 14px;font:inherit;font-size:14px;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:10px;outline:none}
+    .ev-search input:focus{border-color:var(--accent)}
+
+    .skel-row{display:flex;gap:16px;align-items:center;padding:14px 4px;border-bottom:1px solid var(--line)}
+    .skel{display:block;border-radius:6px;background:linear-gradient(90deg,rgba(217,208,193,.5) 25%,rgba(255,255,255,.7) 50%,rgba(217,208,193,.5) 75%);background-size:200% 100%;animation:skel 1.2s infinite}
+    .skel-d{width:72px;height:14px}
+    .skel-t{flex:1;max-width:420px;height:16px}
+    @keyframes skel{from{background-position:200% 0}to{background-position:-200% 0}}
+</style>
 </head>
 <body>
   <div class="wrap">
@@ -810,6 +829,11 @@
           <span data-lang="en">The active side of Madeira — races, trails &amp; levadas, 3D maps, festas, daily news and 600 years of island history. All in one place.</span>
           <span data-lang="pt">O lado ativo da Madeira — provas, trilhos e levadas, mapas 3D, festas, notícias diárias e 600 anos de história da ilha. Tudo num só lugar.</span>
         </p>
+        <div class="wx-strip" id="wxStrip" hidden>
+          <span id="wxNow"></span>
+          <span class="wx-dot">·</span>
+          <a href="/madeira/levada" id="wxTrails"></a>
+        </div>
         <div class="viz-area">
           <div class="viz-panel" id="panelTrails">
             <div class="hero-map">
@@ -892,7 +916,8 @@
     </section>
 
     <div class="summary" id="summary"><span data-lang="en">Loading events...</span><span data-lang="pt">A carregar eventos...</span></div>
-    <main class="events" id="events"></main>
+    <div class="ev-search"><input type="search" id="evSearch" placeholder="🔎 Search events… / Procurar…" autocomplete="off"></div>
+    <main class="events" id="events"><div class="skel-row"><span class="skel skel-d"></span><span class="skel skel-t"></span></div><div class="skel-row"><span class="skel skel-d"></span><span class="skel skel-t"></span></div><div class="skel-row"><span class="skel skel-d"></span><span class="skel skel-t"></span></div><div class="skel-row"><span class="skel skel-d"></span><span class="skel skel-t"></span></div><div class="skel-row"><span class="skel skel-d"></span><span class="skel skel-t"></span></div></main>
 
     <section class="watchlist" aria-label="Watchlist">
       <h2><span data-lang="en">Watchlist</span><span data-lang="pt">A acompanhar</span></h2>
@@ -1466,5 +1491,39 @@
 
 
   </script>
+
+<button class="totop" id="toTop" aria-label="Back to top">↑</button>
+<script>
+(function(){var t=document.getElementById('toTop');
+window.addEventListener('scroll',function(){t.classList.toggle('show',window.scrollY>600);},{passive:true});
+t.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();
+</script>
+
+<script>
+(function(){
+  var el=document.getElementById('wxStrip'),now=document.getElementById('wxNow'),tr=document.getElementById('wxTrails');
+  function emo(c){return c>=95?'⛈':c>=80?'🌧':c>=61?'🌧':c>=51?'🌦':c>=45?'🌫':c===3?'☁️':c>=1?'🌤':'☀️';}
+  Promise.all([
+    fetch('https://api.open-meteo.com/v1/forecast?latitude=32.65&longitude=-16.91&current_weather=true').then(function(r){return r.json();}),
+    fetch('/madeira/trails_status.json').then(function(r){return r.json();}).catch(function(){return null;})
+  ]).then(function(res){
+    var w=res[0].current_weather;var pt=(document.documentElement.lang||'en')==='pt';
+    now.textContent=emo(w.weathercode)+' '+Math.round(w.temperature)+'°  ·  '+Math.round(w.windspeed)+' km/h';
+    var t=res[1];var txt='';
+    if(t){var arr=t.trails||t;var closed=0,total=0;
+      (Array.isArray(arr)?arr:[]).forEach(function(x){total++;if(x.status==='closed')closed++;});
+      if(total)txt=closed?(closed+(pt?' trilhos encerrados':' trails closed')+' →'):(pt?'todos os trilhos abertos →':'all trails open →');}
+    tr.textContent=txt||(pt?'trilhos e levadas →':'trails & levadas →');
+    el.hidden=false;
+  }).catch(function(){});
+})();
+</script>
+
+<script>
+(function(){var i=document.getElementById('evSearch');if(!i)return;
+i.addEventListener('input',function(){var q=i.value.trim().toLowerCase();
+document.querySelectorAll('#events article.event').forEach(function(a){
+a.style.display=(!q||a.textContent.toLowerCase().indexOf(q)!==-1)?'':'none';});});})();
+</script>
 </body>
 </html>
