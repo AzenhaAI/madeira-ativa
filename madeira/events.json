@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08",
+  "generated_at": "2026-07-09",
   "events": [
     {
       "mode": "festivals",
@@ -258,6 +258,14 @@
       "event_type": "cycling_pro"
     },
     {
+      "mode": "trail",
+      "name": "V Pico Ruivo Vertical Challenge",
+      "date": "2026-08-22",
+      "location": "Santana",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
+    },
+    {
       "mode": "festivals",
       "name": "European Folklore Week",
       "date": "2026-08-23",
@@ -448,6 +456,14 @@
       "location": "Madeira",
       "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
       "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "II Corrida do Aeroporto da Madeira",
+      "date": "2026-09-27",
+      "location": "Santa Cruz",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
     },
     {
       "mode": "pro",
