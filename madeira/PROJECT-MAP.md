@@ -64,6 +64,8 @@ The homepage "Mobile access" buttons download native wrappers that just load the
 - Android → `madeira-events.apk` · Windows → `Madeira Events_1.0.0_x64-setup.exe` · macOS → `Madeira-Ative.dmg`
 - iOS → email request (needs a paid Apple account to publish)
 - The canonical, versioned installers are also on the **madeira-ative GitHub Releases** page.
+- ⚠️ These binaries **must be committed to `shpara1` git** to reach prod (Cloudflare deploys
+  tracked files only). If a download 404s or serves a tiny stub, the file is untracked — `git add` it.
 
 **The full native app is a separate project:** `~/Projects/ativa` (Flutter), with its own
 store-submission bundle in `~/Projects/ativa/store/` (`android/`, `ios/`, `PLAY-STEPS.md`,
