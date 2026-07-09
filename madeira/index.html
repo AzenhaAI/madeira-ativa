@@ -795,6 +795,18 @@ html.dark{--x:0}
 }
 html.dark #modes,html.dark #periods,html.dark .controls{background:rgba(255,255,255,0.05);border-color:#2c352c}
 html.dark button{background:rgba(255,255,255,0.06)}
+@media(max-width:640px){
+  .nav-lang,.burger{width:auto!important;min-width:0!important;max-width:none!important;height:29px!important;flex:0 0 auto!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important}
+  .burger{padding:0 9px!important}
+  .nav-lang{padding:0 9px!important}
+}
+@media(max-width:640px){
+  .site-nav{position:relative}
+  .site-nav-inner{padding-right:88px}
+  .nav-lang,.burger{position:absolute!important;top:9px;height:30px!important;line-height:26px!important;padding:0 10px!important;background:var(--bg)!important;z-index:2;margin:0!important}
+  .nav-lang{right:48px}
+  .burger{right:10px}
+}
 </style>
 <script>(function(){var t=localStorage.getItem("ma-theme");if(t==="dark")document.documentElement.classList.add("dark");else if(t==="light")document.documentElement.classList.add("light");})();</script>
 </head>
