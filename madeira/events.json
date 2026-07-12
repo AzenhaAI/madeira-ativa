@@ -1,46 +1,6 @@
 {
-  "generated_at": "2026-07-11",
+  "generated_at": "2026-07-12",
   "events": [
-    {
-      "mode": "festivals",
-      "name": "Ethnographic display Camacha de Ontem - Madeira de Sempre",
-      "date": "2026-07-11",
-      "location": "Largo da Achada, Camacha, Santa Cruz",
-      "url": "https://eventsmadeira.com/en/event/ethnographic-display-camacha-de-ontem-madeira-de-sempre-yesterdays-camacha-all-time-madeira/",
-      "event_type": "festival"
-    },
-    {
-      "mode": "pro",
-      "name": "3ª Taça da Madeira de Enduro e Mini Enduro - Globalgest",
-      "date": "2026-07-11",
-      "location": "Fanal, Porto Moniz",
-      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
-      "event_type": "cycling_pro"
-    },
-    {
-      "mode": "pro",
-      "name": "Campeonatos Regionais de Veteranos - Verão",
-      "date": "2026-07-11",
-      "location": "Funchal e Ribeira Brava",
-      "url": "https://fpacompeticoes.pt/",
-      "event_type": "running"
-    },
-    {
-      "mode": "pro",
-      "name": "XXII Circuito dos Horários do Funchal",
-      "date": "2026-07-11",
-      "location": "Funchal",
-      "url": "https://fpacompeticoes.pt/",
-      "event_type": "running"
-    },
-    {
-      "mode": "road",
-      "name": "XXII Circuito dos Horários do Funchal",
-      "date": "2026-07-11",
-      "location": "Funchal",
-      "url": "https://fpacompeticoes.pt/",
-      "event_type": "running"
-    },
     {
       "mode": "road",
       "name": "Horarios do Funchal (distance TBC)",
