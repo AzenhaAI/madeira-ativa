@@ -1,18 +1,18 @@
 {
-  "fetched": "2026-07-17T07:37:34",
+  "fetched": "2026-07-18T07:19:09",
   "count": 3,
   "events": [
-    {
-      "date": "2026-07-17",
-      "time": "13:00",
-      "name": "Marítimo vs Leixões",
-      "comp": "Club Friendlies",
-      "channel": "Sport TV"
-    },
     {
       "date": "2026-07-18",
       "time": "10:30",
       "name": "Nacional de Madeira vs Leixões",
+      "comp": "Club Friendlies",
+      "channel": "Sport TV"
+    },
+    {
+      "date": "2026-07-22",
+      "time": "13:00",
+      "name": "Marítimo vs Camacha",
       "comp": "Club Friendlies",
       "channel": "Sport TV"
     },
