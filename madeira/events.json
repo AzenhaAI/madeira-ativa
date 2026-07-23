@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22",
+  "generated_at": "2026-07-23",
   "events": [
     {
       "mode": "festivals",
@@ -176,6 +176,14 @@
       "location": "Ponta do Sol",
       "url": "https://aoram.pt/calendario/",
       "event_type": "orienteering"
+    },
+    {
+      "mode": "cycling",
+      "name": "XXVI G. P. da Comp. de Bombeiros Sapadores do Funchal /“Carlinhos” Fernandes",
+      "date": "2026-09-06",
+      "location": "Funchal",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
     },
     {
       "mode": "pro",
