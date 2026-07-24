@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23",
+  "generated_at": "2026-07-24",
   "events": [
     {
       "mode": "festivals",
@@ -280,6 +280,14 @@
       "location": "Madeira",
       "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
       "event_type": "road_run"
+    },
+    {
+      "mode": "trail",
+      "name": "Trail Câmara de Lobos",
+      "date": "2026-09-20",
+      "location": "Câmara de Lobos",
+      "url": "https://lap2go.com/pt/event/trail-camara-de-lobos-2026",
+      "event_type": ""
     },
     {
       "mode": "road",
