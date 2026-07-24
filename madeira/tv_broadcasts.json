@@ -1,19 +1,19 @@
 {
-  "fetched": "2026-07-23T08:01:04",
+  "fetched": "2026-07-24T07:58:01",
   "count": 3,
   "events": [
-    {
-      "date": "2026-07-23",
-      "time": "17:30",
-      "name": "Estrela Amadora vs Nacional de Madeira",
-      "comp": "Club Friendlies",
-      "channel": "Sport TV"
-    },
     {
       "date": "2026-07-25",
       "time": "13:00",
       "name": "Marítimo vs Machico",
       "comp": "Club Friendlies",
+      "channel": "Sport TV"
+    },
+    {
+      "date": "2026-08-10",
+      "time": "20:15",
+      "name": "Santa Clara vs Nacional de Madeira",
+      "comp": "Portuguese Primeira Liga",
       "channel": "Sport TV"
     },
     {
