@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-07-28",
+  "generated_at": "2026-07-29",
   "events": [
-    {
-      "mode": "pro",
-      "name": "Campeonato dos Recordistas (P25m)",
-      "date": "2026-07-28",
-      "location": "Funchal",
-      "url": "https://www.anatacaodamadeira.pt/index.php/associacao/associados/documentacao-geral/send/4-calendario-desportivo/158-calendario-desportivo-25-26-lista",
-      "event_type": "swimming_pro"
-    },
     {
       "mode": "cycling",
       "name": "Rali da Madeira / Madeira Wine Rally",
@@ -106,6 +98,14 @@
       "event_type": "festival"
     },
     {
+      "mode": "pro",
+      "name": "XVI Grande Prémio de São Vicente",
+      "date": "2026-08-23",
+      "location": "São Vicente",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
+    },
+    {
       "mode": "road",
       "name": "G.P. Sao Vicente (7 km)",
       "date": "2026-08-23",
@@ -144,6 +144,14 @@
       "location": "Funchal",
       "url": "https://triatlomadeira.com/wp-content/uploads/2026/03/Calendario-Provas-Triatlo-Madeira-e-Porto-Santo-2026-V.-06-03-2026.pdf",
       "event_type": "triathlon"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: MOSS (Extra) (05/09-06/09)",
+      "date": "2026-09-05",
+      "location": "Madeira",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
     },
     {
       "mode": "trail",
