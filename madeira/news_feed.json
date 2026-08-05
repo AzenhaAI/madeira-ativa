@@ -1,74 +1,511 @@
 {
-  "fetched": "2026-08-04T08:07:57",
+  "fetched": "2026-08-05T08:08:19",
   "count": 50,
   "items": [
     {
-      "title": "Gastronómica de Machico prossegue hoje com Jorge Ferreira",
-      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002905/gastronomica-de-machico-prossegue-hoje-com-jorge-ferreira.html",
-      "date": "2026-08-04",
-      "snippet": "Bom dia! - No Palácio de São Lourenço, às 10h30, o Representante recebe os investigadores Liliana Rodrigues e Edgar Silva, representantes da organização do colóquio: “A Voz do Povo: A pedagogia da democracia - 50 anos de eleições”. - Às 15h30, o Secretário Regional de Turismo, Ambiente e Cultura, Ed",
+      "title": "Primeira novena realiza-se hoje na Igreja do Monte",
+      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002945/primeira-novena-realiza-se-hoje-na-igreja-do-monte.html",
+      "date": "2026-08-05",
+      "snippet": "Conheça a agenda desta quarta-feira. Bom dia! - Às 11h45, após reunião com a ACIF-CCIM, Bernardo Trindade no âmbito da sua candidatura à presidência da Confederação do Turismo de Portugal (CTP), em representação da AHP, prestará declarações. - Pelas 20h00, no Santuário de Nossa Senhora do Mon",
       "source": "JM Madeira",
       "lang": "PT",
       "cat": "geral",
       "titles": {
-        "en": "Gastronomica de Machico continues today with Jorge Ferreira",
-        "de": "Gastronomica de Machico geht heute mit Jorge Ferreira weiter",
-        "pl": "Gastronomica de Machico kontynuuje dzisiaj z Jorge Ferreirą",
-        "uk": "Gastronomica de Machico продовжується сьогодні з Хорхе Феррейра",
-        "ru": "Gastronomica de Machico продолжается сегодня с Хорхе Феррейрой"
+        "en": "First novena takes place today at the Monte Church",
+        "de": "Heute findet in der Montekirche die erste Novene statt",
+        "pl": "Dziś w kościele na Monte odbędzie się pierwsza nowenna",
+        "uk": "Сьогодні в церкві Монте відбувається перша новенна",
+        "ru": "Первая новена состоится сегодня в церкви Монте."
       },
       "snippets": {
-        "en": "Good morning! - At the Palácio de São Lourenço, at 10:30 am, the Representative receives researchers Liliana Rodrigues and Edgar Silva, representatives of the organization of the colloquium: “The Voice of the People: The pedagogy of democracy - 50 years of elections”. - At 3:30 pm, the Regional Secretary of Tourism, Environment and Culture, Ed",
-        "de": "Guten Morgen! - Im Palácio de São Lourenço empfängt der Repräsentant um 10:30 Uhr die Forscher Liliana Rodrigues und Edgar Silva, Vertreter der Organisation des Kolloquiums: „Die Stimme des Volkes: Die Pädagogik der Demokratie – 50 Jahre Wahlen“. - Um 15:30 Uhr spricht der Regionalsekretär für Tourismus, Umwelt und Kultur, Ed",
-        "pl": "Dzień dobry! - W Palácio de São Lourenço o godzinie 10:30 Przedstawiciel przyjmuje badaczy Lilianę Rodrigues i Edgara Silvę, przedstawicieli organizacji kolokwium: „Głos Ludu: Pedagogika demokracji – 50 lat wyborów”. - O godzinie 15:30 Sekretarz Regionalny ds. Turystyki, Środowiska i Kultury, wyd",
-        "uk": "Доброго ранку! - У Palácio de São Lourenço о 10:30 ранку Представник приймає дослідників Ліліану Родрігес та Едгара Сілву, представників організації колоквіуму: «Голос народу: Педагогіка демократії – 50 років виборів». - О 15:30 обласний секретар туризму, екології та культури ред",
-        "ru": "Доброе утро! - Во Дворце Сан-Лоуренсо в 10:30 Представитель принимает исследователей Лилиану Родригес и Эдгара Силву, представителей организации коллоквиума: «Голос народа: Педагогика демократии – 50 лет выборов». - В 15:30 региональный секретарь по туризму, окружающей среде и культуре Эд."
+        "en": "Discover this Wednesday's agenda. Good morning! - At 11:45 am, after a meeting with ACIF-CCIM, Bernardo Trindade as part of his candidacy for the presidency of the Portuguese Tourism Confederation (CTP), representing AHP, will make statements. - At 8pm, at the Sanctuary of Nossa Senhora do Mon",
+        "de": "Entdecken Sie die Agenda für diesen Mittwoch. Guten Morgen! - Um 11:45 Uhr wird Bernardo Trindade im Rahmen seiner Kandidatur für die Präsidentschaft des portugiesischen Tourismusverbandes (CTP) nach einem Treffen mit ACIF-CCIM als Vertreter von AHP Erklärungen abgeben. - Um 20 Uhr, im Heiligtum von Nossa Senhora do Mo",
+        "pl": "Poznaj program na środę. Dzień dobry! - O godzinie 11:45, po spotkaniu z ACIF-CCIM, oświadczenia wygłosi Bernardo Trindade w ramach swojej kandydatury na prezydenta Portugalskiej Konfederacji Turystyki (CTP), reprezentujący AHP. - O 20:00 w Sanktuarium Nossa Senhora do pon",
+        "uk": "Ознайомтеся з програмою на цю середу. Доброго ранку! - Об 11:45 ранку, після зустрічі з ACIF-CCIM, Бернардо Тріндаді в рамках своєї кандидатури на пост президента Португальської конфедерації туризму (CTP), представляючи AHP, виступить із заявами. - О 20:00 у святилищі Носа-Сеньора-ду-Мон",
+        "ru": "Откройте для себя повестку дня этой среды. Доброе утро! - В 11:45 после встречи с ACIF-CCIM Бернардо Триндади в рамках своей кандидатуры на пост президента Португальской конфедерации туризма (CTP), представляющей AHP, выступит с заявлениями. - В 20:00 в святилище Носса-Сеньора-ду-Мон."
       }
     },
     {
-      "title": "Madeira no laranja para calor",
-      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002891/madeira-no-laranja-para-calor.html",
-      "date": "2026-08-04",
-      "snippet": "Conheças a previsão do tempo para esta terça-feira. O arquipélago da Madeira está hoje sob aviso laranja para calor, até às 18h00. Na Madeira, a temperatura máxima será de 2ºC e a mínima de 23ºC. No Porto Santo, oscilará entre os 28ºC e os 22ºC. De acordo com o Instituto Português do Mar e da",
+      "title": "Aviso amarelo para calor e céu pouco nublado",
+      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002938/aviso-amarelo-para-calor-e-ceu-pouco-nublado.html",
+      "date": "2026-08-05",
+      "snippet": "Conheça as previsões do tempo para esta quarta-feira, dia 5. O céu apresentar-se-á hoje geralmente pouco nublado, no arquipélago, incluindo a região do Funchal, e o vento soprará fraco a moderado (10 a 25 km/h) de nordeste. O IPMA prevê uma pequena descida de temperatura nas terras altas da i",
       "source": "JM Madeira",
       "lang": "PT",
       "cat": "geral",
       "titles": {
-        "en": "Wood in orange for warmth",
-        "de": "Holz in Orange für Wärme",
-        "pl": "Drewno w kolorze pomarańczowym zapewnia ciepło",
-        "uk": "Дерево в помаранчевому кольорі для тепла",
-        "ru": "Дерево оранжевого цвета для тепла"
+        "en": "Yellow warning for heat and partly cloudy skies",
+        "de": "Gelbe Warnung vor Hitze und teilweise bewölktem Himmel",
+        "pl": "Żółte ostrzeżenie dotyczące upału i częściowego zachmurzenia",
+        "uk": "Жовте попередження про спеку та мінливу хмарність",
+        "ru": "Желтое предупреждение о жаре и переменной облачности"
       },
       "snippets": {
-        "en": "Find out the weather forecast for this Tuesday. The Madeira archipelago is under orange heat warning today, until 6pm. In Madeira, the maximum temperature will be 2ºC and the minimum will be 23ºC. In Porto Santo, it will fluctuate between 28ºC and 22ºC. According to the Portuguese Institute of the Sea and",
-        "de": "Informieren Sie sich über die Wettervorhersage für diesen Dienstag. Für den Madeira-Archipel gilt heute bis 18 Uhr eine orangefarbene Hitzewarnung. Auf Madeira beträgt die Höchsttemperatur 2 °C und die Mindesttemperatur 23 °C. In Porto Santo schwankt die Temperatur zwischen 28 °C und 22 °C. Nach Angaben des portugiesischen Instituts für Meer und Meer",
-        "pl": "Sprawdź prognozę pogody na najbliższy wtorek. Archipelag Madery objęty jest dziś pomarańczowym ostrzeżeniem dotyczącym upałów, które obowiązuje do godziny 18:00. Na Maderze maksymalna temperatura wyniesie 2°C, a minimalna 23°C. W Porto Santo temperatura będzie się wahać od 28°C do 22°C. Według Portugalskiego Instytutu Morza i",
-        "uk": "Дізнайтеся прогноз погоди на цей вівторок. На архіпелазі Мадейра сьогодні до 18:00 діє помаранчеве попередження про спеку. На Мадейрі максимальна температура становитиме 2ºC, мінімальна – 23ºC. У Порту-Санту вона коливатиметься від 28ºC до 22ºC. За даними Португальського інституту моря і",
-        "ru": "Узнайте прогноз погоды на этот вторник. На архипелаге Мадейра сегодня до 18:00 объявлено предупреждение об оранжевой жаре. На Мадейре максимальная температура составит 2 градуса Цельсия, а минимальная — 23 градуса Цельсия. В Порту-Санту температура будет колебаться от 28 до 22 ºC. По данным Португальского института моря и"
+        "en": "Find out the weather forecast for this Wednesday, the 5th. The sky will be generally slightly cloudy today, in the archipelago, including the Funchal region, and the wind will blow weak to moderate (10 to 25 km/h) from the northeast. IPMA predicts a small drop in temperature in the highlands of the island",
+        "de": "Erfahren Sie die Wettervorhersage für diesen Mittwoch, den 5. Der Himmel wird heute im Archipel, einschließlich der Region Funchal, im Allgemeinen leicht bewölkt sein und der Wind weht schwach bis mäßig (10 bis 25 km/h) aus Nordost. IPMA prognostiziert einen leichten Temperaturrückgang im Hochland der Insel",
+        "pl": "Sprawdź prognozę pogody na najbliższą środę, 5. Niebo na archipelagu, w tym w regionie Funchal, będzie dziś ogólnie lekko zachmurzone, a wiatr będzie wiał słaby i umiarkowany (10–25 km/h) z północnego wschodu. IPMA przewiduje niewielki spadek temperatury na wyżynach wyspy",
+        "uk": "Дізнайтеся прогноз погоди на цю середу, 5 числа. Сьогодні на архіпелазі, включно з регіоном Фуншал, на небі буде невелика хмарність, вітер буде слабким або помірним (від 10 до 25 км/год) з північного сходу. IPMA прогнозує невелике зниження температури на високогір'ї острова",
+        "ru": "Узнайте прогноз погоды на эту среду, 5-го числа. Небо сегодня на архипелаге, включая регион Фуншала, в целом будет небольшой облачностью, ветер будет дуть с северо-востока от слабого до умеренного (10–25 км/ч). IPMA прогнозирует небольшое понижение температуры в высокогорье острова"
       }
     },
     {
-      "title": "Aquaparque fica aberto todo o ano",
-      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002906/aquaparque-fica-aberto-todo-o-ano.html",
-      "date": "2026-08-04",
-      "snippet": "Conheça os principais destaques do JM desta terça-feira, dia 4 de agosto. O Aquaparque, espaço de diversão aquática, situado em Santa Cruz, vai passar a estar aberto todo o ano, destaca o JM em manchete. Administrador anuncia também desconto de 50% para os madeirenses. No próximo dia 12 acont",
+      "title": "Dois mil acidentes fizeram 9 mortos e 755 feridos",
+      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002953/dois-mil-acidentes-fizeram-9-mortos-e-755-feridos.html",
+      "date": "2026-08-05",
+      "snippet": "Conheça as notícias em destaque na primeira página do JM desta quarta-feira. A sinistralidade nas estradas da Região faz manchete no JM de hoje. Números da PSP Madeira confirmam o agravamento da sinistralidade rodoviária e o aumento de vítimas. Só nos primeiros seis meses deste ano, morreram",
       "source": "JM Madeira",
       "lang": "PT",
       "cat": "geral",
       "titles": {
-        "en": "Aquapark is open all year round",
-        "de": "Der Aquapark ist das ganze Jahr über geöffnet",
-        "pl": "Aquapark czynny jest przez cały rok",
-        "uk": "Аквапарк працює цілий рік",
-        "ru": "Аквапарк открыт круглый год"
+        "en": "Two thousand accidents left 9 dead and 755 injured",
+        "de": "Bei zweitausend Unfällen kamen neun Menschen ums Leben und 755 wurden verletzt",
+        "pl": "W dwóch tysiącach wypadków zginęło 9 osób, a 755 zostało rannych",
+        "uk": "Дві тисячі ДТП призвели до 9 загиблих і 755 поранених",
+        "ru": "В результате двух тысяч аварий 9 человек погибли и 755 получили ранения"
       },
       "snippets": {
-        "en": "Discover the main highlights of JM this Tuesday, August 4th. Aquaparque, a space for water entertainment, located in Santa Cruz, will now be open all year round, highlights JM in the headline. Administrator also announces 50% discount for Madeirans. Next day 12th",
-        "de": "Entdecken Sie die wichtigsten Highlights von JM an diesem Dienstag, dem 4. August. Aquaparque, ein Raum für Wasserunterhaltung in Santa Cruz, wird nun das ganze Jahr über geöffnet sein, betont JM in der Schlagzeile. Der Administrator kündigt außerdem 50 % Rabatt für Madeirer an. Am nächsten Tag, 12",
-        "pl": "Odkryj główne atrakcje JM we wtorek, 4 sierpnia. Aquaparque, przestrzeń wodnej rozrywki zlokalizowana w Santa Cruz, będzie teraz otwarta przez cały rok – podkreśla JM w nagłówku. Administrator ogłasza także 50% zniżki dla Madery. Następnego dnia 12",
-        "uk": "Відкрийте для себе основні моменти JM цього вівторка, 4 серпня. Аквапарк, простір для водних розваг, розташований у Санта-Крус, тепер буде відкритий цілий рік, підкреслює JM у заголовку. Також адміністратор повідомляє про знижку 50% для мадейрівців. Наступного дня 12",
-        "ru": "Узнайте о главных событиях JM во вторник, 4 августа. Аквапарк, пространство водных развлечений, расположенное в Санта-Крус, теперь будет открыто круглый год, подчеркивается в заголовке JM. Администратор также объявляет скидку 50% для жителей Мадейры. На следующий день 12 числа"
+        "en": "Discover the news highlighted on the front page of JM this Wednesday. Accidents on the Region's roads make headlines in today's JM. Figures from PSP Madeira confirm the worsening of road accidents and the increase in victims. In the first six months of this year alone,",
+        "de": "Entdecken Sie die Neuigkeiten, die diesen Mittwoch auf der Titelseite von JM hervorgehoben werden. Unfälle auf den Straßen der Region sorgen in der heutigen JM für Schlagzeilen. Zahlen von PSP Madeira bestätigen die Verschärfung der Verkehrsunfälle und die Zunahme der Opfer. Allein in den ersten sechs Monaten dieses Jahres",
+        "pl": "Odkryj wiadomości wyróżnione na pierwszej stronie JM w tę środę. Wypadki na drogach regionu tematem przewodnim dzisiejszego JM. Dane PSP Madeira potwierdzają nasilenie się liczby wypadków drogowych i wzrost liczby ofiar. Tylko w ciągu pierwszych sześciu miesięcy tego roku",
+        "uk": "Відкрийте для себе новини, висвітлені на першій сторінці JM цієї середи. Аварії на дорогах області – головні новини сьогоднішнього JM. Цифри PSP Madeira підтверджують погіршення ДТП і збільшення жертв. Тільки за перші шість місяців ц.р.",
+        "ru": "Откройте для себя новости, представленные на первой странице JM в эту среду. Аварии на дорогах региона стали заголовками сегодняшней газеты JM. Данные PSP Madeira подтверждают ухудшение дорожно-транспортных происшествий и рост числа жертв. Только за первые шесть месяцев этого года"
+      }
+    },
+    {
+      "title": "Vitória jovem sob Tiago Margarido promete lutar sempre pelo triunfo",
+      "link": "https://www.jm-madeira.pt/not%C3%ADcias/desporto/30002961/vitoria-jovem-sob-tiago-margarido-promete-lutar-sempre-pelo-triunfo.html",
+      "date": "2026-08-05",
+      "snippet": "Com 27 jogadores, o grupo apresenta, para já, uma média de idades de 22,5 anos. O Vitória de Guimarães enfrenta a edição 2026/27 da I Liga portuguesa de futebol com um novo treinador, Tiago Margarido, e um plantel jovem, que ambiciona vencer cada jogo que disputa, mas não assume metas classif",
+      "source": "JM Madeira",
+      "lang": "PT",
+      "cat": "desporto",
+      "titles": {
+        "en": "Young victory under Tiago Margarido promises to always fight for triumph",
+        "de": "Der junge Sieg unter Tiago Margarido verspricht, immer um den Triumph zu kämpfen",
+        "pl": "Młode zwycięstwo pod wodzą Tiago Margarido obiecuje zawsze walczyć o triumf",
+        "uk": "Перемога під керівництвом Тьяго Маргарідо обіцяє завжди боротися за тріумф",
+        "ru": "Молодая победа под руководством Тьяго Маргаридо обещает всегда бороться за триумф"
+      },
+      "snippets": {
+        "en": "With 27 players, the group currently has an average age of 22.5 years. Vitória de Guimarães faces the 2026/27 edition of the I Portuguese Football League with a new coach, Tiago Margarido, and a young squad, which aims to win every game it plays, but does not take on classified goals.",
+        "de": "Bei 27 Spielern hat die Gruppe derzeit ein Durchschnittsalter von 22,5 Jahren. Vitória de Guimarães tritt in der Ausgabe 2026/27 der I. Portugiesischen Fußballliga mit einem neuen Trainer, Tiago Margarido, und einem jungen Kader an, der darauf abzielt, jedes Spiel zu gewinnen, aber keine klassifizierten Tore zulässt.",
+        "pl": "Grupa liczy obecnie 27 zawodników, a średni wiek wynosi 22,5 lat. Vitória de Guimarães zmierzy się z edycją I Portugalskiej Ligi Piłki Nożnej 2026/27 z nowym trenerem Tiago Margarido i młodym składem, który stawia sobie za cel wygrywanie każdego rozegranego meczu, ale nie stawia sobie na cele niejawne.",
+        "uk": "З 27 гравцями середній вік групи наразі становить 22,5 року. «Віторія де Гімарайнш» зустрінеться в І Португальській футбольній лізі 2026/27 з новим тренером, Тіаго Маргарідо, і молодою командою, яка прагне вигравати в кожній грі, але не бере на себе секретні голи.",
+        "ru": "В группе насчитывается 27 игроков, средний возраст группы на данный момент составляет 22,5 года. Витория де Гимарайнш встретится с I Чемпионатом Португалии по футболу в сезоне 2026/27 с новым тренером Тьяго Маргаридо и молодой командой, которая стремится побеждать в каждой игре, но не ставит перед собой классифицированных целей."
+      }
+    },
+    {
+      "title": "Brasil estreia seleção nacional de futebol com robôs humanoides nos Mundiais de Pequim",
+      "link": "https://www.jm-madeira.pt/not%C3%ADcias/desporto/30002959/brasil-estreia-selecao-nacional-de-futebol-com-robos-humanoides-nos-mundiais-de-pequim.html",
+      "date": "2026-08-05",
+      "snippet": "A equipa, designada Team Brazil, participará na segunda edição da RoboCup Ásia-Pacífico Beijing Masters. Cinco equipas brasileiras de robótica vão competir unidas como seleção nacional na prova de futebol com robôs humanoides totalmente autónomos dos Jogos Mundiais de Robôs Humanoides 2026, q",
+      "source": "JM Madeira",
+      "lang": "PT",
+      "cat": "desporto",
+      "titles": {
+        "en": "Brazil debuts national football team with humanoid robots at the Beijing World Cup",
+        "de": "Brasilien stellt bei der Weltmeisterschaft in Peking sein Debüt in der Fußballnationalmannschaft mit humanoiden Robotern",
+        "pl": "Brazylia debiutuje w reprezentacji narodowej w piłce nożnej z humanoidalnymi robotami na Mistrzostwach Świata w Pekinie",
+        "uk": "На Чемпіонаті світу з футболу в Пекіні Бразилія представила збірну з гуманоїдних роботів",
+        "ru": "Бразилия дебютирует с национальной сборной по футболу с роботами-гуманоидами на чемпионате мира в Пекине"
+      },
+      "snippets": {
+        "en": "The team, called Team Brazil, will participate in the second edition of the RoboCup Asia-Pacific Beijing Masters. Five Brazilian robotics teams will compete together as a national team in the football competition with fully autonomous humanoid robots at the 2026 World Humanoid Robot Games, which",
+        "de": "Das Team namens Team Brazil wird an der zweiten Ausgabe des RoboCup Asia-Pacific Beijing Masters teilnehmen. Fünf brasilianische Robotikteams werden bei den World Humanoid Robot Games 2026 gemeinsam als Nationalmannschaft im Fußballwettbewerb mit völlig autonomen humanoiden Robotern antreten",
+        "pl": "Zespół o nazwie Team Brazil weźmie udział w drugiej edycji RoboCup Asia-Pacific Beijing Masters. Pięć brazylijskich drużyn robotyki będzie wspólnie rywalizować jako reprezentacja narodowa w rozgrywkach piłkarskich z udziałem w pełni autonomicznych robotów humanoidalnych podczas Światowych Igrzysk Robotów Humanoidalnych 2026, które",
+        "uk": "Команда під назвою Team Brazil братиме участь у другому розіграші RoboCup Asia-Pacific Beijing Masters. П’ять бразильських робототехнічних команд змагатимуться разом як національна команда у футбольному змаганні з повністю автономними роботами-гуманоїдами на Всесвітніх іграх роботів-гуманоїдів 2026 року, які",
+        "ru": "Команда под названием Team Brazil примет участие во втором розыгрыше RoboCup Asia-Pacific Beijing Masters. Пять бразильских команд по робототехнике будут соревноваться вместе как национальная команда в футбольном соревновании с использованием полностью автономных роботов-гуманоидов на Всемирных играх роботов-гуманоидов 2026 года."
+      }
+    },
+    {
+      "title": "Marítimo e Nacional valorizam oito madeirenses",
+      "link": "https://www.jm-madeira.pt/not%C3%ADcias/desporto/30002954/maritimo-e-nacional-valorizam-oito-madeirenses.html",
+      "date": "2026-08-05",
+      "snippet": "Conheça os temas em destaque no JM Desporto. O Marítimo e o Nacional estão a valorizar oito madeirenses, destaca o JM Desporto em manchete. Os verde-rubros integraram cinco jovens da Região nos trabalhos da pré-temporada. Já os alvinegros chamaram três. Do total, cinco atletas transitam da ép",
+      "source": "JM Madeira",
+      "lang": "PT",
+      "cat": "desporto",
+      "titles": {
+        "en": "Marítimo and Nacional value eight Madeirans",
+        "de": "Marítimo und Nacional schätzen acht Madeirer",
+        "pl": "Marítimo i Nacional wyceniają ośmiu Maderyjczyków",
+        "uk": "Marítimo і Nacional оцінюють вісім мадейранців",
+        "ru": "«Маритиму» и «Насьональ» ценят восемь мадейрцев"
+      },
+      "snippets": {
+        "en": "Discover the topics highlighted in JM Desporto. Marítimo and Nacional are valuing eight Madeirans, highlights JM Desporto in the headline. The green-and-reds included five young people from the Region in pre-season work. The Black and Whites called three. Of the total, five athletes transition from the season",
+        "de": "Entdecken Sie die in JM Desporto hervorgehobenen Themen. Marítimo und Nacional bewerten acht Madeirer, hebt JM Desporto in der Schlagzeile hervor. Zu den Grün-Roten gehörten fünf Jugendliche aus der Region zur Saisonvorbereitung. Die Schwarz-Weißen forderten drei. Davon verlassen fünf Athleten die Saison",
+        "pl": "Odkryj tematy wyróżnione w JM Desporto. Marítimo i Nacional wyceniają ośmiu Madery, podkreśla JM Desporto w nagłówku. Zielono-czerwoni objęli pięciu młodych ludzi z Regionu w pracach przedsezonowych. Czarni i Biali sprawdzili trzy. W sumie pięciu zawodników przechodzi z sezonu na emeryturę",
+        "uk": "Відкрийте для себе теми, висвітлені в JM Desporto. Marítimo та Nacional оцінюють вісім мадейранців, підкреслює JM Desporto у заголовку. До передсезонної роботи «зелено-червоні» включили п’ятьох юнаків із області. Чорно-білі назвали трьох. Із загальної кількості п'ять спортсменів переходять із сезону",
+        "ru": "Откройте для себя темы, освещенные в JM Desporto. «Маритиму» и «Насьональ» ценят восемь мадейрцев, подчеркивается в заголовке «ЖМ Деспорто». Зелено-красные включили в предсезонную работу пятерых молодых людей из региона. «Черно-белые» назвали три. Из общего числа пять спортсменов переходят из сезона."
+      }
+    },
+    {
+      "title": "Sismo de baixa magnitude registado a sudoeste da Ribeira Brava",
+      "link": "https://www.jm-madeira.pt/not%C3%ADcias/ocorr-ncias/30002956/sismo-de-baixa-magnitude-registado-a-sudoeste-da-ribeira-brava.html",
+      "date": "2026-08-05",
+      "snippet": "O abalo teve o seu epicentro a 14 quilómetros de profundidade. Foi assinalado, esta madrugada, um sismo de magnitude 1.1 na escala de Richter, a sudoeste da Ribeira Brava. O abalo, cujo epicentro teve lugar a 14 quilómetros de profundidade, foi registado pelo Instituto Português do Mar e da A",
+      "source": "JM Madeira",
+      "lang": "PT",
+      "cat": "ocorrências",
+      "titles": {
+        "en": "Low magnitude earthquake recorded southwest of Ribeira Brava",
+        "de": "Erdbeben geringer Stärke südwestlich von Ribeira Brava registriert",
+        "pl": "Trzęsienie ziemi o małej sile zarejestrowane na południowy zachód od Ribeira Brava",
+        "uk": "Землетрус низької магнітуди зафіксовано на південний захід від Рібейра-Брава",
+        "ru": "Землетрясение малой магнитуды зарегистрировано к юго-западу от Рибейра-Брава."
+      },
+      "snippets": {
+        "en": "The earthquake had its epicenter at a depth of 14 kilometers. An earthquake measuring 1.1 on the Richter scale was reported this morning, southwest of Ribeira Brava. The earthquake, whose epicenter took place 14 kilometers deep, was recorded by the Instituto Português do Mar e da A",
+        "de": "Das Epizentrum des Erdbebens lag in einer Tiefe von 14 Kilometern. Heute Morgen wurde südwestlich von Ribeira Brava ein Erdbeben der Stärke 1,1 auf der Richterskala gemeldet. Das Erdbeben, dessen Epizentrum 14 Kilometer tief lag, wurde vom Instituto Português do Mar e da A aufgezeichnet",
+        "pl": "Trzęsienie ziemi miało swoje epicentrum na głębokości 14 kilometrów. Dziś rano zgłoszono trzęsienie ziemi o sile 1,1 w skali Richtera na południowy zachód od Ribeira Brava. Trzęsienie ziemi, którego epicentrum znajdowało się na głębokości 14 kilometrów, zarejestrował Instituto Português do Mar e da A",
+        "uk": "Епіцентр землетрусу знаходився на глибині 14 кілометрів. Сьогодні вранці на південний захід від Рібейра-Брава стався землетрус силою 1,1 за шкалою Ріхтера. Землетрус, епіцентр якого знаходився на глибині 14 кілометрів, зафіксував Instituto Português do Mar e da A.",
+        "ru": "Эпицентр землетрясения находился на глубине 14 километров. Сегодня утром к юго-западу от Рибейра-Брава зарегистрировано землетрясение силой 1,1 балла по шкале Рихтера. Землетрясение, эпицентр которого находился на глубине 14 километров, было зафиксировано Португальским институтом Мар-э-да-А."
+      }
+    },
+    {
+      "title": "Sophie Woods Sets Overall Supported FKT on 2,000-Kilometer Via Alpina Route",
+      "link": "https://www.irunfar.com/sophie-woods-overall-supported-fkt-via-alpina",
+      "date": "2026-08-04",
+      "snippet": "The post Sophie Woods Sets Overall Supported FKT on 2,000-Kilometer Via Alpina Route appeared first on iRunFar. Kiwi Sophie Woods set a new overall supported FKT on the 2,000-kilometer Via Alpina route across Europe by over a week. Sophie Woods Sets Overall Supported FKT on 2,000-Kilometer Via Alpin",
+      "source": "iRunFar",
+      "lang": "EN",
+      "cat": "trail",
+      "titles": {
+        "pt": "Sophie Woods define FKT com suporte geral em 2.000 quilômetros pela rota Alpina",
+        "de": "Sophie Woods setzt insgesamt unterstützte FKT auf der 2.000 Kilometer langen Via Alpina-Route ein",
+        "pl": "Sophie Woods ogólnie wspiera FKT na 2000-kilometrowej trasie Via Alpina",
+        "uk": "Софі Вудс встановлює загальну підтримку FKT на 2000-кілометровому маршруті Via Alpina",
+        "ru": "Софи Вудс установила FKT с общей поддержкой на 2000-километровом маршруте по маршруту Alpina"
+      },
+      "snippets": {
+        "pt": "A postagem Sophie Woods define FKT com suporte geral em 2.000 quilômetros via Alpina Route apareceu pela primeira vez em iRunFar. A Kiwi Sophie Woods estabeleceu um novo FKT com suporte geral na rota Via Alpina de 2.000 quilômetros pela Europa em mais de uma semana. Sophie Woods define FKT com suporte geral em 2.000 quilômetros via Alpin",
+        "de": "Der Beitrag „Sophie Woods unterstützt FKT auf der 2.000 Kilometer langen Via Alpina Route“ erschien zuerst auf iRunFar. Die Neuseeländerin Sophie Woods setzte auf der 2.000 Kilometer langen Via Alpina-Route quer durch Europa um über eine Woche einen neuen, insgesamt unterstützten FKT. Sophie Woods setzt insgesamt unterstützte FKT auf der 2.000 Kilometer langen Via Alpin ein",
+        "pl": "Wpis Sophie Woods ogólnie wspiera FKT na 2000-kilometrowej trasie Via Alpina pojawił się jako pierwszy w iRunFar. Kiwi Sophie Woods w ciągu ponad tygodnia wyznaczyła nowy, ogólnie wspierany FKT na 2000-kilometrowej trasie Via Alpina w całej Europie. Sophie Woods ogólnie wspiera FKT na dystansie 2000 km przez Alpin",
+        "uk": "Повідомлення Софі Вудс встановлює загальну підтримку FKT на 2000-кілометровому маршруті Via Alpina вперше з’явилося на iRunFar. Ківі Софі Вудс встановила новий загальний підтримуваний FKT на 2000-кілометровому маршруті Via Alpina через Європу більш ніж за тиждень. Софі Вудс встановлює загальну підтримку FKT на 2000-кілометровій Via Alpin",
+        "ru": "Сообщение Софи Вудс устанавливает общую поддержку FKT на 2000-километровом маршруте Via Alpina Route впервые появилось на iRunFar. Киви Софи Вудс установила новый общий поддерживаемый FKT на 2000-километровом маршруте Via Alpina по всей Европе более чем на неделю. Софи Вудс установила FKT с общей поддержкой на 2000-километровом маршруте через Alpin"
+      }
+    },
+    {
+      "title": "2026 Sierre-Zinal Live Coverage",
+      "link": "https://www.irunfar.com/2026-sierre-zinal-live-coverage",
+      "date": "2026-08-04",
+      "snippet": "The post 2026 Sierre-Zinal Live Coverage appeared first on iRunFar. iRunFar’s live coverage of the 2026 Sierre-Zinal, taking place on Saturday, August 8, in Switzerland. 2026 Sierre-Zinal Live Coverage by Eszter Horanyi.",
+      "source": "iRunFar",
+      "lang": "EN",
+      "cat": "trail",
+      "titles": {
+        "pt": "Cobertura ao vivo de Sierre-Zinal 2026",
+        "de": "2026 Sierre-Zinal Live-Berichterstattung",
+        "pl": "Relacja na żywo Sierre-Zinal z 2026 r",
+        "uk": "2026 Sierre-Zinal Пряма трансляція",
+        "ru": "Прямая трансляция Сьерре-Зиналя 2026 года"
+      },
+      "snippets": {
+        "pt": "A cobertura ao vivo pós 2026 Sierre-Zinal apareceu pela primeira vez em iRunFar. Cobertura ao vivo do iRunFar do Sierre-Zinal 2026, que acontecerá no sábado, 8 de agosto, na Suíça. Cobertura ao vivo de Sierre-Zinal 2026 por Eszter Horanyi.",
+        "de": "Die Post 2026 Sierre-Zinal Live-Berichterstattung erschien zuerst auf iRunFar. iRunFars Live-Berichterstattung über Sierre-Zinal 2026, das am Samstag, den 8. August, in der Schweiz stattfindet. 2026 Sierre-Zinal Live-Berichterstattung von Eszter Horanyi.",
+        "pl": "Relacja na żywo Sierre-Zinal po 2026 r. pojawiła się jako pierwsza w iRunFar. Transmisja na żywo iRunFar z zawodów Sierre-Zinal 2026, które odbędą się w sobotę 8 sierpnia w Szwajcarii. Relacja na żywo Sierre-Zinal z 2026 r.: Eszter Horanyi.",
+        "uk": "Публікація 2026 Sierre-Zinal Live Coverage вперше з’явилася на iRunFar. Пряма трансляція iRunFar 2026 Sierre-Zinal, яка відбудеться в суботу, 8 серпня, у Швейцарії. 2026 Sierre-Zinal у прямому ефірі Естер Гораньї.",
+        "ru": "Прямая трансляция Сьерре-Зиналя после 2026 года впервые появилась на iRunFar. Прямая трансляция iRunFar соревнований Sierre-Zinal 2026 года, которые пройдут в субботу, 8 августа, в Швейцарии. Прямая трансляция Сьерре-Зиналя 2026 года, Эстер Хораньи."
+      }
+    },
+    {
+      "title": "Hoka Continues Domination: 2026 Western States 100 Shoes Analysis",
+      "link": "https://www.irunfar.com/2026-western-states-100-shoes-analysis",
+      "date": "2026-08-04",
+      "snippet": "The post Hoka Continues Domination: 2026 Western States 100 Shoes Analysis appeared first on iRunFar. TRAILRUNNINGReview and iRunFar have collaborated to analyze the shoes worn by runners at the 2026 Western States 100. Hoka Continues Domination: 2026 Western States 100 Shoes Analysis by Guest Write",
+      "source": "iRunFar",
+      "lang": "EN",
+      "cat": "trail",
+      "titles": {
+        "pt": "Hoka continua dominando: análise de calçados 100 dos estados ocidentais de 2026",
+        "de": "Hoka dominiert weiterhin: 2026 Western States 100-Schuhanalyse",
+        "pl": "Hoka kontynuuje dominację: analiza 100 butów Western States 2026",
+        "uk": "Хока продовжує домінувати: 2026 Західні Штати 100 Аналіз взуття",
+        "ru": "Hoka продолжает доминировать: анализ обуви Western States 100 2026 года"
+      },
+      "snippets": {
+        "pt": "A postagem Hoka continua a dominação: análise dos 100 sapatos dos estados ocidentais de 2026 apareceu pela primeira vez em iRunFar. TRAILRUNNINGReview e iRunFar colaboraram para analisar os calçados usados pelos corredores no Western States 100 de 2026. Hoka continua a dominar: Análise de calçados do Western States 100 de 2026 por Guest Write",
+        "de": "Der Beitrag „Hoka setzt seine Dominanz fort: 2026 Western States 100 Shoes Analysis“ erschien zuerst auf iRunFar. TRAILRUNNINGReview und iRunFar haben zusammengearbeitet, um die Schuhe zu analysieren, die von Läufern beim Western States 100 2026 getragen werden. Hoka setzt seine Dominanz fort: 2026 Western States 100 Schuhanalyse durch Gastautor",
+        "pl": "Post Hoka kontynuuje dominację: analiza butów Western States 100 2026 pojawił się jako pierwszy w iRunFar. TRAILRUNNINGReview i iRunFar współpracowały przy analizie butów noszonych przez biegaczy podczas zawodów Western States 100 2026. Hoka kontynuuje dominację: Analiza butów 2026 Western States 100 przeprowadzona przez gościa Napisz",
+        "uk": "Допис Hoka Continues Domination: 2026 Western States 100 Shoes Analysis вперше з’явився на iRunFar. TRAILRUNNINGReview та iRunFar спільно проаналізували взуття бігунів на 2026 Western States 100. Hoka продовжує домінувати: 2026 Western States 100 Shoes Analysis by Guest Write",
+        "ru": "Пост «Хока продолжает доминировать: анализ 100 обуви Western States 2026» впервые появился на iRunFar. TRAILRUNNINGReview и iRunFar совместно проанализировали обувь, которую носят бегуны на забеге Western States 100 2026 года. Hoka продолжает доминировать: Анализ обуви Western States 100 2026 года, автор Guest Write"
+      }
+    },
+    {
+      "title": "Rubina Leal visita o Capitólio do Estado de Massachusetts",
+      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002943/rubina-leal-visita-o-capitolio-do-estado-de-massachusetts.html",
+      "date": "2026-08-04",
+      "snippet": "A presidente da Assembleia Legislativa da Região Autónoma da Madeira, Rubina Leal, visitou, hoje, o Capitólio do Estado de Massachusetts, reforçando relações institucionais com este Estado americano. A deslocação, a convite do senador Mark Montigny, decano do Senado, revestiu-se de particular signif",
+      "source": "JM Madeira",
+      "lang": "PT",
+      "cat": "geral",
+      "titles": {
+        "en": "Rubina Leal visits the Massachusetts State Capitol",
+        "de": "Rubina Leal besucht das Massachusetts State Capitol",
+        "pl": "Rubina Leal odwiedza Kapitol stanu Massachusetts",
+        "uk": "Рубіна Ліл відвідує Капітолій штату Массачусетс",
+        "ru": "Рубина Леал посетила Капитолий штата Массачусетс"
+      },
+      "snippets": {
+        "en": "The president of the Legislative Assembly of the Autonomous Region of Madeira, Rubina Leal, visited the Massachusetts State Capitol today, strengthening institutional relations with this American State. The trip, at the invitation of Senator Mark Montigny, Dean of the Senate, was of particular significance.",
+        "de": "Die Präsidentin der gesetzgebenden Versammlung der Autonomen Region Madeira, Rubina Leal, besuchte heute das Massachusetts State Capitol und stärkte die institutionellen Beziehungen zu diesem amerikanischen Staat. Die Reise auf Einladung von Senator Mark Montigny, Dekan des Senats, war von besonderer Bedeutung.",
+        "pl": "Przewodnicząca Zgromadzenia Ustawodawczego Regionu Autonomicznego Madery Rubina Leal odwiedziła dziś Kapitol stanu Massachusetts, wzmacniając stosunki instytucjonalne z tym amerykańskim stanem. Wyjazd na zaproszenie senatora Marka Montigny’ego, dziekana Senatu, miał szczególne znaczenie.",
+        "uk": "Президент законодавчої асамблеї автономного регіону Мадейра Рубіна Леал відвідала сьогодні Капітолій штату Массачусетс, зміцнюючи інституційні відносини з цим американським штатом. Поїздка на запрошення сенатора Марка Монтіньї, декана Сенату, мала особливе значення.",
+        "ru": "Президент Законодательного собрания автономного региона Мадейра Рубина Леал посетила сегодня Капитолий штата Массачусетс, укрепляя институциональные отношения с этим американским штатом. Поездка по приглашению декана Сената сенатора Марка Монтиньи имела особое значение."
+      }
+    },
+    {
+      "title": "PS exige Estação de Tratamento de Águas Residuais no Porto da Cruz",
+      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002942/ps-exige-estacao-de-tratamento-de-aguas-residuais-no-porto-da-cruz.html",
+      "date": "2026-08-04",
+      "snippet": "Numa conferência de imprensa realizada, no Porto da Cruz, junto “ao edifício que foi construído há 20 anos para ser uma Estação de Tratamento de Águas Residuais (ETAR), mas que nunca chegou a funcionar”, Célia Pessegueiro, presidente do PS-Madeira, acusou o Governo Regional e a empresa Águas e Resíd",
+      "source": "JM Madeira",
+      "lang": "PT",
+      "cat": "geral",
+      "titles": {
+        "en": "PS demands Wastewater Treatment Plant in Porto da Cruz",
+        "de": "PS fordert Kläranlage in Porto da Cruz",
+        "pl": "PS żąda oczyszczalni ścieków w Porto da Cruz",
+        "uk": "PS вимагає спорудження очисних споруд у Порту-да-Крус",
+        "ru": "PS требует установку по очистке сточных вод в Порту-да-Крус"
+      },
+      "snippets": {
+        "en": "At a press conference held in Porto da Cruz, next to “the building that was built 20 years ago to be a Waste Water Treatment Station (WWTP), but which never came into operation”, Célia Pessegueiro, president of PS-Madeira, accused the Regional Government and the company Águas e Resíd",
+        "de": "Auf einer Pressekonferenz in Porto da Cruz, neben „dem Gebäude, das vor 20 Jahren als Abwasseraufbereitungsanlage (WWTP) gebaut wurde, aber nie in Betrieb genommen wurde“, beschuldigte Célia Pessegueiro, Präsidentin von PS-Madeira, die Regionalregierung und das Unternehmen Águas e Resíd",
+        "pl": "Na konferencji prasowej, która odbyła się w Porto da Cruz, obok „budynku, który został zbudowany 20 lat temu jako stacja oczyszczania ścieków (OŚ), ale który nigdy nie został oddany do użytku”, Célia Pessegueiro, prezes PS-Madeira, oskarżyła rząd regionalny i firmę Águas e Resíd",
+        "uk": "На прес-конференції, що відбулася в Порту-да-Крус, поруч із «будівлею, яка була побудована 20 років тому як станцію очищення стічних вод (WWTP), але яка так і не була введена в експлуатацію», Селія Пессегейро, президент PS-Madeira, звинуватила регіональний уряд і компанію Águas e Resíd",
+        "ru": "На пресс-конференции, состоявшейся в Порту-да-Крус, рядом со «зданием, которое было построено 20 лет назад для станции очистки сточных вод (СОС), но которое так и не было введено в эксплуатацию», Селия Пессегейру, президент PS-Madeira, обвинила региональное правительство и компанию Águas e Resíd"
+      }
+    },
+    {
+      "title": "Salários reais no turismo subiram 14% na Madeira, diz Eduardo Jesus",
+      "link": "https://www.jm-madeira.pt/not%C3%ADcias/in-cio/30002941/salarios-reais-no-turismo-subiram-14-na-madeira-diz-eduardo-jesus.html",
+      "date": "2026-08-04",
+      "snippet": "O livro resume a evolução do sector turístico na Região na última década. O secretário regional do Turismo, Ambiente e Cultura disse hoje que os salários reais no setor do turismo cresceram 14%, nos últimos 10 anos, na Madeira. O salário real é aquele apurado retirando o efeito da inflação e,",
+      "source": "JM Madeira",
+      "lang": "PT",
+      "cat": "geral",
+      "titles": {
+        "en": "Real wages in tourism rose 14% in Madeira, says Eduardo Jesus",
+        "de": "Laut Eduardo Jesus stiegen die Reallöhne im Tourismus auf Madeira um 14 %",
+        "pl": "Realne płace w turystyce wzrosły na Maderze o 14%, mówi Eduardo Jesus",
+        "uk": "Реальна зарплата в туризмі на Мадейрі зросла на 14%, каже Едуардо Жезус",
+        "ru": "Реальная заработная плата в сфере туризма на Мадейре выросла на 14%, говорит Эдуардо Жезус"
+      },
+      "snippets": {
+        "en": "The book summarizes the evolution of the tourism sector in the Region over the last decade. The regional secretary for Tourism, Environment and Culture said today that real salaries in the tourism sector have grown by 14% in the last 10 years in Madeira. The real salary is the one calculated by removing the effect of inflation and,",
+        "de": "Das Buch fasst die Entwicklung des Tourismussektors in der Region im letzten Jahrzehnt zusammen. Der Regionalsekretär für Tourismus, Umwelt und Kultur sagte heute, dass die Reallöhne im Tourismussektor auf Madeira in den letzten 10 Jahren um 14 % gestiegen seien. Das reale Gehalt wird berechnet, indem der Einfluss der Inflation herausgerechnet wird und",
+        "pl": "Książka podsumowuje ewolucję sektora turystycznego w regionie na przestrzeni ostatniej dekady. Regionalny sekretarz ds. turystyki, środowiska i kultury powiedział dzisiaj, że realne wynagrodzenia w sektorze turystycznym na Maderze wzrosły o 14% w ciągu ostatnich 10 lat. Wynagrodzenie realne to wynagrodzenie obliczone poprzez usunięcie efektu inflacji i,",
+        "uk": "Книга підсумовує еволюцію туристичного сектора в регіоні за останнє десятиліття. Регіональний секретар з питань туризму, навколишнього середовища та культури заявив сьогодні, що за останні 10 років на Мадейрі реальні зарплати в туристичному секторі зросли на 14%. Реальна заробітна плата – це заробітна плата, розрахована шляхом усунення ефекту інфляції та,",
+        "ru": "В книге обобщается эволюция туристического сектора в регионе за последнее десятилетие. Региональный секретарь по туризму, окружающей среде и культуре заявил сегодня, что реальные зарплаты в туристическом секторе Мадейры за последние 10 лет выросли на 14%. Реальная зарплата – это та зарплата, которая рассчитывается путем исключения влияния инфляции и,"
+      }
+    },
+    {
+      "title": "“Desculpas não salvam ninguém”: PSP e Junta de Freguesia do Caniço alertam para velocidade excessiva",
+      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002937/desculpas-nao-salvam-ninguem-psp-e-junta-de-freguesia-do-canico-alertam-para-velocidade-excessiva.html",
+      "date": "2026-08-04",
+      "snippet": "A Polícia de Segurança Pública (PSP) partilhou um apelo nas redes sociais a sensibilizar para uma condução responsável. “A velocidade excessiva não tira apenas vidas. Deixa cadeiras vazias. Deixa famílias incompletas. Deixa um vazio que nunca mais se preenche. Conduza com responsabilidade. Despeite",
+      "source": "JM Madeira",
+      "lang": "PT",
+      "cat": "geral",
+      "titles": {
+        "en": "“Excuses don’t save anyone”: PSP and Caniço Parish Council warn of excessive speed",
+        "de": "„Ausreden retten niemanden“: PSP und Gemeinderat von Caniço warnen vor überhöhter Geschwindigkeit",
+        "pl": "„Wymówki nikogo nie ratują”: PSP i Rada Parafialna Caniço ostrzegają przed nadmierną prędkością",
+        "uk": "«Виправдання нікого не рятують»: PSP і парафіяльна рада Канісо попереджають про надмірну швидкість",
+        "ru": "«Оправдания никого не спасают»: PSP и приходской совет Канису предупреждают о превышении скорости"
+      },
+      "snippets": {
+        "en": "The Public Security Police (PSP) shared an appeal on social media to raise awareness of responsible driving. \"Excessive speed doesn't just take lives. It leaves empty chairs. It leaves families incomplete. It leaves a void that can never be filled. Drive responsibly. Respect",
+        "de": "Die Polizei für öffentliche Sicherheit (PSP) veröffentlichte in den sozialen Medien einen Aufruf, das Bewusstsein für verantwortungsvolles Fahren zu schärfen. „Übermäßige Geschwindigkeit kostet nicht nur Leben. Sie hinterlässt leere Stühle. Sie hinterlässt unvollständige Familien. Sie hinterlässt eine Lücke, die niemals gefüllt werden kann. Fahren Sie verantwortungsbewusst. Respekt.“",
+        "pl": "Policja Bezpieczeństwa Publicznego (PSP) udostępniła w mediach społecznościowych apel o podnoszenie świadomości na temat odpowiedzialnej jazdy. „Nadmierna prędkość nie tylko zabija życie. Pozostawia puste krzesła. Niekompletne rodziny. Pozostawia pustkę, której nigdy nie można wypełnić. Jedź odpowiedzialnie. Szacunek",
+        "uk": "Поліція громадської безпеки (PSP) розповсюдила у соцмережах заклик привернути увагу до відповідального водіння. «Надмірна швидкість не просто забирає життя. Вона залишає порожні стільці. Вона залишає неповними сім’ї. Вона залишає порожнечу, яку неможливо заповнити. Керуйте відповідально. Повага",
+        "ru": "Полиция общественной безопасности (PSP) разместила в социальных сетях призыв повысить осведомленность об ответственном вождении. «Превышение скорости не только уносит жизни. Оно оставляет пустые стулья. Оно оставляет семьи неполными. Оно оставляет пустоту, которую невозможно заполнить. Водите машину ответственно. Уважение"
+      }
+    },
+    {
+      "title": "Prémio de 600 mil euros da lotaria clássica sai no Funchal",
+      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002935/premio-de-600-mil-euros-da-lotaria-classica-sai-no-funchal.html",
+      "date": "2026-08-04",
+      "snippet": "O sorteio, que decorreu hoje, premiou o bilhete 16669 Foi hoje atribuído um prémio no valor de 600 mil euros, na Madeira, referente ao primeiro prémio da 31.ª extração da Lotaria Clássica \"Caminhos de Portugal\" O bilhete premiado, de número 16669, foi vendido na Loja Campião, no Funchal a um",
+      "source": "JM Madeira",
+      "lang": "PT",
+      "cat": "geral",
+      "titles": {
+        "en": "Prize of 600 thousand euros from the classic lottery comes out in Funchal",
+        "de": "Der Preis der klassischen Lotterie in Höhe von 600.000 Euro wird in Funchal verlost",
+        "pl": "W Funchal rozlosowana zostanie nagroda w wysokości 600 tys. euro z klasycznej loterii",
+        "uk": "Виграш у 600 тисяч євро від класичної лотереї виходить у Фуншалі",
+        "ru": "Приз в 600 тысяч евро классической лотереи разыгран в Фуншале"
+      },
+      "snippets": {
+        "en": "The draw, which took place today, awarded ticket 16669. A prize worth 600 thousand euros was awarded today in Madeira, referring to the first prize of the 31st extraction of the Classic Lottery \"Caminhos de Portugal\" The winning ticket, number 16669, was sold at Loja Campião, in Funchal at a",
+        "de": "Bei der Ziehung, die heute stattfand, wurde Los 16669 vergeben. Heute wurde auf Madeira ein Preis im Wert von 600.000 Euro verliehen, der sich auf den ersten Preis der 31. Ziehung der klassischen Lotterie „Caminhos de Portugal“ bezieht",
+        "pl": "W losowaniu, które odbyło się dzisiaj, przyznano los o numerze 16669. Dziś na Maderze przyznano nagrodę o wartości 600 tysięcy euro, nawiązującą do pierwszej nagrody 31. ekstrakcji Klasycznej Loterii „Caminhos de Portugal”. Zwycięski los o numerze 16669 został sprzedany w Loja Campião w Funchal w sklepie",
+        "uk": "Жеребкування, яке відбулося сьогодні, присудило квиток 16669. Приз вартістю 600 тисяч євро був вручений сьогодні на Мадейрі, посилаючись на перший приз 31-го розіграшу класичної лотереї «Caminhos de Portugal». Виграшний квиток під номером 16669 був проданий у Loja Campião, у Фуншалі на",
+        "ru": "В результате розыгрыша, состоявшегося сегодня, был разыгран билет 16669. Сегодня на Мадейре был разыгран приз на сумму 600 тысяч евро, что соответствует первому призу 31-го розыгрыша классической лотереи «Caminhos de Portugal». Выигрышный билет под номером 16669 был продан в магазине Loja Campião в Фуншале."
+      }
+    },
+    {
+      "title": "Filipe Sousa critica ministro da Educação por ignorar perguntas sobre questões regionais",
+      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002936/filipe-sousa-critica-ministro-da-educacao-por-ignorar-perguntas-sobre-questoes-regionais.html",
+      "date": "2026-08-04",
+      "snippet": "O deputado do Juntos Pelo Povo (JPP) à Assembleia da República, Filipe Sousa, acusou o ministro da Educação, Ciência e Inovação de ter ignorado \"por completo\" as questões colocadas sobre a Madeira e os Açores durante o debate parlamentar sobre os problemas com os exames nacionais, os atrasos com a d",
+      "source": "JM Madeira",
+      "lang": "PT",
+      "cat": "geral",
+      "titles": {
+        "en": "Filipe Sousa criticizes Education Minister for ignoring questions about regional issues",
+        "de": "Filipe Sousa kritisiert den Bildungsminister dafür, dass er Fragen zu regionalen Themen ignoriert",
+        "pl": "Filipe Sousa krytykuje Ministra Edukacji za ignorowanie pytań dotyczących kwestii regionalnych",
+        "uk": "Філіпе Соуза критикує міністра освіти за ігнорування запитань про регіональні проблеми",
+        "ru": "Филипе Соуза раскритиковал министра образования за игнорирование вопросов о региональных проблемах"
+      },
+      "snippets": {
+        "en": "The Juntos Pelo Povo (JPP) deputy to the Assembly of the Republic, Filipe Sousa, accused the Minister of Education, Science and Innovation of having \"completely\" ignored the questions asked about Madeira and the Azores during the parliamentary debate on the problems with national exams, the delays with the d",
+        "de": "Der Abgeordnete der Juntos Pelo Povo (JPP) in der Versammlung der Republik, Filipe Sousa, warf dem Minister für Bildung, Wissenschaft und Innovation vor, die Fragen zu Madeira und den Azoren während der Parlamentsdebatte über die Probleme mit nationalen Prüfungen, die Verzögerungen bei den d",
+        "pl": "Poseł do Zgromadzenia Republiki Juntos Pelo Povo (JPP) Filipe Sousa zarzucił Ministrowi Edukacji, Nauki i Innowacji „całkowite” zignorowanie pytań zadawanych w sprawie Madery i Azorów podczas debaty parlamentarnej na temat problemów z egzaminami państwowymi, opóźnień w egzaminach państwowych",
+        "uk": "Депутат Асамблеї Республіки від Juntos Pelo Povo (JPP) Філіпе Соуза звинуватив міністра освіти, науки та інновацій у тому, що він «повністю» проігнорував питання про Мадейру та Азорські острови під час парламентських дебатів щодо проблем із національними іспитами, затримок з д",
+        "ru": "Депутат Ассамблеи Республики Хунтос Пело Пово (JPP) Филипе Соуза обвинил министра образования, науки и инноваций в том, что он «полностью» игнорировал вопросы, заданные о Мадейре и Азорских островах во время парламентских дебатов о проблемах с национальными экзаменами, задержках с"
+      }
+    },
+    {
+      "title": "Manutenção em sistema de ar condicionado obriga a reagendar atos médicos não urgentes",
+      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002934/manutencao-em-sistema-de-ar-condicionado-obriga-a-reagendar-atos-medicos-nao-urgentes.html",
+      "date": "2026-08-04",
+      "snippet": "O Serviço de Saúde da Região Autónoma da Madeira (SESARAM) informou hoje que, devido à necessidade de manutenção dos equipamentos de ar condicionado do edifício da consulta externa, do Hospital Dr. Nélio Mendonça, foi necessário proceder ao reagendamento de alguns atos médicos não urgentes. Segundo",
+      "source": "JM Madeira",
+      "lang": "PT",
+      "cat": "geral",
+      "titles": {
+        "en": "Air conditioning system maintenance requires rescheduling non-urgent medical procedures",
+        "de": "Die Wartung der Klimaanlage erfordert die Umplanung nicht dringender medizinischer Eingriffe",
+        "pl": "Konserwacja układu klimatyzacji wymaga przełożenia niepilnych zabiegów medycznych",
+        "uk": "Технічне обслуговування системи кондиціонування вимагає перенесення нетермінових медичних процедур",
+        "ru": "Техническое обслуживание системы кондиционирования требует переноса несрочных медицинских процедур."
+      },
+      "snippets": {
+        "en": "The Health Service of the Autonomous Region of Madeira (SESARAM) reported today that, due to the need to maintain the air conditioning equipment in the external consultation building, at Hospital Dr. Nélio Mendonça, it was necessary to reschedule some non-urgent medical procedures. Second",
+        "de": "Der Gesundheitsdienst der Autonomen Region Madeira (SESARAM) berichtete heute, dass es aufgrund der Notwendigkeit, die Klimaanlage im externen Beratungsgebäude des Krankenhauses Dr. Nélio Mendonça zu warten, notwendig war, einige nicht dringende medizinische Eingriffe zu verschieben. Zweitens",
+        "pl": "Służba Zdrowia Regionu Autonomicznego Madery (SESARAM) poinformowała dzisiaj, że w związku z koniecznością konserwacji sprzętu klimatyzacyjnego w zewnętrznym budynku poradni, w szpitalu Dr. Nélio Mendonça, konieczne było przełożenie niektórych niepilnych zabiegów medycznych. Po drugie",
+        "uk": "Служба охорони здоров’я автономного регіону Мадейра (SESARAM) повідомила сьогодні, що через необхідність обслуговування обладнання для кондиціонування повітря у зовнішній консультаційній будівлі лікарні доктора Неліо Мендонса довелося перенести деякі нетермінові медичні процедури. друге",
+        "ru": "Служба здравоохранения автономного региона Мадейра (SESARAM) сообщила сегодня, что из-за необходимости технического обслуживания оборудования кондиционирования воздуха в здании внешней консультации больницы доктора Нелио Мендонсы пришлось перенести некоторые несрочные медицинские процедуры. Второй"
+      }
+    },
+    {
+      "title": "IL diz que política regional de habitação está a falhar e defende aumento da oferta",
+      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002932/il-diz-que-politica-regional-de-habitacao-esta-a-falhar-e-defende-aumento-da-oferta.html",
+      "date": "2026-08-04",
+      "snippet": "A Iniciativa Liberal considera que a estratégia seguida pelo Governo Regional para responder à crise da habitação na Madeira continua sem produzir resultados, apontando a subida dos preços de compra e arrendamento como prova de que as medidas adotadas não estão a resolver o problema. Em comunicado d",
+      "source": "JM Madeira",
+      "lang": "PT",
+      "cat": "geral",
+      "titles": {
+        "en": "IL says regional housing policy is failing and defends increasing supply",
+        "de": "IL sagt, dass die regionale Wohnungspolitik versagt und verteidigt ein steigendes Angebot",
+        "pl": "IL twierdzi, że regionalna polityka mieszkaniowa zawodzi i broni rosnącej podaży",
+        "uk": "IL каже, що регіональна житлова політика провалюється, і захищає збільшення пропозиції",
+        "ru": "IL заявляет, что региональная жилищная политика терпит неудачу, и защищает увеличение предложения"
+      },
+      "snippets": {
+        "en": "The Liberal Initiative considers that the strategy followed by the Regional Government to respond to the housing crisis in Madeira continues to produce no results, pointing to the rise in purchase and rental prices as proof that the measures adopted are not solving the problem. In a statement from",
+        "de": "Die Liberale Initiative ist der Ansicht, dass die von der Regionalregierung verfolgte Strategie zur Bewältigung der Immobilienkrise auf Madeira weiterhin keine Ergebnisse zeitigt, und verweist auf den Anstieg der Kauf- und Mietpreise als Beweis dafür, dass die ergriffenen Maßnahmen das Problem nicht lösen. In einer Stellungnahme von",
+        "pl": "Inicjatywa Liberalna uważa, że strategia zastosowana przez rząd regionalny w odpowiedzi na kryzys mieszkaniowy na Maderze w dalszym ciągu nie przynosi żadnych rezultatów, wskazując wzrost cen zakupu i wynajmu jako dowód, że przyjęte środki nie rozwiązują problemu. W oświadczeniu z",
+        "uk": "Ліберальна ініціатива вважає, що стратегія, якої дотримується регіональний уряд щодо вирішення житлової кризи на Мадейрі, продовжує не давати результатів, вказуючи на зростання цін на купівлю та оренду як доказ того, що вжиті заходи не вирішують проблему. У заяві від",
+        "ru": "Либеральная инициатива считает, что стратегия, которой придерживается региональное правительство по реагированию на жилищный кризис на Мадейре, по-прежнему не дает результатов, указывая на рост цен на покупку и аренду как на доказательство того, что принятые меры не решают проблему. В заявлении от"
+      }
+    },
+    {
+      "title": "Funchal reforça prevenção de incêndios com limpeza de terrenos municipais",
+      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002927/funchal-reforca-prevencao-de-incendios-com-limpeza-de-terrenos-municipais.html",
+      "date": "2026-08-04",
+      "snippet": "Este ano já foram limpos 30.000 metros quadrados de terreno. O Serviço de Limpeza Urbana da Câmara Municipal do Funchal tem no terreno uma operação intensiva de limpeza e desmatamento de terrenos sob gestão camarária. Isto no âmbito da prevenção de riscos e proteção ambiental. A medida visa m",
+      "source": "JM Madeira",
+      "lang": "PT",
+      "cat": "geral",
+      "titles": {
+        "en": "Funchal reinforces fire prevention with cleaning of municipal land",
+        "de": "Funchal verstärkt den Brandschutz durch die Reinigung kommunaler Grundstücke",
+        "pl": "Funchal wzmacnia ochronę przeciwpożarową poprzez sprzątanie terenów miejskich",
+        "uk": "Фуншал посилює протипожежну боротьбу шляхом очищення муніципальної землі",
+        "ru": "Фуншал усиливает меры по предотвращению пожаров за счет очистки муниципальных земель"
+      },
+      "snippets": {
+        "en": "This year, 30,000 square meters of land have already been cleaned. The Urban Cleaning Service of the Funchal City Council has an intensive cleaning and deforestation operation on land under municipal management. This is within the scope of risk prevention and environmental protection. The measure aims to",
+        "de": "In diesem Jahr wurden bereits 30.000 Quadratmeter Land gereinigt. Der Stadtreinigungsdienst des Stadtrats von Funchal führt eine intensive Reinigungs- und Entwaldungsaktion auf Grundstücken durch, die unter kommunaler Verwaltung stehen. Dies liegt im Rahmen der Risikoprävention und des Umweltschutzes. Die Maßnahme zielt darauf ab",
+        "pl": "W tym roku oczyszczono już 30 000 metrów kwadratowych terenu. Służba sprzątania miast Rady Miasta Funchal prowadzi intensywne prace związane z czyszczeniem i wylesianiem gruntów znajdujących się pod zarządem gminy. Mieści się to w zakresie zapobiegania ryzyku i ochrony środowiska. Środek ma na celu",
+        "uk": "Цього року вже прибрано 30 тисяч квадратних метрів землі. Служба міського прибирання міської ради Фуншалу проводить інтенсивну операцію з очищення та вирубки лісів на землях, що перебувають у муніципальному управлінні. Це входить до сфери запобігання ризикам і охорони навколишнього середовища. Захід спрямований на",
+        "ru": "В этом году уже очищено 30 тысяч квадратных метров земли. Служба городской уборки городского совета Фуншала проводит интенсивную очистку и вырубку лесов на землях, находящихся в муниципальном управлении. Это входит в сферу предотвращения рисков и защиты окружающей среды. Эта мера направлена на"
+      }
+    },
+    {
+      "title": "Circo Mundial Mariani quer instalar parque de diversões e circo junto ao Cais 8 na época do Natal",
+      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002926/circo-mundial-mariani-quer-instalar-parque-de-diversoes-e-circo-junto-ao-cais-8-na-epoca-do-natal.html",
+      "date": "2026-08-04",
+      "snippet": "De acordo com o edital, a empresa propõe pagar à APRAM 81 mil euros, acrescidos de IVA à taxa legal em vigor. O Circo Mundial Mariani, Lda. pretende instalar e explorar um parque de diversões e circo numa parcela de domínio público adjacente ao Cais 8 do Porto do Funchal, entre 13 de novembro",
+      "source": "JM Madeira",
+      "lang": "PT",
+      "cat": "geral",
+      "titles": {
+        "en": "Circo Mundial Mariani wants to install an amusement park and circus next to Pier 8 at Christmas time",
+        "de": "Circo Mundial Mariani möchte zur Weihnachtszeit neben Pier 8 einen Vergnügungspark und Zirkus errichten",
+        "pl": "Circo Mundial Mariani chce zainstalować park rozrywki i cyrk obok Pier 8 w okresie świąt Bożego Narodzenia",
+        "uk": "Circo Mundial Mariani хоче встановити парк розваг і цирк біля пірсу 8 на Різдво",
+        "ru": "Circo Mundial Mariani хочет построить парк развлечений и цирк рядом с пирсом 8 на Рождество"
+      },
+      "snippets": {
+        "en": "According to the notice, the company proposes to pay APRAM 81 thousand euros, plus VAT at the legal rate in force. Circo Mundial Mariani, Lda. intends to install and operate an amusement park and circus on a plot of public domain adjacent to Pier 8 of the Port of Funchal, between November 13",
+        "de": "Der Mitteilung zufolge schlägt das Unternehmen vor, APRAM 81.000 Euro zuzüglich Mehrwertsteuer in der geltenden gesetzlichen Höhe zu zahlen. Circo Mundial Mariani, Lda. beabsichtigt, zwischen dem 13. November und dem 13. November einen Vergnügungspark und Zirkus auf einem öffentlichen Grundstück neben Pier 8 des Hafens von Funchal zu errichten und zu betreiben",
+        "pl": "Z zawiadomienia wynika, że spółka proponuje zapłacić APRAM 81 tys. euro plus podatek VAT według obowiązującej stawki. Circo Mundial Mariani, Łda. zamierza zainstalować i prowadzić park rozrywki i cyrk na działce należącej do domeny publicznej przylegającej do molo 8 w porcie Funchal w okresie od 13 listopada",
+        "uk": "Згідно з повідомленням, компанія пропонує сплатити APRAM 81 тисячу євро плюс ПДВ за чинною ставкою. Circo Mundial Mariani, Lda. має намір встановити та експлуатувати парк розваг і цирк на ділянці загального користування, що прилягає до пірсу 8 порту Фуншал, між 13 листопада",
+        "ru": "Согласно уведомлению, компания предлагает выплатить APRAM 81 тысячу евро плюс НДС по действующей законодательной ставке. Цирко Мундиаль Мариани, Lda. намерен построить и эксплуатировать парк развлечений и цирк на участке общественного достояния, прилегающем к пирсу 8 порта Фуншал, в период с 13 ноября."
+      }
+    },
+    {
+      "title": "Intervenção urgente obriga a corte no abastecimento de água em Santa Maria Maior",
+      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002924/intervencao-urgente-obriga-a-corte-no-abastecimento-de-agua-em-santa-maria-maior.html",
+      "date": "2026-08-04",
+      "snippet": "A intervenção está relacionada com trabalhos considerados urgentes no reservatório da Quinta do Faial. A Câmara Municipal do Funchal informou que será interrompido o fornecimento de água em vários arruamentos da freguesia de Santa Maria Maior durante o dia de amanhã, quarta-feira, 5 de agosto",
+      "source": "JM Madeira",
+      "lang": "PT",
+      "cat": "geral",
+      "titles": {
+        "en": "Urgent intervention forces water supply to be cut in Santa Maria Maior",
+        "de": "Eine dringende Intervention erzwingt die Unterbrechung der Wasserversorgung in Santa Maria Maior",
+        "pl": "Pilna interwencja wymusza odcięcie dostaw wody w Santa Maria Maior",
+        "uk": "Невідкладне втручання змушує припинити водопостачання в Санта-Марія-Майор",
+        "ru": "Срочное вмешательство привело к отключению водоснабжения в Санта-Мария-Майор"
+      },
+      "snippets": {
+        "en": "The intervention is related to work considered urgent in the Quinta do Faial reservoir. The Funchal City Council informed that the water supply will be interrupted in several streets in the parish of Santa Maria Maior tomorrow, Wednesday, August 5th.",
+        "de": "Der Eingriff steht im Zusammenhang mit als dringend erachteten Arbeiten am Stausee Quinta do Faial. Der Stadtrat von Funchal teilte mit, dass morgen, Mittwoch, 5. August, die Wasserversorgung in mehreren Straßen in der Gemeinde Santa Maria Maior unterbrochen wird.",
+        "pl": "Interwencja ma związek z pracami uznawanymi za pilne na zbiorniku Quinta do Faial. Rada Miasta Funchal poinformowała, że jutro, w środę, 5 sierpnia, na kilku ulicach parafii Santa Maria Maior nastąpi przerwa w dostawie wody.",
+        "uk": "Втручання пов’язане з роботами, які вважаються невідкладними у водосховищі Quinta do Faial. Міська рада Фуншалу повідомила, що водопостачання буде припинено на кількох вулицях парафії Санта-Марія-Майор завтра, у середу, 5 серпня.",
+        "ru": "Вмешательство связано с работами, которые считаются неотложными на водохранилище Кинта-ду-Файал. Городской совет Фуншала сообщил, что завтра, в среду, 5 августа, на нескольких улицах в приходе Санта-Мария-Майор будет прекращено водоснабжение."
+      }
+    },
+    {
+      "title": "Forum Madeira abre inscrições para 4.º edição da Corrida Vertical 'Run UP 158'",
+      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002920/forum-madeira-abre-inscricoes-para-4-edicao-da-corrida-vertical-run-up-158.html",
+      "date": "2026-08-04",
+      "snippet": "As vagas estão abertas a partir de hoje e encerram a 18 de agosto. A mítica prova de corrida vertical decorre no próximo dia 5 de setembro de 2026. O Forum Madeira anunciou a abertura oficial das inscrições para a 4.ª edição da Run Up 158. Esta competição desafia os participantes a conquistar",
+      "source": "JM Madeira",
+      "lang": "PT",
+      "cat": "trail",
+      "titles": {
+        "en": "Forum Madeira opens registrations for the 4th edition of the Vertical Race 'Run UP 158'",
+        "de": "Forum Madeira eröffnet Anmeldungen für die 4. Auflage des Vertical Race „Run UP 158“",
+        "pl": "Forum Madeira otwiera zapisy na 4. edycję Wyścigu Pionowego „Run UP 158”",
+        "uk": "Forum Madeira відкриває реєстрацію на 4-й випуск вертикального забігу «Run UP 158»",
+        "ru": "Forum Madeira открывает регистрацию на 4-й вертикальный забег Run UP 158."
+      },
+      "snippets": {
+        "en": "Vacancies are open from today and close on August 18th. The mythical vertical running event takes place on September 5, 2026. Forum Madeira announced the official opening of registrations for the 4th edition of Run Up 158. This competition challenges participants to achieve",
+        "de": "Die offenen Stellen sind ab heute geöffnet und schließen am 18. August. Das mythische vertikale Laufereignis findet am 5. September 2026 statt. Das Forum Madeira gab die offizielle Eröffnung der Anmeldungen für die 4. Ausgabe von Run Up 158 bekannt. Dieser Wettbewerb fordert die Teilnehmer heraus, Höchstleistungen zu erbringen",
+        "pl": "Nabór trwa od dzisiaj i kończy się 18 sierpnia. Mityczna impreza biegowa w pionie odbędzie się 5 września 2026 roku. Forum Madeira ogłosiło oficjalne otwarcie zapisów na 4. edycję Run Up 158. Konkurs ten stawia przed uczestnikami wyzwanie osiągnięcia",
+        "uk": "Вакансії відкриті сьогодні та закриються 18 серпня. Міфічний захід з вертикального бігу відбудеться 5 вересня 2026 року. Forum Madeira оголосив про офіційне відкриття реєстрації на 4-е видання Run Up 158. Це змагання кидає виклик учасникам",
+        "ru": "Вакансии открыты с сегодняшнего дня и закрываются 18 августа. Мифическое соревнование по бегу по вертикали состоится 5 сентября 2026 года. Forum Madeira объявил об официальном открытии регистрации на 4-е издание Run Up 158. Это соревнование ставит перед участниками задачу достичь"
       }
     },
     {
@@ -92,6 +529,121 @@
         "pl": "Rodrigo Atouguia, zawodnik futsalu, trafia dziś na pierwsze strony gazet w JM Desporto. Młody Maderyanin przeżywa teraz „spełnienie swoich marzeń”, awansując do mistrzostw Włoch. Przeczytaj wywiad ze sportowcem w tym wydaniu. W Leirii Madera zdobywa złoto i brąz. Jest to najważniejszy punkt niezwykłego występu",
         "uk": "Родріго Атугія, футзаліст, сьогодні потрапляє в заголовки новин на JM Desporto. Молодий Мадейран живе «здійсненною мрією» тепер, коли він робить стрибок до чемпіонату Італії. Інтерв'ю зі спортсменом читайте у цьому випуску. У Лейрії Мадейран виграє золото та бронзу. Це родзинка видатної вистави",
         "ru": "Родриго Атугия, футзальный игрок, сегодня попал в заголовки газет JM Desporto. Молодой мадейранец живет «мечтой, сбывшейся» теперь, когда он делает прыжок на чемпионат Италии. Интервью со спортсменом читайте в этом выпуске. В Лейрии Мадейран выигрывает золото и бронзу. Это изюминка замечательного выступления"
+      }
+    },
+    {
+      "title": "Turista em estado grave após queda em vereda",
+      "link": "https://www.jm-madeira.pt/not%C3%ADcias/ocorr-ncias/30002933/turista-em-estado-grave-apos-queda-em-vereda.html",
+      "date": "2026-08-04",
+      "snippet": "Uma pessoa ficou ferida com gravidade, esta terça-feira, depois de ter sofrido uma queda numa levada, no concelho de Santa Cruz. As informações ainda são escassas e não são conhecidos pormenores sobre a vítima nem sobre o seu estado de saúde em concreto, mas segundo as informações recolhidas pelo Jo",
+      "source": "JM Madeira",
+      "lang": "PT",
+      "cat": "ocorrências",
+      "titles": {
+        "en": "Tourist in serious condition after falling on a path",
+        "de": "Tourist in ernstem Zustand, nachdem er auf einen Weg gestürzt ist",
+        "pl": "Turysta w ciężkim stanie po upadku na ścieżce",
+        "uk": "Турист у важкому стані після падіння на стежці",
+        "ru": "Турист в тяжелом состоянии после падения на тропе"
+      },
+      "snippets": {
+        "en": "One person was seriously injured this Tuesday after falling into a levada in the municipality of Santa Cruz. Information is still scarce and no details are known about the victim or his specific state of health, but according to the information collected by Jo",
+        "de": "Eine Person wurde an diesem Dienstag schwer verletzt, nachdem sie in der Gemeinde Santa Cruz in eine Levada gestürzt war. Es liegen noch immer nur wenige Informationen vor und es sind keine Einzelheiten über das Opfer oder seinen konkreten Gesundheitszustand bekannt, aber nach den von Jo gesammelten Informationen",
+        "pl": "We wtorek jedna osoba została poważnie ranna po wpadnięciu do lewady w gminie Santa Cruz. Informacje są nadal skąpe i nie są znane żadne szczegóły dotyczące ofiary ani jej konkretnego stanu zdrowia, ale z informacji zebranych przez Jo",
+        "uk": "Одна людина отримала серйозні травми цього вівторка після падіння на леваду в муніципалітеті Санта-Крус. Інформації все ще мало, і невідомо жодних подробиць про жертву чи його конкретний стан здоров’я, але згідно з інформацією, зібраною Джо",
+        "ru": "Один человек серьезно пострадал во вторник, упав в леваду в муниципалитете Санта-Крус. Информации по-прежнему недостаточно, и никаких подробностей о жертве или конкретном состоянии его здоровья неизвестно, но согласно информации, собранной Джо"
+      }
+    },
+    {
+      "title": "Despiste condiciona circulação de autocarros no Ribeiro Frio",
+      "link": "https://www.jm-madeira.pt/not%C3%ADcias/ocorr-ncias/30002928/despiste-condiciona-circulacao-de-autocarros-no-ribeiro-frio.html",
+      "date": "2026-08-04",
+      "snippet": "Os autocarros encontram-se retidos há cerca de uma hora, sem possibilidade de prosseguir viagem. Um despiste de uma viatura ligeira ocorrido hoje na zona do Ribeiro Frio está a provocar constrangimentos na circulação rodoviária, sobretudo ao nível do transporte público. Segundo apurou o JM, a",
+      "source": "JM Madeira",
+      "lang": "PT",
+      "cat": "ocorrências",
+      "titles": {
+        "en": "Mistake affects bus circulation in Ribeiro Frio",
+        "de": "Fehler beeinträchtigt den Busverkehr in Ribeiro Frio",
+        "pl": "Błąd wpływa na ruch autobusowy w Ribeiro Frio",
+        "uk": "Помилка впливає на рух автобусів у Рібейру-Фріу",
+        "ru": "Ошибка повлияла на движение автобусов в Рибейру-Фриу"
+      },
+      "snippets": {
+        "en": "The buses have been detained for around an hour, with no possibility of continuing their journey. A crash of a light vehicle that occurred today in the Ribeiro Frio area is causing constraints on road traffic, especially in terms of public transport. According to JM, the",
+        "de": "Die Busse wurden rund eine Stunde lang festgehalten und hatten keine Möglichkeit, ihre Fahrt fortzusetzen. Ein Unfall eines Kleintransporters, der sich heute in der Gegend von Ribeiro Frio ereignete, führt zu Einschränkungen im Straßenverkehr, insbesondere im öffentlichen Verkehr. Laut JM ist das",
+        "pl": "Autobusy zostały zatrzymane na około godzinę, bez możliwości kontynuowania podróży. Wypadek lekkiego pojazdu, do którego doszło dzisiaj w rejonie Ribeiro Frio, powoduje utrudnienia w ruchu drogowym, zwłaszcza w zakresie transportu publicznego. Zdaniem JM",
+        "uk": "Автобуси затримали близько години, не маючи можливості продовжити рух. Аварія легкового транспортного засобу, яка сталася сьогодні в районі Рібейру-Фріо, спричиняє обмеження на дорожній рух, особливо з точки зору громадського транспорту. За словами JM,",
+        "ru": "Автобусы задержаны около часа без возможности продолжить путь. Авария легкового автомобиля, произошедшая сегодня в районе Рибейру-Фрио, создает ограничения для дорожного движения, особенно в плане общественного транспорта. По мнению ДжМ,"
+      }
+    },
+    {
+      "title": "Vítima mortal de acidente na via-rápida já foi atleta no Juventude de Gaula e no Santacruzense",
+      "link": "https://www.jm-madeira.pt/not%C3%ADcias/ocorr-ncias/30002923/vitima-mortal-de-acidente-na-via-rapida-ja-foi-atleta-no-juventude-de-gaula-e-no-santacruzense.html",
+      "date": "2026-08-04",
+      "snippet": "A vítima mortal do trágico acidente ocorrido ontem na via-rápida, no sentido Machico-Funchal, era futebolista, tendo passado pelo CS Juventude de Gaula e pelo CS Santacruzense, mantendo-se desde muito cedo ligado ao futebol. Nas redes sociais, as referidas entidades e várias pessoas estão a deixar m",
+      "source": "JM Madeira",
+      "lang": "PT",
+      "cat": "ocorrências",
+      "titles": {
+        "en": "Deadly victim of highway accident was once an athlete at Juventude de Gaula and Santacruzense",
+        "de": "Tödliches Opfer eines Autobahnunfalls war einst ein Sportler bei Juventude de Gaula und Santacruzense",
+        "pl": "Śmiertelną ofiarą wypadku drogowego był kiedyś sportowiec w Juventude de Gaula i Santacruzense",
+        "uk": "Смертельна жертва аварії на шосе колись був спортсменом у Хувентуде де Гаула та Сантакрузенсе",
+        "ru": "Смертельной жертвой дорожно-транспортного происшествия когда-то стал спортсмен в Хувентуде де Гаула и Сантакрузенсе."
+      },
+      "snippets": {
+        "en": "The fatal victim of the tragic accident that occurred yesterday on the expressway, towards Machico-Funchal, was a footballer, having played for CS Juventude de Gaula and CS Santacruzense, remaining linked to football from an early age. On social media, the aforementioned entities and several people are leaving m",
+        "de": "Das tödliche Opfer des tragischen Unfalls, der sich gestern auf der Schnellstraße in Richtung Machico-Funchal ereignete, war ein Fußballspieler, der für CS Juventude de Gaula und CS Santacruzense gespielt hatte und dem Fußball schon in jungen Jahren verbunden blieb. In den sozialen Medien hinterlassen die oben genannten Unternehmen und mehrere Personen m",
+        "pl": "Śmiertelną ofiarą tragicznego wypadku, który wydarzył się wczoraj na autostradzie w kierunku Machico-Funchal, był piłkarz, grający w CS Juventude de Gaula i CS Santacruzense, od najmłodszych lat związany z piłką nożną. W mediach społecznościowych wspomniane podmioty i kilka osób odchodzą m.in",
+        "uk": "Смертельна жертва трагічної аварії, яка сталася вчора на швидкісній дорозі в напрямку Машіку-Фуншала, був футболістом, який грав за «Хувентуде де Гаула» та «Сантакрузенсе», залишаючись пов’язаним з футболом з раннього дитинства. У соцмережах вищезазначені організації та декілька осіб залишають м",
+        "ru": "Смертельной жертвой трагического происшествия, произошедшего вчера на скоростной автомагистрали в направлении Машику-Фуншал, стал футболист, выступавший за команды «Ювентуде де Гаула» и «Сантакрузенсе» и с раннего возраста связанный с футболом. В социальных сетях вышеупомянутые лица и несколько человек покидают дом."
+      }
+    },
+    {
+      "title": "Veja como a Polícia Judiciária queimou 7 toneladas de droga",
+      "link": "https://www.jm-madeira.pt/not%C3%ADcias/ocorr-ncias/30002921/veja-como-a-policia-judiciaria-queimou-7-toneladas-de-droga.html",
+      "date": "2026-08-04",
+      "snippet": "A operação “Queima da Droga”, decorreu na Estação de Tratamento de Resíduos Sólidos da Meia Serra . A Polícia Judiciária (PJ) recordou, nas suas redes sociais, uma das maiores operações de destruição de produtos ilícitos realizadas na Região Autónoma da Madeira, que culminou com a incineração",
+      "source": "JM Madeira",
+      "lang": "PT",
+      "cat": "ocorrências",
+      "titles": {
+        "en": "See how the Judiciary Police burned 7 tons of drugs",
+        "de": "Sehen Sie, wie die Justizpolizei 7 Tonnen Drogen verbrannte",
+        "pl": "Zobacz, jak Policja Sądownicza spaliła 7 ton narkotyków",
+        "uk": "Дивіться, як судова міліція спалила 7 тонн наркотиків",
+        "ru": "Посмотрите, как судебная полиция сожгла 7 тонн наркотиков"
+      },
+      "snippets": {
+        "en": "The “Queima da Droga” operation took place at the Meia Serra Solid Waste Treatment Station. The Judiciary Police (PJ) recalled, on its social networks, one of the largest operations to destroy illicit products carried out in the Autonomous Region of Madeira, which culminated in incineration",
+        "de": "Die Aktion „Queima da Droga“ fand in der Abfallbehandlungsstation Meia Serra statt. Die Kriminalpolizei (PJ) erinnerte in ihren sozialen Netzwerken an eine der größten Operationen zur Vernichtung illegaler Produkte in der Autonomen Region Madeira, die in der Verbrennung gipfelte",
+        "pl": "Akcja „Queima da Droga” odbyła się na Stacji Utylizacji Odpadów Stałych Meia Serra. Policja Sądownicza (PJ) przypomniała w swoich sieciach społecznościowych jedną z największych operacji niszczenia nielegalnych produktów przeprowadzoną w Autonomicznym Regionie Madery, której kulminacją było spalenie",
+        "uk": "Операція «Queima da Droga» відбулася на станції переробки твердих відходів Meia Serra. Судова поліція (PJ) нагадала у своїх соціальних мережах про одну з найбільших операцій зі знищення заборонених продуктів, проведену в автономному регіоні Мадейра, яка завершилася спаленням",
+        "ru": "Операция «Кейма-да-Дрога» прошла на станции переработки твердых отходов Мейя-Серра. Судебная полиция (ПС) напомнила в своих социальных сетях об одной из крупнейших операций по уничтожению нелегальной продукции, проведенной в автономном регионе Мадейра, кульминацией которой стало сжигание"
+      }
+    },
+    {
+      "title": "Homem suspeito de esfaquear mulher já deu entrada no tribunal",
+      "link": "https://www.jm-madeira.pt/not%C3%ADcias/ocorr-ncias/30002917/homem-suspeito-de-esfaquear-mulher-ja-deu-entrada-no-tribunal.html",
+      "date": "2026-08-04",
+      "snippet": "A vítima, uma mulher de 28 anos, recebeu tratamento hospitalar, tendo já tido alta após assistência médica. O homem suspeito de ter esfaqueado uma mulher, na tarde de domingo, na Fundoa, deu entrada esta manhã no tribunal, para continuar o interrogatório judicial para aplicação das medidas de",
+      "source": "JM Madeira",
+      "lang": "PT",
+      "cat": "ocorrências",
+      "titles": {
+        "en": "Man suspected of stabbing woman has appeared in court",
+        "de": "Mann, der verdächtigt wird, Frau erstochen zu haben, ist vor Gericht erschienen",
+        "pl": "Przed sądem stanął mężczyzna podejrzany o zadźganie kobiety",
+        "uk": "Підозрюваний у ножовому пораненні жінки постав перед судом",
+        "ru": "Мужчина, подозреваемый в нанесении ножевых ранений женщине, предстал перед судом"
+      },
+      "snippets": {
+        "en": "The victim, a 28-year-old woman, received hospital treatment and was discharged after medical assistance. The man suspected of having stabbed a woman, on Sunday afternoon, in Fundoa, was admitted to court this morning, to continue his judicial interrogation for the application of security measures.",
+        "de": "Das Opfer, eine 28-jährige Frau, wurde im Krankenhaus behandelt und nach ärztlicher Hilfe entlassen. Der Mann, der verdächtigt wird, am Sonntagnachmittag in Fundoa eine Frau erstochen zu haben, wurde heute Morgen vor Gericht eingeliefert, um sein gerichtliches Verhör wegen der Anwendung von Sicherheitsmaßnahmen fortzusetzen.",
+        "pl": "Ofiara, 28-letnia kobieta, została hospitalizowana i po udzieleniu pomocy medycznej została wypisana do domu. Mężczyzna podejrzany o dźgnięcie kobiety w niedzielne popołudnie w Fundoa został dziś rano dopuszczony do sądu w celu kontynuowania przesłuchania sądowego w celu zastosowania środków bezpieczeństwa.",
+        "uk": "Потерпілій, 28-річній жінці, надали медичну допомогу та після надання медичної допомоги її виписали. Чоловік, підозрюваний у нанесенні ножового поранення жінці в неділю вдень у Фундоа, був допущений до суду сьогодні вранці для продовження судового допиту для застосування заходів безпеки.",
+        "ru": "Пострадавшая, 28-летняя женщина, была госпитализирована и после оказания медицинской помощи выписана. Мужчина, подозреваемый в нанесении ножевого ранения женщине в воскресенье днем ​​в Фундоа, сегодня утром был доставлен в суд для продолжения судебного допроса на предмет применения мер безопасности."
       }
     },
     {
@@ -138,305 +690,6 @@
         "pl": "Przegląd kobiet Sierre-Zinal po 2026 r. pojawił się jako pierwszy w iRunFar. Dogłębna zapowiedź wyścigu kobiet Sierre-Zinal 2026, który odbędzie się w Alpach Walijskich w Szwajcarii w sobotę, 8 sierpnia. Zapowiedź kobiet Sierre-Zinal 2026 autorstwa Justina Mocka.",
         "uk": "Допис 2026 Sierre-Zinal Women’s Preview вперше з’явився на iRunFar. Поглиблений попередній перегляд жіночої гонки Сьєрре-Зіналь 2026 року, яка відбулася в Альпах Вале у Швейцарії в суботу, 8 серпня. Попередній перегляд жіночої гонки Сьєрре-Зіналь 2026 року Джастін Мок.",
         "ru": "Предварительный обзор женской модели Sierre-Zinal 2026 года впервые появился на iRunFar. Подробный обзор женской гонки Сьерре-Зиналь 2026 года, которая пройдет в швейцарских Альпах Вале в субботу, 8 августа. Предварительный обзор женской гонки Сьерре-Зиналь 2026 года, автор Джастин Мок."
-      }
-    },
-    {
-      "title": "This Week In Running: August 3, 2026",
-      "link": "https://www.irunfar.com/this-week-in-running-august-3-2026",
-      "date": "2026-08-03",
-      "snippet": "The post This Week In Running: August 3, 2026 appeared first on iRunFar. This Week in Running’s trail and ultra recap for August 3, 2026. This Week In Running: August 3, 2026 by Justin Mock.",
-      "source": "iRunFar",
-      "lang": "EN",
-      "cat": "trail",
-      "titles": {
-        "pt": "Esta semana em execução: 3 de agosto de 2026",
-        "de": "Diese Woche im Rennen: 3. August 2026",
-        "pl": "Bieganie w tym tygodniu: 3 sierpnia 2026 r",
-        "uk": "Цей тиждень триває: 3 серпня 2026 р",
-        "ru": "На этой неделе: 3 августа 2026 г."
-      },
-      "snippets": {
-        "pt": "A postagem Esta semana em corrida: 3 de agosto de 2026 apareceu pela primeira vez em iRunFar. Trilha e ultra recapitulação desta semana em corrida para 3 de agosto de 2026. Esta semana em corrida: 3 de agosto de 2026 por Justin Mock.",
-        "de": "Der Beitrag Diese Woche im Laufen: 3. August 2026 erschien zuerst auf iRunFar. Trail- und Ultra-Zusammenfassung von This Week in Running für den 3. August 2026. This Week In Running: 3. August 2026 von Justin Mock.",
-        "pl": "Wpis W tym tygodniu w biegu: 3 sierpnia 2026 r. pojawił się jako pierwszy w iRunFar. Podsumowanie tygodnia w bieganiu w terenie i ultra z 3 sierpnia 2026 r. Bieżący tydzień w bieganiu: 3 sierpnia 2026 r., autor: Justin Mock.",
-        "uk": "Публікація Цей тиждень у бігу: 3 серпня 2026 року вперше з’явилася на iRunFar. Цей тиждень у бігу та ультрарезюмація за 3 серпня 2026 р. This Week in Running: 3 серпня 2026 р. Джастін Мок.",
-        "ru": "Сообщение «На этой неделе в беге: 3 августа 2026 г.» впервые появилось на iRunFar. След и ультра-результат «Эта неделя в беге» за 3 августа 2026 г. «Эта неделя в беге: 3 августа 2026 г.», Джастин Мок."
-      }
-    },
-    {
-      "title": "Vigário geral defende que títulos na igreja \"são uma responsabilidade\"",
-      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002894/vigario-geral-lembra-que-titulos-na-igreja-sao-uma-responsabilidade.html",
-      "date": "2026-08-03",
-      "snippet": "O cónego Marcos Gonçalves veio hoje a público defender que os títulos na Diocese do Funchal \"não são um privilégio, nem uma vaidade\", antes \"são uma responsabilidade\". O cónego Marcos Gonçalves recorreu hoje à página oficial da Diocese do Funchal para esclarecer os fiéis acerca dos títulos na",
-      "source": "JM Madeira",
-      "lang": "PT",
-      "cat": "geral",
-      "titles": {
-        "en": "Vicar general defends that titles in the church “are a responsibility”",
-        "de": "Generalvikar verteidigt, dass Titel in der Kirche „eine Verantwortung sind“",
-        "pl": "Wikariusz generalny broni, że tytuły w kościele „są obowiązkiem”",
-        "uk": "Генеральний вікарій захищає, що титули в церкві «це відповідальність»",
-        "ru": "Генеральный викарий утверждает, что титулы в церкви «являются ответственностью»"
-      },
-      "snippets": {
-        "en": "Canon Marcos Gonçalves came out today to defend that titles in the Diocese of Funchal \"are not a privilege, nor a vanity\", rather \"they are a responsibility\". Canon Marcos Gonçalves turned to the official page of the Diocese of Funchal today to clarify the faithful about the titles in the",
-        "de": "Kanoniker Marcos Gonçalves verteidigte heute, dass Titel in der Diözese Funchal „kein Privileg und keine Eitelkeit“ seien, sondern „eine Verantwortung“. Kanoniker Marcos Gonçalves wandte sich heute an die offizielle Seite der Diözese Funchal, um die Gläubigen über die Titel in der Diözese Funchal zu informieren",
-        "pl": "Kanonik Marcos Gonçalves wystąpił dziś, aby bronić faktu, że tytuły w diecezji Funchal „nie są przywilejem ani próżnością”, a raczej „są obowiązkiem”. Kanonik Marcos Gonçalves odwiedził dziś oficjalną stronę diecezji Funchal, aby wyjaśnić wiernym informacje na temat tytułów znajdujących się w",
-        "uk": "Канонік Маркос Гонсалвес виступив сьогодні, щоб захистити те, що титули в єпархії Фуншала «не є привілеєм і не марнославством», скоріше «це відповідальність». Канонік Маркос Гонсалвес сьогодні звернувся до офіційної сторінки єпархії Фуншал, щоб роз’яснити вірним щодо титулів у",
-        "ru": "Каноник Маркос Гонсалвес сегодня выступил в защиту того, что титулы в Фуншалской епархии «не являются ни привилегией, ни тщеславием», а скорее «это ответственность». Каноник Маркос Гонсалвес обратился сегодня к официальной странице Фуншалской епархии, чтобы разъяснить верующим титулы в"
-      }
-    },
-    {
-      "title": "Madeirina: Simpósio debateu importância da investigação colaborativa na identificação da diversidade em ilhas oceânicas",
-      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002893/madeirina-simposio-debateu-importancia-da-investigacao-colaborativa-na-identificacao-da-diversidade-em-ilhas-oceanicas.html",
-      "date": "2026-08-03",
-      "snippet": "O Grupo de Botânica da Madeira (GBM), promoveu esta tarde, na reitoria do Colégio dos Jesuítas, o simpósio “Laboratórios naturais para a evolução: a importância da investigação colaborativa na identificação da diversidade em ilhas oceânicas”. O simpósio contou, para além dos vários presentes no even",
-      "source": "JM Madeira",
-      "lang": "PT",
-      "cat": "geral",
-      "titles": {
-        "en": "Madeira: Symposium debated the importance of collaborative research in identifying diversity on oceanic islands",
-        "de": "Madeira: Auf dem Symposium wurde die Bedeutung gemeinsamer Forschung bei der Identifizierung der Vielfalt auf ozeanischen Inseln erörtert",
-        "pl": "Madera: Podczas sympozjum debatowano nad znaczeniem wspólnych badań w identyfikowaniu różnorodności na wyspach oceanicznych",
-        "uk": "Мадейра: симпозіум обговорював важливість спільних досліджень у виявленні різноманітності на океанічних островах",
-        "ru": "Мадейра: на симпозиуме обсуждалась важность совместных исследований в выявлении разнообразия на океанических островах"
-      },
-      "snippets": {
-        "en": "The Madeira Botany Group (GBM) promoted this afternoon, at the rectory of the Colégio dos Jesuítas, the symposium “Natural laboratories for evolution: the importance of collaborative research in identifying diversity on oceanic islands”. The symposium featured, in addition to the many present at the event,",
-        "de": "Die Madeira Botany Group (GBM) veranstaltete heute Nachmittag im Pfarrhaus des Colégio dos Jesuítas das Symposium „Natürliche Laboratorien für die Evolution: Die Bedeutung gemeinsamer Forschung bei der Identifizierung der Vielfalt auf ozeanischen Inseln“. Das Symposium umfasste neben den zahlreichen Anwesenden auch",
-        "pl": "Grupa Botaniki Madery (GBM) zorganizowała dziś po południu na plebanii Colégio dos Jesuítas sympozjum „Naturalne laboratoria ewolucji: znaczenie wspólnych badań w identyfikacji różnorodności na wyspach oceanicznych”. W sympozjum, oprócz wielu obecnych na wydarzeniu, wzięli udział m.in.",
-        "uk": "Ботанічна група Мадейри (GBM) організувала сьогодні вдень у ректораті Colégio dos Jesuítas симпозіум «Природні лабораторії для еволюції: важливість спільних досліджень у виявленні різноманітності на океанічних островах». На симпозіумі, окрім багатьох присутніх на заході, були присутні:",
-        "ru": "Группа ботаники Мадейры (GBM) провела сегодня днем ​​в ректорате Colégio dos Jesuítas симпозиум «Естественные лаборатории эволюции: важность совместных исследований в выявлении разнообразия на океанических островах». На симпозиуме, помимо многих присутствующих на мероприятии, присутствовали:"
-      }
-    },
-    {
-      "title": "JM lança sondagem sobre edição do Rali da Madeira",
-      "link": "https://www.jm-madeira.pt/not%C3%ADcias/in-cio/30002890/jm-lanca-sondagem-sobre-edicao-do-rali-da-madeira.html",
-      "date": "2026-08-03",
-      "snippet": "A pesquisa está a realizar-se online. Depois de mais uma edição do Rali da Madeira, o JM lança um inquérito para perceber como os nossos leitores se relacionaram com a prova rainha do automobilismo madeirense. Para o efeito, o JM lançou um inquérito online com a pergunta “O que achou da ediçã",
-      "source": "JM Madeira",
-      "lang": "PT",
-      "cat": "geral",
-      "titles": {
-        "en": "JM launches survey on edition of the Madeira Rally",
-        "de": "JM startet Umfrage zur Ausgabe der Madeira-Rallye",
-        "pl": "JM rozpoczyna ankietę dotyczącą edycji Rajdu Madery",
-        "uk": "JM запускає опитування про видання Madeira Rally",
-        "ru": "JM запускает опрос о ралли Мадейра"
-      },
-      "snippets": {
-        "en": "The research is taking place online. After another edition of the Madeira Rally, JM launches a survey to understand how our readers related to the crowning event of Madeiran motorsport. To this end, JM launched an online survey with the question “What did you think of the edition",
-        "de": "Die Recherche findet online statt. Nach einer weiteren Ausgabe der Madeira-Rallye startet JM eine Umfrage, um zu verstehen, wie unsere Leser zum krönenden Ereignis des Madeira-Motorsports stehen. Zu diesem Zweck startete JM eine Online-Umfrage mit der Frage „Was halten Sie von der Ausgabe?“",
-        "pl": "Badanie odbywa się online. Po kolejnej edycji Rajdu Madery JM rozpoczyna ankietę, aby dowiedzieć się, jak nasi czytelnicy odnieśli się do najważniejszego wydarzenia sportów motorowych na Maderze. W tym celu JM uruchomił ankietę internetową z pytaniem „Co sądzisz o wydaniu",
-        "uk": "Дослідження проходить онлайн. Після чергового випуску ралі Мадейри JM запускає опитування, щоб зрозуміти, як наші читачі ставляться до коронної події автоспорту на Мадейрі. З цією метою JM запустив онлайн-опитування із запитанням «Що ви думаєте про видання",
-        "ru": "Исследование проходит онлайн. После очередного ралли Мадейры JM запускает опрос, чтобы понять, как наши читатели относятся к главному событию автоспорта Мадейры. С этой целью JM запустил онлайн-опрос с вопросом «Что вы думаете об издании"
-      }
-    },
-    {
-      "title": "Posição da Ordem dos Arquitetos gera nova crítica",
-      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002888/posicao-da-ordem-dos-arquitetos-gera-nova-critica.html",
-      "date": "2026-08-03",
-      "snippet": "O partido Nova Democracia acaba de emitir um duro comunicado visando a Ordem dos Arquitetos na Madeira. A nota refere-se à Secção Regional da Ordem como “repartição pública regional” e procura atacar “os filhotes” de Pôncio Pilatos. Ao longo de uma dezena de pontos, o partido mostra-se conta a atitu",
-      "source": "JM Madeira",
-      "lang": "PT",
-      "cat": "geral",
-      "titles": {
-        "en": "Position of the Order of Architects generates new criticism",
-        "de": "Position des Architektenordens sorgt für neue Kritik",
-        "pl": "Stanowisko Zakonu Architektów generuje nową krytykę",
-        "uk": "Позиція ордену архітекторів породжує нову критику",
-        "ru": "Позиция Ордена архитекторов порождает новую критику"
-      },
-      "snippets": {
-        "en": "The New Democracy party has just issued a harsh statement targeting the Order of Architects in Madeira. The note refers to the Regional Section of the Order as a “regional public office” and seeks to attack “the puppies” of Pontius Pilate. Over a dozen points, the party shows its attitude",
-        "de": "Die Partei Neue Demokratie hat gerade eine scharfe Erklärung gegen den Architektenorden auf Madeira abgegeben. In der Notiz wird die Regionalabteilung des Ordens als „regionales öffentliches Amt“ bezeichnet und versucht, „die Welpen“ von Pontius Pilatus anzugreifen. Über ein Dutzend Punkte zeigt die Partei ihre Haltung",
-        "pl": "Partia Nowa Demokracja wydała właśnie ostre oświadczenie skierowane przeciwko Zakonowi Architektów na Maderze. Notatka określa Sekcję Regionalną Zakonu jako „regionalny urząd publiczny” i ma na celu atak na „szczeniaki” Poncjusza Piłata. W kilkunastu punktach partia pokazuje swoją postawę",
-        "uk": "Партія «Нова демократія» щойно виступила з різкою заявою проти Ордену архітекторів на Мадейрі. У записці Регіональний відділ Ордену називається «регіональним державним офісом» і намагається атакувати «цуценят» Понтія Пілата. Понад десяток пунктів партія демонструє своє ставлення",
-        "ru": "Партия «Новая демократия» только что выступила с резким заявлением, направленным против Ордена архитекторов на Мадейре. В записке Региональное отделение Ордена упоминается как «региональное государственное учреждение» и направлено на нападки на «щенков» Понтия Пилата. Более десятка пунктов партия показывает свою позицию"
-      }
-    },
-    {
-      "title": "Sesaram desativa Linha de Apoio à Criança",
-      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002885/sesaram-desativa-linha-de-apoio-a-crianca.html",
-      "date": "2026-08-03",
-      "snippet": "O Serviço de Saúde da Região Autónoma da Madeira (SESARAM, EPERAM) anunciou, esta tarde, que irá proceder a um reajustamento no serviço de apoio telefónico na área da Pediatria. O Serviço de Saúde da Região Autónoma da Madeira (SESARAM, EPERAM) anunciou esta tarde, que irá proceder a um reaju",
-      "source": "JM Madeira",
-      "lang": "PT",
-      "cat": "geral",
-      "titles": {
-        "en": "Sesaram deactivates Child Support Line",
-        "de": "Sesaram deaktiviert die Kindergeldlinie",
-        "pl": "Sesaram dezaktywuje Linię Pomocy Dzieciom",
-        "uk": "Sesaram дезактивує лінію підтримки дітей",
-        "ru": "Сесарам деактивирует линию поддержки детей"
-      },
-      "snippets": {
-        "en": "The Health Service of the Autonomous Region of Madeira (SESARAM, EPERAM) announced, this afternoon, that it will carry out a readjustment of the telephone support service in the area of Pediatrics. The Health Service of the Autonomous Region of Madeira (SESARAM, EPERAM) announced this afternoon that it will carry out a readjustment",
-        "de": "Der Gesundheitsdienst der Autonomen Region Madeira (SESARAM, EPERAM) gab heute Nachmittag bekannt, dass er eine Neuausrichtung des telefonischen Supportdienstes im Bereich der Pädiatrie vornehmen wird. Der Gesundheitsdienst der Autonomen Region Madeira (SESARAM, EPERAM) gab heute Nachmittag bekannt, dass er eine Neujustierung vornehmen wird",
-        "pl": "Służba zdrowia Regionu Autonomicznego Madery (SESARAM, EPERAM) ogłosiła dziś po południu, że przeprowadzi ponowne dostosowanie usług wsparcia telefonicznego w obszarze pediatrii. Służba zdrowia Autonomicznego Regionu Madery (SESARAM, EPERAM) ogłosiła dziś po południu, że przeprowadzi ponowne dostosowanie",
-        "uk": "Служба охорони здоров’я автономного регіону Мадейра (SESARAM, EPERAM) оголосила сьогодні вдень, що здійснить переналагодження служби телефонної підтримки в області педіатрії. Служба охорони здоров’я автономного регіону Мадейра (SESARAM, EPERAM) оголосила сьогодні вдень, що проведе реабілітацію.",
-        "ru": "Служба здравоохранения автономного региона Мадейра (SESARAM, EPERAM) объявила сегодня днем, что проведет реорганизацию службы телефонной поддержки в области педиатрии. Служба здравоохранения автономного региона Мадейра (SESARAM, EPERAM) объявила сегодня днем, что проведет корректировку"
-      }
-    },
-    {
-      "title": "Trânsito estará condicionado na VE2 entre São Vicente e o Seixal esta próxima quarta-feira",
-      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002882/transito-estara-condicionado-na-ve2-entre-sao-vicente-e-o-seixal-esta-proxima-quarta-feira.html",
-      "date": "2026-08-03",
-      "snippet": "A circulação rodoviária na VE2, entre São Vicente e o Seixal, vai estar condicionada esta próxima quarta-feira, devido à realização de trabalhos de limpeza e saneamento da encosta. A ViaExpresso informou esta tarde, em comunicado, que a intervenção ficará a cargo da equipa de rocheiros da Direção Re",
-      "source": "JM Madeira",
-      "lang": "PT",
-      "cat": "geral",
-      "titles": {
-        "en": "Traffic will be restricted on VE2 between São Vicente and Seixal this coming Wednesday",
-        "de": "Am kommenden Mittwoch wird der Verkehr auf der VE2 zwischen São Vicente und Seixal eingeschränkt",
-        "pl": "W najbliższą środę na drodze VE2 między São Vicente i Seixal zostaną wprowadzone ograniczenia ruchu",
-        "uk": "Рух буде обмежено на VE2 між São Vicente і Seixal найближчої середи",
-        "ru": "В ближайшую среду движение на VE2 между Сан-Висенте и Сейшалем будет ограничено."
-      },
-      "snippets": {
-        "en": "Road traffic on VE2, between São Vicente and Seixal, will be restricted this coming Wednesday, due to cleaning and sanitation work on the slope. ViaExpresso informed this afternoon, in a statement, that the intervention will be carried out by the team of rock workers from Direção Re",
-        "de": "Der Straßenverkehr auf der VE2 zwischen São Vicente und Seixal wird am kommenden Mittwoch aufgrund von Reinigungs- und Sanierungsarbeiten am Hang eingeschränkt. ViaExpresso teilte heute Nachmittag in einer Erklärung mit, dass der Eingriff vom Felsarbeiterteam der Direção Re durchgeführt wird",
-        "pl": "Ruch drogowy na drodze VE2, między São Vicente i Seixal, będzie w najbliższą środę ograniczony ze względu na prace porządkowe i sanitarne na stoku. ViaExpresso poinformowało dziś po południu w oświadczeniu, że interwencję przeprowadzi zespół skałarzy z Direção Re",
-        "uk": "Рух на дорозі VE2, між Сан-Вісенті та Сейшалом, буде обмежено найближчої середи через роботи з очищення та очищення схилу. ViaExpresso повідомила сьогодні вдень у своїй заяві, що втручання здійснить команда скельних робітників з Direção Re",
-        "ru": "Дорожное движение на трассе VE2 между Сан-Висенте и Сейшалем будет ограничено в ближайшую среду из-за работ по очистке и санитарной обработке склона. Сегодня днем ViaExpresso сообщило в своем заявлении, что работы будут проводиться командой горных рабочих из Direção Re."
-      }
-    },
-    {
-      "title": "Calheta entre os concelhos mais caros do país para comprar casa",
-      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002881/calheta-entre-os-concelhos-mais-caros-do-pais-para-comprar-casa.html",
-      "date": "2026-08-03",
-      "snippet": "O estudo coloca o concelho madeirense na terceira posição do ranking nacional dos mercados mais valorizados, apenas atrás de Cascais, onde o preço médio atinge 1,3 milhões de euros, e de Grândola, com 1,1 milhões de euros. A Calheta é o único concelho madeirense a integrar o grupo dos sete ma",
-      "source": "JM Madeira",
-      "lang": "PT",
-      "cat": "geral",
-      "titles": {
-        "en": "Calheta among the most expensive municipalities in the country to buy a house",
-        "de": "Calheta gehört zu den teuersten Gemeinden des Landes, um ein Haus zu kaufen",
-        "pl": "Calheta wśród najdroższych gmin w kraju na zakup domu",
-        "uk": "Кальета серед найдорожчих муніципалітетів країни для покупки будинку",
-        "ru": "Кальета среди самых дорогих муниципалитетов страны для покупки дома"
-      },
-      "snippets": {
-        "en": "The study places the Madeiran municipality in third place in the national ranking of the most valued markets, just behind Cascais, where the average price reaches 1.3 million euros, and Grândola, with 1.1 million euros. Calheta is the only municipality in Madeira to be part of the group of seven ma",
-        "de": "Die Studie platziert die Gemeinde Madeiras im nationalen Ranking der am meisten geschätzten Märkte auf dem dritten Platz, direkt hinter Cascais, wo der Durchschnittspreis 1,3 Millionen Euro erreicht, und Grândola mit 1,1 Millionen Euro. Calheta ist die einzige Gemeinde auf Madeira, die zur Gruppe der sieben Einwohner gehört",
-        "pl": "Badanie plasuje gminę Madery na trzecim miejscu w krajowym rankingu najbardziej cenionych rynków, tuż za Cascais, gdzie średnia cena sięga 1,3 mln euro, i Grândola z 1,1 mln euro. Calheta jest jedyną gminą na Maderze, która należy do grupy siedmiu gmin",
-        "uk": "Дослідження ставить муніципалітет Мадейри на третє місце в національному рейтингу найбільш цінних ринків, відразу після Кашкайша, де середня ціна досягає 1,3 мільйона євро, і Грандоли з 1,1 мільйона євро. Кальєта — єдиний муніципалітет на Мадейрі, який входить до групи семи ма",
-        "ru": "Исследование ставит муниципалитет Мадейры на третье место в национальном рейтинге самых ценных рынков, сразу после Кашкайша, где средняя цена достигает 1,3 миллиона евро, и Грандолы с 1,1 миллиона евро. Кальета — единственный муниципалитет на Мадейре, входящий в группу семи городов."
-      }
-    },
-    {
-      "title": "IVBAM reforça cooperação com os Açores",
-      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002880/ivbam-reforca-cooperacao-com-os-acores.html",
-      "date": "2026-08-03",
-      "snippet": "O presidente do Conselho Diretivo do IVBAM, Tiago Freitas, reuniu-se com o presidente do recém-criado Instituto da Vinha e do Vinho dos Açores (IVVA), Cláudio José Gomes Lopes, num encontro que permitiu estreitar relações entre as duas entidades e lançar as bases para futuras iniciativas conjuntas.",
-      "source": "JM Madeira",
-      "lang": "PT",
-      "cat": "geral",
-      "titles": {
-        "en": "IVBAM reinforces cooperation with the Azores",
-        "de": "IVBAM verstärkt die Zusammenarbeit mit den Azoren",
-        "pl": "IVBAM wzmacnia współpracę z Azorami",
-        "uk": "IVBAM посилює співпрацю з Азорськими островами",
-        "ru": "IVBAM укрепляет сотрудничество с Азорскими островами"
-      },
-      "snippets": {
-        "en": "The president of the IVBAM Board of Directors, Tiago Freitas, met with the president of the recently created Instituto da Vinha e do Vinho dos Açores (IVVA), Cláudio José Gomes Lopes, in a meeting that allowed strengthening relations between the two entities and laying the foundations for future joint initiatives.",
-        "de": "Der Präsident des IVBAM-Verwaltungsrates, Tiago Freitas, traf sich mit dem Präsidenten des kürzlich gegründeten Instituto da Vinha e do Vinho dos Açores (IVVA), Cláudio José Gomes Lopes, in einem Treffen, das es ermöglichte, die Beziehungen zwischen den beiden Einheiten zu stärken und den Grundstein für zukünftige gemeinsame Initiativen zu legen.",
-        "pl": "Prezes Zarządu IVBAM, Tiago Freitas, spotkał się z prezesem niedawno utworzonego Instituto da Vinha e do Vinho dos Açores (IVVA), Cláudio José Gomesem Lopesem, na spotkaniu, które pozwoliło na wzmocnienie relacji między obydwoma podmiotami i położenie podwalin pod przyszłe wspólne inicjatywy.",
-        "uk": "Президент ради директорів IVBAM Тіаго Фрейтас зустрівся з президентом нещодавно створеного Instituto da Vinha e do Vinho dos Açores (IVVA) Клаудіо Хосе Гомесом Лопесом під час зустрічі, яка дозволила зміцнити відносини між двома організаціями та закласти основи для майбутніх спільних ініціатив.",
-        "ru": "Президент совета директоров IVBAM Тьяго Фрейтас встретился с президентом недавно созданного Instituto da Vinha e do Vinho dos Açores (IVVA) Клаудио Хосе Гомеша Лопеса на встрече, которая позволила укрепить отношения между двумя организациями и заложить основы для будущих совместных инициатив."
-      }
-    },
-    {
-      "title": "Madeira sob aviso Laranja devido ao tempo quente na regiões montanhosas",
-      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002878/madeira-sob-aviso-laranja-devido-ao-tempo-quente-na-regioes-montanhosas.html",
-      "date": "2026-08-03",
-      "snippet": "O IPMA colocou a Madeira sob aviso devido à persistência de valores elevados da temperatura máxima, com a costa sul em aviso amarelo e as zonas montanhosas a atingirem o nível laranja. Nos últimos dias, a Madeira tem sido afetada por uma situação de tempo quente, levando o Instituto Português",
-      "source": "JM Madeira",
-      "lang": "PT",
-      "cat": "geral",
-      "titles": {
-        "en": "Madeira under Orange warning due to hot weather in mountainous regions",
-        "de": "Für Madeira gilt aufgrund des heißen Wetters in Bergregionen die Warnwarnung Orange",
-        "pl": "Madera objęta pomarańczowym ostrzeżeniem z powodu upałów w regionach górskich",
-        "uk": "Мадейра під помаранчевим попередженням через спекотну погоду в гірських регіонах",
-        "ru": "Мадейра находится под оранжевым предупреждением из-за жаркой погоды в горных регионах"
-      },
-      "snippets": {
-        "en": "The IPMA placed Madeira under warning due to the persistence of high maximum temperature values, with the south coast under yellow warning and mountainous areas reaching the orange level. In recent days, Madeira has been affected by hot weather, leading the Portuguese Institute",
-        "de": "Die IPMA hat Madeira aufgrund der anhaltend hohen Höchsttemperaturwerte unter Warnung gesetzt, wobei die Südküste unter gelber Warnung steht und Berggebiete den orangefarbenen Wert erreichen. In den letzten Tagen war Madeira von heißem Wetter betroffen, so das portugiesische Institut",
-        "pl": "IPMA objęła Maderę ostrzeżeniem ze względu na utrzymywanie się wysokich temperatur maksymalnych, przy czym południowe wybrzeże objęte było żółtym ostrzeżeniem, a obszary górskie osiągnęły poziom pomarańczowy. W ostatnich dniach Maderę dotknęły upały, o czym przekonuje Instytut Portugalski",
-        "uk": "IPMA попередила Мадейру через збереження високих максимальних значень температури, причому південне узбережжя оголосило жовтим попередженням, а гірські райони досягли помаранчевого рівня. Останніми днями Мадейра постраждала від спекотної погоди, провідний Португальський інститут",
-        "ru": "IPMA поместило Мадейру под предупреждение из-за сохранения высоких максимальных значений температуры, при этом южное побережье находится под желтым предупреждением, а горные районы достигают оранжевого уровня. В последние дни Мадейра пострадала от жаркой погоды, сообщил Португальский институт"
-      }
-    },
-    {
-      "title": "Balcão do Investidor do Funchal assinala 11º aniversário com recorde de atendimentos",
-      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002873/balcao-do-investidor-do-funchal-assinala-11-aniversario-com-recorde-de-atendimentos.html",
-      "date": "2026-08-03",
-      "snippet": "Na área da empregabilidade, o serviço dinamizou, através das edições presenciais do Fórum de Emprego, 633 oportunidades de trabalho, envolvendo 29 empresas O Balcão do Investidor da Câmara Municipal do Funchal, celebrou na passada sexta-feira o seu 11.º aniversário, assinalando mais de uma dé",
-      "source": "JM Madeira",
-      "lang": "PT",
-      "cat": "geral",
-      "titles": {
-        "en": "Funchal Investor Desk marks 11th anniversary with record attendance",
-        "de": "Der Funchal Investor Desk feiert sein 11-jähriges Jubiläum mit einem Besucherrekord",
-        "pl": "Funchal Investor Desk świętuje 11. rocznicę swojej obecności z rekordową frekwencją",
-        "uk": "Funchal Investor Desk відзначає 11-річчя з рекордною відвідуваністю",
-        "ru": "Отделение инвесторов Фуншала отмечает 11-летие рекордной посещаемостью"
-      },
-      "snippets": {
-        "en": "In the area of employability, the service promoted, through face-to-face editions of the Employment Forum, 633 job opportunities, involving 29 companies. The Investor Desk of the Funchal City Council celebrated its 11th anniversary last Friday, marking more than a decade",
-        "de": "Im Bereich der Beschäftigungsfähigkeit förderte der Dienst durch Präsenzveranstaltungen des Beschäftigungsforums 633 Beschäftigungsmöglichkeiten, an denen 29 Unternehmen beteiligt waren. Der Investor Desk des Stadtrats von Funchal feierte am vergangenen Freitag sein 11-jähriges Bestehen und markiert damit mehr als ein Jahrzehnt",
-        "pl": "W obszarze szans na zatrudnienie serwis poprzez bezpośrednie edycje Forum Zatrudnienia wypromował 633 oferty pracy, w których uczestniczyło 29 firm. Biuro Inwestorów Rady Miejskiej Funchal obchodziło w ubiegły piątek 11. rocznicę swojego istnienia, mijając tym samym ponad dekadę",
-        "uk": "У сфері працевлаштування служба просувала через особисті випуски Форуму зайнятості 633 можливості працевлаштування, в яких брали участь 29 компаній. Відділ інвесторів міської ради Фуншалу минулої п’ятниці відзначив своє 11-річчя, відзначаючи більше десяти років",
-        "ru": "В области трудоустройства служба посредством очных выпусков Форума занятости способствовала открытию 633 вакансий с участием 29 компаний. В прошлую пятницу Отделение инвесторов городского совета Фуншала отпраздновало свое 11-летие, отметив более десяти лет."
-      }
-    },
-    {
-      "title": "'Heróis da Fruta', implementado nas escolas da Madeira, recebe reconhecimento científico internacional",
-      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002871/herois-da-fruta-implementado-nas-escolas-da-madeira-recebe-reconhecimento-cientifico-internacional.html",
-      "date": "2026-08-03",
-      "snippet": "Estudo da Faculdade de Medicina da Universidade de Lisboa valida método da APCOI implementado na Região e comprova eficácia na promoção de hábitos alimentares saudáveis entre crianças. O método \"Heróis da Fruta\", desenvolvido pela Associação Portuguesa Contra a Obesidade Infantil (APCOI) e im",
-      "source": "JM Madeira",
-      "lang": "PT",
-      "cat": "geral",
-      "titles": {
-        "en": "'Heróis da Fruta', implemented in schools in Madeira, receives international scientific recognition",
-        "de": "„Heróis da Fruta“, das in Schulen auf Madeira umgesetzt wird, erhält internationale wissenschaftliche Anerkennung",
-        "pl": "„Heróis da Fruta”, realizowany w szkołach na Maderze, zyskuje międzynarodowe uznanie naukowe",
-        "uk": "«Heróis da Fruta», реалізований у школах Мадейри, отримав міжнародне наукове визнання",
-        "ru": "Программа «Herois da Fruta», реализуемая в школах Мадейры, получила международное научное признание."
-      },
-      "snippets": {
-        "en": "Study by the Faculty of Medicine of the University of Lisbon validates the APCOI method implemented in the Region and proves its effectiveness in promoting healthy eating habits among children. The \"Fruit Heroes\" method, developed by the Portuguese Association Against Childhood Obesity (APCOI) and im",
-        "de": "Eine Studie der Medizinischen Fakultät der Universität Lissabon validiert die in der Region implementierte APCOI-Methode und beweist ihre Wirksamkeit bei der Förderung gesunder Essgewohnheiten bei Kindern. Die „Fruit Heroes“-Methode, entwickelt von der portugiesischen Vereinigung gegen Fettleibigkeit bei Kindern (APCOI) und im",
-        "pl": "Badanie przeprowadzone na Wydziale Lekarskim Uniwersytetu w Lizbonie potwierdza wdrożoną w regionie metodę APCOI i potwierdza jej skuteczność w promowaniu zdrowych nawyków żywieniowych wśród dzieci. Metoda „Owocowi Bohaterowie” opracowana przez Portugalskie Stowarzyszenie Przeciwdziałania Otyłości Dziecięcej (APCOI) i im",
-        "uk": "Дослідження, проведене медичним факультетом Лісабонського університету, підтверджує метод APCOI, запроваджений у регіоні, і доводить його ефективність у просуванні здорових харчових звичок серед дітей. Метод «Fruit Heroes», розроблений Португальською асоціацією проти дитячого ожиріння (APCOI) та ім.",
-        "ru": "Исследование медицинского факультета Лиссабонского университета подтверждает эффективность метода APCOI, применяемого в регионе, и доказывает его эффективность в пропаганде здорового питания среди детей. Метод «Фруктовые герои», разработанный Португальской ассоциацией по борьбе с детским ожирением (APCOI) и им."
-      }
-    },
-    {
-      "title": "Intervenção urgente interrompe abastecimento de água em zonas altas de São Gonçalo",
-      "link": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30002870/intervencao-urgente-interrompe-abastecimento-de-agua-em-zonas-altas-de-sao-goncalo.html",
-      "date": "2026-08-03",
-      "snippet": "Corte, iniciado às 09h00, deverá prolongar-se por cerca de seis horas e afeta vários arruamentos da freguesia. Uma intervenção urgente no Reservatório da Cornélia obrigou a Câmara Municipal do Funchal a interromper temporariamente o abastecimento de água em diversos arruamentos das zonas alta",
-      "source": "JM Madeira",
-      "lang": "PT",
-      "cat": "geral",
-      "titles": {
-        "en": "Urgent intervention interrupts water supply in high areas of São Gonçalo",
-        "de": "Dringende Intervention unterbricht die Wasserversorgung in hochgelegenen Gebieten von São Gonçalo",
-        "pl": "Pilna interwencja powoduje przerwanie dostaw wody w wyżej położonych obszarach São Gonçalo",
-        "uk": "Термінове втручання припиняє водопостачання у високих районах Сан-Гонсалу",
-        "ru": "Срочное вмешательство прерывает подачу воды в высокогорных районах Сан-Гонсалу"
-      },
-      "snippets": {
-        "en": "The cut, which started at 9am, is expected to last for around six hours and affects several streets in the parish. An urgent intervention in the Cornélia Reservoir forced the Funchal City Council to temporarily interrupt the water supply in several streets in the upper areas",
-        "de": "Die Sperrung begann um 9 Uhr, wird voraussichtlich etwa sechs Stunden dauern und betrifft mehrere Straßen in der Gemeinde. Ein dringender Eingriff in den Cornélia-Stausee zwang den Stadtrat von Funchal dazu, die Wasserversorgung in mehreren Straßen in den oberen Gebieten vorübergehend zu unterbrechen",
-        "pl": "Oczekuje się, że przerwa, która rozpoczęła się o godzinie 9:00, potrwa około sześciu godzin i obejmie kilka ulic w parafii. Pilna interwencja w zbiorniku Cornélia zmusiła Radę Miasta Funchal do tymczasowego przerwania dostaw wody na kilku ulicach w górnych obszarach",
-        "uk": "Розріз, який почався о 9 ранку, очікується, що триватиме близько шести годин і торкнеться кількох вулиць парафії. Термінове втручання у водосховище Корнелія змусило міську раду Фуншалу тимчасово припинити водопостачання на кількох вулицях у верхніх районах",
-        "ru": "Ожидается, что сокращение, начавшееся в 9 утра, продлится около шести часов и затронет несколько улиц прихода. Срочное вмешательство в водохранилище Корнелия вынудило городской совет Фуншала временно прекратить подачу воды на несколько улиц в верхних районах."
       }
     },
     {
@@ -549,9 +802,9 @@
       "snippets": {
         "en": "The accident is causing major congestion on the expressway, heading towards Machico - Funchal. A collision between two vehicles, followed by fire, occurred at around 7pm, in a tunnel in Santa Cruz, and at this moment the expressway is closed in the direction of Santa Cruz - Caniço. Three people f",
         "de": "Der Unfall führt zu erheblichen Staus auf der Schnellstraße in Richtung Machico – Funchal. Gegen 19 Uhr kam es in einem Tunnel in Santa Cruz zu einem Zusammenstoß zweier Fahrzeuge mit anschließendem Brand. Zu diesem Zeitpunkt ist die Schnellstraße in Richtung Santa Cruz – Caniço gesperrt. Drei Personen f",
-        "pl": "Wypadek powoduje duże korki na drodze ekspresowej w kierunku Machico – Funchal. Około godziny 19:00 w tunelu w Santa Cruz doszło do zderzenia dwóch pojazdów, po którym nastąpił pożar. Na tę chwilę droga ekspresowa w kierunku Santa Cruz – Caniço jest zamknięta. Trzy osoby f",
-        "uk": "Аварія спричинила великий затор на швидкісній дорозі в напрямку Машіку – Фуншал. Зіткнення двох автомобілів з наступною пожежею сталося близько 19:00 в тунелі в Санта-Крус, і в цей момент швидкісна дорога в напрямку Санта-Крус - Канісо закрита. Три людини f",
-        "ru": "Авария привела к серьезной пробке на скоростной автомагистрали, ведущей в направлении Машику – Фуншал. Столкновение двух транспортных средств с последующим возгоранием произошло около 19:00 в туннеле в Санта-Крус, и в этот момент закрыта скоростная автомагистраль в направлении Санта-Крус – Канисо. Три человека f"
+        "pl": "Wypadek powoduje duże korki na drodze ekspresowej w kierunku Machico – Funchal. Około godziny 19:00 w tunelu w Santa Cruz doszło do zderzenia dwóch pojazdów, po którym nastąpił pożar. Na tę chwilę droga ekspresowa w kierunku Santa Cruz – Caniço jest zamknięta. Trzy osoby F",
+        "uk": "Аварія спричинила великий затор на швидкісній дорозі в напрямку Машику – Фуншал. Зіткнення двох автомобілів з наступною пожежею сталося близько 19:00 в тунелі в Санта-Крус, і в цей момент швидкісна дорога в напрямку Санта-Крус - Канісо закрита. Три людини f",
+        "ru": "Авария привела к серьезной пробке на скоростной автомагистрали, ведущей в направлении Машику – Фуншал. Столкновение двух транспортных средств с последующим возгоранием произошло около 19:00 в туннеле в Санта-Крус, и в этот момент закрыта скоростная автомагистраль в направлении Санта-Крус – Канису. Три человека f"
       }
     },
     {
@@ -665,7 +918,7 @@
         "en": "Nacional beat AD Camacha, from the Portuguese Championship, 1-0 today, in the club's last preparation game in the Portuguese First Football League before the start of the championship. In a match played behind closed doors at the Madeira Stadium, midfielder Joel Silva scored the goal that decided the match, allowing",
         "de": "Nacional besiegte heute AD Camacha aus der portugiesischen Meisterschaft mit 1:0 im letzten Vorbereitungsspiel des Vereins in der ersten portugiesischen Fußballliga vor Beginn der Meisterschaft. In einem Spiel, das hinter verschlossenen Türen im Madeira-Stadion ausgetragen wurde, erzielte Mittelfeldspieler Joel Silva das entscheidende Tor und ermöglichte damit die Entscheidung",
         "pl": "Nacional pokonał dzisiaj AD Camacha z mistrzostw Portugalii 1:0 w ostatnim meczu przygotowawczym klubu w Pierwszej Lidze Piłkarskiej Portugalii przed rozpoczęciem mistrzostw. W meczu rozegranym za zamkniętymi drzwiami na stadionie Madeira pomocnik Joel Silva strzelił decydującego o losach meczu gola, pozwalając",
-        "uk": "Сьогодні «Насьональ» обіграв «Камашу» з чемпіонату Португалії з рахунком 1:0 в останній підготовчій грі клубу в Першій футбольній лізі Португалії перед початком чемпіонату. У матчі за закритими дверима на стадіоні Мадейра півзахисник Жоел Сілва забив гол, який вирішив матч, дозволивши",
+        "uk": "Сьогодні «Насьональ» обіграв «Камашу» з чемпіонату Португалії з рахунком 1:0 в останній підготовчій грі клубу в Першій футбольній лізі Португалії перед початком чемпіонату. У матчі за закритими дверима на стадіоні Мадейра півзахисник Жоель Сілва забив гол, який вирішив матч, дозволивши",
         "ru": "«Насьональ» обыграл «Ад Камачу» из чемпионата Португалии со счетом 1:0 сегодня в последнем подготовительном матче клуба в Первой футбольной лиге Португалии перед началом чемпионата. В матче, проходившем за закрытыми дверями на стадионе Мадейры, полузащитник Жоэль Силва забил гол, решивший исход матча."
       }
     },
@@ -688,7 +941,7 @@
         "en": "The Portuguese Mariana Vargem finished ninth today in the Rio de Janeiro Triathlon World Cup, less than a minute behind the winner, the Slovak Zuzana Michailickova. The 25-year-old triathlete from Madeira completed the race (750 meters of swimming, 20.8 kilometers of cycling and five kilometers of",
         "de": "Die Portugiesin Mariana Vargem belegte heute beim Triathlon-Weltcup in Rio de Janeiro den neunten Platz, weniger als eine Minute hinter der Siegerin, der Slowakin Zuzana Michailickova. Der 25-jährige Triathlet aus Madeira absolvierte das Rennen (750 Meter Schwimmen, 20,8 Kilometer Radfahren und fünf Kilometer",
         "pl": "Portugalka Mariana Vargem zajęła dziś dziewiąte miejsce w Pucharze Świata w Triathlonie w Rio de Janeiro, niecałą minutę za zwyciężczynią, Słowaczką Zuzaną Michailickową. 25-letnia triathlonistka z Madery ukończyła bieg (750 metrów pływania, 20,8 km jazdy na rowerze i 5 km biegu",
-        "uk": "Португалька Маріана Варгем фінішувала сьогодні дев'ятою на Кубку світу з триатлону в Ріо-де-Жанейро, відставши менше ніж на хвилину від переможниці словачки Зузани Міхайлічкової. 25-річний триатлоніст з Мадейри завершив гонку (750 метрів запливу, 20,8 кілометра велогонки та 5 кілометрів",
+        "uk": "Португалька Маріана Варгем фінішувала сьогодні дев'ятою на Кубку світу з триатлону в Ріо-де-Жанейро, відставши менше ніж на хвилину від переможниці словачки Зузани Михайлічкової. 25-річний триатлоніст з Мадейри завершив гонку (750 метрів запливу, 20,8 кілометра велогонки та 5 кілометрів",
         "ru": "Португалька Мариана Варгем финишировала сегодня девятой на этапе Кубка мира по триатлону в Рио-де-Жанейро, отстав от победительницы словачки Зузаны Михайловки менее чем на минуту. 25-летняя триатлонистка из Мадейры завершила забег (750 метров плавания, 20,8 километров езды на велосипеде и пять километров бега)."
       }
     },
@@ -705,7 +958,7 @@
         "de": "Proença sagt, dass der Test zu Alkoholverkäufen und -konsum im Supercup „nicht positiver ausfallen könnte“",
         "pl": "Proença twierdzi, że test sprzedaży i spożycia alkoholu podczas Superpucharu „nie mógł być bardziej pozytywny”",
         "uk": "Proença каже, що тест на продаж і споживання алкоголю в Суперкубку \"не може бути більш позитивним\"",
-        "ru": "Проэнса говорит, что тест на продажи и потребление алкоголя в Суперкубке «не может быть более положительным»."
+        "ru": "Проэнса говорит, что тест на продажу и потребление алкоголя в Суперкубке «не может быть более положительным»."
       },
       "snippets": {
         "en": "The Government explains that it decided to authorize the FPF proposal for this test. The president of the Portuguese Football Federation, Pedro Proença, today considered that the pilot project for the sale and consumption of alcoholic beverages in the football Super Cup “could not be more positive” and hopes that this will",
@@ -808,29 +1061,6 @@
       }
     },
     {
-      "title": "Dois doentes transportados de helicóptero entre o Porto Santo e a Madeira",
-      "link": "https://www.jm-madeira.pt/not%C3%ADcias/ocorr-ncias/30002828/dois-doentes-transportados-de-helicoptero-entre-o-porto-santo-e-a-madeira.html",
-      "date": "2026-08-02",
-      "snippet": "Missão foi efetuada por um helicóptero EH-101 Merlin da Esquadra 751 – 'Pumas'. A Força Aérea Portuguesa realizou, na tarde de ontem, duas missões de evacuação médica entre a ilha do Porto Santo e a Madeira, assegurando o transporte de dois doentes que necessitavam de cuidados de saúde difere",
-      "source": "JM Madeira",
-      "lang": "PT",
-      "cat": "ocorrências",
-      "titles": {
-        "en": "Two patients transported by helicopter between Porto Santo and Madeira",
-        "de": "Zwei Patienten per Hubschrauber zwischen Porto Santo und Madeira transportiert",
-        "pl": "Dwóch pacjentów przetransportowanych helikopterem pomiędzy Porto Santo a Maderą",
-        "uk": "Двох пацієнтів транспортували гелікоптером між Порту-Санту та Мадейрою",
-        "ru": "Двое пациентов перевезены на вертолете между Порту-Санту и Мадейрой"
-      },
-      "snippets": {
-        "en": "The mission was carried out by an EH-101 Merlin helicopter from Squadron 751 – 'Pumas'. The Portuguese Air Force carried out, yesterday afternoon, two medical evacuation missions between the island of Porto Santo and Madeira, ensuring the transport of two patients who required different health care",
-        "de": "Die Mission wurde von einem EH-101 Merlin-Hubschrauber der Staffel 751 – „Pumas“ durchgeführt. Die portugiesische Luftwaffe führte gestern Nachmittag zwei medizinische Evakuierungsmissionen zwischen der Insel Porto Santo und Madeira durch und stellte den Transport von zwei Patienten sicher, die unterschiedliche Gesundheitsversorgung benötigten",
-        "pl": "Misję wykonał śmigłowiec EH-101 Merlin z 751 Dywizjonu – „Pumas”. Wczoraj po południu portugalskie siły powietrzne przeprowadziły dwie misje ewakuacji medycznej pomiędzy wyspą Porto Santo a Maderą, zapewniając transport dwóm pacjentom wymagającym innej opieki zdrowotnej",
-        "uk": "Місія виконувалася вертольотом EH-101 Merlin з ескадрильї 751 – «Пуми». Вчора вдень португальські ВПС виконали дві місії з медичної евакуації між островом Порту-Санту та Мадейрою, забезпечивши транспортування двох пацієнтів, які потребували різної медичної допомоги.",
-        "ru": "Миссию выполнил вертолет EH-101 Merlin из 751-й эскадрильи «Пума». Вчера днем португальские ВВС выполнили две миссии по медицинской эвакуации между островом Порту-Санту и Мадейрой, обеспечив транспортировку двух пациентов, которым требовалась различная медицинская помощь."
-      }
-    },
-    {
       "title": "Marítimo vence Nacional e ergue Troféu Autonomia",
       "link": "https://www.jm-madeira.pt/not%C3%ADcias/desporto/30002820/maritimo-vence-nacional-e-ergue-trofeu-autonomia.html",
       "date": "2026-08-01",
@@ -920,236 +1150,6 @@
         "pl": "Maderyński kierowca Škody Fabia RS Rally2 po raz drugi świętuje zwycięstwo w największej regionalnej imprezie sportów motorowych. Miguel Nunes zwycięzcą edycji Rajdu Madery w 2026 roku. Kierowca Škody Fabia RS Rally2 pokonał ponad 202 kilometry wyścigu rozgrywanego w zeszłym",
         "uk": "Пілот Skoda Fabia RS Rally2 з Мадейри вдруге святкує перемогу на найбільшій регіональній автоспортивній події. Мігель Нуньєс є переможцем ралі Мадейри 2026 року. Пілот Škoda Fabia RS Rally2 проїхав понад 202 кілометри гонки, яка проходила минулого року.",
         "ru": "Мадейрский гонщик Škoda Fabia RS Rally2 во второй раз празднует победу в крупнейшем региональном автоспортивном соревновании. Мигель Нуньес — победитель ралли Мадейры 2026 года. Пилот Škoda Fabia RS Rally2 преодолел более 202 километров гонки, проведенной за последнюю"
-      }
-    },
-    {
-      "title": "Caminho aberto para a vitória de Miguel Nunes à entrada para a última classificativa",
-      "link": "https://www.jm-madeira.pt/not%C3%ADcias/desporto/30002806/caminho-aberto-para-a-vitoria-de-miguel-nunes-a-entrada-para-a-ultima-classificativa.html",
-      "date": "2026-08-01",
-      "snippet": "Miguel Nunes é o líder da 67.ª edição do Rali da Madeira, com 32,5 segundos de vantagem sobre o segundo colocado, João Silva, à entrada para a 15.ª e derradeira classificativa da prova rainha do automóvel madeirense. Depois de ter construído uma margem confortável durante o dia de ontem e na manhã d",
-      "source": "JM Madeira",
-      "lang": "PT",
-      "cat": "desporto",
-      "titles": {
-        "en": "Path open for Miguel Nunes' victory at the start of the last stage",
-        "de": "Der Weg frei für den Sieg von Miguel Nunes zu Beginn der letzten Etappe",
-        "pl": "Droga do zwycięstwa Miguela Nunesa otwarta na starcie ostatniego etapu",
-        "uk": "Шлях відкритий для перемоги Мігеля Нуньєса на старті останнього етапу",
-        "ru": "Путь открыт для победы Мигеля Нуньеса на старте последнего этапа"
-      },
-      "snippets": {
-        "en": "Miguel Nunes is the leader of the 67th edition of the Madeira Rally, with a 32.5 second advantage over second place, João Silva, at the start of the 15th and final qualifying round of the Madeiran automobile's premier race. After having built a comfortable margin yesterday and this morning,",
-        "de": "Miguel Nunes ist der Führende der 67. Ausgabe der Madeira-Rallye mit einem Vorsprung von 32,5 Sekunden vor dem Zweitplatzierten João Silva zu Beginn der 15. und letzten Qualifikationsrunde des wichtigsten Rennens der madeirischen Automobile. Nachdem wir uns gestern und heute Morgen einen komfortablen Vorsprung erarbeitet haben,",
-        "pl": "Miguel Nunes jest liderem 67. edycji Rajdu Madery, mając 32,5 sekundy przewagi nad drugim wicemistrzem João Silvą na starcie 15. i ostatniej rundy kwalifikacyjnej najważniejszego wyścigu samochodowego na Maderze. Po zbudowaniu wygodnej marży wczoraj i dziś rano,",
-        "uk": "Мігель Нуньєс є лідером 67-го випуску ралі Мадейри з перевагою в 32,5 секунди над Жоао Сілва, що посів друге місце, на старті 15-го й останнього кваліфікаційного раунду головної автомобільної гонки Мадейри. Після того, як вчора та сьогодні вранці вдалося створити комфортну маржу,",
-        "ru": "Мигель Нуньес является лидером 67-го ралли Мадейры с преимуществом в 32,5 секунды над Жоау Силвой, занявшим второе место, на старте 15-го и последнего квалификационного этапа главной автомобильной гонки Мадейры. После создания комфортной маржи вчера и сегодня утром,"
-      }
-    },
-    {
-      "title": "Miguel Nunes vence na Ponta do Pargo e reforça liderança",
-      "link": "https://www.jm-madeira.pt/not%C3%ADcias/desporto/30002791/miguel-nunes-vence-e-reforca-lideranca-na-ponta-do-pargo.html",
-      "date": "2026-08-01",
-      "snippet": "Miguel Nunes é cada vez mais líder desta edição do Rali da Madeira, ao ser o mais veloz na primeira passagem na Ponta do Pargo. Com uma liderança cada vez mais confortável, Miguel Nunes venceu a 11.ª classificativa da prova ao completar o traçado de 11,83 km em 7:00.2 minutos. No 2.º posto ficou Kri",
-      "source": "JM Madeira",
-      "lang": "PT",
-      "cat": "desporto",
-      "titles": {
-        "en": "Miguel Nunes wins at Ponta do Pargo and reinforces leadership",
-        "de": "Miguel Nunes gewinnt in Ponta do Pargo und stärkt seine Führung",
-        "pl": "Miguel Nunes wygrywa w Ponta do Pargo i wzmacnia przywództwo",
-        "uk": "Мігель Нуньєс перемагає в Понта-ду-Парго та зміцнює лідерство",
-        "ru": "Мигель Нуньес побеждает в Понта-ду-Парго и укрепляет лидерство"
-      },
-      "snippets": {
-        "en": "Miguel Nunes is increasingly the leader of this edition of the Madeira Rally, as he was the fastest in the first pass at Ponta do Pargo. With an increasingly comfortable lead, Miguel Nunes won the 11th stage of the race by completing the 11.83 km route in 7:00.2 minutes. In 2nd place was Kri",
-        "de": "Miguel Nunes ist bei dieser Ausgabe der Madeira-Rallye zunehmend der Spitzenreiter, da er beim ersten Durchgang in Ponta do Pargo der Schnellste war. Mit einem zunehmend komfortablen Vorsprung gewann Miguel Nunes die 11. Etappe des Rennens, indem er die 11,83 km lange Strecke in 7:00,2 Minuten zurücklegte. Den zweiten Platz belegte Kri",
-        "pl": "Liderem tej edycji Rajdu Madery coraz bardziej wysuwa się Miguel Nunes, który był najszybszy na pierwszym przejeździe na Ponta do Pargo. Z coraz większą przewagą Miguel Nunes wygrał 11. etap wyścigu, pokonując trasę o długości 11,83 km w czasie 7:00,2 minuty. Na drugim miejscu znalazł się Kri",
-        "uk": "Мігель Нуньєс стає лідером цього випуску ралі Мадейра, оскільки він був найшвидшим у першому проході на Понта-ду-Парго. Мігель Нуньєс виграв 11-й етап гонки, подолавши маршрут довжиною 11,83 км за 7:00,2 хвилини. На 2 місці опинилася Кри",
-        "ru": "Мигель Нуньес все чаще становится лидером этого ралли Мадейры, поскольку он был самым быстрым на первом этапе в Понта-ду-Парго. Мигель Нуньес, уверенно лидируя, выиграл 11-й этап гонки, пройдя маршрут длиной 11,83 км за 7:00,2 минуты. На 2 месте оказался Кри"
-      }
-    },
-    {
-      "title": "Meeke foi o mais rápido na Ponta do Sol",
-      "link": "https://www.jm-madeira.pt/not%C3%ADcias/desporto/30002789/meeke-foi-o-mais-rapido-na-ponta-do-sol.html",
-      "date": "2026-08-01",
-      "snippet": "Chris Meeke somou a segunda vitória do dia, sendo o mais veloz na primeira passagem pela Ponta de Sol. Após o despiste de ontem ter lhe tirado da luta pela vitória, Chris Meeke somou a segunda vitória na segunda etapa do dia, sendo o mais veloz na primeira passagem pela Ponta de Sol. Com um r",
-      "source": "JM Madeira",
-      "lang": "PT",
-      "cat": "desporto",
-      "titles": {
-        "en": "Meeke was the fastest at Ponta do Sol",
-        "de": "Meeke war der Schnellste in Ponta do Sol",
-        "pl": "Meeke był najszybszy w Ponta do Sol",
-        "uk": "Міке був найшвидшим у Понта-ду-Сол",
-        "ru": "Мик был самым быстрым в Понта-ду-Соле."
-      },
-      "snippets": {
-        "en": "Chris Meeke took his second victory of the day, being the fastest in the first pass through Ponta de Sol. After yesterday's crash took him out of the fight for victory, Chris Meeke took his second victory in the second stage of the day, being the fastest in the first pass through Ponta de Sol. With a r",
-        "de": "Chris Meeke holte sich seinen zweiten Sieg des Tages und war beim ersten Durchgang durch Ponta de Sol der Schnellste. Nachdem er durch den gestrigen Sturz aus dem Kampf um den Sieg ausgeschieden war, holte sich Chris Meeke auf der zweiten Etappe des Tages seinen zweiten Sieg, indem er im ersten Durchgang durch Ponta de Sol der Schnellste war. Mit einem r",
-        "pl": "Chris Meeke odniósł swoje drugie zwycięstwo tego dnia, będąc najszybszym na pierwszym przejeździe przez Ponta de Sol. Po wczorajszej kraksie wykluczonej z walki o zwycięstwo, Chris Meeke odniósł drugie zwycięstwo na drugim etapie dnia, będąc najszybszym na pierwszym przejeździe przez Ponta de Sol. Z r",
-        "uk": "Кріс Мік здобув другу перемогу за день, ставши найшвидшим у першому проході через Понта-де-Соль. Після вчорашньої аварії Кріс Мік здобув свою другу перемогу на другому етапі дня, ставши найшвидшим у першому проході через Понта-де-Соль. З r",
-        "ru": "Крис Мик одержал свою вторую победу за день, став самым быстрым на первом проходе через Понта-де-Соль. После того, как вчерашняя авария выбила его из борьбы за победу, Крис Мик одержал вторую победу на втором этапе дня, оказавшись самым быстрым на первом проходе через Понта-де-Соль. С р"
-      }
-    },
-    {
-      "title": "João Silva e Armindo Araújo relançam luta pelo pódio no rali",
-      "link": "https://www.jm-madeira.pt/not%C3%ADcias/desporto/30002788/joao-silva-e-armindo-araujo-relancam-luta-pelo-podio-no-rali.html",
-      "date": "2026-08-01",
-      "snippet": "O madeirense João Silva subiu ao segundo lugar da classificação geral após as classificativas do Chão da Lagoa e da Ponta do Sol, ultrapassando Armindo Araújo. A diferença entre os dois é de apenas 0,4 segundos. Na frente, Miguel Nunes mantém uma vantagem de 30 segundos sobre o segundo classificado.",
-      "source": "JM Madeira",
-      "lang": "PT",
-      "cat": "desporto",
-      "titles": {
-        "en": "João Silva and Armindo Araújo relaunch fight for the podium in the rally",
-        "de": "João Silva und Armindo Araújo nehmen den Kampf um das Podium bei der Rallye wieder auf",
-        "pl": "João Silva i Armindo Araújo wznawiają walkę o podium w rajdzie",
-        "uk": "Жоау Сілва та Арміндо Араужу відновлюють боротьбу за подіум у ралі",
-        "ru": "Жоау Силва и Арминдо Араужо возобновляют борьбу за подиум в ралли"
-      },
-      "snippets": {
-        "en": "Madeiran João Silva rose to second place in the general classification after the Chão da Lagoa and Ponta do Sol qualifiers, overtaking Armindo Araújo. The difference between the two is just 0.4 seconds. At the front, Miguel Nunes maintains a 30-second advantage over second place.",
-        "de": "Der Madeiraner João Silva stieg nach den Qualifikationsspielen Chão da Lagoa und Ponta do Sol auf den zweiten Platz in der Gesamtwertung auf und überholte Armindo Araújo. Der Unterschied zwischen beiden beträgt nur 0,4 Sekunden. An der Spitze hat Miguel Nunes einen Vorsprung von 30 Sekunden auf den Zweitplatzierten.",
-        "pl": "Madeiran João Silva awansował na drugie miejsce w klasyfikacji generalnej po kwalifikacjach Chão da Lagoa i Ponta do Sol, wyprzedzając Armindo Araújo. Różnica między nimi wynosi zaledwie 0,4 sekundy. Z przodu Miguel Nunes utrzymuje 30 sekund przewagi nad drugim miejscem.",
-        "uk": "Мадейранець Жоау Сілва піднявся на друге місце в генеральній класифікації після відбіркових змагань Чао да Лагоа та Понта-ду-Сол, обігнавши Арміндо Араужу. Різниця між ними становить лише 0,4 секунди. Попереду Мігель Нуньєс зберігає 30-секундну перевагу над другим місцем.",
-        "ru": "Мадейранец Жоау Силва поднялся на второе место в генеральной классификации после квалификаций Чау-да-Лагоа и Понта-ду-Сол, обогнав Арминдо Араужу. Разница между ними составляет всего 0,4 секунды. Впереди Мигель Нуньес сохраняет 30-секундное преимущество над вторым местом."
-      }
-    },
-    {
-      "title": "Motociclista com fratura exposta após colisão na Nazaré",
-      "link": "https://www.jm-madeira.pt/not%C3%ADcias/ocorr-ncias/30002779/motociclista-com-fratura-exposta-apos-colisao-na-nazare.html",
-      "date": "2026-08-01",
-      "snippet": "Aconteceu por volta das 10 da manhã deste sábado, no cruzamento da Rua do Brasil com a Rua dos Estados Unidos da América, junto à mata da Nazaré. Um motociclista, de 32 anos, sofreu uma fratura exposta num membro inferior na sequência de uma colisão entre uma mota e um veículo ligeiro, ocorri",
-      "source": "JM Madeira",
-      "lang": "PT",
-      "cat": "ocorrências",
-      "titles": {
-        "en": "Motorcyclist with open fracture after collision in Nazaré",
-        "de": "Motorradfahrer mit offenem Bruch nach Kollision in Nazaré",
-        "pl": "Motocyklista z otwartym złamaniem po zderzeniu w Nazaré",
-        "uk": "Мотоцикліст з відкритим переломом після зіткнення в Назаре",
-        "ru": "Мотоциклист с открытым переломом после столкновения в Назаре"
-      },
-      "snippets": {
-        "en": "It happened around 10 am this Saturday, at the intersection of Rua do Brasil and Rua dos Estados Unidos da América, next to the Nazaré forest. A 32-year-old motorcyclist suffered an open fracture to his lower limb following a collision between a motorcycle and a light vehicle, which occurred",
-        "de": "Es geschah an diesem Samstag gegen 10 Uhr morgens an der Kreuzung der Rua do Brasil und der Rua dos Estados Unidos da América, neben dem Wald von Nazaré. Ein 32-jähriger Motorradfahrer erlitt bei einem Zusammenstoß zwischen einem Motorrad und einem Leichtfahrzeug einen offenen Bruch seiner unteren Gliedmaßen",
-        "pl": "Do zdarzenia doszło w tę sobotę około godziny 10:00 na skrzyżowaniu Rua do Brasil i Rua dos Estados Unidos da América, obok lasu Nazaré. 32-letni motocyklista doznał otwartego złamania kończyny dolnej w wyniku zderzenia motocykla z lekkim pojazdem, do którego doszło",
-        "uk": "Це сталося близько 10 години ранку цієї суботи на перетині вулиць Руа-ду-Бразил і Руа-дус-Естадос-Юнідос-да-Америка, поруч із лісом Назаре. Внаслідок зіткнення мотоцикла з легковиком 32-річний мотоцикліст отримав відкритий перелом нижньої кінцівки.",
-        "ru": "Это произошло около 10 часов утра в эту субботу на пересечении улиц Руа-ду-Бразил и Руа-дус-Эстадос-Юнидос-да-Америка, рядом с лесом Назаре. 32-летний мотоциклист получил открытый перелом нижней конечности в результате столкновения мотоцикла с легковым автомобилем, произошедшего"
-      }
-    },
-    {
-      "title": "Colisão entre duas viaturas condiciona trânsito na Ponte Nova",
-      "link": "https://www.jm-madeira.pt/not%C3%ADcias/ocorr-ncias/30002770/colisao-entre-duas-viaturas-condiciona-transito-na-ponte-nova.html",
-      "date": "2026-08-01",
-      "snippet": "Transeuntes e funcionários de estabelecimentos situados nas imediações do cruzamento prestaram de imediato auxílio às condutoras dos automóveis acidentados, enquanto eram avaliadas as consequências da ocorrência. Uma colisão entre dois veículos ligeiros, ocorrida pouco depois das 9 horas dest",
-      "source": "JM Madeira",
-      "lang": "PT",
-      "cat": "ocorrências",
-      "titles": {
-        "en": "Collision between two vehicles affects traffic on Ponte Nova",
-        "de": "Kollision zwischen zwei Fahrzeugen beeinträchtigt den Verkehr auf Ponte Nova",
-        "pl": "Zderzenie dwóch pojazdów ma wpływ na ruch na Ponte Nova",
-        "uk": "Зіткнення двох автомобілів ускладнило рух на Понте-Нова",
-        "ru": "Столкновение двух автомобилей повлияло на движение на Понте-Нова"
-      },
-      "snippets": {
-        "en": "Passers-by and employees of establishments located close to the intersection immediately provided assistance to the drivers of the injured cars, while the consequences of the incident were assessed. A collision between two light vehicles, which occurred shortly after 9 am this",
-        "de": "Passanten und Mitarbeiter von Betrieben in der Nähe der Kreuzung leisteten den Fahrern der verletzten Autos sofort Hilfe, während die Folgen des Vorfalls beurteilt wurden. Eine Kollision zwischen zwei leichten Fahrzeugen ereignete sich kurz nach 9 Uhr morgens",
-        "pl": "Kierowcom poszkodowanych samochodów natychmiast udzielili pomocy przechodnie oraz pracownicy placówek zlokalizowanych w pobliżu skrzyżowania, oceniając jednocześnie skutki zdarzenia. Tuż po godzinie 9:00 doszło do zderzenia dwóch lekkich pojazdów",
-        "uk": "Перехожі та працівники закладів, розташованих поблизу перехрестя, одразу надали допомогу водіям постраждалих автомобілів, поки встановлювалися наслідки події. Зіткнення двох легковиків сталося близько 9 години ранку",
-        "ru": "Прохожие и сотрудники учреждений, расположенных вблизи перекрестка, немедленно оказали помощь водителям пострадавших автомобилей, а последствия происшествия были оценены. Столкновение двух легковых автомобилей произошло вскоре после 9 часов утра."
-      }
-    },
-    {
-      "title": "Back to the Vermont 100 Mile After 16 Years",
-      "link": "https://www.irunfar.com/back-to-the-vermont-100-mile-after-16-years",
-      "date": "2026-07-31",
-      "snippet": "The post Back to the Vermont 100 Mile After 16 Years appeared first on iRunFar. AJW returns to the Vermont 100 Mile after 15 years to affirm that it's still a special race. Back to the Vermont 100 Mile After 16 Years by Andy Jones-Wilkins.",
-      "source": "iRunFar",
-      "lang": "EN",
-      "cat": "trail",
-      "titles": {
-        "pt": "De volta às 100 milhas de Vermont após 16 anos",
-        "de": "Zurück zum Vermont 100 Mile nach 16 Jahren",
-        "pl": "Powrót do Vermont 100 Mile po 16 latach",
-        "uk": "Повернення до Вермонтської 100-мильної дороги через 16 років",
-        "ru": "Назад в Вермонт на 100 миль спустя 16 лет"
-      },
-      "snippets": {
-        "pt": "O post De volta às 100 milhas de Vermont após 16 anos apareceu pela primeira vez em iRunFar. AJW retorna às 100 Mile de Vermont após 15 anos para afirmar que ainda é uma corrida especial. De volta às 100 milhas de Vermont após 16 anos, de Andy Jones-Wilkins.",
-        "de": "Der Beitrag „Back to the Vermont 100 Mile After 16 Years“ erschien zuerst auf iRunFar. AJW kehrt nach 15 Jahren zum Vermont 100 Mile zurück und bekräftigt, dass es immer noch ein besonderes Rennen ist. Zurück zu den 100 Meilen von Vermont nach 16 Jahren von Andy Jones-Wilkins.",
-        "pl": "Wpis Powrót na 100 mil do Vermont po 16 latach pojawił się jako pierwszy w serwisie iRunFar. AJW powraca na wyścig Vermont 100 Mile po 15 latach, aby potwierdzić, że jest to nadal wyjątkowy wyścig. Powrót do 100 mil w Vermont po 16 latach autorstwa Andy'ego Jonesa-Wilkinsa.",
-        "uk": "Публікація Повернення до Вермонтської 100-мильної дистанції через 16 років вперше з’явилася на iRunFar. AJW повертається на Vermont 100 Mile після 15 років, щоб підтвердити, що це все ще особлива гонка. Назад до Вермонтської 100-мильної дороги через 16 років Енді Джонса-Вілкінса.",
-        "ru": "Пост «Назад в Вермонт на 100 миль через 16 лет» впервые появился на iRunFar. AJW возвращается на 100-мильную гонку Вермонта спустя 15 лет, чтобы подтвердить, что это по-прежнему особенная гонка. Назад в Вермонт на 100 миль через 16 лет Энди Джонс-Уилкинс."
-      }
-    },
-    {
-      "title": "UMa promove formação avançada para qualificar trabalhadores e dirigentes da Administração Pública da RAM",
-      "link": "https://www.jm-madeira.pt/not%C3%ADcias/educa--o/30002741/uma-promove-formacao-avancada-para-qualificar-trabalhadores-e-dirigentes-da-administracao-publica-da-ram.html",
-      "date": "2026-07-31",
-      "snippet": "A partir de setembro, a Universidade da Madeira (UMa), através do Centro de Desenvolvimento Académico (CDA), vai promover, o Programa de Formação Avançada DEI+RAM - Modernização e Qualificação da Administração Pública da Região Autónoma da Madeira Esta iniciativa, promovida pelo estabelecimento de e",
-      "source": "JM Madeira",
-      "lang": "PT",
-      "cat": "educação",
-      "titles": {
-        "en": "UMa promotes advanced training to qualify workers and managers in the Public Administration of RAM",
-        "de": "UMa fördert Fortbildungen zur Qualifizierung von Arbeitskräften und Führungskräften in der öffentlichen Verwaltung von RAM",
-        "pl": "UMa promuje zaawansowane szkolenia w celu wykwalifikowania pracowników i menedżerów w administracji publicznej RAM",
-        "uk": "UMA сприяє підвищенню кваліфікації працівників і менеджерів у державному управлінні RAM",
-        "ru": "УМа способствует повышению квалификации рабочих и руководителей органов государственного управления РАМ."
-      },
-      "snippets": {
-        "en": "From September onwards, the University of Madeira (UMa), through the Academic Development Center (CDA), will promote the Advanced Training Program DEI+RAM - Modernization and Qualification of Public Administration in the Autonomous Region of Madeira This initiative, promoted by the establishment of and",
-        "de": "Ab September wird die Universität Madeira (UMa) über das Academic Development Center (CDA) das Fortbildungsprogramm DEI+RAM – Modernisierung und Qualifizierung der öffentlichen Verwaltung in der Autonomen Region Madeira – fördern. Diese Initiative wird durch die Gründung von und gefördert",
-        "pl": "Od września Uniwersytet Madery (UMa), za pośrednictwem Centrum Rozwoju Akademickiego (CDA), będzie promował Program Szkoleń Zaawansowanych DEI+RAM – Modernizacja i kwalifikacja administracji publicznej w Autonomicznym Regionie Madery. Inicjatywa ta, promowana poprzez utworzenie i",
-        "uk": "Починаючи з вересня, Університет Мадейри (UMa) через Центр академічного розвитку (CDA) просуватиме Програму підвищення кваліфікації DEI+RAM – Модернізація та кваліфікація державного управління в автономному регіоні Мадейра. Ця ініціатива, яку просуває створення та",
-        "ru": "С сентября Университет Мадейры (UMa) через Центр академического развития (CDA) будет продвигать программу повышения квалификации DEI+RAM – Модернизация и квалификация государственного управления в автономном регионе Мадейра."
-      }
-    },
-    {
-      "title": "Incêndio em residência extinto por populares",
-      "link": "https://www.jm-madeira.pt/not%C3%ADcias/ocorr-ncias/30002733/incendio-em-residencia-extinto-por-populares.html",
-      "date": "2026-07-31",
-      "snippet": "De acordo com as informações recolhidas junto de fontes operacionais, as chamas terão tido origem num saleiro que se encontrava em cima de uma placa elétrica ligada. Um incêndio deflagrou na manhã desta sexta-feira, numa residência situada no bairro da Bemposta, na freguesia da Água de Pena,",
-      "source": "JM Madeira",
-      "lang": "PT",
-      "cat": "ocorrências",
-      "titles": {
-        "en": "Fire in residence extinguished by members of the public",
-        "de": "Brand in Wohnhaus durch Bürger gelöscht",
-        "pl": "Pożar w mieszkaniu ugaszony przez mieszkańców",
-        "uk": "Пожежу в житловому будинку ліквідовано силами населення",
-        "ru": "Пожар в жилом доме потушили представители общественности"
-      },
-      "snippets": {
-        "en": "According to information gathered from operational sources, the flames may have originated from a salt shaker that was on top of a connected electric hob. A fire broke out this Friday morning, in a residence located in the Bemposta neighborhood, in the parish of Água de Pena,",
-        "de": "Informationen aus betrieblichen Quellen zufolge stammten die Flammen möglicherweise von einem Salzstreuer, der auf einem angeschlossenen Elektroherd stand. An diesem Freitagmorgen brach in einem Wohnhaus im Stadtteil Bemposta in der Gemeinde Água de Pena ein Feuer aus.",
-        "pl": "Według informacji zebranych ze źródeł operacyjnych płomienie mogły powstać w solniczce ustawionej na podłączonej kuchence elektrycznej. W piątek rano w rezydencji położonej w dzielnicy Bemposta w parafii Água de Pena wybuchł pożar.",
-        "uk": "За інформацією, отриманою з оперативних джерел, полум’я могло виникнути через сільничку, яка стояла на підключеній електроплитці. Пожежа спалахнула цієї п'ятниці вранці в будинку, розташованому в районі Бемпоста, в парафії Агуа-де-Пена,",
-        "ru": "По информации, полученной из оперативных источников, пламя могло возникнуть из-за солонки, стоявшей на подключенной электрической плите. В пятницу утром в жилом доме, расположенном в районе Бемпоста, в приходе Агуа-де-Пена, вспыхнул пожар."
-      }
-    },
-    {
-      "title": "Motociclista ferido em colisão na Via Rápida no Caniço",
-      "link": "https://www.jm-madeira.pt/not%C3%ADcias/ocorr-ncias/30002727/motociclista-ferido-em-colisao-na-via-rapida-no-canico.html",
-      "date": "2026-07-31",
-      "snippet": "A ocorrência condicionou a circulação naquela via durante as operações de socorro. Um motociclista sofreu ferimentos ligeiros na sequência de uma colisão entre um veículo ligeiro e um motociclo, ocorrida pouco depois das 10h30 desta sexta-feira, na Via Rápida, na subida do Caniço, no sentido",
-      "source": "JM Madeira",
-      "lang": "PT",
-      "cat": "ocorrências",
-      "titles": {
-        "en": "Motorcyclist injured in collision on Via Rápida in Caniço",
-        "de": "Motorradfahrer bei Kollision auf der Via Rápida in Caniço verletzt",
-        "pl": "Motocyklista ranny w kolizji na Via Rápida w Caniço",
-        "uk": "Мотоцикліст постраждав під час зіткнення на Віа Рапіда в Канісо",
-        "ru": "Мотоциклист пострадал в результате столкновения на улице Виа Рапида в Канисо."
-      },
-      "snippets": {
-        "en": "The incident affected circulation on that road during relief operations. A motorcyclist suffered minor injuries following a collision between a light vehicle and a motorcycle, which occurred shortly after 10:30 am this Friday, on Via Rápida, on the way up Caniço, towards",
-        "de": "Der Vorfall beeinträchtigte während der Hilfseinsätze den Verkehr auf dieser Straße. Ein Motorradfahrer erlitt leichte Verletzungen bei einem Zusammenstoß zwischen einem leichten Fahrzeug und einem Motorrad, der sich diesen Freitag kurz nach 10:30 Uhr auf der Via Rápida auf dem Weg nach Caniço ereignete",
-        "pl": "Zdarzenie miało wpływ na ruch na tej drodze w trakcie akcji ratowniczej. Motocyklista doznał lekkich obrażeń w wyniku zderzenia lekkiego pojazdu z motocyklem, do którego doszło w ten piątek tuż po godzinie 10:30 na Via Rápida, w drodze w górę Caniço, w kierunku",
-        "uk": "Інцидент вплинув на рух цією дорогою під час проведення робіт з надання допомоги. Мотоцикліст отримав незначні травми внаслідок зіткнення легкового транспортного засобу з мотоциклом, яке сталося цієї п’ятниці незабаром після 10:30 ранку на вулиці Віа Рапіда, по дорозі в Канісо, у напрямку",
-        "ru": "Инцидент повлиял на движение транспорта по этой дороге во время операций по оказанию помощи. Мотоциклист получил легкие травмы в результате столкновения легкового автомобиля и мотоцикла, которое произошло вскоре после 10:30 в эту пятницу на улице Виа Рапида, по дороге вверх по Канису, в направлении"
       }
     }
   ]
