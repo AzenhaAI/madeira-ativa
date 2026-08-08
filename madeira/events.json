@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-08-07",
+  "generated_at": "2026-08-08",
   "events": [
-    {
-      "mode": "festivals",
-      "name": "Art' Camacha",
-      "date": "2026-08-07",
-      "location": "Camacha, Santa Cruz",
-      "url": "https://eventsmadeira.com/en/event/art-camacha/",
-      "event_type": "festival"
-    },
     {
       "mode": "road",
       "name": "Corrida das Castanhas (4.5 km)",
@@ -200,6 +192,22 @@
       "location": "Funchal",
       "url": "https://triatlomadeira.com/wp-content/uploads/2026/03/Calendario-Provas-Triatlo-Madeira-e-Porto-Santo-2026-V.-06-03-2026.pdf",
       "event_type": "triathlon"
+    },
+    {
+      "mode": "trail",
+      "name": "FX Sky Race 10 km / 800D+",
+      "date": "2026-09-13",
+      "location": "Chão da Lagoa, Funchal",
+      "url": "https://skyrunning.camadeira.com/",
+      "event_type": "trail"
+    },
+    {
+      "mode": "trail",
+      "name": "FX Sky Race 21 km / 1400D+",
+      "date": "2026-09-13",
+      "location": "Chão da Lagoa, Funchal",
+      "url": "https://skyrunning.camadeira.com/",
+      "event_type": "trail"
     },
     {
       "mode": "festivals",
