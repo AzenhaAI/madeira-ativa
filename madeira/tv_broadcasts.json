@@ -1,18 +1,18 @@
 {
-  "fetched": "2026-08-08T06:24:18",
+  "fetched": "2026-08-09T06:28:37",
   "count": 3,
   "events": [
-    {
-      "date": "2026-08-08",
-      "time": "15:30",
-      "name": "Marítimo vs Casa Pia",
-      "comp": "Portuguese Primeira Liga",
-      "channel": "Sport TV"
-    },
     {
       "date": "2026-08-10",
       "time": "20:15",
       "name": "Santa Clara vs Nacional de Madeira",
+      "comp": "Portuguese Primeira Liga",
+      "channel": "Sport TV"
+    },
+    {
+      "date": "2026-08-16",
+      "time": "20:30",
+      "name": "Famalicao vs Marítimo",
       "comp": "Portuguese Primeira Liga",
       "channel": "Sport TV"
     },
