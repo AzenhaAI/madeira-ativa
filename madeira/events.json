@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-08-15",
+  "generated_at": "2026-08-16",
   "events": [
-    {
-      "mode": "trail",
-      "name": "Serra das Funduras 2026",
-      "date": "2026-08-15",
-      "location": "Machico",
-      "url": "https://fpacompeticoes.pt/",
-      "event_type": "running"
-    },
     {
       "mode": "road",
       "name": "Art' Camacha (5.6 km)",
@@ -528,14 +520,6 @@
       "location": "Madeira",
       "url": "https://aoram.pt/calendario/",
       "event_type": "orienteering"
-    },
-    {
-      "mode": "trail",
-      "name": "ADN Race Ponta do Sol",
-      "date": "2026-11-22",
-      "location": "Ponta do Sol, Madeira",
-      "url": "https://adnrace.pt/",
-      "event_type": "trail"
     },
     {
       "mode": "trail",
