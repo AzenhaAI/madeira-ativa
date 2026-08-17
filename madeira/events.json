@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-08-16",
+  "generated_at": "2026-08-17",
   "events": [
-    {
-      "mode": "road",
-      "name": "Art' Camacha (5.6 km)",
-      "date": "2026-08-16",
-      "location": "Madeira",
-      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
-      "event_type": "road_run"
-    },
     {
       "mode": "pro",
       "name": "Campeonato da Madeira de DHU e Mini DHU - Brisa Sem Açúcar",
@@ -520,6 +512,14 @@
       "location": "Madeira",
       "url": "https://aoram.pt/calendario/",
       "event_type": "orienteering"
+    },
+    {
+      "mode": "trail",
+      "name": "ADN Race Ponta do Sol",
+      "date": "2026-11-22",
+      "location": "Ponta do Sol, Madeira",
+      "url": "https://adnrace.pt/",
+      "event_type": "trail"
     },
     {
       "mode": "trail",
