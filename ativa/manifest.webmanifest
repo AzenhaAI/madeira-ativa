@@ -1,0 +1,37 @@
+{
+  "name": "Madeira Ativa",
+  "short_name": "Madeira Ativa",
+  "description": "Ultra Trail, orienteering, road running, cycling, swimming, triathlon and selected local cultural festivais & events across Madeira.",
+  "start_url": "/ativa/",
+  "scope": "/ativa/",
+  "display": "standalone",
+  "background_color": "#1f4d32",
+  "theme_color": "#1f4d32",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/ativa/apple-touch-icon.png?v=ios1",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/ativa/icon-192.png?v=5e8787d",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/ativa/icon-512.png?v=5e8787d",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/ativa/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "note": "Annual races not yet announced by their organisers. Rebuilt daily.",
+  "generated_at": "2026-08-20",
+  "items": [
+    {
+      "name": "Grande Prémio de Gaula",
+      "mode": "trail",
+      "expected": "Expected in August 2026",
+      "watch_dates": [
+        "2026-08-20"
+      ],
+      "location": "Gaula, Santa Cruz",
+      "status": "watching for a confirmed 2026 date (known schedule)",
+      "url": "https://atletismodamadeira.pt/"
+    },
+    {
+      "name": "Trail Água de Pena",
+      "mode": "trail",
+      "expected": "Expected in September 2026",
+      "watch_dates": [
+        "2026-09-01"
+      ],
+      "location": "Machico, Madeira",
+      "status": "watching for a confirmed 2026 date (known schedule)",
+      "url": "https://www.trailaguadepena.pt/"
+    },
+    {
+      "name": "MIUS - Madeira Island Ultra Swim",
+      "mode": "swim",
+      "expected": "Expected in September 2026",
+      "watch_dates": [
+        "2026-09-01"
+      ],
+      "location": "Madeira",
+      "status": "watching for a confirmed 2026 date (known schedule)",
+      "url": "https://www.madeiraislandultraswim.com/"
+    },
+    {
+      "name": "Ribeira Brava Vertical Race",
+      "mode": "trail",
+      "expected": "Expected in September 2026",
+      "watch_dates": [
+        "2026-09-01"
+      ],
+      "location": "Ribeira Brava, Madeira",
+      "status": "watching for a confirmed 2026 date (known schedule)",
+      "url": "https://atletismodamadeira.pt/"
+    },
+    {
+      "name": "KM Vertical do Fanal",
+      "mode": "trail",
+      "expected": "Expected in October 2026",
+      "watch_dates": [
+        "2026-10-01"
+      ],
+      "location": "Porto Moniz, Madeira",
+      "status": "watching for a confirmed 2026 date (race history)",
+      "url": "https://atletismodamadeira.pt/"
+    },
+    {
+      "name": "Volta à Cidade do Funchal",
+      "mode": "road",
+      "expected": "Expected in December 2026",
+      "watch_dates": [
+        "2026-12-01"
+      ],
+      "location": "Funchal, Madeira",
+      "status": "watching for a confirmed 2026 date (known schedule)",
+      "url": "https://www.voltacidade.com/"
+    },
+    {
+      "name": "MaXi Race Madeira",
+      "mode": "trail",
+      "expected": "Expected in December 2026",
+      "watch_dates": [
+        "2026-12-01"
+      ],
+      "location": "Madeira",
+      "status": "watching for a confirmed 2026 date (race history)",
+      "url": "https://maxiracemadeira.com/"
+    },
+    {
+      "name": "Trail Noturno Ludens",
+      "mode": "trail",
+      "expected": "Expected in December 2026",
+      "watch_dates": [
+        "2026-12-01"
+      ],
+      "location": "Machico, Madeira",
+      "status": "watching for a confirmed 2026 date (known schedule)",
+      "url": "https://trail.ludensmachico.pt/"
+    },
+    {
+      "name": "Trail da Boa Ventura",
+      "mode": "trail",
+      "expected": "Expected in January 2027",
+      "watch_dates": [
+        "2027-01-01"
+      ],
+      "location": "São Vicente, Madeira",
+      "status": "watching for a confirmed 2027 date (known schedule)",
+      "url": "https://trailboaventura.com/"
+    },
+    {
+      "name": "Trail do Porto Moniz",
+      "mode": "trail",
+      "expected": "Expected in February 2027",
+      "watch_dates": [
+        "2027-02-01"
+      ],
+      "location": "Porto Moniz, Madeira",
+      "status": "watching for a confirmed 2027 date (race history)",
+      "url": "https://trailportomoniz.com/"
+    },
+    {
+      "name": "Trail do Ludens Clube Machico",
+      "mode": "trail",
+      "expected": "Expected in March 2027",
+      "watch_dates": [
+        "2027-03-01"
+      ],
+      "location": "Machico, Madeira",
+      "status": "watching for a confirmed 2027 date (known schedule)",
+      "url": "https://trail.ludensmachico.pt/"
+    },
+    {
+      "name": "Funchal Vertical Kilometer",
+      "mode": "trail",
+      "expected": "Expected in March 2027",
+      "watch_dates": [
+        "2027-03-01"
+      ],
+      "location": "Funchal, Madeira",
+      "status": "watching for a confirmed 2027 date (race history)",
+      "url": "https://atletismodamadeira.pt/"
+    },
+    {
+      "name": "Porto Santo Nature Trail",
+      "mode": "trail",
+      "expected": "Expected in July 2027",
+      "watch_dates": [
+        "2027-07-01"
+      ],
+      "location": "Porto Santo",
+      "status": "watching for a confirmed 2027 date (race history)",
+      "url": "https://www.portosantonaturetrail.com/"
+    }
+  ]
+}

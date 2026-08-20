@@ -1,0 +1,3764 @@
+<!DOCTYPE html>
+<html lang="en"><!-- lang synced from localStorage -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madeira Trail Running Statistics & Race Analytics · Madeira Ativa</title>
+  <meta name="description" content="Trail running analytics for Madeira: race statistics, finish times, DNF rates and international participation trends.">
+  <link rel="canonical" href="https://azenha.ai/ativa/madeira_stat">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Madeira Ativa">
+  <meta property="og:title" content="Madeira Trail Running Statistics & Race Analytics · Madeira Ativa">
+  <meta property="og:description" content="Trail running analytics for Madeira: race statistics, finish times, DNF rates and international participation trends.">
+  <meta property="og:url" content="https://azenha.ai/ativa/madeira_stat">
+  <meta property="og:image" content="https://azenha.ai/ativa/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en">
+  <meta property="og:locale:alternate" content="pt_PT">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Madeira Trail Running Statistics & Race Analytics · Madeira Ativa">
+  <meta name="twitter:description" content="Trail running analytics for Madeira: race statistics, finish times, DNF rates and international participation trends.">
+  <meta name="twitter:image" content="https://azenha.ai/ativa/og.png">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="icon" href="/ativa/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: #F5F2EA;
+  color: #15201A;
+  line-height: 1.5;
+}
+
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 clamp(18px, 4vw, 48px);
+}
+
+/* Top bar */
+.stat-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.brand-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  padding: 6px 0;
+  transition: opacity 0.2s;
+}
+.brand-link:hover { opacity: 0.8; }
+.brand-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+  flex-shrink: 0;
+}
+.brand-name {
+  font-family: 'Fraunces', serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #1F4D32;
+  letter-spacing: -0.01em;
+}
+
+/* Sticky section nav */
+.section-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(245,242,234,0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid #DAD3C5;
+  margin: 0 calc(-1 * clamp(18px, 4vw, 48px));
+  padding: 0 clamp(18px, 4vw, 48px);
+}
+.section-nav-inner {
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.section-nav-inner::-webkit-scrollbar { display: none; }
+.section-nav a {
+  flex-shrink: 0;
+  padding: 12px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6B8763;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.section-nav a:hover { color: #1F4D32; }
+.section-nav a.active {
+  color: #1F4D32;
+  border-bottom-color: #1F4D32;
+}
+
+.page-header {
+  padding: 48px 0 32px;
+  border-bottom: 1px solid #DAD3C5;
+  margin-bottom: 40px;
+}
+.page-header h1 {
+  font-family: 'Fraunces', serif;
+  font-weight: 350;
+  font-size: clamp(28px, 4vw, 42px);
+  color: #1F4D32;
+  letter-spacing: -0.02em;
+}
+.page-header p {
+  color: #6B8763;
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+.section {
+  margin-bottom: 48px;
+  scroll-margin-top: 56px;
+}
+.section h2 {
+  font-family: 'Fraunces', serif;
+  font-weight: 400;
+  font-size: clamp(20px, 3vw, 28px);
+  color: #1F4D32;
+  margin-bottom: 20px;
+}
+
+/* Big numbers */
+.big-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 48px;
+}
+.big-stat {
+  background: rgba(255,255,255,0.5);
+  border: 1px solid #DAD3C5;
+  border-radius: 12px;
+  padding: 20px;
+}
+.big-stat .num {
+  font-family: 'Fraunces', serif;
+  font-weight: 300;
+  font-size: clamp(28px, 4vw, 40px);
+  color: #1F4D32;
+  line-height: 1;
+}
+.big-stat .lbl {
+  font-size: 13px;
+  color: #6B8763;
+  margin-top: 6px;
+}
+
+/* Map embed */
+.map-embed {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #DAD3C5;
+}
+.map-embed iframe {
+  width: 100%;
+  height: 340px;
+  border: none;
+  display: block;
+}
+.map-open {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(31,77,50,0.85);
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.map-open:hover { background: rgba(31,77,50,1); }
+
+/* Calendar wheel */
+.calendar-wheel-wrap {
+  background: rgba(255,255,255,0.5);
+  border: 1px solid #DAD3C5;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wheels-row {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+.calendar-wheel-container {
+  position: relative;
+  aspect-ratio: 1;
+}
+.calendar-wheel-container.main-wheel {
+  flex: 1;
+  max-width: 520px;
+}
+.calendar-wheel-container.mini-wheel {
+  flex: 0 0 320px;
+  max-width: 320px;
+}
+/* Trail calendar mini-table + modal */
+.trail-cal-mini {
+  margin-top: 12px; width: 100%; max-width: 320px; cursor: pointer;
+  border: 1px solid #DAD3C5; border-radius: 10px; background: #fbf9f4;
+  padding: 10px 12px; font: inherit; text-align: left; transition: border-color 0.2s, box-shadow 0.2s;
+}
+.trail-cal-mini:hover { border-color: #1F4D32; box-shadow: 0 2px 10px rgba(31,77,50,0.08); }
+.trail-cal-mini-title { font-size: 12px; font-weight: 700; color: #1F4D32; display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+.trail-cal-mini-row { display: flex; gap: 8px; font-size: 11px; padding: 2px 0; color: #15201A; }
+.trail-cal-mini-row.past { color: #B9B3A6; }
+.trail-cal-mini-row .d { color: #6B8763; min-width: 42px; }
+.trail-cal-mini-row.past .d { color: #C9C3B6; }
+.trail-cal-mini-more { font-size: 11px; color: #6B8763; margin-top: 6px; }
+.trail-cal-overlay { position: fixed; inset: 0; z-index: 1000; background: rgba(20,32,26,0.45); display: flex; align-items: center; justify-content: center; padding: 16px; }
+.trail-cal-overlay[hidden] { display: none; }
+.trail-cal-dialog { background: #F5F2EA; border-radius: 14px; width: 100%; max-width: 920px; max-height: 88vh; display: flex; flex-direction: column; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+.trail-cal-head { display: flex; justify-content: space-between; align-items: flex-start; padding: 16px 20px; border-bottom: 1px solid #DAD3C5; }
+.trail-cal-head h3 { font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 20px; color: #1F4D32; margin: 0; }
+.trail-cal-sub { font-size: 12px; color: #6B8763; margin-top: 3px; }
+.trail-cal-close { background: none; border: 0; font-size: 18px; color: #6B8763; cursor: pointer; padding: 4px 8px; border-radius: 6px; }
+.trail-cal-close:hover { background: rgba(0,0,0,0.06); color: #1F4D32; }
+.trail-cal-actions { display: flex; align-items: center; gap: 6px; }
+.tc-act { background: none; border: 1px solid #DAD3C5; color: #1F4D32; cursor: pointer; padding: 5px 10px; border-radius: 7px; font: inherit; font-size: 12px; font-weight: 600; }
+.tc-act:hover { background: rgba(31,77,50,0.08); border-color: #1F4D32; }
+.trail-cal-dialog.full { max-width: 100vw; width: 100vw; max-height: 100vh; height: 100vh; border-radius: 0; }
+.trail-cal-overlay.full-overlay { padding: 0; }
+.trail-cal-scroll { overflow: auto; padding: 4px 10px 10px; }
+.trail-cal-table { border-collapse: collapse; width: 100%; font-size: 12.5px; }
+.trail-cal-table th { position: sticky; top: 0; background: #efe9dc; color: #1F4D32; font-weight: 700; text-align: left; padding: 8px 8px; white-space: nowrap; border-bottom: 1px solid #DAD3C5; }
+.trail-cal-table td { padding: 8px 8px; border-bottom: 1px solid #E6E0D2; vertical-align: top; }
+.trail-cal-table tr.tc-month td { background: #efe9dc; color: #1F4D32; font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: 13px; padding: 6px 8px; border-bottom: 1px solid #DAD3C5; }
+.trail-cal-table tr.past td { color: #B9B3A6; }
+.trail-cal-table tr.past .tc-name { color: #9d978a; }
+.trail-cal-table .tc-name { font-weight: 600; color: #15201A; min-width: 175px; }
+.trail-cal-table th:nth-child(3) { min-width: 175px; }
+.trail-cal-table .tc-intl { display: inline-block; margin-left: 6px; font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: #8A5A12; background: rgba(200,145,47,0.16); padding: 1px 5px; border-radius: 4px; vertical-align: middle; }
+.trail-cal-table tr.past .tc-intl { color: #C9C3B6; background: rgba(0,0,0,0.04); }
+.trail-cal-table .tc-dist { white-space: nowrap; }
+.trail-cal-table a { color: #1F4D32; text-decoration: none; }
+.trail-cal-table a:hover { text-decoration: underline; }
+.trail-cal-table .tc-note { color: #B0782A; font-weight: 600; font-size: 11px; white-space: nowrap; }
+.trail-cal-extra-title { font-family: 'Fraunces', Georgia, serif; font-size: 15px; font-weight: 600; color: #1F4D32; margin: 18px 8px 6px; }
+.trail-cal-foot { padding: 10px 20px; border-top: 1px solid #DAD3C5; font-size: 11px; color: #6B8763; }
+.trail-cal-foot a { color: #1F4D32; }
+.wheel-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.wheel-label {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1F4D32;
+  margin-bottom: 8px;
+  font-family: 'Inter', sans-serif;
+}
+.wheel-tooltip {
+  display: none;
+  position: absolute;
+  background: rgba(15,32,26,0.92);
+  color: #e8e8e8;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  pointer-events: none;
+  z-index: 10;
+  max-width: 220px;
+  line-height: 1.4;
+}
+.wheel-tooltip .wt-name { font-weight: 600; color: #fff; }
+.wheel-tooltip .wt-date { color: #aaa; font-size: 11px; }
+
+/* Analytics placeholder */
+.analytics-coming {
+  background: rgba(255,255,255,0.5);
+  border: 1px solid #DAD3C5;
+  border-radius: 12px;
+  padding: 40px 24px;
+  text-align: center;
+  color: #6B8763;
+  font-size: 14px;
+}
+.analytics-coming strong {
+  display: block;
+  color: #1F4D32;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* MIUT charts */
+.miut-kpi-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 28px;
+}
+.miut-kpi {
+  background: rgba(255,255,255,0.5);
+  border: 1px solid #DAD3C5;
+  border-radius: 12px;
+  padding: 18px 16px;
+  text-align: center;
+}
+.miut-kpi .kpi-val {
+  font-family: 'Fraunces', serif;
+  font-weight: 300;
+  font-size: clamp(24px, 3vw, 34px);
+  color: #1F4D32;
+  line-height: 1.1;
+}
+.miut-kpi .kpi-lbl {
+  font-size: 12px;
+  color: #6B8763;
+  margin-top: 4px;
+}
+.miut-chart-card {
+  background: rgba(255,255,255,0.5);
+  border: 1px solid #DAD3C5;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+.miut-chart-card h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #1F4D32;
+  margin-bottom: 16px;
+}
+.chart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.chart-header h3 { margin-bottom: 0; }
+.pill-group {
+  display: inline-flex;
+  background: rgba(218,211,197,0.35);
+  border-radius: 8px;
+  padding: 3px;
+  gap: 2px;
+}
+.pill-btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 12px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: #6B8763;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.pill-btn:hover { color: #1F4D32; background: rgba(255,255,255,0.4); }
+.pill-btn.active {
+  background: #1F4D32;
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(31,77,50,0.25);
+}
+@media (max-width: 600px) {
+  .chart-header { flex-direction: column; align-items: flex-start; }
+  .pill-btn { padding: 4px 8px; font-size: 11px; }
+}
+.miut-chart-canvas {
+  width: 100%;
+  display: block;
+}
+.miut-records {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.miut-record {
+  background: rgba(255,255,255,0.5);
+  border: 1px solid #DAD3C5;
+  border-radius: 12px;
+  padding: 16px;
+}
+.miut-record .rec-dist {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6B8763;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+.miut-record .rec-time {
+  font-family: 'Fraunces', serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #1F4D32;
+  line-height: 1.2;
+}
+.miut-record .rec-name {
+  font-size: 13px;
+  color: #15201A;
+  margin-top: 2px;
+}
+.miut-record .rec-year {
+  font-size: 12px;
+  color: #6B8763;
+}
+.miut-countries-chart {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+.miut-country-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #15201A;
+}
+.miut-country-bar .bar {
+  height: 18px;
+  background: #1F4D32;
+  border-radius: 3px;
+  min-width: 4px;
+}
+.miut-editions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+  margin-top: 16px;
+}
+.miut-edition-card {
+  background: rgba(255,255,255,0.6);
+  border: 1px solid #DAD3C5;
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.miut-edition-card:hover { border-color: #1F4D32; }
+.miut-edition-card.selected { border-color: #1F4D32; background: rgba(31,77,50,0.06); }
+.miut-edition-card .ed-year {
+  font-family: 'Fraunces', serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #1F4D32;
+}
+.miut-edition-card .ed-count {
+  font-size: 12px;
+  color: #6B8763;
+}
+.show-all-btn {
+  background: none;
+  border: 1px solid #DAD3C5;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #1F4D32;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.show-all-btn:hover {
+  background: rgba(31,77,50,0.06);
+  border-color: #1F4D32;
+}
+.show-all-arrow {
+  display: inline-block;
+  margin-left: 4px;
+  transition: transform 0.2s;
+}
+.show-all-btn.expanded .show-all-arrow {
+  transform: rotate(180deg);
+}
+@media (max-width: 640px) {
+  .miut-kpi-row { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 860px) {
+  .wheels-row { flex-direction: column; align-items: center; }
+  .calendar-wheel-container.main-wheel { max-width: 420px; }
+  .calendar-wheel-container.mini-wheel { flex: unset; max-width: 280px; }
+}
+.cal-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #DAD3C5;
+  justify-content: center;
+}
+.cal-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #6B8763;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.cal-legend-item.dimmed { opacity: 0.3; }
+.cal-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+.cal-count {
+  font-size: 13px;
+  color: #6B8763;
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* Scatter plot */
+.scatter-container {
+  background: rgba(255,255,255,0.5);
+  border: 1px solid #DAD3C5;
+  border-radius: 12px;
+  padding: 24px;
+  position: relative;
+}
+#scatter {
+  width: 100%;
+  height: 420px;
+  display: block;
+}
+.scatter-tooltip {
+  display: none;
+  position: absolute;
+  background: rgba(15,32,26,0.92);
+  color: #e8e8e8;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  pointer-events: none;
+  z-index: 10;
+  white-space: nowrap;
+}
+.scatter-tooltip .tt-name { font-weight: 600; color: #fff; }
+.scatter-tooltip .tt-stat { color: #aaa; }
+
+/* Bar chart */
+.bar-container {
+  background: rgba(255,255,255,0.5);
+  border: 1px solid #DAD3C5;
+  border-radius: 12px;
+  padding: 24px;
+}
+#gainChart {
+  width: 100%;
+  height: 480px;
+  display: block;
+}
+
+/* Elevation profiles */
+.steep-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(218,211,197,0.3);
+}
+.steep-name {
+  width: 180px;
+  flex-shrink: 0;
+  font-size: 13px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.steep-viz {
+  flex: 1;
+  height: 48px;
+  position: relative;
+}
+.steep-slope {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: var(--accent);
+  transform-origin: bottom left;
+  border-radius: 1px;
+}
+.steep-ratio {
+  width: 70px;
+  flex-shrink: 0;
+  text-align: right;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--accent);
+}
+.steep-ratio small {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--soft);
+}
+.steep-refs {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+.steep-ref {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--soft);
+  padding: 4px 10px;
+  background: rgba(255,255,255,0.5);
+  border: 1px solid #DAD3C5;
+  border-radius: 6px;
+}
+.steep-ref-line {
+  width: 24px;
+  height: 2px;
+  transform-origin: center left;
+  border-radius: 1px;
+}
+@media (max-width: 760px) {
+  .steep-name { width: 110px; font-size: 12px; }
+  .steep-ratio { width: 55px; font-size: 13px; }
+  .steep-row { gap: 8px; }
+}
+.fun-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 14px;
+}
+.fun-card {
+  background: rgba(255,255,255,0.5);
+  border: 1px solid #DAD3C5;
+  border-radius: 12px;
+  padding: 16px 20px;
+  transition: all 0.2s;
+}
+.fun-card:hover {
+  border-color: #1F4D32;
+  background: rgba(255,255,255,0.7);
+}
+.fun-card-name {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.fun-metric {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.fun-icon {
+  font-size: 20px;
+  width: 28px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.fun-bar-wrap {
+  flex: 1;
+  min-width: 0;
+}
+.fun-label {
+  font-size: 11px;
+  color: var(--soft);
+  margin-bottom: 2px;
+}
+.fun-bar {
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(218,211,197,0.3);
+  overflow: hidden;
+}
+.fun-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.4s;
+}
+.fun-val {
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+  width: 80px;
+  text-align: right;
+}
+@media (max-width: 760px) {
+  .fun-grid { grid-template-columns: 1fr; }
+  .fun-val { width: 70px; font-size: 12px; }
+}
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+.profile-card {
+  background: rgba(255,255,255,0.5);
+  border: 1px solid #DAD3C5;
+  border-radius: 12px;
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.profile-card:hover {
+  border-color: #1F4D32;
+  background: rgba(255,255,255,0.7);
+}
+.profile-card.active {
+  border-color: #1F4D32;
+  background: rgba(31,77,50,0.06);
+}
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+.profile-name {
+  font-weight: 600;
+  font-size: 15px;
+  color: #1F4D32;
+}
+.profile-stats {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  color: #6B8763;
+}
+.profile-stats span {
+  white-space: nowrap;
+}
+.profile-canvas {
+  width: 100%;
+  height: 80px;
+  display: block;
+}
+
+/* Language toggle */
+[lang="pt"] [data-lang="en"],
+[lang="en"] [data-lang="pt"] { display: none; }
+.lang-toggle {
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border: 1px solid #DAD3C5;
+  border-radius: 6px;
+  background: transparent;
+  color: #6B8763;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.lang-toggle:hover { border-color: #1F4D32; color: #1F4D32; }
+
+.footer {
+  padding: 32px 0;
+  border-top: 1px solid #DAD3C5;
+  margin-top: 24px;
+  font-size: 13px;
+  color: #6B8763;
+}
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-top: 12px;
+}
+.footer-links a {
+  color: #1F4D32;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+.footer-links a:hover { opacity: 0.7; }
+
+/* TOC grid */
+.toc-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.toc-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  background: rgba(255,255,255,0.5);
+  border: 1px solid #DAD3C5;
+  border-radius: 12px;
+  padding: 18px 16px;
+  text-decoration: none;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.toc-card:hover {
+  border-color: #1F4D32;
+  background: rgba(255,255,255,0.8);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(31,77,50,0.08);
+}
+.toc-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.toc-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: #1F4D32;
+  line-height: 1.3;
+}
+.toc-desc {
+  font-size: 12px;
+  color: #6B8763;
+  line-height: 1.4;
+}
+.toc-card.featured {
+  grid-column: 1 / -1;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  background: linear-gradient(135deg, rgba(241,86,35,0.06), rgba(31,77,50,0.06));
+  border: 2px solid rgba(241,86,35,0.3);
+}
+.toc-card.featured .toc-icon {
+  width: 48px; height: 48px; font-size: 24px;
+}
+.toc-card.featured .toc-title { font-size: 17px; }
+.toc-card.featured .toc-desc { font-size: 13px; }
+.toc-card.featured:hover {
+  border-color: #F15623;
+  box-shadow: 0 4px 16px rgba(241,86,35,0.12);
+}
+
+@media (max-width: 860px) {
+  .toc-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 720px) {
+  .big-stats { grid-template-columns: repeat(2, 1fr); }
+  #scatter { height: 300px; }
+  #gainChart { height: 280px; }
+  .section-nav a { padding: 10px 12px; font-size: 12px; }
+}
+
+  .burger{flex-shrink:0;margin-left:8px;padding:2px 10px 4px;background:none;border:1px solid #DAD3C5;border-radius:8px;font-size:18px;line-height:1.4;color:#1F4D32;cursor:pointer}
+  .burger:hover{border-color:#1F4D32}
+  .drawer-back{position:fixed;inset:0;z-index:300;background:rgba(21,32,26,0.45);backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
+  .drawer{position:fixed;top:0;right:0;bottom:0;z-index:301;width:min(320px,86vw);background:#F5F2EA;border-left:1px solid #DAD3C5;box-shadow:-12px 0 32px rgba(21,32,26,0.25);display:flex;flex-direction:column;padding:14px 0 20px;animation:drawerIn .22s ease-out}
+  @keyframes drawerIn{from{transform:translateX(100%)}to{transform:translateX(0)}}
+  .drawer-head{display:flex;align-items:center;justify-content:space-between;padding:4px 18px 12px;border-bottom:1px solid #DAD3C5}
+  .drawer-title{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:18px;color:#1F4D32}
+  .drawer-close{background:none;border:0;font-size:28px;line-height:1;color:#6B8763;cursor:pointer;padding:0 2px}
+  .drawer-close:hover{color:#1F4D32}
+  .drawer-nav{display:flex;flex-direction:column;overflow-y:auto;padding:10px 6px}
+  .drawer-nav a{display:block;padding:12px 16px;border-radius:10px;color:#15201A;text-decoration:none;font-size:15.5px;font-weight:600}
+  .drawer-nav a:hover{background:rgba(31,77,50,0.08);color:#1F4D32}
+  .drawer-sep{height:1px;background:#DAD3C5;margin:10px 14px}
+
+  .totop{position:fixed;right:16px;bottom:18px;z-index:250;width:44px;height:44px;border-radius:50%;border:1px solid #DAD3C5;background:rgba(31,77,50,0.92);color:#fff;font-size:20px;line-height:1;cursor:pointer;box-shadow:0 4px 14px rgba(21,32,26,0.3);opacity:0;pointer-events:none;transition:opacity .25s}
+  .totop.show{opacity:1;pointer-events:auto}
+  .totop:hover{background:#163d27}
+  .drawer[hidden],.drawer-back[hidden]{display:none}
+.burger svg{display:block}
+@media(max-width:640px){
+  .burger{padding:4px 8px;font-size:12px;margin:5px 0 5px 6px;border-radius:7px}
+  .burger svg{width:12px;height:10px}
+  .nav-lang{font-size:11px;padding:2px 8px;margin:6px 0}
+  .lang button{font-size:11.5px;padding:3px 9px}
+  .lang-toggle{font-size:11.5px;padding:2px 7px}
+}
+@media(max-width:640px){
+  .nav-lang,.burger{width:auto!important;min-width:0!important;max-width:none!important;height:29px!important;flex:0 0 auto!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important}
+  .burger{padding:0 9px!important}
+  .nav-lang{padding:0 9px!important}
+}
+@media(max-width:640px){
+  .site-nav,.section-nav{position:relative}
+  .site-nav-inner,.section-nav-inner{padding-right:80px}
+  .nav-lang,.burger{position:absolute!important;top:50%;transform:translateY(-50%);height:24px!important;line-height:22px!important;font-size:11px!important;padding:0 7px!important;background:var(--bg,#F5F2EA)!important;z-index:2;margin:0!important;border-radius:8px}
+  .nav-lang{right:42px}
+  .burger{right:10px}
+}
+</style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M2PTQLF903"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-M2PTQLF903', { content_group: 'ativa' });
+  </script>
+  <script>
+    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","xr4rlyhxyo");
+  </script>
+</head>
+<body>
+<div class="wrap">
+  <div class="stat-nav">
+    <a href="./" class="brand-link">
+      <svg class="brand-icon" viewBox="0 0 512 512" aria-hidden="true">
+        <rect width="512" height="512" rx="112" fill="#1f4d32"/>
+        <g transform="translate(86 54) scale(1.55)" fill="none" stroke="#f5f2ea" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="110" cy="110" r="90"/>
+          <circle cx="110" cy="110" r="76" stroke-dasharray="5 12" stroke-opacity="0.58"/>
+          <circle cx="110" cy="110" r="7" fill="#f5f2ea" stroke="none"/>
+          <line x1="20" y1="110" x2="200" y2="110"/>
+          <line x1="110" y1="20" x2="110" y2="200"/>
+          <line x1="46.4" y1="46.4" x2="173.6" y2="173.6"/>
+          <line x1="46.4" y1="173.6" x2="173.6" y2="46.4"/>
+          <path d="M0 232C30 222 50 244 80 232S130 222 160 232S200 244 220 232"/>
+          <path d="M0 248C30 238 50 260 80 248S130 238 160 248S200 260 220 248" stroke-opacity="0.58"/>
+        </g>
+      </svg>
+      <span class="brand-name">Madeira Ativa</span>
+    </a>
+    <div style="display:flex;gap:8px;align-items:center;">
+      <a href="mailto:agent@azenha.ai" style="color:#6B8763;text-decoration:none;font-size:13px;font-weight:500;transition:color 0.2s;"><span data-lang="en">Contact</span><span data-lang="pt">Contacto</span></a>
+      <button class="lang-toggle" onclick="toggleLang()" aria-label="Switch language">PT</button><button class="burger" id="burgerBtn" aria-label="Menu" aria-expanded="false"><svg width="17" height="13" viewBox="0 0 18 14" fill="none" aria-hidden="true"><path d="M1 1h16M1 7h16M1 13h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+</div>
+
+<nav class="section-nav">
+  <div class="wrap">
+    <div class="section-nav-inner">
+      <a href="/ativa/">🏠 Main</a>
+      <span style="flex-shrink:0;padding:12px 10px;font-size:13px;font-weight:800;color:#1F4D32;border-bottom:2px solid #1F4D32;white-space:nowrap">🏃 Trails</span>
+      <a href="#facts" data-section="facts"><span data-lang="en">Facts</span><span data-lang="pt">Factos</span></a>
+      <a href="#map" data-section="map"><span data-lang="en">Map</span><span data-lang="pt">Mapa</span></a>
+      <a href="#calendar" data-section="calendar"><span data-lang="en">Calendar</span><span data-lang="pt">Calendário</span></a>
+      <a href="#difficulty" data-section="difficulty"><span data-lang="en">Difficulty</span><span data-lang="pt">Dificuldade</span></a>
+      <a href="#elevation" data-section="elevation"><span data-lang="en">Elevation</span><span data-lang="pt">Desnível</span></a>
+      <a href="#profiles" data-section="profiles"><span data-lang="en">Profiles</span><span data-lang="pt">Perfis</span></a>
+      <a href="#miut" data-section="miut">MIUT</a>
+      <a href="#countries" data-section="countries"><span data-lang="en">Countries</span><span data-lang="pt">Países</span></a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="page-header">
+    <h1><span data-lang="en">Trail Race Analytics</span><span data-lang="pt">Análise de Corridas de Trail</span></h1>
+    <p><span data-lang="en">Elevation profiles, difficulty comparison and stats for <span id="raceCountEn">0</span> official trail races across Madeira</span><span data-lang="pt">Perfis de elevação, comparação de dificuldade e estatísticas de <span id="raceCountPt">0</span> corridas oficiais de trail na Madeira</span></p>
+  </div>
+
+  <div class="toc-grid">
+    <a class="toc-card featured" href="#miut">
+      <div class="toc-icon" style="background:rgba(241,86,35,0.12)">🏆</div>
+      <div>
+        <div class="toc-title">MIUT Analytics</div>
+        <div class="toc-desc"><span data-lang="en">17 editions · records · growth · countries · DNF rates</span><span data-lang="pt">17 edições · recordes · crescimento · países · taxas de desistência</span></div>
+      </div>
+    </a>
+    <a class="toc-card" href="#facts">
+      <div class="toc-icon" style="background:rgba(31,77,50,0.08)">📈</div>
+      <div class="toc-title"><span data-lang="en">Key Facts</span><span data-lang="pt">Factos</span></div>
+      <div class="toc-desc"><span data-lang="en">Total distance, elevation & race count</span><span data-lang="pt">Distância total, desnível e contagem de corridas</span></div>
+    </a>
+    <a class="toc-card" href="#calendar">
+      <div class="toc-icon" style="background:rgba(31,77,50,0.08)">📅</div>
+      <div class="toc-title"><span data-lang="en">Event Calendar</span><span data-lang="pt">Calendário</span></div>
+      <div class="toc-desc"><span data-lang="en">Year wheel of all races & trail-only events</span><span data-lang="pt">Roda anual de todas as corridas e eventos de trail</span></div>
+    </a>
+    <a class="toc-card" href="#map">
+      <div class="toc-icon" style="background:rgba(31,77,50,0.08)">🗺️</div>
+      <div class="toc-title"><span data-lang="en">Trail Map</span><span data-lang="pt">Mapa de Trilhos</span></div>
+      <div class="toc-desc"><span data-lang="en">Interactive heatmap of all race routes</span><span data-lang="pt">Mapa interativo de todas as rotas</span></div>
+    </a>
+    <a class="toc-card" href="#fun-compare">
+      <div class="toc-icon" style="background:rgba(142,68,173,0.08)">🏗️</div>
+      <div class="toc-title"><span data-lang="en">Fun Comparisons</span><span data-lang="pt">Comparações Divertidas</span></div>
+      <div class="toc-desc"><span data-lang="en">Buildings climbed, steps taken, flat equivalent</span><span data-lang="pt">Edifícios escalados, degraus, equivalente plano</span></div>
+    </a>
+    <a class="toc-card" href="#difficulty">
+      <div class="toc-icon" style="background:rgba(196,68,68,0.08)">⚡</div>
+      <div class="toc-title"><span data-lang="en">Difficulty Scatter</span><span data-lang="pt">Dificuldade</span></div>
+      <div class="toc-desc"><span data-lang="en">Distance vs elevation gain for each race</span><span data-lang="pt">Distância vs desnível de cada corrida</span></div>
+    </a>
+    <a class="toc-card" href="#elevation">
+      <div class="toc-icon" style="background:rgba(54,168,224,0.08)">📊</div>
+      <div class="toc-title"><span data-lang="en">Elevation & Steepness</span><span data-lang="pt">Desnível e Inclinação</span></div>
+      <div class="toc-desc"><span data-lang="en">Gain bars + gradient comparison (1:X ratio)</span><span data-lang="pt">Barras de desnível + comparação de inclinação</span></div>
+    </a>
+    <a class="toc-card" href="#profiles">
+      <div class="toc-icon" style="background:rgba(169,171,54,0.08)">🏔️</div>
+      <div class="toc-title"><span data-lang="en">Elevation Profiles</span><span data-lang="pt">Perfis de Elevação</span></div>
+      <div class="toc-desc"><span data-lang="en">GPX-based route profiles for each trail</span><span data-lang="pt">Perfis de rota GPX para cada trilho</span></div>
+    </a>
+    <a class="toc-card" href="#countries">
+      <div class="toc-icon" style="background:rgba(107,135,99,0.08)">🌍</div>
+      <div class="toc-title"><span data-lang="en">All Races</span><span data-lang="pt">Todas as Corridas</span></div>
+      <div class="toc-desc"><span data-lang="en">Growth, records, clubs, localities, loyalty, DNF, finish times & more</span><span data-lang="pt">Crescimento, recordes, clubes, localidades, fidelidade, DNF e mais</span></div>
+    </a>
+  </div>
+  <a class="toc-card featured" href="/ativa/madeira_waw" style="margin-bottom:48px;background:linear-gradient(135deg, rgba(107,135,99,0.08), rgba(31,77,50,0.08));border:2px solid rgba(31,77,50,0.25)">
+    <div class="toc-icon" style="background:rgba(31,77,50,0.12)">🧪</div>
+    <div>
+      <div class="toc-title"><span data-lang="en">Interactive Prototypes</span><span data-lang="pt">Protótipos Interativos</span></div>
+      <div class="toc-desc"><span data-lang="en">Race simulator · difficulty scores · race compare · shareable cards · world benchmarks · finish timelapse · country heatmap</span><span data-lang="pt">Simulador de corrida · scores de dificuldade · comparação · cartões · benchmarks mundiais · timelapse · mapa de países</span></div>
+    </div>
+  </a>
+
+  <div class="section" id="facts">
+    <div class="big-stats" id="bigStats"></div>
+  </div>
+
+  <div class="section" id="map">
+    <h2><span data-lang="en">Trail Map</span><span data-lang="pt">Mapa de Trilhos</span></h2>
+    <div class="map-embed">
+      <iframe src="/ativa/map.html?theme=light&embed=1" title="Madeira Trails Map" loading="lazy"></iframe>
+      <a class="map-open" href="/ativa/map" target="_blank"><span data-lang="en">Open map ↗</span><span data-lang="pt">Abrir mapa ↗</span></a>
+    </div>
+  </div>
+
+  <div class="section" id="calendar">
+    <h2><span data-lang="en">Annual Event Calendar</span><span data-lang="pt">Calendário Anual de Eventos</span></h2>
+    <div class="calendar-wheel-wrap" id="calendarAnnual">
+      <div class="wheels-row">
+        <div class="calendar-wheel-container main-wheel">
+          <div class="wheel-label"><span data-lang="en">All Events</span><span data-lang="pt">Todos os Eventos</span></div>
+          <canvas class="wheel-canvas" id="calendarWheel"></canvas>
+          <div class="wheel-tooltip" id="wheelTooltip"></div>
+        </div>
+        <div class="calendar-wheel-container mini-wheel">
+          <div class="wheel-label"><span data-lang="en">Trail & Ultra</span><span data-lang="pt">Trail & Ultra</span></div>
+          <canvas class="wheel-canvas" id="calendarWheelTrail"></canvas>
+          <div class="wheel-tooltip" id="wheelTooltipTrail"></div>
+          <button class="trail-cal-mini" id="trailCalMini" type="button" aria-label="Open trail calendar table"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="trail-cal-overlay" id="trailCalOverlay" hidden>
+    <div class="trail-cal-dialog" role="dialog" aria-modal="true">
+      <div class="trail-cal-head">
+        <div>
+          <h3 id="trailCalTitle">Trail Madeira 2025/2026</h3>
+          <div class="trail-cal-sub" id="trailCalSub"></div>
+        </div>
+        <div class="trail-cal-actions">
+          <button class="tc-act" id="trailCalCsv" type="button">CSV</button>
+          <button class="tc-act" id="trailCalXls" type="button">Excel</button>
+          <button class="tc-act" id="trailCalPdf" type="button">PDF</button>
+          <button class="tc-act" id="trailCalFull" type="button" aria-label="Fullscreen">⤢</button>
+          <button class="trail-cal-close" id="trailCalClose" type="button" aria-label="Close">✕</button>
+        </div>
+      </div>
+      <div class="trail-cal-scroll"><table class="trail-cal-table" id="trailCalTable"></table>
+        <div id="trailCalExtraWrap"></div>
+      </div>
+      <div class="trail-cal-foot" id="trailCalFoot"></div>
+    </div>
+  </div>
+
+  <div class="section" id="difficulty">
+    <h2><span data-lang="en">Difficulty Map: Distance vs Elevation Gain</span><span data-lang="pt">Mapa de Dificuldade: Distância vs Desnível</span></h2>
+    <div class="scatter-container">
+      <canvas id="scatter"></canvas>
+      <div class="scatter-tooltip" id="scatterTooltip"></div>
+    </div>
+  </div>
+
+  <div class="section" id="elevation">
+    <div class="chart-header">
+      <h2><span data-lang="en">Elevation & Steepness</span><span data-lang="pt">Desnível e Inclinação</span></h2>
+      <div class="pill-group" id="elev-view-pills">
+        <button class="pill-btn active" data-val="bars">Gain bars</button>
+        <button class="pill-btn" data-val="steepness">Steepness</button>
+      </div>
+    </div>
+    <div id="elev-bars-view">
+      <div class="bar-container">
+        <canvas id="gainChart"></canvas>
+      </div>
+    </div>
+    <div id="elev-steep-view" style="display:none">
+      <p style="font-size:13px;color:var(--soft);margin:0 0 16px"><span data-lang="en">Average gradient: 1 m of climb for every X m of distance</span><span data-lang="pt">Inclinação média: 1 m de subida a cada X m de distância</span></p>
+      <div id="steepness-chart"></div>
+    </div>
+  </div>
+
+  <div class="section" id="fun-compare">
+    <h2><span data-lang="en">Fun Comparisons</span><span data-lang="pt">Comparações Divertidas</span></h2>
+    <p style="font-size:13px;color:var(--soft);margin:-4px 0 16px"><span data-lang="en">What does each race's elevation gain really feel like?</span><span data-lang="pt">O que o desnível de cada corrida realmente significa?</span></p>
+    <div id="fun-compare-chart"></div>
+  </div>
+
+  <div class="section" id="profiles">
+    <div class="chart-header">
+      <h2><span data-lang="en">Elevation Profiles</span><span data-lang="pt">Perfis de Elevação</span></h2>
+      <div class="pill-group" id="profiles-sort-pills">
+        <button class="pill-btn active" data-val="distance">Distance</button>
+        <button class="pill-btn" data-val="elevation">Elevation</button>
+        <button class="pill-btn" data-val="steepness">Steepness</button>
+      </div>
+    </div>
+    <div class="profile-grid" id="profiles-top3"></div>
+    <div id="profiles-extra" style="display:none"></div>
+    <button class="show-all-btn" id="profiles-toggle" style="display:none;margin-top:8px"></button>
+  </div>
+
+  <div class="section" id="miut">
+    <h2>MIUT — Madeira Island Ultra Trail</h2>
+    <div id="miut-loading" class="analytics-coming">
+      <strong>Loading MIUT data...</strong>
+    </div>
+    <div id="miut-content" style="display:none">
+      <div class="miut-kpi-row" id="miut-kpis"></div>
+      <div class="miut-chart-card">
+        <h3><span data-lang="en">Participants & Finishers by Year</span><span data-lang="pt">Participantes e Finalizadores por Ano</span></h3>
+        <canvas id="miut-growth" class="miut-chart-canvas" height="280"></canvas>
+      </div>
+      <div class="miut-chart-card">
+        <h3><span data-lang="en">Course Records (fastest finish)</span><span data-lang="pt">Recordes de Percurso (tempo mais rápido)</span></h3>
+        <div class="miut-records" id="miut-records"></div>
+      </div>
+      <div class="miut-chart-card">
+        <h3><span data-lang="en">Top Countries (all-time)</span><span data-lang="pt">Principais Países (histórico)</span></h3>
+        <canvas id="miut-countries" class="miut-chart-canvas" height="260"></canvas>
+        <div style="text-align:center;margin-top:12px">
+          <button id="miut-countries-toggle" class="show-all-btn">
+            <span data-lang="en">All with 10+ participants</span><span data-lang="pt">Todos com 10+ participantes</span>
+            <span class="show-all-arrow">▾</span>
+          </button>
+        </div>
+      </div>
+      <div class="miut-chart-card">
+        <h3><span data-lang="en">DNF Rate by Year</span><span data-lang="pt">Taxa de Desistência por Ano</span></h3>
+        <canvas id="miut-dnf" class="miut-chart-canvas" height="220"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="countries">
+    <h2><span data-lang="en">All Madeira Trail Races — Analytics</span><span data-lang="pt">Todas as Corridas de Trail da Madeira — Análise</span></h2>
+    <div id="all-trails-loading" class="analytics-coming">
+      <strong>Loading data...</strong>
+    </div>
+    <div id="all-trails-content" style="display:none">
+      <div class="miut-kpi-row" id="all-kpis"></div>
+      <div class="miut-chart-card">
+        <div class="chart-header">
+          <h3><span data-lang="en">Participation Growth & Gender Trend</span><span data-lang="pt">Crescimento e Tendência de Género</span></h3>
+          <div class="pill-group" id="growth-age-pills">
+            <button class="pill-btn active" data-val="all"><span data-lang="en">All ages</span><span data-lang="pt">Todas</span></button>
+            <button class="pill-btn" data-val="sen">Senior</button>
+            <button class="pill-btn" data-val="vet">Vet 40+</button>
+            <button class="pill-btn" data-val="vet50">Vet 50+</button>
+          </div>
+        </div>
+        <canvas id="all-growth" class="miut-chart-canvas" height="300"></canvas>
+      </div>
+      <div class="miut-chart-card">
+        <div class="chart-header">
+          <h3><span data-lang="en">Course Records — All Races</span><span data-lang="pt">Recordes de Percurso — Todas as Corridas</span></h3>
+          <div style="display:flex;gap:6px;flex-wrap:wrap">
+            <div class="pill-group" id="records-gender-pills">
+              <button class="pill-btn active" data-val="all">All</button>
+              <button class="pill-btn" data-val="m">♂ Men</button>
+              <button class="pill-btn" data-val="f">♀ Women</button>
+            </div>
+            <div class="pill-group" id="records-dist-pills">
+              <button class="pill-btn active" data-val="all"><span data-lang="en">All distances</span><span data-lang="pt">Todas</span></button>
+              <button class="pill-btn" data-val="100+">100+</button>
+              <button class="pill-btn" data-val="75–99">75–99</button>
+              <button class="pill-btn" data-val="50–74">50–74</button>
+              <button class="pill-btn" data-val="35–49">35–49</button>
+              <button class="pill-btn" data-val="20–34">20–34</button>
+            </div>
+          </div>
+        </div>
+        <div id="all-records" style="overflow-x:auto"></div>
+      </div>
+      <div class="miut-chart-card">
+        <div class="chart-header">
+          <h3><span data-lang="en">Top Clubs Ranking</span><span data-lang="pt">Ranking de Clubes</span></h3>
+          <div class="pill-group" id="clubs-sort-pills">
+            <button class="pill-btn active" data-val="finishers"><span data-lang="en">By finishers</span><span data-lang="pt">Por finalizadores</span></button>
+            <button class="pill-btn" data-val="races"><span data-lang="en">By races</span><span data-lang="pt">Por corridas</span></button>
+          </div>
+        </div>
+        <div id="clubs-ranking"></div>
+        <div style="text-align:center;margin-top:12px">
+          <button id="clubs-toggle" class="show-all-btn">
+            <span data-lang="en">Show top 50</span><span data-lang="pt">Mostrar top 50</span>
+            <span class="show-all-arrow">▾</span>
+          </button>
+        </div>
+      </div>
+      <div class="miut-chart-card">
+        <div class="chart-header">
+          <h3><span data-lang="en">Madeira Localities — by Club Finishers</span><span data-lang="pt">Localidades da Madeira — por Finalizadores de Clubes</span></h3>
+        </div>
+        <div id="localities-ranking"></div>
+        <div style="text-align:center;margin-top:12px">
+          <button id="localities-toggle" class="show-all-btn">
+            <span data-lang="en">Show all</span><span data-lang="pt">Mostrar todos</span>
+            <span class="show-all-arrow">▾</span>
+          </button>
+        </div>
+      </div>
+      <div class="miut-chart-card">
+        <h3><span data-lang="en">Countries — All Races</span><span data-lang="pt">Países — Todas as Corridas</span></h3>
+        <canvas id="all-countries" class="miut-chart-canvas" height="260"></canvas>
+        <div style="text-align:center;margin-top:12px">
+          <button id="all-countries-toggle" class="show-all-btn">
+            <span data-lang="en">All with 10+ participants</span><span data-lang="pt">Todos com 10+ participantes</span>
+            <span class="show-all-arrow">▾</span>
+          </button>
+        </div>
+      </div>
+      <div class="miut-chart-card">
+        <div class="chart-header">
+          <h3><span data-lang="en">Finish Time Distribution</span><span data-lang="pt">Distribuição de Tempos de Chegada</span></h3>
+          <div class="pill-group" id="time-dist-pills">
+            <button class="pill-btn active" data-val="Ultra 100+">100+ km</button>
+            <button class="pill-btn" data-val="Ultra 75-99">75–99</button>
+            <button class="pill-btn" data-val="Long 50-74">50–74</button>
+            <button class="pill-btn" data-val="Marathon 35-49">35–49</button>
+          </div>
+        </div>
+        <canvas id="time-dist-chart" class="miut-chart-canvas" height="260"></canvas>
+      </div>
+      <div class="miut-chart-card">
+        <h3><span data-lang="en">New vs Returning Athletes</span><span data-lang="pt">Atletas Novos vs Regressados</span></h3>
+        <canvas id="loyalty-chart" class="miut-chart-canvas" height="280"></canvas>
+      </div>
+      <div class="miut-chart-card">
+        <h3><span data-lang="en">Portugal vs International</span><span data-lang="pt">Portugal vs Internacional</span></h3>
+        <canvas id="intl-chart" class="miut-chart-canvas" height="280"></canvas>
+      </div>
+      <div class="miut-chart-card">
+        <div class="chart-header">
+          <h3><span data-lang="en">Race Difficulty — DNF Rate</span><span data-lang="pt">Dificuldade — Taxa de Desistência</span></h3>
+        </div>
+        <canvas id="dnf-ranking-chart" class="miut-chart-canvas" height="400"></canvas>
+      </div>
+      <div class="miut-chart-card">
+        <h3><span data-lang="en">When Do Runners Finish? (hour of day)</span><span data-lang="pt">Quando os Corredores Chegam? (hora do dia)</span></h3>
+        <canvas id="finish-hour-chart" class="miut-chart-canvas" height="320"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p><span data-lang="en">Data from official race websites · Profiles from GPX files · <a href="map" style="color:#1F4D32;">View trails map</a></span><span data-lang="pt">Dados dos sites oficiais das corridas · Perfis de ficheiros GPX · <a href="map" style="color:#1F4D32;">Ver mapa de trilhos</a></span></p>
+    <div class="footer-links">
+      <a href="https://atletismodamadeira.pt" target="_blank">AARAM</a>
+      <a href="https://miutmadeira.com" target="_blank">MIUT</a>
+      <a href="https://ultratrailmadeiraisland.com" target="_blank">Ultra Madeira</a>
+      <a href="https://ecotrailmadeira.com" target="_blank">EcoTrail Madeira</a>
+      <a href="https://trailportomoniz.com" target="_blank">Trail Porto Moniz</a>
+      <a href="https://trailboaventura.com" target="_blank">Trail Boa Ventura</a>
+      <a href="https://adnrace.pt" target="_blank">ADN Race</a>
+      <a href="https://madeiraskyrunning.com" target="_blank">Madeira Skyrunning</a>
+      <a href="https://www.trail-natura.com" target="_blank">Trail Natura</a>
+      <a href="https://aoram.pt/calendario/" target="_blank">AORAM</a>
+      <a href="https://lap2go.com" target="_blank">Lap2Go</a>
+      <a href="https://fpacompeticoes.pt" target="_blank">FPA</a>
+      <a href="https://www.swimrunportugal.com" target="_blank">SwimRun Portugal</a>
+      <a href="https://triatlomadeira.com" target="_blank">Triatlo Madeira</a>
+    </div>
+  </div>
+</div>
+
+<script>
+const COLORS = {
+  "MIUT": "#1F4D32",
+  "EcoTrail Madeira": "#ff6b35",
+  "Ultra Madeira": "#7e03a8",
+  "ADN Race": "#0d7ea8",
+  "Trail Porto Moniz": "#c4a035",
+  "Furão Sky Race": "#d63384",
+  "Trail Boa Ventura": "#2d8659",
+};
+
+const MODE_COLORS = {
+  trail: "#1F4D32",
+  road: "#c4a035",
+  swim: "#0d7ea8",
+  cycling: "#d63384",
+  kids: "#5a9e4b",
+  pro: "#7e03a8",
+  festivals: "#ff6b35",
+};
+
+const MODE_LABELS = {
+  en: { trail: "Trail & Ultra", road: "Road run", swim: "Swimming & Triathlon", cycling: "Cycling", kids: "Kids", pro: "Pro", festivals: "Festivals" },
+  pt: { trail: "Trail & Ultra", road: "Corrida estrada", swim: "Natação & Triatlo", cycling: "Ciclismo", kids: "Kids", pro: "Pro", festivals: "Festivais" },
+};
+
+const ANNUAL_RACES = [
+  { month: 1, name: "Trail Boa Ventura", mode: "trail", location: "Boa Ventura" },
+  { month: 2, name: "Trail Porto Moniz", mode: "trail", location: "Porto Moniz" },
+  { month: 3, name: "Trail da Calheta", mode: "trail", location: "Calheta" },
+  { month: 3, name: "Trail do Ludens", mode: "trail", location: "Funchal" },
+  { month: 4, name: "MIUT (Legend/Advanced/Discover/Marathon/Starter)", mode: "trail", location: "Machico → Porto Moniz" },
+  { month: 5, name: "Porto Santo Nature Trail", mode: "trail", location: "Porto Santo" },
+  { month: 5, name: "Madeira Rat Race Coast to Coast", mode: "cycling", location: "Madeira" },
+  { month: 1, name: "Madeira Marathon / Meia Maratona", mode: "road", location: "Funchal" },
+  { month: 2, name: "Carnival Festivities", mode: "festivals", location: "Funchal" },
+  { month: 4, name: "Madeira Flower Festival", mode: "festivals", location: "Funchal" },
+  { month: 6, name: "Cristo Rei Trail", mode: "trail", location: "Garajau, Caniço" },
+  { month: 7, name: "Trail Porto da Cruz Natura", mode: "trail", location: "Porto da Cruz" },
+  { month: 8, name: "Camacha Trail", mode: "trail", location: "Camacha" },
+  { month: 9, name: "Trail de Câmara de Lobos", mode: "trail", location: "Câmara de Lobos" },
+  { month: 10, name: "EcoTrail Madeira (15/30/45/60 km)", mode: "trail", location: "Funchal" },
+  { month: 10, name: "Ultra X Madeira (25/50/60/110 km)", mode: "trail", location: "Machico" },
+  { month: 11, name: "ADN Race (14/33 km)", mode: "trail", location: "São Vicente" },
+  { month: 12, name: "Trail Noturno", mode: "trail", location: "Funchal" },
+  { month: 12, name: "Maxi Race Madeira", mode: "trail", location: "Santana" },
+  { month: 12, name: "Furão Sky Race", mode: "trail", location: "Santana" },
+];
+
+function getColor(group) {
+  return COLORS[group] || "#6B8763";
+}
+
+function getLang() { return document.documentElement.lang || 'en'; }
+
+function toggleLang() {
+  const html = document.documentElement;
+  const btn = document.querySelector('.lang-toggle');
+  if (html.lang === 'en') {
+    html.lang = 'pt';
+    btn.textContent = 'EN';
+    localStorage.setItem('lang', 'pt');
+  } else {
+    html.lang = 'en';
+    btn.textContent = 'PT';
+    localStorage.setItem('lang', 'en');
+  }
+  renderCalendar(window._eventsData);
+  window.dispatchEvent(new Event('trailcal:lang'));
+}
+
+(function() {
+  const saved = localStorage.getItem('lang');
+  if (saved === 'pt') {
+    document.documentElement.lang = 'pt';
+    document.querySelector('.lang-toggle').textContent = 'EN';
+  }
+})();
+
+// --- Data loading ---
+Promise.all([
+  fetch('elevation.json').then(r => r.json()),
+  fetch('events.json').then(r => r.json()),
+]).then(([elevData, eventsData]) => {
+  const races = elevData.races;
+  const rcEn = document.getElementById('raceCountEn');
+  const rcPt = document.getElementById('raceCountPt');
+  if (rcEn) rcEn.textContent = races.length;
+  if (rcPt) rcPt.textContent = races.length;
+
+  renderBigStats(races);
+  window._eventsData = eventsData.events;
+  renderCalendar(eventsData.events);
+  renderScatter(races);
+  renderGainChart(races);
+  renderSteepness(races);
+  renderFunCompare(races);
+  renderProfiles(races);
+});
+
+// --- Circular Calendar Wheel ---
+window._calHiddenModes = new Set();
+
+function drawWheel(canvasId, tooltipId, events, opts) {
+  const canvas = document.getElementById(canvasId);
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+  const rect = canvas.getBoundingClientRect();
+  canvas.width = rect.width * dpr;
+  canvas.height = rect.height * dpr;
+  ctx.scale(dpr, dpr);
+  const W = rect.width, H = rect.height;
+  const cx = W / 2, cy = H / 2;
+
+  const lang = getLang();
+  const monthNames = lang === 'pt'
+    ? ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez']
+    : ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+  const isSmall = opts.small;
+  const outerR = Math.min(cx, cy) - (isSmall ? 28 : 40);
+  const innerR = outerR * 0.38;
+  const labelR = outerR + (isSmall ? 16 : 22);
+  const sectorGap = 0.02;
+  const sectorAngle = (Math.PI * 2) / 12;
+  const startOffset = -Math.PI / 2;
+  const fontScale = isSmall ? 0.85 : 1;
+
+  const byMonth = {};
+  for (let m = 0; m < 12; m++) byMonth[m] = [];
+  events.forEach(ev => {
+    if (!ev.date) return;
+    const month = parseInt(ev.date.slice(5, 7), 10) - 1;
+    if (month >= 0 && month < 12) byMonth[month].push(ev);
+  });
+
+  const arcs = [];
+  let totalShown = 0;
+
+  for (let m = 0; m < 12; m++) {
+    const a0 = startOffset + m * sectorAngle + sectorGap / 2;
+    const a1 = startOffset + (m + 1) * sectorAngle - sectorGap / 2;
+
+    ctx.beginPath();
+    ctx.arc(cx, cy, outerR, a0, a1);
+    ctx.arc(cx, cy, innerR, a1, a0, true);
+    ctx.closePath();
+    ctx.fillStyle = m % 2 === 0 ? 'rgba(31,77,50,0.04)' : 'rgba(31,77,50,0.08)';
+    ctx.fill();
+
+    const monthEvents = byMonth[m].sort((a, b) => a.date.localeCompare(b.date));
+    const seen = new Set();
+    const deduped = [];
+    monthEvents.forEach(ev => {
+      const key = ev.date + '|' + ev.name;
+      if (!seen.has(key)) { seen.add(key); deduped.push(ev); }
+    });
+
+    if (deduped.length > 0) {
+      const arcSpan = (a1 - a0);
+      const evArc = arcSpan / deduped.length;
+      const ringW = outerR - innerR;
+
+      deduped.forEach((ev, i) => {
+        const ea0 = a0 + i * evArc + 0.005;
+        const ea1 = a0 + (i + 1) * evArc - 0.005;
+        const color = MODE_COLORS[ev.mode] || '#6B8763';
+        const eInner = innerR + ringW * 0.08;
+        const eOuter = outerR - ringW * 0.08;
+
+        ctx.beginPath();
+        ctx.arc(cx, cy, eOuter, ea0, ea1);
+        ctx.arc(cx, cy, eInner, ea1, ea0, true);
+        ctx.closePath();
+        ctx.fillStyle = color + 'cc';
+        ctx.fill();
+
+        arcs.push({ ea0, ea1, innerR: eInner, outerR: eOuter, ev });
+        totalShown++;
+      });
+    }
+
+    const labelAngle = (a0 + a1) / 2;
+    const lx = cx + Math.cos(labelAngle) * labelR;
+    const ly = cy + Math.sin(labelAngle) * labelR;
+    ctx.fillStyle = '#1F4D32';
+    ctx.font = `600 ${Math.round(13 * fontScale)}px Inter, sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(monthNames[m], lx, ly);
+  }
+
+  // Center fill
+  ctx.beginPath();
+  ctx.arc(cx, cy, innerR - 4, 0, Math.PI * 2);
+  ctx.fillStyle = '#F5F2EA';
+  ctx.fill();
+
+  const year = events[0]?.date?.slice(0, 4) || new Date().getFullYear();
+  ctx.fillStyle = '#1F4D32';
+  ctx.font = `300 ${Math.round(32 * fontScale)}px Fraunces, serif`;
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(opts.centerLabel || year, cx, cy - (isSmall ? 6 : 10));
+  ctx.font = `${Math.round(12 * fontScale)}px Inter, sans-serif`;
+  ctx.fillStyle = '#6B8763';
+  const evLabel = lang === 'pt' ? 'eventos' : 'events';
+  ctx.fillText(`${totalShown} ${evLabel}`, cx, cy + (isSmall ? 10 : 16));
+
+  // Sector divider lines
+  ctx.strokeStyle = '#DAD3C5';
+  ctx.lineWidth = 1;
+  for (let m = 0; m < 12; m++) {
+    const angle = startOffset + m * sectorAngle;
+    ctx.beginPath();
+    ctx.moveTo(cx + Math.cos(angle) * innerR, cy + Math.sin(angle) * innerR);
+    ctx.lineTo(cx + Math.cos(angle) * outerR, cy + Math.sin(angle) * outerR);
+    ctx.stroke();
+  }
+
+  // Tooltip
+  const tooltip = document.getElementById(tooltipId);
+  canvas.onmousemove = function(e) {
+    const cr = canvas.getBoundingClientRect();
+    const mx = e.clientX - cr.left;
+    const my = e.clientY - cr.top;
+    const dx = mx - cx, dy = my - cy;
+    const dist = Math.hypot(dx, dy);
+    let angle = Math.atan2(dy, dx);
+    if (angle < startOffset) angle += Math.PI * 2;
+
+    let found = null;
+    for (const arc of arcs) {
+      if (dist >= arc.innerR && dist <= arc.outerR) {
+        let a = angle;
+        if (a < arc.ea0 - 0.01) a += Math.PI * 2;
+        if (a >= arc.ea0 - 0.01 && a <= arc.ea1 + 0.01) { found = arc; break; }
+      }
+    }
+
+    if (found) {
+      tooltip.style.display = 'block';
+      const tx = Math.min(mx + 12, rect.width - 230);
+      const ty = Math.max(my - 30, 10);
+      tooltip.style.left = tx + 'px';
+      tooltip.style.top = ty + 'px';
+      const loc = found.ev.location ? `<br><span class="wt-date">📍 ${found.ev.location}</span>` : '';
+      tooltip.innerHTML = `<div class="wt-name">${found.ev.name}</div><span class="wt-date">${found.ev.date}</span>${loc}`;
+      canvas.style.cursor = 'pointer';
+    } else {
+      tooltip.style.display = 'none';
+      canvas.style.cursor = 'default';
+    }
+  };
+  canvas.onmouseleave = function() { tooltip.style.display = 'none'; };
+
+  return totalShown;
+}
+
+function mergeAnnualRaces(events) {
+  const year = new Date().getFullYear();
+  const eventKeys = new Set();
+  events.forEach(ev => {
+    if (ev.date) eventKeys.add(ev.date.slice(5,7) + '|' + ev.name.split(' (')[0].split(' 15')[0].split(' 30')[0].split(' 45')[0].split(' 60')[0].split(' 110')[0].split(' 25')[0].split(' 50')[0].toLowerCase().trim());
+  });
+
+  const merged = [...events];
+  ANNUAL_RACES.forEach(race => {
+    const mm = String(race.month).padStart(2, '0');
+    const baseKey = mm + '|' + race.name.split(' (')[0].toLowerCase().trim();
+    const alreadyHas = [...eventKeys].some(k => {
+      const [kMonth] = k.split('|');
+      if (kMonth !== mm) return false;
+      return k.includes(race.name.split(' ')[0].toLowerCase()) || race.name.toLowerCase().includes(k.split('|')[1].split(' ')[0]);
+    });
+    if (!alreadyHas) {
+      merged.push({
+        date: `${year}-${mm}-15`,
+        name: race.name,
+        mode: race.mode,
+        location: race.location,
+        url: '',
+      });
+    }
+  });
+  return merged;
+}
+
+function renderCalendar(events) {
+  const container = document.getElementById('calendarAnnual');
+  if (!events || !events.length) return;
+
+  const lang = getLang();
+  const hiddenModes = window._calHiddenModes;
+
+  const fullYear = mergeAnnualRaces(events);
+  const filteredAll = fullYear.filter(ev => !hiddenModes.has(ev.mode));
+  const trailOnly = fullYear.filter(ev => ev.mode === 'trail');
+
+  const year = new Date().getFullYear();
+
+  const totalAll = drawWheel('calendarWheel', 'wheelTooltip', filteredAll, { small: false, centerLabel: String(year) });
+  drawWheel('calendarWheelTrail', 'wheelTooltipTrail', trailOnly, { small: true, centerLabel: 'Trail' });
+
+  // Legend + count
+  const legendWrap = container.querySelector('.cal-legend');
+  if (legendWrap) legendWrap.remove();
+  const countEl = container.querySelector('.cal-count');
+  if (countEl) countEl.remove();
+
+  const labels = MODE_LABELS[lang] || MODE_LABELS.en;
+  let legendHtml = '<div class="cal-legend">';
+  Object.keys(MODE_COLORS).forEach(mode => {
+    const dimmed = hiddenModes.has(mode) ? ' dimmed' : '';
+    legendHtml += `<div class="cal-legend-item${dimmed}" data-mode="${mode}" onclick="toggleCalMode('${mode}')">`;
+    legendHtml += `<div class="cal-legend-dot" style="background:${MODE_COLORS[mode]}"></div>`;
+    legendHtml += `${labels[mode] || mode}`;
+    legendHtml += '</div>';
+  });
+  legendHtml += '</div>';
+
+  const totalLabel = lang === 'pt' ? `${totalAll} eventos em ${year}` : `${totalAll} events in ${year}`;
+  legendHtml += `<div class="cal-count">${totalLabel}</div>`;
+  container.insertAdjacentHTML('beforeend', legendHtml);
+}
+
+function toggleCalMode(mode) {
+  if (window._calHiddenModes.has(mode)) {
+    window._calHiddenModes.delete(mode);
+  } else {
+    window._calHiddenModes.add(mode);
+  }
+  renderCalendar(window._eventsData);
+}
+
+// --- Big Stats ---
+function renderBigStats(races) {
+  const totalKm = races.reduce((s, r) => s + r.distance_km, 0);
+  const totalGain = races.reduce((s, r) => s + r.elevation_gain, 0);
+  const maxEle = Math.max(...races.map(r => r.max_elevation));
+
+  const container = document.getElementById('bigStats');
+  const stats = [
+    { num: Math.round(totalKm).toLocaleString() + ' km', en: 'Total race distance', pt: 'Distância total das corridas' },
+    { num: Math.round(totalGain / 1000) + 'k m', en: 'Combined elevation gain', pt: 'Desnível acumulado' },
+    { num: maxEle.toLocaleString() + ' m', en: 'Highest point reached', pt: 'Ponto mais alto atingido' },
+    { num: races.length, en: 'Official trail races', pt: 'Corridas oficiais de trail' },
+  ];
+  container.innerHTML = stats.map(s =>
+    `<div class="big-stat"><div class="num">${s.num}</div><div class="lbl"><span data-lang="en">${s.en}</span><span data-lang="pt">${s.pt}</span></div></div>`
+  ).join('');
+}
+
+// --- Scatter Plot ---
+function renderScatter(races) {
+  const canvas = document.getElementById('scatter');
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+  const rect = canvas.getBoundingClientRect();
+  canvas.width = rect.width * dpr;
+  canvas.height = rect.height * dpr;
+  ctx.scale(dpr, dpr);
+  const W = rect.width, H = rect.height;
+
+  const pad = { top: 20, right: 30, bottom: 40, left: 60 };
+  const plotW = W - pad.left - pad.right;
+  const plotH = H - pad.top - pad.bottom;
+
+  const maxDist = Math.ceil(Math.max(...races.map(r => r.distance_km)) / 10) * 10 + 10;
+  const maxGain = Math.ceil(Math.max(...races.map(r => r.elevation_gain)) / 1000) * 1000 + 500;
+
+  ctx.strokeStyle = '#DAD3C5';
+  ctx.lineWidth = 1;
+  ctx.fillStyle = '#6B8763';
+  ctx.font = '11px Inter, sans-serif';
+  ctx.textAlign = 'right';
+
+  for (let g = 0; g <= maxGain; g += 2000) {
+    const y = pad.top + plotH - (g / maxGain) * plotH;
+    ctx.beginPath();
+    ctx.moveTo(pad.left, y);
+    ctx.lineTo(W - pad.right, y);
+    ctx.stroke();
+    ctx.fillText(g.toLocaleString() + 'm', pad.left - 8, y + 4);
+  }
+
+  ctx.textAlign = 'center';
+  for (let d = 0; d <= maxDist; d += 20) {
+    const x = pad.left + (d / maxDist) * plotW;
+    ctx.beginPath();
+    ctx.moveTo(x, pad.top);
+    ctx.lineTo(x, pad.top + plotH);
+    ctx.stroke();
+    ctx.fillText(d + 'km', x, H - pad.bottom + 20);
+  }
+
+  const bubbles = [];
+  races.forEach(r => {
+    const x = pad.left + (r.distance_km / maxDist) * plotW;
+    const y = pad.top + plotH - (r.elevation_gain / maxGain) * plotH;
+    const radius = Math.max(6, Math.min(18, r.distance_km / 5));
+    const color = getColor(r.group);
+
+    ctx.beginPath();
+    ctx.arc(x, y, radius, 0, Math.PI * 2);
+    ctx.fillStyle = color + '40';
+    ctx.fill();
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    bubbles.push({ x, y, radius, race: r, color });
+  });
+
+  ctx.font = '10px Inter, sans-serif';
+  ctx.textAlign = 'left';
+  bubbles.forEach(b => {
+    const label = b.race.name.replace(/ \d+km$/, '');
+    ctx.fillStyle = b.color;
+    ctx.fillText(label, b.x + b.radius + 4, b.y + 3);
+  });
+
+  const tooltip = document.getElementById('scatterTooltip');
+  canvas.addEventListener('mousemove', e => {
+    const cr = canvas.getBoundingClientRect();
+    const mx = e.clientX - cr.left;
+    const my = e.clientY - cr.top;
+    let found = null;
+    for (const b of bubbles) {
+      if (Math.hypot(mx - b.x, my - b.y) < b.radius + 4) {
+        found = b;
+        break;
+      }
+    }
+    if (found) {
+      tooltip.style.display = 'block';
+      tooltip.style.left = (found.x + 16) + 'px';
+      tooltip.style.top = (found.y - 10) + 'px';
+      tooltip.innerHTML = `
+        <div class="tt-name">${found.race.name}</div>
+        <div class="tt-stat">${found.race.distance_km} km · +${found.race.elevation_gain.toLocaleString()}m · max ${found.race.max_elevation}m</div>
+      `;
+      canvas.style.cursor = 'pointer';
+    } else {
+      tooltip.style.display = 'none';
+      canvas.style.cursor = 'default';
+    }
+  });
+  canvas.addEventListener('mouseleave', () => {
+    tooltip.style.display = 'none';
+  });
+}
+
+// --- Bar Chart ---
+function renderGainChart(races) {
+  const sorted = [...races].sort((a, b) => b.elevation_gain - a.elevation_gain);
+  const canvas = document.getElementById('gainChart');
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+  const rect = canvas.getBoundingClientRect();
+  canvas.width = rect.width * dpr;
+  canvas.height = rect.height * dpr;
+  ctx.scale(dpr, dpr);
+  const W = rect.width, H = rect.height;
+
+  const pad = { top: 10, right: 80, bottom: 20, left: 170 };
+  const plotW = W - pad.left - pad.right;
+  const plotH = H - pad.top - pad.bottom;
+  const barH = Math.min(16, plotH / sorted.length - 4);
+  const gap = (plotH - barH * sorted.length) / (sorted.length + 1);
+
+  const maxGain = sorted[0].elevation_gain;
+
+  sorted.forEach((r, i) => {
+    const y = pad.top + gap + i * (barH + gap);
+    const w = (r.elevation_gain / maxGain) * plotW;
+    const color = getColor(r.group);
+
+    ctx.fillStyle = color;
+    ctx.globalAlpha = 0.75;
+    ctx.beginPath();
+    ctx.roundRect(pad.left, y, w, barH, 4);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+
+    ctx.fillStyle = '#15201A';
+    ctx.font = '12px Inter, sans-serif';
+    ctx.textAlign = 'right';
+    ctx.fillText(r.name, pad.left - 8, y + barH / 2 + 4);
+
+    ctx.fillStyle = '#6B8763';
+    ctx.textAlign = 'left';
+    ctx.font = '11px Inter, sans-serif';
+    ctx.fillText('+' + r.elevation_gain.toLocaleString() + 'm', pad.left + w + 6, y + barH / 2 + 4);
+  });
+}
+
+// --- Elevation Profiles ---
+// --- Steepness Comparison ---
+function renderSteepness(races) {
+  var container = document.getElementById('steepness-chart');
+  var data = races.map(function(r) {
+    var ratio = r.distance_km * 1000 / r.elevation_gain;
+    return { name: r.name, ratio: ratio, gain: r.elevation_gain, dist: r.distance_km, group: r.group };
+  }).sort(function(a, b) { return a.ratio - b.ratio; });
+
+  var refs = [
+    { label: 'Stairs', ratio: 2, color: '#c0392b' },
+    { label: 'Black ski slope', ratio: 4, color: '#2c3e50' },
+    { label: 'Steep hike', ratio: 8, color: '#d35400' },
+    { label: 'Moderate hike', ratio: 15, color: '#27ae60' },
+  ];
+
+  var maxAngle = 25;
+  var maxRatio = Math.max(data[data.length - 1].ratio, 20);
+
+  var html = '';
+  data.forEach(function(d) {
+    var angle = Math.atan(1 / d.ratio) * (180 / Math.PI);
+    var clampedAngle = Math.min(angle, maxAngle);
+    var barWidth = Math.max(20, 100 - (d.ratio / maxRatio) * 70);
+    var color = getColor(d.group);
+
+    var emoji = '';
+    if (d.ratio <= 8) emoji = '🧗';
+    else if (d.ratio <= 13) emoji = '⛰️';
+    else if (d.ratio <= 20) emoji = '🥾';
+    else emoji = '🚶';
+
+    html += '<div class="steep-row">';
+    html += '<div class="steep-name" style="color:' + color + '" title="' + d.name + '">' + d.name + '</div>';
+    html += '<div class="steep-viz">';
+    var slopeH = Math.tan(clampedAngle * Math.PI / 180) * 140;
+    html += '<svg width="100%" height="48" viewBox="0 0 200 48" preserveAspectRatio="none" style="overflow:visible">';
+    var x2 = barWidth * 2;
+    var y2 = 47 - slopeH;
+    html += '<polygon points="0,47 ' + x2 + ',47 0,' + y2 + '" fill="' + color + '" opacity="0.1"/>';
+    html += '<line x1="0" y1="47" x2="' + x2 + '" y2="' + y2 + '" stroke="' + color + '" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>';
+    html += '</svg>';
+    html += '</div>';
+    html += '<div class="steep-ratio">' + emoji + ' 1:' + d.ratio.toFixed(1) + '<br><small>+' + d.gain.toLocaleString() + 'm</small></div>';
+    html += '</div>';
+  });
+
+  // Reference legend
+  html += '<div class="steep-refs">';
+  refs.forEach(function(ref) {
+    var angle = Math.atan(1 / ref.ratio) * (180 / Math.PI);
+    html += '<div class="steep-ref">';
+    html += '<div class="steep-ref-line" style="background:' + ref.color + ';transform:rotate(-' + angle.toFixed(1) + 'deg)"></div>';
+    html += ref.label + ' (1:' + ref.ratio + ')';
+    html += '</div>';
+  });
+  html += '</div>';
+
+  container.innerHTML = html;
+}
+
+// --- Fun Comparisons ---
+function renderFunCompare(races) {
+  var container = document.getElementById('fun-compare-chart');
+  var sorted = [...races].sort(function(a, b) { return b.elevation_gain - a.elevation_gain; });
+
+  var BURJ = 828;
+  var EIFFEL = 330;
+  var STEP_HEIGHT = 0.167; // meters per step
+
+  var maxBuildings = sorted[0].elevation_gain / BURJ;
+  var maxSteps = sorted[0].elevation_gain / STEP_HEIGHT;
+  var maxFlat = sorted[0].distance_km + sorted[0].elevation_gain / 1000;
+
+  var top6 = sorted.slice(0, 6);
+  var rest = sorted.slice(6);
+
+  function makeCards(races) {
+    var html = '';
+    races.forEach(function(r) {
+      var gain = r.elevation_gain;
+      var burj = gain / BURJ;
+      var eiffel = gain / EIFFEL;
+      var steps = Math.round(gain / STEP_HEIGHT);
+      var flatKm = r.distance_km + gain / 1000;
+      var hiddenKm = gain / 1000;
+      var color = getColor(r.group);
+
+      html += '<div class="fun-card">';
+      html += '<div class="fun-card-name" style="color:' + color + '">' + r.name + '</div>';
+
+      // Buildings
+      var buildingLabel = burj >= 1
+        ? burj.toFixed(1) + '× Burj Khalifa'
+        : eiffel.toFixed(1) + '× Eiffel Tower';
+      var buildingPct = (gain / (maxBuildings * BURJ)) * 100;
+      html += '<div class="fun-metric">';
+      html += '<div class="fun-icon">🏗️</div>';
+      html += '<div class="fun-bar-wrap"><div class="fun-label">Height climbed</div>';
+      html += '<div class="fun-bar"><div class="fun-bar-fill" style="width:' + buildingPct + '%;background:' + color + '"></div></div>';
+      html += '</div>';
+      html += '<div class="fun-val" style="color:' + color + '">' + buildingLabel + '</div>';
+      html += '</div>';
+
+      // Steps
+      var stepsPct = (steps / maxSteps) * 100;
+      var stepsLabel = steps >= 10000
+        ? (steps / 1000).toFixed(0) + 'k steps'
+        : steps.toLocaleString() + ' steps';
+      html += '<div class="fun-metric">';
+      html += '<div class="fun-icon">🪜</div>';
+      html += '<div class="fun-bar-wrap"><div class="fun-label">Staircase equivalent</div>';
+      html += '<div class="fun-bar"><div class="fun-bar-fill" style="width:' + stepsPct + '%;background:#d35400"></div></div>';
+      html += '</div>';
+      html += '<div class="fun-val" style="color:#d35400">' + stepsLabel + '</div>';
+      html += '</div>';
+
+      // Flat equivalent
+      var flatPct = (flatKm / maxFlat) * 100;
+      html += '<div class="fun-metric">';
+      html += '<div class="fun-icon">📏</div>';
+      html += '<div class="fun-bar-wrap"><div class="fun-label">"Flat equivalent" (+' + hiddenKm.toFixed(1) + ' km hidden)</div>';
+      html += '<div class="fun-bar"><div class="fun-bar-fill" style="width:' + flatPct + '%;background:#2980b9"></div></div>';
+      html += '</div>';
+      html += '<div class="fun-val" style="color:#2980b9">' + flatKm.toFixed(1) + ' km</div>';
+      html += '</div>';
+
+      html += '</div>';
+    });
+    return html;
+  }
+
+  var html = '<div class="fun-grid">' + makeCards(top6) + '</div>';
+
+  if (rest.length) {
+    html += '<div id="fun-compare-extra" style="display:none"><div class="fun-grid" style="margin-top:14px">' + makeCards(rest) + '</div></div>';
+    html += '<button class="show-all-btn" id="fun-compare-toggle" style="margin-top:8px">▼ Show all ' + sorted.length + ' races</button>';
+  }
+
+  container.innerHTML = html;
+
+  var toggle = document.getElementById('fun-compare-toggle');
+  var extra = document.getElementById('fun-compare-extra');
+  if (toggle && extra) {
+    toggle.onclick = function() {
+      var showing = extra.style.display !== 'none';
+      extra.style.display = showing ? 'none' : '';
+      toggle.textContent = showing ? '▼ Show all ' + sorted.length + ' races' : '▲ Show top 6';
+    };
+  }
+}
+
+function makeProfileCard(race) {
+  const card = document.createElement('div');
+  card.className = 'profile-card';
+  card.innerHTML = `
+    <div class="profile-header">
+      <span class="profile-name" style="color:${getColor(race.group)}">${race.name}</span>
+      <div class="profile-stats">
+        <span>${race.distance_km} km</span>
+        <span>+${race.elevation_gain.toLocaleString()}m</span>
+        <span>max ${race.max_elevation}m</span>
+      </div>
+    </div>
+    <canvas class="profile-canvas"></canvas>
+  `;
+  return card;
+}
+
+var _profilesRaces = null;
+var _profilesSortBy = 'distance';
+
+function sortProfiles(races, sortBy) {
+  return [...races].sort((a, b) => {
+    if (sortBy === 'elevation') return b.elevation_gain - a.elevation_gain;
+    if (sortBy === 'steepness') return (b.elevation_gain / b.distance_km) - (a.elevation_gain / a.distance_km);
+    return b.distance_km - a.distance_km;
+  });
+}
+
+function renderProfiles(races, sortBy) {
+  if (races) _profilesRaces = races;
+  sortBy = sortBy || _profilesSortBy;
+  _profilesSortBy = sortBy;
+  var sorted = sortProfiles(_profilesRaces, sortBy);
+  var top3 = sorted.slice(0, 3);
+  var rest = sorted.slice(3);
+
+  var top3Container = document.getElementById('profiles-top3');
+  var extra = document.getElementById('profiles-extra');
+  var toggle = document.getElementById('profiles-toggle');
+  var wasExpanded = extra.style.display !== 'none' && extra.children.length > 0;
+
+  top3Container.innerHTML = '';
+  extra.innerHTML = '';
+
+  top3.forEach(race => {
+    var card = makeProfileCard(race);
+    top3Container.appendChild(card);
+    drawProfile(card.querySelector('canvas'), race);
+  });
+
+  if (!rest.length) { toggle.style.display = 'none'; return; }
+  toggle.style.display = '';
+
+  rest.forEach(race => {
+    var card = makeProfileCard(race);
+    extra.appendChild(card);
+    drawProfile(card.querySelector('canvas'), race);
+  });
+
+  extra.style.display = wasExpanded ? '' : 'none';
+  toggle.textContent = wasExpanded ? '▲ Show top 3' : '▼ Show all ' + sorted.length + ' profiles';
+
+  toggle.onclick = function() {
+    var showing = extra.style.display !== 'none';
+    extra.style.display = showing ? 'none' : '';
+    toggle.textContent = showing ? '▼ Show all ' + sorted.length + ' profiles' : '▲ Show top 3';
+  };
+}
+
+initPills('profiles-sort-pills', function(val) { renderProfiles(null, val); });
+
+initPills('elev-view-pills', function(val) {
+  document.getElementById('elev-bars-view').style.display = val === 'bars' ? '' : 'none';
+  document.getElementById('elev-steep-view').style.display = val === 'steepness' ? '' : 'none';
+});
+
+function drawProfile(canvas, race) {
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+  const rect = canvas.getBoundingClientRect();
+  canvas.width = rect.width * dpr;
+  canvas.height = rect.height * dpr;
+  ctx.scale(dpr, dpr);
+  const W = rect.width, H = rect.height;
+
+  const profile = race.profile;
+  const maxDist = profile[profile.length - 1][0];
+  const elevations = profile.map(p => p[1]);
+  const minEle = Math.min(...elevations);
+  const maxEle = Math.max(...elevations);
+  const eleRange = maxEle - minEle || 1;
+
+  const pad = { top: 4, bottom: 4, left: 0, right: 0 };
+  const plotW = W - pad.left - pad.right;
+  const plotH = H - pad.top - pad.bottom;
+
+  const color = getColor(race.group);
+
+  ctx.beginPath();
+  ctx.moveTo(pad.left, pad.top + plotH);
+  profile.forEach(([d, e]) => {
+    const x = pad.left + (d / maxDist) * plotW;
+    const y = pad.top + plotH - ((e - minEle) / eleRange) * plotH;
+    ctx.lineTo(x, y);
+  });
+  ctx.lineTo(pad.left + plotW, pad.top + plotH);
+  ctx.closePath();
+
+  const grad = ctx.createLinearGradient(0, pad.top, 0, pad.top + plotH);
+  grad.addColorStop(0, color + '30');
+  grad.addColorStop(1, color + '05');
+  ctx.fillStyle = grad;
+  ctx.fill();
+
+  ctx.beginPath();
+  profile.forEach(([d, e], i) => {
+    const x = pad.left + (d / maxDist) * plotW;
+    const y = pad.top + plotH - ((e - minEle) / eleRange) * plotH;
+    i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+  });
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 1.5;
+  ctx.stroke();
+}
+
+// --- Sticky nav active state ---
+(function() {
+  const sections = document.querySelectorAll('.section[id]');
+  const navLinks = document.querySelectorAll('.section-nav a[data-section]');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(link => link.classList.remove('active'));
+        const activeLink = document.querySelector(`.section-nav a[data-section="${entry.target.id}"]`);
+        if (activeLink) activeLink.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-56px 0px -70% 0px', threshold: 0 });
+  sections.forEach(s => observer.observe(s));
+})();
+
+function initPills(groupId, onChange) {
+  const group = document.getElementById(groupId);
+  if (!group) return;
+  group.querySelectorAll('.pill-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      group.querySelector('.pill-btn.active').classList.remove('active');
+      btn.classList.add('active');
+      onChange(btn.dataset.val);
+    });
+  });
+}
+
+// --- MIUT Analytics ---
+(async function() {
+  try {
+    const resp = await fetch('miut_data.json');
+    const editions = await resp.json();
+    const past = editions.filter(e => e.total_finishers > 0);
+    if (!past.length) return;
+
+    document.getElementById('miut-loading').style.display = 'none';
+    document.getElementById('miut-content').style.display = 'block';
+    if (location.hash === '#miut') setTimeout(function() { document.getElementById('miut').scrollIntoView({behavior:'smooth'}); }, 100);
+
+    const totalAthletes = past.reduce((s, e) => s + e.total_registered, 0);
+    const totalFinishers = past.reduce((s, e) => s + e.total_finishers, 0);
+    const COUNTRY_ALIASES = {
+      'United States of America': 'USA', 'Netherlands (Holland)': 'Netherlands',
+      'Czechia/Czech Republic': 'Czechia', 'Czech Republic': 'Czechia',
+      'Great Britain': 'United Kingdom', 'Korea, Republic of': 'South Korea',
+      'Russian Federation': 'Russia', 'Morrocco': 'Morocco', 'Macao': 'Macau',
+      'Colombia ': 'Colombia', 'Português': 'Portugal', 'TAIWÁN': 'Taiwan',
+      'New Zealand (Aotearoa)': 'New Zealand',
+    };
+    const allCountries = new Set();
+    past.forEach(e => e.nationalities.forEach(n => allCountries.add(COUNTRY_ALIASES[n.Label] || n.Label)));
+    const latestYear = past[past.length - 1].year;
+
+    const kpis = document.getElementById('miut-kpis');
+    const kpiData = [
+      [past.length, 'editions (2008–' + latestYear + ')', 'edições (2008–' + latestYear + ')'],
+      [totalAthletes.toLocaleString(), 'total participants', 'participantes total'],
+      [totalFinishers.toLocaleString(), 'total finishers', 'finalizadores total'],
+      [allCountries.size, 'countries represented', 'países representados'],
+    ];
+    kpis.innerHTML = kpiData.map(([val, en, pt]) =>
+      `<div class="miut-kpi"><div class="kpi-val">${val}</div><div class="kpi-lbl"><span data-lang="en">${en}</span><span data-lang="pt">${pt}</span></div></div>`
+    ).join('');
+
+    // Growth chart
+    drawBarChart('miut-growth', past, 280);
+
+    // Course records
+    buildRecords(past);
+
+    // Countries horizontal bar
+    window._miutEditions = past;
+    drawCountriesBar('miut-countries', past, 260, 15, 0);
+    const toggleBtn = document.getElementById('miut-countries-toggle');
+    let expanded = false;
+    toggleBtn.addEventListener('click', () => {
+      expanded = !expanded;
+      toggleBtn.classList.toggle('expanded', expanded);
+      const spans = toggleBtn.querySelectorAll('[data-lang]');
+      spans.forEach(s => {
+        if (s.dataset.lang === 'en') s.textContent = expanded ? 'Show top 15' : 'All with 10+ participants';
+        if (s.dataset.lang === 'pt') s.textContent = expanded ? 'Mostrar top 15' : 'Todos com 10+ participantes';
+      });
+      drawCountriesBar('miut-countries', past, 260, expanded ? 999 : 15, expanded ? 10 : 0);
+    });
+
+    // DNF rate chart
+    drawDnfChart('miut-dnf', past, 220);
+
+    if (typeof applyLang === 'function') applyLang(document.documentElement.lang || 'en');
+  } catch(err) {
+    console.error('MIUT data load failed:', err);
+  }
+})();
+
+function drawBarChart(canvasId, editions, height) {
+  const canvas = document.getElementById(canvasId);
+  const dpr = window.devicePixelRatio || 1;
+  const w = canvas.parentElement.clientWidth - 48;
+  canvas.width = w * dpr;
+  canvas.height = height * dpr;
+  canvas.style.width = w + 'px';
+  canvas.style.height = height + 'px';
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+
+  const pad = { top: 20, right: 20, bottom: 36, left: 50 };
+  const cw = w - pad.left - pad.right;
+  const ch = height - pad.top - pad.bottom;
+
+  const maxVal = Math.max(...editions.map(e => e.total_registered));
+  const barW = Math.min(28, (cw / editions.length) * 0.7);
+  const gap = (cw - barW * editions.length) / (editions.length + 1);
+
+  ctx.font = '11px Inter, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'top';
+
+  editions.forEach((e, i) => {
+    const x = pad.left + gap + i * (barW + gap);
+    const hReg = (e.total_registered / maxVal) * ch;
+    const hFin = (e.total_finishers / maxVal) * ch;
+
+    ctx.fillStyle = 'rgba(31,77,50,0.15)';
+    ctx.fillRect(x, pad.top + ch - hReg, barW, hReg);
+
+    ctx.fillStyle = '#1F4D32';
+    ctx.fillRect(x, pad.top + ch - hFin, barW, hFin);
+
+    ctx.fillStyle = '#6B8763';
+    ctx.save();
+    ctx.translate(x + barW / 2, pad.top + ch + 6);
+    if (editions.length > 12) {
+      ctx.rotate(-Math.PI / 4);
+      ctx.textAlign = 'right';
+    }
+    ctx.fillText(e.year.toString().slice(-2), 0, 0);
+    ctx.restore();
+  });
+
+  // Y-axis labels
+  ctx.textAlign = 'right';
+  ctx.textBaseline = 'middle';
+  ctx.fillStyle = '#6B8763';
+  const steps = 4;
+  for (let i = 0; i <= steps; i++) {
+    const val = Math.round(maxVal * i / steps);
+    const y = pad.top + ch - (ch * i / steps);
+    ctx.fillText(val.toLocaleString(), pad.left - 6, y);
+    ctx.strokeStyle = 'rgba(218,211,197,0.5)';
+    ctx.lineWidth = 0.5;
+    ctx.beginPath();
+    ctx.moveTo(pad.left, y);
+    ctx.lineTo(w - pad.right, y);
+    ctx.stroke();
+  }
+
+  // Legend
+  const ly = pad.top + ch + 24;
+  ctx.font = '11px Inter, sans-serif';
+  ctx.textAlign = 'left';
+  ctx.textBaseline = 'middle';
+  ctx.fillStyle = '#1F4D32';
+  ctx.fillRect(pad.left, ly - 4, 10, 8);
+  ctx.fillText('Finishers', pad.left + 14, ly);
+  ctx.fillStyle = 'rgba(31,77,50,0.15)';
+  ctx.fillRect(pad.left + 90, ly - 4, 10, 8);
+  ctx.fillStyle = '#6B8763';
+  ctx.fillText('Registered', pad.left + 104, ly);
+}
+
+function buildRecords(editions) {
+  const container = document.getElementById('miut-records');
+  const distGroups = {};
+
+  editions.forEach(ed => {
+    ed.competitions.forEach(comp => {
+      if (comp.distance_km < 15 || !comp.fastest_time) return;
+      const bucket = comp.distance_km >= 100 ? '115km (MIUT/Legend)' :
+                     comp.distance_km >= 75 ? '85km (Ultra/Advanced)' :
+                     comp.distance_km >= 50 ? '60km (Discover)' :
+                     comp.distance_km >= 35 ? '42km (Marathon)' :
+                     '16-20km (Mini/Starter)';
+      const t = comp.fastest_time;
+      if (!distGroups[bucket] || t < distGroups[bucket].time) {
+        const winner = comp.top3_overall[0] || {};
+        distGroups[bucket] = {
+          time: t,
+          country: winner.country || '',
+          category: winner.category || '',
+          year: ed.year,
+          distance: comp.distance_km,
+        };
+      }
+    });
+  });
+
+  const order = ['115km (MIUT/Legend)', '85km (Ultra/Advanced)', '60km (Discover)', '42km (Marathon)', '16-20km (Mini/Starter)'];
+  container.innerHTML = order.filter(k => distGroups[k]).map(k => {
+    const r = distGroups[k];
+    return `<div class="miut-record">
+      <div class="rec-dist">${k}</div>
+      <div class="rec-time">${r.time}</div>
+      <div class="rec-name">${r.country || '—'}${r.category ? ' · ' + r.category : ''}</div>
+      <div class="rec-year">${r.year}</div>
+    </div>`;
+  }).join('');
+}
+
+function drawCountriesBar(canvasId, editions, height, limit, minVal) {
+  limit = limit || 15;
+  minVal = minVal || 0;
+  const COUNTRY_ALIASES = {
+    'United States of America': 'USA',
+    'Netherlands (Holland)': 'Netherlands',
+    'Czechia/Czech Republic': 'Czechia',
+    'Czech Republic': 'Czechia',
+    'Great Britain': 'United Kingdom',
+    'Korea, Republic of': 'South Korea',
+    'Russian Federation': 'Russia',
+    'Morrocco': 'Morocco',
+    'Macao': 'Macau',
+    'Colombia ': 'Colombia',
+    'Português': 'Portugal',
+    'TAIWÁN': 'Taiwan',
+    'New Zealand (Aotearoa)': 'New Zealand',
+  };
+
+  const countryTotals = {};
+  editions.forEach(ed => {
+    ed.nationalities.forEach(n => {
+      const name = COUNTRY_ALIASES[n.Label] || n.Label;
+      countryTotals[name] = (countryTotals[name] || 0) + n.Value;
+    });
+  });
+
+  const sorted = Object.entries(countryTotals).sort((a, b) => b[1] - a[1]).filter(([, v]) => v >= minVal).slice(0, limit);
+  const maxVal = sorted[0][1];
+
+  const canvas = document.getElementById(canvasId);
+  const dpr = window.devicePixelRatio || 1;
+  const w = canvas.parentElement.clientWidth - 48;
+  const barH = 16;
+  const rowH = 24;
+  const realH = Math.max(height, sorted.length * rowH + 20);
+  canvas.width = w * dpr;
+  canvas.height = realH * dpr;
+  canvas.style.width = w + 'px';
+  canvas.style.height = realH + 'px';
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+
+  const labelW = 110;
+  const barArea = w - labelW - 70;
+
+  ctx.font = '12px Inter, sans-serif';
+
+  sorted.forEach(([country, count], i) => {
+    const y = 10 + i * rowH;
+    const bw = (count / maxVal) * barArea;
+
+    ctx.textAlign = 'right';
+    ctx.textBaseline = 'middle';
+    ctx.fillStyle = '#15201A';
+    ctx.fillText(country, labelW - 8, y + barH / 2);
+
+    const alpha = 0.3 + 0.7 * (count / maxVal);
+    ctx.fillStyle = `rgba(31,77,50,${alpha})`;
+    ctx.beginPath();
+    ctx.roundRect(labelW, y, bw, barH, 3);
+    ctx.fill();
+
+    ctx.textAlign = 'left';
+    ctx.fillStyle = '#6B8763';
+    ctx.fillText(count.toLocaleString(), labelW + bw + 6, y + barH / 2);
+  });
+}
+
+function drawDnfChart(canvasId, editions, height) {
+  const canvas = document.getElementById(canvasId);
+  const dpr = window.devicePixelRatio || 1;
+  const w = canvas.parentElement.clientWidth - 48;
+  canvas.width = w * dpr;
+  canvas.height = height * dpr;
+  canvas.style.width = w + 'px';
+  canvas.style.height = height + 'px';
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+
+  const pad = { top: 20, right: 20, bottom: 36, left: 50 };
+  const cw = w - pad.left - pad.right;
+  const ch = height - pad.top - pad.bottom;
+
+  const data = editions.map(e => ({
+    year: e.year,
+    rate: e.total_registered > 0 ? ((e.total_dnf + e.total_dq) / e.total_registered * 100) : 0,
+  }));
+  const maxRate = Math.max(...data.map(d => d.rate), 30);
+
+  ctx.font = '11px Inter, sans-serif';
+
+  // Grid
+  ctx.textAlign = 'right';
+  ctx.textBaseline = 'middle';
+  for (let i = 0; i <= 4; i++) {
+    const val = Math.round(maxRate * i / 4);
+    const y = pad.top + ch - (ch * i / 4);
+    ctx.fillStyle = '#6B8763';
+    ctx.fillText(val + '%', pad.left - 6, y);
+    ctx.strokeStyle = 'rgba(218,211,197,0.5)';
+    ctx.lineWidth = 0.5;
+    ctx.beginPath();
+    ctx.moveTo(pad.left, y);
+    ctx.lineTo(w - pad.right, y);
+    ctx.stroke();
+  }
+
+  // Line + dots
+  ctx.beginPath();
+  data.forEach((d, i) => {
+    const x = pad.left + (i / (data.length - 1)) * cw;
+    const y = pad.top + ch - (d.rate / maxRate) * ch;
+    i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+  });
+  ctx.strokeStyle = '#c44';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  data.forEach((d, i) => {
+    const x = pad.left + (i / (data.length - 1)) * cw;
+    const y = pad.top + ch - (d.rate / maxRate) * ch;
+    ctx.beginPath();
+    ctx.arc(x, y, 4, 0, Math.PI * 2);
+    ctx.fillStyle = '#c44';
+    ctx.fill();
+
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'bottom';
+    ctx.fillStyle = '#15201A';
+    ctx.font = '10px Inter, sans-serif';
+    ctx.fillText(d.rate.toFixed(1) + '%', x, y - 6);
+
+    ctx.textBaseline = 'top';
+    ctx.fillStyle = '#6B8763';
+    ctx.fillText(d.year.toString().slice(-2), x, pad.top + ch + 6);
+  });
+}
+
+// --- All Trails Analytics ---
+(async function() {
+  try {
+    const resp = await fetch('all_trails.json');
+    const events = await resp.json();
+    if (!events.length) return;
+
+    document.getElementById('all-trails-loading').style.display = 'none';
+    document.getElementById('all-trails-content').style.display = 'block';
+
+    const ALIASES = {
+      'United States of America': 'USA', 'Netherlands (Holland)': 'Netherlands',
+      'Czechia/Czech Republic': 'Czechia', 'Czech Republic': 'Czechia',
+      'Great Britain': 'United Kingdom', 'Korea, Republic of': 'South Korea',
+      'Russian Federation': 'Russia', 'Morrocco': 'Morocco', 'Macao': 'Macau',
+      'Colombia ': 'Colombia', 'Português': 'Portugal', 'TAIWÁN': 'Taiwan',
+      'New Zealand (Aotearoa)': 'New Zealand',
+    };
+
+    const totalAthletes = events.reduce((s, e) => s + e.total, 0);
+    const totalFinishers = events.reduce((s, e) => s + e.total_finishers, 0);
+    const totalFemale = events.reduce((s, e) => s + e.female, 0);
+    const pctFemale = totalAthletes > 0 ? (totalFemale / totalAthletes * 100).toFixed(1) : 0;
+    const allCountries = new Set();
+    events.forEach(e => (e.nationalities || []).forEach(n => allCountries.add(ALIASES[n.Label] || n.Label)));
+    const years = [...new Set(events.map(e => e.year))].sort();
+
+    const kpis = document.getElementById('all-kpis');
+    kpis.innerHTML = [
+      [events.length, 'races (2008–' + years[years.length - 1] + ')', 'corridas (2008–' + years[years.length - 1] + ')'],
+      [totalAthletes.toLocaleString(), 'total participants', 'participantes total'],
+      [pctFemale + '%', 'women participants', 'participantes mulheres'],
+      [allCountries.size, 'countries', 'países'],
+    ].map(([val, en, pt]) =>
+      `<div class="miut-kpi"><div class="kpi-val">${val}</div><div class="kpi-lbl"><span data-lang="en">${en}</span><span data-lang="pt">${pt}</span></div></div>`
+    ).join('');
+
+    // Growth + gender chart
+    let growthAgeFilter = 'all';
+    drawAllGrowth('all-growth', events, years, 300, growthAgeFilter);
+    initPills('growth-age-pills', val => {
+      growthAgeFilter = val;
+      drawAllGrowth('all-growth', events, years, 300, val);
+    });
+
+    // Course records table
+    let recGender = 'all', recDist = 'all';
+    buildAllRecords('all-records', events, recGender, recDist, ALIASES);
+    initPills('records-gender-pills', val => {
+      recGender = val;
+      buildAllRecords('all-records', events, recGender, recDist, ALIASES);
+    });
+    initPills('records-dist-pills', val => {
+      recDist = val;
+      buildAllRecords('all-records', events, recGender, recDist, ALIASES);
+    });
+
+    // Countries bar
+    let countriesExpanded = false;
+    drawAllCountriesBar('all-countries', events, ALIASES, 260, 15, 0);
+    const toggleBtn = document.getElementById('all-countries-toggle');
+    toggleBtn.addEventListener('click', () => {
+      countriesExpanded = !countriesExpanded;
+      toggleBtn.classList.toggle('expanded', countriesExpanded);
+      toggleBtn.querySelectorAll('[data-lang]').forEach(s => {
+        if (s.dataset.lang === 'en') s.textContent = countriesExpanded ? 'Show top 15' : 'All with 10+ participants';
+        if (s.dataset.lang === 'pt') s.textContent = countriesExpanded ? 'Mostrar top 15' : 'Todos com 10+ participantes';
+      });
+      drawAllCountriesBar('all-countries', events, ALIASES, 260, countriesExpanded ? 999 : 15, countriesExpanded ? 10 : 0);
+    });
+
+    // Clubs ranking
+    try {
+      const clubsResp = await fetch('clubs_data.json');
+      const clubsData = await clubsResp.json();
+      let clubsSort = 'finishers';
+      let clubsExpanded = false;
+      buildClubsRanking('clubs-ranking', clubsData, clubsSort, clubsExpanded ? 50 : 15);
+      initPills('clubs-sort-pills', val => {
+        clubsSort = val;
+        buildClubsRanking('clubs-ranking', clubsData, clubsSort, clubsExpanded ? 50 : 15);
+      });
+      const clubsToggle = document.getElementById('clubs-toggle');
+      clubsToggle.addEventListener('click', () => {
+        clubsExpanded = !clubsExpanded;
+        clubsToggle.classList.toggle('expanded', clubsExpanded);
+        clubsToggle.querySelectorAll('[data-lang]').forEach(s => {
+          if (s.dataset.lang === 'en') s.textContent = clubsExpanded ? 'Show top 15' : 'Show top 50';
+          if (s.dataset.lang === 'pt') s.textContent = clubsExpanded ? 'Mostrar top 15' : 'Mostrar top 50';
+        });
+        buildClubsRanking('clubs-ranking', clubsData, clubsSort, clubsExpanded ? 50 : 15);
+      });
+    } catch(e) { console.warn('Clubs data not loaded:', e); }
+
+    // Localities ranking
+    try {
+      const locResp = await fetch('localities_data.json');
+      const locData = await locResp.json();
+      let locExpanded = false;
+      buildLocalitiesRanking('localities-ranking', locData, 10);
+      const locToggle = document.getElementById('localities-toggle');
+      locToggle.addEventListener('click', () => {
+        locExpanded = !locExpanded;
+        locToggle.classList.toggle('expanded', locExpanded);
+        locToggle.querySelectorAll('[data-lang]').forEach(s => {
+          if (s.dataset.lang === 'en') s.textContent = locExpanded ? 'Show top 10' : 'Show all';
+          if (s.dataset.lang === 'pt') s.textContent = locExpanded ? 'Mostrar top 10' : 'Mostrar todos';
+        });
+        buildLocalitiesRanking('localities-ranking', locData, locExpanded ? 999 : 10);
+      });
+    } catch(e) { console.warn('Localities data not loaded:', e); }
+
+    // === Advanced Analytics ===
+    try {
+      const [tdResp, loyResp, intlResp, dnfResp, hourResp] = await Promise.all([
+        fetch('time_distributions.json'), fetch('loyalty_data.json'),
+        fetch('intl_trend.json'), fetch('dnf_by_race.json'), fetch('finish_hours.json')
+      ]);
+      const timeDist = await tdResp.json();
+      const loyalty = await loyResp.json();
+      const intlTrend = await intlResp.json();
+      const dnfRaces = await dnfResp.json();
+      const finishHours = await hourResp.json();
+
+      // Time distribution
+      drawTimeDistribution('time-dist-chart', timeDist, 'Ultra 100+', 260);
+      initPills('time-dist-pills', val => drawTimeDistribution('time-dist-chart', timeDist, val, 260));
+
+      // Loyalty — new vs returning
+      drawLoyaltyChart('loyalty-chart', loyalty, 280);
+
+      // International trend
+      drawIntlChart('intl-chart', intlTrend, 280);
+
+      // DNF difficulty ranking
+      drawDnfRanking('dnf-ranking-chart', dnfRaces, 400);
+
+      // Finish hour radial chart
+      drawFinishHourChart('finish-hour-chart', finishHours, 320);
+    } catch(e) { console.warn('Analytics data not loaded:', e); }
+
+    if (typeof applyLang === 'function') applyLang(document.documentElement.lang || 'en');
+  } catch(err) {
+    console.error('All trails data load failed:', err);
+  }
+})();
+
+function buildClubsRanking(containerId, clubs, sortBy, limit) {
+  const container = document.getElementById(containerId);
+  const sorted = [...clubs].sort((a, b) => sortBy === 'races' ? b.races - a.races : b.finishers - a.finishers);
+  const top = sorted.slice(0, limit);
+  if (!top.length) { container.innerHTML = ''; return; }
+  const maxVal = top[0][sortBy === 'races' ? 'races' : 'finishers'];
+
+  let html = '<div style="display:flex;flex-direction:column;gap:4px">';
+  top.forEach((c, i) => {
+    const val = sortBy === 'races' ? c.races : c.finishers;
+    const pct = (val / maxVal * 100).toFixed(1);
+    const secondary = sortBy === 'races'
+      ? `${c.finishers.toLocaleString()} finishers`
+      : `${c.races} races`;
+    const yearsRange = c.years.length ? `${c.years[0]}–${c.years[c.years.length - 1]}` : '';
+    const alpha = 0.25 + 0.75 * (val / maxVal);
+
+    html += `<div style="display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid rgba(218,211,197,0.3)">`;
+    html += `<div style="min-width:28px;font-size:13px;font-weight:600;color:#6B8763;text-align:right">${i + 1}</div>`;
+    html += `<div style="flex:1;min-width:0">`;
+    html += `<div style="display:flex;align-items:baseline;gap:6px;margin-bottom:3px">`;
+    html += `<span style="font-size:13px;font-weight:500;color:#1F4D32;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${c.club}">${c.club}</span>`;
+    html += `<span style="font-size:11px;color:#6B8763;white-space:nowrap">${yearsRange}</span>`;
+    html += `</div>`;
+    html += `<div style="height:14px;background:rgba(218,211,197,0.3);border-radius:3px;overflow:hidden">`;
+    html += `<div style="height:100%;width:${pct}%;background:rgba(31,77,50,${alpha});border-radius:3px"></div>`;
+    html += `</div>`;
+    html += `</div>`;
+    html += `<div style="min-width:80px;text-align:right">`;
+    html += `<div style="font-size:14px;font-weight:600;color:#1F4D32">${val.toLocaleString()}</div>`;
+    html += `<div style="font-size:10px;color:#6B8763">${secondary}</div>`;
+    html += `</div>`;
+    html += `</div>`;
+  });
+  html += '</div>';
+  container.innerHTML = html;
+}
+
+function buildLocalitiesRanking(containerId, data, limit) {
+  const container = document.getElementById(containerId);
+  data = limit ? data.slice(0, limit) : data;
+  if (!data.length) { container.innerHTML = ''; return; }
+  const maxVal = data[0].finishers;
+
+  let html = '<div style="display:flex;flex-direction:column;gap:4px">';
+  data.forEach((loc, i) => {
+    const pct = (loc.finishers / maxVal * 100).toFixed(1);
+    const alpha = 0.25 + 0.75 * (loc.finishers / maxVal);
+    const topClubs = (loc.top_clubs || []).slice(0, 3).join(', ');
+
+    html += `<div style="display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid rgba(218,211,197,0.3)">`;
+    html += `<div style="min-width:28px;font-size:13px;font-weight:600;color:#6B8763;text-align:right">${i + 1}</div>`;
+    html += `<div style="flex:1;min-width:0">`;
+    html += `<div style="display:flex;align-items:baseline;gap:6px;margin-bottom:3px">`;
+    html += `<span style="font-size:13px;font-weight:500;color:#1F4D32">${loc.locality}</span>`;
+    html += `<span style="font-size:11px;color:#6B8763">${loc.clubs} clubs</span>`;
+    html += `</div>`;
+    html += `<div style="height:14px;background:rgba(218,211,197,0.3);border-radius:3px;overflow:hidden">`;
+    html += `<div style="height:100%;width:${pct}%;background:rgba(107,163,104,${alpha});border-radius:3px"></div>`;
+    html += `</div>`;
+    if (topClubs) html += `<div style="font-size:10px;color:#6B8763;margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${topClubs}">${topClubs}</div>`;
+    html += `</div>`;
+    html += `<div style="min-width:60px;text-align:right">`;
+    html += `<div style="font-size:14px;font-weight:600;color:#1F4D32">${loc.finishers.toLocaleString()}</div>`;
+    html += `</div>`;
+    html += `</div>`;
+  });
+  html += '</div>';
+  container.innerHTML = html;
+}
+
+// === ADVANCED ANALYTICS CHARTS ===
+
+function setupCanvas(canvasId, height) {
+  const canvas = document.getElementById(canvasId);
+  const dpr = window.devicePixelRatio || 1;
+  const w = canvas.parentElement.clientWidth - 48;
+  if (w <= 0) return null;
+  canvas.width = w * dpr;
+  canvas.height = height * dpr;
+  canvas.style.width = w + 'px';
+  canvas.style.height = height + 'px';
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+  return { canvas, ctx, w, dpr };
+}
+
+function drawTimeDistribution(canvasId, allData, bucket, height) {
+  const data = allData[bucket];
+  if (!data || !data.bins.length) return;
+  const s = setupCanvas(canvasId, height);
+  if (!s) return;
+  const { ctx, w } = s;
+
+  const pad = { top: 30, right: 30, bottom: 44, left: 50 };
+  const cw = w - pad.left - pad.right;
+  const ch = height - pad.top - pad.bottom;
+
+  const bins = data.bins;
+  const maxCount = Math.max(...bins.map(b => b.count));
+  const barW = Math.max(4, (cw / bins.length) - 1);
+  const gap = (cw - barW * bins.length) / (bins.length + 1);
+
+  // Background gradient feel
+  bins.forEach((bin, i) => {
+    const x = pad.left + gap + i * (barW + gap);
+    const h = (bin.count / maxCount) * ch;
+    const t = bin.from;
+
+    // Color: green for fast, amber for slow
+    const ratio = i / bins.length;
+    const r = Math.round(31 + ratio * 180);
+    const g = Math.round(77 + ratio * 40);
+    const b2 = Math.round(50 - ratio * 20);
+    ctx.fillStyle = `rgba(${r},${g},${b2},0.7)`;
+
+    ctx.beginPath();
+    ctx.roundRect(x, pad.top + ch - h, barW, h, [3, 3, 0, 0]);
+    ctx.fill();
+  });
+
+  // Smooth curve overlay
+  ctx.beginPath();
+  bins.forEach((bin, i) => {
+    const x = pad.left + gap + i * (barW + gap) + barW / 2;
+    const y = pad.top + ch - (bin.count / maxCount) * ch;
+    i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+  });
+  ctx.strokeStyle = 'rgba(31,77,50,0.6)';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  // P25, Median, P75 lines
+  const markers = [
+    { val: data.p25, label: 'P25', color: '#6BA368' },
+    { val: data.median, label: 'Median', color: '#1F4D32' },
+    { val: data.p75, label: 'P75', color: '#c44' },
+  ];
+  markers.forEach(m => {
+    const binIdx = bins.findIndex(b => m.val >= b.from && m.val < b.to);
+    if (binIdx < 0) return;
+    const x = pad.left + gap + binIdx * (barW + gap) + barW / 2;
+    ctx.setLineDash([4, 3]);
+    ctx.strokeStyle = m.color;
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    ctx.moveTo(x, pad.top);
+    ctx.lineTo(x, pad.top + ch);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    const hours = Math.floor(m.val / 60);
+    const mins = Math.round(m.val % 60);
+    ctx.font = 'bold 11px Inter, sans-serif';
+    ctx.fillStyle = m.color;
+    ctx.textAlign = 'center';
+    ctx.fillText(`${m.label}: ${hours}h${mins.toString().padStart(2, '0')}`, x, pad.top - 6);
+  });
+
+  // X-axis labels (every few bins)
+  ctx.font = '10px Inter, sans-serif';
+  ctx.fillStyle = '#6B8763';
+  ctx.textAlign = 'center';
+  const step = Math.max(1, Math.floor(bins.length / 10));
+  bins.forEach((bin, i) => {
+    if (i % step !== 0 && i !== bins.length - 1) return;
+    const x = pad.left + gap + i * (barW + gap) + barW / 2;
+    const h = Math.floor(bin.from / 60);
+    const m = Math.round(bin.from % 60);
+    ctx.fillText(`${h}:${m.toString().padStart(2, '0')}`, x, pad.top + ch + 14);
+  });
+
+  // Y-axis
+  ctx.textAlign = 'right';
+  ctx.textBaseline = 'middle';
+  for (let i = 0; i <= 4; i++) {
+    const val = Math.round(maxCount * i / 4);
+    const y = pad.top + ch - (ch * i / 4);
+    ctx.fillStyle = '#6B8763';
+    ctx.fillText(val.toString(), pad.left - 6, y);
+  }
+
+  // Stats label
+  ctx.font = '11px Inter, sans-serif';
+  ctx.fillStyle = '#6B8763';
+  ctx.textAlign = 'right';
+  ctx.fillText(`n = ${data.count.toLocaleString()}`, w - pad.right, pad.top + 10);
+}
+
+function drawLoyaltyChart(canvasId, data, height) {
+  const yearly = data.yearly_new_returning;
+  if (!yearly) return;
+  const years = Object.keys(yearly).map(Number).sort();
+  const s = setupCanvas(canvasId, height);
+  if (!s) return;
+  const { ctx, w } = s;
+
+  const pad = { top: 30, right: 60, bottom: 44, left: 54 };
+  const cw = w - pad.left - pad.right;
+  const ch = height - pad.top - pad.bottom;
+
+  const maxVal = Math.max(...years.map(y => yearly[y].total));
+  const barW = Math.min(30, (cw / years.length) * 0.7);
+  const gap = (cw - barW * years.length) / (years.length + 1);
+
+  years.forEach((y, i) => {
+    const d = yearly[y];
+    const x = pad.left + gap + i * (barW + gap);
+    const hNew = (d.new / maxVal) * ch;
+    const hRet = (d.returning / maxVal) * ch;
+
+    // Returning (bottom, dark)
+    ctx.fillStyle = '#1F4D32';
+    ctx.fillRect(x, pad.top + ch - hRet, barW, hRet);
+
+    // New (top, light)
+    ctx.fillStyle = '#6BA368';
+    ctx.fillRect(x, pad.top + ch - hRet - hNew, barW, hNew);
+
+    // Year label
+    ctx.font = '10px Inter, sans-serif';
+    ctx.fillStyle = '#6B8763';
+    ctx.textAlign = 'center';
+    ctx.save();
+    ctx.translate(x + barW / 2, pad.top + ch + 6);
+    if (years.length > 12) { ctx.rotate(-Math.PI / 4); ctx.textAlign = 'right'; }
+    ctx.fillText(y.toString().slice(-2), 0, 0);
+    ctx.restore();
+  });
+
+  // Return rate line (right Y axis)
+  ctx.beginPath();
+  const rates = years.map(y => {
+    const d = yearly[y];
+    return d.total > 0 ? (d.returning / d.total * 100) : 0;
+  });
+  const maxRate = Math.max(...rates, 1);
+
+  rates.forEach((rate, i) => {
+    const x = pad.left + gap + i * (barW + gap) + barW / 2;
+    const y = pad.top + ch - (rate / maxRate) * ch;
+    i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+  });
+  ctx.strokeStyle = '#E08040';
+  ctx.lineWidth = 2.5;
+  ctx.stroke();
+
+  rates.forEach((rate, i) => {
+    const x = pad.left + gap + i * (barW + gap) + barW / 2;
+    const y = pad.top + ch - (rate / maxRate) * ch;
+    ctx.beginPath();
+    ctx.arc(x, y, 3, 0, Math.PI * 2);
+    ctx.fillStyle = '#E08040';
+    ctx.fill();
+  });
+
+  // Y-axes
+  ctx.font = '11px Inter, sans-serif';
+  ctx.textBaseline = 'middle';
+  for (let i = 0; i <= 4; i++) {
+    const val = Math.round(maxVal * i / 4);
+    const y = pad.top + ch - (ch * i / 4);
+    ctx.textAlign = 'right';
+    ctx.fillStyle = '#6B8763';
+    ctx.fillText(val.toLocaleString(), pad.left - 6, y);
+    // Right axis
+    const rVal = Math.round(maxRate * i / 4);
+    ctx.textAlign = 'left';
+    ctx.fillStyle = '#E08040';
+    ctx.fillText(rVal + '%', w - pad.right + 6, y);
+
+    ctx.strokeStyle = 'rgba(218,211,197,0.4)';
+    ctx.lineWidth = 0.5;
+    ctx.beginPath(); ctx.moveTo(pad.left, y); ctx.lineTo(w - pad.right, y); ctx.stroke();
+  }
+
+  // Legend
+  const ly = pad.top + ch + 28;
+  ctx.font = '11px Inter, sans-serif';
+  ctx.textAlign = 'left';
+  ctx.fillStyle = '#6BA368'; ctx.fillRect(pad.left, ly - 4, 10, 8);
+  ctx.fillText('New', pad.left + 14, ly);
+  ctx.fillStyle = '#1F4D32'; ctx.fillRect(pad.left + 50, ly - 4, 10, 8);
+  ctx.fillText('Returning', pad.left + 64, ly);
+  ctx.strokeStyle = '#E08040'; ctx.lineWidth = 2;
+  ctx.beginPath(); ctx.moveTo(pad.left + 135, ly); ctx.lineTo(pad.left + 150, ly); ctx.stroke();
+  ctx.fillStyle = '#E08040'; ctx.fillText('% Returning', pad.left + 154, ly);
+
+  // KPI
+  ctx.font = 'bold 11px Inter, sans-serif';
+  ctx.textAlign = 'right';
+  ctx.fillStyle = '#1F4D32';
+  ctx.fillText(`${data.total_athletes.toLocaleString()} unique athletes · ${data.repeat_athletes.toLocaleString()} repeat · ${data.loyal_10plus} with 10+ races`, w - pad.right, pad.top - 8);
+}
+
+function drawIntlChart(canvasId, data, height) {
+  if (!data.length) return;
+  const s = setupCanvas(canvasId, height);
+  if (!s) return;
+  const { ctx, w } = s;
+
+  const pad = { top: 24, right: 56, bottom: 44, left: 54 };
+  const cw = w - pad.left - pad.right;
+  const ch = height - pad.top - pad.bottom;
+
+  const maxVal = Math.max(...data.map(d => d.total));
+  const barW = Math.min(30, (cw / data.length) * 0.7);
+  const gap = (cw - barW * data.length) / (data.length + 1);
+
+  data.forEach((d, i) => {
+    const x = pad.left + gap + i * (barW + gap);
+    const hPt = (d.portugal / maxVal) * ch;
+    const hIntl = (d.international / maxVal) * ch;
+
+    ctx.fillStyle = '#1F4D32';
+    ctx.fillRect(x, pad.top + ch - hPt, barW, hPt);
+    ctx.fillStyle = '#E08040';
+    ctx.fillRect(x, pad.top + ch - hPt - hIntl, barW, hIntl);
+
+    ctx.font = '10px Inter, sans-serif';
+    ctx.fillStyle = '#6B8763';
+    ctx.textAlign = 'center';
+    ctx.save();
+    ctx.translate(x + barW / 2, pad.top + ch + 6);
+    if (data.length > 12) { ctx.rotate(-Math.PI / 4); ctx.textAlign = 'right'; }
+    ctx.fillText(d.year.toString().slice(-2), 0, 0);
+    ctx.restore();
+  });
+
+  // % international line
+  ctx.beginPath();
+  data.forEach((d, i) => {
+    const x = pad.left + gap + i * (barW + gap) + barW / 2;
+    const y = pad.top + ch - (d.pct_intl / 100) * ch;
+    i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+  });
+  ctx.strokeStyle = '#c44';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  data.forEach((d, i) => {
+    const x = pad.left + gap + i * (barW + gap) + barW / 2;
+    const y = pad.top + ch - (d.pct_intl / 100) * ch;
+    ctx.beginPath(); ctx.arc(x, y, 3, 0, Math.PI * 2);
+    ctx.fillStyle = '#c44'; ctx.fill();
+    if (i % 3 === 0 || i === data.length - 1) {
+      ctx.font = '10px Inter, sans-serif';
+      ctx.textAlign = 'center'; ctx.fillText(d.pct_intl + '%', x, y - 8);
+    }
+  });
+
+  // Y-axes
+  ctx.font = '11px Inter, sans-serif';
+  ctx.textBaseline = 'middle';
+  for (let i = 0; i <= 4; i++) {
+    const val = Math.round(maxVal * i / 4);
+    const y = pad.top + ch - (ch * i / 4);
+    ctx.textAlign = 'right'; ctx.fillStyle = '#6B8763';
+    ctx.fillText(val.toLocaleString(), pad.left - 6, y);
+    ctx.textAlign = 'left'; ctx.fillStyle = '#c44';
+    ctx.fillText(Math.round(25 * i) + '%', w - pad.right + 6, y);
+    ctx.strokeStyle = 'rgba(218,211,197,0.4)'; ctx.lineWidth = 0.5;
+    ctx.beginPath(); ctx.moveTo(pad.left, y); ctx.lineTo(w - pad.right, y); ctx.stroke();
+  }
+
+  // Legend
+  const ly = pad.top + ch + 28;
+  ctx.font = '11px Inter, sans-serif'; ctx.textAlign = 'left';
+  ctx.fillStyle = '#1F4D32'; ctx.fillRect(pad.left, ly - 4, 10, 8);
+  ctx.fillText('Portugal', pad.left + 14, ly);
+  ctx.fillStyle = '#E08040'; ctx.fillRect(pad.left + 80, ly - 4, 10, 8);
+  ctx.fillText('International', pad.left + 94, ly);
+  ctx.strokeStyle = '#c44'; ctx.lineWidth = 2;
+  ctx.beginPath(); ctx.moveTo(pad.left + 185, ly); ctx.lineTo(pad.left + 200, ly); ctx.stroke();
+  ctx.fillStyle = '#c44'; ctx.fillText('% International', pad.left + 204, ly);
+}
+
+function drawDnfRanking(canvasId, data, height) {
+  const top = data.filter(d => d.started >= 50).slice(0, 20);
+  if (!top.length) return;
+  const realH = Math.max(height, top.length * 26 + 30);
+  const canvas = document.getElementById(canvasId);
+  const dpr = window.devicePixelRatio || 1;
+  const w = canvas.parentElement.clientWidth - 48;
+  if (w <= 0) return;
+  canvas.width = w * dpr;
+  canvas.height = realH * dpr;
+  canvas.style.width = w + 'px';
+  canvas.style.height = realH + 'px';
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+
+  const labelW = Math.min(200, w * 0.35);
+  const barArea = w - labelW - 80;
+  const maxPct = Math.max(...top.map(d => d.dnf_pct));
+
+  ctx.font = '12px Inter, sans-serif';
+  top.forEach((d, i) => {
+    const y = 10 + i * 26;
+    const barH = 16;
+    const bw = (d.dnf_pct / maxPct) * barArea;
+
+    // Race name (cleaned)
+    const name = d.race.replace(/\s*\d{4}\s*$/, '').replace(/[®™]/g, '').replace(/^\d+[ºªo]?\s+/, '').replace(/^[IVXLC]+\s+/, '').trim();
+    ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
+    ctx.fillStyle = '#15201A';
+    ctx.fillText(name.length > 22 ? name.slice(0, 20) + '…' : name, labelW - 8, y + barH / 2);
+
+    // Bar — red gradient by severity
+    const severity = d.dnf_pct / maxPct;
+    const r = Math.round(180 + severity * 75);
+    const g = Math.round(80 - severity * 40);
+    const b = Math.round(40 - severity * 20);
+    ctx.fillStyle = `rgba(${r},${g},${b},0.75)`;
+    ctx.beginPath(); ctx.roundRect(labelW, y, bw, barH, 3); ctx.fill();
+
+    // Percentage label
+    ctx.textAlign = 'left'; ctx.fillStyle = '#15201A';
+    ctx.font = 'bold 12px Inter, sans-serif';
+    ctx.fillText(d.dnf_pct + '%', labelW + bw + 6, y + barH / 2);
+    ctx.font = '10px Inter, sans-serif';
+    ctx.fillStyle = '#6B8763';
+    ctx.fillText(`(${d.dnf}/${d.started})`, labelW + bw + 50, y + barH / 2);
+    ctx.font = '12px Inter, sans-serif';
+  });
+}
+
+function drawFinishHourChart(canvasId, data, height) {
+  if (!data.length) return;
+  const s = setupCanvas(canvasId, height);
+  if (!s) return;
+  const { ctx, w } = s;
+
+  const cx = w / 2;
+  const cy = height / 2 + 5;
+  const outerR = Math.min(cx, cy) - 30;
+  const innerR = outerR * 0.35;
+  const maxCount = Math.max(...data.map(d => d.count));
+
+  // Draw radial segments
+  data.forEach(d => {
+    const angle1 = (d.hour / 24) * Math.PI * 2 - Math.PI / 2;
+    const angle2 = ((d.hour + 1) / 24) * Math.PI * 2 - Math.PI / 2;
+    const r = innerR + (d.count / maxCount) * (outerR - innerR);
+
+    // Color: night=dark blue, morning=gold, day=green, evening=orange
+    let color;
+    if (d.hour >= 22 || d.hour < 5) color = `rgba(30,40,80,${0.3 + 0.7 * d.count / maxCount})`;
+    else if (d.hour < 9) color = `rgba(224,128,64,${0.3 + 0.7 * d.count / maxCount})`;
+    else if (d.hour < 17) color = `rgba(31,77,50,${0.3 + 0.7 * d.count / maxCount})`;
+    else color = `rgba(196,80,40,${0.3 + 0.7 * d.count / maxCount})`;
+
+    ctx.fillStyle = color;
+    ctx.beginPath();
+    ctx.arc(cx, cy, r, angle1, angle2);
+    ctx.arc(cx, cy, innerR, angle2, angle1, true);
+    ctx.closePath();
+    ctx.fill();
+
+    ctx.strokeStyle = 'rgba(255,255,255,0.3)';
+    ctx.lineWidth = 0.5;
+    ctx.stroke();
+  });
+
+  // Hour labels
+  ctx.font = '10px Inter, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillStyle = '#6B8763';
+  for (let h = 0; h < 24; h += 3) {
+    const angle = (h / 24) * Math.PI * 2 - Math.PI / 2;
+    const lx = cx + Math.cos(angle) * (outerR + 15);
+    const ly = cy + Math.sin(angle) * (outerR + 15);
+    ctx.fillText(h.toString().padStart(2, '0') + ':00', lx, ly);
+  }
+
+  // Center label
+  const total = data.reduce((s, d) => s + d.count, 0);
+  const peak = data.reduce((a, b) => a.count > b.count ? a : b);
+  ctx.font = 'bold 16px Inter, sans-serif';
+  ctx.fillStyle = '#1F4D32';
+  ctx.fillText(total.toLocaleString(), cx, cy - 8);
+  ctx.font = '11px Inter, sans-serif';
+  ctx.fillStyle = '#6B8763';
+  ctx.fillText('finishers', cx, cy + 8);
+  ctx.fillText(`peak: ${peak.hour}:00`, cx, cy + 22);
+}
+
+function drawAllGrowth(canvasId, events, years, height, ageFilter) {
+  const byYear = {};
+  years.forEach(y => byYear[y] = { total: 0, male: 0, female: 0, events: 0 });
+
+  if (!ageFilter || ageFilter === 'all') {
+    events.forEach(e => {
+      if (!byYear[e.year]) return;
+      byYear[e.year].total += e.total;
+      byYear[e.year].male += e.male;
+      byYear[e.year].female += e.female;
+      byYear[e.year].events++;
+    });
+  } else {
+    const match = (label) => {
+      const l = label.toUpperCase();
+      if (ageFilter === 'sen') return /^SEN\b/.test(l);
+      if (ageFilter === 'vet') return /^VET\s*4/i.test(l);
+      if (ageFilter === 'vet50') return /^VET\s*(5|6|7|8)/i.test(l);
+      return false;
+    };
+    events.forEach(e => {
+      if (!byYear[e.year]) return;
+      byYear[e.year].events++;
+      (e.categories || []).forEach(c => {
+        if (!match(c.Label)) return;
+        const isF = /\bF\b/.test(c.Label);
+        byYear[e.year].total += c.Value;
+        if (isF) byYear[e.year].female += c.Value;
+        else byYear[e.year].male += c.Value;
+      });
+    });
+  }
+
+  const data = years.map(y => byYear[y]);
+  const canvas = document.getElementById(canvasId);
+  const dpr = window.devicePixelRatio || 1;
+  const w = canvas.parentElement.clientWidth - 48;
+  canvas.width = w * dpr;
+  canvas.height = height * dpr;
+  canvas.style.width = w + 'px';
+  canvas.style.height = height + 'px';
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+
+  const pad = { top: 24, right: 50, bottom: 40, left: 54 };
+  const cw = w - pad.left - pad.right;
+  const ch = height - pad.top - pad.bottom;
+
+  const maxVal = Math.max(...data.map(d => d.total));
+  const barW = Math.min(30, (cw / years.length) * 0.7);
+  const gap = (cw - barW * years.length) / (years.length + 1);
+
+  // Y-axis left (participants)
+  ctx.font = '11px Inter, sans-serif';
+  ctx.textAlign = 'right';
+  ctx.textBaseline = 'middle';
+  for (let i = 0; i <= 4; i++) {
+    const val = Math.round(maxVal * i / 4);
+    const y = pad.top + ch - (ch * i / 4);
+    ctx.fillStyle = '#6B8763';
+    ctx.fillText(val.toLocaleString(), pad.left - 6, y);
+    ctx.strokeStyle = 'rgba(218,211,197,0.4)';
+    ctx.lineWidth = 0.5;
+    ctx.beginPath(); ctx.moveTo(pad.left, y); ctx.lineTo(w - pad.right, y); ctx.stroke();
+  }
+
+  // Stacked bars: male (dark) + female (accent)
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'top';
+  data.forEach((d, i) => {
+    const x = pad.left + gap + i * (barW + gap);
+    const hTotal = (d.total / maxVal) * ch;
+    const hFemale = (d.female / maxVal) * ch;
+
+    // Male portion
+    ctx.fillStyle = '#1F4D32';
+    ctx.fillRect(x, pad.top + ch - hTotal, barW, hTotal - hFemale);
+
+    // Female portion on top
+    ctx.fillStyle = '#6BA368';
+    ctx.fillRect(x, pad.top + ch - hFemale, barW, hFemale);
+
+    ctx.fillStyle = '#6B8763';
+    ctx.font = '10px Inter, sans-serif';
+    ctx.save();
+    ctx.translate(x + barW / 2, pad.top + ch + 6);
+    if (years.length > 12) { ctx.rotate(-Math.PI / 4); ctx.textAlign = 'right'; }
+    ctx.fillText(years[i].toString().slice(-2), 0, 0);
+    ctx.restore();
+  });
+
+  // Female % line on secondary axis
+  const maxPct = 40;
+  ctx.beginPath();
+  data.forEach((d, i) => {
+    const x = pad.left + gap + i * (barW + gap) + barW / 2;
+    const pct = d.total > 0 ? (d.female / d.total * 100) : 0;
+    const y = pad.top + ch - (pct / maxPct) * ch;
+    i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+  });
+  ctx.strokeStyle = '#E08040';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  // Dots + labels on line
+  data.forEach((d, i) => {
+    const x = pad.left + gap + i * (barW + gap) + barW / 2;
+    const pct = d.total > 0 ? (d.female / d.total * 100) : 0;
+    const y = pad.top + ch - (pct / maxPct) * ch;
+    ctx.beginPath(); ctx.arc(x, y, 3, 0, Math.PI * 2);
+    ctx.fillStyle = '#E08040'; ctx.fill();
+    if (i % 2 === 0 || years.length <= 10) {
+      ctx.fillStyle = '#c06020';
+      ctx.font = '9px Inter, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'bottom';
+      ctx.fillText(pct.toFixed(0) + '%', x, y - 5);
+    }
+  });
+
+  // Right Y axis (% women)
+  ctx.textAlign = 'left';
+  ctx.textBaseline = 'middle';
+  ctx.fillStyle = '#E08040';
+  ctx.font = '11px Inter, sans-serif';
+  for (let i = 0; i <= 4; i++) {
+    const val = Math.round(maxPct * i / 4);
+    const y = pad.top + ch - (ch * i / 4);
+    ctx.fillText(val + '%', w - pad.right + 6, y);
+  }
+
+  // Legend
+  const ly = pad.top + ch + 28;
+  ctx.font = '11px Inter, sans-serif';
+  ctx.textAlign = 'left';
+  ctx.textBaseline = 'middle';
+  ctx.fillStyle = '#1F4D32'; ctx.fillRect(pad.left, ly - 4, 10, 8);
+  ctx.fillText('Men', pad.left + 14, ly);
+  ctx.fillStyle = '#6BA368'; ctx.fillRect(pad.left + 55, ly - 4, 10, 8);
+  ctx.fillText('Women', pad.left + 69, ly);
+  ctx.strokeStyle = '#E08040'; ctx.lineWidth = 2;
+  ctx.beginPath(); ctx.moveTo(pad.left + 130, ly); ctx.lineTo(pad.left + 145, ly); ctx.stroke();
+  ctx.fillStyle = '#E08040'; ctx.fillText('% Women', pad.left + 149, ly);
+}
+
+function buildAllRecords(containerId, events, genderFilter, distFilter, aliases) {
+  const container = document.getElementById(containerId);
+  genderFilter = genderFilter || 'all';
+  distFilter = distFilter || 'all';
+  aliases = aliases || {};
+
+  function distBucket(km) {
+    if (km >= 100) return '100+';
+    if (km >= 75) return '75–99';
+    if (km >= 50) return '50–74';
+    if (km >= 35) return '35–49';
+    if (km >= 20) return '20–34';
+    return '10–19';
+  }
+
+  const raceRecords = {};
+  events.forEach(ev => {
+    const raceName = ev.name
+      .replace(/\s*\d{4}\s*$/, '').replace(/\s*\[.*\]$/, '').replace(/[®™]/g, '')
+      .replace(/^\d+[ºªo]?\s+/, '').replace(/^[IVXLC]+\s+/, '')
+      .replace(/\s*-?\s*Compressport\b/, '').replace(/\s*-?\s*Rota dos Vinhos\b/, '')
+      .replace(/\s*-?\s*Madeira Trail Series\b/, '').replace(/\s+/g, ' ').trim();
+    if (/backyard/i.test(raceName)) return;
+
+    ev.competitions.forEach(comp => {
+      if (comp.distance_km < 10) return;
+      const bucket = distBucket(comp.distance_km);
+      const key = raceName + '|' + bucket;
+      if (!raceRecords[key]) {
+        raceRecords[key] = { race: raceName, bucket, distance: comp.distance_km, record_m: null, record_f: null, year_m: 0, year_f: 0 };
+      }
+      const rec = raceRecords[key];
+      if (comp.record_m && comp.record_m.time && (!rec.record_m || comp.record_m.time < rec.record_m.time)) {
+        rec.record_m = comp.record_m; rec.year_m = ev.year; rec.distance = comp.distance_km;
+      }
+      if (comp.record_f && comp.record_f.time && (!rec.record_f || comp.record_f.time < rec.record_f.time)) {
+        rec.record_f = comp.record_f; rec.year_f = ev.year;
+      }
+    });
+  });
+
+  const bucketOrder = ['100+', '75–99', '50–74', '35–49', '20–34', '10–19'];
+  let records = Object.values(raceRecords).filter(r => r.record_m || r.record_f)
+    .sort((a, b) => bucketOrder.indexOf(a.bucket) - bucketOrder.indexOf(b.bucket) || a.race.localeCompare(b.race));
+
+  if (distFilter !== 'all') records = records.filter(r => r.bucket === distFilter);
+
+  const showM = genderFilter === 'all' || genderFilter === 'm';
+  const showF = genderFilter === 'all' || genderFilter === 'f';
+  const colSpan = 2 + (showM ? 1 : 0) + (showF ? 1 : 0);
+
+  let html = '<table style="width:100%;border-collapse:collapse;font-size:13px">';
+  html += '<thead><tr style="border-bottom:2px solid #DAD3C5;text-align:left">';
+  html += '<th style="padding:8px 6px;color:#6B8763;font-weight:600"><span data-lang="en">Race</span><span data-lang="pt">Corrida</span></th>';
+  html += '<th style="padding:8px 6px;color:#6B8763;font-weight:600">km</th>';
+  if (showM) html += '<th style="padding:8px 6px;color:#1F4D32;font-weight:600">♂ Record</th>';
+  if (showF) html += '<th style="padding:8px 6px;color:#6BA368;font-weight:600">♀ Record</th>';
+  html += '</tr></thead><tbody>';
+
+  var VISIBLE_LIMIT = 10;
+  let lastBucket = '';
+  var rowIdx = 0;
+  records.forEach(r => {
+    if (r.bucket !== lastBucket) {
+      lastBucket = r.bucket;
+      var hide = rowIdx >= VISIBLE_LIMIT ? ' class="rec-extra" style="display:none"' : '';
+      html += `<tr${hide}><td colspan="${colSpan}" style="padding:10px 6px 4px;font-size:12px;font-weight:600;color:#6B8763;text-transform:uppercase;letter-spacing:0.04em;border-bottom:1px solid #DAD3C5">${r.bucket} km</td></tr>`;
+    }
+    var hide = rowIdx >= VISIBLE_LIMIT ? ' class="rec-extra" style="display:none"' : '';
+    html += `<tr${hide} style="border-bottom:1px solid rgba(218,211,197,0.3)">`;
+    html += `<td style="padding:6px;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${r.race}">${r.race}</td>`;
+    html += `<td style="padding:6px;color:#6B8763">${r.distance}</td>`;
+    if (showM) {
+      const mTime = r.record_m ? r.record_m.time : '—';
+      const mCountry = r.record_m ? (aliases[r.record_m.country] || r.record_m.country || '—') : '';
+      const mInfo = r.record_m ? `${mCountry} · ${r.record_m.category || '♂'} · ${r.year_m}` : '';
+      html += `<td style="padding:6px"><strong style="color:#1F4D32">${mTime}</strong><br><span style="font-size:11px;color:#6B8763">${mInfo}</span></td>`;
+    }
+    if (showF) {
+      const fTime = r.record_f ? r.record_f.time : '—';
+      const fCountry = r.record_f ? (aliases[r.record_f.country] || r.record_f.country || '—') : '';
+      const fInfo = r.record_f ? `${fCountry} · ${r.record_f.category || '♀'} · ${r.year_f}` : '';
+      html += `<td style="padding:6px"><strong style="color:#6BA368">${fTime}</strong><br><span style="font-size:11px;color:#6B8763">${fInfo}</span></td>`;
+    }
+    html += '</tr>';
+    rowIdx++;
+  });
+
+  if (!records.length) {
+    html += `<tr><td colspan="${colSpan}" style="padding:20px;text-align:center;color:#6B8763">No records in this category</td></tr>`;
+  }
+
+  html += '</tbody></table>';
+  if (records.length > VISIBLE_LIMIT) {
+    html += '<button class="show-all-btn" id="rec-toggle" style="margin-top:8px">▼ Show all ' + records.length + ' records</button>';
+  }
+  container.innerHTML = html;
+  var toggle = document.getElementById('rec-toggle');
+  if (toggle) {
+    toggle.onclick = function() {
+      var extras = container.querySelectorAll('.rec-extra');
+      var showing = extras[0] && extras[0].style.display !== 'none';
+      extras.forEach(function(el) { el.style.display = showing ? 'none' : ''; });
+      toggle.textContent = showing ? '▼ Show all ' + records.length + ' records' : '▲ Show top ' + VISIBLE_LIMIT;
+    };
+  }
+  if (typeof applyLang === 'function') applyLang(document.documentElement.lang || 'en');
+}
+
+function drawAllCountriesBar(canvasId, events, aliases, height, limit, minVal) {
+  limit = limit || 15;
+  minVal = minVal || 0;
+
+  const countryTotals = {};
+  events.forEach(ev => {
+    (ev.nationalities || []).forEach(n => {
+      const name = aliases[n.Label] || n.Label;
+      countryTotals[name] = (countryTotals[name] || 0) + n.Value;
+    });
+  });
+
+  const sorted = Object.entries(countryTotals).sort((a, b) => b[1] - a[1]).filter(([, v]) => v >= minVal).slice(0, limit);
+  if (!sorted.length) return;
+  const maxVal = sorted[0][1];
+
+  const canvas = document.getElementById(canvasId);
+  const dpr = window.devicePixelRatio || 1;
+  const w = canvas.parentElement.clientWidth - 48;
+  const barH = 16;
+  const rowH = 24;
+  const realH = Math.max(height, sorted.length * rowH + 20);
+  canvas.width = w * dpr;
+  canvas.height = realH * dpr;
+  canvas.style.width = w + 'px';
+  canvas.style.height = realH + 'px';
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+
+  const labelW = 110;
+  const barArea = w - labelW - 70;
+
+  ctx.font = '12px Inter, sans-serif';
+  sorted.forEach(([country, count], i) => {
+    const y = 10 + i * rowH;
+    const bw = (count / maxVal) * barArea;
+
+    ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
+    ctx.fillStyle = '#15201A';
+    ctx.fillText(country, labelW - 8, y + barH / 2);
+
+    const alpha = 0.3 + 0.7 * (count / maxVal);
+    ctx.fillStyle = `rgba(31,77,50,${alpha})`;
+    ctx.beginPath(); ctx.roundRect(labelW, y, bw, barH, 3); ctx.fill();
+
+    ctx.textAlign = 'left';
+    ctx.fillStyle = '#6B8763';
+    ctx.fillText(count.toLocaleString(), labelW + bw + 6, y + barH / 2);
+  });
+}
+
+// ---- Trail calendar mini-table + modal ----
+(function () {
+  var TC = null;
+  var L = function () { return (document.documentElement.lang === 'pt') ? 'pt' : 'en'; };
+  var MON = { en: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'], pt: ['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'] };
+  function fmtDate(iso) { var p = iso.split('-'); return parseInt(p[2], 10) + ' ' + MON[L()][parseInt(p[1], 10) - 1]; }
+  function isPast(iso) { var t = new Date(); t.setHours(0,0,0,0); return new Date(iso) < t; }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c]; }); }
+
+  function mergedSorted() {
+    var all = TC.events.concat(TC.extra || []);
+    all.sort(function (a, b) {
+      var ka = parseInt(a.date.slice(5, 7), 10) * 100 + parseInt(a.date.slice(8, 10), 10);
+      var kb = parseInt(b.date.slice(5, 7), 10) * 100 + parseInt(b.date.slice(8, 10), 10);
+      return ka - kb;
+    });
+    return all;
+  }
+
+  function renderMini() {
+    var el = document.getElementById('trailCalMini');
+    if (!el || !TC) return;
+    var lang = L();
+    var all = mergedSorted();
+    var upcoming = all.filter(function (e) { return !isPast(e.date); });
+    var show = (upcoming.length ? upcoming : all).slice(0, 4);
+    var rows = show.map(function (e) {
+      return '<div class="trail-cal-mini-row ' + (isPast(e.date) ? 'past' : '') + '"><span class="d">' + fmtDate(e.date) + '</span><span>' + esc(e.name) + '</span></div>';
+    }).join('');
+    var total = all.length;
+    el.innerHTML =
+      '<div class="trail-cal-mini-title"><span>' + (lang === 'pt' ? 'Calendário Trail 25/26' : 'Trail calendar 25/26') + '</span><span>📋</span></div>' +
+      rows +
+      '<div class="trail-cal-mini-more">' + (lang === 'pt' ? 'Ver tabela completa (' + total + ') →' : 'View full table (' + total + ') →') + '</div>';
+  }
+
+  function distCell(v) {
+    if (!v) return '<span style="color:#C9C3B6">–</span>';
+    return '<span class="tc-dist">' + esc(v).replace('+/', '+ / ') + '</span>';
+  }
+
+  function renderTable() {
+    if (!TC) return;
+    var lang = L();
+    document.getElementById('trailCalTitle').textContent = TC.title;
+    document.getElementById('trailCalSub').textContent = (lang === 'pt' ? 'Atualizado em ' : 'Updated ') + TC.updated;
+
+    // One unified list, sorted by calendar month (Jan → Dec).
+    var all = TC.events.map(function (e) { return Object.assign({ intl: false }, e); })
+      .concat((TC.extra || []).map(function (e) { return Object.assign({ intl: true }, e); }));
+    all.sort(function (a, b) {
+      var ka = parseInt(a.date.slice(5, 7), 10) * 100 + parseInt(a.date.slice(8, 10), 10);
+      var kb = parseInt(b.date.slice(5, 7), 10) * 100 + parseInt(b.date.slice(8, 10), 10);
+      return ka - kb;
+    });
+
+    var H = lang === 'pt'
+      ? ['Nº','Data','Evento','Org.','Jovem','Sprint','Longo','Ultra','Site']
+      : ['#','Date','Event','Org.','Youth','Sprint','Long','Ultra','Site'];
+    var thead = '<thead><tr>' + H.map(function (h) { return '<th>' + h + '</th>'; }).join('') + '</tr></thead>';
+    var MFULL = { en: ['January','February','March','April','May','June','July','August','September','October','November','December'],
+                  pt: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'] };
+    var lastMonth = -1, n = 0;
+    var body = all.map(function (e) {
+      var m = parseInt(e.date.slice(5, 7), 10) - 1;
+      var header = '';
+      if (m !== lastMonth) {
+        lastMonth = m;
+        header = '<tr class="tc-month"><td colspan="9">' + MFULL[lang][m] + '</td></tr>';
+      }
+      n += 1;
+      var past = isPast(e.date);
+      var link = e.url ? '<a href="' + esc(e.url) + '" target="_blank" rel="noopener">↗</a>' : '';
+      // No separate youth race when the youth distance just repeats the sprint.
+      var youth = (e.jovem && e.jovem === e.sprint) ? '' : e.jovem;
+      var tag = e.intl ? '<span class="tc-intl">' + (lang === 'pt' ? 'Int.' : "Int'l") + '</span>' : '';
+      return header + '<tr class="' + (past ? 'past' : '') + '">' +
+        '<td>' + n + '</td>' +
+        '<td style="white-space:nowrap">' + fmtDate(e.date) + '</td>' +
+        '<td class="tc-name">' + esc(e.name) + tag + '</td>' +
+        '<td>' + esc(e.org || '') + '</td>' +
+        '<td>' + distCell(youth) + '</td>' +
+        '<td>' + distCell(e.sprint) + '</td>' +
+        '<td>' + distCell(e.longo) + '</td>' +
+        '<td>' + distCell(e.ultra) + '</td>' +
+        '<td>' + link + '</td>' +
+      '</tr>';
+    }).join('');
+    document.getElementById('trailCalTable').innerHTML = thead + '<tbody>' + body + '</tbody>';
+    document.getElementById('trailCalExtraWrap').innerHTML = '';
+
+    var review = TC.needs_review
+      ? '<div style="color:#B0782A;font-weight:600;margin-bottom:4px">⚠ ' +
+        (lang === 'pt'
+          ? 'O quadro oficial foi atualizado (' + esc(TC.pdf_alterado || '') + ') — datas do 2.º semestre podem mudar.'
+          : 'The official quadro was updated (' + esc(TC.pdf_alterado || '') + ') — second-half dates may change.') +
+        '</div>'
+      : '';
+    document.getElementById('trailCalFoot').innerHTML = review +
+      esc(lang === 'pt' ? TC.note_pt : TC.note_en) +
+      ' · ' + (lang === 'pt' ? 'Fonte' : 'Source') +
+      ': <a href="' + esc(TC.source) + '" target="_blank" rel="noopener">AARAM (PDF)</a>';
+  }
+
+  function openModal() { renderTable(); document.getElementById('trailCalOverlay').hidden = false; }
+  function closeModal() { document.getElementById('trailCalOverlay').hidden = true; }
+
+  // Shared data for export (merged, month-sorted, youth de-duplicated)
+  function exportRows() {
+    var lang = L();
+    var all = TC.events.concat(TC.extra || []);
+    all.sort(function (a, b) {
+      var ka = parseInt(a.date.slice(5, 7), 10) * 100 + parseInt(a.date.slice(8, 10), 10);
+      var kb = parseInt(b.date.slice(5, 7), 10) * 100 + parseInt(b.date.slice(8, 10), 10);
+      return ka - kb;
+    });
+    return all.map(function (e, i) {
+      var youth = (e.jovem && e.jovem === e.sprint) ? '' : (e.jovem || '');
+      return [i + 1, fmtDate(e.date), e.name, e.org || '', youth, e.sprint || '', e.longo || '', e.ultra || '', e.url || ''];
+    });
+  }
+  function exportHead() {
+    return (L() === 'pt')
+      ? ['Nº', 'Data', 'Evento', 'Org.', 'Jovem', 'Sprint', 'Longo', 'Ultra', 'Site']
+      : ['#', 'Date', 'Event', 'Org.', 'Youth', 'Sprint', 'Long', 'Ultra', 'Site'];
+  }
+  function download(name, mime, content) {
+    var blob = new Blob(['﻿' + content], { type: mime });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob); a.download = name;
+    document.body.appendChild(a); a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+  }
+  function csvCell(v) { return '"' + String(v).replace(/"/g, '""') + '"'; }
+  function downloadCsv() {
+    var rows = [exportHead()].concat(exportRows());
+    var csv = rows.map(function (r) { return r.map(csvCell).join(','); }).join('\r\n');
+    download('trail_madeira_2026.csv', 'text/csv;charset=utf-8', csv);
+  }
+  function downloadXls() {
+    var head = exportHead(), rows = exportRows();
+    var html = '<table><thead><tr>' + head.map(function (h) { return '<th>' + h + '</th>'; }).join('') +
+      '</tr></thead><tbody>' + rows.map(function (r) {
+        return '<tr>' + r.map(function (c) { return '<td>' + String(c).replace(/&/g, '&amp;').replace(/</g, '&lt;') + '</td>'; }).join('') + '</tr>';
+      }).join('') + '</tbody></table>';
+    download('trail_madeira_2026.xls', 'application/vnd.ms-excel', '<html><head><meta charset="utf-8"></head><body>' + html + '</body></html>');
+  }
+  function downloadPdf() {
+    var head = exportHead(), rows = exportRows();
+    var w = window.open('', '_blank');
+    if (!w) return;
+    var th = head.map(function (h) { return '<th>' + h + '</th>'; }).join('');
+    var tb = rows.map(function (r) {
+      return '<tr>' + r.slice(0, 8).map(function (c) { return '<td>' + String(c).replace(/&/g, '&amp;').replace(/</g, '&lt;') + '</td>'; }).join('') + '</tr>';
+    }).join('');
+    w.document.write('<html><head><title>' + (TC.title || 'Trail Madeira') + '</title>' +
+      '<style>body{font-family:Inter,Arial,sans-serif;color:#15201A;padding:20px}h2{color:#1F4D32}' +
+      'table{border-collapse:collapse;width:100%;font-size:11px}th{background:#1F4D32;color:#fff;text-align:left;padding:6px}' +
+      'td{border-bottom:1px solid #ccc;padding:5px}</style></head><body>' +
+      '<h2>' + (TC.title || '') + '</h2><table><thead><tr>' + th.replace('<th></th>', '') + '</tr></thead><tbody>' + tb + '</tbody></table>' +
+      '</body></html>');
+    w.document.close();
+    setTimeout(function () { w.focus(); w.print(); }, 400);
+  }
+  function toggleFull() {
+    document.querySelector('.trail-cal-dialog').classList.toggle('full');
+    document.getElementById('trailCalOverlay').classList.toggle('full-overlay');
+  }
+
+  document.getElementById('trailCalMini').addEventListener('click', openModal);
+  document.getElementById('trailCalClose').addEventListener('click', closeModal);
+  document.getElementById('trailCalCsv').addEventListener('click', downloadCsv);
+  document.getElementById('trailCalXls').addEventListener('click', downloadXls);
+  document.getElementById('trailCalPdf').addEventListener('click', downloadPdf);
+  document.getElementById('trailCalFull').addEventListener('click', toggleFull);
+  document.getElementById('trailCalOverlay').addEventListener('click', function (e) { if (e.target === this) closeModal(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
+
+  window.addEventListener('trailcal:lang', function () { renderMini(); if (!document.getElementById('trailCalOverlay').hidden) renderTable(); });
+
+  fetch('trail_calendar.json').then(function (r) { return r.json(); }).then(function (d) {
+    TC = d; renderMini();
+    if (location.hash === '#calendar') {
+      var el = document.getElementById('trailCalMini');
+      if (el) {
+        setTimeout(function () {
+          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          el.style.boxShadow = '0 0 0 3px #1F4D32';
+          setTimeout(function () { el.style.boxShadow = ''; }, 2200);
+        }, 350);
+        // charts above render for a few seconds and shift the layout —
+        // silently re-anchor until the calendar sits in the viewport
+        var tries = 0;
+        var anchor = setInterval(function () {
+          var vh = window.innerHeight || document.documentElement.clientHeight;
+          if (vh > 0) {
+            var r = el.getBoundingClientRect();
+            if (r.top < 0 || r.bottom > vh) el.scrollIntoView({ block: 'center' });
+          }
+          if (++tries >= 8) clearInterval(anchor);
+        }, 800);
+      }
+    }
+  });
+})();
+</script>
+<div class="drawer-back" id="drawerBack" hidden></div>
+<aside class="drawer" id="drawer" hidden>
+  <div class="drawer-head"><span class="drawer-title">Madeira Ativa</span><button class="drawer-close" id="drawerClose" aria-label="Close">&times;</button></div>
+  <nav class="drawer-nav">
+    <a href="/ativa/">🏠 Main</a>
+    <a href="/ativa/madeira_stat">🏃 Trails</a>
+    <a href="/ativa/levada">🥾 Levadas</a>
+    <a href="/ativa/map?layer=race">🗺 Map</a>
+    <a href="/ativa/map3d">⛰ 3D map</a>
+    <a href="/ativa/mapfly">🛩 3D flyover</a>
+    <a href="/ativa/mapbay">🌍 Aerial view</a>
+    <a href="/ativa/madeira_festas">🎆 Festas</a>
+    <a href="/ativa/madeira_news">📰 News</a>
+    <a href="/ativa/madeira_history">📜 History</a>
+    <div class="drawer-sep"></div>
+    <a href="https://t.me/madeira_ebot" target="_blank" rel="noopener">✈️ Telegram bot</a>
+    <a href="mailto:agent@azenha.ai">✉️ Contact</a>
+  </nav>
+</aside>
+<script>
+(function(){var b=document.getElementById('burgerBtn'),d=document.getElementById('drawer'),k=document.getElementById('drawerBack');
+function o(){d.hidden=false;k.hidden=false;}function c(){d.hidden=true;k.hidden=true;}
+b.addEventListener('click',function(){d.hidden?o():c();});
+document.getElementById('drawerClose').addEventListener('click',c);k.addEventListener('click',c);
+document.addEventListener('keydown',function(e){if(e.key==='Escape')c();});
+d.addEventListener('click',function(e){if(e.target.closest('a'))c();});})();
+</script>
+
+<button class="totop" id="toTop" aria-label="Back to top">↑</button>
+<script>
+(function(){var t=document.getElementById('toTop');
+window.addEventListener('scroll',function(){t.classList.toggle('show',window.scrollY>600);},{passive:true});
+t.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();
+</script>
+<!-- RACE-INDEX:START -->
+  <section aria-label="Race results index" style="max-width:760px;margin:44px auto 0;padding:0 18px 8px">
+    <h2 style="font-family:Fraunces,Georgia,serif;font-size:20px;font-weight:600;margin:0 0 6px">Race results &amp; records</h2>
+    <p style="color:var(--soft);font-size:14px;margin:0 0 12px">Every Madeira trail race with full finisher, DNF and course-record data.</p>
+    <h3 style="font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--soft);margin:12px 0 6px">Series</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px;font-size:14px">
+      <a href="/ativa/series/miut">MIUT <span style="color:var(--soft)">· 17</span></a>
+      <a href="/ativa/series/tpcn">TPCN <span style="color:var(--soft)">· 12</span></a>
+      <a href="/ativa/series/tcl">TCL <span style="color:var(--soft)">· 11</span></a>
+      <a href="/ativa/series/kmvcl">KMVCL <span style="color:var(--soft)">· 11</span></a>
+      <a href="/ativa/series/tpm">TPM <span style="color:var(--soft)">· 10</span></a>
+      <a href="/ativa/series/kmvf">KMVF <span style="color:var(--soft)">· 10</span></a>
+      <a href="/ativa/series/maxi">MaXI <span style="color:var(--soft)">· 7</span></a>
+      <a href="/ativa/series/usm">USM <span style="color:var(--soft)">· 4</span></a>
+      <a href="/ativa/series/crt">CRT <span style="color:var(--soft)">· 3</span></a>
+      <a href="/ativa/series/svk">SVK <span style="color:var(--soft)">· 3</span></a>
+      <a href="/ativa/series/run-up-158">RUN UP 158 <span style="color:var(--soft)">· 3</span></a>
+      <a href="/ativa/series/1-2-kmvp">1/2 KMVP <span style="color:var(--soft)">· 2</span></a>
+      <a href="/ativa/series/efmc">EFMC <span style="color:var(--soft)">· 2</span></a>
+      <a href="/ativa/series/mbu">MBU <span style="color:var(--soft)">· 2</span></a>
+    </div>
+    <h3 style="font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--soft);margin:18px 0 6px">All editions</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:5px;font-size:13px">
+      <a href="/ativa/race/1o-meio-km-vertical-da-calheta">1º Meio km Vertical da Calheta</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2026">Madeira Island Ultra Trail 2026</a>
+      <a href="/ativa/race/trail-do-porto-moniz-2026">Trail do Porto Moniz 2026</a>
+      <a href="/ativa/race/xi-km-vertical-de-camara-de-lobos">XI km Vertical de Câmara de Lobos</a>
+      <a href="/ativa/race/adn-race-2025">ADN Race 2025</a>
+      <a href="/ativa/race/ecotrail-madeira-2025">Ecotrail Madeira 2025</a>
+      <a href="/ativa/race/ecotur2-skymarathon-pm-2025">Ecotur² SkyMarathon PM 2025</a>
+      <a href="/ativa/race/ecotur2-skyspeed-2-5km-500">Ecotur² SkySpeed 2.5km 500+</a>
+      <a href="/ativa/race/forum-madeira-run-up-158-2025">Fórum Madeira Run Up 158</a>
+      <a href="/ativa/race/madeira-backyard-ultra">Madeira Backyard Ultra</a>
+      <a href="/ativa/race/madeira-backyard-ultra-2025">Madeira Backyard Ultra</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2025">Madeira Island Ultra Trail® 2025</a>
+      <a href="/ativa/race/trail-do-porto-moniz-2025">Trail do Porto Moniz 2025</a>
+      <a href="/ativa/race/vii-maxi-race-madeira-2025">VII Maxi Race Madeira 2025</a>
+      <a href="/ativa/race/x-km-vertical-de-camara-de-lobos-2025">X km Vertical de Câmara de Lobos 2025</a>
+      <a href="/ativa/race/xii-tcl-2025-cancelado">XII TCL 2025 [Cancelado]</a>
+      <a href="/ativa/race/xii-trail-porto-da-cruz-natura-2025">XII Trail Porto da Cruz Natura 2025</a>
+      <a href="/ativa/race/xiii-km-vertical-do-fanal-2025">XIII KM Vertical do Fanal 2025</a>
+      <a href="/ativa/race/adn-race-2024-cancelada">ADN Race 2024 [Cancelada]</a>
+      <a href="/ativa/race/ecotrail-madeira-2024">Ecotrail Madeira 2024</a>
+      <a href="/ativa/race/ecotur-trail-porto-moniz-2024">Ecotur Trail Porto Moniz 2024</a>
+      <a href="/ativa/race/forum-madeira-run-up-158-2024">Forum Madeira Run-up 158</a>
+      <a href="/ativa/race/ix-km-vertical-de-camara-de-lobos">IX Km Vertical de Câmara de Lobos</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2024">Madeira Island Ultra Trail® 2024</a>
+      <a href="/ativa/race/trail-do-porto-moniz-2024">Trail do Porto Moniz 2024</a>
+      <a href="/ativa/race/vi-maxi-race-madeira-2024">VI Maxi Race Madeira 2024</a>
+      <a href="/ativa/race/xi-trail-porto-da-cruz-natura-2024">XI Trail Porto da Cruz Natura 2024</a>
+      <a href="/ativa/race/xi-trail-de-camara-de-lobos-2024">XI Trail de Câmara de Lobos 2024</a>
+      <a href="/ativa/race/xii-km-vertical-do-fanal-2024">XII KM Vertical do Fanal 2024</a>
+      <a href="/ativa/race/adn-race-2023">ADN Race 2023</a>
+      <a href="/ativa/race/forum-madeira-run-up-158">Forum Madeira Run Up 158</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2023">Madeira Island Ultra Trail® 2023</a>
+      <a href="/ativa/race/trail-do-porto-moniz-2023">Trail do Porto Moniz 2023</a>
+      <a href="/ativa/race/v-maxi-race-madeira-2023">V Maxi Race Madeira 2023</a>
+      <a href="/ativa/race/viii-km-vertical-camara-de-lobos">VIII Km Vertical Câmara de Lobos</a>
+      <a href="/ativa/race/x-trail-camara-de-lobos-2023">X Trail Câmara de Lobos 2023</a>
+      <a href="/ativa/race/x-trail-porto-da-cruz-natura-2023">X Trail Porto da Cruz Natura 2023</a>
+      <a href="/ativa/race/adn-race-ponta-do-sol-2022">ADN Race Ponta do Sol 2022</a>
+      <a href="/ativa/race/iv-maxi-race-madeira-2022">IV Maxi Race Madeira 2022</a>
+      <a href="/ativa/race/ix-trail-camara-de-lobos">IX Trail Câmara de Lobos</a>
+      <a href="/ativa/race/ix-trail-porto-da-cruz-natura-2022">IX Trail Porto da Cruz Natura 2022</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2022">Madeira Island Ultra Trail® 2022</a>
+      <a href="/ativa/race/trail-do-porto-moniz-2022-cancelado">Trail do Porto Moniz 2022 [Cancelado]</a>
+      <a href="/ativa/race/vii-km-vertical-camara-de-lobos">VII km Vertical Câmara de Lobos</a>
+      <a href="/ativa/race/viii-trail-camara-de-lobos">VIII Trail Câmara de Lobos</a>
+      <a href="/ativa/race/x-km-vertical-do-fanal-2022">X KM Vertical do Fanal 2022</a>
+      <a href="/ativa/race/adn-race-ponta-do-sol-2021">ADN Race Ponta do Sol 2021</a>
+      <a href="/ativa/race/iii-maxi-race-madeira-2021">III Maxi Race Madeira 2021</a>
+      <a href="/ativa/race/ix-km-vertical-do-fanal-2021">IX KM Vertical do Fanal 2021</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2021">Madeira Island Ultra Trail® 2021</a>
+      <a href="/ativa/race/vi-km-vertical-camara-de-lobos-2021">VI km Vertical Câmara de Lobos 2021</a>
+      <a href="/ativa/race/viii-trail-porto-da-cruz-natura-2021">VIII Trail Porto da Cruz Natura 2021</a>
+      <a href="/ativa/race/ecotrail-funchal-madeira-2020">Ecotrail Funchal - Madeira 2020</a>
+      <a href="/ativa/race/trail-do-porto-moniz-2020">Trail do Porto Moniz 2020</a>
+      <a href="/ativa/race/v-km-vertical-camara-de-lobos-2020">V km Vertical Câmara de Lobos 2020</a>
+      <a href="/ativa/race/vii-trail-porto-da-cruz-natura-2020">VII Trail Porto da Cruz Natura 2020</a>
+      <a href="/ativa/race/viii-km-vertical-do-fanal-2020">VIII KM Vertical do Fanal 2020</a>
+      <a href="/ativa/race/adn-race-ponta-do-sol-2019">ADN Race Ponta do Sol 2019</a>
+      <a href="/ativa/race/ecotrail-funchal-madeira-2019">Ecotrail Funchal - Madeira 2019</a>
+      <a href="/ativa/race/ii-maxi-race-madeira-2019">II Maxi Race Madeira 2019</a>
+      <a href="/ativa/race/iv-km-vertical-camara-de-lobos">IV km Vertical Câmara de Lobos</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2019">Madeira Island Ultra Trail 2019</a>
+      <a href="/ativa/race/ronda-dos-picos-skyrace-2019">Ronda dos Picos Skyrace®</a>
+      <a href="/ativa/race/santana-vertical-kilometer-2019">Santana Vertical Kilometer® 2019</a>
+      <a href="/ativa/race/trail-do-porto-moniz-2019">Trail do Porto Moniz 2019</a>
+      <a href="/ativa/race/ultra-skyrunning-madeira-2019">Ultra Skyrunning Madeira 2019</a>
+      <a href="/ativa/race/vi-trail-porto-da-cruz-natura-2019">VI Trail Porto da Cruz Natura 2019</a>
+      <a href="/ativa/race/vii-km-vertical-do-fanal-2019">VII KM Vertical do Fanal 2019</a>
+      <a href="/ativa/race/vii-trail-camara-de-lobos">VII Trail Câmara de Lobos</a>
+      <a href="/ativa/race/ecotrail-funchal-madeira-2018">Ecotrail Funchal - Madeira 2018</a>
+      <a href="/ativa/race/i-maxi-race-madeira-2018">I Maxi Race Madeira 2018</a>
+      <a href="/ativa/race/iii-km-vertical-camara-de-lobos">III km Vertical Câmara de Lobos</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2018">Madeira Island Ultra Trail 2018</a>
+      <a href="/ativa/race/santana-vertical-kilometer-2018">Santana Vertical Kilometer® 2018</a>
+      <a href="/ativa/race/trail-do-porto-moniz-2018">Trail do Porto Moniz 2018</a>
+      <a href="/ativa/race/ultra-skymarathon-madeira-2018">Ultra SkyMarathon® Madeira 2018</a>
+      <a href="/ativa/race/v-trail-porto-da-cruz-natura-2018">V Trail Porto da Cruz Natura 2018</a>
+      <a href="/ativa/race/vi-km-vertical-do-fanal-2018">VI KM Vertical do Fanal 2018</a>
+      <a href="/ativa/race/vi-trail-camara-de-lobos">VI Trail Câmara de Lobos</a>
+      <a href="/ativa/race/adn-race-ponta-do-sol-2017">ADN Race Ponta do Sol 2017</a>
+      <a href="/ativa/race/ecotrail-funchal-madeira-compressport-2017">Ecotrail Funchal - Madeira Compressport 2017</a>
+      <a href="/ativa/race/ii-km-vertical-camara-de-lobos">II km Vertical Câmara de Lobos</a>
+      <a href="/ativa/race/iii-cristo-rei-trail">III Cristo Rei Trail</a>
+      <a href="/ativa/race/iii-cristo-rei-trail-mc-spar">III Cristo Rei Trail - MC Spar</a>
+      <a href="/ativa/race/iv-trail-porto-da-cruz-natura-2017">IV Trail Porto da Cruz Natura 2017</a>
+      <a href="/ativa/race/km-vertical-costa-norte-2017">KM Vertical Costa Norte 2017</a>
+      <a href="/ativa/race/machico-madeira-trail-series-2017">Machico - Madeira Trail Series 2017</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2017">Madeira Island Ultra Trail 2017</a>
+      <a href="/ativa/race/porto-moniz-madeira-trail-series-2017">Porto Moniz - Madeira Trail Series 2017</a>
+      <a href="/ativa/race/porto-santo-madeira-trail-series-2017">Porto Santo - Madeira Trail Series 2017</a>
+      <a href="/ativa/race/ribeira-brava-madeira-trail-series-2017">Ribeira Brava - Madeira Trail Series 2017</a>
+      <a href="/ativa/race/ronda-dos-picos-skyrace">Ronda dos Picos Skyrace®</a>
+      <a href="/ativa/race/santana-vertical-kilometer">Santana Vertical Kilometer®</a>
+      <a href="/ativa/race/santana-madeira-trail-series-2017">Santana – Madeira Trail Series 2017</a>
+      <a href="/ativa/race/trail-do-curral-das-freiras">Trail do Curral das Freiras</a>
+      <a href="/ativa/race/trail-do-porto-moniz-2017">Trail do Porto Moniz 2017</a>
+      <a href="/ativa/race/ultra-skymarathon-madeira">Ultra SkyMarathon® Madeira</a>
+      <a href="/ativa/race/v-km-vertical-do-fanal-2017">V KM Vertical do Fanal 2017</a>
+      <a href="/ativa/race/v-trail-camara-de-lobos">V Trail Câmara de Lobos</a>
+      <a href="/ativa/race/v-12-km-vertical-dos-prazeres">V ½ km Vertical dos Prazeres</a>
+      <a href="/ativa/race/columbus-ultra-trail-2016">Columbus Ultra Trail 2016</a>
+      <a href="/ativa/race/ecotrail-funchal-madeira-compressport-2016">Ecotrail Funchal - Madeira Compressport 2016</a>
+      <a href="/ativa/race/i-km-vertical-camara-de-lobos">I km Vertical Câmara de Lobos</a>
+      <a href="/ativa/race/ii-cristo-rei-trail">II Cristo Rei Trail</a>
+      <a href="/ativa/race/iii-trail-porto-da-cruz-natura-2016">III Trail Porto da Cruz Natura 2016</a>
+      <a href="/ativa/race/iv-km-vertical-do-fanal-2016">IV KM Vertical do Fanal 2016</a>
+      <a href="/ativa/race/iv-trail-camara-de-lobos-rota-dos-vinhos">IV Trail Câmara de Lobos - Rota dos Vinhos</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2016">Madeira Island Ultra Trail 2016</a>
+      <a href="/ativa/race/ultra-trail-porto-moniz-e-sao-vicente-2016">Ultra Trail Porto Moniz e São Vicente 2016</a>
+      <a href="/ativa/race/v-trail-ludens-machico-2016">V Trail Ludens Machico 2016</a>
+      <a href="/ativa/race/volcanoes-trail-2016">Volcanoes Trail 2016</a>
+      <a href="/ativa/race/i-cristo-rei-trail">I Cristo Rei Trail</a>
+      <a href="/ativa/race/i-trail-da-calheta-2015">I Trail da Calheta 2015</a>
+      <a href="/ativa/race/i-trail-de-coracao-na-natureza-2015">I Trail de Coração na Natureza 2015</a>
+      <a href="/ativa/race/ii-trail-porto-da-cruz-natura-2015">II Trail Porto da Cruz Natura 2015</a>
+      <a href="/ativa/race/iii-km-vertical-do-fanal-2015">III KM Vertical do Fanal 2015</a>
+      <a href="/ativa/race/iii-trail-camara-de-lobos">III Trail Câmara de Lobos</a>
+      <a href="/ativa/race/iv-12-km-vertical-dos-prazeres">IV ½ km Vertical dos Prazeres</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2015">Madeira Island Ultra Trail 2015</a>
+      <a href="/ativa/race/trail-noturno-canical-2015">Trail Noturno Caniçal 2015</a>
+      <a href="/ativa/race/ultra-trail-sao-vicente-e-porto-moniz-2015">Ultra Trail São Vicente e Porto Moniz 2015</a>
+      <a href="/ativa/race/i-trail-porto-da-cruz-natura-2014">I Trail Porto da Cruz Natura 2014</a>
+      <a href="/ativa/race/ii-trail-camara-de-lobos">II Trail Câmara de Lobos</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2014">Madeira Island Ultra Trail 2014</a>
+      <a href="/ativa/race/trail-ludens-machico-2014">Trail Ludens Machico 2014</a>
+      <a href="/ativa/race/trail-porto-moniz-2014">Trail Porto Moniz 2014</a>
+      <a href="/ativa/race/ultra-skymarathon-madeira-2014">Ultra Skymarathon Madeira 2014</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2013">Madeira Island Ultra Trail 2013</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2012">Madeira Island Ultra Trail 2012</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2011">Madeira Island Ultra Trail 2011</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2009">Madeira Island Ultra Trail 2009</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2008">Madeira Island Ultra Trail 2008</a>
+    </div>
+  </section>
+  <style>[aria-label="Race results index"] a{color:var(--accent);text-decoration:none;padding:2px 0}[aria-label="Race results index"] a:hover{text-decoration:underline}</style>
+  <!-- RACE-INDEX:END -->
+</body>
+</html>

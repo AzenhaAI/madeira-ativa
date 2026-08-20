@@ -1,0 +1,338 @@
+{
+  "note": "Which races run along each PR trail. Coverage is the share of the trail lying under a recorded race course (~55 m tolerance). Times shown belong to the race, not to the trail segment.",
+  "generated_at": "2026-08-11",
+  "count": 25,
+  "trails": {
+    "PR 1": [
+      {
+        "race": "MIUT",
+        "coverage_pct": 96,
+        "series": "miut",
+        "url": "/ativa/series/miut",
+        "editions": 17,
+        "first_year": 2008,
+        "last_year": 2026,
+        "finishers": 22448,
+        "best": {
+          "time": "12:54:52",
+          "holder": "Paul Cornut-Chauvinc",
+          "distance_km": 115.0
+        }
+      }
+    ],
+    "PR 1.2": [
+      {
+        "race": "MIUT",
+        "coverage_pct": 32,
+        "series": "miut",
+        "url": "/ativa/series/miut",
+        "editions": 17,
+        "first_year": 2008,
+        "last_year": 2026,
+        "finishers": 22448,
+        "best": {
+          "time": "12:54:52",
+          "holder": "Paul Cornut-Chauvinc",
+          "distance_km": 115.0
+        }
+      }
+    ],
+    "PR 1.3": [
+      {
+        "race": "MIUT",
+        "coverage_pct": 85,
+        "series": "miut",
+        "url": "/ativa/series/miut",
+        "editions": 17,
+        "first_year": 2008,
+        "last_year": 2026,
+        "finishers": 22448,
+        "best": {
+          "time": "12:54:52",
+          "holder": "Paul Cornut-Chauvinc",
+          "distance_km": 115.0
+        }
+      }
+    ],
+    "PR 10": [
+      {
+        "race": "MIUT",
+        "coverage_pct": 24,
+        "series": "miut",
+        "url": "/ativa/series/miut",
+        "editions": 17,
+        "first_year": 2008,
+        "last_year": 2026,
+        "finishers": 22448,
+        "best": {
+          "time": "12:54:52",
+          "holder": "Paul Cornut-Chauvinc",
+          "distance_km": 115.0
+        }
+      },
+      {
+        "race": "Ultra Madeira",
+        "coverage_pct": 23
+      }
+    ],
+    "PR 12": [
+      {
+        "race": "Ultra Madeira",
+        "coverage_pct": 30
+      }
+    ],
+    "PR 13": [
+      {
+        "race": "Trail Porto Moniz",
+        "coverage_pct": 43,
+        "series": "tpm",
+        "url": "/ativa/series/tpm",
+        "editions": 10,
+        "first_year": 2014,
+        "last_year": 2026,
+        "finishers": 4422,
+        "best": {
+          "time": "05:22:19",
+          "holder": "Pau Capell",
+          "distance_km": 48.0
+        }
+      },
+      {
+        "race": "MIUT",
+        "coverage_pct": 42,
+        "series": "miut",
+        "url": "/ativa/series/miut",
+        "editions": 17,
+        "first_year": 2008,
+        "last_year": 2026,
+        "finishers": 22448,
+        "best": {
+          "time": "12:54:52",
+          "holder": "Paul Cornut-Chauvinc",
+          "distance_km": 115.0
+        }
+      }
+    ],
+    "PR 14": [
+      {
+        "race": "Trail Porto Moniz",
+        "coverage_pct": 73,
+        "series": "tpm",
+        "url": "/ativa/series/tpm",
+        "editions": 10,
+        "first_year": 2014,
+        "last_year": 2026,
+        "finishers": 4422,
+        "best": {
+          "time": "05:22:19",
+          "holder": "Pau Capell",
+          "distance_km": 48.0
+        }
+      }
+    ],
+    "PR 15": [
+      {
+        "race": "Trail Porto Moniz",
+        "coverage_pct": 90,
+        "series": "tpm",
+        "url": "/ativa/series/tpm",
+        "editions": 10,
+        "first_year": 2014,
+        "last_year": 2026,
+        "finishers": 4422,
+        "best": {
+          "time": "05:22:19",
+          "holder": "Pau Capell",
+          "distance_km": 48.0
+        }
+      }
+    ],
+    "PR 17": [
+      {
+        "race": "MIUT",
+        "coverage_pct": 40,
+        "series": "miut",
+        "url": "/ativa/series/miut",
+        "editions": 17,
+        "first_year": 2008,
+        "last_year": 2026,
+        "finishers": 22448,
+        "best": {
+          "time": "12:54:52",
+          "holder": "Paul Cornut-Chauvinc",
+          "distance_km": 115.0
+        }
+      }
+    ],
+    "PR 2": [
+      {
+        "race": "MIUT",
+        "coverage_pct": 46,
+        "series": "miut",
+        "url": "/ativa/series/miut",
+        "editions": 17,
+        "first_year": 2008,
+        "last_year": 2026,
+        "finishers": 22448,
+        "best": {
+          "time": "12:54:52",
+          "holder": "Paul Cornut-Chauvinc",
+          "distance_km": 115.0
+        }
+      }
+    ],
+    "PR 2 VE": [
+      {
+        "race": "Porto Santo Trail",
+        "coverage_pct": 23
+      }
+    ],
+    "PR 2 VO": [
+      {
+        "race": "Porto Santo Trail",
+        "coverage_pct": 39
+      }
+    ],
+    "PR 21": [
+      {
+        "race": "MIUT",
+        "coverage_pct": 67,
+        "series": "miut",
+        "url": "/ativa/series/miut",
+        "editions": 17,
+        "first_year": 2008,
+        "last_year": 2026,
+        "finishers": 22448,
+        "best": {
+          "time": "12:54:52",
+          "holder": "Paul Cornut-Chauvinc",
+          "distance_km": 115.0
+        }
+      }
+    ],
+    "PR 21 <-> PR 22": [
+      {
+        "race": "MIUT",
+        "coverage_pct": 100,
+        "series": "miut",
+        "url": "/ativa/series/miut",
+        "editions": 17,
+        "first_year": 2008,
+        "last_year": 2026,
+        "finishers": 22448,
+        "best": {
+          "time": "12:54:52",
+          "holder": "Paul Cornut-Chauvinc",
+          "distance_km": 115.0
+        }
+      }
+    ],
+    "PR 22": [
+      {
+        "race": "MIUT",
+        "coverage_pct": 18,
+        "series": "miut",
+        "url": "/ativa/series/miut",
+        "editions": 17,
+        "first_year": 2008,
+        "last_year": 2026,
+        "finishers": 22448,
+        "best": {
+          "time": "12:54:52",
+          "holder": "Paul Cornut-Chauvinc",
+          "distance_km": 115.0
+        }
+      }
+    ],
+    "PR 27": [
+      {
+        "race": "ADN Race",
+        "coverage_pct": 30
+      }
+    ],
+    "PR 3": [
+      {
+        "race": "Porto Santo Trail",
+        "coverage_pct": 54
+      }
+    ],
+    "PR 3.1": [
+      {
+        "race": "EcoTrail Madeira",
+        "coverage_pct": 61
+      }
+    ],
+    "PR 4": [
+      {
+        "race": "EcoTrail Madeira",
+        "coverage_pct": 41
+      },
+      {
+        "race": "MIUT",
+        "coverage_pct": 26,
+        "series": "miut",
+        "url": "/ativa/series/miut",
+        "editions": 17,
+        "first_year": 2008,
+        "last_year": 2026,
+        "finishers": 22448,
+        "best": {
+          "time": "12:54:52",
+          "holder": "Paul Cornut-Chauvinc",
+          "distance_km": 115.0
+        }
+      }
+    ],
+    "PR 5": [
+      {
+        "race": "Ultra Madeira",
+        "coverage_pct": 80
+      },
+      {
+        "race": "MIUT",
+        "coverage_pct": 49,
+        "series": "miut",
+        "url": "/ativa/series/miut",
+        "editions": 17,
+        "first_year": 2008,
+        "last_year": 2026,
+        "finishers": 22448,
+        "best": {
+          "time": "12:54:52",
+          "holder": "Paul Cornut-Chauvinc",
+          "distance_km": 115.0
+        }
+      }
+    ],
+    "PR 6.4": [
+      {
+        "race": "Trail da Calheta",
+        "coverage_pct": 100
+      }
+    ],
+    "PR 6.6": [
+      {
+        "race": "Trail da Calheta",
+        "coverage_pct": 71
+      }
+    ],
+    "PR 6.7": [
+      {
+        "race": "Ultra Madeira",
+        "coverage_pct": 22
+      }
+    ],
+    "PR 6.8": [
+      {
+        "race": "Ultra Madeira",
+        "coverage_pct": 100
+      }
+    ],
+    "PR1": [
+      {
+        "race": "Porto Santo Trail",
+        "coverage_pct": 93
+      }
+    ]
+  }
+}

@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Levada Games — Trail Profile Quiz &amp; Runner · Madeira Ativa</title>
+  <meta name="description" content="Two small games built on real Madeira trail data: name the levada from its elevation profile, or run that profile as a side-scrolling trail.">
+  <link rel="canonical" href="https://azenha.ai/ativa/levada-game">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Madeira Ativa">
+  <meta property="og:title" content="Levada Games — Trail Profile Quiz &amp; Runner · Madeira Ativa">
+  <meta property="og:description" content="Two small games built on real Madeira trail data: name the levada from its elevation profile, or run that profile as a side-scrolling trail.">
+  <meta property="og:url" content="https://azenha.ai/ativa/levada-game">
+  <meta property="og:image" content="https://azenha.ai/ativa/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en">
+  <meta property="og:locale:alternate" content="pt_PT">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Levada Games — Trail Profile Quiz &amp; Runner · Madeira Ativa">
+  <meta name="twitter:description" content="Two small games built on real Madeira trail data: name the levada from its elevation profile, or run that profile as a side-scrolling trail.">
+  <meta name="twitter:image" content="https://azenha.ai/ativa/og.png">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="icon" href="/ativa/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/ativa/icon-192.png?v=5e8787d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F5F2EA; --accent: #1F4D32; --soft: #6B8763; --line: #DAD3C5; --ink: #15201A;
+    --card: #fff; --right: #2F6B4F; --wrong: #B23A2E;
+    --sky-hi: #CFDFDA; --sky-lo: #EDEBE1; --ridge: #A9BDB2; --water: #3E9BC4; --runner: #B23A2E;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: Inter, system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 20px 18px 60px; }
+  .brand-bar { display: flex; justify-content: space-between; align-items: center; padding: 6px 0 10px; }
+  .brand-link { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; transition: opacity 0.2s; }
+  .brand-link:hover { opacity: 0.8; }
+  .brand-icon { width: 32px; height: 32px; border-radius: 7px; flex-shrink: 0; }
+  .brand-name { font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 18px; color: var(--accent); letter-spacing: -0.01em; }
+  .lang { display: flex; gap: 4px; }
+  .lang button {
+    border: 1px solid var(--line); background: none; color: var(--soft);
+    border-radius: 999px; padding: 4px 11px; font: inherit; font-size: 13px; cursor: pointer;
+  }
+  .lang button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .theme-btn { flex-shrink: 0; margin-left: 6px; padding: 2px 9px 4px; background: none; border: 1px solid var(--line); border-radius: 8px; font-size: 15px; line-height: 1.5; cursor: pointer; }
+  .theme-btn:hover { border-color: var(--accent); }
+
+  .section-nav { border-bottom: 1px solid var(--line); margin: 0 -18px 18px; padding: 0 18px; }
+  .section-nav-inner { display: flex; overflow-x: auto; scrollbar-width: none; }
+  .section-nav-inner::-webkit-scrollbar { display: none; }
+  .section-nav a {
+    flex-shrink: 0; padding: 10px 13px; color: var(--soft); text-decoration: none;
+    font-size: 14px; border-bottom: 2px solid transparent; white-space: nowrap;
+  }
+  .section-nav a:hover { color: var(--accent); }
+  .section-nav a.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+  h1 { font-family: Fraunces, Georgia, serif; font-size: 30px; font-weight: 600; margin: 6px 0 6px; letter-spacing: -0.015em; }
+  .sub { color: var(--soft); font-size: 15px; line-height: 1.55; margin: 0 0 18px; max-width: 56ch; }
+
+  /* mode switch */
+  .modes { display: flex; gap: 6px; margin-bottom: 16px; }
+  .modes button {
+    flex: 1; font: inherit; font-size: 14px; cursor: pointer; text-align: left;
+    background: var(--card); color: var(--ink); border: 1px solid var(--line);
+    border-radius: 10px; padding: 10px 13px; line-height: 1.35; transition: border-color .15s;
+  }
+  .modes button:hover { border-color: var(--accent); }
+  .modes button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .modes button[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+  .modes .mt { display: block; font-weight: 600; }
+  .modes .ms { display: block; font-size: 12px; color: var(--soft); margin-top: 2px; }
+  @media (max-width: 520px) { .modes { flex-direction: column; } }
+
+  .panel[hidden] { display: none; }
+
+  .board { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+  .board .lbl { font-size: 12px; letter-spacing: 0.09em; text-transform: uppercase; color: var(--soft); }
+  .board b { font-variant-numeric: tabular-nums; color: var(--ink); }
+
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px; }
+  canvas#plot { display: block; width: 100%; height: 200px; }
+  .loading { color: var(--soft); font-size: 14px; padding: 60px 0; text-align: center; }
+  .loading a { color: var(--accent); }
+
+  .opts { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 8px; margin-top: 14px; }
+  button.opt {
+    appearance: none; text-align: left; cursor: pointer; font: inherit; font-size: 14px; color: var(--ink);
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 10px 12px; display: flex; gap: 10px; align-items: baseline; transition: border-color .15s;
+  }
+  button.opt:hover:not(:disabled) { border-color: var(--accent); }
+  button.opt:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  button.opt:disabled { cursor: default; }
+  .opt .code { font-size: 12px; color: var(--soft); flex: 0 0 auto; min-width: 52px; font-variant-numeric: tabular-nums; }
+  .opt.is-right { border-color: var(--right); box-shadow: inset 0 0 0 1px var(--right); }
+  .opt.is-right .code { color: var(--right); }
+  .opt.is-wrong { border-color: var(--wrong); box-shadow: inset 0 0 0 1px var(--wrong); }
+  .opt.is-wrong .code { color: var(--wrong); }
+  .opt.is-dim { opacity: .5; }
+
+  .reveal { margin-top: 16px; border-top: 1px solid var(--line); padding-top: 14px; display: none; }
+  .reveal.on { display: block; }
+  .verdict { font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; margin: 0 0 6px; }
+  .verdict.ok { color: var(--right); } .verdict.no { color: var(--wrong); }
+  .route { margin: 0 0 12px; color: var(--soft); font-size: 15px; line-height: 1.5; }
+  .route b { color: var(--ink); }
+  .stats { display: flex; gap: 22px; flex-wrap: wrap; margin-bottom: 14px; font-variant-numeric: tabular-nums; }
+  .stat span { display: block; font-size: 11px; letter-spacing: 0.09em; text-transform: uppercase; color: var(--soft); }
+  .stat b { font-size: 17px; font-weight: 600; }
+  .go {
+    appearance: none; cursor: pointer; font: inherit; font-size: 14px; font-weight: 600;
+    border: none; border-radius: 999px; background: var(--accent); color: #fff; padding: 9px 20px;
+  }
+  .go:hover { background: #163d27; }
+  .go:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+  .end { display: none; text-align: center; padding: 30px 10px; }
+  .end.on { display: block; }
+  .end .score { font-family: Fraunces, Georgia, serif; font-size: 60px; font-weight: 600; line-height: 1; font-variant-numeric: tabular-nums; }
+  .end .score i { font-style: normal; color: var(--soft); }
+  .end p { color: var(--soft); margin: 10px auto 20px; max-width: 34ch; line-height: 1.5; }
+
+  /* runner */
+  .picker { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--soft); margin-bottom: 10px; flex-wrap: wrap; }
+  select {
+    font: inherit; font-size: 13px; color: var(--ink); background: var(--card);
+    border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; max-width: 100%;
+  }
+  select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .stage { position: relative; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  canvas#run { display: block; width: 100%; height: 300px; touch-action: manipulation; }
+  .hud {
+    position: absolute; top: 0; left: 0; right: 0; display: flex; gap: 8px;
+    justify-content: space-between; padding: 10px; pointer-events: none;
+    font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+  }
+  .hud div { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 4px 8px; color: var(--soft); }
+  .hud b { color: var(--ink); font-variant-numeric: tabular-nums; }
+  .overlay {
+    position: absolute; inset: 0; display: none; align-items: center; justify-content: center;
+    background: var(--card); text-align: center; padding: 22px;
+  }
+  .overlay.on { display: flex; }
+  .overlay .inner { max-width: 34ch; }
+  .overlay h2 { font-family: Fraunces, Georgia, serif; font-size: 21px; font-weight: 600; margin: 0 0 6px; }
+  .overlay .big { font-family: Fraunces, Georgia, serif; font-size: 40px; font-weight: 600; line-height: 1; margin-bottom: 6px; font-variant-numeric: tabular-nums; }
+  .overlay p { color: var(--soft); font-size: 14px; line-height: 1.5; margin: 0 0 16px; }
+  kbd { font-size: .85em; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 4px; padding: .05em .35em; }
+  .legend { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 10px; font-size: 13px; color: var(--soft); }
+  .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; }
+
+  .after { margin-top: 26px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 14px; color: var(--soft); line-height: 1.6; }
+  .after a { color: var(--accent); }
+
+@media (prefers-color-scheme: dark) {
+  html:not(.light) {
+    --bg:#141b16; --ink:#e7ded0; --accent:#8fbf9a; --soft:#93a892; --line:#2c352c; --card:#1b241d;
+    --right:#6FBF97; --wrong:#E8735F;
+    --sky-hi:#101a18; --sky-lo:#1b241d; --ridge:#26332c; --water:#63C6E8; --runner:#E8735F;
+  }
+  html:not(.light) .go, html:not(.light) .lang button.active { color: #141b16; }
+  html:not(.light) .go:hover { background: #a8d2b1; }
+}
+html.dark {
+  --bg:#141b16; --ink:#e7ded0; --accent:#8fbf9a; --soft:#93a892; --line:#2c352c; --card:#1b241d;
+  --right:#6FBF97; --wrong:#E8735F;
+  --sky-hi:#101a18; --sky-lo:#1b241d; --ridge:#26332c; --water:#63C6E8; --runner:#E8735F;
+}
+html.dark .go, html.dark .lang button.active { color: #141b16; }
+html.dark .go:hover { background: #a8d2b1; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand-bar">
+    <a class="brand-link" href="/ativa/">
+      <svg class="brand-icon" viewBox="0 0 512 512" aria-hidden="true">
+        <rect width="512" height="512" rx="112" fill="#1f4d32"/>
+        <g transform="translate(86 54) scale(1.55)" fill="none" stroke="#f5f2ea" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="110" cy="110" r="90"/>
+          <circle cx="110" cy="110" r="76" stroke-dasharray="5 12" stroke-opacity="0.58"/>
+          <circle cx="110" cy="110" r="7" fill="#f5f2ea" stroke="none"/>
+          <line x1="20" y1="110" x2="200" y2="110"/>
+          <line x1="110" y1="20" x2="110" y2="200"/>
+          <line x1="46.4" y1="46.4" x2="173.6" y2="173.6"/>
+          <line x1="46.4" y1="173.6" x2="173.6" y2="46.4"/>
+          <path d="M0 232C30 222 50 244 80 232S130 222 160 232S200 244 220 232"/>
+          <path d="M0 248C30 238 50 260 80 248S130 238 160 248S200 260 220 248" stroke-opacity="0.58"/>
+        </g>
+      </svg>
+      <span class="brand-name">Madeira Ativa</span>
+    </a>
+    <div class="lang">
+      <button data-set-lang="en">EN</button>
+      <button data-set-lang="pt">PT</button>
+    </div><button class="theme-btn" id="themeBtn" aria-label="Theme">🌙</button>
+  </div>
+
+  <nav class="section-nav">
+    <div class="section-nav-inner">
+      <a href="/ativa/">🏠 Main</a>
+      <a href="/ativa/levada">Levadas</a>
+      <a class="active" href="/ativa/levada-game"><span data-lang="en">Games</span><span data-lang="pt">Jogos</span></a>
+      <a href="/ativa/map?layer=walk">2D ↗</a>
+      <a href="/ativa/map3d">3D ↗</a>
+    </div>
+  </nav>
+
+  <h1><span data-lang="en">Levada Games</span><span data-lang="pt">Jogos das Levadas</span></h1>
+  <p class="sub">
+    <span data-lang="en">Two small games built on the same trail data as the guide — the elevation profiles of all 43 classified walks are real, metre for metre.</span>
+    <span data-lang="pt">Dois pequenos jogos com os mesmos dados do guia — os perfis de altimetria dos 43 percursos classificados são reais, metro a metro.</span>
+  </p>
+
+  <div class="modes">
+    <button id="mQuiz" aria-pressed="true">
+      <span class="mt"><span data-lang="en">Guess the levada</span><span data-lang="pt">Adivinha a levada</span></span>
+      <span class="ms"><span data-lang="en">Name the trail from its profile · 8 rounds</span><span data-lang="pt">Descobre o percurso pelo perfil · 8 rondas</span></span>
+    </button>
+    <button id="mRun" aria-pressed="false">
+      <span class="mt"><span data-lang="en">Run the trail</span><span data-lang="pt">Corre o percurso</span></span>
+      <span class="ms"><span data-lang="en">The profile becomes the ground · jump the boulders</span><span data-lang="pt">O perfil vira o terreno · salta as pedras</span></span>
+    </button>
+  </div>
+
+  <div class="card" id="loadingCard">
+    <div class="loading" id="loading">
+      <span data-lang="en">Loading trails…</span><span data-lang="pt">A carregar percursos…</span>
+    </div>
+  </div>
+
+  <!-- ---------- quiz ---------- -->
+  <section class="panel" id="quizPanel" hidden>
+    <main id="game">
+      <div class="board">
+        <span class="lbl"><span data-lang="en">Elevation profile</span><span data-lang="pt">Perfil de altimetria</span></span>
+        <span class="lbl"><span data-lang="en">Round</span><span data-lang="pt">Ronda</span> <b id="progress">1 / 8</b></span>
+      </div>
+      <div class="card"><canvas id="plot"></canvas></div>
+      <div class="opts" id="opts"></div>
+      <section class="reveal" id="reveal">
+        <p class="verdict" id="verdict"></p>
+        <p class="route" id="route"></p>
+        <div class="stats" id="stats"></div>
+        <button class="go" id="next"></button>
+      </section>
+    </main>
+    <section class="end" id="end">
+      <div class="score"><span id="final">0</span><i>/8</i></div>
+      <p id="grade"></p>
+      <button class="go" id="again"></button>
+    </section>
+  </section>
+
+  <!-- ---------- runner ---------- -->
+  <section class="panel" id="runPanel" hidden>
+    <div class="picker">
+      <label for="trailSel"><span data-lang="en">Trail</span><span data-lang="pt">Percurso</span></label>
+      <select id="trailSel"></select>
+    </div>
+    <div class="stage">
+      <canvas id="run"></canvas>
+      <div class="hud">
+        <div><span data-lang="en">Drops</span><span data-lang="pt">Gotas</span> <b id="hDrops">0</b></div>
+        <div><span data-lang="en">Altitude</span><span data-lang="pt">Altitude</span> <b id="hAlt">—</b> m</div>
+        <div><span data-lang="en">Trail</span><span data-lang="pt">Percurso</span> <b id="hDone">0</b>%</div>
+      </div>
+      <div class="overlay on" id="ov">
+        <div class="inner">
+          <h2 id="ovTitle"></h2>
+          <div class="big" id="ovBig" hidden></div>
+          <p id="ovText"></p>
+          <button class="go" id="ovBtn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="legend">
+      <span><i style="background:var(--water)"></i><span data-lang="en">Water drop — the levada's own supply</span><span data-lang="pt">Gota de água — o abastecimento da levada</span></span>
+      <span><i style="background:var(--soft)"></i><span data-lang="en">Boulder — costs three drops</span><span data-lang="pt">Pedra — custa três gotas</span></span>
+    </div>
+  </section>
+
+  <div class="after">
+    <span data-lang="en">Profiles come straight from the trail data behind <a href="/ativa/levada">the levada guide</a> — distance, ascent and current status for all 43 classified walks.</span>
+    <span data-lang="pt">Os perfis vêm diretamente dos dados por trás do <a href="/ativa/levada">guia das levadas</a> — distância, subida e estado atual dos 43 percursos classificados.</span>
+  </div>
+</div>
+
+<script>
+var VALID = ['en', 'pt'];
+var urlLang = new URLSearchParams(location.search).get('lang');
+var lang = VALID.indexOf(urlLang) !== -1 ? urlLang : 'en';
+
+var T = {
+  next:   { en: 'Next profile', pt: 'Próximo perfil' },
+  last:   { en: 'See your score', pt: 'Ver a pontuação' },
+  again:  { en: 'Play again', pt: 'Jogar de novo' },
+  ok:     { en: 'On the path', pt: 'No caminho certo' },
+  no:     { en: 'Lost the trail', pt: 'Perdeste o trilho' },
+  dist:   { en: 'Distance', pt: 'Distância' },
+  asc:    { en: 'Ascent', pt: 'Subida' },
+  desc:   { en: 'Descent', pt: 'Descida' },
+  alt:    { en: 'Altitude', pt: 'Altitude' },
+  g3:     { en: 'Every ridge named. You have walked these paths.', pt: 'Todos os cumes identificados. Já andaste por estes caminhos.' },
+  g2:     { en: 'A strong read of the terrain.', pt: 'Boa leitura do terreno.' },
+  g1:     { en: 'You know the shape of the island, not yet its trails.', pt: 'Conheces a forma da ilha, ainda não os seus trilhos.' },
+  g0:     { en: 'The levadas keep their secrets. Try another set.', pt: 'As levadas guardam os seus segredos. Tenta outra série.' },
+  ready:  { en: 'Ready', pt: 'A postos' },
+  howto:  { en: '<kbd>Space</kbd>, <kbd>↑</kbd> or tap to jump — hold longer to jump higher.', pt: '<kbd>Espaço</kbd>, <kbd>↑</kbd> ou toca para saltar — mantém premido para saltar mais alto.' },
+  runGo:  { en: 'Start running', pt: 'Começar a correr' },
+  runAgain:{ en: 'Run it again', pt: 'Correr outra vez' },
+  done:   { en: 'Trail complete', pt: 'Percurso concluído' },
+  climbed:{ en: 'climbed', pt: 'de subida' }
+};
+function t(k) { return T[k][lang]; }
+function el(id) { return document.getElementById(id); }
+
+var TRAILS = [], mode = 'quiz';
+
+function applyLang() {
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-lang]').forEach(function (n) {
+    n.style.display = n.getAttribute('data-lang') === lang ? '' : 'none';
+  });
+  document.querySelectorAll('.lang button').forEach(function (b) {
+    b.classList.toggle('active', b.getAttribute('data-set-lang') === lang);
+  });
+  el('next').textContent = round === deck.length - 1 ? t('last') : t('next');
+  el('again').textContent = t('again');
+  if (answer && el('reveal').classList.contains('on')) renderReveal(lastRight);
+  if (runState === 'idle') showIdleOverlay();
+  else if (runState === 'win') showWinOverlay();
+}
+document.querySelectorAll('.lang button').forEach(function (b) {
+  b.onclick = function () { lang = b.getAttribute('data-set-lang'); applyLang(); };
+});
+
+/* ================= quiz ================= */
+var ROUNDS = 8;
+var deck = [], round = 0, score = 0, answer = null, lastRight = false;
+var plot = el('plot'), current = null;
+
+function hexA(hex, a) {
+  hex = hex.trim().replace('#', '');
+  if (hex.length === 3) hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
+  var n = parseInt(hex, 16);
+  return 'rgba(' + ((n >> 16) & 255) + ',' + ((n >> 8) & 255) + ',' + (n & 255) + ',' + a + ')';
+}
+function css(v) { return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
+
+function drawPlot(p) {
+  current = p;
+  if (!p || plot.clientWidth === 0) return;
+  var dpr = window.devicePixelRatio || 1;
+  var W = plot.clientWidth, H = plot.clientHeight;
+  plot.width = W * dpr; plot.height = H * dpr;
+  var c = plot.getContext('2d');
+  c.setTransform(dpr, 0, 0, dpr, 0, 0);
+  c.clearRect(0, 0, W, H);
+
+  var padL = 38, padR = 6, padT = 10, padB = 18;
+  var lo = Math.min.apply(null, p), hi = Math.max.apply(null, p);
+  var rng = Math.max(hi - lo, 40);
+  var px = function (i) { return padL + (i / (p.length - 1)) * (W - padL - padR); };
+  var py = function (v) { return padT + (1 - (v - lo) / rng) * (H - padT - padB); };
+  var accent = css('--accent');
+
+  c.strokeStyle = css('--line'); c.lineWidth = 1;
+  c.fillStyle = css('--soft'); c.font = '11px Inter, system-ui, sans-serif'; c.textBaseline = 'middle';
+  [0, 0.5, 1].forEach(function (f) {
+    var v = lo + rng * f, y = Math.round(py(v)) + 0.5;
+    c.beginPath(); c.moveTo(padL, y); c.lineTo(W - padR, y); c.stroke();
+    c.fillText(Math.round(v), 2, y);
+  });
+
+  c.beginPath();
+  for (var i = 0; i < p.length; i++) { i ? c.lineTo(px(i), py(p[i])) : c.moveTo(px(0), py(p[0])); }
+  c.lineTo(px(p.length - 1), H - padB); c.lineTo(px(0), H - padB); c.closePath();
+  var g = c.createLinearGradient(0, padT, 0, H - padB);
+  g.addColorStop(0, hexA(accent, 0.30)); g.addColorStop(1, hexA(accent, 0.02));
+  c.fillStyle = g; c.fill();
+
+  c.beginPath();
+  for (var j = 0; j < p.length; j++) { j ? c.lineTo(px(j), py(p[j])) : c.moveTo(px(0), py(p[0])); }
+  c.strokeStyle = accent; c.lineWidth = 2; c.lineJoin = 'round'; c.stroke();
+}
+
+function shuffle(a) {
+  return a.map(function (v) { return [Math.random(), v]; })
+          .sort(function (x, y) { return x[0] - y[0]; })
+          .map(function (v) { return v[1]; });
+}
+
+function quizStart() {
+  deck = shuffle(TRAILS.slice()).slice(0, ROUNDS);
+  round = 0; score = 0;
+  el('end').classList.remove('on');
+  el('game').style.display = '';
+  nextRound();
+  if (window.gtag) gtag('event', 'game_start', { game: 'levada_quiz' });
+}
+
+function nextRound() {
+  if (round >= deck.length) return quizFinish();
+  answer = deck[round];
+  el('progress').textContent = (round + 1) + ' / ' + ROUNDS;
+  drawPlot(answer.profile);
+
+  var decoys = shuffle(TRAILS.filter(function (x) { return x.code !== answer.code; })).slice(0, 3);
+  var box = el('opts'); box.innerHTML = '';
+  shuffle([answer].concat(decoys)).forEach(function (o) {
+    var b = document.createElement('button');
+    b.className = 'opt';
+    var code = document.createElement('span'); code.className = 'code'; code.textContent = o.code;
+    var nm = document.createElement('span'); nm.textContent = o.name;
+    b.appendChild(code); b.appendChild(nm);
+    b.setAttribute('data-code', o.code);
+    b.onclick = function () { choose(b, o); };
+    box.appendChild(b);
+  });
+  el('reveal').classList.remove('on');
+}
+
+function choose(btn, pick) {
+  lastRight = pick.code === answer.code;
+  if (lastRight) score++;
+  Array.prototype.forEach.call(el('opts').children, function (b) {
+    b.disabled = true;
+    if (b.getAttribute('data-code') === answer.code) b.classList.add('is-right');
+    else if (b === btn) b.classList.add('is-wrong');
+    else b.classList.add('is-dim');
+  });
+  renderReveal(lastRight);
+  el('reveal').classList.add('on');
+  el('next').textContent = round === deck.length - 1 ? t('last') : t('next');
+  el('next').focus();
+}
+
+function renderReveal(right) {
+  el('verdict').textContent = right ? t('ok') : t('no');
+  el('verdict').className = 'verdict ' + (right ? 'ok' : 'no');
+
+  el('route').innerHTML = '';
+  var b = document.createElement('b');
+  b.textContent = answer.code + ' · ' + answer.name;
+  el('route').appendChild(b);
+  if (answer.from) {
+    el('route').appendChild(document.createTextNode(
+      ' — ' + answer.from + (answer.to ? ' → ' + answer.to : '')));
+  }
+
+  var lo = Math.min.apply(null, answer.profile), hi = Math.max.apply(null, answer.profile);
+  [[t('dist'), answer.distance_km != null ? answer.distance_km.toFixed(1) + ' km' : '—'],
+   [t('asc'),  answer.ascent_m != null ? '+' + answer.ascent_m + ' m' : '—'],
+   [t('desc'), answer.descent_m != null ? '−' + answer.descent_m + ' m' : '—'],
+   [t('alt'),  Math.round(lo) + '–' + Math.round(hi) + ' m']
+  ].forEach(function (pair, i) {
+    if (i === 0) el('stats').innerHTML = '';
+    var d = document.createElement('div'); d.className = 'stat';
+    var s = document.createElement('span'); s.textContent = pair[0];
+    var v = document.createElement('b'); v.textContent = pair[1];
+    d.appendChild(s); d.appendChild(v); el('stats').appendChild(d);
+  });
+}
+
+function quizFinish() {
+  el('game').style.display = 'none';
+  el('final').textContent = score;
+  el('grade').textContent = score === ROUNDS ? t('g3') : score >= 6 ? t('g2') : score >= 3 ? t('g1') : t('g0');
+  el('again').textContent = t('again');
+  el('end').classList.add('on');
+  if (window.gtag) gtag('event', 'game_finish', { game: 'levada_quiz', score: score });
+}
+
+el('next').onclick = function () { round++; nextRound(); };
+el('again').onclick = quizStart;
+
+/* ================= runner ================= */
+var cv = el('run'), rctx = null;
+var SEG = 90, VSCALE = 0.55, GRAV = 2000, JUMP_V = 620, HOLD_MS = 220, SPEED = 240;
+var RW = 0, RH = 0, rdpr = 1;
+var rTrail = null, ground = [], items = [], worldLen = 0;
+var runState = 'idle', cam = 0, drops = 0, hurt = 0, rafId = null;
+var hero = { y: 0, vy: 0, onGround: true, run: 0 };
+var holding = false, holdStart = 0;
+
+function groundAt(x) {
+  var f = Math.max(0, Math.min(ground.length - 1.001, x / SEG));
+  var i = Math.floor(f), r = f - i;
+  var a = ground[i], b = ground[Math.min(ground.length - 1, i + 1)];
+  return a + (b - a) * (r * r * (3 - 2 * r));
+}
+
+function buildRun(idx) {
+  rTrail = TRAILS[idx];
+  var p = rTrail.profile;
+  var lo = Math.min.apply(null, p);
+  ground = p.map(function (v) { return (v - lo) * VSCALE; });
+  worldLen = (ground.length - 1) * SEG;
+
+  var seed = 0, s = rTrail.code + rTrail.name;
+  for (var i = 0; i < s.length; i++) seed = (seed * 31 + s.charCodeAt(i)) >>> 0;
+  function rnd() { seed = (seed * 1664525 + 1013904223) >>> 0; return seed / 4294967296; }
+
+  items = [];
+  for (var x = SEG * 1.5; x < worldLen - SEG; x += SEG * 0.6) {
+    var roll = rnd();
+    if (roll < 0.42) items.push({ x: x, type: 'drop', got: false });
+    else if (roll < 0.60) items.push({ x: x, type: 'rock', hit: false });
+  }
+  runReset();
+}
+
+function runReset() {
+  cam = 0; drops = 0; hurt = 0;
+  hero = { y: groundAt(0), vy: 0, onGround: true, run: 0 };
+  items.forEach(function (it) { it.got = false; it.hit = false; });
+  el('hDrops').textContent = '0';
+  el('hDone').textContent = '0';
+  el('hAlt').textContent = Math.round(Math.min.apply(null, rTrail.profile));
+}
+
+function showIdleOverlay() {
+  if (!rTrail) return;
+  el('ovTitle').textContent = t('ready') + ' — ' + rTrail.code;
+  el('ovBig').hidden = true;
+  el('ovText').innerHTML = t('howto');
+  el('ovBtn').textContent = t('runGo');
+  el('ov').classList.add('on');
+}
+function showWinOverlay() {
+  var total = items.filter(function (i) { return i.type === 'drop'; }).length;
+  el('ovTitle').textContent = t('done') + ' — ' + rTrail.code;
+  el('ovBig').hidden = false;
+  el('ovBig').textContent = drops + '/' + total;
+  el('ovText').textContent = rTrail.name +
+    (rTrail.distance_km ? ' · ' + rTrail.distance_km.toFixed(1) + ' km' : '') +
+    (rTrail.ascent_m != null ? ' · +' + rTrail.ascent_m + ' m ' + t('climbed') : '');
+  el('ovBtn').textContent = t('runAgain');
+  el('ov').classList.add('on');
+}
+
+function runStart() {
+  el('ov').classList.remove('on');
+  runReset();
+  runState = 'run';
+  if (window.gtag) gtag('event', 'game_start', { game: 'levada_run', trail: rTrail.code });
+}
+function runWin() {
+  runState = 'win';
+  showWinOverlay();
+  if (window.gtag) gtag('event', 'game_finish', { game: 'levada_run', trail: rTrail.code, score: drops });
+}
+
+function jump() {
+  if (runState !== 'run' || !hero.onGround) return;
+  hero.vy = JUMP_V; hero.onGround = false;
+  holding = true; holdStart = performance.now();
+}
+window.addEventListener('keydown', function (e) {
+  if (mode !== 'run') return;
+  if (e.code === 'Space' || e.code === 'ArrowUp') {
+    e.preventDefault();
+    if (runState === 'run') jump(); else runStart();
+  }
+});
+window.addEventListener('keyup', function (e) {
+  if (e.code === 'Space' || e.code === 'ArrowUp') holding = false;
+});
+cv.addEventListener('pointerdown', function (e) { e.preventDefault(); jump(); });
+window.addEventListener('pointerup', function () { holding = false; });
+
+function runStep(dt) {
+  if (runState !== 'run') return;
+  cam += SPEED * dt;
+  hero.run += dt;
+
+  var g = groundAt(cam);
+  if (holding && performance.now() - holdStart < HOLD_MS) hero.vy += GRAV * 0.55 * dt;
+  hero.vy -= GRAV * dt;
+  hero.y += hero.vy * dt;
+  if (hero.y <= g) { hero.y = g; hero.vy = 0; hero.onGround = true; } else hero.onGround = false;
+
+  items.forEach(function (it) {
+    if (Math.abs(it.x - cam) > 26) return;
+    var iy = groundAt(it.x);
+    if (it.type === 'drop' && !it.got && Math.abs(hero.y - (iy + 26)) < 34) {
+      it.got = true; drops++; el('hDrops').textContent = drops;
+    }
+    if (it.type === 'rock' && !it.hit && hero.y - iy < 20) {
+      it.hit = true; hurt = 0.5;
+      drops = Math.max(0, drops - 3); el('hDrops').textContent = drops;
+    }
+  });
+
+  el('hDone').textContent = Math.min(100, Math.round(cam / worldLen * 100));
+  el('hAlt').textContent = Math.round(Math.min.apply(null, rTrail.profile) + groundAt(cam) / VSCALE);
+  if (hurt > 0) hurt -= dt;
+  if (cam >= worldLen) runWin();
+}
+
+function runDraw() {
+  if (!rctx || !rTrail || RW === 0) return;
+  var c = rctx;
+  c.setTransform(rdpr, 0, 0, rdpr, 0, 0);
+  c.clearRect(0, 0, RW, RH);
+
+  var sky = c.createLinearGradient(0, 0, 0, RH);
+  sky.addColorStop(0, css('--sky-hi')); sky.addColorStop(1, css('--sky-lo'));
+  c.fillStyle = sky; c.fillRect(0, 0, RW, RH);
+
+  var heroX = RW * 0.28, baseY = RH - 40;
+  var camH = groundAt(cam);
+  function yOf(h) { return baseY - (h - camH) - 50; }
+
+  c.fillStyle = css('--ridge');
+  c.beginPath(); c.moveTo(0, RH);
+  for (var sx = 0; sx <= RW; sx += 12) {
+    var wx = (cam * 0.4 + sx * 1.6 + 4000) % worldLen;
+    c.lineTo(sx, yOf(groundAt(wx) * 0.7) + 60);
+  }
+  c.lineTo(RW, RH); c.closePath(); c.fill();
+
+  var edge = [];
+  for (var sx2 = -4; sx2 <= RW + 4; sx2 += 6) {
+    var wx2 = Math.max(0, Math.min(worldLen, cam + (sx2 - heroX)));
+    edge.push([sx2, yOf(groundAt(wx2))]);
+  }
+  c.beginPath(); c.moveTo(-4, RH + 4);
+  edge.forEach(function (pt) { c.lineTo(pt[0], pt[1]); });
+  c.lineTo(RW + 4, RH + 4); c.closePath();
+  var gg = c.createLinearGradient(0, 0, 0, RH);
+  gg.addColorStop(0, hexA(css('--accent'), 0.42));
+  gg.addColorStop(1, hexA(css('--accent'), 0.14));
+  c.fillStyle = gg; c.fill();
+
+  c.beginPath();
+  edge.forEach(function (pt, i) { i ? c.lineTo(pt[0], pt[1]) : c.moveTo(pt[0], pt[1]); });
+  c.strokeStyle = css('--accent'); c.lineWidth = 2.5; c.lineJoin = 'round'; c.stroke();
+
+  items.forEach(function (it) {
+    var sx = heroX + (it.x - cam);
+    if (sx < -30 || sx > RW + 30) return;
+    var y = yOf(groundAt(it.x));
+    if (it.type === 'drop') {
+      if (it.got) return;
+      c.fillStyle = css('--water');
+      c.beginPath(); c.arc(sx, y - 26, 6, 0, Math.PI * 2); c.fill();
+    } else {
+      c.fillStyle = it.hit ? css('--line') : css('--soft');
+      c.beginPath();
+      c.moveTo(sx - 12, y); c.lineTo(sx - 7, y - 15); c.lineTo(sx + 4, y - 18);
+      c.lineTo(sx + 12, y - 5); c.lineTo(sx + 11, y);
+      c.closePath(); c.fill();
+    }
+  });
+
+  var hy = yOf(hero.y);
+  c.save();
+  c.translate(heroX, hy);
+  if (hurt > 0) c.globalAlpha = 0.5 + Math.abs(Math.sin(performance.now() / 60)) * 0.5;
+  var bob = hero.onGround ? Math.sin(hero.run * 14) * 2 : 0;
+  var legA = hero.onGround ? Math.sin(hero.run * 14) * 7 : -5;
+  c.strokeStyle = css('--runner'); c.lineWidth = 3.5; c.lineCap = 'round';
+  c.beginPath(); c.moveTo(0, -14 + bob); c.lineTo(0, -26 + bob); c.stroke();
+  c.beginPath(); c.moveTo(0, -14 + bob); c.lineTo(-legA, 0); c.stroke();
+  c.beginPath(); c.moveTo(0, -14 + bob); c.lineTo(legA, 0); c.stroke();
+  c.beginPath(); c.moveTo(0, -23 + bob); c.lineTo(legA * 0.8, -18 + bob); c.stroke();
+  c.fillStyle = css('--bg');
+  c.beginPath(); c.arc(0, -31 + bob, 5.5, 0, Math.PI * 2); c.fill();
+  c.lineWidth = 2; c.stroke();
+  c.restore();
+}
+
+function runResize() {
+  rdpr = window.devicePixelRatio || 1;
+  RW = cv.clientWidth; RH = cv.clientHeight;
+  if (RW === 0) return;
+  cv.width = RW * rdpr; cv.height = RH * rdpr;
+  if (!rctx) rctx = cv.getContext('2d');
+}
+
+var last = 0;
+function frame(now) {
+  var dt = Math.min(0.05, (now - last) / 1000 || 0);
+  last = now;
+  runStep(dt);
+  runDraw();
+  rafId = requestAnimationFrame(frame);
+}
+
+window.addEventListener('resize', function () {
+  drawPlot(current);
+  runResize();
+});
+
+/* ================= mode switch ================= */
+function setMode(m) {
+  mode = m;
+  el('mQuiz').setAttribute('aria-pressed', m === 'quiz');
+  el('mRun').setAttribute('aria-pressed', m === 'run');
+  el('quizPanel').hidden = m !== 'quiz';
+  el('runPanel').hidden = m !== 'run';
+  if (m === 'quiz') {
+    if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
+    runState = 'idle';
+    drawPlot(current);
+  } else {
+    runResize();
+    if (runState === 'run') runState = 'idle';
+    showIdleOverlay();
+    if (!rafId) { last = performance.now(); rafId = requestAnimationFrame(frame); }
+  }
+}
+el('mQuiz').onclick = function () { setMode('quiz'); };
+el('mRun').onclick = function () { setMode('run'); };
+el('ovBtn').onclick = runStart;
+el('trailSel').onchange = function () {
+  buildRun(+el('trailSel').value);
+  runState = 'idle';
+  showIdleOverlay();
+};
+
+/* ================= load ================= */
+applyLang();
+fetch('/ativa/levadas.json')
+  .then(function (r) { return r.json(); })
+  .then(function (d) {
+    TRAILS = d.levadas.filter(function (l) { return l.profile && l.profile.length > 5; });
+    el('loadingCard').hidden = true;
+    el('quizPanel').hidden = false;
+
+    TRAILS.forEach(function (tr, i) {
+      var o = document.createElement('option');
+      o.value = i; o.textContent = tr.code + ' · ' + tr.name;
+      el('trailSel').appendChild(o);
+    });
+
+    quizStart();
+    buildRun(0);
+    showIdleOverlay();
+
+    if (new URLSearchParams(location.search).get('mode') === 'run') setMode('run');
+  })
+  .catch(function () {
+    el('loading').innerHTML = lang === 'pt'
+      ? 'Não foi possível carregar os percursos. <a href="/ativa/levada">Ver o guia das levadas</a>.'
+      : 'Could not load the trails. <a href="/ativa/levada">Open the levada guide</a> instead.';
+  });
+</script>
+
+<script>
+(function () {
+  var h = document.documentElement, b = document.getElementById('themeBtn');
+  function eff() { return h.classList.contains('dark') || (!h.classList.contains('light') && matchMedia('(prefers-color-scheme: dark)').matches); }
+  function paint() { var dk = eff(); if (b) b.textContent = dk ? '☀️' : '🌙'; if (typeof drawPlot === 'function') drawPlot(current); }
+  function flip() { var dk = eff(); h.classList.remove('dark', 'light'); h.classList.add(dk ? 'light' : 'dark'); localStorage.setItem('ma-theme', dk ? 'light' : 'dark'); paint(); }
+  var saved = localStorage.getItem('ma-theme');
+  if (saved) h.classList.add(saved);
+  if (b) b.addEventListener('click', flip);
+  paint();
+})();
+</script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M2PTQLF903"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-M2PTQLF903', { content_group: 'ativa' });
+  </script>
+</body>
+</html>

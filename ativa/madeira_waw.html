@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madeira Trails — WOW Features Lab · Madeira Ativa</title>
+  <link rel="canonical" href="https://azenha.ai/ativa/madeira_waw">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Madeira Ativa">
+  <meta property="og:title" content="Madeira Trails — WOW Features Lab · Madeira Ativa">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="https://azenha.ai/ativa/madeira_waw">
+  <meta property="og:image" content="https://azenha.ai/ativa/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en">
+  <meta property="og:locale:alternate" content="pt_PT">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Madeira Trails — WOW Features Lab · Madeira Ativa">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="https://azenha.ai/ativa/og.png">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="icon" href="/ativa/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', -apple-system, sans-serif; background: #F5F2EA; color: #15201A; line-height: 1.5; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 clamp(18px, 4vw, 48px); }
+h1 { font-family: 'Fraunces', serif; font-size: clamp(28px, 5vw, 42px); color: #1F4D32; margin: 32px 0 8px; }
+h2 { font-family: 'Fraunces', serif; font-size: clamp(20px, 4vw, 28px); color: #1F4D32; margin-bottom: 16px; }
+h3 { font-size: 16px; font-weight: 600; color: #1F4D32; margin-bottom: 12px; }
+.subtitle { font-size: 14px; color: #6B8763; margin-bottom: 32px; }
+.section { margin: 40px 0; padding: 28px 0; border-top: 1px solid #DAD3C5; }
+.section:first-of-type { border-top: none; }
+
+/* Cards */
+.card { background: rgba(255,255,255,0.5); border: 1px solid #DAD3C5; border-radius: 12px; padding: 20px; transition: all 0.2s; }
+.card:hover { border-color: #1F4D32; background: rgba(255,255,255,0.7); }
+
+/* Pills */
+.pill-group { display: flex; gap: 4px; flex-wrap: wrap; }
+.pill-btn { font-family: inherit; font-size: 12px; font-weight: 600; padding: 5px 14px; border: 1px solid #DAD3C5; border-radius: 20px; background: transparent; color: #6B8763; cursor: pointer; transition: all 0.2s; white-space: nowrap; }
+.pill-btn:hover { border-color: #1F4D32; color: #1F4D32; }
+.pill-btn.active { background: #1F4D32; color: #fff; border-color: #1F4D32; }
+
+/* Chart header */
+.chart-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.chart-header h2, .chart-header h3 { margin-bottom: 0; }
+
+/* Show all btn */
+.show-all-btn { display: block; margin: 12px auto 0; font-family: inherit; font-size: 12px; font-weight: 600; padding: 6px 20px; border: 1px solid #DAD3C5; border-radius: 20px; background: transparent; color: #6B8763; cursor: pointer; transition: all 0.2s; }
+.show-all-btn:hover { border-color: #1F4D32; color: #1F4D32; }
+
+/* Grid */
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(480px, 1fr)); gap: 16px; }
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+@media (max-width: 760px) {
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+}
+
+/* === 1. RACE SIMULATOR === */
+.sim-input { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 20px; }
+.sim-input label { font-size: 13px; font-weight: 600; color: #1F4D32; }
+.sim-input input { width: 70px; padding: 6px 10px; border: 1px solid #DAD3C5; border-radius: 8px; font-family: inherit; font-size: 14px; text-align: center; background: #fff; }
+.sim-input input:focus { outline: none; border-color: #1F4D32; }
+.sim-btn { padding: 7px 20px; background: #1F4D32; color: #fff; border: none; border-radius: 8px; font-family: inherit; font-size: 13px; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+.sim-btn:hover { background: #2a6b45; }
+.sim-results { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+.sim-card { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; }
+.sim-race-name { font-weight: 600; font-size: 13px; }
+.sim-race-info { font-size: 11px; color: #6B8763; }
+.sim-time { font-size: 18px; font-weight: 700; }
+.sim-pace { font-size: 11px; color: #6B8763; }
+
+/* === 2. DIFFICULTY RATING === */
+.diff-row { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid rgba(218,211,197,0.3); }
+.diff-name { width: 200px; flex-shrink: 0; font-size: 13px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.diff-bar-wrap { flex: 1; }
+.diff-bar { height: 10px; border-radius: 5px; background: rgba(218,211,197,0.3); overflow: hidden; }
+.diff-bar-fill { height: 100%; border-radius: 5px; transition: width 0.4s; }
+.diff-score { width: 50px; flex-shrink: 0; text-align: right; font-size: 18px; font-weight: 700; }
+.diff-stars { font-size: 12px; color: #6B8763; }
+@media (max-width: 760px) { .diff-name { width: 120px; font-size: 12px; } }
+
+/* === 3. RACE COMPARE === */
+.compare-selects { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 20px; }
+.compare-selects select { padding: 8px 12px; border: 1px solid #DAD3C5; border-radius: 8px; font-family: inherit; font-size: 13px; background: #fff; min-width: 200px; }
+.compare-selects select:focus { outline: none; border-color: #1F4D32; }
+.compare-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.compare-table th { text-align: left; padding: 8px; color: #6B8763; font-weight: 600; border-bottom: 2px solid #DAD3C5; }
+.compare-table td { padding: 8px; border-bottom: 1px solid rgba(218,211,197,0.3); }
+.compare-canvas-wrap { position: relative; height: 200px; margin-top: 16px; }
+.compare-canvas-wrap canvas { width: 100%; height: 100%; }
+
+/* === 4. RACE CARDS === */
+.race-card { position: relative; overflow: hidden; min-height: 200px; }
+.race-card-bg { position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.06; }
+.race-card-content { position: relative; z-index: 1; }
+.race-card-title { font-family: 'Fraunces', serif; font-size: 20px; font-weight: 500; margin-bottom: 12px; }
+.race-card-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 12px 0; }
+.race-card-stat { text-align: center; }
+.race-card-stat-val { font-size: 18px; font-weight: 700; }
+.race-card-stat-label { font-size: 10px; color: #6B8763; text-transform: uppercase; }
+.race-card-profile { height: 60px; margin-top: 8px; }
+.race-card-share { position: absolute; top: 12px; right: 12px; padding: 4px 10px; font-size: 11px; font-weight: 600; border: 1px solid rgba(218,211,197,0.5); border-radius: 6px; background: rgba(255,255,255,0.7); cursor: pointer; color: #6B8763; }
+
+/* === 5. MADEIRA VS WORLD === */
+.vs-row { display: flex; gap: 20px; align-items: stretch; margin-bottom: 16px; flex-wrap: wrap; }
+.vs-card { flex: 1; min-width: 250px; }
+.vs-card-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+.vs-card-name { font-weight: 700; font-size: 14px; }
+.vs-card-loc { font-size: 11px; color: #6B8763; }
+.vs-metric { display: flex; justify-content: space-between; font-size: 12px; padding: 4px 0; border-bottom: 1px solid rgba(218,211,197,0.2); }
+.vs-metric-label { color: #6B8763; }
+.vs-metric-val { font-weight: 600; }
+.vs-pct { font-size: 24px; font-weight: 700; text-align: center; margin-top: 8px; }
+
+/* === 6. FINISH TIMELAPSE === */
+.timelapse-wrap { position: relative; }
+.timelapse-canvas { width: 100%; height: 300px; background: rgba(255,255,255,0.3); border-radius: 12px; border: 1px solid #DAD3C5; }
+.timelapse-controls { display: flex; gap: 8px; align-items: center; margin-top: 8px; }
+.timelapse-controls button { padding: 6px 16px; }
+
+/* === 7. COUNTRY HEATMAP === */
+.heatmap-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 6px; }
+.heatmap-cell { text-align: center; padding: 10px 4px; border-radius: 8px; transition: transform 0.2s; cursor: default; }
+.heatmap-cell:hover { transform: scale(1.05); }
+.heatmap-country { font-size: 10px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.heatmap-count { font-size: 16px; font-weight: 700; }
+.heatmap-top10 { font-size: 9px; }
+
+/* TOC Grid */
+.toc-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.toc-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  background: rgba(255,255,255,0.5);
+  border: 1px solid #DAD3C5;
+  border-radius: 12px;
+  padding: 18px 16px;
+  text-decoration: none;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.toc-card:hover {
+  border-color: #1F4D32;
+  background: rgba(255,255,255,0.8);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(31,77,50,0.08);
+}
+.toc-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.toc-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: #1F4D32;
+  line-height: 1.3;
+}
+.toc-desc {
+  font-size: 12px;
+  color: #6B8763;
+  line-height: 1.4;
+}
+.toc-card.featured {
+  grid-column: 1 / -1;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  background: linear-gradient(135deg, rgba(107,135,99,0.08), rgba(31,77,50,0.08));
+  border: 2px solid rgba(31,77,50,0.25);
+}
+.toc-card.featured .toc-icon {
+  width: 48px; height: 48px; font-size: 24px;
+}
+.toc-card.featured .toc-title { font-size: 17px; }
+.toc-card.featured .toc-desc { font-size: 13px; }
+.toc-card.featured:hover {
+  border-color: #1F4D32;
+  box-shadow: 0 4px 16px rgba(31,77,50,0.12);
+}
+.toc-bottom-banner {
+  margin-bottom: 48px;
+}
+@media (max-width: 860px) {
+  .toc-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Back link */
+.back-link { display: inline-block; margin: 20px 0; font-size: 13px; color: #6B8763; text-decoration: none; }
+.back-link:hover { color: #1F4D32; }
+</style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M2PTQLF903"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-M2PTQLF903', { content_group: 'ativa' });
+  </script>
+  <script>
+    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","xr4rlyhxyo");
+  </script>
+</head>
+<body>
+<div class="wrap">
+  <a class="back-link" href="/ativa/madeira_stat">← Back to Trail Stats</a>
+  <h1>WOW Features Lab</h1>
+  <p class="subtitle">Prototype page — pick what you like for the main dashboard</p>
+
+  <div class="toc-grid">
+    <a class="toc-card" href="#simulator">
+      <div class="toc-icon" style="background:rgba(39,174,96,0.1)">🏃</div>
+      <div class="toc-title">Race Simulator</div>
+      <div class="toc-desc">Enter flat pace → predicted finish for all races</div>
+    </a>
+    <a class="toc-card" href="#difficulty-rating">
+      <div class="toc-icon" style="background:rgba(243,156,18,0.1)">⭐</div>
+      <div class="toc-title">Difficulty Rating</div>
+      <div class="toc-desc">Composite 1–10 score for every race</div>
+    </a>
+    <a class="toc-card" href="#compare">
+      <div class="toc-icon" style="background:rgba(52,152,219,0.1)">⚖️</div>
+      <div class="toc-title">Race Compare</div>
+      <div class="toc-desc">Side-by-side overlay of 2–3 profiles</div>
+    </a>
+    <a class="toc-card" href="#race-cards">
+      <div class="toc-icon" style="background:rgba(142,68,173,0.1)">🃏</div>
+      <div class="toc-title">Race Cards</div>
+      <div class="toc-desc">Shareable visual cards for social media</div>
+    </a>
+    <a class="toc-card" href="#vs-world">
+      <div class="toc-icon" style="background:rgba(241,86,35,0.1)">🌍</div>
+      <div class="toc-title">Madeira vs World</div>
+      <div class="toc-desc">MIUT vs UTMB, Western States & more</div>
+    </a>
+    <a class="toc-card" href="#timelapse">
+      <div class="toc-icon" style="background:rgba(192,57,43,0.1)">⏱️</div>
+      <div class="toc-title">Finish Timelapse</div>
+      <div class="toc-desc">Animated finisher wave hour by hour</div>
+    </a>
+    <a class="toc-card" href="#country-heat">
+      <div class="toc-icon" style="background:rgba(107,135,99,0.1)">🗺️</div>
+      <div class="toc-title">Country Performance</div>
+      <div class="toc-desc">56 countries heatmap sorted by results</div>
+    </a>
+    <a class="toc-card" href="/ativa/madeira_stat">
+      <div class="toc-icon" style="background:rgba(31,77,50,0.08)">← </div>
+      <div class="toc-title">Trail Stats</div>
+      <div class="toc-desc">Back to main dashboard</div>
+    </a>
+  </div>
+  <!-- 1. RACE SIMULATOR -->
+  <div class="section" id="simulator">
+    <h2>🏃 Race Simulator</h2>
+    <p style="font-size:13px;color:#6B8763;margin-bottom:16px">Enter your flat 10 km pace and see estimated finish times for every Madeira race, adjusted for elevation.</p>
+    <div class="sim-input">
+      <label>Your flat 10 km pace:</label>
+      <input type="number" id="sim-min" value="5" min="3" max="12" step="1"> :
+      <input type="number" id="sim-sec" value="30" min="0" max="59" step="5">
+      <span style="font-size:13px;color:#6B8763">min/km</span>
+      <button class="sim-btn" onclick="runSimulator()">Calculate</button>
+    </div>
+    <div id="sim-results" class="sim-results"></div>
+  </div>
+
+  <!-- 2. DIFFICULTY RATING -->
+  <div class="section" id="difficulty-rating">
+    <div class="chart-header">
+      <h2>⭐ Difficulty Rating</h2>
+      <div class="pill-group" id="diff-sort-pills">
+        <button class="pill-btn active" data-val="score">By score</button>
+        <button class="pill-btn" data-val="distance">By distance</button>
+        <button class="pill-btn" data-val="name">A–Z</button>
+      </div>
+    </div>
+    <p style="font-size:13px;color:#6B8763;margin-bottom:16px">Composite score 1–10 based on distance, elevation gain, steepness, and DNF rate</p>
+    <div id="diff-chart"></div>
+  </div>
+
+  <!-- 3. RACE COMPARE -->
+  <div class="section" id="compare">
+    <h2>⚖️ Race Compare</h2>
+    <p style="font-size:13px;color:#6B8763;margin-bottom:16px">Select 2–3 races to compare side by side with overlaid elevation profiles</p>
+    <div class="compare-selects">
+      <select id="compare-a"><option value="">— Race A —</option></select>
+      <select id="compare-b"><option value="">— Race B —</option></select>
+      <select id="compare-c"><option value="">— Race C (optional) —</option></select>
+    </div>
+    <div id="compare-result"></div>
+  </div>
+
+  <!-- 4. RACE CARDS -->
+  <div class="section" id="race-cards">
+    <h2>🃏 Race Cards</h2>
+    <p style="font-size:13px;color:#6B8763;margin-bottom:16px">Shareable cards for every race — ready for social media</p>
+    <div id="race-cards-grid" class="grid-3"></div>
+  </div>
+
+  <!-- 5. MADEIRA VS WORLD -->
+  <div class="section" id="vs-world">
+    <h2>🌍 Madeira vs World</h2>
+    <p style="font-size:13px;color:#6B8763;margin-bottom:16px">How do Madeira races compare to the world's most famous ultras?</p>
+    <div id="vs-world-chart"></div>
+  </div>
+
+  <!-- 6. FINISH TIMELAPSE -->
+  <div class="section" id="timelapse">
+    <h2>⏱️ Finish Timelapse</h2>
+    <p style="font-size:13px;color:#6B8763;margin-bottom:16px">Watch finishers cross the line hour by hour — animated density wave</p>
+    <div class="timelapse-wrap">
+      <canvas id="timelapse-canvas" class="timelapse-canvas"></canvas>
+      <div class="timelapse-controls">
+        <button class="pill-btn active" onclick="startTimelapse()">▶ Play</button>
+        <button class="pill-btn" onclick="resetTimelapse()">↻ Reset</button>
+        <span id="timelapse-time" style="font-size:14px;font-weight:600;color:#1F4D32;margin-left:8px"></span>
+        <span id="timelapse-count" style="font-size:12px;color:#6B8763;margin-left:auto"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. COUNTRY PERFORMANCE HEATMAP -->
+  <div class="section" id="country-heat">
+    <div class="chart-header">
+      <h2>🗺️ Country Performance</h2>
+      <div class="pill-group" id="heat-sort-pills">
+        <button class="pill-btn active" data-val="finishers">Finishers</button>
+        <button class="pill-btn" data-val="top10">Top-10 places</button>
+        <button class="pill-btn" data-val="efficiency">Efficiency</button>
+      </div>
+    </div>
+    <p style="font-size:13px;color:#6B8763;margin-bottom:16px">56 countries represented — tile size = finishers, color = performance</p>
+    <div id="heatmap-chart" class="heatmap-grid"></div>
+  </div>
+
+  <div style="height:60px"></div>
+</div>
+
+<script>
+var COLORS = {
+  MIUT: '#1F4D32', EcoTrail: '#FF6B35', 'Ultra Madeira': '#7B2D8E',
+  'Trail Porto Moniz': '#2980b9', 'ADN Race': '#c0392b', 'Furão': '#e67e22',
+  'Trail Boa Ventura': '#16a085', 'Maxi Race': '#8e44ad'
+};
+function getColor(group) { return COLORS[group] || '#6B8763'; }
+
+var _races = [];
+var _dnfData = [];
+var _countryData = [];
+var _finishHours = [];
+
+Promise.all([
+  fetch('elevation.json').then(r => r.json()),
+  fetch('dnf_by_race.json').then(r => r.json()),
+  fetch('country_performance.json').then(r => r.json()),
+  fetch('finish_hours.json').then(r => r.json()),
+]).then(function([elevData, dnf, countries, hours]) {
+  _races = elevData.races.sort(function(a, b) { return b.distance_km - a.distance_km; });
+  _dnfData = dnf;
+  _countryData = countries;
+  _finishHours = hours;
+
+  buildDifficultyRating();
+  buildCompareSelects();
+  buildRaceCards();
+  buildVsWorld();
+  buildTimelapse();
+  buildCountryHeatmap('finishers');
+  runSimulator();
+});
+
+// === PILLS ===
+function initPills(groupId, cb) {
+  var g = document.getElementById(groupId);
+  if (!g) return;
+  g.querySelectorAll('.pill-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      g.querySelectorAll('.pill-btn').forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      cb(btn.getAttribute('data-val'));
+    });
+  });
+}
+
+// === 1. RACE SIMULATOR ===
+function runSimulator() {
+  var minVal = parseInt(document.getElementById('sim-min').value) || 5;
+  var secVal = parseInt(document.getElementById('sim-sec').value) || 30;
+  var flatPace = minVal + secVal / 60; // min/km
+
+  var container = document.getElementById('sim-results');
+  var html = '';
+
+  _races.forEach(function(r) {
+    // Naismith's rule: +1 min per 100m ascent, +0.5 min per 100m descent
+    var ascentMin = (r.elevation_gain / 100) * 1;
+    var descentMin = ((r.elevation_loss || r.elevation_gain * 0.9) / 100) * 0.5;
+    var flatMin = r.distance_km * flatPace;
+    var totalMin = flatMin + ascentMin + descentMin;
+
+    // Fatigue factor for ultra distances
+    if (r.distance_km > 50) totalMin *= 1.15;
+    else if (r.distance_km > 80) totalMin *= 1.25;
+
+    var hours = Math.floor(totalMin / 60);
+    var mins = Math.round(totalMin % 60);
+    var adjustedPace = (totalMin / r.distance_km).toFixed(1);
+    var color = getColor(r.group);
+
+    html += '<div class="card sim-card">';
+    html += '<div><div class="sim-race-name" style="color:' + color + '">' + r.name + '</div>';
+    html += '<div class="sim-race-info">' + r.distance_km + ' km · +' + r.elevation_gain.toLocaleString() + 'm</div></div>';
+    html += '<div style="text-align:right"><div class="sim-time" style="color:' + color + '">' + hours + 'h ' + (mins < 10 ? '0' : '') + mins + 'm</div>';
+    html += '<div class="sim-pace">' + adjustedPace + ' min/km avg</div></div>';
+    html += '</div>';
+  });
+  container.innerHTML = html;
+}
+
+// === 2. DIFFICULTY RATING ===
+var _diffData = [];
+
+function calcDifficulty(race) {
+  var distScore = Math.min(race.distance_km / 110, 1) * 3;
+  var elevScore = Math.min(race.elevation_gain / 7200, 1) * 3;
+  var steepness = race.elevation_gain / (race.distance_km * 1000);
+  var steepScore = Math.min(steepness / 0.1, 1) * 2;
+
+  // DNF bonus
+  var dnfScore = 0;
+  var raceName = race.name.replace(/\s*\d+km$/, '').toLowerCase();
+  _dnfData.forEach(function(d) {
+    if (d.race.toLowerCase().indexOf(raceName.split(' ')[0]) >= 0 && d.dnf_pct > 10) {
+      dnfScore = Math.max(dnfScore, Math.min(d.dnf_pct / 50, 1) * 2);
+    }
+  });
+
+  return Math.min(10, distScore + elevScore + steepScore + dnfScore);
+}
+
+function buildDifficultyRating(sortBy) {
+  sortBy = sortBy || 'score';
+  _diffData = _races.map(function(r) {
+    return { name: r.name, group: r.group, score: calcDifficulty(r), distance: r.distance_km, gain: r.elevation_gain };
+  });
+
+  if (sortBy === 'score') _diffData.sort(function(a, b) { return b.score - a.score; });
+  else if (sortBy === 'distance') _diffData.sort(function(a, b) { return b.distance - a.distance; });
+  else _diffData.sort(function(a, b) { return a.name.localeCompare(b.name); });
+
+  var container = document.getElementById('diff-chart');
+  var html = '';
+  _diffData.forEach(function(d) {
+    var color = getColor(d.group);
+    var pct = (d.score / 10) * 100;
+    var stars = '';
+    var full = Math.floor(d.score / 2);
+    var half = d.score % 2 >= 1 ? 1 : 0;
+    for (var i = 0; i < full; i++) stars += '★';
+    if (half) stars += '½';
+    for (var j = full + half; j < 5; j++) stars += '☆';
+
+    var gradient = d.score >= 8 ? 'linear-gradient(90deg, #c0392b, #e74c3c)'
+      : d.score >= 6 ? 'linear-gradient(90deg, #d35400, #e67e22)'
+      : d.score >= 4 ? 'linear-gradient(90deg, #f39c12, #f1c40f)'
+      : 'linear-gradient(90deg, #27ae60, #2ecc71)';
+
+    html += '<div class="diff-row">';
+    html += '<div class="diff-name" style="color:' + color + '" title="' + d.name + '">' + d.name + '</div>';
+    html += '<div class="diff-bar-wrap"><div class="diff-bar"><div class="diff-bar-fill" style="width:' + pct + '%;background:' + gradient + '"></div></div>';
+    html += '<div class="diff-stars">' + stars + ' · ' + d.distance + ' km · +' + d.gain.toLocaleString() + 'm</div></div>';
+    html += '<div class="diff-score" style="color:' + (d.score >= 7 ? '#c0392b' : d.score >= 5 ? '#d35400' : '#27ae60') + '">' + d.score.toFixed(1) + '</div>';
+    html += '</div>';
+  });
+  container.innerHTML = html;
+}
+
+initPills('diff-sort-pills', function(val) { buildDifficultyRating(val); });
+
+// === 3. RACE COMPARE ===
+function buildCompareSelects() {
+  ['compare-a', 'compare-b', 'compare-c'].forEach(function(id) {
+    var sel = document.getElementById(id);
+    _races.forEach(function(r) {
+      var opt = document.createElement('option');
+      opt.value = r.name;
+      opt.textContent = r.name + ' (' + r.distance_km + ' km)';
+      sel.appendChild(opt);
+    });
+    sel.onchange = updateCompare;
+  });
+  // Pre-select first two
+  document.getElementById('compare-a').value = _races[0].name;
+  document.getElementById('compare-b').value = _races[1] ? _races[1].name : '';
+  updateCompare();
+}
+
+function updateCompare() {
+  var names = [
+    document.getElementById('compare-a').value,
+    document.getElementById('compare-b').value,
+    document.getElementById('compare-c').value,
+  ].filter(Boolean);
+
+  var selected = names.map(function(n) { return _races.find(function(r) { return r.name === n; }); }).filter(Boolean);
+  if (selected.length < 2) {
+    document.getElementById('compare-result').innerHTML = '<p style="color:#6B8763;font-size:13px">Select at least 2 races</p>';
+    return;
+  }
+
+  var html = '<div style="overflow-x:auto"><table class="compare-table"><thead><tr><th>Metric</th>';
+  selected.forEach(function(r) {
+    html += '<th style="color:' + getColor(r.group) + '">' + r.name + '</th>';
+  });
+  html += '</tr></thead><tbody>';
+
+  var metrics = [
+    { label: 'Distance', fn: function(r) { return r.distance_km + ' km'; } },
+    { label: 'Elevation gain', fn: function(r) { return '+' + r.elevation_gain.toLocaleString() + ' m'; } },
+    { label: 'Elevation loss', fn: function(r) { return '-' + (r.elevation_loss || '—').toLocaleString() + ' m'; } },
+    { label: 'Max altitude', fn: function(r) { return r.max_elevation + ' m'; } },
+    { label: 'Steepness', fn: function(r) { return '1:' + (r.distance_km * 1000 / r.elevation_gain).toFixed(1); } },
+    { label: 'Difficulty', fn: function(r) { return calcDifficulty(r).toFixed(1) + ' / 10'; } },
+    { label: 'Flat equivalent', fn: function(r) { return (r.distance_km + r.elevation_gain / 1000).toFixed(1) + ' km'; } },
+  ];
+
+  metrics.forEach(function(m) {
+    html += '<tr><td style="font-weight:600;color:#6B8763">' + m.label + '</td>';
+    selected.forEach(function(r) {
+      html += '<td>' + m.fn(r) + '</td>';
+    });
+    html += '</tr>';
+  });
+  html += '</tbody></table></div>';
+
+  // Overlaid profiles
+  html += '<div class="compare-canvas-wrap"><canvas id="compare-canvas"></canvas></div>';
+  document.getElementById('compare-result').innerHTML = html;
+
+  // Draw overlaid profiles
+  var canvas = document.getElementById('compare-canvas');
+  var dpr = window.devicePixelRatio || 1;
+  var rect = canvas.getBoundingClientRect();
+  canvas.width = rect.width * dpr;
+  canvas.height = rect.height * dpr;
+  var ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+  var W = rect.width, H = rect.height;
+  var pad = { top: 10, bottom: 30, left: 0, right: 0 };
+
+  selected.forEach(function(r, idx) {
+    var profile = r.profile;
+    var maxDist = profile[profile.length - 1][0];
+    var eles = profile.map(function(p) { return p[1]; });
+    var minEle = Math.min.apply(null, eles);
+    var maxEle = Math.max.apply(null, eles);
+    var range = maxEle - minEle || 1;
+    var color = getColor(r.group);
+
+    ctx.globalAlpha = 0.15;
+    ctx.beginPath();
+    ctx.moveTo(pad.left, H - pad.bottom);
+    profile.forEach(function(p) {
+      var x = pad.left + (p[0] / maxDist) * (W - pad.left - pad.right);
+      var y = pad.top + (H - pad.top - pad.bottom) - ((p[1] - minEle) / range) * (H - pad.top - pad.bottom);
+      ctx.lineTo(x, y);
+    });
+    ctx.lineTo(W - pad.right, H - pad.bottom);
+    ctx.closePath();
+    ctx.fillStyle = color;
+    ctx.fill();
+
+    ctx.globalAlpha = 0.9;
+    ctx.beginPath();
+    profile.forEach(function(p, i) {
+      var x = pad.left + (p[0] / maxDist) * (W - pad.left - pad.right);
+      var y = pad.top + (H - pad.top - pad.bottom) - ((p[1] - minEle) / range) * (H - pad.top - pad.bottom);
+      if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+    });
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    // Label
+    ctx.globalAlpha = 1;
+    ctx.font = '11px Inter';
+    ctx.fillStyle = color;
+    ctx.fillText(r.name, 4, pad.top + 14 + idx * 16);
+  });
+  ctx.globalAlpha = 1;
+}
+
+// === 4. RACE CARDS ===
+function buildRaceCards() {
+  var container = document.getElementById('race-cards-grid');
+  var html = '';
+
+  _races.slice(0, 6).forEach(function(r) {
+    var color = getColor(r.group);
+    var steepness = (r.distance_km * 1000 / r.elevation_gain).toFixed(1);
+    var score = calcDifficulty(r).toFixed(1);
+
+    html += '<div class="card race-card">';
+    html += '<canvas class="race-card-bg" data-race="' + r.name + '"></canvas>';
+    html += '<div class="race-card-content">';
+    html += '<div class="race-card-title" style="color:' + color + '">' + r.name + '</div>';
+    html += '<div class="race-card-stats">';
+    html += '<div class="race-card-stat"><div class="race-card-stat-val" style="color:' + color + '">' + r.distance_km + '</div><div class="race-card-stat-label">km</div></div>';
+    html += '<div class="race-card-stat"><div class="race-card-stat-val" style="color:' + color + '">+' + (r.elevation_gain / 1000).toFixed(1) + 'k</div><div class="race-card-stat-label">elevation</div></div>';
+    html += '<div class="race-card-stat"><div class="race-card-stat-val" style="color:' + color + '">' + score + '</div><div class="race-card-stat-label">difficulty</div></div>';
+    html += '</div>';
+    html += '<div style="display:flex;justify-content:space-between;font-size:11px;color:#6B8763">';
+    html += '<span>Steepness 1:' + steepness + '</span>';
+    html += '<span>Peak ' + r.max_elevation + 'm</span>';
+    html += '</div>';
+    html += '<canvas class="race-card-profile" data-race-profile="' + r.name + '"></canvas>';
+    html += '</div>';
+    html += '</div>';
+  });
+
+  if (_races.length > 6) {
+    html += '</div><div id="race-cards-extra" style="display:none"><div class="grid-3" style="margin-top:16px">';
+    _races.slice(6).forEach(function(r) {
+      var color = getColor(r.group);
+      var score = calcDifficulty(r).toFixed(1);
+      var steepness = (r.distance_km * 1000 / r.elevation_gain).toFixed(1);
+      html += '<div class="card race-card">';
+      html += '<div class="race-card-content">';
+      html += '<div class="race-card-title" style="color:' + color + '">' + r.name + '</div>';
+      html += '<div class="race-card-stats">';
+      html += '<div class="race-card-stat"><div class="race-card-stat-val" style="color:' + color + '">' + r.distance_km + '</div><div class="race-card-stat-label">km</div></div>';
+      html += '<div class="race-card-stat"><div class="race-card-stat-val" style="color:' + color + '">+' + (r.elevation_gain / 1000).toFixed(1) + 'k</div><div class="race-card-stat-label">elevation</div></div>';
+      html += '<div class="race-card-stat"><div class="race-card-stat-val" style="color:' + color + '">' + score + '</div><div class="race-card-stat-label">difficulty</div></div>';
+      html += '</div>';
+      html += '<div style="font-size:11px;color:#6B8763">Steepness 1:' + steepness + ' · Peak ' + r.max_elevation + 'm</div>';
+      html += '<canvas class="race-card-profile" data-race-profile="' + r.name + '"></canvas>';
+      html += '</div></div>';
+    });
+    html += '</div></div><button class="show-all-btn" id="cards-toggle">▼ Show all ' + _races.length + ' cards</button>';
+  }
+
+  container.innerHTML = html;
+
+  // Draw mini profiles on cards
+  document.querySelectorAll('.race-card-profile[data-race-profile]').forEach(function(canvas) {
+    var race = _races.find(function(r) { return r.name === canvas.getAttribute('data-race-profile'); });
+    if (!race) return;
+    var dpr = window.devicePixelRatio || 1;
+    var rect = canvas.getBoundingClientRect();
+    canvas.width = rect.width * dpr;
+    canvas.height = rect.height * dpr;
+    var ctx = canvas.getContext('2d');
+    ctx.scale(dpr, dpr);
+    var W = rect.width, H = rect.height;
+    var profile = race.profile;
+    var maxDist = profile[profile.length - 1][0];
+    var eles = profile.map(function(p) { return p[1]; });
+    var minE = Math.min.apply(null, eles), maxE = Math.max.apply(null, eles);
+    var range = maxE - minE || 1;
+    var color = getColor(race.group);
+
+    ctx.beginPath();
+    ctx.moveTo(0, H);
+    profile.forEach(function(p) {
+      ctx.lineTo((p[0] / maxDist) * W, H - ((p[1] - minE) / range) * (H - 4));
+    });
+    ctx.lineTo(W, H);
+    ctx.closePath();
+    ctx.fillStyle = color + '15';
+    ctx.fill();
+    ctx.beginPath();
+    profile.forEach(function(p, i) {
+      var x = (p[0] / maxDist) * W;
+      var y = H - ((p[1] - minE) / range) * (H - 4);
+      if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+    });
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+  });
+
+  var cardsToggle = document.getElementById('cards-toggle');
+  var cardsExtra = document.getElementById('race-cards-extra');
+  if (cardsToggle && cardsExtra) {
+    cardsToggle.onclick = function() {
+      var showing = cardsExtra.style.display !== 'none';
+      cardsExtra.style.display = showing ? 'none' : '';
+      cardsToggle.textContent = showing ? '▼ Show all ' + _races.length + ' cards' : '▲ Show top 6';
+    };
+  }
+}
+
+// === 5. MADEIRA VS WORLD ===
+function buildVsWorld() {
+  var worldRaces = [
+    { name: 'UTMB', location: 'Chamonix, France', distance: 171, gain: 10000, maxEle: 2537, dnfPct: 40 },
+    { name: 'Western States 100', location: 'California, USA', distance: 161, gain: 5500, maxEle: 2650, dnfPct: 25 },
+    { name: 'Transgrancanaria', location: 'Gran Canaria, Spain', distance: 128, gain: 7500, maxEle: 1949, dnfPct: 30 },
+    { name: 'CCC (UTMB series)', location: 'Chamonix, France', distance: 101, gain: 6100, maxEle: 2537, dnfPct: 20 },
+    { name: 'Lavaredo Ultra Trail', location: 'Dolomites, Italy', distance: 120, gain: 5800, maxEle: 2340, dnfPct: 22 },
+  ];
+
+  var miut = _races.find(function(r) { return r.name === 'MIUT Legend'; });
+  if (!miut) return;
+
+  var container = document.getElementById('vs-world-chart');
+  var html = '';
+
+  worldRaces.forEach(function(w) {
+    var distPct = (miut.distance_km / w.distance * 100).toFixed(0);
+    var gainPct = (miut.elevation_gain / w.gain * 100).toFixed(0);
+    var steepMiut = miut.elevation_gain / (miut.distance_km * 10);
+    var steepW = w.gain / (w.distance * 10);
+    var steepPct = (steepMiut / steepW * 100).toFixed(0);
+    var overallPct = Math.round((parseInt(distPct) + parseInt(gainPct) + parseInt(steepPct)) / 3);
+
+    html += '<div class="vs-row">';
+
+    // MIUT card
+    html += '<div class="card vs-card">';
+    html += '<div class="vs-card-header"><div class="vs-card-name" style="color:#1F4D32">MIUT Legend</div><div class="vs-card-loc">Madeira, Portugal</div></div>';
+    html += '<div class="vs-metric"><span class="vs-metric-label">Distance</span><span class="vs-metric-val">' + miut.distance_km + ' km</span></div>';
+    html += '<div class="vs-metric"><span class="vs-metric-label">Elevation</span><span class="vs-metric-val">+' + miut.elevation_gain.toLocaleString() + ' m</span></div>';
+    html += '<div class="vs-metric"><span class="vs-metric-label">Max altitude</span><span class="vs-metric-val">' + miut.max_elevation + ' m</span></div>';
+    html += '<div class="vs-metric"><span class="vs-metric-label">Steepness</span><span class="vs-metric-val">' + steepMiut.toFixed(1) + ' m/100m</span></div>';
+    html += '</div>';
+
+    // VS badge
+    html += '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:70px">';
+    html += '<div class="vs-pct" style="color:' + (overallPct >= 80 ? '#27ae60' : overallPct >= 60 ? '#f39c12' : '#c0392b') + '">' + overallPct + '%</div>';
+    html += '<div style="font-size:10px;color:#6B8763;text-align:center">MIUT vs<br>' + w.name + '</div>';
+    html += '</div>';
+
+    // World race card
+    html += '<div class="card vs-card">';
+    html += '<div class="vs-card-header"><div class="vs-card-name">' + w.name + '</div><div class="vs-card-loc">' + w.location + '</div></div>';
+    html += '<div class="vs-metric"><span class="vs-metric-label">Distance</span><span class="vs-metric-val">' + w.distance + ' km</span></div>';
+    html += '<div class="vs-metric"><span class="vs-metric-label">Elevation</span><span class="vs-metric-val">+' + w.gain.toLocaleString() + ' m</span></div>';
+    html += '<div class="vs-metric"><span class="vs-metric-label">Max altitude</span><span class="vs-metric-val">' + w.maxEle + ' m</span></div>';
+    html += '<div class="vs-metric"><span class="vs-metric-label">Steepness</span><span class="vs-metric-val">' + steepW.toFixed(1) + ' m/100m</span></div>';
+    html += '</div>';
+
+    html += '</div>';
+  });
+
+  container.innerHTML = html;
+}
+
+// === 6. FINISH TIMELAPSE ===
+var _tlFrame = 0;
+var _tlInterval = null;
+var _tlCumulative = [];
+
+function buildTimelapse() {
+  _tlCumulative = [];
+  var total = 0;
+  _finishHours.forEach(function(h) {
+    total += h.count;
+    _tlCumulative.push({ hour: h.hour, count: h.count, cumulative: total });
+  });
+  drawTimelapse(0);
+}
+
+function drawTimelapse(upToIdx) {
+  var canvas = document.getElementById('timelapse-canvas');
+  var dpr = window.devicePixelRatio || 1;
+  var rect = canvas.getBoundingClientRect();
+  canvas.width = rect.width * dpr;
+  canvas.height = rect.height * dpr;
+  var ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+  var W = rect.width, H = rect.height;
+  var pad = { top: 20, bottom: 40, left: 40, right: 20 };
+  var plotW = W - pad.left - pad.right;
+  var plotH = H - pad.top - pad.bottom;
+
+  var maxCount = Math.max.apply(null, _tlCumulative.map(function(d) { return d.count; }));
+  var maxCum = _tlCumulative[_tlCumulative.length - 1].cumulative;
+  var barW = plotW / 24 - 2;
+
+  // Background grid
+  ctx.strokeStyle = 'rgba(218,211,197,0.3)';
+  ctx.lineWidth = 1;
+  for (var i = 0; i <= 4; i++) {
+    var y = pad.top + plotH * (1 - i / 4);
+    ctx.beginPath(); ctx.moveTo(pad.left, y); ctx.lineTo(W - pad.right, y); ctx.stroke();
+  }
+
+  // Bars
+  for (var j = 0; j <= upToIdx && j < 24; j++) {
+    var d = _tlCumulative[j];
+    var bh = (d.count / maxCount) * plotH;
+    var x = pad.left + (j / 24) * plotW + 1;
+
+    var isNight = j >= 20 || j < 6;
+    ctx.fillStyle = isNight ? 'rgba(44,62,80,0.7)' : 'rgba(31,77,50,0.7)';
+    ctx.fillRect(x, pad.top + plotH - bh, barW, bh);
+
+    // Hour label
+    ctx.fillStyle = '#6B8763';
+    ctx.font = '10px Inter';
+    ctx.textAlign = 'center';
+    ctx.fillText(d.hour + ':00', x + barW / 2, H - pad.bottom + 14);
+  }
+
+  // Cumulative line
+  if (upToIdx > 0) {
+    ctx.beginPath();
+    ctx.strokeStyle = '#c0392b';
+    ctx.lineWidth = 2;
+    for (var k = 0; k <= upToIdx && k < 24; k++) {
+      var cx = pad.left + (k / 24) * plotW + barW / 2 + 1;
+      var cy = pad.top + plotH - (_tlCumulative[k].cumulative / maxCum) * plotH;
+      if (k === 0) ctx.moveTo(cx, cy); else ctx.lineTo(cx, cy);
+    }
+    ctx.stroke();
+
+    // Dot at end
+    var lastX = pad.left + (upToIdx / 24) * plotW + barW / 2 + 1;
+    var lastY = pad.top + plotH - (_tlCumulative[Math.min(upToIdx, 23)].cumulative / maxCum) * plotH;
+    ctx.beginPath();
+    ctx.arc(lastX, lastY, 4, 0, Math.PI * 2);
+    ctx.fillStyle = '#c0392b';
+    ctx.fill();
+  }
+
+  // Axis labels
+  ctx.fillStyle = '#6B8763';
+  ctx.font = '11px Inter';
+  ctx.textAlign = 'left';
+  ctx.fillText('Finishers per hour', pad.left, pad.top - 6);
+  ctx.textAlign = 'right';
+  ctx.fillStyle = '#c0392b';
+  ctx.fillText('Cumulative →', W - pad.right, pad.top - 6);
+
+  // Legend
+  ctx.fillStyle = 'rgba(31,77,50,0.7)';
+  ctx.fillRect(pad.left, H - 12, 10, 10);
+  ctx.fillStyle = '#6B8763';
+  ctx.font = '10px Inter';
+  ctx.textAlign = 'left';
+  ctx.fillText('Day', pad.left + 14, H - 3);
+  ctx.fillStyle = 'rgba(44,62,80,0.7)';
+  ctx.fillRect(pad.left + 50, H - 12, 10, 10);
+  ctx.fillStyle = '#6B8763';
+  ctx.fillText('Night', pad.left + 64, H - 3);
+
+  // Update labels
+  if (upToIdx >= 0 && upToIdx < 24) {
+    document.getElementById('timelapse-time').textContent = _tlCumulative[Math.min(upToIdx, 23)].hour + ':00';
+    document.getElementById('timelapse-count').textContent = _tlCumulative[Math.min(upToIdx, 23)].cumulative.toLocaleString() + ' total finishers';
+  }
+}
+
+function startTimelapse() {
+  if (_tlInterval) { clearInterval(_tlInterval); _tlInterval = null; }
+  _tlFrame = 0;
+  _tlInterval = setInterval(function() {
+    drawTimelapse(_tlFrame);
+    _tlFrame++;
+    if (_tlFrame >= 24) { clearInterval(_tlInterval); _tlInterval = null; }
+  }, 400);
+}
+
+function resetTimelapse() {
+  if (_tlInterval) { clearInterval(_tlInterval); _tlInterval = null; }
+  _tlFrame = 0;
+  drawTimelapse(0);
+  document.getElementById('timelapse-time').textContent = '';
+  document.getElementById('timelapse-count').textContent = '';
+}
+
+// === 7. COUNTRY HEATMAP ===
+function buildCountryHeatmap(sortBy) {
+  var container = document.getElementById('heatmap-chart');
+  var data = [..._countryData];
+
+  if (sortBy === 'top10') data.sort(function(a, b) { return b.top10_finishes - a.top10_finishes; });
+  else if (sortBy === 'efficiency') data.sort(function(a, b) { return (b.top10_finishes / b.finishers) - (a.top10_finishes / a.finishers); });
+  else data.sort(function(a, b) { return b.finishers - a.finishers; });
+
+  var maxVal = data[0].finishers;
+  var html = '';
+
+  data.forEach(function(c) {
+    var intensity = Math.pow(c.finishers / maxVal, 0.4);
+    var efficiency = c.top10_finishes / c.finishers;
+    var r = Math.round(31 + (1 - intensity) * 200);
+    var g = Math.round(77 + (1 - intensity) * 150);
+    var b = Math.round(50 + (1 - intensity) * 150);
+    var bg = 'rgba(' + r + ',' + g + ',' + b + ',' + (0.1 + intensity * 0.25) + ')';
+    var textColor = intensity > 0.5 ? '#1F4D32' : '#6B8763';
+
+    var mainVal = sortBy === 'top10' ? c.top10_finishes
+      : sortBy === 'efficiency' ? (efficiency * 100).toFixed(1) + '%'
+      : c.finishers.toLocaleString();
+
+    var sub = sortBy === 'efficiency' ? c.top10_finishes + ' top-10'
+      : sortBy === 'top10' ? c.finishers.toLocaleString() + ' fin.'
+      : c.top10_finishes + ' top-10';
+
+    html += '<div class="heatmap-cell" style="background:' + bg + '">';
+    html += '<div class="heatmap-country" style="color:' + textColor + '">' + c.country + '</div>';
+    html += '<div class="heatmap-count" style="color:' + textColor + '">' + mainVal + '</div>';
+    html += '<div class="heatmap-top10" style="color:' + textColor + '">' + sub + '</div>';
+    html += '</div>';
+  });
+
+  container.innerHTML = html;
+}
+
+initPills('heat-sort-pills', function(val) { buildCountryHeatmap(val); });
+</script>
+</body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madeira Festivals & Festas Calendar · Madeira Ativa</title>
+  <link rel="canonical" href="https://azenha.ai/ativa/madeira_festas">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Madeira Ativa">
+  <meta property="og:title" content="Madeira Festivals & Festas Calendar · Madeira Ativa">
+  <meta property="og:description" content="The festival year of Madeira: Carnival, Flower Festival, Atlantic fireworks, Funchal Jazz, Monte feast, Wine harvest, Organ Festival, chestnuts, Christmas lights and the record New Year fireworks.">
+  <meta property="og:url" content="https://azenha.ai/ativa/madeira_festas">
+  <meta property="og:image" content="https://azenha.ai/ativa/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en">
+  <meta property="og:locale:alternate" content="pt_PT">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Madeira Festivals & Festas Calendar · Madeira Ativa">
+  <meta name="twitter:description" content="The festival year of Madeira: Carnival, Flower Festival, Atlantic fireworks, Funchal Jazz, Monte feast, Wine harvest, Organ Festival, chestnuts, Christmas lights and the record New Year fireworks.">
+  <meta name="twitter:image" content="https://azenha.ai/ativa/og.png">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="description" content="The festival year of Madeira: Carnival, Flower Festival, Atlantic fireworks, Funchal Jazz, Monte feast, Wine harvest, Organ Festival, chestnuts, Christmas lights and the record New Year fireworks.">
+<link rel="icon" href="/ativa/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/ativa/icon-192.png?v=5e8787d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #F5F2EA; --accent: #1F4D32; --soft: #6B8763; --line: #DAD3C5; --ink: #15201A; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 20px 18px 60px; }
+  .topbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+  .brand-link { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
+  .brand-link:hover { opacity: 0.8; }
+  .brand-icon { width: 32px; height: 32px; border-radius: 7px; flex-shrink: 0; }
+  .brand-name { font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 18px; color: var(--accent); letter-spacing: -0.01em; }
+  .lang { display: flex; gap: 4px; }
+  .lang button { border: 1px solid var(--line); background: none; color: var(--soft); border-radius: 999px; padding: 4px 11px; font: inherit; font-size: 13px; cursor: pointer; }
+  .lang button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .site-nav { position: sticky; top: 0; z-index: 100; background: rgba(245,242,234,0.92); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); margin: 8px -18px 0; padding: 0 18px; }
+  .site-nav-inner { display: flex; overflow-x: auto; scrollbar-width: none; }
+  .site-nav-inner::-webkit-scrollbar { display: none; }
+  .site-nav a { flex-shrink: 0; padding: 11px 8px; font-size: 12.5px; font-weight: 600; color: var(--soft); text-decoration: none; border-bottom: 2px solid transparent; white-space: nowrap; cursor: pointer; }
+  .site-nav a:hover { color: var(--accent); }
+  .site-nav a.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .site-nav .nav-here { flex-shrink: 0; padding: 11px 8px; font-size: 12.5px; font-weight: 800; color: var(--accent); border-bottom: 2px solid var(--accent); white-space: nowrap; }
+  .festa.hide, .up-row.hide { display: none; }
+  h1 { font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: clamp(32px, 6vw, 50px); letter-spacing: -0.02em; margin: 18px 0 6px; }
+  .sub { color: var(--soft); font-size: 16px; margin: 0 0 26px; line-height: 1.5; max-width: 640px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; margin-bottom: 40px; }
+  .festa {
+    position: relative; border-radius: 16px; padding: 18px 16px 16px; color: #fff; overflow: hidden;
+    min-height: 172px; display: flex; flex-direction: column; justify-content: flex-end;
+    box-shadow: 0 6px 18px rgba(21,32,26,0.16); transition: transform 0.18s, box-shadow 0.18s;
+  }
+  .festa:hover { transform: translateY(-3px) rotate(-0.4deg); box-shadow: 0 12px 26px rgba(21,32,26,0.22); }
+  .festa .emoji { position: absolute; top: 10px; right: 12px; font-size: 44px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25)); }
+  .festa .month {
+    position: absolute; top: 14px; left: 14px; background: rgba(255,255,255,0.92); color: #15201A;
+    font-size: 11px; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase;
+    padding: 4px 10px; border-radius: 999px;
+  }
+  .festa h3 { font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: 21px; margin: 0 0 4px; line-height: 1.08; text-shadow: 0 1px 6px rgba(0,0,0,0.28); }
+  .festa .fdesc { font-size: 12.5px; line-height: 1.42; opacity: 0.94; text-shadow: 0 1px 4px rgba(0,0,0,0.3); }
+  .festa .fplace { font-size: 11px; font-weight: 700; margin-top: 7px; opacity: 0.9; letter-spacing: 0.03em; }
+  h2.sec { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 27px; margin: 0 0 4px; }
+  .sec-sub { color: var(--soft); font-size: 14px; margin: 0 0 14px; }
+  .up { border: 1px solid var(--line); border-radius: 14px; background: #fbf9f4; overflow: hidden; margin-bottom: 40px; }
+  .up-row { display: flex; gap: 12px; align-items: baseline; padding: 11px 16px; border-bottom: 1px solid var(--line); font-size: 14.5px; }
+  .up-row:last-child { border-bottom: 0; }
+  .up-date { color: var(--accent); font-weight: 800; min-width: 74px; font-size: 13px; }
+  .up-name { flex: 1; font-weight: 600; }
+  .up-name a { color: var(--ink); text-decoration: none; }
+  .up-name a:hover { color: var(--accent); text-decoration: underline; }
+  .up-loc { color: var(--soft); font-size: 12.5px; white-space: nowrap; }
+  .up-empty { padding: 16px; color: var(--soft); font-size: 14px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px; }
+  .pcard {
+    border-radius: 14px; padding: 16px 15px 14px; color: #fff; text-decoration: none;
+    min-height: 108px; display: flex; flex-direction: column; justify-content: flex-end;
+    box-shadow: 0 5px 14px rgba(21,32,26,0.15); transition: transform 0.18s;
+    position: relative; overflow: hidden;
+  }
+  .pcard:hover { transform: translateY(-3px) rotate(0.4deg); }
+  .pcard .emoji { position: absolute; top: 8px; right: 10px; font-size: 30px; }
+  .pcard b { font-family: Fraunces, Georgia, serif; font-size: 17.5px; font-weight: 700; margin-bottom: 3px; }
+  .pcard span { font-size: 12px; opacity: 0.92; line-height: 1.35; }
+  .src { color: var(--soft); font-size: 12px; margin-top: 34px; text-align: center; }
+  .src a { color: var(--soft); }
+
+  .burger{flex-shrink:0;margin-left:8px;padding:2px 10px 4px;background:none;border:1px solid #DAD3C5;border-radius:8px;font-size:18px;line-height:1.4;color:#1F4D32;cursor:pointer}
+  .burger:hover{border-color:#1F4D32}
+  .drawer-back{position:fixed;inset:0;z-index:300;background:rgba(21,32,26,0.45);backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
+  .drawer{position:fixed;top:0;right:0;bottom:0;z-index:301;width:min(320px,86vw);background:#F5F2EA;border-left:1px solid #DAD3C5;box-shadow:-12px 0 32px rgba(21,32,26,0.25);display:flex;flex-direction:column;padding:14px 0 20px;animation:drawerIn .22s ease-out}
+  @keyframes drawerIn{from{transform:translateX(100%)}to{transform:translateX(0)}}
+  .drawer-head{display:flex;align-items:center;justify-content:space-between;padding:4px 18px 12px;border-bottom:1px solid #DAD3C5}
+  .drawer-title{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:18px;color:#1F4D32}
+  .drawer-close{background:none;border:0;font-size:28px;line-height:1;color:#6B8763;cursor:pointer;padding:0 2px}
+  .drawer-close:hover{color:#1F4D32}
+  .drawer-nav{display:flex;flex-direction:column;overflow-y:auto;padding:10px 6px}
+  .drawer-nav a{display:block;padding:12px 16px;border-radius:10px;color:#15201A;text-decoration:none;font-size:15.5px;font-weight:600}
+  .drawer-nav a:hover{background:rgba(31,77,50,0.08);color:#1F4D32}
+  .drawer-sep{height:1px;background:#DAD3C5;margin:10px 14px}
+
+  .totop{position:fixed;right:16px;bottom:18px;z-index:250;width:44px;height:44px;border-radius:50%;border:1px solid #DAD3C5;background:rgba(31,77,50,0.92);color:#fff;font-size:20px;line-height:1;cursor:pointer;box-shadow:0 4px 14px rgba(21,32,26,0.3);opacity:0;pointer-events:none;transition:opacity .25s}
+  .totop.show{opacity:1;pointer-events:auto}
+  .totop:hover{background:#163d27}
+
+@media (prefers-color-scheme: dark){
+  html:not(.light){--bg:#141b16;--ink:#e7ded0;--accent:#8fbf9a;--soft:#93a892;--line:#2c352c;--panel:rgba(255,255,255,0.05)}
+  html:not(.light) .site-nav, html:not(.light) .section-nav{background:rgba(20,27,22,0.92)!important}
+  html:not(.light) .drawer{background:#141b16}
+  html:not(.light) .drawer-nav a{color:#e7ded0}
+  html:not(.light) img{opacity:.92}
+  html:not(.light) .up{background:#1b241d}
+  html:not(.light) .up-name a{color:#e7ded0}
+  html:not(.light) .festa .month{background:rgba(20,27,22,0.85);color:#e7ded0}
+}
+html.dark{--x:0}
+  html.dark{--bg:#141b16;--ink:#e7ded0;--accent:#8fbf9a;--soft:#93a892;--line:#2c352c;--panel:rgba(255,255,255,0.05)}
+  html.dark .site-nav, html.dark .section-nav{background:rgba(20,27,22,0.92)!important}
+  html.dark .drawer{background:#141b16}
+  html.dark .drawer-nav a{color:#e7ded0}
+  html.dark img{opacity:.92}
+  html.dark .up{background:#1b241d}
+  html.dark .up-name a{color:#e7ded0}
+  html.dark .festa .month{background:rgba(20,27,22,0.85);color:#e7ded0}
+
+  .drawer[hidden],.drawer-back[hidden]{display:none}
+.theme-btn{flex-shrink:0;margin-left:6px;padding:2px 9px 4px;background:none;border:1px solid #DAD3C5;border-radius:8px;font-size:15px;line-height:1.5;cursor:pointer}.theme-btn:hover{border-color:#1F4D32}
+@media(max-width:640px){.theme-btn{display:none}}
+.burger svg{display:block}
+@media(max-width:640px){
+  .burger{padding:4px 8px;font-size:12px;margin:5px 0 5px 6px;border-radius:7px}
+  .burger svg{width:12px;height:10px}
+  .nav-lang{font-size:11px;padding:2px 8px;margin:6px 0}
+  .lang button{font-size:11.5px;padding:3px 9px}
+  .lang-toggle{font-size:11.5px;padding:2px 7px}
+}
+@media(max-width:640px){
+  .nav-lang,.burger{width:auto!important;min-width:0!important;max-width:none!important;height:29px!important;flex:0 0 auto!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important}
+  .burger{padding:0 9px!important}
+  .nav-lang{padding:0 9px!important}
+}
+@media(max-width:640px){
+  .site-nav,.section-nav{position:relative}
+  .site-nav-inner,.section-nav-inner{padding-right:80px}
+  .nav-lang,.burger{position:absolute!important;top:50%;transform:translateY(-50%);height:24px!important;line-height:22px!important;font-size:11px!important;padding:0 7px!important;background:var(--bg,#F5F2EA)!important;z-index:2;margin:0!important;border-radius:8px}
+  .nav-lang{right:42px}
+  .burger{right:10px}
+}
+</style>
+<script>(function(){var t=localStorage.getItem("ma-theme");if(t==="dark")document.documentElement.classList.add("dark");else if(t==="light")document.documentElement.classList.add("light");})();</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M2PTQLF903"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-M2PTQLF903', { content_group: 'ativa' });
+  </script>
+  <script>
+    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","xr4rlyhxyo");
+  </script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="brand-link" href="/ativa/">
+      <svg class="brand-icon" viewBox="0 0 512 512" aria-hidden="true">
+        <rect width="512" height="512" rx="112" fill="#1f4d32"/>
+        <g transform="translate(86 54) scale(1.55)" fill="none" stroke="#f5f2ea" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="110" cy="110" r="90"/>
+          <circle cx="110" cy="110" r="76" stroke-dasharray="5 12" stroke-opacity="0.58"/>
+          <circle cx="110" cy="110" r="7" fill="#f5f2ea" stroke="none"/>
+          <line x1="20" y1="110" x2="200" y2="110"/>
+          <line x1="110" y1="20" x2="110" y2="200"/>
+          <line x1="46.4" y1="46.4" x2="173.6" y2="173.6"/>
+          <line x1="46.4" y1="173.6" x2="173.6" y2="46.4"/>
+          <path d="M0 232C30 222 50 244 80 232S130 222 160 232S200 244 220 232"/>
+          <path d="M0 248C30 238 50 260 80 248S130 238 160 248S200 260 220 248" stroke-opacity="0.58"/>
+        </g>
+      </svg>
+      <span class="brand-name">Madeira Ativa</span>
+    </a>
+    <div class="lang">
+      <button data-set-lang="en">EN</button>
+      <button data-set-lang="pt">PT</button>
+    </div><button class="burger" id="burgerBtn" aria-label="Menu" aria-expanded="false"><svg width="17" height="13" viewBox="0 0 18 14" fill="none" aria-hidden="true"><path d="M1 1h16M1 7h16M1 13h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><button class="theme-btn" id="themeBtn" aria-label="Theme">🌙</button>
+  </div>
+
+  <nav class="site-nav">
+    <div class="site-nav-inner" id="cat-nav">
+      <a href="/ativa/">🏠 Main</a>
+      <span class="nav-here">🎆 Festas</span>
+      <a class="cat active" data-cat="all"><span data-lang="en">All</span><span data-lang="pt">Todas</span></a>
+      <a class="cat" data-cat="festa"><span data-lang="en">Big festas</span><span data-lang="pt">Grandes festas</span></a>
+      <a class="cat" data-cat="music"><span data-lang="en">Music</span><span data-lang="pt">Música</span></a>
+      <a class="cat" data-cat="religious"><span data-lang="en">Religious</span><span data-lang="pt">Religiosas</span></a>
+    </div>
+  </nav>
+
+  <h1>Festas</h1>
+  <p class="sub">
+    <span data-lang="en">Madeira never really stops celebrating — fireworks over the bay, flower carpets, jazz under the palms, wine pressed by foot and the loudest New Year on the Atlantic. The island's festival year, month by month.</span>
+    <span data-lang="pt">A Madeira nunca deixa de festejar — fogo sobre a baía, tapetes de flores, jazz sob as palmeiras, vinho pisado a pé e a maior passagem de ano do Atlântico. O ano de festas da ilha, mês a mês.</span>
+  </p>
+
+  <div class="grid">
+    <div class="festa" data-cat="music" style="background: linear-gradient(150deg, #123a6b, #d4a017 130%)">
+      <span class="month">5–6 Jan</span><span class="emoji">🎶</span>
+      <h3>Cantar os Reis</h3>
+      <div class="fdesc"><span data-lang="en">Singing of the Kings — carol groups fill downtown Funchal on Epiphany eve, the last night of Madeira's long Christmas.</span><span data-lang="pt">Grupos de cantares enchem a baixa do Funchal na véspera de Reis — a última noite do longo Natal madeirense.</span></div>
+      <div class="fplace">📍 Funchal</div>
+    </div>
+
+    <div class="festa" data-cat="festa" style="background: linear-gradient(150deg, #b0176c, #f2a03d 120%)">
+      <span class="month">Feb–Mar</span><span class="emoji">🎭</span>
+      <h3>Carnaval</h3>
+      <div class="fdesc"><span data-lang="en">Rio-style allegoric parade on Saturday, the anything-goes Trapalhão parade on Shrove Tuesday. Samba, sequins, whole city out.</span><span data-lang="pt">Cortejo alegórico ao sábado e o Trapalhão na terça-feira gorda. Samba, lantejoulas, a cidade inteira na rua.</span></div>
+      <div class="fplace">📍 Funchal</div>
+    </div>
+
+    <div class="festa" data-cat="festa" style="background: linear-gradient(150deg, #d84a8b, #4a9e57 130%)">
+      <span class="month">Apr–May</span><span class="emoji">🌺</span>
+      <h3><span data-lang="en">Flower Festival</span><span data-lang="pt">Festa da Flor</span></h3>
+      <div class="fdesc"><span data-lang="en">Festa da Flor — flower carpets, the children's Wall of Hope and a grand floral parade three weeks after Easter.</span><span data-lang="pt">Tapetes de flores, o Muro da Esperança das crianças e o grande cortejo florido, três semanas após a Páscoa.</span></div>
+      <div class="fplace">📍 Funchal</div>
+    </div>
+
+    <div class="festa" data-cat="festa" style="background: linear-gradient(160deg, #0b1d3a, #e0662a 145%)">
+      <span class="month">Jun</span><span class="emoji">🎆</span>
+      <h3><span data-lang="en">Atlantic Festival</span><span data-lang="pt">Festival do Atlântico</span></h3>
+      <div class="fdesc"><span data-lang="en">Every June Saturday an international pyromusical — fireworks choreographed to music over Funchal bay.</span><span data-lang="pt">Todos os sábados de junho, um piromusical internacional sobre a baía do Funchal.</span></div>
+      <div class="fplace">📍 Funchal bay</div>
+    </div>
+
+    <div class="festa" data-cat="music" style="background: linear-gradient(150deg, #2a1a4d, #7a4dbf 120%)">
+      <span class="month">Jul</span><span class="emoji">🎷</span>
+      <h3>Funchal Jazz</h3>
+      <div class="fdesc"><span data-lang="en">Three warm nights of international jazz under the palms of Santa Catarina Park — one of Europe's prettiest small festivals.</span><span data-lang="pt">Três noites de jazz internacional sob as palmeiras do Parque de Santa Catarina.</span></div>
+      <div class="fplace">📍 Parque Santa Catarina</div>
+    </div>
+
+    <div class="festa" data-cat="religious" style="background: linear-gradient(150deg, #8a2b1d, #e0a63a 130%)">
+      <span class="month">14–15 Aug</span><span class="emoji">⛪</span>
+      <h3><span data-lang="en">Festa do Monte</span><span data-lang="pt">Nossa Sra. do Monte</span></h3>
+      <div class="fdesc"><span data-lang="en">Madeira's biggest religious feast and its liveliest arraial — procession, espetada smoke and dancing till dawn above Funchal.</span><span data-lang="pt">A maior festa religiosa da Madeira e o seu arraial mais vivo — procissão, fumo de espetada e bailinho até de manhã.</span></div>
+      <div class="fplace">📍 Monte</div>
+    </div>
+
+    <div class="festa" data-cat="festa" style="background: linear-gradient(150deg, #5c1030, #b03060 115%)">
+      <span class="month">Aug–Sep</span><span class="emoji">🍇</span>
+      <h3><span data-lang="en">Wine Festival</span><span data-lang="pt">Festa do Vinho</span></h3>
+      <div class="fdesc"><span data-lang="en">Harvest season — grapes trodden barefoot in Estreito de Câmara de Lobos, tastings and folklore in downtown Funchal.</span><span data-lang="pt">Vindimas — pisa da uva no Estreito de Câmara de Lobos, provas e folclore na baixa do Funchal.</span></div>
+      <div class="fplace">📍 Estreito · Funchal</div>
+    </div>
+
+    <div class="festa" data-cat="religious" style="background: linear-gradient(150deg, #1d4d6b, #7fb2d0 135%)">
+      <span class="month">Sep–Oct</span><span class="emoji">🕯</span>
+      <h3><span data-lang="en">Great pilgrimages</span><span data-lang="pt">Romarias</span></h3>
+      <div class="fdesc"><span data-lang="en">Bom Jesus in Ponta Delgada (1st Sept Sunday) and Senhor dos Milagres in Machico (8–9 Oct) — candlelit processions whole villages walk to.</span><span data-lang="pt">Bom Jesus na Ponta Delgada (1.º domingo de set.) e Senhor dos Milagres em Machico (8–9 out.) — procissões à luz de velas.</span></div>
+      <div class="fplace">📍 Ponta Delgada · Machico</div>
+    </div>
+
+    <div class="festa" data-cat="music" style="background: linear-gradient(150deg, #3a2a12, #c99a2e 130%)">
+      <span class="month">Oct</span><span class="emoji">🎹</span>
+      <h3><span data-lang="en">Organ Festival</span><span data-lang="pt">Festival de Órgão</span></h3>
+      <div class="fdesc"><span data-lang="en">Ten days of concerts on the historic pipe organs of Madeira's churches — Sé cathedral, Colégio, São Pedro and beyond.</span><span data-lang="pt">Dez dias de concertos nos órgãos históricos das igrejas da Madeira — Sé, Colégio, São Pedro e mais.</span></div>
+      <div class="fplace">📍 <span data-lang="en">Churches of Madeira</span><span data-lang="pt">Igrejas da Madeira</span></div>
+    </div>
+
+    <div class="festa" data-cat="festa" style="background: linear-gradient(150deg, #4d2e14, #8a6a3a 125%)">
+      <span class="month">1 Nov</span><span class="emoji">🌰</span>
+      <h3><span data-lang="en">Chestnut Festival</span><span data-lang="pt">Festa da Castanha</span></h3>
+      <div class="fdesc"><span data-lang="en">Curral das Freiras roasts, bakes and distils everything chestnut in the valley of the nuns.</span><span data-lang="pt">O Curral das Freiras assa, coze e destila tudo o que é castanha, no vale das freiras.</span></div>
+      <div class="fplace">📍 Curral das Freiras</div>
+    </div>
+
+    <div class="festa" data-cat="festa" style="background: linear-gradient(150deg, #0f3d2a, #c23b2e 135%)">
+      <span class="month">Dec</span><span class="emoji">🎄</span>
+      <h3><span data-lang="en">Christmas — “A Festa”</span><span data-lang="pt">Natal — «A Festa»</span></h3>
+      <div class="fdesc"><span data-lang="en">A million lights from 1 December, nativity scenes, and Noite do Mercado on the 23rd — the market sings all night.</span><span data-lang="pt">Um milhão de luzes desde 1 de dezembro, presépios, e a Noite do Mercado a 23 — o mercado canta a noite toda.</span></div>
+      <div class="fplace">📍 <span data-lang="en">All island</span><span data-lang="pt">Toda a ilha</span></div>
+    </div>
+
+    <div class="festa" data-cat="festa" style="background: linear-gradient(160deg, #10102e, #d4a017 150%)">
+      <span class="month">31 Dec</span><span class="emoji">🎇</span>
+      <h3><span data-lang="en">New Year fireworks</span><span data-lang="pt">Fogo de fim de ano</span></h3>
+      <div class="fdesc"><span data-lang="en">Eight minutes of fire over the whole amphitheatre of Funchal — once a Guinness record, still the Atlantic's grandest midnight.</span><span data-lang="pt">Oito minutos de fogo sobre o anfiteatro do Funchal — já foi recorde do Guinness, continua a maior meia-noite do Atlântico.</span></div>
+      <div class="fplace">📍 Funchal bay</div>
+    </div>
+  </div>
+
+  <h2 class="sec"><span data-lang="en">Next up — confirmed dates</span><span data-lang="pt">A seguir — datas confirmadas</span></h2>
+  <p class="sec-sub"><span data-lang="en">Live from the events calendar, refreshed daily.</span><span data-lang="pt">Do calendário de eventos, atualizado diariamente.</span></p>
+  <div class="up" id="up"><div class="up-empty">…</div></div>
+
+  <h2 class="sec"><span data-lang="en">Make a day of it</span><span data-lang="pt">Faça disso um dia</span></h2>
+  <p class="sec-sub"><span data-lang="en">A festa is better with a walk before and a view after.</span><span data-lang="pt">Uma festa sabe melhor com uma caminhada antes e um miradouro depois.</span></p>
+  <div class="cards">
+    <a class="pcard" href="/ativa/levada" style="background: linear-gradient(150deg, #1F4D32, #4a9e57 130%)">
+      <span class="emoji">🥾</span><b>Levadas</b>
+      <span data-lang="en">Walk off the espetada — today's best trails, picked by the weather.</span>
+      <span data-lang="pt">Queime a espetada — os melhores trilhos de hoje, escolhidos pelo tempo.</span>
+    </a>
+    <a class="pcard" href="/ativa/map" style="background: linear-gradient(150deg, #14456b, #4a90c2 130%)">
+      <span class="emoji">🗺</span><b><span data-lang="en">Map</span><span data-lang="pt">Mapa</span></b>
+      <span data-lang="en">Find the village, the miradouro and the way home.</span>
+      <span data-lang="pt">Encontre a freguesia, o miradouro e o caminho de volta.</span>
+    </a>
+    <a class="pcard" href="/ativa/madeira_news" style="background: linear-gradient(150deg, #6b3a14, #c98a2e 130%)">
+      <span class="emoji">📰</span><b><span data-lang="en">News</span><span data-lang="pt">Notícias</span></b>
+      <span data-lang="en">What's happening on the island this week — in six languages.</span>
+      <span data-lang="pt">O que se passa na ilha esta semana — em seis línguas.</span>
+    </a>
+    <a class="pcard" href="/ativa/history" style="background: linear-gradient(150deg, #3a2a4d, #8a5abf 130%)">
+      <span class="emoji">📜</span><b><span data-lang="en">History</span><span data-lang="pt">História</span></b>
+      <span data-lang="en">Where the festas come from — 600 years of active Madeira.</span>
+      <span data-lang="pt">De onde vêm as festas — 600 anos de Madeira ativa.</span>
+    </a>
+  </div>
+
+  <p class="src">
+    <span data-lang="en">Dates of the annual festas are indicative — final programmes are announced by <a href="https://visitmadeira.com" target="_blank" rel="noopener">Visit Madeira</a> and the municipalities each year. The “Next up” list updates daily.</span>
+    <span data-lang="pt">As datas das festas anuais são indicativas — os programas finais são anunciados pelo <a href="https://visitmadeira.com" target="_blank" rel="noopener">Visit Madeira</a> e pelos municípios. A lista «A seguir» atualiza diariamente.</span>
+  </p>
+</div>
+
+<script>
+var VALID = ['en', 'pt'];
+var urlLang = new URLSearchParams(location.search).get('lang');
+var lang = VALID.indexOf(urlLang) !== -1 ? urlLang : 'en';
+var EVS = null;
+var CAT = 'all';
+
+function eventCat(name) {
+  var n = String(name || '').toLowerCase();
+  if (/jazz|org[aã]o|organ|classic|cl[aá]ssic|concert|m[uú]sica|filarm|coro|choir|recital|banda/.test(n)) return 'music';
+  if (/senhor|nossa|sant[oa] |s[aã]o |romaria|peregrin|bom jesus|milagres|f[aá]tima|padroeir|igreja|cap[e]la|procession|prociss/.test(n)) return 'religious';
+  return 'festa';
+}
+
+function applyCat() {
+  document.querySelectorAll('.festa[data-cat]').forEach(function (c) {
+    c.classList.toggle('hide', CAT !== 'all' && c.getAttribute('data-cat') !== CAT);
+  });
+  document.querySelectorAll('#cat-nav .cat').forEach(function (a) {
+    a.classList.toggle('active', a.getAttribute('data-cat') === CAT);
+  });
+  renderUp();
+}
+
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+    return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+  });
+}
+
+function fmtDate(iso) {
+  var m = (lang === 'pt'
+    ? ['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez']
+    : ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']);
+  return parseInt(iso.slice(8,10), 10) + ' ' + m[parseInt(iso.slice(5,7), 10) - 1];
+}
+
+function renderUp() {
+  var box = document.getElementById('up');
+  if (!EVS) return;
+  var today = new Date().toISOString().slice(0, 10);
+  var items = EVS.filter(function (e) { return e.mode === 'festivals' && e.date >= today; })
+    .filter(function (e) { return CAT === 'all' || eventCat(e.name) === CAT; })
+    .sort(function (a, b) { return a.date < b.date ? -1 : 1; })
+    .slice(0, 12);
+  if (!items.length) {
+    box.innerHTML = '<div class="up-empty">' + (lang === 'pt' ? 'Sem eventos confirmados de momento.' : 'No confirmed events right now.') + '</div>';
+    return;
+  }
+  box.innerHTML = items.map(function (e) {
+    var name = e.url
+      ? '<a href="' + esc(e.url) + '" target="_blank" rel="noopener">' + esc(e.name) + '</a>'
+      : esc(e.name);
+    return '<div class="up-row"><span class="up-date">' + fmtDate(e.date) + '</span>' +
+      '<span class="up-name">' + name + '</span>' +
+      (e.location ? '<span class="up-loc">' + esc(e.location) + '</span>' : '') + '</div>';
+  }).join('');
+}
+
+function applyLang() {
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-lang]').forEach(function (el) {
+    el.style.display = el.getAttribute('data-lang') === lang ? '' : 'none';
+  });
+  document.querySelectorAll('.lang button').forEach(function (b) {
+    b.classList.toggle('active', b.getAttribute('data-set-lang') === lang);
+  });
+  renderUp();
+}
+document.querySelectorAll('.lang button').forEach(function (b) {
+  b.onclick = function () { lang = b.getAttribute('data-set-lang'); applyLang(); };
+});
+document.getElementById('cat-nav').addEventListener('click', function (e) {
+  var a = e.target.closest('.cat');
+  if (!a) return;
+  e.preventDefault();
+  CAT = a.getAttribute('data-cat');
+  applyCat();
+});
+
+fetch('events.json').then(function (r) { return r.json(); }).then(function (d) {
+  EVS = d.events || d;
+  renderUp();
+}).catch(function () {
+  document.getElementById('up').innerHTML = '<div class="up-empty">—</div>';
+});
+
+applyLang();
+</script>
+
+<div class="drawer-back" id="drawerBack" hidden></div>
+<aside class="drawer" id="drawer" hidden>
+  <div class="drawer-head"><span class="drawer-title">Madeira Ativa</span><button class="drawer-close" id="drawerClose" aria-label="Close">&times;</button></div>
+  <nav class="drawer-nav">
+    <a href="/ativa/">🏠 Main</a>
+    <a href="/ativa/madeira_stat">🏃 Trails</a>
+    <a href="/ativa/levada">🥾 Levadas</a>
+    <a href="/ativa/map?layer=race">🗺 Map</a>
+    <a href="/ativa/map3d">⛰ 3D map</a>
+    <a href="/ativa/mapfly">🛩 3D flyover</a>
+    <a href="/ativa/mapbay">🌍 Aerial view</a>
+    <a href="/ativa/madeira_festas">🎆 Festas</a>
+    <a href="/ativa/madeira_news">📰 News</a>
+    <a href="/ativa/madeira_history">📜 History</a>
+    <div class="drawer-sep"></div>
+    <a href="https://t.me/madeira_ebot" target="_blank" rel="noopener">✈️ Telegram bot</a>
+    <a href="mailto:agent@azenha.ai">✉️ Contact</a>
+        <a href="#" id="themeDrawer">🌙 Dark theme</a>
+  </nav>
+</aside>
+<script>
+(function(){var b=document.getElementById('burgerBtn'),d=document.getElementById('drawer'),k=document.getElementById('drawerBack');
+function o(){d.hidden=false;k.hidden=false;}function c(){d.hidden=true;k.hidden=true;}
+b.addEventListener('click',function(){d.hidden?o():c();});
+document.getElementById('drawerClose').addEventListener('click',c);k.addEventListener('click',c);
+document.addEventListener('keydown',function(e){if(e.key==='Escape')c();});
+d.addEventListener('click',function(e){if(e.target.closest('a'))c();});})();
+</script>
+
+<button class="totop" id="toTop" aria-label="Back to top">↑</button>
+<script>
+(function(){var t=document.getElementById('toTop');
+window.addEventListener('scroll',function(){t.classList.toggle('show',window.scrollY>600);},{passive:true});
+t.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();
+</script>
+<script>
+(function(){var h=document.documentElement,b=document.getElementById('themeBtn'),d=document.getElementById('themeDrawer');
+function eff(){return h.classList.contains('dark')||(!h.classList.contains('light')&&matchMedia('(prefers-color-scheme: dark)').matches);}
+function paint(){var dk=eff();if(b)b.textContent=dk?'☀️':'🌙';if(d)d.textContent=dk?'☀️ Light theme':'🌙 Dark theme';}
+function flip(){var dk=eff();h.classList.remove('dark','light');h.classList.add(dk?'light':'dark');localStorage.setItem('ma-theme',dk?'light':'dark');paint();}
+if(b)b.addEventListener('click',flip);
+if(d)d.addEventListener('click',function(e){e.preventDefault();flip();});
+paint();})();
+</script></body>
+</html>

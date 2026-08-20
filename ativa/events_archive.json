@@ -1,0 +1,3190 @@
+{
+  "note": "Past events — preserved so history is never lost on rebuild",
+  "generated_at": "2026-08-17",
+  "count": 425,
+  "events": [
+    {
+      "mode": "trail",
+      "name": "Ultra Madeira (15/30/61 km)",
+      "date": "2025-10-04",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/02/TM_26-Quadro.pdf",
+      "event_type": "trail"
+    },
+    {
+      "mode": "kids",
+      "name": "Ultra Madeira Trail Jovem (8 km)",
+      "date": "2025-10-05",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/02/TM_26-Quadro.pdf",
+      "event_type": "trail"
+    },
+    {
+      "mode": "trail",
+      "name": "Ecotrail do Funchal / Madeira (15/30/45 km)",
+      "date": "2025-10-18",
+      "location": "Funchal, Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/02/TM_26-Quadro.pdf",
+      "event_type": "trail"
+    },
+    {
+      "mode": "road",
+      "name": "Corrida Regional dos Professores (3.5 km)",
+      "date": "2025-11-01",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "trail",
+      "name": "ADN Race (14/33 km)",
+      "date": "2025-11-02",
+      "location": "Ponta do Sol, Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/02/TM_26-Quadro.pdf",
+      "event_type": "trail"
+    },
+    {
+      "mode": "trail",
+      "name": "ADN Race Ponta do Sol",
+      "date": "2025-11-02",
+      "location": "Ponta do Sol, Madeira",
+      "url": "https://adnrace.pt/",
+      "event_type": "trail"
+    },
+    {
+      "mode": "road",
+      "name": "Corta-Mato das Feiteiras / C.R. Corta-Mato (5/7.5 km)",
+      "date": "2025-11-08",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Sao Martinho (5.5 km)",
+      "date": "2025-11-10",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "G.P. Santa Luzia (3.4 km)",
+      "date": "2025-11-16",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Circuito do Imaculado Coracao de Maria (3.8 km)",
+      "date": "2025-11-23",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Milha Urbana do Funchal / C.R. Milha Estrada (1.609 m)",
+      "date": "2025-11-29",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Camara de Lobos - Funchal / C.R. Estrada (9.4 km)",
+      "date": "2025-12-01",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "trail",
+      "name": "Maxi Race (15/25/55 km)",
+      "date": "2025-12-06",
+      "location": "Sao Vicente, Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/02/TM_26-Quadro.pdf",
+      "event_type": "trail"
+    },
+    {
+      "mode": "trail",
+      "name": "Trail Noturno Pela Vida (12 km)",
+      "date": "2025-12-06",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/02/TM_26-Quadro.pdf",
+      "event_type": "trail"
+    },
+    {
+      "mode": "road",
+      "name": "Porto Moniz (5.7 km)",
+      "date": "2025-12-08",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Arca D'Ajuda (4.7 km)",
+      "date": "2025-12-21",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Volta a Cidade do Funchal",
+      "date": "2025-12-28",
+      "location": "Funchal, Madeira",
+      "url": "https://www.voltacidade.com/",
+      "event_type": "running"
+    },
+    {
+      "mode": "road",
+      "name": "G.P. dos Reis / C.R. Estrada (6.3 km)",
+      "date": "2026-01-04",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "G.P. de Natal (5.5 km)",
+      "date": "2026-01-07",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: MOF: Sprint - Machico (noturno) (Urbana)",
+      "date": "2026-01-09",
+      "location": "Machico",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "road",
+      "name": "Santo Amaro (Canico - Santa Cruz) (10.296 m)",
+      "date": "2026-01-10",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: MOF: Distância Média - Floresta - Fanal (Pedestre)",
+      "date": "2026-01-10",
+      "location": "Fanal, Porto Moniz",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: MOF: Distância Sprint WRE - Camacha (Extra)",
+      "date": "2026-01-10",
+      "location": "Camacha",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: MOF: Distância Média WRE - Caniçal (Pedestre)",
+      "date": "2026-01-11",
+      "location": "Caniçal, Machico",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "trail",
+      "name": "Trail Boa Ventura",
+      "date": "2026-01-11",
+      "location": "Boa Ventura, Madeira",
+      "url": "https://lap2go.com/pt/event/trail-boa-ventura-2026",
+      "event_type": ""
+    },
+    {
+      "mode": "trail",
+      "name": "Trail da Boa Ventura (10/25 km)",
+      "date": "2026-01-11",
+      "location": "Boa Ventura, Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/02/TM_26-Quadro.pdf",
+      "event_type": "trail"
+    },
+    {
+      "mode": "swim",
+      "name": "Duatlo Madalena do Mar 2026",
+      "date": "2026-01-12",
+      "location": "Madeira",
+      "url": "https://triatlomadeira.com/2026/01/duatlo-madalena-do-mar-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "swim",
+      "name": "Regulamentos e Calendários Triatlo 2026",
+      "date": "2026-01-12",
+      "location": "Madeira",
+      "url": "https://triatlomadeira.com/2026/01/regulamentos-e-calendarios-triatlo-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: MOM: Sprint - Funchal (Urbana)",
+      "date": "2026-01-16",
+      "location": "Funchal",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: MOM: Longa - Santa Cruz (Pedestre)",
+      "date": "2026-01-17",
+      "location": "Santa Cruz",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "kids",
+      "name": "Camp Regional Equipas de Estafetas de Duatlo e Duatlo Jovem de Santana 2026",
+      "date": "2026-01-20",
+      "location": "Santana",
+      "url": "https://triatlomadeira.com/2026/01/camp-regional-equipas-de-estafetas-de-duatlo-e-duatlo-jovem-de-santana-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "swim",
+      "name": "Start List Duatlo Madalena do Mar – Ponta do Sol 2026",
+      "date": "2026-01-22",
+      "location": "Madeira",
+      "url": "https://triatlomadeira.com/2026/01/start-list-duatlo-madalena-do-mar-ponta-do-sol-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "road",
+      "name": "Agua de Pena (5.1 km)",
+      "date": "2026-01-25",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "swim",
+      "name": "Resultados Provisórios Duatlo Madalena do Mar – Ponta do Sol 2026",
+      "date": "2026-01-25",
+      "location": "Madeira",
+      "url": "https://triatlomadeira.com/2026/01/duatlo-madalena-do-mar/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "swim",
+      "name": "Início de Época triunfante para Mafalda Viveiros e Pedro Prioste",
+      "date": "2026-01-26",
+      "location": "Machico",
+      "url": "https://triatlomadeira.com/2026/01/inicio-de-epoca-triunfante-para-mafalda-viveiros-e-pedro-prioste/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: Oritoiça: Santana - Ilha (Urbana)",
+      "date": "2026-02-01",
+      "location": "Ilha, Santana",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "kids",
+      "name": "Start List Camp Regional Equipas de Estafetas e Duatlo Jovem do Faial 2026",
+      "date": "2026-02-05",
+      "location": "Madeira",
+      "url": "https://triatlomadeira.com/2026/02/start-list-camp-regional-equipas-de-estafetas-e-duatlo-jovem-do-faial-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "kids",
+      "name": "Resultados Provisórios Campeonato Regional de Equipas de Estafetas de Duatlo e Duatlo Jovem do Faial 2026",
+      "date": "2026-02-07",
+      "location": "Madeira",
+      "url": "https://triatlomadeira.com/2026/02/campeonato-regional-de-equipas-de-estafetas-de-duatlo/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "road",
+      "name": "Nucleo Historico de Santa Maria Maior (6.1 km)",
+      "date": "2026-02-07",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "trail",
+      "name": "Trail do Porto Moniz",
+      "date": "2026-02-08",
+      "location": "Porto Moniz, Madeira",
+      "url": "https://trailportomoniz.com/",
+      "event_type": "trail"
+    },
+    {
+      "mode": "trail",
+      "name": "Trail do Porto Moniz (8/25/43 km)",
+      "date": "2026-02-08",
+      "location": "Porto Moniz, Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/02/TM_26-Quadro.pdf",
+      "event_type": "trail"
+    },
+    {
+      "mode": "pro",
+      "name": "Ludens Clube Machico conquista títulos no Campeonato Regional de Estafetas de Duatlo 2026",
+      "date": "2026-02-09",
+      "location": "Machico",
+      "url": "https://triatlomadeira.com/2026/02/ludens-clube-machico-conquista-titulos-no-campeonato-regional-de-estafetas-de-duatlo-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "swim",
+      "name": "Aquatlo da Ribeira Brava 2026",
+      "date": "2026-02-10",
+      "location": "Ribeira Brava",
+      "url": "https://triatlomadeira.com/2026/02/aquatlo-da-ribeira-brava-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "swim",
+      "name": "Duatlo Cidade do Funchal 2026",
+      "date": "2026-02-10",
+      "location": "Funchal",
+      "url": "https://triatlomadeira.com/2026/02/duatlo-cidade-do-funchal-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "festivals",
+      "name": "Carnival Festivities",
+      "date": "2026-02-11",
+      "location": "Funchal, Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "road",
+      "name": "Estafeta Camara de Lobos - Funchal (9.4 km)",
+      "date": "2026-02-22",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "swim",
+      "name": "Calendário Triatlo Madeira 2026",
+      "date": "2026-02-25",
+      "location": "Madeira",
+      "url": "https://triatlomadeira.com/2026/02/calendario-triatlo-madeira-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "swim",
+      "name": "Start List Duatlo Cidade do Funchal 2026",
+      "date": "2026-02-26",
+      "location": "Funchal",
+      "url": "https://triatlomadeira.com/2026/02/start-list-duatlo-cidade-do-funchal-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "road",
+      "name": "Quilometro Jovem (1.000 m)",
+      "date": "2026-02-28",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "pro",
+      "name": "Atletas do Ludens Clube Machico imparáveis no Campeonato Regional de Duatlo 2026",
+      "date": "2026-03-02",
+      "location": "Funchal",
+      "url": "https://triatlomadeira.com/2026/03/atletas-do-ludens-clube-machico-imparaveis-no-campeonato-regional-de-duatlo-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "road",
+      "name": "Circuito do Livramento (5.5 km)",
+      "date": "2026-03-07",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "trail",
+      "name": "Km Vertical de Câmara de Lobos",
+      "date": "2026-03-07",
+      "location": "Câmara de Lobos, Madeira",
+      "url": "https://lap2go.com/pt/event/km-vertical-camara-de-lobos-2026",
+      "event_type": ""
+    },
+    {
+      "mode": "trail",
+      "name": "Trail da Calheta",
+      "date": "2026-03-08",
+      "location": "Calheta, Madeira",
+      "url": "https://lap2go.com/pt/event/trail-da-calheta-2026",
+      "event_type": ""
+    },
+    {
+      "mode": "trail",
+      "name": "Trail da Calheta (13/35 km)",
+      "date": "2026-03-08",
+      "location": "Calheta, Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/02/TM_26-Quadro.pdf",
+      "event_type": "trail"
+    },
+    {
+      "mode": "road",
+      "name": "Corta-Mato Jovem e Escolar (1/1.5 km)",
+      "date": "2026-03-10",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "swim",
+      "name": "Start List Aquatlo da Ribeira Brava 2026",
+      "date": "2026-03-12",
+      "location": "Ribeira Brava",
+      "url": "https://triatlomadeira.com/2026/03/start-list-aquatlo-da-ribeira-brava-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "road",
+      "name": "Meia Maratona do Porto Santo - CR (21.0975 km)",
+      "date": "2026-03-14",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "swim",
+      "name": "Resultados Provisórios Aquatlo da Ribeira Brava 2026",
+      "date": "2026-03-15",
+      "location": "Ribeira Brava",
+      "url": "https://triatlomadeira.com/2026/03/aquatlo-da-ribeira-brava-5/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: Oritoiça: Ponta Delgada - Lombadas (Urbana)",
+      "date": "2026-03-15",
+      "location": "Ponta Delgada, São Vicente",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "pro",
+      "name": "Filipa Jesus e Pedro Prioste dominam abertura do Aquatlo Regional na Ribeira Brava",
+      "date": "2026-03-16",
+      "location": "Machico",
+      "url": "https://triatlomadeira.com/2026/03/filipa-jesus-e-pedro-prioste-dominam-abertura-do-aquatlo-regional-na-ribeira-brava/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "swim",
+      "name": "Aquatlo Nacional Santa Cruz – Magda Dias 2026",
+      "date": "2026-03-23",
+      "location": "Santa Cruz",
+      "url": "https://triatlomadeira.com/2026/03/aquatlo-nacional-santa-cruz-magda-dias-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "swim",
+      "name": "Duatlo Santo da Serra 2026",
+      "date": "2026-03-23",
+      "location": "Santa Cruz",
+      "url": "https://triatlomadeira.com/2026/03/duatlo-santo-da-serra-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "road",
+      "name": "Corrida da UMa - Dia do Estudante (5 km)",
+      "date": "2026-03-24",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "swim",
+      "name": "Start List Aquatlo de Santa Cruz – Magda Dias 2026",
+      "date": "2026-03-26",
+      "location": "Santa Cruz",
+      "url": "https://triatlomadeira.com/2026/03/start-list-aquatlo-de-santa-cruz-magda-dias-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "road",
+      "name": "Corrida da Hora do Planeta (2 km)",
+      "date": "2026-03-28",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: Porto Santo (Pedestre)",
+      "date": "2026-03-28",
+      "location": "Porto Santo",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: Porto Santo (Urbana)",
+      "date": "2026-03-29",
+      "location": "Porto Santo",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "trail",
+      "name": "Trail do Ludens Clube Machico",
+      "date": "2026-03-29",
+      "location": "Machico, Madeira",
+      "url": "https://trail.ludensmachico.pt/",
+      "event_type": "trail"
+    },
+    {
+      "mode": "trail",
+      "name": "Trail do Ludens Clube de Machico (15/26 km)",
+      "date": "2026-03-29",
+      "location": "Machico, Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/02/TM_26-Quadro.pdf",
+      "event_type": "trail"
+    },
+    {
+      "mode": "trail",
+      "name": "Trail do Ludens Machico",
+      "date": "2026-03-29",
+      "location": "Madeira",
+      "url": "https://lap2go.com/pt/event/trail-ludens-machico-2026",
+      "event_type": ""
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: TOM Sessions (Extra)",
+      "date": "2026-04-02",
+      "location": "Madeira",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "swim",
+      "name": "Filipa Jesus e Guilherme Neves brilham e vencem o Nacional de Aquatlo em Santa Cruz",
+      "date": "2026-04-07",
+      "location": "Machico",
+      "url": "https://triatlomadeira.com/2026/04/filipa-jesus-e-guilherme-neves-brilham-e-vencem-o-nacional-de-aquatlo-em-santa-cruz/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "road",
+      "name": "Cerejeiras (4.7 km)",
+      "date": "2026-04-12",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: 4.º Troféu Orientação Vila da Camacha 2026 (Urbana)",
+      "date": "2026-04-12",
+      "location": "Camacha",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "swim",
+      "name": "Start List Duatlo Santo da Serra 2026",
+      "date": "2026-04-16",
+      "location": "Madeira",
+      "url": "https://triatlomadeira.com/2026/04/start-list-duatlo-santo-da-serra-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "road",
+      "name": "Corrida de Sao Lourenco (4.1 km)",
+      "date": "2026-04-18",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "swim",
+      "name": "Resultados Provisórios Duatlo Santo da Serra 2026",
+      "date": "2026-04-18",
+      "location": "Madeira",
+      "url": "https://triatlomadeira.com/2026/04/ix-duatlo-santo-da-serra-santa-cruz/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: Orientação Chão das Aboboreiras (Pedestre)",
+      "date": "2026-04-18",
+      "location": "Madeira",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: Troféu de Orientação Serras do Funchal (Pedestre)",
+      "date": "2026-04-19",
+      "location": "Funchal",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "pro",
+      "name": "Pedro Prioste e Mafalda Viveiros Campeões Regionais de Duatlo 2026",
+      "date": "2026-04-20",
+      "location": "Machico",
+      "url": "https://triatlomadeira.com/2026/04/pedro-prioste-e-mafalda-viveiros-campeoes-regionais-de-duatlo-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "cycling",
+      "name": "Aquabike e Aquatlo Porto Moniz 2026",
+      "date": "2026-04-21",
+      "location": "Porto Moniz",
+      "url": "https://triatlomadeira.com/2026/04/aquabike-e-aquatlo-porto-moniz-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "kids",
+      "name": "Campeonato Regional Equipas Estafetas de Aquatlo e Aquatlo Jovem da Calheta 2026",
+      "date": "2026-04-21",
+      "location": "Calheta",
+      "url": "https://triatlomadeira.com/2026/04/campeonato-regional-equipas-estafetas-de-aquatlo-e-aquatlo-jovem-da-calheta-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "road",
+      "name": "Corrida da Liberdade (Santa Cruz-Machico) (7.5 km)",
+      "date": "2026-04-25",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "cycling",
+      "name": "Start List Aquabike e Aquatlo do Porto Moniz 2026",
+      "date": "2026-04-30",
+      "location": "Porto Moniz",
+      "url": "https://triatlomadeira.com/2026/04/start-list-aquabike-e-aquatlo-do-porto-moniz-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "festivals",
+      "name": "Madeira Flower Festival",
+      "date": "2026-04-30",
+      "location": "Funchal, Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "road",
+      "name": "1 de Maio / C.R. Estrada (5.7 km)",
+      "date": "2026-05-01",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "trail",
+      "name": "Ecotur Skysprint Porto Moniz",
+      "date": "2026-05-01",
+      "location": "Porto Moniz, Madeira",
+      "url": "https://lap2go.com/pt/event/ecotur-skysprint-porto-moniz-2026",
+      "event_type": ""
+    },
+    {
+      "mode": "cycling",
+      "name": "Aquabike do Porto Moniz",
+      "date": "2026-05-02",
+      "location": "Porto Moniz",
+      "url": "https://triatlomadeira.com/2026/04/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "cycling",
+      "name": "Resultados Provisórios Aquabike Porto Moniz 2026",
+      "date": "2026-05-02",
+      "location": "Porto Moniz",
+      "url": "https://triatlomadeira.com/2026/05/resultados-provisorios-aquabike-porto-moniz-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "kids",
+      "name": "Aquatlo Jovem do Porto Moniz",
+      "date": "2026-05-03",
+      "location": "Porto Moniz",
+      "url": "https://triatlomadeira.com/2026/04/",
+      "event_type": "triathlon_kids"
+    },
+    {
+      "mode": "road",
+      "name": "Rota dos Dragoeiros (6.1 km)",
+      "date": "2026-05-03",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "swim",
+      "name": "Aquatlo Sprint e Super-Sprint do Porto Moniz",
+      "date": "2026-05-03",
+      "location": "Porto Moniz",
+      "url": "https://triatlomadeira.com/2026/04/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "swim",
+      "name": "Resultados Provisórios Aquatlo Porto Moniz 2026",
+      "date": "2026-05-03",
+      "location": "Porto Moniz",
+      "url": "https://triatlomadeira.com/2026/05/i-aquatlo-porto-moniz/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "pro",
+      "name": "Campeões Regionais de Aquabike e Aquatlo definidos no Porto Moniz",
+      "date": "2026-05-05",
+      "location": "Machico",
+      "url": "https://triatlomadeira.com/2026/05/campeoes-regionais-de-aquabike-e-aquatlo-definidos-no-porto-moniz/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "road",
+      "name": "Zona Militar da Madeira (5 km)",
+      "date": "2026-05-08",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "trail",
+      "name": "Meio KM Vertical da Calheta",
+      "date": "2026-05-09",
+      "location": "Calheta, Madeira",
+      "url": "https://lap2go.com/pt/event/meio-km-vertical-calheta-2026",
+      "event_type": ""
+    },
+    {
+      "mode": "road",
+      "name": "Caminho de Ferro (1/2.5/3.9 km)",
+      "date": "2026-05-10",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: II Ori Madeira Shopping (Urbana)",
+      "date": "2026-05-10",
+      "location": "Madeira",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "kids",
+      "name": "Start List Campeonato Regional Equipas Estafetas Aquatlo e Aquatlo Jovem da Calheta 2026",
+      "date": "2026-05-14",
+      "location": "Calheta",
+      "url": "https://triatlomadeira.com/2026/05/start-list-campeonato-regional-equipas-estafetas-aquatlo-e-aquatlo-jovem-da-calheta-2026/"
+    },
+    {
+      "mode": "swim",
+      "name": "Start List Campeonato Regional Equipas Estafetas Aquatlo e Aquatlo Jovem da Calheta 2026",
+      "date": "2026-05-14",
+      "location": "Calheta",
+      "url": "https://triatlomadeira.com/2026/05/start-list-campeonato-regional-equipas-estafetas-aquatlo-e-aquatlo-jovem-da-calheta-2026/"
+    },
+    {
+      "mode": "festivals",
+      "name": "Festa da Cebola / Onion Festival",
+      "date": "2026-05-15",
+      "location": "Centro do Canico, Santa Cruz",
+      "url": "https://www.jf-canico.pt/autarquia/noticias/523-festa_da_cebola_2026"
+    },
+    {
+      "mode": "kids",
+      "name": "Aquatlo Jovem da Calheta",
+      "date": "2026-05-16",
+      "location": "Calheta",
+      "url": "https://triatlomadeira.com/2026/04/",
+      "event_type": "triathlon_kids"
+    },
+    {
+      "mode": "kids",
+      "name": "Campeonato Regional de Sub14",
+      "date": "2026-05-16",
+      "location": "CMACS - SEIXAL",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "kids",
+      "name": "Torneio Salto em Altura Jovem",
+      "date": "2026-05-16",
+      "location": "Estádio de Câmara de Lobos",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "pro",
+      "name": "Aquatlo Equipas Estafetas da Calheta",
+      "date": "2026-05-16",
+      "location": "Calheta",
+      "url": "https://triatlomadeira.com/2026/04/",
+      "event_type": "triathlon_pro"
+    },
+    {
+      "mode": "pro",
+      "name": "Campeonato Regional de Sub14",
+      "date": "2026-05-16",
+      "location": "CMACS - SEIXAL",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "pro",
+      "name": "Torneio Salto em Altura Jovem",
+      "date": "2026-05-16",
+      "location": "Estádio de Câmara de Lobos",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "swim",
+      "name": "Resultados Provisórios Aquatlo da Calheta 2026",
+      "date": "2026-05-16",
+      "location": "Calheta",
+      "url": "https://triatlomadeira.com/2026/05/resultados-provisorios-aquatlo-da-calheta-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "trail",
+      "name": "Porto Santo Nature Trail (8/21/46 km)",
+      "date": "2026-05-16",
+      "location": "Porto Santo, Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/02/TM_26-Quadro.pdf"
+    },
+    {
+      "mode": "pro",
+      "name": "Calheta recebe Campeonato Regional de Equipas de Estafetas de Aquatlo 2026",
+      "date": "2026-05-18",
+      "location": "Machico",
+      "url": "https://triatlomadeira.com/2026/05/calheta-recebe-campeonato-regional-de-equipas-de-estafetas-de-aquatlo-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "pro",
+      "name": "Trans Madeira Summer - Madeira Enduro",
+      "date": "2026-05-18",
+      "location": "Madeira / Porto Santo",
+      "url": "https://trans-madeira.com/the-race/",
+      "event_type": "cycling_pro"
+    },
+    {
+      "mode": "swim",
+      "name": "Calheta recebe Campeonato Regional de Equipas de Estafetas de Aquatlo 2026",
+      "date": "2026-05-18",
+      "location": "Machico",
+      "url": "https://triatlomadeira.com/2026/05/calheta-recebe-campeonato-regional-de-equipas-de-estafetas-de-aquatlo-2026/"
+    },
+    {
+      "mode": "swim",
+      "name": "Madeira SwimRun",
+      "date": "2026-05-20",
+      "location": "Madeira",
+      "url": "https://www.swimrunportugal.com/madeira"
+    },
+    {
+      "mode": "swim",
+      "name": "Triatlo da Ponta do Sol – Madalena do Mar 2026",
+      "date": "2026-05-21",
+      "location": "Madeira",
+      "url": "https://triatlomadeira.com/2026/05/triatlo-da-ponta-do-sol-madalena-do-mar-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "kids",
+      "name": "Troféu Fasquias Sub-14 / Camp. Reg. Absolutos de 5.000m",
+      "date": "2026-05-23",
+      "location": "Ribeira Brava (CDM)",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "pro",
+      "name": "Troféu Fasquias Sub-14 / Camp. Reg. Absolutos de 5.000m",
+      "date": "2026-05-23",
+      "location": "Ribeira Brava (CDM)",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "swim",
+      "name": "MIUS - Madeira Island Ultra Swim",
+      "date": "2026-05-23",
+      "location": "Porto Santo, Madeira",
+      "url": "https://www.miusmadeira.com/"
+    },
+    {
+      "mode": "pro",
+      "name": "Campeonatos Regionais de Estafetas - jornada 2",
+      "date": "2026-05-24",
+      "location": "Ribeira Brava (CDM)",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "road",
+      "name": "Nacional / Bioforma (5.2 km)",
+      "date": "2026-05-24",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf"
+    },
+    {
+      "mode": "trail",
+      "name": "FX Sky Race 10 km / 800D+",
+      "date": "2026-05-24",
+      "location": "Chão da Lagoa, Funchal",
+      "url": "https://skyrunning.camadeira.com/"
+    },
+    {
+      "mode": "trail",
+      "name": "FX Sky Race 21 km / 1400D+",
+      "date": "2026-05-24",
+      "location": "Chão da Lagoa, Funchal",
+      "url": "https://skyrunning.camadeira.com/"
+    },
+    {
+      "mode": "kids",
+      "name": "Festa do Desporto Escolar 2026 - Atletismo",
+      "date": "2026-05-26",
+      "location": "Estádio de Câmara de Lobos",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "kids",
+      "name": "[Road] Festa do Desporto Escolar 2026 - Atletismo",
+      "date": "2026-05-26",
+      "location": "Estádio de Câmara de Lobos",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "kids",
+      "name": "[Sport] Festa do Desporto Escolar 2026 - Atletismo",
+      "date": "2026-05-26",
+      "location": "Estádio de Câmara de Lobos",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "festivals",
+      "name": "[Fest] Exhibition AQVA e AGUA. Sobre Aquedutos",
+      "date": "2026-05-29",
+      "location": "Centro Cultural e de Congressos do Porto Santo",
+      "url": "https://cultura.madeira.gov.pt/in%C3%ADcio/a-saber/agenda-cultural.html"
+    },
+    {
+      "mode": "kids",
+      "name": "Fun' Athletics - jornada 6 - AARAM",
+      "date": "2026-05-30",
+      "location": "Estádio de Câmara de Lobos",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "kids",
+      "name": "[Road] Fun' Athletics - jornada 6 - AARAM",
+      "date": "2026-05-30",
+      "location": "Estádio de Câmara de Lobos",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "kids",
+      "name": "[Sport] Fun' Athletics - jornada 6 - AARAM",
+      "date": "2026-05-30",
+      "location": "Estádio de Câmara de Lobos",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "pro",
+      "name": "3ª Taça da Madeira de DHI - A Confeitaria",
+      "date": "2026-05-31",
+      "location": "4 Estradas, Santa Cruz",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
+      "event_type": "cycling_pro"
+    },
+    {
+      "mode": "pro",
+      "name": "[Bike] 3ª Taça da Madeira de DHI - A Confeitaria",
+      "date": "2026-05-31",
+      "location": "4 Estradas, Santa Cruz",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf"
+    },
+    {
+      "mode": "road",
+      "name": "Meia Maratona da Calheta (21.0975 km)",
+      "date": "2026-05-31",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf"
+    },
+    {
+      "mode": "road",
+      "name": "[Road] Meia Maratona da Calheta (21.0975 km)",
+      "date": "2026-05-31",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf"
+    },
+    {
+      "mode": "kids",
+      "name": "Aquatlo Escolar Escola Básica 2º e 3º Ciclos do Caniço 2026",
+      "date": "2026-06-02",
+      "location": "Madeira",
+      "url": "https://triatlomadeira.com/2026/06/aquatlo-escolar-escola-basica-2o-e-3o-ciclos-do-canico-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "festivals",
+      "name": "Tuna Route Festival",
+      "date": "2026-06-03",
+      "location": "Porto Santo",
+      "url": "https://eventsmadeira.com/en/event/tuna-route-festival/"
+    },
+    {
+      "mode": "festivals",
+      "name": "[Fest] Tuna Route Festival",
+      "date": "2026-06-03",
+      "location": "Porto Santo",
+      "url": "https://eventsmadeira.com/en/event/tuna-route-festival/"
+    },
+    {
+      "mode": "swim",
+      "name": "Start List Triatlo Madalena do Mar – Ponta do Sol 2026",
+      "date": "2026-06-04",
+      "location": "Madeira",
+      "url": "https://triatlomadeira.com/2026/06/start-list-triatlo-madalena-do-mar-ponta-do-sol-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: Oritoiça: Estreito da Calheta (Urbana)",
+      "date": "2026-06-04",
+      "location": "Estreito da Calheta",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic DOC: Naturalistas de Vulto I - 21:30",
+      "date": "2026-06-05",
+      "location": "Cais da Ponta do Sol",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Festival",
+      "date": "2026-06-05",
+      "location": "Funchal, Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Festival - Machico (05-07 Jun, opening show, music, Sixteenth Century Market)",
+      "date": "2026-06-05",
+      "location": "Machico",
+      "url": "https://eventsmadeira.com/en/event/atlantic-festival/"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Festival - Machico (opening show, music, Sixteenth Century Market)",
+      "date": "2026-06-05",
+      "location": "Machico",
+      "url": "https://eventsmadeira.com/en/event/atlantic-festival/"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Pyromusical Show: Macedo's Pirotecnia - Gerações - 23:00",
+      "date": "2026-06-05",
+      "location": "Machico",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Sunset: DJ WAGA - 22:30",
+      "date": "2026-06-05",
+      "location": "Praça do Povo, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Sunset: Hot Stuff concert - 17:00",
+      "date": "2026-06-05",
+      "location": "Praça do Povo, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Sixteenth Century Market",
+      "date": "2026-06-05",
+      "location": "Machico",
+      "url": "https://eventsmadeira.com/en/event/sixteenth-century-market/"
+    },
+    {
+      "mode": "festivals",
+      "name": "Sixteenth Century Market (05-07 June)",
+      "date": "2026-06-05",
+      "location": "Machico",
+      "url": "https://eventsmadeira.com/en/event/sixteenth-century-market/"
+    },
+    {
+      "mode": "festivals",
+      "name": "[Fest] Atlantic Festival",
+      "date": "2026-06-05",
+      "location": "Funchal, Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "[Fest] Atlantic Mercadinho Sunset de Verão",
+      "date": "2026-06-05",
+      "location": "Praça do Povo, Funchal",
+      "url": "https://eventsmadeira.com/en/event/summer-sunset-market/"
+    },
+    {
+      "mode": "festivals",
+      "name": "[Fest] Sixteenth Century Market",
+      "date": "2026-06-05",
+      "location": "Machico",
+      "url": "https://eventsmadeira.com/en/event/sixteenth-century-market/"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Fireworks Contest",
+      "date": "2026-06-06",
+      "location": "Funchal Bay",
+      "url": "https://eventsmadeira.com/en/event/atlantic-festival/"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Fireworks Contest: Canada - A Fronteira Final - 22:30",
+      "date": "2026-06-06",
+      "location": "Cais do Funchal",
+      "url": "https://eventsmadeira.com/en/event/atlantic-festival/"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Sunset: DJ SIL & Sax Vibes by Basílio Abreu - 23:00",
+      "date": "2026-06-06",
+      "location": "Praça do Povo, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Sunset: Miguel Pires Trio concert - 17:00",
+      "date": "2026-06-06",
+      "location": "Praça do Povo, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic The Peacock + fireworks terrace",
+      "date": "2026-06-06",
+      "location": "Casino da Madeira, Funchal",
+      "url": "https://casinodamadeira.com/the-peacock-atlantic-festival/"
+    },
+    {
+      "mode": "festivals",
+      "name": "Regional Arts Week: Exhibition Clay Dolls (25/05-12/06)",
+      "date": "2026-06-06",
+      "location": "Espaço EntreArte SRE, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Regional Arts Week: Regional Exhibition of Plastic Expression Banana Parade (04/06-21/06)",
+      "date": "2026-06-06",
+      "location": "Avenida Arriaga, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "[Fest] Atlantic Fireworks Contest",
+      "date": "2026-06-06",
+      "location": "Funchal Bay",
+      "url": "https://eventsmadeira.com/en/event/atlantic-festival/"
+    },
+    {
+      "mode": "festivals",
+      "name": "[Fest] Atlantic Ópera no Pico Cinema Paraíso",
+      "date": "2026-06-06",
+      "location": "Pico dos Barcelos, Funchal",
+      "url": "https://www.google.com/maps/search/Posto+de+Turismo+Av.+Arriaga+Forum+Madeira+DRC+Shop+Funchal"
+    },
+    {
+      "mode": "festivals",
+      "name": "[Fest] Madeira Camerata invites Mikhail Shimorin",
+      "date": "2026-06-06",
+      "location": "Assembleia Legislativa da Madeira, Funchal",
+      "url": "https://www.ocmadeira.pt/concertos/proximos-eventos.html"
+    },
+    {
+      "mode": "festivals",
+      "name": "Ópera no Pico: Cinema Paraíso - 21:00",
+      "date": "2026-06-06",
+      "location": "Fortaleza do Pico, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "kids",
+      "name": "Campeonatos Nacionais de Sub-16",
+      "date": "2026-06-06",
+      "location": "Seixal",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "kids",
+      "name": "[Road] Campeonatos Nacionais de Sub-16",
+      "date": "2026-06-06",
+      "location": "Seixal",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "kids",
+      "name": "[Sport] Campeonatos Nacionais de Sub-16",
+      "date": "2026-06-06",
+      "location": "Seixal",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "pro",
+      "name": "Campeonatos Nacionais de Sub-16",
+      "date": "2026-06-06",
+      "location": "Seixal",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "pro",
+      "name": "Campeonatos Regionais Absolutos - Verão",
+      "date": "2026-06-06",
+      "location": "Câmara de Lobos, Funchal e Ribeira Brava",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "pro",
+      "name": "[Road] Campeonatos Regionais Absolutos - Verão",
+      "date": "2026-06-06",
+      "location": "Câmara de Lobos, Funchal e Ribeira Brava",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "pro",
+      "name": "[Sport] Campeonatos Nacionais de Sub-16",
+      "date": "2026-06-06",
+      "location": "Seixal",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "pro",
+      "name": "[Sport] Campeonatos Regionais Absolutos - Verão",
+      "date": "2026-06-06",
+      "location": "Câmara de Lobos, Funchal e Ribeira Brava",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Sunset: André Abrantes concert - 17:00",
+      "date": "2026-06-07",
+      "location": "Praça do Povo, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "[Fest] Ponte Cultural Porto Santo - Conservatory Jazz Combo",
+      "date": "2026-06-07",
+      "location": "Porto Santo",
+      "url": "https://www.conservatorioescoladasartes.com"
+    },
+    {
+      "mode": "kids",
+      "name": "1º Encontro de Escolas de CE - Brisa Sem Açúcar",
+      "date": "2026-06-07",
+      "location": "Santana",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf"
+    },
+    {
+      "mode": "kids",
+      "name": "Triatlo Jovem da Ponta do Sol - Madalena do Mar",
+      "date": "2026-06-07",
+      "location": "Madalena do Mar / Ponta do Sol",
+      "url": "https://triatlomadeira.com/wp-content/uploads/2026/03/Calendario-Provas-Triatlo-Madeira-e-Porto-Santo-2026-V.-06-03-2026.pdf",
+      "event_type": "triathlon_kids"
+    },
+    {
+      "mode": "kids",
+      "name": "[Bike] 1º Encontro de Escolas de CE - Brisa Sem Açúcar",
+      "date": "2026-06-07",
+      "location": "Santana",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf"
+    },
+    {
+      "mode": "kids",
+      "name": "[Car] 1º Encontro de Escolas de CE - Brisa Sem Açúcar",
+      "date": "2026-06-07",
+      "location": "Santana",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf"
+    },
+    {
+      "mode": "kids",
+      "name": "[Tri] Triatlo Jovem da Ponta do Sol - Madalena do Mar",
+      "date": "2026-06-07",
+      "location": "Madalena do Mar / Ponta do Sol",
+      "url": "https://triatlomadeira.com/wp-content/uploads/2026/03/Calendario-Provas-Triatlo-Madeira-e-Porto-Santo-2026-V.-06-03-2026.pdf"
+    },
+    {
+      "mode": "pro",
+      "name": "5ª Taça da Madeira de CE - Brisa Sem Açúcar",
+      "date": "2026-06-07",
+      "location": "Santana",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf"
+    },
+    {
+      "mode": "pro",
+      "name": "Circuito do Canico (6.3 km)",
+      "date": "2026-06-07",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/event/circuito-do-canico-7/"
+    },
+    {
+      "mode": "pro",
+      "name": "[Bike] 1º Encontro de Escolas de CE - Brisa Sem Açúcar",
+      "date": "2026-06-07",
+      "location": "Santana",
+      "url": "https://www.acmadeira.pt/wp-content/uploads/2026/01/Calendario-Atividades-2026.pdf"
+    },
+    {
+      "mode": "pro",
+      "name": "[Bike] 5ª Taça da Madeira de CE - Brisa Sem Açúcar",
+      "date": "2026-06-07",
+      "location": "Santana",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf"
+    },
+    {
+      "mode": "pro",
+      "name": "[Car] 5ª Taça da Madeira de CE - Brisa Sem Açúcar",
+      "date": "2026-06-07",
+      "location": "Santana",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf"
+    },
+    {
+      "mode": "pro",
+      "name": "[Road] Circuito do Canico (6.3 km)",
+      "date": "2026-06-07",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/event/circuito-do-canico-7/"
+    },
+    {
+      "mode": "road",
+      "name": "Circuito do Canico (6.3 km)",
+      "date": "2026-06-07",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/event/circuito-do-canico-7/"
+    },
+    {
+      "mode": "road",
+      "name": "[Road] Circuito do Canico (6.3 km)",
+      "date": "2026-06-07",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/event/circuito-do-canico-7/"
+    },
+    {
+      "mode": "swim",
+      "name": "Resultados Provisórios Triatlo Ponta do Sol – Madalena do Mar 2026",
+      "date": "2026-06-07",
+      "location": "Madeira",
+      "url": "https://triatlomadeira.com/2026/06/25337/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "swim",
+      "name": "Travessia VI Cais de Santa Cruz",
+      "date": "2026-06-07",
+      "location": "-",
+      "url": "https://www.anatacaodamadeira.pt/"
+    },
+    {
+      "mode": "swim",
+      "name": "Travessia VI Cais de Santa Cruz (1000 m/3000 m)",
+      "date": "2026-06-07",
+      "location": "Santa Cruz",
+      "url": "https://www.anatacaodamadeira.pt/index.php/competicoes/calendario/icalrepeat.detail/2026/06/07/850/-/travessia-vi-cais-de-santa-cruz"
+    },
+    {
+      "mode": "swim",
+      "name": "Triatlo da Ponta do Sol - Madalena do Mar",
+      "date": "2026-06-07",
+      "location": "Madalena do Mar / Ponta do Sol",
+      "url": "https://triatlomadeira.com/wp-content/uploads/2026/03/Calendario-Provas-Triatlo-Madeira-e-Porto-Santo-2026-V.-06-03-2026.pdf"
+    },
+    {
+      "mode": "swim",
+      "name": "[Swim/Tri] Travessia VI Cais de Santa Cruz (1000 m/3000 m)",
+      "date": "2026-06-07",
+      "location": "Santa Cruz",
+      "url": "https://www.anatacaodamadeira.pt/index.php/competicoes/calendario/icalrepeat.detail/2026/06/07/850/-/travessia-vi-cais-de-santa-cruz"
+    },
+    {
+      "mode": "swim",
+      "name": "[Swim/Tri] Triatlo da Ponta do Sol - Madalena do Mar",
+      "date": "2026-06-07",
+      "location": "Madalena do Mar / Ponta do Sol",
+      "url": "https://triatlomadeira.com/wp-content/uploads/2026/03/Calendario-Provas-Triatlo-Madeira-e-Porto-Santo-2026-V.-06-03-2026.pdf"
+    },
+    {
+      "mode": "swim",
+      "name": "[Swim] Travessia VI Cais de Santa Cruz (1000 m/3000 m)",
+      "date": "2026-06-07",
+      "location": "Santa Cruz",
+      "url": "https://www.anatacaodamadeira.pt/index.php/competicoes/calendario/icalrepeat.detail/2026/06/07/850/-/travessia-vi-cais-de-santa-cruz"
+    },
+    {
+      "mode": "trail",
+      "name": "Km Vertical de São Vicente",
+      "date": "2026-06-07",
+      "location": "Madeira",
+      "url": "https://lap2go.com/pt/event/km-vertical-saovicente-2026"
+    },
+    {
+      "mode": "trail",
+      "name": "[Trail] Km Vertical de São Vicente",
+      "date": "2026-06-07",
+      "location": "Madeira",
+      "url": "https://lap2go.com/pt/event/km-vertical-saovicente-2026"
+    },
+    {
+      "mode": "festivals",
+      "name": "Regional Arts Week (08/06-13/06)",
+      "date": "2026-06-08",
+      "location": "Avenida Arriaga and Jardim Municipal Auditorium, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Regional Arts Week: Exhibition Socks That Tell Stories (08/06-21/06)",
+      "date": "2026-06-08",
+      "location": "Casa da Luz Museum, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Regional Arts Week: Exhibition Treasures of My Homeland Flowers (08/06-21/06)",
+      "date": "2026-06-08",
+      "location": "MadeiraShopping, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Regional Arts Week: Festa no Jardim - 10:30",
+      "date": "2026-06-08",
+      "location": "Avenida Arriaga, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Regional Arts Week: Movin'Art Madeira - 18:00",
+      "date": "2026-06-08",
+      "location": "Avenida Arriaga, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Regional Arts Week: SRA2026 Opening Show - 21:00",
+      "date": "2026-06-08",
+      "location": "Jardim Municipal Auditorium, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "[Fest] Atlantic Semana Regional das Artes",
+      "date": "2026-06-08",
+      "location": "Funchal, Madeira",
+      "url": "https://eventsmadeira.com/en/event/regional-arts-week/"
+    },
+    {
+      "mode": "swim",
+      "name": "Ludens Clube Machico conquista pódios e triunfo coletivo no Triatlo da Madalena do Mar",
+      "date": "2026-06-08",
+      "location": "Machico",
+      "url": "https://triatlomadeira.com/2026/06/ludens-clube-machico-conquista-podios-e-triunfo-coletivo-no-triatlo-da-madalena-do-mar/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "festivals",
+      "name": "Regional Arts Week: Conservatory Guitar Ensemble - 18:00",
+      "date": "2026-06-09",
+      "location": "Avenida Arriaga, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Regional Arts Week: Instrumental Artistic Modality Performance - 15:00",
+      "date": "2026-06-09",
+      "location": "Jardim Municipal Auditorium, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Regional Arts Week: Traditional Madeiran String Instruments Performance - 10:30",
+      "date": "2026-06-09",
+      "location": "Jardim Municipal Auditorium, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Regional Arts Week: Traditional Madeiran String Instruments and Charamelas Group - 12:00",
+      "date": "2026-06-09",
+      "location": "Avenida Arriaga, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "road",
+      "name": "Junta de Freguesia de Santo Antonio (6.5 km)",
+      "date": "2026-06-10",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf"
+    },
+    {
+      "mode": "road",
+      "name": "[Road] Junta de Freguesia de Santo Antonio (6.5 km)",
+      "date": "2026-06-10",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf"
+    },
+    {
+      "mode": "trail",
+      "name": "Santana Sky Speed (1.300km | 370D+)",
+      "date": "2026-06-10",
+      "location": "Santana, Madeira",
+      "url": "https://madeiraskyrunning.com/prova/santana-sky-speed/"
+    },
+    {
+      "mode": "trail",
+      "name": "[Trail] Santana Sky Speed (1.300km | 370D+)",
+      "date": "2026-06-10",
+      "location": "Santana, Madeira",
+      "url": "https://madeiraskyrunning.com/prova/santana-sky-speed/"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Sunset: Joaquim Machado concert - 17:00",
+      "date": "2026-06-11",
+      "location": "Praça do Povo, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Festival Raízes do Atlântico: Entre Ilhas - 20:00",
+      "date": "2026-06-11",
+      "location": "Parque de Santa Catarina, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Festival Raízes do Atlântico: Seara - 21:30",
+      "date": "2026-06-11",
+      "location": "Parque de Santa Catarina, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Regional Arts Week: 1st Meeting of Madeiran Musicians - 12:00",
+      "date": "2026-06-11",
+      "location": "Avenida Arriaga, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Regional Arts Week: Choral Singing Artistic Modality Performance - 10:30",
+      "date": "2026-06-11",
+      "location": "Jardim Municipal Auditorium, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Regional Arts Week: Dramatic Expression Artistic Modality Performance - 10:30",
+      "date": "2026-06-11",
+      "location": "Centro Social e Paroquial do Imaculado Coração de Maria, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Regional Arts Week: Rock Bands Artistic Modality Performance I - 15:00",
+      "date": "2026-06-11",
+      "location": "Avenida Arriaga, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Regional Arts Week: Rock Bands Artistic Modality Performance II - 16:00",
+      "date": "2026-06-11",
+      "location": "Avenida Arriaga, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic DOC: Naturalistas de Vulto II - 21:30",
+      "date": "2026-06-12",
+      "location": "Piscinas Naturais do Porto Moniz",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Sunset: DJ WAGA - 22:30",
+      "date": "2026-06-12",
+      "location": "Praça do Povo, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Sunset: Rocky Shore Melodies concert - 17:00",
+      "date": "2026-06-12",
+      "location": "Praça do Povo, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Festival Raízes do Atlântico: El Pony Pisador - 21:30",
+      "date": "2026-06-12",
+      "location": "Parque de Santa Catarina, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Festival Raízes do Atlântico: Xarabanda - 20:00",
+      "date": "2026-06-12",
+      "location": "Parque de Santa Catarina, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Regional Arts Week: 6th Children's Festival Voices from Our School - Prestige Dance - 18:00",
+      "date": "2026-06-12",
+      "location": "Jardim Municipal Auditorium, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Regional Arts Week: Choral Singing Performance - 12:00",
+      "date": "2026-06-12",
+      "location": "Avenida Arriaga, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Regional Arts Week: Dance Artistic Modality Performance - 10:30",
+      "date": "2026-06-12",
+      "location": "Jardim Municipal Auditorium, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Regional Arts Week: Exhibition Banana (12/06-26/06)",
+      "date": "2026-06-12",
+      "location": "Espaço EntreArte SRE, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "kids",
+      "name": "Campeonatos Regionais de Sub-18",
+      "date": "2026-06-12",
+      "location": "Câmara de Lobos, Funchal e Ribeira Brava",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "kids",
+      "name": "[Road] Campeonatos Regionais de Sub-18",
+      "date": "2026-06-12",
+      "location": "Câmara de Lobos, Funchal e Ribeira Brava",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "kids",
+      "name": "[Sport] Campeonatos Regionais de Sub-18",
+      "date": "2026-06-12",
+      "location": "Câmara de Lobos, Funchal e Ribeira Brava",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "pro",
+      "name": "Campeonatos Regionais de Sub-18",
+      "date": "2026-06-12",
+      "location": "Câmara de Lobos, Funchal e Ribeira Brava",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "pro",
+      "name": "[Sport] Campeonatos Regionais de Sub-18",
+      "date": "2026-06-12",
+      "location": "Câmara de Lobos, Funchal e Ribeira Brava",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "trail",
+      "name": "Santana Vertical Kilometer (4.8km | 1003D+)",
+      "date": "2026-06-12",
+      "location": "Santana, Madeira",
+      "url": "https://madeiraskyrunning.com/prova/santana-vertical-kilometer/"
+    },
+    {
+      "mode": "trail",
+      "name": "[Trail] Santana Vertical Kilometer (4.8km | 1003D+)",
+      "date": "2026-06-12",
+      "location": "Santana, Madeira",
+      "url": "https://madeiraskyrunning.com/prova/santana-vertical-kilometer/"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Fireworks Contest",
+      "date": "2026-06-13",
+      "location": "Funchal Bay",
+      "url": "https://eventsmadeira.com/en/event/atlantic-festival/"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Fireworks Contest: China - Flores em Chamas: O Desabrochar da Luz - 22:30",
+      "date": "2026-06-13",
+      "location": "Cais do Funchal",
+      "url": "https://eventsmadeira.com/en/event/atlantic-festival/"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Sunset: Carla Rojas Belizario concert - 17:00",
+      "date": "2026-06-13",
+      "location": "Praça do Povo, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Sunset: DJ Daniel Caires - 23:00",
+      "date": "2026-06-13",
+      "location": "Praça do Povo, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic The Peacock + fireworks terrace",
+      "date": "2026-06-13",
+      "location": "Casino da Madeira, Funchal",
+      "url": "https://casinodamadeira.com/the-peacock-atlantic-festival/"
+    },
+    {
+      "mode": "festivals",
+      "name": "Festival Raízes do Atlântico: Bonga & Orquestra de Jazz da Madeira - 23:00",
+      "date": "2026-06-13",
+      "location": "Parque de Santa Catarina, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Festival Raízes do Atlântico: Cordophonia - 21:00",
+      "date": "2026-06-13",
+      "location": "Parque de Santa Catarina, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Regional Arts Week: 5th Youth Festival Voices from Our School - Closing Show - Prestige Dance - 21:00",
+      "date": "2026-06-13",
+      "location": "Jardim Municipal Auditorium, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Soup Fair",
+      "date": "2026-06-13",
+      "location": "Boaventura, Santana",
+      "url": "https://eventsmadeira.com/en/event/soup-fair/"
+    },
+    {
+      "mode": "festivals",
+      "name": "[Fest] Atlantic Fireworks Contest",
+      "date": "2026-06-13",
+      "location": "Funchal Bay",
+      "url": "https://eventsmadeira.com/en/event/atlantic-festival/"
+    },
+    {
+      "mode": "festivals",
+      "name": "[Fest] Atlantic Ópera no Pico Gala de Ópera: Amores Impossíveis",
+      "date": "2026-06-13",
+      "location": "Pico dos Barcelos, Funchal",
+      "url": "https://www.google.com/maps/search/Posto+de+Turismo+Av.+Arriaga+Forum+Madeira+DRC+Shop+Funchal"
+    },
+    {
+      "mode": "festivals",
+      "name": "[Fest] Sergio Carolino & Francisco Loreto",
+      "date": "2026-06-13",
+      "location": "Assembleia Legislativa da Madeira, Funchal",
+      "url": "https://www.ocmadeira.pt/concertos/proximos-eventos.html"
+    },
+    {
+      "mode": "festivals",
+      "name": "[Fest] Soup Fair",
+      "date": "2026-06-13",
+      "location": "Boaventura, Santana",
+      "url": "https://eventsmadeira.com/en/event/soup-fair/"
+    },
+    {
+      "mode": "festivals",
+      "name": "Ópera no Pico: Amores Impossíveis - 21:00",
+      "date": "2026-06-13",
+      "location": "Fortaleza do Pico, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "kids",
+      "name": "Fun' Athletics - jornada 7 - AAM-M",
+      "date": "2026-06-13",
+      "location": "Estádio de Câmara de Lobos",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "kids",
+      "name": "III TORREGRI",
+      "date": "2026-06-13",
+      "location": "Complexo de Piscinas Olímpicas do Funchal",
+      "url": "https://www.anatacaodamadeira.pt/index.php/competicoes/calendario/icalrepeat.detail/2026/06/13/846/-/iii-torregri"
+    },
+    {
+      "mode": "kids",
+      "name": "III TORREGRI (P25m)",
+      "date": "2026-06-13",
+      "location": "Funchal",
+      "url": "https://www.anatacaodamadeira.pt/index.php/associacao/associados/documentacao-geral/send/4-calendario-desportivo/158-calendario-desportivo-25-26-lista"
+    },
+    {
+      "mode": "kids",
+      "name": "[Road] Fun' Athletics - jornada 7 - AAM-M",
+      "date": "2026-06-13",
+      "location": "Estádio de Câmara de Lobos",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "kids",
+      "name": "[Sport] Fun' Athletics - jornada 7 - AAM-M",
+      "date": "2026-06-13",
+      "location": "Estádio de Câmara de Lobos",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "kids",
+      "name": "[Swim] III TORREGRI",
+      "date": "2026-06-13",
+      "location": "Complexo de Piscinas Olímpicas do Funchal",
+      "url": "https://www.anatacaodamadeira.pt/index.php/competicoes/calendario/icalrepeat.detail/2026/06/13/846/-/iii-torregri"
+    },
+    {
+      "mode": "pro",
+      "name": "4ª Taça da Madeira de DHI e Mini-DHI - A Confeitaria",
+      "date": "2026-06-13",
+      "location": "Chão das Feiteiras, Machico",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf"
+    },
+    {
+      "mode": "pro",
+      "name": "III TORREGRI",
+      "date": "2026-06-13",
+      "location": "Complexo de Piscinas Olímpicas do Funchal",
+      "url": "https://www.anatacaodamadeira.pt/index.php/competicoes/calendario/icalrepeat.detail/2026/06/13/846/-/iii-torregri"
+    },
+    {
+      "mode": "pro",
+      "name": "[Bike] 4ª Taça da Madeira de DHI e Mini-DHI - A Confeitaria",
+      "date": "2026-06-13",
+      "location": "Chão das Feiteiras, Machico",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf"
+    },
+    {
+      "mode": "pro",
+      "name": "[Swim] III TORREGRI",
+      "date": "2026-06-13",
+      "location": "Complexo de Piscinas Olímpicas do Funchal",
+      "url": "https://www.anatacaodamadeira.pt/index.php/competicoes/calendario/icalrepeat.detail/2026/06/13/846/-/iii-torregri"
+    },
+    {
+      "mode": "road",
+      "name": "G.P. Santo da Serra (9.5 km)",
+      "date": "2026-06-13",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf"
+    },
+    {
+      "mode": "road",
+      "name": "[Road] G.P. Santo da Serra (9.5 km)",
+      "date": "2026-06-13",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf"
+    },
+    {
+      "mode": "trail",
+      "name": "Madeira Sky Race (48.5km | 3651D+)",
+      "date": "2026-06-13",
+      "location": "Santana, Madeira",
+      "url": "https://madeiraskyrunning.com/prova/madeira-sky-race/"
+    },
+    {
+      "mode": "trail",
+      "name": "Madeira Sky Race (52km | 4055D+)",
+      "date": "2026-06-13",
+      "location": "Santana, Madeira",
+      "url": "https://madeiraskyrunning.com/prova/madeira-sky-race/"
+    },
+    {
+      "mode": "trail",
+      "name": "Norte Sky Race (12km | 1035D+)",
+      "date": "2026-06-13",
+      "location": "Santana, Madeira",
+      "url": "https://madeiraskyrunning.com/prova/furao-sky-race/"
+    },
+    {
+      "mode": "trail",
+      "name": "Norte Sky Race (12km | 1114D+)",
+      "date": "2026-06-13",
+      "location": "Santana, Madeira",
+      "url": "https://madeiraskyrunning.com/prova/furao-sky-race/"
+    },
+    {
+      "mode": "trail",
+      "name": "Santana Sky Race (22km | 1780D+)",
+      "date": "2026-06-13",
+      "location": "Santana, Madeira",
+      "url": "https://madeiraskyrunning.com/prova/santana-sky-race/"
+    },
+    {
+      "mode": "trail",
+      "name": "[Trail] Madeira Sky Race (48.5km | 3651D+)",
+      "date": "2026-06-13",
+      "location": "Santana, Madeira",
+      "url": "https://madeiraskyrunning.com/prova/madeira-sky-race/"
+    },
+    {
+      "mode": "trail",
+      "name": "[Trail] Madeira Sky Race (52km | 4055D+)",
+      "date": "2026-06-13",
+      "location": "Santana, Madeira",
+      "url": "https://madeiraskyrunning.com/prova/madeira-sky-race/"
+    },
+    {
+      "mode": "trail",
+      "name": "[Trail] Norte Sky Race (12km | 1035D+)",
+      "date": "2026-06-13",
+      "location": "Santana, Madeira",
+      "url": "https://madeiraskyrunning.com/prova/furao-sky-race/"
+    },
+    {
+      "mode": "trail",
+      "name": "[Trail] Norte Sky Race (12km | 1114D+)",
+      "date": "2026-06-13",
+      "location": "Santana, Madeira",
+      "url": "https://madeiraskyrunning.com/prova/furao-sky-race/"
+    },
+    {
+      "mode": "trail",
+      "name": "[Trail] Santana Sky Race (22km | 1780D+)",
+      "date": "2026-06-13",
+      "location": "Santana, Madeira",
+      "url": "https://madeiraskyrunning.com/prova/santana-sky-race/"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Sunset: ONE+1 concert - 17:00",
+      "date": "2026-06-14",
+      "location": "Praça do Povo, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Atlantic Roots Festival",
+      "date": "2026-06-15",
+      "location": "Praça do Povo, Funchal",
+      "url": "https://www.islandsevents.com/island/madeira/atlantic-roots-festival-2026",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "[Fest] Atlantic Atlantic Roots Festival",
+      "date": "2026-06-15",
+      "location": "Praça do Povo, Funchal",
+      "url": "https://www.islandsevents.com/island/madeira/atlantic-roots-festival-2026"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Sunset: NuLo concert - 17:00",
+      "date": "2026-06-18",
+      "location": "Praça do Povo, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "pro",
+      "name": "Circuito do Estabelecimento Prisional do Funchal (3.3 km)",
+      "date": "2026-06-18",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "pro",
+      "name": "[Road] Circuito do Estabelecimento Prisional do Funchal (3.3 km)",
+      "date": "2026-06-18",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf"
+    },
+    {
+      "mode": "road",
+      "name": "Circuito do Estabelecimento Prisional do Funchal (3.3 km)",
+      "date": "2026-06-18",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "[Road] Circuito do Estabelecimento Prisional do Funchal (3.3 km)",
+      "date": "2026-06-18",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic DOC: Naturalistas de Vulto III - 21:30",
+      "date": "2026-06-19",
+      "location": "Casa da Cultura de Santa Cruz (Quinta do Revoredo)",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Sunset: DJ WAGA - 22:30",
+      "date": "2026-06-19",
+      "location": "Praça do Povo, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Sunset: Gold Label concert - 17:00",
+      "date": "2026-06-19",
+      "location": "Praça do Povo, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Cherry's Fest",
+      "date": "2026-06-19",
+      "location": "Jardim da Serra, Câmara de Lobos",
+      "url": "https://eventsmadeira.com/en/event/cherrys-fest/",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "[Fest] Cherry's Fest",
+      "date": "2026-06-19",
+      "location": "Jardim da Serra, Câmara de Lobos",
+      "url": "https://eventsmadeira.com/en/event/cherrys-fest/"
+    },
+    {
+      "mode": "kids",
+      "name": "Campeonatos Regionais de Sub-20",
+      "date": "2026-06-19",
+      "location": "Câmara de Lobos, Funchal e Ribeira Brava",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
+    },
+    {
+      "mode": "kids",
+      "name": "[Road] Campeonatos Regionais de Sub-20",
+      "date": "2026-06-19",
+      "location": "Câmara de Lobos, Funchal e Ribeira Brava",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "kids",
+      "name": "[Sport] Campeonatos Regionais de Sub-20",
+      "date": "2026-06-19",
+      "location": "Câmara de Lobos, Funchal e Ribeira Brava",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "pro",
+      "name": "Campeonatos Regionais de Sub-20",
+      "date": "2026-06-19",
+      "location": "Câmara de Lobos, Funchal e Ribeira Brava",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "pro",
+      "name": "[Sport] Campeonatos Regionais de Sub-20",
+      "date": "2026-06-19",
+      "location": "Câmara de Lobos, Funchal e Ribeira Brava",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Fireworks Contest",
+      "date": "2026-06-20",
+      "location": "Funchal Bay",
+      "url": "https://eventsmadeira.com/en/event/atlantic-festival/"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Fireworks Contest: Ukraine - Magia do Atlântico: Uma Ponte Sobre o Oceano - 22:30",
+      "date": "2026-06-20",
+      "location": "Cais do Funchal",
+      "url": "https://eventsmadeira.com/en/event/atlantic-festival/",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Sunset: Black Dogs Blues Band concert - 17:00",
+      "date": "2026-06-20",
+      "location": "Praça do Povo, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Sunset: DJ Ameriko Nunez - 23:00",
+      "date": "2026-06-20",
+      "location": "Praça do Povo, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic The Peacock + fireworks terrace",
+      "date": "2026-06-20",
+      "location": "Casino da Madeira, Funchal",
+      "url": "https://casinodamadeira.com/the-peacock-atlantic-festival/"
+    },
+    {
+      "mode": "festivals",
+      "name": "[Fest] Atlantic Fireworks Contest",
+      "date": "2026-06-20",
+      "location": "Funchal Bay",
+      "url": "https://eventsmadeira.com/en/event/atlantic-festival/"
+    },
+    {
+      "mode": "festivals",
+      "name": "[Fest] Atlantic Ópera no Pico Ópera, Amor e Confusão",
+      "date": "2026-06-20",
+      "location": "Pico dos Barcelos, Funchal",
+      "url": "https://www.google.com/maps/search/Posto+de+Turismo+Av.+Arriaga+Forum+Madeira+DRC+Shop+Funchal"
+    },
+    {
+      "mode": "festivals",
+      "name": "Ópera no Pico: Ópera, Amor e Confusão - 21:00",
+      "date": "2026-06-20",
+      "location": "Fortaleza do Pico, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "kids",
+      "name": "Fun' Athletics - jornada 7 - AAM-M",
+      "date": "2026-06-20",
+      "location": "Estádio de Câmara de Lobos",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
+    },
+    {
+      "mode": "kids",
+      "name": "VII Festival Madeira e Nadar - CDR Santanense",
+      "date": "2026-06-20",
+      "location": "Santana",
+      "url": "https://www.anatacaodamadeira.pt/index.php/associacao/associados/documentacao-geral/send/4-calendario-desportivo/158-calendario-desportivo-25-26-lista",
+      "event_type": "swimming_kids"
+    },
+    {
+      "mode": "pro",
+      "name": "Campeonato da Madeira de Rampa - Brisa Sem Açúcar",
+      "date": "2026-06-20",
+      "location": "Câmara de Lobos",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
+      "event_type": "cycling_pro"
+    },
+    {
+      "mode": "pro",
+      "name": "[Bike] Campeonato da Madeira de Rampa - Brisa Sem Açúcar",
+      "date": "2026-06-20",
+      "location": "Câmara de Lobos",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf"
+    },
+    {
+      "mode": "pro",
+      "name": "[Car] Campeonato da Madeira de Rampa - Brisa Sem Açúcar",
+      "date": "2026-06-20",
+      "location": "Câmara de Lobos",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: Orientação Aventura Santana (Rogaine)",
+      "date": "2026-06-20",
+      "location": "Santana",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Sunset: J's & the Queen concert - 17:00",
+      "date": "2026-06-21",
+      "location": "Praça do Povo, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "[Fest] Ninfas do Atlantico Conservatory Concert",
+      "date": "2026-06-21",
+      "location": "Centro Cultural John Dos Passos, Ponta do Sol",
+      "url": "https://www.conservatorioescoladasartes.com/evento/natal-no-palacio-com-as-ninfas-do-atlantico-do-conservatorio/"
+    },
+    {
+      "mode": "festivals",
+      "name": "Ópera no Pico: A História Encantada da Flauta Mágica - 11:00",
+      "date": "2026-06-21",
+      "location": "Fortaleza do Pico, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "swim",
+      "name": "IX Prova de Mar do Galomar",
+      "date": "2026-06-21",
+      "location": "Santa Cruz",
+      "url": "https://www.anatacaodamadeira.pt/index.php/associacao/associados/documentacao-geral/send/4-calendario-desportivo/158-calendario-desportivo-25-26-lista",
+      "event_type": "swimming"
+    },
+    {
+      "mode": "swim",
+      "name": "IX Prova de Mar do Lido Galomar (1000 m/3000 m)",
+      "date": "2026-06-21",
+      "location": "Complexo Balnear do Lido Galomar",
+      "url": "https://www.anatacaodamadeira.pt/index.php/competicoes/calendario/icalrepeat.detail/2026/06/21/865/-/ix-prova-de-mar-do-lido-galomar"
+    },
+    {
+      "mode": "swim",
+      "name": "[Swim/Tri] IX Prova de Mar do Lido Galomar (1000 m/3000 m)",
+      "date": "2026-06-21",
+      "location": "Complexo Balnear do Lido Galomar",
+      "url": "https://www.anatacaodamadeira.pt/index.php/competicoes/calendario/icalrepeat.detail/2026/06/21/865/-/ix-prova-de-mar-do-lido-galomar"
+    },
+    {
+      "mode": "swim",
+      "name": "[Swim] IX Prova de Mar do Lido Galomar (1000 m/3000 m)",
+      "date": "2026-06-21",
+      "location": "Complexo Balnear do Lido Galomar",
+      "url": "https://www.anatacaodamadeira.pt/index.php/competicoes/calendario/icalrepeat.detail/2026/06/21/865/-/ix-prova-de-mar-do-lido-galomar"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: TOM 26 (Extra)",
+      "date": "2026-06-21",
+      "location": "Madeira",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "festivals",
+      "name": "CMAS Underwater Photography and Video World Cup",
+      "date": "2026-06-22",
+      "location": "Santa Cruz / Funchal",
+      "url": "https://eventsmadeira.com/en/location/santa-cruz-en/?post_type=event",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "[Fest] CMAS Underwater Photography and Video World Cup",
+      "date": "2026-06-22",
+      "location": "Santa Cruz / Funchal",
+      "url": "https://eventsmadeira.com/en/location/santa-cruz-en/?post_type=event"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Pyromusical Closing Show: Macedo's Pirotecnia - Gerações - 23:59",
+      "date": "2026-06-23",
+      "location": "Cais antigo da cidade de Vila Baleira, Porto Santo",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Sunset: Sharp Knives concert - 17:00",
+      "date": "2026-06-25",
+      "location": "Praça do Povo, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "cycling",
+      "name": "Volta à Madeira Classic Car Rally",
+      "date": "2026-06-26",
+      "location": "Madeira",
+      "url": "https://amak.pt/event/xxxvii-volta-a-madeira-classic-rally/",
+      "event_type": "motorsport"
+    },
+    {
+      "mode": "cycling",
+      "name": "[Car] Volta à Madeira Classic Car Rally",
+      "date": "2026-06-26",
+      "location": "Madeira",
+      "url": "https://amak.pt/event/xxxvii-volta-a-madeira-classic-rally/"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Circus Arts: (Al)Mare - Where Life Moves Like Water (26/06-28/06) - 21:30",
+      "date": "2026-06-26",
+      "location": "Praça do Povo, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic DOC: Gunther Maul - 21:30",
+      "date": "2026-06-26",
+      "location": "Cais do Carvão, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Sunset: Maya Blandy concert - 17:00",
+      "date": "2026-06-26",
+      "location": "Praça do Povo, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "kids",
+      "name": "Meeting de Natação da Madeira",
+      "date": "2026-06-26",
+      "location": "Madeira",
+      "url": "https://www.anatacaodamadeira.pt/index.php/competicoes/calendario/icalrepeat.detail/2026/06/26/821/-/meeting-de-natacao-da-madeira"
+    },
+    {
+      "mode": "kids",
+      "name": "[Swim] Meeting de Natação da Madeira",
+      "date": "2026-06-26",
+      "location": "Madeira",
+      "url": "https://www.anatacaodamadeira.pt/index.php/competicoes/calendario/icalrepeat.detail/2026/06/26/821/-/meeting-de-natacao-da-madeira"
+    },
+    {
+      "mode": "pro",
+      "name": "Meeting de Natação da Madeira",
+      "date": "2026-06-26",
+      "location": "Madeira",
+      "url": "https://www.anatacaodamadeira.pt/index.php/competicoes/calendario/icalrepeat.detail/2026/06/26/821/-/meeting-de-natacao-da-madeira"
+    },
+    {
+      "mode": "pro",
+      "name": "Meeting de Natação da Madeira (P50m) / Campeonato Regional P50m - INF., JUV., JUN. e SEN.",
+      "date": "2026-06-26",
+      "location": "Funchal",
+      "url": "https://www.anatacaodamadeira.pt/index.php/associacao/associados/documentacao-geral/send/4-calendario-desportivo/158-calendario-desportivo-25-26-lista",
+      "event_type": "swimming_pro"
+    },
+    {
+      "mode": "pro",
+      "name": "[Swim] Meeting de Natação da Madeira",
+      "date": "2026-06-26",
+      "location": "Madeira",
+      "url": "https://www.anatacaodamadeira.pt/index.php/competicoes/calendario/icalrepeat.detail/2026/06/26/821/-/meeting-de-natacao-da-madeira"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Closing Pyromusical Show: Gerações - 22:30",
+      "date": "2026-06-27",
+      "location": "Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Sunset: Énia Caires concert - 17:00",
+      "date": "2026-06-27",
+      "location": "Praça do Povo, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic The Peacock + fireworks terrace",
+      "date": "2026-06-27",
+      "location": "Casino da Madeira, Funchal",
+      "url": "https://casinodamadeira.com/the-peacock-atlantic-festival/"
+    },
+    {
+      "mode": "festivals",
+      "name": "[Fest] Atlantic Fireworks Contest",
+      "date": "2026-06-27",
+      "location": "Funchal Bay",
+      "url": "https://intertours.com.pt/o-festival-do-atlantico-na-ilha-da-madeira/"
+    },
+    {
+      "mode": "festivals",
+      "name": "[Fest] Atlantic Ópera no Pico Trio Uirapuru: Canção em viagem",
+      "date": "2026-06-27",
+      "location": "Pico dos Barcelos, Funchal",
+      "url": "https://www.google.com/maps/search/Posto+de+Turismo+Av.+Arriaga+Forum+Madeira+DRC+Shop+Funchal"
+    },
+    {
+      "mode": "festivals",
+      "name": "Ópera no Pico: Trio Uirapuru - Canção em Viagem - 21:00",
+      "date": "2026-06-27",
+      "location": "Fortaleza do Pico, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "trail",
+      "name": "Cristo Rei Trail",
+      "date": "2026-06-27",
+      "location": "Caniço, Madeira",
+      "url": "https://lap2go.com/pt/event/cristo-rei-trail-2026",
+      "event_type": ""
+    },
+    {
+      "mode": "trail",
+      "name": "Cristo Rei Trail (10/25 km)",
+      "date": "2026-06-27",
+      "location": "Canico, Madeira",
+      "url": "https://lap2go.com/pt/event/cristo-rei-trail-2026",
+      "event_type": "trail"
+    },
+    {
+      "mode": "trail",
+      "name": "[Trail] Cristo Rei Trail (10/25 km)",
+      "date": "2026-06-27",
+      "location": "Canico, Madeira",
+      "url": "https://lap2go.com/pt/event/cristo-rei-trail-2026"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlantic Sunset: Juan & Friends concert - 17:00",
+      "date": "2026-06-28",
+      "location": "Praça do Povo, Funchal",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "road",
+      "name": "Dia da Regiao (4.2 km)",
+      "date": "2026-06-28",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "[Road] Dia da Regiao (4.2 km)",
+      "date": "2026-06-28",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf"
+    },
+    {
+      "mode": "swim",
+      "name": "Triatlo Sprint Cidade de Machico 2026",
+      "date": "2026-06-29",
+      "location": "Machico",
+      "url": "https://triatlomadeira.com/2026/06/triatlo-sprint-cidade-de-machico-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "swim",
+      "name": "Start List Triatlo Cidade de Machico 2026",
+      "date": "2026-07-02",
+      "location": "Machico",
+      "url": "https://triatlomadeira.com/2026/07/start-list-triatlo-cidade-de-machico-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "trail",
+      "name": "LXIV Pontinha - Casa da Luz",
+      "date": "2026-07-02",
+      "location": "Funchal",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
+    },
+    {
+      "mode": "kids",
+      "name": "Campeonato \"Pedro Fino\"",
+      "date": "2026-07-03",
+      "location": "Complexo de Piscinas Olímpicas do Funchal",
+      "url": "https://www.anatacaodamadeira.pt/index.php/competicoes/calendario/icalrepeat.detail/2026/07/03/867/-/campeonato-pedro-fino"
+    },
+    {
+      "mode": "kids",
+      "name": "[Swim] Campeonato \"Pedro Fino\"",
+      "date": "2026-07-03",
+      "location": "Complexo de Piscinas Olímpicas do Funchal",
+      "url": "https://www.anatacaodamadeira.pt/index.php/competicoes/calendario/icalrepeat.detail/2026/07/03/867/-/campeonato-pedro-fino"
+    },
+    {
+      "mode": "pro",
+      "name": "Campeonato \"Pedro Fino\" (P25m)",
+      "date": "2026-07-03",
+      "location": "Funchal",
+      "url": "https://www.anatacaodamadeira.pt/index.php/associacao/associados/documentacao-geral/send/4-calendario-desportivo/158-calendario-desportivo-25-26-lista",
+      "event_type": "swimming_pro"
+    },
+    {
+      "mode": "kids",
+      "name": "Campeonatos Regionais de Sub-14",
+      "date": "2026-07-04",
+      "location": "Funchal e Ribeira Brava",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
+    },
+    {
+      "mode": "kids",
+      "name": "Encontro Regional de Escolas BTT",
+      "date": "2026-07-04",
+      "location": "Ponta do Pargo, Calheta",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
+      "event_type": "cycling_kids"
+    },
+    {
+      "mode": "kids",
+      "name": "VIII Festival Madeira e Nadar - AD Galomar",
+      "date": "2026-07-04",
+      "location": "Santa Cruz",
+      "url": "https://www.anatacaodamadeira.pt/index.php/associacao/associados/documentacao-geral/send/4-calendario-desportivo/158-calendario-desportivo-25-26-lista",
+      "event_type": "swimming_kids"
+    },
+    {
+      "mode": "kids",
+      "name": "[Bike] Encontro Regional de Escolas BTT",
+      "date": "2026-07-04",
+      "location": "Ponta do Pargo, Calheta",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf"
+    },
+    {
+      "mode": "kids",
+      "name": "[Bike] Encontro Regional de Escolas CE - Brisa Sem Açúcar",
+      "date": "2026-07-04",
+      "location": "Ponta do Pargo, Calheta",
+      "url": "https://www.acmadeira.pt/wp-content/uploads/2026/01/Calendario-Atividades-2026.pdf"
+    },
+    {
+      "mode": "kids",
+      "name": "[Road] Campeonatos Regionais de Sub-14",
+      "date": "2026-07-04",
+      "location": "Funchal e Ribeira Brava",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "kids",
+      "name": "[Sport] Campeonatos Regionais de Sub-14",
+      "date": "2026-07-04",
+      "location": "Funchal e Ribeira Brava",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "pro",
+      "name": "3ª Taça da Madeira de XCO",
+      "date": "2026-07-04",
+      "location": "Ponta do Pargo, Calheta",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
+      "event_type": "cycling_pro"
+    },
+    {
+      "mode": "pro",
+      "name": "Campeonatos Regionais de Sub-14",
+      "date": "2026-07-04",
+      "location": "Funchal e Ribeira Brava",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "pro",
+      "name": "[Bike] 3ª Taça da Madeira de XCO",
+      "date": "2026-07-04",
+      "location": "Ponta do Pargo, Calheta",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf"
+    },
+    {
+      "mode": "pro",
+      "name": "[Bike] Encontro Regional de Escolas CE - Brisa Sem Açúcar",
+      "date": "2026-07-04",
+      "location": "Ponta do Pargo, Calheta",
+      "url": "https://www.acmadeira.pt/wp-content/uploads/2026/01/Calendario-Atividades-2026.pdf"
+    },
+    {
+      "mode": "pro",
+      "name": "[Sport] Campeonatos Regionais de Sub-14",
+      "date": "2026-07-04",
+      "location": "Funchal e Ribeira Brava",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "road",
+      "name": "Pontinha - Casa da Luz (2.443 m)",
+      "date": "2026-07-04",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "[Road] Pontinha - Casa da Luz (2.443 m)",
+      "date": "2026-07-04",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: Troféu de Orientação São Vicente (Pedestre)",
+      "date": "2026-07-04",
+      "location": "São Vicente",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "kids",
+      "name": "Encontro Regional de Escolas CE - Brisa Sem Açúcar",
+      "date": "2026-07-05",
+      "location": "Ponta do Pargo, Calheta",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
+      "event_type": "cycling_kids"
+    },
+    {
+      "mode": "kids",
+      "name": "Triatlo Jovem Cidade de Machico",
+      "date": "2026-07-05",
+      "location": "Machico",
+      "url": "https://triatlomadeira.com/wp-content/uploads/2026/03/Calendario-Provas-Triatlo-Madeira-e-Porto-Santo-2026-V.-06-03-2026.pdf",
+      "event_type": "triathlon_kids"
+    },
+    {
+      "mode": "kids",
+      "name": "[Bike] Encontro Regional de Escolas BTT",
+      "date": "2026-07-05",
+      "location": "Ponta do Pargo, Calheta",
+      "url": "https://www.acmadeira.pt/wp-content/uploads/2026/01/Calendario-Atividades-2026.pdf"
+    },
+    {
+      "mode": "kids",
+      "name": "[Bike] Encontro Regional de Escolas CE - Brisa Sem Açúcar",
+      "date": "2026-07-05",
+      "location": "Ponta do Pargo, Calheta",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf"
+    },
+    {
+      "mode": "kids",
+      "name": "[Car] Encontro Regional de Escolas CE - Brisa Sem Açúcar",
+      "date": "2026-07-05",
+      "location": "Ponta do Pargo, Calheta",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf"
+    },
+    {
+      "mode": "kids",
+      "name": "[Tri] Triatlo Jovem Cidade de Machico",
+      "date": "2026-07-05",
+      "location": "Machico",
+      "url": "https://triatlomadeira.com/wp-content/uploads/2026/03/Calendario-Provas-Triatlo-Madeira-e-Porto-Santo-2026-V.-06-03-2026.pdf"
+    },
+    {
+      "mode": "pro",
+      "name": "[Bike] 3ª Taça da Madeira de XCO",
+      "date": "2026-07-05",
+      "location": "Ponta do Pargo, Calheta",
+      "url": "https://www.acmadeira.pt/wp-content/uploads/2026/01/Calendario-Atividades-2026.pdf"
+    },
+    {
+      "mode": "pro",
+      "name": "[Bike] Encontro Regional de Escolas BTT",
+      "date": "2026-07-05",
+      "location": "Ponta do Pargo, Calheta",
+      "url": "https://www.acmadeira.pt/wp-content/uploads/2026/01/Calendario-Atividades-2026.pdf"
+    },
+    {
+      "mode": "road",
+      "name": "Corrida Solidaria AFA (5.3 km)",
+      "date": "2026-07-05",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "[Road] Corrida Solidaria AFA (5.3 km)",
+      "date": "2026-07-05",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf"
+    },
+    {
+      "mode": "swim",
+      "name": "Resultados Provisórios Triatlo Sprint Cidade de Machico 2026",
+      "date": "2026-07-05",
+      "location": "Machico",
+      "url": "https://triatlomadeira.com/2026/07/triatlo-sprint-cidade-de-machico-2026-2/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "swim",
+      "name": "Triatlo Sprint Cidade de Machico",
+      "date": "2026-07-05",
+      "location": "Machico",
+      "url": "https://triatlomadeira.com/wp-content/uploads/2026/03/Calendario-Provas-Triatlo-Madeira-e-Porto-Santo-2026-V.-06-03-2026.pdf",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "swim",
+      "name": "[Swim/Tri] Triatlo Sprint Cidade de Machico",
+      "date": "2026-07-05",
+      "location": "Machico",
+      "url": "https://triatlomadeira.com/wp-content/uploads/2026/03/Calendario-Provas-Triatlo-Madeira-e-Porto-Santo-2026-V.-06-03-2026.pdf"
+    },
+    {
+      "mode": "pro",
+      "name": "Machico abre Campeonato Regional de Triatlo com triunfos de Pedro Prioste e Rosa Martins",
+      "date": "2026-07-07",
+      "location": "Machico",
+      "url": "https://triatlomadeira.com/2026/07/machico-abre-campeonato-regional-de-triatlo-com-triunfos-de-pedro-prioste-e-rosa-martins/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "pro",
+      "name": "Rankings Campeonato Regional Triatlo 2026",
+      "date": "2026-07-08",
+      "location": "Madeira",
+      "url": "https://triatlomadeira.com/2026/07/rankings-campeonato-regional-triatlo-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "festivals",
+      "name": "Funchal Jazz Festival (09/07-11/07): Duarte Ventura Quintet + Joel Ross Good Vibes; Immanuel Wilkins Quartet + Joe Lovano & Antonio Faraò Explorations; Ledisi + Jason Moran & Orquestra de Jazz do Funchal play Duke Ellington - 21:30",
+      "date": "2026-07-09",
+      "location": "Parque de Santa Catarina, Funchal",
+      "url": "https://www.funchal.pt/",
+      "event_type": "festival"
+    },
+    {
+      "mode": "trail",
+      "name": "Prova de Salto com Vara",
+      "date": "2026-07-09",
+      "location": "Estádio de Câmara de Lobos",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
+    },
+    {
+      "mode": "festivals",
+      "name": "Ethnographic display Camacha de Ontem - Madeira de Sempre",
+      "date": "2026-07-11",
+      "location": "Largo da Achada, Camacha, Santa Cruz",
+      "url": "https://eventsmadeira.com/en/event/ethnographic-display-camacha-de-ontem-madeira-de-sempre-yesterdays-camacha-all-time-madeira/",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "[Fest] Ethnographic display Camacha de Ontem - Madeira de Sempre",
+      "date": "2026-07-11",
+      "location": "Largo da Achada, Camacha, Santa Cruz",
+      "url": "https://eventsmadeira.com/en/event/ethnographic-display-camacha-de-ontem-madeira-de-sempre-yesterdays-camacha-all-time-madeira/"
+    },
+    {
+      "mode": "pro",
+      "name": "3ª Taça da Madeira de Enduro e Mini Enduro - Globalgest",
+      "date": "2026-07-11",
+      "location": "Fanal, Porto Moniz",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
+      "event_type": "cycling_pro"
+    },
+    {
+      "mode": "pro",
+      "name": "Campeonatos Regionais de Veteranos - Verão",
+      "date": "2026-07-11",
+      "location": "Funchal e Ribeira Brava",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
+    },
+    {
+      "mode": "pro",
+      "name": "XXII Circuito dos Horários do Funchal",
+      "date": "2026-07-11",
+      "location": "Funchal",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
+    },
+    {
+      "mode": "pro",
+      "name": "[Bike] 3ª Taça da Madeira de Enduro e Mini Enduro - Globalgest",
+      "date": "2026-07-11",
+      "location": "Fanal, Porto Moniz",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf"
+    },
+    {
+      "mode": "pro",
+      "name": "[Road] Campeonatos Regionais de Veteranos - Verão",
+      "date": "2026-07-11",
+      "location": "Funchal e Ribeira Brava",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "pro",
+      "name": "[Sport] Campeonatos Regionais de Veteranos - Verão",
+      "date": "2026-07-11",
+      "location": "Funchal e Ribeira Brava",
+      "url": "https://fpacompeticoes.pt/"
+    },
+    {
+      "mode": "road",
+      "name": "XXII Circuito dos Horários do Funchal",
+      "date": "2026-07-11",
+      "location": "Funchal",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
+    },
+    {
+      "mode": "road",
+      "name": "Horarios do Funchal (distance TBC)",
+      "date": "2026-07-12",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "[Road] Horarios do Funchal (distance TBC)",
+      "date": "2026-07-12",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf"
+    },
+    {
+      "mode": "pro",
+      "name": "51ª Volta à Madeira em Bicicleta",
+      "date": "2026-07-15",
+      "location": "Madeira",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
+      "event_type": "cycling_pro"
+    },
+    {
+      "mode": "pro",
+      "name": "[Bike] 51ª Volta à Madeira em Bicicleta",
+      "date": "2026-07-15",
+      "location": "Madeira",
+      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf"
+    },
+    {
+      "mode": "festivals",
+      "name": "[Fest] OCM Season Closing Concert",
+      "date": "2026-07-18",
+      "location": "Centro Congressos da Madeira, Funchal",
+      "url": "https://www.ocmadeira.pt/concertos/proximos-eventos.html"
+    },
+    {
+      "mode": "kids",
+      "name": "Campeonato do Jovem Nadador Completo (P25m)",
+      "date": "2026-07-18",
+      "location": "Machico",
+      "url": "https://www.anatacaodamadeira.pt/index.php/associacao/associados/documentacao-geral/send/4-calendario-desportivo/158-calendario-desportivo-25-26-lista",
+      "event_type": "swimming_kids"
+    },
+    {
+      "mode": "pro",
+      "name": "Campeonatos Nacionais de Sub-23 Ar Livre",
+      "date": "2026-07-18",
+      "location": "Seixal",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
+    },
+    {
+      "mode": "pro",
+      "name": "I Milha do Porto do Funchal / Campeonatos Regionais de Milha em Estrada - 2026",
+      "date": "2026-07-18",
+      "location": "Funchal",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
+    },
+    {
+      "mode": "road",
+      "name": "I Milha do Porto do Funchal / Campeonatos Regionais de Milha em Estrada - 2026",
+      "date": "2026-07-18",
+      "location": "Funchal",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
+    },
+    {
+      "mode": "road",
+      "name": "Milha do Dia do Porto / CR Milha (1.609 m)",
+      "date": "2026-07-18",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "[Road] Milha do Dia do Porto / CR Milha (1.609 m)",
+      "date": "2026-07-18",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: Vila Ribeira Brava (Urbana)",
+      "date": "2026-07-18",
+      "location": "Ribeira Brava",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "pro",
+      "name": "Circuito de Sao Roque (8 km)",
+      "date": "2026-07-19",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "pro",
+      "name": "[Road] Circuito de Sao Roque (8 km)",
+      "date": "2026-07-19",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf"
+    },
+    {
+      "mode": "road",
+      "name": "Circuito de Sao Roque (8 km)",
+      "date": "2026-07-19",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "[Road] Circuito de Sao Roque (8 km)",
+      "date": "2026-07-19",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf"
+    },
+    {
+      "mode": "swim",
+      "name": "Triatlo Sprint Cidade de Machico",
+      "date": "2026-07-19",
+      "location": "Machico",
+      "url": "https://triatlomadeira.com/wp-content/uploads/2026/03/Calendario-Provas-Triatlo-Madeira-e-Porto-Santo-2026-V.-06-03-2026.pdf",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "swim",
+      "name": "Triatlo Super-Sprint Cidade de Machico",
+      "date": "2026-07-19",
+      "location": "Machico",
+      "url": "https://triatlomadeira.com/wp-content/uploads/2026/03/Calendario-Provas-Triatlo-Madeira-e-Porto-Santo-2026-V.-06-03-2026.pdf",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "swim",
+      "name": "XII Prova de Mar de São Martinho",
+      "date": "2026-07-19",
+      "location": "Funchal",
+      "url": "https://www.anatacaodamadeira.pt/index.php/associacao/associados/documentacao-geral/send/4-calendario-desportivo/158-calendario-desportivo-25-26-lista",
+      "event_type": "swimming"
+    },
+    {
+      "mode": "swim",
+      "name": "[Swim/Tri] Triatlo Sprint Cidade de Machico",
+      "date": "2026-07-19",
+      "location": "Machico",
+      "url": "https://triatlomadeira.com/wp-content/uploads/2026/03/Calendario-Provas-Triatlo-Madeira-e-Porto-Santo-2026-V.-06-03-2026.pdf"
+    },
+    {
+      "mode": "trail",
+      "name": "Trail Porto da Cruz Natura (12/24/50 km)",
+      "date": "2026-07-19",
+      "location": "Porto da Cruz, Madeira",
+      "url": "https://www.trail-natura.com/",
+      "event_type": "trail"
+    },
+    {
+      "mode": "trail",
+      "name": "[Trail] Trail Porto da Cruz Natura (12/24/50 km)",
+      "date": "2026-07-19",
+      "location": "Porto da Cruz, Madeira",
+      "url": "https://www.trail-natura.com/"
+    },
+    {
+      "mode": "festivals",
+      "name": "Classics at Magnolia",
+      "date": "2026-07-25",
+      "location": "Funchal, Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "[Fest] Classics at Magnolia",
+      "date": "2026-07-25",
+      "location": "Funchal, Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf"
+    },
+    {
+      "mode": "trail",
+      "name": "Orientação: MOSS (Extra) (25/07-26/07)",
+      "date": "2026-07-25",
+      "location": "Madeira",
+      "url": "https://aoram.pt/calendario/",
+      "event_type": "orienteering"
+    },
+    {
+      "mode": "road",
+      "name": "Santana - Ilha - Sao Jorge (14 km)",
+      "date": "2026-07-26",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "[Road] Santana - Ilha - Sao Jorge (14 km)",
+      "date": "2026-07-26",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf"
+    },
+    {
+      "mode": "trail",
+      "name": "XII Santana - Ilha - São Jorge",
+      "date": "2026-07-26",
+      "location": "Santana",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
+    },
+    {
+      "mode": "kids",
+      "name": "Campeonato dos Recordistas",
+      "date": "2026-07-28",
+      "location": "Complexo de Piscinas Olímpicas do Funchal",
+      "url": "https://www.anatacaodamadeira.pt/index.php/competicoes/calendario/icalrepeat.detail/2026/07/28/881/-/campeonato-dos-recordistas",
+      "event_type": "swimming_kids"
+    },
+    {
+      "mode": "pro",
+      "name": "Campeonato dos Recordistas (P25m)",
+      "date": "2026-07-28",
+      "location": "Funchal",
+      "url": "https://www.anatacaodamadeira.pt/index.php/associacao/associados/documentacao-geral/send/4-calendario-desportivo/158-calendario-desportivo-25-26-lista",
+      "event_type": "swimming_pro"
+    },
+    {
+      "mode": "cycling",
+      "name": "Rali da Madeira / Madeira Wine Rally",
+      "date": "2026-07-30",
+      "location": "Madeira",
+      "url": "https://ralidamadeira.com/2026/en/frontpage",
+      "event_type": "motorsport"
+    },
+    {
+      "mode": "cycling",
+      "name": "[Car] Rali da Madeira / Madeira Wine Rally",
+      "date": "2026-07-30",
+      "location": "Madeira",
+      "url": "https://ralidamadeira.com/2026/en/frontpage"
+    },
+    {
+      "mode": "trail",
+      "name": "Camacha Trail",
+      "date": "2026-08-02",
+      "location": "Camacha,Madeira",
+      "url": "https://atletismodamadeira.pt/event/camacha-trail-3/",
+      "event_type": ""
+    },
+    {
+      "mode": "trail",
+      "name": "Camacha Trail (9/15/26 km)",
+      "date": "2026-08-02",
+      "location": "Camacha, Madeira",
+      "url": "https://atletismodamadeira.pt/event/camacha-trail-3/",
+      "event_type": "trail"
+    },
+    {
+      "mode": "trail",
+      "name": "[Trail] Camacha Trail (9/15/26 km)",
+      "date": "2026-08-02",
+      "location": "Camacha, Madeira",
+      "url": "https://atletismodamadeira.pt/event/camacha-trail-3/"
+    },
+    {
+      "mode": "festivals",
+      "name": "Art' Camacha",
+      "date": "2026-08-07",
+      "location": "Camacha, Santa Cruz",
+      "url": "https://eventsmadeira.com/en/event/art-camacha/",
+      "event_type": "festival"
+    },
+    {
+      "mode": "road",
+      "name": "Corrida das Castanhas (4.5 km)",
+      "date": "2026-08-08",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "trail",
+      "name": "Castanhas a Correr",
+      "date": "2026-08-08",
+      "location": "Curral das Freiras, 32,72067° N, 16,96675° O, Ilha da Madeira, 9030, Portugal",
+      "url": "https://atletismodamadeira.pt/event/circuito-do-curral-das-freiras/",
+      "event_type": "running"
+    },
+    {
+      "mode": "trail",
+      "name": "XI Castanhas a Correr",
+      "date": "2026-08-08",
+      "location": "Câmara de Lobos (Curral das Freiras)",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
+    },
+    {
+      "mode": "swim",
+      "name": "Triatlo Sprint Cidade do Funchal 2026",
+      "date": "2026-08-13",
+      "location": "Funchal",
+      "url": "https://triatlomadeira.com/2026/08/triatlo-sprint-cidade-do-funchal-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "trail",
+      "name": "Ribeira de Machico – Portela / Serra das Funduras",
+      "date": "2026-08-15",
+      "location": "Machico, Portugal",
+      "url": "https://atletismodamadeira.pt/event/ribeira-de-machico-portela-serra-das-funduras-7/",
+      "event_type": "running"
+    },
+    {
+      "mode": "trail",
+      "name": "Serra das Funduras 2026",
+      "date": "2026-08-15",
+      "location": "Machico",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
+    },
+    {
+      "mode": "road",
+      "name": "Art' Camacha (5.6 km)",
+      "date": "2026-08-16",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "pro",
+      "name": "Grande Prémio Art' Camacha",
+      "date": "2026-08-16T09:00:00+01:00",
+      "location": "Camacha, Portugal",
+      "url": "https://atletismodamadeira.pt/event/grande-premio-art-camacha-6/",
+      "event_type": "running"
+    }
+  ]
+}
