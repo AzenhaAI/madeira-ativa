@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19",
+  "generated_at": "2026-08-20",
   "events": [
     {
       "mode": "pro",
@@ -146,6 +146,14 @@
       "event_type": "triathlon"
     },
     {
+      "mode": "pro",
+      "name": "XXI Grande Prémio das Vindimas",
+      "date": "2026-09-13",
+      "location": "Estreito de Câmara de Lobos",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
+    },
+    {
       "mode": "road",
       "name": "Vindimas (4.7 km)",
       "date": "2026-09-13",
@@ -232,6 +240,14 @@
       "location": "Madeira",
       "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
       "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "XXXI Corrida RG3",
+      "date": "2026-09-26",
+      "location": "Funchal (RG3)",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
     },
     {
       "mode": "trail",
