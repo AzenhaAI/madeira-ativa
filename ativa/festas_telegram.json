@@ -1,8 +1,8 @@
 {
   "note": "Cultural events harvested from t.me/festas_madeira. Accumulates: the channel only exposes recent posts.",
   "source": "https://t.me/s/festas_madeira",
-  "fetched": "2026-08-21T05:49:34",
-  "count": 18,
+  "fetched": "2026-08-21T11:49:05",
+  "count": 21,
   "categories": {
     "concerto": "Concert",
     "arraial": "Arraial",
@@ -346,6 +346,46 @@
       "title": "Concert · São Vicente"
     },
     {
+      "post": "https://t.me/festas_madeira/2410",
+      "dates": [
+        "2026-08-22",
+        "2026-08-23"
+      ],
+      "categories": [
+        "concerto",
+        "arraial",
+        "religioso",
+        "família"
+      ],
+      "place": "Paul Do Mar",
+      "poster": "https://cdn4.telesco.pe/file/lRG07I4YYiFaLCKFgYOySmBHL6Z_Zvty-brvBq3-ZsqG9GShiprMVwqau8n2suUNj-Sy9zDy_pI9cRbYJfwirTCLCVRy7_Xs8i6nWdRPiLXBb1OPK8EONYGtebduhSU9UffOw8SyqEuP-VIid2htsT_OdDn2czUtVux0g12eS3lEMSeyNYxKYDfq6QdPTB_Vu4rBXSXbHN79_truO-X5UuslODGKPIoEoxO-nI_MpxmkfdC_hib9fpCKcMmeDF4f7KY-SoWoqs-Wf_6qDPse5SZ2OaBrM8thYPIrC5Ui6SNlsqNbUvHZ29-yEEDZMVPRvvjIllTys-n1gHCJbpXasQ.jpg",
+      "published": "2026-08-21T08:38:54+00:00",
+      "poster_text": "PauldoMiar\n\n+ Daz2e28 de Agosto.\n\n“Festa do\n\n9, 15:00. romacem\n“F 19:00 Missa E novena\n\n20:00 BANDA MUNICIPAL PALLENSE\n\nJá 21:00. ricakDO MADEIRA E BANDA\n\nO 2230 oy waca\n\n“F 17:00 wissa E PROCISSÃO\n19:00 BANDA MUNICIPAL PALLENS\n\nSê 21:00 MáRCIO AMARO E BANDA\nO 2230 wsos\n\nMÁRCIO AMARO\nE BANDA",
+      "name": "PauldoMiar + Daz2e28 de Agosto.",
+      "title": "Concert · Paul Do Mar"
+    },
+    {
+      "post": "https://t.me/festas_madeira/2412",
+      "dates": [
+        "2026-08-22",
+        "2026-08-23",
+        "2026-08-29",
+        "2026-08-30"
+      ],
+      "categories": [
+        "concerto",
+        "arraial",
+        "religioso",
+        "família"
+      ],
+      "place": "Curral Das Freiras",
+      "poster": "https://cdn4.telesco.pe/file/Y4Za7ZYSCSHDYF3QEbyGR2aKoQndyWO1cmDfoba-m-Qbf6In1CO5APvL4237JbCDxha3WHumjoZ57LQoRdpZEH7K96gdgf02bh39n_fHMDRCQbjypAHfibjKW8qakEtfjaAuQMON6JDtD-2BQorNCGBeMzZwVsO-IincqAT-rPfA70O40X_VpbnYotilkaaZHfgslaln3RZTP2RipWkJMDyOC1EEbkmFCZMw3mT1gE7ZJMwa4cXlJxYFJ0MHFvwMbXu06f3THKoUtU9eBfy11WcbQjdzt7LJGwnRNztLmHStdbY-cjd1dJn6SswS9L905HO1YiCjAY_49_2-6aT_GA.jpg",
+      "published": "2026-08-21T08:39:36+00:00",
+      "poster_text": "Arraial\n\nCurral das Fheiras\n\nb / de\ns Nossa Senhora\nacramento do Livramento\n\nS789\nty a\nY/ 21h30 - Aoakaso\n\nMEN: 5\ncin) 23h00 - Vasco Freitas\n\nIte] ATT 00h00 - Dj Waga\n3 tf\n\no Vy eo\n17h30 - Grupo de\nFolclore Costumes e\n\nS7x2\n\n21h30 - Yosi Pinto\n22h30 - Cloud 9\n\n17h30 - Rancho Folclórico\nTípico Madeirense\n(Brasil)\n\n18h30 - Rancho\nFolclórico da Associação\n\nTradições da Associação\nRefúgio da Freira\n\n18h15 - Banda Fixe\n19h30 - Lordes\n\n20h30 - Amigos da\nMúsica\n\nÀ 21h30 - Montreal Band\n\nRecreativa e Desportiva\ndo Arco do Céu do\nArcozelo do Cabo\n\n20h - Gaudium Music\n22h - DIGUGGA À\n\nUs\nSe,",
+      "name": "Arraial Curral das Fheiras",
+      "title": "Arraial Curral das Fheiras"
+    },
+    {
       "post": "https://t.me/festas_madeira/2405",
       "dates": [
         "2026-08-23",
@@ -412,11 +452,28 @@
         "desporto"
       ],
       "place": "Porto Santo",
-      "poster": "https://cdn4.telesco.pe/file/TcTVCfAodkNYJo_zT4OpQQ5eRzQnmiiQkHMdfuxRBDbOKsL7AqqT4qwaLITEbo5nUmwEuOq6cvPfteFWIF9tZmoRybIg4r4THCPuG0yszIt3lS8C7-Jf2PlctmJf3kmJiSOOlnVEHyHTPjc-lyDyV02Esp3Ef6vfYhhuOgK9wlA0LiY7jkkXP7vqgnjhQnQTsw11sG8cyDsxFSU6c_lD90eHfqAEa5VTdaLaiEhhskFxhO7CctDzp8L945Eiw3KhTuKdDzV4qalN2ZoR3UqGhZyqzkl0vRaIVSISnMLc8tMUbJDfigqHq9O45HtWOGjUX1T95zGVg6ZuBgT-98mbfg.jpg",
+      "poster": "https://cdn4.telesco.pe/file/paHOTvsagawoiCB8EQL5dZ-GqTgW4d18dmTqwUc6OTZTEM5_sqEPPtPtwTzw3Jh_soq4IO8heZ2gaVNqkVC4DrTn9ZfWG6_TSP-cc73xF_EhWpOi2nEsrAaUPruqeLC7wDH4J0ad45q8yhudv_yj7wYQWKq5RHy5rPBdJHawv0UIzCNfZI56RuBp8p6y8C-B2wlL-HVk4MZ7uNCTA2TzGvkQV6bnykTav47Oca-Ji9f6tXirP4w1jiD7TzF_4UZi3vxHyr9PYzD4ltNZ83SkyeFzC_qRXq0eMLlYbr_nod3fj37hRLkDed0vAckKjXwFx1TCd6UsNdKBEcsyarFXwQ.jpg",
       "published": "2026-08-15T11:34:58+00:00",
       "poster_text": "",
       "name": "",
       "title": "Sport · Porto Santo"
+    },
+    {
+      "post": "https://t.me/festas_madeira/2411",
+      "dates": [
+        "2026-09-19"
+      ],
+      "categories": [
+        "concerto",
+        "festival",
+        "exposição"
+      ],
+      "place": "Mercadinho",
+      "poster": "https://cdn4.telesco.pe/file/E9pxPgWsWGcEzIaiSd02x6k_avNlWIyPa5lye54CfVD7SbFvGdcILuyvGA1CiZ4TAkH2haJzP_i08PBxVGJ7n-JQxft4AjPfH8SveNt9pnT_UMrGVD5iFaTXpRFKqiO-pr05IMqJBkHCMnYHnAf6DMdfy7NKfw_q2PfOJlRy7c69Mr3HOrEWi4KLbY1DUQRH5t8PsT7-YQnvkWKNX-FA2J3YDmGPzbwDJVWkeftrnvRecQEPHaxj_mhwG3NSVLiP96uH2I309vqWTb5Pqk_7HiHseATXSXnf07iIbXJz0M1gQdmJ9gikMnYbT5g-mKsds14PfQthePsR_9GE2hNstg.jpg",
+      "published": "2026-08-21T08:39:14+00:00",
+      "poster_text": "",
+      "name": "",
+      "title": "Concert · Mercadinho"
     }
   ]
 }

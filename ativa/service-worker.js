@@ -1,7 +1,11 @@
-const CACHE_NAME = "madeira-ativa-v63";
+const CACHE_NAME = "madeira-ativa-v64";
 const CORE_ASSETS = [
+  // "/ativa/" only — NOT "/ativa/index.html". Cloudflare Pages answers the
+  // .html form with a 308 to the clean URL, and the Cache API refuses to store
+  // a redirected response: addAll() then rejects, install fails, no service
+  // worker activates, and Chrome will not offer "Add to home screen" at all.
+  // One stale entry in this list silently costs the whole install.
   "/ativa/",
-  "/ativa/index.html",
   "/ativa/events.json",
   "/ativa/watchlist.json",
   "/ativa/manifest.webmanifest",

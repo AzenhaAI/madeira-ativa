@@ -51,6 +51,22 @@
     },
     {
       "mode": "festivals",
+      "name": "Arraial Curral das Fheiras",
+      "date": "2026-08-22",
+      "location": "Curral Das Freiras",
+      "url": "https://t.me/festas_madeira/2412",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concert · Paul Do Mar",
+      "date": "2026-08-22",
+      "location": "Paul Do Mar",
+      "url": "https://t.me/festas_madeira/2410",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
       "name": "Concert · Porto Da Cruz",
       "date": "2026-08-22",
       "location": "Porto Da Cruz",
@@ -303,6 +319,14 @@
       "date": "2026-09-18",
       "location": "Porto Santo",
       "url": "https://t.me/festas_madeira/2401",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concert · Mercadinho",
+      "date": "2026-09-19",
+      "location": "Mercadinho",
+      "url": "https://t.me/festas_madeira/2411",
       "event_type": "festival"
     },
     {
