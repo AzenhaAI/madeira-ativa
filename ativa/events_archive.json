@@ -1,7 +1,7 @@
 {
   "note": "Past events — preserved so history is never lost on rebuild",
-  "generated_at": "2026-08-17",
-  "count": 425,
+  "generated_at": "2026-08-21",
+  "count": 431,
   "events": [
     {
       "mode": "trail",
@@ -3185,6 +3185,54 @@
       "location": "Camacha, Portugal",
       "url": "https://atletismodamadeira.pt/event/grande-premio-art-camacha-6/",
       "event_type": "running"
+    },
+    {
+      "mode": "festivals",
+      "name": "Agenda litura Ambiente I Despor",
+      "date": "2026-08-20",
+      "location": "Porto Santo",
+      "url": "https://t.me/festas_madeira/2400",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "CONCERTO COMEMORATIVO DO",
+      "date": "2026-08-20",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2398",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concert · Funchal",
+      "date": "2026-08-20",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2408",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "FESTA DAS Vindimas",
+      "date": "2026-08-20",
+      "location": "Porto Santo",
+      "url": "https://t.me/festas_madeira/2409",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "FESTA GASTRONÓMICA",
+      "date": "2026-08-20",
+      "location": "Caniço",
+      "url": "https://t.me/festas_madeira/2395",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "XV EDIÇÃO FUNCHAL",
+      "date": "2026-08-20",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2402",
+      "event_type": "festival"
     }
   ]
 }
