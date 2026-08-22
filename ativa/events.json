@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-21",
+  "generated_at": "2026-08-22",
   "events": [
     {
       "mode": "festivals",
       "name": "AGO FESTA",
-      "date": "2026-08-21",
+      "date": "2026-08-22",
       "location": "Seixal",
       "url": "https://t.me/festas_madeira/2393",
       "event_type": "festival"
@@ -12,41 +12,9 @@
     {
       "mode": "festivals",
       "name": "Agenda litura Ambiente I Despor",
-      "date": "2026-08-21",
+      "date": "2026-08-22",
       "location": "Porto Santo",
       "url": "https://t.me/festas_madeira/2400",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "BONS MOTIVOS",
-      "date": "2026-08-21",
-      "location": "Ribeira Brava",
-      "url": "https://t.me/festas_madeira/2403",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "Concert · Funchal",
-      "date": "2026-08-21",
-      "location": "Funchal",
-      "url": "https://t.me/festas_madeira/2408",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "FESTA DAS Vindimas",
-      "date": "2026-08-21",
-      "location": "Porto Santo",
-      "url": "https://t.me/festas_madeira/2409",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "XV EDIÇÃO FUNCHAL",
-      "date": "2026-08-21",
-      "location": "Funchal",
-      "url": "https://t.me/festas_madeira/2402",
       "event_type": "festival"
     },
     {
@@ -55,6 +23,22 @@
       "date": "2026-08-22",
       "location": "Curral Das Freiras",
       "url": "https://t.me/festas_madeira/2412",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "BONS MOTIVOS",
+      "date": "2026-08-22",
+      "location": "Ribeira Brava",
+      "url": "https://t.me/festas_madeira/2403",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concert · Funchal",
+      "date": "2026-08-22",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2408",
       "event_type": "festival"
     },
     {

@@ -1,7 +1,7 @@
 {
   "note": "Past events — preserved so history is never lost on rebuild",
-  "generated_at": "2026-08-21",
-  "count": 431,
+  "generated_at": "2026-08-22",
+  "count": 437,
   "events": [
     {
       "mode": "trail",
@@ -3230,6 +3230,54 @@
       "mode": "festivals",
       "name": "XV EDIÇÃO FUNCHAL",
       "date": "2026-08-20",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2402",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "AGO FESTA",
+      "date": "2026-08-21",
+      "location": "Seixal",
+      "url": "https://t.me/festas_madeira/2393",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Agenda litura Ambiente I Despor",
+      "date": "2026-08-21",
+      "location": "Porto Santo",
+      "url": "https://t.me/festas_madeira/2400",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "BONS MOTIVOS",
+      "date": "2026-08-21",
+      "location": "Ribeira Brava",
+      "url": "https://t.me/festas_madeira/2403",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concert · Funchal",
+      "date": "2026-08-21",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2408",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "FESTA DAS Vindimas",
+      "date": "2026-08-21",
+      "location": "Porto Santo",
+      "url": "https://t.me/festas_madeira/2409",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "XV EDIÇÃO FUNCHAL",
+      "date": "2026-08-21",
       "location": "Funchal",
       "url": "https://t.me/festas_madeira/2402",
       "event_type": "festival"
