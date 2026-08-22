@@ -1435,9 +1435,20 @@ html.dark button{background:rgba(255,255,255,0.06)}
 
       const isPt = getLang() === "pt";
       const summaryTitle = (modeSummaryTitles[getLang()] || modeSummaryTitles.en)[state.mode] || modeTitles[state.mode];
+      // Say how many the window is holding back. "5 entries" reads as "there
+      // are five" — it took a user asking where two well-known races had gone
+      // to notice that the count never admitted to a boundary. The races were
+      // in the data all along, just past the edge of the filter.
+      const beyond = state.events.filter((event) => {
+        if (event.mode !== state.mode) return false;
+        return parseDate(event.date) > end;
+      }).length;
+      const more = beyond
+        ? (isPt ? ` · +${beyond} mais tarde` : ` · +${beyond} later`)
+        : "";
       document.getElementById("summary").textContent = isPt
-        ? `${summaryTitle} · ${rows.length} eventos · ${periodLabel(state.months, true)}`
-        : `${summaryTitle} · ${rows.length} entries · ${periodLabel(state.months, false)}`;
+        ? `${summaryTitle} · ${rows.length} eventos · ${periodLabel(state.months, true)}${more}`
+        : `${summaryTitle} · ${rows.length} entries · ${periodLabel(state.months, false)}${more}`;
 
       const root = document.getElementById("events");
       if (!rows.length) {
