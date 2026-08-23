@@ -1,18 +1,18 @@
 {
-  "fetched": "2026-08-22T06:00:35",
+  "fetched": "2026-08-23T06:00:31",
   "count": 3,
   "events": [
-    {
-      "date": "2026-08-22",
-      "time": "15:30",
-      "name": "Marítimo vs Académico de Viseu",
-      "comp": "Portuguese Primeira Liga",
-      "channel": "Sport TV"
-    },
     {
       "date": "2026-08-23",
       "time": "15:30",
       "name": "Vitória de Guimarães vs Nacional de Madeira",
+      "comp": "Portuguese Primeira Liga",
+      "channel": "Sport TV"
+    },
+    {
+      "date": "2026-08-29",
+      "time": "15:30",
+      "name": "Arouca vs Marítimo",
       "comp": "Portuguese Primeira Liga",
       "channel": "Sport TV"
     },
