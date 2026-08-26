@@ -1,141 +1,29 @@
 {
-  "generated_at": "2026-08-22",
+  "generated_at": "2026-08-26",
   "events": [
     {
       "mode": "festivals",
-      "name": "AGO FESTA",
-      "date": "2026-08-22",
-      "location": "Seixal",
-      "url": "https://t.me/festas_madeira/2393",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
       "name": "Agenda litura Ambiente I Despor",
-      "date": "2026-08-22",
+      "date": "2026-08-26",
       "location": "Porto Santo",
       "url": "https://t.me/festas_madeira/2400",
       "event_type": "festival"
     },
     {
       "mode": "festivals",
-      "name": "Arraial Curral das Fheiras",
-      "date": "2026-08-22",
-      "location": "Curral Das Freiras",
-      "url": "https://t.me/festas_madeira/2412",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "BONS MOTIVOS",
-      "date": "2026-08-22",
-      "location": "Ribeira Brava",
-      "url": "https://t.me/festas_madeira/2403",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
       "name": "Concert · Funchal",
-      "date": "2026-08-22",
+      "date": "2026-08-26",
       "location": "Funchal",
       "url": "https://t.me/festas_madeira/2408",
       "event_type": "festival"
     },
     {
       "mode": "festivals",
-      "name": "Concert · Paul Do Mar",
-      "date": "2026-08-22",
-      "location": "Paul Do Mar",
-      "url": "https://t.me/festas_madeira/2410",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "Concert · Porto Da Cruz",
-      "date": "2026-08-22",
-      "location": "Porto Da Cruz",
-      "url": "https://t.me/festas_madeira/2404",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
       "name": "Concert · São Vicente",
-      "date": "2026-08-22",
+      "date": "2026-08-26",
       "location": "São Vicente",
       "url": "https://t.me/festas_madeira/2407",
       "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "XXII ENCONTRO «FOLCLORE",
-      "date": "2026-08-22",
-      "location": "Porto Santo",
-      "url": "https://t.me/festas_madeira/2391",
-      "event_type": "festival"
-    },
-    {
-      "mode": "pro",
-      "name": "Campeonato da Madeira de DHU e Mini DHU - Brisa Sem Açúcar",
-      "date": "2026-08-22",
-      "location": "Funchal",
-      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
-      "event_type": "cycling_pro"
-    },
-    {
-      "mode": "trail",
-      "name": "V Pico Ruivo Vertical Challenge",
-      "date": "2026-08-22",
-      "location": "Santana",
-      "url": "https://fpacompeticoes.pt/",
-      "event_type": "running"
-    },
-    {
-      "mode": "festivals",
-      "name": "European Folklore Week",
-      "date": "2026-08-23",
-      "location": "Madeira",
-      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "Madeira Wine Festival",
-      "date": "2026-08-23",
-      "location": "Madeira",
-      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "XXI SEMANA",
-      "date": "2026-08-23",
-      "location": "Funchal",
-      "url": "https://t.me/festas_madeira/2405",
-      "event_type": "festival"
-    },
-    {
-      "mode": "pro",
-      "name": "XVI Grande Prémio de São Vicente",
-      "date": "2026-08-23",
-      "location": "São Vicente",
-      "url": "https://fpacompeticoes.pt/",
-      "event_type": "running"
-    },
-    {
-      "mode": "road",
-      "name": "G.P. Sao Vicente (7 km)",
-      "date": "2026-08-23",
-      "location": "Madeira",
-      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
-      "event_type": "road_run"
-    },
-    {
-      "mode": "swim",
-      "name": "XXXI Prova de Mar José da Silva \"SACA\"",
-      "date": "2026-08-23",
-      "location": "Funchal",
-      "url": "https://www.anatacaodamadeira.pt/index.php/associacao/associados/documentacao-geral/send/4-calendario-desportivo/158-calendario-desportivo-25-26-lista",
-      "event_type": "swimming"
     },
     {
       "mode": "festivals",
@@ -143,6 +31,38 @@
       "date": "2026-08-26",
       "location": "Machico",
       "url": "https://t.me/festas_madeira/2399",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "XXI SEMANA",
+      "date": "2026-08-26",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2405",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concert",
+      "date": "2026-08-28",
+      "location": "",
+      "url": "https://t.me/festas_madeira/2418",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "“ Nosso ENCONTRO",
+      "date": "2026-08-28",
+      "location": "São Roque Do Faial",
+      "url": "https://t.me/festas_madeira/2416",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Arraial · Calheta",
+      "date": "2026-08-29",
+      "location": "Calheta",
+      "url": "https://t.me/festas_madeira/2421",
       "event_type": "festival"
     },
     {
@@ -168,6 +88,22 @@
       "location": "Funchal",
       "url": "https://triatlomadeira.com/wp-content/uploads/2026/03/Calendario-Provas-Triatlo-Madeira-e-Porto-Santo-2026-V.-06-03-2026.pdf",
       "event_type": "triathlon"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concert",
+      "date": "2026-09-04",
+      "location": "",
+      "url": "https://t.me/festas_madeira/2417",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "ARRAIAL DO SANTISSIMO",
+      "date": "2026-09-05",
+      "location": "Caniço",
+      "url": "https://t.me/festas_madeira/2419",
+      "event_type": "festival"
     },
     {
       "mode": "festivals",
@@ -224,6 +160,22 @@
       "location": "Machico, Madeira",
       "url": "https://www.swimrunportugal.com/madeira",
       "event_type": "swimrun"
+    },
+    {
+      "mode": "festivals",
+      "name": "Festival · Seixal",
+      "date": "2026-09-11",
+      "location": "Seixal",
+      "url": "https://t.me/festas_madeira/2414",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "bado- 21h00 ANTE ESTREIA",
+      "date": "2026-09-11",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2420",
+      "event_type": "festival"
     },
     {
       "mode": "pro",
@@ -495,6 +447,14 @@
       "date": "2026-10-06",
       "location": "Madeira",
       "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "BIENAL PRAÇA DA CIDADE",
+      "date": "2026-10-09",
+      "location": "Santana",
+      "url": "https://t.me/festas_madeira/2415",
       "event_type": "festival"
     },
     {
