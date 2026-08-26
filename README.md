@@ -1,4 +1,4 @@
-# Madeira Ative 🌿
+# Madeira Ativa 🌿
 
 **Every race, trail and levada on Madeira — in one place, in your language.**
 
@@ -7,18 +7,22 @@ event calendar, the official trail-race quadro, a levada guide with live
 IFCN status, 2D + 3D terrain maps, and island news auto-translated into six
 languages. Static, fast, no tracking.
 
-**Live: [shpara.com/madeira](https://shpara.com/madeira)**
+**Live: [azenha.ai/ativa](https://azenha.ai/ativa/)**
+
+> This repository is the public showcase of the site. It mirrors the published
+> `ativa/` build; the parsers and workflows that generate the data live in the
+> private production repository.
 
 ## What's inside
 
 | Section | What |
 |---|---|
-| [Events](https://shpara.com/madeira) | Filterable calendar — Trail, Road, Orienteering, Bike, Kids, Pro, Swim, Festivals — with a "Next" view that jumps to the nearest race |
-| [Trail stats](https://shpara.com/madeira/madeira_stat.html) | Annual calendar wheels, difficulty map, elevation profiles, MIUT analytics, and the official **Trail Madeira quadro** (17 races incl. MIUT / Ultra Skyrunning / Ultra X) — filterable, exportable to CSV / Excel / PDF |
-| [Levadas](https://shpara.com/madeira/levada) | Guide to all 44 classified PR walking trails — distance, ascent, start→end, fees, difficulty rating, elevation-profile sparklines, live **open / restricted / closed** status |
-| [Map](https://shpara.com/madeira/map) | 2D Leaflet map — race courses, walking trails by status, closures, popularity heatmap, plus city/road/tunnel and *all-levadas* overlays |
-| 3D maps | Three MapLibre terrain views — **[3D](https://shpara.com/madeira/map3d)** (topo), **[Fly](https://shpara.com/madeira/mapfly)** (satellite + route flyover), **[Aerial](https://shpara.com/madeira/mapbay)** (orbiting satellite) — with the same toggleable layers |
-| [News](https://shpara.com/madeira/madeira_news.html) | Island news aggregated from RSS, auto-translated into **PT · EN · DE · PL · UA · RU**, plus upcoming TV broadcasts (FIFA World Cup, Marítimo & Nacional) |
+| [Events](https://azenha.ai/ativa/) | Filterable calendar — Trail, Road, Orienteering, Bike, Kids, Pro, Swim, Festivals — with a "Next" view that jumps to the nearest race |
+| [Trail stats](https://azenha.ai/ativa/madeira_stat.html) | Annual calendar wheels, difficulty map, elevation profiles, MIUT analytics, and the official **Trail Madeira quadro** (17 races incl. MIUT / Ultra Skyrunning / Ultra X) — filterable, exportable to CSV / Excel / PDF |
+| [Levadas](https://azenha.ai/ativa/levada) | Guide to all 44 classified PR walking trails — distance, ascent, start→end, fees, difficulty rating, elevation-profile sparklines, live **open / restricted / closed** status |
+| [Map](https://azenha.ai/ativa/map) | 2D Leaflet map — race courses, walking trails by status, closures, popularity heatmap, plus city/road/tunnel and *all-levadas* overlays |
+| 3D maps | Three MapLibre terrain views — **[3D](https://azenha.ai/ativa/map3d)** (topo), **[Fly](https://azenha.ai/ativa/mapfly)** (satellite + route flyover), **[Aerial](https://azenha.ai/ativa/mapbay)** (orbiting satellite) — with the same toggleable layers |
+| [News](https://azenha.ai/ativa/madeira_news.html) | Island news aggregated from RSS, auto-translated into **PT · EN · DE · PL · UA · RU**, plus upcoming TV broadcasts (FIFA World Cup, Marítimo & Nacional) |
 
 Plus a **Telegram bot** (`@madeira_ebot`), installable **PWA**, and a
 levada map draped over real 3D terrain.
@@ -46,43 +50,25 @@ levada map draped over real 3D terrain.
 3. **Fresh by itself.** News, TV broadcasts, trail status, geometry and the
    race-calendar check all refresh daily via GitHub Actions.
 
-## Architecture
+## What the published build contains
 
 ```
-madeira/
+ativa/
   index.html            # events calendar (categories, periods, watchlist)
   madeira_stat.html     # trail-race analytics + calendar table
   levada.html           # PR walking-trail guide
   map.html              # 2D Leaflet map
   map3d / mapfly / mapbay.html   # 3D MapLibre terrain views
   madeira_news.html     # multilingual news + TV broadcasts
+  trail/                # a static page per classified PR trail
   *.json                # generated feeds (events, news, trails, levadas, broadcasts)
-scripts/
-  fetch_news.py         # RSS → translate (6 langs) → news_feed.json
-  fetch_broadcasts.py   # FIFA WC + clubs → tv_broadcasts.json
-  fetch_trails.py       # IFCN PDF → open/partial/closed status
-  fetch_trail_geometry.py  # OSM PR routes → map geometry
-  fetch_levadas.py      # OSM tags + EU-DEM elevation → levada guide
-  check_trail_pdf.py    # watch the official trail quadro for updates
 ```
 
-## Automation
-
-| Workflow | Schedule | Does |
-|---|---|---|
-| `update-madeira-events.yml` | daily | re-exports the event calendar |
-| `update-madeira-news.yml` | daily | news + translations, TV broadcasts, trail status & geometry, levada guide, calendar-PDF check |
-
-Each step is fault-tolerant — a throttled translator or a slow source never
-blocks the daily refresh.
-
-### Secrets
-
-No credentials live in this repo. Scripts that need them read environment
-variables (see `.env.example`): `TS_UMA_TOKEN` for the ts.uma.pt results API,
-`TELEGRAM_BOT_TOKEN` / `TELEGRAM_CHAT_ID` and `WHATSAPP_*` for the digest
-senders. In CI they come from GitHub Actions Secrets; the digest workflows
-skip gracefully when a secret is not configured.
+The daily refresh — RSS news and translations, TV broadcasts, the IFCN trail
+status PDF, OSM route geometry, the levada guide and the calendar-PDF watch —
+runs in the production repository and lands here as a mirrored commit. Each
+step is fault-tolerant: a throttled translator or a slow source never blocks
+the refresh.
 
 ## Tech
 

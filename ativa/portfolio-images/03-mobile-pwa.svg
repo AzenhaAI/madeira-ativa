@@ -5,7 +5,7 @@
   <g transform="translate(240 380)">
     <rect width="390" height="700" rx="56" fill="#15201a"/>
     <rect x="22" y="26" width="346" height="648" rx="38" fill="#f5f2ea"/>
-    <text x="54" y="100" fill="#15201a" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800">Madeira Ative</text>
+    <text x="54" y="100" fill="#15201a" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800">Madeira Ativa</text>
     <text x="54" y="140" fill="#6b8763" font-family="Inter, Arial, sans-serif" font-size="17">Mobile-first calendar filters</text>
     <rect x="54" y="180" width="84" height="40" rx="20" fill="#1f4d32"/><text x="96" y="207" text-anchor="middle" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700">2 mo</text>
     <rect x="148" y="180" width="84" height="40" rx="20" fill="#fff" stroke="#d9d0c1"/><text x="190" y="207" text-anchor="middle" fill="#15201a" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700">6 mo</text>

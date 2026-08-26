@@ -1,9 +1,0 @@
-# Cloudflare Pages rewrites (200 = serve without changing the URL)
-/madeira/history   /madeira/madeira_history.html   200
-/madeira/history/  /madeira/madeira_history.html   200
-/madeira/festas    /madeira/madeira_festas.html    200
-/madeira/festas/   /madeira/madeira_festas.html    200
-/madeira/news      /madeira/madeira_news.html      200
-/madeira/news/     /madeira/madeira_news.html      200
-/madeira/album     /madeira/history                301
-/madeira/album/    /madeira/history                301
