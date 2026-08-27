@@ -1,44 +1,36 @@
 {
-  "generated_at": "2026-08-26",
+  "generated_at": "2026-08-27",
   "events": [
     {
       "mode": "festivals",
-      "name": "Agenda litura Ambiente I Despor",
-      "date": "2026-08-26",
-      "location": "Porto Santo",
-      "url": "https://t.me/festas_madeira/2400",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "Concert · Funchal",
-      "date": "2026-08-26",
-      "location": "Funchal",
-      "url": "https://t.me/festas_madeira/2408",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "Concert · São Vicente",
-      "date": "2026-08-26",
+      "name": "ALMOÇO COM OS ESTUDANTES",
+      "date": "2026-08-27",
       "location": "São Vicente",
       "url": "https://t.me/festas_madeira/2407",
       "event_type": "festival"
     },
     {
       "mode": "festivals",
-      "name": "PARÓQUIA DE MACHICO",
-      "date": "2026-08-26",
-      "location": "Machico",
-      "url": "https://t.me/festas_madeira/2399",
+      "name": "Concert · Funchal",
+      "date": "2026-08-27",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2408",
       "event_type": "festival"
     },
     {
       "mode": "festivals",
-      "name": "XXI SEMANA",
-      "date": "2026-08-26",
-      "location": "Funchal",
-      "url": "https://t.me/festas_madeira/2405",
+      "name": "Exhibition · Porto Santo",
+      "date": "2026-08-27",
+      "location": "Porto Santo",
+      "url": "https://t.me/festas_madeira/2400",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "PARÓQUIA DE MACHICO CONFRARIA DO SANTISSIMO SACRAMENTO",
+      "date": "2026-08-27",
+      "location": "Machico",
+      "url": "https://t.me/festas_madeira/2399",
       "event_type": "festival"
     },
     {
@@ -51,7 +43,7 @@
     },
     {
       "mode": "festivals",
-      "name": "“ Nosso ENCONTRO",
+      "name": "XXIl ENCONTRO DE EMIGRANTES - SÃO ROQUE DO FAIAL",
       "date": "2026-08-28",
       "location": "São Roque Do Faial",
       "url": "https://t.me/festas_madeira/2416",
@@ -99,7 +91,7 @@
     },
     {
       "mode": "festivals",
-      "name": "ARRAIAL DO SANTISSIMO",
+      "name": "ARRAIAL DO SANTISSIMO SACRAMENTO",
       "date": "2026-09-05",
       "location": "Caniço",
       "url": "https://t.me/festas_madeira/2419",
@@ -171,7 +163,7 @@
     },
     {
       "mode": "festivals",
-      "name": "bado- 21h00 ANTE ESTREIA",
+      "name": "Show · Funchal",
       "date": "2026-09-11",
       "location": "Funchal",
       "url": "https://t.me/festas_madeira/2420",
@@ -296,14 +288,6 @@
       "location": "Madeira",
       "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
       "event_type": "road_run"
-    },
-    {
-      "mode": "trail",
-      "name": "Trail Câmara de Lobos",
-      "date": "2026-09-20",
-      "location": "Câmara de Lobos",
-      "url": "https://lap2go.com/pt/event/trail-camara-de-lobos-2026",
-      "event_type": ""
     },
     {
       "mode": "road",

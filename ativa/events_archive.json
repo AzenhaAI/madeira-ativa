@@ -1,7 +1,7 @@
 {
   "note": "Past events — preserved so history is never lost on rebuild",
-  "generated_at": "2026-08-26",
-  "count": 471,
+  "generated_at": "2026-08-27",
+  "count": 476,
   "events": [
     {
       "mode": "trail",
@@ -3550,6 +3550,46 @@
       "mode": "festivals",
       "name": "XXI SEMANA",
       "date": "2026-08-25",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2405",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Agenda litura Ambiente I Despor",
+      "date": "2026-08-26",
+      "location": "Porto Santo",
+      "url": "https://t.me/festas_madeira/2400",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concert · Funchal",
+      "date": "2026-08-26",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2408",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concert · São Vicente",
+      "date": "2026-08-26",
+      "location": "São Vicente",
+      "url": "https://t.me/festas_madeira/2407",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "PARÓQUIA DE MACHICO",
+      "date": "2026-08-26",
+      "location": "Machico",
+      "url": "https://t.me/festas_madeira/2399",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "XXI SEMANA",
+      "date": "2026-08-26",
       "location": "Funchal",
       "url": "https://t.me/festas_madeira/2405",
       "event_type": "festival"
