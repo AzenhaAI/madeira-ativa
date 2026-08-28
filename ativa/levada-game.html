@@ -68,13 +68,15 @@
 
   /* mode switch */
   .modes { display: flex; gap: 6px; margin-bottom: 16px; }
-  .modes button {
+  .modes button, .modes a.mode-out {
     flex: 1; font: inherit; font-size: 14px; cursor: pointer; text-align: left;
     background: var(--card); color: var(--ink); border: 1px solid var(--line);
     border-radius: 10px; padding: 10px 13px; line-height: 1.35; transition: border-color .15s;
   }
-  .modes button:hover { border-color: var(--accent); }
-  .modes button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .modes button:hover, .modes a.mode-out:hover { border-color: var(--accent); }
+  .modes button:focus-visible, .modes a.mode-out:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .modes a.mode-out { text-decoration: none; display: block; }
+  .modes a.mode-out .mt::after { content: ' \2197'; color: var(--soft); font-weight: 400; }
   .modes button[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
   .modes .mt { display: block; font-weight: 600; }
   .modes .ms { display: block; font-size: 12px; color: var(--soft); margin-top: 2px; }
@@ -218,8 +220,8 @@ html.dark .go:hover { background: #a8d2b1; }
 
   <h1><span data-lang="en">Levada Games</span><span data-lang="pt">Jogos das Levadas</span></h1>
   <p class="sub">
-    <span data-lang="en">Two small games built on the same trail data as the guide — the elevation profiles of all 43 classified walks are real, metre for metre.</span>
-    <span data-lang="pt">Dois pequenos jogos com os mesmos dados do guia — os perfis de altimetria dos 43 percursos classificados são reais, metro a metro.</span>
+    <span data-lang="en">Three small games built on the same trail data as the guide — the elevation profiles of all 43 classified walks are real, metre for metre.</span>
+    <span data-lang="pt">Três pequenos jogos com os mesmos dados do guia — os perfis de altimetria dos 43 percursos classificados são reais, metro a metro.</span>
   </p>
 
   <div class="modes">
@@ -231,6 +233,10 @@ html.dark .go:hover { background: #a8d2b1; }
       <span class="mt"><span data-lang="en">Run the trail</span><span data-lang="pt">Corre o percurso</span></span>
       <span class="ms"><span data-lang="en">The profile becomes the ground · jump the boulders</span><span data-lang="pt">O perfil vira o terreno · salta as pedras</span></span>
     </button>
+    <a class="mode-out" href="/games/tunnels">
+      <span class="mt"><span data-lang="en">Levada Tunnels</span><span data-lang="pt">Túneis das Levadas</span></span>
+      <span class="ms"><span data-lang="en">A first-person walk through the dark · opens on its own page</span><span data-lang="pt">Uma caminhada em primeira pessoa no escuro · abre em página própria</span></span>
+    </a>
   </div>
 
   <div class="card" id="loadingCard">
