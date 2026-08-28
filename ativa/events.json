@@ -1,36 +1,20 @@
 {
-  "generated_at": "2026-08-27",
+  "generated_at": "2026-08-28",
   "events": [
     {
       "mode": "festivals",
       "name": "ALMOÇO COM OS ESTUDANTES",
-      "date": "2026-08-27",
+      "date": "2026-08-28",
       "location": "São Vicente",
       "url": "https://t.me/festas_madeira/2407",
       "event_type": "festival"
     },
     {
       "mode": "festivals",
-      "name": "Concert · Funchal",
-      "date": "2026-08-27",
-      "location": "Funchal",
-      "url": "https://t.me/festas_madeira/2408",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "Exhibition · Porto Santo",
-      "date": "2026-08-27",
-      "location": "Porto Santo",
-      "url": "https://t.me/festas_madeira/2400",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "PARÓQUIA DE MACHICO CONFRARIA DO SANTISSIMO SACRAMENTO",
-      "date": "2026-08-27",
-      "location": "Machico",
-      "url": "https://t.me/festas_madeira/2399",
+      "name": "Arraial",
+      "date": "2026-08-28",
+      "location": "",
+      "url": "https://t.me/festas_madeira/2425",
       "event_type": "festival"
     },
     {
@@ -43,10 +27,42 @@
     },
     {
       "mode": "festivals",
+      "name": "Exhibition · Porto Santo",
+      "date": "2026-08-28",
+      "location": "Porto Santo",
+      "url": "https://t.me/festas_madeira/2400",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "FESTA EM HONRA DO SANTÍSSIMO ACRAMENTO TRavição",
+      "date": "2026-08-28",
+      "location": "Camacha",
+      "url": "https://t.me/festas_madeira/2424",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "PARÓQUIA DE MACHICO CONFRARIA DO SANTISSIMO SACRAMENTO",
+      "date": "2026-08-28",
+      "location": "Machico",
+      "url": "https://t.me/festas_madeira/2399",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
       "name": "XXIl ENCONTRO DE EMIGRANTES - SÃO ROQUE DO FAIAL",
       "date": "2026-08-28",
       "location": "São Roque Do Faial",
       "url": "https://t.me/festas_madeira/2416",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "APOIOS INSTITUCIONAIS / PARCEIROS",
+      "date": "2026-08-29",
+      "location": "São Vicente",
+      "url": "https://t.me/festas_madeira/2429",
       "event_type": "festival"
     },
     {
@@ -83,10 +99,26 @@
     },
     {
       "mode": "festivals",
+      "name": "Concert · Ponta Delgada",
+      "date": "2026-09-03",
+      "location": "Ponta Delgada",
+      "url": "https://t.me/festas_madeira/2422",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
       "name": "Concert",
       "date": "2026-09-04",
       "location": "",
       "url": "https://t.me/festas_madeira/2417",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concert · Fajã Da Ovelha",
+      "date": "2026-09-04",
+      "location": "Fajã Da Ovelha",
+      "url": "https://t.me/festas_madeira/2426",
       "event_type": "festival"
     },
     {
@@ -152,6 +184,14 @@
       "location": "Machico, Madeira",
       "url": "https://www.swimrunportugal.com/madeira",
       "event_type": "swimrun"
+    },
+    {
+      "mode": "festivals",
+      "name": "FESTA DO IMACULADO CEI 41) NOVENA SEE AMIGOS DA MÚSICA",
+      "date": "2026-09-11",
+      "location": "",
+      "url": "https://t.me/festas_madeira/2427",
+      "event_type": "festival"
     },
     {
       "mode": "festivals",

@@ -1,7 +1,7 @@
 {
   "note": "Past events — preserved so history is never lost on rebuild",
-  "generated_at": "2026-08-27",
-  "count": 476,
+  "generated_at": "2026-08-28",
+  "count": 482,
   "events": [
     {
       "mode": "trail",
@@ -3580,6 +3580,14 @@
     },
     {
       "mode": "festivals",
+      "name": "FESTA EM HONRA DO SANTÍSSIMO SACRAMENTO",
+      "date": "2026-08-26",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2423",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
       "name": "PARÓQUIA DE MACHICO",
       "date": "2026-08-26",
       "location": "Machico",
@@ -3593,6 +3601,46 @@
       "location": "Funchal",
       "url": "https://t.me/festas_madeira/2405",
       "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "ALMOÇO COM OS ESTUDANTES",
+      "date": "2026-08-27",
+      "location": "São Vicente",
+      "url": "https://t.me/festas_madeira/2407",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concert · Funchal",
+      "date": "2026-08-27",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2408",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Exhibition · Porto Santo",
+      "date": "2026-08-27",
+      "location": "Porto Santo",
+      "url": "https://t.me/festas_madeira/2400",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "PARÓQUIA DE MACHICO CONFRARIA DO SANTISSIMO SACRAMENTO",
+      "date": "2026-08-27",
+      "location": "Machico",
+      "url": "https://t.me/festas_madeira/2399",
+      "event_type": "festival"
+    },
+    {
+      "mode": "swim",
+      "name": "Start List Triatlo Cidade do Funchal 2026",
+      "date": "2026-08-27",
+      "location": "Funchal",
+      "url": "https://triatlomadeira.com/2026/08/start-list-triatlo-cidade-do-funchal-2026/",
+      "event_type": "triathlon"
     }
   ]
 }
