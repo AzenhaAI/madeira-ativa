@@ -1,18 +1,18 @@
 {
-  "fetched": "2026-08-28T17:43:46",
+  "fetched": "2026-08-30T10:40:48",
   "count": 3,
   "events": [
-    {
-      "date": "2026-08-29",
-      "time": "15:30",
-      "name": "Arouca vs Marítimo",
-      "comp": "Portuguese Primeira Liga",
-      "channel": "Sport TV"
-    },
     {
       "date": "2026-08-30",
       "time": "15:30",
       "name": "Nacional de Madeira vs Estrela Amadora",
+      "comp": "Portuguese Primeira Liga",
+      "channel": "Sport TV"
+    },
+    {
+      "date": "2026-09-05",
+      "time": "18:00",
+      "name": "Marítimo vs Benfica",
       "comp": "Portuguese Primeira Liga",
       "channel": "Sport TV"
     },

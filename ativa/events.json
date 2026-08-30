@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-28",
+  "generated_at": "2026-08-30",
   "events": [
     {
       "mode": "festivals",
       "name": "ALMOÇO COM OS ESTUDANTES",
-      "date": "2026-08-28",
+      "date": "2026-08-30",
       "location": "São Vicente",
       "url": "https://t.me/festas_madeira/2407",
       "event_type": "festival"
@@ -12,15 +12,39 @@
     {
       "mode": "festivals",
       "name": "Arraial",
-      "date": "2026-08-28",
+      "date": "2026-08-30",
       "location": "",
       "url": "https://t.me/festas_madeira/2425",
       "event_type": "festival"
     },
     {
       "mode": "festivals",
+      "name": "Arraial Curral das Fheiras",
+      "date": "2026-08-30",
+      "location": "Curral Das Freiras",
+      "url": "https://t.me/festas_madeira/2412",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Arraial · Calheta",
+      "date": "2026-08-30",
+      "location": "Calheta",
+      "url": "https://t.me/festas_madeira/2421",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Arraial · Machico",
+      "date": "2026-08-30",
+      "location": "Machico",
+      "url": "https://t.me/festas_madeira/2430",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
       "name": "Concert",
-      "date": "2026-08-28",
+      "date": "2026-08-30",
       "location": "",
       "url": "https://t.me/festas_madeira/2418",
       "event_type": "festival"
@@ -28,49 +52,25 @@
     {
       "mode": "festivals",
       "name": "Exhibition · Porto Santo",
-      "date": "2026-08-28",
+      "date": "2026-08-30",
       "location": "Porto Santo",
       "url": "https://t.me/festas_madeira/2400",
       "event_type": "festival"
     },
     {
       "mode": "festivals",
-      "name": "FESTA EM HONRA DO SANTÍSSIMO ACRAMENTO TRavição",
-      "date": "2026-08-28",
-      "location": "Camacha",
-      "url": "https://t.me/festas_madeira/2424",
+      "name": "FESTA EM HONRA DO SANTÍSSIMO SACRAMENTO",
+      "date": "2026-08-30",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2423",
       "event_type": "festival"
     },
     {
       "mode": "festivals",
       "name": "PARÓQUIA DE MACHICO CONFRARIA DO SANTISSIMO SACRAMENTO",
-      "date": "2026-08-28",
+      "date": "2026-08-30",
       "location": "Machico",
       "url": "https://t.me/festas_madeira/2399",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "XXIl ENCONTRO DE EMIGRANTES - SÃO ROQUE DO FAIAL",
-      "date": "2026-08-28",
-      "location": "São Roque Do Faial",
-      "url": "https://t.me/festas_madeira/2416",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "APOIOS INSTITUCIONAIS / PARCEIROS",
-      "date": "2026-08-29",
-      "location": "São Vicente",
-      "url": "https://t.me/festas_madeira/2429",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "Arraial · Calheta",
-      "date": "2026-08-29",
-      "location": "Calheta",
-      "url": "https://t.me/festas_madeira/2421",
       "event_type": "festival"
     },
     {
@@ -123,10 +123,26 @@
     },
     {
       "mode": "festivals",
+      "name": "Concert · Funchal",
+      "date": "2026-09-04",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2432",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
       "name": "ARRAIAL DO SANTISSIMO SACRAMENTO",
       "date": "2026-09-05",
       "location": "Caniço",
       "url": "https://t.me/festas_madeira/2419",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "ORIENTA ÇÃC AVENTURA vente CARVALHAL - CANHAS",
+      "date": "2026-09-05",
+      "location": "Canhas",
+      "url": "https://t.me/festas_madeira/2435",
       "event_type": "festival"
     },
     {
@@ -138,28 +154,20 @@
       "event_type": "festival"
     },
     {
-      "mode": "trail",
-      "name": "Orientação: MOSS (Extra) (05/09-06/09)",
-      "date": "2026-09-05",
-      "location": "Madeira",
-      "url": "https://aoram.pt/calendario/",
-      "event_type": "orienteering"
-    },
-    {
-      "mode": "trail",
-      "name": "Orientação: Orientação Aventura Ponta Sol (Rogaine)",
-      "date": "2026-09-05",
-      "location": "Ponta do Sol",
-      "url": "https://aoram.pt/calendario/",
-      "event_type": "orienteering"
-    },
-    {
       "mode": "cycling",
       "name": "XXVI G. P. da Comp. de Bombeiros Sapadores do Funchal /“Carlinhos” Fernandes",
       "date": "2026-09-06",
       "location": "Funchal",
       "url": "https://fpacompeticoes.pt/",
       "event_type": "running"
+    },
+    {
+      "mode": "festivals",
+      "name": "GRUPO DE FOLCLORE. GRUPO DE FOLCLORE",
+      "date": "2026-09-06",
+      "location": "Ribeira Brava",
+      "url": "https://t.me/festas_madeira/2439",
+      "event_type": "festival"
     },
     {
       "mode": "pro",
@@ -184,6 +192,14 @@
       "location": "Machico, Madeira",
       "url": "https://www.swimrunportugal.com/madeira",
       "event_type": "swimrun"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concert · Funchal",
+      "date": "2026-09-10",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2433",
+      "event_type": "festival"
     },
     {
       "mode": "festivals",
@@ -258,22 +274,6 @@
       "event_type": "triathlon"
     },
     {
-      "mode": "trail",
-      "name": "FX Sky Race 10 km / 800D+",
-      "date": "2026-09-13",
-      "location": "Chão da Lagoa, Funchal",
-      "url": "https://skyrunning.camadeira.com/",
-      "event_type": "trail"
-    },
-    {
-      "mode": "trail",
-      "name": "FX Sky Race 21 km / 1400D+",
-      "date": "2026-09-13",
-      "location": "Chão da Lagoa, Funchal",
-      "url": "https://skyrunning.camadeira.com/",
-      "event_type": "trail"
-    },
-    {
       "mode": "festivals",
       "name": "Columbus Festival - Porto Santo Island",
       "date": "2026-09-17",
@@ -298,6 +298,14 @@
       "event_type": "festival"
     },
     {
+      "mode": "festivals",
+      "name": "FESTAS PERO PONTA DO PARGO",
+      "date": "2026-09-19",
+      "location": "Ponta Do Pargo",
+      "url": "https://t.me/festas_madeira/2434",
+      "event_type": "festival"
+    },
+    {
       "mode": "trail",
       "name": "Trail de Camara de Lobos (15/22/39 km)",
       "date": "2026-09-19",
@@ -312,6 +320,14 @@
       "location": "Calheta",
       "url": "https://acmadeira.pt/evento/granfondo-calheta-2026/",
       "event_type": "cycling"
+    },
+    {
+      "mode": "festivals",
+      "name": "CORRE SALTA LANÇA FAZ NOVOS AMIGOS",
+      "date": "2026-09-20",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2437",
+      "event_type": "festival"
     },
     {
       "mode": "pro",
@@ -344,14 +360,6 @@
       "location": "Funchal (RG3)",
       "url": "https://fpacompeticoes.pt/",
       "event_type": "running"
-    },
-    {
-      "mode": "trail",
-      "name": "Orientação: Orientação Câmara de Lobos (Urbana)",
-      "date": "2026-09-26",
-      "location": "Câmara de Lobos",
-      "url": "https://aoram.pt/calendario/",
-      "event_type": "orienteering"
     },
     {
       "mode": "pro",
@@ -410,20 +418,20 @@
       "event_type": "motorsport"
     },
     {
+      "mode": "festivals",
+      "name": "Sport · Machico",
+      "date": "2026-10-03",
+      "location": "Machico",
+      "url": "https://t.me/festas_madeira/2438",
+      "event_type": "festival"
+    },
+    {
       "mode": "swim",
       "name": "Triatlo Olimpico Porto Santo",
       "date": "2026-10-03",
       "location": "Porto Santo",
       "url": "https://triatlomadeira.com/wp-content/uploads/2026/03/Calendario-Provas-Triatlo-Madeira-e-Porto-Santo-2026-V.-06-03-2026.pdf",
       "event_type": "triathlon"
-    },
-    {
-      "mode": "trail",
-      "name": "Orientação: XXXII Troféu Orientação CAMadeira (Pedestre)",
-      "date": "2026-10-03",
-      "location": "Madeira",
-      "url": "https://aoram.pt/calendario/",
-      "event_type": "orienteering"
     },
     {
       "mode": "trail",
@@ -440,14 +448,6 @@
       "location": "Porto Santo",
       "url": "https://triatlomadeira.com/wp-content/uploads/2026/03/Calendario-Provas-Triatlo-Madeira-e-Porto-Santo-2026-V.-06-03-2026.pdf",
       "event_type": "triathlon_pro"
-    },
-    {
-      "mode": "trail",
-      "name": "Orientação: 4.º Ori-Trail Rogaine Festa da Maçã 2026 (Rogaine)",
-      "date": "2026-10-04",
-      "location": "Camacha",
-      "url": "https://aoram.pt/calendario/",
-      "event_type": "orienteering"
     },
     {
       "mode": "cycling",
@@ -530,14 +530,6 @@
       "event_type": "trail"
     },
     {
-      "mode": "trail",
-      "name": "Orientação: I Rogaine do Estreito (Rogaine)",
-      "date": "2026-10-17",
-      "location": "Estreito de Câmara de Lobos",
-      "url": "https://aoram.pt/calendario/",
-      "event_type": "orienteering"
-    },
-    {
       "mode": "cycling",
       "name": "Rally Madeira Legend",
       "date": "2026-10-22",
@@ -560,14 +552,6 @@
       "location": "Porto Santo",
       "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
       "event_type": "cycling_pro"
-    },
-    {
-      "mode": "trail",
-      "name": "Orientação: Vila Ponta do Sol (noturno) (Urbana)",
-      "date": "2026-10-31",
-      "location": "Ponta do Sol",
-      "url": "https://aoram.pt/calendario/",
-      "event_type": "orienteering"
     },
     {
       "mode": "trail",
@@ -602,14 +586,6 @@
       "event_type": "trail"
     },
     {
-      "mode": "trail",
-      "name": "Orientação: Floresta Poiso (Pedestre)",
-      "date": "2026-11-01",
-      "location": "Poiso",
-      "url": "https://aoram.pt/calendario/",
-      "event_type": "orienteering"
-    },
-    {
       "mode": "pro",
       "name": "4ª Taça da Madeira de Enduro e Mini Enduro - Globalgest",
       "date": "2026-11-07",
@@ -619,43 +595,11 @@
     },
     {
       "mode": "trail",
-      "name": "Orientação: 10.º Funchal City Race (Urbana)",
-      "date": "2026-11-08",
-      "location": "Funchal",
-      "url": "https://aoram.pt/calendario/",
-      "event_type": "orienteering"
-    },
-    {
-      "mode": "trail",
-      "name": "Orientação: Sprint Jardim do Mar (Urbana)",
-      "date": "2026-11-14",
-      "location": "Jardim do Mar, Calheta",
-      "url": "https://aoram.pt/calendario/",
-      "event_type": "orienteering"
-    },
-    {
-      "mode": "trail",
-      "name": "Orientação: V Ori dos Castanheiros (Urbana)",
-      "date": "2026-11-15",
-      "location": "Madeira",
-      "url": "https://aoram.pt/calendario/",
-      "event_type": "orienteering"
-    },
-    {
-      "mode": "trail",
       "name": "ADN Race Ponta do Sol",
       "date": "2026-11-22",
       "location": "Ponta do Sol, Madeira",
       "url": "https://adnrace.pt/",
       "event_type": ""
-    },
-    {
-      "mode": "trail",
-      "name": "Orientação: Orientação Calheta (Urbana)",
-      "date": "2026-11-28",
-      "location": "Calheta",
-      "url": "https://aoram.pt/calendario/",
-      "event_type": "orienteering"
     },
     {
       "mode": "festivals",
@@ -682,14 +626,6 @@
       "event_type": "festival"
     },
     {
-      "mode": "trail",
-      "name": "Orientação: Madeira Rogaining Race (Rogaine)",
-      "date": "2026-12-01",
-      "location": "Madeira",
-      "url": "https://aoram.pt/calendario/",
-      "event_type": "orienteering"
-    },
-    {
       "mode": "kids",
       "name": "Christmas Village",
       "date": "2026-12-04",
@@ -712,14 +648,6 @@
       "location": "Funchal",
       "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
       "event_type": "cycling"
-    },
-    {
-      "mode": "trail",
-      "name": "Orientação: XMAS (Extra)",
-      "date": "2026-12-12",
-      "location": "Madeira",
-      "url": "https://aoram.pt/calendario/",
-      "event_type": "orienteering"
     },
     {
       "mode": "festivals",

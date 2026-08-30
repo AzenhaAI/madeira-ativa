@@ -1,7 +1,7 @@
 {
   "note": "Past events — preserved so history is never lost on rebuild",
-  "generated_at": "2026-08-28",
-  "count": 482,
+  "generated_at": "2026-08-30",
+  "count": 499,
   "events": [
     {
       "mode": "trail",
@@ -3641,6 +3641,142 @@
       "location": "Funchal",
       "url": "https://triatlomadeira.com/2026/08/start-list-triatlo-cidade-do-funchal-2026/",
       "event_type": "triathlon"
+    },
+    {
+      "mode": "festivals",
+      "name": "ALMOÇO COM OS ESTUDANTES",
+      "date": "2026-08-28",
+      "location": "São Vicente",
+      "url": "https://t.me/festas_madeira/2407",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Arraial",
+      "date": "2026-08-28",
+      "location": "",
+      "url": "https://t.me/festas_madeira/2425",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concert",
+      "date": "2026-08-28",
+      "location": "",
+      "url": "https://t.me/festas_madeira/2418",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Exhibition · Porto Santo",
+      "date": "2026-08-28",
+      "location": "Porto Santo",
+      "url": "https://t.me/festas_madeira/2400",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "FESTA EM HONRA DO SANTÍSSIMO ACRAMENTO TRavição",
+      "date": "2026-08-28",
+      "location": "Camacha",
+      "url": "https://t.me/festas_madeira/2424",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "PARÓQUIA DE MACHICO CONFRARIA DO SANTISSIMO SACRAMENTO",
+      "date": "2026-08-28",
+      "location": "Machico",
+      "url": "https://t.me/festas_madeira/2399",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "XXIl ENCONTRO DE EMIGRANTES - SÃO ROQUE DO FAIAL",
+      "date": "2026-08-28",
+      "location": "São Roque Do Faial",
+      "url": "https://t.me/festas_madeira/2416",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "ALMOÇO COM OS ESTUDANTES",
+      "date": "2026-08-29",
+      "location": "São Vicente",
+      "url": "https://t.me/festas_madeira/2407",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "APOIOS INSTITUCIONAIS / PARCEIROS",
+      "date": "2026-08-29",
+      "location": "São Vicente",
+      "url": "https://t.me/festas_madeira/2429",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Arraial",
+      "date": "2026-08-29",
+      "location": "",
+      "url": "https://t.me/festas_madeira/2425",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Arraial Curral das Fheiras",
+      "date": "2026-08-29",
+      "location": "Curral Das Freiras",
+      "url": "https://t.me/festas_madeira/2412",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Arraial · Calheta",
+      "date": "2026-08-29",
+      "location": "Calheta",
+      "url": "https://t.me/festas_madeira/2421",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Arraial · Machico",
+      "date": "2026-08-29",
+      "location": "Machico",
+      "url": "https://t.me/festas_madeira/2430",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concert",
+      "date": "2026-08-29",
+      "location": "",
+      "url": "https://t.me/festas_madeira/2418",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Exhibition · Porto Santo",
+      "date": "2026-08-29",
+      "location": "Porto Santo",
+      "url": "https://t.me/festas_madeira/2400",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "FESTA EM HONRA DO SANTÍSSIMO SACRAMENTO",
+      "date": "2026-08-29",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2423",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "PARÓQUIA DE MACHICO CONFRARIA DO SANTISSIMO SACRAMENTO",
+      "date": "2026-08-29",
+      "location": "Machico",
+      "url": "https://t.me/festas_madeira/2399",
+      "event_type": "festival"
     }
   ]
 }

@@ -1,0 +1,318 @@
+{
+  "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
+  "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
+  "fetched": "2026-08-30T19:33:25",
+  "count": 31,
+  "items": [
+    {
+      "id": "114",
+      "title": "\"A Semente dos Olhos\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/a-semente-dos-olhos",
+      "start": "2026-03-16",
+      "end": "2026-08-30",
+      "time": "17:00",
+      "place": "Galeria dos Prazeres",
+      "category": "Exhibition"
+    },
+    {
+      "id": "131",
+      "title": "Duo Bandonica – Projeto Artístico “Fala-me de Música”",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/duo-bandonica-projeto-artistico-fala-me-de-musica1",
+      "start": "2026-03-24",
+      "end": "2026-12-05",
+      "time": "",
+      "place": "",
+      "category": "Music"
+    },
+    {
+      "id": "146",
+      "title": "\"Bordado da Madeira\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/exposicao-bordado-da-madeira",
+      "start": "2026-04-16",
+      "end": "2026-10-31",
+      "time": "17:30",
+      "place": "Quinta Magnólia - Centro Cultural",
+      "category": "Exhibition"
+    },
+    {
+      "id": "151",
+      "title": "“WA”",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/exposicao-wa",
+      "start": "2026-04-22",
+      "end": "2026-08-31",
+      "time": "16:30",
+      "place": "Fortaleza de São João Baptista do Pico",
+      "category": "Exhibition"
+    },
+    {
+      "id": "169",
+      "title": "“Nostalgic Madeira Music”",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/nostalgic-madeira-music",
+      "start": "2026-04-23",
+      "end": "2026-12-18",
+      "time": "20:30",
+      "place": "Instituto do Vinho da Madeira",
+      "category": "Music"
+    },
+    {
+      "id": "235",
+      "title": "Ciclo de Exposições (IN)FLUXO",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/ciclo-de-exposicoes-in-fluxo",
+      "start": "2026-07-03",
+      "end": "2026-10-31",
+      "time": "",
+      "place": "Sala de exposições da Assembleia Municipal do Porto Santo",
+      "category": "Exhibition"
+    },
+    {
+      "id": "230",
+      "title": "Exposição \"O Desfazer do Tempo\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/exposicao-o-desfazer-do-tempo",
+      "start": "2026-07-20",
+      "end": "2026-09-05",
+      "time": "",
+      "place": "PORTA 33",
+      "category": "Exhibition"
+    },
+    {
+      "id": "255",
+      "title": "\"Ilhas Revisitadas\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/ilhas-revisitadas",
+      "start": "2026-08-12",
+      "end": "2026-10-31",
+      "time": "16:30",
+      "place": "MUDAS.Museu de Arte Contemporânea da Madeira",
+      "category": "Exhibition"
+    },
+    {
+      "id": "250",
+      "title": "Concertos L 2026",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concertos-l-2026",
+      "start": "2026-08-19",
+      "end": "2026-10-21",
+      "time": "",
+      "place": "Estalagem da Ponta do Sol",
+      "category": "Music"
+    },
+    {
+      "id": "271",
+      "title": "Noites Musicais 2026",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/noites-musicais-2026",
+      "start": "2026-08-21",
+      "end": "2026-09-18",
+      "time": "21:00",
+      "place": "",
+      "category": "Music"
+    },
+    {
+      "id": "249",
+      "title": "Festas de São Vicente 2026",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/festas-de-sao-vicente-2026",
+      "start": "2026-08-22",
+      "end": "2026-08-30",
+      "time": "",
+      "place": "Vila de São Vicente",
+      "category": "Traditional feast"
+    },
+    {
+      "id": "251",
+      "title": "Concurso Literário António Feliciano Rodrigues \"Castilho\" 2026",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/concurso-literario-antonio-feliciano-rodrigues-castilho-2026",
+      "start": "2026-08-24",
+      "end": "2026-10-02",
+      "time": "",
+      "place": "",
+      "category": "Other"
+    },
+    {
+      "id": "280",
+      "title": "XV Encontro de Folclore de Machico",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/xv-encontro-de-folclore-de-machico",
+      "start": "2026-08-30",
+      "end": "2026-08-30",
+      "time": "18:30",
+      "place": "Largo da Praça, Machico",
+      "category": "Music"
+    },
+    {
+      "id": "244",
+      "title": "Setembrário – Iniciativa de criação artística e exposição coletiva para artistas emergentes",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/setembrario-iniciativa-de-criacao-artistica-e-exposicao-coletiva-para-artistas-emergentes",
+      "start": "2026-09-01",
+      "end": "2026-09-30",
+      "time": "",
+      "place": "Galeria Tratuário",
+      "category": "Other"
+    },
+    {
+      "id": "274",
+      "title": "Concerto de Música de Câmara — 800 Anos da Morte de São Francisco",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concerto-de-musica-de-camara-800-anos-da-morte-de-sao-francisco",
+      "start": "2026-09-02",
+      "end": "2026-09-02",
+      "time": "20:30",
+      "place": "Convento de São Bernardino",
+      "category": "Music"
+    },
+    {
+      "id": "270",
+      "title": "\"Dias do Saxofone\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/dias-do-saxofone",
+      "start": "2026-09-03",
+      "end": "2026-09-06",
+      "time": "20:30",
+      "place": "",
+      "category": "Music"
+    },
+    {
+      "id": "265",
+      "title": "Meo Sons do Mar 2026",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/meo-sons-do-mar-2026",
+      "start": "2026-09-04",
+      "end": "2026-09-05",
+      "time": "",
+      "place": "Parque de Santa Catarina",
+      "category": "Music"
+    },
+    {
+      "id": "243",
+      "title": "Inscrições abertas | 5.º Encontro do Património Cultural Imaterial do Arquipélago da Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/conferencias/inscricoes-abertas-5-o-encontro-do-patrimonio-cultural-imaterial-do-arquipelago-da-madeira",
+      "start": "2026-09-05",
+      "end": "2026-09-05",
+      "time": "",
+      "place": "Casa do Povo da Camacha",
+      "category": "Conference"
+    },
+    {
+      "id": "256",
+      "title": "Seminário \"Ilhas Desconhecidas: 100 anos de Raúl Brandão\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/conferencias/seminario-as-ilhas-desconhecidas-100-anos-de-raul-brandao",
+      "start": "2026-09-05",
+      "end": "2026-09-05",
+      "time": "09:00",
+      "place": "Castanheiro Boutique Hotel",
+      "category": "Conference"
+    },
+    {
+      "id": "277",
+      "title": "Paróquia da Ponta do Pargo - Festa Tradicional dos Tabuleiros 2026",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/festas-tradicionais/paroquia-da-ponta-do-pargo-festa-tradicional-dos-tabuleiros-2026",
+      "start": "2026-09-05",
+      "end": "2026-09-06",
+      "time": "13:00",
+      "place": "Igreja Matriz da Ponta do Pargo",
+      "category": "Other"
+    },
+    {
+      "id": "267",
+      "title": "Ciclo de Concertos \"Da Vinha ao Lagar\" 2026",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/ciclo-de-concertos-da-vinha-ao-lagar-2026",
+      "start": "2026-09-05",
+      "end": "2026-09-13",
+      "time": "17:00",
+      "place": "",
+      "category": "Music"
+    },
+    {
+      "id": "245",
+      "title": "A Orquestra Jovem Sinfonia da Madeira apresenta:",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/a-orquestra-jovem-sinfonia-da-madeira-apresenta",
+      "start": "2026-09-05",
+      "end": "2026-09-05",
+      "time": "18:00",
+      "place": "Assembleia Legislativa da Região Autónoma da Madeira",
+      "category": "Music"
+    },
+    {
+      "id": "273",
+      "title": "Cine Machico 2026",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/cine-machico-2026",
+      "start": "2026-09-05",
+      "end": "2026-09-26",
+      "time": "21:00",
+      "place": "Fórum Machico",
+      "category": "Traditional feast"
+    },
+    {
+      "id": "276",
+      "title": "FESTIBRAVA 2026",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/festibrava-2026",
+      "start": "2026-09-06",
+      "end": "2026-09-06",
+      "time": "17:30",
+      "place": "Marginal da Ribeira Brava",
+      "category": "Music"
+    },
+    {
+      "id": "117",
+      "title": "7ª International Conference on Innovation in Art Research and Technology - INART 2026 Funchal",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/7a-international-conference-on-innovation-in-art-research-and-technology-inart-2026-funchal",
+      "start": "2026-09-07",
+      "end": "2026-09-11",
+      "time": "",
+      "place": "",
+      "category": "Traditional feast"
+    },
+    {
+      "id": "232",
+      "title": "Festival New Generation",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/festival-new-generation",
+      "start": "2026-09-09",
+      "end": "2026-09-11",
+      "time": "",
+      "place": "Teatro Municipal Baltazar Dias",
+      "category": "Music"
+    },
+    {
+      "id": "257",
+      "title": "Skin | Pele | Metes-me Nojo",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/skin-pele-metes-me-nojo",
+      "start": "2026-09-10",
+      "end": "2026-09-30",
+      "time": "11:00",
+      "place": "Fábrica de Prazeres",
+      "category": "Exhibition"
+    },
+    {
+      "id": "272",
+      "title": "Festas das Vindimas - Estreito de Câmara de Lobos 2026",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/festas-tradicionais/festas-das-vindimas-estreito-de-camara-de-lobos-2026",
+      "start": "2026-09-10",
+      "end": "2026-09-13",
+      "time": "",
+      "place": "Centro do Estreito de Câmara de Lobos",
+      "category": "Other"
+    },
+    {
+      "id": "263",
+      "title": "Festas do Faial 2026",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/festas-tradicionais/festas-do-faial-2026",
+      "start": "2026-09-11",
+      "end": "2026-09-13",
+      "time": "20:00",
+      "place": "",
+      "category": "Other"
+    },
+    {
+      "id": "269",
+      "title": "ANNE FRANK - Memória Consciência e Resistência",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/anne-frank-memoria-consciencia-e-resistencia",
+      "start": "2026-09-11",
+      "end": "2026-09-13",
+      "time": "",
+      "place": "Cine Teatro de Santo António",
+      "category": "Activity"
+    },
+    {
+      "id": "233",
+      "title": "Livrai-nos da Fome!",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/livrai-nos-da-fome",
+      "start": "2026-09-24",
+      "end": "2026-09-26",
+      "time": "",
+      "place": "Teatro Municipal Baltazar Dias",
+      "category": "Activity"
+    }
+  ]
+}
