@@ -1,18 +1,7 @@
 {
   "note": "Annual races not yet announced by their organisers. Rebuilt daily.",
-  "generated_at": "2026-08-30",
+  "generated_at": "2026-09-01",
   "items": [
-    {
-      "name": "Grande Prémio de Gaula",
-      "mode": "trail",
-      "expected": "Expected in August 2026",
-      "watch_dates": [
-        "2026-08-30"
-      ],
-      "location": "Gaula, Santa Cruz",
-      "status": "watching for a confirmed 2026 date (known schedule)",
-      "url": "https://atletismodamadeira.pt/"
-    },
     {
       "name": "Trail Água de Pena",
       "mode": "trail",
@@ -144,6 +133,17 @@
       "location": "Porto Santo",
       "status": "watching for a confirmed 2027 date (race history)",
       "url": "https://www.portosantonaturetrail.com/"
+    },
+    {
+      "name": "Grande Prémio de Gaula",
+      "mode": "trail",
+      "expected": "Expected in August 2027",
+      "watch_dates": [
+        "2027-08-01"
+      ],
+      "location": "Gaula, Santa Cruz",
+      "status": "watching for a confirmed 2027 date (known schedule)",
+      "url": "https://atletismodamadeira.pt/"
     }
   ]
 }

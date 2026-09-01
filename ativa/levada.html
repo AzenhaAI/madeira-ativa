@@ -747,5 +747,27 @@ function flip(){var dk=eff();h.classList.remove('dark','light');h.classList.add(
 if(b)b.addEventListener('click',flip);
 if(d)d.addEventListener('click',function(e){e.preventDefault();flip();});
 paint();})();
-</script></body>
+</script>
+<style>
+  /* A cropped chart has to say where it came from: the page title is usually
+     out of frame. One line per block that actually holds a chart, never on
+     text-only blocks. */
+  .src-line { margin: 12px 0 0; text-align: right; font-family: ui-monospace,
+    SFMono-Regular, Menlo, monospace; font-size: 11px; letter-spacing: .05em;
+    opacity: .45; }
+</style>
+<script>
+  (function () {
+    var SEL = '[class*=card]';
+    document.querySelectorAll(SEL).forEach(function (b) {
+      if (!b.querySelector('canvas, svg')) return;
+      if (b.querySelector(':scope > .src-line')) return;
+      var p = document.createElement('p');
+      p.className = 'src-line';
+      p.textContent = 'azenha.ai/ativa';
+      b.appendChild(p);
+    });
+  })();
+</script>
+</body>
 </html>

@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-08-30T18:37:07",
-  "count": 31,
+  "fetched": "2026-09-01T10:08:44",
+  "count": 36,
   "items": [
     {
       "id": "114",
@@ -145,6 +145,16 @@
       "category": "Other"
     },
     {
+      "id": "282",
+      "title": "Conferência - Dia Nacional das Bandas Filarmónicas",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/conferencias/conferencia-dia-nacional-das-bandas-filarmonicas",
+      "start": "2026-09-01",
+      "end": "2026-09-01",
+      "time": "20:00",
+      "place": "Câmara Municipal de Santana",
+      "category": "Conference"
+    },
+    {
       "id": "274",
       "title": "Concerto de Música de Câmara — 800 Anos da Morte de São Francisco",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concerto-de-musica-de-camara-800-anos-da-morte-de-sao-francisco",
@@ -265,6 +275,16 @@
       "category": "Music"
     },
     {
+      "id": "268",
+      "title": "Festival New Generation 2026",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/festival-new-generation-2026",
+      "start": "2026-09-09",
+      "end": "2026-09-11",
+      "time": "19:00",
+      "place": "Teatro Municipal Baltazar Dias",
+      "category": "Music"
+    },
+    {
       "id": "257",
       "title": "Skin | Pele | Metes-me Nojo",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/skin-pele-metes-me-nojo",
@@ -303,6 +323,36 @@
       "time": "",
       "place": "Cine Teatro de Santo António",
       "category": "Activity"
+    },
+    {
+      "id": "281",
+      "title": "Instalação \"Oculto do Solo\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/instalacao-oculto-do-solo",
+      "start": "2026-09-17",
+      "end": "2026-09-19",
+      "time": "17:30",
+      "place": "Estúdio de Criação Artística do Funchal - Galeria de Arte",
+      "category": "Exhibition"
+    },
+    {
+      "id": "283",
+      "title": "\"República das Bananas\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/republica-das-bananas",
+      "start": "2026-09-17",
+      "end": "2026-09-19",
+      "time": "16:00",
+      "place": "Teatro Municipal Baltazar Dias",
+      "category": "Exhibition"
+    },
+    {
+      "id": "284",
+      "title": "“Lúmen, uma história de amor”, da Companhia S.A. Marionetas",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/lumen-uma-historia-de-amor-da-companhia-s-a-marionetas",
+      "start": "2026-09-19",
+      "end": "2026-09-19",
+      "time": "21:30",
+      "place": "Largo do Colégio",
+      "category": "Traditional feast"
     },
     {
       "id": "233",

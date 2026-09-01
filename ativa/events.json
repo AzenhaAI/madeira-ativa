@@ -1,18 +1,10 @@
 {
-  "generated_at": "2026-08-30",
+  "generated_at": "2026-09-01",
   "events": [
     {
       "mode": "festivals",
-      "name": "\"A Semente dos Olhos\"",
-      "date": "2026-08-30",
-      "location": "Galeria dos Prazeres",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/a-semente-dos-olhos",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
       "name": "\"Bordado da Madeira\"",
-      "date": "2026-08-30",
+      "date": "2026-09-01",
       "location": "Quinta Magnólia - Centro Cultural",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/exposicao-bordado-da-madeira",
       "event_type": "festival"
@@ -20,71 +12,31 @@
     {
       "mode": "festivals",
       "name": "\"Ilhas Revisitadas\"",
-      "date": "2026-08-30",
+      "date": "2026-09-01",
       "location": "MUDAS.Museu de Arte Contemporânea da Madeira",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/ilhas-revisitadas",
       "event_type": "festival"
     },
     {
       "mode": "festivals",
-      "name": "ALMOÇO COM OS ESTUDANTES",
-      "date": "2026-08-30",
-      "location": "São Vicente",
-      "url": "https://t.me/festas_madeira/2407",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
       "name": "Arraial",
-      "date": "2026-08-30",
+      "date": "2026-09-01",
       "location": "",
       "url": "https://t.me/festas_madeira/2425",
       "event_type": "festival"
     },
     {
       "mode": "festivals",
-      "name": "Arraial Curral das Fheiras",
-      "date": "2026-08-30",
-      "location": "Curral Das Freiras",
-      "url": "https://t.me/festas_madeira/2412",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "Arraial · Calheta",
-      "date": "2026-08-30",
-      "location": "Calheta",
-      "url": "https://t.me/festas_madeira/2421",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "Arraial · Machico",
-      "date": "2026-08-30",
-      "location": "Machico",
-      "url": "https://t.me/festas_madeira/2430",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
       "name": "Ciclo de Exposições (IN)FLUXO",
-      "date": "2026-08-30",
+      "date": "2026-09-01",
       "location": "Sala de exposições da Assembleia Municipal do Porto Santo",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/ciclo-de-exposicoes-in-fluxo",
       "event_type": "festival"
     },
     {
       "mode": "festivals",
-      "name": "Concert",
-      "date": "2026-08-30",
-      "location": "",
-      "url": "https://t.me/festas_madeira/2418",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
       "name": "Concertos L 2026",
-      "date": "2026-08-30",
+      "date": "2026-09-01",
       "location": "Estalagem da Ponta do Sol",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concertos-l-2026",
       "event_type": "festival"
@@ -92,114 +44,42 @@
     {
       "mode": "festivals",
       "name": "Concurso Literário António Feliciano Rodrigues \"Castilho\" 2026",
-      "date": "2026-08-30",
+      "date": "2026-09-01",
       "location": "Madeira",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/concurso-literario-antonio-feliciano-rodrigues-castilho-2026",
       "event_type": "festival"
     },
     {
       "mode": "festivals",
+      "name": "Conferência - Dia Nacional das Bandas Filarmónicas",
+      "date": "2026-09-01",
+      "location": "Câmara Municipal de Santana",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/conferencias/conferencia-dia-nacional-das-bandas-filarmonicas",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
       "name": "Duo Bandonica – Projeto Artístico “Fala-me de Música”",
-      "date": "2026-08-30",
+      "date": "2026-09-01",
       "location": "Madeira",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/duo-bandonica-projeto-artistico-fala-me-de-musica1",
       "event_type": "festival"
     },
     {
       "mode": "festivals",
-      "name": "Exhibition · Porto Santo",
-      "date": "2026-08-30",
-      "location": "Porto Santo",
-      "url": "https://t.me/festas_madeira/2400",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
       "name": "Exposição \"O Desfazer do Tempo\"",
-      "date": "2026-08-30",
+      "date": "2026-09-01",
       "location": "PORTA 33",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/exposicao-o-desfazer-do-tempo",
       "event_type": "festival"
     },
     {
       "mode": "festivals",
-      "name": "FESTA EM HONRA DO SANTÍSSIMO SACRAMENTO",
-      "date": "2026-08-30",
-      "location": "Funchal",
-      "url": "https://t.me/festas_madeira/2423",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "Festas de São Vicente 2026",
-      "date": "2026-08-30",
-      "location": "Vila de São Vicente",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/festas-de-sao-vicente-2026",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
       "name": "Noites Musicais 2026",
-      "date": "2026-08-30",
+      "date": "2026-09-01",
       "location": "Madeira",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/noites-musicais-2026",
       "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "PARÓQUIA DE MACHICO CONFRARIA DO SANTISSIMO SACRAMENTO",
-      "date": "2026-08-30",
-      "location": "Machico",
-      "url": "https://t.me/festas_madeira/2399",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "XV Encontro de Folclore de Machico",
-      "date": "2026-08-30",
-      "location": "Largo da Praça, Machico",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/xv-encontro-de-folclore-de-machico",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "“Nostalgic Madeira Music”",
-      "date": "2026-08-30",
-      "location": "Instituto do Vinho da Madeira",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/nostalgic-madeira-music",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "“WA”",
-      "date": "2026-08-30",
-      "location": "Fortaleza de São João Baptista do Pico",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/exposicao-wa",
-      "event_type": "festival"
-    },
-    {
-      "mode": "road",
-      "name": "Ecotur Skymarathon Porto Moniz",
-      "date": "2026-08-30",
-      "location": "Porto Moniz, Madeira",
-      "url": "https://lap2go.com/pt/event/ecotur-skymarathon-porto-moniz-2026",
-      "event_type": ""
-    },
-    {
-      "mode": "road",
-      "name": "Madalena - Ponta do Sol (distance TBC)",
-      "date": "2026-08-30",
-      "location": "Madeira",
-      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
-      "event_type": "road_run"
-    },
-    {
-      "mode": "swim",
-      "name": "Triatlo Sprint Cidade do Funchal",
-      "date": "2026-08-30",
-      "location": "Funchal",
-      "url": "https://triatlomadeira.com/wp-content/uploads/2026/03/Calendario-Provas-Triatlo-Madeira-e-Porto-Santo-2026-V.-06-03-2026.pdf",
-      "event_type": "triathlon"
     },
     {
       "mode": "festivals",
@@ -207,6 +87,22 @@
       "date": "2026-09-01",
       "location": "Galeria Tratuário",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/setembrario-iniciativa-de-criacao-artistica-e-exposicao-coletiva-para-artistas-emergentes",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "“Nostalgic Madeira Music”",
+      "date": "2026-09-01",
+      "location": "Instituto do Vinho da Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/nostalgic-madeira-music",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concert · Estreito De Câmara De Lobos",
+      "date": "2026-09-02",
+      "location": "Estreito De Câmara De Lobos",
+      "url": "https://t.me/festas_madeira/2444",
       "event_type": "festival"
     },
     {
@@ -263,6 +159,14 @@
       "date": "2026-09-04",
       "location": "Parque de Santa Catarina",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/meo-sons-do-mar-2026",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "NININHO VAZ MAIA AKOUSTIC JUNKIES",
+      "date": "2026-09-04",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2442",
       "event_type": "festival"
     },
     {
@@ -378,6 +282,14 @@
       "event_type": "festival"
     },
     {
+      "mode": "festivals",
+      "name": "NA ESTRADA MONUMENTAL Junto ao HOTEL vIDAMAR",
+      "date": "2026-09-06",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2446",
+      "event_type": "festival"
+    },
+    {
       "mode": "pro",
       "name": "Campeonato da Madeira de DHI e Mini-DHI - A Confeitaria",
       "date": "2026-09-06",
@@ -482,6 +394,14 @@
       "event_type": "festival"
     },
     {
+      "mode": "festivals",
+      "name": "FESTA DE NOSSA SENHORA DO LIVRAMENTO lee SET",
+      "date": "2026-09-12",
+      "location": "Caniço",
+      "url": "https://t.me/festas_madeira/2445",
+      "event_type": "festival"
+    },
+    {
       "mode": "pro",
       "name": "Campeonato da Madeira de Enduro e Mini Enduro - Globalgest",
       "date": "2026-09-12",
@@ -547,10 +467,26 @@
     },
     {
       "mode": "festivals",
+      "name": "\"República das Bananas\"",
+      "date": "2026-09-17",
+      "location": "Teatro Municipal Baltazar Dias",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/republica-das-bananas",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
       "name": "Columbus Festival - Porto Santo Island",
       "date": "2026-09-17",
       "location": "Porto Santo, Madeira",
       "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Instalação \"Oculto do Solo\"",
+      "date": "2026-09-17",
+      "location": "Estúdio de Criação Artística do Funchal - Galeria de Arte",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/instalacao-oculto-do-solo",
       "event_type": "festival"
     },
     {
@@ -575,6 +511,14 @@
       "date": "2026-09-19",
       "location": "Ponta Do Pargo",
       "url": "https://t.me/festas_madeira/2434",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "“Lúmen, uma história de amor”, da Companhia S.A. Marionetas",
+      "date": "2026-09-19",
+      "location": "Largo do Colégio",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/lumen-uma-historia-de-amor-da-companhia-s-a-marionetas",
       "event_type": "festival"
     },
     {
@@ -691,6 +635,14 @@
     },
     {
       "mode": "festivals",
+      "name": "ESTIVAL DE TEATRO ESPETÁCULOS",
+      "date": "2026-09-30",
+      "location": "Santana",
+      "url": "https://t.me/festas_madeira/2447",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
       "name": "XXXIX Apple Festival",
       "date": "2026-10-02",
       "location": "Camacha, Santa Cruz",
@@ -775,6 +727,14 @@
       "date": "2026-10-06",
       "location": "Madeira",
       "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "BIENAL",
+      "date": "2026-10-09",
+      "location": "Santana",
+      "url": "https://t.me/festas_madeira/2448",
       "event_type": "festival"
     },
     {
@@ -864,6 +824,14 @@
       "location": "Porto Santo",
       "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
       "event_type": "cycling_pro"
+    },
+    {
+      "mode": "festivals",
+      "name": "DESAFIA-TE. ORIENTA-TE. SUPERA-TE.",
+      "date": "2026-10-31",
+      "location": "Ponta Do Sol",
+      "url": "https://t.me/festas_madeira/2443",
+      "event_type": "festival"
     },
     {
       "mode": "trail",
