@@ -928,23 +928,27 @@ initPills('heat-sort-pills', function(val) { buildCountryHeatmap(val); });
 
 <style>
   /* A cropped chart has to say where it came from: the page title is usually
-     out of frame. One line per block that actually holds a chart, never on
-     text-only blocks. */
+     out of frame. One line per block that actually holds a chart. */
   .src-line { margin: 12px 0 0; text-align: right; font-family: ui-monospace,
     SFMono-Regular, Menlo, monospace; font-size: 11px; letter-spacing: .05em;
     opacity: .45; }
 </style>
 <script>
   (function () {
-    var SEL = '.section';
-    document.querySelectorAll(SEL).forEach(function (b) {
-      if (!b.querySelector('canvas, svg')) return;
-      if (b.querySelector(':scope > .src-line')) return;
-      var p = document.createElement('p');
-      p.className = 'src-line';
-      p.textContent = 'azenha.ai/ativa';
-      b.appendChild(p);
-    });
+    function tag() {
+      document.querySelectorAll('.section').forEach(function (b) {
+        if (!b.querySelector('canvas, svg')) return;
+        if (b.querySelector(':scope > .src-line')) return;
+        var p = document.createElement('p');
+        p.className = 'src-line';
+        p.textContent = 'azenha.ai/ativa';
+        b.appendChild(p);
+      });
+    }
+    tag();
+    // Charts that are built by script appear after this runs.
+    window.addEventListener('load', tag);
+    setTimeout(tag, 1200);
   })();
 </script>
 </body>

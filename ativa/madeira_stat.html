@@ -3506,29 +3506,7 @@ function drawAllCountriesBar(canvasId, events, aliases, height, limit, minVal) {
       '</tr></thead><tbody>' + rows.map(function (r) {
         return '<tr>' + r.map(function (c) { return '<td>' + String(c).replace(/&/g, '&amp;').replace(/</g, '&lt;') + '</td>'; }).join('') + '</tr>';
       }).join('') + '</tbody></table>';
-    download('trail_madeira_2026.xls', 'application/vnd.ms-excel', '<html><head><meta charset="utf-8"></head><body>' + html + '
-<style>
-  /* A cropped chart has to say where it came from: the page title is usually
-     out of frame. One line per block that actually holds a chart, never on
-     text-only blocks. */
-  .src-line { margin: 12px 0 0; text-align: right; font-family: ui-monospace,
-    SFMono-Regular, Menlo, monospace; font-size: 11px; letter-spacing: .05em;
-    opacity: .45; }
-</style>
-<script>
-  (function () {
-    var SEL = '.section';
-    document.querySelectorAll(SEL).forEach(function (b) {
-      if (!b.querySelector('canvas, svg')) return;
-      if (b.querySelector(':scope > .src-line')) return;
-      var p = document.createElement('p');
-      p.className = 'src-line';
-      p.textContent = 'azenha.ai/ativa';
-      b.appendChild(p);
-    });
-  })();
-</script>
-</body></html>');
+    download('trail_madeira_2026.xls', 'application/vnd.ms-excel', '<html><head><meta charset="utf-8"></head><body>' + html + '</body></html>');
   }
   function downloadPdf() {
     var head = exportHead(), rows = exportRows();
@@ -3783,5 +3761,31 @@ t.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})
   </section>
   <style>[aria-label="Race results index"] a{color:var(--accent);text-decoration:none;padding:2px 0}[aria-label="Race results index"] a:hover{text-decoration:underline}</style>
   <!-- RACE-INDEX:END -->
+
+<style>
+  /* A cropped chart has to say where it came from: the page title is usually
+     out of frame. One line per block that actually holds a chart. */
+  .src-line { margin: 12px 0 0; text-align: right; font-family: ui-monospace,
+    SFMono-Regular, Menlo, monospace; font-size: 11px; letter-spacing: .05em;
+    opacity: .45; }
+</style>
+<script>
+  (function () {
+    function tag() {
+      document.querySelectorAll('.section').forEach(function (b) {
+        if (!b.querySelector('canvas, svg')) return;
+        if (b.querySelector(':scope > .src-line')) return;
+        var p = document.createElement('p');
+        p.className = 'src-line';
+        p.textContent = 'azenha.ai/ativa';
+        b.appendChild(p);
+      });
+    }
+    tag();
+    // Charts that are built by script appear after this runs.
+    window.addEventListener('load', tag);
+    setTimeout(tag, 1200);
+  })();
+</script>
 </body>
 </html>
