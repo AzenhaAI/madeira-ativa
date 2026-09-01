@@ -937,7 +937,12 @@ initPills('heat-sort-pills', function(val) { buildCountryHeatmap(val); });
   (function () {
     function tag() {
       document.querySelectorAll('.section').forEach(function (b) {
-        if (!b.querySelector('canvas, svg')) return;
+        var c = b.querySelector('canvas, svg');
+        if (!c) return;
+        /* Thumbnails are not charts: 44 trail cards each carry a tiny profile,
+           and signing every one of them turns the page into a colophon. */
+        var r = c.getBoundingClientRect();
+        if (r.width < 300 || r.height < 140) return;
         if (b.querySelector(':scope > .src-line')) return;
         var p = document.createElement('p');
         p.className = 'src-line';
