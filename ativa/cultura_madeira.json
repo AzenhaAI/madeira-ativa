@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-09-06T09:28:11",
-  "count": 46,
+  "fetched": "2026-09-07T11:29:00",
+  "count": 49,
   "items": [
     {
       "id": "114",
@@ -443,6 +443,36 @@
       "time": "20:00",
       "place": "Largo do Corpo Santo - Zona Velha",
       "category": "Activity"
+    },
+    {
+      "id": "286",
+      "title": "“Vibrações entre Traços e Silhuetas”",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/vibracoes-entre-tracos-e-silhuetas",
+      "start": "2026-09-19",
+      "end": "2026-09-19",
+      "time": "17:30",
+      "place": "Largo do Corpo Santo - Zona Velha",
+      "category": "Music"
+    },
+    {
+      "id": "298",
+      "title": "Concerto \"ValaVala\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concerto-valavala",
+      "start": "2026-09-19",
+      "end": "2026-09-19",
+      "time": "19:00",
+      "place": "Praça de Colombo",
+      "category": "Music"
+    },
+    {
+      "id": "297",
+      "title": "II Encontro Classic Show",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/ii-encontro-classic-show",
+      "start": "2026-09-19",
+      "end": "2026-09-19",
+      "time": "19:00",
+      "place": "Miradouro de São Roque - Funchal",
+      "category": "Traditional feast"
     },
     {
       "id": "233",
