@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-09-07T10:44:54",
+  "fetched": "2026-09-11T10:05:07",
   "attribution": "Trails © OpenStreetMap · Elevation © EU-DEM/opentopodata",
   "count": 44,
   "levadas": [
@@ -68,8 +68,8 @@
       "url_en": "https://visitmadeira.com/en/what-to-do/nature-seekers/activities/hiking/pr-1-vereda-do-areeiro/",
       "url_pt": "https://visitmadeira.com/pt/o-que-fazer/exploradores-da-natureza/atividades/caminhadas/pr1-vereda-do-areeiro/",
       "center": [
-        32.7499074,
-        -16.9391051
+        32.7499988,
+        -16.9390922
       ]
     },
     {
@@ -642,23 +642,23 @@
       "status": "open",
       "distance_km": 1.8,
       "ascent_m": 0,
-      "descent_m": 464,
+      "descent_m": 463,
       "profile": [
         530,
-        473,
+        476,
         473,
         445,
         402,
         380,
-        348,
-        323,
-        271,
-        236,
+        350,
+        327,
+        278,
+        239,
         220,
         153,
         126,
-        92,
-        66
+        89,
+        67
       ],
       "profile_breaks": [],
       "roundtrip": false,
@@ -672,8 +672,8 @@
       "url_en": "https://visitmadeira.com/en/what-to-do/nature-seekers/activities/hiking/pr-19-caminho-real-do-paul-do-mar/",
       "url_pt": "https://visitmadeira.com/pt/o-que-fazer/exploradores-da-natureza/atividades/caminhadas/pr-19-caminho-real-do-paul-do-mar/",
       "center": [
-        32.7537887,
-        -17.2196281
+        32.7537729,
+        -17.2196978
       ]
     },
     {
@@ -2717,8 +2717,8 @@
         207,
         176,
         159,
-        150,
-        108,
+        149,
+        109,
         96,
         104,
         153
@@ -2738,8 +2738,8 @@
       "url_en": "https://visitmadeira.com/en/what-to-do/nature-seekers/activities/hiking/ps-pr-3-levada-do-pico-do-castelo/",
       "url_pt": "https://visitmadeira.com/pt/o-que-fazer/exploradores-da-natureza/atividades/caminhadas/ps-pr-3-levada-do-pico-do-castelo/",
       "center": [
-        33.0756645,
-        -16.3248664
+        33.0757108,
+        -16.3248618
       ]
     },
     {

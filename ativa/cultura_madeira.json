@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-09-07T11:29:00",
-  "count": 49,
+  "fetched": "2026-09-11T09:43:55",
+  "count": 59,
   "items": [
     {
       "id": "114",
@@ -389,10 +389,20 @@
       "title": "\"Detalhes Invisíveis\"",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/detalhes-invisiveis",
       "start": "2026-09-11",
-      "end": "2026-09-11",
+      "end": "2026-11-11",
       "time": "17:00",
       "place": "Casa da Cultura de Câmara de Lobos",
       "category": "Exhibition"
+    },
+    {
+      "id": "306",
+      "title": "1.ª Edição Festival Bicho d' Pêssego — Música Contemporânea",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/1-a-edicao-festival-bicho-d-pessego-musica-contemporanea",
+      "start": "2026-09-11",
+      "end": "2026-09-12",
+      "time": "",
+      "place": "",
+      "category": "Music"
     },
     {
       "id": "252",
@@ -402,6 +412,46 @@
       "end": "2026-09-12",
       "time": "18:00",
       "place": "Auditório do Centro de Congressos da Madeira",
+      "category": "Music"
+    },
+    {
+      "id": "300",
+      "title": "\"O Esconderijo\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/o-esconderijo",
+      "start": "2026-09-12",
+      "end": "2026-09-12",
+      "time": "21:00",
+      "place": "MUDAS.Museu de Arte Contemporânea da Madeira",
+      "category": "Activity"
+    },
+    {
+      "id": "307",
+      "title": "\"Mudar a Escola para Mudar o Mundo\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/mudar-a-escola-para-mudar-o-mundo",
+      "start": "2026-09-12",
+      "end": "2027-03-06",
+      "time": "18:00",
+      "place": "PORTA 33",
+      "category": "Exhibition"
+    },
+    {
+      "id": "301",
+      "title": "\"LIBERDADE QUE TE QUERO MINHA (ou sobre como não nos metermos em apuros)\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/liberdade-que-te-quero-minha-ou-sobre-como-nao-nos-metermos-em-apuros",
+      "start": "2026-09-13",
+      "end": "2026-09-13",
+      "time": "18:00",
+      "place": "MUDAS.Museu de Arte Contemporânea da Madeira",
+      "category": "Activity"
+    },
+    {
+      "id": "308",
+      "title": "Concerto de Abertura do Ano Letivo 2026/2027 do Conservatório – Escola das Artes da Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concerto-de-abertura-do-ano-letivo-2026-2027-do-conservatorio-escola-das-artes-da-madeira",
+      "start": "2026-09-13",
+      "end": "2026-09-13",
+      "time": "19:00",
+      "place": "Jardim Municipal do Funchal",
       "category": "Music"
     },
     {
@@ -423,6 +473,36 @@
       "time": "16:00",
       "place": "Teatro Municipal Baltazar Dias",
       "category": "Exhibition"
+    },
+    {
+      "id": "302",
+      "title": "New Classic & Tiago Nacarato",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/new-classic-tiago-nacarato",
+      "start": "2026-09-17",
+      "end": "2026-09-17",
+      "time": "19:00",
+      "place": "Praça de Colombo",
+      "category": "Music"
+    },
+    {
+      "id": "311",
+      "title": "Conferência e visita guiada | Fotografia, Temporalidade e Ação",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/conferencias/conferencia-e-visita-guiada-fotografia-temporalidade-e-acao",
+      "start": "2026-09-17",
+      "end": "2026-09-17",
+      "time": "18:00",
+      "place": "Museu de Fotografia da Madeira - Atelier Vicente's",
+      "category": "Conference"
+    },
+    {
+      "id": "310",
+      "title": "Festival Colombo 2026",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/festival-colombo-2026",
+      "start": "2026-09-17",
+      "end": "2026-09-20",
+      "time": "",
+      "place": "Vila Baleira - Porto Santo",
+      "category": "Traditional feast"
     },
     {
       "id": "284",
@@ -473,6 +553,26 @@
       "time": "19:00",
       "place": "Miradouro de São Roque - Funchal",
       "category": "Traditional feast"
+    },
+    {
+      "id": "305",
+      "title": "Maratona das Artes & Ofícios",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/maratona-das-artes-oficios",
+      "start": "2026-09-19",
+      "end": "2026-09-19",
+      "time": "10:00",
+      "place": "Instituto do Vinho da Madeira",
+      "category": "Other"
+    },
+    {
+      "id": "309",
+      "title": "41.ª Edição da Festa do Pêro",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/festas-tradicionais/41-a-edicao-da-festa-do-pero",
+      "start": "2026-09-19",
+      "end": "2026-09-20",
+      "time": "12:00",
+      "place": "Centro Cívico da Ponta do Pargo",
+      "category": "Other"
     },
     {
       "id": "233",

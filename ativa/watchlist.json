@@ -1,24 +1,13 @@
 {
   "note": "Annual races not yet announced by their organisers. Rebuilt daily.",
-  "generated_at": "2026-09-07",
+  "generated_at": "2026-09-11",
   "items": [
-    {
-      "name": "Trail Água de Pena",
-      "mode": "trail",
-      "expected": "Expected in September 2026",
-      "watch_dates": [
-        "2026-09-07"
-      ],
-      "location": "Machico, Madeira",
-      "status": "watching for a confirmed 2026 date (known schedule)",
-      "url": "https://www.trailaguadepena.pt/"
-    },
     {
       "name": "MIUS - Madeira Island Ultra Swim",
       "mode": "swim",
       "expected": "Expected in September 2026",
       "watch_dates": [
-        "2026-09-07"
+        "2026-09-11"
       ],
       "location": "Madeira",
       "status": "watching for a confirmed 2026 date (known schedule)",
@@ -29,7 +18,7 @@
       "mode": "trail",
       "expected": "Expected in September 2026",
       "watch_dates": [
-        "2026-09-07"
+        "2026-09-11"
       ],
       "location": "Ribeira Brava, Madeira",
       "status": "watching for a confirmed 2026 date (known schedule)",
@@ -80,17 +69,6 @@
       "url": "https://trail.ludensmachico.pt/"
     },
     {
-      "name": "Trail da Boa Ventura",
-      "mode": "trail",
-      "expected": "Expected in January 2027",
-      "watch_dates": [
-        "2027-01-01"
-      ],
-      "location": "São Vicente, Madeira",
-      "status": "watching for a confirmed 2027 date (known schedule)",
-      "url": "https://trailboaventura.com/"
-    },
-    {
       "name": "Trail do Ludens Clube Machico",
       "mode": "trail",
       "expected": "Expected in March 2027",
@@ -122,17 +100,6 @@
       "location": "Porto Santo",
       "status": "watching for a confirmed 2027 date (race history)",
       "url": "https://www.portosantonaturetrail.com/"
-    },
-    {
-      "name": "Grande Prémio de Gaula",
-      "mode": "trail",
-      "expected": "Expected in August 2027",
-      "watch_dates": [
-        "2027-08-01"
-      ],
-      "location": "Gaula, Santa Cruz",
-      "status": "watching for a confirmed 2027 date (known schedule)",
-      "url": "https://atletismodamadeira.pt/"
     }
   ]
 }
