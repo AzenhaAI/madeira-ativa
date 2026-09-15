@@ -1,18 +1,18 @@
 {
-  "fetched": "2026-09-11T10:01:00",
+  "fetched": "2026-09-14T11:01:57",
   "count": 3,
   "events": [
-    {
-      "date": "2026-09-12",
-      "time": "15:30",
-      "name": "Nacional de Madeira vs Alverca",
-      "comp": "Portuguese Primeira Liga",
-      "channel": "Sport TV"
-    },
     {
       "date": "2026-09-14",
       "time": "20:15",
       "name": "Moreirense vs Marítimo",
+      "comp": "Portuguese Primeira Liga",
+      "channel": "Sport TV"
+    },
+    {
+      "date": "2026-09-19",
+      "time": "15:30",
+      "name": "Nacional de Madeira vs Famalicao",
       "comp": "Portuguese Primeira Liga",
       "channel": "Sport TV"
     },

@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-09-11T09:43:55",
-  "count": 59,
+  "fetched": "2026-09-14T10:42:05",
+  "count": 64,
   "items": [
     {
       "id": "114",
@@ -505,6 +505,26 @@
       "category": "Traditional feast"
     },
     {
+      "id": "312",
+      "title": "Banda Stratus",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/banda-stratus",
+      "start": "2026-09-17",
+      "end": "2026-09-17",
+      "time": "20:00",
+      "place": "Jardim Municipal do Funchal",
+      "category": "Music"
+    },
+    {
+      "id": "303",
+      "title": "\"Era com H\" Lavoisier & Varejenta",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/era-com-h-lavoisier-varejenta",
+      "start": "2026-09-18",
+      "end": "2026-09-18",
+      "time": "19:00",
+      "place": "Praça de Colombo",
+      "category": "Music"
+    },
+    {
       "id": "284",
       "title": "“Lúmen, uma história de amor”, da Companhia S.A. Marionetas",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/lumen-uma-historia-de-amor-da-companhia-s-a-marionetas",
@@ -575,6 +595,26 @@
       "category": "Other"
     },
     {
+      "id": "304",
+      "title": "Artis Dixie | Banda Municipal do Funchal",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/artis-dixie-banda-municipal-do-funchal",
+      "start": "2026-09-19",
+      "end": "2026-09-19",
+      "time": "16:00",
+      "place": "Praça de Colombo",
+      "category": "Music"
+    },
+    {
+      "id": "313",
+      "title": "Curta-Metragem \"Ecos\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/curta-metragem-ecos",
+      "start": "2026-09-20",
+      "end": "2026-09-20",
+      "time": "16:30",
+      "place": "Casa da Cultura de Câmara de Lobos",
+      "category": "Traditional feast"
+    },
+    {
       "id": "233",
       "title": "Livrai-nos da Fome!",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/livrai-nos-da-fome",
@@ -593,6 +633,16 @@
       "time": "",
       "place": "Casa do Povo de Ponta Delgada",
       "category": "Other"
+    },
+    {
+      "id": "296",
+      "title": "40.º Aniversário da Tuna Amadis da Casa do Povo de Gaula",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concerto-comemorativo-do-40-o-aniversario-da-tuna-amadis-da-casa-do-povo-de-gaula",
+      "start": "2026-09-26",
+      "end": "2026-09-26",
+      "time": "20:00",
+      "place": "Salão Paroquial de Gaula",
+      "category": "Music"
     }
   ]
 }
