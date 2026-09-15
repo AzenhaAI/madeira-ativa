@@ -411,6 +411,14 @@
     },
     {
       "mode": "festivals",
+      "name": "Nossa Senhora da Piedade,",
+      "date": "2026-09-18",
+      "location": "Caniçal",
+      "url": "https://t.me/festas_madeira/2553",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
       "name": "Screenings Funchal: Nova 78",
       "date": "2026-09-18",
       "location": "Cinema Forum Funchal",
@@ -556,14 +564,6 @@
       "price": "Free",
       "organizer": "Associação de Bandolins da Madeira",
       "category": "concert"
-    },
-    {
-      "mode": "festivals",
-      "name": "Espetáculo \"Maria(s)\"",
-      "date": "2026-09-19",
-      "location": "Largo do Corpo Santo - Zona Velha",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/espetaculo-maria-s",
-      "event_type": "festival"
     },
     {
       "mode": "festivals",
@@ -779,14 +779,6 @@
       "date": "2026-09-19",
       "location": "Sé",
       "url": "https://t.me/festas_madeira/2501",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "“Lúmen, uma história de amor”, da Companhia S.A. Marionetas",
-      "date": "2026-09-19",
-      "location": "Largo do Colégio",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/lumen-uma-historia-de-amor-da-companhia-s-a-marionetas",
       "event_type": "festival"
     },
     {
@@ -1608,18 +1600,6 @@
       "location": "São Vicente",
       "url": "https://t.me/festas_madeira/2522",
       "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "The Gift",
-      "date": "2026-10-08",
-      "location": "Centro de Congressos da Madeira, Funchal",
-      "url": "https://www.madeira-unlocked.com/en/events/the-gift-2026-10-08",
-      "event_type": "festival",
-      "time": "21:00",
-      "price": "€25",
-      "organizer": "Centro de Congressos da Madeira",
-      "category": "concert"
     },
     {
       "mode": "festivals",

@@ -1,8 +1,8 @@
 {
   "note": "Cultural events harvested from t.me/festas_madeira. Accumulates: the channel only exposes recent posts.",
   "source": "https://t.me/s/festas_madeira",
-  "fetched": "2026-09-15T08:05:49",
-  "count": 146,
+  "fetched": "2026-09-15T08:23:55",
+  "count": 147,
   "categories": {
     "concerto": "Concert",
     "arraial": "Arraial",
@@ -1126,7 +1126,7 @@
         "concerto"
       ],
       "place": "Sé",
-      "poster": "https://cdn4.telesco.pe/file/RRDWajYxYW6WDZtn-w3ZP1FUMBZVR_GJyNfMdk9TL9rwnDknQHBzINiMgVU0l2qlFf3o5o1uMxQsR4i52YQG2_u0L8rQamx9xNoGm1XaSPbzmceca1KVWwGtadK5VZ4WrPAgzpAwJPGbgVpFCweO5CmfOhm_l6HraC5exHUaQIB7gqRETlJCJLQc3Qd2-qM_uF9Xe5lkqAr3a5GvjZ5fWy4fTrJEFaqRhFuhNxzdFW3Yb-sCwcQbTLKYCJeximgr-J6MmE4aUdGFNdVoR_w6XQ6LlCUxgE0aZsfs3xt2UCFnsx9FeWDhVA9jCCNDO3Bbd6j_6Z4G4RIJUj4XJvfF5A.jpg",
+      "poster": "https://cdn4.telesco.pe/file/dQ1zF3dYdqgB_vtYPH6Mcu19pqMuX5FPO3e_G3j01XvGkLoOQfENqR1vq9RXez_e4TaPjWQLz3O37kSDhmQDWL3rpGnO7kLHjF80yPMHu-WwT9cKar5Z8JHr_C8_zdYOoQYaK0hqdG_FOc8jNeG6bLz81AVxSjs4siG3Im4URTNShRWafWTEH5kKIuj4swiwnoTC8vHWoliFcVCX1S22mbeahE3LOrhoZxRFW2g3XJ0cTkpPiKsjNF9dZ1_Vsv2YohkuUoSj4ZX11gxqo8n4vqFqBz8vkrm61ivdYfGY8U4lmKI6YKTpu7mKw06U79Ut0nYklt4g2Wfr-prqxtJGAA.jpg",
       "published": "2026-09-11T09:02:39+00:00",
       "poster_text": "",
       "name": "",
@@ -1920,6 +1920,26 @@
       "poster_text": "o€EN\nSEA\nDA’\n\nfunchal.pt\n\n18.09 | 19h00",
       "name": "o€EN SEA DA’ funchal.pt",
       "title": "Concert · Sé"
+    },
+    {
+      "post": "https://t.me/festas_madeira/2553",
+      "dates": [
+        "2026-09-18",
+        "2026-09-19",
+        "2026-09-20"
+      ],
+      "categories": [
+        "concerto",
+        "arraial",
+        "religioso",
+        "família"
+      ],
+      "place": "Caniçal",
+      "poster": "https://cdn4.telesco.pe/file/Y7k2cZoEDMx6jORSHHY53VzJWdWwNCF1FUiU8eafvak5ett-KqBJx2XbrMW2deWkG-bLsG_mq6AJnO38ubkHzdjRfPbX2ZDmNYjm-yE0D1Fbnjn5Un2XeAgTmRrSChe0kgoFANdNBr5yfPVrNIBvY_tNX8wxPtS25DQpMn6A5ogDkDLi685jjuRV6FKf6v0te6Fj1xKFJTy5VpBlr5kiGrp5ZkOHEur6gKNOEoi5Xh_exkhRfz3sjUWayGoGsB2c8H9n-rjdVZhrVWZ29zrizSvYlkYYl9H8qDCOvNJdKysdxRtNy-4h3JTMEzQp59EoNznbll1sZpuKKGG5pJvLuQ.jpg",
+      "published": "2026-09-15T08:21:47+00:00",
+      "poster_text": "o mo PESA DE =\n\nNOSSA SENHORA\nDA PIEDADE\n\nAvy \"\n\n/\n\nNossa Senhora da Piedade,\nrege por rds!\n\n2 ação - Alvaro Florença\n\nEs Ith Missa Dominical\n\n18h — Missa da Festa\nProcissão de Reposição da Imagem\nRomagem Serrado da Igreja | de Nossa Senhora da Piedade.\n\nRomagem Banda de Além ish Animado\n\nConcentração na Igreja Nova Daniel e Avelino\npara formar a procissão,\n\nProcissão marítima. |\n\nRomagens\n\nMissa Romagem Banda de Além\nRomagens Romagem Serrado da Igreja\nSerrado da Igreja\n\nBand de Além\n\n23h Os De Passagem\nDi Alex",
+      "name": "Nossa Senhora da Piedade,",
+      "title": "Nossa Senhora da Piedade,"
     },
     {
       "post": "https://t.me/festas_madeira/2411",

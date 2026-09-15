@@ -87,6 +87,7 @@ body {
 .dot-personal { background: #00d4ff; }
 .dot-race { background: #ff6b35; }
 .dot-heat { background: #ffdd00; }
+.tiles-dark { filter: invert(1) hue-rotate(180deg) brightness(0.8) contrast(0.9) saturate(0.6); }
 .dot-walk { background: #2e9e5b; }
 .btn-walk { background: rgba(46,158,91,0.15); color: #2e9e5b; }
 .btn-walk:hover { background: rgba(46,158,91,0.25); }
@@ -426,10 +427,15 @@ L.control.attribution({ position: 'bottomright', prefix: false })
   .addAttribution('&copy; <a href="https://openstreetmap.org">OSM</a>')
   .addTo(map);
 
-const tileUrl = isLight
-  ? 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png'
-  : 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
-L.tileLayer(tileUrl, { maxZoom: 18 }).addTo(map);
+// CARTO's basemaps began answering without a key by stamping "API KEY
+// REQUIRED" across every tile — HTTP 200, a valid PNG, and a map nobody can
+// read. Nothing in a status check would have caught it. The other three maps
+// already run on OpenStreetMap, so this one does too; the dark theme is the
+// same tiles with a CSS filter, which is how Leaflet's own examples do it.
+const base = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 19,
+  className: isLight ? '' : 'tiles-dark',
+}).addTo(map);
 
 // Independent overlays (Cities/Roads = Esri reference tiles; All levadas/Tunnels = OSM, lazy)
 const esriCities = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}', { maxZoom: 18 });
