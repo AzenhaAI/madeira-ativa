@@ -1,7 +1,7 @@
 {
   "note": "Past events — preserved so history is never lost on rebuild",
-  "generated_at": "2026-09-15",
-  "count": 887,
+  "generated_at": "2026-09-18",
+  "count": 970,
   "events": [
     {
       "mode": "trail",
@@ -6880,6 +6880,694 @@
       "date": "2026-09-14",
       "location": "Funchal",
       "url": "https://triatlomadeira.com/2026/09/ludens-clube-machico-domina-campeonato-regional-de-duatlo-btt/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Bordado da Madeira\"",
+      "date": "2026-09-15",
+      "location": "Quinta Magnólia - Centro Cultural",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/exposicao-bordado-da-madeira",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Da Laurissilva ao Cosmos",
+      "date": "2026-09-15",
+      "location": "Centro Cultural e de Investigação do Funchal",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/da-laurissilva-ao-cosmos",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Detalhes Invisíveis\"",
+      "date": "2026-09-15",
+      "location": "Casa da Cultura de Câmara de Lobos",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/detalhes-invisiveis",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Ilhas Revisitadas\"",
+      "date": "2026-09-15",
+      "location": "MUDAS.Museu de Arte Contemporânea da Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/ilhas-revisitadas",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Mudar a Escola para Mudar o Mundo\"",
+      "date": "2026-09-15",
+      "location": "PORTA 33",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/mudar-a-escola-para-mudar-o-mundo",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "A Orquestra Clássica da Madeira apresenta nova temporada",
+      "date": "2026-09-15",
+      "location": "Assembleia Legislativa da Região Autónoma da Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/a-orquestra-classica-apresenta-orquestra-jovem-sinfonia-da-madeira",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "CONVITE À COMUNIDADE PARA PARTICIPAÇÃO Espetáculo de Manipulação",
+      "date": "2026-09-15",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2506",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Ciclo de Exposições (IN)FLUXO",
+      "date": "2026-09-15",
+      "location": "Sala de exposições da Assembleia Municipal do Porto Santo",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/ciclo-de-exposicoes-in-fluxo",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Cine Machico 2026",
+      "date": "2026-09-15",
+      "location": "Fórum Machico",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/cine-machico-2026",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concertos L 2026",
+      "date": "2026-09-15",
+      "location": "Estalagem da Ponta do Sol",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concertos-l-2026",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concurso Literário António Feliciano Rodrigues \"Castilho\" 2026",
+      "date": "2026-09-15",
+      "location": "Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/concurso-literario-antonio-feliciano-rodrigues-castilho-2026",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Duo Bandonica – Projeto Artístico “Fala-me de Música”",
+      "date": "2026-09-15",
+      "location": "Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/duo-bandonica-projeto-artistico-fala-me-de-musica1",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Noites Musicais 2026",
+      "date": "2026-09-15",
+      "location": "Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/noites-musicais-2026",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Setembrário – Iniciativa de criação artística e exposição coletiva para artistas emergentes",
+      "date": "2026-09-15",
+      "location": "Galeria Tratuário",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/setembrario-iniciativa-de-criacao-artistica-e-exposicao-coletiva-para-artistas-emergentes",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Skin | Pele | Metes-me Nojo",
+      "date": "2026-09-15",
+      "location": "Fábrica de Prazeres",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/skin-pele-metes-me-nojo",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "“Nostalgic Madeira Music”",
+      "date": "2026-09-15",
+      "location": "Instituto do Vinho da Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/nostalgic-madeira-music",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "“WA” de Hanamaro Chaki",
+      "date": "2026-09-15",
+      "location": "Fortaleza de São João Baptista do Pico",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/wa-de-hanamaro-chaki",
+      "event_type": "festival"
+    },
+    {
+      "mode": "pro",
+      "name": "Rankings Campeonato Regional Triatlo 2026",
+      "date": "2026-09-15",
+      "location": "Madeira",
+      "url": "https://triatlomadeira.com/2026/09/rankings-campeonato-regional-triatlo-2026/",
+      "event_type": "triathlon"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Bordado da Madeira\"",
+      "date": "2026-09-16",
+      "location": "Quinta Magnólia - Centro Cultural",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/exposicao-bordado-da-madeira",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Da Laurissilva ao Cosmos",
+      "date": "2026-09-16",
+      "location": "Centro Cultural e de Investigação do Funchal",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/da-laurissilva-ao-cosmos",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Detalhes Invisíveis\"",
+      "date": "2026-09-16",
+      "location": "Casa da Cultura de Câmara de Lobos",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/detalhes-invisiveis",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Discordância Perfeita\"",
+      "date": "2026-09-16",
+      "location": "Galeria Lourdes",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/discordancia-perfeita",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Ilhas Revisitadas\"",
+      "date": "2026-09-16",
+      "location": "MUDAS.Museu de Arte Contemporânea da Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/ilhas-revisitadas",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Mudar a Escola para Mudar o Mundo\"",
+      "date": "2026-09-16",
+      "location": "PORTA 33",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/mudar-a-escola-para-mudar-o-mundo",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Sabores no Museu\"",
+      "date": "2026-09-16",
+      "location": "Museu Etnográfico da Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/sabores-no-museu",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "A Orquestra Clássica da Madeira apresenta nova temporada",
+      "date": "2026-09-16",
+      "location": "Assembleia Legislativa da Região Autónoma da Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/a-orquestra-classica-apresenta-orquestra-jovem-sinfonia-da-madeira",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "CONVITE À COMUNIDADE PARA PARTICIPAÇÃO Espetáculo de Manipulação",
+      "date": "2026-09-16",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2506",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Ciclo de Exposições (IN)FLUXO",
+      "date": "2026-09-16",
+      "location": "Sala de exposições da Assembleia Municipal do Porto Santo",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/ciclo-de-exposicoes-in-fluxo",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Cine Machico 2026",
+      "date": "2026-09-16",
+      "location": "Fórum Machico",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/cine-machico-2026",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concertos L 2026",
+      "date": "2026-09-16",
+      "location": "Estalagem da Ponta do Sol",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concertos-l-2026",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concurso Literário António Feliciano Rodrigues \"Castilho\" 2026",
+      "date": "2026-09-16",
+      "location": "Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/concurso-literario-antonio-feliciano-rodrigues-castilho-2026",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Duo Bandonica – Projeto Artístico “Fala-me de Música”",
+      "date": "2026-09-16",
+      "location": "Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/duo-bandonica-projeto-artistico-fala-me-de-musica1",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Noites Musicais 2026",
+      "date": "2026-09-16",
+      "location": "Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/noites-musicais-2026",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Quinteto de Sopros “Solistas OCM”",
+      "date": "2026-09-16",
+      "location": "Savoy Palace, Funchal",
+      "url": "https://www.madeira-unlocked.com/en/events/quinteto-de-sopros-solistas-ocm-2026-09-16",
+      "event_type": "festival",
+      "time": "21:00",
+      "price": "€10",
+      "organizer": "Savoy Palace",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "Setembrário – Iniciativa de criação artística e exposição coletiva para artistas emergentes",
+      "date": "2026-09-16",
+      "location": "Galeria Tratuário",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/setembrario-iniciativa-de-criacao-artistica-e-exposicao-coletiva-para-artistas-emergentes",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Skin | Pele | Metes-me Nojo",
+      "date": "2026-09-16",
+      "location": "Fábrica de Prazeres",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/skin-pele-metes-me-nojo",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Sport · Machico",
+      "date": "2026-09-16",
+      "location": "Machico",
+      "url": "https://t.me/festas_madeira/2569",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Tony Bennett Tribute",
+      "date": "2026-09-16",
+      "location": "MAMMA - Museum of Modern Art of Madeira, Funchal",
+      "url": "https://www.madeira-unlocked.com/en/events/tony-bennett-tribute-2026-09-16",
+      "event_type": "festival",
+      "time": "17:30",
+      "price": "€25",
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "Uma Viagem Cultural através da Gastronomia Madeirense com a biqueira",
+      "date": "2026-09-16",
+      "location": "Ribeira Brava",
+      "url": "https://t.me/festas_madeira/2564",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "“Nostalgic Madeira Music”",
+      "date": "2026-09-16",
+      "location": "Instituto do Vinho da Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/nostalgic-madeira-music",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "“WA” de Hanamaro Chaki",
+      "date": "2026-09-16",
+      "location": "Fortaleza de São João Baptista do Pico",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/wa-de-hanamaro-chaki",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Bordado da Madeira\"",
+      "date": "2026-09-17",
+      "location": "Quinta Magnólia - Centro Cultural",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/exposicao-bordado-da-madeira",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Da Laurissilva ao Cosmos",
+      "date": "2026-09-17",
+      "location": "Centro Cultural e de Investigação do Funchal",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/da-laurissilva-ao-cosmos",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Detalhes Invisíveis\"",
+      "date": "2026-09-17",
+      "location": "Casa da Cultura de Câmara de Lobos",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/detalhes-invisiveis",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Discordância Perfeita\"",
+      "date": "2026-09-17",
+      "location": "Galeria Lourdes",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/discordancia-perfeita",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Ilhas Revisitadas\"",
+      "date": "2026-09-17",
+      "location": "MUDAS.Museu de Arte Contemporânea da Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/ilhas-revisitadas",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Mudar a Escola para Mudar o Mundo\"",
+      "date": "2026-09-17",
+      "location": "PORTA 33",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/mudar-a-escola-para-mudar-o-mundo",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"República das Bananas\"",
+      "date": "2026-09-17",
+      "location": "Teatro Municipal Baltazar Dias",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/republica-das-bananas",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "A Orquestra Clássica da Madeira apresenta nova temporada",
+      "date": "2026-09-17",
+      "location": "Assembleia Legislativa da Região Autónoma da Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/a-orquestra-classica-apresenta-orquestra-jovem-sinfonia-da-madeira",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Banda Stratus",
+      "date": "2026-09-17",
+      "location": "Jardim Municipal do Funchal",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/banda-stratus",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "CONVITE À COMUNIDADE PARA PARTICIPAÇÃO Espetáculo de Manipulação",
+      "date": "2026-09-17",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2506",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Ciclo de Exposições (IN)FLUXO",
+      "date": "2026-09-17",
+      "location": "Sala de exposições da Assembleia Municipal do Porto Santo",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/ciclo-de-exposicoes-in-fluxo",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Cine Machico 2026",
+      "date": "2026-09-17",
+      "location": "Fórum Machico",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/cine-machico-2026",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Columbus Festival - Porto Santo Island",
+      "date": "2026-09-17",
+      "location": "Porto Santo, Madeira",
+      "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concert · Funchal",
+      "date": "2026-09-17",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2491",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concert · Sé",
+      "date": "2026-09-17",
+      "location": "Sé",
+      "url": "https://t.me/festas_madeira/2517",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concertos L 2026",
+      "date": "2026-09-17",
+      "location": "Estalagem da Ponta do Sol",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concertos-l-2026",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concurso Literário António Feliciano Rodrigues \"Castilho\" 2026",
+      "date": "2026-09-17",
+      "location": "Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/concurso-literario-antonio-feliciano-rodrigues-castilho-2026",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Conferência e visita guiada | Fotografia, Temporalidade e Ação",
+      "date": "2026-09-17",
+      "location": "Museu de Fotografia da Madeira - Atelier Vicente's",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/conferencias/conferencia-e-visita-guiada-fotografia-temporalidade-e-acao",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Creactivity - Think with Your Hands",
+      "date": "2026-09-17",
+      "location": "Jardim Municipal de São Vicente, Madeira",
+      "url": "https://www.madeira-unlocked.com/en/events/creactivity-think-with-your-hands-2026-09-17",
+      "event_type": "festival",
+      "time": "09:00",
+      "price": "Free",
+      "organizer": "Câmara Municipal de São Vicente",
+      "category": "family"
+    },
+    {
+      "mode": "festivals",
+      "name": "Duo Bandonica – Projeto Artístico “Fala-me de Música”",
+      "date": "2026-09-17",
+      "location": "Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/duo-bandonica-projeto-artistico-fala-me-de-musica1",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "ECOSOMATIC MOVEMENT LAB",
+      "date": "2026-09-17",
+      "location": "Secret outdoor location in central Funchal (Unlocked after registration)",
+      "url": "https://www.madeira-unlocked.com/en/events/ecosomatic-movement-lab-2026-09-17",
+      "event_type": "festival",
+      "time": "18:15",
+      "price": "€17",
+      "organizer": "Stathis Roukas",
+      "category": "dance"
+    },
+    {
+      "mode": "festivals",
+      "name": "ERCADO",
+      "date": "2026-09-17",
+      "location": "Mercadinho",
+      "url": "https://t.me/festas_madeira/2585",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Exhibition · Funchal",
+      "date": "2026-09-17",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2534",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "FPUNDELIS DIAMANTIDES Maluóç -PULSE PERFORMANCE AUDTOUISUAL",
+      "date": "2026-09-17",
+      "location": "Ponta Do Sol",
+      "url": "https://t.me/festas_madeira/2555",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Festival Colombo 2026",
+      "date": "2026-09-17",
+      "location": "Vila Baleira - Porto Santo",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/festival-colombo-2026",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Festival · Mercadinho",
+      "date": "2026-09-17",
+      "location": "Mercadinho",
+      "url": "https://t.me/festas_madeira/2546",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Festival · Santa Maria Maior",
+      "date": "2026-09-17",
+      "location": "Santa Maria Maior",
+      "url": "https://t.me/festas_madeira/2541",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Instalação \"Oculto do Solo\"",
+      "date": "2026-09-17",
+      "location": "Estúdio de Criação Artística do Funchal - Galeria de Arte",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/instalacao-oculto-do-solo",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "JAZZ GIANTS",
+      "date": "2026-09-17",
+      "location": "MAMMA - Museum of Modern Art of Madeira, Funchal",
+      "url": "https://www.madeira-unlocked.com/en/events/jazz-giants-2026-09-17",
+      "event_type": "festival",
+      "time": "18:30",
+      "price": "€25",
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "JESUS",
+      "date": "2026-09-17",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2500",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "New Classic & Tiago Nacarato",
+      "date": "2026-09-17",
+      "location": "Praça de Colombo",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/new-classic-tiago-nacarato",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "SER DA’ funchal.pt MAS CAMACHO",
+      "date": "2026-09-17",
+      "location": "Sé",
+      "url": "https://t.me/festas_madeira/2545",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Sal Exposições Temporárias",
+      "date": "2026-09-17",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2544",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Setembrário – Iniciativa de criação artística e exposição coletiva para artistas emergentes",
+      "date": "2026-09-17",
+      "location": "Galeria Tratuário",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/setembrario-iniciativa-de-criacao-artistica-e-exposicao-coletiva-para-artistas-emergentes",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Show · Funchal",
+      "date": "2026-09-17",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2470",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Show · Sé",
+      "date": "2026-09-17",
+      "location": "Sé",
+      "url": "https://t.me/festas_madeira/2498",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Skin | Pele | Metes-me Nojo",
+      "date": "2026-09-17",
+      "location": "Fábrica de Prazeres",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/skin-pele-metes-me-nojo",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Workshop · São Vicente",
+      "date": "2026-09-17",
+      "location": "São Vicente",
+      "url": "https://t.me/festas_madeira/2582",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Παλμός – Pulse |  Audiovisual Performance by Pandelis Diamantides",
+      "date": "2026-09-17",
+      "location": "Centro Cultural John dos Passos, Ponta do Sol",
+      "url": "https://www.madeira-unlocked.com/en/events/pulse-audiovisual-performance-by-pandelis-diamantides-2026-09-17",
+      "event_type": "festival",
+      "time": "19:00",
+      "price": "€10",
+      "organizer": "APCA - Agência de Promoção da Cultura Atlântica",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "“Nostalgic Madeira Music”",
+      "date": "2026-09-17",
+      "location": "Instituto do Vinho da Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/nostalgic-madeira-music",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "“WA” de Hanamaro Chaki",
+      "date": "2026-09-17",
+      "location": "Fortaleza de São João Baptista do Pico",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/wa-de-hanamaro-chaki",
+      "event_type": "festival"
+    },
+    {
+      "mode": "swim",
+      "name": "Start List Triatlo Sprint e Super-Sprint Cidade de Machico 2026",
+      "date": "2026-09-17",
+      "location": "Machico",
+      "url": "https://triatlomadeira.com/2026/09/start-list-triatlo-sprint-e-super-sprint-cidade-de-machico-2026/",
       "event_type": "triathlon"
     }
   ]

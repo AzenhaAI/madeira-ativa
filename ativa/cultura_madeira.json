@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-09-15T08:23:42",
-  "count": 67,
+  "fetched": "2026-09-18T09:48:19",
+  "count": 75,
   "items": [
     {
       "id": "114",
@@ -41,6 +41,16 @@
       "start": "2026-04-22",
       "end": "2026-08-31",
       "time": "16:30",
+      "place": "Fortaleza de São João Baptista do Pico",
+      "category": "Exhibition"
+    },
+    {
+      "id": "323",
+      "title": "“WA” de Hanamaro Chaki",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/wa-de-hanamaro-chaki",
+      "start": "2026-04-22",
+      "end": "2026-10-09",
+      "time": "",
       "place": "Fortaleza de São João Baptista do Pico",
       "category": "Exhibition"
     },
@@ -335,6 +345,16 @@
       "category": "Conference"
     },
     {
+      "id": "327",
+      "title": "\"Discordância Perfeita\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/discordancia-perfeita",
+      "start": "2026-09-09",
+      "end": "2026-10-31",
+      "time": "",
+      "place": "Galeria Lourdes",
+      "category": "Exhibition"
+    },
+    {
       "id": "257",
       "title": "Skin | Pele | Metes-me Nojo",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/skin-pele-metes-me-nojo",
@@ -545,6 +565,16 @@
       "category": "Music"
     },
     {
+      "id": "329",
+      "title": "Espetáculo \"Momentos\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/momentos",
+      "start": "2026-09-18",
+      "end": "2026-09-18",
+      "time": "20:30",
+      "place": "Casa do Povo da Camacha",
+      "category": "Music"
+    },
+    {
       "id": "284",
       "title": "“Lúmen, uma história de amor”, da Companhia S.A. Marionetas",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/lumen-uma-historia-de-amor-da-companhia-s-a-marionetas",
@@ -635,6 +665,16 @@
       "category": "Music"
     },
     {
+      "id": "324",
+      "title": "Festa de Nossa Senhora da Piedade",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/festas-tradicionais/festa-de-nossa-senhora-da-piedade",
+      "start": "2026-09-19",
+      "end": "2026-09-20",
+      "time": "",
+      "place": "Igreja Matriz do Caniçal",
+      "category": "Other"
+    },
+    {
       "id": "313",
       "title": "Curta-Metragem \"Ecos\"",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/curta-metragem-ecos",
@@ -652,6 +692,16 @@
       "end": "2026-09-26",
       "time": "",
       "place": "Teatro Municipal Baltazar Dias",
+      "category": "Activity"
+    },
+    {
+      "id": "328",
+      "title": "“Sou Pai, e agora?”",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/sou-pai-e-agora",
+      "start": "2026-09-24",
+      "end": "2026-09-25",
+      "time": "21:00",
+      "place": "MUDAS.Museu de Arte Contemporânea da Madeira",
       "category": "Activity"
     },
     {
@@ -673,6 +723,36 @@
       "time": "20:00",
       "place": "Salão Paroquial de Gaula",
       "category": "Music"
+    },
+    {
+      "id": "330",
+      "title": "Orquestra Clássica da Madeira - Maestro Adrian Butterfield",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/orquestra-classica-da-madeira-maestro-adrian-butterfield",
+      "start": "2026-09-26",
+      "end": "2026-09-26",
+      "time": "18:00",
+      "place": "Assembleia Legislativa da Região Autónoma da Madeira",
+      "category": "Music"
+    },
+    {
+      "id": "331",
+      "title": "\"Agora é que são elas!\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/agora-e-que-sao-elas",
+      "start": "2026-09-27",
+      "end": "2026-09-27",
+      "time": "18:30",
+      "place": "Auditório do Centro de Congressos da Madeira",
+      "category": "Activity"
+    },
+    {
+      "id": "333",
+      "title": "Filme \"O Fauno das Montanhas”",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/filme-o-fauno-das-montanhas",
+      "start": "2026-09-30",
+      "end": "2026-09-30",
+      "time": "20:00",
+      "place": "Teatro Municipal Baltazar Dias",
+      "category": "Traditional feast"
     }
   ]
 }

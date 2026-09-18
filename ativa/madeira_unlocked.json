@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-09-15T08:23:27",
-  "count": 116,
+  "fetched": "2026-09-18T09:48:04",
+  "count": 138,
   "items": [
     {
       "id": "tony-bennett-tribute-2026-09-16",
@@ -16,6 +16,21 @@
       "municipality": "Funchal",
       "price": 25,
       "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "quinteto-de-sopros-solistas-ocm-2026-09-16",
+      "title": "Quinteto de Sopros “Solistas OCM”",
+      "url": "https://www.madeira-unlocked.com/en/events/quinteto-de-sopros-solistas-ocm-2026-09-16",
+      "start": "2026-09-16T21:00:00+01:00",
+      "end": "2026-09-16T23:00:00+01:00",
+      "date": "2026-09-16",
+      "time": "21:00",
+      "venue": "Savoy Palace",
+      "municipality": "Funchal",
+      "price": 10,
+      "organizer": "Savoy Palace",
       "category": "concert",
       "source_category": "music-concerts"
     },
@@ -125,6 +140,21 @@
       "source_category": "culture-museums"
     },
     {
+      "id": "storytime-in-english-the-runaway-pea-2026-09-18",
+      "title": "Storytime in English, The Runaway Pea",
+      "url": "https://www.madeira-unlocked.com/en/events/storytime-in-english-the-runaway-pea-2026-09-18",
+      "start": "2026-09-18T14:00:00+01:00",
+      "end": "2026-09-18T15:00:00+01:00",
+      "date": "2026-09-18",
+      "time": "14:00",
+      "venue": "Auditório do Arquivo e Biblioteca da Madeira",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Madeira Friends",
+      "category": "family",
+      "source_category": "kids-family"
+    },
+    {
       "id": "enseada-funchal-arts-festival-2026-09-18",
       "title": "ENSEADA - Funchal Arts Festival",
       "url": "https://www.madeira-unlocked.com/en/events/enseada-funchal-arts-festival-2026-09-18",
@@ -185,6 +215,21 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "orquestra-de-bandolins-da-casa-do-povo-da-camacha-2026-09-18",
+      "title": "Orquestra de Bandolins da Casa do Povo da Camacha",
+      "url": "https://www.madeira-unlocked.com/en/events/orquestra-de-bandolins-da-casa-do-povo-da-camacha-2026-09-18",
+      "start": "2026-09-18T20:30:00+01:00",
+      "end": "2026-09-18T22:30:00+01:00",
+      "date": "2026-09-18",
+      "time": "20:30",
+      "venue": "Auditorium of Casa do Povo da Camacha",
+      "municipality": "Santa Cruz",
+      "price": 3,
+      "organizer": "Casa do Povo da Camacha",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "noites-musicais-quarteto-pedro-marques-2026-09-18",
       "title": "Noites Musicais – Quarteto Pedro Marques",
       "url": "https://www.madeira-unlocked.com/en/events/noites-musicais-quarteto-pedro-marques-2026-09-18",
@@ -213,6 +258,21 @@
       "organizer": "Screenings Funchal",
       "category": "cinema",
       "source_category": "movies-cinema"
+    },
+    {
+      "id": "festa-de-nossa-senhora-da-piedade-2026-09-18",
+      "title": "Festa de Nossa Senhora da Piedade",
+      "url": "https://www.madeira-unlocked.com/en/events/festa-de-nossa-senhora-da-piedade-2026-09-18",
+      "start": "2026-09-18T23:30:00+01:00",
+      "end": "2026-09-19T03:30:00+01:00",
+      "date": "2026-09-18",
+      "time": "23:30",
+      "venue": "Caniçal village, Caniçal harbour and Capela de Nossa Senhora da Piedade",
+      "municipality": "Machico",
+      "price": 0,
+      "organizer": "Câmara Municipal de Machico",
+      "category": "festival",
+      "source_category": "festivals-parades"
     },
     {
       "id": "rali-municipios-do-funchal-e-camara-de-lobos-2026-2026-09-19",
@@ -275,6 +335,36 @@
       "source_category": "handicraft-workshops"
     },
     {
+      "id": "madeira-embroidery-workshop-embroider-your-own-idea-2026-09-19",
+      "title": "Madeira Embroidery Workshop - Embroider Your Own Idea",
+      "url": "https://www.madeira-unlocked.com/en/events/madeira-embroidery-workshop-embroider-your-own-idea-2026-09-19",
+      "start": "2026-09-19T10:00:00+01:00",
+      "end": "2026-09-19T13:00:00+01:00",
+      "date": "2026-09-19",
+      "time": "10:00",
+      "venue": "Espaço ALMA, Edifício Tamariz, Bloco A, Estrada José Avelino Pinto 88D, Caniço",
+      "municipality": "Santa Cruz",
+      "price": 45,
+      "organizer": "BAILHA Madeira",
+      "category": "workshop",
+      "source_category": "handicraft-workshops"
+    },
+    {
+      "id": "atlantic-market-1st-edition-2026-09-19",
+      "title": "Atlantic Market - 1st Edition",
+      "url": "https://www.madeira-unlocked.com/en/events/atlantic-market-1st-edition-2026-09-19",
+      "start": "2026-09-19T11:00:00+01:00",
+      "end": "2026-09-19T19:00:00+01:00",
+      "date": "2026-09-19",
+      "time": "11:00",
+      "venue": "Sala dos Arcos, Reitoria da Universidade da Madeira Colégio dos Jesuítas, Rua dos Ferreiros, 9000-082 Funchal",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Mercado Atlântico",
+      "category": "market",
+      "source_category": "market"
+    },
+    {
       "id": "green-market-madeira-ribeira-brava-edition-2026-09-19",
       "title": "Green Market Madeira – Ribeira Brava Edition",
       "url": "https://www.madeira-unlocked.com/en/events/green-market-madeira-ribeira-brava-edition-2026-09-19",
@@ -305,6 +395,21 @@
       "source_category": "festivals-parades"
     },
     {
+      "id": "festa-da-piedade-2026-09-19",
+      "title": "festa da piedade",
+      "url": "https://www.madeira-unlocked.com/en/events/festa-da-piedade-2026-09-19",
+      "start": "2026-09-19T12:00:00+01:00",
+      "end": "2026-09-19T20:00:00+01:00",
+      "date": "2026-09-19",
+      "time": "12:00",
+      "venue": "caniçal (cais)",
+      "municipality": "Machico",
+      "price": 0,
+      "organizer": "Festa da piedade",
+      "category": "festival",
+      "source_category": "festivals-parades"
+    },
+    {
       "id": "mercadinho-de-verao-jardim-do-mar-2026-09-19",
       "title": "Mercadinho de Verão - Jardim do Mar",
       "url": "https://www.madeira-unlocked.com/en/events/mercadinho-de-verao-jardim-do-mar-2026-09-19",
@@ -318,6 +423,36 @@
       "organizer": "Mercadinho Jardim do Mar",
       "category": "market",
       "source_category": "market"
+    },
+    {
+      "id": "summer-market-in-jardim-do-mar-mercadinho-de-verao-2026-09-19",
+      "title": "Summer Market in Jardim do Mar - Mercadinho de Verão",
+      "url": "https://www.madeira-unlocked.com/en/events/summer-market-in-jardim-do-mar-mercadinho-de-verao-2026-09-19",
+      "start": "2026-09-19T16:00:00+01:00",
+      "end": "2026-09-19T23:00:00+01:00",
+      "date": "2026-09-19",
+      "time": "16:00",
+      "venue": "Village square, Jardim do Mar",
+      "municipality": "Calheta",
+      "price": 0,
+      "organizer": "Mercadinho Jardim do Mar",
+      "category": "market",
+      "source_category": "market"
+    },
+    {
+      "id": "observing-and-designing-futures-workshops-2026-09-19",
+      "title": "Observing and Designing Futures Workshops",
+      "url": "https://www.madeira-unlocked.com/en/events/observing-and-designing-futures-workshops-2026-09-19",
+      "start": "2026-09-19T16:00:00+01:00",
+      "end": "2026-09-19T19:00:00+01:00",
+      "date": "2026-09-19",
+      "time": "16:00",
+      "venue": "Galeria Tratuário",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "APCA - Agência de Promoção da Cultura Atlântica",
+      "category": "exhibition",
+      "source_category": "art-exhibitions"
     },
     {
       "id": "festa-gastronomica-venezuelana-2026-09-19",
@@ -500,6 +635,21 @@
       "source_category": "sport-fitness"
     },
     {
+      "id": "community-hike-115-sao-cristovao-to-arco-de-sao-jorge-2026-09-20",
+      "title": "COMMUNITY HIKE 115 - SÃO CRISTÓVÃO TO ARCO DE SÃO JORGE",
+      "url": "https://www.madeira-unlocked.com/en/events/community-hike-115-sao-cristovao-to-arco-de-sao-jorge-2026-09-20",
+      "start": "2026-09-20T10:00:00+01:00",
+      "end": "2026-09-20T12:00:00+01:00",
+      "date": "2026-09-20",
+      "time": "10:00",
+      "venue": "Miradouro de São Cristóvão",
+      "municipality": "São Vicente",
+      "price": 5,
+      "organizer": "Mountain Alex",
+      "category": "hiking",
+      "source_category": "hiking"
+    },
+    {
       "id": "green-market-madeira-ribeira-brava-edition-2026-09-20",
       "title": "Green Market Madeira – Ribeira Brava Edition",
       "url": "https://www.madeira-unlocked.com/en/events/green-market-madeira-ribeira-brava-edition-2026-09-20",
@@ -515,6 +665,21 @@
       "source_category": "market"
     },
     {
+      "id": "festa-da-piedade-2026-09-20",
+      "title": "festa da piedade",
+      "url": "https://www.madeira-unlocked.com/en/events/festa-da-piedade-2026-09-20",
+      "start": "2026-09-20T12:00:00+01:00",
+      "end": "2026-09-20T20:00:00+01:00",
+      "date": "2026-09-20",
+      "time": "12:00",
+      "venue": "caniçal (cais)",
+      "municipality": "Machico",
+      "price": 0,
+      "organizer": "Festa da piedade",
+      "category": "festival",
+      "source_category": "festivals-parades"
+    },
+    {
       "id": "festa-gastronomica-venezuelana-2026-09-20",
       "title": "Festa Gastronomica Venezuelana",
       "url": "https://www.madeira-unlocked.com/en/events/festa-gastronomica-venezuelana-2026-09-20",
@@ -528,6 +693,21 @@
       "organizer": "Associação AADEM",
       "category": "festival",
       "source_category": "festivals-parades"
+    },
+    {
+      "id": "dancehall-reggaeton-workshop-with-t-zer-anna-2026-09-20",
+      "title": "Dancehall & Reggaetón Workshop with T-zer & Anna",
+      "url": "https://www.madeira-unlocked.com/en/events/dancehall-reggaeton-workshop-with-t-zer-anna-2026-09-20",
+      "start": "2026-09-20T15:00:00+01:00",
+      "end": "2026-09-20T17:00:00+01:00",
+      "date": "2026-09-20",
+      "time": "15:00",
+      "venue": "Estrada Monumental 368",
+      "municipality": "Funchal",
+      "price": 25,
+      "organizer": "Dance Together Madeira",
+      "category": "dance",
+      "source_category": "dance"
     },
     {
       "id": "iv-caminhada-pela-paz-2026-09-20",
@@ -830,6 +1010,21 @@
       "source_category": "theater"
     },
     {
+      "id": "boate-x-silent-beats-the-last-one-of-summer-2026-09-25",
+      "title": "🎧✨ BÖATE x SILENT BEATS - THE LAST ONE OF SUMMER! ✨🎧",
+      "url": "https://www.madeira-unlocked.com/en/events/boate-x-silent-beats-the-last-one-of-summer-2026-09-25",
+      "start": "2026-09-25T23:30:00+01:00",
+      "end": "2026-09-26T03:30:00+01:00",
+      "date": "2026-09-25",
+      "time": "23:30",
+      "venue": "R. do Favilla 7, São Martinho, 9000-022 Funchal",
+      "municipality": "Funchal",
+      "price": 10,
+      "organizer": "Silent Beats",
+      "category": "dance",
+      "source_category": "dance"
+    },
+    {
       "id": "anatomia-e-metamorfose-dos-campeoes-sports-forum-and-debate-2026-09-26",
       "title": "European Week of Sport Padel Tournament",
       "url": "https://www.madeira-unlocked.com/en/events/anatomia-e-metamorfose-dos-campeoes-sports-forum-and-debate-2026-09-26",
@@ -843,6 +1038,21 @@
       "organizer": "Câmara Municipal de Câmara de Lobos",
       "category": "sport",
       "source_category": "sport-fitness"
+    },
+    {
+      "id": "calheta-family-fest-2026-2026-09-26",
+      "title": "Calheta Family Fest 2026",
+      "url": "https://www.madeira-unlocked.com/en/events/calheta-family-fest-2026-2026-09-26",
+      "start": "2026-09-26T11:00:00+01:00",
+      "end": "2026-09-26T21:00:00+01:00",
+      "date": "2026-09-26",
+      "time": "11:00",
+      "venue": "Praia da Calheta",
+      "municipality": "Calheta",
+      "price": 0,
+      "organizer": "Município da Calheta",
+      "category": "family",
+      "source_category": "kids-family"
     },
     {
       "id": "ready-to-pour-some-colour-2026-09-26",
@@ -873,6 +1083,21 @@
       "organizer": "Município da Calheta",
       "category": "sport",
       "source_category": "sport-fitness"
+    },
+    {
+      "id": "fractal-2026-8th-edition-fractal-walk-2026-09-26",
+      "title": "FRACTAL 2026 - 8th Edition - FRACTAL Walk",
+      "url": "https://www.madeira-unlocked.com/en/events/fractal-2026-8th-edition-fractal-walk-2026-09-26",
+      "start": "2026-09-26T16:00:00+01:00",
+      "end": "2026-09-26T18:00:00+01:00",
+      "date": "2026-09-26",
+      "time": "16:00",
+      "venue": "Parque de Estacionamento do CAB",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural FRACTAL",
+      "category": "festival",
+      "source_category": "festivals-parades"
     },
     {
       "id": "adrian-butterfield-baroque-music-concert-2026-09-26",
@@ -1220,6 +1445,21 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "fractal-2026-8th-edition-arraial-fractal-2026-10-03",
+      "title": "FRACTAL 2026 - 8th Edition - Arraial FRACTAL",
+      "url": "https://www.madeira-unlocked.com/en/events/fractal-2026-8th-edition-arraial-fractal-2026-10-03",
+      "start": "2026-10-03T20:30:00+01:00",
+      "end": "2026-10-03T23:30:00+01:00",
+      "date": "2026-10-03",
+      "time": "20:30",
+      "venue": "Parque Urbano da Nazaré",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural FRACTAL",
+      "category": "festival",
+      "source_category": "festivals-parades"
+    },
+    {
       "id": "expressa-te-festival-de-artes-2026-2026-10-04",
       "title": "EXPRESSA-te – Festival de Artes 2026",
       "url": "https://www.madeira-unlocked.com/en/events/expressa-te-festival-de-artes-2026-2026-10-04",
@@ -1233,6 +1473,21 @@
       "organizer": "Portal das Artes",
       "category": "exhibition",
       "source_category": "art-exhibitions"
+    },
+    {
+      "id": "sunrise-concert-at-bica-da-cana-2026-10-05",
+      "title": "Sunrise Concert at Bica da Cana",
+      "url": "https://www.madeira-unlocked.com/en/events/sunrise-concert-at-bica-da-cana-2026-10-05",
+      "start": "2026-10-05T07:45:00+01:00",
+      "end": "2026-10-05T08:45:00+01:00",
+      "date": "2026-10-05",
+      "time": "07:45",
+      "venue": "Plateau below Miradouro da Bica da Cana",
+      "municipality": "Ponta do Sol",
+      "price": 0,
+      "organizer": "Retoiça – Associação Cultural, Desportiva e Recreativa",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "expressa-te-festival-de-artes-2026-2026-10-05",
@@ -1550,6 +1805,51 @@
       "source_category": "sport-fitness"
     },
     {
+      "id": "canyoning-madeira-meeting-2026-2026-10-19",
+      "title": "Canyoning Madeira Meeting 2026",
+      "url": "https://www.madeira-unlocked.com/en/events/canyoning-madeira-meeting-2026-2026-10-19",
+      "start": "2026-10-19T08:00:00+01:00",
+      "end": "2026-10-20T00:00:00+01:00",
+      "date": "2026-10-19",
+      "time": "08:00",
+      "venue": "Clube Naval do Seixal, Seixal",
+      "municipality": "São Vicente",
+      "price": 150,
+      "organizer": "Clube Naval do Seixal",
+      "category": "sport",
+      "source_category": "sport-fitness"
+    },
+    {
+      "id": "canyoning-madeira-meeting-2026-2026-10-20",
+      "title": "Canyoning Madeira Meeting 2026",
+      "url": "https://www.madeira-unlocked.com/en/events/canyoning-madeira-meeting-2026-2026-10-20",
+      "start": "2026-10-20T08:00:00+01:00",
+      "end": "2026-10-21T00:00:00+01:00",
+      "date": "2026-10-20",
+      "time": "08:00",
+      "venue": "Clube Naval do Seixal, Seixal",
+      "municipality": "São Vicente",
+      "price": 150,
+      "organizer": "Clube Naval do Seixal",
+      "category": "sport",
+      "source_category": "sport-fitness"
+    },
+    {
+      "id": "canyoning-madeira-meeting-2026-2026-10-21",
+      "title": "Canyoning Madeira Meeting 2026",
+      "url": "https://www.madeira-unlocked.com/en/events/canyoning-madeira-meeting-2026-2026-10-21",
+      "start": "2026-10-21T08:30:00+01:00",
+      "end": "2026-10-22T00:00:00+01:00",
+      "date": "2026-10-21",
+      "time": "08:30",
+      "venue": "Clube Naval do Seixal, Seixal",
+      "municipality": "São Vicente",
+      "price": 150,
+      "organizer": "Clube Naval do Seixal",
+      "category": "sport",
+      "source_category": "sport-fitness"
+    },
+    {
       "id": "l-concerts-juliana-linhares-closing-concert-2026-10-21",
       "title": "L Concerts - Juliana Linhares - Closing concert",
       "url": "https://www.madeira-unlocked.com/en/events/l-concerts-juliana-linhares-closing-concert-2026-10-21",
@@ -1563,6 +1863,36 @@
       "organizer": "Estalagem da Ponta do Sol",
       "category": "concert",
       "source_category": "music-concerts"
+    },
+    {
+      "id": "canyoning-madeira-meeting-2026-2026-10-22",
+      "title": "Canyoning Madeira Meeting 2026",
+      "url": "https://www.madeira-unlocked.com/en/events/canyoning-madeira-meeting-2026-2026-10-22",
+      "start": "2026-10-22T08:30:00+01:00",
+      "end": "2026-10-23T00:00:00+01:00",
+      "date": "2026-10-22",
+      "time": "08:30",
+      "venue": "Clube Naval do Seixal, Seixal",
+      "municipality": "São Vicente",
+      "price": 150,
+      "organizer": "Clube Naval do Seixal",
+      "category": "sport",
+      "source_category": "sport-fitness"
+    },
+    {
+      "id": "canyoning-madeira-meeting-2026-2026-10-23",
+      "title": "Canyoning Madeira Meeting 2026",
+      "url": "https://www.madeira-unlocked.com/en/events/canyoning-madeira-meeting-2026-2026-10-23",
+      "start": "2026-10-23T08:30:00+01:00",
+      "end": "2026-10-24T02:30:00+01:00",
+      "date": "2026-10-23",
+      "time": "08:30",
+      "venue": "Clube Naval do Seixal, Seixal",
+      "municipality": "São Vicente",
+      "price": 150,
+      "organizer": "Clube Naval do Seixal",
+      "category": "sport",
+      "source_category": "sport-fitness"
     },
     {
       "id": "eipoema-international-poetry-meeting-of-macaronesia-2026-10-27",
