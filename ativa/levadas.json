@@ -1,77 +1,8 @@
 {
-  "fetched": "2026-09-18T10:07:08",
+  "fetched": "2026-09-21T13:45:52",
   "attribution": "Trails © OpenStreetMap · Elevation © EU-DEM/opentopodata",
   "count": 44,
   "levadas": [
-    {
-      "code": "PR 1",
-      "name": "Vereda do Areeiro",
-      "alt_name": "Vereda do Arieiro",
-      "status": "open",
-      "distance_km": 6.1,
-      "ascent_m": 499,
-      "descent_m": 461,
-      "profile": [
-        1791,
-        1763,
-        1736,
-        1708,
-        1678,
-        1640,
-        1649,
-        1656,
-        1678,
-        1698,
-        1682,
-        1685,
-        1652,
-        1636,
-        1609,
-        1595,
-        1584,
-        1591,
-        1652,
-        1698,
-        1716,
-        1702,
-        1716,
-        1671,
-        1630,
-        1616,
-        1603,
-        1567,
-        1582,
-        1571,
-        1580,
-        1620,
-        1614,
-        1667,
-        1687,
-        1713,
-        1744,
-        1732,
-        1774,
-        1790,
-        1819,
-        1830,
-        1830
-      ],
-      "profile_breaks": [],
-      "roundtrip": false,
-      "from": "Pico do Arieiro",
-      "to": "Pico Ruivo",
-      "fee": true,
-      "charge": "10.50 EUR",
-      "marking": "yellow",
-      "desc_en": "",
-      "desc_pt": "",
-      "url_en": "https://visitmadeira.com/en/what-to-do/nature-seekers/activities/hiking/pr-1-vereda-do-areeiro/",
-      "url_pt": "https://visitmadeira.com/pt/o-que-fazer/exploradores-da-natureza/atividades/caminhadas/pr1-vereda-do-areeiro/",
-      "center": [
-        32.7499074,
-        -16.9391051
-      ]
-    },
     {
       "code": "PR 1.1",
       "name": "Vereda da Ilha",
@@ -153,7 +84,8 @@
       "center": [
         32.783353,
         -16.925958
-      ]
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 1.2",
@@ -202,7 +134,113 @@
       "center": [
         32.7610787,
         -16.9363235
-      ]
+      ],
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 1.3",
+      "name": "Vereda da Encumeada",
+      "alt_name": "",
+      "status": "open",
+      "distance_km": 11.2,
+      "ascent_m": 1225,
+      "descent_m": 468,
+      "profile": [
+        987,
+        1002,
+        1030,
+        1046,
+        1079,
+        1144,
+        1170,
+        1188,
+        1205,
+        1212,
+        1227,
+        1252,
+        1233,
+        1211,
+        1210,
+        1248,
+        1308,
+        1322,
+        1342,
+        1378,
+        1369,
+        1390,
+        1399,
+        1347,
+        1343,
+        1393,
+        1416,
+        1442,
+        1468,
+        1515,
+        1534,
+        1553,
+        1573,
+        1577,
+        1583,
+        1612,
+        1568,
+        1514,
+        1514,
+        1500,
+        1463,
+        1445,
+        1446,
+        1434,
+        1437,
+        1461,
+        1482,
+        1501,
+        1514,
+        1521,
+        1532,
+        1551,
+        1585,
+        1569,
+        1598,
+        1589,
+        1598,
+        1617,
+        1620,
+        1604,
+        1581,
+        1603,
+        1527,
+        1548,
+        1562,
+        1571,
+        1578,
+        1602,
+        1610,
+        1655,
+        1671,
+        1664,
+        1695,
+        1738,
+        1765,
+        1781,
+        1781,
+        1744
+      ],
+      "profile_breaks": [],
+      "roundtrip": false,
+      "from": "Casa de Abrigo do Pico Ruivo",
+      "to": "Encumeada",
+      "fee": true,
+      "charge": "",
+      "marking": "yellow",
+      "desc_en": "",
+      "desc_pt": "",
+      "url_en": "https://visitmadeira.com/en/what-to-do/nature-seekers/activities/hiking/pr-13-vereda-da-encumeada/",
+      "url_pt": "https://visitmadeira.com/pt/o-que-fazer/exploradores-da-natureza/atividades/caminhadas/pr-13-vereda-da-encumeada/",
+      "center": [
+        32.7548926,
+        -16.981844
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 10",
@@ -322,7 +360,51 @@
       "center": [
         32.7366355,
         -16.8635822
-      ]
+      ],
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 11",
+      "name": "Vereda dos Balcões",
+      "alt_name": "Vereda dos Balcões",
+      "status": "open",
+      "distance_km": 1.5,
+      "ascent_m": 68,
+      "descent_m": 112,
+      "profile": [
+        882,
+        887,
+        888,
+        882,
+        901,
+        908,
+        881,
+        900,
+        885,
+        881,
+        883,
+        897,
+        874,
+        833
+      ],
+      "profile_breaks": [
+        3
+      ],
+      "roundtrip": false,
+      "from": "Ribeiro Frio",
+      "to": "Balcões",
+      "fee": true,
+      "charge": "3 EUR",
+      "marking": "yellow",
+      "desc_en": "",
+      "desc_pt": "",
+      "url_en": "https://visitmadeira.com/en/what-to-do/nature-seekers/activities/hiking/pr-11-vereda-dos-balcoes/",
+      "url_pt": "https://visitmadeira.com/pt/o-que-fazer/exploradores-da-natureza/atividades/caminhadas/pr-11-vereda-dos-balcoes/",
+      "center": [
+        32.7388208,
+        -16.8885805
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 13",
@@ -430,7 +512,8 @@
       "center": [
         32.790159,
         -17.130445
-      ]
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 13.1",
@@ -469,7 +552,85 @@
       "center": [
         32.7693372,
         -17.1241922
-      ]
+      ],
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 14",
+      "name": "Levada dos Cedros",
+      "alt_name": "Levada dos Cedros",
+      "status": "open",
+      "distance_km": 7.2,
+      "ascent_m": 236,
+      "descent_m": 526,
+      "profile": [
+        1132,
+        1120,
+        1116,
+        1103,
+        1089,
+        1051,
+        1015,
+        961,
+        912,
+        885,
+        888,
+        890,
+        917,
+        892,
+        875,
+        886,
+        909,
+        915,
+        886,
+        887,
+        911,
+        881,
+        869,
+        890,
+        878,
+        859,
+        856,
+        883,
+        886,
+        878,
+        859,
+        888,
+        887,
+        871,
+        874,
+        851,
+        881,
+        872,
+        874,
+        864,
+        865,
+        842,
+        862,
+        856,
+        845,
+        846,
+        846,
+        849,
+        850,
+        845
+      ],
+      "profile_breaks": [],
+      "roundtrip": false,
+      "from": "Fanal",
+      "to": "Curral Falso",
+      "fee": true,
+      "charge": "",
+      "marking": "yellow",
+      "desc_en": "",
+      "desc_pt": "",
+      "url_en": "https://visitmadeira.com/en/what-to-do/nature-seekers/activities/hiking/pr-14-levada-dos-cedros/",
+      "url_pt": "https://visitmadeira.com/pt/o-que-fazer/exploradores-da-natureza/atividades/caminhadas/pr-14-levada-dos-cedros/",
+      "center": [
+        32.8104111,
+        -17.1561262
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 15",
@@ -514,7 +675,8 @@
       "center": [
         32.8380686,
         -17.1586909
-      ]
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 16",
@@ -567,7 +729,119 @@
       "center": [
         32.7794023,
         -17.0588076
-      ]
+      ],
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 17",
+      "name": "Caminho do Pináculo e Folhadal",
+      "alt_name": "Caminho do Pináculo e Folhadal",
+      "status": "open",
+      "distance_km": 15.0,
+      "ascent_m": 1258,
+      "descent_m": 940,
+      "profile": [
+        992,
+        998,
+        999,
+        1002,
+        1021,
+        986,
+        1005,
+        1062,
+        990,
+        1021,
+        991,
+        1021,
+        1057,
+        1065,
+        1034,
+        1046,
+        1025,
+        977,
+        1016,
+        966,
+        969,
+        974,
+        992,
+        1050,
+        1075,
+        1104,
+        1143,
+        1169,
+        1164,
+        1223,
+        1187,
+        1191,
+        1140,
+        1160,
+        1201,
+        1185,
+        1162,
+        1190,
+        1218,
+        1244,
+        1254,
+        1254,
+        1264,
+        1284,
+        1301,
+        1327,
+        1378,
+        1374,
+        1417,
+        1428,
+        1445,
+        1461,
+        1481,
+        1504,
+        1543,
+        1552,
+        1545,
+        1513,
+        1476,
+        1466,
+        1478,
+        1517,
+        1471,
+        1511,
+        1503,
+        1445,
+        1522,
+        1495,
+        1495,
+        1441,
+        1458,
+        1500,
+        1453,
+        1443,
+        1443,
+        1398,
+        1356,
+        1351,
+        1332,
+        1363,
+        1381,
+        1335,
+        1311,
+        1311
+      ],
+      "profile_breaks": [],
+      "roundtrip": false,
+      "from": "Lombo do Mouro",
+      "to": "Encumeada",
+      "fee": true,
+      "charge": "4.5 EUR",
+      "marking": "yellow",
+      "desc_en": "",
+      "desc_pt": "",
+      "url_en": "https://visitmadeira.com/en/what-to-do/nature-seekers/activities/hiking/pr-17-caminho-do-pinaculo-e-folhadal/",
+      "url_pt": "https://visitmadeira.com/pt/o-que-fazer/exploradores-da-natureza/atividades/caminhadas/pr-17-caminho-do-pinaculo-e-folhadal/",
+      "center": [
+        32.7689214,
+        -17.0556054
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 18",
@@ -633,7 +907,8 @@
       "center": [
         32.808596,
         -16.9363261
-      ]
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 19",
@@ -674,7 +949,8 @@
       "center": [
         32.7537887,
         -17.2196281
-      ]
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 2",
@@ -775,7 +1051,8 @@
       "center": [
         32.7550044,
         -16.9746666
-      ]
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 2 VE",
@@ -834,7 +1111,8 @@
       "center": [
         33.085963,
         -16.320711
-      ]
+      ],
+      "island": "Porto Santo"
     },
     {
       "code": "PR 2 VO",
@@ -884,7 +1162,8 @@
       "center": [
         33.08392,
         -16.328973
-      ]
+      ],
+      "island": "Porto Santo"
     },
     {
       "code": "PR 21",
@@ -932,7 +1211,8 @@
       "center": [
         32.764168,
         -17.019262
-      ]
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 21 <-> PR 22",
@@ -962,7 +1242,8 @@
       "center": [
         32.7585693,
         -17.0195646
-      ]
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 22",
@@ -1004,7 +1285,186 @@
       "center": [
         32.7600496,
         -17.0171465
-      ]
+      ],
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 23",
+      "name": "Levada da Azenha",
+      "alt_name": "Levada da Azenha",
+      "status": "open",
+      "distance_km": 0.9,
+      "ascent_m": 10,
+      "descent_m": 35,
+      "profile": [
+        299,
+        294,
+        287,
+        277,
+        283,
+        276,
+        270,
+        273
+      ],
+      "profile_breaks": [],
+      "roundtrip": false,
+      "from": "Azenha",
+      "to": "Caminho Velho do Castelo",
+      "fee": false,
+      "charge": "",
+      "marking": "yellow",
+      "desc_en": "",
+      "desc_pt": "",
+      "url_en": "",
+      "url_pt": "",
+      "center": [
+        32.6571901,
+        -16.8439018
+      ],
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 3",
+      "name": "Vereda do Burro",
+      "alt_name": "",
+      "status": "open",
+      "distance_km": 7.2,
+      "ascent_m": 58,
+      "descent_m": 703,
+      "profile": [
+        1796,
+        1784,
+        1758,
+        1724,
+        1700,
+        1683,
+        1650,
+        1623,
+        1605,
+        1615,
+        1605,
+        1608,
+        1618,
+        1619,
+        1615,
+        1581,
+        1566,
+        1571,
+        1567,
+        1576,
+        1576,
+        1588,
+        1592,
+        1596,
+        1585,
+        1574,
+        1559,
+        1533,
+        1516,
+        1508,
+        1499,
+        1491,
+        1486,
+        1483,
+        1476,
+        1473,
+        1465,
+        1459,
+        1449,
+        1433,
+        1431,
+        1396,
+        1368,
+        1339,
+        1322,
+        1295,
+        1273,
+        1268,
+        1261,
+        1228,
+        1210,
+        1204,
+        1192,
+        1183,
+        1168,
+        1152
+      ],
+      "profile_breaks": [],
+      "roundtrip": false,
+      "from": "Pico do Areeiro",
+      "to": "Ribeira das Cales",
+      "fee": true,
+      "charge": "",
+      "marking": "yellow",
+      "desc_en": "",
+      "desc_pt": "",
+      "url_en": "https://visitmadeira.com/en/what-to-do/nature-seekers/activities/hiking/pr-3-vereda-do-burro/",
+      "url_pt": "https://visitmadeira.com/pt/o-que-fazer/exploradores-da-natureza/atividades/caminhadas/pr-3-vereda-do-burro/",
+      "center": [
+        32.717415,
+        -16.9110123
+      ],
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 3.1",
+      "name": "Caminho Real do Monte",
+      "alt_name": "",
+      "status": "open",
+      "distance_km": 4.2,
+      "ascent_m": 6,
+      "descent_m": 578,
+      "profile": [
+        1152,
+        1145,
+        1146,
+        1138,
+        1126,
+        1111,
+        1109,
+        1115,
+        1113,
+        1108,
+        1107,
+        1078,
+        1056,
+        1040,
+        1014,
+        987,
+        962,
+        941,
+        909,
+        875,
+        856,
+        845,
+        809,
+        786,
+        749,
+        721,
+        693,
+        663,
+        640,
+        608,
+        595,
+        585,
+        580
+      ],
+      "profile_breaks": [],
+      "roundtrip": false,
+      "from": "Ribeira das Cales",
+      "to": "Monte",
+      "fee": false,
+      "charge": "",
+      "marking": "yellow",
+      "desc_en": "",
+      "desc_pt": "",
+      "url_en": "https://visitmadeira.com/en/what-to-do/nature-seekers/activities/hiking/pr-31-caminho-real-do-monte/",
+      "url_pt": "https://visitmadeira.com/pt/o-que-fazer/exploradores-da-natureza/atividades/caminhadas/pr-31-caminho-real-do-monte/",
+      "center": [
+        32.6894542,
+        -16.9001207
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 5",
@@ -1092,7 +1552,8 @@
       "center": [
         32.7537264,
         -16.7979382
-      ]
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 6",
@@ -1156,7 +1617,8 @@
       "center": [
         32.7607007,
         -17.1335047
-      ]
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 6.1",
@@ -1207,7 +1669,8 @@
       "center": [
         32.7577634,
         -17.1315505
-      ]
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 6.2",
@@ -1263,7 +1726,8 @@
       "center": [
         32.7560891,
         -17.1302357
-      ]
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 6.3",
@@ -1309,7 +1773,8 @@
       "center": [
         32.7601056,
         -17.1254921
-      ]
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 6.4",
@@ -1373,7 +1838,8 @@
       "center": [
         32.7686327,
         -17.1443301
-      ]
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 6.5",
@@ -1423,7 +1889,8 @@
       "center": [
         32.7602138,
         -17.114688
-      ]
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 6.6",
@@ -1461,7 +1928,8 @@
       "center": [
         32.755878,
         -17.1423732
-      ]
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 6.7",
@@ -1501,7 +1969,8 @@
       "center": [
         32.7544387,
         -17.1405018
-      ]
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 6.8",
@@ -1537,7 +2006,8 @@
       "center": [
         32.750833,
         -17.1293331
-      ]
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 8",
@@ -1602,7 +2072,8 @@
       "center": [
         32.7470913,
         -16.6908784
-      ]
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 9",
@@ -1694,7 +2165,8 @@
       "center": [
         32.78237,
         -16.9269886
-      ]
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 9.1",
@@ -1735,7 +2207,8 @@
       "center": [
         32.7813521,
         -16.902472
-      ]
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR1",
@@ -1789,49 +2262,78 @@
       "center": [
         33.0946277,
         -16.3107595
-      ]
+      ],
+      "island": "Porto Santo"
     },
     {
-      "code": "PR 11",
-      "name": "Vereda dos Balcões",
-      "alt_name": "Vereda dos Balcões",
+      "code": "PR 1",
+      "name": "Vereda do Areeiro",
+      "alt_name": "Vereda do Arieiro",
       "status": "partial",
-      "distance_km": 1.5,
-      "ascent_m": 68,
-      "descent_m": 112,
+      "distance_km": 6.1,
+      "ascent_m": 499,
+      "descent_m": 461,
       "profile": [
-        882,
-        887,
-        888,
-        882,
-        901,
-        908,
-        881,
-        900,
-        885,
-        881,
-        883,
-        897,
-        874,
-        833
+        1791,
+        1763,
+        1736,
+        1708,
+        1678,
+        1640,
+        1649,
+        1656,
+        1678,
+        1698,
+        1682,
+        1685,
+        1652,
+        1636,
+        1609,
+        1595,
+        1584,
+        1591,
+        1652,
+        1698,
+        1716,
+        1702,
+        1716,
+        1671,
+        1630,
+        1616,
+        1603,
+        1567,
+        1582,
+        1571,
+        1580,
+        1620,
+        1614,
+        1667,
+        1687,
+        1713,
+        1744,
+        1732,
+        1774,
+        1790,
+        1819,
+        1830,
+        1830
       ],
-      "profile_breaks": [
-        3
-      ],
+      "profile_breaks": [],
       "roundtrip": false,
-      "from": "Ribeiro Frio",
-      "to": "Balcões",
+      "from": "Pico do Arieiro",
+      "to": "Pico Ruivo",
       "fee": true,
-      "charge": "3 EUR",
+      "charge": "10.50 EUR",
       "marking": "yellow",
       "desc_en": "",
       "desc_pt": "",
-      "url_en": "https://visitmadeira.com/en/what-to-do/nature-seekers/activities/hiking/pr-11-vereda-dos-balcoes/",
-      "url_pt": "https://visitmadeira.com/pt/o-que-fazer/exploradores-da-natureza/atividades/caminhadas/pr-11-vereda-dos-balcoes/",
+      "url_en": "https://visitmadeira.com/en/what-to-do/nature-seekers/activities/hiking/pr-1-vereda-do-areeiro/",
+      "url_pt": "https://visitmadeira.com/pt/o-que-fazer/exploradores-da-natureza/atividades/caminhadas/pr1-vereda-do-areeiro/",
       "center": [
-        32.7388208,
-        -16.8885805
-      ]
+        32.7499074,
+        -16.9391051
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 12",
@@ -1949,176 +2451,8 @@
       "center": [
         32.7335402,
         -17.0001042
-      ]
-    },
-    {
-      "code": "PR 17",
-      "name": "Caminho do Pináculo e Folhadal",
-      "alt_name": "Caminho do Pináculo e Folhadal",
-      "status": "partial",
-      "distance_km": 15.0,
-      "ascent_m": 1258,
-      "descent_m": 940,
-      "profile": [
-        992,
-        998,
-        999,
-        1002,
-        1021,
-        986,
-        1005,
-        1062,
-        990,
-        1021,
-        991,
-        1021,
-        1057,
-        1065,
-        1034,
-        1046,
-        1025,
-        977,
-        1016,
-        966,
-        969,
-        974,
-        992,
-        1050,
-        1075,
-        1104,
-        1143,
-        1169,
-        1164,
-        1223,
-        1187,
-        1191,
-        1140,
-        1160,
-        1201,
-        1185,
-        1162,
-        1190,
-        1218,
-        1244,
-        1254,
-        1254,
-        1264,
-        1284,
-        1301,
-        1327,
-        1378,
-        1374,
-        1417,
-        1428,
-        1445,
-        1461,
-        1481,
-        1504,
-        1543,
-        1552,
-        1545,
-        1513,
-        1476,
-        1466,
-        1478,
-        1517,
-        1471,
-        1511,
-        1503,
-        1445,
-        1522,
-        1495,
-        1495,
-        1441,
-        1458,
-        1500,
-        1453,
-        1443,
-        1443,
-        1398,
-        1356,
-        1351,
-        1332,
-        1363,
-        1381,
-        1335,
-        1311,
-        1311
       ],
-      "profile_breaks": [],
-      "roundtrip": false,
-      "from": "Lombo do Mouro",
-      "to": "Encumeada",
-      "fee": true,
-      "charge": "4.5 EUR",
-      "marking": "yellow",
-      "desc_en": "",
-      "desc_pt": "",
-      "url_en": "https://visitmadeira.com/en/what-to-do/nature-seekers/activities/hiking/pr-17-caminho-do-pinaculo-e-folhadal/",
-      "url_pt": "https://visitmadeira.com/pt/o-que-fazer/exploradores-da-natureza/atividades/caminhadas/pr-17-caminho-do-pinaculo-e-folhadal/",
-      "center": [
-        32.7689214,
-        -17.0556054
-      ]
-    },
-    {
-      "code": "PR 3.1",
-      "name": "Caminho Real do Monte",
-      "alt_name": "",
-      "status": "partial",
-      "distance_km": 4.2,
-      "ascent_m": 6,
-      "descent_m": 578,
-      "profile": [
-        1152,
-        1145,
-        1146,
-        1138,
-        1126,
-        1111,
-        1109,
-        1115,
-        1113,
-        1108,
-        1107,
-        1078,
-        1056,
-        1040,
-        1014,
-        987,
-        962,
-        941,
-        909,
-        875,
-        856,
-        845,
-        809,
-        786,
-        749,
-        721,
-        693,
-        663,
-        640,
-        608,
-        595,
-        585,
-        580
-      ],
-      "profile_breaks": [],
-      "roundtrip": false,
-      "from": "Ribeira das Cales",
-      "to": "Monte",
-      "fee": false,
-      "charge": "",
-      "marking": "yellow",
-      "desc_en": "",
-      "desc_pt": "",
-      "url_en": "https://visitmadeira.com/en/what-to-do/nature-seekers/activities/hiking/pr-31-caminho-real-do-monte/",
-      "url_pt": "https://visitmadeira.com/pt/o-que-fazer/exploradores-da-natureza/atividades/caminhadas/pr-31-caminho-real-do-monte/",
-      "center": [
-        32.6894542,
-        -16.9001207
-      ]
+      "island": "Madeira"
     },
     {
       "code": "PR 4",
@@ -2181,187 +2515,8 @@
       "center": [
         32.7058133,
         -16.916911
-      ]
-    },
-    {
-      "code": "PR 1.3",
-      "name": "Vereda da Encumeada",
-      "alt_name": "",
-      "status": "closed",
-      "distance_km": 11.2,
-      "ascent_m": 1225,
-      "descent_m": 468,
-      "profile": [
-        987,
-        1002,
-        1030,
-        1046,
-        1079,
-        1144,
-        1170,
-        1188,
-        1205,
-        1212,
-        1227,
-        1252,
-        1233,
-        1211,
-        1210,
-        1248,
-        1308,
-        1322,
-        1342,
-        1378,
-        1369,
-        1390,
-        1399,
-        1347,
-        1343,
-        1393,
-        1416,
-        1442,
-        1468,
-        1515,
-        1534,
-        1553,
-        1573,
-        1577,
-        1583,
-        1612,
-        1568,
-        1514,
-        1514,
-        1500,
-        1463,
-        1445,
-        1446,
-        1434,
-        1437,
-        1461,
-        1482,
-        1501,
-        1514,
-        1521,
-        1532,
-        1551,
-        1585,
-        1569,
-        1598,
-        1589,
-        1598,
-        1617,
-        1620,
-        1604,
-        1581,
-        1603,
-        1527,
-        1548,
-        1562,
-        1571,
-        1578,
-        1602,
-        1610,
-        1655,
-        1671,
-        1664,
-        1695,
-        1738,
-        1765,
-        1781,
-        1781,
-        1744
       ],
-      "profile_breaks": [],
-      "roundtrip": false,
-      "from": "Casa de Abrigo do Pico Ruivo",
-      "to": "Encumeada",
-      "fee": true,
-      "charge": "",
-      "marking": "yellow",
-      "desc_en": "",
-      "desc_pt": "",
-      "url_en": "https://visitmadeira.com/en/what-to-do/nature-seekers/activities/hiking/pr-13-vereda-da-encumeada/",
-      "url_pt": "https://visitmadeira.com/pt/o-que-fazer/exploradores-da-natureza/atividades/caminhadas/pr-13-vereda-da-encumeada/",
-      "center": [
-        32.7548926,
-        -16.981844
-      ]
-    },
-    {
-      "code": "PR 14",
-      "name": "Levada dos Cedros",
-      "alt_name": "Levada dos Cedros",
-      "status": "closed",
-      "distance_km": 7.2,
-      "ascent_m": 236,
-      "descent_m": 526,
-      "profile": [
-        1132,
-        1120,
-        1116,
-        1103,
-        1089,
-        1051,
-        1015,
-        961,
-        912,
-        885,
-        888,
-        890,
-        917,
-        892,
-        875,
-        886,
-        909,
-        915,
-        886,
-        887,
-        911,
-        881,
-        869,
-        890,
-        878,
-        859,
-        856,
-        883,
-        886,
-        878,
-        859,
-        888,
-        887,
-        871,
-        874,
-        851,
-        881,
-        872,
-        874,
-        864,
-        865,
-        842,
-        862,
-        856,
-        845,
-        846,
-        846,
-        849,
-        850,
-        845
-      ],
-      "profile_breaks": [],
-      "roundtrip": false,
-      "from": "Fanal",
-      "to": "Curral Falso",
-      "fee": true,
-      "charge": "",
-      "marking": "yellow",
-      "desc_en": "",
-      "desc_pt": "",
-      "url_en": "https://visitmadeira.com/en/what-to-do/nature-seekers/activities/hiking/pr-14-levada-dos-cedros/",
-      "url_pt": "https://visitmadeira.com/pt/o-que-fazer/exploradores-da-natureza/atividades/caminhadas/pr-14-levada-dos-cedros/",
-      "center": [
-        32.8104111,
-        -17.1561262
-      ]
+      "island": "Madeira"
     },
     {
       "code": "PR 20",
@@ -2403,41 +2558,8 @@
       "center": [
         32.7430376,
         -17.2103901
-      ]
-    },
-    {
-      "code": "PR 23",
-      "name": "Levada da Azenha",
-      "alt_name": "Levada da Azenha",
-      "status": "closed",
-      "distance_km": 0.9,
-      "ascent_m": 10,
-      "descent_m": 35,
-      "profile": [
-        299,
-        294,
-        287,
-        277,
-        283,
-        276,
-        270,
-        273
       ],
-      "profile_breaks": [],
-      "roundtrip": false,
-      "from": "Azenha",
-      "to": "Caminho Velho do Castelo",
-      "fee": false,
-      "charge": "",
-      "marking": "yellow",
-      "desc_en": "",
-      "desc_pt": "",
-      "url_en": "",
-      "url_pt": "",
-      "center": [
-        32.6571901,
-        -16.8439018
-      ]
+      "island": "Madeira"
     },
     {
       "code": "PR 27",
@@ -2504,7 +2626,8 @@
       "center": [
         32.745097,
         -17.0677342
-      ]
+      ],
+      "island": "Madeira"
     },
     {
       "code": "PR 28",
@@ -2597,89 +2720,8 @@
       "center": [
         32.7760895,
         -17.1388993
-      ]
-    },
-    {
-      "code": "PR 3",
-      "name": "Vereda do Burro",
-      "alt_name": "",
-      "status": "closed",
-      "distance_km": 7.2,
-      "ascent_m": 58,
-      "descent_m": 703,
-      "profile": [
-        1796,
-        1784,
-        1758,
-        1724,
-        1700,
-        1683,
-        1650,
-        1623,
-        1605,
-        1615,
-        1605,
-        1608,
-        1618,
-        1619,
-        1615,
-        1581,
-        1566,
-        1571,
-        1567,
-        1576,
-        1576,
-        1588,
-        1592,
-        1596,
-        1585,
-        1574,
-        1559,
-        1533,
-        1516,
-        1508,
-        1499,
-        1491,
-        1486,
-        1483,
-        1476,
-        1473,
-        1465,
-        1459,
-        1449,
-        1433,
-        1431,
-        1396,
-        1368,
-        1339,
-        1322,
-        1295,
-        1273,
-        1268,
-        1261,
-        1228,
-        1210,
-        1204,
-        1192,
-        1183,
-        1168,
-        1152
       ],
-      "profile_breaks": [],
-      "roundtrip": false,
-      "from": "Pico do Areeiro",
-      "to": "Ribeira das Cales",
-      "fee": true,
-      "charge": "",
-      "marking": "yellow",
-      "desc_en": "",
-      "desc_pt": "",
-      "url_en": "https://visitmadeira.com/en/what-to-do/nature-seekers/activities/hiking/pr-3-vereda-do-burro/",
-      "url_pt": "https://visitmadeira.com/pt/o-que-fazer/exploradores-da-natureza/atividades/caminhadas/pr-3-vereda-do-burro/",
-      "center": [
-        32.717415,
-        -16.9110123
-      ]
+      "island": "Madeira"
     },
     {
       "code": "PR 3",
@@ -2740,7 +2782,8 @@
       "center": [
         33.0756645,
         -16.3248664
-      ]
+      ],
+      "island": "Porto Santo"
     },
     {
       "code": "PR 7",
@@ -2855,7 +2898,8 @@
       "center": [
         32.8399531,
         -17.1925582
-      ]
+      ],
+      "island": "Madeira"
     }
   ]
 }

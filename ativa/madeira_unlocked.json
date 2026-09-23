@@ -1,9 +1,24 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-09-18T09:48:04",
-  "count": 138,
+  "fetched": "2026-09-23T17:10:25",
+  "count": 159,
   "items": [
+    {
+      "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
+      "title": "Visita Livre na Quinta Pedagógica da Camacha",
+      "url": "https://www.madeira-unlocked.com/en/events/visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
+      "start": "2026-01-01T10:00:00+00:00",
+      "end": "2026-12-31T17:00:00+00:00",
+      "date": "2026-01-01",
+      "time": "10:00",
+      "venue": "Quinta Pedagógica da Camacha",
+      "municipality": "Santa Cruz",
+      "price": 10,
+      "organizer": "Quinta Pedagógica da Camacha",
+      "category": "family",
+      "source_category": "kids-family"
+    },
     {
       "id": "tony-bennett-tribute-2026-09-16",
       "title": "Tony Bennett Tribute",
@@ -800,6 +815,21 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "madeira-ukulele-band-meetup-2026-09-23",
+      "title": "Madeira Ukulele Band Meetup",
+      "url": "https://www.madeira-unlocked.com/en/events/madeira-ukulele-band-meetup-2026-09-23",
+      "start": "2026-09-23T18:00:00+01:00",
+      "end": "2026-09-23T19:30:00+01:00",
+      "date": "2026-09-23",
+      "time": "18:00",
+      "venue": "Santa Catarina Park",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Madeira Friends",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "andamente-group-walk-for-an-active-and-healthy-life-2026-09-23",
       "title": "AndaMente - Group Walk for an Active and Healthy Life",
       "url": "https://www.madeira-unlocked.com/en/events/andamente-group-walk-for-an-active-and-healthy-life-2026-09-23",
@@ -813,6 +843,21 @@
       "organizer": "Câmara Municipal de Câmara de Lobos",
       "category": "sport",
       "source_category": "sport-fitness"
+    },
+    {
+      "id": "world-tourism-day-2026-09-24",
+      "title": "World Tourism Day",
+      "url": "https://www.madeira-unlocked.com/en/events/world-tourism-day-2026-09-24",
+      "start": "2026-09-24T09:00:00+01:00",
+      "end": "2026-09-24T10:00:00+01:00",
+      "date": "2026-09-24",
+      "time": "09:00",
+      "venue": "Mercado dos Lavradores",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Município do Funchal",
+      "category": "culture",
+      "source_category": "culture-museums"
     },
     {
       "id": "anatomia-e-metamorfose-dos-campeoes-sports-forum-and-debate-2026-09-24",
@@ -869,7 +914,7 @@
       "time": "18:15",
       "venue": "Secret outdoor location in central Funchal (Unlocked after registration)",
       "municipality": "Funchal",
-      "price": 17,
+      "price": 10,
       "organizer": "Stathis Roukas",
       "category": "dance",
       "source_category": "dance"
@@ -903,6 +948,36 @@
       "organizer": "AGON – Associação Cultural e Artística",
       "category": "theatre",
       "source_category": "theater"
+    },
+    {
+      "id": "siderea-by-imhoff-baldini-audiovisual-performance-2026-09-24",
+      "title": "SIDEREA by Imhoff & Baldini - Audiovisual Performance",
+      "url": "https://www.madeira-unlocked.com/en/events/siderea-by-imhoff-baldini-audiovisual-performance-2026-09-24",
+      "start": "2026-09-24T19:00:00+01:00",
+      "end": "2026-09-24T20:00:00+01:00",
+      "date": "2026-09-24",
+      "time": "19:00",
+      "venue": "Centro Cultural John dos Passos",
+      "municipality": "Ponta do Sol",
+      "price": 10,
+      "organizer": "APCA - Agência de Promoção da Cultura Atlântica",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "world-tourism-day-2026-09-25",
+      "title": "World Tourism Day",
+      "url": "https://www.madeira-unlocked.com/en/events/world-tourism-day-2026-09-25",
+      "start": "2026-09-25T09:00:00+01:00",
+      "end": "2026-09-25T15:00:00+01:00",
+      "date": "2026-09-25",
+      "time": "09:00",
+      "venue": "Mercado dos Lavradores",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Município do Funchal",
+      "category": "culture",
+      "source_category": "culture-museums"
     },
     {
       "id": "anatomia-e-metamorfose-dos-campeoes-sports-forum-and-debate-2026-09-25",
@@ -1040,6 +1115,36 @@
       "source_category": "sport-fitness"
     },
     {
+      "id": "world-banana-day-2026-museu-da-banana-da-madeira-2026-09-26",
+      "title": "World Banana Day 2026 - Museu da Banana da Madeira",
+      "url": "https://www.madeira-unlocked.com/en/events/world-banana-day-2026-museu-da-banana-da-madeira-2026-09-26",
+      "start": "2026-09-26T10:00:00+01:00",
+      "end": "2026-09-26T15:30:00+01:00",
+      "date": "2026-09-26",
+      "time": "10:00",
+      "venue": "Museu da Banana da Madeira (BAM), Lugar de Baixo, Ponta do Sol",
+      "municipality": "Ponta do Sol",
+      "price": 0,
+      "organizer": "Museu da Banana da Madeira (BAM)",
+      "category": "family",
+      "source_category": "kids-family"
+    },
+    {
+      "id": "powerglutes-fitchallenge-2026-09-26",
+      "title": "PowerGlutes & FitChallenge",
+      "url": "https://www.madeira-unlocked.com/en/events/powerglutes-fitchallenge-2026-09-26",
+      "start": "2026-09-26T10:00:00+01:00",
+      "end": "2026-09-26T10:45:00+01:00",
+      "date": "2026-09-26",
+      "time": "10:00",
+      "venue": "Jardim das Grutas",
+      "municipality": "São Vicente",
+      "price": 0,
+      "organizer": "Câmara Municipal de São Vicente",
+      "category": "sport",
+      "source_category": "sport-fitness"
+    },
+    {
       "id": "calheta-family-fest-2026-2026-09-26",
       "title": "Calheta Family Fest 2026",
       "url": "https://www.madeira-unlocked.com/en/events/calheta-family-fest-2026-2026-09-26",
@@ -1098,6 +1203,21 @@
       "organizer": "Associação Cultural FRACTAL",
       "category": "festival",
       "source_category": "festivals-parades"
+    },
+    {
+      "id": "circular-dances-with-isabel-pinto-2026-09-26",
+      "title": "Circular Dances with Isabel Pinto",
+      "url": "https://www.madeira-unlocked.com/en/events/circular-dances-with-isabel-pinto-2026-09-26",
+      "start": "2026-09-26T17:00:00+01:00",
+      "end": "2026-09-26T18:00:00+01:00",
+      "date": "2026-09-26",
+      "time": "17:00",
+      "venue": "Praia da Alagoa",
+      "municipality": "Machico",
+      "price": 0,
+      "organizer": "Isabel Pinto",
+      "category": "dance",
+      "source_category": "dance"
     },
     {
       "id": "adrian-butterfield-baroque-music-concert-2026-09-26",
@@ -1250,6 +1370,21 @@
       "source_category": "sport-fitness"
     },
     {
+      "id": "world-tourism-day-2026-09-27",
+      "title": "World Tourism Day",
+      "url": "https://www.madeira-unlocked.com/en/events/world-tourism-day-2026-09-27",
+      "start": "2026-09-27T09:00:00+01:00",
+      "end": "2026-09-27T14:30:00+01:00",
+      "date": "2026-09-27",
+      "time": "09:00",
+      "venue": "Museu de História Natural do Funchal",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Município do Funchal",
+      "category": "culture",
+      "source_category": "culture-museums"
+    },
+    {
       "id": "anatomia-e-metamorfose-dos-campeoes-sports-forum-and-debate-2026-09-27",
       "title": "Regata de Caiaques “Bananas”",
       "url": "https://www.madeira-unlocked.com/en/events/anatomia-e-metamorfose-dos-campeoes-sports-forum-and-debate-2026-09-27",
@@ -1263,6 +1398,21 @@
       "organizer": "Câmara Municipal de Câmara de Lobos",
       "category": "sport",
       "source_category": "sport-fitness"
+    },
+    {
+      "id": "soul-sisters-convidados-2026-09-27",
+      "title": "Soul Sisters & Convidados",
+      "url": "https://www.madeira-unlocked.com/en/events/soul-sisters-convidados-2026-09-27",
+      "start": "2026-09-27T18:00:00+01:00",
+      "end": "2026-09-27T19:00:00+01:00",
+      "date": "2026-09-27",
+      "time": "18:00",
+      "venue": "Praça do Povo",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Dúnta do Padel",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "agora-e-que-sao-elas-new-season-2026-09-27",
@@ -1385,6 +1535,21 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "dia-mundial-da-musica-2026-10-01",
+      "title": "Dia Mundial da Música",
+      "url": "https://www.madeira-unlocked.com/en/events/dia-mundial-da-musica-2026-10-01",
+      "start": "2026-10-01T19:00:00+01:00",
+      "end": "2026-10-01T21:00:00+01:00",
+      "date": "2026-10-01",
+      "time": "19:00",
+      "venue": "Museu de Arte Sacra do Funchal",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Museu de Arte Sacra do Funchal",
+      "category": "culture",
+      "source_category": "culture-museums"
+    },
+    {
       "id": "treze-raios-andre-santos-convida-sopa-de-pedra-2026-10-01",
       "title": "Treze Raios - André Santos convida Sopa de Pedra",
       "url": "https://www.madeira-unlocked.com/en/events/treze-raios-andre-santos-convida-sopa-de-pedra-2026-10-01",
@@ -1460,6 +1625,36 @@
       "source_category": "festivals-parades"
     },
     {
+      "id": "cosy-concerts-taina-2026-10-03",
+      "title": "Cosy Concerts: Tainá",
+      "url": "https://www.madeira-unlocked.com/en/events/cosy-concerts-taina-2026-10-03",
+      "start": "2026-10-03T22:00:00+01:00",
+      "end": "2026-10-03T23:30:00+01:00",
+      "date": "2026-10-03",
+      "time": "22:00",
+      "venue": "Fly Lounge Bar, Saccharum",
+      "municipality": "Calheta",
+      "price": 33.25,
+      "organizer": "Savoy Signature",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "expressa-te-arts-festival-2026-10-04",
+      "title": "EXPRESSA-te Arts Festival",
+      "url": "https://www.madeira-unlocked.com/en/events/expressa-te-arts-festival-2026-10-04",
+      "start": "2026-10-04T09:00:00+01:00",
+      "end": "2026-10-04T20:30:00+01:00",
+      "date": "2026-10-04",
+      "time": "09:00",
+      "venue": "Portal das Artes",
+      "municipality": "Funchal",
+      "price": 20,
+      "organizer": "Associação Portal das Artes",
+      "category": "festival",
+      "source_category": "festivals-parades"
+    },
+    {
       "id": "expressa-te-festival-de-artes-2026-2026-10-04",
       "title": "EXPRESSA-te – Festival de Artes 2026",
       "url": "https://www.madeira-unlocked.com/en/events/expressa-te-festival-de-artes-2026-2026-10-04",
@@ -1488,6 +1683,21 @@
       "organizer": "Retoiça – Associação Cultural, Desportiva e Recreativa",
       "category": "concert",
       "source_category": "music-concerts"
+    },
+    {
+      "id": "expressa-te-arts-festival-2026-10-05",
+      "title": "EXPRESSA-te Arts Festival",
+      "url": "https://www.madeira-unlocked.com/en/events/expressa-te-arts-festival-2026-10-05",
+      "start": "2026-10-05T09:00:00+01:00",
+      "end": "2026-10-05T20:30:00+01:00",
+      "date": "2026-10-05",
+      "time": "09:00",
+      "venue": "Portal das Artes",
+      "municipality": "Funchal",
+      "price": 20,
+      "organizer": "Associação Portal das Artes",
+      "category": "festival",
+      "source_category": "festivals-parades"
     },
     {
       "id": "expressa-te-festival-de-artes-2026-2026-10-05",
@@ -1520,6 +1730,21 @@
       "source_category": "art-exhibitions"
     },
     {
+      "id": "expressa-te-arts-festival-2026-10-06",
+      "title": "EXPRESSA-te Arts Festival",
+      "url": "https://www.madeira-unlocked.com/en/events/expressa-te-arts-festival-2026-10-06",
+      "start": "2026-10-06T18:00:00+01:00",
+      "end": "2026-10-06T19:30:00+01:00",
+      "date": "2026-10-06",
+      "time": "18:00",
+      "venue": "Portal das Artes",
+      "municipality": "Funchal",
+      "price": 20,
+      "organizer": "Associação Portal das Artes",
+      "category": "festival",
+      "source_category": "festivals-parades"
+    },
+    {
       "id": "expressa-te-festival-de-artes-2026-2026-10-07",
       "title": "EXPRESSA-te – Festival de Artes 2026",
       "url": "https://www.madeira-unlocked.com/en/events/expressa-te-festival-de-artes-2026-2026-10-07",
@@ -1533,6 +1758,21 @@
       "organizer": "Portal das Artes",
       "category": "exhibition",
       "source_category": "art-exhibitions"
+    },
+    {
+      "id": "expressa-te-arts-festival-2026-10-07",
+      "title": "EXPRESSA-te Arts Festival",
+      "url": "https://www.madeira-unlocked.com/en/events/expressa-te-arts-festival-2026-10-07",
+      "start": "2026-10-07T18:00:00+01:00",
+      "end": "2026-10-07T21:00:00+01:00",
+      "date": "2026-10-07",
+      "time": "18:00",
+      "venue": "Portal das Artes",
+      "municipality": "Funchal",
+      "price": 20,
+      "organizer": "Associação Portal das Artes",
+      "category": "festival",
+      "source_category": "festivals-parades"
     },
     {
       "id": "expressa-te-festival-de-artes-2026-2026-10-08",
@@ -1550,6 +1790,21 @@
       "source_category": "art-exhibitions"
     },
     {
+      "id": "expressa-te-arts-festival-2026-10-08",
+      "title": "EXPRESSA-te Arts Festival",
+      "url": "https://www.madeira-unlocked.com/en/events/expressa-te-arts-festival-2026-10-08",
+      "start": "2026-10-08T18:30:00+01:00",
+      "end": "2026-10-08T20:30:00+01:00",
+      "date": "2026-10-08",
+      "time": "18:30",
+      "venue": "Portal das Artes",
+      "municipality": "Funchal",
+      "price": 20,
+      "organizer": "Associação Portal das Artes",
+      "category": "festival",
+      "source_category": "festivals-parades"
+    },
+    {
       "id": "the-gift-2026-10-08",
       "title": "The Gift",
       "url": "https://www.madeira-unlocked.com/en/events/the-gift-2026-10-08",
@@ -1563,6 +1818,21 @@
       "organizer": "Centro de Congressos da Madeira",
       "category": "concert",
       "source_category": "music-concerts"
+    },
+    {
+      "id": "expressa-te-arts-festival-2026-10-09-0730",
+      "title": "EXPRESSA-te Arts Festival",
+      "url": "https://www.madeira-unlocked.com/en/events/expressa-te-arts-festival-2026-10-09-0730",
+      "start": "2026-10-09T07:30:00+01:00",
+      "end": "2026-10-09T09:00:00+01:00",
+      "date": "2026-10-09",
+      "time": "07:30",
+      "venue": "Portal das Artes",
+      "municipality": "Funchal",
+      "price": 20,
+      "organizer": "Associação Portal das Artes",
+      "category": "festival",
+      "source_category": "festivals-parades"
     },
     {
       "id": "sea-and-fisherman-fair-2026-10-09",
@@ -1593,6 +1863,21 @@
       "organizer": "Portal das Artes",
       "category": "exhibition",
       "source_category": "art-exhibitions"
+    },
+    {
+      "id": "expressa-te-arts-festival-2026-10-09",
+      "title": "EXPRESSA-te Arts Festival",
+      "url": "https://www.madeira-unlocked.com/en/events/expressa-te-arts-festival-2026-10-09",
+      "start": "2026-10-09T19:00:00+01:00",
+      "end": "2026-10-09T21:30:00+01:00",
+      "date": "2026-10-09",
+      "time": "19:00",
+      "venue": "Portal das Artes",
+      "municipality": "Funchal",
+      "price": 20,
+      "organizer": "Associação Portal das Artes",
+      "category": "festival",
+      "source_category": "festivals-parades"
     },
     {
       "id": "the-gift-um-piano-e-uma-voz-2026-10-09",
@@ -1655,6 +1940,21 @@
       "source_category": "festivals-parades"
     },
     {
+      "id": "expressa-te-arts-festival-2026-10-10",
+      "title": "EXPRESSA-te Arts Festival",
+      "url": "https://www.madeira-unlocked.com/en/events/expressa-te-arts-festival-2026-10-10",
+      "start": "2026-10-10T09:30:00+01:00",
+      "end": "2026-10-10T22:30:00+01:00",
+      "date": "2026-10-10",
+      "time": "09:30",
+      "venue": "Portal das Artes",
+      "municipality": "Funchal",
+      "price": 20,
+      "organizer": "Associação Portal das Artes",
+      "category": "festival",
+      "source_category": "festivals-parades"
+    },
+    {
       "id": "expressa-te-festival-de-artes-2026-2026-10-10",
       "title": "EXPRESSA-te – Festival de Artes 2026",
       "url": "https://www.madeira-unlocked.com/en/events/expressa-te-festival-de-artes-2026-2026-10-10",
@@ -1668,6 +1968,21 @@
       "organizer": "Portal das Artes",
       "category": "exhibition",
       "source_category": "art-exhibitions"
+    },
+    {
+      "id": "an-unusual-afternoon-for-young-adults-2026-10-10",
+      "title": "An Unusual Afternoon for Young Adults",
+      "url": "https://www.madeira-unlocked.com/en/events/an-unusual-afternoon-for-young-adults-2026-10-10",
+      "start": "2026-10-10T17:00:00+01:00",
+      "end": "2026-10-10T20:00:00+01:00",
+      "date": "2026-10-10",
+      "time": "17:00",
+      "venue": "Arquivo e Biblioteca da Madeira",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Secretaria Regional de Turismo, Ambiente e Cultura",
+      "category": "culture",
+      "source_category": "culture-museums"
     },
     {
       "id": "os-grandes-azuis-10th-year-anniversary-2026-10-10",

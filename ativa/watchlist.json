@@ -1,13 +1,13 @@
 {
   "note": "Annual races not yet announced by their organisers. Rebuilt daily.",
-  "generated_at": "2026-09-18",
+  "generated_at": "2026-09-23",
   "items": [
     {
       "name": "MIUS - Madeira Island Ultra Swim",
       "mode": "swim",
       "expected": "Expected in September 2026",
       "watch_dates": [
-        "2026-09-18"
+        "2026-09-23"
       ],
       "location": "Madeira",
       "status": "watching for a confirmed 2026 date (known schedule)",
@@ -18,7 +18,7 @@
       "mode": "trail",
       "expected": "Expected in September 2026",
       "watch_dates": [
-        "2026-09-18"
+        "2026-09-23"
       ],
       "location": "Ribeira Brava, Madeira",
       "status": "watching for a confirmed 2026 date (known schedule)",
@@ -32,6 +32,17 @@
         "2026-10-01"
       ],
       "location": "Porto Moniz, Madeira",
+      "status": "watching for a confirmed 2026 date (race history)",
+      "url": "https://atletismodamadeira.pt/"
+    },
+    {
+      "name": "Trail de Câmara de Lobos",
+      "mode": "trail",
+      "expected": "Expected in November 2026",
+      "watch_dates": [
+        "2026-11-01"
+      ],
+      "location": "Câmara de Lobos, Madeira",
       "status": "watching for a confirmed 2026 date (race history)",
       "url": "https://atletismodamadeira.pt/"
     },
@@ -67,6 +78,17 @@
       "location": "Machico, Madeira",
       "status": "watching for a confirmed 2026 date (known schedule)",
       "url": "https://trail.ludensmachico.pt/"
+    },
+    {
+      "name": "Trail da Boa Ventura",
+      "mode": "trail",
+      "expected": "Expected in January 2027",
+      "watch_dates": [
+        "2027-01-01"
+      ],
+      "location": "São Vicente, Madeira",
+      "status": "watching for a confirmed 2027 date (known schedule)",
+      "url": "https://trailboaventura.com/"
     },
     {
       "name": "Trail do Ludens Clube Machico",

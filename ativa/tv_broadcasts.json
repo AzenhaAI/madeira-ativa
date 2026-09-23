@@ -1,27 +1,27 @@
 {
-  "fetched": "2026-09-18T10:05:50",
+  "fetched": "2026-09-23T17:11:49",
   "count": 3,
   "events": [
-    {
-      "date": "2026-09-19",
-      "time": "15:30",
-      "name": "Gil Vicente vs Marítimo",
-      "comp": "Portuguese Primeira Liga",
-      "channel": "Sport TV"
-    },
-    {
-      "date": "2026-09-19",
-      "time": "15:30",
-      "name": "Nacional de Madeira vs Famalicao",
-      "comp": "Portuguese Primeira Liga",
-      "channel": "Sport TV"
-    },
     {
       "date": "2026-09-24",
       "time": "19:45",
       "name": "Portugal vs Wales",
       "comp": "UEFA Nations League",
       "channel": "RTP · Mundial"
+    },
+    {
+      "date": "2026-10-10",
+      "time": "18:00",
+      "name": "Marítimo vs Porto",
+      "comp": "Portuguese Primeira Liga",
+      "channel": "Sport TV"
+    },
+    {
+      "date": "2026-10-11",
+      "time": "15:30",
+      "name": "Rio Ave vs Nacional de Madeira",
+      "comp": "Portuguese Primeira Liga",
+      "channel": "Sport TV"
     }
   ]
 }

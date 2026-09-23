@@ -1,294 +1,317 @@
 {
-  "fetched": "2026-09-18T10:05:51",
-  "source": "https://visitmadeira.com/en/what-to-do/nature-seekers/notice-to-walkers-and-list-of-walks/",
+  "fetched": "2026-09-23T18:14:30",
+  "source_updated": "2026-09-14",
+  "source_stale_days": 9,
+  "source": "https://ifcn.madeira.gov.pt/pt/atividades-de-natureza/percursos-pedestres-recomendados.html",
+  "notice": "https://ifcn.madeira.gov.pt/pt/?view=article&id=627:percursos-pedestres-avisos&catid=146:avisos",
   "counts": {
-    "open": 28,
-    "partial": 6,
-    "closed": 8
+    "open": 34,
+    "partial": 3,
+    "closed": 5
   },
   "total": 42,
   "alerts": [
     {
-      "code": "PR 1.3",
-      "name": "Vereda da Encumeada (Pico Ruivo - Encumeada)",
-      "status": "closed"
-    },
-    {
-      "code": "PR 7",
-      "name": "Levada do Moinho (Ribeira da Cruz - Lamaceiros)",
-      "status": "closed"
-    },
-    {
-      "code": "PR 14",
-      "name": "Levada do Cedros (Fanal - Curral Velho)",
-      "status": "closed"
-    },
-    {
       "code": "PR 20",
-      "name": "Vereda do Jardim do Mar (Prazeres - Jardim do Mar)",
-      "status": "closed"
-    },
-    {
-      "code": "PR 23",
-      "name": "Levada da Azenha (Azenha – Caminho Velho do Castelo)",
-      "status": "closed"
+      "name": "Vereda do Jardim do Mar",
+      "status": "closed",
+      "island": "Madeira"
     },
     {
       "code": "PR 27",
-      "name": "Glaciar do Planalto (Bica da Cana – ER105)",
-      "status": "closed"
+      "name": "Glaciar de Planalto",
+      "status": "closed",
+      "island": "Madeira"
     },
     {
       "code": "PR 28",
-      "name": "Levada da Rocha Vermelha (Fanal - Lombo do Atouguia)",
-      "status": "closed"
+      "name": "Levada da Rocha Vermelha",
+      "status": "closed",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 7",
+      "name": "Levada do Moinho",
+      "status": "closed",
+      "island": "Madeira"
     },
     {
       "code": "PR 3",
-      "name": "(Camacha - Capelada Graça)",
-      "status": "closed"
+      "name": "Levada do Pico do Castelo",
+      "status": "closed",
+      "island": "Porto Santo"
     },
     {
-      "code": "PR 2",
-      "name": "Vereda do Urzal (Curral das Freiras - Boaventura)",
-      "status": "partial"
-    },
-    {
-      "code": "PR 3.1",
-      "name": "Caminho Real do Monte (Ribeira das Cales – Monte)",
-      "status": "partial"
-    },
-    {
-      "code": "PR 4",
-      "name": "Levada do Barreiro (Poço da Neve – Casa do Barreiro)",
-      "status": "partial"
-    },
-    {
-      "code": "PR 11",
-      "name": "Vereda dos Balcões (Ribeiro Frio - Balcões)",
-      "status": "partial"
+      "code": "PR 1",
+      "name": "Vereda do Areeiro - Percurso com sentido único entre o Miradouro da Pedra Rija e o Pico Ruivo / Vereda do Areeiro - percurso nos dois sentidos entre o Pico do Areeiro e o Miradouro da Pedra Rija",
+      "status": "partial",
+      "island": "Madeira"
     },
     {
       "code": "PR 12",
-      "name": "Caminho Real da Encumeada (Boca da Corrida – Encumeada)",
-      "status": "partial"
+      "name": "Caminho real da Encumeada percurso transitável desde a Boca da Corrida até ao km 3,5",
+      "status": "partial",
+      "island": "Madeira"
     },
     {
-      "code": "PR 17",
-      "name": "Caminho do Pináculo e Folhadal (Lombo do Mouro - Caramujo - Folhadal - Encumeada)",
-      "status": "partial"
+      "code": "PR 4",
+      "name": "Levada do Barreiro percurso transitável - está disponível uma ligação sinalizada à Ribeira das Cales, junto ao Centro de Interpretação do Parque Ecológico do Funchal A versão atual do percurso, entre o Poço da Neve (início do PR4), a Levada do Barreiro e a Ribeira das Cales, encontra-se totalmente sinalizada em ambos os sentidos.Trajeto atualizado do percurso pedestre ver o MAPA",
+      "status": "partial",
+      "island": "Madeira"
     }
   ],
   "trails": [
     {
-      "code": "PR 1",
-      "name": "Vereda do Pico do Areeiro (Pico do Areeiro - Pico Ruivo) Percursotransitáveldesde o Pico do Areeiro até ao Miradouro da Pedra Rija (km 1,2)",
-      "status": "open"
-    },
-    {
-      "code": "PR 1.1",
-      "name": "Vereda da Ilha (Pico Ruivo - Ilha)",
-      "status": "open"
-    },
-    {
-      "code": "PR 1.2",
-      "name": "Vereda do Pico Ruivo (Achada do Teixeira - Pico Ruivo",
-      "status": "open"
-    },
-    {
-      "code": "PR 2",
-      "name": "Vereda do Urzal (Curral das Freiras - Boaventura)",
-      "status": "partial"
-    },
-    {
-      "code": "PR 3",
-      "name": "Vereda do Burro (Pico do Areeiro – Ribeira das Cales)",
-      "status": "open"
-    },
-    {
-      "code": "PR 3.1",
-      "name": "Caminho Real do Monte (Ribeira das Cales – Monte)",
-      "status": "partial"
-    },
-    {
-      "code": "PR 4",
-      "name": "Levada do Barreiro (Poço da Neve – Casa do Barreiro)",
-      "status": "partial"
-    },
-    {
-      "code": "PR 5",
-      "name": "Vereda das Funduras (Portela - Maroços)",
-      "status": "open"
-    },
-    {
-      "code": "PR 6",
-      "name": "Levada das 25 Fontes (Rabaçal - 25 Fontes)",
-      "status": "open"
-    },
-    {
-      "code": "PR 6.1",
-      "name": "Levada do Risco (Rabaçal - Risco)",
-      "status": "open"
-    },
-    {
-      "code": "PR 6.2",
-      "name": "Levada do Alecrim (Rabaçal - Ribeira do Lajeado)",
-      "status": "open"
-    },
-    {
-      "code": "PR 6.3",
-      "name": "Vereda da Lagoa do Vento (Casa do Rabaçal - Lagoa do Vento)",
-      "status": "open"
-    },
-    {
-      "code": "PR 6.4",
-      "name": "Levada Velha do Rabaçal (Pico Gordo – Rabaçal)",
-      "status": "open"
-    },
-    {
-      "code": "PR 6.5",
-      "name": "Vereda do Pico Fernandes (Paul da Serra – 25 Fontes)",
-      "status": "open"
-    },
-    {
-      "code": "PR 6.6",
-      "name": "Vereda do Túnel do Cavalo (Zona de Lazer da Caldeira - Casa do Rabaçal)",
-      "status": "open"
-    },
-    {
-      "code": "PR 6.7",
-      "name": "Vereda da Câmarade cargado Rabaçal (Rabaçal - Túnel do Cavalo)",
-      "status": "open"
-    },
-    {
-      "code": "PR 6.8",
-      "name": "Levada do Paul II - Um Caminho Para Todos (Rabaçal - Estrada do Rochão)",
-      "status": "open"
-    },
-    {
-      "code": "PR 8",
-      "name": "Vereda da Ponta de São Lourenço (Baia d´Abra - Cais do Sardinha)",
-      "status": "open"
-    },
-    {
-      "code": "PR 9",
-      "name": "do Caldeirão Verde (Queimadas - Caldeirão Verde - Caldeirão do Inferno",
-      "status": "open"
-    },
-    {
-      "code": "PR 9.1",
-      "name": "do Caldeirão Verde - Um Caminho para Todos (Queimadas – Pico Pedras)",
-      "status": "open"
-    },
-    {
-      "code": "PR 10",
-      "name": "Levada do Furado (Ribeiro Frio - Portela)",
-      "status": "open"
-    },
-    {
-      "code": "PR 11",
-      "name": "Vereda dos Balcões (Ribeiro Frio - Balcões)",
-      "status": "partial"
-    },
-    {
-      "code": "PR 12",
-      "name": "Caminho Real da Encumeada (Boca da Corrida – Encumeada)",
-      "status": "partial"
-    },
-    {
-      "code": "PR 13",
-      "name": "Vereda do Fanal (Assobiadores - Encumeada)",
-      "status": "open"
-    },
-    {
-      "code": "PR 13.1",
-      "name": "Vereda da Palha Carga (Louro da Gota - 25 Fontes)",
-      "status": "open"
-    },
-    {
-      "code": "PR 15",
-      "name": "Vereda da Ribeira da Janela (Curral Falso - Ribeira da Janela)",
-      "status": "open"
-    },
-    {
-      "code": "PR 16",
-      "name": "Levada Fajã do Rodrigues (Fajã da Amã - Ribeira do Inferno)",
-      "status": "open"
-    },
-    {
-      "code": "PR 17",
-      "name": "Caminho do Pináculo e Folhadal (Lombo do Mouro - Caramujo - Folhadal - Encumeada)",
-      "status": "partial"
-    },
-    {
-      "code": "PR 18",
-      "name": "Levada do Rei (Quebradas - Ribeiro Bonito)",
-      "status": "open"
-    },
-    {
-      "code": "PR 19",
-      "name": "Caminho Real do Paul do Mar (Prazeres - Paul do Mar)",
-      "status": "open"
-    },
-    {
-      "code": "PR 21",
-      "name": "Caminho do Norte (Encumeada – Ribeira Grande)",
-      "status": "open"
-    },
-    {
-      "code": "PR 22",
-      "name": "Vereda do Chão dos Louros",
-      "status": "open"
-    },
-    {
-      "code": "PR 1.3",
-      "name": "Vereda da Encumeada (Pico Ruivo - Encumeada)",
-      "status": "closed"
-    },
-    {
-      "code": "PR 7",
-      "name": "Levada do Moinho (Ribeira da Cruz - Lamaceiros)",
-      "status": "closed"
-    },
-    {
-      "code": "PR 14",
-      "name": "Levada do Cedros (Fanal - Curral Velho)",
-      "status": "closed"
-    },
-    {
       "code": "PR 20",
-      "name": "Vereda do Jardim do Mar (Prazeres - Jardim do Mar)",
-      "status": "closed"
-    },
-    {
-      "code": "PR 23",
-      "name": "Levada da Azenha (Azenha – Caminho Velho do Castelo)",
-      "status": "closed"
+      "name": "Vereda do Jardim do Mar",
+      "status": "closed",
+      "island": "Madeira"
     },
     {
       "code": "PR 27",
-      "name": "Glaciar do Planalto (Bica da Cana – ER105)",
-      "status": "closed"
+      "name": "Glaciar de Planalto",
+      "status": "closed",
+      "island": "Madeira"
     },
     {
       "code": "PR 28",
-      "name": "Levada da Rocha Vermelha (Fanal - Lombo do Atouguia)",
-      "status": "closed"
+      "name": "Levada da Rocha Vermelha",
+      "status": "closed",
+      "island": "Madeira"
     },
     {
-      "code": "PR 1",
-      "name": "Vereda do Pico Branco e Terra Chã (ER 111 - Terra Chã)",
-      "status": "open"
-    },
-    {
-      "code": "PR 2",
-      "name": "Vereda do Pico do Castelo (Moledo - Pico do Castelo)",
-      "status": "open"
+      "code": "PR 7",
+      "name": "Levada do Moinho",
+      "status": "closed",
+      "island": "Madeira"
     },
     {
       "code": "PR 3",
-      "name": "(Camacha - Capelada Graça)",
-      "status": "closed"
+      "name": "Levada do Pico do Castelo",
+      "status": "closed",
+      "island": "Porto Santo"
+    },
+    {
+      "code": "PR 1",
+      "name": "Vereda do Areeiro - Percurso com sentido único entre o Miradouro da Pedra Rija e o Pico Ruivo / Vereda do Areeiro - percurso nos dois sentidos entre o Pico do Areeiro e o Miradouro da Pedra Rija",
+      "status": "partial",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 12",
+      "name": "Caminho real da Encumeada percurso transitável desde a Boca da Corrida até ao km 3,5",
+      "status": "partial",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 4",
+      "name": "Levada do Barreiro percurso transitável - está disponível uma ligação sinalizada à Ribeira das Cales, junto ao Centro de Interpretação do Parque Ecológico do Funchal A versão atual do percurso, entre o Poço da Neve (início do PR4), a Levada do Barreiro e a Ribeira das Cales, encontra-se totalmente sinalizada em ambos os sentidos.Trajeto atualizado do percurso pedestre ver o MAPA",
+      "status": "partial",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 1.1",
+      "name": "Vereda da Ilha",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 1.2",
+      "name": "Vereda do Pico Ruivo - Encontra-se totalmente transitável o troço compreendido entre a Casa de Abrigo do Pico Ruivo e o Pico Ruivo",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 1.3",
+      "name": "Vereda da Encumeada",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 10",
+      "name": "Levada do Furado",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 11",
+      "name": "Vereda dos Balcões",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 13",
+      "name": "Vereda do Fanal",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 13.1",
+      "name": "Vereda da Palha Carga",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 14",
+      "name": "Levada dos Cedros",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 15",
+      "name": "Vereda da Ribeira da Janela",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 16",
+      "name": "Levada Fajã do Rodrigues",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 17",
+      "name": "Caminho do Pináculo e Folhadal percurso transitável entre a Encumeada e a Bica da Cana",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 18",
+      "name": "Levada do Rei",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 19",
+      "name": "Caminho real do Paul do Mar",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 2",
+      "name": "Vereda do Urzal",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 21",
+      "name": "Caminho do Norte",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 22",
+      "name": "Vereda dos Chão dos Louros",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 23",
+      "name": "Levada da Azenha",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 3",
+      "name": "Vereda do Burro",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 3.1",
+      "name": "Caminho Real do Monte",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 5",
+      "name": "Vereda das Funduras",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 6",
+      "name": "Levada das 25 Fontes - ( circulação controlada num único sentido Rabaçal – 25 Fontes (ida) pela Levada das 25 Fontes e 25 Fontes – Rabaçal (regresso) pelo troço alternativo, denominado de Bypass .)",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 6.1",
+      "name": "Levada do Risco",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 6.2",
+      "name": "Levada do Alecrim",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 6.3",
+      "name": "Vereda da Lagoa do Vento",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 6.4",
+      "name": "Levada Velha do Rabaçal",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 6.5",
+      "name": "Vereda do Pico Fernandes",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 6.6",
+      "name": "Vereda do Túnel do Cavalo",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 6.7",
+      "name": "Vereda da Câmara de carga do Rabaçal",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 6.8",
+      "name": "Levada do Paul II – Um caminho para todos",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 8",
+      "name": "Vereda da Ponta de São Lourenço",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 9",
+      "name": "Levada do Caldeirão Verde",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "UM CAMINHO PARA TODOS",
+      "name": "Queimadas- Pico das Pedras",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 1",
+      "name": "Vereda do Pico Branco e Terra Chã",
+      "status": "open",
+      "island": "Porto Santo"
+    },
+    {
+      "code": "PR 2",
+      "name": "Vereda do Pico do Castelo",
+      "status": "open",
+      "island": "Porto Santo"
     }
   ]
 }

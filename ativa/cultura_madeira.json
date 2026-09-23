@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-09-18T09:48:19",
-  "count": 75,
+  "fetched": "2026-09-23T17:10:32",
+  "count": 89,
   "items": [
     {
       "id": "114",
@@ -475,6 +475,16 @@
       "category": "Music"
     },
     {
+      "id": "334",
+      "title": "\"Imagens e Memórias do Porto Santo\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/imagens-e-memorias-do-porto-santo",
+      "start": "2026-09-14",
+      "end": "2026-12-31",
+      "time": "",
+      "place": "Câmara Municipal do Porto Santo",
+      "category": "Exhibition"
+    },
+    {
       "id": "316",
       "title": "\"Sabores no Museu\"",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/sabores-no-museu",
@@ -685,6 +695,16 @@
       "category": "Traditional feast"
     },
     {
+      "id": "336",
+      "title": "\"O Caminho nas Águas. Depois da Última Ceia\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/o-caminho-nas-aguas-depois-da-ultima-ceia",
+      "start": "2026-09-23",
+      "end": "2027-01-30",
+      "time": "16:00",
+      "place": "Núcleo Histórico de Santo Amaro - Torre do Capitão",
+      "category": "Exhibition"
+    },
+    {
       "id": "233",
       "title": "Livrai-nos da Fome!",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/livrai-nos-da-fome",
@@ -703,6 +723,16 @@
       "time": "21:00",
       "place": "MUDAS.Museu de Arte Contemporânea da Madeira",
       "category": "Activity"
+    },
+    {
+      "id": "339",
+      "title": "Concerto Comemorativo do 33.º Aniversário do Regimento de Guarnição n.º 3",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concerto-comemorativo-do-33-o-aniversario-do-regimento-de-guarnicao-n-o-3",
+      "start": "2026-09-24",
+      "end": "2026-09-24",
+      "time": "21:00",
+      "place": "Regimento de Guarnição nº 3",
+      "category": "Music"
     },
     {
       "id": "294",
@@ -735,6 +765,16 @@
       "category": "Music"
     },
     {
+      "id": "340",
+      "title": "48.º Aniversário da Orquestra de Bandolins da Casa do Povo da Camacha",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/48-o-aniversario-da-orquestra-de-bandolins-da-casa-do-povo-da-camacha",
+      "start": "2026-09-26",
+      "end": "2026-09-26",
+      "time": "19:00",
+      "place": "Igreja Matriz da Camacha",
+      "category": "Music"
+    },
+    {
       "id": "331",
       "title": "\"Agora é que são elas!\"",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/agora-e-que-sao-elas",
@@ -753,6 +793,106 @@
       "time": "20:00",
       "place": "Teatro Municipal Baltazar Dias",
       "category": "Traditional feast"
+    },
+    {
+      "id": "234",
+      "title": "Treze Raios",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/treze-raios",
+      "start": "2026-10-01",
+      "end": "2026-10-01",
+      "time": "",
+      "place": "Teatro Municipal Baltazar Dias",
+      "category": "Music"
+    },
+    {
+      "id": "342",
+      "title": "Oficinas de Desenho",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/oficinas-de-desenho",
+      "start": "2026-10-01",
+      "end": "2027-06-30",
+      "time": "",
+      "place": "PORTA33",
+      "category": "Other"
+    },
+    {
+      "id": "338",
+      "title": "\"Ninfas do Atlântico\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concerto-das-ninfas-do-atlantico",
+      "start": "2026-10-01",
+      "end": "2026-10-01",
+      "time": "19:00",
+      "place": "Museu de Arte Sacra do Funchal",
+      "category": "Music"
+    },
+    {
+      "id": "335",
+      "title": "Festival de Teatro de Machico 2026",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/festival-de-teatro-de-machico-2026",
+      "start": "2026-10-02",
+      "end": "2026-11-07",
+      "time": "",
+      "place": "Fórum Machico",
+      "category": "Activity"
+    },
+    {
+      "id": "293",
+      "title": "Concerto \"Machina Mundi-In\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concerto-machina-mundi-in",
+      "start": "2026-10-06",
+      "end": "2026-10-06",
+      "time": "19:30",
+      "place": "Teatro Municipal Baltazar Dias",
+      "category": "Music"
+    },
+    {
+      "id": "341",
+      "title": "Festa da Escola - Porto Santo",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/festa-da-escola-porto-santo",
+      "start": "2026-10-09",
+      "end": "2026-10-11",
+      "time": "",
+      "place": "Porta33 — Escola do Porto Santo",
+      "category": "Traditional feast"
+    },
+    {
+      "id": "299",
+      "title": "Gala Solidária 10 Anos - \"Os Grandes Azuis\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/gala-solidaria-10-anos-os-grandes-azuis",
+      "start": "2026-10-10",
+      "end": "2026-10-10",
+      "time": "17:30",
+      "place": "Auditório do Centro de Congressos da Madeira",
+      "category": "Music"
+    },
+    {
+      "id": "332",
+      "title": "Desfile de Bandas Filarmónicas Centenárias da RAM",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/desfile-de-bandas-filarmonicas-centenarias-da-ram",
+      "start": "2026-10-11",
+      "end": "2026-10-11",
+      "time": "14:00",
+      "place": "Praça de Santana",
+      "category": "Music"
+    },
+    {
+      "id": "279",
+      "title": "11.º Madeira Mandolin",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/11-o-madeira-mandolin",
+      "start": "2026-10-23",
+      "end": "2026-10-25",
+      "time": "",
+      "place": "Teatro Municipal Baltazar Dias",
+      "category": "Music"
+    },
+    {
+      "id": "320",
+      "title": "Concerto Internacional \"Duo Bandónica\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concerto-internacional-duo-bandonica",
+      "start": "2026-10-23",
+      "end": "2026-10-23",
+      "time": "20:00",
+      "place": "Teatro Municipal Baltazar Dias",
+      "category": "Music"
     }
   ]
 }
