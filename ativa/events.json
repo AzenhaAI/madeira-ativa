@@ -430,7 +430,7 @@
     },
     {
       "mode": "festivals",
-      "name": "Workshop · Estreito De Câmara De Lobos",
+      "name": "ENOTURISMO SUSTENTÁVEL: PRESERVAR O FUTURO",
       "date": "2026-09-25",
       "location": "Estreito De Câmara De Lobos",
       "url": "https://t.me/festas_madeira/2612",
@@ -629,6 +629,14 @@
     },
     {
       "mode": "festivals",
+      "name": "O MUNDO QUE QUEREMOS COMEÇA AQUI! ORGANIZAÇÃO",
+      "date": "2026-09-26",
+      "location": "Sé",
+      "url": "https://t.me/festas_madeira/2613",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
       "name": "Orquestra Clássica da Madeira - Maestro Adrian Butterfield",
       "date": "2026-09-26",
       "location": "Assembleia Legislativa da Região Autónoma da Madeira",
@@ -649,14 +657,6 @@
       "date": "2026-09-26",
       "location": "Câmara De Lobos",
       "url": "https://t.me/festas_madeira/2608",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "Show · Sé",
-      "date": "2026-09-26",
-      "location": "Sé",
-      "url": "https://t.me/festas_madeira/2605",
       "event_type": "festival"
     },
     {
@@ -764,6 +764,14 @@
       "date": "2026-09-27",
       "location": "Câmara De Lobos",
       "url": "https://t.me/festas_madeira/2572",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Show · Sé",
+      "date": "2026-09-27",
+      "location": "Sé",
+      "url": "https://t.me/festas_madeira/2591",
       "event_type": "festival"
     },
     {
@@ -991,14 +999,6 @@
     },
     {
       "mode": "festivals",
-      "name": "Concert · Funchal",
-      "date": "2026-10-01",
-      "location": "Funchal",
-      "url": "https://t.me/festas_madeira/2607",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
       "name": "Concert · Sé",
       "date": "2026-10-01",
       "location": "Sé",
@@ -1007,15 +1007,14 @@
     },
     {
       "mode": "festivals",
-      "name": "Dia Mundial da Música",
+      "name": "Dia Mundial da Música mm. INTERNATIONAL MUSIC DAY",
       "date": "2026-10-01",
-      "location": "Museu de Arte Sacra do Funchal",
-      "url": "",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2607",
       "event_type": "festival",
       "time": "19:00",
       "price": "Free",
-      "organizer": "Museu de Arte Sacra do Funchal",
-      "category": "culture"
+      "organizer": "Museu de Arte Sacra do Funchal"
     },
     {
       "mode": "festivals",
@@ -1405,6 +1404,14 @@
     },
     {
       "mode": "festivals",
+      "name": "MAIS CULTURA, MAIS:VIDA",
+      "date": "2026-10-10",
+      "location": "Santo António",
+      "url": "https://t.me/festas_madeira/2610",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
       "name": "Os Grandes Azuis 10th year anniversary",
       "date": "2026-10-10",
       "location": "Centro de Congressos da Madeira, Funchal",
@@ -1414,14 +1421,6 @@
       "price": "€2",
       "organizer": "Os Grandes Azuis",
       "category": "concert"
-    },
-    {
-      "mode": "festivals",
-      "name": "Show · Santo António",
-      "date": "2026-10-10",
-      "location": "Santo António",
-      "url": "https://t.me/festas_madeira/2610",
-      "event_type": "festival"
     },
     {
       "mode": "festivals",

@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-09-21T13:45:52",
+  "fetched": "2026-09-23T17:32:26",
   "attribution": "Trails © OpenStreetMap · Elevation © EU-DEM/opentopodata",
   "count": 44,
   "levadas": [
@@ -8,6 +8,7 @@
       "name": "Vereda da Ilha",
       "alt_name": "Vereda da Ilha",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 8.2,
       "ascent_m": 74,
       "descent_m": 1314,
@@ -84,14 +85,14 @@
       "center": [
         32.783353,
         -16.925958
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 1.2",
       "name": "Vereda do Pico Ruivo",
       "alt_name": "",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 2.8,
       "ascent_m": 292,
       "descent_m": 38,
@@ -134,14 +135,14 @@
       "center": [
         32.7610787,
         -16.9363235
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 1.3",
       "name": "Vereda da Encumeada",
       "alt_name": "",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 11.2,
       "ascent_m": 1225,
       "descent_m": 468,
@@ -239,14 +240,14 @@
       "center": [
         32.7548926,
         -16.981844
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 10",
       "name": "Levada do Furado",
       "alt_name": "Levada do Furado",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 11.0,
       "ascent_m": 679,
       "descent_m": 793,
@@ -360,14 +361,14 @@
       "center": [
         32.7366355,
         -16.8635822
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 11",
       "name": "Vereda dos Balcões",
       "alt_name": "Vereda dos Balcões",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 1.5,
       "ascent_m": 68,
       "descent_m": 112,
@@ -403,14 +404,14 @@
       "center": [
         32.7388208,
         -16.8885805
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 13",
       "name": "Vereda do Fanal",
       "alt_name": "Vereda do Fanal",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 10.8,
       "ascent_m": 235,
       "descent_m": 539,
@@ -512,14 +513,14 @@
       "center": [
         32.790159,
         -17.130445
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 13.1",
       "name": "Vereda da Palha Carga",
       "alt_name": "",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 1.5,
       "ascent_m": 356,
       "descent_m": 27,
@@ -552,14 +553,14 @@
       "center": [
         32.7693372,
         -17.1241922
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 14",
       "name": "Levada dos Cedros",
       "alt_name": "Levada dos Cedros",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 7.2,
       "ascent_m": 236,
       "descent_m": 526,
@@ -629,14 +630,14 @@
       "center": [
         32.8104111,
         -17.1561262
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 15",
       "name": "Vereda da Ribeira da Janela",
       "alt_name": "",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 2.7,
       "ascent_m": 0,
       "descent_m": 404,
@@ -675,14 +676,14 @@
       "center": [
         32.8380686,
         -17.1586909
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 16",
       "name": "Levada Fajã do Rodrigues",
       "alt_name": "Levada Fajã do Rodrigues",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 3.9,
       "ascent_m": 465,
       "descent_m": 537,
@@ -729,14 +730,14 @@
       "center": [
         32.7794023,
         -17.0588076
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 17",
       "name": "Caminho do Pináculo e Folhadal",
       "alt_name": "Caminho do Pináculo e Folhadal",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 15.0,
       "ascent_m": 1258,
       "descent_m": 940,
@@ -840,14 +841,14 @@
       "center": [
         32.7689214,
         -17.0556054
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 18",
       "name": "Levada do Rei",
       "alt_name": "Levada do Rei",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 5.3,
       "ascent_m": 447,
       "descent_m": 283,
@@ -907,14 +908,14 @@
       "center": [
         32.808596,
         -16.9363261
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 19",
       "name": "Caminho Real do Paúl do Mar",
       "alt_name": "Caminho Real do Paúl do Mar",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 1.8,
       "ascent_m": 0,
       "descent_m": 464,
@@ -949,14 +950,14 @@
       "center": [
         32.7537887,
         -17.2196281
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 2",
       "name": "Vereda do Urzal",
       "alt_name": "Vereda do Urzal",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 10.3,
       "ascent_m": 1269,
       "descent_m": 1031,
@@ -1051,14 +1052,14 @@
       "center": [
         32.7550044,
         -16.9746666
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 2 VE",
       "name": "Vereda do Pico do Castelo (Este)",
       "alt_name": "Vereda do Pico do Castelo",
       "status": "open",
+      "island": "Porto Santo",
       "distance_km": 4.6,
       "ascent_m": 104,
       "descent_m": 209,
@@ -1111,14 +1112,14 @@
       "center": [
         33.085963,
         -16.320711
-      ],
-      "island": "Porto Santo"
+      ]
     },
     {
       "code": "PR 2 VO",
       "name": "Vereda do Pico do Castelo (Oeste)",
       "alt_name": "Vereda do Pico do Castelo",
       "status": "open",
+      "island": "Porto Santo",
       "distance_km": 3.2,
       "ascent_m": 82,
       "descent_m": 167,
@@ -1162,14 +1163,14 @@
       "center": [
         33.08392,
         -16.328973
-      ],
-      "island": "Porto Santo"
+      ]
     },
     {
       "code": "PR 21",
       "name": "Caminho do Norte",
       "alt_name": "Caminho do Norte",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 3.2,
       "ascent_m": 0,
       "descent_m": 673,
@@ -1211,14 +1212,14 @@
       "center": [
         32.764168,
         -17.019262
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 21 <-> PR 22",
       "name": "Ligação PR 21-PR 22",
       "alt_name": "",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 0.3,
       "ascent_m": 0,
       "descent_m": 28,
@@ -1242,14 +1243,14 @@
       "center": [
         32.7585693,
         -17.0195646
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 22",
       "name": "Vereda do Chão dos Louros",
       "alt_name": "Vereda do Chão dos Louros",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 1.9,
       "ascent_m": 84,
       "descent_m": 85,
@@ -1285,14 +1286,14 @@
       "center": [
         32.7600496,
         -17.0171465
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 23",
       "name": "Levada da Azenha",
       "alt_name": "Levada da Azenha",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 0.9,
       "ascent_m": 10,
       "descent_m": 35,
@@ -1320,14 +1321,14 @@
       "center": [
         32.6571901,
         -16.8439018
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 3",
       "name": "Vereda do Burro",
       "alt_name": "",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 7.2,
       "ascent_m": 58,
       "descent_m": 703,
@@ -1403,14 +1404,14 @@
       "center": [
         32.717415,
         -16.9110123
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 3.1",
       "name": "Caminho Real do Monte",
       "alt_name": "",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 4.2,
       "ascent_m": 6,
       "descent_m": 578,
@@ -1463,14 +1464,14 @@
       "center": [
         32.6894542,
         -16.9001207
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 5",
       "name": "Vereda das Funduras",
       "alt_name": "Vereda das Funduras",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 8.7,
       "ascent_m": 277,
       "descent_m": 682,
@@ -1552,14 +1553,14 @@
       "center": [
         32.7537264,
         -16.7979382
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 6",
       "name": "Levada das 25 Fontes",
       "alt_name": "",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 4.3,
       "ascent_m": 147,
       "descent_m": 393,
@@ -1617,14 +1618,14 @@
       "center": [
         32.7607007,
         -17.1335047
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 6.1",
       "name": "Levada do Risco",
       "alt_name": "",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 3.0,
       "ascent_m": 135,
       "descent_m": 270,
@@ -1669,14 +1670,14 @@
       "center": [
         32.7577634,
         -17.1315505
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 6.2",
       "name": "Levada do Alecrim",
       "alt_name": "",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 3.5,
       "ascent_m": 116,
       "descent_m": 56,
@@ -1726,14 +1727,14 @@
       "center": [
         32.7560891,
         -17.1302357
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 6.3",
       "name": "Vereda da Lagoa do Vento",
       "alt_name": "",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 1.8,
       "ascent_m": 267,
       "descent_m": 74,
@@ -1773,14 +1774,14 @@
       "center": [
         32.7601056,
         -17.1254921
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 6.4",
       "name": "Levada Velha do Rabaçal",
       "alt_name": "",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 5.0,
       "ascent_m": 253,
       "descent_m": 388,
@@ -1838,14 +1839,14 @@
       "center": [
         32.7686327,
         -17.1443301
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 6.5",
       "name": "Vereda do Pico Fernandes",
       "alt_name": "",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 2.8,
       "ascent_m": 429,
       "descent_m": 3,
@@ -1889,14 +1890,14 @@
       "center": [
         32.7602138,
         -17.114688
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 6.6",
       "name": "Vereda do Túnel do Cavalo",
       "alt_name": "",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 2.3,
       "ascent_m": 126,
       "descent_m": 78,
@@ -1928,14 +1929,14 @@
       "center": [
         32.755878,
         -17.1423732
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 6.7",
       "name": "Vereda da Câmara Carga",
       "alt_name": "",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 1.7,
       "ascent_m": 16,
       "descent_m": 299,
@@ -1969,14 +1970,14 @@
       "center": [
         32.7544387,
         -17.1405018
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 6.8",
       "name": "Levada do Paul II",
       "alt_name": "",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 1.1,
       "ascent_m": 27,
       "descent_m": 13,
@@ -2006,14 +2007,14 @@
       "center": [
         32.750833,
         -17.1293331
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 8",
       "name": "Vereda da Ponta de São Lourenço",
       "alt_name": "Vereda da Ponta de São Lourenço",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 3.0,
       "ascent_m": 237,
       "descent_m": 221,
@@ -2072,14 +2073,14 @@
       "center": [
         32.7470913,
         -16.6908784
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 9",
       "name": "Levada do Caldeirão Verde",
       "alt_name": "",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 8.7,
       "ascent_m": 1166,
       "descent_m": 912,
@@ -2165,14 +2166,14 @@
       "center": [
         32.78237,
         -16.9269886
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 9.1",
       "name": "Levada do Caldeirão Verde - Um Caminho para todos",
       "alt_name": "",
       "status": "open",
+      "island": "Madeira",
       "distance_km": 1.9,
       "ascent_m": 54,
       "descent_m": 53,
@@ -2207,14 +2208,14 @@
       "center": [
         32.7813521,
         -16.902472
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR1",
       "name": "Vereda do Pico Branco e Terra Chã",
       "alt_name": "Vereda do Pico Branco e Terra Chã",
       "status": "open",
+      "island": "Porto Santo",
       "distance_km": 2.7,
       "ascent_m": 121,
       "descent_m": 242,
@@ -2262,14 +2263,14 @@
       "center": [
         33.0946277,
         -16.3107595
-      ],
-      "island": "Porto Santo"
+      ]
     },
     {
       "code": "PR 1",
       "name": "Vereda do Areeiro",
       "alt_name": "Vereda do Arieiro",
       "status": "partial",
+      "island": "Madeira",
       "distance_km": 6.1,
       "ascent_m": 499,
       "descent_m": 461,
@@ -2332,14 +2333,14 @@
       "center": [
         32.7499074,
         -16.9391051
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 12",
       "name": "Caminho Real da Encumeada",
       "alt_name": "Caminho Real da Encumeada",
       "status": "partial",
+      "island": "Madeira",
       "distance_km": 12.5,
       "ascent_m": 1048,
       "descent_m": 1335,
@@ -2451,14 +2452,14 @@
       "center": [
         32.7335402,
         -17.0001042
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 4",
       "name": "Levada do Barreiro",
       "alt_name": "",
       "status": "partial",
+      "island": "Madeira",
       "distance_km": 5.2,
       "ascent_m": 30,
       "descent_m": 706,
@@ -2515,14 +2516,14 @@
       "center": [
         32.7058133,
         -16.916911
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 20",
       "name": "Vereda do Jardim do Mar",
       "alt_name": "Vereda do Jardim do Mar",
       "status": "closed",
+      "island": "Madeira",
       "distance_km": 1.9,
       "ascent_m": 0,
       "descent_m": 523,
@@ -2558,14 +2559,14 @@
       "center": [
         32.7430376,
         -17.2103901
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 27",
       "name": "Glaciar de Planalto",
       "alt_name": "",
       "status": "closed",
+      "island": "Madeira",
       "distance_km": 5.2,
       "ascent_m": 241,
       "descent_m": 191,
@@ -2626,14 +2627,14 @@
       "center": [
         32.745097,
         -17.0677342
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 28",
       "name": "Levada da Rocha Vermelha",
       "alt_name": "Levada da Rocha Vermelha",
       "status": "closed",
+      "island": "Madeira",
       "distance_km": 10.8,
       "ascent_m": 486,
       "descent_m": 760,
@@ -2720,14 +2721,14 @@
       "center": [
         32.7760895,
         -17.1388993
-      ],
-      "island": "Madeira"
+      ]
     },
     {
       "code": "PR 3",
       "name": "Levada do Pico do Castelo",
       "alt_name": "Levada do Pico do Castelo",
       "status": "closed",
+      "island": "Porto Santo",
       "distance_km": 4.1,
       "ascent_m": 131,
       "descent_m": 178,
@@ -2782,14 +2783,14 @@
       "center": [
         33.0756645,
         -16.3248664
-      ],
-      "island": "Porto Santo"
+      ]
     },
     {
       "code": "PR 7",
       "name": "Levada do Moinho",
       "alt_name": "Levada do Moinho",
       "status": "closed",
+      "island": "Madeira",
       "distance_km": 10.3,
       "ascent_m": 700,
       "descent_m": 285,
@@ -2898,8 +2899,7 @@
       "center": [
         32.8399531,
         -17.1925582
-      ],
-      "island": "Madeira"
+      ]
     }
   ]
 }
