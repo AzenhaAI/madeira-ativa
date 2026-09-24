@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-09-23T17:26:13",
-  "count": 89,
+  "fetched": "2026-09-24T10:04:52",
+  "count": 90,
   "items": [
     {
       "id": "114",
@@ -823,6 +823,16 @@
       "time": "19:00",
       "place": "Museu de Arte Sacra do Funchal",
       "category": "Music"
+    },
+    {
+      "id": "344",
+      "title": "XXXIX Festa da Maçã",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/festas-tradicionais/xxxix-festa-da-maca",
+      "start": "2026-10-01",
+      "end": "2026-10-04",
+      "time": "",
+      "place": "Largo da Achada, Camacha",
+      "category": "Other"
     },
     {
       "id": "335",

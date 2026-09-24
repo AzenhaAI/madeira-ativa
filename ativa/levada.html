@@ -152,6 +152,7 @@
   .today-actions { display: flex; gap: 12px; margin-top: 2px; }
   .today-actions a, .today-actions button { background: none; border: 0; padding: 0; font: inherit; font-size: 12.5px; font-weight: 700; color: var(--accent); cursor: pointer; text-decoration: none; }
   .today-actions a:hover, .today-actions button:hover { text-decoration: underline; }
+  .today-warn { font-size: 12px; font-weight: 700; line-height: 1.3; }
   .today-rank { font-size: 10px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: #9a6a16; }
 
   .burger{flex-shrink:0;margin-left:8px;padding:2px 10px 4px;background:none;border:1px solid #DAD3C5;border-radius:8px;font-size:18px;line-height:1.4;color:#1F4D32;cursor:pointer}
@@ -287,6 +288,8 @@ html.dark{--x:0}
     <span data-lang="pt">Percursos pedestres classificados da Madeira — distância, subida, como chegar e estado atual.</span>
   </p>
 
+  <div id="ipmaWarnings" hidden></div>
+
   <div class="today" id="today" hidden>
     <h2 class="today-title" id="today-title"></h2>
     <p class="today-sub" id="today-sub"></p>
@@ -417,7 +420,7 @@ var T = {
   onmap: { en: 'Show on map', pt: 'Ver no mapa' },
   fly:   { en: 'Fly in 3D', pt: 'Voar em 3D' },
   todayTitle: { en: 'Where to go today?', pt: 'Onde ir hoje?' },
-  todaySub:   { en: 'Open trails ranked by today’s weather along the route — rain, wind and IFCN status combined.', pt: 'Percursos abertos ordenados pelo tempo de hoje no trilho — chuva, vento e estado IFCN.' },
+  todaySub:   { en: 'Open trails ranked by today’s weather along the route — rain, wind, IFCN status and IPMA warnings combined.', pt: 'Percursos abertos ordenados pelo tempo de hoje no trilho — chuva, vento, estado IFCN e avisos IPMA.' },
   todayRain:  { en: 'rain', pt: 'chuva' },
   todayWind:  { en: 'wind', pt: 'vento' },
   todayErr:   { en: 'Weather service unavailable — check the trail list below.', pt: 'Meteo indisponível — veja a lista abaixo.' },
@@ -624,6 +627,81 @@ function wxEmoji(code) {
   if (code === 3) return '☁️'; if (code >= 1) return '🌤'; return '☀️';
 }
 
+// Which IPMA warning zone a trail walks in. IPMA splits Madeira into the
+// mountains, the north coast and the south coast, and Porto Santo is its own
+// zone. A levada that climbs above 800 m spends its hours in the mountain zone,
+// whatever coast it starts from; below that, the central ridge decides — it runs
+// east–west at about 32.755° N.
+function trailZone(l) {
+  if (l.island === 'Porto Santo') return 'MPS';
+  var top = (l.profile && l.profile.length) ? Math.max.apply(null, l.profile) : 0;
+  if (top >= 800) return 'MRM';
+  return l.center[0] >= 32.755 ? 'MCN' : 'MCS';
+}
+
+// How much an IPMA warning should push a trail down today's list. The weather
+// score runs to about 150 on a wet, windy day; a yellow thunderstorm warning on
+// the zone is worth more than any forecast rain, because IPMA issues one when it
+// expects lightning, and a ridge is the wrong place to be. Heat weighs by climb.
+var WARN_WEIGHT = {
+  'Trovoada':          { yellow: 90, orange: 220, red: 1000 },
+  'Precipitação':      { yellow: 60, orange: 160, red: 1000 },
+  'Vento':             { yellow: 45, orange: 130, red: 1000 },
+  'Neve':              { yellow: 60, orange: 160, red: 1000 },
+  'Tempo Frio':        { yellow: 30, orange: 90,  red: 400 },
+  'Nevoeiro':          { yellow: 25, orange: 60,  red: 200 },
+  'Tempo Quente':      { yellow: 12, orange: 50,  red: 300 },
+  'Agitação Marítima': { yellow: 8,  orange: 25,  red: 100 },
+};
+
+function warnFor(l, warnings) {
+  var zone = trailZone(l);
+  var best = {};  // type -> the highest level in force for this zone
+  var rank = { red: 0, orange: 1, yellow: 2 };
+  warnings.forEach(function (w) {
+    if (w.idAreaAviso !== zone) return;
+    // Sea state warns about the shore, not about a path at altitude.
+    if (w.awarenessTypeName === 'Agitação Marítima' && zone === 'MRM') return;
+    var cur = best[w.awarenessTypeName];
+    if (!cur || rank[w.awarenessLevelID] < rank[cur]) best[w.awarenessTypeName] = w.awarenessLevelID;
+  });
+  var types = Object.keys(best);
+  if (!types.length) return null;
+  var penalty = 0, top = 'yellow';
+  types.forEach(function (t) {
+    var weights = WARN_WEIGHT[t] || { yellow: 20, orange: 60, red: 300 };
+    var w = weights[best[t]] || 0;
+    if (t === 'Tempo Quente') w += Math.min(l.ascent_m || 0, 1200) / 40;
+    penalty += w;
+    if (rank[best[t]] < rank[top]) top = best[t];
+  });
+  // Severe = worth leaving a trail out of the "different difficulty" picks for.
+  var severe = penalty >= 45 || top !== 'yellow';
+  return { zone: zone, level: top, types: types, penalty: penalty, severe: severe };
+}
+
+function warnLine(warn) {
+  if (!warn || !window.AtivaIPMA) return '';
+  var api = window.AtivaIPMA;
+  var lv = api.LEVELS[warn.level];
+  var types = warn.types.map(function (t) {
+    var tt = api.TYPES[t]; return tt ? tt[lang].toLowerCase() : t.toLowerCase();
+  }).join(', ');
+  var zone = api.ZONES[warn.zone][lang].toLowerCase();
+  var head = lang === 'pt' ? ('Aviso ' + lv.pt.toLowerCase()) : (lv.en + ' warning');
+  return '<span class="today-warn" style="color:' + lv.colour + '">⚠ ' + esc(head) + ': ' +
+    esc(types) + ' — ' + esc(zone) + '</span>';
+}
+
+// ipma.js is deferred; this page's data can arrive before it has run.
+function ipmaReady() {
+  return new Promise(function (resolve) {
+    function go() { resolve(window.AtivaIPMA || null); }
+    if (window.AtivaIPMA || document.readyState !== 'loading') go();
+    else document.addEventListener('DOMContentLoaded', go);
+  });
+}
+
 function renderToday(picks) {
   var box = document.getElementById('today');
   document.getElementById('today-title').textContent = T.todayTitle[lang];
@@ -635,6 +713,7 @@ function renderToday(picks) {
       '<span class="today-rank">' + RANK[i] + '</span>' +
       '<span class="today-wx">' + wxEmoji(p.code) + ' <b style="font-size:15px">' + Math.round(p.temp) + '°</b>' +
         ' <span class="today-meta">' + p.rain + '% ' + T.todayRain[lang] + ' · ' + Math.round(p.wind) + ' km/h ' + T.todayWind[lang] + '</span></span>' +
+      warnLine(p.warn) +
       '<span class="today-name"><span class="code">' + esc(p.l.code) + '</span>' + esc(p.l.name) + '</span>' +
       '<span class="today-meta"><b>' + (p.l.distance_km || '?') + '</b> km · ↑<b>' + (p.l.ascent_m || 0) + '</b> m · ' +
         '<span style="color:' + df.color + ';font-weight:700">' + df[lang] + '</span></span>' +
@@ -650,14 +729,29 @@ function renderToday(picks) {
 }
 
 function loadToday() {
-  var cands = data.levadas.filter(function (l) { return l.status !== 'closed' && l.center; });
+  // Madeira only. Porto Santo is two and a half hours away by ferry, so it is not
+  // an answer to "where to go today" — and on a day when IPMA warns every Madeira
+  // zone of thunderstorms and Porto Santo only of heat, it would otherwise take
+  // all three places. On such a day the picks are the least bad Madeira trails,
+  // each carrying its warning line, which is the honest answer.
+  var cands = data.levadas.filter(function (l) {
+    return l.status !== 'closed' && l.center && l.island !== 'Porto Santo';
+  });
   if (!cands.length) return;
   var lats = cands.map(function (l) { return l.center[0].toFixed(4); }).join(',');
   var lons = cands.map(function (l) { return l.center[1].toFixed(4); }).join(',');
   var url = 'https://api.open-meteo.com/v1/forecast?latitude=' + lats + '&longitude=' + lons +
     '&hourly=temperature_2m,precipitation_probability,windspeed_10m,weathercode' +
     '&forecast_days=1&timezone=Europe%2FLisbon';
+  var warnings = ipmaReady().then(function (api) {
+    if (!api) return [];
+    var day = api.madeiraNow().toISOString().slice(0, 10);
+    return api.live(api.asWallClock(day + 'T17:00:00'));
+  });
   fetch(url).then(function (r) { return r.json(); }).then(function (res) {
+    return warnings.then(function (w) { return [res, w]; });
+  }).then(function (both) {
+    var res = both[0], warns = both[1];
     var arr = Array.isArray(res) ? res : [res];
     var scored = cands.map(function (l, i) {
       var h = (arr[i] || {}).hourly || {};
@@ -670,13 +764,14 @@ function loadToday() {
         n++;
       }
       rain = n ? Math.round(rain / n) : 50;
-      var score = rain * 1.3 + wind * 0.7 + (l.status === 'partial' ? 30 : 0);
-      return { l: l, rain: rain, wind: wind, temp: temp, code: code, score: score };
+      var warn = warnFor(l, warns);
+      var score = rain * 1.3 + wind * 0.7 + (l.status === 'partial' ? 30 : 0) + (warn ? warn.penalty : 0);
+      return { l: l, rain: rain, wind: wind, temp: temp, code: code, score: score, warn: warn };
     }).sort(function (a, b) { return a.score - b.score; });
     // top-3, preferring different difficulty levels
     var picks = [], used = {};
     scored.forEach(function (p) {
-      if (picks.length >= 3) return;
+      if (picks.length >= 3 || (p.warn && p.warn.severe)) return;
       var lv = difficulty(p.l).level;
       if (!used[lv]) { used[lv] = 1; picks.push(p); }
     });
@@ -778,5 +873,6 @@ paint();})();
     setTimeout(tag, 1200);
   })();
 </script>
+<script src="/ativa/ipma.js" defer></script>
 </body>
 </html>

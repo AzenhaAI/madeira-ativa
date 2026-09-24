@@ -1,13 +1,13 @@
 {
   "note": "Annual races not yet announced by their organisers. Rebuilt daily.",
-  "generated_at": "2026-09-23",
+  "generated_at": "2026-09-24",
   "items": [
     {
       "name": "MIUS - Madeira Island Ultra Swim",
       "mode": "swim",
       "expected": "Expected in September 2026",
       "watch_dates": [
-        "2026-09-23"
+        "2026-09-24"
       ],
       "location": "Madeira",
       "status": "watching for a confirmed 2026 date (known schedule)",
@@ -18,7 +18,7 @@
       "mode": "trail",
       "expected": "Expected in September 2026",
       "watch_dates": [
-        "2026-09-23"
+        "2026-09-24"
       ],
       "location": "Ribeira Brava, Madeira",
       "status": "watching for a confirmed 2026 date (known schedule)",
@@ -89,6 +89,17 @@
       "location": "São Vicente, Madeira",
       "status": "watching for a confirmed 2027 date (known schedule)",
       "url": "https://trailboaventura.com/"
+    },
+    {
+      "name": "Trail do Porto Moniz",
+      "mode": "trail",
+      "expected": "Expected in February 2027",
+      "watch_dates": [
+        "2027-02-01"
+      ],
+      "location": "Porto Moniz, Madeira",
+      "status": "watching for a confirmed 2027 date (race history)",
+      "url": "https://trailportomoniz.com/"
     },
     {
       "name": "Trail do Ludens Clube Machico",

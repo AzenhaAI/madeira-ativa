@@ -1,4 +1,4 @@
-const CACHE_NAME = "madeira-ativa-v64";
+const CACHE_NAME = "madeira-ativa-v65";
 const CORE_ASSETS = [
   // "/ativa/" only — NOT "/ativa/index.html". Cloudflare Pages answers the
   // .html form with a 308 to the clean URL, and the Cache API refuses to store
@@ -52,7 +52,14 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  if (url.pathname.endsWith(".json")) {
+  // Data, and our own scripts, come from the network first and fall back to the
+  // cache only offline. A script served cache-first is pinned to whatever copy
+  // the visitor happened to fetch first, for as long as CACHE_NAME stays the
+  // same — ipma.js was, the day it shipped: the page kept running the first
+  // version while the HTML beside it had moved on. The vendored libraries under
+  // /vendor/ never change in place, so they stay cache-first.
+  if (url.pathname.endsWith(".json") ||
+      (url.pathname.endsWith(".js") && !url.pathname.includes("/vendor/"))) {
     event.respondWith(networkFirst(request));
     return;
   }
