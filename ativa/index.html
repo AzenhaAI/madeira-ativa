@@ -966,7 +966,6 @@ html.dark button{background:rgba(255,255,255,0.06)}
         </p>
         <div class="wx-strip" id="wxStrip" hidden>
           <span id="wxNow"></span>
-          <span class="wx-dot">·</span>
           <a href="/ativa/levada" id="wxTrails"></a>
         </div>
         <div id="ipmaWarnings" hidden></div>
@@ -1689,22 +1688,45 @@ t.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})
 </script>
 
 <script>
+// The strip under the headline: the coast, the summit and the sea, then the
+// trail count. One coastal number used to stand in for the whole island, and on
+// a September afternoon Funchal and Pico do Arieiro are eight degrees apart —
+// the difference between a T-shirt and a jacket on the ridge. The summit point
+// passes its real height, so the model does not guess it from a coarse grid.
 (function(){
   var el=document.getElementById('wxStrip'),now=document.getElementById('wxNow'),tr=document.getElementById('wxTrails');
   function emo(c){return c>=95?'⛈':c>=80?'🌧':c>=61?'🌧':c>=51?'🌦':c>=45?'🌫':c===3?'☁️':c>=1?'🌤':'☀️';}
-  Promise.all([
-    fetch('https://api.open-meteo.com/v1/forecast?latitude=32.65&longitude=-16.91&current_weather=true').then(function(r){return r.json();}),
-    fetch('/ativa/trails_status.json').then(function(r){return r.json();}).catch(function(){return null;})
-  ]).then(function(res){
-    var w=res[0].current_weather;var pt=(document.documentElement.lang||'en')==='pt';
-    now.textContent=emo(w.weathercode)+' '+Math.round(w.temperature)+'°  ·  '+Math.round(w.windspeed)+' km/h';
-    var t=res[1];var txt='';
+  function pt(){return (document.documentElement.lang||'en')==='pt';}
+  var wx='https://api.open-meteo.com/v1/forecast?latitude=32.648,32.735&longitude=-16.908,-16.929'+
+    '&elevation=50,1818&current=temperature_2m,weather_code,wind_speed_10m';
+  var sea='https://marine-api.open-meteo.com/v1/marine?latitude=32.63&longitude=-16.92'+
+    '&current=wave_height,sea_surface_temperature';
+  var got=null;
+  function paint(){
+    if(!got)return;
+    var P=pt(),bits=[];
+    var coast=got.wx&&got.wx[0]&&got.wx[0].current, peak=got.wx&&got.wx[1]&&got.wx[1].current;
+    if(coast)bits.push(emo(coast.weather_code)+' '+Math.round(coast.temperature_2m)+'° Funchal · '+Math.round(coast.wind_speed_10m)+' km/h');
+    if(peak)bits.push('⛰ '+Math.round(peak.temperature_2m)+'° Pico do Arieiro');
+    var m=got.sea&&got.sea.current;
+    if(m&&m.sea_surface_temperature!=null)
+      bits.push('🌊 '+(P?'mar ':'sea ')+m.sea_surface_temperature.toFixed(1)+'°'+
+        (m.wave_height!=null?(P?', ondas ':', waves ')+m.wave_height.toFixed(1)+' m':''));
+    now.textContent=bits.join('   ·   ');
+    var t=got.trails,txt='';
     if(t){var arr=t.trails||t;var closed=0,total=0;
       (Array.isArray(arr)?arr:[]).forEach(function(x){total++;if(x.status==='closed')closed++;});
-      if(total)txt=closed?(closed+(pt?' trilhos encerrados':' trails closed')+' →'):(pt?'todos os trilhos abertos →':'all trails open →');}
-    tr.textContent=txt||(pt?'trilhos e levadas →':'trails & levadas →');
-    el.hidden=false;
-  }).catch(function(){});
+      if(total)txt=closed?(closed+(P?' trilhos encerrados':' trails closed')+' →'):(P?'todos os trilhos abertos →':'all trails open →');}
+    tr.textContent=txt||(P?'trilhos e levadas →':'trails & levadas →');
+    el.hidden=!bits.length&&!txt;
+  }
+  function get(u){return fetch(u).then(function(r){return r.json();}).catch(function(){return null;});}
+  // Each source may fail on its own; the strip shows whatever answered.
+  Promise.all([get(wx),get(sea),get('/ativa/trails_status.json')]).then(function(res){
+    got={wx:Array.isArray(res[0])?res[0]:(res[0]?[res[0]]:null),sea:res[1],trails:res[2]};
+    paint();
+  });
+  new MutationObserver(paint).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
 })();
 </script>
 
