@@ -85,7 +85,14 @@
       "center": [
         32.783353,
         -16.925958
-      ]
+      ],
+      "official": {
+        "distance": "8.2 km",
+        "difficulty": "Moderate",
+        "duration": "3 hours",
+        "start_end": "Casa de Abrigo do Pico Ruivo / Ilha",
+        "duration_min": 180
+      }
     },
     {
       "code": "PR 1.2",
@@ -135,7 +142,14 @@
       "center": [
         32.7610787,
         -16.9363235
-      ]
+      ],
+      "official": {
+        "distance": "2.8 km (5,6 km round trip)",
+        "difficulty": "Moderate",
+        "duration": "1:30 hours",
+        "start_end": "Achada do Teixeira / Pico Ruivo",
+        "duration_min": 90
+      }
     },
     {
       "code": "PR 1.3",
@@ -240,7 +254,14 @@
       "center": [
         32.7548926,
         -16.981844
-      ]
+      ],
+      "official": {
+        "distance": "11.2 km",
+        "difficulty": "Moderate",
+        "duration": "5 hours",
+        "start_end": "Casa de Abrigo do Pico Ruivo / Encumeada",
+        "duration_min": 300
+      }
     },
     {
       "code": "PR 10",
@@ -361,7 +382,14 @@
       "center": [
         32.7366355,
         -16.8635822
-      ]
+      ],
+      "official": {
+        "distance": "11 km",
+        "difficulty": "Moderate",
+        "duration": "5 hours",
+        "start_end": "ER 303 (Ribeiro Frio) / E.R. 102 (Portela)",
+        "duration_min": 300
+      }
     },
     {
       "code": "PR 11",
@@ -404,7 +432,14 @@
       "center": [
         32.7388208,
         -16.8885805
-      ]
+      ],
+      "official": {
+        "distance": "1.5 km (3 km round trip)",
+        "difficulty": "Easy",
+        "duration": "1:30 hours",
+        "start_end": "E.R. 103 (Ribeiro Frio) / Balcões",
+        "duration_min": 90
+      }
     },
     {
       "code": "PR 13",
@@ -513,7 +548,14 @@
       "center": [
         32.790159,
         -17.130445
-      ]
+      ],
+      "official": {
+        "distance": "10.8 km",
+        "difficulty": "Moderate",
+        "duration": "4 hours",
+        "start_end": "E.R. 209 Assobiadores / E.R. 209 Fanal",
+        "duration_min": 240
+      }
     },
     {
       "code": "PR 13.1",
@@ -630,7 +672,14 @@
       "center": [
         32.8104111,
         -17.1561262
-      ]
+      ],
+      "official": {
+        "distance": "7.2 km",
+        "difficulty": "Moderate",
+        "duration": "3 hours",
+        "start_end": "E.R 209 (Fanal) / E.R 209 (Curral Falso)",
+        "duration_min": 180
+      }
     },
     {
       "code": "PR 15",
@@ -676,7 +725,14 @@
       "center": [
         32.8380686,
         -17.1586909
-      ]
+      ],
+      "official": {
+        "distance": "2.7 km",
+        "difficulty": "Moderate",
+        "duration": "1:30 hours",
+        "start_end": "E.R. 209 (Curral Falso) / Ribeira da Janela",
+        "duration_min": 90
+      }
     },
     {
       "code": "PR 16",
@@ -730,7 +786,14 @@
       "center": [
         32.7794023,
         -17.0588076
-      ]
+      ],
+      "official": {
+        "distance": "3.9 km (7.8 km round trip)",
+        "difficulty": "Moderate",
+        "duration": "3:30 hours",
+        "start_end": "Ginjas / Ribeira do Inferno",
+        "duration_min": 210
+      }
     },
     {
       "code": "PR 17",
@@ -841,7 +904,14 @@
       "center": [
         32.7689214,
         -17.0556054
-      ]
+      ],
+      "official": {
+        "distance": "15 km",
+        "difficulty": "Difficult",
+        "duration": "6:30 hours",
+        "start_end": "Lombo do Mouro / Encumeada",
+        "duration_min": 390
+      }
     },
     {
       "code": "PR 18",
@@ -908,7 +978,14 @@
       "center": [
         32.808596,
         -16.9363261
-      ]
+      ],
+      "official": {
+        "distance": "5.3 km (10.6 km round trip)",
+        "difficulty": "Moderate",
+        "duration": "3:30 hours",
+        "start_end": "São Jorge Wastewater Treatment Plant / Ribeiro Bonito",
+        "duration_min": 210
+      }
     },
     {
       "code": "PR 19",
@@ -950,7 +1027,14 @@
       "center": [
         32.7537887,
         -17.2196281
-      ]
+      ],
+      "official": {
+        "distance": "1.8 km",
+        "difficulty": "Moderate",
+        "duration": "1:20 hours",
+        "start_end": "Prazeres / Paul do Mar",
+        "duration_min": 80
+      }
     },
     {
       "code": "PR 2",
@@ -1052,7 +1136,14 @@
       "center": [
         32.7550044,
         -16.9746666
-      ]
+      ],
+      "official": {
+        "distance": "10.6 km",
+        "difficulty": "Moderate",
+        "duration": "4:30 hours",
+        "start_end": "Curral das Freiras / Lombo do Urzal",
+        "duration_min": 270
+      }
     },
     {
       "code": "PR 2 VE",
@@ -1163,7 +1254,14 @@
       "center": [
         33.08392,
         -16.328973
-      ]
+      ],
+      "official": {
+        "distance": "4.6 km",
+        "difficulty": "Easy",
+        "duration": "2:15 hours",
+        "start_end": "Moledo / Canhão Viewpoint",
+        "duration_min": 135
+      }
     },
     {
       "code": "PR 21",
@@ -1212,7 +1310,14 @@
       "center": [
         32.764168,
         -17.019262
-      ]
+      ],
+      "official": {
+        "distance": "3.2 km",
+        "difficulty": "Moderate",
+        "duration": "1:30 hours",
+        "start_end": "Encumeada / Ribeira Grande",
+        "duration_min": 90
+      }
     },
     {
       "code": "PR 21 <-> PR 22",
@@ -1286,7 +1391,14 @@
       "center": [
         32.7600496,
         -17.0171465
-      ]
+      ],
+      "official": {
+        "distance": "1.9 km",
+        "difficulty": "Easy",
+        "duration": "45 minutes",
+        "start_end": "Chão dos Louros / Chão dos Louros",
+        "duration_min": 45
+      }
     },
     {
       "code": "PR 23",
@@ -1404,7 +1516,14 @@
       "center": [
         32.717415,
         -16.9110123
-      ]
+      ],
+      "official": {
+        "distance": "7.2 km",
+        "difficulty": "Easy",
+        "duration": "2:40 hours",
+        "start_end": "Pico do Areeiro / Ribeira das Cales - Funchal Ecological Park Welcome Centre",
+        "duration_min": 160
+      }
     },
     {
       "code": "PR 3.1",
@@ -1464,7 +1583,14 @@
       "center": [
         32.6894542,
         -16.9001207
-      ]
+      ],
+      "official": {
+        "distance": "4.2 km",
+        "difficulty": "Moderate",
+        "duration": "2 hours",
+        "start_end": "Ribeira das Cales - Funchal Ecological Park Welcome Centre / Monte",
+        "duration_min": 120
+      }
     },
     {
       "code": "PR 5",
@@ -1553,7 +1679,14 @@
       "center": [
         32.7537264,
         -16.7979382
-      ]
+      ],
+      "official": {
+        "distance": "8.7 km",
+        "difficulty": "Moderate",
+        "duration": "3 hours",
+        "start_end": "Miradouro da Portela / Maroços",
+        "duration_min": 180
+      }
     },
     {
       "code": "PR 6",
@@ -1618,7 +1751,14 @@
       "center": [
         32.7607007,
         -17.1335047
-      ]
+      ],
+      "official": {
+        "distance": "4.3 km (8.6 km round trip)",
+        "difficulty": "Moderate",
+        "duration": "3 hours",
+        "start_end": "Rabaçal (E.R. 105) / 25 Fontes",
+        "duration_min": 180
+      }
     },
     {
       "code": "PR 6.1",
@@ -1670,7 +1810,14 @@
       "center": [
         32.7577634,
         -17.1315505
-      ]
+      ],
+      "official": {
+        "distance": "1.5 km (3 km round trip)",
+        "difficulty": "Easy",
+        "duration": "2 hours",
+        "start_end": "Rabaçal (E.R. 105) / Risco",
+        "duration_min": 120
+      }
     },
     {
       "code": "PR 6.2",
@@ -1727,7 +1874,14 @@
       "center": [
         32.7560891,
         -17.1302357
-      ]
+      ],
+      "official": {
+        "distance": "3.5 km (7 km round trip)",
+        "difficulty": "Easy",
+        "duration": "2:30 hours",
+        "start_end": "Rabaçal (E.R. 105) / Water spring of Levada do Alecrim (Lagoa 'Dona Beja')",
+        "duration_min": 150
+      }
     },
     {
       "code": "PR 6.3",
@@ -1774,7 +1928,14 @@
       "center": [
         32.7601056,
         -17.1254921
-      ]
+      ],
+      "official": {
+        "distance": "1.8 km (3.6 km round trip)",
+        "difficulty": "Easy",
+        "duration": "1:30 hours",
+        "start_end": "Casa de Abrigo do Rabaçal / Lagoa do Vento",
+        "duration_min": 90
+      }
     },
     {
       "code": "PR 6.4",
@@ -1890,7 +2051,13 @@
       "center": [
         32.7602138,
         -17.114688
-      ]
+      ],
+      "official": {
+        "distance": "3.8km",
+        "duration": "1h30",
+        "start_end": "Paul da Serra (ER209) / 25 Fontes",
+        "duration_min": 90
+      }
     },
     {
       "code": "PR 6.6",
@@ -2073,7 +2240,14 @@
       "center": [
         32.7470913,
         -16.6908784
-      ]
+      ],
+      "official": {
+        "distance": "4 km (4 km return)",
+        "difficulty": "Moderate",
+        "duration": "2:30 hours",
+        "start_end": "Baía d'Abra / Casa do Sardinha",
+        "duration_min": 150
+      }
     },
     {
       "code": "PR 9",
@@ -2166,7 +2340,14 @@
       "center": [
         32.78237,
         -16.9269886
-      ]
+      ],
+      "official": {
+        "distance": "8.7 km (17.4 km round trip)",
+        "difficulty": "Moderate",
+        "duration": "6:30 hours",
+        "start_end": "Queimadas Forest Park / Caldeirão do Inferno",
+        "duration_min": 390
+      }
     },
     {
       "code": "PR 9.1",
@@ -2333,7 +2514,14 @@
       "center": [
         32.7499074,
         -16.9391051
-      ]
+      ],
+      "official": {
+        "distance": "6.1 km (VW)",
+        "difficulty": "Moderate",
+        "duration": "3 hours",
+        "start_end": "Pico do Areeiro Viewpoint / Pico Ruivo",
+        "duration_min": 180
+      }
     },
     {
       "code": "PR 12",
@@ -2452,7 +2640,14 @@
       "center": [
         32.7335402,
         -17.0001042
-      ]
+      ],
+      "official": {
+        "distance": "12.5 km",
+        "difficulty": "Moderate",
+        "duration": "5 hours",
+        "start_end": "Boca da Corrida Viewpoint / E.R. 228 (Encumeada)",
+        "duration_min": 300
+      }
     },
     {
       "code": "PR 4",
@@ -2516,7 +2711,14 @@
       "center": [
         32.7058133,
         -16.916911
-      ]
+      ],
+      "official": {
+        "distance": "5.2 km",
+        "difficulty": "Easy",
+        "duration": "2:10 hours",
+        "start_end": "Poço da Neve / Casa do Barreiro",
+        "duration_min": 130
+      }
     },
     {
       "code": "PR 20",
@@ -2559,7 +2761,14 @@
       "center": [
         32.7430376,
         -17.2103901
-      ]
+      ],
+      "official": {
+        "distance": "1.9 km",
+        "difficulty": "Easy",
+        "duration": "1:30 hours",
+        "start_end": "Prazeres / Jardim do Mar (Largo da Igreja)",
+        "duration_min": 90
+      }
     },
     {
       "code": "PR 27",
@@ -2783,7 +2992,14 @@
       "center": [
         33.0756645,
         -16.3248664
-      ]
+      ],
+      "official": {
+        "distance": "4.1 km",
+        "difficulty": "Moderate",
+        "duration": "1:30 hours",
+        "start_end": "Camacha / Graça Chapel",
+        "duration_min": 90
+      }
     },
     {
       "code": "PR 7",
@@ -2899,7 +3115,14 @@
       "center": [
         32.8399531,
         -17.1925582
-      ]
+      ],
+      "official": {
+        "distance": "10.5 km",
+        "difficulty": "Moderate",
+        "duration": "3:30 hours",
+        "start_end": "Ribeira da Cruz (E.R. 101) / Junqueira (Tornadouro)",
+        "duration_min": 210
+      }
     }
   ]
 }

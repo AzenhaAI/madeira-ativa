@@ -433,7 +433,24 @@ var DIFF = [
   { max: 1e9, level: 4, en: 'Severe',   pt: 'Severo',   color: '#b23a2e' },
 ];
 function effort(l) { return (l.distance_km || 0) + (l.ascent_m || 0) / 100; }
-function difficulty(l) { var e = effort(l); for (var i = 0; i < DIFF.length; i++) if (e < DIFF[i].max) return DIFF[i]; return DIFF[3]; }
+// Official difficulty first — Visit Madeira's, the one on the trailhead board.
+// Ours is computed from distance and climb, and the climb is only as good as the
+// direction OSM happens to draw the route in: PR 1.3 is drawn uphill, runs
+// downhill, and we called it Hard where the board says Moderate. The computed
+// value stays for the trails with no official page.
+var OFFICIAL_DIFF = { easy: 0, moderate: 1, difficult: 2, hard: 2, 'very difficult': 3 };
+function difficulty(l) {
+  var o = l.official && l.official.difficulty && OFFICIAL_DIFF[l.official.difficulty.toLowerCase()];
+  if (o != null) return DIFF[o];
+  var e = effort(l); for (var i = 0; i < DIFF.length; i++) if (e < DIFF[i].max) return DIFF[i]; return DIFF[3];
+}
+// Official walking time, "5 h" / "1 h 30".
+function walkTime(l) {
+  var m = l.official && l.official.duration_min;
+  if (!m) return '';
+  var h = Math.floor(m / 60), r = m % 60;
+  return (h ? h + ' h' : '') + (h && r ? ' ' : '') + (r ? (r < 10 ? '0' + r : r) + (h ? '' : ' min') : '');
+}
 
 function sparkline(profile) {
   if (!profile || profile.length < 2) return '';
@@ -541,6 +558,7 @@ function render() {
     var stats = [];
     if (l.distance_km) stats.push('<span class="stat"><b>' + l.distance_km + '</b> ' + T.dist[lang] + '</span>');
     if (l.ascent_m != null) stats.push('<span class="stat">↑ <b>' + l.ascent_m + '</b> m ' + T.asc[lang] + '</span>');
+    if (walkTime(l)) stats.push('<span class="stat">⏱ <b>' + walkTime(l) + '</b></span>');
     stats.push('<span class="stat">' + (l.roundtrip ? T.loop[lang] : T.oneway[lang]) + '</span>');
     if (l.fee) stats.push('<span class="stat">🎟 ' + T.fee[lang] + (l.charge ? ' · ' + esc(l.charge) : '') + '</span>');
 
@@ -717,6 +735,7 @@ function renderToday(picks) {
       warnLine(p.warn) +
       '<span class="today-name"><span class="code">' + esc(p.l.code) + '</span>' + esc(p.l.name) + '</span>' +
       '<span class="today-meta"><b>' + (p.l.distance_km || '?') + '</b> km · ↑<b>' + (p.l.ascent_m || 0) + '</b> m · ' +
+        (walkTime(p.l) ? '⏱ <b>' + walkTime(p.l) + '</b> · ' : '') +
         '<span style="color:' + df.color + ';font-weight:700">' + df[lang] + '</span></span>' +
       '<span class="today-actions">' +
         '<button data-focus="' + esc(p.l.code) + '">📍 ' + T.onmap[lang] + '</button>' +
