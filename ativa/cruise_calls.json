@@ -1,0 +1,138 @@
+{
+  "note": "Ship calls at the port of Funchal from APRAM. Times are Madeira local time, as the port publishes them. Accumulates; a call no longer listed before its arrival is marked superseded.",
+  "source": "https://apram.pt/movimento-navios?port=ptfnc",
+  "fetched": "2026-09-24T15:59:33",
+  "count": 13,
+  "calls": [
+    {
+      "ship": "SANTA MARIA MANUELA",
+      "berth": "Funchal - Terminal Norte",
+      "agent": "Transinsular (Madeira)-Transp. Marit. Insulares, Lda.",
+      "arrival": "2026-09-24T11:59",
+      "from": "Porto Santo Island",
+      "departure": "2026-09-25T16:59",
+      "to": "Porto Santo Island",
+      "superseded": false
+    },
+    {
+      "ship": "CELEBRITY XCEL",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-09-26T07:00",
+      "from": "Lisboa",
+      "departure": "2026-09-27T17:00",
+      "to": "Tangier",
+      "superseded": false
+    },
+    {
+      "ship": "SANTA MARIA MANUELA",
+      "berth": "Funchal - Terminal Norte",
+      "agent": "Transinsular (Madeira)-Transp. Marit. Insulares, Lda.",
+      "arrival": "2026-09-28T11:59",
+      "from": "Porto Santo Island",
+      "departure": "2026-10-01T19:00",
+      "to": "Funchal",
+      "superseded": false
+    },
+    {
+      "ship": "CELEBRITY APEX",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-09-30T07:00",
+      "from": "Leixões",
+      "departure": "2026-09-30T17:00",
+      "to": "Santa Cruz De Tenerife",
+      "superseded": false
+    },
+    {
+      "ship": "AMADEA",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-10-03T12:00",
+      "from": "Ponta Delgada",
+      "departure": "2026-10-04T17:00",
+      "to": "Lisboa",
+      "superseded": false
+    },
+    {
+      "ship": "NORWEGIAN ESCAPE",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-10-05T05:30",
+      "from": "Ponta Delgada",
+      "departure": "2026-10-05T17:00",
+      "to": "Gibraltar",
+      "superseded": false
+    },
+    {
+      "ship": "SANTA MARIA MANUELA",
+      "berth": "Funchal - Terminal Norte",
+      "agent": "Transinsular (Madeira)-Transp. Marit. Insulares, Lda.",
+      "arrival": "2026-10-05T23:00",
+      "from": "Funchal",
+      "departure": "2026-10-07T21:00",
+      "to": "Funchal",
+      "superseded": false
+    },
+    {
+      "ship": "IONA",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-10-07T06:30",
+      "from": "Southampton",
+      "departure": "2026-10-07T16:30",
+      "to": "Santa Cruz De La Palma",
+      "superseded": false
+    },
+    {
+      "ship": "NIEUW STATENDAM",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-10-07T09:00",
+      "from": "Rotterdam",
+      "departure": "2026-10-07T18:00",
+      "to": "Santa Cruz De La Palma",
+      "superseded": false
+    },
+    {
+      "ship": "SANTA MARIA MANUELA",
+      "berth": "Funchal - Terminal Norte",
+      "agent": "Transinsular (Madeira)-Transp. Marit. Insulares, Lda.",
+      "arrival": "2026-10-09T17:30",
+      "from": "Funchal",
+      "departure": "2026-10-09T20:00",
+      "to": "Caniçal",
+      "superseded": false
+    },
+    {
+      "ship": "VENTURA",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-10-11T07:00",
+      "from": "Santa Cruz De La Palma",
+      "departure": "2026-10-11T17:00",
+      "to": "Cadiz",
+      "superseded": false
+    },
+    {
+      "ship": "SANTA MARIA MANUELA",
+      "berth": "Funchal - Fora das 3 Milhas",
+      "agent": "Transinsular (Madeira)-Transp. Marit. Insulares, Lda.",
+      "arrival": "2026-10-22T08:00",
+      "from": "Porto Santo Island",
+      "departure": "2026-10-22T16:59",
+      "to": "Funchal",
+      "superseded": false
+    },
+    {
+      "ship": "SANTA MARIA MANUELA",
+      "berth": "Funchal - Terminal Norte",
+      "agent": "Transinsular (Madeira)-Transp. Marit. Insulares, Lda.",
+      "arrival": "2026-10-28T08:00",
+      "from": "Funchal",
+      "departure": "2026-10-30T09:00",
+      "to": "Tenerife",
+      "superseded": false
+    }
+  ]
+}
