@@ -808,7 +808,8 @@ function loadToday() {
 
 fetch('levadas.json').then(function (r) { return r.json(); }).then(function (d) {
   data = d;
-  document.getElementById('src').innerHTML = esc(d.attribution || '');
+  document.getElementById('src').innerHTML = esc(d.attribution || '') +
+    ' · <a href="/ativa/sources">' + (lang === 'pt' ? 'Todas as fontes e licenças' : 'All sources and licences') + '</a>';
   render();
   loadToday();
 }).catch(function () {
