@@ -100,14 +100,31 @@
             "lon": -16.94154,
             "elev": 1722,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.80594,
             "lon": -16.91146,
             "elev": 459,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": [
+              {
+                "line": "103",
+                "operator": "Horários do Funchal",
+                "dist": 269,
+                "timetable": "https://siga.madeira.gov.pt/horarios/5004",
+                "siga_name": "Arco São Jorge"
+              },
+              {
+                "line": "138",
+                "operator": "Horários do Funchal",
+                "dist": 269,
+                "timetable": "https://siga.madeira.gov.pt/horarios/5011",
+                "siga_name": "São Jorge"
+              }
+            ]
           }
         ]
       }
@@ -175,7 +192,8 @@
             "lon": -16.94334,
             "elev": 1731,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.76488,
@@ -188,7 +206,8 @@
               "lat": 32.76503,
               "lon": -16.92097
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -311,7 +330,8 @@
             "lon": -16.94158,
             "elev": 1722,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.75427,
@@ -324,7 +344,16 @@
               "lat": 32.75404,
               "lon": -17.0194
             },
-            "bus": null
+            "bus": null,
+            "lines": [
+              {
+                "line": "6",
+                "operator": "Rodoeste",
+                "dist": 0,
+                "timetable": "https://siga.madeira.gov.pt/horarios/2004",
+                "siga_name": "Arco de São Jorge"
+              }
+            ]
           }
         ]
       }
@@ -469,7 +498,30 @@
               "lat": 32.73505,
               "lon": -16.88646
             },
-            "bus": null
+            "bus": null,
+            "lines": [
+              {
+                "line": "56",
+                "operator": "Horários do Funchal",
+                "dist": 1,
+                "timetable": "https://siga.madeira.gov.pt/horarios/5000",
+                "siga_name": "Santana"
+              },
+              {
+                "line": "103",
+                "operator": "Horários do Funchal",
+                "dist": 1,
+                "timetable": "https://siga.madeira.gov.pt/horarios/5004",
+                "siga_name": "Arco São Jorge"
+              },
+              {
+                "line": "138",
+                "operator": "Horários do Funchal",
+                "dist": 1,
+                "timetable": "https://siga.madeira.gov.pt/horarios/5011",
+                "siga_name": "São Jorge"
+              }
+            ]
           },
           {
             "lat": 32.74572,
@@ -482,7 +534,16 @@
               "lat": 32.74651,
               "lon": -16.82617
             },
-            "bus": null
+            "bus": null,
+            "lines": [
+              {
+                "line": "53",
+                "operator": "SAM",
+                "dist": 59,
+                "timetable": "https://siga.madeira.gov.pt/horarios/4003",
+                "siga_name": "Porto da Cruz - Faial"
+              }
+            ]
           }
         ]
       }
@@ -549,7 +610,30 @@
               "lat": 32.73505,
               "lon": -16.88646
             },
-            "bus": null
+            "bus": null,
+            "lines": [
+              {
+                "line": "56",
+                "operator": "Horários do Funchal",
+                "dist": 0,
+                "timetable": "https://siga.madeira.gov.pt/horarios/5000",
+                "siga_name": "Santana"
+              },
+              {
+                "line": "103",
+                "operator": "Horários do Funchal",
+                "dist": 0,
+                "timetable": "https://siga.madeira.gov.pt/horarios/5004",
+                "siga_name": "Arco São Jorge"
+              },
+              {
+                "line": "138",
+                "operator": "Horários do Funchal",
+                "dist": 0,
+                "timetable": "https://siga.madeira.gov.pt/horarios/5011",
+                "siga_name": "São Jorge"
+              }
+            ]
           },
           {
             "lat": 32.74159,
@@ -562,7 +646,8 @@
               "lat": 32.73926,
               "lon": -16.8871
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -695,7 +780,8 @@
               "lat": 32.76703,
               "lon": -17.10737
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.81032,
@@ -708,7 +794,8 @@
               "lat": 32.80905,
               "lon": -17.14148
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -759,14 +846,16 @@
             "lon": -17.12268,
             "elev": 1325,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.76555,
             "lon": -17.1259,
             "elev": 994,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -861,7 +950,8 @@
             "lon": -17.14471,
             "elev": 911,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.82592,
@@ -874,7 +964,8 @@
               "lat": 32.82597,
               "lon": -17.15841
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -944,7 +1035,8 @@
               "lat": 32.82597,
               "lon": -17.15841
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.84416,
@@ -957,7 +1049,8 @@
               "lat": 32.84677,
               "lon": -17.15864
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -1029,7 +1122,8 @@
             "lon": -17.07713,
             "elev": 713,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.77907,
@@ -1042,7 +1136,8 @@
               "lat": 32.77986,
               "lon": -17.04816
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -1171,7 +1266,8 @@
             "lon": -17.06469,
             "elev": 1297,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.7542,
@@ -1184,7 +1280,16 @@
               "lat": 32.75404,
               "lon": -17.0194
             },
-            "bus": null
+            "bus": null,
+            "lines": [
+              {
+                "line": "6",
+                "operator": "Rodoeste",
+                "dist": 1,
+                "timetable": "https://siga.madeira.gov.pt/horarios/2004",
+                "siga_name": "Arco de São Jorge"
+              }
+            ]
           }
         ]
       }
@@ -1269,7 +1374,8 @@
             "lon": -16.93691,
             "elev": 674,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.81695,
@@ -1282,7 +1388,8 @@
               "lat": 32.81685,
               "lon": -16.92463
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -1348,7 +1455,16 @@
               "lat": 32.75269,
               "lon": -17.21679
             },
-            "bus": null
+            "bus": null,
+            "lines": [
+              {
+                "line": "80",
+                "operator": "Rodoeste",
+                "dist": 196,
+                "timetable": "https://siga.madeira.gov.pt/horarios/2009",
+                "siga_name": "Porto Moniz via Calheta"
+              }
+            ]
           },
           {
             "lat": 32.75296,
@@ -1361,7 +1477,16 @@
               "lat": 32.75238,
               "lon": -17.22427
             },
-            "bus": null
+            "bus": null,
+            "lines": [
+              {
+                "line": "80",
+                "operator": "Rodoeste",
+                "dist": 48,
+                "timetable": "https://siga.madeira.gov.pt/horarios/2009",
+                "siga_name": "Porto Moniz via Calheta"
+              }
+            ]
           }
         ]
       }
@@ -1487,14 +1612,24 @@
               "lines": [
                 "81"
               ]
-            }
+            },
+            "lines": [
+              {
+                "line": "81",
+                "operator": "HF - Urbano",
+                "dist": 117,
+                "timetable": "https://siga.madeira.gov.pt/horarios/90",
+                "siga_name": "Funchal - Curral das Freiras"
+              }
+            ]
           },
           {
             "lat": 32.78216,
             "lon": -16.97857,
             "elev": 485,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -1721,7 +1856,16 @@
               "lat": 32.75404,
               "lon": -17.0194
             },
-            "bus": null
+            "bus": null,
+            "lines": [
+              {
+                "line": "6",
+                "operator": "Rodoeste",
+                "dist": 22,
+                "timetable": "https://siga.madeira.gov.pt/horarios/2004",
+                "siga_name": "Arco de São Jorge"
+              }
+            ]
           },
           {
             "lat": 32.77437,
@@ -1734,7 +1878,8 @@
               "lat": 32.77421,
               "lon": -17.02775
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -1782,7 +1927,16 @@
               "lat": 32.75795,
               "lon": -17.017
             },
-            "bus": null
+            "bus": null,
+            "lines": [
+              {
+                "line": "6",
+                "operator": "Rodoeste",
+                "dist": 111,
+                "timetable": "https://siga.madeira.gov.pt/horarios/2004",
+                "siga_name": "Arco de São Jorge"
+              }
+            ]
           },
           {
             "lat": 32.7592,
@@ -1795,7 +1949,16 @@
               "lat": 32.76028,
               "lon": -17.01702
             },
-            "bus": null
+            "bus": null,
+            "lines": [
+              {
+                "line": "6",
+                "operator": "Rodoeste",
+                "dist": 216,
+                "timetable": "https://siga.madeira.gov.pt/horarios/2004",
+                "siga_name": "Arco de São Jorge"
+              }
+            ]
           }
         ]
       }
@@ -1862,7 +2025,16 @@
               "lat": 32.75795,
               "lon": -17.017
             },
-            "bus": null
+            "bus": null,
+            "lines": [
+              {
+                "line": "6",
+                "operator": "Rodoeste",
+                "dist": 49,
+                "timetable": "https://siga.madeira.gov.pt/horarios/2004",
+                "siga_name": "Arco de São Jorge"
+              }
+            ]
           },
           {
             "lat": 32.76041,
@@ -1875,7 +2047,8 @@
               "lat": 32.76153,
               "lon": -17.016
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -1927,7 +2100,8 @@
               "lat": 32.65587,
               "lon": -16.84147
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.65374,
@@ -1940,7 +2114,30 @@
               "lat": 32.65373,
               "lon": -16.84396
             },
-            "bus": null
+            "bus": null,
+            "lines": [
+              {
+                "line": "110",
+                "operator": "HF - Urbano",
+                "dist": 141,
+                "timetable": "https://siga.madeira.gov.pt/horarios/79",
+                "siga_name": "Funchal - Boqueirão (via Caniço)"
+              },
+              {
+                "line": "113",
+                "operator": "CAM",
+                "dist": 1,
+                "timetable": "https://siga.madeira.gov.pt/horarios/4007",
+                "siga_name": "Caniçal - Baía D'Abra"
+              },
+              {
+                "line": "155",
+                "operator": "CAM",
+                "dist": 140,
+                "timetable": "https://siga.madeira.gov.pt/horarios/3006",
+                "siga_name": "Ponta da Oliveira"
+              }
+            ]
           }
         ]
       }
@@ -2041,14 +2238,16 @@
             "lon": -16.32034,
             "elev": 138,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 33.08382,
             "lon": -16.34086,
             "elev": 130,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -2132,7 +2331,30 @@
               "lat": 32.70101,
               "lon": -16.9028
             },
-            "bus": null
+            "bus": null,
+            "lines": [
+              {
+                "line": "56",
+                "operator": "Horários do Funchal",
+                "dist": 43,
+                "timetable": "https://siga.madeira.gov.pt/horarios/5000",
+                "siga_name": "Santana"
+              },
+              {
+                "line": "103",
+                "operator": "Horários do Funchal",
+                "dist": 43,
+                "timetable": "https://siga.madeira.gov.pt/horarios/5004",
+                "siga_name": "Arco São Jorge"
+              },
+              {
+                "line": "138",
+                "operator": "Horários do Funchal",
+                "dist": 43,
+                "timetable": "https://siga.madeira.gov.pt/horarios/5011",
+                "siga_name": "São Jorge"
+              }
+            ]
           },
           {
             "lat": 32.67661,
@@ -2152,7 +2374,51 @@
                 "21",
                 "48"
               ]
-            }
+            },
+            "lines": [
+              {
+                "line": "20",
+                "operator": "HF",
+                "dist": 109,
+                "timetable": "https://siga.madeira.gov.pt/horarios/25",
+                "siga_name": "Centro - Monte via Corujeira de Dentro"
+              },
+              {
+                "line": "21",
+                "operator": "HF",
+                "dist": 109,
+                "timetable": "https://siga.madeira.gov.pt/horarios/27",
+                "siga_name": "Centro - Monte (via Largo da Fonte)"
+              },
+              {
+                "line": "22",
+                "operator": "HF",
+                "dist": 293,
+                "timetable": "https://siga.madeira.gov.pt/horarios/29",
+                "siga_name": "Centro - Babosas"
+              },
+              {
+                "line": "48",
+                "operator": "HF",
+                "dist": 109,
+                "timetable": "https://siga.madeira.gov.pt/horarios/57",
+                "siga_name": "Entre Nazaré e Monte"
+              },
+              {
+                "line": "56",
+                "operator": "Horários do Funchal",
+                "dist": 109,
+                "timetable": "https://siga.madeira.gov.pt/horarios/5000",
+                "siga_name": "Santana"
+              },
+              {
+                "line": "103",
+                "operator": "Horários do Funchal",
+                "dist": 109,
+                "timetable": "https://siga.madeira.gov.pt/horarios/5004",
+                "siga_name": "Arco São Jorge"
+              }
+            ]
           }
         ]
       }
@@ -2265,14 +2531,24 @@
               "lat": 32.74651,
               "lon": -16.82617
             },
-            "bus": null
+            "bus": null,
+            "lines": [
+              {
+                "line": "53",
+                "operator": "SAM",
+                "dist": 29,
+                "timetable": "https://siga.madeira.gov.pt/horarios/4003",
+                "siga_name": "Porto da Cruz - Faial"
+              }
+            ]
           },
           {
             "lat": 32.75002,
             "lon": -16.79471,
             "elev": 535,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -2361,14 +2637,16 @@
               "lat": 32.75297,
               "lon": -17.13222
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.76554,
             "lon": -17.12552,
             "elev": 1022,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -2444,14 +2722,16 @@
               "lat": 32.75297,
               "lon": -17.13222
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.76013,
             "lon": -17.12341,
             "elev": 1122,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -2526,7 +2806,8 @@
             "lon": -17.11199,
             "elev": 1334,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.75399,
@@ -2539,7 +2820,8 @@
               "lat": 32.75297,
               "lon": -17.13222
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -2604,14 +2886,16 @@
             "lon": -17.12053,
             "elev": 1267,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.76095,
             "lon": -17.13357,
             "elev": 1068,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -2693,7 +2977,8 @@
               "lat": 32.76885,
               "lon": -17.15356
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.75882,
@@ -2706,7 +2991,8 @@
               "lat": 32.7549,
               "lon": -17.13393
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -2780,14 +3066,16 @@
               "lat": 32.76236,
               "lon": -17.09974
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.76472,
             "lon": -17.12693,
             "elev": 984,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -2837,7 +3125,8 @@
             "lon": -17.13494,
             "elev": 1048,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.75372,
@@ -2850,7 +3139,8 @@
               "lat": 32.75377,
               "lon": -17.14912
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -2908,14 +3198,16 @@
               "lat": 32.7549,
               "lon": -17.13393
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.75588,
             "lon": -17.14237,
             "elev": 1035,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -2963,7 +3255,8 @@
             "lon": -17.12539,
             "elev": 1282,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.75373,
@@ -2976,7 +3269,8 @@
               "lat": 32.75297,
               "lon": -17.13222
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -3066,14 +3360,24 @@
               "lat": 32.74323,
               "lon": -16.70116
             },
-            "bus": null
+            "bus": null,
+            "lines": [
+              {
+                "line": "113",
+                "operator": "CAM",
+                "dist": 0,
+                "timetable": "https://siga.madeira.gov.pt/horarios/4007",
+                "siga_name": "Caniçal - Baía D'Abra"
+              }
+            ]
           },
           {
             "lat": 32.74244,
             "lon": -16.68273,
             "elev": 44,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -3184,7 +3488,8 @@
             "lon": -16.94834,
             "elev": 1107,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.78371,
@@ -3197,7 +3502,8 @@
               "lat": 32.78442,
               "lon": -16.90557
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -3256,7 +3562,8 @@
               "lat": 32.78296,
               "lon": -16.90478
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.77972,
@@ -3269,7 +3576,8 @@
               "lat": 32.77955,
               "lon": -16.89639
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -3436,14 +3744,16 @@
               "lat": 32.73494,
               "lon": -16.92867
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.76014,
             "lon": -16.94334,
             "elev": 1731,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -3586,7 +3896,8 @@
               "lat": 32.71103,
               "lon": -16.98679
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.75333,
@@ -3599,7 +3910,16 @@
               "lat": 32.75336,
               "lon": -17.02105
             },
-            "bus": null
+            "bus": null,
+            "lines": [
+              {
+                "line": "6",
+                "operator": "Rodoeste",
+                "dist": 0,
+                "timetable": "https://siga.madeira.gov.pt/horarios/2004",
+                "siga_name": "Arco de São Jorge"
+              }
+            ]
           }
         ]
       }
@@ -3687,14 +4007,16 @@
               "lat": 32.72979,
               "lon": -16.9269
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.6953,
             "lon": -16.90936,
             "elev": 982,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -3761,7 +4083,8 @@
               "lat": 32.75308,
               "lon": -17.21
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.73775,
@@ -3774,7 +4097,8 @@
               "lat": 32.73774,
               "lon": -17.21059
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -3859,14 +4183,16 @@
               "lat": 32.75749,
               "lon": -17.05938
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.74032,
             "lon": -17.06092,
             "elev": 1518,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -3971,7 +4297,8 @@
             "lon": -17.13819,
             "elev": 1056,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.74584,
@@ -3984,7 +4311,8 @@
               "lat": 32.74465,
               "lon": -17.15067
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }
@@ -4205,7 +4533,8 @@
             "lon": -17.20248,
             "elev": 922,
             "parking": null,
-            "bus": null
+            "bus": null,
+            "lines": []
           },
           {
             "lat": 32.85176,
@@ -4218,7 +4547,8 @@
               "lat": 32.85167,
               "lon": -17.16673
             },
-            "bus": null
+            "bus": null,
+            "lines": []
           }
         ]
       }

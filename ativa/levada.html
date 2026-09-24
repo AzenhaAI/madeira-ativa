@@ -119,6 +119,7 @@
   .getthere .gt-line { color: inherit; text-decoration: none; }
   .getthere a.gt-line:hover { color: var(--accent); text-decoration: underline; }
   .getthere .gt-soft { color: var(--soft); }
+  .getthere .gt-line a { color: var(--accent); font-weight: 700; }
   .getthere .gt-sig { display: inline-block; margin-top: 8px; font-size: 12.5px; color: var(--soft); }
   .desc { font-size: 14px; color: #3c4a40; line-height: 1.45; margin: 8px 0 0; }
   .diff { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: var(--soft); }
@@ -436,7 +437,12 @@ var T = {
   busStop:   { en: 'Bus', pt: 'Autocarro' },
   stopWord:  { en: 'stop', pt: 'paragem' },
   noBus:     { en: 'No Funchal urban bus stop within 800 m', pt: 'Sem paragem urbana do Funchal a menos de 800 m' },
-  interurb:  { en: 'Interurban bus timetables (SIGA)', pt: 'Horários interurbanos (SIGA)' },
+  interurb:  { en: 'All bus timetables (SIGA)', pt: 'Todos os horários (SIGA)' },
+  linesPass: { en: 'pass here — timetables', pt: 'passam aqui — horários' },
+  linePass:  { en: 'passes here — timetable', pt: 'passa aqui — horário' },
+  lineWord:  { en: 'Bus', pt: 'Autocarro' },
+  linesWord: { en: 'Buses', pt: 'Autocarros' },
+  noRoute:   { en: 'No bus route mapped near this end', pt: 'Sem linha de autocarro mapeada perto deste extremo' },
   end:   { en: 'End', pt: 'Fim' },
   fee:   { en: 'Ticket required', pt: 'Bilhete obrigatório' },
   guide: { en: 'Guide & photos ↗', pt: 'Guia e fotos ↗' },
@@ -700,11 +706,23 @@ function getThere(l) {
     } else {
       out += '<a class="gt-line" target="_blank" rel="noopener" href="' + placeUrl(e.lat, e.lon) + '">📍 ' + T.driveEnd[lang] + '</a>';
     }
+    // Island-wide lines first (each number opens its SIGA timetable), then the
+    // nearest Funchal urban stop by name, which is the part a rider looks for.
+    var lines = e.lines || [];
+    if (lines.length) {
+      out += '<span class="gt-line">🚌 ' + (lines.length > 1 ? T.linesWord[lang] : T.lineWord[lang]) + ' ' +
+        lines.map(function (x) {
+          return x.timetable
+            ? '<a href="' + esc(x.timetable) + '" target="_blank" rel="noopener" title="' + esc(x.siga_name || '') + '">' + esc(x.line) + '</a>'
+            : esc(x.line);
+        }).join(' · ') + ' ' + (lines.length > 1 ? T.linesPass[lang] : T.linePass[lang]) + '</span>';
+    }
     if (e.bus) {
-      out += '<span class="gt-line">🚌 ' + T.busStop[lang] + ' ' + e.bus.lines.map(esc).join(', ') + ' — ' +
-        T.stopWord[lang] + ' ' + esc(e.bus.stop.replace(/\s*\([^)]*\)\s*$/, '')) + ', ' + e.bus.dist + ' m</span>';
-    } else if (e.bus === null) {
-      out += '<span class="gt-line gt-soft">🚌 ' + T.noBus[lang] + '</span>';
+      out += '<span class="gt-line gt-soft">🚏 ' + T.stopWord[lang] + ' ' +
+        esc(e.bus.stop.replace(/\s*\([^)]*\)\s*$/, '')) + ', ' + e.bus.dist + ' m (' + e.bus.lines.map(esc).join(', ') + ')</span>';
+    }
+    if (!lines.length && !e.bus && e.lines !== undefined) {
+      out += '<span class="gt-line gt-soft">🚌 ' + T.noRoute[lang] + '</span>';
     }
     return out + '</div>';
   }).join('');
