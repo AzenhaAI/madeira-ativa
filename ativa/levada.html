@@ -112,6 +112,14 @@
   .route { font-size: 14px; color: var(--ink); margin: 6px 0; }
   .route .arrow { color: var(--soft); margin: 0 6px; }
   .route .lbl { color: var(--soft); }
+  .getthere { margin: 6px 0 4px; font-size: 13.5px; }
+  .getthere summary { cursor: pointer; color: var(--accent); font-weight: 600; }
+  .getthere .gt-end { margin: 8px 0 0 2px; display: flex; flex-direction: column; gap: 2px; }
+  .getthere .gt-title { font-weight: 700; }
+  .getthere .gt-line { color: inherit; text-decoration: none; }
+  .getthere a.gt-line:hover { color: var(--accent); text-decoration: underline; }
+  .getthere .gt-soft { color: var(--soft); }
+  .getthere .gt-sig { display: inline-block; margin-top: 8px; font-size: 12.5px; color: var(--soft); }
   .desc { font-size: 14px; color: #3c4a40; line-height: 1.45; margin: 8px 0 0; }
   .diff { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: var(--soft); }
   .diff-meter { display: inline-flex; gap: 2px; }
@@ -415,6 +423,20 @@ var T = {
   loop:  { en: 'Loop', pt: 'Circular' },
   oneway:{ en: 'One way', pt: 'Ida' },
   start: { en: 'Start', pt: 'Início' },
+  getThere:  { en: 'How to get there', pt: 'Como chegar' },
+  upperEnd:  { en: 'Upper end', pt: 'Extremo superior' },
+  lowerEnd:  { en: 'Lower end', pt: 'Extremo inferior' },
+  trailEnd:  { en: 'Trail end', pt: 'Extremo do percurso' },
+  loopEnd:   { en: 'Start and finish', pt: 'Início e fim' },
+  carPark:   { en: 'Drive to the car park', pt: 'Ir de carro até ao parque' },
+  fromPath:  { en: 'from the path', pt: 'do percurso' },
+  paid:      { en: 'paid', pt: 'pago' },
+  driveEnd:  { en: 'This end on Google Maps', pt: 'Este extremo no Google Maps' },
+  noPark:    { en: 'no mapped car park nearby', pt: 'sem parque mapeado perto' },
+  busStop:   { en: 'Bus', pt: 'Autocarro' },
+  stopWord:  { en: 'stop', pt: 'paragem' },
+  noBus:     { en: 'No Funchal urban bus stop within 800 m', pt: 'Sem paragem urbana do Funchal a menos de 800 m' },
+  interurb:  { en: 'Interurban bus timetables (SIGA)', pt: 'Horários interurbanos (SIGA)' },
   end:   { en: 'End', pt: 'Fim' },
   fee:   { en: 'Ticket required', pt: 'Bilhete obrigatório' },
   guide: { en: 'Guide & photos ↗', pt: 'Guia e fotos ↗' },
@@ -592,6 +614,7 @@ function render() {
       '<div class="stats">' + stats.join('') + diffEl + '</div>' +
       spark +
       route +
+      getThere(l) +
       (desc ? '<p class="desc">' + esc(desc) + '</p>' : '') +
       '<div class="card-links">' + links + '</div>' +
     '</div>';
@@ -644,6 +667,49 @@ function wxEmoji(code) {
   if (code >= 95) return '⛈'; if (code >= 80) return '🌧'; if (code >= 71) return '🌨';
   if (code >= 61) return '🌧'; if (code >= 51) return '🌦'; if (code >= 45) return '🌫';
   if (code === 3) return '☁️'; if (code >= 1) return '🌤'; return '☀️';
+}
+
+// How to reach each end of a trail: height, directions (to the nearest car park
+// if one is mapped within 600 m, else to the end itself) and the nearest Funchal
+// urban bus stop. The two ends are called upper and lower only when they differ
+// by 150 m or more — the elevation model flattens sharp summits, and on a ridge
+// walk like PR 1 it would name the wrong one. A missing car park answer (source
+// down on the last build) is left out rather than shown as "none".
+function getThere(l) {
+  var a = l.access;
+  if (!a || !a.ends || !a.ends.length) return '';
+  var ends = a.ends;
+  var spread = ends.length === 2 ? ends[0].elev - ends[1].elev : 0;
+  function dirUrl(lat, lon) { return 'https://www.google.com/maps/dir/?api=1&destination=' + lat + ',' + lon; }
+  // A trail end with no car park near it may be a summit no road reaches; show
+  // the place, and leave the route to the person who knows how they are coming.
+  function placeUrl(lat, lon) { return 'https://www.google.com/maps/search/?api=1&query=' + lat + ',' + lon; }
+  var rows = ends.map(function (e, i) {
+    var title = ends.length === 1 ? T.loopEnd[lang]
+      : spread >= 150 ? (i === 0 ? T.upperEnd[lang] : T.lowerEnd[lang])
+      : T.trailEnd[lang];
+    var out = '<div class="gt-end"><div class="gt-title">' + (i === 0 && spread >= 150 ? '▲ ' : spread >= 150 ? '▼ ' : '● ') +
+      esc(title) + ' · ' + e.elev + ' m</div>';
+    if (e.parking) {
+      out += '<a class="gt-line" target="_blank" rel="noopener" href="' + dirUrl(e.parking.lat, e.parking.lon) + '">🚗 ' +
+        T.carPark[lang] + (e.parking.name ? ' ' + esc(e.parking.name) : '') + ' — ' + e.parking.dist + ' m ' + T.fromPath[lang] +
+        (e.parking.fee === 'yes' ? ' · ' + T.paid[lang] : '') + '</a>';
+    } else if (e.parking === null) {
+      out += '<a class="gt-line" target="_blank" rel="noopener" href="' + placeUrl(e.lat, e.lon) + '">📍 ' +
+        T.driveEnd[lang] + ' <span class="gt-soft">(' + T.noPark[lang] + ')</span></a>';
+    } else {
+      out += '<a class="gt-line" target="_blank" rel="noopener" href="' + placeUrl(e.lat, e.lon) + '">📍 ' + T.driveEnd[lang] + '</a>';
+    }
+    if (e.bus) {
+      out += '<span class="gt-line">🚌 ' + T.busStop[lang] + ' ' + e.bus.lines.map(esc).join(', ') + ' — ' +
+        T.stopWord[lang] + ' ' + esc(e.bus.stop.replace(/\s*\([^)]*\)\s*$/, '')) + ', ' + e.bus.dist + ' m</span>';
+    } else if (e.bus === null) {
+      out += '<span class="gt-line gt-soft">🚌 ' + T.noBus[lang] + '</span>';
+    }
+    return out + '</div>';
+  }).join('');
+  return '<details class="getthere"><summary>' + T.getThere[lang] + '</summary>' + rows +
+    '<a class="gt-sig" href="https://siga.madeira.gov.pt/horarios" target="_blank" rel="noopener">' + T.interurb[lang] + ' ↗</a></details>';
 }
 
 // Which IPMA warning zone a trail walks in. IPMA splits Madeira into the

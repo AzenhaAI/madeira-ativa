@@ -92,6 +92,24 @@
         "duration": "3 hours",
         "start_end": "Casa de Abrigo do Pico Ruivo / Ilha",
         "duration_min": 180
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.7603,
+            "lon": -16.94154,
+            "elev": 1722,
+            "parking": null,
+            "bus": null
+          },
+          {
+            "lat": 32.80594,
+            "lon": -16.91146,
+            "elev": 459,
+            "parking": null,
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -149,6 +167,30 @@
         "duration": "1:30 hours",
         "start_end": "Achada do Teixeira / Pico Ruivo",
         "duration_min": 90
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.76014,
+            "lon": -16.94334,
+            "elev": 1731,
+            "parking": null,
+            "bus": null
+          },
+          {
+            "lat": 32.76488,
+            "lon": -16.92108,
+            "elev": 1571,
+            "parking": {
+              "dist": 20,
+              "name": "Achada do Teixeira",
+              "fee": "no",
+              "lat": 32.76503,
+              "lon": -16.92097
+            },
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -261,6 +303,30 @@
         "duration": "5 hours",
         "start_end": "Casa de Abrigo do Pico Ruivo / Encumeada",
         "duration_min": 300
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.76026,
+            "lon": -16.94158,
+            "elev": 1722,
+            "parking": null,
+            "bus": null
+          },
+          {
+            "lat": 32.75427,
+            "lon": -17.01856,
+            "elev": 973,
+            "parking": {
+              "dist": 83,
+              "name": "",
+              "fee": "no",
+              "lat": 32.75404,
+              "lon": -17.0194
+            },
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -389,6 +455,36 @@
         "duration": "5 hours",
         "start_end": "ER 303 (Ribeiro Frio) / E.R. 102 (Portela)",
         "duration_min": 300
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.73518,
+            "lon": -16.88626,
+            "elev": 891,
+            "parking": {
+              "dist": 24,
+              "name": "",
+              "fee": "",
+              "lat": 32.73505,
+              "lon": -16.88646
+            },
+            "bus": null
+          },
+          {
+            "lat": 32.74572,
+            "lon": -16.82641,
+            "elev": 612,
+            "parking": {
+              "dist": 91,
+              "name": "",
+              "fee": "",
+              "lat": 32.74651,
+              "lon": -16.82617
+            },
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -439,6 +535,36 @@
         "duration": "1:30 hours",
         "start_end": "E.R. 103 (Ribeiro Frio) / Balcões",
         "duration_min": 90
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.73538,
+            "lon": -16.88622,
+            "elev": 891,
+            "parking": {
+              "dist": 43,
+              "name": "",
+              "fee": "",
+              "lat": 32.73505,
+              "lon": -16.88646
+            },
+            "bus": null
+          },
+          {
+            "lat": 32.74159,
+            "lon": -16.89032,
+            "elev": 776,
+            "parking": {
+              "dist": 397,
+              "name": "",
+              "fee": "",
+              "lat": 32.73926,
+              "lon": -16.8871
+            },
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -555,6 +681,36 @@
         "duration": "4 hours",
         "start_end": "E.R. 209 Assobiadores / E.R. 209 Fanal",
         "duration_min": 240
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.76715,
+            "lon": -17.10772,
+            "elev": 1420,
+            "parking": {
+              "dist": 35,
+              "name": "",
+              "fee": "",
+              "lat": 32.76703,
+              "lon": -17.10737
+            },
+            "bus": null
+          },
+          {
+            "lat": 32.81032,
+            "lon": -17.14043,
+            "elev": 1168,
+            "parking": {
+              "dist": 172,
+              "name": "",
+              "fee": "no",
+              "lat": 32.80905,
+              "lon": -17.14148
+            },
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -595,7 +751,25 @@
       "center": [
         32.7693372,
         -17.1241922
-      ]
+      ],
+      "access": {
+        "ends": [
+          {
+            "lat": 32.77274,
+            "lon": -17.12268,
+            "elev": 1325,
+            "parking": null,
+            "bus": null
+          },
+          {
+            "lat": 32.76555,
+            "lon": -17.1259,
+            "elev": 994,
+            "parking": null,
+            "bus": null
+          }
+        ]
+      }
     },
     {
       "code": "PR 14",
@@ -679,6 +853,30 @@
         "duration": "3 hours",
         "start_end": "E.R 209 (Fanal) / E.R 209 (Curral Falso)",
         "duration_min": 180
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.79968,
+            "lon": -17.14471,
+            "elev": 911,
+            "parking": null,
+            "bus": null
+          },
+          {
+            "lat": 32.82592,
+            "lon": -17.15793,
+            "elev": 838,
+            "parking": {
+              "dist": 45,
+              "name": "",
+              "fee": "",
+              "lat": 32.82597,
+              "lon": -17.15841
+            },
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -732,6 +930,36 @@
         "duration": "1:30 hours",
         "start_end": "E.R. 209 (Curral Falso) / Ribeira da Janela",
         "duration_min": 90
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.82592,
+            "lon": -17.15793,
+            "elev": 838,
+            "parking": {
+              "dist": 45,
+              "name": "",
+              "fee": "",
+              "lat": 32.82597,
+              "lon": -17.15841
+            },
+            "bus": null
+          },
+          {
+            "lat": 32.84416,
+            "lon": -17.15506,
+            "elev": 441,
+            "parking": {
+              "dist": 443,
+              "name": "",
+              "fee": "",
+              "lat": 32.84677,
+              "lon": -17.15864
+            },
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -793,6 +1021,30 @@
         "duration": "3:30 hours",
         "start_end": "Ginjas / Ribeira do Inferno",
         "duration_min": 210
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.78836,
+            "lon": -17.07713,
+            "elev": 713,
+            "parking": null,
+            "bus": null
+          },
+          {
+            "lat": 32.77907,
+            "lon": -17.04932,
+            "elev": 618,
+            "parking": {
+              "dist": 139,
+              "name": "",
+              "fee": "",
+              "lat": 32.77986,
+              "lon": -17.04816
+            },
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -911,6 +1163,30 @@
         "duration": "6:30 hours",
         "start_end": "Lombo do Mouro / Encumeada",
         "duration_min": 390
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.77212,
+            "lon": -17.06469,
+            "elev": 1297,
+            "parking": null,
+            "bus": null
+          },
+          {
+            "lat": 32.7542,
+            "lon": -17.01914,
+            "elev": 973,
+            "parking": {
+              "dist": 30,
+              "name": "",
+              "fee": "no",
+              "lat": 32.75404,
+              "lon": -17.0194
+            },
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -985,6 +1261,30 @@
         "duration": "3:30 hours",
         "start_end": "São Jorge Wastewater Treatment Plant / Ribeiro Bonito",
         "duration_min": 210
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.79576,
+            "lon": -16.93691,
+            "elev": 674,
+            "parking": null,
+            "bus": null
+          },
+          {
+            "lat": 32.81695,
+            "lon": -16.92462,
+            "elev": 531,
+            "parking": {
+              "dist": 11,
+              "name": "",
+              "fee": "no",
+              "lat": 32.81685,
+              "lon": -16.92463
+            },
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -1034,6 +1334,36 @@
         "duration": "1:20 hours",
         "start_end": "Prazeres / Paul do Mar",
         "duration_min": 80
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.75248,
+            "lon": -17.21693,
+            "elev": 520,
+            "parking": {
+              "dist": 27,
+              "name": "Parking Hotel Jardim Atlântico",
+              "fee": "no",
+              "lat": 32.75269,
+              "lon": -17.21679
+            },
+            "bus": null
+          },
+          {
+            "lat": 32.75296,
+            "lon": -17.22401,
+            "elev": 38,
+            "parking": {
+              "dist": 69,
+              "name": "",
+              "fee": "no",
+              "lat": 32.75238,
+              "lon": -17.22427
+            },
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -1143,6 +1473,30 @@
         "duration": "4:30 hours",
         "start_end": "Curral das Freiras / Lombo do Urzal",
         "duration_min": 270
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.74257,
+            "lon": -16.96608,
+            "elev": 701,
+            "parking": null,
+            "bus": {
+              "dist": 124,
+              "stop": "Pico Furão  3A (CF62)",
+              "lines": [
+                "81"
+              ]
+            }
+          },
+          {
+            "lat": 32.78216,
+            "lon": -16.97857,
+            "elev": 485,
+            "parking": null,
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -1203,7 +1557,25 @@
       "center": [
         33.085963,
         -16.320711
-      ]
+      ],
+      "access": {
+        "ends": [
+          {
+            "lat": 33.08104,
+            "lon": -16.33306,
+            "elev": 352,
+            "parking": null,
+            "bus": null
+          },
+          {
+            "lat": 33.09042,
+            "lon": -16.32319,
+            "elev": 350,
+            "parking": null,
+            "bus": null
+          }
+        ]
+      }
     },
     {
       "code": "PR 2 VO",
@@ -1261,6 +1633,24 @@
         "duration": "2:15 hours",
         "start_end": "Moledo / Canhão Viewpoint",
         "duration_min": 135
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 33.08104,
+            "lon": -16.33306,
+            "elev": 352,
+            "parking": null,
+            "bus": null
+          },
+          {
+            "lat": 33.09042,
+            "lon": -16.32319,
+            "elev": 350,
+            "parking": null,
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -1317,6 +1707,36 @@
         "duration": "1:30 hours",
         "start_end": "Encumeada / Ribeira Grande",
         "duration_min": 90
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.75437,
+            "lon": -17.01816,
+            "elev": 955,
+            "parking": {
+              "dist": 122,
+              "name": "",
+              "fee": "no",
+              "lat": 32.75404,
+              "lon": -17.0194
+            },
+            "bus": null
+          },
+          {
+            "lat": 32.77437,
+            "lon": -17.02378,
+            "elev": 293,
+            "parking": {
+              "dist": 371,
+              "name": "",
+              "fee": "no",
+              "lat": 32.77421,
+              "lon": -17.02775
+            },
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -1348,7 +1768,37 @@
       "center": [
         32.7585693,
         -17.0195646
-      ]
+      ],
+      "access": {
+        "ends": [
+          {
+            "lat": 32.75796,
+            "lon": -17.01837,
+            "elev": 863,
+            "parking": {
+              "dist": 128,
+              "name": "",
+              "fee": "no",
+              "lat": 32.75795,
+              "lon": -17.017
+            },
+            "bus": null
+          },
+          {
+            "lat": 32.7592,
+            "lon": -17.02071,
+            "elev": 811,
+            "parking": {
+              "dist": 366,
+              "name": "",
+              "fee": "no",
+              "lat": 32.76028,
+              "lon": -17.01702
+            },
+            "bus": null
+          }
+        ]
+      }
     },
     {
       "code": "PR 22",
@@ -1398,6 +1848,36 @@
         "duration": "45 minutes",
         "start_end": "Chão dos Louros / Chão dos Louros",
         "duration_min": 45
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.75667,
+            "lon": -17.01682,
+            "elev": 886,
+            "parking": {
+              "dist": 143,
+              "name": "",
+              "fee": "no",
+              "lat": 32.75795,
+              "lon": -17.017
+            },
+            "bus": null
+          },
+          {
+            "lat": 32.76041,
+            "lon": -17.01502,
+            "elev": 805,
+            "parking": {
+              "dist": 155,
+              "name": "",
+              "fee": "no",
+              "lat": 32.76153,
+              "lon": -17.016
+            },
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -1433,7 +1913,37 @@
       "center": [
         32.6571901,
         -16.8439018
-      ]
+      ],
+      "access": {
+        "ends": [
+          {
+            "lat": 32.65863,
+            "lon": -16.84394,
+            "elev": 305,
+            "parking": {
+              "dist": 384,
+              "name": "",
+              "fee": "no",
+              "lat": 32.65587,
+              "lon": -16.84147
+            },
+            "bus": null
+          },
+          {
+            "lat": 32.65374,
+            "lon": -16.84323,
+            "elev": 279,
+            "parking": {
+              "dist": 69,
+              "name": "",
+              "fee": "",
+              "lat": 32.65373,
+              "lon": -16.84396
+            },
+            "bus": null
+          }
+        ]
+      }
     },
     {
       "code": "PR 3",
@@ -1523,6 +2033,24 @@
         "duration": "2:40 hours",
         "start_end": "Pico do Areeiro / Ribeira das Cales - Funchal Ecological Park Welcome Centre",
         "duration_min": 160
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 33.07503,
+            "lon": -16.32034,
+            "elev": 138,
+            "parking": null,
+            "bus": null
+          },
+          {
+            "lat": 33.08382,
+            "lon": -16.34086,
+            "elev": 130,
+            "parking": null,
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -1590,6 +2118,43 @@
         "duration": "2 hours",
         "start_end": "Ribeira das Cales - Funchal Ecological Park Welcome Centre / Monte",
         "duration_min": 120
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.70134,
+            "lon": -16.90301,
+            "elev": 1134,
+            "parking": {
+              "dist": 41,
+              "name": "",
+              "fee": "no",
+              "lat": 32.70101,
+              "lon": -16.9028
+            },
+            "bus": null
+          },
+          {
+            "lat": 32.67661,
+            "lon": -16.90229,
+            "elev": 584,
+            "parking": {
+              "dist": 31,
+              "name": "",
+              "fee": "",
+              "lat": 32.67677,
+              "lon": -16.90202
+            },
+            "bus": {
+              "dist": 121,
+              "stop": "Largo Fonte (569)",
+              "lines": [
+                "21",
+                "48"
+              ]
+            }
+          }
+        ]
       }
     },
     {
@@ -1686,6 +2251,30 @@
         "duration": "3 hours",
         "start_end": "Miradouro da Portela / Maroços",
         "duration_min": 180
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.74716,
+            "lon": -16.82576,
+            "elev": 577,
+            "parking": {
+              "dist": 82,
+              "name": "",
+              "fee": "",
+              "lat": 32.74651,
+              "lon": -16.82617
+            },
+            "bus": null
+          },
+          {
+            "lat": 32.75002,
+            "lon": -16.79471,
+            "elev": 535,
+            "parking": null,
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -1758,6 +2347,30 @@
         "duration": "3 hours",
         "start_end": "Rabaçal (E.R. 105) / 25 Fontes",
         "duration_min": 180
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.75399,
+            "lon": -17.13297,
+            "elev": 1276,
+            "parking": {
+              "dist": 133,
+              "name": "",
+              "fee": "no",
+              "lat": 32.75297,
+              "lon": -17.13222
+            },
+            "bus": null
+          },
+          {
+            "lat": 32.76554,
+            "lon": -17.12552,
+            "elev": 1022,
+            "parking": null,
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -1817,6 +2430,30 @@
         "duration": "2 hours",
         "start_end": "Rabaçal (E.R. 105) / Risco",
         "duration_min": 120
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.75399,
+            "lon": -17.13297,
+            "elev": 1276,
+            "parking": {
+              "dist": 133,
+              "name": "",
+              "fee": "no",
+              "lat": 32.75297,
+              "lon": -17.13222
+            },
+            "bus": null
+          },
+          {
+            "lat": 32.76013,
+            "lon": -17.12341,
+            "elev": 1122,
+            "parking": null,
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -1881,6 +2518,30 @@
         "duration": "2:30 hours",
         "start_end": "Rabaçal (E.R. 105) / Water spring of Levada do Alecrim (Lagoa 'Dona Beja')",
         "duration_min": 150
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.7569,
+            "lon": -17.11199,
+            "elev": 1334,
+            "parking": null,
+            "bus": null
+          },
+          {
+            "lat": 32.75399,
+            "lon": -17.13297,
+            "elev": 1276,
+            "parking": {
+              "dist": 133,
+              "name": "",
+              "fee": "no",
+              "lat": 32.75297,
+              "lon": -17.13222
+            },
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -1935,6 +2596,24 @@
         "duration": "1:30 hours",
         "start_end": "Casa de Abrigo do Rabaçal / Lagoa do Vento",
         "duration_min": 90
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.7577,
+            "lon": -17.12053,
+            "elev": 1267,
+            "parking": null,
+            "bus": null
+          },
+          {
+            "lat": 32.76095,
+            "lon": -17.13357,
+            "elev": 1068,
+            "parking": null,
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -2000,7 +2679,37 @@
       "center": [
         32.7686327,
         -17.1443301
-      ]
+      ],
+      "access": {
+        "ends": [
+          {
+            "lat": 32.77145,
+            "lon": -17.15371,
+            "elev": 1055,
+            "parking": {
+              "dist": 289,
+              "name": "",
+              "fee": "",
+              "lat": 32.76885,
+              "lon": -17.15356
+            },
+            "bus": null
+          },
+          {
+            "lat": 32.75882,
+            "lon": -17.13435,
+            "elev": 1048,
+            "parking": {
+              "dist": 437,
+              "name": "Rabaçal",
+              "fee": "no",
+              "lat": 32.7549,
+              "lon": -17.13393
+            },
+            "bus": null
+          }
+        ]
+      }
     },
     {
       "code": "PR 6.5",
@@ -2057,6 +2766,30 @@
         "duration": "1h30",
         "start_end": "Paul da Serra (ER209) / 25 Fontes",
         "duration_min": 90
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.76244,
+            "lon": -17.09942,
+            "elev": 1411,
+            "parking": {
+              "dist": 31,
+              "name": "",
+              "fee": "no",
+              "lat": 32.76236,
+              "lon": -17.09974
+            },
+            "bus": null
+          },
+          {
+            "lat": 32.76472,
+            "lon": -17.12693,
+            "elev": 984,
+            "parking": null,
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -2096,7 +2829,31 @@
       "center": [
         32.755878,
         -17.1423732
-      ]
+      ],
+      "access": {
+        "ends": [
+          {
+            "lat": 32.76165,
+            "lon": -17.13494,
+            "elev": 1048,
+            "parking": null,
+            "bus": null
+          },
+          {
+            "lat": 32.75372,
+            "lon": -17.14914,
+            "elev": 1005,
+            "parking": {
+              "dist": 6,
+              "name": "",
+              "fee": "",
+              "lat": 32.75377,
+              "lon": -17.14912
+            },
+            "bus": null
+          }
+        ]
+      }
     },
     {
       "code": "PR 6.7",
@@ -2137,7 +2894,31 @@
       "center": [
         32.7544387,
         -17.1405018
-      ]
+      ],
+      "access": {
+        "ends": [
+          {
+            "lat": 32.75462,
+            "lon": -17.13399,
+            "elev": 1282,
+            "parking": {
+              "dist": 32,
+              "name": "Rabaçal",
+              "fee": "no",
+              "lat": 32.7549,
+              "lon": -17.13393
+            },
+            "bus": null
+          },
+          {
+            "lat": 32.75588,
+            "lon": -17.14237,
+            "elev": 1035,
+            "parking": null,
+            "bus": null
+          }
+        ]
+      }
     },
     {
       "code": "PR 6.8",
@@ -2174,7 +2955,31 @@
       "center": [
         32.750833,
         -17.1293331
-      ]
+      ],
+      "access": {
+        "ends": [
+          {
+            "lat": 32.74832,
+            "lon": -17.12539,
+            "elev": 1282,
+            "parking": null,
+            "bus": null
+          },
+          {
+            "lat": 32.75373,
+            "lon": -17.13315,
+            "elev": 1276,
+            "parking": {
+              "dist": 121,
+              "name": "",
+              "fee": "no",
+              "lat": 32.75297,
+              "lon": -17.13222
+            },
+            "bus": null
+          }
+        ]
+      }
     },
     {
       "code": "PR 8",
@@ -2247,6 +3052,30 @@
         "duration": "2:30 hours",
         "start_end": "Baía d'Abra / Casa do Sardinha",
         "duration_min": 150
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.74326,
+            "lon": -16.70104,
+            "elev": 81,
+            "parking": {
+              "dist": 12,
+              "name": "",
+              "fee": "no",
+              "lat": 32.74323,
+              "lon": -16.70116
+            },
+            "bus": null
+          },
+          {
+            "lat": 32.74244,
+            "lon": -16.68273,
+            "elev": 44,
+            "parking": null,
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -2347,6 +3176,30 @@
         "duration": "6:30 hours",
         "start_end": "Queimadas Forest Park / Caldeirão do Inferno",
         "duration_min": 390
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.76759,
+            "lon": -16.94834,
+            "elev": 1107,
+            "parking": null,
+            "bus": null
+          },
+          {
+            "lat": 32.78371,
+            "lon": -16.90597,
+            "elev": 893,
+            "parking": {
+              "dist": 88,
+              "name": "",
+              "fee": "yes",
+              "lat": 32.78442,
+              "lon": -16.90557
+            },
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -2389,7 +3242,37 @@
       "center": [
         32.7813521,
         -16.902472
-      ]
+      ],
+      "access": {
+        "ends": [
+          {
+            "lat": 32.78095,
+            "lon": -16.90706,
+            "elev": 917,
+            "parking": {
+              "dist": 309,
+              "name": "",
+              "fee": "no",
+              "lat": 32.78296,
+              "lon": -16.90478
+            },
+            "bus": null
+          },
+          {
+            "lat": 32.77972,
+            "lon": -16.89667,
+            "elev": 869,
+            "parking": {
+              "dist": 32,
+              "name": "",
+              "fee": "no",
+              "lat": 32.77955,
+              "lon": -16.89639
+            },
+            "bus": null
+          }
+        ]
+      }
     },
     {
       "code": "PR1",
@@ -2444,7 +3327,25 @@
       "center": [
         33.0946277,
         -16.3107595
-      ]
+      ],
+      "access": {
+        "ends": [
+          {
+            "lat": 33.09379,
+            "lon": -16.29959,
+            "elev": 375,
+            "parking": null,
+            "bus": null
+          },
+          {
+            "lat": 33.09668,
+            "lon": -16.31475,
+            "elev": 171,
+            "parking": null,
+            "bus": null
+          }
+        ]
+      }
     },
     {
       "code": "PR 1",
@@ -2521,6 +3422,30 @@
         "duration": "3 hours",
         "start_end": "Pico do Areeiro Viewpoint / Pico Ruivo",
         "duration_min": 180
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.73547,
+            "lon": -16.92873,
+            "elev": 1785,
+            "parking": {
+              "dist": 60,
+              "name": "",
+              "fee": "no",
+              "lat": 32.73494,
+              "lon": -16.92867
+            },
+            "bus": null
+          },
+          {
+            "lat": 32.76014,
+            "lon": -16.94334,
+            "elev": 1731,
+            "parking": null,
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -2647,6 +3572,36 @@
         "duration": "5 hours",
         "start_end": "Boca da Corrida Viewpoint / E.R. 228 (Encumeada)",
         "duration_min": 300
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.71097,
+            "lon": -16.98685,
+            "elev": 1239,
+            "parking": {
+              "dist": 9,
+              "name": "",
+              "fee": "no",
+              "lat": 32.71103,
+              "lon": -16.98679
+            },
+            "bus": null
+          },
+          {
+            "lat": 32.75333,
+            "lon": -17.02107,
+            "elev": 996,
+            "parking": {
+              "dist": 3,
+              "name": "Startpoint PR12",
+              "fee": "no",
+              "lat": 32.75336,
+              "lon": -17.02105
+            },
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -2718,6 +3673,30 @@
         "duration": "2:10 hours",
         "start_end": "Poço da Neve / Casa do Barreiro",
         "duration_min": 130
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.72598,
+            "lon": -16.92474,
+            "elev": 1663,
+            "parking": {
+              "dist": 470,
+              "name": "",
+              "fee": "yes",
+              "lat": 32.72979,
+              "lon": -16.9269
+            },
+            "bus": null
+          },
+          {
+            "lat": 32.6953,
+            "lon": -16.90936,
+            "elev": 982,
+            "parking": null,
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -2768,6 +3747,36 @@
         "duration": "1:30 hours",
         "start_end": "Prazeres / Jardim do Mar (Largo da Igreja)",
         "duration_min": 90
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.74843,
+            "lon": -17.21012,
+            "elev": 563,
+            "parking": {
+              "dist": 517,
+              "name": "Parque Público",
+              "fee": "",
+              "lat": 32.75308,
+              "lon": -17.21
+            },
+            "bus": null
+          },
+          {
+            "lat": 32.73775,
+            "lon": -17.21153,
+            "elev": 44,
+            "parking": {
+              "dist": 88,
+              "name": "",
+              "fee": "no",
+              "lat": 32.73774,
+              "lon": -17.21059
+            },
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -2836,7 +3845,31 @@
       "center": [
         32.745097,
         -17.0677342
-      ]
+      ],
+      "access": {
+        "ends": [
+          {
+            "lat": 32.75762,
+            "lon": -17.0604,
+            "elev": 1553,
+            "parking": {
+              "dist": 96,
+              "name": "",
+              "fee": "no",
+              "lat": 32.75749,
+              "lon": -17.05938
+            },
+            "bus": null
+          },
+          {
+            "lat": 32.74032,
+            "lon": -17.06092,
+            "elev": 1518,
+            "parking": null,
+            "bus": null
+          }
+        ]
+      }
     },
     {
       "code": "PR 28",
@@ -2930,7 +3963,31 @@
       "center": [
         32.7760895,
         -17.1388993
-      ]
+      ],
+      "access": {
+        "ends": [
+          {
+            "lat": 32.78763,
+            "lon": -17.13819,
+            "elev": 1056,
+            "parking": null,
+            "bus": null
+          },
+          {
+            "lat": 32.74584,
+            "lon": -17.14723,
+            "elev": 819,
+            "parking": {
+              "dist": 348,
+              "name": "",
+              "fee": "",
+              "lat": 32.74465,
+              "lon": -17.15067
+            },
+            "bus": null
+          }
+        ]
+      }
     },
     {
       "code": "PR 3",
@@ -2999,6 +4056,24 @@
         "duration": "1:30 hours",
         "start_end": "Camacha / Graça Chapel",
         "duration_min": 90
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 33.07503,
+            "lon": -16.32034,
+            "elev": 138,
+            "parking": null,
+            "bus": null
+          },
+          {
+            "lat": 33.08382,
+            "lon": -16.34086,
+            "elev": 130,
+            "parking": null,
+            "bus": null
+          }
+        ]
       }
     },
     {
@@ -3122,6 +4197,30 @@
         "duration": "3:30 hours",
         "start_end": "Ribeira da Cruz (E.R. 101) / Junqueira (Tornadouro)",
         "duration_min": 210
+      },
+      "access": {
+        "ends": [
+          {
+            "lat": 32.81815,
+            "lon": -17.20248,
+            "elev": 922,
+            "parking": null,
+            "bus": null
+          },
+          {
+            "lat": 32.85176,
+            "lon": -17.16648,
+            "elev": 403,
+            "parking": {
+              "dist": 25,
+              "name": "",
+              "fee": "",
+              "lat": 32.85167,
+              "lon": -17.16673
+            },
+            "bus": null
+          }
+        ]
       }
     }
   ]
