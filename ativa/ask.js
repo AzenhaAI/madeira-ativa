@@ -54,6 +54,10 @@
     buses:     { en: 'buses', pt: 'autocarros' },
     noBus:     { en: 'no bus route mapped near either end', pt: 'sem linha de autocarro mapeada perto dos extremos' },
     trailPage: { en: 'Full trail page', pt: 'Página do percurso' },
+    nextBus:   { en: 'Next bus', pt: 'Próximo autocarro' },
+    onPath:    { en: 'On the path', pt: 'No trilho' },
+    pathSrc:   { en: 'OpenStreetMap; route mapped on', pt: 'OpenStreetMap; percurso mapeado em' },
+    webcam:    { en: 'Live webcam', pt: 'Webcam em direto' },
     todayHead: { en: 'Best bets for today', pt: 'Melhores opções para hoje' },
     todayWarn: { en: 'Every Madeira zone has a warning today — these are the least affected.',
                  pt: 'Todas as zonas da Madeira têm aviso hoje — estes são os menos afetados.' },
@@ -182,6 +186,20 @@
       }
       html += '<dt>IPMA</dt><dd>' + (warn ? warnSentence(warn) : t('noWarn')) + '</dd>';
       if (reach) html += '<dt>' + t('getThere') + '</dt><dd>' + reach + '</dd>';
+      // Next departures where Funchal's urban timetable reaches an end.
+      ends.forEach(function (e) {
+        var nb = e.bus ? nextBuses(e.bus.departures, 3) : [];
+        if (nb.length) html += '<dt>' + t('nextBus') + '</dt><dd>' + nb.map(function (b) {
+          return (b.today ? '' : t('tomorrow') + ' ') + b.time + ' ' + esc(b.line) + ' → ' + esc(b.to);
+        }).join(' · ') + ' (' + esc(e.bus.stop.replace(/\s*\([^)]*\)\s*$/, '')) + ')</dd>';
+      });
+      // Railings, narrow ledges, tunnels — the question a tester asked first.
+      var pf = pathFacts(l.exposure, lang);
+      if (pf.length) html += '<dt>' + t('onPath') + '</dt><dd>' + pf.map(esc).join('; ') + '. <span class="a-soft">(' +
+        t('pathSrc') + ' ' + l.exposure.mapped_pct + '%)</span></dd>';
+      ((l.access && l.access.webcams) || []).forEach(function (c) {
+        html += '<dt>' + t('webcam') + '</dt><dd><a href="' + esc(c.url) + '" target="_blank" rel="noopener">' + esc(c.name) + ' ↗</a></dd>';
+      });
       html += '</dl><p class="a-links"><a href="/ativa/trail/' + slugify(l.code + ' ' + l.name) + '">' + t('trailPage') + ' →</a></p>';
       return html;
     });

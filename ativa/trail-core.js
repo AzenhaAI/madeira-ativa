@@ -151,3 +151,60 @@ function rankToday(levadas) {
     return picks;
   });
 }
+
+// ---------------------------------------------------------------- by bus
+
+// A trail is reachable by bus when a mapped line passes one of its ends or a
+// Funchal urban stop stands near one. 15 of Madeira's 40 today.
+function reachableByBus(l) {
+  return ((l.access && l.access.ends) || []).some(function (e) {
+    return (e.lines && e.lines.length) || e.bus;
+  });
+}
+
+function madeiraClock() {
+  var s = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Atlantic/Madeira', year: 'numeric', month: '2-digit',
+    day: '2-digit', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(new Date());
+  return { date: s.slice(0, 10), time: s.slice(11, 16) };
+}
+
+// The next departures from an end's urban stop: today's remaining ones, or
+// tomorrow's first if the day is over. [{day, time, line, to}] — empty when the
+// timetable in the file does not reach that far (it covers a week from its build).
+function nextBuses(departures, n) {
+  if (!departures) return [];
+  var now = madeiraClock(), out = [];
+  Object.keys(departures).sort().forEach(function (d) {
+    if (d < now.date || out.length >= n) return;
+    departures[d].forEach(function (x) {
+      if (out.length >= n) return;
+      if (d === now.date && x[0] < now.time) return;
+      out.push({ day: d, today: d === now.date, time: x[0], line: x[1], to: x[2] });
+    });
+  });
+  return out;
+}
+
+// ---------------------------------------------------------- on the path
+
+// What the path itself is like, from OpenStreetMap by length (see
+// scripts/build_trail_exposure.py): railing, narrow ledge, tunnels, demanding
+// ground. Returns short phrases in the reader's language; nothing is said about
+// what was not mapped except how much that is.
+function pathFacts(x, lang) {
+  if (!x || !x.length_km) return [];
+  var pt = lang === 'pt', out = [];
+  if (x.railing_pct || x.no_railing_pct) {
+    var unknown = Math.max(0, 100 - x.railing_pct - x.no_railing_pct);
+    out.push(pt
+      ? 'Corrimão registado em ' + x.railing_pct + '% do percurso, sem corrimão em ' + x.no_railing_pct + '%, desconhecido em ' + unknown + '%'
+      : 'Railing recorded on ' + x.railing_pct + '% of the route, none on ' + x.no_railing_pct + '%, unknown on ' + unknown + '%');
+  } else {
+    out.push(pt ? 'Sem registo de corrimão em nenhum troço' : 'No railing recorded on any section');
+  }
+  if (x.narrow_pct) out.push(pt ? x.narrow_pct + '% do trilho com 0,5 m de largura ou menos' : x.narrow_pct + '% of the path 0.5 m wide or less');
+  if (x.tunnels) out.push(pt ? x.tunnels + (x.tunnels > 1 ? ' túneis' : ' túnel') + ' (' + x.tunnel_m + ' m) — leve lanterna'
+                             : x.tunnels + (x.tunnels > 1 ? ' tunnels' : ' tunnel') + ' (' + x.tunnel_m + ' m) — bring a torch');
+  if (x.demanding_pct) out.push(pt ? x.demanding_pct + '% em terreno de montanha exigente' : x.demanding_pct + '% demanding mountain terrain');
+  return out;
+}

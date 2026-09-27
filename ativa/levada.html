@@ -120,6 +120,9 @@
   .getthere a.gt-line:hover { color: var(--accent); text-decoration: underline; }
   .getthere .gt-soft { color: var(--soft); }
   .getthere .gt-line a { color: var(--accent); font-weight: 700; }
+  .getthere .gt-next b { color: var(--ink); }
+  .onpath { font-size: 13.5px; margin: 6px 0; line-height: 1.45; }
+  .onpath .onpath-h { font-weight: 700; color: var(--accent); }
   .getthere .gt-sig { display: inline-block; margin-top: 8px; font-size: 12.5px; color: var(--soft); }
   .desc { font-size: 14px; color: #3c4a40; line-height: 1.45; margin: 8px 0 0; }
   .diff { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: var(--soft); }
@@ -283,6 +286,7 @@ html.dark{--x:0}
       <a data-nav="open"><span data-lang="en">Open</span><span data-lang="pt">Abertos</span></a>
       <a data-nav="partial"><span data-lang="en">Restricted</span><span data-lang="pt">Restritos</span></a>
       <a data-nav="closed"><span data-lang="en">Closed</span><span data-lang="pt">Encerrados</span></a>
+      <a data-nav="bus">🚌 <span data-lang="en">By bus</span><span data-lang="pt">De autocarro</span></a>
       <span class="nav-spacer"></span>
       <a class="nav-2d" href="/ativa/map?layer=walk">2D ↗</a>
       <a class="nav-3d" href="/ativa/map3d">3D ↗</a>
@@ -444,6 +448,12 @@ var T = {
   lineWord:  { en: 'Bus', pt: 'Autocarro' },
   linesWord: { en: 'Buses', pt: 'Autocarros' },
   noRoute:   { en: 'No bus route mapped near this end', pt: 'Sem linha de autocarro mapeada perto deste extremo' },
+  nextBus:   { en: 'Next', pt: 'Próximos' },
+  tomorrow:  { en: 'tomorrow', pt: 'amanhã' },
+  webcam:    { en: 'Live webcam', pt: 'Webcam em direto' },
+  onPath:    { en: 'On the path', pt: 'No trilho' },
+  pathSrc:   { en: 'OpenStreetMap, where surveyed; mapped on', pt: 'OpenStreetMap, onde levantado; mapeado em' },
+  ofRoute:   { en: 'of the route', pt: 'do percurso' },
   end:   { en: 'End', pt: 'Fim' },
   fee:   { en: 'Ticket required', pt: 'Bilhete obrigatório' },
   guide: { en: 'Guide & photos ↗', pt: 'Guia e fotos ↗' },
@@ -547,7 +557,8 @@ function esc(s) {
 
 function render() {
   var items = data.levadas.slice();
-  if (filter !== 'all') items = items.filter(function (l) { return l.status === filter; });
+  if (filter === 'bus') items = items.filter(reachableByBus);
+  else if (filter !== 'all') items = items.filter(function (l) { return l.status === filter; });
   if (diffFilter) items = items.filter(function (l) { return difficulty(l).level === diffFilter; });
   if (sortBy === 'dist') items.sort(function (a, b) { return (b.distance_km || 0) - (a.distance_km || 0); });
   else if (sortBy === 'climb') items.sort(function (a, b) { return (b.ascent_m || 0) - (a.ascent_m || 0); });
@@ -596,6 +607,7 @@ function render() {
       '<div class="stats">' + stats.join('') + diffEl + '</div>' +
       spark +
       route +
+      pathBlock(l) +
       getThere(l) +
       (desc ? '<p class="desc">' + esc(desc) + '</p>' : '') +
       '<div class="card-links">' + links + '</div>' +
@@ -651,6 +663,16 @@ function wxEmoji(code) {
   if (code === 3) return '☁️'; if (code >= 1) return '🌤'; return '☀️';
 }
 
+// Railings, narrow ledges, tunnels and demanding ground, from OpenStreetMap by
+// length — and how much of the route is mapped at all, so an unsurveyed stretch
+// is never read as a stretch with no drop.
+function pathBlock(l) {
+  var f = pathFacts(l.exposure, lang);
+  if (!f.length) return '';
+  return '<div class="onpath"><span class="onpath-h">' + T.onPath[lang] + '</span> ' + f.map(esc).join(' · ') +
+    ' <span class="gt-soft">(' + T.pathSrc[lang] + ' ' + l.exposure.mapped_pct + '% ' + T.ofRoute[lang] + ')</span></div>';
+}
+
 // How to reach each end of a trail: height, directions (to the nearest car park
 // if one is mapped within 600 m, else to the end itself) and the nearest Funchal
 // urban bus stop. The two ends are called upper and lower only when they differ
@@ -696,12 +718,24 @@ function getThere(l) {
     if (e.bus) {
       out += '<span class="gt-line gt-soft">🚏 ' + T.stopWord[lang] + ' ' +
         esc(e.bus.stop.replace(/\s*\([^)]*\)\s*$/, '')) + ', ' + e.bus.dist + ' m (' + e.bus.lines.map(esc).join(', ') + ')</span>';
+      // Funchal's urban network publishes its timetable as open data, so here
+      // the next departures can be named, both directions, with where each goes.
+      var nb = nextBuses(e.bus.departures, 4);
+      if (nb.length) {
+        out += '<span class="gt-line gt-next">🕒 ' + T.nextBus[lang] + ': ' + nb.map(function (b) {
+          return '<b>' + (b.today ? '' : T.tomorrow[lang] + ' ') + b.time + '</b> ' + esc(b.line) + ' → ' + esc(b.to);
+        }).join(' · ') + '</span>';
+      }
     }
     if (!lines.length && !e.bus && e.lines !== undefined) {
       out += '<span class="gt-line gt-soft">🚌 ' + T.noRoute[lang] + '</span>';
     }
     return out + '</div>';
   }).join('');
+  var cams = (a.webcams || []).map(function (c) {
+    return '<a class="gt-line" href="' + esc(c.url) + '" target="_blank" rel="noopener">📷 ' + T.webcam[lang] + ': ' + esc(c.name) + ' ↗</a>';
+  }).join('');
+  if (cams) rows += '<div class="gt-end">' + cams + '</div>';
   return '<details class="getthere"><summary>' + T.getThere[lang] + '</summary>' + rows +
     '<a class="gt-sig" href="https://siga.madeira.gov.pt/horarios" target="_blank" rel="noopener">' + T.interurb[lang] + ' ↗</a></details>';
 }

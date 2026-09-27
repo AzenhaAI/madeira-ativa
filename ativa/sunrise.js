@@ -66,7 +66,10 @@
       : (lang === 'pt' ? 'Nenhum nascer do sol limpo previsto nestes dias.' : 'No clear sunrise forecast in these days.');
     box.innerHTML =
       '<div class="sr-head"><a href="' + TRAIL + '">' + (lang === 'pt' ? 'Nascer do sol no Pico do Arieiro' : 'Sunrise at Pico do Arieiro') + '</a>' +
-      '<span class="sr-verdict">' + esc(verdict) + '</span></div>' +
+      '<span class="sr-verdict">' + esc(verdict) + '</span>' +
+      // The forecast says what should happen; the camera shows what is.
+      '<a class="sr-cam" href="https://www.netmadeira.com/webcams-madeira/pico-do-arieiro" target="_blank" rel="noopener">📷 ' +
+      (lang === 'pt' ? 'webcam agora' : 'webcam now') + ' ↗</a></div>' +
       '<div class="sr-row">' + cells + '</div>' +
       '<div class="sr-note">' + (lang === 'pt'
         ? 'Previsão Open-Meteo para o cume (1818 m) e a encosta norte (900 m); menos fiável depois do 3.º dia.'
@@ -82,6 +85,7 @@
       '#sunriseArieiro .sr-head a{font-weight:700;color:var(--accent,inherit);text-decoration:none}' +
       '#sunriseArieiro .sr-head a:hover{text-decoration:underline}' +
       '#sunriseArieiro .sr-verdict{font-size:13px;opacity:.8}' +
+      '#sunriseArieiro .sr-cam{margin-left:auto;font-size:13px;font-weight:600}' +
       '#sunriseArieiro .sr-row{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}' +
       '#sunriseArieiro .sr-day{display:flex;flex-direction:column;align-items:center;gap:1px;padding:6px 2px;border-radius:9px;font-size:12px;text-align:center}' +
       '#sunriseArieiro .sr-best{background:rgba(217,164,0,.15);outline:1px solid rgba(217,164,0,.6)}' +

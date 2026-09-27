@@ -1706,8 +1706,11 @@ t.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})
   function pt(){return (document.documentElement.lang||'en')==='pt';}
   var wx='https://api.open-meteo.com/v1/forecast?latitude=32.648,32.735&longitude=-16.908,-16.929'+
     '&elevation=50,1818&current=temperature_2m,weather_code,wind_speed_10m';
+  // Sea level includes the tide; hourly, so the times are to the hour.
   var sea='https://marine-api.open-meteo.com/v1/marine?latitude=32.63&longitude=-16.92'+
-    '&current=wave_height,sea_surface_temperature';
+    '&current=wave_height,sea_surface_temperature&hourly=sea_level_height_msl'+
+    '&forecast_days=2&timezone=Atlantic%2FMadeira';
+  var uv='https://api.ipma.pt/open-data/forecast/meteorology/uv/uv.json';
   var got=null;
   function paint(){
     if(!got)return;
@@ -1719,6 +1722,30 @@ t.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})
     if(m&&m.sea_surface_temperature!=null)
       bits.push('🌊 '+(P?'mar ':'sea ')+m.sea_surface_temperature.toFixed(1)+'°'+
         (m.wave_height!=null?(P?', ondas ':', waves ')+m.wave_height.toFixed(1)+' m':''));
+    // Next high and low water: turning points of the hourly sea level after now.
+    var h=got.sea&&got.sea.hourly;
+    if(h&&h.sea_level_height_msl){
+      var clock=new Intl.DateTimeFormat('sv-SE',{timeZone:'Atlantic/Madeira',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',hourCycle:'h23'}).format(new Date()).replace(' ','T');
+      var L=h.sea_level_height_msl,T=h.time,hi=null,lo=null;
+      for(var i=1;i<L.length-1;i++){
+        if(T[i].slice(0,13)<clock.slice(0,13)||L[i]==null)continue;
+        if(!hi&&L[i]>=L[i-1]&&L[i]>=L[i+1])hi=T[i];
+        if(!lo&&L[i]<=L[i-1]&&L[i]<=L[i+1])lo=T[i];
+        if(hi&&lo)break;
+      }
+      var tt=[];
+      if(hi)tt.push((P?'preia-mar ':'high ')+hi.slice(11,16));
+      if(lo)tt.push((P?'baixa-mar ':'low ')+lo.slice(11,16));
+      if(tt.length)bits.push((P?'maré: ':'tide: ')+tt.join(', '));
+    }
+    // UV from IPMA for Funchal, today; the band words are WHO's.
+    if(got.uv){
+      var day=new Intl.DateTimeFormat('sv-SE',{timeZone:'Atlantic/Madeira'}).format(new Date());
+      var u=got.uv.filter(function(x){return x.globalIdLocal===2310300&&x.data===day;})[0];
+      if(u){var v=parseFloat(u.iUv);
+        var band=v>=11?(P?'extremo':'extreme'):v>=8?(P?'muito alto':'very high'):v>=6?(P?'alto':'high'):v>=3?(P?'moderado':'moderate'):(P?'baixo':'low');
+        bits.push('☀️ UV '+Math.round(v)+' ('+band+')');}
+    }
     now.textContent=bits.join('   ·   ');
     var t=got.trails,txt='';
     if(t){var arr=t.trails||t;var closed=0,total=0;
@@ -1729,8 +1756,8 @@ t.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})
   }
   function get(u){return fetch(u).then(function(r){return r.json();}).catch(function(){return null;});}
   // Each source may fail on its own; the strip shows whatever answered.
-  Promise.all([get(wx),get(sea),get('/ativa/trails_status.json')]).then(function(res){
-    got={wx:Array.isArray(res[0])?res[0]:(res[0]?[res[0]]:null),sea:res[1],trails:res[2]};
+  Promise.all([get(wx),get(sea),get('/ativa/trails_status.json'),get(uv)]).then(function(res){
+    got={wx:Array.isArray(res[0])?res[0]:(res[0]?[res[0]]:null),sea:res[1],trails:res[2],uv:Array.isArray(res[3])?res[3]:null};
     paint();
   });
   new MutationObserver(paint).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});

@@ -1,0 +1,406 @@
+{
+  "note": "Per trail, from OpenStreetMap ways, by length: how much is mapped at all, railing present / recorded absent, path 0.5 m wide or less, demanding mountain hiking (SAC T3+), tunnels. Unmapped length is unknown, not safe.",
+  "built": "2026-09-27T13:10:53",
+  "trails": {
+    "PR 6|Madeira": {
+      "length_km": 4.4,
+      "mapped_pct": 55,
+      "railing_pct": 4,
+      "no_railing_pct": 3,
+      "narrow_pct": 39,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 18|Madeira": {
+      "length_km": 5.0,
+      "mapped_pct": 1,
+      "railing_pct": 0,
+      "no_railing_pct": 1,
+      "narrow_pct": 0,
+      "demanding_pct": 0,
+      "tunnels": 1,
+      "tunnel_m": 14
+    },
+    "PR 6.1|Madeira": {
+      "length_km": 3.1,
+      "mapped_pct": 39,
+      "railing_pct": 0,
+      "no_railing_pct": 0,
+      "narrow_pct": 0,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 9.1|Madeira": {
+      "length_km": 1.8,
+      "mapped_pct": 100,
+      "railing_pct": 0,
+      "no_railing_pct": 0,
+      "narrow_pct": 0,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 8|Madeira": {
+      "length_km": 4.0,
+      "mapped_pct": 91,
+      "railing_pct": 8,
+      "no_railing_pct": 11,
+      "narrow_pct": 0,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 1|Madeira": {
+      "length_km": 5.3,
+      "mapped_pct": 95,
+      "railing_pct": 3,
+      "no_railing_pct": 10,
+      "narrow_pct": 0,
+      "demanding_pct": 55,
+      "tunnels": 5,
+      "tunnel_m": 411
+    },
+    "PR 1.2|Madeira": {
+      "length_km": 2.7,
+      "mapped_pct": 100,
+      "railing_pct": 0,
+      "no_railing_pct": 14,
+      "narrow_pct": 0,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 11|Madeira": {
+      "length_km": 1.4,
+      "mapped_pct": 93,
+      "railing_pct": 0,
+      "no_railing_pct": 0,
+      "narrow_pct": 0,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 12|Madeira": {
+      "length_km": 12.2,
+      "mapped_pct": 99,
+      "railing_pct": 0,
+      "no_railing_pct": 0,
+      "narrow_pct": 0,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 14|Madeira": {
+      "length_km": 6.5,
+      "mapped_pct": 87,
+      "railing_pct": 0,
+      "no_railing_pct": 9,
+      "narrow_pct": 0,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 5|Madeira": {
+      "length_km": 8.2,
+      "mapped_pct": 71,
+      "railing_pct": 1,
+      "no_railing_pct": 2,
+      "narrow_pct": 0,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 7|Madeira": {
+      "length_km": 11.6,
+      "mapped_pct": 72,
+      "railing_pct": 0,
+      "no_railing_pct": 0,
+      "narrow_pct": 12,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 10|Madeira": {
+      "length_km": 11.3,
+      "mapped_pct": 94,
+      "railing_pct": 0,
+      "no_railing_pct": 0,
+      "narrow_pct": 0,
+      "demanding_pct": 0,
+      "tunnels": 6,
+      "tunnel_m": 100
+    },
+    "PR 13|Madeira": {
+      "length_km": 11.1,
+      "mapped_pct": 46,
+      "railing_pct": 0,
+      "no_railing_pct": 2,
+      "narrow_pct": 0,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 19|Madeira": {
+      "length_km": 1.7,
+      "mapped_pct": 92,
+      "railing_pct": 47,
+      "no_railing_pct": 0,
+      "narrow_pct": 0,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 22|Madeira": {
+      "length_km": 1.9,
+      "mapped_pct": 97,
+      "railing_pct": 0,
+      "no_railing_pct": 0,
+      "narrow_pct": 58,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 21|Madeira": {
+      "length_km": 2.9,
+      "mapped_pct": 0,
+      "railing_pct": 0,
+      "no_railing_pct": 0,
+      "narrow_pct": 0,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 1.1|Madeira": {
+      "length_km": 7.0,
+      "mapped_pct": 84,
+      "railing_pct": 0,
+      "no_railing_pct": 1,
+      "narrow_pct": 2,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 2|Madeira": {
+      "length_km": 9.5,
+      "mapped_pct": 0,
+      "railing_pct": 0,
+      "no_railing_pct": 0,
+      "narrow_pct": 0,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 16|Madeira": {
+      "length_km": 3.8,
+      "mapped_pct": 2,
+      "railing_pct": 0,
+      "no_railing_pct": 0,
+      "narrow_pct": 2,
+      "demanding_pct": 0,
+      "tunnels": 4,
+      "tunnel_m": 1253
+    },
+    "PR 20|Madeira": {
+      "length_km": 1.8,
+      "mapped_pct": 61,
+      "railing_pct": 0,
+      "no_railing_pct": 0,
+      "narrow_pct": 0,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 9|Madeira": {
+      "length_km": 8.4,
+      "mapped_pct": 100,
+      "railing_pct": 0,
+      "no_railing_pct": 2,
+      "narrow_pct": 50,
+      "demanding_pct": 0,
+      "tunnels": 13,
+      "tunnel_m": 709
+    },
+    "PR 1.3|Madeira": {
+      "length_km": 10.0,
+      "mapped_pct": 100,
+      "railing_pct": 0,
+      "no_railing_pct": 0,
+      "narrow_pct": 0,
+      "demanding_pct": 50,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 17|Madeira": {
+      "length_km": 15.5,
+      "mapped_pct": 100,
+      "railing_pct": 0,
+      "no_railing_pct": 0,
+      "narrow_pct": 10,
+      "demanding_pct": 0,
+      "tunnels": 7,
+      "tunnel_m": 1511
+    },
+    "PR 6.2|Madeira": {
+      "length_km": 3.5,
+      "mapped_pct": 97,
+      "railing_pct": 0,
+      "no_railing_pct": 1,
+      "narrow_pct": 0,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 6.3|Madeira": {
+      "length_km": 1.9,
+      "mapped_pct": 100,
+      "railing_pct": 0,
+      "no_railing_pct": 2,
+      "narrow_pct": 0,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 23|Madeira": {
+      "length_km": 0.9,
+      "mapped_pct": 1,
+      "railing_pct": 0,
+      "no_railing_pct": 0,
+      "narrow_pct": 0,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 6.6|Madeira": {
+      "length_km": 2.1,
+      "mapped_pct": 61,
+      "railing_pct": 2,
+      "no_railing_pct": 13,
+      "narrow_pct": 45,
+      "demanding_pct": 0,
+      "tunnels": 1,
+      "tunnel_m": 807
+    },
+    "PR 15|Madeira": {
+      "length_km": 2.4,
+      "mapped_pct": 0,
+      "railing_pct": 0,
+      "no_railing_pct": 0,
+      "narrow_pct": 0,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 3|Madeira": {
+      "length_km": 7.1,
+      "mapped_pct": 32,
+      "railing_pct": 0,
+      "no_railing_pct": 11,
+      "narrow_pct": 21,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 3.1|Madeira": {
+      "length_km": 4.0,
+      "mapped_pct": 42,
+      "railing_pct": 0,
+      "no_railing_pct": 0,
+      "narrow_pct": 30,
+      "demanding_pct": 2,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 4|Madeira": {
+      "length_km": 4.9,
+      "mapped_pct": 57,
+      "railing_pct": 0,
+      "no_railing_pct": 0,
+      "narrow_pct": 11,
+      "demanding_pct": 2,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 21 <-> PR 22|Madeira": {
+      "length_km": 0.3,
+      "mapped_pct": 100,
+      "railing_pct": 0,
+      "no_railing_pct": 0,
+      "narrow_pct": 0,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 13.1|Madeira": {
+      "length_km": 1.5,
+      "mapped_pct": 90,
+      "railing_pct": 0,
+      "no_railing_pct": 0,
+      "narrow_pct": 29,
+      "demanding_pct": 2,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 28|Madeira": {
+      "length_km": 10.0,
+      "mapped_pct": 90,
+      "railing_pct": 0,
+      "no_railing_pct": 0,
+      "narrow_pct": 85,
+      "demanding_pct": 0,
+      "tunnels": 1,
+      "tunnel_m": 1660
+    },
+    "PR 6.7|Madeira": {
+      "length_km": 1.7,
+      "mapped_pct": 78,
+      "railing_pct": 0,
+      "no_railing_pct": 0,
+      "narrow_pct": 54,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 27|Madeira": {
+      "length_km": 5.2,
+      "mapped_pct": 0,
+      "railing_pct": 0,
+      "no_railing_pct": 0,
+      "narrow_pct": 0,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 6.4|Madeira": {
+      "length_km": 4.8,
+      "mapped_pct": 2,
+      "railing_pct": 0,
+      "no_railing_pct": 2,
+      "narrow_pct": 0,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 6.8|Madeira": {
+      "length_km": 1.1,
+      "mapped_pct": 100,
+      "railing_pct": 100,
+      "no_railing_pct": 0,
+      "narrow_pct": 0,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    },
+    "PR 6.5|Madeira": {
+      "length_km": 3.3,
+      "mapped_pct": 54,
+      "railing_pct": 0,
+      "no_railing_pct": 0,
+      "narrow_pct": 0,
+      "demanding_pct": 0,
+      "tunnels": 0,
+      "tunnel_m": 0
+    }
+  }
+}
