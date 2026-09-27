@@ -1,7 +1,7 @@
 {
   "note": "Past events — preserved so history is never lost on rebuild",
-  "generated_at": "2026-09-26",
-  "count": 1277,
+  "generated_at": "2026-09-27",
+  "count": 1343,
   "events": [
     {
       "mode": "trail",
@@ -10269,6 +10269,608 @@
       "price": "€10",
       "organizer": "Silent Beats",
       "category": "dance"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Bordado da Madeira\"",
+      "date": "2026-09-26",
+      "location": "Quinta Magnólia - Centro Cultural",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/exposicao-bordado-da-madeira",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Da Laurissilva ao Cosmos",
+      "date": "2026-09-26",
+      "location": "Centro Cultural e de Investigação do Funchal",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/da-laurissilva-ao-cosmos",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Detalhes Invisíveis\"",
+      "date": "2026-09-26",
+      "location": "Casa da Cultura de Câmara de Lobos",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/detalhes-invisiveis",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Discordância Perfeita\"",
+      "date": "2026-09-26",
+      "location": "Galeria Lourdes",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/discordancia-perfeita",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Ilhas Revisitadas\"",
+      "date": "2026-09-26",
+      "location": "MUDAS.Museu de Arte Contemporânea da Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/ilhas-revisitadas",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Imagens e Memórias do Porto Santo\"",
+      "date": "2026-09-26",
+      "location": "Câmara Municipal do Porto Santo",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/imagens-e-memorias-do-porto-santo",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Mudar a Escola para Mudar o Mundo\"",
+      "date": "2026-09-26",
+      "location": "PORTA 33",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/mudar-a-escola-para-mudar-o-mundo",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"O Caminho nas Águas. Depois da Última Ceia\"",
+      "date": "2026-09-26",
+      "location": "Núcleo Histórico de Santo Amaro - Torre do Capitão",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/o-caminho-nas-aguas-depois-da-ultima-ceia",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Romagem das Açucenas\" na Festa de Nossa Senhora do Bom Despacho 2026",
+      "date": "2026-09-26",
+      "location": "Capela da Vera Cruz",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/festas-tradicionais/romagem-das-acucenas-na-festa-de-nossa-senhora-do-bom-despacho-2026",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "40.º Aniversário da Tuna Amadis da Casa do Povo de Gaula",
+      "date": "2026-09-26",
+      "location": "Salão Paroquial de Gaula",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concerto-comemorativo-do-40-o-aniversario-da-tuna-amadis-da-casa-do-povo-de-gaula",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "40th Anniversary Concert of Tuna Amadis",
+      "date": "2026-09-26",
+      "location": "Salão Paroquial de Gaula, Santa Cruz",
+      "url": "",
+      "event_type": "festival",
+      "time": "20:00",
+      "price": "Free",
+      "organizer": "Casa do Povo de Gaula",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "48.º Aniversário da Orquestra de Bandolins da Casa do Povo da Camacha",
+      "date": "2026-09-26",
+      "location": "Igreja Matriz da Camacha",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/48-o-aniversario-da-orquestra-de-bandolins-da-casa-do-povo-da-camacha",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "48th Anniversary of the Casa do Povo da Camacha Mandolin Orchestra",
+      "date": "2026-09-26",
+      "location": "Igreja Paroquial da Camacha, Santa Cruz",
+      "url": "",
+      "event_type": "festival",
+      "time": "19:00",
+      "price": "Free",
+      "organizer": "Casa do Povo da Camacha",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "A Garota Não cme jos da For AGON é CME",
+      "date": "2026-09-26",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2619",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "A Orquestra Clássica da Madeira apresenta nova temporada",
+      "date": "2026-09-26",
+      "location": "Assembleia Legislativa da Região Autónoma da Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/a-orquestra-classica-apresenta-orquestra-jovem-sinfonia-da-madeira",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Adolescência, Sexo e Morte no Campo Miasma",
+      "date": "2026-09-26",
+      "location": "Cinema Forum Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "21:00",
+      "price": "Free",
+      "organizer": "Screenings Funchal",
+      "category": "cinema"
+    },
+    {
+      "mode": "festivals",
+      "name": "Adrian Butterfield: Baroque Music Concert",
+      "date": "2026-09-26",
+      "location": "Grand Hall of the Legislative Assembly of Madeira, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "18:00",
+      "price": "€25",
+      "organizer": "Orquestra Clássica da Madeira",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "Apresentação oficial do Sport",
+      "date": "2026-09-26",
+      "location": "Porto Santo",
+      "url": "https://t.me/festas_madeira/2480",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Arraial · Ponta Delgada",
+      "date": "2026-09-26",
+      "location": "Ponta Delgada",
+      "url": "https://t.me/festas_madeira/2557",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Calheta Family Fest 2026",
+      "date": "2026-09-26",
+      "location": "Praia da Calheta",
+      "url": "",
+      "event_type": "festival",
+      "time": "11:00",
+      "price": "Free",
+      "organizer": "Município da Calheta",
+      "category": "family"
+    },
+    {
+      "mode": "festivals",
+      "name": "Ciclo de Exposições (IN)FLUXO",
+      "date": "2026-09-26",
+      "location": "Sala de exposições da Assembleia Municipal do Porto Santo",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/ciclo-de-exposicoes-in-fluxo",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Cine Machico 2026",
+      "date": "2026-09-26",
+      "location": "Fórum Machico",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/cine-machico-2026",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "CineMachico 2026 – Palestina 36",
+      "date": "2026-09-26",
+      "location": "Fórum Machico Edifício Fórum, Praia de Machico 9200-108",
+      "url": "",
+      "event_type": "festival",
+      "time": "21:00",
+      "price": "Free",
+      "organizer": "Grupo de Teatro de Machico",
+      "category": "cinema"
+    },
+    {
+      "mode": "festivals",
+      "name": "Circular Dances with Isabel Pinto",
+      "date": "2026-09-26",
+      "location": "Praia da Alagoa, Machico",
+      "url": "",
+      "event_type": "festival",
+      "time": "17:00",
+      "price": "Free",
+      "organizer": "Isabel Pinto",
+      "category": "dance"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concert · Caniço",
+      "date": "2026-09-26",
+      "location": "Caniço",
+      "url": "https://t.me/festas_madeira/2486",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concert · Sé",
+      "date": "2026-09-26",
+      "location": "Sé",
+      "url": "https://t.me/festas_madeira/2593",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concerto de Aniversário",
+      "date": "2026-09-26",
+      "location": "Gaula",
+      "url": "https://t.me/festas_madeira/2558",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concertos L 2026",
+      "date": "2026-09-26",
+      "location": "Estalagem da Ponta do Sol",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concertos-l-2026",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concurso Literário António Feliciano Rodrigues \"Castilho\" 2026",
+      "date": "2026-09-26",
+      "location": "Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/concurso-literario-antonio-feliciano-rodrigues-castilho-2026",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Duo Bandonica – Projeto Artístico “Fala-me de Música”",
+      "date": "2026-09-26",
+      "location": "Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/duo-bandonica-projeto-artistico-fala-me-de-musica1",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "EUROPE, DESPORTO",
+      "date": "2026-09-26",
+      "location": "Saúde",
+      "url": "https://t.me/festas_madeira/2580",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Elton John Tribute Concert",
+      "date": "2026-09-26",
+      "location": "Caniço de Baixo, Santa Cruz",
+      "url": "",
+      "event_type": "festival",
+      "time": "21:00",
+      "price": "Free",
+      "organizer": "Capoeira Lounge Bar",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "Exhibition · Funchal",
+      "date": "2026-09-26",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2600",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "FRACTAL 2026 - 8th Edition - FRACTAL Walk",
+      "date": "2026-09-26",
+      "location": "Parque de Estacionamento do CAB, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "16:00",
+      "price": "Free",
+      "organizer": "Associação Cultural FRACTAL",
+      "category": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "FUNCHAL CITY SESSIONS OLIVEIRA o",
+      "date": "2026-09-26",
+      "location": "Sé",
+      "url": "https://t.me/festas_madeira/2603",
+      "event_type": "festival",
+      "time": "21:30",
+      "price": "€2",
+      "organizer": "APCA - Agência de Promoção da Cultura Atlântica"
+    },
+    {
+      "mode": "festivals",
+      "name": "Kaito Winse André Santos convios",
+      "date": "2026-09-26",
+      "location": "Ponta Do Sol",
+      "url": "https://t.me/festas_madeira/2620",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "L Concerts - ZDB presents  Mark william Lewis",
+      "date": "2026-09-26",
+      "location": "Estalagem da Ponta do Sol",
+      "url": "",
+      "event_type": "festival",
+      "time": "22:00",
+      "price": "€10",
+      "organizer": "Estalagem da Ponta do Sol",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "LOBOS PARK INSCRIÇÃOGRATUITA",
+      "date": "2026-09-26",
+      "location": "Câmara De Lobos",
+      "url": "https://t.me/festas_madeira/2618",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Latin Soul Concert",
+      "date": "2026-09-26",
+      "location": "MAMMA - Museum of Modern Art of Madeira, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "18:30",
+      "price": "€25",
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "Literature · Santa Luzia",
+      "date": "2026-09-26",
+      "location": "Santa Luzia",
+      "url": "https://t.me/festas_madeira/2601",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Livrai-nos da Fome!",
+      "date": "2026-09-26",
+      "location": "Teatro Municipal Baltazar Dias",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/livrai-nos-da-fome",
+      "event_type": "festival",
+      "time": "19:00",
+      "price": "€10",
+      "organizer": "AGON – Associação Cultural e Artística"
+    },
+    {
+      "mode": "festivals",
+      "name": "MADEIRA PRIDE",
+      "date": "2026-09-26",
+      "location": "Largo do Socorro, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "18:00",
+      "price": "Free",
+      "organizer": "Associação Madeira Pride",
+      "category": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "MUSEU DA BANANA DA MADEIRA",
+      "date": "2026-09-26",
+      "location": "Ponta Do Sol",
+      "url": "https://t.me/festas_madeira/2634",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "O MUNDO QUE QUEREMOS COMEÇA AQUI! ORGANIZAÇÃO",
+      "date": "2026-09-26",
+      "location": "Sé",
+      "url": "https://t.me/festas_madeira/2613",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Orquestra Clássica da Madeira - Maestro Adrian Butterfield",
+      "date": "2026-09-26",
+      "location": "Assembleia Legislativa da Região Autónoma da Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/orquestra-classica-da-madeira-maestro-adrian-butterfield",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Setembrário – Iniciativa de criação artística e exposição coletiva para artistas emergentes",
+      "date": "2026-09-26",
+      "location": "Galeria Tratuário",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/setembrario-iniciativa-de-criacao-artistica-e-exposicao-coletiva-para-artistas-emergentes",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Show · Calheta",
+      "date": "2026-09-26",
+      "location": "Calheta",
+      "url": "https://t.me/festas_madeira/2577",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Show · Câmara De Lobos",
+      "date": "2026-09-26",
+      "location": "Câmara De Lobos",
+      "url": "https://t.me/festas_madeira/2608",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Show · Funchal",
+      "date": "2026-09-26",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2420",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Show · Ribeira Brava",
+      "date": "2026-09-26",
+      "location": "Ribeira Brava",
+      "url": "https://t.me/festas_madeira/2611",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Skin | Pele | Metes-me Nojo",
+      "date": "2026-09-26",
+      "location": "Fábrica de Prazeres",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/skin-pele-metes-me-nojo",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Sport · Porto Moniz",
+      "date": "2026-09-26",
+      "location": "Porto Moniz",
+      "url": "https://t.me/festas_madeira/2520",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Sport · São Martinho",
+      "date": "2026-09-26",
+      "location": "São Martinho",
+      "url": "https://t.me/festas_madeira/2632",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Sport · Sé",
+      "date": "2026-09-26",
+      "location": "Sé",
+      "url": "https://t.me/festas_madeira/2473",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Sunset Dance at Praia Formosa",
+      "date": "2026-09-26",
+      "location": "Restaurante Praia Formosa, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "21:00",
+      "price": "Free",
+      "organizer": "Dance Together Madeira",
+      "category": "dance"
+    },
+    {
+      "mode": "festivals",
+      "name": "VACINAÇÃO (O) ANTIRRABICA E IDENTIFICAÇÃO ELETRONICA",
+      "date": "2026-09-26",
+      "location": "Câmara De Lobos",
+      "url": "https://t.me/festas_madeira/2617",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "“Até ao Lavar dos Cestos é Vindima”",
+      "date": "2026-09-26",
+      "location": "Casa do Povo de Ponta Delgada",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/festas-tradicionais/ate-ao-lavar-dos-cestos-e-vindima",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "“Nostalgic Madeira Music”",
+      "date": "2026-09-26",
+      "location": "Instituto do Vinho da Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/nostalgic-madeira-music",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "“WA” de Hanamaro Chaki",
+      "date": "2026-09-26",
+      "location": "Fortaleza de São João Baptista do Pico",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/wa-de-hanamaro-chaki",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "🎨✨ READY TO POUR SOME COLOUR? ✨🎨",
+      "date": "2026-09-26",
+      "location": "Calheta's marina",
+      "url": "",
+      "event_type": "festival",
+      "time": "14:30",
+      "price": "€38",
+      "organizer": "Alma Artista Gallery",
+      "category": "exhibition"
+    },
+    {
+      "mode": "other",
+      "name": "European Week of Sport Padel Tournament",
+      "date": "2026-09-26",
+      "location": "Lobos Park, Câmara de Lobos",
+      "url": "",
+      "event_type": "",
+      "time": "09:00",
+      "price": "Free",
+      "organizer": "Câmara Municipal de Câmara de Lobos",
+      "category": "sport"
+    },
+    {
+      "mode": "other",
+      "name": "IV Calheta Open - Beach Volleyball Tournament",
+      "date": "2026-09-26",
+      "location": "Praia da Calheta",
+      "url": "",
+      "event_type": "",
+      "time": "15:00",
+      "price": "Free",
+      "organizer": "Município da Calheta",
+      "category": "sport"
+    },
+    {
+      "mode": "other",
+      "name": "PowerGlutes & FitChallenge",
+      "date": "2026-09-26",
+      "location": "Jardim das Grutas, São Vicente",
+      "url": "",
+      "event_type": "",
+      "time": "10:00",
+      "price": "Free",
+      "organizer": "Câmara Municipal de São Vicente",
+      "category": "sport"
+    },
+    {
+      "mode": "road",
+      "name": "Corrida do RG3",
+      "date": "2026-09-26",
+      "location": "Funchal (RG3)",
+      "url": "https://atletismodamadeira.pt/event/corrida-do-rg3-6/",
+      "event_type": "running"
+    },
+    {
+      "mode": "road",
+      "name": "RG3 (5.5 km)",
+      "date": "2026-09-26",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/05/MC-26_Quadro-v14.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "XXXI Corrida RG3",
+      "date": "2026-09-26",
+      "location": "Funchal (RG3)",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
     }
   ]
 }

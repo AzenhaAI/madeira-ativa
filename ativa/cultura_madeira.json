@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-09-26T09:54:39",
-  "count": 94,
+  "fetched": "2026-09-27T10:35:21",
+  "count": 95,
   "items": [
     {
       "id": "114",
@@ -922,6 +922,16 @@
       "end": "2026-10-11",
       "time": "14:00",
       "place": "Praça de Santana",
+      "category": "Music"
+    },
+    {
+      "id": "343",
+      "title": "Orquestra Clássica da Madeira | Operazione Tango",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/orquestra-classica-da-madeira-operazione-tango",
+      "start": "2026-10-17",
+      "end": "2026-10-17",
+      "time": "18:00",
+      "place": "Auditório do Centro de Congressos da Madeira",
       "category": "Music"
     },
     {

@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-09-26T09:54:25",
-  "count": 165,
+  "fetched": "2026-09-27T10:35:10",
+  "count": 167,
   "items": [
     {
       "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
@@ -1423,7 +1423,7 @@
       "date": "2026-09-27",
       "time": "09:00",
       "venue": "Aeroporto da Madeira",
-      "municipality": "Funchal",
+      "municipality": "Santa Cruz",
       "price": 2,
       "organizer": "Aeroporto da Madeira",
       "category": "sport",
@@ -1865,6 +1865,21 @@
       "source_category": "festivals-parades"
     },
     {
+      "id": "before-the-noise-a-sound-installation-madeira-whale-festival-2026-10-07",
+      "title": "\"Before the Noise\" : a Sound Installation | Madeira Whale Festival",
+      "url": "https://www.madeira-unlocked.com/en/events/before-the-noise-a-sound-installation-madeira-whale-festival-2026-10-07",
+      "start": "2026-10-07T18:00:00+01:00",
+      "end": "2026-10-07T20:00:00+01:00",
+      "date": "2026-10-07",
+      "time": "18:00",
+      "venue": "Centro Cultural e de Investigação do Funchal - R. do Matadouro 4, 9050-100 Funchal",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "BSP",
+      "category": "exhibition",
+      "source_category": "art-exhibitions"
+    },
+    {
       "id": "expressa-te-festival-de-artes-2026-2026-10-08",
       "title": "EXPRESSA-te – Festival de Artes 2026",
       "url": "https://www.madeira-unlocked.com/en/events/expressa-te-festival-de-artes-2026-2026-10-08",
@@ -1876,6 +1891,21 @@
       "municipality": "Funchal",
       "price": 0,
       "organizer": "Portal das Artes",
+      "category": "exhibition",
+      "source_category": "art-exhibitions"
+    },
+    {
+      "id": "before-the-noise-a-sound-installation-madeira-whale-festival-2026-10-08",
+      "title": "\"Before the Noise\" : a Sound Installation | Madeira Whale Festival",
+      "url": "https://www.madeira-unlocked.com/en/events/before-the-noise-a-sound-installation-madeira-whale-festival-2026-10-08",
+      "start": "2026-10-08T14:30:00+01:00",
+      "end": "2026-10-08T16:30:00+01:00",
+      "date": "2026-10-08",
+      "time": "14:30",
+      "venue": "Centro Cultural e de Investigação do Funchal - R. do Matadouro 4, 9050-100 Funchal",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "BSP",
       "category": "exhibition",
       "source_category": "art-exhibitions"
     },

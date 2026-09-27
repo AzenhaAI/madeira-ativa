@@ -115,7 +115,9 @@
   // Inside the app (?app=1) the page is a tab: the site's back link would lead
   // the web view away to the site's home page, so it goes.
   if (new URLSearchParams(location.search).get('app')) {
-    var back = document.querySelector('.back'); if (back) back.style.visibility = 'hidden';
+    // The app's own bar already carries the name and the EN/PT switch, and the
+    // language arrives in the URL; a second switch would only disagree with it.
+    var top = document.querySelector('.top'); if (top) top.style.display = 'none';
   }
   function apply() {
     document.documentElement.lang = lang;

@@ -1,13 +1,13 @@
 {
   "note": "Annual races not yet announced by their organisers. Rebuilt daily.",
-  "generated_at": "2026-09-26",
+  "generated_at": "2026-09-27",
   "items": [
     {
       "name": "MIUS - Madeira Island Ultra Swim",
       "mode": "swim",
       "expected": "Expected in September 2026",
       "watch_dates": [
-        "2026-09-26"
+        "2026-09-27"
       ],
       "location": "Madeira",
       "status": "watching for a confirmed 2026 date (known schedule)",
@@ -18,7 +18,7 @@
       "mode": "trail",
       "expected": "Expected in September 2026",
       "watch_dates": [
-        "2026-09-26"
+        "2026-09-27"
       ],
       "location": "Ribeira Brava, Madeira",
       "status": "watching for a confirmed 2026 date (known schedule)",
@@ -91,17 +91,6 @@
       "url": "https://trailboaventura.com/"
     },
     {
-      "name": "Trail do Porto Moniz",
-      "mode": "trail",
-      "expected": "Expected in February 2027",
-      "watch_dates": [
-        "2027-02-01"
-      ],
-      "location": "Porto Moniz, Madeira",
-      "status": "watching for a confirmed 2027 date (race history)",
-      "url": "https://trailportomoniz.com/"
-    },
-    {
       "name": "Trail do Ludens Clube Machico",
       "mode": "trail",
       "expected": "Expected in March 2027",
@@ -133,6 +122,17 @@
       "location": "Porto Santo",
       "status": "watching for a confirmed 2027 date (race history)",
       "url": "https://www.portosantonaturetrail.com/"
+    },
+    {
+      "name": "Grande Prémio de Gaula",
+      "mode": "trail",
+      "expected": "Expected in August 2027",
+      "watch_dates": [
+        "2027-08-01"
+      ],
+      "location": "Gaula, Santa Cruz",
+      "status": "watching for a confirmed 2027 date (known schedule)",
+      "url": "https://atletismodamadeira.pt/"
     }
   ]
 }
