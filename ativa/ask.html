@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ask AI · Madeira Ativa</title>
+<meta name="description" content="Ask about a Madeira trail, where to go today, the weather or what's on — answered from Madeira Ativa's live data. In development.">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://azenha.ai/ativa/ask">
+<link rel="icon" href="/ativa/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#F5F2EA; --panel:#FBF9F4; --accent:#1F4D32; --soft:#6B8763; --line:#DAD3C5; --ink:#15201A; --amber:#9a6a16; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg:#101511; --panel:#161d18; --accent:#9fcfaa; --soft:#8fa68c; --line:#2c352c; --ink:#e7ece6; --amber:#e0b04a; }
+  }
+  :root[data-theme="dark"] { --bg:#101511; --panel:#161d18; --accent:#9fcfaa; --soft:#8fa68c; --line:#2c352c; --ink:#e7ece6; --amber:#e0b04a; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:Inter,system-ui,-apple-system,sans-serif; -webkit-font-smoothing:antialiased; line-height:1.55; }
+  .wrap { max-width:720px; margin:0 auto; padding:20px 16px 64px; }
+  .top { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:22px; }
+  .back { color:var(--soft); text-decoration:none; font-size:15px; }
+  .back:hover { color:var(--accent); }
+  .lang button { border:1px solid var(--line); background:none; color:var(--soft); border-radius:999px; padding:4px 11px; font:inherit; font-size:13px; cursor:pointer; }
+  .lang button.active { background:var(--accent); color:var(--bg); border-color:var(--accent); }
+  h1 { font-family:Fraunces,Georgia,serif; font-weight:500; font-size:34px; letter-spacing:-.01em; margin:0; color:var(--accent); display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+  .dev { font-family:Inter,sans-serif; font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--amber); border:1px solid var(--amber); border-radius:999px; padding:2px 10px; }
+  .lead { color:var(--soft); font-size:15.5px; margin:10px 0 22px; }
+  form { display:flex; gap:8px; }
+  input[type=search] { flex:1; min-width:0; font:inherit; font-size:16px; padding:12px 14px; border-radius:12px; border:1px solid var(--line); background:var(--panel); color:var(--ink); }
+  input[type=search]:focus { outline:2px solid var(--accent); outline-offset:1px; }
+  form button { font:inherit; font-weight:700; border:0; border-radius:12px; padding:0 18px; background:var(--accent); color:var(--bg); cursor:pointer; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0 20px; }
+  .chips button { font:inherit; font-size:13.5px; border:1px solid var(--line); background:none; color:var(--ink); border-radius:999px; padding:6px 12px; cursor:pointer; }
+  .chips button:hover { border-color:var(--accent); color:var(--accent); }
+  #askOut { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:16px 18px; }
+  .a-sum { font-size:16.5px; margin:0 0 10px; }
+  .a-wait { color:var(--soft); margin:0; }
+  .a-sub { font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--soft); margin:14px 0 6px; }
+  .a-facts { display:grid; grid-template-columns:max-content 1fr; gap:6px 14px; margin:12px 0 4px; font-size:14px; }
+  .a-facts dt { color:var(--soft); font-weight:600; }
+  .a-facts dd { margin:0; }
+  .a-badge { font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; border-radius:6px; padding:1px 7px; }
+  .a-badge.open { color:#2e7d4f; border:1px solid #2e7d4f; }
+  .a-badge.partial { color:var(--amber); border:1px solid var(--amber); }
+  .a-badge.closed { color:#b23a2e; border:1px solid #b23a2e; }
+  .a-list { margin:6px 0 0; padding-left:20px; font-size:14px; }
+  .a-list li { margin:6px 0; }
+  .a-list li span { display:block; color:var(--soft); }
+  .a-links { margin:12px 0 0; font-size:14px; }
+  a { color:var(--accent); }
+  .note { margin-top:26px; font-size:13px; color:var(--soft); }
+  @media (max-width: 480px) { .a-facts { grid-template-columns:1fr; gap:2px; } .a-facts dd { margin-bottom:6px; } }
+  [data-lang] { display:none; }
+  html[lang="en"] [data-lang="en"], html[lang="pt"] [data-lang="pt"] { display:revert; }
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M2PTQLF903"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-M2PTQLF903', { content_group: 'ativa' });
+</script>
+<script src="/ativa/trail-core.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="back" href="/ativa/">← Madeira Ativa</a>
+    <div class="lang"><button data-set-lang="en">EN</button> <button data-set-lang="pt">PT</button></div>
+  </div>
+
+  <h1>Ask AI <span class="dev"><span data-lang="en">In development</span><span data-lang="pt">Em desenvolvimento</span></span></h1>
+  <p class="lead">
+    <span data-lang="en">Ask about a trail, where to go today, the weather or what’s on. Answers are put together from Madeira Ativa’s live data — trail status from IFCN, forecasts from Open-Meteo, warnings from IPMA — so nothing in them is made up. The conversational version is being built.</span>
+    <span data-lang="pt">Pergunte sobre um percurso, onde ir hoje, o tempo ou o que se passa. As respostas são montadas a partir dos dados em direto da Madeira Ativa — estado dos percursos do IFCN, previsões do Open-Meteo, avisos do IPMA — por isso nada nelas é inventado. A versão em conversa está a ser construída.</span>
+  </p>
+
+  <form id="askForm" role="search">
+    <input id="askInput" type="search" autocomplete="off" enterkeyhint="search"
+           placeholder="Vereda do Areeiro, where to go today, weather…" aria-label="Your question">
+    <button type="submit"><span data-lang="en">Ask</span><span data-lang="pt">Perguntar</span></button>
+  </form>
+
+  <div class="chips">
+    <button type="button" data-ask="Where to go today?" data-ask-pt="Onde ir hoje?"><span data-lang="en">Where to go today?</span><span data-lang="pt">Onde ir hoje?</span></button>
+    <button type="button" data-ask="PR 1 Vereda do Areeiro" data-ask-pt="PR 1 Vereda do Areeiro">PR 1 Vereda do Areeiro</button>
+    <button type="button" data-ask="Levada das 25 Fontes" data-ask-pt="Levada das 25 Fontes">Levada das 25 Fontes</button>
+    <button type="button" data-ask="Weather and warnings" data-ask-pt="Tempo e avisos"><span data-lang="en">Weather and warnings</span><span data-lang="pt">Tempo e avisos</span></button>
+    <button type="button" data-ask="Events this weekend" data-ask-pt="Eventos este fim de semana"><span data-lang="en">Events this weekend</span><span data-lang="pt">Eventos este fim de semana</span></button>
+    <button type="button" data-ask="Bus to Ribeiro Frio" data-ask-pt="Autocarro para Ribeiro Frio"><span data-lang="en">Bus to Ribeiro Frio</span><span data-lang="pt">Autocarro para Ribeiro Frio</span></button>
+  </div>
+
+  <div id="askOut" aria-live="polite" hidden></div>
+
+  <p class="note">
+    <span data-lang="en">Where every figure comes from:</span>
+    <span data-lang="pt">De onde vem cada número:</span>
+    <a href="/ativa/sources"><span data-lang="en">sources and licences</span><span data-lang="pt">fontes e licenças</span></a>.
+    <span data-lang="en">Something answered wrongly? Write to</span>
+    <span data-lang="pt">Alguma resposta errada? Escreva para</span>
+    <a href="mailto:agent@azenha.ai?subject=Ask%20AI">agent@azenha.ai</a>.
+  </p>
+</div>
+
+<script>
+(function () {
+  var saved = null;
+  try { saved = localStorage.getItem('lang'); } catch (e) {}
+  var q = new URLSearchParams(location.search).get('lang');
+  var lang = q || saved || ((navigator.language || '').slice(0, 2) === 'pt' ? 'pt' : 'en');
+  if (lang !== 'pt') lang = 'en';
+  function apply() {
+    document.documentElement.lang = lang;
+    document.querySelectorAll('.lang button').forEach(function (b) { b.classList.toggle('active', b.getAttribute('data-set-lang') === lang); });
+    document.getElementById('askInput').placeholder = lang === 'pt'
+      ? 'Vereda do Areeiro, onde ir hoje, tempo…' : 'Vereda do Areeiro, where to go today, weather…';
+  }
+  document.querySelectorAll('.lang button').forEach(function (b) {
+    b.onclick = function () { lang = b.getAttribute('data-set-lang'); try { localStorage.setItem('lang', lang); } catch (e) {} apply(); };
+  });
+  apply();
+})();
+</script>
+<script src="/ativa/ipma.js" defer></script>
+<script src="/ativa/ask.js" defer></script>
+</body>
+</html>

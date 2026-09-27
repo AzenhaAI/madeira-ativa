@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-09-24T10:04:36",
-  "count": 159,
+  "fetched": "2026-09-26T09:54:25",
+  "count": 165,
   "items": [
     {
       "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
@@ -1055,6 +1055,21 @@
       "source_category": "dance"
     },
     {
+      "id": "festa-latina-free-line-dance-workshop-2026-09-25",
+      "title": "Festa Latina & Free Line Dance Workshop",
+      "url": "https://www.madeira-unlocked.com/en/events/festa-latina-free-line-dance-workshop-2026-09-25",
+      "start": "2026-09-25T20:00:00+01:00",
+      "end": "2026-09-26T01:00:00+01:00",
+      "date": "2026-09-25",
+      "time": "20:00",
+      "venue": "BrunchVille Marina, Marina do Funchal",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Level Up Dance Studio",
+      "category": "dance",
+      "source_category": "dance"
+    },
+    {
       "id": "adolescencia-sexo-e-morte-no-campo-miasma-2026-09-25",
       "title": "Adolescência, Sexo e Morte no Campo Miasma",
       "url": "https://www.madeira-unlocked.com/en/events/adolescencia-sexo-e-morte-no-campo-miasma-2026-09-25",
@@ -1239,7 +1254,7 @@
       "title": "MADEIRA PRIDE",
       "url": "https://www.madeira-unlocked.com/en/events/madeira-pride-2026-09-26",
       "start": "2026-09-26T18:00:00+01:00",
-      "end": "2026-09-26T20:00:00+01:00",
+      "end": "2026-09-26T23:00:00+01:00",
       "date": "2026-09-26",
       "time": "18:00",
       "venue": "Largo do Socorro, Funchal",
@@ -1278,6 +1293,36 @@
       "organizer": "AGON – Associação Cultural e Artística",
       "category": "theatre",
       "source_category": "theater"
+    },
+    {
+      "id": "48th-anniversary-of-the-casa-do-povo-da-camacha-mandolin-orchestra-2026-09-26",
+      "title": "48th Anniversary of the Casa do Povo da Camacha Mandolin Orchestra",
+      "url": "https://www.madeira-unlocked.com/en/events/48th-anniversary-of-the-casa-do-povo-da-camacha-mandolin-orchestra-2026-09-26",
+      "start": "2026-09-26T19:00:00+01:00",
+      "end": "2026-09-26T21:00:00+01:00",
+      "date": "2026-09-26",
+      "time": "19:00",
+      "venue": "Igreja Paroquial da Camacha",
+      "municipality": "Santa Cruz",
+      "price": 0,
+      "organizer": "Casa do Povo da Camacha",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "40th-anniversary-concert-of-tuna-amadis-2026-09-26",
+      "title": "40th Anniversary Concert of Tuna Amadis",
+      "url": "https://www.madeira-unlocked.com/en/events/40th-anniversary-concert-of-tuna-amadis-2026-09-26",
+      "start": "2026-09-26T20:00:00+01:00",
+      "end": "2026-09-26T22:00:00+01:00",
+      "date": "2026-09-26",
+      "time": "20:00",
+      "venue": "Salão Paroquial de Gaula",
+      "municipality": "Santa Cruz",
+      "price": 0,
+      "organizer": "Casa do Povo de Gaula",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "adolescencia-sexo-e-morte-no-campo-miasma-2026-09-26",
@@ -1323,6 +1368,21 @@
       "organizer": "Capoeira Lounge Bar",
       "category": "concert",
       "source_category": "music-concerts"
+    },
+    {
+      "id": "sunset-dance-at-praia-formosa-2026-09-26",
+      "title": "Sunset Dance at Praia Formosa",
+      "url": "https://www.madeira-unlocked.com/en/events/sunset-dance-at-praia-formosa-2026-09-26",
+      "start": "2026-09-26T21:00:00+01:00",
+      "end": "2026-09-27T01:00:00+01:00",
+      "date": "2026-09-26",
+      "time": "21:00",
+      "venue": "Restaurante Praia Formosa",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Dance Together Madeira",
+      "category": "dance",
+      "source_category": "dance"
     },
     {
       "id": "funchal-city-sessions-11-francisco-pedro-oliveira-2026-09-26",
@@ -1385,6 +1445,21 @@
       "source_category": "culture-museums"
     },
     {
+      "id": "community-hike-116-sergio-special-curral-das-freiras-2026-09-27",
+      "title": "Community Hike 116, Sergio Special: Curral das Freiras",
+      "url": "https://www.madeira-unlocked.com/en/events/community-hike-116-sergio-special-curral-das-freiras-2026-09-27",
+      "start": "2026-09-27T10:00:00+01:00",
+      "end": "2026-09-27T14:00:00+01:00",
+      "date": "2026-09-27",
+      "time": "10:00",
+      "venue": "Curral das Freiras",
+      "municipality": "Câmara de Lobos",
+      "price": 5,
+      "organizer": "Madeira Hikes",
+      "category": "hiking",
+      "source_category": "hiking"
+    },
+    {
       "id": "anatomia-e-metamorfose-dos-campeoes-sports-forum-and-debate-2026-09-27",
       "title": "Regata de Caiaques “Bananas”",
       "url": "https://www.madeira-unlocked.com/en/events/anatomia-e-metamorfose-dos-campeoes-sports-forum-and-debate-2026-09-27",
@@ -1398,6 +1473,21 @@
       "organizer": "Câmara Municipal de Câmara de Lobos",
       "category": "sport",
       "source_category": "sport-fitness"
+    },
+    {
+      "id": "forro-dj-jantar-com-sancho-2026-09-27",
+      "title": "Forró DJ Jantar com Sancho",
+      "url": "https://www.madeira-unlocked.com/en/events/forro-dj-jantar-com-sancho-2026-09-27",
+      "start": "2026-09-27T17:00:00+01:00",
+      "end": "2026-09-27T19:00:00+01:00",
+      "date": "2026-09-27",
+      "time": "17:00",
+      "venue": "Sai de Baixo & Alto Astral",
+      "municipality": "Santa Cruz",
+      "price": 15,
+      "organizer": "Sai de Baixo & Alto Astral",
+      "category": "dance",
+      "source_category": "dance"
     },
     {
       "id": "soul-sisters-convidados-2026-09-27",

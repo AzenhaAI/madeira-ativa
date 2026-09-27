@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-09-24T10:04:52",
-  "count": 90,
+  "fetched": "2026-09-26T09:54:39",
+  "count": 94,
   "items": [
     {
       "id": "114",
@@ -735,6 +735,16 @@
       "category": "Music"
     },
     {
+      "id": "346",
+      "title": "\"Romagem das Açucenas\" na Festa de Nossa Senhora do Bom Despacho 2026",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/festas-tradicionais/romagem-das-acucenas-na-festa-de-nossa-senhora-do-bom-despacho-2026",
+      "start": "2026-09-25",
+      "end": "2026-09-28",
+      "time": "",
+      "place": "Capela da Vera Cruz",
+      "category": "Other"
+    },
+    {
       "id": "294",
       "title": "“Até ao Lavar dos Cestos é Vindima”",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/festas-tradicionais/ate-ao-lavar-dos-cestos-e-vindima",
@@ -793,6 +803,26 @@
       "time": "20:00",
       "place": "Teatro Municipal Baltazar Dias",
       "category": "Traditional feast"
+    },
+    {
+      "id": "345",
+      "title": "3.ª Edição do Festival de Teatro Alternativo de Santana - FES.TAS",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/3-a-edicao-do-festival-de-teatro-alternativo-de-santana-festas",
+      "start": "2026-09-30",
+      "end": "2026-10-04",
+      "time": "",
+      "place": "Praça de Santana",
+      "category": "Activity"
+    },
+    {
+      "id": "347",
+      "title": "\"Património Imaterial: Saberes que inspiram\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/patrimonio-imaterial-saberes-que-inspiram",
+      "start": "2026-09-30",
+      "end": "2026-10-17",
+      "time": "16:00",
+      "place": "",
+      "category": "Exhibition"
     },
     {
       "id": "234",
@@ -872,6 +902,16 @@
       "end": "2026-10-10",
       "time": "17:30",
       "place": "Auditório do Centro de Congressos da Madeira",
+      "category": "Music"
+    },
+    {
+      "id": "337",
+      "title": "IV Festival de Folclore Noé Cró' 26",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/v-festival-de-folclore-noe-cro-2026",
+      "start": "2026-10-10",
+      "end": "2026-10-10",
+      "time": "19:00",
+      "place": "Miradouro do Pico dos Barcelos",
       "category": "Music"
     },
     {

@@ -1,14 +1,24 @@
 {
   "note": "Ship calls at the port of Funchal from APRAM. Times are Madeira local time, as the port publishes them. Accumulates; a call no longer listed before its arrival is marked superseded.",
   "source": "https://apram.pt/movimento-navios?port=ptfnc",
-  "fetched": "2026-09-24T15:59:33",
-  "count": 13,
+  "fetched": "2026-09-26T10:15:23",
+  "count": 15,
   "calls": [
     {
       "ship": "SANTA MARIA MANUELA",
       "berth": "Funchal - Terminal Norte",
       "agent": "Transinsular (Madeira)-Transp. Marit. Insulares, Lda.",
       "arrival": "2026-09-24T11:59",
+      "from": "Porto Santo Island",
+      "departure": "2026-09-25T16:59",
+      "to": "Porto Santo Island",
+      "superseded": false
+    },
+    {
+      "ship": "SANTA MARIA MANUELA",
+      "berth": "Funchal - Terminal Norte",
+      "agent": "Transinsular (Madeira)-Transp. Marit. Insulares, Lda.",
+      "arrival": "2026-09-24T13:00",
       "from": "Porto Santo Island",
       "departure": "2026-09-25T16:59",
       "to": "Porto Santo Island",
@@ -30,7 +40,7 @@
       "agent": "Transinsular (Madeira)-Transp. Marit. Insulares, Lda.",
       "arrival": "2026-09-28T11:59",
       "from": "Porto Santo Island",
-      "departure": "2026-10-01T19:00",
+      "departure": "2026-10-02T16:59",
       "to": "Funchal",
       "superseded": false
     },
@@ -122,6 +132,16 @@
       "from": "Porto Santo Island",
       "departure": "2026-10-22T16:59",
       "to": "Funchal",
+      "superseded": false
+    },
+    {
+      "ship": "SILVER MUSE",
+      "berth": "Funchal - Terminal Norte",
+      "agent": "Agência Ferraz - J. M. Ferraz Simões, Lda.",
+      "arrival": "2026-10-23T07:00",
+      "from": "Lisboa",
+      "departure": "2026-10-24T13:30",
+      "to": "Dakar",
       "superseded": false
     },
     {
