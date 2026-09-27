@@ -19,6 +19,9 @@
 
   var T = {
     thinking:  { en: 'Looking it up…', pt: 'A procurar…' },
+    aiWriting: { en: 'Writing a short answer…', pt: 'A escrever uma resposta curta…' },
+    aiNote:    { en: 'Written by an AI model from the facts below. The facts are what to rely on.',
+                 pt: 'Escrito por um modelo de IA a partir dos factos abaixo. São os factos que contam.' },
     noAnswer:  { en: 'I can answer about a trail (by name or PR code), where to go today, the weather and what’s on. Try one of the examples above.',
                  pt: 'Posso responder sobre um percurso (pelo nome ou código PR), onde ir hoje, o tempo e o que se passa. Experimente um dos exemplos acima.' },
     failed:    { en: 'One of the live sources did not answer. Try again in a moment.',
@@ -32,6 +35,8 @@
     stPartial: { en: 'Partly open', pt: 'Parcialmente aberto' },
     stClosed:  { en: 'Closed', pt: 'Encerrado' },
     carParksBoth: { en: 'car parks at both ends', pt: 'parques nos dois extremos' },
+    and:       { en: 'and', pt: 'e' },
+    away:      { en: 'away', pt: 'de distância' },
     oneWay:    { en: 'one way', pt: 'só ida' },
     loop:      { en: 'loop', pt: 'circular' },
     climb:     { en: 'climb', pt: 'subida' },
@@ -191,6 +196,13 @@
       (lang === 'pt' ? 'Aviso ' + lv.pt.toLowerCase() + ' do IPMA' : lv.en + ' IPMA warning') + ': ' + esc(types) + ' — ' + esc(zone) + '.</span>';
   }
 
+  // "car park 83 m from the lower end" / "parque a 83 m do extremo inferior".
+  function parkAt(dist, end) {
+    var en = { upper: 'the upper end', lower: 'the lower end', one: 'one end', start: 'the start' };
+    var pt = { upper: 'do extremo superior', lower: 'do extremo inferior', one: 'de um dos extremos', start: 'do início' };
+    return lang === 'pt' ? 'parque a ' + dist + ' m ' + pt[end] : 'car park ' + dist + ' m from ' + en[end];
+  }
+
   function reachSentence(ends) {
     if (!ends.length) return '';
     var spread = ends.length === 2 ? ends[0].elev - ends[1].elev : 0;
@@ -204,11 +216,13 @@
     var bits = [];
     var parks = ends.map(function (e) { return e.parking ? e.parking.dist : null; });
     if (named) {
-      ends.forEach(function (e, i) { if (e.parking) bits.push(t('carPark') + ' ' + where(i) + ' (' + e.parking.dist + ' m)'); });
+      // "83 m from the lower end", not "at the lower end (83 m)": both models
+      // tested read the bracketed figure as an altitude, and so might a reader.
+      ends.forEach(function (e, i) { if (e.parking) bits.push(parkAt(e.parking.dist, ends.length === 1 ? 'start' : i === 0 ? 'upper' : 'lower')); });
     } else if (parks[0] != null && parks[1] != null) {
-      bits.push(t('carParksBoth') + ' (' + parks[0] + ' m, ' + parks[1] + ' m)');
+      bits.push(t('carParksBoth') + ' (' + parks[0] + ' m ' + t('and') + ' ' + parks[1] + ' m ' + t('away') + ')');
     } else if (parks[0] != null || parks[1] != null) {
-      bits.push(t('carPark') + ' ' + t('atOneEnd') + ' (' + (parks[0] != null ? parks[0] : parks[1]) + ' m)');
+      bits.push(parkAt(parks[0] != null ? parks[0] : parks[1], 'one'));
     }
     // Lines are kept with the end they serve: at PR 10 the mountain buses stop
     // at Ribeiro Frio and a different line at Portela, 280 m lower.
@@ -344,10 +358,36 @@
       lang = (document.documentElement.lang || 'en') === 'pt' ? 'pt' : 'en';
       out.innerHTML = '<p class="a-wait">' + t('thinking') + '</p>';
       out.hidden = false;
-      answer(qs).then(function (html) { if (qs === last) out.innerHTML = html; })
-        .catch(function () { if (qs === last) out.innerHTML = '<p class="a-sum">' + t('failed') + '</p>'; });
+      answer(qs).then(function (html) {
+        if (qs !== last) return;
+        out.innerHTML = html;
+        converse(qs);
+      }).catch(function () { if (qs === last) out.innerHTML = '<p class="a-sum">' + t('failed') + '</p>'; });
       try { history.replaceState(null, '', '?q=' + encodeURIComponent(qs)); } catch (e) {}
     }
+    // The conversational layer: the facts just rendered go to the model with
+    // the question, and its reply is shown above them. Only when there are
+    // facts to give it — a question the page could not ground is not sent —
+    // and only if it answers; otherwise the facts stand alone, as before.
+    function converse(qs) {
+      if (!out.querySelector('.a-facts, .a-list')) return;
+      var facts = out.innerText.slice(0, 5800);
+      var box = document.createElement('div');
+      box.className = 'a-ai';
+      box.innerHTML = '<span class="a-ai-tag">✨ AI</span><p class="a-ai-text">' + t('aiWriting') + '</p>';
+      out.insertBefore(box, out.firstChild);
+      fetch('/ativa/api/ask', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ q: qs, lang: lang, facts: facts }),
+      }).then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
+        if (qs !== last) return;
+        if (!j || !j.answer) { box.remove(); return; }
+        box.querySelector('.a-ai-text').textContent = j.answer;
+        box.insertAdjacentHTML('beforeend', '<p class="a-ai-note">' + t('aiNote') + '</p>');
+      }).catch(function () { box.remove(); });
+    }
+
     form.addEventListener('submit', function (e) { e.preventDefault(); run(input.value); });
     document.querySelectorAll('[data-ask]').forEach(function (b) {
       b.addEventListener('click', function () {
