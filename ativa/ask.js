@@ -116,7 +116,11 @@
 
   var STOP = ['levada', 'levadas', 'vereda', 'caminho', 'percurso', 'trail', 'trilho', 'what', 'about', 'the', 'and', 'with',
               'como', 'para', 'sobre', 'esta', 'this', 'there', 'status', 'estado', 'open', 'aberto', 'closed', 'weather', 'tempo',
-              'today', 'hoje', 'bus', 'real', 'pico'];
+              'today', 'hoje', 'bus', 'real', 'pico',
+              // three-letter words: only these reach the matcher and would
+              // otherwise hit "dos"/"das" in half the names.
+              'das', 'dos', 'del', 'que', 'uma', 'com', 'qual', 'how', 'can', 'you', 'for', 'are', 'any', 'best', 'most',
+              'top', 'one', 'who', 'why', 'get', 'see', 'day', 'not', 'has', 'was', 'our', 'mais', 'pra'];
 
   function findTrail(q) {
     var list = data.levadas.levadas;
@@ -131,7 +135,7 @@
     // Words of four letters or more, and numbers ("25" in 25 Fontes is the one
     // word that tells PR 6 from PR 13.1, whose far end is also called 25 Fontes).
     var words = q.split(/[^a-z0-9']+/).filter(function (w) {
-      return (w.length >= 4 || /^\d+$/.test(w)) && STOP.indexOf(w) < 0;
+      return (w.length >= 3 || /^\d+$/.test(w)) && STOP.indexOf(w) < 0;
     });
     if (!words.length) return null;
     var best = null, bestScore = 0;
@@ -360,8 +364,27 @@
       if (has(q, WORDS.events)) return answerEvents(q);
       if (has(q, WORDS.today)) return answerToday();
       if (has(q, WORDS.weather)) return answerWeather();
-      return '<p class="a-sum">' + t('noAnswer') + '</p>';
+      return answerGeneral();
     });
+  }
+
+  // A question none of the above recognises ("the most beautiful levada",
+  // "something easy with kids") still goes to the model: the page shows today's
+  // picks, and the model also gets one line per trail — status, difficulty,
+  // time, length, ends, railings, bus — to answer from.
+  var catalogue = '';
+  function trailLine(l) {
+    var x = l.exposure || {};
+    return l.code + ' ' + l.name + (l.island === 'Porto Santo' ? ' (Porto Santo)' : '') + ': ' + (l.status || 'open') +
+      '; ' + difficulty(l).en.toLowerCase() + (walkTime(l) ? '; ' + walkTime(l) : '') + (l.distance_km ? '; ' + l.distance_km + ' km' : '') +
+      (l.from || l.to ? '; ' + (l.from || '?') + ' to ' + (l.to || '?') : '') + (l.roundtrip ? ' (loop)' : '') +
+      (x.railing_pct != null ? '; railings on ' + x.railing_pct + '% of mapped path' : '') + (x.tunnels ? '; ' + x.tunnels + ' tunnels' : '') +
+      '; by bus: ' + (reachableByBus(l) ? 'yes' : 'no') + (l.access && l.access.webcams && l.access.webcams.length ? '; webcam nearby' : '');
+  }
+  function answerGeneral() {
+    catalogue = 'ALL TRAILS (status from IFCN; difficulty and time official where published):\n' +
+      data.levadas.levadas.map(trailLine).join('\n');
+    return answerToday();
   }
 
   // -------------------------------------------------------------------- UI
@@ -373,6 +396,7 @@
     function run(qs) {
       if (!qs.trim()) return;
       last = qs;
+      catalogue = '';
       lang = (document.documentElement.lang || 'en') === 'pt' ? 'pt' : 'en';
       out.innerHTML = '<p class="a-wait">' + t('thinking') + '</p>';
       out.hidden = false;
@@ -390,8 +414,9 @@
     // facts to give it — a question the page could not ground is not sent —
     // and only if it answers; otherwise the facts stand alone, as before.
     function converse(qs) {
-      if (!out.querySelector('.a-facts, .a-list')) return;
-      var facts = out.innerText.slice(0, 5800);
+      var facts = (out.innerText + (catalogue ? '\n\n' + catalogue : '')).slice(0, 11500);
+      catalogue = '';
+      if (!facts.trim()) return;
       var box = document.createElement('div');
       box.className = 'a-ai';
       box.innerHTML = '<span class="a-ai-tag">✨ AI</span><p class="a-ai-text">' + t('aiWriting') + '</p>';
