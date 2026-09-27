@@ -61,12 +61,20 @@
   [data-lang] { display:none; }
   html[lang="en"] [data-lang="en"], html[lang="pt"] [data-lang="pt"] { display:revert; }
 </style>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M2PTQLF903"></script>
+<!-- Analytics stay off when the app embeds this page (?app=1): the store
+     listings and /ativa/privacy promise no tracking, and web content an app
+     presents counts as collected by the app. Same rule as map.html. -->
 <script>
+if (!new URLSearchParams(location.search).has('app')) {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  var gaTag = document.createElement('script');
+  gaTag.async = true;
+  gaTag.src = 'https://www.googletagmanager.com/gtag/js?id=G-M2PTQLF903';
+  document.head.appendChild(gaTag);
   gtag('js', new Date());
   gtag('config', 'G-M2PTQLF903', { content_group: 'ativa' });
+}
 </script>
 <script src="/ativa/trail-core.js"></script>
 </head>
