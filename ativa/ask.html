@@ -112,6 +112,11 @@
   var q = new URLSearchParams(location.search).get('lang');
   var lang = q || saved || ((navigator.language || '').slice(0, 2) === 'pt' ? 'pt' : 'en');
   if (lang !== 'pt') lang = 'en';
+  // Inside the app (?app=1) the page is a tab: the site's back link would lead
+  // the web view away to the site's home page, so it goes.
+  if (new URLSearchParams(location.search).get('app')) {
+    var back = document.querySelector('.back'); if (back) back.style.visibility = 'hidden';
+  }
   function apply() {
     document.documentElement.lang = lang;
     document.querySelectorAll('.lang button').forEach(function (b) { b.classList.toggle('active', b.getAttribute('data-set-lang') === lang); });
