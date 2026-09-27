@@ -1,4 +1,4 @@
-// Ask — first version, in development.
+// Ask — beta.
 //
 // Answers questions about Madeira's trails, where to go today, the weather and
 // what's on, from Madeira Ativa's own live data: levadas.json (IFCN status,
@@ -20,8 +20,8 @@
   var T = {
     thinking:  { en: 'Looking it up…', pt: 'A procurar…' },
     aiWriting: { en: 'Writing a short answer…', pt: 'A escrever uma resposta curta…' },
-    aiNote:    { en: 'Written by an AI model from the facts below. The facts are what to rely on.',
-                 pt: 'Escrito por um modelo de IA a partir dos factos abaixo. São os factos que contam.' },
+    aiNote:    { en: 'AI answers can be wrong — the facts below are the source.',
+                 pt: 'As respostas da IA podem ter erros — a fonte são os factos em baixo.' },
     noAnswer:  { en: 'I can answer about a trail (by name or PR code), where to go today, the weather and what’s on. Try one of the examples above.',
                  pt: 'Posso responder sobre um percurso (pelo nome ou código PR), onde ir hoje, o tempo e o que se passa. Experimente um dos exemplos acima.' },
     failed:    { en: 'One of the live sources did not answer. Try again in a moment.',
