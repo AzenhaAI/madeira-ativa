@@ -381,7 +381,9 @@
         out.innerHTML = html;
         converse(qs);
       }).catch(function () { if (qs === last) out.innerHTML = '<p class="a-sum">' + t('failed') + '</p>'; });
-      try { history.replaceState(null, '', '?q=' + encodeURIComponent(qs)); } catch (e) {}
+      // Keep ?app=1 and ?lang: inside the app a reload must stay in app mode
+      // (no analytics, no site header), so only q is replaced.
+      try { var sp = new URLSearchParams(location.search); sp.set('q', qs); history.replaceState(null, '', '?' + sp.toString()); } catch (e) {}
     }
     // The conversational layer: the facts just rendered go to the model with
     // the question, and its reply is shown above them. Only when there are
