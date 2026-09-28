@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-09-27T10:35:21",
-  "count": 95,
+  "fetched": "2026-09-28T11:43:42",
+  "count": 97,
   "items": [
     {
       "id": "114",
@@ -875,6 +875,16 @@
       "category": "Activity"
     },
     {
+      "id": "348",
+      "title": "Duo Bandonica - “Fala-me de Música”",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/duo-bandonica-fala-me-de-musica",
+      "start": "2026-10-03",
+      "end": "2026-10-03",
+      "time": "19:00",
+      "place": "Casa do Povo de Gaula",
+      "category": "Music"
+    },
+    {
       "id": "293",
       "title": "Concerto \"Machina Mundi-In\"",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concerto-machina-mundi-in",
@@ -883,6 +893,16 @@
       "time": "19:30",
       "place": "Teatro Municipal Baltazar Dias",
       "category": "Music"
+    },
+    {
+      "id": "351",
+      "title": "MARIOFA – Festival de Marionetas e Outras Formas Animadas 2026",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/mariofa-festival-de-marionetas-e-outras-formas-animadas-2026",
+      "start": "2026-10-08",
+      "end": "2026-10-11",
+      "time": "",
+      "place": "Teatro Municipal Baltazar Dias",
+      "category": "Traditional feast"
     },
     {
       "id": "341",

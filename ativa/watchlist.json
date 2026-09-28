@@ -1,13 +1,24 @@
 {
   "note": "Annual races not yet announced by their organisers. Rebuilt daily.",
-  "generated_at": "2026-09-27",
+  "generated_at": "2026-09-28",
   "items": [
+    {
+      "name": "Trail Água de Pena",
+      "mode": "trail",
+      "expected": "Expected in September 2026",
+      "watch_dates": [
+        "2026-09-28"
+      ],
+      "location": "Machico, Madeira",
+      "status": "watching for a confirmed 2026 date (known schedule)",
+      "url": "https://www.trailaguadepena.pt/"
+    },
     {
       "name": "MIUS - Madeira Island Ultra Swim",
       "mode": "swim",
       "expected": "Expected in September 2026",
       "watch_dates": [
-        "2026-09-27"
+        "2026-09-28"
       ],
       "location": "Madeira",
       "status": "watching for a confirmed 2026 date (known schedule)",
@@ -18,7 +29,7 @@
       "mode": "trail",
       "expected": "Expected in September 2026",
       "watch_dates": [
-        "2026-09-27"
+        "2026-09-28"
       ],
       "location": "Ribeira Brava, Madeira",
       "status": "watching for a confirmed 2026 date (known schedule)",

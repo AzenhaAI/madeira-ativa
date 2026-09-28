@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-09-27T10:35:10",
-  "count": 167,
+  "fetched": "2026-09-28T11:43:29",
+  "count": 177,
   "items": [
     {
       "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
@@ -1475,6 +1475,21 @@
       "source_category": "sport-fitness"
     },
     {
+      "id": "eco-market-2026-09-27",
+      "title": "Eco Market",
+      "url": "https://www.madeira-unlocked.com/en/events/eco-market-2026-09-27",
+      "start": "2026-09-27T14:00:00+01:00",
+      "end": "2026-09-27T20:00:00+01:00",
+      "date": "2026-09-27",
+      "time": "14:00",
+      "venue": "Largo da Capela de Nossa Senhora da Conceição",
+      "municipality": "Câmara de Lobos",
+      "price": 0,
+      "organizer": "Câmara Municipal de Câmara de Lobos",
+      "category": "market",
+      "source_category": "market"
+    },
+    {
       "id": "forro-dj-jantar-com-sancho-2026-09-27",
       "title": "Forró DJ Jantar com Sancho",
       "url": "https://www.madeira-unlocked.com/en/events/forro-dj-jantar-com-sancho-2026-09-27",
@@ -1503,6 +1518,21 @@
       "organizer": "Dúnta do Padel",
       "category": "concert",
       "source_category": "music-concerts"
+    },
+    {
+      "id": "walk-with-a-doc-zarco-em-machico-2026-09-27",
+      "title": "Walk with a Doc Zarco em Machico",
+      "url": "https://www.madeira-unlocked.com/en/events/walk-with-a-doc-zarco-em-machico-2026-09-27",
+      "start": "2026-09-27T18:00:00+01:00",
+      "end": "2026-09-27T19:15:00+01:00",
+      "date": "2026-09-27",
+      "time": "18:00",
+      "venue": "Entrance to the Fórum Machico car park",
+      "municipality": "Machico",
+      "price": 0,
+      "organizer": "Câmara Municipal de Machico",
+      "category": "sport",
+      "source_category": "sport-fitness"
     },
     {
       "id": "agora-e-que-sao-elas-new-season-2026-09-27",
@@ -1548,6 +1578,21 @@
       "organizer": "Câmara Municipal de Câmara de Lobos",
       "category": "sport",
       "source_category": "sport-fitness"
+    },
+    {
+      "id": "book-presentation-a-gulosa-do-ilheu-de-camara-de-lobos-2026-09-29",
+      "title": "Book Presentation, A Gulosa do Ilhéu de Câmara de Lobos",
+      "url": "https://www.madeira-unlocked.com/en/events/book-presentation-a-gulosa-do-ilheu-de-camara-de-lobos-2026-09-29",
+      "start": "2026-09-29T10:00:00+01:00",
+      "end": "2026-09-29T12:00:00+01:00",
+      "date": "2026-09-29",
+      "time": "10:00",
+      "venue": "Museu de Imprensa da Madeira",
+      "municipality": "Câmara de Lobos",
+      "price": 0,
+      "organizer": "Câmara Municipal de Câmara de Lobos",
+      "category": "culture",
+      "source_category": "culture-museums"
     },
     {
       "id": "anne-frank-memoria-consciencia-e-resistencia-2026-09-29-1530",
@@ -1715,6 +1760,21 @@
       "source_category": "festivals-parades"
     },
     {
+      "id": "festival-de-teatro-de-machico-2026-10-03",
+      "title": "Festival de teatro de Machico",
+      "url": "https://www.madeira-unlocked.com/en/events/festival-de-teatro-de-machico-2026-10-03",
+      "start": "2026-10-03T21:00:00+01:00",
+      "end": "2026-10-03T22:15:00+01:00",
+      "date": "2026-10-03",
+      "time": "21:00",
+      "venue": "Fórum Machico",
+      "municipality": "Machico",
+      "price": 0,
+      "organizer": "Grupo de Teatro de Machico",
+      "category": "theatre",
+      "source_category": "theater"
+    },
+    {
       "id": "cosy-concerts-taina-2026-10-03",
       "title": "Cosy Concerts: Tainá",
       "url": "https://www.madeira-unlocked.com/en/events/cosy-concerts-taina-2026-10-03",
@@ -1788,6 +1848,21 @@
       "organizer": "Associação Portal das Artes",
       "category": "festival",
       "source_category": "festivals-parades"
+    },
+    {
+      "id": "forest-school-session-at-funchal-ecological-park-2026-10-05",
+      "title": "Forest School Session at Funchal Ecological Park",
+      "url": "https://www.madeira-unlocked.com/en/events/forest-school-session-at-funchal-ecological-park-2026-10-05",
+      "start": "2026-10-05T09:00:00+01:00",
+      "end": "2026-10-05T16:00:00+01:00",
+      "date": "2026-10-05",
+      "time": "09:00",
+      "venue": "Parque Ecológico do Funchal",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Rebentos à Descoberta",
+      "category": "family",
+      "source_category": "kids-family"
     },
     {
       "id": "expressa-te-festival-de-artes-2026-2026-10-05",
@@ -1878,6 +1953,21 @@
       "organizer": "BSP",
       "category": "exhibition",
       "source_category": "art-exhibitions"
+    },
+    {
+      "id": "sunrise-hike-at-bica-da-cana-2026-10-08",
+      "title": "Sunrise Hike at Bica da Cana",
+      "url": "https://www.madeira-unlocked.com/en/events/sunrise-hike-at-bica-da-cana-2026-10-08",
+      "start": "2026-10-08T06:00:00+01:00",
+      "end": "2026-10-08T11:00:00+01:00",
+      "date": "2026-10-08",
+      "time": "06:00",
+      "venue": "Palácio de São Lourenço bus stop",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Madeira Friends",
+      "category": "hiking",
+      "source_category": "hiking"
     },
     {
       "id": "expressa-te-festival-de-artes-2026-2026-10-08",
@@ -2210,6 +2300,21 @@
       "source_category": "dance"
     },
     {
+      "id": "festival-de-teatro-de-machico-2026-10-17",
+      "title": "Festival de teatro de Machico",
+      "url": "https://www.madeira-unlocked.com/en/events/festival-de-teatro-de-machico-2026-10-17",
+      "start": "2026-10-17T21:00:00+01:00",
+      "end": "2026-10-17T22:00:00+01:00",
+      "date": "2026-10-17",
+      "time": "21:00",
+      "venue": "Fórum Machico",
+      "municipality": "Machico",
+      "price": 0,
+      "organizer": "Grupo de Teatro de Machico",
+      "category": "theatre",
+      "source_category": "theater"
+    },
+    {
       "id": "l-concerts-tres-tristes-tigres-2026-10-17",
       "title": "L Concerts- Três Tristes Tigres",
       "url": "https://www.madeira-unlocked.com/en/events/l-concerts-tres-tristes-tigres-2026-10-17",
@@ -2330,6 +2435,21 @@
       "source_category": "sport-fitness"
     },
     {
+      "id": "festival-de-teatro-de-machico-2026-10-24",
+      "title": "Festival de teatro de Machico",
+      "url": "https://www.madeira-unlocked.com/en/events/festival-de-teatro-de-machico-2026-10-24",
+      "start": "2026-10-24T21:00:00+01:00",
+      "end": "2026-10-24T22:00:00+01:00",
+      "date": "2026-10-24",
+      "time": "21:00",
+      "venue": "Fórum Machico",
+      "municipality": "Machico",
+      "price": 0,
+      "organizer": "Grupo de Teatro de Machico",
+      "category": "theatre",
+      "source_category": "theater"
+    },
+    {
       "id": "eipoema-international-poetry-meeting-of-macaronesia-2026-10-27",
       "title": "EIPOEMA - International Poetry Meeting of Macaronesia",
       "url": "https://www.madeira-unlocked.com/en/events/eipoema-international-poetry-meeting-of-macaronesia-2026-10-27",
@@ -2390,6 +2510,21 @@
       "source_category": "sport-fitness"
     },
     {
+      "id": "festival-de-teatro-de-machico-2026-10-31",
+      "title": "Festival de teatro de Machico",
+      "url": "https://www.madeira-unlocked.com/en/events/festival-de-teatro-de-machico-2026-10-31",
+      "start": "2026-10-31T21:00:00+00:00",
+      "end": "2026-10-31T22:00:00+00:00",
+      "date": "2026-10-31",
+      "time": "21:00",
+      "venue": "Fórum Machico",
+      "municipality": "Machico",
+      "price": 0,
+      "organizer": "Grupo de Teatro de Machico",
+      "category": "theatre",
+      "source_category": "theater"
+    },
+    {
       "id": "orientacao-orienteering-race-chao-das-feiteiras-2026-11-01",
       "title": "Orientação - Orienteering Race: Chão das Feiteiras",
       "url": "https://www.madeira-unlocked.com/en/events/orientacao-orienteering-race-chao-das-feiteiras-2026-11-01",
@@ -2433,6 +2568,21 @@
       "organizer": "ABM Madeira",
       "category": "concert",
       "source_category": "music-concerts"
+    },
+    {
+      "id": "festival-de-teatro-de-machico-2026-11-07",
+      "title": "Festival de teatro de Machico",
+      "url": "https://www.madeira-unlocked.com/en/events/festival-de-teatro-de-machico-2026-11-07",
+      "start": "2026-11-07T21:00:00+00:00",
+      "end": "2026-11-07T22:00:00+00:00",
+      "date": "2026-11-07",
+      "time": "21:00",
+      "venue": "Fórum Machico",
+      "municipality": "Machico",
+      "price": 0,
+      "organizer": "Grupo de Teatro de Machico",
+      "category": "theatre",
+      "source_category": "theater"
     },
     {
       "id": "saint-martin-s-day-festa-de-sao-martinho-2026-2026-11-11",

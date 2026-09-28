@@ -1630,8 +1630,8 @@
       },
       "exposure": {
         "length_km": 1.7,
-        "mapped_pct": 92,
-        "railing_pct": 47,
+        "mapped_pct": 93,
+        "railing_pct": 46,
         "no_railing_pct": 0,
         "narrow_pct": 0,
         "demanding_pct": 0,
@@ -1761,78 +1761,6 @@
                 "81"
               ],
               "departures": {
-                "2026-09-27": [
-                  [
-                    "06:49",
-                    "81",
-                    "Funchal"
-                  ],
-                  [
-                    "07:27",
-                    "81",
-                    "Curral Freiras"
-                  ],
-                  [
-                    "08:11",
-                    "81",
-                    "Funchal"
-                  ],
-                  [
-                    "08:21",
-                    "81",
-                    "Igreja Curral Freiras"
-                  ],
-                  [
-                    "10:07",
-                    "81",
-                    "Curral Freiras"
-                  ],
-                  [
-                    "10:17",
-                    "81",
-                    "Igreja Curral Freiras"
-                  ],
-                  [
-                    "10:51",
-                    "81",
-                    "Funchal"
-                  ],
-                  [
-                    "12:42",
-                    "81",
-                    "Curral Freiras"
-                  ],
-                  [
-                    "13:20",
-                    "81",
-                    "Funchal"
-                  ],
-                  [
-                    "14:03",
-                    "81",
-                    "Curral Freiras"
-                  ],
-                  [
-                    "14:52",
-                    "81",
-                    "Funchal"
-                  ],
-                  [
-                    "17:17",
-                    "81",
-                    "Curral Freiras"
-                  ],
-                  [
-                    "17:57",
-                    "81",
-                    "Funchal"
-                  ],
-                  [
-                    "20:18",
-                    "81",
-                    "Curral Freiras"
-                  ]
-                ],
                 "2026-09-28": [
                   [
                     "06:51",
@@ -2491,6 +2419,78 @@
                   ],
                   [
                     "20:20",
+                    "81",
+                    "Curral Freiras"
+                  ]
+                ],
+                "2026-10-04": [
+                  [
+                    "06:49",
+                    "81",
+                    "Funchal"
+                  ],
+                  [
+                    "07:27",
+                    "81",
+                    "Curral Freiras"
+                  ],
+                  [
+                    "08:11",
+                    "81",
+                    "Funchal"
+                  ],
+                  [
+                    "08:21",
+                    "81",
+                    "Igreja Curral Freiras"
+                  ],
+                  [
+                    "10:07",
+                    "81",
+                    "Curral Freiras"
+                  ],
+                  [
+                    "10:17",
+                    "81",
+                    "Igreja Curral Freiras"
+                  ],
+                  [
+                    "10:51",
+                    "81",
+                    "Funchal"
+                  ],
+                  [
+                    "12:42",
+                    "81",
+                    "Curral Freiras"
+                  ],
+                  [
+                    "13:20",
+                    "81",
+                    "Funchal"
+                  ],
+                  [
+                    "14:03",
+                    "81",
+                    "Curral Freiras"
+                  ],
+                  [
+                    "14:52",
+                    "81",
+                    "Funchal"
+                  ],
+                  [
+                    "17:17",
+                    "81",
+                    "Curral Freiras"
+                  ],
+                  [
+                    "17:57",
+                    "81",
+                    "Funchal"
+                  ],
+                  [
+                    "20:18",
                     "81",
                     "Curral Freiras"
                   ]
@@ -3331,398 +3331,6 @@
                 "48"
               ],
               "departures": {
-                "2026-09-27": [
-                  [
-                    "06:54",
-                    "21",
-                    "Monte Via Largo Fonte Lajinhas"
-                  ],
-                  [
-                    "07:00",
-                    "22",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "07:25",
-                    "21",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "07:50",
-                    "22",
-                    "Babosas"
-                  ],
-                  [
-                    "07:50",
-                    "22",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "07:52",
-                    "21",
-                    "Monte Via Largo Fonte"
-                  ],
-                  [
-                    "08:17",
-                    "21",
-                    "Monte Via Largo Fonte"
-                  ],
-                  [
-                    "08:40",
-                    "22",
-                    "Babosas"
-                  ],
-                  [
-                    "08:50",
-                    "22",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "08:55",
-                    "20",
-                    "Monte Via Corujeira Dentro"
-                  ],
-                  [
-                    "09:00",
-                    "20",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "09:40",
-                    "22",
-                    "Babosas"
-                  ],
-                  [
-                    "09:45",
-                    "20",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "09:45",
-                    "20",
-                    "Monte Via Corujeira Dentro"
-                  ],
-                  [
-                    "09:45",
-                    "22",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "10:10",
-                    "20",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "10:10",
-                    "20",
-                    "Monte Via Corujeira Dentro"
-                  ],
-                  [
-                    "10:33",
-                    "20",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "10:40",
-                    "22",
-                    "Babosas"
-                  ],
-                  [
-                    "10:45",
-                    "22",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "10:57",
-                    "21",
-                    "Monte Via Largo Fonte"
-                  ],
-                  [
-                    "11:20",
-                    "20",
-                    "Monte Via Corujeira Dentro"
-                  ],
-                  [
-                    "11:30",
-                    "20",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "11:33",
-                    "48",
-                    "Monte Via Penteada"
-                  ],
-                  [
-                    "11:40",
-                    "22",
-                    "Babosas"
-                  ],
-                  [
-                    "11:45",
-                    "22",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "11:55",
-                    "20",
-                    "Monte Via Corujeira Dentro"
-                  ],
-                  [
-                    "12:05",
-                    "20",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "12:22",
-                    "21",
-                    "Monte Via Largo Fonte"
-                  ],
-                  [
-                    "12:40",
-                    "22",
-                    "Babosas"
-                  ],
-                  [
-                    "12:45",
-                    "22",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "12:55",
-                    "20",
-                    "Monte Via Corujeira Dentro"
-                  ],
-                  [
-                    "13:00",
-                    "20",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "13:23",
-                    "48",
-                    "Monte Via Penteada"
-                  ],
-                  [
-                    "13:25",
-                    "20",
-                    "Monte Via Corujeira Dentro"
-                  ],
-                  [
-                    "13:30",
-                    "20",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "13:40",
-                    "22",
-                    "Babosas"
-                  ],
-                  [
-                    "13:44",
-                    "21",
-                    "Monte Via Largo Fonte Lajinhas"
-                  ],
-                  [
-                    "13:45",
-                    "22",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "13:55",
-                    "21",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "14:17",
-                    "21",
-                    "Monte Via Largo Fonte"
-                  ],
-                  [
-                    "14:37",
-                    "21",
-                    "Monte Via Largo Fonte"
-                  ],
-                  [
-                    "14:40",
-                    "22",
-                    "Babosas"
-                  ],
-                  [
-                    "14:45",
-                    "22",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "15:05",
-                    "20",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "15:13",
-                    "48",
-                    "Monte Via Penteada"
-                  ],
-                  [
-                    "15:25",
-                    "20",
-                    "Monte Via Corujeira Dentro"
-                  ],
-                  [
-                    "15:30",
-                    "20",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "15:57",
-                    "21",
-                    "Monte Via Largo Fonte"
-                  ],
-                  [
-                    "16:10",
-                    "22",
-                    "Babosas"
-                  ],
-                  [
-                    "16:15",
-                    "22",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "16:25",
-                    "20",
-                    "Monte Via Corujeira Dentro"
-                  ],
-                  [
-                    "16:30",
-                    "20",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "17:00",
-                    "20",
-                    "Monte Via Corujeira Dentro"
-                  ],
-                  [
-                    "17:03",
-                    "48",
-                    "Monte Via Penteada"
-                  ],
-                  [
-                    "17:05",
-                    "20",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "17:25",
-                    "20",
-                    "Monte Via Corujeira Dentro"
-                  ],
-                  [
-                    "17:35",
-                    "20",
-                    "Centro Até ESTR Monumental"
-                  ],
-                  [
-                    "17:40",
-                    "22",
-                    "Babosas"
-                  ],
-                  [
-                    "17:45",
-                    "22",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "17:52",
-                    "21",
-                    "Monte Via Largo Fonte"
-                  ],
-                  [
-                    "18:24",
-                    "21",
-                    "Monte Via Largo Fonte Lajinhas"
-                  ],
-                  [
-                    "18:35",
-                    "21",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "18:52",
-                    "48",
-                    "Monte Via CORJ Dentro Até Tanque"
-                  ],
-                  [
-                    "19:10",
-                    "20",
-                    "Monte Via Corujeira Dentro"
-                  ],
-                  [
-                    "19:10",
-                    "22",
-                    "Babosas"
-                  ],
-                  [
-                    "19:15",
-                    "20",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "19:15",
-                    "22",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "20:04",
-                    "20",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "20:24",
-                    "21",
-                    "Monte Via Largo Fonte Lajinhas"
-                  ],
-                  [
-                    "20:30",
-                    "21",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "20:55",
-                    "22",
-                    "Babosas"
-                  ],
-                  [
-                    "21:15",
-                    "22",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "21:20",
-                    "20",
-                    "Monte Via Corujeira Dentro"
-                  ],
-                  [
-                    "21:25",
-                    "20",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "22:34",
-                    "20",
-                    "Centro Autonomia"
-                  ],
-                  [
-                    "22:40",
-                    "22",
-                    "Babosas"
-                  ],
-                  [
-                    "22:57",
-                    "20",
-                    "Monte Corujeira Dentro Até Tanque"
-                  ]
-                ],
                 "2026-09-28": [
                   [
                     "06:45",
@@ -7751,6 +7359,398 @@
                   ],
                   [
                     "22:56",
+                    "20",
+                    "Monte Corujeira Dentro Até Tanque"
+                  ]
+                ],
+                "2026-10-04": [
+                  [
+                    "06:54",
+                    "21",
+                    "Monte Via Largo Fonte Lajinhas"
+                  ],
+                  [
+                    "07:00",
+                    "22",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "07:25",
+                    "21",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "07:50",
+                    "22",
+                    "Babosas"
+                  ],
+                  [
+                    "07:50",
+                    "22",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "07:52",
+                    "21",
+                    "Monte Via Largo Fonte"
+                  ],
+                  [
+                    "08:17",
+                    "21",
+                    "Monte Via Largo Fonte"
+                  ],
+                  [
+                    "08:40",
+                    "22",
+                    "Babosas"
+                  ],
+                  [
+                    "08:50",
+                    "22",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "08:55",
+                    "20",
+                    "Monte Via Corujeira Dentro"
+                  ],
+                  [
+                    "09:00",
+                    "20",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "09:40",
+                    "22",
+                    "Babosas"
+                  ],
+                  [
+                    "09:45",
+                    "20",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "09:45",
+                    "20",
+                    "Monte Via Corujeira Dentro"
+                  ],
+                  [
+                    "09:45",
+                    "22",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "10:10",
+                    "20",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "10:10",
+                    "20",
+                    "Monte Via Corujeira Dentro"
+                  ],
+                  [
+                    "10:33",
+                    "20",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "10:40",
+                    "22",
+                    "Babosas"
+                  ],
+                  [
+                    "10:45",
+                    "22",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "10:57",
+                    "21",
+                    "Monte Via Largo Fonte"
+                  ],
+                  [
+                    "11:20",
+                    "20",
+                    "Monte Via Corujeira Dentro"
+                  ],
+                  [
+                    "11:30",
+                    "20",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "11:33",
+                    "48",
+                    "Monte Via Penteada"
+                  ],
+                  [
+                    "11:40",
+                    "22",
+                    "Babosas"
+                  ],
+                  [
+                    "11:45",
+                    "22",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "11:55",
+                    "20",
+                    "Monte Via Corujeira Dentro"
+                  ],
+                  [
+                    "12:05",
+                    "20",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "12:22",
+                    "21",
+                    "Monte Via Largo Fonte"
+                  ],
+                  [
+                    "12:40",
+                    "22",
+                    "Babosas"
+                  ],
+                  [
+                    "12:45",
+                    "22",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "12:55",
+                    "20",
+                    "Monte Via Corujeira Dentro"
+                  ],
+                  [
+                    "13:00",
+                    "20",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "13:23",
+                    "48",
+                    "Monte Via Penteada"
+                  ],
+                  [
+                    "13:25",
+                    "20",
+                    "Monte Via Corujeira Dentro"
+                  ],
+                  [
+                    "13:30",
+                    "20",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "13:40",
+                    "22",
+                    "Babosas"
+                  ],
+                  [
+                    "13:44",
+                    "21",
+                    "Monte Via Largo Fonte Lajinhas"
+                  ],
+                  [
+                    "13:45",
+                    "22",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "13:55",
+                    "21",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "14:17",
+                    "21",
+                    "Monte Via Largo Fonte"
+                  ],
+                  [
+                    "14:37",
+                    "21",
+                    "Monte Via Largo Fonte"
+                  ],
+                  [
+                    "14:40",
+                    "22",
+                    "Babosas"
+                  ],
+                  [
+                    "14:45",
+                    "22",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "15:05",
+                    "20",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "15:13",
+                    "48",
+                    "Monte Via Penteada"
+                  ],
+                  [
+                    "15:25",
+                    "20",
+                    "Monte Via Corujeira Dentro"
+                  ],
+                  [
+                    "15:30",
+                    "20",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "15:57",
+                    "21",
+                    "Monte Via Largo Fonte"
+                  ],
+                  [
+                    "16:10",
+                    "22",
+                    "Babosas"
+                  ],
+                  [
+                    "16:15",
+                    "22",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "16:25",
+                    "20",
+                    "Monte Via Corujeira Dentro"
+                  ],
+                  [
+                    "16:30",
+                    "20",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "17:00",
+                    "20",
+                    "Monte Via Corujeira Dentro"
+                  ],
+                  [
+                    "17:03",
+                    "48",
+                    "Monte Via Penteada"
+                  ],
+                  [
+                    "17:05",
+                    "20",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "17:25",
+                    "20",
+                    "Monte Via Corujeira Dentro"
+                  ],
+                  [
+                    "17:35",
+                    "20",
+                    "Centro Até ESTR Monumental"
+                  ],
+                  [
+                    "17:40",
+                    "22",
+                    "Babosas"
+                  ],
+                  [
+                    "17:45",
+                    "22",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "17:52",
+                    "21",
+                    "Monte Via Largo Fonte"
+                  ],
+                  [
+                    "18:24",
+                    "21",
+                    "Monte Via Largo Fonte Lajinhas"
+                  ],
+                  [
+                    "18:35",
+                    "21",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "18:52",
+                    "48",
+                    "Monte Via CORJ Dentro Até Tanque"
+                  ],
+                  [
+                    "19:10",
+                    "20",
+                    "Monte Via Corujeira Dentro"
+                  ],
+                  [
+                    "19:10",
+                    "22",
+                    "Babosas"
+                  ],
+                  [
+                    "19:15",
+                    "20",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "19:15",
+                    "22",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "20:04",
+                    "20",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "20:24",
+                    "21",
+                    "Monte Via Largo Fonte Lajinhas"
+                  ],
+                  [
+                    "20:30",
+                    "21",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "20:55",
+                    "22",
+                    "Babosas"
+                  ],
+                  [
+                    "21:15",
+                    "22",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "21:20",
+                    "20",
+                    "Monte Via Corujeira Dentro"
+                  ],
+                  [
+                    "21:25",
+                    "20",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "22:34",
+                    "20",
+                    "Centro Autonomia"
+                  ],
+                  [
+                    "22:40",
+                    "22",
+                    "Babosas"
+                  ],
+                  [
+                    "22:57",
                     "20",
                     "Monte Corujeira Dentro Até Tanque"
                   ]
