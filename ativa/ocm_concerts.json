@@ -1,0 +1,78 @@
+{
+ "note": "Orquestra Clássica da Madeira season, from scripts/fetch_ocm.py. Accumulates.",
+ "source": "https://www.ocmadeira.pt/concertos/temporada-atual.html",
+ "fetched": "2026-09-29T12:44:33+00:00",
+ "count": 7,
+ "items": [
+  {
+   "title": "Quinteto de Sopros \"Solistas OCM\" convida Anikó Harangi",
+   "date": "2026-10-03",
+   "time": "18:00",
+   "place": "Assembleia Legislativa da Madeira",
+   "price": "20.00€",
+   "series": "Música de Câmara",
+   "url": "https://www.ocmadeira.pt/concertos/proximos-eventos/musica-camara/273-quinteto-de-sopros-solistas-ocm-convida-aniko-harangi.html",
+   "tickets": ""
+  },
+  {
+   "title": "Quinteto de Sopros “Atlântida\"",
+   "date": "2026-10-06",
+   "time": "21:30",
+   "place": "Reid's Palace, a Belmond Hotel Madeira",
+   "price": "20.00€",
+   "series": "Música de Câmara",
+   "url": "https://www.ocmadeira.pt/concertos/proximos-eventos/musica-camara/274-quinteto-de-sopros-atlantida.html",
+   "tickets": ""
+  },
+  {
+   "title": "Legno Duo",
+   "date": "2026-10-10",
+   "time": "18:00",
+   "place": "Capela da Fundação Princesa Dona Maria Amélia",
+   "price": "20.00€",
+   "series": "Música de Câmara",
+   "url": "https://www.ocmadeira.pt/concertos/proximos-eventos/musica-camara/275-legno-duo.html",
+   "tickets": ""
+  },
+  {
+   "title": "OPERAZIONE TANGO",
+   "date": "2026-10-17",
+   "time": "18:00",
+   "place": "Centro Congressos da Madeira",
+   "price": "25.00€",
+   "series": "Orquestra Clássica da Madeira",
+   "url": "https://www.ocmadeira.pt/concertos/proximos-eventos/orquestra-cla-ssica-da-madeira/279-operazione-tango.html",
+   "tickets": "https://www.ticketline.pt/pt/evento/orq-classica-da-madeira-operazione-tango-108076"
+  },
+  {
+   "title": "Legno Duo",
+   "date": "2026-10-21",
+   "time": "21:00",
+   "place": "Royal Savoy",
+   "price": "20.00€",
+   "series": "Música de Câmara",
+   "url": "https://www.ocmadeira.pt/concertos/proximos-eventos/musica-camara/276-legno-duo.html",
+   "tickets": ""
+  },
+  {
+   "title": "Albrecht Mayer & OCM",
+   "date": "2026-10-31",
+   "time": "18:00",
+   "place": "Centro Congressos da Madeira",
+   "price": "25.00€",
+   "series": "Orquestra Clássica da Madeira",
+   "url": "https://www.ocmadeira.pt/concertos/proximos-eventos/orquestra-cla-ssica-da-madeira/277-albrecht-mayer-ocm.html",
+   "tickets": "https://www.ticketline.pt/pt/evento/orq-classica-da-madeira-albrecht-mayer-107831"
+  },
+  {
+   "title": "Concerto Fim de Ano 2026",
+   "date": "2026-12-28",
+   "time": "18:00",
+   "place": "Teatro Municipal Baltazar Dias",
+   "price": "30.00€",
+   "series": "Orquestra Clássica da Madeira",
+   "url": "https://www.ocmadeira.pt/concertos/proximos-eventos/orquestra-cla-ssica-da-madeira/278-concerto-fim-de-ano-2026.html",
+   "tickets": "https://www.ticketline.pt/evento/concerto-fim-de-ano-106607"
+  }
+ ]
+}

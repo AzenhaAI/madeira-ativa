@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-09-28T11:43:42",
-  "count": 97,
+  "fetched": "2026-09-29T12:46:28",
+  "count": 101,
   "items": [
     {
       "id": "114",
@@ -865,6 +865,26 @@
       "category": "Other"
     },
     {
+      "id": "355",
+      "title": "A Orquestra Clássica da Madeira assinala 50 anos da Autonomia com os NAPA e Cristina Barbosa",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/orquestra-classica-da-madeira-assinala-50-anos-da-autonomia-com-os-napa-e-cristina-barbosa",
+      "start": "2026-10-01",
+      "end": "2026-10-01",
+      "time": "20:00",
+      "place": "Auditório do Centro de Congressos da Madeira",
+      "category": "Music"
+    },
+    {
+      "id": "354",
+      "title": "II Mostra Colours In The Dark",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/ii-mostra-colours-in-the-dark",
+      "start": "2026-10-01",
+      "end": "2026-10-02",
+      "time": "19:45",
+      "place": "Jardim de Santa Luzia",
+      "category": "Traditional feast"
+    },
+    {
       "id": "335",
       "title": "Festival de Teatro de Machico 2026",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/festival-de-teatro-de-machico-2026",
@@ -945,6 +965,16 @@
       "category": "Music"
     },
     {
+      "id": "353",
+      "title": "Festival Avesso 2026",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/festival-avesso-2026",
+      "start": "2026-10-14",
+      "end": "2026-10-25",
+      "time": "",
+      "place": "Centro Cultural John dos Passos",
+      "category": "Activity"
+    },
+    {
       "id": "343",
       "title": "Orquestra Clássica da Madeira | Operazione Tango",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/orquestra-classica-da-madeira-operazione-tango",
@@ -973,6 +1003,16 @@
       "time": "20:00",
       "place": "Teatro Municipal Baltazar Dias",
       "category": "Music"
+    },
+    {
+      "id": "352",
+      "title": "42.ª Festa da Castanha – Curral das Freiras",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/festas-tradicionais/42-a-festa-da-castanha-curral-das-freiras",
+      "start": "2026-10-31",
+      "end": "2026-11-01",
+      "time": "",
+      "place": "Casa do Povo do Curral das Freiras",
+      "category": "Other"
     }
   ]
 }
