@@ -351,6 +351,14 @@
     },
     {
       "mode": "festivals",
+      "name": "Concertos de Outubro | Orquestra Clássica da Madeira",
+      "date": "2026-10-01",
+      "location": "Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concertos-de-outubro-orquestra-classica-da-madeira",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
       "name": "Dia Mundial da Música mm. INTERNATIONAL MUSIC DAY",
       "date": "2026-10-01",
       "location": "Funchal",
@@ -507,14 +515,6 @@
     },
     {
       "mode": "festivals",
-      "name": "CONVIDA ANIKÓ HARANGI",
-      "date": "2026-10-03",
-      "location": "Funchal",
-      "url": "https://t.me/festas_madeira/2644",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
       "name": "Concert · Gaula",
       "date": "2026-10-03",
       "location": "Gaula",
@@ -610,6 +610,18 @@
     },
     {
       "mode": "festivals",
+      "name": "Quinteto de Sopros \"Solistas OCM\" convida Anikó Harangi",
+      "date": "2026-10-03",
+      "location": "Assembleia Legislativa da Madeira",
+      "url": "https://www.ocmadeira.pt/concertos/proximos-eventos/musica-camara/273-quinteto-de-sopros-solistas-ocm-convida-aniko-harangi.html",
+      "event_type": "festival",
+      "time": "18:00",
+      "price": "€20",
+      "organizer": "Orquestra Clássica da Madeira",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
       "name": "Sport · Machico",
       "date": "2026-10-03",
       "location": "Machico",
@@ -642,7 +654,7 @@
     },
     {
       "mode": "trail",
-      "name": "Ultra Madeira",
+      "name": "Ultra Madeira (17/32/55 km)",
       "date": "2026-10-03",
       "location": "Madeira",
       "url": "https://en.ultratrailmadeiraisland.com/",
@@ -650,7 +662,7 @@
     },
     {
       "mode": "trail",
-      "name": "X Ultra Madeira - Banana da Madeira 2026",
+      "name": "X Ultra Madeira - Banana da Madeira 2026 (8 km)",
       "date": "2026-10-03",
       "location": "R. A. da Madeira",
       "url": "https://en.ultratrailmadeiraisland.com/",
@@ -745,14 +757,6 @@
       "category": "concert"
     },
     {
-      "mode": "road",
-      "name": "Bike Marathon Madeira",
-      "date": "2026-10-05",
-      "location": "Funchal",
-      "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
-      "event_type": "cycling"
-    },
-    {
       "mode": "festivals",
       "name": "Baltazar Dias Apresenta",
       "date": "2026-10-06",
@@ -775,6 +779,18 @@
       "location": "Madeira",
       "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
       "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "OCM Música de Câmara | Quinteto de Sopros “Atlântida\"",
+      "date": "2026-10-06",
+      "location": "Reid's Palace, a Belmond Hotel Madeira",
+      "url": "https://www.ocmadeira.pt/concertos/proximos-eventos/musica-camara/274-quinteto-de-sopros-atlantida.html",
+      "event_type": "festival",
+      "time": "21:30",
+      "price": "€20",
+      "organizer": "Orquestra Clássica da Madeira",
+      "category": "concert"
     },
     {
       "mode": "festivals",
@@ -965,6 +981,18 @@
     },
     {
       "mode": "festivals",
+      "name": "Kora Collab",
+      "date": "2026-10-10",
+      "location": "Caniço de Baixo, Santa Cruz",
+      "url": "",
+      "event_type": "festival",
+      "time": "21:00",
+      "price": "Free",
+      "organizer": "Capoeira Lounge Bar",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
       "name": "Laura – Está Tudo Sob Controlo",
       "date": "2026-10-10",
       "location": "Casa da Cultura da Câmara de Lobos",
@@ -982,6 +1010,18 @@
       "location": "Santo António",
       "url": "https://t.me/festas_madeira/2610",
       "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "OCM Música de Câmara | Legno Duo",
+      "date": "2026-10-10",
+      "location": "Capela da Fundação Princesa Dona Maria Amélia",
+      "url": "https://www.ocmadeira.pt/concertos/proximos-eventos/musica-camara/275-legno-duo.html",
+      "event_type": "festival",
+      "time": "18:00",
+      "price": "€20",
+      "organizer": "Orquestra Clássica da Madeira",
+      "category": "concert"
     },
     {
       "mode": "festivals",
@@ -1121,19 +1161,15 @@
     },
     {
       "mode": "festivals",
-      "name": "Orquestra CLássica pa Mapeira",
-      "date": "2026-10-17",
-      "location": "Sé",
-      "url": "https://t.me/festas_madeira/2624",
-      "event_type": "festival"
-    },
-    {
-      "mode": "festivals",
       "name": "Orquestra Clássica da Madeira | Operazione Tango",
       "date": "2026-10-17",
-      "location": "Auditório do Centro de Congressos da Madeira",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/orquestra-classica-da-madeira-operazione-tango",
-      "event_type": "festival"
+      "location": "Centro Congressos da Madeira",
+      "url": "https://www.ticketline.pt/pt/evento/orq-classica-da-madeira-operazione-tango-108076",
+      "event_type": "festival",
+      "time": "18:00",
+      "price": "€25",
+      "organizer": "Orquestra Clássica da Madeira",
+      "category": "concert"
     },
     {
       "mode": "festivals",
@@ -1165,6 +1201,14 @@
     },
     {
       "mode": "trail",
+      "name": "EcoTrail Funchal 2026",
+      "date": "2026-10-17",
+      "location": "Funchal",
+      "url": "https://fpacompeticoes.pt/",
+      "event_type": "running"
+    },
+    {
+      "mode": "trail",
       "name": "EcoTrail Madeira 15 km",
       "date": "2026-10-17",
       "location": "Funchal, Madeira",
@@ -1193,19 +1237,10 @@
       "date": "2026-10-17",
       "location": "Funchal, Madeira",
       "url": "https://madeira.ecotrail.com/",
-      "event_type": "trail"
-    },
-    {
-      "mode": "trail",
-      "name": "Ecotrail Funchal 2026",
-      "date": "2026-10-17",
-      "location": "Funchal",
-      "url": "https://fpacompeticoes.pt/",
-      "event_type": "",
+      "event_type": "trail",
       "time": "09:00",
       "price": "Free",
-      "organizer": "Ecotrail Funchal",
-      "category": "sport"
+      "organizer": "Ecotrail Funchal"
     },
     {
       "mode": "trail",
@@ -1237,6 +1272,18 @@
       "time": "22:00",
       "price": "€10",
       "organizer": "Estalagem da Ponta do Sol",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "OCM Música de Câmara | Legno Duo",
+      "date": "2026-10-21",
+      "location": "Royal Savoy",
+      "url": "https://www.ocmadeira.pt/concertos/proximos-eventos/musica-camara/276-legno-duo.html",
+      "event_type": "festival",
+      "time": "21:00",
+      "price": "€20",
+      "organizer": "Orquestra Clássica da Madeira",
       "category": "concert"
     },
     {
@@ -1340,6 +1387,14 @@
       "category": "theatre"
     },
     {
+      "mode": "road",
+      "name": "Corrida das Mulheres (1.3 km)",
+      "date": "2026-10-24",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
       "mode": "trail",
       "name": "Orientação: Orientação Câmara de Lobos (Urbana)",
       "date": "2026-10-24",
@@ -1424,12 +1479,52 @@
       "category": "theatre"
     },
     {
+      "mode": "festivals",
+      "name": "Orquestra Clássica da Madeira | Albrecht Mayer & OCM",
+      "date": "2026-10-31",
+      "location": "Centro Congressos da Madeira",
+      "url": "https://www.ticketline.pt/pt/evento/orq-classica-da-madeira-albrecht-mayer-107831",
+      "event_type": "festival",
+      "time": "18:00",
+      "price": "€25",
+      "organizer": "Orquestra Clássica da Madeira",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "Simon & Garfunkel tribute",
+      "date": "2026-10-31",
+      "location": "Rua Baden Powell,Caniço-de-Baixo., Santa Cruz",
+      "url": "",
+      "event_type": "festival",
+      "time": "21:00",
+      "price": "Free",
+      "organizer": "Capoeira Lounge Bar",
+      "category": "concert"
+    },
+    {
+      "mode": "pro",
+      "name": "Corrida Regional dos Professores (3.5 km)",
+      "date": "2026-10-31",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Corrida Regional dos Professores (3.5 km)",
+      "date": "2026-10-31",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
       "mode": "trail",
       "name": "Orientação Aventura - Orienteering Race: Ponta do Sol",
       "date": "2026-10-31",
       "location": "Canhas, Ponta do Sol",
       "url": "https://aoram.pt/calendario/",
-      "event_type": "",
+      "event_type": "orienteering",
       "time": "11:00",
       "price": "€2",
       "organizer": "Clube Aventura da Madeira",
@@ -1473,7 +1568,7 @@
       "date": "2026-11-01",
       "location": "Chão das Feiteiras, Funchal",
       "url": "",
-      "event_type": "",
+      "event_type": "orienteering",
       "time": "11:00",
       "price": "€2",
       "organizer": "Câmara Municipal do Funchal",
@@ -1532,12 +1627,28 @@
       "event_type": "cycling_pro"
     },
     {
+      "mode": "road",
+      "name": "Corta Mato das Feiteiras / C.R. Corta-Mato (7 km)",
+      "date": "2026-11-07",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
       "mode": "trail",
       "name": "Orientação: 10.º Funchal City Race (Urbana)",
       "date": "2026-11-08",
       "location": "Funchal",
       "url": "https://aoram.pt/calendario/",
       "event_type": "orienteering"
+    },
+    {
+      "mode": "road",
+      "name": "Sao Martinho (5.5 km)",
+      "date": "2026-11-10",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
     },
     {
       "mode": "festivals",
@@ -1588,6 +1699,14 @@
       "category": "festival"
     },
     {
+      "mode": "road",
+      "name": "Corrida dos Homens (1.3 km)",
+      "date": "2026-11-14",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
       "mode": "trail",
       "name": "Orientação: Sprint Jardim do Mar (Urbana)",
       "date": "2026-11-14",
@@ -1604,8 +1723,16 @@
       "event_type": "orienteering"
     },
     {
+      "mode": "road",
+      "name": "Corrida das Castanhas (4.5 km)",
+      "date": "2026-11-22",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
       "mode": "trail",
-      "name": "ADN Race Ponta do Sol",
+      "name": "ADN Race Ponta do Sol (14/26 km)",
       "date": "2026-11-22",
       "location": "Ponta do Sol, Madeira",
       "url": "https://adnrace.pt/",
@@ -1618,6 +1745,22 @@
       "location": "Calheta",
       "url": "https://aoram.pt/calendario/",
       "event_type": "orienteering"
+    },
+    {
+      "mode": "pro",
+      "name": "Circuito do Imaculado Coracao de Maria (3.8 km)",
+      "date": "2026-11-29",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Circuito do Imaculado Coracao de Maria (3.8 km)",
+      "date": "2026-11-29",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
     },
     {
       "mode": "festivals",
@@ -1644,6 +1787,14 @@
       "event_type": "festival"
     },
     {
+      "mode": "road",
+      "name": "10 km da Calheta - Alberto Paulo / C.R. Estrada (10 km)",
+      "date": "2026-12-01",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
       "mode": "trail",
       "name": "Orientação: Madeira Rogaining Race (Rogaine)",
       "date": "2026-12-01",
@@ -1660,12 +1811,44 @@
       "event_type": "children"
     },
     {
+      "mode": "road",
+      "name": "G.P. de Natal (5.5 km)",
+      "date": "2026-12-05",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "trail",
+      "name": "Maxi Race (26/55 km)",
+      "date": "2026-12-05",
+      "location": "Sao Vicente, Madeira",
+      "url": "https://maxiracemadeira.com/",
+      "event_type": "trail"
+    },
+    {
+      "mode": "kids",
+      "name": "Maxi Race Trail Jovem (15 km)",
+      "date": "2026-12-06",
+      "location": "Sao Vicente, Madeira",
+      "url": "https://maxiracemadeira.com/",
+      "event_type": "trail"
+    },
+    {
       "mode": "pro",
       "name": "XVIII Edição da Avalanche Raposeira",
       "date": "2026-12-06",
       "location": "Raposeira, Calheta",
       "url": "https://acmadeira.pt/wp-content/uploads/2026/03/Calendario-Atividades-11_03_2026.pdf",
       "event_type": "cycling_pro"
+    },
+    {
+      "mode": "road",
+      "name": "Porto Moniz (5.7 km)",
+      "date": "2026-12-08",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
     },
     {
       "mode": "cycling",
@@ -1684,12 +1867,36 @@
       "event_type": "orienteering"
     },
     {
+      "mode": "trail",
+      "name": "Trail Noturno Pela Vida (15 km)",
+      "date": "2026-12-12",
+      "location": "Machico, Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/TM_27-Quadro.pdf",
+      "event_type": "trail"
+    },
+    {
+      "mode": "road",
+      "name": "G.P. Santa Luzia / C.R. Estrada (3.4 km)",
+      "date": "2026-12-13",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
       "mode": "festivals",
       "name": "Childbirth Masses (Missas do Parto)",
       "date": "2026-12-15",
       "location": "Madeira",
       "url": "https://eventsmadeira.com/en/event/childbirth-masses-missas-do-parto/",
       "event_type": "festival"
+    },
+    {
+      "mode": "road",
+      "name": "Arca D'Ajuda (4.7 km)",
+      "date": "2026-12-20",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
     },
     {
       "mode": "festivals",
@@ -1701,11 +1908,55 @@
     },
     {
       "mode": "festivals",
+      "name": "Orquestra Clássica da Madeira | Concerto Fim de Ano 2026",
+      "date": "2026-12-28",
+      "location": "Teatro Municipal Baltazar Dias",
+      "url": "https://www.ticketline.pt/evento/concerto-fim-de-ano-106607",
+      "event_type": "festival",
+      "time": "18:00",
+      "price": "€30",
+      "organizer": "Orquestra Clássica da Madeira",
+      "category": "concert"
+    },
+    {
+      "mode": "road",
+      "name": "Volta a Cidade do Funchal (5.85 km)",
+      "date": "2026-12-28",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "festivals",
       "name": "New Year's Eve Firework Display",
       "date": "2026-12-31",
       "location": "Funchal, Madeira",
       "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
       "event_type": "festival"
+    },
+    {
+      "mode": "road",
+      "name": "G.P. dos Reis (6.3 km)",
+      "date": "2027-01-03",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Camara de Lobos - Funchal (9.4 km)",
+      "date": "2027-01-10",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Santo Amaro (Canico - Santa Cruz) (10.296 m)",
+      "date": "2027-01-16",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
     },
     {
       "mode": "festivals",
@@ -1717,7 +1968,7 @@
     },
     {
       "mode": "road",
-      "name": "Madeira Marathon",
+      "name": "Madeira Marathon (8-42 km)",
       "date": "2027-01-31",
       "location": "Funchal, Madeira",
       "url": "https://www.madeiramarathon.com/",
@@ -1740,12 +1991,140 @@
       "event_type": "festival"
     },
     {
+      "mode": "road",
+      "name": "Agua de Pena / C.R. Estrada (5 km)",
+      "date": "2027-02-07",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
       "mode": "trail",
-      "name": "Trail do Porto Moniz",
+      "name": "Trail do Porto Moniz (13/26/46.5 km)",
       "date": "2027-02-14",
       "location": "Porto Moniz, Madeira",
       "url": "https://trailportomoniz.com/",
       "event_type": "trail"
+    },
+    {
+      "mode": "road",
+      "name": "Estafeta Camara de Lobos - Funchal (9.4 km)",
+      "date": "2027-02-21",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "kids",
+      "name": "Quilometro Jovem (1.000 m)",
+      "date": "2027-02-26",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Quilometro Jovem (1.000 m)",
+      "date": "2027-02-26",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "kids",
+      "name": "Corta-Mato Jovem e Escolar / C.R. Corta-Mato (1-2 km)",
+      "date": "2027-03-05",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Corta-Mato Jovem e Escolar / C.R. Corta-Mato (1-2 km)",
+      "date": "2027-03-05",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "trail",
+      "name": "Porto Santo Nature Trail (14/30/46 km)",
+      "date": "2027-03-06",
+      "location": "Porto Santo, Madeira",
+      "url": "https://www.portosantonaturetrail.com/",
+      "event_type": "trail"
+    },
+    {
+      "mode": "road",
+      "name": "Meia Maratona do Porto Santo - CR (21.0975 km)",
+      "date": "2027-03-07",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "pro",
+      "name": "Circuito do Livramento (5.5 km)",
+      "date": "2027-03-13",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Circuito do Livramento (5.5 km)",
+      "date": "2027-03-13",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Milha da Ribeira Brava / CR Milha (1.609 m)",
+      "date": "2027-03-20",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "trail",
+      "name": "Trail do Ludens Clube de Machico (15/30 km)",
+      "date": "2027-03-21",
+      "location": "Machico, Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/TM_27-Quadro.pdf",
+      "event_type": "trail"
+    },
+    {
+      "mode": "road",
+      "name": "Corrida da Hora do Planeta (2 km)",
+      "date": "2027-03-27",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "G.P. das Cerejeiras (4.7 km)",
+      "date": "2027-04-11",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Corrida de Sao Lourenco (4.1 km)",
+      "date": "2027-04-17",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Corrida da Liberdade (Machico-Santa Cruz) (7.5 km)",
+      "date": "2027-04-25",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
     },
     {
       "mode": "festivals",
@@ -1756,12 +2135,68 @@
       "event_type": "festival"
     },
     {
+      "mode": "road",
+      "name": "1 de Maio / C.R. Estrada (5.7 km)",
+      "date": "2027-05-01",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
       "mode": "cycling",
       "name": "Rat Race Madeira Coast to Coast (bike/foot/kayak)",
       "date": "2027-05-06",
       "location": "Madeira",
       "url": "https://www.ratrace.com/madeira",
       "event_type": "cycling"
+    },
+    {
+      "mode": "road",
+      "name": "Zona Militar da Madeira (5 km)",
+      "date": "2027-05-07",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Caminho de Ferro (3.9 km)",
+      "date": "2027-05-09",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Rota dos Dragoeiros (6.1 km)",
+      "date": "2027-05-16",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Nacional / Bioforma (5.2 km)",
+      "date": "2027-05-22",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "trail",
+      "name": "Trail da Calheta (17/35 km)",
+      "date": "2027-05-23",
+      "location": "Calheta, Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/TM_27-Quadro.pdf",
+      "event_type": "trail"
+    },
+    {
+      "mode": "road",
+      "name": "Neon Color Run de Machico (2.5 km)",
+      "date": "2027-05-28",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
     },
     {
       "mode": "festivals",
@@ -1772,12 +2207,156 @@
       "event_type": "festival"
     },
     {
+      "mode": "road",
+      "name": "Nucleo Historico de Santa Maria Maior (6.1 km)",
+      "date": "2027-06-05",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Junta de Freguesia de Santo Antonio (6.5 km)",
+      "date": "2027-06-10",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "pro",
+      "name": "Circuito do Estabelecimento Prisional do Funchal (3.3 km)",
+      "date": "2027-06-17",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Circuito do Estabelecimento Prisional do Funchal (3.3 km)",
+      "date": "2027-06-17",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "G.P. Santo da Serra (9.5 km)",
+      "date": "2027-06-19",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "trail",
+      "name": "Cristo Rei Trail (16/28 km)",
+      "date": "2027-06-26",
+      "location": "Canico, Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/TM_27-Quadro.pdf",
+      "event_type": "trail"
+    },
+    {
+      "mode": "pro",
+      "name": "Circuito da Se (4.2 km)",
+      "date": "2027-06-27",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Circuito da Se (4.2 km)",
+      "date": "2027-06-27",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Horarios do Funchal (3.8 km)",
+      "date": "2027-07-01",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Pontinha - Casa da Luz (2.443 m)",
+      "date": "2027-07-03",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Corrida Solidaria AFA (5.3 km)",
+      "date": "2027-07-04",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "pro",
+      "name": "Circuito de Sao Roque (8 km)",
+      "date": "2027-07-10",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Circuito de Sao Roque (8 km)",
+      "date": "2027-07-10",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Milha do Dia do Porto do Funchal (1.609 m)",
+      "date": "2027-07-18",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "trail",
+      "name": "Trail Porto da Cruz Natura (15/30/50 km)",
+      "date": "2027-07-18",
+      "location": "Porto da Cruz, Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/TM_27-Quadro.pdf",
+      "event_type": "trail"
+    },
+    {
+      "mode": "road",
+      "name": "Santana - Ilha - Sao Jorge (14 km)",
+      "date": "2027-07-25",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
       "mode": "festivals",
       "name": "Classics at Magnolia",
       "date": "2027-07-31",
       "location": "Funchal, Madeira",
       "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
       "event_type": "festival"
+    },
+    {
+      "mode": "trail",
+      "name": "Camacha Trail (9/15/26 km)",
+      "date": "2027-08-01",
+      "location": "Camacha, Madeira",
+      "url": "https://atletismodamadeira.pt/event/camacha-trail-3/",
+      "event_type": "trail"
+    },
+    {
+      "mode": "road",
+      "name": "Art' Camacha (6 km)",
+      "date": "2027-08-15",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
     },
     {
       "mode": "festivals",
@@ -1796,12 +2375,76 @@
       "event_type": "festival"
     },
     {
+      "mode": "road",
+      "name": "G.P. Sao Vicente (7 km)",
+      "date": "2027-08-22",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Madalena do Mar - Ponta do Sol (5 km)",
+      "date": "2027-08-29",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "GP Bombeiros (5.2 km)",
+      "date": "2027-09-05",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Vindimas (4.7 km)",
+      "date": "2027-09-12",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "trail",
+      "name": "Trail de Camara de Lobos (15/27/46 km)",
+      "date": "2027-09-18",
+      "location": "Camara de Lobos, Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/TM_27-Quadro.pdf",
+      "event_type": "trail"
+    },
+    {
+      "mode": "road",
+      "name": "Corrida da Festa do Pero (5.1 km)",
+      "date": "2027-09-19",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
       "mode": "festivals",
       "name": "Columbus Festival - Porto Santo Island",
       "date": "2027-09-23",
       "location": "Porto Santo, Madeira",
       "url": "https://visitmadeira.com/media/1knpekh3/calendario-animacao-turistica_-srtc-drt_-en_2026-2028.pdf",
       "event_type": "festival"
+    },
+    {
+      "mode": "road",
+      "name": "RG3 (5.5 km)",
+      "date": "2027-09-25",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "Corrida do Aeroporto (3.1 km)",
+      "date": "2027-09-26",
+      "location": "Madeira",
+      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
+      "event_type": "road_run"
     },
     {
       "mode": "festivals",

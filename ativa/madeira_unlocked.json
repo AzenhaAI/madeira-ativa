@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-09-29T12:46:16",
-  "count": 192,
+  "fetched": "2026-09-29T17:02:59",
+  "count": 194,
   "items": [
     {
       "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
@@ -2345,6 +2345,21 @@
       "source_category": "theater"
     },
     {
+      "id": "kora-collab-2026-10-10-2100",
+      "title": "Kora Collab",
+      "url": "https://www.madeira-unlocked.com/en/events/kora-collab-2026-10-10-2100",
+      "start": "2026-10-10T21:00:00+01:00",
+      "end": "2026-10-10T22:00:00+01:00",
+      "date": "2026-10-10",
+      "time": "21:00",
+      "venue": "Caniço de Baixo",
+      "municipality": "Santa Cruz",
+      "price": 0,
+      "organizer": "Capoeira Lounge Bar",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "echoo-nature-fest-2026-10-11",
       "title": "ECHOO Nature Fest",
       "url": "https://www.madeira-unlocked.com/en/events/echoo-nature-fest-2026-10-11",
@@ -2748,6 +2763,21 @@
       "organizer": "Grupo de Teatro de Machico",
       "category": "theatre",
       "source_category": "theater"
+    },
+    {
+      "id": "simon-garfunkel-tribute-2026-10-31",
+      "title": "Simon & Garfunkel tribute",
+      "url": "https://www.madeira-unlocked.com/en/events/simon-garfunkel-tribute-2026-10-31",
+      "start": "2026-10-31T21:00:00+00:00",
+      "end": "2026-10-31T22:00:00+00:00",
+      "date": "2026-10-31",
+      "time": "21:00",
+      "venue": "Rua Baden Powell,Caniço-de-Baixo.",
+      "municipality": "Santa Cruz",
+      "price": 0,
+      "organizer": "Capoeira Lounge Bar",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "orientacao-orienteering-race-chao-das-feiteiras-2026-11-01",

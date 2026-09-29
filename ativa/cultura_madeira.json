@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-09-29T12:46:28",
-  "count": 101,
+  "fetched": "2026-09-29T17:03:13",
+  "count": 102,
   "items": [
     {
       "id": "114",
@@ -883,6 +883,16 @@
       "time": "19:45",
       "place": "Jardim de Santa Luzia",
       "category": "Traditional feast"
+    },
+    {
+      "id": "356",
+      "title": "Concertos de Outubro | Orquestra Clássica da Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concertos-de-outubro-orquestra-classica-da-madeira",
+      "start": "2026-10-01",
+      "end": "2026-10-31",
+      "time": "",
+      "place": "",
+      "category": "Music"
     },
     {
       "id": "335",
