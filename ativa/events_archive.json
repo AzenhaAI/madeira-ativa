@@ -1,7 +1,7 @@
 {
   "note": "Past events — preserved so history is never lost on rebuild",
-  "generated_at": "2026-09-29",
-  "count": 1410,
+  "generated_at": "2026-09-30",
+  "count": 1434,
   "events": [
     {
       "mode": "trail",
@@ -11437,6 +11437,206 @@
       "location": "Madeira / Porto Santo",
       "url": "https://trans-madeira.com/the-race/",
       "event_type": "cycling_pro"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Bordado da Madeira\"",
+      "date": "2026-09-29",
+      "location": "Quinta Magnólia - Centro Cultural",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/exposicao-bordado-da-madeira",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Da Laurissilva ao Cosmos",
+      "date": "2026-09-29",
+      "location": "Centro Cultural e de Investigação do Funchal",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/da-laurissilva-ao-cosmos",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Detalhes Invisíveis\"",
+      "date": "2026-09-29",
+      "location": "Casa da Cultura de Câmara de Lobos",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/detalhes-invisiveis",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Discordância Perfeita\"",
+      "date": "2026-09-29",
+      "location": "Galeria Lourdes",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/discordancia-perfeita",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Ilhas Revisitadas\"",
+      "date": "2026-09-29",
+      "location": "MUDAS.Museu de Arte Contemporânea da Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/ilhas-revisitadas",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Imagens e Memórias do Porto Santo\"",
+      "date": "2026-09-29",
+      "location": "Câmara Municipal do Porto Santo",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/imagens-e-memorias-do-porto-santo",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Mudar a Escola para Mudar o Mundo\"",
+      "date": "2026-09-29",
+      "location": "PORTA 33",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/mudar-a-escola-para-mudar-o-mundo",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"O Caminho nas Águas. Depois da Última Ceia\"",
+      "date": "2026-09-29",
+      "location": "Núcleo Histórico de Santo Amaro - Torre do Capitão",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/o-caminho-nas-aguas-depois-da-ultima-ceia",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "APRESENTAÇÃO DO LIVRO Nuno Barros e Priscila Reis",
+      "date": "2026-09-29",
+      "location": "Câmara De Lobos",
+      "url": "https://t.me/festas_madeira/2633",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Anne Frank – Memória, Consciência e Resistência",
+      "date": "2026-09-29",
+      "location": "Cine Teatro de Santo António, Rua Coohafal 9020-393, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "15:30",
+      "price": "Free",
+      "organizer": "ATEF – Associação Teatro Experimental do Funchal",
+      "category": "theatre"
+    },
+    {
+      "mode": "festivals",
+      "name": "Book Presentation, A Gulosa do Ilhéu de Câmara de Lobos",
+      "date": "2026-09-29",
+      "location": "Museu de Imprensa da Madeira, Câmara de Lobos",
+      "url": "",
+      "event_type": "festival",
+      "time": "10:00",
+      "price": "Free",
+      "organizer": "Câmara Municipal de Câmara de Lobos",
+      "category": "culture"
+    },
+    {
+      "mode": "festivals",
+      "name": "Ciclo de Exposições (IN)FLUXO",
+      "date": "2026-09-29",
+      "location": "Sala de exposições da Assembleia Municipal do Porto Santo",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/ciclo-de-exposicoes-in-fluxo",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concertos L 2026",
+      "date": "2026-09-29",
+      "location": "Estalagem da Ponta do Sol",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concertos-l-2026",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concurso Literário António Feliciano Rodrigues \"Castilho\" 2026",
+      "date": "2026-09-29",
+      "location": "Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/concurso-literario-antonio-feliciano-rodrigues-castilho-2026",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Duo Bandonica – Projeto Artístico “Fala-me de Música”",
+      "date": "2026-09-29",
+      "location": "Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/duo-bandonica-projeto-artistico-fala-me-de-musica1",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "EUROPE, DESPORTO",
+      "date": "2026-09-29",
+      "location": "Saúde",
+      "url": "https://t.me/festas_madeira/2580",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Exhibition · Funchal",
+      "date": "2026-09-29",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2600",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Setembrário – Iniciativa de criação artística e exposição coletiva para artistas emergentes",
+      "date": "2026-09-29",
+      "location": "Galeria Tratuário",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/setembrario-iniciativa-de-criacao-artistica-e-exposicao-coletiva-para-artistas-emergentes",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Show · Funchal",
+      "date": "2026-09-29",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2420",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Show · Ribeira Brava",
+      "date": "2026-09-29",
+      "location": "Ribeira Brava",
+      "url": "https://t.me/festas_madeira/2611",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Skin | Pele | Metes-me Nojo",
+      "date": "2026-09-29",
+      "location": "Fábrica de Prazeres",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/skin-pele-metes-me-nojo",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Workshop · Funchal",
+      "date": "2026-09-29",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2518",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "“Nostalgic Madeira Music”",
+      "date": "2026-09-29",
+      "location": "Instituto do Vinho da Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/nostalgic-madeira-music",
+      "event_type": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "“WA” de Hanamaro Chaki",
+      "date": "2026-09-29",
+      "location": "Fortaleza de São João Baptista do Pico",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/wa-de-hanamaro-chaki",
+      "event_type": "festival"
     }
   ]
 }

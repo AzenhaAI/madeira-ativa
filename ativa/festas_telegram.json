@@ -1,8 +1,8 @@
 {
   "note": "Cultural events harvested from t.me/festas_madeira. Accumulates: the channel only exposes recent posts.",
   "source": "https://t.me/s/festas_madeira",
-  "fetched": "2026-09-29T17:03:19",
-  "count": 231,
+  "fetched": "2026-09-30T11:12:10",
+  "count": 233,
   "categories": {
     "concerto": "Concert",
     "arraial": "Arraial",
@@ -3534,6 +3534,22 @@
       "title": "Festival · Camacha"
     },
     {
+      "post": "https://t.me/festas_madeira/2645",
+      "dates": [
+        "2026-10-01",
+        "2026-10-02"
+      ],
+      "categories": [
+        "exposição"
+      ],
+      "place": "Santa Luzia",
+      "poster": "https://cdn4.telesco.pe/file/GBKz9sWQODWYC6h-x_FHlXHA7WvczxXIjjgF6suAc-ImHtvkNg-RZj46n2NnOss_FOHPDfL-9qtnHXfdDS-7R_R-VKJd8is2mfX1JjMsiZlU3eQxfr9KW-Gcjo2sXZzqADdH9JE16bqj1GANL0wdVZtMeumw_nwQoVWLda_SwvB9O11WF6cxZkZZoGSL3-K1CkQrFVTsyQjaf0tgvEt8_TnGpyw-cckea7yJ2yDhX9A6k1SFtM_7U0Q5ChAWvwWSPrlBz97M1mZi1dX2AniJke-ZWFCz6c7IDKTrcLXBf-Dk_r3B0c_gJOHW3IKPNqG3lryCguZqXF6mui3Pu-Ld8w.jpg",
+      "published": "2026-09-30T09:00:19+00:00",
+      "poster_text": "",
+      "name": "",
+      "title": "Exhibition · Santa Luzia"
+    },
+    {
       "post": "https://t.me/festas_madeira/2483",
       "dates": [
         "2026-10-02"
@@ -3883,6 +3899,21 @@
       "poster_text": "SI\nWrestvcal de Follorve Noé Crd 2\n\nD UTU RO\npgieeios\n\n“MAIS CULTURA, MAIS:VIDA\n\nserlima chabem",
       "name": "MAIS CULTURA, MAIS:VIDA",
       "title": "MAIS CULTURA, MAIS:VIDA"
+    },
+    {
+      "post": "https://t.me/festas_madeira/2646",
+      "dates": [
+        "2026-10-10"
+      ],
+      "categories": [
+        "espetáculo"
+      ],
+      "place": "Câmara De Lobos",
+      "poster": "https://cdn4.telesco.pe/file/GSMsmFW90K7gBz7Q3iT6hDE-HiQzEeNsw9n6cVq_J6339cHz2mLjpR7GvNjvEC3RJZkjJpx3u5w9UIHVhYz01iXT1Quz_MOJw6rSo0B9zGzqneYSn9MWPTsy5HyMwbjRYwH-bZGLUrNMMHb7OqHAZKvULEm4dC9YkZfTY_gbNfrXNiWH2Zh-k1PPN_L9W2BT6gkw8-5Ntsx37guHwcd_449I3wscUzNIF93iupxF_GKXR8HjZZO6t-VlxspUOT5km0blLajsGFkEdPMuUhQMQr6rLn7kcccPo92nxF9CSsQBrMcmbp5B_kZ-BjbKTjFXdgUx7IqG6DeAkFjXQ9syxw.jpg",
+      "published": "2026-09-30T10:33:25+00:00",
+      "poster_text": "“| 10 OUT\n4 CASADA CULTURA DE\n\nRA DE LOBOS\n21h00\n\nrm ER Vy (6) EIA\ncAmarADeLosos [RAN\n\nWG",
+      "name": "4 CASADA CULTURA DE RA DE LOBOS",
+      "title": "Show · Câmara De Lobos"
     },
     {
       "post": "https://t.me/festas_madeira/2596",

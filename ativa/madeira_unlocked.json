@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-09-29T17:02:59",
-  "count": 194,
+  "fetched": "2026-09-30T11:11:49",
+  "count": 202,
   "items": [
     {
       "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
@@ -1895,6 +1895,21 @@
       "source_category": "festivals-parades"
     },
     {
+      "id": "world-walking-day-2026-10-04",
+      "title": "World Walking Day",
+      "url": "https://www.madeira-unlocked.com/en/events/world-walking-day-2026-10-04",
+      "start": "2026-10-04T09:30:00+01:00",
+      "end": "2026-10-04T11:30:00+01:00",
+      "date": "2026-10-04",
+      "time": "09:30",
+      "venue": "Jardim Almirante Reis",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Centro Cultural e Desportivo da Câmara Municipal do Funchal",
+      "category": "sport",
+      "source_category": "sport-fitness"
+    },
+    {
       "id": "expressa-te-festival-de-artes-2026-2026-10-04",
       "title": "EXPRESSA-te – Festival de Artes 2026",
       "url": "https://www.madeira-unlocked.com/en/events/expressa-te-festival-de-artes-2026-2026-10-04",
@@ -2120,6 +2135,21 @@
       "source_category": "festivals-parades"
     },
     {
+      "id": "concertos-no-vizinho-linda-oudendijk-2026-10-08",
+      "title": "Concertos no Vizinho, Linda Oudendijk",
+      "url": "https://www.madeira-unlocked.com/en/events/concertos-no-vizinho-linda-oudendijk-2026-10-08",
+      "start": "2026-10-08T19:30:00+01:00",
+      "end": "2026-10-08T21:30:00+01:00",
+      "date": "2026-10-08",
+      "time": "19:30",
+      "venue": "O Vizinho Restaurante",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "O Vizinho Restaurante",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "the-gift-2026-10-08",
       "title": "The Gift",
       "url": "https://www.madeira-unlocked.com/en/events/the-gift-2026-10-08",
@@ -2300,6 +2330,21 @@
       "source_category": "festivals-parades"
     },
     {
+      "id": "tender-events-presents-mohk-live-2026-10-10",
+      "title": "Tender Events Presents MØHK Live",
+      "url": "https://www.madeira-unlocked.com/en/events/tender-events-presents-mohk-live-2026-10-10",
+      "start": "2026-10-10T16:00:00+01:00",
+      "end": "2026-10-10T23:00:00+01:00",
+      "date": "2026-10-10",
+      "time": "16:00",
+      "venue": "Paiol Militar do Funchal",
+      "municipality": "Funchal",
+      "price": 16.43,
+      "organizer": "Tender Events",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "an-unusual-afternoon-for-young-adults-2026-10-10",
       "title": "An Unusual Afternoon for Young Adults",
       "url": "https://www.madeira-unlocked.com/en/events/an-unusual-afternoon-for-young-adults-2026-10-10",
@@ -2390,6 +2435,21 @@
       "source_category": "festivals-parades"
     },
     {
+      "id": "concertos-no-vizinho-francisco-jesus-2026-10-15",
+      "title": "Concertos no Vizinho, Francisco Jesus",
+      "url": "https://www.madeira-unlocked.com/en/events/concertos-no-vizinho-francisco-jesus-2026-10-15",
+      "start": "2026-10-15T19:30:00+01:00",
+      "end": "2026-10-15T21:30:00+01:00",
+      "date": "2026-10-15",
+      "time": "19:30",
+      "venue": "O Vizinho Restaurante",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "O Vizinho Restaurante",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "soy-kleiii-2026-10-16",
       "title": "Soy Kleiii",
       "url": "https://www.madeira-unlocked.com/en/events/soy-kleiii-2026-10-16",
@@ -2433,6 +2493,36 @@
       "organizer": "Ecotrail Funchal",
       "category": "sport",
       "source_category": "sport-fitness"
+    },
+    {
+      "id": "soap-making-and-natural-painting-workshop-halloween-2026-10-17",
+      "title": "Soap-Making and Natural Painting Workshop - HALLOWEEN",
+      "url": "https://www.madeira-unlocked.com/en/events/soap-making-and-natural-painting-workshop-halloween-2026-10-17",
+      "start": "2026-10-17T10:30:00+01:00",
+      "end": "2026-10-17T12:30:00+01:00",
+      "date": "2026-10-17",
+      "time": "10:30",
+      "venue": "Cowork - Rua das Mercês 41, 9000-224 Funchal",
+      "municipality": "Funchal",
+      "price": 45,
+      "organizer": "KHÔRA",
+      "category": "family",
+      "source_category": "kids-family"
+    },
+    {
+      "id": "workshop-especial-halloween-para-familias-2026-10-17",
+      "title": "Workshop Especial Halloween Para Famílias",
+      "url": "https://www.madeira-unlocked.com/en/events/workshop-especial-halloween-para-familias-2026-10-17",
+      "start": "2026-10-17T10:30:00+01:00",
+      "end": "2026-10-17T12:30:00+01:00",
+      "date": "2026-10-17",
+      "time": "10:30",
+      "venue": "Cowork Funchal",
+      "municipality": "Funchal",
+      "price": 45,
+      "organizer": "KHÔRA",
+      "category": "workshop",
+      "source_category": "handicraft-workshops"
     },
     {
       "id": "infinito-2026-10-17",
@@ -2615,6 +2705,21 @@
       "source_category": "sport-fitness"
     },
     {
+      "id": "concertos-no-vizinho-eva-luis-and-diego-salvatori-2026-10-22",
+      "title": "Concertos no Vizinho, Eva Luís and Diego Salvatori",
+      "url": "https://www.madeira-unlocked.com/en/events/concertos-no-vizinho-eva-luis-and-diego-salvatori-2026-10-22",
+      "start": "2026-10-22T19:30:00+01:00",
+      "end": "2026-10-22T21:30:00+01:00",
+      "date": "2026-10-22",
+      "time": "19:30",
+      "venue": "O Vizinho Restaurante",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "O Vizinho Restaurante",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "canyoning-madeira-meeting-2026-2026-10-23",
       "title": "Canyoning Madeira Meeting 2026",
       "url": "https://www.madeira-unlocked.com/en/events/canyoning-madeira-meeting-2026-2026-10-23",
@@ -2703,6 +2808,21 @@
       "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
       "category": "culture",
       "source_category": "culture-museums"
+    },
+    {
+      "id": "concertos-no-vizinho-francisco-lopes-2026-10-29",
+      "title": "Concertos no Vizinho, Francisco Lopes",
+      "url": "https://www.madeira-unlocked.com/en/events/concertos-no-vizinho-francisco-lopes-2026-10-29",
+      "start": "2026-10-29T19:30:00+00:00",
+      "end": "2026-10-29T21:30:00+00:00",
+      "date": "2026-10-29",
+      "time": "19:30",
+      "venue": "O Vizinho Restaurante",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "O Vizinho Restaurante",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "orientacao-aventura-orienteering-race-ponta-do-sol-2026-10-31",

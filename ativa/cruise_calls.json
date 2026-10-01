@@ -1,8 +1,8 @@
 {
   "note": "Ship calls at the port of Funchal from APRAM. Times are Madeira local time, as the port publishes them. Accumulates; a call no longer listed before its arrival is marked superseded.",
   "source": "https://apram.pt/movimento-navios?port=ptfnc",
-  "fetched": "2026-09-29T11:41:09",
-  "count": 16,
+  "fetched": "2026-09-30T11:27:36",
+  "count": 18,
   "calls": [
     {
       "ship": "SANTA MARIA MANUELA",
@@ -52,6 +52,16 @@
       "from": "Porto Santo Island",
       "departure": "2026-10-02T11:30",
       "to": "Funchal",
+      "superseded": false
+    },
+    {
+      "ship": "CELEBRITY APEX",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-09-30T06:45",
+      "from": "Leixões",
+      "departure": "2026-09-30T17:00",
+      "to": "Santa Cruz De Tenerife",
       "superseded": false
     },
     {
@@ -112,6 +122,16 @@
       "from": "Rotterdam",
       "departure": "2026-10-07T18:00",
       "to": "Santa Cruz De La Palma",
+      "superseded": false
+    },
+    {
+      "ship": "MSC VIRTUOSA",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-10-08T07:00",
+      "from": "Lisboa",
+      "departure": "2026-10-08T18:00",
+      "to": "Las Palmas (Gran Canaria)",
       "superseded": false
     },
     {
