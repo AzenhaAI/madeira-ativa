@@ -48,6 +48,7 @@
     // What already floats at the bottom of a page moves up above the bar.
     '#a2hs{bottom:calc(12px + 64px + env(safe-area-inset-bottom))!important}' +
     '#toTop,.totop{bottom:calc(18px + 64px + env(safe-area-inset-bottom))!important}' +
+    '#az-apk{bottom:calc(64px + env(safe-area-inset-bottom))!important}' +
     '}';
   document.head.appendChild(css);
   var bar = document.createElement('nav');
