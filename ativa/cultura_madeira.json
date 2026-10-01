@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-09-30T11:12:01",
-  "count": 102,
+  "fetched": "2026-10-01T11:40:12",
+  "count": 105,
   "items": [
     {
       "id": "114",
@@ -836,7 +836,7 @@
     },
     {
       "id": "342",
-      "title": "Oficinas de Desenho",
+      "title": "Oficinas de Desenho Out. 2026 - Jun. 2027",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/oficinas-de-desenho",
       "start": "2026-10-01",
       "end": "2027-06-30",
@@ -895,6 +895,16 @@
       "category": "Music"
     },
     {
+      "id": "358",
+      "title": "Programa InfantoJuvenil Out · Nov · Dez 2026",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/programa-infantojuvenil-out-nov-dez-2026",
+      "start": "2026-10-01",
+      "end": "2026-12-19",
+      "time": "",
+      "place": "Direção Regional dos Arquivos, das Bibliotecas e do Livro",
+      "category": "Other"
+    },
+    {
       "id": "335",
       "title": "Festival de Teatro de Machico 2026",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/festival-de-teatro-de-machico-2026",
@@ -903,6 +913,26 @@
       "time": "",
       "place": "Fórum Machico",
       "category": "Activity"
+    },
+    {
+      "id": "359",
+      "title": "Seminário \"A História do Automóvel em Portugal no século XX\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/conferencias/seminario-a-historia-do-automovel-em-portugal-no-seculo-xx",
+      "start": "2026-10-02",
+      "end": "2026-10-02",
+      "time": "14:00",
+      "place": "Centro De Estudos Historia do Atlântico",
+      "category": "Conference"
+    },
+    {
+      "id": "357",
+      "title": "Festival Internacional de Guitarras da Madeira - 8ª Edição",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/festival-internacional-de-guitarras-da-madeira-8a-edicao",
+      "start": "2026-10-02",
+      "end": "2026-11-07",
+      "time": "19:30",
+      "place": "",
+      "category": "Music"
     },
     {
       "id": "348",

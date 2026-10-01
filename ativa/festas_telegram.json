@@ -1,8 +1,8 @@
 {
   "note": "Cultural events harvested from t.me/festas_madeira. Accumulates: the channel only exposes recent posts.",
   "source": "https://t.me/s/festas_madeira",
-  "fetched": "2026-09-30T11:12:10",
-  "count": 233,
+  "fetched": "2026-10-01T11:40:38",
+  "count": 240,
   "categories": {
     "concerto": "Concert",
     "arraial": "Arraial",
@@ -3543,7 +3543,7 @@
         "exposição"
       ],
       "place": "Santa Luzia",
-      "poster": "https://cdn4.telesco.pe/file/GBKz9sWQODWYC6h-x_FHlXHA7WvczxXIjjgF6suAc-ImHtvkNg-RZj46n2NnOss_FOHPDfL-9qtnHXfdDS-7R_R-VKJd8is2mfX1JjMsiZlU3eQxfr9KW-Gcjo2sXZzqADdH9JE16bqj1GANL0wdVZtMeumw_nwQoVWLda_SwvB9O11WF6cxZkZZoGSL3-K1CkQrFVTsyQjaf0tgvEt8_TnGpyw-cckea7yJ2yDhX9A6k1SFtM_7U0Q5ChAWvwWSPrlBz97M1mZi1dX2AniJke-ZWFCz6c7IDKTrcLXBf-Dk_r3B0c_gJOHW3IKPNqG3lryCguZqXF6mui3Pu-Ld8w.jpg",
+      "poster": "https://cdn4.telesco.pe/file/XNYs1cBnHGdx-iX5VqD-JcCAGshEXyDoalXdABIqU6nGmIXGzslO7rpnh-1QZIT7INnQidzN7MyGDgaqg6wgFa7WMeCeVnPQqBhA19P50D1dUd4JOwPvPOwhvDvuF0vhDKDJYW542kcbrSfd8VQzIt3-1um4dAMMAbt_e36HMOqJWR5Gw9LXWxMOi6wBANJITqzkURLoMOI9YG-0TC92xYU9lXBxUkOO3yTMrnlnb3pAZmWlpjfr4RtWd3OahLMrXsSFX2mx5LDGKmSEBZpBxUVfrMdaO-huPN8zbSIOoK8PhTfozNrytVKjhMAbDFbRdM6XPnaEnStpmIehs43sKQ.jpg",
       "published": "2026-09-30T09:00:19+00:00",
       "poster_text": "",
       "name": "",
@@ -3627,6 +3627,75 @@
       "title": "Festa do Santíssimo Sacramento"
     },
     {
+      "post": "https://t.me/festas_madeira/2647",
+      "dates": [
+        "2026-10-02",
+        "2026-10-03",
+        "2026-10-04"
+      ],
+      "categories": [
+        "concerto",
+        "arraial",
+        "religioso",
+        "família"
+      ],
+      "place": "Ribeira Brava",
+      "poster": "https://cdn4.telesco.pe/file/cpNd80WkqRZbPWFY4G6e0NfhT2eyT07djdPVHUBSLaB3O8Ufbc45mUrabkVPZNVQCP6JJcmPXeJxb5Yi1RlZPGYYcWpHtjO6vUvNF-TTVgn0XYvzlt8S0OPTW_4sYab8-S_SkZbd8uYprn-9Gk-lGjyNwZugWLo_erMLv6gnuDwNFdhJGNp_sPwlixO1YnLucR6T9ohNv0x4pZeOWpfRScSVUCzuXMykHTx6--3qRwglT3k5E6vmdGz6bRIcFLIGVlwW5uRzY11iYycgGQ71ygRxZKtwUnXDGPc87cWm86Jgc9lmwN2jQ9I8s7XV8jv9aDf_11cAMAZWBvzz98FzNw.jpg",
+      "published": "2026-10-01T08:35:40+00:00",
+      "poster_text": "02, 03 e 04 Outubro de 2026\nParóquia de São João - Ribeira Brava\n\n(1) 09:00 - Apanha das Açucenas\n11:30 - Desfile de Açuconas\n{EB1UPE do Lombo de São João e São Paulo)\n20:00 - Novena | Missa de Ação de Graças\n21:30 - Pedro Garcia\n01:00 - Encerramento\nPedro Garcia\n\n12:00 - Girandola de Fogo\n03 12:15 - Saída da Banda por todos os sítios\n19:00 - Romagem dos diversos sitios\n20:30 - Novena em Honra de N.º Srº. do\nAmparo\n\n22:00 » João Vinagre\n02:00 - Encerramento João Vinagre\n\n15:00 - Banda Filarmónica da Ribeira Brava\n16:00 - Missa Solene do dia da Festa, presidida\npelo Bispo do Funchal D. Nuno Brás,\nseguida de procissão\n18:00 - Sorteio de Rifas (\nE 19:00 - D’ Canto a Canto\n\nmesto Macedo?!:99 - Emesto Macedo\n01:00 - Encerramento\n\nD'Canto a Canto",
+      "name": "EB1UPE do Lombo de São João e São Paulo)",
+      "title": "Concert · Ribeira Brava"
+    },
+    {
+      "post": "https://t.me/festas_madeira/2648",
+      "dates": [
+        "2026-10-02"
+      ],
+      "categories": [
+        "concerto",
+        "arraial",
+        "religioso"
+      ],
+      "place": "Monte",
+      "poster": "https://cdn4.telesco.pe/file/QnuJlM51tEQzOn9SdG2MJrN52D66SEY7Y86y6YtvU_8zmnNWqwEB0uxgsx4QGpw06GARDRG6o_ehCyPW0YASStlHzjTTIW0FJ8W_YgPlDpGY5z7bdOq1M-gy3DR0qa0ygElZasS1hSem33xfF_u-RPNz5WVntRtE68wvDMp8xH9rtTZjSJWpds1MxRTKGaLNDIFDfJPIwpFjek3gtLXZbAFzZUnrLT7yWdGUOtWyz0R0tcq4VTK738p8ET0L7TwzKO2eja8bl2zMuslfgOuDIwmEjhjSCj5cG3yi3dAyW3H1zv0iMwErLJcbFwDrvividpiOUkgnflgi1_gwE5zVpQ.jpg",
+      "published": "2026-10-01T08:35:56+00:00",
+      "poster_text": "tg Festa de /\nAÇÃO #\n| Z\nÀ\nwe Capela do Desterro, Monte do Funchal\n\ney",
+      "name": "we Capela do Desterro, Monte do Funchal",
+      "title": "Concert · Monte"
+    },
+    {
+      "post": "https://t.me/festas_madeira/2651",
+      "dates": [
+        "2026-10-02"
+      ],
+      "categories": [
+        "desporto"
+      ],
+      "place": "Machico",
+      "poster": "https://cdn4.telesco.pe/file/LeZq2BrbvrRJpabrH5H7EuW0nVO1p8K9GyG0g9Y8i_76IqUTDuaVetmd9PR8Kgci7GRbXj7Y9FwV6XPPR29f13O9DJ9pBh93B5agKiObl4KJ1RwS3eGxF56ngblEQoJKIWsee2siuFHOanh-sFmP5wgldJJVB7AmmC4zYbW9_RO6ZLuM3fjKa5eBw2ZVk-lepjscSIY9c0ht69jnTMQoskbVKo1SfOTV-URlvZLKjc9mTdhwgcMTFduRyDjGaNc830BoYICCsyZ3nYTGG1PhSBxzdqJHT_BCbHa2gosjNmdP5_B_mGif5s4991OurzehY0dSAvyfP6guW4fg-jlDJw.jpg",
+      "published": "2026-10-01T09:00:54+00:00",
+      "poster_text": "FIAECO O > 2-3-4-OUT\nRALLY CUP\n\nGERALECPNOVASENERGIASPT | INWMLCPNOVASENERGIASPT",
+      "name": "GERALECPNOVASENERGIASPT | INWMLCPNOVASENERGIASPT",
+      "title": "Sport · Machico"
+    },
+    {
+      "post": "https://t.me/festas_madeira/2653",
+      "dates": [
+        "2026-10-02",
+        "2026-10-03"
+      ],
+      "categories": [
+        "concerto",
+        "festival"
+      ],
+      "place": "",
+      "poster": "https://cdn4.telesco.pe/file/g7J80WnQG3jkN8jYsV_btCmwe7sPfTZSvut9cAxbYPtTHI09aPwRiV6Cyr4EYsZPhVUhEXkXzK24nxYfgS_kH7OHpKBcjake2acH4xAdSTVEpHiWHfnBFZFCrr7j44IzOH6OewgC6ChqJsdZ5R4kwGYMMNmsbTj8PYiQ0fMlN3ckbRC57K67wziM_mstxxJuTmc-kPismOLj9GS16Bw5H8FV9eZq9xb1O8OgqLKxgDNwSFZKGF5BRP88CDKQvp2Z6gK4JlRtu4UTzqaypQDlPGDbEI2YNQ7_zbPqmALVVmNKoB0ddJviFEPCLK8Zz96YLqJ303A3X3BtxrsTZRmS1w.jpg",
+      "published": "2026-10-01T09:18:19+00:00",
+      "poster_text": "@\n\n5\nFestival Internacional\nA\nI “de Guitarras da\n| fra\nE “Madeira - 8.º Edição\nmm PM)\n1 Os PROGRAMA DO FESTIVAL cs\n(210-2026 nte\n[ O ihso Fi 8 uitarra Foll\nTHE) NY (9 eee os\ni (33.10.2026\nO 200. cme É Guias\nE é Sunsetã\nO Somipencaee! | Musica Brasileira\n+ a 31-10-2026 —\nT (O)\nAd\n3 7-11-2026 i\n( O 18h & Flamenco na Torre\n9 See eb\nc} ARTISTAS 53 ——\nLeonardo Gallacel | Da mma\necao Artistica peace | Ronee Bamba de Mato\nno tombar, pri Spear ser coe\n4 a\nfunchal.pt ( le a | Bu | Enio\nMUNICÍPIO | ereta,",
+      "name": "Festival Internacional I “de Guitarras da fra",
+      "title": "Festival Internacional I “de Guitarras da fra"
+    },
+    {
       "post": "https://t.me/festas_madeira/2438",
       "dates": [
         "2026-10-03",
@@ -3707,6 +3776,21 @@
       "title": "CONVIDA ANIKÓ HARANGI"
     },
     {
+      "post": "https://t.me/festas_madeira/2650",
+      "dates": [
+        "2026-10-03"
+      ],
+      "categories": [
+        "espetáculo"
+      ],
+      "place": "Câmara De Lobos",
+      "poster": "https://cdn4.telesco.pe/file/iKjR3OQnB-n8FGoBaRMhpboX4hkOfLBXYXDIosg8i93fSrKyX1q6NDXKPQQs2l3TXsfTMAgzK6FZNTXfGs27hxLmAWYhFXHkjLt1n3RzXIGoiFFzOdtPe7IOH0meg3lkbm6L-efMyv6dGZoL2YU70is8uhkA8Oap3nfTUH0OQNVi-KluAoabUFkDaY1tbwYpcP1dKvKV3hlH0YdwGZ1iOoOPcDHrzoeEO3l33zYguHiAmZbsplK4BjR2Lz20oBybTbJUEPkqRsYdMmYAU_kPrqWMeq88MKhpBlAE3PeNegfYiEm3f61XxtOL7n-lXnKq4cQZKOmZk6NQeLb16_-G7Q.jpg",
+      "published": "2026-10-01T09:00:53+00:00",
+      "poster_text": "GATERC E CONTILHEIRAS\nAPRESENTA A PEÇA DE TEATRO\n\nCONVERSAS\nDA TETA\n\nCÂMARA DE LOBOS\n\n“ DE OUTUBRO | 15h:00min\n[&| Esftuguesa CENTRO CÍVICO DO ESTREITO\ndeito DE CÂMARA DE LOBOS",
+      "name": "GATERC E CONTILHEIRAS APRESENTA A PEÇA DE TEATRO",
+      "title": "GATERC E CONTILHEIRAS APRESENTA A PEÇA DE TEATRO"
+    },
+    {
       "post": "https://t.me/festas_madeira/2465",
       "dates": [
         "2026-10-04"
@@ -3735,6 +3819,21 @@
       "poster_text": "E e mes @ eve\n\nBE Sippy tavoaro sr\n\ntrea\nLE RO\n\nPELA PAZ»\n\nCaminhada pela Paz e pela Cr\n\n4 de outubro de 2026 +\n\n‘Amara de Lobos\n\n— AguaViva —\n\nPor onde passar este rio, haverá vida\" ix\n\n800 anos do Trânsito de São Francisco 1226 - 2026\n\nDuas formas de pai\n\nCaminhada prese Caminhada virtual no Convento\n09h30 Jardim de São Francisco 10h00-11h00\n» Convento de São Bernardino a rd\n\nPercurso aproximado: 22 km\n\n(à) 11h30 - Colbrção da Eucaristia\n\n(sme E BR\n\nAlberto a todos\n\nênderições gratuitas",
       "name": "Caminhada pela Paz e pela Cr",
       "title": "Caminhada pela Paz e pela Cr"
+    },
+    {
+      "post": "https://t.me/festas_madeira/2649",
+      "dates": [
+        "2026-10-04"
+      ],
+      "categories": [
+        "oficina"
+      ],
+      "place": "Câmara De Lobos",
+      "poster": "https://cdn4.telesco.pe/file/Y8ks4-onL7zYbejYPxunWnFA2fQ_l_3lCuSfFLm0NfsAb0TJurjrjEopVhnOyAtjb00g7pErV8hv8Eq8162QlPnOPctWjvSsjSBLsOOcQlmYo48sjDdNe1q-2lOFNyANwAdw2jBQxUtZt95biN88htNAbQqJieQFtj-KpiY3wPZCHF4FPhfydW87IUu-yTJd5V89LHhSSK0N6IZIDSPUI76eAK0bGWmD7sc4SKzxwhhPktQyl1KdueIRVuCJ5TV8bB2DiktwrqULwMFeGorJrasrp2TI7rGiLYoo-posjO4rOfvjs6KDNOX2MbhNb2S_JuGMqwoykBtFLKHjPoc3Cw.jpg",
+      "published": "2026-10-01T09:00:53+00:00",
+      "poster_text": "Hei 4 DE OUTUBRO\n191.2 ANIVERSARIO\n\nMUNICÍPIO DE CÂMARA DE LOBOS\n\nMissa Solene\nIgreja Matriz de Câmara de Lobos\n09h15 | Hastear das Bandeiras\n\nPaços do Concelho\n09h30 Desfile de Viaturas dos Corpos de Bombeiros.\n10h30 | Sessão Solene do 191.º Aniversário do Munlciete,\nMuseu de Imprensa - Madeira",
+      "name": "Hei 4 DE OUTUBRO 191.2 ANIVERSARIO Missa Solene",
+      "title": "Workshop · Câmara De Lobos"
     },
     {
       "post": "https://t.me/festas_madeira/2566",
@@ -3914,6 +4013,21 @@
       "poster_text": "“| 10 OUT\n4 CASADA CULTURA DE\n\nRA DE LOBOS\n21h00\n\nrm ER Vy (6) EIA\ncAmarADeLosos [RAN\n\nWG",
       "name": "4 CASADA CULTURA DE RA DE LOBOS",
       "title": "Show · Câmara De Lobos"
+    },
+    {
+      "post": "https://t.me/festas_madeira/2652",
+      "dates": [
+        "2026-10-10"
+      ],
+      "categories": [
+        "família"
+      ],
+      "place": "Caniçal",
+      "poster": "https://cdn4.telesco.pe/file/A6RxlitEL2lW0gASlBfMKGWSlEH2eSNN0EoQQLuso52M_i7NhbPVwg_UNZxCoFZoKgDH1n037y4aXyXHFEdJx0gurPnPuAEnfpmc2GwG-LzI22dQ_ebP1lSEGltiC6fDbW7FqZNa0zoXw8ico5hrasvqOIphzo0GzvKhzl9Dm3-o21-B_c9KKZbpTtMqhwlVhtTuKnOi4IabObvYrQVFZgPxP1_Rgmbu6WCCo7WotivIXWGnZgetuTJ4FIBgjj29sGQyt_qj-Fn2qTbmte4rY60dpn23T1y5iREJYgpEQJxwn7iBwm6aF3uJbtiPbkbnLIwCl4WJErOBpOME9K9fsg.jpg",
+      "published": "2026-10-01T09:00:55+00:00",
+      "poster_text": "",
+      "name": "",
+      "title": "Family · Caniçal"
     },
     {
       "post": "https://t.me/festas_madeira/2596",

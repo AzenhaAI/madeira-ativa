@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-09-30T11:11:49",
-  "count": 202,
+  "fetched": "2026-10-01T11:39:56",
+  "count": 228,
   "items": [
     {
       "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
@@ -1745,6 +1745,36 @@
       "source_category": "art-exhibitions"
     },
     {
+      "id": "wa-2026-10-02",
+      "title": "WA",
+      "url": "https://www.madeira-unlocked.com/en/events/wa-2026-10-02",
+      "start": "2026-10-02T10:00:00+01:00",
+      "end": "2026-10-02T10:30:00+01:00",
+      "date": "2026-10-02",
+      "time": "10:00",
+      "venue": "Fortaleza de São João Baptista do Pico",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "hanamaro",
+      "category": "exhibition",
+      "source_category": "art-exhibitions"
+    },
+    {
+      "id": "festa-do-outono-e-de-nossa-senhora-do-perpetuo-socorro-2026-10-02",
+      "title": "Festa do Outono e de Nossa Senhora do Perpétuo Socorro",
+      "url": "https://www.madeira-unlocked.com/en/events/festa-do-outono-e-de-nossa-senhora-do-perpetuo-socorro-2026-10-02",
+      "start": "2026-10-02T19:00:00+01:00",
+      "end": "2026-10-02T21:00:00+01:00",
+      "date": "2026-10-02",
+      "time": "19:00",
+      "venue": "Adro da Igreja do Socorro",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Socorro",
+      "category": "festival",
+      "source_category": "festivals-parades"
+    },
+    {
       "id": "colours-in-the-dark-2026-10-02",
       "title": "Colours in the Dark",
       "url": "https://www.madeira-unlocked.com/en/events/colours-in-the-dark-2026-10-02",
@@ -1775,6 +1805,51 @@
       "source_category": "theater"
     },
     {
+      "id": "festa-latina-2026-10-02",
+      "title": "Festa Latina",
+      "url": "https://www.madeira-unlocked.com/en/events/festa-latina-2026-10-02",
+      "start": "2026-10-02T20:00:00+01:00",
+      "end": "2026-10-03T01:00:00+01:00",
+      "date": "2026-10-02",
+      "time": "20:00",
+      "venue": "BrunchVille Marina",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Level Up Dance Studio",
+      "category": "dance",
+      "source_category": "dance"
+    },
+    {
+      "id": "quarteto-elaaah-2026-10-02",
+      "title": "Quarteto Elaaah",
+      "url": "https://www.madeira-unlocked.com/en/events/quarteto-elaaah-2026-10-02",
+      "start": "2026-10-02T20:00:00+01:00",
+      "end": "2026-10-02T22:00:00+01:00",
+      "date": "2026-10-02",
+      "time": "20:00",
+      "venue": "Igreja de São Sebastião",
+      "municipality": "Câmara de Lobos",
+      "price": 0,
+      "organizer": "ETAPA",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "eco-rally-madeira-2026-10-03",
+      "title": "Eco Rally Madeira",
+      "url": "https://www.madeira-unlocked.com/en/events/eco-rally-madeira-2026-10-03",
+      "start": "2026-10-03T09:00:00+01:00",
+      "end": "2026-10-03T20:30:00+01:00",
+      "date": "2026-10-03",
+      "time": "09:00",
+      "venue": "Praça CR7",
+      "municipality": "Funchal",
+      "price": 500,
+      "organizer": "Atlantic Automobile Association",
+      "category": "sport",
+      "source_category": "sport-fitness"
+    },
+    {
       "id": "expressa-te-festival-de-artes-2026-2026-10-03",
       "title": "EXPRESSA-te – Festival de Artes 2026",
       "url": "https://www.madeira-unlocked.com/en/events/expressa-te-festival-de-artes-2026-2026-10-03",
@@ -1788,6 +1863,66 @@
       "organizer": "Portal das Artes",
       "category": "exhibition",
       "source_category": "art-exhibitions"
+    },
+    {
+      "id": "festa-do-outono-e-de-nossa-senhora-do-perpetuo-socorro-2026-10-03",
+      "title": "Festa do Outono e de Nossa Senhora do Perpétuo Socorro",
+      "url": "https://www.madeira-unlocked.com/en/events/festa-do-outono-e-de-nossa-senhora-do-perpetuo-socorro-2026-10-03",
+      "start": "2026-10-03T11:00:00+01:00",
+      "end": "2026-10-03T13:00:00+01:00",
+      "date": "2026-10-03",
+      "time": "11:00",
+      "venue": "Adro da Igreja do Socorro",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Socorro",
+      "category": "festival",
+      "source_category": "festivals-parades"
+    },
+    {
+      "id": "guitarras-em-matine-2026-10-03",
+      "title": "Guitarras em Matiné",
+      "url": "https://www.madeira-unlocked.com/en/events/guitarras-em-matine-2026-10-03",
+      "start": "2026-10-03T13:00:00+01:00",
+      "end": "2026-10-03T15:00:00+01:00",
+      "date": "2026-10-03",
+      "time": "13:00",
+      "venue": "Moinho do Comandante",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural e de Solidariedade Social Raquel Lombardi",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "quarteto-elaaah-2026-10-03",
+      "title": "Quarteto Elaaah",
+      "url": "https://www.madeira-unlocked.com/en/events/quarteto-elaaah-2026-10-03",
+      "start": "2026-10-03T18:00:00+01:00",
+      "end": "2026-10-03T20:00:00+01:00",
+      "date": "2026-10-03",
+      "time": "18:00",
+      "venue": "Igreja de São Sebastião",
+      "municipality": "Câmara de Lobos",
+      "price": 0,
+      "organizer": "ETAPA",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "quinteto-de-sopros-solistas-ocm-convida-aniko-harangi-2026-10-03",
+      "title": "Quinteto de Sopros Solistas OCM convida Anikó Harangi",
+      "url": "https://www.madeira-unlocked.com/en/events/quinteto-de-sopros-solistas-ocm-convida-aniko-harangi-2026-10-03",
+      "start": "2026-10-03T18:00:00+01:00",
+      "end": "2026-10-03T20:00:00+01:00",
+      "date": "2026-10-03",
+      "time": "18:00",
+      "venue": "Assembleia Legislativa da Madeira",
+      "municipality": "Funchal",
+      "price": 20,
+      "organizer": "Associação Orquestra Clássica da Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "duo-bandonica-fale-me-de-musica-2026-10-03",
@@ -1818,6 +1953,21 @@
       "organizer": "ABM Madeira",
       "category": "concert",
       "source_category": "music-concerts"
+    },
+    {
+      "id": "funchal-rooftop-festival-2026-10-03-1900",
+      "title": "FUNCHAL ROOFTOP FESTIVAL",
+      "url": "https://www.madeira-unlocked.com/en/events/funchal-rooftop-festival-2026-10-03-1900",
+      "start": "2026-10-03T19:00:00+01:00",
+      "end": "2026-10-04T01:00:00+01:00",
+      "date": "2026-10-03",
+      "time": "19:00",
+      "venue": "Three House Rooftop Cocktail Club",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Câmara Municipal do Funchal",
+      "category": "festival",
+      "source_category": "festivals-parades"
     },
     {
       "id": "liberdade-liberdade-2026-10-03",
@@ -1880,6 +2030,36 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "1419-metal-fest-2026-10-03",
+      "title": "1419 Metal Fest",
+      "url": "https://www.madeira-unlocked.com/en/events/1419-metal-fest-2026-10-03",
+      "start": "2026-10-03T23:59:00+01:00",
+      "end": "2026-10-03T01:59:00+01:00",
+      "date": "2026-10-03",
+      "time": "23:59",
+      "venue": "Dubai Club",
+      "municipality": "Funchal",
+      "price": 25,
+      "organizer": "Carqueja Promotion",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "eco-rally-madeira-2026-10-04",
+      "title": "Eco Rally Madeira",
+      "url": "https://www.madeira-unlocked.com/en/events/eco-rally-madeira-2026-10-04",
+      "start": "2026-10-04T08:00:00+01:00",
+      "end": "2026-10-04T16:00:00+01:00",
+      "date": "2026-10-04",
+      "time": "08:00",
+      "venue": "Funchal",
+      "municipality": "Funchal",
+      "price": 500,
+      "organizer": "Atlantic Automobile Association",
+      "category": "sport",
+      "source_category": "sport-fitness"
+    },
+    {
       "id": "expressa-te-arts-festival-2026-10-04",
       "title": "EXPRESSA-te Arts Festival",
       "url": "https://www.madeira-unlocked.com/en/events/expressa-te-arts-festival-2026-10-04",
@@ -1893,6 +2073,21 @@
       "organizer": "Associação Portal das Artes",
       "category": "festival",
       "source_category": "festivals-parades"
+    },
+    {
+      "id": "117th-community-hike-paulo-special-2026-10-04",
+      "title": "117th Community Hike, Paulo Special",
+      "url": "https://www.madeira-unlocked.com/en/events/117th-community-hike-paulo-special-2026-10-04",
+      "start": "2026-10-04T09:00:00+01:00",
+      "end": "2026-10-04T13:30:00+01:00",
+      "date": "2026-10-04",
+      "time": "09:00",
+      "venue": "Gato Legal",
+      "municipality": "Calheta",
+      "price": 5,
+      "organizer": "Madeira Hikes",
+      "category": "hiking",
+      "source_category": "hiking"
     },
     {
       "id": "world-walking-day-2026-10-04",
@@ -1923,6 +2118,21 @@
       "organizer": "Portal das Artes",
       "category": "exhibition",
       "source_category": "art-exhibitions"
+    },
+    {
+      "id": "festa-do-outono-e-de-nossa-senhora-do-perpetuo-socorro-2026-10-04",
+      "title": "Festa do Outono e de Nossa Senhora do Perpétuo Socorro",
+      "url": "https://www.madeira-unlocked.com/en/events/festa-do-outono-e-de-nossa-senhora-do-perpetuo-socorro-2026-10-04",
+      "start": "2026-10-04T12:00:00+01:00",
+      "end": "2026-10-04T14:00:00+01:00",
+      "date": "2026-10-04",
+      "time": "12:00",
+      "venue": "Adro da Igreja do Socorro",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Socorro",
+      "category": "festival",
+      "source_category": "festivals-parades"
     },
     {
       "id": "tempos-que-o-tempo-tem-2026-10-04",
@@ -2000,6 +2210,21 @@
       "source_category": "art-exhibitions"
     },
     {
+      "id": "wa-2026-10-05",
+      "title": "WA",
+      "url": "https://www.madeira-unlocked.com/en/events/wa-2026-10-05",
+      "start": "2026-10-05T10:00:00+01:00",
+      "end": "2026-10-05T10:30:00+01:00",
+      "date": "2026-10-05",
+      "time": "10:00",
+      "venue": "Fortaleza de São João Baptista do Pico",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "hanamaro",
+      "category": "exhibition",
+      "source_category": "art-exhibitions"
+    },
+    {
       "id": "expressa-te-festival-de-artes-2026-2026-10-06",
       "title": "EXPRESSA-te – Festival de Artes 2026",
       "url": "https://www.madeira-unlocked.com/en/events/expressa-te-festival-de-artes-2026-2026-10-06",
@@ -2011,6 +2236,21 @@
       "municipality": "Funchal",
       "price": 0,
       "organizer": "Portal das Artes",
+      "category": "exhibition",
+      "source_category": "art-exhibitions"
+    },
+    {
+      "id": "wa-2026-10-06",
+      "title": "WA",
+      "url": "https://www.madeira-unlocked.com/en/events/wa-2026-10-06",
+      "start": "2026-10-06T10:00:00+01:00",
+      "end": "2026-10-06T10:30:00+01:00",
+      "date": "2026-10-06",
+      "time": "10:00",
+      "venue": "Fortaleza de São João Baptista do Pico",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "hanamaro",
       "category": "exhibition",
       "source_category": "art-exhibitions"
     },
@@ -2030,6 +2270,21 @@
       "source_category": "festivals-parades"
     },
     {
+      "id": "quinteto-de-sopros-atlantida-2026-10-06",
+      "title": "Quinteto de Sopros Atlântida",
+      "url": "https://www.madeira-unlocked.com/en/events/quinteto-de-sopros-atlantida-2026-10-06",
+      "start": "2026-10-06T21:30:00+01:00",
+      "end": "2026-10-06T23:30:00+01:00",
+      "date": "2026-10-06",
+      "time": "21:30",
+      "venue": "Reid’s Palace, a Belmond Hotel",
+      "municipality": "Funchal",
+      "price": 10,
+      "organizer": "Associação Orquestra Clássica da Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "expressa-te-festival-de-artes-2026-2026-10-07",
       "title": "EXPRESSA-te – Festival de Artes 2026",
       "url": "https://www.madeira-unlocked.com/en/events/expressa-te-festival-de-artes-2026-2026-10-07",
@@ -2041,6 +2296,21 @@
       "municipality": "Funchal",
       "price": 0,
       "organizer": "Portal das Artes",
+      "category": "exhibition",
+      "source_category": "art-exhibitions"
+    },
+    {
+      "id": "wa-2026-10-07",
+      "title": "WA",
+      "url": "https://www.madeira-unlocked.com/en/events/wa-2026-10-07",
+      "start": "2026-10-07T10:00:00+01:00",
+      "end": "2026-10-07T10:30:00+01:00",
+      "date": "2026-10-07",
+      "time": "10:00",
+      "venue": "Fortaleza de São João Baptista do Pico",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "hanamaro",
       "category": "exhibition",
       "source_category": "art-exhibitions"
     },
@@ -2101,6 +2371,21 @@
       "municipality": "Funchal",
       "price": 0,
       "organizer": "Portal das Artes",
+      "category": "exhibition",
+      "source_category": "art-exhibitions"
+    },
+    {
+      "id": "wa-2026-10-08",
+      "title": "WA",
+      "url": "https://www.madeira-unlocked.com/en/events/wa-2026-10-08",
+      "start": "2026-10-08T10:00:00+01:00",
+      "end": "2026-10-08T10:30:00+01:00",
+      "date": "2026-10-08",
+      "time": "10:00",
+      "venue": "Fortaleza de São João Baptista do Pico",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "hanamaro",
       "category": "exhibition",
       "source_category": "art-exhibitions"
     },
@@ -2206,6 +2491,21 @@
       "municipality": "Funchal",
       "price": 0,
       "organizer": "Portal das Artes",
+      "category": "exhibition",
+      "source_category": "art-exhibitions"
+    },
+    {
+      "id": "wa-2026-10-09",
+      "title": "WA",
+      "url": "https://www.madeira-unlocked.com/en/events/wa-2026-10-09",
+      "start": "2026-10-09T10:00:00+01:00",
+      "end": "2026-10-09T10:30:00+01:00",
+      "date": "2026-10-09",
+      "time": "10:00",
+      "venue": "Fortaleza de São João Baptista do Pico",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "hanamaro",
       "category": "exhibition",
       "source_category": "art-exhibitions"
     },
@@ -2375,6 +2675,21 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "legno-duo-2026-10-10",
+      "title": "Legno Duo",
+      "url": "https://www.madeira-unlocked.com/en/events/legno-duo-2026-10-10",
+      "start": "2026-10-10T18:00:00+01:00",
+      "end": "2026-10-10T20:00:00+01:00",
+      "date": "2026-10-10",
+      "time": "18:00",
+      "venue": "Capela da Fundação Princesa Dona Maria Amélia",
+      "municipality": "Funchal",
+      "price": 10,
+      "organizer": "Associação Orquestra Clássica da Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "laura-esta-tudo-sob-controlo-2026-10-10",
       "title": "Laura – Está Tudo Sob Controlo",
       "url": "https://www.madeira-unlocked.com/en/events/laura-esta-tudo-sob-controlo-2026-10-10",
@@ -2525,6 +2840,21 @@
       "source_category": "handicraft-workshops"
     },
     {
+      "id": "dancilhas-festival-de-musica-e-danca-do-mundo-trad-folk-2026-10-17",
+      "title": "Dancilhas, Festival de Música e Dança do Mundo Trad/Folk",
+      "url": "https://www.madeira-unlocked.com/en/events/dancilhas-festival-de-musica-e-danca-do-mundo-trad-folk-2026-10-17",
+      "start": "2026-10-17T14:00:00+01:00",
+      "end": "2026-10-17T16:00:00+01:00",
+      "date": "2026-10-17",
+      "time": "14:00",
+      "venue": "Jardim da Junta de Freguesia de São Martinho",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural e Recreativa Rodopio Pitoresco",
+      "category": "festival",
+      "source_category": "festivals-parades"
+    },
+    {
       "id": "infinito-2026-10-17",
       "title": "InFinito",
       "url": "https://www.madeira-unlocked.com/en/events/infinito-2026-10-17",
@@ -2538,6 +2868,21 @@
       "organizer": "Associação InFinito",
       "category": "exhibition",
       "source_category": "art-exhibitions"
+    },
+    {
+      "id": "operazione-tango-2026-10-17",
+      "title": "Operazione Tango",
+      "url": "https://www.madeira-unlocked.com/en/events/operazione-tango-2026-10-17",
+      "start": "2026-10-17T18:00:00+01:00",
+      "end": "2026-10-17T20:00:00+01:00",
+      "date": "2026-10-17",
+      "time": "18:00",
+      "venue": "Centro de Congressos da Madeira",
+      "municipality": "Funchal",
+      "price": 25,
+      "organizer": "Associação Orquestra Clássica da Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "tropical-dance-class-with-daili-toussaint-2026-10-17",
@@ -2615,6 +2960,21 @@
       "source_category": "sport-fitness"
     },
     {
+      "id": "dancilhas-festival-de-musica-e-danca-do-mundo-trad-folk-2026-10-18",
+      "title": "Dancilhas, Festival de Música e Dança do Mundo Trad/Folk",
+      "url": "https://www.madeira-unlocked.com/en/events/dancilhas-festival-de-musica-e-danca-do-mundo-trad-folk-2026-10-18",
+      "start": "2026-10-18T11:00:00+01:00",
+      "end": "2026-10-18T17:00:00+01:00",
+      "date": "2026-10-18",
+      "time": "11:00",
+      "venue": "Montado do Pereiro",
+      "municipality": "Santa Cruz",
+      "price": 0,
+      "organizer": "Associação Cultural e Recreativa Rodopio Pitoresco",
+      "category": "festival",
+      "source_category": "festivals-parades"
+    },
+    {
       "id": "canyoning-madeira-meeting-2026-2026-10-19",
       "title": "Canyoning Madeira Meeting 2026",
       "url": "https://www.madeira-unlocked.com/en/events/canyoning-madeira-meeting-2026-2026-10-19",
@@ -2673,6 +3033,21 @@
       "organizer": "Associação InFinito",
       "category": "exhibition",
       "source_category": "art-exhibitions"
+    },
+    {
+      "id": "legno-duo-2026-10-21",
+      "title": "Legno Duo",
+      "url": "https://www.madeira-unlocked.com/en/events/legno-duo-2026-10-21",
+      "start": "2026-10-21T21:00:00+01:00",
+      "end": "2026-10-21T23:00:00+01:00",
+      "date": "2026-10-21",
+      "time": "21:00",
+      "venue": "Royal Savoy",
+      "municipality": "Funchal",
+      "price": 20,
+      "organizer": "Associação Orquestra Clássica da Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "l-concerts-juliana-linhares-closing-concert-2026-10-21",
@@ -2868,6 +3243,21 @@
       "organizer": "OriOasis",
       "category": "sport",
       "source_category": "sport-fitness"
+    },
+    {
+      "id": "albrecht-mayer-e-orquestra-classica-da-madeira-centenario-dos-bombeiros-voluntarios-madeirenses-2026-10-31",
+      "title": "Albrecht Mayer e Orquestra Clássica da Madeira, Centenário dos Bombeiros Voluntários Madeirenses",
+      "url": "https://www.madeira-unlocked.com/en/events/albrecht-mayer-e-orquestra-classica-da-madeira-centenario-dos-bombeiros-voluntarios-madeirenses-2026-10-31",
+      "start": "2026-10-31T20:00:00+00:00",
+      "end": "2026-10-31T22:00:00+00:00",
+      "date": "2026-10-31",
+      "time": "20:00",
+      "venue": "Centro de Congressos da Madeira",
+      "municipality": "Funchal",
+      "price": 25,
+      "organizer": "Associação Orquestra Clássica da Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "festival-de-teatro-de-machico-2026-10-31",
