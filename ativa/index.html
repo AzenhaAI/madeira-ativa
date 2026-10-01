@@ -590,6 +590,17 @@
       body {
         font-size: 15px;
       }
+      /* The order the app's Home uses: the island now before the words about it. */
+      .hero > div:first-child { display: flex; flex-direction: column; }
+      .hero .title-row { order: 0; }
+      .hero .wx-strip { order: 1; }
+      .hero .port-line { order: 2; }
+      .hero #ipmaWarnings { order: 3; }
+      .hero .viz-area { order: 4; }
+      .hero .lead { order: 5; }
+      .hero .pessoa, .hero .pessoa-en { order: 6; }
+      .hero-side > p:not(.note) { display: none; }
+      .hero-side .note:last-child { display: none; }
       .wrap {
         padding: 14px 14px 32px;
       }
@@ -1940,5 +1951,6 @@ paint();})();
 })();
 </script>
 <script src="/ativa/ipma.js" defer></script>
+<script src="/ativa/tabbar.js?v=20261001" defer></script>
 </body>
 </html>
