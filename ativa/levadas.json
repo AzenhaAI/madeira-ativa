@@ -376,7 +376,255 @@
               "lat": 32.75404,
               "lon": -17.0194
             },
-            "bus": null,
+            "bus": {
+              "dist": 0,
+              "stop": "Encumeada",
+              "lines": [
+                "6"
+              ],
+              "departures": {
+                "2026-10-01": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-02": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-03": [
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-04": [
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-05": [
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-06": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-07": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ]
+              },
+              "source": "hand-read timetable"
+            },
             "lines": [
               {
                 "line": "6",
@@ -540,7 +788,315 @@
               "lat": 32.73505,
               "lon": -16.88646
             },
-            "bus": null,
+            "bus": {
+              "dist": 0,
+              "stop": "Ribeiro Frio",
+              "lines": [
+                "801",
+                "802",
+                "850",
+                "860",
+                "875",
+                "885"
+              ],
+              "departures": {
+                "2026-10-01": [
+                  [
+                    "06:56",
+                    "885",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "08:50",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "09:41",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "10:41",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "11:40",
+                    "801",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "13:15",
+                    "801",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "14:31",
+                    "802",
+                    "Santana · Arco de São Jorge via Faial"
+                  ],
+                  [
+                    "17:55",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "18:12",
+                    "860",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "19:18",
+                    "875",
+                    "Santana · São Jorge via Faial"
+                  ]
+                ],
+                "2026-10-02": [
+                  [
+                    "06:56",
+                    "885",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "08:50",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "09:41",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "10:41",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "11:40",
+                    "801",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "13:15",
+                    "801",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "14:31",
+                    "802",
+                    "Santana · Arco de São Jorge via Faial"
+                  ],
+                  [
+                    "17:55",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "18:12",
+                    "860",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "19:18",
+                    "875",
+                    "Santana · São Jorge via Faial"
+                  ]
+                ],
+                "2026-10-03": [
+                  [
+                    "07:25",
+                    "860",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "08:12",
+                    "850",
+                    "Santana · Arco de São Jorge"
+                  ],
+                  [
+                    "10:42",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "14:13",
+                    "850",
+                    "Santana · Arco de São Jorge"
+                  ],
+                  [
+                    "18:30",
+                    "860",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "18:40",
+                    "850",
+                    "Santana · Arco de São Jorge"
+                  ]
+                ],
+                "2026-10-04": [
+                  [
+                    "08:12",
+                    "850",
+                    "Santana · Arco de São Jorge"
+                  ],
+                  [
+                    "08:50",
+                    "860",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "11:15",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "18:30",
+                    "860",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "18:40",
+                    "850",
+                    "Santana · Arco de São Jorge"
+                  ]
+                ],
+                "2026-10-05": [
+                  [
+                    "08:12",
+                    "850",
+                    "Santana · Arco de São Jorge"
+                  ],
+                  [
+                    "08:50",
+                    "860",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "11:15",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "18:30",
+                    "860",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "18:40",
+                    "850",
+                    "Santana · Arco de São Jorge"
+                  ]
+                ],
+                "2026-10-06": [
+                  [
+                    "06:56",
+                    "885",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "08:50",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "09:41",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "10:41",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "11:40",
+                    "801",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "13:15",
+                    "801",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "14:31",
+                    "802",
+                    "Santana · Arco de São Jorge via Faial"
+                  ],
+                  [
+                    "17:55",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "18:12",
+                    "860",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "19:18",
+                    "875",
+                    "Santana · São Jorge via Faial"
+                  ]
+                ],
+                "2026-10-07": [
+                  [
+                    "06:56",
+                    "885",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "08:50",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "09:41",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "10:41",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "11:40",
+                    "801",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "13:15",
+                    "801",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "14:31",
+                    "802",
+                    "Santana · Arco de São Jorge via Faial"
+                  ],
+                  [
+                    "17:55",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "18:12",
+                    "860",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "19:18",
+                    "875",
+                    "Santana · São Jorge via Faial"
+                  ]
+                ]
+              },
+              "source": "hand-read timetable"
+            },
             "lines": [
               {
                 "line": "56",
@@ -668,7 +1224,315 @@
               "lat": 32.73505,
               "lon": -16.88646
             },
-            "bus": null,
+            "bus": {
+              "dist": 23,
+              "stop": "Ribeiro Frio",
+              "lines": [
+                "801",
+                "802",
+                "850",
+                "860",
+                "875",
+                "885"
+              ],
+              "departures": {
+                "2026-10-01": [
+                  [
+                    "06:56",
+                    "885",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "08:50",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "09:41",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "10:41",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "11:40",
+                    "801",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "13:15",
+                    "801",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "14:31",
+                    "802",
+                    "Santana · Arco de São Jorge via Faial"
+                  ],
+                  [
+                    "17:55",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "18:12",
+                    "860",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "19:18",
+                    "875",
+                    "Santana · São Jorge via Faial"
+                  ]
+                ],
+                "2026-10-02": [
+                  [
+                    "06:56",
+                    "885",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "08:50",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "09:41",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "10:41",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "11:40",
+                    "801",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "13:15",
+                    "801",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "14:31",
+                    "802",
+                    "Santana · Arco de São Jorge via Faial"
+                  ],
+                  [
+                    "17:55",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "18:12",
+                    "860",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "19:18",
+                    "875",
+                    "Santana · São Jorge via Faial"
+                  ]
+                ],
+                "2026-10-03": [
+                  [
+                    "07:25",
+                    "860",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "08:12",
+                    "850",
+                    "Santana · Arco de São Jorge"
+                  ],
+                  [
+                    "10:42",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "14:13",
+                    "850",
+                    "Santana · Arco de São Jorge"
+                  ],
+                  [
+                    "18:30",
+                    "860",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "18:40",
+                    "850",
+                    "Santana · Arco de São Jorge"
+                  ]
+                ],
+                "2026-10-04": [
+                  [
+                    "08:12",
+                    "850",
+                    "Santana · Arco de São Jorge"
+                  ],
+                  [
+                    "08:50",
+                    "860",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "11:15",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "18:30",
+                    "860",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "18:40",
+                    "850",
+                    "Santana · Arco de São Jorge"
+                  ]
+                ],
+                "2026-10-05": [
+                  [
+                    "08:12",
+                    "850",
+                    "Santana · Arco de São Jorge"
+                  ],
+                  [
+                    "08:50",
+                    "860",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "11:15",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "18:30",
+                    "860",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "18:40",
+                    "850",
+                    "Santana · Arco de São Jorge"
+                  ]
+                ],
+                "2026-10-06": [
+                  [
+                    "06:56",
+                    "885",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "08:50",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "09:41",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "10:41",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "11:40",
+                    "801",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "13:15",
+                    "801",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "14:31",
+                    "802",
+                    "Santana · Arco de São Jorge via Faial"
+                  ],
+                  [
+                    "17:55",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "18:12",
+                    "860",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "19:18",
+                    "875",
+                    "Santana · São Jorge via Faial"
+                  ]
+                ],
+                "2026-10-07": [
+                  [
+                    "06:56",
+                    "885",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "08:50",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "09:41",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "10:41",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "11:40",
+                    "801",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "13:15",
+                    "801",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "14:31",
+                    "802",
+                    "Santana · Arco de São Jorge via Faial"
+                  ],
+                  [
+                    "17:55",
+                    "801",
+                    "Santana via Faial"
+                  ],
+                  [
+                    "18:12",
+                    "860",
+                    "Funchal via Poiso"
+                  ],
+                  [
+                    "19:18",
+                    "875",
+                    "Santana · São Jorge via Faial"
+                  ]
+                ]
+              },
+              "source": "hand-read timetable"
+            },
             "lines": [
               {
                 "line": "56",
@@ -1398,7 +2262,255 @@
               "lat": 32.75404,
               "lon": -17.0194
             },
-            "bus": null,
+            "bus": {
+              "dist": 55,
+              "stop": "Encumeada",
+              "lines": [
+                "6"
+              ],
+              "departures": {
+                "2026-10-01": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-02": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-03": [
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-04": [
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-05": [
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-06": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-07": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ]
+              },
+              "source": "hand-read timetable"
+            },
             "lines": [
               {
                 "line": "6",
@@ -1593,7 +2705,44 @@
               "lat": 32.75269,
               "lon": -17.21679
             },
-            "bus": null,
+            "bus": {
+              "dist": 0,
+              "stop": "Prazeres (ER 222)",
+              "lines": [
+                "80"
+              ],
+              "departures": {
+                "2026-10-01": [
+                  [
+                    "17:00",
+                    "80",
+                    "Funchal via Calheta, Ribeira Brava"
+                  ]
+                ],
+                "2026-10-02": [
+                  [
+                    "17:00",
+                    "80",
+                    "Funchal via Calheta, Ribeira Brava"
+                  ]
+                ],
+                "2026-10-06": [
+                  [
+                    "17:00",
+                    "80",
+                    "Funchal via Calheta, Ribeira Brava"
+                  ]
+                ],
+                "2026-10-07": [
+                  [
+                    "17:00",
+                    "80",
+                    "Funchal via Calheta, Ribeira Brava"
+                  ]
+                ]
+              },
+              "source": "hand-read timetable"
+            },
             "lines": [
               {
                 "line": "80",
@@ -1615,7 +2764,80 @@
               "lat": 32.75238,
               "lon": -17.22427
             },
-            "bus": null,
+            "bus": {
+              "dist": 0,
+              "stop": "Paul do Mar",
+              "lines": [
+                "80"
+              ],
+              "departures": {
+                "2026-10-01": [
+                  [
+                    "11:50",
+                    "80",
+                    "Porto Moniz via Ponta do Pargo"
+                  ]
+                ],
+                "2026-10-02": [
+                  [
+                    "11:50",
+                    "80",
+                    "Porto Moniz via Ponta do Pargo"
+                  ]
+                ],
+                "2026-10-03": [
+                  [
+                    "11:40",
+                    "80",
+                    "Porto Moniz via Ponta do Pargo"
+                  ],
+                  [
+                    "17:00",
+                    "80",
+                    "Funchal via Calheta, Ribeira Brava"
+                  ]
+                ],
+                "2026-10-04": [
+                  [
+                    "11:40",
+                    "80",
+                    "Porto Moniz via Ponta do Pargo"
+                  ],
+                  [
+                    "17:00",
+                    "80",
+                    "Funchal via Calheta, Ribeira Brava"
+                  ]
+                ],
+                "2026-10-05": [
+                  [
+                    "11:40",
+                    "80",
+                    "Porto Moniz via Ponta do Pargo"
+                  ],
+                  [
+                    "17:00",
+                    "80",
+                    "Funchal via Calheta, Ribeira Brava"
+                  ]
+                ],
+                "2026-10-06": [
+                  [
+                    "11:50",
+                    "80",
+                    "Porto Moniz via Ponta do Pargo"
+                  ]
+                ],
+                "2026-10-07": [
+                  [
+                    "11:50",
+                    "80",
+                    "Porto Moniz via Ponta do Pargo"
+                  ]
+                ]
+              },
+              "source": "hand-read timetable"
+            },
             "lines": [
               {
                 "line": "80",
@@ -2711,7 +3933,255 @@
               "lat": 32.75404,
               "lon": -17.0194
             },
-            "bus": null,
+            "bus": {
+              "dist": 39,
+              "stop": "Encumeada",
+              "lines": [
+                "6"
+              ],
+              "departures": {
+                "2026-10-01": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-02": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-03": [
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-04": [
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-05": [
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-06": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-07": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ]
+              },
+              "source": "hand-read timetable"
+            },
             "lines": [
               {
                 "line": "6",
@@ -2792,7 +4262,255 @@
               "lat": 32.75795,
               "lon": -17.017
             },
-            "bus": null,
+            "bus": {
+              "dist": 411,
+              "stop": "Encumeada",
+              "lines": [
+                "6"
+              ],
+              "departures": {
+                "2026-10-01": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-02": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-03": [
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-04": [
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-05": [
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-06": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-07": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ]
+              },
+              "source": "hand-read timetable"
+            },
             "lines": [
               {
                 "line": "6",
@@ -2814,7 +4532,255 @@
               "lat": 32.76028,
               "lon": -17.01702
             },
-            "bus": null,
+            "bus": {
+              "dist": 584,
+              "stop": "Encumeada",
+              "lines": [
+                "6"
+              ],
+              "departures": {
+                "2026-10-01": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-02": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-03": [
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-04": [
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-05": [
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-06": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-07": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ]
+              },
+              "source": "hand-read timetable"
+            },
             "lines": [
               {
                 "line": "6",
@@ -2900,7 +4866,255 @@
               "lat": 32.75795,
               "lon": -17.017
             },
-            "bus": null,
+            "bus": {
+              "dist": 313,
+              "stop": "Encumeada",
+              "lines": [
+                "6"
+              ],
+              "departures": {
+                "2026-10-01": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-02": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-03": [
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-04": [
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-05": [
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-06": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-07": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ]
+              },
+              "source": "hand-read timetable"
+            },
             "lines": [
               {
                 "line": "6",
@@ -2922,7 +5136,255 @@
               "lat": 32.76153,
               "lon": -17.016
             },
-            "bus": null,
+            "bus": {
+              "dist": 759,
+              "stop": "Encumeada",
+              "lines": [
+                "6"
+              ],
+              "departures": {
+                "2026-10-01": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-02": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-03": [
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-04": [
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-05": [
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-06": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-07": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ]
+              },
+              "source": "hand-read timetable"
+            },
             "lines": []
           }
         ]
@@ -8544,7 +11006,350 @@
               "lat": 32.74323,
               "lon": -16.70116
             },
-            "bus": null,
+            "bus": {
+              "dist": 0,
+              "stop": "Baía d'Abra",
+              "lines": [
+                "113"
+              ],
+              "departures": {
+                "2026-10-01": [
+                  [
+                    "09:20",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "10:30",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "11:30",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "12:00",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "12:55",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "13:55",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "15:00",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "16:00",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "17:00",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "18:15",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "19:35",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ]
+                ],
+                "2026-10-02": [
+                  [
+                    "09:20",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "10:30",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "11:30",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "12:00",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "12:55",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "13:55",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "15:00",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "16:00",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "17:00",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "18:15",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "19:35",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ]
+                ],
+                "2026-10-03": [
+                  [
+                    "09:20",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "10:30",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "11:30",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "13:00",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "14:00",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "16:00",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "17:00",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "19:35",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ]
+                ],
+                "2026-10-04": [
+                  [
+                    "09:20",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "11:55",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "14:00",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "15:30",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "17:00",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "18:15",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ]
+                ],
+                "2026-10-05": [
+                  [
+                    "09:20",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "11:55",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "14:00",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "15:30",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "17:00",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "18:15",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ]
+                ],
+                "2026-10-06": [
+                  [
+                    "09:20",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "10:30",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "11:30",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "12:00",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "12:55",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "13:55",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "15:00",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "16:00",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "17:00",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "18:15",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "19:35",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ]
+                ],
+                "2026-10-07": [
+                  [
+                    "09:20",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "10:30",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "11:30",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "12:00",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "12:55",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "13:55",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "15:00",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "16:00",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "17:00",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "18:15",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ],
+                  [
+                    "19:35",
+                    "113",
+                    "Funchal via Caniçal, Machico"
+                  ]
+                ]
+              },
+              "source": "hand-read timetable"
+            },
             "lines": [
               {
                 "line": "113",
@@ -9146,7 +11951,255 @@
               "lat": 32.75336,
               "lon": -17.02105
             },
-            "bus": null,
+            "bus": {
+              "dist": 257,
+              "stop": "Encumeada",
+              "lines": [
+                "6"
+              ],
+              "departures": {
+                "2026-10-01": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-02": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-03": [
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-04": [
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-05": [
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-06": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ],
+                "2026-10-07": [
+                  [
+                    "06:45",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "08:15",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "09:25",
+                    "6",
+                    "São Vicente · Arco de São Jorge"
+                  ],
+                  [
+                    "13:10",
+                    "6",
+                    "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                  ],
+                  [
+                    "15:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "16:00",
+                    "6",
+                    "Funchal via Ribeira Brava"
+                  ],
+                  [
+                    "19:20",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ],
+                  [
+                    "19:50",
+                    "6",
+                    "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                  ]
+                ]
+              },
+              "source": "hand-read timetable"
+            },
             "lines": [
               {
                 "line": "6",
@@ -9345,7 +12398,44 @@
               "lat": 32.75308,
               "lon": -17.21
             },
-            "bus": null,
+            "bus": {
+              "dist": 780,
+              "stop": "Prazeres (ER 222)",
+              "lines": [
+                "80"
+              ],
+              "departures": {
+                "2026-10-01": [
+                  [
+                    "17:00",
+                    "80",
+                    "Funchal via Calheta, Ribeira Brava"
+                  ]
+                ],
+                "2026-10-02": [
+                  [
+                    "17:00",
+                    "80",
+                    "Funchal via Calheta, Ribeira Brava"
+                  ]
+                ],
+                "2026-10-06": [
+                  [
+                    "17:00",
+                    "80",
+                    "Funchal via Calheta, Ribeira Brava"
+                  ]
+                ],
+                "2026-10-07": [
+                  [
+                    "17:00",
+                    "80",
+                    "Funchal via Calheta, Ribeira Brava"
+                  ]
+                ]
+              },
+              "source": "hand-read timetable"
+            },
             "lines": []
           },
           {
