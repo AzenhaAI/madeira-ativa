@@ -64,16 +64,19 @@
       ? (lang === 'pt' ? 'Melhor manhã: ' : 'Best morning: ') + DAYS[lang][new Date(best.sunrise.slice(0, 10) + 'T00:00:00Z').getUTCDay()] +
         ' ' + best.sunrise.slice(11, 16) + ' — ' + LABEL[best.kind][lang]
       : (lang === 'pt' ? 'Nenhum nascer do sol limpo previsto nestes dias.' : 'No clear sunrise forecast in these days.');
+    // On a phone the card folds to its one-line verdict, as in the app's "The
+    // island now"; a tap opens the five mornings. Desktop shows them outright.
     box.innerHTML =
-      '<div class="sr-head"><a href="' + TRAIL + '">' + (lang === 'pt' ? 'Nascer do sol no Pico do Arieiro' : 'Sunrise at Pico do Arieiro') + '</a>' +
+      '<details' + (window.innerWidth > 760 ? ' open' : '') + '>' +
+      '<summary class="sr-head"><a href="' + TRAIL + '">' + (lang === 'pt' ? 'Nascer do sol no Pico do Arieiro' : 'Sunrise at Pico do Arieiro') + '</a>' +
       '<span class="sr-verdict">' + esc(verdict) + '</span>' +
       // The forecast says what should happen; the camera shows what is.
       '<a class="sr-cam" href="https://www.netmadeira.com/webcams-madeira/pico-do-arieiro" target="_blank" rel="noopener">📷 ' +
-      (lang === 'pt' ? 'webcam agora' : 'webcam now') + ' ↗</a></div>' +
+      (lang === 'pt' ? 'webcam agora' : 'webcam now') + ' ↗</a></summary>' +
       '<div class="sr-row">' + cells + '</div>' +
       '<div class="sr-note">' + (lang === 'pt'
         ? 'Previsão Open-Meteo para o cume (1818 m) e a encosta norte (900 m); menos fiável depois do 3.º dia.'
-        : 'Open-Meteo forecast for the summit (1818 m) and the north slope (900 m); less reliable after day 3.') + '</div>';
+        : 'Open-Meteo forecast for the summit (1818 m) and the north slope (900 m); less reliable after day 3.') + '</div></details>';
     box.hidden = false;
   }
 
@@ -81,7 +84,10 @@
     var css = document.createElement('style');
     css.textContent =
       '#sunriseArieiro{margin:10px 0 18px;border:1px solid var(--line,rgba(127,127,127,.3));border-radius:12px;padding:12px 14px}' +
-      '#sunriseArieiro .sr-head{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;margin-bottom:8px}' +
+      '#sunriseArieiro .sr-head{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;cursor:pointer;list-style:none}' +
+      '#sunriseArieiro .sr-head::-webkit-details-marker{display:none}' +
+      '#sunriseArieiro details[open] .sr-head{margin-bottom:8px}' +
+      '#sunriseArieiro .sr-head::before{content:"🌅";margin-right:2px}' +
       '#sunriseArieiro .sr-head a{font-weight:700;color:var(--accent,inherit);text-decoration:none}' +
       '#sunriseArieiro .sr-head a:hover{text-decoration:underline}' +
       '#sunriseArieiro .sr-verdict{font-size:13px;opacity:.8}' +

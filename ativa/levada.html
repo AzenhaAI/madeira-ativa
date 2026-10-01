@@ -60,6 +60,10 @@
   }
   .section-nav-inner { display: flex; overflow-x: auto; scrollbar-width: none; }
   .section-nav-inner::-webkit-scrollbar { display: none; }
+  .nav-q { align-self: center; margin-left: 6px; width: 128px; min-width: 128px; font: inherit; font-size: 13px; padding: 5px 9px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: inherit }
+  .nav-q:focus { outline: 2px solid var(--accent); outline-offset: 1px }
+  /* Under the phone tab bar, Home is one tap away already. */
+  @media (max-width: 760px) { .section-nav-inner > a[href="/ativa/"] { display: none } }
   .section-nav a {
     flex-shrink: 0; padding: 12px 14px; font-size: 13px; font-weight: 600;
     color: var(--soft); text-decoration: none; border-bottom: 2px solid transparent;
@@ -287,6 +291,7 @@ html.dark{--x:0}
       <a data-nav="partial"><span data-lang="en">Restricted</span><span data-lang="pt">Restritos</span></a>
       <a data-nav="closed"><span data-lang="en">Closed</span><span data-lang="pt">Encerrados</span></a>
       <a data-nav="bus">🚌 <span data-lang="en">By bus</span><span data-lang="pt">De autocarro</span></a>
+      <input class="nav-q" id="q" type="search" autocomplete="off" placeholder="PR 6, Rabaçal…" aria-label="Search trails">
       <span class="nav-spacer"></span>
       <a class="nav-2d" href="/ativa/map?layer=walk">2D ↗</a>
       <a class="nav-3d" href="/ativa/map3d">3D ↗</a>
@@ -414,6 +419,8 @@ var urlLang = new URLSearchParams(location.search).get('lang');
 var lang = VALID.indexOf(urlLang) !== -1 ? urlLang : 'en';
 var data = null;
 var filter = 'all';
+var query = '';
+function normQ(s) { return String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase(); }
 var sortBy = null;
 var diffFilter = 0;
 var STATUS_ORDER = { open: 0, partial: 1, closed: 2 };
@@ -557,6 +564,12 @@ function esc(s) {
 
 function render() {
   var items = data.levadas.slice();
+  if (query) {
+    var q = normQ(query).replace(/^pr\s*/, 'pr ');
+    items = items.filter(function (l) {
+      return normQ(l.code + ' ' + l.name + ' ' + (l.alt_name || '') + ' ' + (l.from || '') + ' ' + (l.to || '')).indexOf(q) >= 0;
+    });
+  }
   if (filter === 'bus') items = items.filter(reachableByBus);
   else if (filter !== 'all') items = items.filter(function (l) { return l.status === filter; });
   if (diffFilter) items = items.filter(function (l) { return difficulty(l).level === diffFilter; });
@@ -642,6 +655,7 @@ document.getElementById('diff-filter').addEventListener('click', function (e) {
   document.querySelectorAll('#diff-filter button').forEach(function (x) { x.classList.toggle('active', x === b); });
   render();
 });
+document.getElementById('q').addEventListener('input', function (e) { query = e.target.value.trim(); render(); });
 document.getElementById('nav').addEventListener('click', function (e) {
   var a = e.target.closest('[data-nav]');
   if (!a) return;
