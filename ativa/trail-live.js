@@ -6,6 +6,8 @@
   var t = window.TRAIL, box = document.getElementById('live');
   if (!t || !box) return;
   var lines = [];
+  // Same icons as the levada page keeps in its own script.
+  function emo(c) { return c >= 95 ? '⛈' : c >= 80 ? '🌧' : c >= 71 ? '🌨' : c >= 61 ? '🌧' : c >= 51 ? '🌦' : c >= 45 ? '🌫' : c === 3 ? '☁️' : c >= 1 ? '🌤' : '☀️'; }
   function paint() { box.innerHTML = lines.join(''); box.hidden = !lines.length; }
 
   // Warnings for this trail's zone — only the zone, so a sea-state warning on
@@ -32,7 +34,7 @@
         var hp = (w.hourly && w.hourly.precipitation_probability) || [];
         var day = hp.slice(9, 18).filter(function (x) { return x != null; });
         var rain = day.length ? Math.max.apply(null, day) : null;
-        lines.push(wxEmoji(w.current.weather_code) + ' ' + Math.round(w.current.temperature_2m) + '° on the trail now · ' +
+        lines.push(emo(w.current.weather_code) + ' ' + Math.round(w.current.temperature_2m) + '° on the trail now · ' +
           Math.round(w.current.wind_speed_10m) + ' km/h wind' + (rain != null ? ' · ' + rain + '% chance of rain 9:00–17:00' : ''));
         paint();
       }).catch(function () {});
