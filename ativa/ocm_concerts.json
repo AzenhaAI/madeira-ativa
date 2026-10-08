@@ -1,8 +1,8 @@
 {
  "note": "Orquestra Clássica da Madeira season, from scripts/fetch_ocm.py. Accumulates.",
  "source": "https://www.ocmadeira.pt/concertos/temporada-atual.html",
- "fetched": "2026-10-01T11:40:15+00:00",
- "count": 7,
+ "fetched": "2026-10-08T12:04:55+00:00",
+ "count": 13,
  "items": [
   {
    "title": "Quinteto de Sopros \"Solistas OCM\" convida Anikó Harangi",
@@ -63,6 +63,66 @@
    "series": "Orquestra Clássica da Madeira",
    "url": "https://www.ocmadeira.pt/concertos/proximos-eventos/orquestra-cla-ssica-da-madeira/277-albrecht-mayer-ocm.html",
    "tickets": "https://www.ticketline.pt/pt/evento/orq-classica-da-madeira-albrecht-mayer-107831"
+  },
+  {
+   "title": "Misha Katz & Dmitry Demyashkin",
+   "date": "2026-11-07",
+   "time": "18:00",
+   "place": "Centro Congressos da Madeira",
+   "price": "25.00€",
+   "series": "Orquestra Clássica da Madeira",
+   "url": "https://www.ocmadeira.pt/concertos/proximos-eventos/orquestra-cla-ssica-da-madeira/280-misha-katz-dmitry-demyashkin.html",
+   "tickets": ""
+  },
+  {
+   "title": "Quinteto de Sopros \"Solistas OCM\"",
+   "date": "2026-11-14",
+   "time": "18:00",
+   "place": "Capela da Fundação Princesa Dona Maria Amélia",
+   "price": "20.00€",
+   "series": "Música de Câmara",
+   "url": "https://www.ocmadeira.pt/concertos/proximos-eventos/musica-camara/281-quinteto-de-sopros-solistas-ocm.html",
+   "tickets": ""
+  },
+  {
+   "title": "Quinteto de sopros “Atlântida\"",
+   "date": "2026-11-18",
+   "time": "21:00",
+   "place": "Savoy Palace",
+   "price": "20.00€",
+   "series": "Música de Câmara",
+   "url": "https://www.ocmadeira.pt/concertos/proximos-eventos/musica-camara/282-quinteto-de-sopros-atlantida.html",
+   "tickets": ""
+  },
+  {
+   "title": "Legno Duo",
+   "date": "2026-11-21",
+   "time": "18:00",
+   "place": "Assembleia Legislativa da Madeira",
+   "price": "20.00€",
+   "series": "Música de Câmara",
+   "url": "https://www.ocmadeira.pt/concertos/proximos-eventos/musica-camara/283-legno-duo.html",
+   "tickets": ""
+  },
+  {
+   "title": "Orquestra de cordas | Madeira Camerata",
+   "date": "2026-12-15",
+   "time": "21:30",
+   "place": "Reid's Palace, a Belmond Hotel Madeira",
+   "price": "20.00€",
+   "series": "Orquestra de Cordas",
+   "url": "https://www.ocmadeira.pt/concertos/proximos-eventos/orquestra-de-cordas/284-orquestra-de-cordas-madeira-camerata.html",
+   "tickets": ""
+  },
+  {
+   "title": "Quarteto de Cordas \"Atlântico\"",
+   "date": "2026-12-16",
+   "time": "21:00",
+   "place": "Royal Savoy",
+   "price": "20.00€",
+   "series": "Música de Câmara",
+   "url": "https://www.ocmadeira.pt/concertos/proximos-eventos/musica-camara/285-quarteto-de-cordas-atlantico.html",
+   "tickets": ""
   },
   {
    "title": "Concerto Fim de Ano 2026",

@@ -1,14 +1,7 @@
 {
-  "fetched": "2026-10-01T11:54:28",
+  "fetched": "2026-10-08T12:20:51",
   "count": 3,
   "events": [
-    {
-      "date": "2026-10-01",
-      "time": "19:45",
-      "name": "Denmark vs Portugal",
-      "comp": "UEFA Nations League",
-      "channel": "RTP · Mundial"
-    },
     {
       "date": "2026-10-10",
       "time": "18:00",
@@ -22,6 +15,13 @@
       "name": "Rio Ave vs Nacional de Madeira",
       "comp": "Portuguese Primeira Liga",
       "channel": "Sport TV"
+    },
+    {
+      "date": "2026-11-14",
+      "time": "19:45",
+      "name": "Portugal vs Denmark",
+      "comp": "UEFA Nations League",
+      "channel": "RTP · Mundial"
     }
   ]
 }

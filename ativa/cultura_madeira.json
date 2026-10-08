@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-10-01T11:40:12",
-  "count": 105,
+  "fetched": "2026-10-08T12:04:53",
+  "count": 120,
   "items": [
     {
       "id": "114",
@@ -142,7 +142,7 @@
       "end": "2026-10-02",
       "time": "",
       "place": "",
-      "category": "Other"
+      "category": "Activity"
     },
     {
       "id": "280",
@@ -812,7 +812,7 @@
       "end": "2026-10-04",
       "time": "",
       "place": "Praça de Santana",
-      "category": "Activity"
+      "category": "Theatre"
     },
     {
       "id": "347",
@@ -842,7 +842,7 @@
       "end": "2027-06-30",
       "time": "",
       "place": "PORTA33",
-      "category": "Other"
+      "category": "Activity"
     },
     {
       "id": "338",
@@ -862,7 +862,7 @@
       "end": "2026-10-04",
       "time": "",
       "place": "Largo da Achada, Camacha",
-      "category": "Other"
+      "category": "Traditional feast"
     },
     {
       "id": "355",
@@ -882,7 +882,7 @@
       "end": "2026-10-02",
       "time": "19:45",
       "place": "Jardim de Santa Luzia",
-      "category": "Traditional feast"
+      "category": "Other"
     },
     {
       "id": "356",
@@ -902,7 +902,7 @@
       "end": "2026-12-19",
       "time": "",
       "place": "Direção Regional dos Arquivos, das Bibliotecas e do Livro",
-      "category": "Other"
+      "category": "Activity"
     },
     {
       "id": "335",
@@ -912,7 +912,7 @@
       "end": "2026-11-07",
       "time": "",
       "place": "Fórum Machico",
-      "category": "Activity"
+      "category": "Theatre"
     },
     {
       "id": "359",
@@ -945,6 +945,16 @@
       "category": "Music"
     },
     {
+      "id": "360",
+      "title": "Ciclo de Concertos EcoMusicalis",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/ciclo-de-concertos-ecomusicalis",
+      "start": "2026-10-05",
+      "end": "2026-10-05",
+      "time": "07:45",
+      "place": "Miradouro da Bica da Cana",
+      "category": "Music"
+    },
+    {
       "id": "293",
       "title": "Concerto \"Machina Mundi-In\"",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concerto-machina-mundi-in",
@@ -955,6 +965,16 @@
       "category": "Music"
     },
     {
+      "id": "361",
+      "title": "Gaitada na Baixa",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/gaitada-na-baixa",
+      "start": "2026-10-07",
+      "end": "2026-10-07",
+      "time": "19:35",
+      "place": "Praia da Ponta do Sol",
+      "category": "Music"
+    },
+    {
       "id": "351",
       "title": "MARIOFA – Festival de Marionetas e Outras Formas Animadas 2026",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/mariofa-festival-de-marionetas-e-outras-formas-animadas-2026",
@@ -962,7 +982,27 @@
       "end": "2026-10-11",
       "time": "",
       "place": "Teatro Municipal Baltazar Dias",
-      "category": "Traditional feast"
+      "category": "Other"
+    },
+    {
+      "id": "362",
+      "title": "The Gift – Um Piano e Uma Voz",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/the-gift-um-piano-uma-voz",
+      "start": "2026-10-08",
+      "end": "2026-10-09",
+      "time": "21:00",
+      "place": "Auditório do Centro de Congressos da Madeira",
+      "category": "Music"
+    },
+    {
+      "id": "375",
+      "title": "“Blessed Ground”",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/blessed-ground",
+      "start": "2026-10-08",
+      "end": "2027-01-30",
+      "time": "17:00",
+      "place": "Museu de Fotografia da Madeira - Atelier Vicente's",
+      "category": "Exhibition"
     },
     {
       "id": "341",
@@ -972,7 +1012,17 @@
       "end": "2026-10-11",
       "time": "",
       "place": "Porta33 — Escola do Porto Santo",
-      "category": "Traditional feast"
+      "category": "Other"
+    },
+    {
+      "id": "369",
+      "title": "Festa da Escola - Porto Santo",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/festa-da-escola-2026",
+      "start": "2026-10-09",
+      "end": "2026-10-11",
+      "time": "15:00",
+      "place": "Porta33 — Escola do Porto Santo",
+      "category": "Other"
     },
     {
       "id": "299",
@@ -995,6 +1045,46 @@
       "category": "Music"
     },
     {
+      "id": "363",
+      "title": "Concerto Comemorativo \"Cantigas pr'Ascenção\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concerto-comemorativo-cantigas-prascencao",
+      "start": "2026-10-10",
+      "end": "2026-10-10",
+      "time": "20:00",
+      "place": "Centro Cultural John dos Passos",
+      "category": "Music"
+    },
+    {
+      "id": "366",
+      "title": "Atelier de Expressão Plástica “Embossing: entre água e relevo”",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/atelier-de-expressao-plastica-embossing-entre-agua-e-relevo",
+      "start": "2026-10-10",
+      "end": "2026-10-17",
+      "time": "10:00",
+      "place": "MUDAS.Museu de Arte Contemporânea da Madeira",
+      "category": "Activity"
+    },
+    {
+      "id": "373",
+      "title": "A Orquestra Clássica da Madeira apresenta concerto de Música de Câmara com Legno Duo",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/a-orquestra-classica-da-madeira-apresenta-concerto-de-musica-de-camara-com-legno-duo",
+      "start": "2026-10-10",
+      "end": "2026-10-10",
+      "time": "18:00",
+      "place": "Capela da Fundação Princesa Dona Maria Amélia",
+      "category": "Music"
+    },
+    {
+      "id": "376",
+      "title": "Espetáculo comemorativo do 40.º aniversário da Associação Grupo Cultural Flores de Maio",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/espetaculo-comemorativo-do-40-o-aniversario-da-associacao-grupo-cultural-flores-de-maio",
+      "start": "2026-10-10",
+      "end": "2026-10-10",
+      "time": "17:00",
+      "place": "Fórum Machico",
+      "category": "Music"
+    },
+    {
       "id": "332",
       "title": "Desfile de Bandas Filarmónicas Centenárias da RAM",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/desfile-de-bandas-filarmonicas-centenarias-da-ram",
@@ -1005,6 +1095,16 @@
       "category": "Music"
     },
     {
+      "id": "365",
+      "title": "5.º Encontro Regional de Conservação e Restauro do Património Cultural – Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/5-o-encontro-regional-de-conservacao-e-restauro-do-patrimonio-cultural-madeira",
+      "start": "2026-10-12",
+      "end": "2026-10-16",
+      "time": "",
+      "place": "",
+      "category": "Activity"
+    },
+    {
       "id": "353",
       "title": "Festival Avesso 2026",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/festival-avesso-2026",
@@ -1012,7 +1112,17 @@
       "end": "2026-10-25",
       "time": "",
       "place": "Centro Cultural John dos Passos",
-      "category": "Activity"
+      "category": "Theatre"
+    },
+    {
+      "id": "374",
+      "title": "“O Inspetor Geral”",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/o-inspetor-geral",
+      "start": "2026-10-16",
+      "end": "2026-10-18",
+      "time": "21:00",
+      "place": "Centro Cívico do Estreito de Câmara de Lobos",
+      "category": "Theatre"
     },
     {
       "id": "343",
@@ -1023,6 +1133,16 @@
       "time": "18:00",
       "place": "Auditório do Centro de Congressos da Madeira",
       "category": "Music"
+    },
+    {
+      "id": "372",
+      "title": "São Francisco de Assis protegendo as hierarquias da Igreja. Outras plausíveis (re)leituras",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/conferencias/sao-francisco-de-assis-protegendo-as-hierarquias-da-igreja-outras-plausiveis-re-leituras",
+      "start": "2026-10-19",
+      "end": "2026-10-19",
+      "time": "18:00",
+      "place": "Museu de Arte Sacra do Funchal",
+      "category": "Conference"
     },
     {
       "id": "279",
@@ -1045,6 +1165,36 @@
       "category": "Music"
     },
     {
+      "id": "367",
+      "title": "8.ª Edição do Madeira Street Arts Festival",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/8-a-edicao-do-madeira-street-arts-festival",
+      "start": "2026-10-24",
+      "end": "2026-10-25",
+      "time": "",
+      "place": "Santa Cruz - Centro",
+      "category": "Other"
+    },
+    {
+      "id": "364",
+      "title": "“O Rei vai Nu”",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/o-rei-vai-nu",
+      "start": "2026-10-28",
+      "end": "2026-11-06",
+      "time": "",
+      "place": "Teatro Municipal Baltazar Dias",
+      "category": "Theatre"
+    },
+    {
+      "id": "368",
+      "title": "MadIT 2026 - Madeira Innovation Talks – Contadores de Histórias de Inovação - Para Partilhar & Inspirar",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/conferencias/madit-2026-madeira-innovation-talks-contadores-de-historias-de-inovacao-para-partilhar-inspirar",
+      "start": "2026-10-30",
+      "end": "2026-10-30",
+      "time": "09:30",
+      "place": "Auditório do Centro de Congressos da Madeira",
+      "category": "Conference"
+    },
+    {
       "id": "352",
       "title": "42.ª Festa da Castanha – Curral das Freiras",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/festas-tradicionais/42-a-festa-da-castanha-curral-das-freiras",
@@ -1052,7 +1202,7 @@
       "end": "2026-11-01",
       "time": "",
       "place": "Casa do Povo do Curral das Freiras",
-      "category": "Other"
+      "category": "Traditional feast"
     }
   ]
 }
