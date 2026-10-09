@@ -197,7 +197,7 @@ html.dark{--x:0}
   .burger{right:10px}
 }
 </style>
-<script>(function(){var t=localStorage.getItem("ma-theme");if(t==="dark")document.documentElement.classList.add("dark");else if(t==="light")document.documentElement.classList.add("light");})();</script>
+<script>(function(){var t=null;try{t=localStorage.getItem("ma-theme")}catch(e){}document.documentElement.classList.add(t==="dark"?"dark":"light");})();</script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-M2PTQLF903"></script>
   <script>
     window.dataLayer = window.dataLayer || [];

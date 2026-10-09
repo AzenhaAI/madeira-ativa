@@ -244,7 +244,7 @@ html.dark{--x:0}
   .game-cta{flex:0 0 auto;font-size:14px;font-weight:600;color:var(--accent);white-space:nowrap}
   @media(max-width:520px){.game-banner{flex-wrap:wrap}.game-spark{width:52px}.game-cta{margin-left:auto}}
 </style>
-<script>(function(){var t=localStorage.getItem("ma-theme");if(t==="dark")document.documentElement.classList.add("dark");else if(t==="light")document.documentElement.classList.add("light");})();</script>
+<script>(function(){var t=null;try{t=localStorage.getItem("ma-theme")}catch(e){}document.documentElement.classList.add(t==="dark"?"dark":"light");})();</script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-M2PTQLF903"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
