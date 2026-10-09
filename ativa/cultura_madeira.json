@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-10-08T12:04:53",
-  "count": 120,
+  "fetched": "2026-10-09T11:56:31",
+  "count": 121,
   "items": [
     {
       "id": "114",
@@ -1113,6 +1113,16 @@
       "time": "",
       "place": "Centro Cultural John dos Passos",
       "category": "Theatre"
+    },
+    {
+      "id": "378",
+      "title": "“100 Anos de Arquivo e Discografia Madeirense”",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/conferencias/100-anos-de-arquivo-e-discografia-madeirense",
+      "start": "2026-10-14",
+      "end": "2026-10-14",
+      "time": "15:00",
+      "place": "Museu da Quinta das Cruzes",
+      "category": "Conference"
     },
     {
       "id": "374",

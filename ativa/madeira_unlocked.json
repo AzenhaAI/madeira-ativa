@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-10-08T12:04:37",
-  "count": 316,
+  "fetched": "2026-10-09T11:56:20",
+  "count": 321,
   "items": [
     {
       "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
@@ -3050,6 +3050,21 @@
       "source_category": "festivals-parades"
     },
     {
+      "id": "festa-latina-2026-10-09",
+      "title": "Festa Latina",
+      "url": "https://www.madeira-unlocked.com/en/events/festa-latina-2026-10-09",
+      "start": "2026-10-09T20:00:00+01:00",
+      "end": "2026-10-10T01:00:00+01:00",
+      "date": "2026-10-09",
+      "time": "20:00",
+      "venue": "BrunchVille Marina",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Level Up Dance Studio",
+      "category": "dance",
+      "source_category": "dance"
+    },
+    {
       "id": "the-gift-um-piano-e-uma-voz-2026-10-09",
       "title": "The Gift - Um Piano e uma Voz",
       "url": "https://www.madeira-unlocked.com/en/events/the-gift-um-piano-e-uma-voz-2026-10-09",
@@ -3213,6 +3228,21 @@
       "organizer": "ECHOO Madeira Nature Fest",
       "category": "festival",
       "source_category": "festivals-parades"
+    },
+    {
+      "id": "from-handmade-soap-to-felted-soap-2026-10-10",
+      "title": "From Handmade Soap to Felted Soap",
+      "url": "https://www.madeira-unlocked.com/en/events/from-handmade-soap-to-felted-soap-2026-10-10",
+      "start": "2026-10-10T10:00:00+01:00",
+      "end": "2026-10-10T12:00:00+01:00",
+      "date": "2026-10-10",
+      "time": "10:00",
+      "venue": "Oh Lã Lã Fiber Lab",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Oh Lã Lã Fiber Lab",
+      "category": "workshop",
+      "source_category": "handicraft-workshops"
     },
     {
       "id": "whale-fest-2026-10-10",
@@ -3845,6 +3875,21 @@
       "source_category": "festivals-parades"
     },
     {
+      "id": "liquid-sounds-paint-the-song-that-holds-your-story-2026-10-18",
+      "title": "Liquid Sounds: Paint the Song That Holds Your Story",
+      "url": "https://www.madeira-unlocked.com/en/events/liquid-sounds-paint-the-song-that-holds-your-story-2026-10-18",
+      "start": "2026-10-18T17:30:00+01:00",
+      "end": "2026-10-18T19:00:00+01:00",
+      "date": "2026-10-18",
+      "time": "17:30",
+      "venue": "BSP Home Studio - address revealed after booking",
+      "municipality": "Ribeira Brava",
+      "price": 50,
+      "organizer": "BSP",
+      "category": "workshop",
+      "source_category": "handicraft-workshops"
+    },
+    {
       "id": "from-queen-to-chess-2026-10-18",
       "title": "FROM QUEEN TO CHESS",
       "url": "https://www.madeira-unlocked.com/en/events/from-queen-to-chess-2026-10-18",
@@ -4280,6 +4325,21 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "halloween-party-with-maleficent-2026-10-30",
+      "title": "Halloween Party with Maleficent",
+      "url": "https://www.madeira-unlocked.com/en/events/halloween-party-with-maleficent-2026-10-30",
+      "start": "2026-10-30T18:00:00+00:00",
+      "end": "2026-10-30T20:00:00+00:00",
+      "date": "2026-10-30",
+      "time": "18:00",
+      "venue": "Pura Vida",
+      "municipality": "Funchal",
+      "price": 35,
+      "organizer": "Pura Vida",
+      "category": "family",
+      "source_category": "kids-family"
+    },
+    {
       "id": "o-grande-baile-das-criaturas-do-xico-2026-10-30",
       "title": "O Grande Baile das Criaturas do Xico",
       "url": "https://www.madeira-unlocked.com/en/events/o-grande-baile-das-criaturas-do-xico-2026-10-30",
@@ -4338,6 +4398,21 @@
       "organizer": "Clube Aventura da Madeira",
       "category": "sport",
       "source_category": "sport-fitness"
+    },
+    {
+      "id": "halloween-party-with-maleficent-2026-10-31",
+      "title": "Halloween Party with Maleficent",
+      "url": "https://www.madeira-unlocked.com/en/events/halloween-party-with-maleficent-2026-10-31",
+      "start": "2026-10-31T11:00:00+00:00",
+      "end": "2026-10-31T13:00:00+00:00",
+      "date": "2026-10-31",
+      "time": "11:00",
+      "venue": "Pura Vida",
+      "municipality": "Funchal",
+      "price": 35,
+      "organizer": "Pura Vida",
+      "category": "family",
+      "source_category": "kids-family"
     },
     {
       "id": "alive-halloween-dance-music-gathering-2026-10-31",

@@ -824,7 +824,6 @@ fetch('levadas.json').then(function (r) { return r.json(); }).then(function (d) 
   data = d;
   document.getElementById('src').innerHTML = esc(d.attribution || '') +
     ' · <a href="/ativa/sources">' + (lang === 'pt' ? 'Todas as fontes e licenças' : 'All sources and licences') + '</a>';
- <a href="/studio/">✨ <span data-lang="en">About Azenha.ai studio</span><span data-lang="pt">Sobre o estúdio Azenha.ai</span></a>
   render();
   loadToday();
 }).catch(function () {
@@ -855,6 +854,8 @@ applyLang();
     <a href="https://t.me/madeira_ebot" target="_blank" rel="noopener">✈️ Telegram bot</a>
         <a href="https://t.me/madeira_ativa" target="_blank" rel="noopener">✈️ Telegram channel</a>
     <a href="mailto:agent@azenha.ai">✉️ Contact</a>
+    <a href="/ativa/sources">📚 <span data-lang="en">Sources and licences</span><span data-lang="pt">Fontes e licenças</span></a>
+    <a href="/studio/">✨ <span data-lang="en">About Azenha.ai studio</span><span data-lang="pt">Sobre o estúdio Azenha.ai</span></a>
         <a href="#" id="themeDrawer">🌙 Dark theme</a>
   </nav>
 </aside>

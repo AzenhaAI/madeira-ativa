@@ -1,7 +1,7 @@
 {
   "note": "Ship calls at the port of Funchal from APRAM. Times are Madeira local time, as the port publishes them. Accumulates; a call no longer listed before its arrival is marked superseded.",
   "source": "https://apram.pt/movimento-navios?port=ptfnc",
-  "fetched": "2026-10-09T07:42:03",
+  "fetched": "2026-10-09T12:12:23",
   "count": 34,
   "calls": [
     {
@@ -170,7 +170,7 @@
       "agent": "Transinsular (Madeira)-Transp. Marit. Insulares, Lda.",
       "arrival": "2026-10-08T13:50",
       "from": "Funchal",
-      "departure": "2026-10-09T20:00",
+      "departure": "2026-10-09T21:00",
       "to": "Caniçal",
       "superseded": false
     },

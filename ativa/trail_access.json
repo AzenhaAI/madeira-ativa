@@ -1,6 +1,6 @@
 {
   "note": "Per trail end: position and height, nearest mapped car park within 600 m (OpenStreetMap), nearest urban bus stop within 800 m and its lines (Horários do Funchal GTFS). Interurban lines are not included: SIGA publishes them only as PDFs.",
-  "built": "2026-10-09T07:44:42",
+  "built": "2026-10-09T12:14:02",
   "sources": {
     "parkings": 2122,
     "parkings_fresh": true,
