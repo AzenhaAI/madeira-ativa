@@ -59,13 +59,18 @@
       '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="' + t[2] + '"/></svg><span>' + t[1] + '</span></a>';
   }).join('');
   document.body.appendChild(bar);
-  // On a phone the top row keeps only what the bar does not carry — Trail
-  // stats, Festas, History — so no section is listed twice on one screen.
-  // Desktop has no bar and keeps the full row.
+  // On a phone every page's own navigation row drops the places the bar
+  // already carries — Home, Levadas, the 2D map, News — so nothing is listed
+  // twice on one screen: the home row's Levadas/Maps/News, the "🏠 Main" that
+  // opens each content page's row, the back links on Ask and Sources, the
+  // "Home / ← Levadas" on the map pages, the "2D ↗" on the levada list. The
+  // burger drawer keeps the full menu, and 3D, Fly and Aerial stay: the bar
+  // has no place for them. Desktop has no bar and keeps every row whole.
   if (matchMedia('(max-width: 760px)').matches) {
-    document.querySelectorAll('.site-nav-inner a').forEach(function (a) {
-      var h = (a.getAttribute('href') || '') + ' ' + (a.getAttribute('onclick') || '');
-      if (/\/ativa\/(levada|map|madeira_news)/.test(h)) a.style.display = 'none';
+    var carried = /^(?:\.\/|\/ativa\/?|\/ativa\/levada(?:\.html)?|\/ativa\/map(?:\.html)?(?:\?.*)?|\/ativa\/madeira_news(?:\.html)?(?:\?.*)?)(?:#.*)?$/;
+    document.querySelectorAll('.site-nav-inner a, .section-nav-inner a, .topbar a, a.back, a.back-link').forEach(function (a) {
+      var href = a.getAttribute('href') || '', click = a.getAttribute('onclick') || '';
+      if (carried.test(href) || /\/ativa\/madeira_news/.test(click)) a.style.display = 'none';
     });
   }
   // Pages switch language in place; relabel without rebuilding.
