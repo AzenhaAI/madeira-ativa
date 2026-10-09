@@ -126,12 +126,6 @@
     st.textContent =
       'html[lang="ru"] [data-lang="ru"]{display:revert}' +
       'html[lang="ru"] .ma-ru-en{display:revert}' +
-      '.ma-langs{margin:14px 10px 6px;padding-top:12px;border-top:1px solid rgba(127,127,127,.3);font:600 14px/1.4 Inter,system-ui,sans-serif}' +
-      '.ma-langs .t{opacity:.7;font-size:12px;letter-spacing:.06em;text-transform:uppercase;margin:0 0 8px}' +
-      '.ma-langs label{display:flex;align-items:center;gap:10px;padding:7px 0;cursor:pointer}' +
-      '.ma-langs label.fixed{opacity:.6;cursor:default}' +
-      '.ma-langs input{width:18px;height:18px;accent-color:#1F4D32}' +
-      'html.dark .ma-langs input,html:not(.light) .ma-langs input{accent-color:#9fcfaa}' +
       '.ma-ru-btn.active{background:#1F4D32;color:#fff;border-color:#1F4D32}';
     document.head.appendChild(st);
 
@@ -172,18 +166,42 @@
       var b = document.querySelector('.ma-ru-btn'); if (b) b.remove();
     }
 
-    // The drawer's "Interface languages" block.
+    // One line in the drawer, "Interface languages"; the ticks live in a small
+    // sheet it opens, like any other setting.
     var nav = document.querySelector('.drawer-nav');
     if (nav) {
-      var box = document.createElement('div');
-      box.className = 'ma-langs';
-      box.innerHTML =
+      var item = document.createElement('a');
+      item.href = '#'; item.className = 'ma-langs-item';
+      item.textContent = '🌐 ' + (pt ? 'Línguas da interface' : 'Interface languages');
+      nav.appendChild(item);
+      var sheet = document.createElement('div');
+      sheet.className = 'ma-sheet'; sheet.hidden = true;
+      sheet.innerHTML =
+        '<div class="ma-sheet-box" role="dialog" aria-modal="true">' +
         '<p class="t">' + (pt ? 'Línguas da interface' : 'Interface languages') + '</p>' +
         '<label class="fixed"><input type="checkbox" checked disabled> English</label>' +
         '<label class="fixed"><input type="checkbox" checked disabled> Português</label>' +
-        '<label><input type="checkbox" id="maRuTick"' + (ruOn() ? ' checked' : '') + '> Русский</label>';
-      nav.appendChild(box);
-      box.querySelector('#maRuTick').addEventListener('change', function (e) {
+        '<label><input type="checkbox" id="maRuTick"' + (ruOn() ? ' checked' : '') + '> Русский</label>' +
+        '<p class="n">' + (pt ? 'O russo aparece como um botão RU ao lado de EN/PT. Nomes de lugares e eventos ficam como estão.' : 'Russian appears as a RU button beside EN/PT. Names of places and events stay as they are.') + '</p>' +
+        '<button type="button" class="ma-sheet-ok">OK</button></div>';
+      document.body.appendChild(sheet);
+      var st2 = document.createElement('style');
+      st2.textContent =
+        '.ma-sheet{position:fixed;inset:0;z-index:1300;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;padding:20px}' +
+        '.ma-sheet-box{background:var(--bg,#F5F2EA);color:inherit;border:1px solid rgba(127,127,127,.3);border-radius:16px;padding:18px 20px;width:min(360px,100%);font:500 16px/1.4 Inter,system-ui,sans-serif}' +
+        '.ma-sheet-box .t{margin:0 0 10px;font-weight:700;font-size:17px}' +
+        '.ma-sheet-box label{display:flex;align-items:center;gap:12px;padding:9px 0;cursor:pointer}' +
+        '.ma-sheet-box label.fixed{opacity:.6;cursor:default}' +
+        '.ma-sheet-box input{width:20px;height:20px;accent-color:#1F4D32}' +
+        'html.dark .ma-sheet-box input,html:not(.light) .ma-sheet-box input{accent-color:#9fcfaa}' +
+        '.ma-sheet-box .n{margin:10px 0 14px;font-size:13px;opacity:.7}' +
+        '.ma-sheet-ok{width:100%;border:0;border-radius:12px;padding:12px;font:700 16px Inter,system-ui,sans-serif;background:#1F4D32;color:#fff;cursor:pointer}';
+      document.head.appendChild(st2);
+      item.addEventListener('click', function (e) { e.preventDefault(); sheet.hidden = false; });
+      function closeSheet() { sheet.hidden = true; }
+      sheet.querySelector('.ma-sheet-ok').addEventListener('click', closeSheet);
+      sheet.addEventListener('click', function (e) { if (e.target === sheet) closeSheet(); });
+      sheet.querySelector('#maRuTick').addEventListener('change', function (e) {
         try { localStorage.setItem(KEY, e.target.checked ? '1' : '0'); } catch (x) {}
         if (e.target.checked) { placeButton(); setLang('ru'); }
         else { removeButton(); if (document.documentElement.lang === 'ru') setLang('en'); }
