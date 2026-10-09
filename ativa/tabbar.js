@@ -43,8 +43,6 @@
     '.ma-tabbar a.on svg{background:rgba(31,77,50,.12);border-radius:14px;padding:3px 10px;width:44px;box-sizing:content-box}' +
     'html.dark .ma-tabbar{background:#161d18;border-color:#2c352c}' +
     'html.dark .ma-tabbar a{color:#8fa68c}html.dark .ma-tabbar a.on{color:#9fcfaa}html.dark .ma-tabbar a.on svg{background:rgba(159,207,170,.14)}' +
-    '@media(prefers-color-scheme:dark){html:not(.light) .ma-tabbar{background:#161d18;border-color:#2c352c}' +
-    'html:not(.light) .ma-tabbar a{color:#8fa68c}html:not(.light) .ma-tabbar a.on{color:#9fcfaa}html:not(.light) .ma-tabbar a.on svg{background:rgba(159,207,170,.14)}}' +
     // What already floats at the bottom of a page moves up above the bar.
     '#a2hs{bottom:calc(12px + 64px + env(safe-area-inset-bottom))!important}' +
     '#toTop,.totop{bottom:calc(18px + 64px + env(safe-area-inset-bottom))!important}' +
@@ -187,13 +185,13 @@
       document.body.appendChild(sheet);
       var st2 = document.createElement('style');
       st2.textContent =
-        '.ma-sheet{position:fixed;inset:0;z-index:1300;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;padding:20px}' +
+        '.ma-sheet{position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;padding:20px}' +
         '.ma-sheet-box{background:var(--bg,#F5F2EA);color:inherit;border:1px solid rgba(127,127,127,.3);border-radius:16px;padding:18px 20px;width:min(360px,100%);font:500 16px/1.4 Inter,system-ui,sans-serif}' +
         '.ma-sheet-box .t{margin:0 0 10px;font-weight:700;font-size:17px}' +
         '.ma-sheet-box label{display:flex;align-items:center;gap:12px;padding:9px 0;cursor:pointer}' +
         '.ma-sheet-box label.fixed{opacity:.6;cursor:default}' +
         '.ma-sheet-box input{width:20px;height:20px;accent-color:#1F4D32}' +
-        'html.dark .ma-sheet-box input,html:not(.light) .ma-sheet-box input{accent-color:#9fcfaa}' +
+        'html.dark .ma-sheet-box input{accent-color:#9fcfaa}' +
         '.ma-sheet-box .n{margin:10px 0 14px;font-size:13px;opacity:.7}' +
         '.ma-sheet-ok{width:100%;border:0;border-radius:12px;padding:12px;font:700 16px Inter,system-ui,sans-serif;background:#1F4D32;color:#fff;cursor:pointer}';
       document.head.appendChild(st2);
@@ -201,10 +199,23 @@
       function closeSheet() { sheet.hidden = true; }
       sheet.querySelector('.ma-sheet-ok').addEventListener('click', closeSheet);
       sheet.addEventListener('click', function (e) { if (e.target === sheet) closeSheet(); });
-      sheet.querySelector('#maRuTick').addEventListener('change', function (e) {
+      var tick = sheet.querySelector('#maRuTick'), note = sheet.querySelector('.n');
+      function state() {
+        note.textContent = tick.checked
+          ? (pt ? 'Russo ativado: o botão RU está ao lado de EN/PT. Nomes de lugares e eventos ficam como estão.' : 'Russian is on: the RU button is beside EN/PT. Names of places and events stay as they are.')
+          : (pt ? 'Marque para ter russo como terceira língua da interface.' : 'Tick to have Russian as a third interface language.');
+      }
+      tick.addEventListener('change', function (e) {
         try { localStorage.setItem(KEY, e.target.checked ? '1' : '0'); } catch (x) {}
         if (e.target.checked) { placeButton(); setLang('ru'); }
         else { removeButton(); if (document.documentElement.lang === 'ru') setLang('en'); }
+        state();
+      });
+      state();
+      // Opening the sheet closes the drawer underneath, so the page is seen
+      // switching when the tick is set.
+      item.addEventListener('click', function () {
+        var close = document.getElementById('drawerClose'); if (close) close.click();
       });
     }
 
@@ -237,7 +248,7 @@
     if (close) close.insertAdjacentElement('beforebegin', d); else head.appendChild(d);
     function paint() {
       var h = document.documentElement;
-      var dark = h.classList.contains('dark') || (!h.classList.contains('light') && matchMedia('(prefers-color-scheme: dark)').matches);
+      var dark = h.classList.contains('dark');
       d.textContent = dark ? '☀️' : '🌙';
     }
     paint();
