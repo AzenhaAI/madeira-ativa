@@ -110,130 +110,131 @@
     if (host.tagName === 'FOOTER') host.parentNode.insertBefore(box, host); else host.appendChild(box);
   })();
 
-  // Russian, by choice. The drawer ends with "Interface languages": English and
-  // Portuguese are always on; Russian is a tick the reader can set, remembered
-  // on this device. With it on, a third button, RU, joins the page's EN/PT
-  // switch. The Russian strings are the <span data-lang="ru"> that
-  // scripts/i18n_ru.py adds beside each EN/PT pair as the nightly run
-  // translates them; a pair without one shows English, so a page is never
-  // blank in Russian — only, at worst, partly English.
+  // Languages, by choice. The drawer's "Interface languages" opens a sheet:
+  // English, Portuguese and Russian are each a tick; at least one stays on.
+  // A language that is off has no button beside the switch and is never
+  // shown. Russian lines are the <span data-lang="ru"> scripts/i18n_ru.py adds
+  // beside each EN/PT pair as the nightly run translates them; a pair without
+  // one shows English in Russian mode, so a page is never blank.
   (function () {
-    var KEY = 'ma-ru';
-    function ruOn() { try { return localStorage.getItem(KEY) === '1'; } catch (e) { return false; } }
+    var LANGS = [['en', 'English'], ['pt', 'Português'], ['ru', 'Русский']];
+    var KEY = 'ma-langs';
+    function enabled() {
+      var v = null; try { v = localStorage.getItem(KEY); } catch (e) {}
+      var list = v ? v.split(',') : ['en', 'pt'];
+      list = list.filter(function (l) { return l === 'en' || l === 'pt' || l === 'ru'; });
+      return list.length ? list : ['en'];
+    }
+    function store(list) { try { localStorage.setItem(KEY, list.join(',')); } catch (e) {} }
     var st = document.createElement('style');
     st.textContent =
       '[data-lang="ru"]{display:none!important}' +
       'html[lang="ru"] [data-lang="ru"]{display:revert!important}' +
-      'html[lang="ru"] .ma-ru-en{display:revert}' +
-      '.ma-ru-btn.active{background:#1F4D32;color:#fff;border-color:#1F4D32}';
+      'html[lang="ru"] [data-lang="en"]:not(.ma-has-ru){display:revert!important}' +
+      '.ma-ru-btn.active{background:#1F4D32;color:#fff;border-color:#1F4D32}' +
+      '.ma-sheet{position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;padding:20px}' +
+      '.ma-sheet-box{background:var(--bg,#F5F2EA);color:inherit;border:1px solid rgba(127,127,127,.3);border-radius:16px;padding:18px 20px;width:min(360px,100%);font:500 16px/1.4 Inter,system-ui,sans-serif}' +
+      '.ma-sheet-box .t{margin:0 0 10px;font-weight:700;font-size:17px}' +
+      '.ma-sheet-box label{display:flex;align-items:center;gap:12px;padding:9px 0;cursor:pointer}' +
+      '.ma-sheet-box input{width:20px;height:20px;accent-color:#1F4D32}' +
+      'html.dark .ma-sheet-box input{accent-color:#9fcfaa}' +
+      '.ma-sheet-box .n{margin:10px 0 14px;font-size:13px;opacity:.7}' +
+      '.ma-sheet-ok{width:100%;border:0;border-radius:12px;padding:12px;font:700 16px Inter,system-ui,sans-serif;background:#1F4D32;color:#fff;cursor:pointer}';
     document.head.appendChild(st);
 
-    // English shows wherever the Russian line is missing.
-    function markFallback() {
-      document.querySelectorAll('[data-lang="en"]:not(.ma-ru-en):not(.ma-ru-has)').forEach(function (en) {
+    // In Russian mode, an EN line whose pair has a Russian one steps aside.
+    function markPairs() {
+      document.querySelectorAll('[data-lang="en"]').forEach(function (en) {
         var ru = en.nextElementSibling;
         while (ru && ru.getAttribute('data-lang') === 'pt') ru = ru.nextElementSibling;
-        en.classList.add(ru && ru.getAttribute('data-lang') === 'ru' ? 'ma-ru-has' : 'ma-ru-en');
+        en.classList.toggle('ma-has-ru', !!(ru && ru.getAttribute('data-lang') === 'ru'));
       });
     }
     function setLang(l) {
       document.documentElement.lang = l;
       try { localStorage.setItem('lang', l); } catch (e) {}
-      paintRu();
     }
-    function paintRu() {
+    function paint() {
       var on = document.documentElement.lang === 'ru';
       document.querySelectorAll('.ma-ru-btn').forEach(function (b) { b.classList.toggle('active', on); });
-      if (on) markFallback();
+      if (on) markPairs();
     }
 
-    // The RU button beside whichever EN/PT switch the page has.
-    function placeButton() {
-      if (document.querySelector('.ma-ru-btn')) return;
-      var b = document.createElement('button');
-      b.className = 'ma-ru-btn'; b.type = 'button'; b.textContent = 'RU';
-      b.addEventListener('click', function () { setLang('ru'); });
-      var pill = document.querySelector('.lang [data-set-lang]');
+    // The page's own EN/PT switch: hide a button for a language that is off,
+    // add RU when it is on.
+    function syncButtons() {
+      var list = enabled();
+      document.querySelectorAll('.lang [data-set-lang], .lang-btn[data-lang], .lang-btn').forEach(function (b) {
+        var l = b.getAttribute('data-set-lang') || b.getAttribute('data-lang') || (b.textContent || '').trim().toLowerCase();
+        if (l === 'en' || l === 'pt') b.style.display = list.indexOf(l) >= 0 ? '' : 'none';
+      });
       var toggle = document.querySelector('.lang-toggle');
-      var group = document.querySelector('.lang-btn');
-      if (pill) { b.className += ' ' + pill.className; pill.parentNode.appendChild(b); }
-      else if (toggle) { b.className += ' ' + toggle.className; toggle.insertAdjacentElement('afterend', b); }
-      else if (group) { b.className += ' lang-btn'; group.parentNode.appendChild(b); }
-      else return;
-    }
-    function removeButton() {
-      var b = document.querySelector('.ma-ru-btn'); if (b) b.remove();
+      if (toggle) toggle.style.display = (list.indexOf('en') >= 0 && list.indexOf('pt') >= 0) ? '' : 'none';
+      var have = document.querySelector('.ma-ru-btn');
+      if (list.indexOf('ru') >= 0 && !have) {
+        var b = document.createElement('button');
+        b.className = 'ma-ru-btn'; b.type = 'button'; b.textContent = 'RU';
+        b.addEventListener('click', function () { setLang('ru'); paint(); });
+        var pill = document.querySelector('.lang [data-set-lang]');
+        var group = document.querySelector('.lang-btn');
+        if (pill) { b.className += ' ' + pill.className.replace('active', ''); pill.parentNode.appendChild(b); }
+        else if (toggle) { b.className += ' ' + toggle.className; toggle.insertAdjacentElement('afterend', b); }
+        else if (group) { b.className += ' lang-btn'; group.parentNode.appendChild(b); }
+      } else if (list.indexOf('ru') < 0 && have) have.remove();
+      // The page must be in a language that is on.
+      var cur = document.documentElement.lang;
+      if (list.indexOf(cur) < 0) { setLang(list[0]); }
+      paint();
     }
 
-    // One line in the drawer, "Interface languages"; the ticks live in a small
-    // sheet it opens, like any other setting.
     var nav = document.querySelector('.drawer-nav');
     if (nav) {
       var item = document.createElement('a');
-      item.href = '#'; item.className = 'ma-langs-item';
+      item.href = '#';
       item.textContent = '🌐 ' + (pt ? 'Línguas da interface' : 'Interface languages');
       nav.appendChild(item);
       var sheet = document.createElement('div');
       sheet.className = 'ma-sheet'; sheet.hidden = true;
-      sheet.innerHTML =
-        '<div class="ma-sheet-box" role="dialog" aria-modal="true">' +
-        '<p class="t">' + (pt ? 'Línguas da interface' : 'Interface languages') + '</p>' +
-        '<label class="fixed"><input type="checkbox" checked disabled> English</label>' +
-        '<label class="fixed"><input type="checkbox" checked disabled> Português</label>' +
-        '<label><input type="checkbox" id="maRuTick"' + (ruOn() ? ' checked' : '') + '> Русский</label>' +
-        '<p class="n">' + (pt ? 'O russo aparece como um botão RU ao lado de EN/PT. Nomes de lugares e eventos ficam como estão.' : 'Russian appears as a RU button beside EN/PT. Names of places and events stay as they are.') + '</p>' +
-        '<button type="button" class="ma-sheet-ok">OK</button></div>';
+      sheet.innerHTML = '<div class="ma-sheet-box" role="dialog" aria-modal="true"><p class="t">' +
+        (pt ? 'Línguas da interface' : 'Interface languages') + '</p>' +
+        LANGS.map(function (L) { return '<label><input type="checkbox" data-l="' + L[0] + '"> ' + L[1] + '</label>'; }).join('') +
+        '<p class="n"></p><button type="button" class="ma-sheet-ok">OK</button></div>';
       document.body.appendChild(sheet);
-      var st2 = document.createElement('style');
-      st2.textContent =
-        '.ma-sheet{position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;padding:20px}' +
-        '.ma-sheet-box{background:var(--bg,#F5F2EA);color:inherit;border:1px solid rgba(127,127,127,.3);border-radius:16px;padding:18px 20px;width:min(360px,100%);font:500 16px/1.4 Inter,system-ui,sans-serif}' +
-        '.ma-sheet-box .t{margin:0 0 10px;font-weight:700;font-size:17px}' +
-        '.ma-sheet-box label{display:flex;align-items:center;gap:12px;padding:9px 0;cursor:pointer}' +
-        '.ma-sheet-box label.fixed{opacity:.6;cursor:default}' +
-        '.ma-sheet-box input{width:20px;height:20px;accent-color:#1F4D32}' +
-        'html.dark .ma-sheet-box input{accent-color:#9fcfaa}' +
-        '.ma-sheet-box .n{margin:10px 0 14px;font-size:13px;opacity:.7}' +
-        '.ma-sheet-ok{width:100%;border:0;border-radius:12px;padding:12px;font:700 16px Inter,system-ui,sans-serif;background:#1F4D32;color:#fff;cursor:pointer}';
-      document.head.appendChild(st2);
-      item.addEventListener('click', function (e) { e.preventDefault(); sheet.hidden = false; });
+      var boxes = sheet.querySelectorAll('input[data-l]'), note = sheet.querySelector('.n');
+      function fill() {
+        var list = enabled();
+        boxes.forEach(function (b) { b.checked = list.indexOf(b.dataset.l) >= 0; b.disabled = b.checked && list.length === 1; });
+        note.textContent = pt ? 'As línguas marcadas aparecem como botões ao lado do título. Nomes de lugares e eventos ficam como estão.'
+                              : 'Ticked languages appear as buttons beside the title. Names of places and events stay as they are.';
+      }
+      item.addEventListener('click', function (e) {
+        e.preventDefault();
+        var close = document.getElementById('drawerClose'); if (close) close.click();
+        fill(); sheet.hidden = false;
+      });
       function closeSheet() { sheet.hidden = true; }
       sheet.querySelector('.ma-sheet-ok').addEventListener('click', closeSheet);
       sheet.addEventListener('click', function (e) { if (e.target === sheet) closeSheet(); });
-      var tick = sheet.querySelector('#maRuTick'), note = sheet.querySelector('.n');
-      function state() {
-        note.textContent = tick.checked
-          ? (pt ? 'Russo ativado: o botão RU está ao lado de EN/PT. Nomes de lugares e eventos ficam como estão.' : 'Russian is on: the RU button is beside EN/PT. Names of places and events stay as they are.')
-          : (pt ? 'Marque para ter russo como terceira língua da interface.' : 'Tick to have Russian as a third interface language.');
-      }
-      tick.addEventListener('change', function (e) {
-        try { localStorage.setItem(KEY, e.target.checked ? '1' : '0'); } catch (x) {}
-        if (e.target.checked) { placeButton(); setLang('ru'); }
-        else { removeButton(); if (document.documentElement.lang === 'ru') setLang('en'); }
-        state();
-      });
-      state();
-      // Opening the sheet closes the drawer underneath, so the page is seen
-      // switching when the tick is set.
-      item.addEventListener('click', function () {
-        var close = document.getElementById('drawerClose'); if (close) close.click();
+      boxes.forEach(function (b) {
+        b.addEventListener('change', function () {
+          var list = enabled();
+          if (b.checked) { if (list.indexOf(b.dataset.l) < 0) list.push(b.dataset.l); }
+          else list = list.filter(function (l) { return l !== b.dataset.l; });
+          if (!list.length) { b.checked = true; return; }
+          list = ['en', 'pt', 'ru'].filter(function (l) { return list.indexOf(l) >= 0; });
+          store(list);
+          if (b.checked && b.dataset.l === 'ru') setLang('ru');
+          syncButtons(); fill();
+        });
       });
     }
 
-    if (ruOn()) {
-      placeButton();
-      var saved = null; try { saved = localStorage.getItem('lang'); } catch (e) {}
-      // The page's own script set en or pt on load; Russian is restored here.
-      if (saved === 'ru') setLang('ru');
-    }
-    markFallback();
-    paintRu();
-    new MutationObserver(paintRu).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
-    // Content the page renders later carries its own EN/PT pairs.
+    syncButtons();
+    new MutationObserver(paint).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
     var pending = false;
     new MutationObserver(function () {
       if (pending) return; pending = true;
-      requestAnimationFrame(function () { pending = false; if (document.documentElement.lang === 'ru') markFallback(); });
+      requestAnimationFrame(function () { pending = false; if (document.documentElement.lang === 'ru') markPairs(); });
     }).observe(document.body, { childList: true, subtree: true });
   })();
 
