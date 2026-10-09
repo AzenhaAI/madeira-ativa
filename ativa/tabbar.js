@@ -84,6 +84,31 @@
       }
     });
   }
+  // The two store badges above every page's footer — the same pair the apps
+  // page shows, drawn here so the 16 pages need no markup of their own. Not
+  // inside the app, where the reader already has it.
+  (function () {
+    var host = document.querySelector('footer') || document.querySelector('.wrap') || document.body;
+    var box = document.createElement('div');
+    box.className = 'ma-stores';
+    var apple = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.4 12.8c0-2.1 1.7-3.1 1.8-3.2-1-1.4-2.5-1.6-3-1.6-1.3-.1-2.5.7-3.1.7-.7 0-1.7-.7-2.8-.7-1.4 0-2.7.8-3.4 2.1-1.5 2.6-.4 6.4 1.1 8.5.7 1 1.5 2.2 2.7 2.1 1.1 0 1.5-.7 2.8-.7s1.7.7 2.8.7c1.2 0 1.9-1 2.6-2.1.8-1.2 1.1-2.3 1.2-2.4 0 0-2.7-1-2.7-3.4ZM14.3 6.6c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.6.7-1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2Z"/></svg>';
+    var play = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d7fe" d="M4.6 2.6a1 1 0 0 0-.5.9v17a1 1 0 0 0 .5.9l9.1-9.4-9.1-9.4Z"/><path fill="#00f076" d="m14.8 10.9 2.9-3-9.9-5.6 7 8.6Z"/><path fill="#ff3a44" d="m14.8 13.1-7 8.6 9.9-5.6-2.9-3Z"/><path fill="#ffd500" d="m18.9 10.9-2.4-1.4-3 3.5 3 3.5 2.4-1.4c.9-.5.9-1.7 0-2.2Z"/></svg>';
+    box.innerHTML =
+      '<a class="ma-store" href="https://apps.apple.com/app/madeira-ativa/id6796836699" target="_blank" rel="noopener">' + apple +
+        '<span><small>' + (pt ? 'Descarregar na' : 'Download on the') + '</small>App Store</span></a>' +
+      '<a class="ma-store" href="https://play.google.com/store/apps/details?id=ai.azenha.ativa" target="_blank" rel="noopener">' + play +
+        '<span><small>' + (pt ? 'Disponível no' : 'Get it on') + '</small>Google Play</span></a>';
+    var st = document.createElement('style');
+    st.textContent =
+      '.ma-stores{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:28px auto 18px;max-width:760px;padding:0 4px}' +
+      '.ma-store{flex:1 1 200px;max-width:260px;display:flex;align-items:center;gap:10px;background:#111;color:#fff;text-decoration:none;border:1px solid #444;border-radius:12px;padding:9px 16px;font:600 17px/1.15 Inter,system-ui,sans-serif}' +
+      '.ma-store:hover{border-color:#888}' +
+      '.ma-store svg{width:28px;height:28px;flex:0 0 auto}' +
+      '.ma-store small{display:block;font-size:11px;font-weight:500;opacity:.85;letter-spacing:.02em}';
+    document.head.appendChild(st);
+    if (host.tagName === 'FOOTER') host.parentNode.insertBefore(box, host); else host.appendChild(box);
+  })();
+
   // Pages switch language in place; relabel without rebuilding.
   new MutationObserver(function () {
     var p = (document.documentElement.lang || 'en') === 'pt';
