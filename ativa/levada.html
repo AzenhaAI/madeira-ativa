@@ -822,6 +822,7 @@ fetch('levadas.json').then(function (r) { return r.json(); }).then(function (d) 
   data = d;
   document.getElementById('src').innerHTML = esc(d.attribution || '') +
     ' · <a href="/ativa/sources">' + (lang === 'pt' ? 'Todas as fontes e licenças' : 'All sources and licences') + '</a>';
+ <a href="/studio/">✨ <span data-lang="en">About Azenha.ai studio</span><span data-lang="pt">Sobre o estúdio Azenha.ai</span></a>
   render();
   loadToday();
 }).catch(function () {
