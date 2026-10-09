@@ -71,6 +71,16 @@
     document.querySelectorAll('.site-nav-inner a, .section-nav-inner a, .topbar a, a.back, a.back-link').forEach(function (a) {
       var href = a.getAttribute('href') || '', click = a.getAttribute('onclick') || '';
       if (carried.test(href) || /\/ativa\/madeira_news/.test(click)) a.style.display = 'none';
+      // Where the row had "Maps", the three views the bar cannot show take its
+      // place: the 3D island, the aerial view and the flyover.
+      if (/^\/ativa\/map(?:\.html)?(?:\?.*)?$/.test(href) && a.closest('.site-nav-inner') && !a.closest('.site-nav-inner').querySelector('.ma-views')) {
+        var views = [['/ativa/map3d', '3D'], ['/ativa/mapbay', pt ? 'Aérea' : 'Aerial'], ['/ativa/mapfly', pt ? 'Voo' : 'Fly']];
+        views.reverse().forEach(function (v) {
+          var l = document.createElement('a');
+          l.className = 'ma-views'; l.href = v[0]; l.textContent = v[1];
+          a.insertAdjacentElement('afterend', l);
+        });
+      }
     });
   }
   // Pages switch language in place; relabel without rebuilding.
