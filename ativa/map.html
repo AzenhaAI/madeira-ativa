@@ -266,6 +266,9 @@ body {
   .controls { bottom: calc(16px + var(--tabbar, 0px)); gap: 6px; padding: 6px 10px; }
   .controls button { font-size: 12px; padding: 7px 12px; }
 }
+/* Inside the home page's small teaser on a phone the legend and the layer pill
+   sit on top of each other; the full map is one tap away. */
+@media (max-width: 520px) { html.embed #legend, html.embed .controls { display: none !important; } }
 </style>
   <!-- Analytics stay off when the app embeds this page. The app opens it with
        ?app=1, and both the store listing and azenha.ai/ativa/privacy promise no
@@ -373,6 +376,7 @@ body {
 const params = new URLSearchParams(location.search);
 const isLight = params.get('theme') === 'light';
 const isEmbed = params.get('embed') === '1';
+if (isEmbed) document.documentElement.classList.add('embed');
 
 if (isLight) {
   document.body.style.background = '#F5F2EA';

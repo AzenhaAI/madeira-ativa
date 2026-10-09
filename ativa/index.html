@@ -233,6 +233,7 @@
       white-space: nowrap;
     }
     .viz-tab:hover { border-color: var(--accent); color: var(--accent); }
+    .viz-open { display: none; }
     .viz-tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
     .site-nav {
       position: sticky; top: 0; z-index: 100;
@@ -680,23 +681,40 @@
       }
       #periods {
         grid-column: 1 / -1;
-        display: flex;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
         width: 100%;
-        gap: 0;
       }
-      #periods::-webkit-scrollbar { display: none; }
-      #periods button { flex-shrink: 0; min-width: 0; white-space: nowrap; width: auto; }
+      #periods button { min-width: 0; white-space: nowrap; }
       #modes {
         grid-column: 1 / -1;
         grid-template-columns: repeat(3, minmax(0, 1fr));
       }
+      /* Six platforms in one even row, so none is left alone on a second line;
+         only the narrowest phones fold it into two rows of three. */
       .platform-links {
         width: 100%;
         gap: 6px;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
       }
+      .platform-link { min-height: 44px; }
+      .platform-link .button-icon { width: 24px; height: 24px; }
+      @media (max-width: 359px) { .platform-links { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+      .tg-links { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+      .tg-links .bot-link { margin-top: 0; }
+      /* The map teaser: taller, and the "open" link moves off the map into the
+         row below, where it no longer collides with the layer pill. */
+      .hero-map { height: 200px; }
+      .hero-map-open { display: none; }
+      .viz-bar .viz-open { display: inline-block; }
+      .trail-stats { margin-left: 0; flex-basis: 100%; margin-top: 4px; }
+      /* Period chips: two rows of four instead of a strip that cuts off. */
+      #periods {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 6px;
+        overflow: visible;
+        border-radius: 16px;
+      }
+      #periods button { width: auto; padding: 9px 4px; font-size: 14px; }
       button {
         width: 100%;
         min-height: 38px;
@@ -998,6 +1016,7 @@ html.dark button{background:rgba(255,255,255,0.06)}
             </div>
           </div>
           <div class="viz-bar">
+            <a class="viz-tab viz-open" href="/ativa/map?layer=race"><span data-lang="en">Open map ↗</span><span data-lang="pt">Abrir mapa ↗</span></a>
             <a class="viz-tab" href="/ativa/madeira_stat.html#miut" target="_blank"><span data-lang="en">MIUT ↗</span><span data-lang="pt">MIUT ↗</span></a>
             <a class="viz-tab" href="/ativa/madeira_stat" target="_blank"><span data-lang="en">Trail stats ↗</span><span data-lang="pt">Trail stats ↗</span></a>
             <div class="trail-stats" id="trailStats"></div>
