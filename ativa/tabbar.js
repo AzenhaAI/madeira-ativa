@@ -49,6 +49,9 @@
     '#a2hs{bottom:calc(12px + 64px + env(safe-area-inset-bottom))!important}' +
     '#toTop,.totop{bottom:calc(18px + 64px + env(safe-area-inset-bottom))!important}' +
     '#az-apk{bottom:calc(64px + env(safe-area-inset-bottom))!important}' +
+    // The burger drawer ends above the bar, so its last items can be reached.
+    '.drawer{bottom:calc(64px + env(safe-area-inset-bottom))!important}' +
+    '.drawer-nav{-webkit-overflow-scrolling:touch;overscroll-behavior:contain}' +
     '}';
   document.head.appendChild(css);
   var bar = document.createElement('nav');
@@ -202,6 +205,25 @@
       if (pending) return; pending = true;
       requestAnimationFrame(function () { pending = false; if (document.documentElement.lang === 'ru') markFallback(); });
     }).observe(document.body, { childList: true, subtree: true });
+  })();
+
+  // The theme switch belongs at the top of the drawer, beside the close
+  // button, not at the foot of a long list.
+  (function () {
+    var d = document.getElementById('themeDrawer'), head = document.querySelector('.drawer-head');
+    if (!d || !head) return;
+    d.textContent = '🌙';
+    d.setAttribute('aria-label', pt ? 'Tema' : 'Theme');
+    d.style.cssText = 'font-size:20px;line-height:1;padding:8px 10px;border:1px solid rgba(127,127,127,.35);border-radius:12px;text-decoration:none;margin-right:8px';
+    var close = head.querySelector('.drawer-close');
+    if (close) close.insertAdjacentElement('beforebegin', d); else head.appendChild(d);
+    function paint() {
+      var h = document.documentElement;
+      var dark = h.classList.contains('dark') || (!h.classList.contains('light') && matchMedia('(prefers-color-scheme: dark)').matches);
+      d.textContent = dark ? '☀️' : '🌙';
+    }
+    paint();
+    new MutationObserver(paint).observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
   })();
 
   // Pages switch language in place; relabel without rebuilding.
