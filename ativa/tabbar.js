@@ -201,9 +201,15 @@
         '<p class="n"></p><button type="button" class="ma-sheet-ok">OK</button></div>';
       document.body.appendChild(sheet);
       var boxes = sheet.querySelectorAll('input[data-l]'), note = sheet.querySelector('.n');
+      boxes.forEach(function (b) { b.checked = enabled().indexOf(b.dataset.l) >= 0; });
       function fill() {
         var list = enabled();
-        boxes.forEach(function (b) { b.checked = list.indexOf(b.dataset.l) >= 0; b.disabled = b.checked && list.length === 1; });
+        boxes.forEach(function (b) {
+          var on = list.indexOf(b.dataset.l) >= 0;
+          b.disabled = false;
+          b.checked = on;
+          if (on && list.length === 1) b.disabled = true;  // the last language stays
+        });
         note.textContent = pt ? 'As línguas marcadas aparecem como botões ao lado do título. Nomes de lugares e eventos ficam como estão.'
                               : 'Ticked languages appear as buttons beside the title. Names of places and events stay as they are.';
       }
