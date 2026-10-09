@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Webcams by the trails · Madeira Ativa</title>
+<meta name="description" content="Live webcams near Madeira&#x27;s levadas and trails — Pico do Arieiro, Achada do Teixeira, Rabaçal, Portela, Monte, Boaventura, Caniçal — with the trails each one watches over.">
+<link rel="canonical" href="https://azenha.ai/ativa/webcams">
+<link rel="icon" href="/ativa/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#F5F2EA; --panel:#FBF9F4; --accent:#1F4D32; --soft:#6B8763; --line:#DAD3C5; --ink:#15201A; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg:#101511; --panel:#161d18; --accent:#9fcfaa; --soft:#8fa68c; --line:#2c352c; --ink:#e7ece6; }
+  }
+  :root[data-theme="dark"] { --bg:#101511; --panel:#161d18; --accent:#9fcfaa; --soft:#8fa68c; --line:#2c352c; --ink:#e7ece6; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:Inter,system-ui,-apple-system,sans-serif; -webkit-font-smoothing:antialiased; line-height:1.55; }
+  .wrap { max-width:760px; margin:0 auto; padding:20px 16px 64px; }
+  .top { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:22px; }
+  .back { color:var(--soft); text-decoration:none; font-size:15px; }
+  .lang button { border:1px solid var(--line); background:none; color:var(--soft); border-radius:999px; padding:4px 11px; font:inherit; font-size:13px; cursor:pointer; }
+  .lang button.active { background:var(--accent); color:var(--bg); border-color:var(--accent); }
+  h1 { font-family:Fraunces,Georgia,serif; font-weight:500; font-size:34px; letter-spacing:-.01em; margin:0 0 8px; color:var(--accent); }
+  .lead { color:var(--soft); font-size:16px; margin:0 0 22px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin:0 0 12px; }
+  .card h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:19px; margin:0 0 6px; }
+  .card h2 a { color:var(--accent); text-decoration:none; }
+  .card h2 a:hover { text-decoration:underline; }
+  .meta { color:var(--soft); font-size:13.5px; margin:0 0 8px; }
+  .row { display:flex; flex-wrap:wrap; gap:6px 10px; font-size:14px; margin:4px 0; align-items:center; }
+  .chip { display:inline-block; border:1px solid var(--line); border-radius:999px; padding:2px 10px; font-size:13px; color:var(--ink); text-decoration:none; }
+  .chip:hover { border-color:var(--accent); color:var(--accent); }
+  .line a { color:var(--accent); font-weight:700; text-decoration:none; border:1px solid var(--line); border-radius:7px; padding:1px 7px; }
+  .next { color:var(--accent); font-weight:600; font-size:14px; }
+  .next:empty { display:none; }
+  .soft { color:var(--soft); font-size:13px; }
+  .cam { display:inline-flex; align-items:center; gap:6px; background:var(--accent); color:var(--bg); font-weight:700; text-decoration:none; border-radius:10px; padding:8px 14px; margin:6px 0 2px; }
+  .src { margin-top:26px; font-size:13px; color:var(--soft); }
+  a { color:var(--accent); }
+  [data-lang] { display:none; }
+  html[lang="en"] [data-lang="en"], html[lang="pt"] [data-lang="pt"] { display:revert; }
+</style>
+<script>
+if (!new URLSearchParams(location.search).has('app')) {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  var gaTag = document.createElement('script'); gaTag.async = true;
+  gaTag.src = 'https://www.googletagmanager.com/gtag/js?id=G-M2PTQLF903'; document.head.appendChild(gaTag);
+  gtag('js', new Date()); gtag('config', 'G-M2PTQLF903', { content_group: 'ativa' });
+}
+</script>
+<script src="/ativa/trail-core.js?v=20261009"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="back" href="/ativa/">← Madeira Ativa</a>
+    <div class="lang"><button data-set-lang="en">EN</button> <button data-set-lang="pt">PT</button></div>
+  </div>
+  <h1><span data-lang="en">Webcams by the trails</span><span data-lang="pt">Webcams junto aos percursos</span></h1>
+  <p class="lead"><span data-lang="en">See the weather where you are going before you set off: live cameras near the trailheads, and the trails each one watches over.</span><span data-lang="pt">Veja o tempo onde vai antes de sair: câmaras em direto perto dos inícios dos percursos, e os percursos que cada uma vigia.</span></p>
+  <div class="card">
+    <h2>📷 Achada do Teixeira</h2>
+    <a class="cam" href="https://www.netmadeira.com/webcams-madeira/achada-do-teixeira" target="_blank" rel="noopener"><span data-lang="en">Watch live</span><span data-lang="pt">Ver em direto</span> ↗</a>
+    <p class="meta"><span data-lang="en">Trails that start or finish nearby</span><span data-lang="pt">Percursos que começam ou acabam perto</span></p>
+    <div class="row"><a class="chip" href="/ativa/trail/pr-1-1-vereda-da-ilha">PR 1.1 Vereda da Ilha</a><a class="chip" href="/ativa/trail/pr-1-2-vereda-do-pico-ruivo">PR 1.2 Vereda do Pico Ruivo</a></div>
+  </div>
+  <div class="card">
+    <h2>📷 Boaventura</h2>
+    <a class="cam" href="https://www.netmadeira.com/webcams-madeira/boaventura" target="_blank" rel="noopener"><span data-lang="en">Watch live</span><span data-lang="pt">Ver em direto</span> ↗</a>
+    <p class="meta"><span data-lang="en">Trails that start or finish nearby</span><span data-lang="pt">Percursos que começam ou acabam perto</span></p>
+    <div class="row"><a class="chip" href="/ativa/trail/pr-2-vereda-do-urzal">PR 2 Vereda do Urzal</a></div>
+  </div>
+  <div class="card">
+    <h2>📷 Caniçal</h2>
+    <a class="cam" href="https://www.netmadeira.com/webcams-madeira/canical" target="_blank" rel="noopener"><span data-lang="en">Watch live</span><span data-lang="pt">Ver em direto</span> ↗</a>
+    <p class="meta"><span data-lang="en">Trails that start or finish nearby</span><span data-lang="pt">Percursos que começam ou acabam perto</span></p>
+    <div class="row"><a class="chip" href="/ativa/trail/pr-8-vereda-da-ponta-de-sao-lourenco">PR 8 Vereda da Ponta de São Lourenço</a></div>
+  </div>
+  <div class="card">
+    <h2>📷 Monte</h2>
+    <a class="cam" href="https://www.netmadeira.com/webcams-madeira/monte" target="_blank" rel="noopener"><span data-lang="en">Watch live</span><span data-lang="pt">Ver em direto</span> ↗</a>
+    <p class="meta"><span data-lang="en">Trails that start or finish nearby</span><span data-lang="pt">Percursos que começam ou acabam perto</span></p>
+    <div class="row"><a class="chip" href="/ativa/trail/pr-3-1-caminho-real-do-monte">PR 3.1 Caminho Real do Monte</a></div>
+  </div>
+  <div class="card">
+    <h2>📷 Parque Ecológico do Funchal</h2>
+    <a class="cam" href="https://www.netmadeira.com/webcams-madeira/funchal-parque-ecologico" target="_blank" rel="noopener"><span data-lang="en">Watch live</span><span data-lang="pt">Ver em direto</span> ↗</a>
+    <p class="meta"><span data-lang="en">Trails that start or finish nearby</span><span data-lang="pt">Percursos que começam ou acabam perto</span></p>
+    <div class="row"><a class="chip" href="/ativa/trail/pr-4-levada-do-barreiro">PR 4 Levada do Barreiro</a></div>
+  </div>
+  <div class="card">
+    <h2>📷 Pico do Arieiro</h2>
+    <a class="cam" href="https://www.netmadeira.com/webcams-madeira/pico-do-arieiro" target="_blank" rel="noopener"><span data-lang="en">Watch live</span><span data-lang="pt">Ver em direto</span> ↗</a>
+    <p class="meta"><span data-lang="en">Trails that start or finish nearby</span><span data-lang="pt">Percursos que começam ou acabam perto</span></p>
+    <div class="row"><a class="chip" href="/ativa/trail/pr-1-vereda-do-areeiro">PR 1 Vereda do Areeiro</a><a class="chip" href="/ativa/trail/pr-3-vereda-do-burro">PR 3 Vereda do Burro</a></div>
+  </div>
+  <div class="card">
+    <h2>📷 Portela</h2>
+    <a class="cam" href="https://www.netmadeira.com/webcams-madeira/portela-porto-da-cruz" target="_blank" rel="noopener"><span data-lang="en">Watch live</span><span data-lang="pt">Ver em direto</span> ↗</a>
+    <p class="meta"><span data-lang="en">Trails that start or finish nearby</span><span data-lang="pt">Percursos que começam ou acabam perto</span></p>
+    <div class="row"><a class="chip" href="/ativa/trail/pr-5-vereda-das-funduras">PR 5 Vereda das Funduras</a><a class="chip" href="/ativa/trail/pr-10-levada-do-furado">PR 10 Levada do Furado</a></div>
+  </div>
+  <div class="card">
+    <h2>📷 Rabaçal</h2>
+    <a class="cam" href="https://www.netmadeira.com/webcams-madeira/rabacal-madeira" target="_blank" rel="noopener"><span data-lang="en">Watch live</span><span data-lang="pt">Ver em direto</span> ↗</a>
+    <p class="meta"><span data-lang="en">Trails that start or finish nearby</span><span data-lang="pt">Percursos que começam ou acabam perto</span></p>
+    <div class="row"><a class="chip" href="/ativa/trail/pr-6-levada-das-25-fontes">PR 6 Levada das 25 Fontes</a><a class="chip" href="/ativa/trail/pr-6-1-levada-do-risco">PR 6.1 Levada do Risco</a><a class="chip" href="/ativa/trail/pr-6-2-levada-do-alecrim">PR 6.2 Levada do Alecrim</a><a class="chip" href="/ativa/trail/pr-6-3-vereda-da-lagoa-do-vento">PR 6.3 Vereda da Lagoa do Vento</a><a class="chip" href="/ativa/trail/pr-6-4-levada-velha-do-rabacal">PR 6.4 Levada Velha do Rabaçal</a><a class="chip" href="/ativa/trail/pr-6-5-vereda-do-pico-fernandes">PR 6.5 Vereda do Pico Fernandes</a><a class="chip" href="/ativa/trail/pr-6-6-vereda-do-tunel-do-cavalo">PR 6.6 Vereda do Túnel do Cavalo</a><a class="chip" href="/ativa/trail/pr-6-7-vereda-da-camara-carga">PR 6.7 Vereda da Câmara Carga</a><a class="chip" href="/ativa/trail/pr-6-8-levada-do-paul-ii">PR 6.8 Levada do Paul II</a></div>
+  </div>
+  <p class="src"><span data-lang="en">Cameras by NetMadeira; each opens on their site. The sunrise forecast for Pico do Arieiro is on the</span><span data-lang="pt">Câmaras da NetMadeira; cada uma abre no site deles. A previsão do nascer do sol no Pico do Arieiro está na</span>
+    <a href="/ativa/levada"><span data-lang="en">Levadas page</span><span data-lang="pt">página das Levadas</span></a>. <a href="https://www.netmadeira.com/webcams-madeira" target="_blank" rel="noopener"><span data-lang="en">All NetMadeira webcams</span><span data-lang="pt">Todas as webcams NetMadeira</span> ↗</a></p>
+</div>
+<script>
+(function () {
+  var saved = null;
+  try { saved = localStorage.getItem('lang'); } catch (e) {}
+  var q = new URLSearchParams(location.search).get('lang');
+  var lang = q || saved || ((navigator.language || '').slice(0, 2) === 'pt' ? 'pt' : 'en');
+  if (lang !== 'pt') lang = 'en';
+  if (new URLSearchParams(location.search).get('app')) {
+    var top = document.querySelector('.top'); if (top) top.style.display = 'none';
+  }
+  function apply() {
+    document.documentElement.lang = lang;
+    document.querySelectorAll('.lang button').forEach(function (b) { b.classList.toggle('active', b.getAttribute('data-set-lang') === lang); });
+  }
+  document.querySelectorAll('.lang button').forEach(function (b) {
+    b.onclick = function () { lang = b.getAttribute('data-set-lang'); try { localStorage.setItem('lang', lang); } catch (e) {} apply(); };
+  });
+  apply();
+})();
+</script>
+
+<script src="/ativa/tabbar.js?v=20261009" defer></script>
+</body>
+</html>
