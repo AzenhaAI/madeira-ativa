@@ -59,6 +59,15 @@
       '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="' + t[2] + '"/></svg><span>' + t[1] + '</span></a>';
   }).join('');
   document.body.appendChild(bar);
+  // On a phone the top row keeps only what the bar does not carry — Trail
+  // stats, Festas, History — so no section is listed twice on one screen.
+  // Desktop has no bar and keeps the full row.
+  if (matchMedia('(max-width: 760px)').matches) {
+    document.querySelectorAll('.site-nav-inner a').forEach(function (a) {
+      var h = (a.getAttribute('href') || '') + ' ' + (a.getAttribute('onclick') || '');
+      if (/\/ativa\/(levada|map|madeira_news)/.test(h)) a.style.display = 'none';
+    });
+  }
   // Pages switch language in place; relabel without rebuilding.
   new MutationObserver(function () {
     var p = (document.documentElement.lang || 'en') === 'pt';
