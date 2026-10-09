@@ -287,20 +287,21 @@ body {
     (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","xr4rlyhxyo");
   }
   </script>
+<style id="ma-ru-hide">[data-lang="ru"]{display:none!important}html[lang="ru"] [data-lang="ru"]{display:revert!important}</style>
 </head>
 <body>
 
 <div class="header-bar">
-  <h1><span data-lang="en">Madeira Trails</span><span data-lang="pt">Trilhos da Madeira</span></h1>
+  <h1><span data-lang="en">Madeira Trails</span><span data-lang="pt">Trilhos da Madeira</span><span data-lang="ru">Тропы Мадейры</span></h1>
   <div class="stats">
-    <span><span class="dot dot-race"></span> <span id="stat-total">0</span> <span data-lang="en">trails</span><span data-lang="pt">trilhos</span></span>
+    <span><span class="dot dot-race"></span> <span id="stat-total">0</span> <span data-lang="en">trails</span><span data-lang="pt">trilhos</span><span data-lang="ru">тропы</span></span>
   </div>
 </div>
 
-<a href="./" class="back-link">🏠 <span data-lang="en">Main</span><span data-lang="pt">Início</span></a>
+<a href="./" class="back-link">🏠 <span data-lang="en">Main</span><span data-lang="pt">Início</span><span data-lang="ru">Главное</span></a>
 <button class="lang-toggle" onclick="toggleLang()" aria-label="Switch language">PT</button>
 
-<div class="embed-title" style="display:none;"><span data-lang="en">Popular Trails on Madeira</span><span data-lang="pt">Trilhos Populares na Madeira</span></div>
+<div class="embed-title" style="display:none;"><span data-lang="en">Popular Trails on Madeira</span><span data-lang="pt">Trilhos Populares na Madeira</span><span data-lang="ru">Популярные маршруты на Мадейре</span></div>
 
 <div id="map"></div>
 
@@ -308,67 +309,67 @@ body {
 <div id="legend" class="collapsed">
   <div id="legend-head" onclick="document.getElementById('legend').classList.toggle('collapsed')">
     <span>🗺</span>
-    <span data-lang="en">Legend</span><span data-lang="pt">Legenda</span>
+    <span data-lang="en">Legend</span><span data-lang="pt">Legenda</span><span data-lang="ru">Легенда</span>
     <span class="chev">▼</span>
   </div>
   <div id="legend-body">
     <div class="lg-group">
-      <b><span data-lang="en">Trail status</span><span data-lang="pt">Estado do trilho</span></b>
+      <b><span data-lang="en">Trail status</span><span data-lang="pt">Estado do trilho</span><span data-lang="ru">Состояние маршрута</span></b>
       <div class="lg-row"><span class="lg-line" style="border-top:3px solid #2e9e5b"></span>
-        <span data-lang="en">Open</span><span data-lang="pt">Aberto</span></div>
+        <span data-lang="en">Open</span><span data-lang="pt">Aberto</span><span data-lang="ru">Открыты</span></div>
       <div class="lg-row"><span class="lg-line" style="border-top:3px dashed #e0902a"></span>
-        <span data-lang="en">Partially open</span><span data-lang="pt">Parcialmente aberto</span></div>
+        <span data-lang="en">Partially open</span><span data-lang="pt">Parcialmente aberto</span><span data-lang="ru">Частично открыты</span></div>
       <div class="lg-row"><span class="lg-line" style="border-top:3px solid #e23b2e"></span>
-        <span data-lang="en">Closed</span><span data-lang="pt">Encerrado</span></div>
+        <span data-lang="en">Closed</span><span data-lang="pt">Encerrado</span><span data-lang="ru">Закрыто</span></div>
     </div>
     <div class="lg-group">
-      <b><span data-lang="en">Other layers</span><span data-lang="pt">Outras camadas</span></b>
+      <b><span data-lang="en">Other layers</span><span data-lang="pt">Outras camadas</span><span data-lang="ru">Другие слои</span></b>
       <div class="lg-row"><span class="lg-dot" style="background:#ff6b35"></span>
-        <span data-lang="en">Race course</span><span data-lang="pt">Percurso de prova</span></div>
+        <span data-lang="en">Race course</span><span data-lang="pt">Percurso de prova</span><span data-lang="ru">Дистанция забега</span></div>
       <div class="lg-row"><span class="lg-dot" style="background:#ffdd00"></span>
-        <span data-lang="en">Popularity</span><span data-lang="pt">Popularidade</span></div>
+        <span data-lang="en">Popularity</span><span data-lang="pt">Popularidade</span><span data-lang="ru">Популярность</span></div>
       <div class="lg-row"><span class="lg-dot" style="background:#1f78b4"></span>
-        <span data-lang="en">All levadas</span><span data-lang="pt">Todas as levadas</span></div>
+        <span data-lang="en">All levadas</span><span data-lang="pt">Todas as levadas</span><span data-lang="ru">Все левады</span></div>
     </div>
     <div class="lg-group">
       <!-- These are why a tester asked why some closed trails looked brown: the
            amber of a partly-open trail and the brown of a road sit close
            together, and nothing on screen told them apart. -->
-      <b><span data-lang="en">Base layers</span><span data-lang="pt">Camadas de base</span></b>
+      <b><span data-lang="en">Base layers</span><span data-lang="pt">Camadas de base</span><span data-lang="ru">Нижние слои</span></b>
       <div class="lg-row"><span class="lg-line" style="border-top:3px solid #a5762e"></span>
-        <span data-lang="en">Roads</span><span data-lang="pt">Estradas</span></div>
+        <span data-lang="en">Roads</span><span data-lang="pt">Estradas</span><span data-lang="ru">Дороги</span></div>
       <div class="lg-row"><span class="lg-line" style="border-top:3px solid #9a4fd0"></span>
-        <span data-lang="en">Tunnels</span><span data-lang="pt">Túneis</span></div>
+        <span data-lang="en">Tunnels</span><span data-lang="pt">Túneis</span><span data-lang="ru">Туннели</span></div>
       <div class="lg-row"><span class="lg-dot" style="background:#3b6ea5"></span>
-        <span data-lang="en">Cities</span><span data-lang="pt">Cidades</span></div>
+        <span data-lang="en">Cities</span><span data-lang="pt">Cidades</span><span data-lang="ru">Города</span></div>
     </div>
   </div>
 </div>
 
 <div class="controls">
   <button class="btn-race" onclick="pickLayer('race')">
-    <span class="dot dot-race"></span> <span data-lang="en">Race</span><span data-lang="pt">Corrida</span>
+    <span class="dot dot-race"></span> <span data-lang="en">Race</span><span data-lang="pt">Corrida</span><span data-lang="ru">Забег</span>
   </button>
   <button class="btn-heat" onclick="pickLayer('heat')">
-    <span class="dot dot-heat"></span> <span data-lang="en">Popularity</span><span data-lang="pt">Popularidade</span>
+    <span class="dot dot-heat"></span> <span data-lang="en">Popularity</span><span data-lang="pt">Popularidade</span><span data-lang="ru">Популярность</span>
   </button>
   <button class="btn-walk" id="btn-walk" onclick="pickLayer('walk')" style="display:none;">
-    <span class="dot dot-walk"></span> <span data-lang="en">Walking trails</span><span data-lang="pt">Percursos pedestres</span>
+    <span class="dot dot-walk"></span> <span data-lang="en">Walking trails</span><span data-lang="pt">Percursos pedestres</span><span data-lang="ru">Пешеходные маршруты</span>
   </button>
   <button class="btn-closed" id="btn-closures" onclick="pickLayer('closures')" style="display:none;">
-    <span class="dot dot-closed"></span> <span data-lang="en">Closures</span><span data-lang="pt">Encerrados</span>
+    <span class="dot dot-closed"></span> <span data-lang="en">Closures</span><span data-lang="pt">Encerrados</span><span data-lang="ru">Закрыто</span>
   </button>
   <button class="btn-ovl" id="btn-all" onclick="toggleOverlay('all', this)" style="display:none;">
-    <span class="dot" style="background:#1f78b4"></span> <span data-lang="en">All levadas</span><span data-lang="pt">Todas as levadas</span>
+    <span class="dot" style="background:#1f78b4"></span> <span data-lang="en">All levadas</span><span data-lang="pt">Todas as levadas</span><span data-lang="ru">Все левады</span>
   </button>
   <button class="btn-ovl" onclick="toggleOverlay('cities', this)">
-    <span class="dot" style="background:#3b6ea5"></span> <span data-lang="en">Cities</span><span data-lang="pt">Cidades</span>
+    <span class="dot" style="background:#3b6ea5"></span> <span data-lang="en">Cities</span><span data-lang="pt">Cidades</span><span data-lang="ru">Города</span>
   </button>
   <button class="btn-ovl" onclick="toggleOverlay('roads', this)">
-    <span class="dot" style="background:#a5762e"></span> <span data-lang="en">Roads</span><span data-lang="pt">Estradas</span>
+    <span class="dot" style="background:#a5762e"></span> <span data-lang="en">Roads</span><span data-lang="pt">Estradas</span><span data-lang="ru">Дороги</span>
   </button>
   <button class="btn-ovl" onclick="toggleOverlay('tunnels', this)">
-    <span class="dot" style="background:#9a4fd0"></span> <span data-lang="en">Tunnels</span><span data-lang="pt">Túneis</span>
+    <span class="dot" style="background:#9a4fd0"></span> <span data-lang="en">Tunnels</span><span data-lang="pt">Túneis</span><span data-lang="ru">Туннели</span>
   </button>
 </div>
 

@@ -122,7 +122,8 @@
     function ruOn() { try { return localStorage.getItem(KEY) === '1'; } catch (e) { return false; } }
     var st = document.createElement('style');
     st.textContent =
-      'html[lang="ru"] [data-lang="ru"]{display:revert}' +
+      '[data-lang="ru"]{display:none!important}' +
+      'html[lang="ru"] [data-lang="ru"]{display:revert!important}' +
       'html[lang="ru"] .ma-ru-en{display:revert}' +
       '.ma-ru-btn.active{background:#1F4D32;color:#fff;border-color:#1F4D32}';
     document.head.appendChild(st);

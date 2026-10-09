@@ -78,6 +78,7 @@ if (!new URLSearchParams(location.search).has('app')) {
 }
 </script>
 <script src="/ativa/trail-core.js?v=20260927c"></script>
+<style id="ma-ru-hide">[data-lang="ru"]{display:none!important}html[lang="ru"] [data-lang="ru"]{display:revert!important}</style>
 </head>
 <body>
 <div class="wrap">
@@ -86,35 +87,35 @@ if (!new URLSearchParams(location.search).has('app')) {
     <div class="lang"><button data-set-lang="en">EN</button> <button data-set-lang="pt">PT</button></div>
   </div>
 
-  <h1>Ask AI <span class="dev"><span data-lang="en">Beta</span><span data-lang="pt">Beta</span></span></h1>
+  <h1>Ask AI <span class="dev"><span data-lang="en">Beta</span><span data-lang="pt">Beta</span><span data-lang="ru">Бета</span></span></h1>
   <p class="lead">
     <span data-lang="en">Ask about a trail, where to go today, the weather or what’s on. Answers are put together from Madeira Ativa’s live data — trail status from IFCN, forecasts from Open-Meteo, warnings from IPMA — and an AI model then writes a short answer from those facts, which stay underneath. AI answers can be wrong — the facts below are the source.</span>
-    <span data-lang="pt">Pergunte sobre um percurso, onde ir hoje, o tempo ou o que se passa. As respostas são montadas a partir dos dados em direto da Madeira Ativa — estado dos percursos do IFCN, previsões do Open-Meteo, avisos do IPMA — e um modelo de IA escreve depois uma resposta curta a partir desses factos, que ficam por baixo. As respostas da IA podem ter erros — a fonte são os factos em baixo.</span>
+    <span data-lang="pt">Pergunte sobre um percurso, onde ir hoje, o tempo ou o que se passa. As respostas são montadas a partir dos dados em direto da Madeira Ativa — estado dos percursos do IFCN, previsões do Open-Meteo, avisos do IPMA — e um modelo de IA escreve depois uma resposta curta a partir desses factos, que ficam por baixo. As respostas da IA podem ter erros — a fonte são os factos em baixo.</span><span data-lang="ru">Спрашивай о маршруте, куда сходить сегодня, о погоде или что интересного. Ответы собираются из живых данных Madeira Ativa — статус маршрутов от IFCN, прогнозы от Open-Meteo, предупреждения от IPMA — а потом ИИ пишет короткий ответ на основе этих фактов, которые видны ниже. Ответы ИИ могут ошибаться — источник — факты в низу.</span>
   </p>
 
   <form id="askForm" role="search">
     <input id="askInput" type="search" autocomplete="off" enterkeyhint="search"
            placeholder="Vereda do Areeiro, where to go today, weather…" aria-label="Your question">
-    <button type="submit"><span data-lang="en">Ask</span><span data-lang="pt">Perguntar</span></button>
+    <button type="submit"><span data-lang="en">Ask</span><span data-lang="pt">Perguntar</span><span data-lang="ru">Спроси</span></button>
   </form>
 
   <div class="chips">
-    <button type="button" data-ask="Where to go today?" data-ask-pt="Onde ir hoje?"><span data-lang="en">Where to go today?</span><span data-lang="pt">Onde ir hoje?</span></button>
+    <button type="button" data-ask="Where to go today?" data-ask-pt="Onde ir hoje?"><span data-lang="en">Where to go today?</span><span data-lang="pt">Onde ir hoje?</span><span data-lang="ru">Куда сегодня пойти?</span></button>
     <button type="button" data-ask="PR 1 Vereda do Areeiro" data-ask-pt="PR 1 Vereda do Areeiro">PR 1 Vereda do Areeiro</button>
     <button type="button" data-ask="Levada das 25 Fontes" data-ask-pt="Levada das 25 Fontes">Levada das 25 Fontes</button>
-    <button type="button" data-ask="Weather and warnings" data-ask-pt="Tempo e avisos"><span data-lang="en">Weather and warnings</span><span data-lang="pt">Tempo e avisos</span></button>
-    <button type="button" data-ask="Events this weekend" data-ask-pt="Eventos este fim de semana"><span data-lang="en">Events this weekend</span><span data-lang="pt">Eventos este fim de semana</span></button>
-    <button type="button" data-ask="Bus to Ribeiro Frio" data-ask-pt="Autocarro para Ribeiro Frio"><span data-lang="en">Bus to Ribeiro Frio</span><span data-lang="pt">Autocarro para Ribeiro Frio</span></button>
+    <button type="button" data-ask="Weather and warnings" data-ask-pt="Tempo e avisos"><span data-lang="en">Weather and warnings</span><span data-lang="pt">Tempo e avisos</span><span data-lang="ru">Погода и предупреждения</span></button>
+    <button type="button" data-ask="Events this weekend" data-ask-pt="Eventos este fim de semana"><span data-lang="en">Events this weekend</span><span data-lang="pt">Eventos este fim de semana</span><span data-lang="ru">События на этой неделе</span></button>
+    <button type="button" data-ask="Bus to Ribeiro Frio" data-ask-pt="Autocarro para Ribeiro Frio"><span data-lang="en">Bus to Ribeiro Frio</span><span data-lang="pt">Autocarro para Ribeiro Frio</span><span data-lang="ru">Автобус до Ribeiro Frio</span></button>
   </div>
 
   <div id="askOut" aria-live="polite" hidden></div>
 
   <p class="note">
     <span data-lang="en">Where every figure comes from:</span>
-    <span data-lang="pt">De onde vem cada número:</span>
-    <a href="/ativa/sources"><span data-lang="en">sources and licences</span><span data-lang="pt">fontes e licenças</span></a>.
+    <span data-lang="pt">De onde vem cada número:</span><span data-lang="ru">Откуда берутся все цифры:</span>
+    <a href="/ativa/sources"><span data-lang="en">sources and licences</span><span data-lang="pt">fontes e licenças</span><span data-lang="ru">источники и лицензии</span></a>.
     <span data-lang="en">Something answered wrongly? Write to</span>
-    <span data-lang="pt">Alguma resposta errada? Escreva para</span>
+    <span data-lang="pt">Alguma resposta errada? Escreva para</span><span data-lang="ru">Что-то ответили неправильно? Напиши</span>
     <a href="mailto:agent@azenha.ai?subject=Ask%20AI">agent@azenha.ai</a>.
   </p>
 </div>
