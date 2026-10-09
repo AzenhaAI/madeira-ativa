@@ -427,7 +427,8 @@ html.dark{--x:0}
 <script>
 var VALID = ['en', 'pt'];
 var urlLang = new URLSearchParams(location.search).get('lang');
-var lang = VALID.indexOf(urlLang) !== -1 ? urlLang : 'en';
+var savedLang = null; try { savedLang = localStorage.getItem('lang'); } catch (e) {}
+var lang = VALID.indexOf(urlLang) !== -1 ? urlLang : (VALID.indexOf(savedLang) !== -1 ? savedLang : 'en');
 var data = null;
 var filter = 'all';
 var query = '';
@@ -657,7 +658,7 @@ function render() {
 }
 
 document.querySelectorAll('.lang button').forEach(function (b) {
-  b.onclick = function () { lang = b.getAttribute('data-set-lang'); applyLang(); };
+  b.onclick = function () { lang = b.getAttribute('data-set-lang'); try { localStorage.setItem('lang', lang); } catch (e) {} applyLang(); };
 });
 document.getElementById('diff-filter').addEventListener('click', function (e) {
   var b = e.target.closest('[data-diff]');
