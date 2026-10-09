@@ -133,6 +133,7 @@
       'html[lang="ru"] [data-lang="en"]:not(.ma-has-ru){display:revert!important}' +
       '.ma-ru-btn.active{background:#1F4D32;color:#fff;border-color:#1F4D32}' +
       '.ma-sheet{position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;padding:20px}' +
+      '.ma-sheet[hidden]{display:none!important}' +
       '.ma-sheet-box{background:var(--bg,#F5F2EA);color:inherit;border:1px solid rgba(127,127,127,.3);border-radius:16px;padding:18px 20px;width:min(360px,100%);font:500 16px/1.4 Inter,system-ui,sans-serif}' +
       '.ma-sheet-box .t{margin:0 0 10px;font-weight:700;font-size:17px}' +
       '.ma-sheet-box label{display:flex;align-items:center;gap:12px;padding:9px 0;cursor:pointer}' +
