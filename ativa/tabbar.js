@@ -101,8 +101,8 @@
         '<span><small>' + (pt ? 'Disponível no' : 'Get it on') + '</small>Google Play</span></a>';
     var st = document.createElement('style');
     st.textContent =
-      '.ma-stores{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:28px auto 18px;max-width:760px;padding:0 4px}' +
-      '.ma-store{flex:1 1 200px;max-width:260px;display:flex;align-items:center;gap:10px;background:#111;color:#fff;text-decoration:none;border:1px solid #444;border-radius:12px;padding:9px 16px;font:600 17px/1.15 Inter,system-ui,sans-serif}' +
+      '.ma-stores{display:flex;flex-wrap:nowrap;gap:8px;justify-content:center;margin:28px auto 18px;max-width:760px;padding:0 4px}' +
+      '.ma-store{flex:1 1 0;min-width:0;max-width:260px;display:flex;align-items:center;gap:10px;background:#111;color:#fff;text-decoration:none;border:1px solid #444;border-radius:12px;padding:9px 12px;font:600 16px/1.15 Inter,system-ui,sans-serif;white-space:nowrap}' +
       '.ma-store:hover{border-color:#888}' +
       '.ma-store svg{width:28px;height:28px;flex:0 0 auto}' +
       '.ma-store small{display:block;font-size:11px;font-weight:500;opacity:.85;letter-spacing:.02em}';
@@ -116,6 +116,8 @@
     var st = document.createElement('style');
     st.textContent = '[data-lang="ru"]{display:none!important}';
     document.head.appendChild(st);
+    if (document.documentElement.lang === 'ru') document.documentElement.lang = 'en';
+    document.querySelectorAll('.ma-ru-btn').forEach(function (b) { b.remove(); });
   })();
 
   // The theme switch belongs at the top of the drawer, beside the close

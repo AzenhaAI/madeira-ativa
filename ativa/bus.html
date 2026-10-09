@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>(function(){var l=null;try{l=localStorage.getItem("lang");if(l!=="pt"&&l!=="en"){localStorage.setItem("lang","en");l="en"}}catch(e){l="en"}document.documentElement.lang=l;})();</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Trails by bus · Madeira Ativa</title>
@@ -62,7 +63,7 @@ if (!new URLSearchParams(location.search).has('app')) {
     <a class="back" href="/ativa/">← Madeira Ativa</a>
     <div class="lang"><button data-set-lang="en">EN</button> <button data-set-lang="pt">PT</button></div>
   </div>
-  <h1><span data-lang="en">Trails by bus</span><span data-lang="pt">Percursos de autocarro</span><span data-lang="ru">Маршруты на автобусе</span></h1>
+  <h1><span data-lang="en">Trails by bus</span><span data-lang="pt">Percursos de autocarro</span></h1>
   <p class="lead"><span data-lang="en">16 trails with a bus at one end or both — the lines, their timetables, and the next departures where the timetable is known.</span><span data-lang="pt">16 percursos com autocarro num extremo ou em ambos — as linhas, os horários, e as próximas partidas onde o horário é conhecido.</span></p>
   <div class="card">
     <h2><a href="/ativa/trail/pr-1-1-vereda-da-ilha">PR 1.1 Vereda da Ilha</a></h2>
@@ -170,7 +171,7 @@ if (!new URLSearchParams(location.search).has('app')) {
     <div class="row"><span>279 m</span><span class="line">🚌 <a href="https://siga.madeira.gov.pt/horarios/79" target="_blank" rel="noopener" title="Funchal - Boqueirão (via Caniço)">110</a> <a href="https://siga.madeira.gov.pt/horarios/4007" target="_blank" rel="noopener" title="Caniçal - Baía D&#x27;Abra">113</a> <a href="https://siga.madeira.gov.pt/horarios/3006" target="_blank" rel="noopener" title="Ponta da Oliveira">155</a></span></div>
     <div class="next" data-code="PR 23" data-end="0"></div>
   </div>
-  <p class="src"><span data-lang="en">Lines from OpenStreetMap routes passing within 300 m of a trail end; each number opens its SIGA timetable. Next departures: Funchal's urban network from its open timetable (GTFS), the interurban stops read from the operators' PDFs — Encumeada, Ribeiro Frio, Baía d'Abra, Prazeres and Paul do Mar. Times are the operators' own; check before you rely on the last bus of the day.</span><span data-lang="pt">Linhas das rotas do OpenStreetMap que passam a menos de 300 m de um extremo do percurso; cada número abre o horário no SIGA. Próximas partidas: rede urbana do Funchal a partir do horário aberto (GTFS), paragens interurbanas lidas dos PDFs dos operadores — Encumeada, Ribeiro Frio, Baía d'Abra, Prazeres e Paul do Mar. Os horários são dos operadores; confirme antes de contar com o último autocarro do dia.</span><span data-lang="ru">Линии из маршрутов OpenStreetMap, проходящих в пределах 300 м от конца тропы; каждый номер открывает расписание SIGA. Ближайшие отправления: городская сеть Funchal по открытому расписанию (GTFS), междугородние остановки из PDF операторов — Encumeada, Ribeiro Frio, Baía d'Abra, Prazeres и Paul do Mar. Время по данным операторов; проверь перед последним автобусом дня.</span>
+  <p class="src"><span data-lang="en">Lines from OpenStreetMap routes passing within 300 m of a trail end; each number opens its SIGA timetable. Next departures: Funchal's urban network from its open timetable (GTFS), the interurban stops read from the operators' PDFs — Encumeada, Ribeiro Frio, Baía d'Abra, Prazeres and Paul do Mar. Times are the operators' own; check before you rely on the last bus of the day.</span><span data-lang="pt">Linhas das rotas do OpenStreetMap que passam a menos de 300 m de um extremo do percurso; cada número abre o horário no SIGA. Próximas partidas: rede urbana do Funchal a partir do horário aberto (GTFS), paragens interurbanas lidas dos PDFs dos operadores — Encumeada, Ribeiro Frio, Baía d'Abra, Prazeres e Paul do Mar. Os horários são dos operadores; confirme antes de contar com o último autocarro do dia.</span>
     <a href="https://siga.madeira.gov.pt/horarios" target="_blank" rel="noopener">SIGA ↗</a></p>
 </div>
 <script>
@@ -210,6 +211,6 @@ if (!new URLSearchParams(location.search).has('app')) {
   new MutationObserver(paint).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
 })();
 </script>
-<script src="/ativa/tabbar.js?v=20261009e" defer></script>
+<script src="/ativa/tabbar.js?v=20261009g" defer></script>
 </body>
 </html>

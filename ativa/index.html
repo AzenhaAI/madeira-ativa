@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>(function(){var l=null;try{l=localStorage.getItem("lang");if(l!=="pt"&&l!=="en"){localStorage.setItem("lang","en");l="en"}}catch(e){l="en"}document.documentElement.lang=l;})();</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Madeira Events Calendar — Races, Trails & Festas · Madeira Ativa</title>
@@ -912,12 +913,12 @@ html.dark button{background:rgba(255,255,255,0.06)}
   <div class="wrap">
     <nav class="site-nav">
       <div class="site-nav-inner">
-        <a href="/ativa/madeira_stat"><span class="nav-ico">🏃</span><span data-lang="en">Trail stats</span><span data-lang="pt">Estatísticas</span><span data-lang="ru">Статистика маршрутов</span></a>
+        <a href="/ativa/madeira_stat"><span class="nav-ico">🏃</span><span data-lang="en">Trail stats</span><span data-lang="pt">Estatísticas</span></a>
         <a href="/ativa/levada"><span class="nav-ico">🥾</span>Levadas</a>
-        <a href="/ativa/map?layer=race"><span class="nav-ico">🗺</span><span data-lang="en">Maps</span><span data-lang="pt">Mapas</span><span data-lang="ru">Карты</span></a>
+        <a href="/ativa/map?layer=race"><span class="nav-ico">🗺</span><span data-lang="en">Maps</span><span data-lang="pt">Mapas</span></a>
         <a href="#" onclick="window.location.href='/ativa/madeira_festas.html?lang='+(document.documentElement.lang||'en'); return false;"><span class="nav-ico">🎆</span>Festas</a>
-        <a href="#" onclick="window.location.href='/ativa/madeira_news.html?lang='+(document.documentElement.lang||'en'); return false;"><span class="nav-ico">📰</span><span data-lang="en">News</span><span data-lang="pt">Notícias</span><span data-lang="ru">Новости</span></a>
-        <a href="#" onclick="window.location.href='/ativa/madeira_history.html?lang='+(document.documentElement.lang||'en'); return false;"><span class="nav-ico">📜</span><span data-lang="en">History</span><span data-lang="pt">História</span><span data-lang="ru">История</span></a>
+        <a href="#" onclick="window.location.href='/ativa/madeira_news.html?lang='+(document.documentElement.lang||'en'); return false;"><span class="nav-ico">📰</span><span data-lang="en">News</span><span data-lang="pt">Notícias</span></a>
+        <a href="#" onclick="window.location.href='/ativa/madeira_history.html?lang='+(document.documentElement.lang||'en'); return false;"><span class="nav-ico">📜</span><span data-lang="en">History</span><span data-lang="pt">História</span></a>
         <span class="nav-spacer"></span>
       </div>
         <button class="lang-toggle nav-lang" onclick="toggleLang()" aria-label="Switch language">PT</button>
@@ -935,23 +936,23 @@ html.dark button{background:rgba(255,255,255,0.06)}
         <a href="/ativa/ask">✨ Ask AI</a>
         <a href="/ativa/madeira_stat">🏃 Trails</a>
         <a href="/ativa/levada">🥾 Levadas</a>
-        <a href="#" id="drawerSearch">🔎 <span data-lang="en">Search events</span><span data-lang="pt">Procurar eventos</span><span data-lang="ru">Поиск событий</span></a>
+        <a href="#" id="drawerSearch">🔎 <span data-lang="en">Search events</span><span data-lang="pt">Procurar eventos</span></a>
         <div class="drawer-sep"></div>
-        <a href="/ativa/map?layer=race">🗺 <span data-lang="en">Map</span><span data-lang="pt">Mapa</span><span data-lang="ru">Карта</span></a>
+        <a href="/ativa/map?layer=race">🗺 <span data-lang="en">Map</span><span data-lang="pt">Mapa</span></a>
         <a href="/ativa/map3d">⛰ <span data-lang="en">3D map</span><span data-lang="pt">Mapa 3D</span></a>
         <a href="/ativa/mapfly">🛩 <span data-lang="en">3D flyover</span><span data-lang="pt">Sobrevoo 3D</span></a>
-        <a href="/ativa/mapbay">🌍 <span data-lang="en">Aerial view</span><span data-lang="pt">Vista aérea</span><span data-lang="ru">Вид с воздуха</span></a>
-        <a href="/ativa/webcams">📷 <span data-lang="en">Webcams</span><span data-lang="pt">Webcams</span><span data-lang="ru">Веб-камеры</span></a>
-        <a href="/ativa/bus">🚌 <span data-lang="en">By bus</span><span data-lang="pt">De autocarro</span><span data-lang="ru">На автобусе</span></a>
+        <a href="/ativa/mapbay">🌍 <span data-lang="en">Aerial view</span><span data-lang="pt">Vista aérea</span></a>
+        <a href="/ativa/webcams">📷 <span data-lang="en">Webcams</span><span data-lang="pt">Webcams</span></a>
+        <a href="/ativa/bus">🚌 <span data-lang="en">By bus</span><span data-lang="pt">De autocarro</span></a>
         <a href="#" onclick="window.location.href='/ativa/madeira_festas.html?lang='+(document.documentElement.lang||'en'); return false;">🎆 Festas</a>
-        <a href="#" onclick="window.location.href='/ativa/madeira_news.html?lang='+(document.documentElement.lang||'en'); return false;">📰 <span data-lang="en">News</span><span data-lang="pt">Notícias</span><span data-lang="ru">Новости</span></a>
-        <a href="#" onclick="window.location.href='/ativa/madeira_history.html?lang='+(document.documentElement.lang||'en'); return false;">📜 <span data-lang="en">History</span><span data-lang="pt">História</span><span data-lang="ru">История</span></a>
+        <a href="#" onclick="window.location.href='/ativa/madeira_news.html?lang='+(document.documentElement.lang||'en'); return false;">📰 <span data-lang="en">News</span><span data-lang="pt">Notícias</span></a>
+        <a href="#" onclick="window.location.href='/ativa/madeira_history.html?lang='+(document.documentElement.lang||'en'); return false;">📜 <span data-lang="en">History</span><span data-lang="pt">História</span></a>
         <div class="drawer-sep"></div>
         <a href="https://t.me/madeira_ebot" target="_blank" rel="noopener">✈️ Telegram bot</a>
         <a href="https://t.me/madeira_ativa" target="_blank" rel="noopener">✈️ Telegram channel</a>
-        <a href="mailto:agent@azenha.ai">✉️ <span data-lang="en">Contact</span><span data-lang="pt">Contacto</span><span data-lang="ru">Контакты</span></a>
-        <a href="/ativa/sources">📚 <span data-lang="en">Sources and licences</span><span data-lang="pt">Fontes e licenças</span><span data-lang="ru">Источники и лицензии</span></a>
-        <a href="/studio/">✨ <span data-lang="en">About Azenha.ai studio</span><span data-lang="pt">Sobre o estúdio Azenha.ai</span><span data-lang="ru">О студии Azenha.ai</span></a>
+        <a href="mailto:agent@azenha.ai">✉️ <span data-lang="en">Contact</span><span data-lang="pt">Contacto</span></a>
+        <a href="/ativa/sources">📚 <span data-lang="en">Sources and licences</span><span data-lang="pt">Fontes e licenças</span></a>
+        <a href="/studio/">✨ <span data-lang="en">About Azenha.ai studio</span><span data-lang="pt">Sobre o estúdio Azenha.ai</span></a>
         <a href="#" id="themeDrawer">🌙 Dark theme</a>
       </nav>
     </aside>
@@ -1002,7 +1003,7 @@ html.dark button{background:rgba(255,255,255,0.06)}
         <p class="pessoa-en" data-lang="en">“Everything is worth it if the soul is not small.”</p>
         <p class="lead">
           <span data-lang="en">The active side of Madeira — races, trails &amp; levadas, 3D maps, festas, daily news and 600 years of island history. All in one place.</span>
-          <span data-lang="pt">O lado ativo da Madeira — provas, trilhos e levadas, mapas 3D, festas, notícias diárias e 600 anos de história da ilha. Tudo num só lugar.</span><span data-lang="ru">Активная сторона Madeira — забеги, тропы и левады, 3D-карты, праздники, ежедневные новости и 600 лет истории острова. Всё в одном месте.</span>
+          <span data-lang="pt">O lado ativo da Madeira — provas, trilhos e levadas, mapas 3D, festas, notícias diárias e 600 anos de história da ilha. Tudo num só lugar.</span>
         </p>
         <div class="wx-strip" id="wxStrip" hidden>
           <span id="wxNow"></span>
@@ -1016,23 +1017,23 @@ html.dark button{background:rgba(255,255,255,0.06)}
             <div class="hero-map">
               <iframe src="/ativa/map.html?theme=light&embed=1" title="Madeira Trails Map" loading="lazy"></iframe>
               <a class="hero-map-open" href="/ativa/map?layer=race" target="_blank" rel="noopener">
-                <span data-lang="en">Open map ↗</span><span data-lang="pt">Abrir mapa ↗</span><span data-lang="ru">Открыть карту ↗</span>
+                <span data-lang="en">Open map ↗</span><span data-lang="pt">Abrir mapa ↗</span>
               </a>
             </div>
           </div>
           <div class="viz-bar">
-            <a class="viz-tab viz-open" href="/ativa/map?layer=race"><span data-lang="en">Open map ↗</span><span data-lang="pt">Abrir mapa ↗</span><span data-lang="ru">Открыть карту ↗</span></a>
+            <a class="viz-tab viz-open" href="/ativa/map?layer=race"><span data-lang="en">Open map ↗</span><span data-lang="pt">Abrir mapa ↗</span></a>
             <a class="viz-tab" href="/ativa/madeira_stat.html#miut" target="_blank"><span data-lang="en">MIUT ↗</span><span data-lang="pt">MIUT ↗</span></a>
-            <a class="viz-tab" href="/ativa/madeira_stat" target="_blank"><span data-lang="en">Trail stats ↗</span><span data-lang="pt">Trail stats ↗</span><span data-lang="ru">Статистика маршрутов ↗</span></a>
+            <a class="viz-tab" href="/ativa/madeira_stat" target="_blank"><span data-lang="en">Trail stats ↗</span><span data-lang="pt">Trail stats ↗</span></a>
             <div class="trail-stats" id="trailStats"></div>
           </div>
         </div>
       </div>
       <div class="hero-side">
-        <div class="label"><span data-lang="en">Mobile access</span><span data-lang="pt">Acesso móvel</span><span data-lang="ru">Мобильный доступ</span></div>
+        <div class="label"><span data-lang="en">Mobile access</span><span data-lang="pt">Acesso móvel</span></div>
         <p>
           <span data-lang="en">Use the Telegram bot for quick filters, subscribe to the weekly digest, or install the Apps. You can save this page to your phone home screen: Share → Add to Home Screen.</span>
-          <span data-lang="pt">Use o bot do Telegram para filtros rápidos, subscreva o resumo semanal, ou instale as apps. Pode guardar esta página no ecrã inicial do telemóvel: Partilhar → Adicionar ao ecrã principal.</span><span data-lang="ru">Используйте бот Telegram для быстрых фильтров, подпишитесь на еженедельный дайджест или установите приложения. Можете сохранить эту страницу на главный экран телефона: Поделиться → Добавить на главный экран.</span>
+          <span data-lang="pt">Use o bot do Telegram para filtros rápidos, subscreva o resumo semanal, ou instale as apps. Pode guardar esta página no ecrã inicial do telemóvel: Partilhar → Adicionar ao ecrã principal.</span>
         </p>
         <div class="tg-links">
           <a class="bot-link" href="https://t.me/madeira_ebot">
@@ -1048,7 +1049,7 @@ html.dark button{background:rgba(255,255,255,0.06)}
             <path fill="currentColor" d="M21.9 4.1 18.7 19c-.2 1-.8 1.2-1.6.7l-4.8-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.3L6.6 12.5 1.8 11c-1-.3-1-1 .2-1.5L20.8 2.3c.9-.3 1.6.2 1.1 1.8Z"/>
           </svg>
             <span data-lang="en">Weekly digest</span>
-            <span data-lang="pt">Resumo semanal</span><span data-lang="ru">Еженедельный дайджест</span>
+            <span data-lang="pt">Resumo semanal</span>
           </a>
         </div>
         <div class="platform-links" id="get" style="scroll-margin-top:72px">
@@ -1078,45 +1079,45 @@ html.dark button{background:rgba(255,255,255,0.06)}
             </svg>
           </a>
         </div>
-        <p class="note"><span data-lang="en">Always confirm registration details with the organizer.</span><span data-lang="pt">Confirme sempre os detalhes de inscrição com a organização.</span><span data-lang="ru">Всегда уточняй детали регистрации у организаторов.</span></p>
+        <p class="note"><span data-lang="en">Always confirm registration details with the organizer.</span><span data-lang="pt">Confirme sempre os detalhes de inscrição com a organização.</span></p>
       </div>
     </header>
 
     <section class="controls" aria-label="Calendar filters">
       <div class="button-row" id="periods">
-        <button data-months="today"><span data-lang="en">Today</span><span data-lang="pt">Hoje</span><span data-lang="ru">Сегодня</span></button>
-        <button data-months="weekend"><span data-lang="en">Weekend</span><span data-lang="pt">Fim de semana</span><span data-lang="ru">Выходные</span></button>
-        <button data-months="next"><span data-lang="en">Next</span><span data-lang="pt">Próximo</span><span data-lang="ru">Дальше</span></button>
-        <button data-months="0.25"><span data-lang="en">Week</span><span data-lang="pt">Semana</span><span data-lang="ru">Неделя</span></button>
-        <button data-months="1"><span data-lang="en">Month</span><span data-lang="pt">Mês</span><span data-lang="ru">Месяц</span></button>
+        <button data-months="today"><span data-lang="en">Today</span><span data-lang="pt">Hoje</span></button>
+        <button data-months="weekend"><span data-lang="en">Weekend</span><span data-lang="pt">Fim de semana</span></button>
+        <button data-months="next"><span data-lang="en">Next</span><span data-lang="pt">Próximo</span></button>
+        <button data-months="0.25"><span data-lang="en">Week</span><span data-lang="pt">Semana</span></button>
+        <button data-months="1"><span data-lang="en">Month</span><span data-lang="pt">Mês</span></button>
         <button data-months="3" class="active"><span data-lang="en">3 mo</span><span data-lang="pt">3 meses</span></button>
         <button data-months="6"><span data-lang="en">6 mo</span><span data-lang="pt">6 meses</span></button>
-        <button data-months="12"><span data-lang="en">Year</span><span data-lang="pt">Ano</span><span data-lang="ru">Год</span></button>
+        <button data-months="12"><span data-lang="en">Year</span><span data-lang="pt">Ano</span></button>
       </div>
       <div class="button-row mode-row" id="modes">
         <button data-mode="trail" class="active">🏃 Trail</button>
-        <button data-mode="road"><span data-lang="en">🛣 Road</span><span data-lang="pt">🛣 Estrada</span><span data-lang="ru">🛣 Дорога</span></button>
+        <button data-mode="road"><span data-lang="en">🛣 Road</span><span data-lang="pt">🛣 Estrada</span></button>
         <button data-mode="orienteering">🧭 Orient</button>
         <button data-mode="cycling">🚴 Bike</button>
         <button data-mode="kids">👶 Kids</button>
         <button data-mode="pro">🏆 Pro</button>
         <button data-mode="swim">🏊 Swim</button>
-        <button data-mode="other"><span data-lang="en">🎾 Other</span><span data-lang="pt">🎾 Outros</span><span data-lang="ru">🎾 Прочее</span></button>
-        <button data-mode="festivals"><span data-lang="en">🎪 Fest</span><span data-lang="pt">🎪 Festivais</span><span data-lang="ru">🎪 Праздники</span></button>
+        <button data-mode="other"><span data-lang="en">🎾 Other</span><span data-lang="pt">🎾 Outros</span></button>
+        <button data-mode="festivals"><span data-lang="en">🎪 Fest</span><span data-lang="pt">🎪 Festivais</span></button>
       </div>
     </section>
 
-    <div class="summary" id="summary"><span data-lang="en">Loading events...</span><span data-lang="pt">A carregar eventos...</span><span data-lang="ru">Загрузка событий...</span></div>
+    <div class="summary" id="summary"><span data-lang="en">Loading events...</span><span data-lang="pt">A carregar eventos...</span></div>
     <div class="ev-search"><input type="search" id="evSearch" placeholder="🔎 Search events… / Procurar…" autocomplete="off"></div>
     <main class="events" id="events"><div class="skel-row"><span class="skel skel-d"></span><span class="skel skel-t"></span></div><div class="skel-row"><span class="skel skel-d"></span><span class="skel skel-t"></span></div><div class="skel-row"><span class="skel skel-d"></span><span class="skel skel-t"></span></div><div class="skel-row"><span class="skel skel-d"></span><span class="skel skel-t"></span></div><div class="skel-row"><span class="skel skel-d"></span><span class="skel skel-t"></span></div></main>
 
     <section class="watchlist" aria-label="Watchlist">
-      <h2><span data-lang="en">Watchlist</span><span data-lang="pt">A acompanhar</span><span data-lang="ru">Следить</span></h2>
+      <h2><span data-lang="en">Watchlist</span><span data-lang="pt">A acompanhar</span></h2>
       <p class="watchlist-intro">
         <span data-lang="en">Events worth tracking, but not mixed into the calendar until the next date, registration page, or official programme is confirmed.</span>
-        <span data-lang="pt">Eventos que vale a pena acompanhar, mas que só entram no calendário quando a próxima data, página de inscrição ou programa oficial estiver confirmado.</span><span data-lang="ru">События, за которыми стоит следить, но они попадают в календарь только после подтверждения следующей даты, страницы регистрации или официальной программы.</span>
+        <span data-lang="pt">Eventos que vale a pena acompanhar, mas que só entram no calendário quando a próxima data, página de inscrição ou programa oficial estiver confirmado.</span>
       </p>
-      <div class="watch-items" id="watchlist"><span data-lang="en">Loading watchlist...</span><span data-lang="pt">A carregar watchlist...</span><span data-lang="ru">Загрузка избранного...</span></div>
+      <div class="watch-items" id="watchlist"><span data-lang="en">Loading watchlist...</span><span data-lang="pt">A carregar watchlist...</span></div>
     </section>
 
     <footer class="page-footer">
@@ -1127,10 +1128,10 @@ html.dark button{background:rgba(255,255,255,0.06)}
         <a href="https://ecotrailmadeira.com" target="_blank">EcoTrail Madeira</a>
         <a href="https://trailportomoniz.com" target="_blank">Trail Porto Moniz</a>
         <a href="https://adnrace.pt" target="_blank">ADN Race</a>
-        <a href="mailto:agent@azenha.ai"><span data-lang="en">Contact</span><span data-lang="pt">Contacto</span><span data-lang="ru">Контакты</span></a>
+        <a href="mailto:agent@azenha.ai"><span data-lang="en">Contact</span><span data-lang="pt">Contacto</span></a>
         <a href="/studio/">azenha.ai</a>
-        <a href="/apps/"><span data-lang="en">All apps</span><span data-lang="pt">Todas as apps</span><span data-lang="ru">Все приложения</span></a>
-        <a href="/ativa/sources"><span data-lang="en">Sources</span><span data-lang="pt">Fontes</span><span data-lang="ru">Источники</span></a>
+        <a href="/apps/"><span data-lang="en">All apps</span><span data-lang="pt">Todas as apps</span></a>
+        <a href="/ativa/sources"><span data-lang="en">Sources</span><span data-lang="pt">Fontes</span></a>
       </div>
     </footer>
   </div>
@@ -1973,6 +1974,6 @@ paint();})();
 })();
 </script>
 <script src="/ativa/ipma.js" defer></script>
-<script src="/ativa/tabbar.js?v=20261009e" defer></script>
+<script src="/ativa/tabbar.js?v=20261009g" defer></script>
 </body>
 </html>

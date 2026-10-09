@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>(function(){var l=null;try{l=localStorage.getItem("lang");if(l!=="pt"&&l!=="en"){localStorage.setItem("lang","en");l="en"}}catch(e){l="en"}document.documentElement.lang=l;})();</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Levada Walks in Madeira — Trails, Map & Guide · Madeira Ativa</title>
@@ -286,25 +287,25 @@ html.dark{--x:0}
   <nav class="section-nav">
     <div class="section-nav-inner" id="nav">
       <a href="/ativa/">🏠 Main</a>
-      <a data-nav="map"><span data-lang="en">Map</span><span data-lang="pt">Mapa</span><span data-lang="ru">Карта</span></a>
-      <a data-nav="all" class="active"><span data-lang="en">All</span><span data-lang="pt">Todos</span><span data-lang="ru">Всё</span></a>
-      <a data-nav="open"><span data-lang="en">Open</span><span data-lang="pt">Abertos</span><span data-lang="ru">Открыты</span></a>
-      <a data-nav="partial"><span data-lang="en">Restricted</span><span data-lang="pt">Restritos</span><span data-lang="ru">Ограниченные</span></a>
-      <a data-nav="closed"><span data-lang="en">Closed</span><span data-lang="pt">Encerrados</span><span data-lang="ru">Закрыто</span></a>
-      <a data-nav="bus">🚌 <span data-lang="en">By bus</span><span data-lang="pt">De autocarro</span><span data-lang="ru">На автобусе</span></a>
+      <a data-nav="map"><span data-lang="en">Map</span><span data-lang="pt">Mapa</span></a>
+      <a data-nav="all" class="active"><span data-lang="en">All</span><span data-lang="pt">Todos</span></a>
+      <a data-nav="open"><span data-lang="en">Open</span><span data-lang="pt">Abertos</span></a>
+      <a data-nav="partial"><span data-lang="en">Restricted</span><span data-lang="pt">Restritos</span></a>
+      <a data-nav="closed"><span data-lang="en">Closed</span><span data-lang="pt">Encerrados</span></a>
+      <a data-nav="bus">🚌 <span data-lang="en">By bus</span><span data-lang="pt">De autocarro</span></a>
       <input class="nav-q" id="q" type="search" autocomplete="off" placeholder="PR 6, Rabaçal…" aria-label="Search trails">
       <span class="nav-spacer"></span>
       <a class="nav-2d" href="/ativa/map?layer=walk">2D ↗</a>
       <a class="nav-3d" href="/ativa/map3d">3D ↗</a>
-      <a class="nav-3d" href="/ativa/mapfly"><span data-lang="en">Fly ↗</span><span data-lang="pt">Voo ↗</span><span data-lang="ru">Полёт ↗</span></a>
-      <a class="nav-3d" href="/ativa/mapbay"><span data-lang="en">Aerial ↗</span><span data-lang="pt">Aéreo ↗</span><span data-lang="ru">Аэро ↗</span></a>
+      <a class="nav-3d" href="/ativa/mapfly"><span data-lang="en">Fly ↗</span><span data-lang="pt">Voo ↗</span></a>
+      <a class="nav-3d" href="/ativa/mapbay"><span data-lang="en">Aerial ↗</span><span data-lang="pt">Aéreo ↗</span></a>
     </div>
   </nav>
 
   <h1>Levadas</h1>
   <p class="sub">
     <span data-lang="en">Madeira's classified walking trails — distance, ascent, how to get there and current status.</span>
-    <span data-lang="pt">Percursos pedestres classificados da Madeira — distância, subida, como chegar e estado atual.</span><span data-lang="ru">Классифицированные пешеходные маршруты Мадейры — расстояние, набор высоты, как туда добраться и текущее состояние.</span>
+    <span data-lang="pt">Percursos pedestres classificados da Madeira — distância, subida, como chegar e estado atual.</span>
   </p>
 
   <div id="ipmaWarnings" hidden></div>
@@ -319,7 +320,7 @@ html.dark{--x:0}
   <div class="map-card">
     <iframe id="map-frame" title="Madeira walking trails map" loading="lazy"></iframe>
     <a class="map-open" id="map-open" href="/ativa/map?layer=walk" target="_blank" rel="noopener">
-      <span data-lang="en">Open full map ↗</span><span data-lang="pt">Abrir mapa ↗</span><span data-lang="ru">Открыть полную карту ↗</span>
+      <span data-lang="en">Open full map ↗</span><span data-lang="pt">Abrir mapa ↗</span>
     </a>
   </div>
 
@@ -336,11 +337,11 @@ html.dark{--x:0}
   <div class="counts" id="counts"></div>
 
   <div class="diff-filter" id="diff-filter">
-    <button data-diff="0" class="active"><span data-lang="en">Any difficulty</span><span data-lang="pt">Qualquer dificuldade</span><span data-lang="ru">Любая сложность</span></button>
-    <button data-diff="1"><span data-lang="en">Easy</span><span data-lang="pt">Fácil</span><span data-lang="ru">Легко</span></button>
-    <button data-diff="2"><span data-lang="en">Moderate</span><span data-lang="pt">Moderado</span><span data-lang="ru">Средний уровень</span></button>
-    <button data-diff="3"><span data-lang="en">Hard</span><span data-lang="pt">Difícil</span><span data-lang="ru">Сложно</span></button>
-    <button data-diff="4"><span data-lang="en">Severe</span><span data-lang="pt">Severo</span><span data-lang="ru">Экстремальный</span></button>
+    <button data-diff="0" class="active"><span data-lang="en">Any difficulty</span><span data-lang="pt">Qualquer dificuldade</span></button>
+    <button data-diff="1"><span data-lang="en">Easy</span><span data-lang="pt">Fácil</span></button>
+    <button data-diff="2"><span data-lang="en">Moderate</span><span data-lang="pt">Moderado</span></button>
+    <button data-diff="3"><span data-lang="en">Hard</span><span data-lang="pt">Difícil</span></button>
+    <button data-diff="4"><span data-lang="en">Severe</span><span data-lang="pt">Severo</span></button>
   </div>
 
   <div id="list"></div>
@@ -351,11 +352,11 @@ html.dark{--x:0}
             fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
     </svg>
     <span class="game-copy">
-      <b><span data-lang="en">Know your levadas?</span><span data-lang="pt">Conheces as levadas?</span><span data-lang="ru">Знаешь левады?</span></b>
+      <b><span data-lang="en">Know your levadas?</span><span data-lang="pt">Conheces as levadas?</span></b>
       <span data-lang="en">Name the trail from its elevation profile — or run that profile as a trail.</span>
-      <span data-lang="pt">Descobre o percurso pelo perfil de altimetria — ou corre esse perfil como um trilho.</span><span data-lang="ru">Узнай маршрут по его профилю высот — или пробегись по этому профилю как по тропе.</span>
+      <span data-lang="pt">Descobre o percurso pelo perfil de altimetria — ou corre esse perfil como um trilho.</span>
     </span>
-    <span class="game-cta"><span data-lang="en">Play</span><span data-lang="pt">Jogar</span><span data-lang="ru">Играть</span> →</span>
+    <span class="game-cta"><span data-lang="en">Play</span><span data-lang="pt">Jogar</span> →</span>
   </a>
 
   <!-- TRAIL-INDEX:START -->
@@ -823,7 +824,7 @@ fetch('levadas.json').then(function (r) { return r.json(); }).then(function (d) 
   data = d;
   document.getElementById('src').innerHTML = esc(d.attribution || '') +
     ' · <a href="/ativa/sources">' + (lang === 'pt' ? 'Todas as fontes e licenças' : 'All sources and licences') + '</a>';
- <a href="/studio/">✨ <span data-lang="en">About Azenha.ai studio</span><span data-lang="pt">Sobre o estúdio Azenha.ai</span><span data-lang="ru">О студии Azenha.ai</span></a>
+ <a href="/studio/">✨ <span data-lang="en">About Azenha.ai studio</span><span data-lang="pt">Sobre o estúdio Azenha.ai</span></a>
   render();
   loadToday();
 }).catch(function () {
@@ -845,8 +846,8 @@ applyLang();
     <a href="/ativa/map3d">⛰ 3D map</a>
     <a href="/ativa/mapfly">🛩 3D flyover</a>
     <a href="/ativa/mapbay">🌍 Aerial view</a>
-    <a href="/ativa/webcams">📷 <span data-lang="en">Webcams</span><span data-lang="pt">Webcams</span><span data-lang="ru">Веб-камеры</span></a>
-    <a href="/ativa/bus">🚌 <span data-lang="en">By bus</span><span data-lang="pt">De autocarro</span><span data-lang="ru">На автобусе</span></a>
+    <a href="/ativa/webcams">📷 <span data-lang="en">Webcams</span><span data-lang="pt">Webcams</span></a>
+    <a href="/ativa/bus">🚌 <span data-lang="en">By bus</span><span data-lang="pt">De autocarro</span></a>
     <a href="/ativa/madeira_festas">🎆 Festas</a>
     <a href="/ativa/madeira_news">📰 News</a>
     <a href="/ativa/madeira_history">📜 History</a>
@@ -913,6 +914,6 @@ paint();})();
 </script>
 <script src="/ativa/ipma.js" defer></script>
 <script src="/ativa/sunrise.js" defer></script>
-<script src="/ativa/tabbar.js?v=20261009e" defer></script>
+<script src="/ativa/tabbar.js?v=20261009g" defer></script>
 </body>
 </html>
