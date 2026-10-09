@@ -406,7 +406,7 @@
       box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.24);
     }
     #modes {
-      grid-template-columns: repeat(9, minmax(0, 1fr));
+      grid-template-columns: repeat(10, minmax(0, 1fr));
       padding: 5px;
       border: 1px solid rgba(107, 135, 99, 0.22);
       border-radius: 20px;
@@ -698,8 +698,8 @@
       .platform-link { min-height: 44px; }
       .platform-link .button-icon { width: 24px; height: 24px; }
       
-      .tg-links { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-      .tg-links .bot-link { margin-top: 0; }
+      .tg-links { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; width: 100%; margin: 0; }
+      .tg-links .bot-link { margin-top: 0; width: 100%; min-height: 44px; }
       /* The map teaser: taller, and the "open" link moves off the map into the
          row below, where it no longer collides with the layer pill. */
       .hero-map { height: 200px; }
@@ -1098,7 +1098,6 @@ html.dark button{background:rgba(255,255,255,0.06)}
         <button data-mode="swim">🏊 Swim</button>
         <button data-mode="other"><span data-lang="en">🎾 Other</span><span data-lang="pt">🎾 Outros</span></button>
         <button data-mode="festivals"><span data-lang="en">🎪 Fest</span><span data-lang="pt">🎪 Festivais</span></button>
-        <button data-mode="news" id="news-link">📰 News</button>
       </div>
     </section>
 
