@@ -71,10 +71,11 @@
     document.querySelectorAll('.site-nav-inner a, .section-nav-inner a, .topbar a, a.back, a.back-link').forEach(function (a) {
       var href = a.getAttribute('href') || '', click = a.getAttribute('onclick') || '';
       if (carried.test(href) || /\/ativa\/madeira_news/.test(click)) a.style.display = 'none';
+      if (/\/ativa\/madeira_stat(?:\.html)?$/.test(href) && a.closest('.site-nav-inner')) a.textContent = 'Stats';
       // Where the row had "Maps", the three views the bar cannot show take its
-      // place: the 3D island and the flyover — plus the webcams and the trails by bus.
+      // place: the 3D island, the webcams and the trails by bus (the flyover stays in the drawer).
       if (/^\/ativa\/map(?:\.html)?(?:\?.*)?$/.test(href) && a.closest('.site-nav-inner') && !a.closest('.site-nav-inner').querySelector('.ma-views')) {
-        var views = [['/ativa/map3d', '3D'], ['/ativa/mapfly', pt ? 'Voo' : 'Fly'], ['/ativa/webcams', 'Webcams'], ['/ativa/bus', pt ? 'Autocarro' : 'By bus']];
+        var views = [['/ativa/map3d', '3D'], ['/ativa/webcams', 'Webcams'], ['/ativa/bus', 'Bus']];
         views.reverse().forEach(function (v) {
           var l = document.createElement('a');
           l.className = 'ma-views'; l.href = v[0]; l.textContent = v[1];
