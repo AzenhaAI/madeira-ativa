@@ -109,6 +109,101 @@
     if (host.tagName === 'FOOTER') host.parentNode.insertBefore(box, host); else host.appendChild(box);
   })();
 
+  // Russian, by choice. The drawer ends with "Interface languages": English and
+  // Portuguese are always on; Russian is a tick the reader can set, remembered
+  // on this device. With it on, a third button, RU, joins the page's EN/PT
+  // switch. The Russian strings are the <span data-lang="ru"> that
+  // scripts/i18n_ru.py adds beside each EN/PT pair as the nightly run
+  // translates them; a pair without one shows English, so a page is never
+  // blank in Russian — only, at worst, partly English.
+  (function () {
+    var KEY = 'ma-ru';
+    function ruOn() { try { return localStorage.getItem(KEY) === '1'; } catch (e) { return false; } }
+    var st = document.createElement('style');
+    st.textContent =
+      'html[lang="ru"] [data-lang="ru"]{display:revert}' +
+      'html[lang="ru"] .ma-ru-en{display:revert}' +
+      '.ma-langs{margin:14px 10px 6px;padding-top:12px;border-top:1px solid rgba(127,127,127,.3);font:600 14px/1.4 Inter,system-ui,sans-serif}' +
+      '.ma-langs .t{opacity:.7;font-size:12px;letter-spacing:.06em;text-transform:uppercase;margin:0 0 8px}' +
+      '.ma-langs label{display:flex;align-items:center;gap:10px;padding:7px 0;cursor:pointer}' +
+      '.ma-langs label.fixed{opacity:.6;cursor:default}' +
+      '.ma-langs input{width:18px;height:18px;accent-color:#1F4D32}' +
+      'html.dark .ma-langs input,html:not(.light) .ma-langs input{accent-color:#9fcfaa}' +
+      '.ma-ru-btn.active{background:#1F4D32;color:#fff;border-color:#1F4D32}';
+    document.head.appendChild(st);
+
+    // English shows wherever the Russian line is missing.
+    function markFallback() {
+      document.querySelectorAll('[data-lang="en"]:not(.ma-ru-en):not(.ma-ru-has)').forEach(function (en) {
+        var ru = en.nextElementSibling;
+        while (ru && ru.getAttribute('data-lang') === 'pt') ru = ru.nextElementSibling;
+        en.classList.add(ru && ru.getAttribute('data-lang') === 'ru' ? 'ma-ru-has' : 'ma-ru-en');
+      });
+    }
+    function setLang(l) {
+      document.documentElement.lang = l;
+      try { localStorage.setItem('lang', l); } catch (e) {}
+      paintRu();
+    }
+    function paintRu() {
+      var on = document.documentElement.lang === 'ru';
+      document.querySelectorAll('.ma-ru-btn').forEach(function (b) { b.classList.toggle('active', on); });
+      if (on) markFallback();
+    }
+
+    // The RU button beside whichever EN/PT switch the page has.
+    function placeButton() {
+      if (document.querySelector('.ma-ru-btn')) return;
+      var b = document.createElement('button');
+      b.className = 'ma-ru-btn'; b.type = 'button'; b.textContent = 'RU';
+      b.addEventListener('click', function () { setLang('ru'); });
+      var pill = document.querySelector('.lang [data-set-lang]');
+      var toggle = document.querySelector('.lang-toggle');
+      var group = document.querySelector('.lang-btn');
+      if (pill) { b.className += ' ' + pill.className; pill.parentNode.appendChild(b); }
+      else if (toggle) { b.className += ' ' + toggle.className; toggle.insertAdjacentElement('afterend', b); }
+      else if (group) { b.className += ' lang-btn'; group.parentNode.appendChild(b); }
+      else return;
+    }
+    function removeButton() {
+      var b = document.querySelector('.ma-ru-btn'); if (b) b.remove();
+    }
+
+    // The drawer's "Interface languages" block.
+    var nav = document.querySelector('.drawer-nav');
+    if (nav) {
+      var box = document.createElement('div');
+      box.className = 'ma-langs';
+      box.innerHTML =
+        '<p class="t">' + (pt ? 'Línguas da interface' : 'Interface languages') + '</p>' +
+        '<label class="fixed"><input type="checkbox" checked disabled> English</label>' +
+        '<label class="fixed"><input type="checkbox" checked disabled> Português</label>' +
+        '<label><input type="checkbox" id="maRuTick"' + (ruOn() ? ' checked' : '') + '> Русский</label>';
+      nav.appendChild(box);
+      box.querySelector('#maRuTick').addEventListener('change', function (e) {
+        try { localStorage.setItem(KEY, e.target.checked ? '1' : '0'); } catch (x) {}
+        if (e.target.checked) { placeButton(); setLang('ru'); }
+        else { removeButton(); if (document.documentElement.lang === 'ru') setLang('en'); }
+      });
+    }
+
+    if (ruOn()) {
+      placeButton();
+      var saved = null; try { saved = localStorage.getItem('lang'); } catch (e) {}
+      // The page's own script set en or pt on load; Russian is restored here.
+      if (saved === 'ru') setLang('ru');
+    }
+    markFallback();
+    paintRu();
+    new MutationObserver(paintRu).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
+    // Content the page renders later carries its own EN/PT pairs.
+    var pending = false;
+    new MutationObserver(function () {
+      if (pending) return; pending = true;
+      requestAnimationFrame(function () { pending = false; if (document.documentElement.lang === 'ru') markFallback(); });
+    }).observe(document.body, { childList: true, subtree: true });
+  })();
+
   // Pages switch language in place; relabel without rebuilding.
   new MutationObserver(function () {
     var p = (document.documentElement.lang || 'en') === 'pt';
