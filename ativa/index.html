@@ -107,6 +107,15 @@
     .top-right a {
       white-space: nowrap;
     }
+    .promo-bus{display:flex;align-items:center;gap:10px;margin:12px 0 4px;padding:12px 14px;border-radius:12px;background:#F2A65A;color:#3A1A08;text-decoration:none;max-width:560px}
+    .promo-bus:hover{filter:brightness(1.04)}
+    .promo-bus .pb-new{flex:none;background:#993C1D;color:#fff;font-size:11.5px;font-weight:700;letter-spacing:.06em;padding:3px 8px;border-radius:20px}
+    .promo-bus .pb-ico{flex:none;font-size:20px}
+    .promo-bus .pb-txt{flex:1;min-width:0;display:flex;flex-direction:column}
+    .promo-bus .pb-txt b{font-size:15px;font-weight:700}
+    .promo-bus .pb-txt small{font-size:13px;color:#5A2A10}
+    .promo-bus .pb-go{flex:none;font-size:22px;line-height:1}
+    @media (max-width: 760px) { .hero .promo-bus { order: 0; max-width:none } }
     .hero {
       display: grid;
       grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr);
@@ -1005,6 +1014,8 @@ html.dark button{background:rgba(255,255,255,0.06)}
           </svg>
           <h1>Madeira Ativa</h1>
         </div>
+        <!-- Launch banner for the bus timetables, the same strip as the app's home. -->
+        <a class="promo-bus" href="/ativa/bus"><span class="pb-new">NEW</span><span class="pb-ico" aria-hidden="true">🚌</span><span class="pb-txt"><b><span data-lang="en">Island bus timetables</span><span data-lang="pt">Horários de autocarro</span></b><small><span data-lang="en">Which trails you can reach by bus, stops and next departures</span><span data-lang="pt">Percursos com acesso de autocarro, paragens e próximas partidas</span></small></span><span class="pb-go" aria-hidden="true">›</span></a>
         <p class="pessoa">«Tudo vale a pena se a alma não é pequena.»<span class="who">— Fernando Pessoa</span></p>
         <!-- The Portuguese stays: it is the line as written, on an island that
              speaks it. The gloss is for the English reader who asked whether
