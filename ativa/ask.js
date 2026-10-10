@@ -18,14 +18,16 @@
   var lang = 'en';
 
   var T = {
-    thinking:  { en: 'Looking it up…', pt: 'A procurar…' },
-    aiWriting: { en: 'Writing a short answer…', pt: 'A escrever uma resposta curta…' },
+    thinking:  { en: 'Looking it up…', pt: 'A procurar…', de: 'Suche…' },
+    aiWriting: { en: 'Writing a short answer…', pt: 'A escrever uma resposta curta…', de: 'Schreibe eine kurze Antwort…' },
     aiNote:    { en: 'AI answers can be wrong — the facts below are the source.',
-                 pt: 'As respostas da IA podem ter erros — a fonte são os factos em baixo.' },
+                 pt: 'As respostas da IA podem ter erros — a fonte são os factos em baixo.',
+                 de: 'KI-Antworten können falsch sein — die Fakten unten sind die Quelle.' },
     noAnswer:  { en: 'I can answer about a trail (by name or PR code), where to go today, the weather and what’s on. Try one of the examples above.',
                  pt: 'Posso responder sobre um percurso (pelo nome ou código PR), onde ir hoje, o tempo e o que se passa. Experimente um dos exemplos acima.' },
     failed:    { en: 'One of the live sources did not answer. Try again in a moment.',
-                 pt: 'Uma das fontes em direto não respondeu. Tente de novo daqui a pouco.' },
+                 pt: 'Uma das fontes em direto não respondeu. Tente de novo daqui a pouco.',
+                 de: 'Eine der Live-Quellen hat nicht geantwortet. Versuch es gleich noch einmal.' },
     open:      { en: 'is open', pt: 'está aberto' },
     partial:   { en: 'is partly open', pt: 'está parcialmente aberto' },
     closed:    { en: 'is closed', pt: 'está encerrado' },
@@ -81,7 +83,8 @@
   };
   var DAYS = { en: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'], pt: ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb'] };
 
-  function t(k) { return (T[k] || {})[lang] || k; }
+  // German UI words where the table has them; the facts themselves are EN/PT.
+  function t(k) { var o = T[k] || {}; return (document.documentElement.lang === 'de' && o.de) || o[lang] || k; }
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function norm(s) { return String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); }
   // Same rule as scripts/gen_trail_pages.py, so the link lands on a real page.
