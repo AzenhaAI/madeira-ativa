@@ -10,28 +10,40 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/ativa/apple-touch-icon.png?v=ios1",
+      "src": "/ativa/apple-touch-icon.png?v=web2",
       "sizes": "180x180",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/ativa/icon-192.png?v=5e8787d",
+      "src": "/ativa/icon-192.png?v=web2",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/ativa/icon-512.png?v=5e8787d",
+      "src": "/ativa/icon-512.png?v=web2",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/ativa/icon.svg",
+      "src": "/ativa/icon.svg?v=web2",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
     }
-  ]
+  ],
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=ai.azenha.ativa",
+      "id": "ai.azenha.ativa"
+    },
+    {
+      "platform": "itunes",
+      "url": "https://apps.apple.com/app/madeira-ativa/id6796836699"
+    }
+  ],
+  "prefer_related_applications": true
 }
