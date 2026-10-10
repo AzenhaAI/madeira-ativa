@@ -114,22 +114,30 @@
 
   // ---- From → To
   var RANK = { city: 6, town: 5, village: 4, suburb: 3, neighbourhood: 2, hamlet: 2, locality: 1 };
+  // Stops for a place, each with its distance from the place's centre (0 for a
+  // stop matched by name), so a trip ends in Santana, not at its edge.
   function candidates(text) {
     var q = norm(text);
-    if (!q) return [];
-    // Of places sharing a name, the biggest: "Santana" is the town, not the
-    // Funchal neighbourhood of the same name.
+    if (!q) return {};
     var best = null;
     NET.places.forEach(function (p) {
       if (norm(p[0]) === q && (!best || (RANK[p[3]] || 0) > (RANK[best[3]] || 0))) best = p;
     });
     var out = {}, r = best ? (best[3] === 'city' ? 1800 : best[3] === 'town' ? 1000 : 700) : 0;
     NET.stops.forEach(function (s, i) {
-      if (norm(s[1]) === q) out[i] = 1;
-      else if (best) { if (dist([best[1], best[2]], [s[2], s[3]]) <= r) out[i] = 1; }
-      else if (q.length > 3 && norm(s[1]).indexOf(q) >= 0) out[i] = 1;
+      if (norm(s[1]) === q) { out[i] = 0; return; }
+      if (best) { var d = dist([best[1], best[2]], [s[2], s[3]]); if (d <= r) out[i] = d; }
+      else if (q.length > 3 && norm(s[1]).indexOf(q) >= 0) out[i] = 0;
     });
-    return Object.keys(out).map(Number);
+    // A town with no mapped stop inside its radius (Caniçal): the nearest ones
+    // within 3 km, then stops whose name carries the word.
+    if (best && !Object.keys(out).length) {
+      NET.stops.map(function (s, i) { return [i, dist([best[1], best[2]], [s[2], s[3]])]; })
+        .filter(function (x) { return x[1] <= 3000; }).sort(function (x, y) { return x[1] - y[1]; }).slice(0, 6)
+        .forEach(function (x) { out[x[0]] = x[1]; });
+      if (!Object.keys(out).length) NET.stops.forEach(function (s, i) { if (norm(s[1]).indexOf(q) >= 0) out[i] = 0; });
+    }
+    return out;
   }
   // OSM maps a stop twice (the pole and the platform): count names, not nodes.
   function stopCount(p, i, k) {
@@ -143,35 +151,36 @@
     if (!fa.value.trim()) fa.value = fa.placeholder;
     if (!fb.value.trim()) fb.value = fb.placeholder;
     var a = fa.value, b = fb.value;
-    var A = candidates(a), B = candidates(b);
-    if (!A.length || !B.length) {
-      box.innerHTML = '<p class="empty">' + (!A.length ? t('No stop found for “' + esc(a) + '”.', 'Nenhuma paragem para «' + esc(a) + '».') : t('No stop found for “' + esc(b) + '”.', 'Nenhuma paragem para «' + esc(b) + '».')) + '</p>';
+    var SA = candidates(a), SB = candidates(b);
+    if (!Object.keys(SA).length || !Object.keys(SB).length) {
+      box.innerHTML = '<p class="empty">' + (!Object.keys(SA).length ? t('No stop found for “' + esc(a) + '”.', 'Nenhuma paragem para «' + esc(a) + '».') : t('No stop found for “' + esc(b) + '”.', 'Nenhuma paragem para «' + esc(b) + '».')) + '</p>';
       return;
     }
-    var SA = {}, SB = {};
-    A.forEach(function (x) { SA[x] = 1; }); B.forEach(function (x) { SB[x] = 1; });
     var found = {};
     NET.patterns.forEach(function (p) {
-      var i = -1;
-      for (var k = 0; k < p.stops.length; k++) {
-        if (i < 0 && SA[p.stops[k]]) i = k;
-        else if (i >= 0 && SB[p.stops[k]]) {
-          // One result per line; every variant (headsign) that gets there counts,
-          // since the weekday and weekend runs of a line often differ.
-          var key = p.line, cnt = stopCount(p, i, k), f = found[key];
-          if (!f) f = found[key] = { line: p.line, heads: {}, head: p.head, from: p.stops[i], to: p.stops[k], n: cnt };
-          f.heads[p.head] = 1;
-          if (cnt < f.n) { f.head = p.head; f.from = p.stops[i]; f.to = p.stops[k]; f.n = cnt; }
-          break;
+      // Among the boarding and alighting stops this pattern serves, the pair
+      // closest to the two centres, boarding before alighting.
+      var bi = -1, bk = -1, bestScore = Infinity;
+      for (var i = 0; i < p.stops.length; i++) {
+        if (!(p.stops[i] in SA)) continue;
+        for (var k = i + 1; k < p.stops.length; k++) {
+          if (!(p.stops[k] in SB)) continue;
+          var sc = SA[p.stops[i]] + SB[p.stops[k]];
+          if (sc < bestScore) { bestScore = sc; bi = i; bk = k; }
         }
       }
+      if (bi < 0) return;
+      var key = p.line, cnt = stopCount(p, bi, bk), f = found[key];
+      if (!f) f = found[key] = { line: p.line, heads: {}, head: p.head, from: p.stops[bi], to: p.stops[bk], n: cnt, sc: bestScore };
+      f.heads[p.head] = 1;
+      if (bestScore < f.sc) { f.head = p.head; f.from = p.stops[bi]; f.to = p.stops[bk]; f.n = cnt; f.sc = bestScore; }
     });
-    var res = Object.keys(found).map(function (k) { return found[k]; }).sort(function (x, y) { return x.n - y.n; }).slice(0, 8);
+    var res = Object.keys(found).map(function (k) { return found[k]; }).sort(function (x, y) { return (x.sc - y.sc) || (x.n - y.n); }).slice(0, 8);
     if (!res.length) { transfers(SA, SB, box); return; }
     box.innerHTML = res.map(function (r, n) {
       var l = NET.lines[r.line];
       return '<div class="card bn-r"><div>' + chip(r.line) + ' <b>' + esc(r.head || l.name) + '</b></div>' +
-        '<div class="bn-op">' + t('Board at', 'Embarque em') + ' <b>' + esc(NET.stops[r.from][1]) + '</b> → ' + esc(NET.stops[r.to][1]) + ' · ' + r.n + ' ' + t('stops', 'paragens') + '</div>' +
+        '<div class="bn-op">' + t('Board at', 'Embarque em') + ' <b>' + esc(NET.stops[r.from][1]) + '</b> → ' + esc(NET.stops[r.to][1]) + (l.src === 'gtfs' ? ' · ' + r.n + ' ' + t('stops', 'paragens') : '') + '</div>' +
         '<div id="bnR' + n + '"></div>' +
         (l.src !== 'gtfs' && l.url ? '<a href="' + esc(l.url) + '" target="_blank" rel="noopener">' + t('Timetable', 'Horário') + ' (SIGA) ↗</a>' : '') +
         ' <button type="button" class="btn ghost bn-show" data-r="' + n + '">' + t('Show on map', 'Ver no mapa') + '</button></div>';
@@ -203,7 +212,7 @@
     NET.patterns.forEach(function (p) {
       var i = -1;
       for (var k = 0; k < p.stops.length; k++) {
-        if (i < 0) { if (SA[p.stops[k]]) i = k; continue; }
+        if (i < 0) { if (p.stops[k] in SA) i = k; continue; }
         var key = cellKey(NET.stops[p.stops[k]]), n = stopCount(p, i, k);
         if (!reach[key] || n < reach[key].n) reach[key] = { line: p.line, head: p.head, from: p.stops[i], at: p.stops[k], n: n };
       }
@@ -211,7 +220,7 @@
     var best = {};
     NET.patterns.forEach(function (q) {
       var j = -1;
-      for (var k = q.stops.length - 1; k >= 0; k--) { if (SB[q.stops[k]]) { j = k; break; } }
+      for (var k = q.stops.length - 1; k >= 0; k--) { if (q.stops[k] in SB) { j = k; break; } }
       if (j < 1) return;
       for (var m = 0; m < j; m++) {
         var cand = near(NET.stops[q.stops[m]]);
@@ -230,7 +239,7 @@
     }
     var leg = function (x, last) {
       var l = NET.lines[x.line];
-      return '<div class="bn-leg">' + chip(x.line) + ' <b>' + esc(x.head || l.name) + '</b><div class="bn-op">' + esc(NET.stops[x.from][1]) + ' → ' + esc(NET.stops[last][1]) + ' · ' + x.n + ' ' + t('stops', 'paragens') +
+      return '<div class="bn-leg">' + chip(x.line) + ' <b>' + esc(x.head || l.name) + '</b><div class="bn-op">' + esc(NET.stops[x.from][1]) + ' → ' + esc(NET.stops[last][1]) + (l.src === 'gtfs' ? ' · ' + x.n + ' ' + t('stops', 'paragens') : '') +
         (l.src !== 'gtfs' && l.url ? ' · <a href="' + esc(l.url) + '" target="_blank" rel="noopener">' + t('Timetable', 'Horário') + ' ↗</a>' : '') + '</div></div>';
     };
     box.innerHTML = '<p class="sub">' + t('No direct line — with one change:', 'Sem linha direta — com uma mudança:') + '</p>' + res.map(function (r, n) {
