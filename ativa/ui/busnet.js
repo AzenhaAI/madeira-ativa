@@ -75,7 +75,7 @@
       if ((mode === 'city' && !city) || (mode === 'inter' && city)) return;
       var g = L.layerGroup();
       l.paths.forEach(function (p) {
-        L.polyline(decode(p), { color: l.color, weight: city ? 2.5 : 3.5, opacity: city ? 0.7 : 0.85, renderer: R })
+        L.polyline(decode(p), { color: l.color, weight: city ? 2.5 : 3.5, opacity: city ? 0.7 : 0.85, dashArray: l.approx ? '7 6' : null, renderer: R })
           .on('click', function (e) { lineInfo(i, e.latlng); }).addTo(g);
       });
       g.addTo(map); layers[i] = g;
@@ -99,6 +99,7 @@
   function lineInfo(i, at) {
     var l = NET.lines[i];
     L.popup().setLatLng(at).setContent('<div class="bn-pop">' + chip(i) + ' <b>' + esc(l.name) + '</b><div class="bn-op">' + esc(l.op || '') + '</div>' +
+      (l.approx ? '<div class="bn-op">' + t('Approximate route: town to town from the SIGA timetable, not yet mapped stop by stop.', 'Percurso aproximado: de localidade em localidade pelo horário SIGA, ainda sem as paragens todas.') + '</div>' : '') +
       (l.url ? '<a href="' + esc(l.url) + '" target="_blank" rel="noopener">' + t('Timetable', 'Horário') + ' ↗</a>' : '') + '</div>').openOn(map);
   }
   function stopInfo(i) {
