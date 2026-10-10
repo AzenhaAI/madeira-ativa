@@ -1,0 +1,23 @@
+{
+ "note": "Plain-language versions of IFCN's partial-closure notices. 'src' is the IFCN text they were written from; when IFCN's text changes, the page shows the new original instead of a stale translation.",
+ "trails": {
+  "PR 1": {
+   "src": "Vereda do Areeiro - Percurso com sentido único entre o Miradouro da Pedra Rija e o Pico Ruivo / Vereda do Areeiro - percurso nos dois sentidos entre o Pico do Areeiro e o Miradouro da Pedra Rija",
+   "en": "One-way only between the Pedra Rija viewpoint and Pico Ruivo; both directions between Pico do Arieiro and Pedra Rija.",
+   "pt": "Sentido único entre o Miradouro da Pedra Rija e o Pico Ruivo; nos dois sentidos entre o Pico do Areeiro e o Miradouro da Pedra Rija.",
+   "de": "Zwischen dem Aussichtspunkt Pedra Rija und dem Pico Ruivo nur in eine Richtung; zwischen Pico do Arieiro und Pedra Rija in beide Richtungen."
+  },
+  "PR 12": {
+   "src": "Caminho real da Encumeada percurso transitável desde a Boca da Corrida até ao km 3,5",
+   "en": "Passable from Boca da Corrida to km 3.5 only.",
+   "pt": "Transitável desde a Boca da Corrida até ao km 3,5.",
+   "de": "Nur von Boca da Corrida bis km 3,5 begehbar."
+  },
+  "PR 4": {
+   "src": "Levada do Barreiro percurso transitável - está disponível uma ligação sinalizada à Ribeira das Cales, junto ao Centro de Interpretação do Parque Ecológico do Funchal A versão atual do percurso, entre o Poço da Neve (início do PR4), a Levada do Barreiro e a Ribeira das Cales, encontra-se totalmente sinalizada em ambos os sentidos.Trajeto atualizado do percurso pedestre ver o MAPA",
+   "en": "Rerouted: the current route runs from Poço da Neve along the Levada do Barreiro to Ribeira das Cales, signposted both ways, with a marked link at the Funchal Ecological Park centre.",
+   "pt": "Percurso alterado: a versão atual vai do Poço da Neve pela Levada do Barreiro até à Ribeira das Cales, sinalizada nos dois sentidos, com ligação sinalizada junto ao Centro de Interpretação do Parque Ecológico do Funchal.",
+   "de": "Umgeleitet: Die aktuelle Route führt vom Poço da Neve entlang der Levada do Barreiro zur Ribeira das Cales, in beide Richtungen beschildert, mit markierter Verbindung am Zentrum des Ökoparks Funchal."
+  }
+ }
+}

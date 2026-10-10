@@ -2138,7 +2138,7 @@
       "profile_breaks": [],
       "roundtrip": false,
       "from": "Ginjas",
-      "to": "Ribeira do u",
+      "to": "Ribeira do Inferno",
       "fee": true,
       "charge": "",
       "marking": "yellow",
@@ -5832,20 +5832,16 @@
       "access": {
         "ends": [
           {
-            "lat": 33.07503,
-            "lon": -16.32034,
-            "elev": 138,
-            "parking": null,
-            "bus": null,
-            "lines": []
+            "lat": 32.73514,
+            "lon": -16.92885,
+            "elev": 1785,
+            "bus": null
           },
           {
-            "lat": 33.08382,
-            "lon": -16.34086,
-            "elev": 130,
-            "parking": null,
-            "bus": null,
-            "lines": []
+            "lat": 32.70134,
+            "lon": -16.90301,
+            "elev": 1134,
+            "bus": null
           }
         ],
         "webcams": [

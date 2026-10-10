@@ -102,7 +102,8 @@
       }
       if (data.st) {
         // Levadas by status, each number a link to that list; under it today's best open ones.
-        var arr = data.st.trails || [], n = function (k) { return arr.filter(function (x) { return x.status === k; }).length; };
+        // Counted from levadas.json, the list the links open, so the numbers match it.
+        var arr = (data.lev && data.lev.levadas) || data.st.trails || [], n = function (k) { return arr.filter(function (x) { return x.status === k; }).length; };
         var lk = function (f, num, en, pt, dot) { return '<a href="/ativa/levada?f=' + f + '"><i class="dot ' + dot + '"></i><b>' + num + '</b> ' + t(en, pt) + '</a>'; };
         h += '<div class="nc wide-cell"><span class="ni" aria-hidden="true">🥾</span><div class="nb"><div class="lbl">Levadas</div><div class="val st3">' + lk('open', n('open'), 'open', 'abertas', 'ok') +
           ' · ' + lk('partial', n('partial'), 'partly', 'parciais', 'warn') + ' · ' + lk('closed', n('closed'), 'closed', 'encerradas', 'bad') + '</div></div></div>';
@@ -288,6 +289,20 @@
       document.title = T.code + ' ' + T.name + ' · Madeira Ativa';
       $('#code').textContent = T.code; $('#name').textContent = T.name;
       $('#status').outerHTML = '<span id="status">' + statusPill(T.status) + '</span>';
+      // What "partly open" means for this trail, from IFCN's notice.
+      if (T.status === 'partial' || T.status === 'closed') Promise.all([MA.get('/ativa/trails_status.json'), MA.get('/ativa/ifcn_notes.json')]).then(function (r) {
+        var cur = ((r[0] || {}).trails || []).find(function (x) { return x.code === T.code && (x.island || 'Madeira') === (T.island || 'Madeira'); });
+        var n = (((r[1] || {}).trails) || {})[T.code];
+        var box = document.getElementById('ifcn'); if (!box || !cur) return;
+        var txt = n && n.src === cur.name ? (n[MA.lang()] || n.en) : (T.status === 'partial' ? cur.name : '');
+        var paint = function () {
+          var t2 = n && n.src === cur.name ? (n[MA.lang()] || n.en) : txt;
+          box.innerHTML = '<b>' + (T.status === 'closed' ? t('Closed by IFCN', 'Encerrado pelo IFCN') : t('Partly open', 'Parcialmente aberto')) + '</b>' + (t2 ? ' — ' + esc(t2) : '') +
+            ' <a href="' + esc((r[0] || {}).source || 'https://ifcn.madeira.gov.pt/') + '" target="_blank" rel="noopener">IFCN ↗</a>';
+          box.hidden = false;
+        };
+        paint(); MA.onLang(paint);
+      });
       $('#route').textContent = T.from && T.to ? (T.from === T.to ? T.from : T.from + ' → ' + T.to) : '';
       $('#facts').innerHTML = [[t('Distance', 'Distância'), (T.distance_km || '—') + ' km'], [t('Time', 'Duração'), dur(o.duration) || '—'],
         [t('Climb', 'Subida'), '↑' + (T.ascent_m || 0) + ' m'], [t('Grade', 'Dificuldade'), diff(T) || '—']]
