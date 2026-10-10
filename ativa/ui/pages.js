@@ -22,9 +22,16 @@
       : s === 'partial' ? '<span class="pill warn">' + t('partly open', 'parcial') + '</span>'
       : '<span class="pill ok">' + t('open', 'aberto') + '</span>';
   }
-  function diff(l) { var o = l.official || {}; return o.difficulty || (window.difficulty ? difficulty(l)[MA.lang()] : ''); }
+  // Objects keyed en/pt from the shared scripts: German falls back to the English.
+  function pick(o) { return o ? (o[MA.lang()] || o.en || '') : ''; }
+  function diff(l) { var o = l.official || {}; return o.difficulty ? MA.t(o.difficulty, o.difficulty) : (window.difficulty ? pick(difficulty(l)) : ''); }
   // Visit Madeira writes durations in English ("5 hours", "6:30 hours").
-  function dur(x) { return x && MA.lang() === 'pt' ? String(x).replace(/\bhours\b/g, 'horas').replace(/\bhour\b/g, 'hora').replace(/\bminutes\b/g, 'minutos') : (x || ''); }
+  function dur(x) {
+    if (!x) return '';
+    if (MA.lang() === 'pt') return String(x).replace(/\bhours\b/g, 'horas').replace(/\bhour\b/g, 'hora').replace(/\bminutes\b/g, 'minutos');
+    if (MA.lang() === 'de') return String(x).replace(/\bhours?\b/g, 'Std.').replace(/\bminutes\b/g, 'Min.');
+    return x;
+  }
   function time(l) { var o = l.official || {}; return dur(o.duration); }
 
   function eventRow(e) {
@@ -67,42 +74,65 @@
     ]).then(function (r) {
       data = { wx: r[0] || [], sea: r[1] && r[1].current, st: r[2], ships: r[3], warn: r[4] || [], ev: r[5], lev: r[6] };
       rerender(paint);
-      if (data.lev && window.rankToday) rankToday(data.lev.levadas).then(function (p) { data.picks = p; paintTrails(); }).catch(paintTrails);
+      if (data.lev && window.rankToday) rankToday(data.lev.levadas).then(function (p) { data.picks = p; paintTrails(); paint(); }).catch(paintTrails);
       else paintTrails();
     });
+    // Temperature on one scale for air and sea: cool blue to hot red.
+    function tcls(v) { return v < 10 ? 't0' : v < 15 ? 't1' : v < 20 ? 't2' : v < 25 ? 't3' : v < 30 ? 't4' : 't5'; }
+    function cell(icon, label, body, cls, href, ext) {
+      var inner = '<span class="ni" aria-hidden="true">' + icon + '</span><div class="nb"><div class="lbl">' + label + (ext ? ' ↗' : '') + '</div>' + body + '</div>';
+      return '<div class="nc' + (cls ? ' ' + cls : '') + '">' + (href ? '<a class="cell-link" href="' + href + '"' + (ext ? ' target="_blank" rel="noopener"' : '') + '>' + inner + '</a>' : inner) + '</div>';
+    }
+    var CAMS = [['Pico do Arieiro', 'https://www.netmadeira.com/webcams-madeira/pico-do-arieiro'], ['Rabaçal', 'https://www.netmadeira.com/webcams-madeira/rabacal-madeira'],
+      ['Achada do Teixeira', 'https://www.netmadeira.com/webcams-madeira/achada-do-teixeira'], ['Monte', 'https://www.netmadeira.com/webcams-madeira/monte']];
     function paint() {
       var c = data.wx[0] && data.wx[0].current, p = data.wx[1] && data.wx[1].current, a = data.wx[2] && data.wx[2].current, h = '';
-      if (c) h += '<div><div class="lbl">Funchal</div><div class="val">' + MA.emo(c.weather_code) + ' ' + Math.round(c.temperature_2m) + '° <small>' + Math.round(c.wind_speed_10m) + ' km/h</small></div></div>';
-      if (p) h += '<div><div class="lbl">Pico do Arieiro</div><div class="val">' + MA.emo(p.weather_code) + ' ' + Math.round(p.temperature_2m) + '° <small>1818 m</small></div></div>';
-      if (data.sea) h += '<div><div class="lbl">' + t('Sea', 'Mar') + '</div><div class="val">' + data.sea.sea_surface_temperature.toFixed(1) + '° <small>' + t('waves', 'ondas') + ' ' + data.sea.wave_height.toFixed(1) + ' m</small></div></div>';
+      if (c) h += cell(MA.emo(c.weather_code), 'Funchal', '<div class="val"><span class="tp ' + tcls(c.temperature_2m) + '">' + Math.round(c.temperature_2m) + '°</span> <small>' + Math.round(c.wind_speed_10m) + ' km/h</small></div>');
+      if (p) h += cell(MA.emo(p.weather_code), 'Pico do Arieiro', '<div class="val"><span class="tp ' + tcls(p.temperature_2m) + '">' + Math.round(p.temperature_2m) + '°</span> <small>1818 m</small></div>');
+      if (data.sea) {
+        var wv = data.sea.wave_height;
+        h += cell('🌊', t('Sea', 'Mar'), '<div class="val"><span class="tp ' + tcls(data.sea.sea_surface_temperature) + '">' + data.sea.sea_surface_temperature.toFixed(1) + '°</span> <small class="' + (wv >= 2.5 ? 'k-bad' : wv >= 1.5 ? 'k-warn' : 'k-ok') + '">' + t('waves', 'ondas') + ' ' + wv.toFixed(1) + ' m</small></div>');
+      }
       if (a && a.wind_gusts_10m != null) {
         var cross = Math.round(a.wind_gusts_10m * Math.abs(Math.sin((a.wind_direction_10m - 50) * Math.PI / 180)));
-        h += '<div><div class="lbl">' + t('Airport', 'Aeroporto') + '</div><div class="val">' +
-          (cross >= 28 ? t('diversions likely', 'desvios prováveis') : cross >= 20 ? t('gusty', 'rajadas') : t('calm', 'calmo')) +
-          ' <small>' + t('crosswind', 'vento cruzado') + ' ' + cross + ' km/h</small></div></div>';
+        var k = cross >= 28 ? 'k-bad' : cross >= 20 ? 'k-warn' : 'k-ok';
+        h += cell('✈️', t('Airport', 'Aeroporto'), '<div class="val ' + k + '">' + (cross >= 28 ? t('diversions likely', 'desvios prováveis') : cross >= 20 ? t('gusty', 'rajadas') : t('calm', 'calmo')) +
+          '</div><small class="sub2">' + t('crosswind', 'vento cruzado') + ' ' + cross + ' km/h</small>', '', 'https://www.flightradar24.com/airport/fnc', true);
       }
       if (data.st) {
-        // Levadas by status, each number a link to that list.
+        // Levadas by status, each number a link to that list; under it today's best open ones.
         var arr = data.st.trails || [], n = function (k) { return arr.filter(function (x) { return x.status === k; }).length; };
-        var lk = function (f, num, en, pt) { return '<a href="/ativa/levada?f=' + f + '"><b>' + num + '</b> ' + t(en, pt) + '</a>'; };
-        h += '<div class="wide-cell"><div class="lbl">Levadas</div><div class="val st3">' + lk('open', n('open'), 'open', 'abertas') +
-          ' <small>· ' + lk('partial', n('partial'), 'partly', 'parciais') + ' · ' + lk('closed', n('closed'), 'closed', 'encerradas') + '</small></div></div>';
+        var lk = function (f, num, en, pt, dot) { return '<a href="/ativa/levada?f=' + f + '"><i class="dot ' + dot + '"></i><b>' + num + '</b> ' + t(en, pt) + '</a>'; };
+        var picks = (data.picks || []).slice(0, 3).map(function (q) {
+          return '<a class="chip" href="' + MA.trailUrl(q.l.code) + '">' + MA.emo(q.code) + ' ' + esc(q.l.code.replace('PR ', '')) + ' ' + esc(q.l.name.replace(/^(Levada|Vereda|Caminho)( d[aoe]s?)? /, '')) + '</a>';
+        }).join('');
+        h += '<div class="nc wide-cell"><span class="ni" aria-hidden="true">🥾</span><div class="nb"><div class="lbl">Levadas</div><div class="val st3">' + lk('open', n('open'), 'open', 'abertas', 'ok') +
+          ' · ' + lk('partial', n('partial'), 'partly', 'parciais', 'warn') + ' · ' + lk('closed', n('closed'), 'closed', 'encerradas', 'bad') + '</div>' +
+          (picks ? '<div class="chips mini">' + picks + '</div>' : '') + '</div></div>';
       }
-      // Live views by the trails and the coast.
-      h += '<div class="wide-cell"><a class="cell-link" href="/ativa/webcams"><div class="lbl">Webcams</div><div class="val">' +
-        t('Live views of the island', 'Vistas em direto da ilha') + ' <small>›</small></div></a></div>';
+      h += '<div class="nc wide-cell"><span class="ni" aria-hidden="true">📷</span><div class="nb"><div class="lbl">Webcams</div><div class="chips mini">' +
+        CAMS.map(function (x) { return '<a class="chip" href="' + x[1] + '" target="_blank" rel="noopener">' + esc(x[0]) + '</a>'; }).join('') +
+        '<a class="chip" href="/ativa/webcams">' + t('All', 'Todas') + ' ›</a></div></div></div>';
       if (data.ships && data.ships.calls) {
-        // Funchal port calls from APRAM: cruise ships berth at Terminal Sul, the
-        // Porto Santo ferry and freight at Norte, cement carriers at Cimenteiro.
-        var kind = function (b) { return /Sul/.test(b) ? t('cruise', 'cruzeiro') : /Cimenteiro/.test(b) ? t('cement carrier', 'cimenteiro') : /Norte/.test(b) ? t('ferry / cargo', 'ferry / carga') : t('at anchor', 'ao largo'); };
+        // Funchal port calls from APRAM. A cruise ship is what changes a day in
+        // Funchal (crowds in town, coaches at Pico do Arieiro and PR 6), so it
+        // leads; ferries and freight follow in small type.
         var tmr = MA.addDays(today, 1), seen = {};
+        var cruise = function (x) { return /Sul/.test(x.berth); };
+        var kind = function (b) { return /Cimenteiro/.test(b) ? t('cement carrier', 'cimenteiro') : /Norte/.test(b) ? t('ferry / cargo', 'ferry / carga') : t('at anchor', 'ao largo'); };
         var calls = data.ships.calls.filter(function (x) { return x.superseded !== true && x.superseded !== 'True' && x.arrival && x.departure; });
         var on = function (day) { return calls.filter(function (x) { return x.arrival.slice(0, 10) <= day && x.departure.slice(0, 10) >= day; }); };
-        var fmt = function (x) { var k = x.ship.toUpperCase(); if (seen[k]) return ''; seen[k] = 1;
-          return '<b>' + esc(x.ship) + '</b> <small>' + kind(x.berth) + (x.arrival.slice(0, 10) === today || x.arrival.slice(0, 10) === tmr ? ' · ' + x.arrival.slice(11, 16) + '–' + (x.departure.slice(0, 10) === x.arrival.slice(0, 10) ? x.departure.slice(11, 16) : MA.day(x.departure.slice(0, 10)).w) : '') + '</small>'; };
-        var A = on(today).map(fmt).filter(Boolean), B = on(tmr).map(fmt).filter(Boolean);
-        if (A.length || B.length) h += '<div class="wide-cell"><a class="cell-link" href="https://apram.pt/movimento-navios?port=ptfnc" target="_blank" rel="noopener"><div class="lbl">' + t('Port of Funchal', 'Porto do Funchal') + ' ↗</div>' +
-          '<div class="val ships">' + (A.length ? '<span>' + t('Today', 'Hoje') + ': ' + A.join(', ') + '</span>' : '') + (B.length ? '<span>' + t('Tomorrow', 'Amanhã') + ': ' + B.join(', ') + '</span>' : '') + '</div></a></div>';
+        var hrs = function (x, day) { return x.arrival.slice(0, 10) === day ? x.arrival.slice(11, 16) + '–' + (x.departure.slice(0, 10) === day ? x.departure.slice(11, 16) : MA.day(x.departure.slice(0, 10)).w) : ''; };
+        var line = function (day, label) {
+          var L = on(day).filter(function (x) { var k2 = day + x.ship.toUpperCase(); if (seen[k2]) return false; seen[k2] = 1; return true; });
+          if (!L.length) return '';
+          var big = L.filter(cruise).map(function (x) { return '<b>' + esc(x.ship) + '</b> <small>' + t('cruise', 'cruzeiro') + ' · ' + hrs(x, day) + '</small>'; });
+          var small = L.filter(function (x) { return !cruise(x); }).map(function (x) { return esc(x.ship) + ' (' + kind(x.berth) + ')'; });
+          return '<div><span class="when">' + label + '</span> ' + (big.length ? big.join(', ') : '<small>' + t('no cruise ship', 'sem navio de cruzeiro') + '</small>') +
+            (small.length ? '<small class="sub2"> · ' + small.join(', ') + '</small>' : '') + '</div>';
+        };
+        var body = line(today, t('Today', 'Hoje')) + line(tmr, t('Tomorrow', 'Amanhã'));
+        if (body) h += '<div class="nc wide-cell"><a class="cell-link" href="https://apram.pt/movimento-navios?port=ptfnc" target="_blank" rel="noopener"><span class="ni" aria-hidden="true">🛳️</span><div class="nb"><div class="lbl">' + t('Port of Funchal', 'Porto do Funchal') + ' ↗</div><div class="ships">' + body + '</div></div></a></div>';
       }
       $('#now').innerHTML = h || '<div class="wide-cell empty">' + t('Live data did not load.', 'Os dados em direto não carregaram.') + '</div>';
       var Z = { MRM: ['mountains', 'montanha'], MCN: ['north coast', 'costa norte'], MCS: ['south coast', 'costa sul'], MPS: ['Porto Santo', 'Porto Santo'] };
@@ -249,8 +279,8 @@
       $('#wx').hidden = !parts.length;
       var w = T && T._warn, api = T && T._api, al = $('#warn');
       if (w && api) {
-        var lv = api.LEVELS[w.level], types = w.types.map(function (x) { var tt = api.TYPES[x]; return tt ? tt[MA.lang()].toLowerCase() : x; }).join(', ');
-        al.textContent = '⚠ ' + t(lv.en + ' IPMA warning', 'Aviso ' + lv.pt.toLowerCase() + ' do IPMA') + ': ' + types + ' — ' + api.ZONES[w.zone][MA.lang()].toLowerCase();
+        var lv = api.LEVELS[w.level], types = w.types.map(function (x) { var tt = api.TYPES[x]; return tt ? pick(tt).toLowerCase() : x; }).join(', ');
+        al.textContent = '⚠ ' + t(lv.en + ' IPMA warning', 'Aviso ' + lv.pt.toLowerCase() + ' do IPMA') + ': ' + types + ' — ' + pick(api.ZONES[w.zone]).toLowerCase();
         al.className = 'alert' + (w.level !== 'yellow' ? ' bad' : ''); al.hidden = false;
       } else al.hidden = true;
     }

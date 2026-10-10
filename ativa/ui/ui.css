@@ -211,3 +211,28 @@ html.app .section-nav{top:0}
 .bn-r .bn-deps{font-size:var(--fs-s)}
 .bn-all{margin-top:18px}.bn-all summary{cursor:pointer;font-weight:600;padding:8px 0}
 html.dark .leaflet-tile{filter:brightness(.8) contrast(1.05)}
+
+/* "The island now": icon cells, four across on desktop, two on phones */
+.nowgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+@media (min-width:761px){.nowgrid{grid-template-columns:repeat(4,minmax(0,1fr))}.nowgrid .wide-cell{grid-column:span 2}.nowgrid .wide-cell:last-child{grid-column:1/-1}}
+.nowgrid .wide-cell{grid-column:1/-1}
+.nc{background:var(--panel);min-width:0}
+.nc>.cell-link,.nc{display:flex;gap:10px;align-items:flex-start}
+.nc{padding:10px var(--s3)}
+.nc>.cell-link{flex:1;min-width:0}
+.ni{font-size:22px;line-height:1.2;flex:none;width:28px;text-align:center}
+.nb{min-width:0;flex:1}
+.tp{display:inline-block;padding:0 7px;border-radius:7px;font-weight:700}
+.t0{background:#DCE9FB;color:#1C4E8C}.t1{background:#D7F0EE;color:#0E5C57}.t2{background:#E1F3E4;color:#1E6B34}
+.t3{background:#FFF2C9;color:#7A5300}.t4{background:#FFE0C2;color:#8A3B00}.t5{background:#FBD5D0;color:#8E1F14}
+html.dark .t0{background:#1D3350;color:#B9D3F5}html.dark .t1{background:#163C3A;color:#A9E2DC}html.dark .t2{background:#1C3A24;color:#B4E3BE}
+html.dark .t3{background:#3D3417;color:#F4DB8A}html.dark .t4{background:#45291A;color:#F8C192}html.dark .t5{background:#4A1F1B;color:#F6B3AA}
+.k-ok{color:var(--ok)}.k-warn{color:var(--warn)}.k-bad{color:var(--bad)}
+.sub2{color:var(--soft);font-size:var(--fs-s);font-weight:400}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;vertical-align:1px}
+.dot.ok{background:var(--ok)}.dot.warn{background:var(--warn)}.dot.bad{background:var(--bad)}
+.chips.mini{margin:6px 0 0;gap:6px}.chips.mini .chip{font-size:var(--fs-s);padding:4px 10px}
+.ships{display:flex;flex-direction:column;gap:3px;font-size:var(--fs)}
+.ships .when{color:var(--soft);font-size:var(--fs-s);display:inline-block;min-width:64px}
+.chips.mini{flex-wrap:wrap;overflow:visible}
+.nb .val{overflow-wrap:anywhere;hyphens:auto}
