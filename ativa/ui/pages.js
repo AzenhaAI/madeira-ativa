@@ -269,7 +269,8 @@
       var L = (j && j.levadas) || [];
       T = L.find(function (x) { return x.code === code && (ps ? x.island === 'Porto Santo' : x.island !== 'Porto Santo'); }) || L.find(function (x) { return x.code === code; });
       if (!T) { $('#name').textContent = t('Trail not found', 'Percurso não encontrado'); return; }
-      T._near = L.filter(function (o) { return o !== T && o.center && T.center; }).map(function (o) {
+      // Next to a closed or partly open trail, only open ones are an alternative.
+      T._near = L.filter(function (o) { return o !== T && o.center && T.center && (T.status === 'open' || o.status === 'open'); }).map(function (o) {
         var dx = (o.center[0] - T.center[0]) * 111, dy = (o.center[1] - T.center[1]) * 94; return [o, Math.sqrt(dx * dx + dy * dy)];
       }).sort(function (a, b) { return a[1] - b[1]; }).slice(0, 4);
       rerender(paint);
@@ -307,7 +308,8 @@
         var paint = function () {
           var t2 = n && n.src === cur.name ? (n[MA.lang()] || n.en) : txt;
           box.innerHTML = '<b>' + (T.status === 'closed' ? t('Closed by IFCN', 'Encerrado pelo IFCN') : t('Partly open', 'Parcialmente aberto')) + '</b>' + (t2 ? ' — ' + esc(t2) : '') +
-            ' <a href="' + esc((r[0] || {}).source || 'https://ifcn.madeira.gov.pt/') + '" target="_blank" rel="noopener">IFCN ↗</a>';
+            ' <a href="' + esc((r[0] || {}).source || 'https://ifcn.madeira.gov.pt/') + '" target="_blank" rel="noopener">IFCN ↗</a>' +
+            ' · <a href="#near">' + t('Open trails nearby', 'Percursos abertos perto') + ' ↓</a>';
           box.hidden = false;
         };
         paint(); MA.onLang(paint);
