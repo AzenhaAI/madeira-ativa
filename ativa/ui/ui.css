@@ -188,3 +188,22 @@ body.full .wrap{max-width:none;padding-bottom:0}
 html.app{--bar:0px}
 html.app .hd,html.app .bar,html.app .stores,html.app .foot,html.app .drawer,html.app .scrim,html.app .maptabs{display:none!important}
 html.app .section-nav{top:0}
+
+/* bus network */
+.busmap{height:clamp(300px,52vw,520px);border-radius:var(--r);border:1px solid var(--line);margin:8px 0 6px;background:var(--sunk);z-index:0}
+.bn-hint{font-size:var(--fs-xs)!important}
+.bl{display:inline-block;min-width:24px;padding:1px 6px;border-radius:6px;color:#fff;font-weight:700;font-size:12px;text-align:center;text-shadow:0 0 2px rgba(0,0,0,.35)}
+.bn-pop{font:13px/1.45 Inter,system-ui,sans-serif;min-width:200px}
+.bn-pop a{color:#0F6E56}
+.bn-op{color:var(--soft);font-size:var(--fs-s);margin:2px 0}
+.bn-lines{margin:4px 0;display:flex;flex-wrap:wrap;gap:3px}
+.bn-deps{margin-top:6px;display:flex;flex-direction:column;gap:2px}
+.bn-empty{color:#777;font-size:12px;margin-top:4px}
+.bn-links{margin-top:6px;display:flex;flex-wrap:wrap;gap:6px}
+.bn-form{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.bn-form .input{flex:1 1 140px;min-width:0}
+.bn-arrow{color:var(--soft)}
+.bn-r{margin:8px 0;display:flex;flex-direction:column;gap:4px}
+.bn-r .bn-deps{font-size:var(--fs-s)}
+.bn-all{margin-top:18px}.bn-all summary{cursor:pointer;font-weight:600;padding:8px 0}
+html.dark .leaflet-tile{filter:brightness(.8) contrast(1.05)}
