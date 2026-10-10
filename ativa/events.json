@@ -2598,6 +2598,14 @@
       "event_type": "road_run"
     },
     {
+      "mode": "cycling",
+      "name": "Rat Race Madeira Coast to Coast (bike/foot/kayak)",
+      "date": "2027-05-06",
+      "location": "Madeira",
+      "url": "https://www.ratrace.com/madeira",
+      "event_type": "cycling"
+    },
+    {
       "mode": "road",
       "name": "Zona Militar da Madeira (5 km)",
       "date": "2027-05-07",
