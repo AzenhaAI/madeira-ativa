@@ -24,7 +24,8 @@
   }
   // Objects keyed en/pt from the shared scripts: German falls back to the English.
   function pick(o) { return o ? (o[MA.lang()] || o.en || '') : ''; }
-  function diff(l) { var o = l.official || {}; return o.difficulty ? MA.t(o.difficulty, o.difficulty) : (window.difficulty ? pick(difficulty(l)) : ''); }
+  function diff(l) { var o = l.official || {}; return o.difficulty ? MA.t(o.difficulty, DIFF_PT[o.difficulty] || o.difficulty) : (window.difficulty ? pick(difficulty(l)) : ''); }
+  var DIFF_PT = { 'Easy': 'Fácil', 'Moderate': 'Moderado', 'Difficult': 'Difícil', 'Very difficult': 'Muito difícil' };
   // Visit Madeira writes durations in English ("5 hours", "6:30 hours").
   function dur(x) {
     if (!x) return '';
@@ -118,7 +119,7 @@
         var kind = function (b) { return /Cimenteiro/.test(b) ? t('cement carrier', 'cimenteiro') : /Norte/.test(b) ? t('ferry / cargo', 'ferry / carga') : t('at anchor', 'ao largo'); };
         var calls = data.ships.calls.filter(function (x) { return x.superseded !== true && x.superseded !== 'True' && x.arrival && x.departure; });
         var on = function (day) { return calls.filter(function (x) { return x.arrival.slice(0, 10) <= day && x.departure.slice(0, 10) >= day; }); };
-        var hrs = function (x, day) { return x.arrival.slice(0, 10) === day ? x.arrival.slice(11, 16) + '–' + (x.departure.slice(0, 10) === day ? x.departure.slice(11, 16) : MA.day(x.departure.slice(0, 10)).w) : ''; };
+        var hrs = function (x, day) { return x.arrival.slice(0, 10) === day ? x.arrival.slice(11, 16) + '–' + (x.departure.slice(0, 10) === day ? x.departure.slice(11, 16) : MA.day(x.departure.slice(0, 10)).w + ' ' + x.departure.slice(11, 16)) : ''; };
         var line = function (day, label) {
           // One line per ship; a ship staying over shows on its first day only.
           return on(day).filter(function (x) { var k2 = x.ship.toUpperCase(); if (seen[k2]) return false; seen[k2] = 1; return true; })
