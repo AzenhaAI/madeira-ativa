@@ -159,6 +159,8 @@ p{margin:0 0 var(--s3)}
 .store svg{width:26px;height:26px;flex:0 0 auto}
 .store small{display:block;font-size:10.5px;font-weight:500;opacity:.8}
 html.dark .store{background:#000;border:1px solid #333}
+/* A phone sees only its own store; a computer sees both. */
+html.ios .store-android,html.android .store-ios{display:none}
 
 .foot{margin-top:var(--s3);padding-top:var(--s4);border-top:1px solid var(--line);color:var(--soft);font-size:var(--fs-xs);display:flex;flex-wrap:wrap;gap:6px 14px}
 .foot a{color:var(--soft);padding:8px 0}

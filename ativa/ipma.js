@@ -25,28 +25,28 @@
   var AHEAD_MS = 24 * 60 * 60 * 1000;
 
   var ZONES = {
-    MRM: { en: 'Mountains', pt: 'Regiões montanhosas' },
-    MCN: { en: 'North coast', pt: 'Costa Norte' },
-    MCS: { en: 'South coast', pt: 'Costa Sul' },
-    MPS: { en: 'Porto Santo', pt: 'Porto Santo' },
+    MRM: { en: 'Mountains', pt: 'Regiões montanhosas', de: 'Berge' },
+    MCN: { en: 'North coast', pt: 'Costa Norte', de: 'Nordküste' },
+    MCS: { en: 'South coast', pt: 'Costa Sul', de: 'Südküste' },
+    MPS: { en: 'Porto Santo', pt: 'Porto Santo', de: 'Porto Santo' },
   };
   var ORDER = ['MRM', 'MCN', 'MCS', 'MPS'];
 
   var TYPES = {
-    'Trovoada': { en: 'Thunderstorm', pt: 'Trovoada', icon: '⛈' },
-    'Precipitação': { en: 'Heavy rain', pt: 'Precipitação', icon: '🌧' },
-    'Vento': { en: 'Wind', pt: 'Vento', icon: '💨' },
-    'Agitação Marítima': { en: 'Rough sea', pt: 'Agitação marítima', icon: '🌊' },
-    'Nevoeiro': { en: 'Fog', pt: 'Nevoeiro', icon: '🌫' },
-    'Tempo Quente': { en: 'Heat', pt: 'Tempo quente', icon: '🌡' },
-    'Tempo Frio': { en: 'Cold', pt: 'Tempo frio', icon: '🥶' },
-    'Neve': { en: 'Snow', pt: 'Neve', icon: '❄️' },
+    'Trovoada': { en: 'Thunderstorm', pt: 'Trovoada', de: 'Gewitter', icon: '⛈' },
+    'Precipitação': { en: 'Heavy rain', pt: 'Precipitação', de: 'Starkregen', icon: '🌧' },
+    'Vento': { en: 'Wind', pt: 'Vento', de: 'Wind', icon: '💨' },
+    'Agitação Marítima': { en: 'Rough sea', pt: 'Agitação marítima', de: 'Hoher Seegang', icon: '🌊' },
+    'Nevoeiro': { en: 'Fog', pt: 'Nevoeiro', de: 'Nebel', icon: '🌫' },
+    'Tempo Quente': { en: 'Heat', pt: 'Tempo quente', de: 'Hitze', icon: '🌡' },
+    'Tempo Frio': { en: 'Cold', pt: 'Tempo frio', de: 'Kälte', icon: '🥶' },
+    'Neve': { en: 'Snow', pt: 'Neve', de: 'Schnee', icon: '❄️' },
   };
 
   var LEVELS = {
-    red: { rank: 0, en: 'Red', pt: 'Vermelho', colour: '#d63a2e' },
-    orange: { rank: 1, en: 'Orange', pt: 'Laranja', colour: '#e8741c' },
-    yellow: { rank: 2, en: 'Yellow', pt: 'Amarelo', colour: '#d9a400' },
+    red: { rank: 0, en: 'Red', pt: 'Vermelho', de: 'Rot', colour: '#d63a2e' },
+    orange: { rank: 1, en: 'Orange', pt: 'Laranja', de: 'Orange', colour: '#e8741c' },
+    yellow: { rank: 2, en: 'Yellow', pt: 'Amarelo', de: 'Gelb', colour: '#d9a400' },
   };
 
   var DAYS = {

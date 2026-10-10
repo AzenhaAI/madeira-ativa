@@ -16,6 +16,9 @@
 (function () {
   var data = { levadas: null, events: null };
   var lang = 'en';
+  // German rides on the English: lang stays en/pt for the data, de picks the
+  // German word wherever a table has one.
+  var de = false;
 
   var T = {
     thinking:  { en: 'Looking it up…', pt: 'A procurar…', de: 'Suche…' },
@@ -24,67 +27,70 @@
                  pt: 'As respostas da IA podem ter erros — a fonte são os factos em baixo.',
                  de: 'KI-Antworten können falsch sein — die Fakten unten sind die Quelle.' },
     noAnswer:  { en: 'I can answer about a trail (by name or PR code), where to go today, the weather and what’s on. Try one of the examples above.',
-                 pt: 'Posso responder sobre um percurso (pelo nome ou código PR), onde ir hoje, o tempo e o que se passa. Experimente um dos exemplos acima.' },
+                 pt: 'Posso responder sobre um percurso (pelo nome ou código PR), onde ir hoje, o tempo e o que se passa. Experimente um dos exemplos acima.' , de: 'Ich kann zu einem Weg (Name oder PR-Code), zum Ziel für heute, zum Wetter und zu Events antworten. Probier eines der Beispiele oben.' },
     failed:    { en: 'One of the live sources did not answer. Try again in a moment.',
                  pt: 'Uma das fontes em direto não respondeu. Tente de novo daqui a pouco.',
                  de: 'Eine der Live-Quellen hat nicht geantwortet. Versuch es gleich noch einmal.' },
-    open:      { en: 'is open', pt: 'está aberto' },
-    partial:   { en: 'is partly open', pt: 'está parcialmente aberto' },
-    closed:    { en: 'is closed', pt: 'está encerrado' },
-    statusSrc: { en: 'IFCN, updated', pt: 'IFCN, atualizado a' },
-    walk:      { en: 'Walk', pt: 'Percurso' },
-    stOpen:    { en: 'Open', pt: 'Aberto' },
-    stPartial: { en: 'Partly open', pt: 'Parcialmente aberto' },
-    stClosed:  { en: 'Closed', pt: 'Encerrado' },
-    carParksBoth: { en: 'car parks at both ends', pt: 'parques nos dois extremos' },
-    and:       { en: 'and', pt: 'e' },
-    away:      { en: 'away', pt: 'de distância' },
-    oneWay:    { en: 'one way', pt: 'só ida' },
-    loop:      { en: 'loop', pt: 'circular' },
-    climb:     { en: 'climb', pt: 'subida' },
-    nowAt:     { en: 'Now on the trail', pt: 'Agora no percurso' },
-    rainToday: { en: 'chance of rain 9:00–17:00', pt: 'probabilidade de chuva 9:00–17:00' },
-    wind:      { en: 'wind', pt: 'vento' },
-    noWarn:    { en: 'No IPMA warning for its zone.', pt: 'Sem aviso do IPMA para a sua zona.' },
-    getThere:  { en: 'Getting there', pt: 'Como chegar' },
-    carPark:   { en: 'car park', pt: 'parque' },
-    atUpper:   { en: 'at the upper end', pt: 'no extremo superior' },
-    atLower:   { en: 'at the lower end', pt: 'no extremo inferior' },
-    atOneEnd:  { en: 'at one end', pt: 'num extremo' },
-    atStart:   { en: 'at the start', pt: 'no início' },
-    bus:       { en: 'bus', pt: 'autocarro' },
-    buses:     { en: 'buses', pt: 'autocarros' },
-    noBus:     { en: 'no bus route mapped near either end', pt: 'sem linha de autocarro mapeada perto dos extremos' },
-    trailPage: { en: 'Full trail page', pt: 'Página do percurso' },
-    nextBus:   { en: 'Next bus', pt: 'Próximo autocarro' },
-    onPath:    { en: 'On the path', pt: 'No trilho' },
-    pathSrc:   { en: 'OpenStreetMap; route mapped on', pt: 'OpenStreetMap; percurso mapeado em' },
-    webcam:    { en: 'Live webcam', pt: 'Webcam em direto' },
-    todayHead: { en: 'Best bets for today', pt: 'Melhores opções para hoje' },
+    open:      { en: 'is open', pt: 'está aberto' , de: 'ist geöffnet' },
+    partial:   { en: 'is partly open', pt: 'está parcialmente aberto' , de: 'ist teilweise geöffnet' },
+    closed:    { en: 'is closed', pt: 'está encerrado' , de: 'ist gesperrt' },
+    statusSrc: { en: 'IFCN, updated', pt: 'IFCN, atualizado a' , de: 'IFCN, aktualisiert' },
+    walk:      { en: 'Walk', pt: 'Percurso' , de: 'Strecke' },
+    stOpen:    { en: 'Open', pt: 'Aberto' , de: 'Geöffnet' },
+    stPartial: { en: 'Partly open', pt: 'Parcialmente aberto' , de: 'Teilweise geöffnet' },
+    stClosed:  { en: 'Closed', pt: 'Encerrado' , de: 'Gesperrt' },
+    carParksBoth: { en: 'car parks at both ends', pt: 'parques nos dois extremos' , de: 'Parkplätze an beiden Enden' },
+    and:       { en: 'and', pt: 'e' , de: 'und' },
+    away:      { en: 'away', pt: 'de distância' , de: 'entfernt' },
+    oneWay:    { en: 'one way', pt: 'só ida' , de: 'Streckenwanderung' },
+    loop:      { en: 'loop', pt: 'circular' , de: 'Rundweg' },
+    climb:     { en: 'climb', pt: 'subida' , de: 'Aufstieg' },
+    nowAt:     { en: 'Now on the trail', pt: 'Agora no percurso' , de: 'Jetzt am Weg' },
+    rainToday: { en: 'chance of rain 9:00–17:00', pt: 'probabilidade de chuva 9:00–17:00' , de: 'Regenrisiko 9:00–17:00' },
+    wind:      { en: 'wind', pt: 'vento' , de: 'Wind' },
+    noWarn:    { en: 'No IPMA warning for its zone.', pt: 'Sem aviso do IPMA para a sua zona.' , de: 'Keine IPMA-Warnung für die Zone.' },
+    getThere:  { en: 'Getting there', pt: 'Como chegar' , de: 'Anfahrt' },
+    carPark:   { en: 'car park', pt: 'parque' , de: 'Parkplatz' },
+    atUpper:   { en: 'at the upper end', pt: 'no extremo superior' , de: 'am oberen Ende' },
+    atLower:   { en: 'at the lower end', pt: 'no extremo inferior' , de: 'am unteren Ende' },
+    atOneEnd:  { en: 'at one end', pt: 'num extremo' , de: 'an einem Ende' },
+    atStart:   { en: 'at the start', pt: 'no início' , de: 'am Start' },
+    bus:       { en: 'bus', pt: 'autocarro' , de: 'Bus' },
+    buses:     { en: 'buses', pt: 'autocarros' , de: 'Busse' },
+    noBus:     { en: 'no bus route mapped near either end', pt: 'sem linha de autocarro mapeada perto dos extremos' , de: 'keine Buslinie in der Nähe der Enden kartiert' },
+    trailPage: { en: 'Full trail page', pt: 'Página do percurso' , de: 'Ganze Wegseite' },
+    nextBus:   { en: 'Next bus', pt: 'Próximo autocarro' , de: 'Nächster Bus' },
+    onPath:    { en: 'On the path', pt: 'No trilho' , de: 'Auf dem Weg' },
+    pathSrc:   { en: 'OpenStreetMap; route mapped on', pt: 'OpenStreetMap; percurso mapeado em' , de: 'OpenStreetMap; kartiert auf' },
+    webcam:    { en: 'Live webcam', pt: 'Webcam em direto' , de: 'Live-Webcam' },
+    todayHead: { en: 'Best bets for today', pt: 'Melhores opções para hoje' , de: 'Die besten Optionen für heute' },
     todayWarn: { en: 'Every Madeira zone has a warning today — these are the least affected.',
-                 pt: 'Todas as zonas da Madeira têm aviso hoje — estes são os menos afetados.' },
-    moreToday: { en: 'Full ranking on the Levadas page', pt: 'Lista completa na página das Levadas' },
-    weatherHd: { en: 'Weather now', pt: 'Tempo agora' },
-    coast:     { en: 'Funchal', pt: 'Funchal' },
-    summit:    { en: 'Pico do Arieiro', pt: 'Pico do Arieiro' },
-    sea:       { en: 'sea', pt: 'mar' },
-    waves:     { en: 'waves', pt: 'ondas' },
-    warnings:  { en: 'IPMA warnings', pt: 'Avisos IPMA' },
+                 pt: 'Todas as zonas da Madeira têm aviso hoje — estes são os menos afetados.' , de: 'Für jede Zone Madeiras gilt heute eine Warnung — diese sind am wenigsten betroffen.' },
+    moreToday: { en: 'Full ranking on the Levadas page', pt: 'Lista completa na página das Levadas' , de: 'Ganze Rangliste auf der Levadas-Seite' },
+    weatherHd: { en: 'Weather now', pt: 'Tempo agora' , de: 'Wetter jetzt' },
+    coast:     { en: 'Funchal', pt: 'Funchal' , de: 'Funchal' },
+    summit:    { en: 'Pico do Arieiro', pt: 'Pico do Arieiro' , de: 'Pico do Arieiro' },
+    sea:       { en: 'sea', pt: 'mar' , de: 'Meer' },
+    waves:     { en: 'waves', pt: 'ondas' , de: 'Wellen' },
+    warnings:  { en: 'IPMA warnings', pt: 'Avisos IPMA' , de: 'IPMA-Warnungen' },
     noWarnAll: { en: 'No yellow, orange or red IPMA warning for Madeira right now.',
-                 pt: 'Sem avisos amarelos, laranja ou vermelhos do IPMA para a Madeira neste momento.' },
-    eventsHd:  { en: 'What’s on', pt: 'O que se passa' },
-    noEvents:  { en: 'Nothing in the calendar for that period.', pt: 'Nada no calendário para esse período.' },
-    allEvents: { en: 'Full calendar', pt: 'Calendário completo' },
-    today:     { en: 'today', pt: 'hoje' },
-    tomorrow:  { en: 'tomorrow', pt: 'amanhã' },
-    weekend:   { en: 'this weekend', pt: 'este fim de semana' },
-    week:      { en: 'in the next 7 days', pt: 'nos próximos 7 dias' },
-    moreEv:    { en: 'more', pt: 'mais' },
+                 pt: 'Sem avisos amarelos, laranja ou vermelhos do IPMA para a Madeira neste momento.' , de: 'Derzeit keine gelbe, orange oder rote IPMA-Warnung für Madeira.' },
+    eventsHd:  { en: 'What’s on', pt: 'O que se passa' , de: 'Was los ist' },
+    noEvents:  { en: 'Nothing in the calendar for that period.', pt: 'Nada no calendário para esse período.' , de: 'Für diesen Zeitraum steht nichts im Kalender.' },
+    allEvents: { en: 'Full calendar', pt: 'Calendário completo' , de: 'Ganzer Kalender' },
+    today:     { en: 'today', pt: 'hoje' , de: 'heute' },
+    tomorrow:  { en: 'tomorrow', pt: 'amanhã' , de: 'morgen' },
+    weekend:   { en: 'this weekend', pt: 'este fim de semana' , de: 'an diesem Wochenende' },
+    week:      { en: 'in the next 7 days', pt: 'nos próximos 7 dias' , de: 'in den nächsten 7 Tagen' },
+    moreEv:    { en: 'more', pt: 'mais' , de: 'weitere' },
+    placeholder: { en: 'Vereda do Areeiro, where to go today, weather…', pt: 'Vereda do Areeiro, onde ir hoje, tempo…', de: 'Vereda do Areeiro, wohin heute, Wetter…' },
   };
-  var DAYS = { en: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'], pt: ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb'] };
+  var DAYS = { en: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'], pt: ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb'],
+               de: ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'] };
 
-  // German UI words where the table has them; the facts themselves are EN/PT.
-  function t(k) { var o = T[k] || {}; return (document.documentElement.lang === 'de' && o.de) || o[lang] || k; }
+  function L(o) { return (de && o.de) || o[lang]; }
+  function tri(en, pt, dd) { return de ? dd : lang === 'pt' ? pt : en; }
+  function t(k) { return L(T[k] || {}) || k; }
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function norm(s) { return String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); }
   // Same rule as scripts/gen_trail_pages.py, so the link lands on a real page.
@@ -95,7 +101,7 @@
     return new Intl.DateTimeFormat('sv-SE', { timeZone: 'Atlantic/Madeira', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
   }
   function addDays(iso, n) { var d = new Date(iso + 'T00:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); }
-  function dayLabel(iso) { var d = new Date(iso + 'T00:00:00Z'); return DAYS[lang][d.getUTCDay()] + ' ' + d.getUTCDate(); }
+  function dayLabel(iso) { var d = new Date(iso + 'T00:00:00Z'); return DAYS[de ? 'de' : lang][d.getUTCDay()] + ' ' + d.getUTCDate(); }
   function emo(c) { return c >= 95 ? '⛈' : c >= 80 ? '🌧' : c >= 61 ? '🌧' : c >= 51 ? '🌦' : c >= 45 ? '🌫' : c === 3 ? '☁️' : c >= 1 ? '🌤' : '☀️'; }
 
   function load(name, url) {
@@ -109,11 +115,11 @@
 
   // ------------------------------------------------------------ recognising
   var WORDS = {
-    today:   ['today', 'hoje', 'where to go', 'onde ir', 'recommend', 'suggest', 'sugere', 'sugest', 'сегодня', 'куда'],
-    weather: ['weather', 'tempo', 'meteo', 'rain', 'chuva', 'wind', 'vento', 'temperature', 'temperatura', 'sea', ' mar', 'waves', 'ondas', 'warning', 'aviso', 'storm', 'trovoada', 'погода', 'дожд'],
+    today:   ['today', 'hoje', 'where to go', 'onde ir', 'recommend', 'suggest', 'sugere', 'sugest', 'heute', 'wohin', 'empfehl', 'сегодня', 'куда'],
+    weather: ['weather', 'tempo', 'meteo', 'rain', 'chuva', 'wind', 'vento', 'temperature', 'temperatura', 'sea', ' mar', 'waves', 'ondas', 'warning', 'aviso', 'storm', 'trovoada', 'wetter', 'regen', 'temperatur', 'meer', 'wellen', 'warnung', 'gewitter', 'погода', 'дожд'],
     events:  ['event', 'what\'s on', 'whats on', 'race', 'prova', 'corrida', 'festa', 'festival', 'concert', 'concerto',
-              'weekend', 'fim de semana', 'this week', 'esta semana', 'agenda', 'событи', 'выходн'],
-    getThere:['bus', 'autocarro', 'get there', 'chegar', 'parking', 'car park', 'estacionamento', 'автобус', 'добрат'],
+              'weekend', 'fim de semana', 'this week', 'esta semana', 'agenda', 'veranstaltung', 'rennen', 'konzert', 'wochenende', 'diese woche', 'событи', 'выходн'],
+    getThere:['bus', 'autocarro', 'get there', 'chegar', 'parking', 'car park', 'estacionamento', 'anfahrt', 'parkplatz', 'автобус', 'добрат'],
   };
   function has(q, list) { return list.some(function (w) { return q.indexOf(w) >= 0; }); }
 
@@ -123,7 +129,8 @@
               // three-letter words: only these reach the matcher and would
               // otherwise hit "dos"/"das" in half the names.
               'das', 'dos', 'del', 'que', 'uma', 'com', 'qual', 'how', 'can', 'you', 'for', 'are', 'any', 'best', 'most',
-              'top', 'one', 'who', 'why', 'get', 'see', 'day', 'not', 'has', 'was', 'our', 'mais', 'pra'];
+              'top', 'one', 'who', 'why', 'get', 'see', 'day', 'not', 'has', 'was', 'our', 'mais', 'pra',
+              'heute', 'wohin', 'wetter', 'nach', 'und', 'der', 'die', 'zum', 'zur', 'wie', 'ist', 'weg', 'gibt'];
 
   function findTrail(q) {
     var list = data.levadas.levadas;
@@ -175,18 +182,18 @@
         var hp = (w.hourly && w.hourly.precipitation_probability) || [];
         var day = hp.slice(9, 18).filter(function (x) { return x != null; });
         rain = day.length ? Math.max.apply(null, day) : null;
-        s.push(Math.round(w.current.temperature_2m) + '° ' + (lang === 'pt' ? 'no percurso agora' : 'on the trail now') +
-          (rain != null ? ', ' + rain + '% ' + (lang === 'pt' ? 'de chuva máx. hoje' : 'max chance of rain today') : '') + '.');
+        s.push(Math.round(w.current.temperature_2m) + '° ' + tri('on the trail now', 'no percurso agora', 'jetzt am Weg') +
+          (rain != null ? ', ' + rain + '% ' + tri('max chance of rain today', 'de chuva máx. hoje', 'max. Regenrisiko heute') : '') + '.');
       }
-      s.push((time ? time + ', ' : '') + df[lang].toLowerCase() + ', ' + (l.distance_km || '?') + ' km.');
+      s.push((time ? time + ', ' : '') + L(df).toLowerCase() + ', ' + (l.distance_km || '?') + ' km.');
       var reach = reachSentence(ends);
       if (reach) s.push(reach);
 
       var html = '<p class="a-sum">' + s.join(' ') + '</p><dl class="a-facts">';
       var badge = l.status === 'closed' ? t('stClosed') : l.status === 'partial' ? t('stPartial') : t('stOpen');
-      html += '<dt>' + (lang === 'pt' ? 'Estado' : 'Status') + '</dt><dd><span class="a-badge ' + esc(l.status) + '">' + badge + '</span></dd>';
+      html += '<dt>' + tri('Status', 'Estado', 'Status') + '</dt><dd><span class="a-badge ' + esc(l.status) + '">' + badge + '</span></dd>';
       html += '<dt>' + t('walk') + '</dt><dd>' + (l.distance_km || '?') + ' km · ↑' + (l.ascent_m || 0) + ' m ' + t('climb') +
-        (time ? ' · ⏱ ' + time : '') + ' · ' + df[lang] + ' · ' + (l.roundtrip ? t('loop') : t('oneWay')) + '</dd>';
+        (time ? ' · ⏱ ' + time : '') + ' · ' + L(df) + ' · ' + (l.roundtrip ? t('loop') : t('oneWay')) + '</dd>';
       if (w && w.current) {
         html += '<dt>' + t('nowAt') + '</dt><dd>' + emo(w.current.weather_code) + ' ' + Math.round(w.current.temperature_2m) + '° · ' +
           Math.round(w.current.wind_speed_10m) + ' km/h ' + t('wind') + (rain != null ? ' · ' + rain + '% ' + t('rainToday') : '') + '</dd>';
@@ -201,7 +208,7 @@
         }).join(' · ') + ' (' + esc(e.bus.stop.replace(/\s*\([^)]*\)\s*$/, '')) + ')</dd>';
       });
       // Railings, narrow ledges, tunnels — the question a tester asked first.
-      var pf = pathFacts(l.exposure, lang);
+      var pf = pathFacts(l.exposure, de ? 'de' : lang);
       if (pf.length) html += '<dt>' + t('onPath') + '</dt><dd>' + pf.map(esc).join('; ') + '. <span class="a-soft">(' +
         t('pathSrc') + ' ' + l.exposure.mapped_pct + '%)</span></dd>';
       ((l.access && l.access.webcams) || []).forEach(function (c) {
@@ -215,17 +222,18 @@
   function warnSentence(warn) {
     var api = window.AtivaIPMA; if (!api) return '';
     var lv = api.LEVELS[warn.level];
-    var types = warn.types.map(function (x) { var tt = api.TYPES[x]; return tt ? tt[lang].toLowerCase() : x.toLowerCase(); }).join(', ');
-    var zone = api.ZONES[warn.zone][lang].toLowerCase();
+    var types = warn.types.map(function (x) { var tt = api.TYPES[x]; return tt ? L(tt).toLowerCase() : x.toLowerCase(); }).join(', ');
+    var zone = L(api.ZONES[warn.zone]).toLowerCase();
     return '<span style="color:' + lv.colour + ';font-weight:700">⚠ ' +
-      (lang === 'pt' ? 'Aviso ' + lv.pt.toLowerCase() + ' do IPMA' : lv.en + ' IPMA warning') + ': ' + esc(types) + ' — ' + esc(zone) + '.</span>';
+      tri(lv.en + ' IPMA warning', 'Aviso ' + lv.pt.toLowerCase() + ' do IPMA', 'IPMA-Warnstufe ' + lv.de) + ': ' + esc(types) + ' — ' + esc(zone) + '.</span>';
   }
 
   // "car park 83 m from the lower end" / "parque a 83 m do extremo inferior".
   function parkAt(dist, end) {
     var en = { upper: 'the upper end', lower: 'the lower end', one: 'one end', start: 'the start' };
     var pt = { upper: 'do extremo superior', lower: 'do extremo inferior', one: 'de um dos extremos', start: 'do início' };
-    return lang === 'pt' ? 'parque a ' + dist + ' m ' + pt[end] : 'car park ' + dist + ' m from ' + en[end];
+    var dd = { upper: 'vom oberen Ende', lower: 'vom unteren Ende', one: 'von einem Ende', start: 'vom Start' };
+    return tri('car park ' + dist + ' m from ' + en[end], 'parque a ' + dist + ' m ' + pt[end], 'Parkplatz ' + dist + ' m ' + dd[end]);
   }
 
   function reachSentence(ends) {
@@ -271,14 +279,14 @@
       var allWarned = picks.every(function (p) { return p.warn && p.warn.severe; });
       var sum = picks.map(function (p) {
         return esc(p.l.code + ' ' + p.l.name) + ' (' + Math.round(p.temp) + '°, ' + p.rain + '% ' +
-          (lang === 'pt' ? 'chuva' : 'rain') + (walkTime(p.l) ? ', ' + walkTime(p.l) : '') + ')';
+          tri('rain', 'chuva', 'Regen') + (walkTime(p.l) ? ', ' + walkTime(p.l) : '') + ')';
       });
-      var html = '<p class="a-sum">' + (lang === 'pt' ? 'Hoje: ' : 'Today: ') + sum.join('; ') + '.' +
+      var html = '<p class="a-sum">' + tri('Today: ', 'Hoje: ', 'Heute: ') + sum.join('; ') + '.' +
         (allWarned ? ' ' + t('todayWarn') : '') + '</p><ol class="a-list">';
       picks.forEach(function (p) {
         html += '<li><a href="/ativa/trail/' + slugify(p.l.code + ' ' + p.l.name) + '"><b>' + esc(p.l.code) + '</b> ' + esc(p.l.name) + '</a>' +
-          '<span>' + emo(p.code) + ' ' + Math.round(p.temp) + '° · ' + p.rain + '% ' + (lang === 'pt' ? 'chuva' : 'rain') + ' · ' +
-          Math.round(p.wind) + ' km/h · ' + difficulty(p.l)[lang] + (walkTime(p.l) ? ' · ⏱ ' + walkTime(p.l) : '') + '</span>' +
+          '<span>' + emo(p.code) + ' ' + Math.round(p.temp) + '° · ' + p.rain + '% ' + tri('rain', 'chuva', 'Regen') + ' · ' +
+          Math.round(p.wind) + ' km/h · ' + L(difficulty(p.l)) + (walkTime(p.l) ? ' · ⏱ ' + walkTime(p.l) : '') + '</span>' +
           (p.warn ? '<span>' + warnSentence(p.warn) + '</span>' : '') + '</li>';
       });
       return html + '</ol><p class="a-links"><a href="/ativa/levada">' + t('moreToday') + ' →</a></p>';
@@ -306,13 +314,13 @@
       });
       var wl = Object.keys(rows).map(function (k) {
         var r = rows[k], lv = api.LEVELS[r.w.awarenessLevelID], ty = api.TYPES[r.w.awarenessTypeName];
-        return '<li><span style="color:' + lv.colour + ';font-weight:700">' + lv[lang] + '</span> · ' +
-          esc(ty ? ty[lang] : r.w.awarenessTypeName) + ' — ' + r.z.sort(function (a, b) {
+        return '<li><span style="color:' + lv.colour + ';font-weight:700">' + L(lv) + '</span> · ' +
+          esc(ty ? L(ty) : r.w.awarenessTypeName) + ' — ' + r.z.sort(function (a, b) {
             return ['MRM', 'MCN', 'MCS', 'MPS'].indexOf(a) - ['MRM', 'MCN', 'MCS', 'MPS'].indexOf(b);
-          }).map(function (z) { return api.ZONES[z][lang]; }).join(', ') + '</li>';
+          }).map(function (z) { return L(api.ZONES[z]); }).join(', ') + '</li>';
       });
       var html = '<p class="a-sum">' + (parts.length ? parts.join(' · ') + '.' : t('failed')) + ' ' +
-        (wl.length ? (lang === 'pt' ? wl.length + ' aviso(s) do IPMA em vigor.' : wl.length + ' IPMA warning' + (wl.length > 1 ? 's' : '') + ' in force.') : t('noWarnAll')) + '</p>';
+        (wl.length ? tri(wl.length + ' IPMA warning' + (wl.length > 1 ? 's' : '') + ' in force.', wl.length + ' aviso(s) do IPMA em vigor.', wl.length + ' IPMA-Warnung' + (wl.length > 1 ? 'en' : '') + ' aktiv.') : t('noWarnAll')) + '</p>';
       if (wl.length) html += '<p class="a-sub">' + t('warnings') + '</p><ul class="a-list">' + wl.join('') + '</ul>';
       return html;
     });
@@ -322,9 +330,9 @@
     return load('events', '/ativa/events.json').then(function (d) {
       var all = (d.events || []).filter(function (e) { return e.date; });
       var today = madeiraToday(), from = today, to = addDays(today, 6), label = t('week');
-      if (has(q, ['tomorrow', 'amanha', 'завтра'])) { from = to = addDays(today, 1); label = t('tomorrow'); }
-      else if (has(q, ['today', 'hoje', 'tonight', 'esta noite', 'сегодня'])) { from = to = today; label = t('today'); }
-      else if (has(q, ['weekend', 'fim de semana', 'выходн'])) {
+      if (has(q, ['tomorrow', 'amanha', 'morgen', 'завтра'])) { from = to = addDays(today, 1); label = t('tomorrow'); }
+      else if (has(q, ['today', 'hoje', 'tonight', 'esta noite', 'heute', 'сегодня'])) { from = to = today; label = t('today'); }
+      else if (has(q, ['weekend', 'fim de semana', 'wochenende', 'выходн'])) {
         // Saturday and Sunday; on a Sunday, what is left of it.
         var dow = new Date(today + 'T00:00:00Z').getUTCDay();
         if (dow === 0) { from = to = today; }
@@ -332,10 +340,10 @@
         label = t('weekend');
       }
       var kinds = [
-        [['trail', 'trilho', 'ultra'], ['trail']], [['run', 'corrida', 'road', 'estrada'], ['road']],
-        [['bike', 'cycling', 'bicicleta', 'ciclismo'], ['cycling']], [['swim', 'natacao'], ['swim']],
-        [['festa', 'festival', 'concert', 'concerto', 'music', 'musica'], ['festivals', 'festival', 'concert']],
-        [['kids', 'crianca', 'family', 'familia'], ['kids', 'family']],
+        [['trail', 'trilho', 'ultra'], ['trail']], [['run', 'corrida', 'road', 'estrada', 'lauf'], ['road']],
+        [['bike', 'cycling', 'bicicleta', 'ciclismo', 'fahrrad', ' rad '], ['cycling']], [['swim', 'natacao'], ['swim']],
+        [['festa', 'festival', 'concert', 'concerto', 'music', 'musica', 'fest', 'konzert', 'musik'], ['festivals', 'festival', 'concert']],
+        [['kids', 'crianca', 'family', 'familia', 'kinder', 'familie'], ['kids', 'family']],
       ];
       var want = null;
       kinds.forEach(function (k) { if (!want && has(q, k[0])) want = k[1]; });
@@ -345,8 +353,8 @@
       }).sort(function (a, b) { return (a.date + (a.time || '')).localeCompare(b.date + (b.time || '')); });
       if (!list.length) return '<p class="a-sum">' + t('noEvents') + '</p><p class="a-links"><a href="/ativa/">' + t('allEvents') + ' →</a></p>';
       var shown = list.slice(0, 8);
-      var html = '<p class="a-sum">' + list.length + ' ' + (lang === 'pt' ? (list.length === 1 ? 'evento' : 'eventos') : (list.length === 1 ? 'event' : 'events')) +
-        ' ' + label + (lang === 'pt' ? '.' : '.') + '</p><ul class="a-list">';
+      var html = '<p class="a-sum">' + list.length + ' ' + (list.length === 1 ? tri('event', 'evento', 'Event') : tri('events', 'eventos', 'Events')) +
+        ' ' + label + '.' + '</p><ul class="a-list">';
       shown.forEach(function (e) {
         var name = String(e.name || '').replace(/^"|"$/g, '');
         html += '<li>' + (e.url ? '<a href="' + esc(e.url) + '" target="_blank" rel="noopener"><b>' + esc(name) + '</b></a>' : '<b>' + esc(name) + '</b>') +
@@ -394,13 +402,18 @@
   function start() {
     var form = document.getElementById('askForm'), input = document.getElementById('askInput'), out = document.getElementById('askOut');
     if (!form) return;
-    lang = (document.documentElement.lang || 'en') === 'pt' ? 'pt' : 'en';
+    function setLang() {
+      var hl = document.documentElement.lang || 'en';
+      lang = hl === 'pt' ? 'pt' : 'en'; de = hl === 'de';
+      input.placeholder = t('placeholder');
+    }
+    setLang();
     var last = '';
     function run(qs) {
       if (!qs.trim()) return;
       last = qs;
       catalogue = '';
-      lang = (document.documentElement.lang || 'en') === 'pt' ? 'pt' : 'en';
+      setLang();
       out.innerHTML = '<p class="a-wait">' + t('thinking') + '</p>';
       out.hidden = false;
       answer(qs).then(function (html) {
@@ -427,8 +440,7 @@
       fetch('/ativa/api/ask', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
-        // The facts are built in EN/PT; the AI's answer follows the page, German included.
-        body: JSON.stringify({ q: qs, lang: document.documentElement.lang === 'de' ? 'de' : lang, facts: facts }),
+        body: JSON.stringify({ q: qs, lang: de ? 'de' : lang, facts: facts }),
       }).then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
         if (qs !== last) return;
         if (!j || !j.answer) { box.remove(); return; }
@@ -440,11 +452,11 @@
     form.addEventListener('submit', function (e) { e.preventDefault(); run(input.value); });
     document.querySelectorAll('[data-ask]').forEach(function (b) {
       b.addEventListener('click', function () {
-        var q = b.getAttribute('data-ask-' + ((document.documentElement.lang || 'en') === 'pt' ? 'pt' : 'en')) || b.getAttribute('data-ask');
+        var q = b.getAttribute('data-ask-' + (document.documentElement.lang || 'en')) || b.getAttribute('data-ask');
         input.value = q; run(q);
       });
     });
-    new MutationObserver(function () { if (last) run(last); })
+    new MutationObserver(function () { setLang(); if (last) run(last); })
       .observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
     var q0 = new URLSearchParams(location.search).get('q');
     if (q0) { input.value = q0; run(q0); }

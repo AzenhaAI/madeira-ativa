@@ -7,10 +7,10 @@
 // own script. Language-specific wording stays in the pages.
 
 var DIFF = [
-  { max: 8,   level: 1, en: 'Easy',     pt: 'Fácil',    color: '#2e9e5b' },
-  { max: 15,  level: 2, en: 'Moderate', pt: 'Moderado', color: '#c8912f' },
-  { max: 24,  level: 3, en: 'Hard',     pt: 'Difícil',  color: '#d2691e' },
-  { max: 1e9, level: 4, en: 'Severe',   pt: 'Severo',   color: '#b23a2e' },
+  { max: 8,   level: 1, en: 'Easy',     pt: 'Fácil', de: 'Leicht',    color: '#2e9e5b' },
+  { max: 15,  level: 2, en: 'Moderate', pt: 'Moderado', de: 'Mittel', color: '#c8912f' },
+  { max: 24,  level: 3, en: 'Hard',     pt: 'Difícil', de: 'Schwer',  color: '#d2691e' },
+  { max: 1e9, level: 4, en: 'Severe',   pt: 'Severo', de: 'Sehr schwer',   color: '#b23a2e' },
 ];
 function effort(l) { return (l.distance_km || 0) + (l.ascent_m || 0) / 100; }
 // Official difficulty first — Visit Madeira's, the one on the trailhead board.
