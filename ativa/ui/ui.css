@@ -34,8 +34,12 @@ button{font:inherit;color:inherit}
 
 /* languages: one attribute, one rule, any number of languages */
 [data-l],[data-lang]{display:none!important}
-html[lang="en"] [data-l="en"], html[lang="pt"] [data-l="pt"],
-html[lang="en"] [data-lang="en"], html[lang="pt"] [data-lang="pt"]{display:revert!important}
+html[lang="en"] [data-l="en"], html[lang="pt"] [data-l="pt"], html[lang="de"] [data-l="de"],
+html[lang="en"] [data-lang="en"], html[lang="pt"] [data-lang="pt"], html[lang="de"] [data-lang="de"]{display:revert!important}
+/* German falls back to English wherever a string has no German twin yet
+   (the build writes it straight after the Portuguese one). */
+html[lang="de"] [data-l="en"]:not(:has(+ [data-l="pt"] + [data-l="de"])),
+html[lang="de"] [data-lang="en"]:not(:has(+ [data-lang="pt"] + [data-lang="de"])){display:revert!important}
 
 .wrap{max-width:880px;margin:0 auto;padding:0 var(--s4) calc(var(--bar) + 24px + env(safe-area-inset-bottom))}
 .wide{max-width:1120px}

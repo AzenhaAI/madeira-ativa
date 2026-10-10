@@ -4,15 +4,17 @@
 // keeps them in step afterwards.
 (function () {
   var html = document.documentElement;
-  var LANGS = ['en', 'pt'];
+  var LANGS = ['en', 'pt', 'de'];
 
   function store(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
 
   // ---- language
   var listeners = [];
   window.MA = {
-    lang: function () { return html.lang === 'pt' ? 'pt' : 'en'; },
-    t: function (en, pt) { return MA.lang() === 'pt' ? (pt == null ? en : pt) : en; },
+    lang: function () { return LANGS.indexOf(html.lang) > 0 ? html.lang : 'en'; },
+    // German comes from window.MA_DE (de.js, built from scripts/data/strings_de.json),
+    // keyed by the English; a string not translated yet stays English.
+    t: function (en, pt) { var l = MA.lang(); return l === 'pt' ? (pt == null ? en : pt) : l === 'de' ? ((window.MA_DE || {})[en] || en) : en; },
     onLang: function (fn) { listeners.push(fn); },
     setLang: function (l) {
       if (LANGS.indexOf(l) < 0) l = 'en';
@@ -26,8 +28,9 @@
     addDays: function (iso, n) { var d = new Date(iso + 'T00:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); },
     day: function (iso) {
       var d = new Date(iso + 'T00:00:00Z');
-      var W = MA.lang() === 'pt' ? ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb'] : ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-      var M = MA.lang() === 'pt' ? ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'] : ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      var l = MA.lang();
+      var W = l === 'pt' ? ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb'] : l === 'de' ? ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'] : ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+      var M = l === 'pt' ? ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'] : l === 'de' ? ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'] : ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
       return { d: d.getUTCDate(), w: W[d.getUTCDay()], m: M[d.getUTCMonth()] };
     },
     emo: function (c) { return c >= 95 ? '⛈' : c >= 80 ? '🌧' : c >= 61 ? '🌧' : c >= 51 ? '🌦' : c >= 45 ? '🌫' : c === 3 ? '☁️' : c >= 1 ? '🌤' : '☀️'; },
