@@ -167,10 +167,7 @@
       }
     });
     var res = Object.keys(found).map(function (k) { return found[k]; }).sort(function (x, y) { return x.n - y.n; }).slice(0, 8);
-    if (!res.length) {
-      box.innerHTML = '<p class="empty">' + t('No direct line between these two. A change in Funchal usually does it — check the lines on the map.', 'Não há linha direta entre os dois. Normalmente faz-se com mudança no Funchal — veja as linhas no mapa.') + '</p>';
-      return;
-    }
+    if (!res.length) { transfers(SA, SB, box); return; }
     box.innerHTML = res.map(function (r, n) {
       var l = NET.lines[r.line];
       return '<div class="card bn-r"><div>' + chip(r.line) + ' <b>' + esc(r.head || l.name) + '</b></div>' +
@@ -191,6 +188,58 @@
       map.fitBounds(L.latLngBounds([r.from, r.to].map(function (si) { return [NET.stops[si][2], NET.stops[si][3]]; })).pad(0.4));
       document.getElementById('busmap').scrollIntoView({ behavior: 'smooth', block: 'center' });
     };
+  }
+
+  // One change: ride line 1 from A to a stop X, walk at most ~250 m (same grid
+  // cell or a neighbour), ride line 2 from X to B. Ranked by stops ridden.
+  function cellKey(s) { return Math.round(s[2] / 0.0025) + ':' + Math.round(s[3] / 0.0025); }
+  function near(s) {
+    var a = Math.round(s[2] / 0.0025), b = Math.round(s[3] / 0.0025), out = [];
+    for (var i = -1; i <= 1; i++) for (var j = -1; j <= 1; j++) out.push((a + i) + ':' + (b + j));
+    return out;
+  }
+  function transfers(SA, SB, box) {
+    var reach = {};   // cell -> best first leg
+    NET.patterns.forEach(function (p) {
+      var i = -1;
+      for (var k = 0; k < p.stops.length; k++) {
+        if (i < 0) { if (SA[p.stops[k]]) i = k; continue; }
+        var key = cellKey(NET.stops[p.stops[k]]), n = stopCount(p, i, k);
+        if (!reach[key] || n < reach[key].n) reach[key] = { line: p.line, head: p.head, from: p.stops[i], at: p.stops[k], n: n };
+      }
+    });
+    var best = {};
+    NET.patterns.forEach(function (q) {
+      var j = -1;
+      for (var k = q.stops.length - 1; k >= 0; k--) { if (SB[q.stops[k]]) { j = k; break; } }
+      if (j < 1) return;
+      for (var m = 0; m < j; m++) {
+        var cand = near(NET.stops[q.stops[m]]);
+        for (var c = 0; c < cand.length; c++) {
+          var r = reach[cand[c]];
+          if (!r || r.line === q.line) continue;
+          var tot = r.n + stopCount(q, m, j), key = r.line + '>' + q.line;
+          if (!best[key] || tot < best[key].tot) best[key] = { a: r, b: { line: q.line, head: q.head, from: q.stops[m], to: q.stops[j], n: stopCount(q, m, j) }, tot: tot };
+        }
+      }
+    });
+    var res = Object.keys(best).map(function (k) { return best[k]; }).sort(function (x, y) { return x.tot - y.tot; }).slice(0, 5);
+    if (!res.length) {
+      box.innerHTML = '<p class="empty">' + t('No route with one change between these two. Try a nearby town, or check the lines on the map.', 'Sem percurso com uma mudança entre os dois. Experimente uma localidade próxima, ou veja as linhas no mapa.') + '</p>';
+      return;
+    }
+    var leg = function (x, last) {
+      var l = NET.lines[x.line];
+      return '<div class="bn-leg">' + chip(x.line) + ' <b>' + esc(x.head || l.name) + '</b><div class="bn-op">' + esc(NET.stops[x.from][1]) + ' → ' + esc(NET.stops[last][1]) + ' · ' + x.n + ' ' + t('stops', 'paragens') +
+        (l.src !== 'gtfs' && l.url ? ' · <a href="' + esc(l.url) + '" target="_blank" rel="noopener">' + t('Timetable', 'Horário') + ' ↗</a>' : '') + '</div></div>';
+    };
+    box.innerHTML = '<p class="sub">' + t('No direct line — with one change:', 'Sem linha direta — com uma mudança:') + '</p>' + res.map(function (r, n) {
+      return '<div class="card bn-r">' + leg(r.a, r.a.at) + '<div class="bn-change">↓ ' + t('change', 'mudança') + (r.a.at !== r.b.from ? ' · ' + t('walk to', 'a pé até') + ' ' + esc(NET.stops[r.b.from][1]) : '') + '</div>' + leg(r.b, r.b.to) + '<div id="bnT' + n + '"></div></div>';
+    }).join('');
+    res.forEach(function (r, n) {
+      var heads = {}; heads[r.a.head] = 1;
+      departures(r.a.from, r.a.line, heads, 3).then(function (list) { var el = document.getElementById('bnT' + n); if (el && list && list.length) el.innerHTML = '<div class="bn-op">' + t('First leg leaves', 'Primeira parte parte') + ':</div>' + depHtml(list); });
+    });
   }
 
   function sigaList() {

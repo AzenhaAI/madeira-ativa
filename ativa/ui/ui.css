@@ -236,3 +236,12 @@ html.dark .t3{background:#3D3417;color:#F4DB8A}html.dark .t4{background:#45291A;
 .ships .when{color:var(--soft);font-size:var(--fs-s);display:inline-block;min-width:64px}
 .chips.mini{flex-wrap:wrap;overflow:visible}
 .nb .val{overflow-wrap:anywhere;hyphens:auto}
+.val small{white-space:nowrap}
+.camq{display:flex;gap:6px;flex:none;align-self:center}
+.camq a{display:flex;flex-direction:column;align-items:center;gap:1px;width:58px;padding:5px 0;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--ink)}
+.camq a span{font-size:18px;line-height:1.2}.camq a small{font-size:10.5px;color:var(--soft);white-space:nowrap}
+.camq a:hover{border-color:var(--green)}
+.ships .when{min-width:0;margin-right:2px}
+.ships>div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bn-change{color:var(--soft);font-size:var(--fs-s);margin:2px 0 2px 4px}
+.bn-leg{display:flex;flex-direction:column;gap:2px}

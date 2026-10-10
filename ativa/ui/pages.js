@@ -83,8 +83,8 @@
       var inner = '<span class="ni" aria-hidden="true">' + icon + '</span><div class="nb"><div class="lbl">' + label + (ext ? ' ↗' : '') + '</div>' + body + '</div>';
       return '<div class="nc' + (cls ? ' ' + cls : '') + '">' + (href ? '<a class="cell-link" href="' + href + '"' + (ext ? ' target="_blank" rel="noopener"' : '') + '>' + inner + '</a>' : inner) + '</div>';
     }
-    var CAMS = [['Pico do Arieiro', 'https://www.netmadeira.com/webcams-madeira/pico-do-arieiro'], ['Rabaçal', 'https://www.netmadeira.com/webcams-madeira/rabacal-madeira'],
-      ['Achada do Teixeira', 'https://www.netmadeira.com/webcams-madeira/achada-do-teixeira'], ['Monte', 'https://www.netmadeira.com/webcams-madeira/monte']];
+    var CAMS = [['Pico do Arieiro', 'https://www.netmadeira.com/webcams-madeira/pico-do-arieiro', 'Arieiro'], ['Rabaçal', 'https://www.netmadeira.com/webcams-madeira/rabacal-madeira', 'Rabaçal'],
+      ['Achada do Teixeira', 'https://www.netmadeira.com/webcams-madeira/achada-do-teixeira', 'Teixeira']];
     function paint() {
       var c = data.wx[0] && data.wx[0].current, p = data.wx[1] && data.wx[1].current, a = data.wx[2] && data.wx[2].current, h = '';
       if (c) h += cell(MA.emo(c.weather_code), 'Funchal', '<div class="val"><span class="tp ' + tcls(c.temperature_2m) + '">' + Math.round(c.temperature_2m) + '°</span> <small>' + Math.round(c.wind_speed_10m) + ' km/h</small></div>');
@@ -103,16 +103,12 @@
         // Levadas by status, each number a link to that list; under it today's best open ones.
         var arr = data.st.trails || [], n = function (k) { return arr.filter(function (x) { return x.status === k; }).length; };
         var lk = function (f, num, en, pt, dot) { return '<a href="/ativa/levada?f=' + f + '"><i class="dot ' + dot + '"></i><b>' + num + '</b> ' + t(en, pt) + '</a>'; };
-        var picks = (data.picks || []).slice(0, 3).map(function (q) {
-          return '<a class="chip" href="' + MA.trailUrl(q.l.code) + '">' + MA.emo(q.code) + ' ' + esc(q.l.code.replace('PR ', '')) + ' ' + esc(q.l.name.replace(/^(Levada|Vereda|Caminho)( d[aoe]s?)? /, '')) + '</a>';
-        }).join('');
         h += '<div class="nc wide-cell"><span class="ni" aria-hidden="true">🥾</span><div class="nb"><div class="lbl">Levadas</div><div class="val st3">' + lk('open', n('open'), 'open', 'abertas', 'ok') +
-          ' · ' + lk('partial', n('partial'), 'partly', 'parciais', 'warn') + ' · ' + lk('closed', n('closed'), 'closed', 'encerradas', 'bad') + '</div>' +
-          (picks ? '<div class="chips mini">' + picks + '</div>' : '') + '</div></div>';
+          ' · ' + lk('partial', n('partial'), 'partly', 'parciais', 'warn') + ' · ' + lk('closed', n('closed'), 'closed', 'encerradas', 'bad') + '</div></div></div>';
       }
-      h += '<div class="nc wide-cell"><span class="ni" aria-hidden="true">📷</span><div class="nb"><div class="lbl">Webcams</div><div class="chips mini">' +
-        CAMS.map(function (x) { return '<a class="chip" href="' + x[1] + '" target="_blank" rel="noopener">' + esc(x[0]) + '</a>'; }).join('') +
-        '<a class="chip" href="/ativa/webcams">' + t('All', 'Todas') + ' ›</a></div></div></div>';
+      h += '<div class="nc wide-cell"><span class="ni" aria-hidden="true">📷</span><div class="nb"><a class="cell-link" href="/ativa/webcams"><div class="lbl">Webcams</div><div class="val">' +
+        t('Live views of the island', 'Vistas em direto da ilha') + ' <small>›</small></div></a></div><div class="camq">' +
+        CAMS.slice(0, 3).map(function (x) { return '<a href="' + x[1] + '" target="_blank" rel="noopener" title="' + esc(x[0]) + '" aria-label="' + esc(x[0]) + '"><span>📷</span><small>' + esc(x[2]) + '</small></a>'; }).join('') + '</div></div>';
       if (data.ships && data.ships.calls) {
         // Funchal port calls from APRAM. A cruise ship is what changes a day in
         // Funchal (crowds in town, coaches at Pico do Arieiro and PR 6), so it
@@ -124,12 +120,13 @@
         var on = function (day) { return calls.filter(function (x) { return x.arrival.slice(0, 10) <= day && x.departure.slice(0, 10) >= day; }); };
         var hrs = function (x, day) { return x.arrival.slice(0, 10) === day ? x.arrival.slice(11, 16) + '–' + (x.departure.slice(0, 10) === day ? x.departure.slice(11, 16) : MA.day(x.departure.slice(0, 10)).w) : ''; };
         var line = function (day, label) {
-          var L = on(day).filter(function (x) { var k2 = day + x.ship.toUpperCase(); if (seen[k2]) return false; seen[k2] = 1; return true; });
-          if (!L.length) return '';
-          var big = L.filter(cruise).map(function (x) { return '<b>' + esc(x.ship) + '</b> <small>' + t('cruise', 'cruzeiro') + ' · ' + hrs(x, day) + '</small>'; });
-          var small = L.filter(function (x) { return !cruise(x); }).map(function (x) { return esc(x.ship) + ' (' + kind(x.berth) + ')'; });
-          return '<div><span class="when">' + label + '</span> ' + (big.length ? big.join(', ') : '<small>' + t('no cruise ship', 'sem navio de cruzeiro') + '</small>') +
-            (small.length ? '<small class="sub2"> · ' + small.join(', ') + '</small>' : '') + '</div>';
+          // One line per ship; a ship staying over shows on its first day only.
+          return on(day).filter(function (x) { var k2 = x.ship.toUpperCase(); if (seen[k2]) return false; seen[k2] = 1; return true; })
+            .sort(function (x, y) { return cruise(y) - cruise(x); })
+            .map(function (x) {
+              var hh = hrs(x, day);
+              return '<div><span class="when">' + label + ':</span> <b>' + esc(x.ship) + '</b> <small>' + (cruise(x) ? t('cruise', 'cruzeiro') : kind(x.berth)) + (hh ? ' · ' + hh : '') + '</small></div>';
+            }).join('');
         };
         var body = line(today, t('Today', 'Hoje')) + line(tmr, t('Tomorrow', 'Amanhã'));
         if (body) h += '<div class="nc wide-cell"><a class="cell-link" href="https://apram.pt/movimento-navios?port=ptfnc" target="_blank" rel="noopener"><span class="ni" aria-hidden="true">🛳️</span><div class="nb"><div class="lbl">' + t('Port of Funchal', 'Porto do Funchal') + ' ↗</div><div class="ships">' + body + '</div></div></a></div>';
