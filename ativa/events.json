@@ -666,6 +666,14 @@
       "category": "workshop"
     },
     {
+      "mode": "road",
+      "name": "MIUT 2027 — registration window (Legend, Advanced, Discover, Marathon, Starter)",
+      "date": "2026-10-12",
+      "location": "Online · miutmadeira.com",
+      "url": "https://miutmadeira.com/",
+      "event_type": "trail"
+    },
+    {
       "mode": "festivals",
       "name": "Bachata Styling (in Couple & Solo)",
       "date": "2026-10-14",
@@ -2571,6 +2579,14 @@
       "location": "Madeira",
       "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
       "event_type": "road_run"
+    },
+    {
+      "mode": "road",
+      "name": "MIUT 2027 — Madeira Island Ultra Trail (Legend 110 km · Advanced · Discover 56 km · Marathon 42 km · Starter)",
+      "date": "2027-04-24",
+      "location": "Porto Moniz → Machico",
+      "url": "https://miutmadeira.com/",
+      "event_type": "trail"
     },
     {
       "mode": "road",
