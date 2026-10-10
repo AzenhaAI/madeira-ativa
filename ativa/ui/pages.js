@@ -61,6 +61,16 @@
       '<div class="t"><b>' + esc(l.name) + '</b><span>' + esc(extra || bits) + '</span></div>' +
       '<div class="k">' + statusPill(l.status) + '</div></a>';
   }
+  // A ranked pick: the weather on the trail leads (icon, temperature at the
+  // trail's height, rain, wind); code and name follow, so "23" is never read as 23°.
+  function pickRow(q) {
+    var l = q.l;
+    var bits = [q.rain + '% ' + t('rain', 'chuva'), Math.round(q.wind) + ' km/h', time(l), diff(l)].filter(Boolean).join(' · ');
+    return '<a class="row pick" href="' + MA.trailUrl(l.code) + '">' +
+      '<div class="d wx"><b>' + MA.emo(q.code) + '</b><span class="tp ' + (q.temp < 10 ? 't0' : q.temp < 15 ? 't1' : q.temp < 20 ? 't2' : q.temp < 25 ? 't3' : 't4') + '">' + Math.round(q.temp) + '°</span></div>' +
+      '<div class="t"><b>' + esc(l.code + ' · ' + l.name) + '</b><span>' + esc(bits) + '</span></div>' +
+      '<div class="k">' + statusPill(l.status) + '</div></a>';
+  }
   function dedupe(list) {
     var seen = {};
     return list.filter(function (e) { var k = e.date + '|' + e.name; if (seen[k]) return false; seen[k] = 1; return true; });
@@ -168,7 +178,7 @@
       if (data.picks && data.picks.length) {
         el.innerHTML = data.picks.map(function (p) {
           var l = p.l;
-          return trailRow(l, Math.round(p.temp) + '° · ' + p.rain + '% ' + t('rain', 'chuva') + ' · ' + [time(l), diff(l)].filter(Boolean).join(' · '));
+          return pickRow(p);
         }).join('');
       } else if (data.lev) {
         var L = data.lev.levadas.filter(function (l) { return l.status === 'open' && l.island !== 'Porto Santo'; });
@@ -240,7 +250,7 @@
     function paintToday() {
       if (!picks || !picks.length) { $('#todayWrap').hidden = true; return; }
       $('#todayWrap').hidden = false;
-      $('#today').innerHTML = picks.map(function (p) { return trailRow(p.l, Math.round(p.temp) + '° · ' + p.rain + '% ' + t('rain', 'chuva') + ' · ' + [time(p.l), diff(p.l)].filter(Boolean).join(' · ')); }).join('');
+      $('#today').innerHTML = picks.map(pickRow).join('');
     }
     function paint() {
       chips($('#filters'), F.map(function (x) { return [x[0], t(x[1], x[2])]; }), f, function (v) { f = v; paint(); });
@@ -318,21 +328,47 @@
       });
       $('#route').textContent = T.from && T.to ? (T.from === T.to ? T.from : T.from + ' → ' + T.to) : '';
       $('#facts').innerHTML = [[t('Distance', 'Distância'), (T.distance_km || '—') + ' km'], [t('Time', 'Duração'), dur(o.duration) || '—'],
-        [t('Climb', 'Subida'), '↑' + (T.ascent_m || 0) + ' m'], [t('Grade', 'Dificuldade'), diff(T) || '—']]
+        [t('Climb', 'Subida'), '↑' + (T.ascent_m || 0) + ' m ↓' + (T.descent_m || 0) + ' m'], [t('Grade', 'Dificuldade'), diff(T) || '—']]
         .map(function (f) { return '<div><div class="lbl">' + f[0] + '</div><div class="val">' + esc(f[1]) + '</div></div>'; }).join('');
       // profile, cut at breaks in the mapped route instead of drawing a cliff
       var p = T.profile || [], br = T.profile_breaks || [];
       if (p.length > 1) {
-        var W = 600, H = 110, mn = Math.min.apply(null, p), mx = Math.max.apply(null, p), segs = [], cur = [];
+        // A profile you can read: filled, with its highest and lowest point, a
+        // km scale and both ends named (the old one was a bare line with no axes).
+        var W = 600, H = 120, mn = Math.min.apply(null, p), mx = Math.max.apply(null, p), segs = [], cur = [], km = T.distance_km || 0;
+        var y = function (v) { return (H - 4 - (v - mn) / ((mx - mn) || 1) * (H - 16)).toFixed(1); };
         p.forEach(function (v, i) {
           if (br.indexOf(i) >= 0 && cur.length) { segs.push(cur); cur = []; }
-          cur.push((i / (p.length - 1) * W).toFixed(1) + ',' + (H - 6 - (v - mn) / ((mx - mn) || 1) * (H - 18)).toFixed(1));
+          cur.push([(i / (p.length - 1) * W).toFixed(1), y(v)]);
         });
         segs.push(cur);
-        $('#elev').innerHTML = '<svg class="elev" viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none">' + segs.map(function (s) {
-          return '<polyline fill="none" stroke="var(--green)" stroke-width="2" vector-effect="non-scaling-stroke" points="' + s.join(' ') + '"/>';
-        }).join('') + '</svg><div class="sub" style="margin-top:4px">' + mn + '–' + mx + ' m</div>';
+        var svg = segs.map(function (sg) {
+          var line = sg.map(function (q) { return q[0] + ',' + q[1]; }).join(' ');
+          var area = sg[0][0] + ',' + H + ' ' + line + ' ' + sg[sg.length - 1][0] + ',' + H;
+          return '<polygon fill="var(--green-tint)" points="' + area + '"/><polyline fill="none" stroke="var(--green)" stroke-width="2" vector-effect="non-scaling-stroke" points="' + line + '"/>';
+        }).join('');
+        var half = km ? (Math.round(km / 2 * 10) / 10) : '';
+        $('#elev').innerHTML = '<div class="elevbox"><svg class="elev" viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none">' + svg + '</svg>' +
+          '<span class="ey top">' + mx + ' m</span><span class="ey bot">' + mn + ' m</span></div>' +
+          '<div class="ex"><span>0 km' + (T.from ? ' · ' + esc(T.from) : '') + '</span>' + (km ? '<span>' + half + ' km</span>' : '') +
+          '<span>' + (km ? km + ' km' : '') + (T.to && T.to !== T.from ? ' · ' + esc(T.to) : '') + '</span></div>';
       }
+      // A small map of the route itself; the full map is one tap away.
+      if (window.L && document.getElementById('tmap')) MA.get('/ativa/trails_geo.json').then(function (g) {
+        var ps = T.island === 'Porto Santo';
+        var tr = ((g || {}).trails || []).find(function (q) {
+          var first = q.lines && q.lines[0] && q.lines[0][0];
+          return q.code === T.code && first && ((first[0] > 32.95) === ps);
+        });
+        if (!tr) return;
+        var box = document.getElementById('tmap'); box.hidden = false;
+        var m = L.map(box, { scrollWheelZoom: false, dragging: !L.Browser.mobile, tap: false, attributionControl: true });
+        m.attributionControl.setPrefix(false);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 17, attribution: '© OpenStreetMap' }).addTo(m);
+        var col = T.status === 'closed' ? '#C0392B' : T.status === 'partial' ? '#D68910' : '#0F6E56';
+        var grp = L.featureGroup(tr.lines.map(function (ln) { return L.polyline(ln, { color: col, weight: 4 }); })).addTo(m);
+        m.fitBounds(grp.getBounds(), { padding: [14, 14] });
+      });
       var path = window.pathFacts ? pathFacts(x, MA.lang()) : [];
       $('#path').innerHTML = path.length ? '<h2>' + t('On the path', 'No trilho') + '</h2><div class="card"><ul style="margin:0;padding-left:18px">' + path.map(function (s) { return '<li>' + esc(s) + '</li>'; }).join('') + '</ul><p class="sub" style="margin:8px 0 0">' + t('OpenStreetMap, where surveyed; mapped on', 'OpenStreetMap, onde levantado; mapeado em') + ' ' + (x.mapped_pct || 0) + '% ' + t('of the route', 'do percurso') + '</p></div>' : '';
       var ends = a.ends || [], spread = ends.length === 2 ? ends[0].elev - ends[1].elev : 0, rows = '';
