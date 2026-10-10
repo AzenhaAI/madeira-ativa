@@ -138,7 +138,11 @@
     return n;
   }
   function search() {
-    var a = document.getElementById('bnFrom').value, b = document.getElementById('bnTo').value, box = document.getElementById('bnRes');
+    // An empty field takes its placeholder: "Find" on a fresh page shows the example.
+    var fa = document.getElementById('bnFrom'), fb = document.getElementById('bnTo'), box = document.getElementById('bnRes');
+    if (!fa.value.trim()) fa.value = fa.placeholder;
+    if (!fb.value.trim()) fb.value = fb.placeholder;
+    var a = fa.value, b = fb.value;
     var A = candidates(a), B = candidates(b);
     if (!A.length || !B.length) {
       box.innerHTML = '<p class="empty">' + (!A.length ? t('No stop found for “' + esc(a) + '”.', 'Nenhuma paragem para «' + esc(a) + '».') : t('No stop found for “' + esc(b) + '”.', 'Nenhuma paragem para «' + esc(b) + '».')) + '</p>';
@@ -204,6 +208,7 @@
       NET = net;
       R = L.canvas({ padding: 0.3, tolerance: 6 });
       map = L.map('busmap', { zoomControl: true, scrollWheelZoom: false, preferCanvas: true }).setView([32.73, -16.98], 10);
+      map.attributionControl.setPrefix(false);  // no library credit; the OSM line is required and stays
       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '© OpenStreetMap' }).addTo(map);
       // Fit the whole network, whatever the screen: a fixed centre cut off the west on phones.
       map.fitBounds(L.latLngBounds(NET.stops.filter(function (s) { return s[2] < 32.9; }).map(function (s) { return [s[2], s[3]]; })), { padding: [4, 4] });  // Madeira; Porto Santo is a pan away
