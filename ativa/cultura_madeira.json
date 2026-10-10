@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-10-09T11:56:31",
-  "count": 121,
+  "fetched": "2026-10-10T11:13:17",
+  "count": 122,
   "items": [
     {
       "id": "114",
@@ -1123,6 +1123,16 @@
       "time": "15:00",
       "place": "Museu da Quinta das Cruzes",
       "category": "Conference"
+    },
+    {
+      "id": "371",
+      "title": "FATUM da Universidade da Madeira apresenta Sarau de Fados",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/fatum-apresenta-sarau-de-fados",
+      "start": "2026-10-15",
+      "end": "2026-10-15",
+      "time": "20:30",
+      "place": "Solar de São Cristóvão",
+      "category": "Music"
     },
     {
       "id": "374",

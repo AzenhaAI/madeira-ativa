@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-10-09T11:56:20",
-  "count": 321,
+  "fetched": "2026-10-10T11:13:04",
+  "count": 337,
   "items": [
     {
       "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
@@ -3320,6 +3320,21 @@
       "source_category": "culture-museums"
     },
     {
+      "id": "bookfest-2026-10-10",
+      "title": "Bookfest",
+      "url": "https://www.madeira-unlocked.com/en/events/bookfest-2026-10-10",
+      "start": "2026-10-10T17:00:00+01:00",
+      "end": "2026-10-10T20:00:00+01:00",
+      "date": "2026-10-10",
+      "time": "17:00",
+      "venue": "Arquivo e Biblioteca da Madeira",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Secretaria Regional de Turismo, Ambiente e Cultura",
+      "category": "culture",
+      "source_category": "culture-museums"
+    },
+    {
       "id": "os-grandes-azuis-10th-year-anniversary-2026-10-10",
       "title": "Os Grandes Azuis 10th year anniversary",
       "url": "https://www.madeira-unlocked.com/en/events/os-grandes-azuis-10th-year-anniversary-2026-10-10",
@@ -3410,6 +3425,21 @@
       "source_category": "movies-cinema"
     },
     {
+      "id": "christian-montoya-carlos-sa-2026-10-10",
+      "title": "Christian Montoya & Carlos Sá",
+      "url": "https://www.madeira-unlocked.com/en/events/christian-montoya-carlos-sa-2026-10-10",
+      "start": "2026-10-10T21:00:00+01:00",
+      "end": "2026-10-10T23:00:00+01:00",
+      "date": "2026-10-10",
+      "time": "21:00",
+      "venue": "Largo do Socorro",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Largo do Socorro",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "echoo-nature-fest-2026-10-11",
       "title": "ECHOO Nature Fest",
       "url": "https://www.madeira-unlocked.com/en/events/echoo-nature-fest-2026-10-11",
@@ -3453,6 +3483,21 @@
       "organizer": "Casa do Povo do Caniçal",
       "category": "festival",
       "source_category": "festivals-parades"
+    },
+    {
+      "id": "118th-community-hike-2026-10-11",
+      "title": "118th Community Hike",
+      "url": "https://www.madeira-unlocked.com/en/events/118th-community-hike-2026-10-11",
+      "start": "2026-10-11T10:00:00+01:00",
+      "end": "2026-10-11T15:00:00+01:00",
+      "date": "2026-10-11",
+      "time": "10:00",
+      "venue": "Vereda do Larano",
+      "municipality": "Machico",
+      "price": 5,
+      "organizer": "Madeira Hikes",
+      "category": "hiking",
+      "source_category": "hiking"
     },
     {
       "id": "acoustic-concert-with-andre-santos-2026-10-11",
@@ -3563,10 +3608,10 @@
       "id": "sea-and-fisherman-fair-2026-10-16",
       "title": "Sea and Fisherman Fair",
       "url": "https://www.madeira-unlocked.com/en/events/sea-and-fisherman-fair-2026-10-16",
-      "start": "2026-10-16T09:00:00+01:00",
+      "start": "2026-10-16T18:30:00+01:00",
       "end": "2026-10-17T00:00:00+01:00",
       "date": "2026-10-16",
-      "time": "09:00",
+      "time": "18:30",
       "venue": "Caniçal",
       "municipality": "Machico",
       "price": 0,
@@ -3620,6 +3665,21 @@
       "source_category": "movies-cinema"
     },
     {
+      "id": "pedro-branco-concert-li-polymer-dj-set-2026-10-16",
+      "title": "Pedro Branco Concert & LI-POLYMER DJ Set",
+      "url": "https://www.madeira-unlocked.com/en/events/pedro-branco-concert-li-polymer-dj-set-2026-10-16",
+      "start": "2026-10-16T21:00:00+01:00",
+      "end": "2026-10-16T23:00:00+01:00",
+      "date": "2026-10-16",
+      "time": "21:00",
+      "venue": "Largo do Socorro",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Largo do Socorro",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "ecotrail-funchal-2026-2026-10-17",
       "title": "Ecotrail Funchal 2026",
       "url": "https://www.madeira-unlocked.com/en/events/ecotrail-funchal-2026-2026-10-17",
@@ -3633,21 +3693,6 @@
       "organizer": "Ecotrail Funchal",
       "category": "sport",
       "source_category": "sport-fitness"
-    },
-    {
-      "id": "sea-and-fisherman-fair-2026-10-17",
-      "title": "Sea and Fisherman Fair",
-      "url": "https://www.madeira-unlocked.com/en/events/sea-and-fisherman-fair-2026-10-17",
-      "start": "2026-10-17T09:00:00+01:00",
-      "end": "2026-10-18T00:00:00+01:00",
-      "date": "2026-10-17",
-      "time": "09:00",
-      "venue": "Caniçal",
-      "municipality": "Machico",
-      "price": 0,
-      "organizer": "Casa do Povo do Caniçal",
-      "category": "festival",
-      "source_category": "festivals-parades"
     },
     {
       "id": "soap-making-and-natural-painting-workshop-halloween-2026-10-17",
@@ -3678,6 +3723,21 @@
       "organizer": "KHÔRA",
       "category": "workshop",
       "source_category": "handicraft-workshops"
+    },
+    {
+      "id": "sea-and-fisherman-fair-2026-10-17",
+      "title": "Sea and Fisherman Fair",
+      "url": "https://www.madeira-unlocked.com/en/events/sea-and-fisherman-fair-2026-10-17",
+      "start": "2026-10-17T14:00:00+01:00",
+      "end": "2026-10-18T00:00:00+01:00",
+      "date": "2026-10-17",
+      "time": "14:00",
+      "venue": "Caniçal",
+      "municipality": "Machico",
+      "price": 0,
+      "organizer": "Casa do Povo do Caniçal",
+      "category": "festival",
+      "source_category": "festivals-parades"
     },
     {
       "id": "dancilhas-festival-de-musica-e-danca-do-mundo-trad-folk-2026-10-17",
@@ -3809,10 +3869,25 @@
       "time": "21:00",
       "venue": "Fórum Machico",
       "municipality": "Machico",
-      "price": 0,
+      "price": 5,
       "organizer": "Grupo de Teatro de Machico",
       "category": "theatre",
       "source_category": "theater"
+    },
+    {
+      "id": "bruno-brites-dj-set-estimei-pop-up-2026-10-17",
+      "title": "Bruno Brites DJ Set & Estimei Pop-Up",
+      "url": "https://www.madeira-unlocked.com/en/events/bruno-brites-dj-set-estimei-pop-up-2026-10-17",
+      "start": "2026-10-17T21:00:00+01:00",
+      "end": "2026-10-17T23:00:00+01:00",
+      "date": "2026-10-17",
+      "time": "21:00",
+      "venue": "Largo do Socorro",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Largo do Socorro",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "l-concerts-tres-tristes-tigres-2026-10-17",
@@ -3845,21 +3920,6 @@
       "source_category": "sport-fitness"
     },
     {
-      "id": "sea-and-fisherman-fair-2026-10-18",
-      "title": "Sea and Fisherman Fair",
-      "url": "https://www.madeira-unlocked.com/en/events/sea-and-fisherman-fair-2026-10-18",
-      "start": "2026-10-18T09:00:00+01:00",
-      "end": "2026-10-19T00:00:00+01:00",
-      "date": "2026-10-18",
-      "time": "09:00",
-      "venue": "Caniçal",
-      "municipality": "Machico",
-      "price": 0,
-      "organizer": "Casa do Povo do Caniçal",
-      "category": "festival",
-      "source_category": "festivals-parades"
-    },
-    {
       "id": "dancilhas-festival-de-musica-e-danca-do-mundo-trad-folk-2026-10-18",
       "title": "Dancilhas, Festival de Música e Dança do Mundo Trad/Folk",
       "url": "https://www.madeira-unlocked.com/en/events/dancilhas-festival-de-musica-e-danca-do-mundo-trad-folk-2026-10-18",
@@ -3871,6 +3931,21 @@
       "municipality": "Santa Cruz",
       "price": 0,
       "organizer": "Associação Cultural e Recreativa Rodopio Pitoresco",
+      "category": "festival",
+      "source_category": "festivals-parades"
+    },
+    {
+      "id": "sea-and-fisherman-fair-2026-10-18",
+      "title": "Sea and Fisherman Fair",
+      "url": "https://www.madeira-unlocked.com/en/events/sea-and-fisherman-fair-2026-10-18",
+      "start": "2026-10-18T13:00:00+01:00",
+      "end": "2026-10-18T23:00:00+01:00",
+      "date": "2026-10-18",
+      "time": "13:00",
+      "venue": "Caniçal",
+      "municipality": "Machico",
+      "price": 0,
+      "organizer": "Casa do Povo do Caniçal",
       "category": "festival",
       "source_category": "festivals-parades"
     },
@@ -3888,6 +3963,21 @@
       "organizer": "BSP",
       "category": "workshop",
       "source_category": "handicraft-workshops"
+    },
+    {
+      "id": "chakras-drag-show-2026-10-18",
+      "title": "Chakras Drag Show",
+      "url": "https://www.madeira-unlocked.com/en/events/chakras-drag-show-2026-10-18",
+      "start": "2026-10-18T17:30:00+01:00",
+      "end": "2026-10-18T19:30:00+01:00",
+      "date": "2026-10-18",
+      "time": "17:30",
+      "venue": "Largo do Socorro",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Largo do Socorro",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "from-queen-to-chess-2026-10-18",
@@ -3933,6 +4023,21 @@
       "organizer": "Clube Naval do Seixal",
       "category": "sport",
       "source_category": "sport-fitness"
+    },
+    {
+      "id": "com-partiendo-a-papi-2026-10-20",
+      "title": "[com]partiendo a PAPI",
+      "url": "https://www.madeira-unlocked.com/en/events/com-partiendo-a-papi-2026-10-20",
+      "start": "2026-10-20T19:00:00+01:00",
+      "end": "2026-10-20T21:00:00+01:00",
+      "date": "2026-10-20",
+      "time": "19:00",
+      "venue": "Largo do Socorro",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Largo do Socorro",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "canyoning-madeira-meeting-2026-2026-10-21",
@@ -4070,6 +4175,21 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "fragmentos-carolina-roovers-exhibition-ze-pedro-dj-set-2026-10-22",
+      "title": "Fragmentos, Carolina Roovers Exhibition & Zé Pedro DJ Set",
+      "url": "https://www.madeira-unlocked.com/en/events/fragmentos-carolina-roovers-exhibition-ze-pedro-dj-set-2026-10-22",
+      "start": "2026-10-22T19:00:00+01:00",
+      "end": "2026-10-22T21:00:00+01:00",
+      "date": "2026-10-22",
+      "time": "19:00",
+      "venue": "Largo do Socorro",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Largo do Socorro",
+      "category": "exhibition",
+      "source_category": "art-exhibitions"
+    },
+    {
       "id": "concertos-no-vizinho-eva-luis-and-diego-salvatori-2026-10-22",
       "title": "Concertos no Vizinho, Eva Luís and Diego Salvatori",
       "url": "https://www.madeira-unlocked.com/en/events/concertos-no-vizinho-eva-luis-and-diego-salvatori-2026-10-22",
@@ -4115,6 +4235,21 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "infinito-2026-10-23",
+      "title": "Infinito",
+      "url": "https://www.madeira-unlocked.com/en/events/infinito-2026-10-23",
+      "start": "2026-10-23T17:30:00+01:00",
+      "end": "2026-10-23T19:30:00+01:00",
+      "date": "2026-10-23",
+      "time": "17:30",
+      "venue": "Largo do Socorro",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Largo do Socorro",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "screenings-funchal-mulholland-drive-the-boat-2026-10-23",
       "title": "Screenings Funchal: Mulholland Drive + The Boat",
       "url": "https://www.madeira-unlocked.com/en/events/screenings-funchal-mulholland-drive-the-boat-2026-10-23",
@@ -4128,6 +4263,21 @@
       "organizer": "Screenings Funchal",
       "category": "cinema",
       "source_category": "movies-cinema"
+    },
+    {
+      "id": "marcelinho-da-lua-2026-10-24",
+      "title": "Marcelinho da Lua",
+      "url": "https://www.madeira-unlocked.com/en/events/marcelinho-da-lua-2026-10-24",
+      "start": "2026-10-24T17:30:00+01:00",
+      "end": "2026-10-24T19:30:00+01:00",
+      "date": "2026-10-24",
+      "time": "17:30",
+      "venue": "Largo do Socorro",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Largo do Socorro",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "rock-in-mamma-concert-2026-10-24",
@@ -4214,7 +4364,7 @@
       "time": "21:00",
       "venue": "Fórum Machico",
       "municipality": "Machico",
-      "price": 0,
+      "price": 5,
       "organizer": "Grupo de Teatro de Machico",
       "category": "theatre",
       "source_category": "theater"
@@ -4235,6 +4385,21 @@
       "source_category": "theater"
     },
     {
+      "id": "pumpkin-carving-2026-10-25",
+      "title": "Pumpkin Carving",
+      "url": "https://www.madeira-unlocked.com/en/events/pumpkin-carving-2026-10-25",
+      "start": "2026-10-25T11:00:00+00:00",
+      "end": "2026-10-25T13:00:00+00:00",
+      "date": "2026-10-25",
+      "time": "11:00",
+      "venue": "Pura Vida",
+      "municipality": "Funchal",
+      "price": 40,
+      "organizer": "Pura Vida",
+      "category": "family",
+      "source_category": "kids-family"
+    },
+    {
       "id": "festival-avesso-2026-2026-10-25-1500",
       "title": "Festival Avesso 2026",
       "url": "https://www.madeira-unlocked.com/en/events/festival-avesso-2026-2026-10-25-1500",
@@ -4248,6 +4413,21 @@
       "organizer": "Associação Avesso",
       "category": "theatre",
       "source_category": "theater"
+    },
+    {
+      "id": "pumpkin-carving-2026-10-25-1700",
+      "title": "Pumpkin Carving",
+      "url": "https://www.madeira-unlocked.com/en/events/pumpkin-carving-2026-10-25-1700",
+      "start": "2026-10-25T17:00:00+00:00",
+      "end": "2026-10-25T19:00:00+00:00",
+      "date": "2026-10-25",
+      "time": "17:00",
+      "venue": "Pura Vida",
+      "municipality": "Funchal",
+      "price": 40,
+      "organizer": "Pura Vida",
+      "category": "family",
+      "source_category": "kids-family"
     },
     {
       "id": "madeira-international-mandolin-festival-2026-10-25-2000",
@@ -4321,6 +4501,21 @@
       "municipality": "Funchal",
       "price": 25,
       "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "mordo-mia-rufia-dj-sets-2026-10-30",
+      "title": "Mordo Mia & Rufia DJ Sets",
+      "url": "https://www.madeira-unlocked.com/en/events/mordo-mia-rufia-dj-sets-2026-10-30",
+      "start": "2026-10-30T17:30:00+00:00",
+      "end": "2026-10-30T19:30:00+00:00",
+      "date": "2026-10-30",
+      "time": "17:30",
+      "venue": "Largo do Socorro",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Largo do Socorro",
       "category": "concert",
       "source_category": "music-concerts"
     },
@@ -4445,6 +4640,36 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "alive-halloween-dance-and-music-gathering-2026-10-31",
+      "title": "ALIVE - Halloween Dance And & Music Gathering",
+      "url": "https://www.madeira-unlocked.com/en/events/alive-halloween-dance-and-music-gathering-2026-10-31",
+      "start": "2026-10-31T16:00:00+00:00",
+      "end": "2026-10-31T23:00:00+00:00",
+      "date": "2026-10-31",
+      "time": "16:00",
+      "venue": "Rua da Levada de St. Luzia 31C",
+      "municipality": "Funchal",
+      "price": 25,
+      "organizer": "Mahdi Hlewi",
+      "category": "festival",
+      "source_category": "festivals-parades"
+    },
+    {
+      "id": "wizard-night-bz-2026-10-31",
+      "title": "Wizard Night, BZ",
+      "url": "https://www.madeira-unlocked.com/en/events/wizard-night-bz-2026-10-31",
+      "start": "2026-10-31T17:30:00+00:00",
+      "end": "2026-10-31T19:30:00+00:00",
+      "date": "2026-10-31",
+      "time": "17:30",
+      "venue": "Largo do Socorro",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Largo do Socorro",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "albrecht-mayer-orquestra-classica-da-madeira-2026-10-31",
       "title": "Albrecht Mayer & Orquestra Clássica da Madeira",
       "url": "https://www.madeira-unlocked.com/en/events/albrecht-mayer-orquestra-classica-da-madeira-2026-10-31",
@@ -4544,7 +4769,7 @@
       "time": "21:00",
       "venue": "Fórum Machico",
       "municipality": "Machico",
-      "price": 0,
+      "price": 5,
       "organizer": "Grupo de Teatro de Machico",
       "category": "theatre",
       "source_category": "theater"
@@ -4664,7 +4889,7 @@
       "time": "21:00",
       "venue": "Fórum Machico",
       "municipality": "Machico",
-      "price": 0,
+      "price": 5,
       "organizer": "Grupo de Teatro de Machico",
       "category": "theatre",
       "source_category": "theater"
@@ -4818,6 +5043,21 @@
       "organizer": "ABM Madeira",
       "category": "concert",
       "source_category": "music-concerts"
+    },
+    {
+      "id": "bachata-styling-in-couple-solo-2026-12-09",
+      "title": "Bachata Styling (in Couple & Solo)",
+      "url": "https://www.madeira-unlocked.com/en/events/bachata-styling-in-couple-solo-2026-12-09",
+      "start": "2026-12-09T18:30:00+00:00",
+      "end": "2026-12-09T19:30:00+00:00",
+      "date": "2026-12-09",
+      "time": "18:30",
+      "venue": "Funchal, Marina (below beerhouse)",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Level Up Dance Studio",
+      "category": "dance",
+      "source_category": "dance"
     }
   ]
 }
