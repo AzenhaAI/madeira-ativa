@@ -1,75 +1,46 @@
 <!DOCTYPE html>
-<html lang="en"><!-- lang synced from localStorage -->
+<html lang="en">
 <head>
-<script>(function(){var l=null;try{l=localStorage.getItem("lang");if(l!=="pt"&&l!=="en"){localStorage.setItem("lang","en");l="en"}}catch(e){l="en"}document.documentElement.lang=l;})();</script>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Madeira Trail Running Statistics & Race Analytics · Madeira Ativa</title>
-  <meta name="description" content="Trail running analytics for Madeira: race statistics, finish times, DNF rates and international participation trends.">
-  <link rel="canonical" href="https://azenha.ai/ativa/madeira_stat">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Madeira Ativa">
-  <meta property="og:title" content="Madeira Trail Running Statistics & Race Analytics · Madeira Ativa">
-  <meta property="og:description" content="Trail running analytics for Madeira: race statistics, finish times, DNF rates and international participation trends.">
-  <meta property="og:url" content="https://azenha.ai/ativa/madeira_stat">
-  <meta property="og:image" content="https://azenha.ai/ativa/og.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:locale" content="en">
-  <meta property="og:locale:alternate" content="pt_PT">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Madeira Trail Running Statistics & Race Analytics · Madeira Ativa">
-  <meta name="twitter:description" content="Trail running analytics for Madeira: race statistics, finish times, DNF rates and international participation trends.">
-  <meta name="twitter:image" content="https://azenha.ai/ativa/og.png">
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trail running statistics · Madeira Ativa</title>
+<meta name="description" content="Madeira trail races in numbers.">
 <link rel="icon" href="/ativa/icon.svg" type="image/svg+xml">
+<script>(function(){var h=document.documentElement,l=null,t=null;try{l=localStorage.getItem("lang");t=localStorage.getItem("ma-theme")}catch(e){}var q=new URLSearchParams(location.search).get("lang");if(q==="en"||q==="pt")l=q;h.lang=(l==="pt")?"pt":"en";if(new URLSearchParams(location.search).has("app"))h.classList.add("app");h.classList.add(t==="dark"?"dark":"light");})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/ativa/ui/ui.css?v=20261010g">
+<script src="/ativa/ui/ui.js?v=20261010g"></script>
+<link rel="canonical" href="https://azenha.ai/ativa/madeira_stat">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Madeira Ativa">
+<meta property="og:title" content="Trail running statistics · Madeira Ativa">
+<meta property="og:description" content="Madeira trail races in numbers.">
+<meta property="og:url" content="https://azenha.ai/ativa/madeira_stat">
+<meta property="og:image" content="https://azenha.ai/ativa/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1F4D32">
+<link rel="manifest" href="/ativa/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/ativa/icon-192.png">
+<script>
+if (!new URLSearchParams(location.search).has('app')) {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  var gaTag = document.createElement('script'); gaTag.async = true;
+  gaTag.src = 'https://www.googletagmanager.com/gtag/js?id=G-M2PTQLF903'; document.head.appendChild(gaTag);
+  gtag('js', new Date()); gtag('config', 'G-M2PTQLF903', { content_group: 'ativa' });
+}
+</script>
+</head>
+<body data-page="stats">
+<div class="wrap">
+<header class="hd"><a class="brand" href="/ativa/"><span class="logo"><svg viewBox="0 0 512 512" aria-hidden="true"><g transform="translate(86 54) scale(1.55)" fill="none" stroke="#f5f2ea" stroke-width="9" stroke-linecap="round"><circle cx="110" cy="110" r="90"/><line x1="20" y1="110" x2="200" y2="110"/><line x1="110" y1="20" x2="110" y2="200"/><path d="M0 232C30 222 50 244 80 232S130 222 160 232S200 244 220 232"/></g></svg></span><span class="name">Madeira Ativa</span></a><nav><a href="/ativa/ask">Ask AI</a><a href="/ativa/events"><span data-l="en">Events</span><span data-l="pt">Eventos</span></a><a href="/ativa/maps/"><span data-l="en">Map</span><span data-l="pt">Mapa</span></a><a href="/ativa/levada">Levadas</a><a href="/ativa/madeira_festas">Festas</a><a href="/ativa/webcams">Webcams</a><a href="/ativa/bus">Bus</a></nav><span class="sp"></span><span class="seg"><button type="button" data-set="en">EN</button><button type="button" data-set="pt">PT</button></span><button type="button" class="icon-btn" data-menu aria-label="Menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg></button></header>
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
 
-body {
-  font-family: 'Inter', -apple-system, sans-serif;
-  background: #F5F2EA;
-  color: #15201A;
-  line-height: 1.5;
-}
 
-.wrap {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0 clamp(18px, 4vw, 48px);
-}
 
 /* Top bar */
-.stat-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-}
-.brand-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  padding: 6px 0;
-  transition: opacity 0.2s;
-}
-.brand-link:hover { opacity: 0.8; }
-.brand-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 7px;
-  flex-shrink: 0;
-}
-.brand-name {
-  font-family: 'Fraunces', serif;
-  font-weight: 400;
-  font-size: 18px;
-  color: #1F4D32;
-  letter-spacing: -0.01em;
-}
 
 /* Sticky section nav */
 .section-nav {
@@ -765,22 +736,7 @@ body {
   display: block;
 }
 
-/* Language toggle */
-[lang="pt"] [data-lang="en"],
-[lang="en"] [data-lang="pt"] { display: none; }
-.lang-toggle {
-  font-family: inherit;
-  font-size: 13px;
-  font-weight: 600;
-  padding: 4px 10px;
-  border: 1px solid #DAD3C5;
-  border-radius: 6px;
-  background: transparent;
-  color: #6B8763;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-.lang-toggle:hover { border-color: #1F4D32; color: #1F4D32; }
+
 
 .footer {
   padding: 32px 0;
@@ -878,88 +834,25 @@ body {
   .section-nav a { padding: 10px 12px; font-size: 12px; }
 }
 
-  .burger{flex-shrink:0;margin-left:8px;padding:2px 10px 4px;background:none;border:1px solid #DAD3C5;border-radius:8px;font-size:18px;line-height:1.4;color:#1F4D32;cursor:pointer}
-  .burger:hover{border-color:#1F4D32}
-  .drawer-back{position:fixed;inset:0;z-index:300;background:rgba(21,32,26,0.45);backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
-  .drawer{position:fixed;top:0;right:0;bottom:0;z-index:301;width:min(320px,86vw);background:#F5F2EA;border-left:1px solid #DAD3C5;box-shadow:-12px 0 32px rgba(21,32,26,0.25);display:flex;flex-direction:column;padding:14px 0 20px;animation:drawerIn .22s ease-out}
-  @keyframes drawerIn{from{transform:translateX(100%)}to{transform:translateX(0)}}
-  .drawer-head{display:flex;align-items:center;justify-content:space-between;padding:4px 18px 12px;border-bottom:1px solid #DAD3C5}
-  .drawer-title{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:18px;color:#1F4D32}
-  .drawer-close{background:none;border:0;font-size:28px;line-height:1;color:#6B8763;cursor:pointer;padding:0 2px}
-  .drawer-close:hover{color:#1F4D32}
-  .drawer-nav{display:flex;flex-direction:column;overflow-y:auto;padding:10px 6px}
-  .drawer-nav a{display:block;padding:12px 16px;border-radius:10px;color:#15201A;text-decoration:none;font-size:15.5px;font-weight:600}
-  .drawer-nav a:hover{background:rgba(31,77,50,0.08);color:#1F4D32}
-  .drawer-sep{height:1px;background:#DAD3C5;margin:10px 14px}
 
-  .totop{position:fixed;right:16px;bottom:18px;z-index:250;width:44px;height:44px;border-radius:50%;border:1px solid #DAD3C5;background:rgba(31,77,50,0.92);color:#fff;font-size:20px;line-height:1;cursor:pointer;box-shadow:0 4px 14px rgba(21,32,26,0.3);opacity:0;pointer-events:none;transition:opacity .25s}
-  .totop.show{opacity:1;pointer-events:auto}
-  .totop:hover{background:#163d27}
-  .drawer[hidden],.drawer-back[hidden]{display:none}
-.burger svg{display:block}
-@media(max-width:640px){
-  .burger{padding:4px 8px;font-size:12px;margin:5px 0 5px 6px;border-radius:7px}
-  .burger svg{width:12px;height:10px}
-  .nav-lang{font-size:11px;padding:2px 8px;margin:6px 0}
-  .lang button{font-size:11.5px;padding:3px 9px}
-  .lang-toggle{font-size:11.5px;padding:2px 7px}
-}
-@media(max-width:640px){
-  .nav-lang,.burger{width:auto!important;min-width:0!important;max-width:none!important;height:29px!important;flex:0 0 auto!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important}
-  .burger{padding:0 9px!important}
-  .nav-lang{padding:0 9px!important}
-}
-@media(max-width:640px){
-  .site-nav,.section-nav{position:relative}
-  .site-nav-inner,.section-nav-inner{padding-right:80px}
-  .nav-lang,.burger{position:absolute!important;top:50%;transform:translateY(-50%);height:24px!important;line-height:22px!important;font-size:11px!important;padding:0 7px!important;background:var(--bg,#F5F2EA)!important;z-index:2;margin:0!important;border-radius:8px}
-  .nav-lang{right:42px}
-  .burger{right:10px}
-}
+/* /ativa-next shell: section nav sits under the 54px header; cards on tokens */
+.section-nav{top:54px;background:color-mix(in srgb,var(--bg) 92%,transparent)}
+.page-header h1{font:500 var(--h1)/1.15 Fraunces,Georgia,serif;color:var(--ink)}
+.toc-card,.section,.miut-chart-card{background:var(--panel)!important;border-color:var(--line)!important}
+.toc-title,h2,h3{color:var(--ink)}
+.toc-desc,.footer{color:var(--soft)}
+.footer-links a{color:var(--green)}
+
+
+/* The charts are drawn on canvas in fixed light-page colours, so in dark mode
+   the stats sit on a light sheet of their own instead of half-inverting. */
+html.dark .stats-paper{--bg:#FAF8F2;--panel:#FFFFFF;--ink:#15201A;--soft:#5F6F62;--line:#E3DDD0;--green:#0F6E56;
+  background:#F5F2EA;color:#15201A;border-radius:16px;padding:4px 12px 12px;margin-top:12px;color-scheme:light}
 </style>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M2PTQLF903"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-M2PTQLF903', { content_group: 'ativa' });
-  </script>
-  <script>
-    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","xr4rlyhxyo");
-  </script>
-<style id="ma-ru-hide">[data-lang="ru"]{display:none!important}html[lang="ru"] [data-lang="ru"]{display:revert!important}</style>
-</head>
-<body>
-<div class="wrap">
-  <div class="stat-nav">
-    <a href="./" class="brand-link">
-      <svg class="brand-icon" viewBox="0 0 512 512" aria-hidden="true">
-        <rect width="512" height="512" rx="112" fill="#1f4d32"/>
-        <g transform="translate(86 54) scale(1.55)" fill="none" stroke="#f5f2ea" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="110" cy="110" r="90"/>
-          <circle cx="110" cy="110" r="76" stroke-dasharray="5 12" stroke-opacity="0.58"/>
-          <circle cx="110" cy="110" r="7" fill="#f5f2ea" stroke="none"/>
-          <line x1="20" y1="110" x2="200" y2="110"/>
-          <line x1="110" y1="20" x2="110" y2="200"/>
-          <line x1="46.4" y1="46.4" x2="173.6" y2="173.6"/>
-          <line x1="46.4" y1="173.6" x2="173.6" y2="46.4"/>
-          <path d="M0 232C30 222 50 244 80 232S130 222 160 232S200 244 220 232"/>
-          <path d="M0 248C30 238 50 260 80 248S130 238 160 248S200 260 220 248" stroke-opacity="0.58"/>
-        </g>
-      </svg>
-      <span class="brand-name">Madeira Ativa</span>
-    </a>
-    <div style="display:flex;gap:8px;align-items:center;">
-      <a href="mailto:agent@azenha.ai" style="color:#6B8763;text-decoration:none;font-size:13px;font-weight:500;transition:color 0.2s;"><span data-lang="en">Contact</span><span data-lang="pt">Contacto</span></a>
-      <button class="lang-toggle" onclick="toggleLang()" aria-label="Switch language">PT</button><button class="burger" id="burgerBtn" aria-label="Menu" aria-expanded="false"><svg width="17" height="13" viewBox="0 0 18 14" fill="none" aria-hidden="true"><path d="M1 1h16M1 7h16M1 13h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
-    </div>
-  </div>
-</div>
-
-<nav class="section-nav">
+<div class="stats-paper">
   <div class="wrap">
     <div class="section-nav-inner">
-      <a href="/ativa/">🏠 Main</a>
+      <a href="/ativa/">🏠 Home</a>
       <span style="flex-shrink:0;padding:12px 10px;font-size:13px;font-weight:800;color:#1F4D32;border-bottom:2px solid #1F4D32;white-space:nowrap">🏃 Trails</span>
       <a href="#facts" data-section="facts"><span data-lang="en">Facts</span><span data-lang="pt">Factos</span></a>
       <a href="#map" data-section="map"><span data-lang="en">Map</span><span data-lang="pt">Mapa</span></a>
@@ -1044,7 +937,7 @@ body {
     <h2><span data-lang="en">Trail Map</span><span data-lang="pt">Mapa de Trilhos</span></h2>
     <div class="map-embed">
       <iframe src="/ativa/map.html?theme=light&embed=1" title="Madeira Trails Map" loading="lazy"></iframe>
-      <a class="map-open" href="/ativa/map" target="_blank"><span data-lang="en">Open map ↗</span><span data-lang="pt">Abrir mapa ↗</span></a>
+      <a class="map-open" href="/ativa/maps/" target="_blank"><span data-lang="en">Open map ↗</span><span data-lang="pt">Abrir mapa ↗</span></a>
     </div>
   </div>
 
@@ -1280,7 +1173,7 @@ body {
   </div>
 
   <div class="footer">
-    <p><span data-lang="en">Data from official race websites · Profiles from GPX files · <a href="map" style="color:#1F4D32;">View trails map</a></span><span data-lang="pt">Dados dos sites oficiais das corridas · Perfis de ficheiros GPX · <a href="map" style="color:#1F4D32;">Ver mapa de trilhos</a></span></p>
+    <p><span data-lang="en">Data from official race websites · Profiles from GPX files · <a href="/ativa/maps/" style="color:#1F4D32;">View trails map</a></span><span data-lang="pt">Dados dos sites oficiais das corridas · Perfis de ficheiros GPX · <a href="/ativa/maps/" style="color:#1F4D32;">Ver mapa de trilhos</a></span></p>
     <div class="footer-links">
       <a href="https://atletismodamadeira.pt" target="_blank">AARAM</a>
       <a href="https://miutmadeira.com" target="_blank">MIUT</a>
@@ -1299,7 +1192,196 @@ body {
     </div>
   </div>
 </div>
-
+</div>
+<!-- RACE-INDEX:START -->
+  <section aria-label="Race results index" style="max-width:760px;margin:44px auto 0;padding:0 18px 8px">
+    <h2 style="font-family:Fraunces,Georgia,serif;font-size:20px;font-weight:600;margin:0 0 6px">Race results &amp; records</h2>
+    <p style="color:var(--soft);font-size:14px;margin:0 0 12px">Every Madeira trail race with full finisher, DNF and course-record data.</p>
+    <h3 style="font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--soft);margin:12px 0 6px">Series</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px;font-size:14px">
+      <a href="/ativa/series/miut">MIUT <span style="color:var(--soft)">· 17</span></a>
+      <a href="/ativa/series/tpcn">TPCN <span style="color:var(--soft)">· 12</span></a>
+      <a href="/ativa/series/tcl">TCL <span style="color:var(--soft)">· 11</span></a>
+      <a href="/ativa/series/kmvcl">KMVCL <span style="color:var(--soft)">· 11</span></a>
+      <a href="/ativa/series/tpm">TPM <span style="color:var(--soft)">· 10</span></a>
+      <a href="/ativa/series/kmvf">KMVF <span style="color:var(--soft)">· 10</span></a>
+      <a href="/ativa/series/maxi">MaXI <span style="color:var(--soft)">· 7</span></a>
+      <a href="/ativa/series/usm">USM <span style="color:var(--soft)">· 4</span></a>
+      <a href="/ativa/series/crt">CRT <span style="color:var(--soft)">· 3</span></a>
+      <a href="/ativa/series/svk">SVK <span style="color:var(--soft)">· 3</span></a>
+      <a href="/ativa/series/run-up-158">RUN UP 158 <span style="color:var(--soft)">· 3</span></a>
+      <a href="/ativa/series/1-2-kmvp">1/2 KMVP <span style="color:var(--soft)">· 2</span></a>
+      <a href="/ativa/series/efmc">EFMC <span style="color:var(--soft)">· 2</span></a>
+      <a href="/ativa/series/mbu">MBU <span style="color:var(--soft)">· 2</span></a>
+    </div>
+    <h3 style="font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--soft);margin:18px 0 6px">All editions</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:5px;font-size:13px">
+      <a href="/ativa/race/1o-meio-km-vertical-da-calheta">1º Meio km Vertical da Calheta</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2026">Madeira Island Ultra Trail 2026</a>
+      <a href="/ativa/race/trail-do-porto-moniz-2026">Trail do Porto Moniz 2026</a>
+      <a href="/ativa/race/xi-km-vertical-de-camara-de-lobos">XI km Vertical de Câmara de Lobos</a>
+      <a href="/ativa/race/adn-race-2025">ADN Race 2025</a>
+      <a href="/ativa/race/ecotrail-madeira-2025">Ecotrail Madeira 2025</a>
+      <a href="/ativa/race/ecotur2-skymarathon-pm-2025">Ecotur² SkyMarathon PM 2025</a>
+      <a href="/ativa/race/ecotur2-skyspeed-2-5km-500">Ecotur² SkySpeed 2.5km 500+</a>
+      <a href="/ativa/race/forum-madeira-run-up-158-2025">Fórum Madeira Run Up 158</a>
+      <a href="/ativa/race/madeira-backyard-ultra">Madeira Backyard Ultra</a>
+      <a href="/ativa/race/madeira-backyard-ultra-2025">Madeira Backyard Ultra</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2025">Madeira Island Ultra Trail® 2025</a>
+      <a href="/ativa/race/trail-do-porto-moniz-2025">Trail do Porto Moniz 2025</a>
+      <a href="/ativa/race/vii-maxi-race-madeira-2025">VII Maxi Race Madeira 2025</a>
+      <a href="/ativa/race/x-km-vertical-de-camara-de-lobos-2025">X km Vertical de Câmara de Lobos 2025</a>
+      <a href="/ativa/race/xii-tcl-2025-cancelado">XII TCL 2025 [Cancelado]</a>
+      <a href="/ativa/race/xii-trail-porto-da-cruz-natura-2025">XII Trail Porto da Cruz Natura 2025</a>
+      <a href="/ativa/race/xiii-km-vertical-do-fanal-2025">XIII KM Vertical do Fanal 2025</a>
+      <a href="/ativa/race/adn-race-2024-cancelada">ADN Race 2024 [Cancelada]</a>
+      <a href="/ativa/race/ecotrail-madeira-2024">Ecotrail Madeira 2024</a>
+      <a href="/ativa/race/ecotur-trail-porto-moniz-2024">Ecotur Trail Porto Moniz 2024</a>
+      <a href="/ativa/race/forum-madeira-run-up-158-2024">Forum Madeira Run-up 158</a>
+      <a href="/ativa/race/ix-km-vertical-de-camara-de-lobos">IX Km Vertical de Câmara de Lobos</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2024">Madeira Island Ultra Trail® 2024</a>
+      <a href="/ativa/race/trail-do-porto-moniz-2024">Trail do Porto Moniz 2024</a>
+      <a href="/ativa/race/vi-maxi-race-madeira-2024">VI Maxi Race Madeira 2024</a>
+      <a href="/ativa/race/xi-trail-porto-da-cruz-natura-2024">XI Trail Porto da Cruz Natura 2024</a>
+      <a href="/ativa/race/xi-trail-de-camara-de-lobos-2024">XI Trail de Câmara de Lobos 2024</a>
+      <a href="/ativa/race/xii-km-vertical-do-fanal-2024">XII KM Vertical do Fanal 2024</a>
+      <a href="/ativa/race/adn-race-2023">ADN Race 2023</a>
+      <a href="/ativa/race/forum-madeira-run-up-158">Forum Madeira Run Up 158</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2023">Madeira Island Ultra Trail® 2023</a>
+      <a href="/ativa/race/trail-do-porto-moniz-2023">Trail do Porto Moniz 2023</a>
+      <a href="/ativa/race/v-maxi-race-madeira-2023">V Maxi Race Madeira 2023</a>
+      <a href="/ativa/race/viii-km-vertical-camara-de-lobos">VIII Km Vertical Câmara de Lobos</a>
+      <a href="/ativa/race/x-trail-camara-de-lobos-2023">X Trail Câmara de Lobos 2023</a>
+      <a href="/ativa/race/x-trail-porto-da-cruz-natura-2023">X Trail Porto da Cruz Natura 2023</a>
+      <a href="/ativa/race/adn-race-ponta-do-sol-2022">ADN Race Ponta do Sol 2022</a>
+      <a href="/ativa/race/iv-maxi-race-madeira-2022">IV Maxi Race Madeira 2022</a>
+      <a href="/ativa/race/ix-trail-camara-de-lobos">IX Trail Câmara de Lobos</a>
+      <a href="/ativa/race/ix-trail-porto-da-cruz-natura-2022">IX Trail Porto da Cruz Natura 2022</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2022">Madeira Island Ultra Trail® 2022</a>
+      <a href="/ativa/race/trail-do-porto-moniz-2022-cancelado">Trail do Porto Moniz 2022 [Cancelado]</a>
+      <a href="/ativa/race/vii-km-vertical-camara-de-lobos">VII km Vertical Câmara de Lobos</a>
+      <a href="/ativa/race/viii-trail-camara-de-lobos">VIII Trail Câmara de Lobos</a>
+      <a href="/ativa/race/x-km-vertical-do-fanal-2022">X KM Vertical do Fanal 2022</a>
+      <a href="/ativa/race/adn-race-ponta-do-sol-2021">ADN Race Ponta do Sol 2021</a>
+      <a href="/ativa/race/iii-maxi-race-madeira-2021">III Maxi Race Madeira 2021</a>
+      <a href="/ativa/race/ix-km-vertical-do-fanal-2021">IX KM Vertical do Fanal 2021</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2021">Madeira Island Ultra Trail® 2021</a>
+      <a href="/ativa/race/vi-km-vertical-camara-de-lobos-2021">VI km Vertical Câmara de Lobos 2021</a>
+      <a href="/ativa/race/viii-trail-porto-da-cruz-natura-2021">VIII Trail Porto da Cruz Natura 2021</a>
+      <a href="/ativa/race/ecotrail-funchal-madeira-2020">Ecotrail Funchal - Madeira 2020</a>
+      <a href="/ativa/race/trail-do-porto-moniz-2020">Trail do Porto Moniz 2020</a>
+      <a href="/ativa/race/v-km-vertical-camara-de-lobos-2020">V km Vertical Câmara de Lobos 2020</a>
+      <a href="/ativa/race/vii-trail-porto-da-cruz-natura-2020">VII Trail Porto da Cruz Natura 2020</a>
+      <a href="/ativa/race/viii-km-vertical-do-fanal-2020">VIII KM Vertical do Fanal 2020</a>
+      <a href="/ativa/race/adn-race-ponta-do-sol-2019">ADN Race Ponta do Sol 2019</a>
+      <a href="/ativa/race/ecotrail-funchal-madeira-2019">Ecotrail Funchal - Madeira 2019</a>
+      <a href="/ativa/race/ii-maxi-race-madeira-2019">II Maxi Race Madeira 2019</a>
+      <a href="/ativa/race/iv-km-vertical-camara-de-lobos">IV km Vertical Câmara de Lobos</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2019">Madeira Island Ultra Trail 2019</a>
+      <a href="/ativa/race/ronda-dos-picos-skyrace-2019">Ronda dos Picos Skyrace®</a>
+      <a href="/ativa/race/santana-vertical-kilometer-2019">Santana Vertical Kilometer® 2019</a>
+      <a href="/ativa/race/trail-do-porto-moniz-2019">Trail do Porto Moniz 2019</a>
+      <a href="/ativa/race/ultra-skyrunning-madeira-2019">Ultra Skyrunning Madeira 2019</a>
+      <a href="/ativa/race/vi-trail-porto-da-cruz-natura-2019">VI Trail Porto da Cruz Natura 2019</a>
+      <a href="/ativa/race/vii-km-vertical-do-fanal-2019">VII KM Vertical do Fanal 2019</a>
+      <a href="/ativa/race/vii-trail-camara-de-lobos">VII Trail Câmara de Lobos</a>
+      <a href="/ativa/race/ecotrail-funchal-madeira-2018">Ecotrail Funchal - Madeira 2018</a>
+      <a href="/ativa/race/i-maxi-race-madeira-2018">I Maxi Race Madeira 2018</a>
+      <a href="/ativa/race/iii-km-vertical-camara-de-lobos">III km Vertical Câmara de Lobos</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2018">Madeira Island Ultra Trail 2018</a>
+      <a href="/ativa/race/santana-vertical-kilometer-2018">Santana Vertical Kilometer® 2018</a>
+      <a href="/ativa/race/trail-do-porto-moniz-2018">Trail do Porto Moniz 2018</a>
+      <a href="/ativa/race/ultra-skymarathon-madeira-2018">Ultra SkyMarathon® Madeira 2018</a>
+      <a href="/ativa/race/v-trail-porto-da-cruz-natura-2018">V Trail Porto da Cruz Natura 2018</a>
+      <a href="/ativa/race/vi-km-vertical-do-fanal-2018">VI KM Vertical do Fanal 2018</a>
+      <a href="/ativa/race/vi-trail-camara-de-lobos">VI Trail Câmara de Lobos</a>
+      <a href="/ativa/race/adn-race-ponta-do-sol-2017">ADN Race Ponta do Sol 2017</a>
+      <a href="/ativa/race/ecotrail-funchal-madeira-compressport-2017">Ecotrail Funchal - Madeira Compressport 2017</a>
+      <a href="/ativa/race/ii-km-vertical-camara-de-lobos">II km Vertical Câmara de Lobos</a>
+      <a href="/ativa/race/iii-cristo-rei-trail">III Cristo Rei Trail</a>
+      <a href="/ativa/race/iii-cristo-rei-trail-mc-spar">III Cristo Rei Trail - MC Spar</a>
+      <a href="/ativa/race/iv-trail-porto-da-cruz-natura-2017">IV Trail Porto da Cruz Natura 2017</a>
+      <a href="/ativa/race/km-vertical-costa-norte-2017">KM Vertical Costa Norte 2017</a>
+      <a href="/ativa/race/machico-madeira-trail-series-2017">Machico - Madeira Trail Series 2017</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2017">Madeira Island Ultra Trail 2017</a>
+      <a href="/ativa/race/porto-moniz-madeira-trail-series-2017">Porto Moniz - Madeira Trail Series 2017</a>
+      <a href="/ativa/race/porto-santo-madeira-trail-series-2017">Porto Santo - Madeira Trail Series 2017</a>
+      <a href="/ativa/race/ribeira-brava-madeira-trail-series-2017">Ribeira Brava - Madeira Trail Series 2017</a>
+      <a href="/ativa/race/ronda-dos-picos-skyrace">Ronda dos Picos Skyrace®</a>
+      <a href="/ativa/race/santana-vertical-kilometer">Santana Vertical Kilometer®</a>
+      <a href="/ativa/race/santana-madeira-trail-series-2017">Santana – Madeira Trail Series 2017</a>
+      <a href="/ativa/race/trail-do-curral-das-freiras">Trail do Curral das Freiras</a>
+      <a href="/ativa/race/trail-do-porto-moniz-2017">Trail do Porto Moniz 2017</a>
+      <a href="/ativa/race/ultra-skymarathon-madeira">Ultra SkyMarathon® Madeira</a>
+      <a href="/ativa/race/v-km-vertical-do-fanal-2017">V KM Vertical do Fanal 2017</a>
+      <a href="/ativa/race/v-trail-camara-de-lobos">V Trail Câmara de Lobos</a>
+      <a href="/ativa/race/v-12-km-vertical-dos-prazeres">V ½ km Vertical dos Prazeres</a>
+      <a href="/ativa/race/columbus-ultra-trail-2016">Columbus Ultra Trail 2016</a>
+      <a href="/ativa/race/ecotrail-funchal-madeira-compressport-2016">Ecotrail Funchal - Madeira Compressport 2016</a>
+      <a href="/ativa/race/i-km-vertical-camara-de-lobos">I km Vertical Câmara de Lobos</a>
+      <a href="/ativa/race/ii-cristo-rei-trail">II Cristo Rei Trail</a>
+      <a href="/ativa/race/iii-trail-porto-da-cruz-natura-2016">III Trail Porto da Cruz Natura 2016</a>
+      <a href="/ativa/race/iv-km-vertical-do-fanal-2016">IV KM Vertical do Fanal 2016</a>
+      <a href="/ativa/race/iv-trail-camara-de-lobos-rota-dos-vinhos">IV Trail Câmara de Lobos - Rota dos Vinhos</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2016">Madeira Island Ultra Trail 2016</a>
+      <a href="/ativa/race/ultra-trail-porto-moniz-e-sao-vicente-2016">Ultra Trail Porto Moniz e São Vicente 2016</a>
+      <a href="/ativa/race/v-trail-ludens-machico-2016">V Trail Ludens Machico 2016</a>
+      <a href="/ativa/race/volcanoes-trail-2016">Volcanoes Trail 2016</a>
+      <a href="/ativa/race/i-cristo-rei-trail">I Cristo Rei Trail</a>
+      <a href="/ativa/race/i-trail-da-calheta-2015">I Trail da Calheta 2015</a>
+      <a href="/ativa/race/i-trail-de-coracao-na-natureza-2015">I Trail de Coração na Natureza 2015</a>
+      <a href="/ativa/race/ii-trail-porto-da-cruz-natura-2015">II Trail Porto da Cruz Natura 2015</a>
+      <a href="/ativa/race/iii-km-vertical-do-fanal-2015">III KM Vertical do Fanal 2015</a>
+      <a href="/ativa/race/iii-trail-camara-de-lobos">III Trail Câmara de Lobos</a>
+      <a href="/ativa/race/iv-12-km-vertical-dos-prazeres">IV ½ km Vertical dos Prazeres</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2015">Madeira Island Ultra Trail 2015</a>
+      <a href="/ativa/race/trail-noturno-canical-2015">Trail Noturno Caniçal 2015</a>
+      <a href="/ativa/race/ultra-trail-sao-vicente-e-porto-moniz-2015">Ultra Trail São Vicente e Porto Moniz 2015</a>
+      <a href="/ativa/race/i-trail-porto-da-cruz-natura-2014">I Trail Porto da Cruz Natura 2014</a>
+      <a href="/ativa/race/ii-trail-camara-de-lobos">II Trail Câmara de Lobos</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2014">Madeira Island Ultra Trail 2014</a>
+      <a href="/ativa/race/trail-ludens-machico-2014">Trail Ludens Machico 2014</a>
+      <a href="/ativa/race/trail-porto-moniz-2014">Trail Porto Moniz 2014</a>
+      <a href="/ativa/race/ultra-skymarathon-madeira-2014">Ultra Skymarathon Madeira 2014</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2013">Madeira Island Ultra Trail 2013</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2012">Madeira Island Ultra Trail 2012</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2011">Madeira Island Ultra Trail 2011</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2009">Madeira Island Ultra Trail 2009</a>
+      <a href="/ativa/race/madeira-island-ultra-trail-2008">Madeira Island Ultra Trail 2008</a>
+    </div>
+  </section>
+  <style>[aria-label="Race results index"] a{color:var(--accent);text-decoration:none;padding:2px 0}[aria-label="Race results index"] a:hover{text-decoration:underline}</style>
+  <!-- RACE-INDEX:END -->
+<style>
+  /* A cropped chart has to say where it came from: the page title is usually
+     out of frame. One line per block that actually holds a chart. */
+  .src-line { margin: 12px 0 0; text-align: right; font-family: ui-monospace,
+    SFMono-Regular, Menlo, monospace; font-size: 11px; letter-spacing: .05em;
+    opacity: .45; }
+</style>
+<script>
+  (function () {
+    function tag() {
+      document.querySelectorAll('.section').forEach(function (b) {
+        var c = b.querySelector('canvas, svg');
+        if (!c) return;
+        /* Thumbnails are not charts: 44 trail cards each carry a tiny profile,
+           and signing every one of them turns the page into a colophon. */
+        var r = c.getBoundingClientRect();
+        if (r.width < 300 || r.height < 140) return;
+        if (b.querySelector(':scope > .src-line')) return;
+        var p = document.createElement('p');
+        p.className = 'src-line';
+        p.textContent = 'azenha.ai/ativa';
+        b.appendChild(p);
+      });
+    }
+    tag();
+    // Charts that are built by script appear after this runs.
+    window.addEventListener('load', tag);
+    setTimeout(tag, 1200);
+  })();
+</script>
 <script>
 const COLORS = {
   "MIUT": "#1F4D32",
@@ -1371,18 +1453,11 @@ function toggleLang() {
   window.dispatchEvent(new Event('trailcal:lang'));
 }
 
-(function() {
-  const saved = localStorage.getItem('lang');
-  if (saved === 'pt') {
-    document.documentElement.lang = 'pt';
-    document.querySelector('.lang-toggle').textContent = 'EN';
-  }
-})();
 
 // --- Data loading ---
 Promise.all([
-  fetch('elevation.json').then(r => r.json()),
-  fetch('events.json').then(r => r.json()),
+  fetch('/ativa/elevation.json').then(r => r.json()),
+  fetch('/ativa/events.json').then(r => r.json()),
 ]).then(([elevData, eventsData]) => {
   const races = elevData.races;
   const rcEn = document.getElementById('raceCountEn');
@@ -2105,7 +2180,7 @@ function initPills(groupId, onChange) {
 // --- MIUT Analytics ---
 (async function() {
   try {
-    const resp = await fetch('miut_data.json');
+    const resp = await fetch('/ativa/miut_data.json');
     const editions = await resp.json();
     const past = editions.filter(e => e.total_finishers > 0);
     if (!past.length) return;
@@ -2426,7 +2501,7 @@ function drawDnfChart(canvasId, editions, height) {
 // --- All Trails Analytics ---
 (async function() {
   try {
-    const resp = await fetch('all_trails.json');
+    const resp = await fetch('/ativa/all_trails.json');
     const events = await resp.json();
     if (!events.length) return;
 
@@ -2496,7 +2571,7 @@ function drawDnfChart(canvasId, editions, height) {
 
     // Clubs ranking
     try {
-      const clubsResp = await fetch('clubs_data.json');
+      const clubsResp = await fetch('/ativa/clubs_data.json');
       const clubsData = await clubsResp.json();
       let clubsSort = 'finishers';
       let clubsExpanded = false;
@@ -2519,7 +2594,7 @@ function drawDnfChart(canvasId, editions, height) {
 
     // Localities ranking
     try {
-      const locResp = await fetch('localities_data.json');
+      const locResp = await fetch('/ativa/localities_data.json');
       const locData = await locResp.json();
       let locExpanded = false;
       buildLocalitiesRanking('localities-ranking', locData, 10);
@@ -2538,8 +2613,8 @@ function drawDnfChart(canvasId, editions, height) {
     // === Advanced Analytics ===
     try {
       const [tdResp, loyResp, intlResp, dnfResp, hourResp] = await Promise.all([
-        fetch('time_distributions.json'), fetch('loyalty_data.json'),
-        fetch('intl_trend.json'), fetch('dnf_by_race.json'), fetch('finish_hours.json')
+        fetch('/ativa/time_distributions.json'), fetch('/ativa/loyalty_data.json'),
+        fetch('/ativa/intl_trend.json'), fetch('/ativa/dnf_by_race.json'), fetch('/ativa/finish_hours.json')
       ]);
       const timeDist = await tdResp.json();
       const loyalty = await loyResp.json();
@@ -3543,7 +3618,7 @@ function drawAllCountriesBar(canvasId, events, aliases, height, limit, minVal) {
 
   window.addEventListener('trailcal:lang', function () { renderMini(); if (!document.getElementById('trailCalOverlay').hidden) renderTable(); });
 
-  fetch('trail_calendar.json').then(function (r) { return r.json(); }).then(function (d) {
+  fetch('/ativa/trail_calendar.json').then(function (r) { return r.json(); }).then(function (d) {
     TC = d; renderMini();
     if (location.hash === '#calendar') {
       var el = document.getElementById('trailCalMini');
@@ -3568,236 +3643,22 @@ function drawAllCountriesBar(canvasId, events, aliases, height, limit, minVal) {
     }
   });
 })();
-</script>
-<div class="drawer-back" id="drawerBack" hidden></div>
-<aside class="drawer" id="drawer" hidden>
-  <div class="drawer-head"><span class="drawer-title">Madeira Ativa</span><button class="drawer-close" id="drawerClose" aria-label="Close">&times;</button></div>
-  <nav class="drawer-nav">
-    <a href="/ativa/">🏠 Main</a>
-    <a href="/ativa/madeira_stat">🏃 Trails</a>
-    <a href="/ativa/levada">🥾 Levadas</a>
-    <a href="/ativa/map?layer=race">🗺 Map</a>
-    <a href="/ativa/map3d">⛰ 3D map</a>
-    <a href="/ativa/mapfly">🛩 3D flyover</a>
-    <a href="/ativa/mapbay">🌍 Aerial view</a>
-    <a href="/ativa/webcams">📷 <span data-lang="en">Webcams</span><span data-lang="pt">Webcams</span></a>
-    <a href="/ativa/bus">🚌 <span data-lang="en">By bus</span><span data-lang="pt">De autocarro</span></a>
-    <a href="/ativa/madeira_festas">🎆 Festas</a>
-    <a href="/ativa/madeira_news">📰 News</a>
-    <a href="/ativa/madeira_history">📜 History</a>
-    <div class="drawer-sep"></div>
-    <a href="https://t.me/madeira_ebot" target="_blank" rel="noopener">✈️ Telegram bot</a>
-        <a href="https://t.me/madeira_ativa" target="_blank" rel="noopener">✈️ Telegram channel</a>
-    <a href="mailto:agent@azenha.ai">✉️ Contact</a>
-    <a href="/ativa/sources">📚 <span data-lang="en">Sources and licences</span><span data-lang="pt">Fontes e licenças</span></a>
-    <a href="/studio/">✨ <span data-lang="en">About Azenha.ai studio</span><span data-lang="pt">Sobre o estúdio Azenha.ai</span></a>
-  </nav>
-</aside>
-<script>
-(function(){var b=document.getElementById('burgerBtn'),d=document.getElementById('drawer'),k=document.getElementById('drawerBack');
-function o(){d.hidden=false;k.hidden=false;}function c(){d.hidden=true;k.hidden=true;}
-b.addEventListener('click',function(){d.hidden?o():c();});
-document.getElementById('drawerClose').addEventListener('click',c);k.addEventListener('click',c);
-document.addEventListener('keydown',function(e){if(e.key==='Escape')c();});
-d.addEventListener('click',function(e){if(e.target.closest('a'))c();});})();
-</script>
 
-<button class="totop" id="toTop" aria-label="Back to top">↑</button>
-<script>
-(function(){var t=document.getElementById('toTop');
-window.addEventListener('scroll',function(){t.classList.toggle('show',window.scrollY>600);},{passive:true});
-t.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();
+// Language comes from the shared shell (ui.js): re-render what is drawn in script.
+MA.onLang(function () {
+  if (window._eventsData && typeof renderCalendar === 'function') renderCalendar(window._eventsData);
+  window.dispatchEvent(new Event('trailcal:lang'));
+  if (typeof applyLang === 'function') applyLang(MA.lang());
+});
 </script>
-<!-- RACE-INDEX:START -->
-  <section aria-label="Race results index" style="max-width:760px;margin:44px auto 0;padding:0 18px 8px">
-    <h2 style="font-family:Fraunces,Georgia,serif;font-size:20px;font-weight:600;margin:0 0 6px">Race results &amp; records</h2>
-    <p style="color:var(--soft);font-size:14px;margin:0 0 12px">Every Madeira trail race with full finisher, DNF and course-record data.</p>
-    <h3 style="font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--soft);margin:12px 0 6px">Series</h3>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px;font-size:14px">
-      <a href="/ativa/series/miut">MIUT <span style="color:var(--soft)">· 17</span></a>
-      <a href="/ativa/series/tpcn">TPCN <span style="color:var(--soft)">· 12</span></a>
-      <a href="/ativa/series/tcl">TCL <span style="color:var(--soft)">· 11</span></a>
-      <a href="/ativa/series/kmvcl">KMVCL <span style="color:var(--soft)">· 11</span></a>
-      <a href="/ativa/series/tpm">TPM <span style="color:var(--soft)">· 10</span></a>
-      <a href="/ativa/series/kmvf">KMVF <span style="color:var(--soft)">· 10</span></a>
-      <a href="/ativa/series/maxi">MaXI <span style="color:var(--soft)">· 7</span></a>
-      <a href="/ativa/series/usm">USM <span style="color:var(--soft)">· 4</span></a>
-      <a href="/ativa/series/crt">CRT <span style="color:var(--soft)">· 3</span></a>
-      <a href="/ativa/series/svk">SVK <span style="color:var(--soft)">· 3</span></a>
-      <a href="/ativa/series/run-up-158">RUN UP 158 <span style="color:var(--soft)">· 3</span></a>
-      <a href="/ativa/series/1-2-kmvp">1/2 KMVP <span style="color:var(--soft)">· 2</span></a>
-      <a href="/ativa/series/efmc">EFMC <span style="color:var(--soft)">· 2</span></a>
-      <a href="/ativa/series/mbu">MBU <span style="color:var(--soft)">· 2</span></a>
-    </div>
-    <h3 style="font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--soft);margin:18px 0 6px">All editions</h3>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:5px;font-size:13px">
-      <a href="/ativa/race/1o-meio-km-vertical-da-calheta">1º Meio km Vertical da Calheta</a>
-      <a href="/ativa/race/madeira-island-ultra-trail-2026">Madeira Island Ultra Trail 2026</a>
-      <a href="/ativa/race/trail-do-porto-moniz-2026">Trail do Porto Moniz 2026</a>
-      <a href="/ativa/race/xi-km-vertical-de-camara-de-lobos">XI km Vertical de Câmara de Lobos</a>
-      <a href="/ativa/race/adn-race-2025">ADN Race 2025</a>
-      <a href="/ativa/race/ecotrail-madeira-2025">Ecotrail Madeira 2025</a>
-      <a href="/ativa/race/ecotur2-skymarathon-pm-2025">Ecotur² SkyMarathon PM 2025</a>
-      <a href="/ativa/race/ecotur2-skyspeed-2-5km-500">Ecotur² SkySpeed 2.5km 500+</a>
-      <a href="/ativa/race/forum-madeira-run-up-158-2025">Fórum Madeira Run Up 158</a>
-      <a href="/ativa/race/madeira-backyard-ultra">Madeira Backyard Ultra</a>
-      <a href="/ativa/race/madeira-backyard-ultra-2025">Madeira Backyard Ultra</a>
-      <a href="/ativa/race/madeira-island-ultra-trail-2025">Madeira Island Ultra Trail® 2025</a>
-      <a href="/ativa/race/trail-do-porto-moniz-2025">Trail do Porto Moniz 2025</a>
-      <a href="/ativa/race/vii-maxi-race-madeira-2025">VII Maxi Race Madeira 2025</a>
-      <a href="/ativa/race/x-km-vertical-de-camara-de-lobos-2025">X km Vertical de Câmara de Lobos 2025</a>
-      <a href="/ativa/race/xii-tcl-2025-cancelado">XII TCL 2025 [Cancelado]</a>
-      <a href="/ativa/race/xii-trail-porto-da-cruz-natura-2025">XII Trail Porto da Cruz Natura 2025</a>
-      <a href="/ativa/race/xiii-km-vertical-do-fanal-2025">XIII KM Vertical do Fanal 2025</a>
-      <a href="/ativa/race/adn-race-2024-cancelada">ADN Race 2024 [Cancelada]</a>
-      <a href="/ativa/race/ecotrail-madeira-2024">Ecotrail Madeira 2024</a>
-      <a href="/ativa/race/ecotur-trail-porto-moniz-2024">Ecotur Trail Porto Moniz 2024</a>
-      <a href="/ativa/race/forum-madeira-run-up-158-2024">Forum Madeira Run-up 158</a>
-      <a href="/ativa/race/ix-km-vertical-de-camara-de-lobos">IX Km Vertical de Câmara de Lobos</a>
-      <a href="/ativa/race/madeira-island-ultra-trail-2024">Madeira Island Ultra Trail® 2024</a>
-      <a href="/ativa/race/trail-do-porto-moniz-2024">Trail do Porto Moniz 2024</a>
-      <a href="/ativa/race/vi-maxi-race-madeira-2024">VI Maxi Race Madeira 2024</a>
-      <a href="/ativa/race/xi-trail-porto-da-cruz-natura-2024">XI Trail Porto da Cruz Natura 2024</a>
-      <a href="/ativa/race/xi-trail-de-camara-de-lobos-2024">XI Trail de Câmara de Lobos 2024</a>
-      <a href="/ativa/race/xii-km-vertical-do-fanal-2024">XII KM Vertical do Fanal 2024</a>
-      <a href="/ativa/race/adn-race-2023">ADN Race 2023</a>
-      <a href="/ativa/race/forum-madeira-run-up-158">Forum Madeira Run Up 158</a>
-      <a href="/ativa/race/madeira-island-ultra-trail-2023">Madeira Island Ultra Trail® 2023</a>
-      <a href="/ativa/race/trail-do-porto-moniz-2023">Trail do Porto Moniz 2023</a>
-      <a href="/ativa/race/v-maxi-race-madeira-2023">V Maxi Race Madeira 2023</a>
-      <a href="/ativa/race/viii-km-vertical-camara-de-lobos">VIII Km Vertical Câmara de Lobos</a>
-      <a href="/ativa/race/x-trail-camara-de-lobos-2023">X Trail Câmara de Lobos 2023</a>
-      <a href="/ativa/race/x-trail-porto-da-cruz-natura-2023">X Trail Porto da Cruz Natura 2023</a>
-      <a href="/ativa/race/adn-race-ponta-do-sol-2022">ADN Race Ponta do Sol 2022</a>
-      <a href="/ativa/race/iv-maxi-race-madeira-2022">IV Maxi Race Madeira 2022</a>
-      <a href="/ativa/race/ix-trail-camara-de-lobos">IX Trail Câmara de Lobos</a>
-      <a href="/ativa/race/ix-trail-porto-da-cruz-natura-2022">IX Trail Porto da Cruz Natura 2022</a>
-      <a href="/ativa/race/madeira-island-ultra-trail-2022">Madeira Island Ultra Trail® 2022</a>
-      <a href="/ativa/race/trail-do-porto-moniz-2022-cancelado">Trail do Porto Moniz 2022 [Cancelado]</a>
-      <a href="/ativa/race/vii-km-vertical-camara-de-lobos">VII km Vertical Câmara de Lobos</a>
-      <a href="/ativa/race/viii-trail-camara-de-lobos">VIII Trail Câmara de Lobos</a>
-      <a href="/ativa/race/x-km-vertical-do-fanal-2022">X KM Vertical do Fanal 2022</a>
-      <a href="/ativa/race/adn-race-ponta-do-sol-2021">ADN Race Ponta do Sol 2021</a>
-      <a href="/ativa/race/iii-maxi-race-madeira-2021">III Maxi Race Madeira 2021</a>
-      <a href="/ativa/race/ix-km-vertical-do-fanal-2021">IX KM Vertical do Fanal 2021</a>
-      <a href="/ativa/race/madeira-island-ultra-trail-2021">Madeira Island Ultra Trail® 2021</a>
-      <a href="/ativa/race/vi-km-vertical-camara-de-lobos-2021">VI km Vertical Câmara de Lobos 2021</a>
-      <a href="/ativa/race/viii-trail-porto-da-cruz-natura-2021">VIII Trail Porto da Cruz Natura 2021</a>
-      <a href="/ativa/race/ecotrail-funchal-madeira-2020">Ecotrail Funchal - Madeira 2020</a>
-      <a href="/ativa/race/trail-do-porto-moniz-2020">Trail do Porto Moniz 2020</a>
-      <a href="/ativa/race/v-km-vertical-camara-de-lobos-2020">V km Vertical Câmara de Lobos 2020</a>
-      <a href="/ativa/race/vii-trail-porto-da-cruz-natura-2020">VII Trail Porto da Cruz Natura 2020</a>
-      <a href="/ativa/race/viii-km-vertical-do-fanal-2020">VIII KM Vertical do Fanal 2020</a>
-      <a href="/ativa/race/adn-race-ponta-do-sol-2019">ADN Race Ponta do Sol 2019</a>
-      <a href="/ativa/race/ecotrail-funchal-madeira-2019">Ecotrail Funchal - Madeira 2019</a>
-      <a href="/ativa/race/ii-maxi-race-madeira-2019">II Maxi Race Madeira 2019</a>
-      <a href="/ativa/race/iv-km-vertical-camara-de-lobos">IV km Vertical Câmara de Lobos</a>
-      <a href="/ativa/race/madeira-island-ultra-trail-2019">Madeira Island Ultra Trail 2019</a>
-      <a href="/ativa/race/ronda-dos-picos-skyrace-2019">Ronda dos Picos Skyrace®</a>
-      <a href="/ativa/race/santana-vertical-kilometer-2019">Santana Vertical Kilometer® 2019</a>
-      <a href="/ativa/race/trail-do-porto-moniz-2019">Trail do Porto Moniz 2019</a>
-      <a href="/ativa/race/ultra-skyrunning-madeira-2019">Ultra Skyrunning Madeira 2019</a>
-      <a href="/ativa/race/vi-trail-porto-da-cruz-natura-2019">VI Trail Porto da Cruz Natura 2019</a>
-      <a href="/ativa/race/vii-km-vertical-do-fanal-2019">VII KM Vertical do Fanal 2019</a>
-      <a href="/ativa/race/vii-trail-camara-de-lobos">VII Trail Câmara de Lobos</a>
-      <a href="/ativa/race/ecotrail-funchal-madeira-2018">Ecotrail Funchal - Madeira 2018</a>
-      <a href="/ativa/race/i-maxi-race-madeira-2018">I Maxi Race Madeira 2018</a>
-      <a href="/ativa/race/iii-km-vertical-camara-de-lobos">III km Vertical Câmara de Lobos</a>
-      <a href="/ativa/race/madeira-island-ultra-trail-2018">Madeira Island Ultra Trail 2018</a>
-      <a href="/ativa/race/santana-vertical-kilometer-2018">Santana Vertical Kilometer® 2018</a>
-      <a href="/ativa/race/trail-do-porto-moniz-2018">Trail do Porto Moniz 2018</a>
-      <a href="/ativa/race/ultra-skymarathon-madeira-2018">Ultra SkyMarathon® Madeira 2018</a>
-      <a href="/ativa/race/v-trail-porto-da-cruz-natura-2018">V Trail Porto da Cruz Natura 2018</a>
-      <a href="/ativa/race/vi-km-vertical-do-fanal-2018">VI KM Vertical do Fanal 2018</a>
-      <a href="/ativa/race/vi-trail-camara-de-lobos">VI Trail Câmara de Lobos</a>
-      <a href="/ativa/race/adn-race-ponta-do-sol-2017">ADN Race Ponta do Sol 2017</a>
-      <a href="/ativa/race/ecotrail-funchal-madeira-compressport-2017">Ecotrail Funchal - Madeira Compressport 2017</a>
-      <a href="/ativa/race/ii-km-vertical-camara-de-lobos">II km Vertical Câmara de Lobos</a>
-      <a href="/ativa/race/iii-cristo-rei-trail">III Cristo Rei Trail</a>
-      <a href="/ativa/race/iii-cristo-rei-trail-mc-spar">III Cristo Rei Trail - MC Spar</a>
-      <a href="/ativa/race/iv-trail-porto-da-cruz-natura-2017">IV Trail Porto da Cruz Natura 2017</a>
-      <a href="/ativa/race/km-vertical-costa-norte-2017">KM Vertical Costa Norte 2017</a>
-      <a href="/ativa/race/machico-madeira-trail-series-2017">Machico - Madeira Trail Series 2017</a>
-      <a href="/ativa/race/madeira-island-ultra-trail-2017">Madeira Island Ultra Trail 2017</a>
-      <a href="/ativa/race/porto-moniz-madeira-trail-series-2017">Porto Moniz - Madeira Trail Series 2017</a>
-      <a href="/ativa/race/porto-santo-madeira-trail-series-2017">Porto Santo - Madeira Trail Series 2017</a>
-      <a href="/ativa/race/ribeira-brava-madeira-trail-series-2017">Ribeira Brava - Madeira Trail Series 2017</a>
-      <a href="/ativa/race/ronda-dos-picos-skyrace">Ronda dos Picos Skyrace®</a>
-      <a href="/ativa/race/santana-vertical-kilometer">Santana Vertical Kilometer®</a>
-      <a href="/ativa/race/santana-madeira-trail-series-2017">Santana – Madeira Trail Series 2017</a>
-      <a href="/ativa/race/trail-do-curral-das-freiras">Trail do Curral das Freiras</a>
-      <a href="/ativa/race/trail-do-porto-moniz-2017">Trail do Porto Moniz 2017</a>
-      <a href="/ativa/race/ultra-skymarathon-madeira">Ultra SkyMarathon® Madeira</a>
-      <a href="/ativa/race/v-km-vertical-do-fanal-2017">V KM Vertical do Fanal 2017</a>
-      <a href="/ativa/race/v-trail-camara-de-lobos">V Trail Câmara de Lobos</a>
-      <a href="/ativa/race/v-12-km-vertical-dos-prazeres">V ½ km Vertical dos Prazeres</a>
-      <a href="/ativa/race/columbus-ultra-trail-2016">Columbus Ultra Trail 2016</a>
-      <a href="/ativa/race/ecotrail-funchal-madeira-compressport-2016">Ecotrail Funchal - Madeira Compressport 2016</a>
-      <a href="/ativa/race/i-km-vertical-camara-de-lobos">I km Vertical Câmara de Lobos</a>
-      <a href="/ativa/race/ii-cristo-rei-trail">II Cristo Rei Trail</a>
-      <a href="/ativa/race/iii-trail-porto-da-cruz-natura-2016">III Trail Porto da Cruz Natura 2016</a>
-      <a href="/ativa/race/iv-km-vertical-do-fanal-2016">IV KM Vertical do Fanal 2016</a>
-      <a href="/ativa/race/iv-trail-camara-de-lobos-rota-dos-vinhos">IV Trail Câmara de Lobos - Rota dos Vinhos</a>
-      <a href="/ativa/race/madeira-island-ultra-trail-2016">Madeira Island Ultra Trail 2016</a>
-      <a href="/ativa/race/ultra-trail-porto-moniz-e-sao-vicente-2016">Ultra Trail Porto Moniz e São Vicente 2016</a>
-      <a href="/ativa/race/v-trail-ludens-machico-2016">V Trail Ludens Machico 2016</a>
-      <a href="/ativa/race/volcanoes-trail-2016">Volcanoes Trail 2016</a>
-      <a href="/ativa/race/i-cristo-rei-trail">I Cristo Rei Trail</a>
-      <a href="/ativa/race/i-trail-da-calheta-2015">I Trail da Calheta 2015</a>
-      <a href="/ativa/race/i-trail-de-coracao-na-natureza-2015">I Trail de Coração na Natureza 2015</a>
-      <a href="/ativa/race/ii-trail-porto-da-cruz-natura-2015">II Trail Porto da Cruz Natura 2015</a>
-      <a href="/ativa/race/iii-km-vertical-do-fanal-2015">III KM Vertical do Fanal 2015</a>
-      <a href="/ativa/race/iii-trail-camara-de-lobos">III Trail Câmara de Lobos</a>
-      <a href="/ativa/race/iv-12-km-vertical-dos-prazeres">IV ½ km Vertical dos Prazeres</a>
-      <a href="/ativa/race/madeira-island-ultra-trail-2015">Madeira Island Ultra Trail 2015</a>
-      <a href="/ativa/race/trail-noturno-canical-2015">Trail Noturno Caniçal 2015</a>
-      <a href="/ativa/race/ultra-trail-sao-vicente-e-porto-moniz-2015">Ultra Trail São Vicente e Porto Moniz 2015</a>
-      <a href="/ativa/race/i-trail-porto-da-cruz-natura-2014">I Trail Porto da Cruz Natura 2014</a>
-      <a href="/ativa/race/ii-trail-camara-de-lobos">II Trail Câmara de Lobos</a>
-      <a href="/ativa/race/madeira-island-ultra-trail-2014">Madeira Island Ultra Trail 2014</a>
-      <a href="/ativa/race/trail-ludens-machico-2014">Trail Ludens Machico 2014</a>
-      <a href="/ativa/race/trail-porto-moniz-2014">Trail Porto Moniz 2014</a>
-      <a href="/ativa/race/ultra-skymarathon-madeira-2014">Ultra Skymarathon Madeira 2014</a>
-      <a href="/ativa/race/madeira-island-ultra-trail-2013">Madeira Island Ultra Trail 2013</a>
-      <a href="/ativa/race/madeira-island-ultra-trail-2012">Madeira Island Ultra Trail 2012</a>
-      <a href="/ativa/race/madeira-island-ultra-trail-2011">Madeira Island Ultra Trail 2011</a>
-      <a href="/ativa/race/madeira-island-ultra-trail-2009">Madeira Island Ultra Trail 2009</a>
-      <a href="/ativa/race/madeira-island-ultra-trail-2008">Madeira Island Ultra Trail 2008</a>
-    </div>
-  </section>
-  <style>[aria-label="Race results index"] a{color:var(--accent);text-decoration:none;padding:2px 0}[aria-label="Race results index"] a:hover{text-decoration:underline}</style>
-  <!-- RACE-INDEX:END -->
-
-<style>
-  /* A cropped chart has to say where it came from: the page title is usually
-     out of frame. One line per block that actually holds a chart. */
-  .src-line { margin: 12px 0 0; text-align: right; font-family: ui-monospace,
-    SFMono-Regular, Menlo, monospace; font-size: 11px; letter-spacing: .05em;
-    opacity: .45; }
-</style>
-<script>
-  (function () {
-    function tag() {
-      document.querySelectorAll('.section').forEach(function (b) {
-        var c = b.querySelector('canvas, svg');
-        if (!c) return;
-        /* Thumbnails are not charts: 44 trail cards each carry a tiny profile,
-           and signing every one of them turns the page into a colophon. */
-        var r = c.getBoundingClientRect();
-        if (r.width < 300 || r.height < 140) return;
-        if (b.querySelector(':scope > .src-line')) return;
-        var p = document.createElement('p');
-        p.className = 'src-line';
-        p.textContent = 'azenha.ai/ativa';
-        b.appendChild(p);
-      });
-    }
-    tag();
-    // Charts that are built by script appear after this runs.
-    window.addEventListener('load', tag);
-    setTimeout(tag, 1200);
-  })();
-</script>
-<script src="/ativa/tabbar.js?v=20261009g" defer></script>
+<div class="stores"><a class="store" href="https://apps.apple.com/app/madeira-ativa/id6796836699" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.4 12.8c0-2.1 1.7-3.1 1.8-3.2-1-1.4-2.5-1.6-3-1.6-1.3-.1-2.5.7-3.1.7-.7 0-1.7-.7-2.8-.7-1.4 0-2.7.8-3.4 2.1-1.5 2.6-.4 6.4 1.1 8.5.7 1 1.5 2.2 2.7 2.1 1.1 0 1.5-.7 2.8-.7s1.7.7 2.8.7c1.2 0 1.9-1 2.6-2.1.8-1.2 1.1-2.3 1.2-2.4 0 0-2.7-1-2.7-3.4ZM14.3 6.6c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.6.7-1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2Z"/></svg><span><small><span data-l="en">Download on the</span><span data-l="pt">Descarregar na</span></small>App Store</span></a><a class="store" href="https://play.google.com/store/apps/details?id=ai.azenha.ativa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d7fe" d="M4.6 2.6a1 1 0 0 0-.5.9v17a1 1 0 0 0 .5.9l9.1-9.4-9.1-9.4Z"/><path fill="#00f076" d="m14.8 10.9 2.9-3-9.9-5.6 7 8.6Z"/><path fill="#ff3a44" d="m14.8 13.1-7 8.6 9.9-5.6-2.9-3Z"/><path fill="#ffd500" d="m18.9 10.9-2.4-1.4-3 3.5 3 3.5 2.4-1.4c.9-.5.9-1.7 0-2.2Z"/></svg><span><small><span data-l="en">Get it on</span><span data-l="pt">Disponível no</span></small>Google Play</span></a></div>
+<footer class="foot"><span>Madeira Ativa · azenha.ai</span><a href="/ativa/sources"><span data-l="en">Sources</span><span data-l="pt">Fontes</span></a><a href="/ativa/privacy"><span data-l="en">Privacy</span><span data-l="pt">Privacidade</span></a><a href="/apps/"><span data-l="en">All apps</span><span data-l="pt">Todas as apps</span></a><a href="mailto:agent@azenha.ai">agent@azenha.ai</a><a href="/ativa-101026/"><span data-l="en">Previous version</span><span data-l="pt">Versão anterior</span></a></footer>
+</div>
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" hidden><div class="drawer-hd"><b>Madeira Ativa</b><button type="button" class="icon-btn" data-theme-btn></button><button type="button" class="icon-btn" data-close aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.4 5 5 6.4 10.6 12 5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4 17.6 5 12 10.6z"/></svg></button></div><nav><div class="grp"><span data-l="en">Explore</span><span data-l="pt">Explorar</span></div><a href="/ativa/"><span data-l="en">Home</span><span data-l="pt">Início</span></a><a href="/ativa/events"><span data-l="en">Events</span><span data-l="pt">Eventos</span></a><a href="/ativa/levada">Levadas</a><a href="/ativa/maps/"><span data-l="en">Map</span><span data-l="pt">Mapa</span></a><a href="/ativa/maps/3d"><span data-l="en">3D map</span><span data-l="pt">Mapa 3D</span></a><a href="/ativa/maps/fly"><span data-l="en">3D flyover</span><span data-l="pt">Voo 3D</span></a><a href="/ativa/maps/aerial"><span data-l="en">Aerial view</span><span data-l="pt">Vista aérea</span></a><a href="/ativa/webcams">Webcams</a><a href="/ativa/bus"><span data-l="en">Trails by bus</span><span data-l="pt">Percursos de autocarro</span></a><div class="grp"><span data-l="en">Read</span><span data-l="pt">Ler</span></div><a href="/ativa/madeira_news"><span data-l="en">News</span><span data-l="pt">Notícias</span></a><a href="/ativa/madeira_festas">Festas</a><a href="/ativa/madeira_history"><span data-l="en">History</span><span data-l="pt">História</span></a><a href="/ativa/madeira_stat"><span data-l="en">Trail stats</span><span data-l="pt">Estatísticas</span></a><a href="/ativa/ask">Ask AI</a><div class="grp"><span data-l="en">More</span><span data-l="pt">Mais</span></div><a href="https://t.me/madeira_ebot" target="_blank" rel="noopener"><span data-l="en">Telegram bot</span><span data-l="pt">Bot do Telegram</span></a><a href="https://t.me/madeira_ativa" target="_blank" rel="noopener"><span data-l="en">Weekly digest</span><span data-l="pt">Resumo semanal</span></a><a href="/ativa/sources"><span data-l="en">Sources and licences</span><span data-l="pt">Fontes e licenças</span></a><a href="/ativa/privacy"><span data-l="en">Privacy</span><span data-l="pt">Privacidade</span></a><a href="/ativa/support"><span data-l="en">Support</span><span data-l="pt">Apoio</span></a><a href="mailto:agent@azenha.ai"><span data-l="en">Contact</span><span data-l="pt">Contacto</span></a><a href="/studio/"><span data-l="en">About Azenha.ai studio</span><span data-l="pt">Sobre o estúdio Azenha.ai</span></a></nav></aside>
+<nav class="bar" aria-label="Sections"><a href="/ativa/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 12h3v8h5v-6h4v6h5v-8h3z"/></svg><span><span data-l="en">Home</span><span data-l="pt">Início</span></span></a><a href="/ativa/ask"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8zM5 16l.9 2.1L8 19l-2.1.9L5 22l-.9-2.1L2 19l2.1-.9zM19 14l.7 1.6 1.6.7-1.6.7L19 18.6l-.7-1.6-1.6-.7 1.6-.7z"/></svg><span>Ask AI</span></a><a href="/ativa/events"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H4v18h16V4h-3V2h-2v2H9V2zm-1 7h12v11H6zm2 2v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm-8 4v2h2v-2zm4 0v2h2v-2z"/></svg><span><span data-l="en">Events</span><span data-l="pt">Eventos</span></span></a><a href="/ativa/maps/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4 9 2 3 4v18l6-2 6 2 6-2V2zm-5 .4 4 1.3v13.9l-4-1.3zM5 5.4l3-1v13.9l-3 1zm14 13.2-3 1V5.7l3-1z"/></svg><span><span data-l="en">Map</span><span data-l="pt">Mapa</span></span></a><a href="/ativa/levada"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 5.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM9.8 8.9 7 23h2.1l1.8-8 2.1 2v6h2v-7.5l-2.1-2 .6-3c1.3 1.5 3.3 2.5 5.5 2.5v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1L6 10.3V15h2v-3.4z"/></svg><span>Levadas</span></a><a href="/ativa/madeira_news"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3h16v18H4zm2 2v14h12V5zm2 2h8v2H8zm0 4h8v2H8zm0 4h5v2H8z"/></svg><span><span data-l="en">News</span><span data-l="pt">Notícias</span></span></a></nav>
+<script src="/ativa/trail-core.js?v=20261010g"></script>
+<script src="/ativa/ui/pages.js?v=20261010g" defer></script>
+<script>if ('serviceWorker' in navigator && !new URLSearchParams(location.search).has('app')) navigator.serviceWorker.register('/ativa/service-worker.js');</script>
 </body>
 </html>

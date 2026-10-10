@@ -1,4 +1,4 @@
-const CACHE_NAME = "madeira-ativa-v67";
+const CACHE_NAME = "madeira-ativa-v68";
 const CORE_ASSETS = [
   // "/ativa/" only — NOT "/ativa/index.html". Cloudflare Pages answers the
   // .html form with a 308 to the clean URL, and the Cache API refuses to store
