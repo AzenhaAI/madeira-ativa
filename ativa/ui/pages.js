@@ -66,8 +66,8 @@
   function home() {
     var today = MA.today(), data = {};
     Promise.all([
-      MA.get('https://api.open-meteo.com/v1/forecast?latitude=32.648,32.735,32.698&longitude=-16.908,-16.929,-16.774&elevation=50,1818,58&current=temperature_2m,weather_code,wind_speed_10m,wind_gusts_10m,wind_direction_10m'),
-      MA.get('https://marine-api.open-meteo.com/v1/marine?latitude=32.63&longitude=-16.92&current=wave_height,sea_surface_temperature&timezone=Atlantic%2FMadeira'),
+      MA.get('/ativa/api/om/forecast?latitude=32.648,32.735,32.698&longitude=-16.908,-16.929,-16.774&elevation=50,1818,58&current=temperature_2m,weather_code,wind_speed_10m,wind_gusts_10m,wind_direction_10m'),
+      MA.get('/ativa/api/om/marine?latitude=32.63&longitude=-16.92&current=wave_height,sea_surface_temperature&timezone=Atlantic%2FMadeira'),
       MA.get('/ativa/trails_status.json'), MA.get('/ativa/cruise_calls.json'),
       MA.get('https://api.ipma.pt/open-data/forecast/warnings/warnings_www.json'),
       MA.get('/ativa/events.json'), MA.get('/ativa/levadas.json'),
@@ -168,6 +168,7 @@
 
   // ------------------------------------------------------------ events
   function events() {
+    var qEl = $('#q'); if (qEl) MA.onLang(function () { qEl.placeholder = t('Search', 'Procurar'); }), qEl.placeholder = t('Search', 'Procurar');
     var P = [['today', 'Today', 'Hoje', 0], ['weekend', 'Weekend', 'Fim de semana', -1], ['week', 'Week', 'Semana', 7], ['month', 'Month', 'Mês', 31],
       ['3mo', '3 months', '3 meses', 92], ['6mo', '6 months', '6 meses', 183], ['year', 'Year', 'Ano', 366]];
     var K = [['all', 'All', 'Todos'], ['trail', 'Trail', 'Trail'], ['road', 'Road', 'Estrada'], ['orienteering', 'Orient', 'Orientação'],
@@ -261,7 +262,7 @@
         var dx = (o.center[0] - T.center[0]) * 111, dy = (o.center[1] - T.center[1]) * 94; return [o, Math.sqrt(dx * dx + dy * dy)];
       }).sort(function (a, b) { return a[1] - b[1]; }).slice(0, 4);
       rerender(paint);
-      if (T.center) MA.get('https://api.open-meteo.com/v1/forecast?latitude=' + T.center[0] + '&longitude=' + T.center[1] +
+      if (T.center) MA.get('/ativa/api/om/forecast?latitude=' + T.center[0] + '&longitude=' + T.center[1] +
         '&current=temperature_2m,weather_code,wind_speed_10m&hourly=precipitation_probability&forecast_days=1&timezone=Atlantic%2FMadeira').then(function (w) { wx = w; paintWx(); });
       if (window.ipmaReady) ipmaReady().then(function (api) { if (api) api.live().then(function (all) { T._warn = window.warnFor ? warnFor(T, all || []) : null; T._api = api; paintWx(); }); });
     });

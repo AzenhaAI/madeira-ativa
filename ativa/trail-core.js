@@ -111,7 +111,7 @@ function rankToday(levadas) {
   if (!cands.length) return Promise.resolve([]);
   var lats = cands.map(function (l) { return l.center[0].toFixed(4); }).join(',');
   var lons = cands.map(function (l) { return l.center[1].toFixed(4); }).join(',');
-  var url = 'https://api.open-meteo.com/v1/forecast?latitude=' + lats + '&longitude=' + lons +
+  var url = '/ativa/api/om/forecast?latitude=' + lats + '&longitude=' + lons +
     '&hourly=temperature_2m,precipitation_probability,windspeed_10m,weathercode' +
     '&forecast_days=1&timezone=Europe%2FLisbon';
   var warnings = ipmaReady().then(function (api) {
@@ -134,11 +134,14 @@ function rankToday(levadas) {
         if (k === 13) { temp = h.temperature_2m[k]; code = h.weathercode ? (h.weathercode[k] || 0) : 0; }
         n++;
       }
-      rain = n ? Math.round(rain / n) : 50;
+      // No forecast for this trail means no numbers for it: a default of 20° and
+      // 50% rain read exactly like a real forecast.
+      if (!n) return null;
+      rain = Math.round(rain / n);
       var warn = warnFor(l, warns);
       var score = rain * 1.3 + wind * 0.7 + (l.status === 'partial' ? 30 : 0) + (warn ? warn.penalty : 0);
       return { l: l, rain: rain, wind: wind, temp: temp, code: code, score: score, warn: warn };
-    }).sort(function (a, b) { return a.score - b.score; });
+    }).filter(Boolean).sort(function (a, b) { return a.score - b.score; });
     // Top three, one of each difficulty where possible — but never let that
     // variety rule pick a trail under a serious warning just to fill a level.
     var picks = [], used = {};

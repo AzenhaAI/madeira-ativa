@@ -12,10 +12,12 @@
   --ok:#1E7A4E; --ok-tint:#E3F2E8; --warn:#8A5D10; --warn-tint:#F6ECCF; --bad:#A33A2C; --bad-tint:#F4DDD9;
   --shadow:0 1px 2px rgba(21,32,26,.05);
   --r:12px; --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:24px;
-  --fs:15px; --fs-s:13px; --fs-xs:11.5px; --h1:24px;
+  --fs:15px; --fs-s:13px; --fs-xs:12px; --h1:24px;
   --bar:60px;
 }
-@media (min-width:761px){ :root{ --fs:16px; --fs-s:14px; --fs-xs:12px; --h1:28px; --bar:0px; } }
+@media (min-width:761px){ :root{ --fs:16px; --fs-s:14px; --fs-xs:12px; --h1:28px; } }
+/* The desktop nav needs ~830px; below that (iPad portrait) the phone tab bar stays. */
+@media (min-width:881px){ :root{ --bar:0px; } }
 html.dark{
   --bg:#0F1411; --panel:#171E19; --sunk:#121814; --ink:#E7ECE6; --soft:#98A79B; --line:#2A332C;
   --green:#7FC79C; --green-ink:#A9DDBC; --on-green:#0D2418; --green-tint:#1C3326;
@@ -33,19 +35,19 @@ img,svg{display:block}
 button{font:inherit;color:inherit}
 
 /* languages: one attribute, one rule, any number of languages */
-[data-l],[data-lang]{display:none!important}
-html[lang="en"] [data-l="en"], html[lang="pt"] [data-l="pt"], html[lang="de"] [data-l="de"],
-html[lang="en"] [data-lang="en"], html[lang="pt"] [data-lang="pt"], html[lang="de"] [data-lang="de"]{display:revert!important}
-/* German falls back to English wherever a string has no German twin yet
-   (the build writes it straight after the Portuguese one). */
-html[lang="de"] [data-l="en"]:not(:has(+ [data-l="pt"] + [data-l="de"])),
-html[lang="de"] [data-lang="en"]:not(:has(+ [data-lang="pt"] + [data-lang="de"])){display:revert!important}
+html[lang="en"] [data-l="pt"],html[lang="en"] [data-l="de"],html[lang="pt"] [data-l="en"],html[lang="pt"] [data-l="de"],html[lang="de"] [data-l="pt"],
+html[lang="en"] [data-lang="pt"],html[lang="en"] [data-lang="de"],html[lang="pt"] [data-lang="en"],html[lang="pt"] [data-lang="de"],html[lang="de"] [data-lang="pt"],
+html:not([lang="de"]) [data-l="de"],html:not([lang="de"]) [data-lang="de"]{display:none!important}
+/* German: the English hides only where its German twin exists (the build writes
+   it straight after the Portuguese); a string without German stays English.
+   Separate rule: a browser without :has() drops just this one. */
+html[lang="de"] [data-l="en"]:has(+ [data-l="pt"] + [data-l="de"]),html[lang="de"] [data-lang="en"]:has(+ [data-lang="pt"] + [data-lang="de"]){display:none!important}
 
 .wrap{max-width:880px;margin:0 auto;padding:0 var(--s4) calc(var(--bar) + 24px + env(safe-area-inset-bottom))}
 .wide{max-width:1120px}
 
 /* header: one line on every page */
-.hd{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:10px;height:54px;margin:0 calc(-1 * var(--s4));padding:0 var(--s4);background:color-mix(in srgb,var(--bg) 90%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hd{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:10px;height:54px;margin:0 calc(-1 * var(--s4));padding:0 var(--s4);background:rgba(250,248,242,.92);background:color-mix(in srgb,var(--bg) 90%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .hd .brand{display:flex;align-items:center;gap:9px;color:var(--ink)}
 .hd .brand:hover{text-decoration:none}
 .hd .logo{width:30px;height:30px;border-radius:8px;background:#1F4D32;display:grid;place-items:center;flex:0 0 auto}
@@ -55,18 +57,18 @@ html[lang="de"] [data-lang="en"]:not(:has(+ [data-lang="pt"] + [data-lang="de"])
 .hd nav a{padding:6px 10px;border-radius:8px;font-size:var(--fs-s);font-weight:500;color:var(--soft)}
 .hd nav a:hover{background:var(--panel);color:var(--ink);text-decoration:none}
 .hd nav a.on{color:var(--green-ink);background:var(--green-tint)}
-@media (min-width:761px){ .hd nav{display:flex} }
+@media (min-width:881px){ .hd nav{display:flex} }
 .hd .sp{flex:1}
 .seg{display:flex;border:1px solid var(--line);border-radius:999px;padding:2px;background:var(--panel)}
-.seg button{border:0;background:none;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;color:var(--soft);cursor:pointer}
+.seg button{border:0;background:none;font-size:12px;font-weight:700;min-height:32px;padding:6px 10px;border-radius:999px;color:var(--soft);cursor:pointer}
 .seg button.on{background:var(--green);color:var(--on-green)}
-.icon-btn{width:36px;height:36px;border:1px solid var(--line);border-radius:10px;background:var(--panel);display:grid;place-items:center;color:var(--ink);cursor:pointer;flex:0 0 auto}
+.icon-btn{width:40px;height:40px;border:1px solid var(--line);border-radius:10px;background:var(--panel);display:grid;place-items:center;color:var(--ink);cursor:pointer;flex:0 0 auto}
 .icon-btn svg{width:18px;height:18px}
 
 /* drawer (menu) */
-.scrim{position:fixed;inset:0;z-index:90;background:rgba(0,0,0,.4)}
+.scrim{position:fixed;top:0;right:0;bottom:0;left:0;z-index:90;background:rgba(0,0,0,.4)}
 .scrim[hidden],.drawer[hidden]{display:none}
-.drawer{position:fixed;top:0;right:0;bottom:0;z-index:91;width:min(320px,88vw);background:var(--bg);border-left:1px solid var(--line);display:flex;flex-direction:column}
+.drawer{position:fixed;top:0;right:0;bottom:0;z-index:91;width:88vw;max-width:320px;background:var(--bg);border-left:1px solid var(--line);display:flex;flex-direction:column}
 .drawer-hd{display:flex;align-items:center;gap:8px;height:54px;padding:0 var(--s4);border-bottom:1px solid var(--line)}
 .drawer-hd b{flex:1;font:600 17px Fraunces,Georgia,serif;color:var(--green-ink)}
 .drawer nav{overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;padding:var(--s2) var(--s2) calc(var(--bar) + 16px + env(safe-area-inset-bottom))}
@@ -77,17 +79,17 @@ html[lang="de"] [data-lang="en"]:not(:has(+ [data-lang="pt"] + [data-lang="de"])
 
 /* bottom bar (phone) */
 .bar{position:fixed;left:0;right:0;bottom:0;z-index:80;display:flex;height:calc(var(--bar) + env(safe-area-inset-bottom));padding-bottom:env(safe-area-inset-bottom);background:var(--panel);border-top:1px solid var(--line)}
-.bar a{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font:600 11px/1 Inter,system-ui,sans-serif;color:var(--soft)}
+.bar a{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font:600 11.5px/1 Inter,system-ui,sans-serif;color:var(--soft)}
 .bar a:hover{text-decoration:none}
 .bar a svg{width:24px;height:22px;padding:2px 9px;box-sizing:content-box;border-radius:12px;fill:currentColor}
 .bar a.on{color:var(--green-ink)}
 .bar a.on svg{background:var(--green-tint)}
-@media (min-width:761px){ .bar{display:none} }
+@media (min-width:881px){ .bar{display:none} }
 
 /* type */
 h1{font:500 var(--h1)/1.15 Fraunces,Georgia,serif;letter-spacing:-.01em;margin:var(--s5) 0 var(--s2)}
 h2{font:600 var(--fs)/1.3 Inter,system-ui,sans-serif;margin:var(--s5) 0 var(--s2);display:flex;align-items:baseline;gap:8px}
-h2 .more{margin-left:auto;font-weight:500;font-size:var(--fs-s)}
+h2 .more{margin-left:auto;font-weight:500;font-size:var(--fs-s);padding:8px 0}
 .lead{color:var(--soft);font-size:var(--fs);margin:0 0 var(--s4);max-width:62ch}
 .sub{color:var(--soft);font-size:var(--fs-s)}
 .crumb{color:var(--soft);font-size:var(--fs-s);margin:var(--s4) 0 0}
@@ -115,7 +117,7 @@ p{margin:0 0 var(--s3)}
 
 .chips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin:0 calc(-1 * var(--s4)) var(--s2);padding:2px var(--s4) 4px}
 .chips::-webkit-scrollbar{display:none}
-.chip{flex:0 0 auto;font-size:var(--fs-s);font-weight:600;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--panel);color:var(--ink);cursor:pointer;white-space:nowrap}
+.chip{flex:0 0 auto;font-size:var(--fs-s);font-weight:600;min-height:36px;padding:7px 12px;border:1px solid var(--line);border-radius:999px;background:var(--panel);color:var(--ink);cursor:pointer;white-space:nowrap}
 .chip:hover{text-decoration:none;border-color:var(--green)}
 .chip.on{background:var(--green);border-color:var(--green);color:var(--on-green)}
 @media (min-width:761px){ .chips{flex-wrap:wrap;overflow:visible;margin:0 0 var(--s2);padding:0} }
@@ -159,7 +161,7 @@ p{margin:0 0 var(--s3)}
 html.dark .store{background:#000;border:1px solid #333}
 
 .foot{margin-top:var(--s3);padding-top:var(--s4);border-top:1px solid var(--line);color:var(--soft);font-size:var(--fs-xs);display:flex;flex-wrap:wrap;gap:6px 14px}
-.foot a{color:var(--soft)}
+.foot a{color:var(--soft);padding:8px 0}
 
 /* launch banner (home): one bright strip for a new feature, same as the app */
 .promo{display:flex;align-items:center;gap:10px;margin-top:12px;padding:12px 14px;border-radius:var(--r);background:#F2A65A;color:#3A1A08;text-decoration:none}
@@ -175,8 +177,8 @@ html.dark .store{background:#000;border:1px solid #333}
 body.full .wrap{max-width:none;padding-bottom:0}
 .maptabs{margin:8px 0}
 .mapframe{display:block;width:100%;border:0;border-radius:var(--r);background:var(--sunk);
-  height:calc(100dvh - 54px - 52px - var(--bar) - env(safe-area-inset-bottom) - 12px)}
-@media (max-width:760px){body.full .wrap{padding-left:0;padding-right:0}.maptabs{padding:0 var(--s4)}.mapframe{border-radius:0}}
+  height:calc(100vh - 54px - 52px - var(--bar) - 12px);height:calc(100dvh - 54px - 52px - var(--bar) - env(safe-area-inset-bottom) - 12px)}
+@media (max-width:760px){body.full .wrap{padding-left:0;padding-right:0}body.full .hd{margin:0}.maptabs{padding:0 var(--s4)}.mapframe{border-radius:0}}
 
 /* news: reading language row */
 .readin{display:flex;align-items:center;gap:8px;margin:2px 0 8px;font-size:var(--fs-s);color:var(--soft)}
@@ -194,7 +196,7 @@ html.app .hd,html.app .bar,html.app .stores,html.app .foot,html.app .drawer,html
 html.app .section-nav{top:0}
 
 /* bus network */
-.busmap{height:clamp(300px,52vw,520px);border-radius:var(--r);border:1px solid var(--line);margin:8px 0 6px;background:var(--sunk);z-index:0}
+.busmap{height:400px;height:clamp(300px,52vw,520px);border-radius:var(--r);border:1px solid var(--line);margin:8px 0 6px;background:var(--sunk);z-index:0}
 .bn-hint{font-size:var(--fs-xs)!important}
 .bl{display:inline-block;min-width:24px;padding:1px 6px;border-radius:6px;color:#fff;font-weight:700;font-size:12px;text-align:center;text-shadow:0 0 2px rgba(0,0,0,.35)}
 .bn-pop{font:13px/1.45 Inter,system-ui,sans-serif;min-width:200px}
@@ -245,3 +247,10 @@ html.dark .t3{background:#3D3417;color:#F4DB8A}html.dark .t4{background:#45291A;
 .ships>div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .bn-change{color:var(--soft);font-size:var(--fs-s);margin:2px 0 2px 4px}
 .bn-leg{display:flex;flex-direction:column;gap:2px}
+
+/* small phones: the header fits 320px */
+@media (max-width:359px){.hd{gap:6px}.hd .name{font-size:15px}.seg button{padding:6px 7px}}
+@media (max-width:339px){.hd .name{display:none}}
+@media (max-width:400px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.nowgrid>.nc:last-child:nth-child(odd):not(.wide-cell){grid-column:1/-1}
+html.dark .promo{background:#B8743A;color:#1E0E04}html.dark .promo-txt small{color:#2E1608}
