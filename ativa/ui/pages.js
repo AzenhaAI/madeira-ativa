@@ -345,6 +345,7 @@
           s.push(t('Stop', 'Paragem') + ' ' + esc(e.bus.stop.replace(/\s*\([^)]*\)\s*$/, '')) + ', ' + e.bus.dist + ' m');
           var nb = window.nextBuses ? nextBuses(e.bus.departures, 3) : [];
           if (nb.length) s.push('<b>' + t('Next', 'Próximo') + ':</b> ' + nb.map(function (b) { return (b.today ? '' : MA.day(b.day).w + ' ') + b.time + ' ' + esc(b.line) + ' → ' + esc(b.to); }).join(' · '));
+          if (e.bus.note) s.push('<small class="sub2">' + esc(e.bus.note[MA.lang()] || e.bus.note.en) + '</small>');
         }
         rows += '<dt>' + title + ' · ' + e.elev + ' m</dt><dd>' + s.join('<br>') + '</dd>';
       });
@@ -449,6 +450,7 @@
             s.push(t('Stop', 'Paragem') + ' ' + esc(e.bus.stop.replace(/\s*\([^)]*\)\s*$/, '')) + ', ' + e.bus.dist + ' m');
             var nb = window.nextBuses ? nextBuses(e.bus.departures, 3) : [];
             if (nb.length) s.push('<b>' + t('Next', 'Próximo') + ':</b> ' + nb.map(function (b) { return (b.today ? '' : MA.day(b.day).w + ' ') + b.time + ' ' + esc(b.line) + ' → ' + esc(b.to); }).join(' · '));
+            if (e.bus.note) s.push('<small class="sub2">' + esc(e.bus.note[MA.lang()] || e.bus.note.en) + '</small>');
           }
           rows += '<dt>' + e.elev + ' m</dt><dd>' + s.join('<br>') + '</dd>';
         });
