@@ -159,15 +159,6 @@
     },
     {
       "mode": "festivals",
-      "name": "CANIÇAL museudabaleiadamadeira",
-      "date": "2026-10-10",
-      "location": "Caniçal",
-      "url": "https://t.me/festas_madeira/2652",
-      "event_type": "festival",
-      "category": "family"
-    },
-    {
-      "mode": "festivals",
       "name": "Cantigas pr’Ascensão",
       "date": "2026-10-10",
       "location": "Centro Cultural John dos Passos, Ponta do Sol",
@@ -1030,14 +1021,6 @@
       "price": "€45",
       "organizer": "KHÔRA",
       "category": "workshop"
-    },
-    {
-      "mode": "other",
-      "name": "Internacional",
-      "date": "2026-10-17",
-      "location": "EcoTrail Funchal 2026",
-      "url": "https://fpacompeticoes.pt/",
-      "event_type": "running"
     },
     {
       "mode": "trail",
@@ -2613,14 +2596,6 @@
       "location": "Madeira",
       "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/09/MC-27_Quadro.pdf",
       "event_type": "road_run"
-    },
-    {
-      "mode": "cycling",
-      "name": "Rat Race Madeira Coast to Coast (bike/foot/kayak)",
-      "date": "2027-05-06",
-      "location": "Madeira",
-      "url": "https://www.ratrace.com/madeira",
-      "event_type": "cycling"
     },
     {
       "mode": "road",

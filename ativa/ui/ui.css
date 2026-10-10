@@ -17,7 +17,7 @@
 }
 @media (min-width:761px){ :root{ --fs:16px; --fs-s:14px; --fs-xs:12px; --h1:28px; } }
 /* The desktop nav needs ~830px; below that (iPad portrait) the phone tab bar stays. */
-@media (min-width:881px){ :root{ --bar:0px; } }
+@media (min-width:1000px){ :root{ --bar:0px; } }
 html.dark{
   --bg:#0F1411; --panel:#171E19; --sunk:#121814; --ink:#E7ECE6; --soft:#98A79B; --line:#2A332C;
   --green:#7FC79C; --green-ink:#A9DDBC; --on-green:#0D2418; --green-tint:#1C3326;
@@ -54,10 +54,10 @@ html[lang="de"] [data-l="en"]:has(+ [data-l="pt"] + [data-l="de"]),html[lang="de
 .hd .logo svg{width:20px;height:20px}
 .hd .name{font:600 17px/1 Fraunces,Georgia,serif;color:var(--green-ink);letter-spacing:-.01em;white-space:nowrap}
 .hd nav{display:none;gap:2px;margin-left:8px}
-.hd nav a{padding:6px 10px;border-radius:8px;font-size:var(--fs-s);font-weight:500;color:var(--soft)}
+.hd nav a{white-space:nowrap;padding:6px 9px;border-radius:8px;font-size:var(--fs-s);font-weight:500;color:var(--soft)}
 .hd nav a:hover{background:var(--panel);color:var(--ink);text-decoration:none}
 .hd nav a.on{color:var(--green-ink);background:var(--green-tint)}
-@media (min-width:881px){ .hd nav{display:flex} }
+@media (min-width:1000px){ .hd nav{display:flex} }
 .hd .sp{flex:1}
 .seg{display:flex;border:1px solid var(--line);border-radius:999px;padding:2px;background:var(--panel)}
 .seg button{border:0;background:none;font-size:12px;font-weight:700;min-height:32px;padding:6px 10px;border-radius:999px;color:var(--soft);cursor:pointer}
@@ -84,7 +84,7 @@ html[lang="de"] [data-l="en"]:has(+ [data-l="pt"] + [data-l="de"]),html[lang="de
 .bar a svg{width:24px;height:22px;padding:2px 9px;box-sizing:content-box;border-radius:12px;fill:currentColor}
 .bar a.on{color:var(--green-ink)}
 .bar a.on svg{background:var(--green-tint)}
-@media (min-width:881px){ .bar{display:none} }
+@media (min-width:1000px){ .bar{display:none} }
 
 /* type */
 h1{font:500 var(--h1)/1.15 Fraunces,Georgia,serif;letter-spacing:-.01em;margin:var(--s5) 0 var(--s2)}
@@ -254,3 +254,6 @@ html.dark .t3{background:#3D3417;color:#F4DB8A}html.dark .t4{background:#45291A;
 @media (max-width:400px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .nowgrid>.nc:last-child:nth-child(odd):not(.wide-cell){grid-column:1/-1}
 html.dark .promo{background:#B8743A;color:#1E0E04}html.dark .promo-txt small{color:#2E1608}
+
+@media (max-width:359px){.camq{display:none}}
+.alert>div{flex:1;min-width:0}

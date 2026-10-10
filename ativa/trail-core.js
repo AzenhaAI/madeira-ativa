@@ -197,7 +197,11 @@ function nextBuses(departures, n) {
 function pathFacts(x, lang) {
   if (!x || !x.length_km) return [];
   var pt = lang === 'pt', de = lang === 'de', out = [];
-  if (x.railing_pct || x.no_railing_pct) {
+  // Under a third of the route mapped: too little to speak of railings at all
+  // ("no railing recorded" read as "there are none").
+  if ((x.mapped_pct || 0) < 30) {
+    out.push(pt ? 'Corrimãos: percurso pouco mapeado para dizer' : de ? 'Geländer: zu wenig der Strecke kartiert, um es zu sagen' : 'Railings: too little of the route is mapped to say');
+  } else if (x.railing_pct || x.no_railing_pct) {
     var unknown = Math.max(0, 100 - x.railing_pct - x.no_railing_pct);
     out.push(pt
       ? 'Corrimão registado em ' + x.railing_pct + '% do percurso, sem corrimão em ' + x.no_railing_pct + '%, desconhecido em ' + unknown + '%'

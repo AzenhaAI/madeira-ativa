@@ -285,8 +285,8 @@
         drawLines();
       };
       var city = NET.lines.filter(function (l) { return l.src === 'gtfs'; }).length;
-      document.getElementById('bnCount').textContent = t(NET.lines.length + ' lines on the map (' + city + ' Funchal city, ' + (NET.lines.length - city) + ' interurban) · ' + NET.siga.length + ' in the full list below',
-        NET.lines.length + ' linhas no mapa (' + city + ' urbanas do Funchal, ' + (NET.lines.length - city) + ' interurbanas) · ' + NET.siga.length + ' na lista completa abaixo');
+      document.getElementById('bnCount').textContent = NET.lines.length + ' ' + t('lines on the map', 'linhas no mapa') + ' (' + city + ' ' + t('Funchal city', 'urbanas do Funchal') +
+        ', ' + (NET.lines.length - city) + ' ' + t('interurban', 'interurbanas') + ') · ' + NET.siga.length + ' ' + t('in the full list below', 'na lista completa abaixo');
       sigaList();
       MA.onLang(function () { if (document.getElementById('bnRes').innerHTML) search(); });
     });
