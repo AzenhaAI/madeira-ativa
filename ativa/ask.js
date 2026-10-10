@@ -424,7 +424,8 @@
       fetch('/ativa/api/ask', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ q: qs, lang: lang, facts: facts }),
+        // The facts are built in EN/PT; the AI's answer follows the page, German included.
+        body: JSON.stringify({ q: qs, lang: document.documentElement.lang === 'de' ? 'de' : lang, facts: facts }),
       }).then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
         if (qs !== last) return;
         if (!j || !j.answer) { box.remove(); return; }
