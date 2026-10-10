@@ -16,7 +16,16 @@
     family: ['Family', 'Família'], workshop: ['Workshops', 'Oficinas'], religious: ['Religious', 'Religioso'], talk: ['Talks', 'Palestras'],
   };
   function kindOf(e) { return e.event_type === 'orienteering' ? 'orienteering' : e.mode; }
-  function kindLabel(e) { var k = KINDS[kindOf(e)]; return k ? t(k[0], k[1]) : ''; }
+  // A culture event shows what it is (Concert, Exhibition…), not just "Festa";
+  // a sport event in the festas feed (a race) shows "Sport".
+  var CAT1 = { concert: ['Concert', 'Concerto'], festival: ['Festival', 'Festival'], arraial: ['Arraial', 'Arraial'], theatre: ['Theatre', 'Teatro'],
+    exhibition: ['Exhibition', 'Exposição'], cinema: ['Cinema', 'Cinema'], dance: ['Dance', 'Dança'], folklore: ['Folklore', 'Folclore'],
+    family: ['Family', 'Família'], workshop: ['Workshop', 'Oficina'], religious: ['Religious', 'Religioso'], talk: ['Talk', 'Palestra'],
+    market: ['Market', 'Mercado'], show: ['Show', 'Espetáculo'], sport: ['Sport', 'Desporto'], culture: ['Culture', 'Cultura'] };
+  function kindLabel(e) {
+    if (e.mode === 'festivals' && CAT1[e.category]) return t(CAT1[e.category][0], CAT1[e.category][1]);
+    var k = KINDS[kindOf(e)]; return k ? t(k[0], k[1]) : '';
+  }
   function statusPill(s) {
     return s === 'closed' ? '<span class="pill bad">' + t('closed', 'encerrado') + '</span>'
       : s === 'partial' ? '<span class="pill warn">' + t('partly open', 'parcial') + '</span>'

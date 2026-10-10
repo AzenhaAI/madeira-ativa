@@ -12,15 +12,6 @@
     },
     {
       "mode": "festivals",
-      "name": "\"Da Laurissilva ao Cosmos",
-      "date": "2026-10-10",
-      "location": "Centro Cultural e de Investigação do Funchal",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/da-laurissilva-ao-cosmos",
-      "event_type": "festival",
-      "category": "exhibition"
-    },
-    {
-      "mode": "festivals",
       "name": "\"Detalhes Invisíveis\"",
       "date": "2026-10-10",
       "location": "Casa da Cultura de Câmara de Lobos",
@@ -129,7 +120,7 @@
     },
     {
       "mode": "festivals",
-      "name": "Associação para Pessoas com Autismo. Os Grandes Azuis -",
+      "name": "Associação para Pessoas com Autismo. Os Grandes Azuis",
       "date": "2026-10-10",
       "location": "Ponta Do Sol",
       "url": "https://t.me/festas_madeira/2562",
@@ -144,15 +135,6 @@
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/atelier-de-expressao-plastica-embossing-entre-agua-e-relevo",
       "event_type": "festival",
       "category": "workshop"
-    },
-    {
-      "mode": "festivals",
-      "name": "BIENAL",
-      "date": "2026-10-10",
-      "location": "Santana",
-      "url": "https://t.me/festas_madeira/2448",
-      "event_type": "festival",
-      "category": "arraial"
     },
     {
       "mode": "festivals",
@@ -246,12 +228,12 @@
     },
     {
       "mode": "festivals",
-      "name": "DIAS",
+      "name": "Da Laurissilva ao Cosmos",
       "date": "2026-10-10",
-      "location": "Ponta Do Sol",
-      "url": "https://t.me/festas_madeira/2627",
+      "location": "Centro Cultural e de Investigação do Funchal",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/da-laurissilva-ao-cosmos",
       "event_type": "festival",
-      "category": "arraial"
+      "category": "exhibition"
     },
     {
       "mode": "festivals",
@@ -617,7 +599,7 @@
       "mode": "kids",
       "name": "Campeonato de Abertura - Rogério Rodrigues",
       "date": "2026-10-10",
-      "location": "- Complexo de Piscinas Olímpicas do Funchal",
+      "location": "Complexo de Piscinas Olímpicas do Funchal",
       "url": "https://www.anatacaodamadeira.pt/index.php/competicoes/calendario/icalrepeat.detail/2026/10/10/887/-/campeonato-de-abertura-rogerio-rodrigues",
       "event_type": "swimming_kids"
     },
@@ -708,7 +690,7 @@
       "mode": "festivals",
       "name": "Coltrane to Wayne Shorter",
       "date": "2026-10-14",
-      "location": "MAMMA - Museum of Modern Art of Madeira, Funchal",
+      "location": "MAMMA – Museum of Art and Music of Madeira, Funchal",
       "url": "",
       "event_type": "festival",
       "time": "18:30",
@@ -736,7 +718,7 @@
     },
     {
       "mode": "festivals",
-      "name": "TBD: Mulheres com História",
+      "name": "Mulheres com História",
       "date": "2026-10-14",
       "location": "Teatro Municipal Baltazar Dias, Funchal",
       "url": "",
@@ -771,7 +753,7 @@
       "mode": "festivals",
       "name": "Ella Fitzgerald to Louis Armstrong",
       "date": "2026-10-15",
-      "location": "MAMMA - Museum of Modern Art of Madeira, Funchal",
+      "location": "MAMMA – Museum of Art and Music of Madeira, Funchal",
       "url": "",
       "event_type": "festival",
       "time": "18:30",
@@ -829,15 +811,6 @@
       "url": "https://t.me/festas_madeira/2671",
       "event_type": "festival",
       "category": "workshop"
-    },
-    {
-      "mode": "festivals",
-      "name": "PESCADOR:",
-      "date": "2026-10-16",
-      "location": "Caniçal",
-      "url": "https://t.me/festas_madeira/2668",
-      "event_type": "festival",
-      "category": "festival"
     },
     {
       "mode": "festivals",
@@ -981,7 +954,7 @@
       "mode": "festivals",
       "name": "Santana & Latin Soul Concert",
       "date": "2026-10-17",
-      "location": "MAMMA - Museum of Modern Art of Madeira, Funchal",
+      "location": "MAMMA – Museum of Art and Music of Madeira, Funchal",
       "url": "",
       "event_type": "festival",
       "time": "18:30",
@@ -1126,7 +1099,7 @@
       "mode": "festivals",
       "name": "FROM QUEEN TO CHESS",
       "date": "2026-10-18",
-      "location": "MAMMA - Museum of Modern Art of Madeira, Funchal",
+      "location": "MAMMA – Museum of Art and Music of Madeira, Funchal",
       "url": "",
       "event_type": "festival",
       "time": "18:30",
@@ -1160,7 +1133,7 @@
     },
     {
       "mode": "festivals",
-      "name": "Outras plausíveis (re)leituras.",
+      "name": "Outras plausíveis (re)leituras",
       "date": "2026-10-19",
       "location": "Sé",
       "url": "https://t.me/festas_madeira/2672",
@@ -1217,6 +1190,18 @@
     },
     {
       "mode": "festivals",
+      "name": "Lea Bach - A Harpa no Funchal Cosmopolita 1949",
+      "date": "2026-10-21",
+      "location": "Teatro Municipal Baltazar Dias, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "19:00",
+      "price": "€11",
+      "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
+      "category": "cinema"
+    },
+    {
+      "mode": "festivals",
       "name": "OCM Música de Câmara | Legno Duo",
       "date": "2026-10-21",
       "location": "Royal Savoy",
@@ -1238,18 +1223,6 @@
       "price": "Free",
       "organizer": "Associação InFinito",
       "category": "exhibition"
-    },
-    {
-      "mode": "festivals",
-      "name": "TBD: Lea Bach - A Harpa no Funchal Cosmopolita 1949",
-      "date": "2026-10-21",
-      "location": "Teatro Municipal Baltazar Dias, Funchal",
-      "url": "",
-      "event_type": "festival",
-      "time": "19:00",
-      "price": "€11",
-      "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
-      "category": "cinema"
     },
     {
       "mode": "festivals",
@@ -1311,7 +1284,7 @@
       "mode": "festivals",
       "name": "Jazz Divas!",
       "date": "2026-10-22",
-      "location": "MAMMA - Museum of Modern Art of Madeira, Funchal",
+      "location": "MAMMA – Museum of Art and Music of Madeira, Funchal",
       "url": "",
       "event_type": "festival",
       "time": "18:30",
@@ -1363,15 +1336,6 @@
     },
     {
       "mode": "festivals",
-      "name": "MADEIRA.",
-      "date": "2026-10-23",
-      "location": "Sé",
-      "url": "https://t.me/festas_madeira/2568",
-      "event_type": "festival",
-      "category": "festival"
-    },
-    {
-      "mode": "festivals",
       "name": "Screenings Funchal: Mulholland Drive + The Boat",
       "date": "2026-10-23",
       "location": "Cinemas NOS Fórum Madeira, Funchal",
@@ -1386,7 +1350,7 @@
       "mode": "festivals",
       "name": "Tony Bennett Tribute",
       "date": "2026-10-23",
-      "location": "MAMMA - Museum of Modern Art of Madeira, Funchal",
+      "location": "MAMMA – Museum of Art and Music of Madeira, Funchal",
       "url": "",
       "event_type": "festival",
       "time": "17:30",
@@ -1455,7 +1419,7 @@
       "mode": "festivals",
       "name": "ROCK IN MAMMA CONCERT",
       "date": "2026-10-24",
-      "location": "MAMMA - Museum of Modern Art of Madeira, Funchal",
+      "location": "MAMMA – Museum of Art and Music of Madeira, Funchal",
       "url": "",
       "event_type": "festival",
       "time": "18:30",
@@ -1565,15 +1529,6 @@
     },
     {
       "mode": "festivals",
-      "name": "A À eee i TEATRO MUNICIPAL a BALTAZAR DIAS.-",
-      "date": "2026-10-28",
-      "location": "Sé",
-      "url": "https://t.me/festas_madeira/2657",
-      "event_type": "festival",
-      "category": "theatre"
-    },
-    {
-      "mode": "festivals",
       "name": "Bachata Styling (in Couple & Solo)",
       "date": "2026-10-28",
       "location": "Funchal, Marina (below beerhouse)",
@@ -1609,7 +1564,7 @@
       "mode": "festivals",
       "name": "Elton John Tribute",
       "date": "2026-10-30",
-      "location": "MAMMA - Museum of Modern Art of Madeira, Funchal",
+      "location": "MAMMA – Museum of Art and Music of Madeira, Funchal",
       "url": "",
       "event_type": "festival",
       "time": "17:30",
@@ -1709,16 +1664,7 @@
     },
     {
       "mode": "festivals",
-      "name": "Apto AÊ:",
-      "date": "2026-10-31",
-      "location": "Curral Das Freiras",
-      "url": "https://t.me/festas_madeira/2643",
-      "event_type": "festival",
-      "category": "arraial"
-    },
-    {
-      "mode": "festivals",
-      "name": "DESAFIA-TE. ORIENTA-TE. SUPERA-TE.",
+      "name": "DESAFIA-TE. ORIENTA-TE. SUPERA-TE",
       "date": "2026-10-31",
       "location": "Ponta Do Sol",
       "url": "https://t.me/festas_madeira/2443",
@@ -1751,7 +1697,7 @@
     },
     {
       "mode": "festivals",
-      "name": "LEAH SINGER LEE RANALDO,",
+      "name": "LEAH SINGER LEE RANALDO",
       "date": "2026-10-31",
       "location": "Calheta",
       "url": "https://t.me/festas_madeira/2663",
@@ -1917,7 +1863,7 @@
       "mode": "festivals",
       "name": "DUOBANDONICA",
       "date": "2026-11-07",
-      "location": "Fundação João Pereira – Ponta do Sol, Funchal",
+      "location": "Fundação João Pereira – Ponta do Sol",
       "url": "",
       "event_type": "festival",
       "time": "19:00",
@@ -2144,7 +2090,7 @@
     },
     {
       "mode": "festivals",
-      "name": "OCM Música de Câmara | Quinteto de sopros “Atlântida\"",
+      "name": "OCM Música de Câmara | Quinteto de sopros Atlântida",
       "date": "2026-11-18",
       "location": "Savoy Palace",
       "url": "https://www.ocmadeira.pt/concertos/proximos-eventos/musica-camara/282-quinteto-de-sopros-atlantida.html",
@@ -2285,7 +2231,7 @@
       "mode": "festivals",
       "name": "DUOBANDONICA",
       "date": "2026-12-05",
-      "location": "Centro Social e Paroquial de São Bento da Ribeira Brava, Funchal",
+      "location": "Centro Social e Paroquial de São Bento da Ribeira Brava",
       "url": "",
       "event_type": "festival",
       "time": "17:00",
