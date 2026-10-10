@@ -21,6 +21,7 @@
       html.lang = l; store('lang', l);
       document.querySelectorAll('.seg [data-set]').forEach(function (b) { b.classList.toggle('on', b.dataset.set === l); });
       listeners.forEach(function (fn) { try { fn(l); } catch (e) { console.error(e); } });
+      retitle();
     },
     esc: function (s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); },
     get: function (u) { return fetch(u).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }); },
@@ -38,6 +39,14 @@
     // PR 2 before PR 10, PR 6.1 after PR 6.
     codeSort: function (a, b) { return String(a).localeCompare(String(b), undefined, { numeric: true }); },
   };
+
+  // The tab title follows the language too (the trail page sets its own).
+  var titleEn = document.title;
+  function retitle() {
+    var b = document.body; if (!b || b.dataset.page === 'trail') return;
+    var l = MA.lang();
+    document.title = l === 'pt' ? (b.dataset.titlePt || titleEn) : l === 'de' ? (b.dataset.titleDe || titleEn) : titleEn;
+  }
 
   // ---- theme
   function paintTheme() {
@@ -76,6 +85,7 @@
   function ready() {
     document.querySelectorAll('.seg [data-set]').forEach(function (b) { b.classList.toggle('on', b.dataset.set === MA.lang()); });
     paintTheme();
+    retitle();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', ready); else ready();
 })();

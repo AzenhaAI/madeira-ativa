@@ -196,18 +196,20 @@ function nextBuses(departures, n) {
 // what was not mapped except how much that is.
 function pathFacts(x, lang) {
   if (!x || !x.length_km) return [];
-  var pt = lang === 'pt', out = [];
+  var pt = lang === 'pt', de = lang === 'de', out = [];
   if (x.railing_pct || x.no_railing_pct) {
     var unknown = Math.max(0, 100 - x.railing_pct - x.no_railing_pct);
     out.push(pt
       ? 'Corrimão registado em ' + x.railing_pct + '% do percurso, sem corrimão em ' + x.no_railing_pct + '%, desconhecido em ' + unknown + '%'
+      : de ? 'Geländer auf ' + x.railing_pct + ' % der Strecke erfasst, keines auf ' + x.no_railing_pct + ' %, unbekannt auf ' + unknown + ' %'
       : 'Railing recorded on ' + x.railing_pct + '% of the route, none on ' + x.no_railing_pct + '%, unknown on ' + unknown + '%');
   } else {
-    out.push(pt ? 'Sem registo de corrimão em nenhum troço' : 'No railing recorded on any section');
+    out.push(pt ? 'Sem registo de corrimão em nenhum troço' : de ? 'Auf keinem Abschnitt ein Geländer erfasst' : 'No railing recorded on any section');
   }
-  if (x.narrow_pct) out.push(pt ? x.narrow_pct + '% do trilho com 0,5 m de largura ou menos' : x.narrow_pct + '% of the path 0.5 m wide or less');
+  if (x.narrow_pct) out.push(pt ? x.narrow_pct + '% do trilho com 0,5 m de largura ou menos' : de ? x.narrow_pct + ' % des Weges 0,5 m breit oder schmaler' : x.narrow_pct + '% of the path 0.5 m wide or less');
   if (x.tunnels) out.push(pt ? x.tunnels + (x.tunnels > 1 ? ' túneis' : ' túnel') + ' (' + x.tunnel_m + ' m) — leve lanterna'
+                             : de ? x.tunnels + (x.tunnels > 1 ? ' Tunnel' : ' Tunnel') + ' (' + x.tunnel_m + ' m) — Stirnlampe mitnehmen'
                              : x.tunnels + (x.tunnels > 1 ? ' tunnels' : ' tunnel') + ' (' + x.tunnel_m + ' m) — bring a torch');
-  if (x.demanding_pct) out.push(pt ? x.demanding_pct + '% em terreno de montanha exigente' : x.demanding_pct + '% demanding mountain terrain');
+  if (x.demanding_pct) out.push(pt ? x.demanding_pct + '% em terreno de montanha exigente' : de ? x.demanding_pct + ' % anspruchsvolles Bergterrain' : x.demanding_pct + '% demanding mountain terrain');
   return out;
 }
