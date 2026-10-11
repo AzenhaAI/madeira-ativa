@@ -1,13 +1,13 @@
 {
   "note": "Per trail end: position and height, nearest mapped car park within 600 m (OpenStreetMap), nearest urban bus stop within 800 m and its lines (Horários do Funchal GTFS). Interurban lines are not included: SIGA publishes them only as PDFs.",
-  "built": "2026-10-10T18:06:53",
+  "built": "2026-10-11T11:45:47",
   "sources": {
-    "parkings": 0,
-    "parkings_fresh": false,
+    "parkings": 2068,
+    "parkings_fresh": true,
     "urban_stops": 1742,
     "urban_stops_fresh": true,
-    "bus_routes": 211,
-    "bus_routes_fresh": true,
+    "bus_routes": 0,
+    "bus_routes_fresh": false,
     "siga_lines": 125
   },
   "trails": {
@@ -112,33 +112,6 @@
               "6"
             ],
             "departures": {
-              "2026-10-10": [
-                [
-                  "08:15",
-                  "6",
-                  "Funchal via Ribeira Brava · from Túnel da Encumeada"
-                ],
-                [
-                  "09:25",
-                  "6",
-                  "São Vicente · Arco de São Jorge"
-                ],
-                [
-                  "15:20",
-                  "6",
-                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
-                ],
-                [
-                  "16:00",
-                  "6",
-                  "Funchal via Ribeira Brava"
-                ],
-                [
-                  "19:20",
-                  "6",
-                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
-                ]
-              ],
               "2026-10-11": [
                 [
                   "08:15",
@@ -370,6 +343,33 @@
                   "6",
                   "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
                 ]
+              ],
+              "2026-10-17": [
+                [
+                  "08:15",
+                  "6",
+                  "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                ],
+                [
+                  "09:25",
+                  "6",
+                  "São Vicente · Arco de São Jorge"
+                ],
+                [
+                  "15:20",
+                  "6",
+                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                ],
+                [
+                  "16:00",
+                  "6",
+                  "Funchal via Ribeira Brava"
+                ],
+                [
+                  "19:20",
+                  "6",
+                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                ]
               ]
             },
             "source": "hand-read timetable"
@@ -411,38 +411,6 @@
               "CAM 885"
             ],
             "departures": {
-              "2026-10-10": [
-                [
-                  "07:25",
-                  "CAM 860",
-                  "Funchal via Poiso"
-                ],
-                [
-                  "08:12",
-                  "CAM 850",
-                  "Santana · Arco de São Jorge"
-                ],
-                [
-                  "10:42",
-                  "CAM 801",
-                  "Santana via Faial"
-                ],
-                [
-                  "14:13",
-                  "CAM 850",
-                  "Santana · Arco de São Jorge"
-                ],
-                [
-                  "18:30",
-                  "CAM 860",
-                  "Funchal via Poiso"
-                ],
-                [
-                  "18:40",
-                  "CAM 850",
-                  "Santana · Arco de São Jorge"
-                ]
-              ],
               "2026-10-11": [
                 [
                   "08:12",
@@ -728,6 +696,38 @@
                   "19:18",
                   "CAM 875",
                   "Santana · São Jorge via Faial"
+                ]
+              ],
+              "2026-10-17": [
+                [
+                  "07:25",
+                  "CAM 860",
+                  "Funchal via Poiso"
+                ],
+                [
+                  "08:12",
+                  "CAM 850",
+                  "Santana · Arco de São Jorge"
+                ],
+                [
+                  "10:42",
+                  "CAM 801",
+                  "Santana via Faial"
+                ],
+                [
+                  "14:13",
+                  "CAM 850",
+                  "Santana · Arco de São Jorge"
+                ],
+                [
+                  "18:30",
+                  "CAM 860",
+                  "Funchal via Poiso"
+                ],
+                [
+                  "18:40",
+                  "CAM 850",
+                  "Santana · Arco de São Jorge"
                 ]
               ]
             },
@@ -817,38 +817,6 @@
               "CAM 885"
             ],
             "departures": {
-              "2026-10-10": [
-                [
-                  "07:25",
-                  "CAM 860",
-                  "Funchal via Poiso"
-                ],
-                [
-                  "08:12",
-                  "CAM 850",
-                  "Santana · Arco de São Jorge"
-                ],
-                [
-                  "10:42",
-                  "CAM 801",
-                  "Santana via Faial"
-                ],
-                [
-                  "14:13",
-                  "CAM 850",
-                  "Santana · Arco de São Jorge"
-                ],
-                [
-                  "18:30",
-                  "CAM 860",
-                  "Funchal via Poiso"
-                ],
-                [
-                  "18:40",
-                  "CAM 850",
-                  "Santana · Arco de São Jorge"
-                ]
-              ],
               "2026-10-11": [
                 [
                   "08:12",
@@ -1134,6 +1102,38 @@
                   "19:18",
                   "CAM 875",
                   "Santana · São Jorge via Faial"
+                ]
+              ],
+              "2026-10-17": [
+                [
+                  "07:25",
+                  "CAM 860",
+                  "Funchal via Poiso"
+                ],
+                [
+                  "08:12",
+                  "CAM 850",
+                  "Santana · Arco de São Jorge"
+                ],
+                [
+                  "10:42",
+                  "CAM 801",
+                  "Santana via Faial"
+                ],
+                [
+                  "14:13",
+                  "CAM 850",
+                  "Santana · Arco de São Jorge"
+                ],
+                [
+                  "18:30",
+                  "CAM 860",
+                  "Funchal via Poiso"
+                ],
+                [
+                  "18:40",
+                  "CAM 850",
+                  "Santana · Arco de São Jorge"
                 ]
               ]
             },
@@ -1348,33 +1348,6 @@
               "6"
             ],
             "departures": {
-              "2026-10-10": [
-                [
-                  "08:15",
-                  "6",
-                  "Funchal via Ribeira Brava · from Túnel da Encumeada"
-                ],
-                [
-                  "09:25",
-                  "6",
-                  "São Vicente · Arco de São Jorge"
-                ],
-                [
-                  "15:20",
-                  "6",
-                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
-                ],
-                [
-                  "16:00",
-                  "6",
-                  "Funchal via Ribeira Brava"
-                ],
-                [
-                  "19:20",
-                  "6",
-                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
-                ]
-              ],
               "2026-10-11": [
                 [
                   "08:15",
@@ -1603,6 +1576,33 @@
                 ],
                 [
                   "19:50",
+                  "6",
+                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                ]
+              ],
+              "2026-10-17": [
+                [
+                  "08:15",
+                  "6",
+                  "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                ],
+                [
+                  "09:25",
+                  "6",
+                  "São Vicente · Arco de São Jorge"
+                ],
+                [
+                  "15:20",
+                  "6",
+                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                ],
+                [
+                  "16:00",
+                  "6",
+                  "Funchal via Ribeira Brava"
+                ],
+                [
+                  "19:20",
                   "6",
                   "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
                 ]
@@ -1734,18 +1734,6 @@
               "80"
             ],
             "departures": {
-              "2026-10-10": [
-                [
-                  "11:40",
-                  "80",
-                  "Porto Moniz via Ponta do Pargo"
-                ],
-                [
-                  "17:00",
-                  "80",
-                  "Funchal via Calheta, Ribeira Brava"
-                ]
-              ],
               "2026-10-11": [
                 [
                   "11:40",
@@ -1792,6 +1780,18 @@
                   "80",
                   "Porto Moniz via Ponta do Pargo"
                 ]
+              ],
+              "2026-10-17": [
+                [
+                  "11:40",
+                  "80",
+                  "Porto Moniz via Ponta do Pargo"
+                ],
+                [
+                  "17:00",
+                  "80",
+                  "Funchal via Calheta, Ribeira Brava"
+                ]
               ]
             },
             "source": "hand-read timetable"
@@ -1822,83 +1822,6 @@
               "81"
             ],
             "departures": {
-              "2026-10-10": [
-                [
-                  "06:49",
-                  "81",
-                  "Funchal"
-                ],
-                [
-                  "07:48",
-                  "81",
-                  "Funchal"
-                ],
-                [
-                  "08:30",
-                  "81",
-                  "Curral Freiras"
-                ],
-                [
-                  "09:04",
-                  "81",
-                  "Funchal"
-                ],
-                [
-                  "09:39",
-                  "81",
-                  "Curral Freiras"
-                ],
-                [
-                  "10:19",
-                  "81",
-                  "Funchal"
-                ],
-                [
-                  "11:02",
-                  "81",
-                  "Curral Freiras"
-                ],
-                [
-                  "12:18",
-                  "81",
-                  "Funchal"
-                ],
-                [
-                  "12:32",
-                  "81",
-                  "Curral Freiras"
-                ],
-                [
-                  "13:37",
-                  "81",
-                  "Funchal"
-                ],
-                [
-                  "14:09",
-                  "81",
-                  "Curral Freiras"
-                ],
-                [
-                  "14:49",
-                  "81",
-                  "Funchal"
-                ],
-                [
-                  "17:21",
-                  "81",
-                  "Curral Freiras"
-                ],
-                [
-                  "18:04",
-                  "81",
-                  "Funchal"
-                ],
-                [
-                  "20:20",
-                  "81",
-                  "Curral Freiras"
-                ]
-              ],
               "2026-10-11": [
                 [
                   "06:49",
@@ -2555,6 +2478,83 @@
                   "81",
                   "Curral Freiras"
                 ]
+              ],
+              "2026-10-17": [
+                [
+                  "06:49",
+                  "81",
+                  "Funchal"
+                ],
+                [
+                  "07:48",
+                  "81",
+                  "Funchal"
+                ],
+                [
+                  "08:30",
+                  "81",
+                  "Curral Freiras"
+                ],
+                [
+                  "09:04",
+                  "81",
+                  "Funchal"
+                ],
+                [
+                  "09:39",
+                  "81",
+                  "Curral Freiras"
+                ],
+                [
+                  "10:19",
+                  "81",
+                  "Funchal"
+                ],
+                [
+                  "11:02",
+                  "81",
+                  "Curral Freiras"
+                ],
+                [
+                  "12:18",
+                  "81",
+                  "Funchal"
+                ],
+                [
+                  "12:32",
+                  "81",
+                  "Curral Freiras"
+                ],
+                [
+                  "13:37",
+                  "81",
+                  "Funchal"
+                ],
+                [
+                  "14:09",
+                  "81",
+                  "Curral Freiras"
+                ],
+                [
+                  "14:49",
+                  "81",
+                  "Funchal"
+                ],
+                [
+                  "17:21",
+                  "81",
+                  "Curral Freiras"
+                ],
+                [
+                  "18:04",
+                  "81",
+                  "Funchal"
+                ],
+                [
+                  "20:20",
+                  "81",
+                  "Curral Freiras"
+                ]
               ]
             }
           },
@@ -2640,33 +2640,6 @@
               "6"
             ],
             "departures": {
-              "2026-10-10": [
-                [
-                  "08:15",
-                  "6",
-                  "Funchal via Ribeira Brava · from Túnel da Encumeada"
-                ],
-                [
-                  "09:25",
-                  "6",
-                  "São Vicente · Arco de São Jorge"
-                ],
-                [
-                  "15:20",
-                  "6",
-                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
-                ],
-                [
-                  "16:00",
-                  "6",
-                  "Funchal via Ribeira Brava"
-                ],
-                [
-                  "19:20",
-                  "6",
-                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
-                ]
-              ],
               "2026-10-11": [
                 [
                   "08:15",
@@ -2895,6 +2868,33 @@
                 ],
                 [
                   "19:50",
+                  "6",
+                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                ]
+              ],
+              "2026-10-17": [
+                [
+                  "08:15",
+                  "6",
+                  "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                ],
+                [
+                  "09:25",
+                  "6",
+                  "São Vicente · Arco de São Jorge"
+                ],
+                [
+                  "15:20",
+                  "6",
+                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                ],
+                [
+                  "16:00",
+                  "6",
+                  "Funchal via Ribeira Brava"
+                ],
+                [
+                  "19:20",
                   "6",
                   "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
                 ]
@@ -2948,33 +2948,6 @@
               "6"
             ],
             "departures": {
-              "2026-10-10": [
-                [
-                  "08:15",
-                  "6",
-                  "Funchal via Ribeira Brava · from Túnel da Encumeada"
-                ],
-                [
-                  "09:25",
-                  "6",
-                  "São Vicente · Arco de São Jorge"
-                ],
-                [
-                  "15:20",
-                  "6",
-                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
-                ],
-                [
-                  "16:00",
-                  "6",
-                  "Funchal via Ribeira Brava"
-                ],
-                [
-                  "19:20",
-                  "6",
-                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
-                ]
-              ],
               "2026-10-11": [
                 [
                   "08:15",
@@ -3203,6 +3176,33 @@
                 ],
                 [
                   "19:50",
+                  "6",
+                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                ]
+              ],
+              "2026-10-17": [
+                [
+                  "08:15",
+                  "6",
+                  "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                ],
+                [
+                  "09:25",
+                  "6",
+                  "São Vicente · Arco de São Jorge"
+                ],
+                [
+                  "15:20",
+                  "6",
+                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                ],
+                [
+                  "16:00",
+                  "6",
+                  "Funchal via Ribeira Brava"
+                ],
+                [
+                  "19:20",
                   "6",
                   "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
                 ]
@@ -3238,33 +3238,6 @@
               "6"
             ],
             "departures": {
-              "2026-10-10": [
-                [
-                  "08:15",
-                  "6",
-                  "Funchal via Ribeira Brava · from Túnel da Encumeada"
-                ],
-                [
-                  "09:25",
-                  "6",
-                  "São Vicente · Arco de São Jorge"
-                ],
-                [
-                  "15:20",
-                  "6",
-                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
-                ],
-                [
-                  "16:00",
-                  "6",
-                  "Funchal via Ribeira Brava"
-                ],
-                [
-                  "19:20",
-                  "6",
-                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
-                ]
-              ],
               "2026-10-11": [
                 [
                   "08:15",
@@ -3493,6 +3466,33 @@
                 ],
                 [
                   "19:50",
+                  "6",
+                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                ]
+              ],
+              "2026-10-17": [
+                [
+                  "08:15",
+                  "6",
+                  "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                ],
+                [
+                  "09:25",
+                  "6",
+                  "São Vicente · Arco de São Jorge"
+                ],
+                [
+                  "15:20",
+                  "6",
+                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                ],
+                [
+                  "16:00",
+                  "6",
+                  "Funchal via Ribeira Brava"
+                ],
+                [
+                  "19:20",
                   "6",
                   "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
                 ]
@@ -3532,33 +3532,6 @@
               "6"
             ],
             "departures": {
-              "2026-10-10": [
-                [
-                  "08:15",
-                  "6",
-                  "Funchal via Ribeira Brava · from Túnel da Encumeada"
-                ],
-                [
-                  "09:25",
-                  "6",
-                  "São Vicente · Arco de São Jorge"
-                ],
-                [
-                  "15:20",
-                  "6",
-                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
-                ],
-                [
-                  "16:00",
-                  "6",
-                  "Funchal via Ribeira Brava"
-                ],
-                [
-                  "19:20",
-                  "6",
-                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
-                ]
-              ],
               "2026-10-11": [
                 [
                   "08:15",
@@ -3787,6 +3760,33 @@
                 ],
                 [
                   "19:50",
+                  "6",
+                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                ]
+              ],
+              "2026-10-17": [
+                [
+                  "08:15",
+                  "6",
+                  "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                ],
+                [
+                  "09:25",
+                  "6",
+                  "São Vicente · Arco de São Jorge"
+                ],
+                [
+                  "15:20",
+                  "6",
+                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                ],
+                [
+                  "16:00",
+                  "6",
+                  "Funchal via Ribeira Brava"
+                ],
+                [
+                  "19:20",
                   "6",
                   "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
                 ]
@@ -3822,33 +3822,6 @@
               "6"
             ],
             "departures": {
-              "2026-10-10": [
-                [
-                  "08:15",
-                  "6",
-                  "Funchal via Ribeira Brava · from Túnel da Encumeada"
-                ],
-                [
-                  "09:25",
-                  "6",
-                  "São Vicente · Arco de São Jorge"
-                ],
-                [
-                  "15:20",
-                  "6",
-                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
-                ],
-                [
-                  "16:00",
-                  "6",
-                  "Funchal via Ribeira Brava"
-                ],
-                [
-                  "19:20",
-                  "6",
-                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
-                ]
-              ],
               "2026-10-11": [
                 [
                   "08:15",
@@ -4077,6 +4050,33 @@
                 ],
                 [
                   "19:50",
+                  "6",
+                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                ]
+              ],
+              "2026-10-17": [
+                [
+                  "08:15",
+                  "6",
+                  "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                ],
+                [
+                  "09:25",
+                  "6",
+                  "São Vicente · Arco de São Jorge"
+                ],
+                [
+                  "15:20",
+                  "6",
+                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                ],
+                [
+                  "16:00",
+                  "6",
+                  "Funchal via Ribeira Brava"
+                ],
+                [
+                  "19:20",
                   "6",
                   "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
                 ]
@@ -4148,6 +4148,13 @@
           "lat": 32.73514,
           "lon": -16.92885,
           "elev": 1785,
+          "parking": {
+            "dist": 28,
+            "name": "",
+            "fee": "no",
+            "lat": 32.73494,
+            "lon": -16.92867
+          },
           "bus": null,
           "lines": []
         },
@@ -4155,6 +4162,13 @@
           "lat": 32.70134,
           "lon": -16.90301,
           "elev": 1134,
+          "parking": {
+            "dist": 41,
+            "name": "",
+            "fee": "no",
+            "lat": 32.70101,
+            "lon": -16.9028
+          },
           "bus": null,
           "lines": [
             {
@@ -4245,403 +4259,6 @@
               "48"
             ],
             "departures": {
-              "2026-10-10": [
-                [
-                  "06:43",
-                  "21",
-                  "Monte Via Largo Fonte"
-                ],
-                [
-                  "07:00",
-                  "22",
-                  "Centro Autonomia"
-                ],
-                [
-                  "07:18",
-                  "21",
-                  "Monte Via Largo Fonte Lajinhas"
-                ],
-                [
-                  "07:19",
-                  "20",
-                  "Centro Autonomia"
-                ],
-                [
-                  "07:30",
-                  "21",
-                  "Centro Autonomia"
-                ],
-                [
-                  "07:43",
-                  "21",
-                  "Monte Via Largo Fonte"
-                ],
-                [
-                  "07:45",
-                  "22",
-                  "Babosas"
-                ],
-                [
-                  "07:50",
-                  "22",
-                  "Centro Autonomia"
-                ],
-                [
-                  "07:55",
-                  "21",
-                  "Monte Via Largo Fonte Lajinhas"
-                ],
-                [
-                  "08:15",
-                  "21",
-                  "Centro Autonomia"
-                ],
-                [
-                  "08:29",
-                  "20",
-                  "Centro Autonomia"
-                ],
-                [
-                  "08:40",
-                  "22",
-                  "Babosas"
-                ],
-                [
-                  "08:43",
-                  "21",
-                  "Monte Via Largo Fonte"
-                ],
-                [
-                  "08:50",
-                  "22",
-                  "Centro Autonomia"
-                ],
-                [
-                  "09:10",
-                  "20",
-                  "Monte Via Corujeira Dentro"
-                ],
-                [
-                  "09:15",
-                  "20",
-                  "Centro Autonomia"
-                ],
-                [
-                  "09:33",
-                  "21",
-                  "Monte Via Largo Fonte"
-                ],
-                [
-                  "09:40",
-                  "22",
-                  "Babosas"
-                ],
-                [
-                  "09:43",
-                  "48",
-                  "Monte Via Penteada"
-                ],
-                [
-                  "09:45",
-                  "22",
-                  "Centro Autonomia"
-                ],
-                [
-                  "10:05",
-                  "20",
-                  "Centro Autonomia"
-                ],
-                [
-                  "10:05",
-                  "20",
-                  "Monte Via Corujeira Dentro"
-                ],
-                [
-                  "10:22",
-                  "21",
-                  "Monte Via Largo Fonte"
-                ],
-                [
-                  "10:40",
-                  "22",
-                  "Babosas"
-                ],
-                [
-                  "10:45",
-                  "22",
-                  "Centro Autonomia"
-                ],
-                [
-                  "11:18",
-                  "21",
-                  "Monte Via Largo Fonte"
-                ],
-                [
-                  "11:33",
-                  "48",
-                  "Monte Via Penteada"
-                ],
-                [
-                  "11:40",
-                  "22",
-                  "Babosas"
-                ],
-                [
-                  "11:45",
-                  "22",
-                  "Centro Autonomia"
-                ],
-                [
-                  "11:55",
-                  "20",
-                  "Centro Até ESTR Monumental"
-                ],
-                [
-                  "11:55",
-                  "20",
-                  "Monte Via Corujeira Dentro"
-                ],
-                [
-                  "12:28",
-                  "21",
-                  "Monte Via Largo Fonte Lajinhas"
-                ],
-                [
-                  "12:35",
-                  "21",
-                  "Centro Autonomia"
-                ],
-                [
-                  "12:40",
-                  "22",
-                  "Babosas"
-                ],
-                [
-                  "12:45",
-                  "22",
-                  "Centro Autonomia"
-                ],
-                [
-                  "13:05",
-                  "20",
-                  "Monte Via Corujeira Dentro"
-                ],
-                [
-                  "13:10",
-                  "20",
-                  "Centro Autonomia"
-                ],
-                [
-                  "13:23",
-                  "48",
-                  "Monte Via Penteada"
-                ],
-                [
-                  "13:40",
-                  "20",
-                  "Centro Autonomia"
-                ],
-                [
-                  "13:40",
-                  "22",
-                  "Babosas"
-                ],
-                [
-                  "13:45",
-                  "22",
-                  "Centro Autonomia"
-                ],
-                [
-                  "14:05",
-                  "20",
-                  "Monte Via Corujeira Dentro"
-                ],
-                [
-                  "14:10",
-                  "20",
-                  "Centro Autonomia"
-                ],
-                [
-                  "14:30",
-                  "20",
-                  "Monte Via Corujeira Dentro"
-                ],
-                [
-                  "14:35",
-                  "20",
-                  "Centro Autonomia"
-                ],
-                [
-                  "14:40",
-                  "22",
-                  "Babosas"
-                ],
-                [
-                  "14:45",
-                  "22",
-                  "Centro Autonomia"
-                ],
-                [
-                  "14:54",
-                  "21",
-                  "Monte Via Largo Fonte Lajinhas"
-                ],
-                [
-                  "15:00",
-                  "21",
-                  "Centro Autonomia"
-                ],
-                [
-                  "15:13",
-                  "48",
-                  "Monte Via Penteada"
-                ],
-                [
-                  "15:35",
-                  "20",
-                  "Centro Autonomia"
-                ],
-                [
-                  "15:52",
-                  "21",
-                  "Monte Via Largo Fonte"
-                ],
-                [
-                  "16:10",
-                  "22",
-                  "Babosas"
-                ],
-                [
-                  "16:15",
-                  "22",
-                  "Centro Autonomia"
-                ],
-                [
-                  "16:20",
-                  "20",
-                  "Monte Via Corujeira Dentro"
-                ],
-                [
-                  "16:30",
-                  "20",
-                  "Centro Até ESTR Monumental"
-                ],
-                [
-                  "16:55",
-                  "20",
-                  "Monte Via Corujeira Dentro"
-                ],
-                [
-                  "17:00",
-                  "20",
-                  "Centro Autonomia"
-                ],
-                [
-                  "17:03",
-                  "48",
-                  "Monte Via Penteada"
-                ],
-                [
-                  "17:25",
-                  "20",
-                  "Monte Via Corujeira Dentro"
-                ],
-                [
-                  "17:35",
-                  "20",
-                  "Centro Autonomia"
-                ],
-                [
-                  "17:40",
-                  "22",
-                  "Babosas"
-                ],
-                [
-                  "17:45",
-                  "22",
-                  "Centro Autonomia"
-                ],
-                [
-                  "17:52",
-                  "21",
-                  "Monte Via Largo Fonte"
-                ],
-                [
-                  "18:28",
-                  "21",
-                  "Monte Via Largo Fonte Lajinhas"
-                ],
-                [
-                  "18:45",
-                  "21",
-                  "Centro Autonomia"
-                ],
-                [
-                  "19:10",
-                  "22",
-                  "Babosas"
-                ],
-                [
-                  "19:15",
-                  "22",
-                  "Centro Autonomia"
-                ],
-                [
-                  "19:19",
-                  "20",
-                  "Centro Autonomia"
-                ],
-                [
-                  "20:04",
-                  "20",
-                  "Centro Autonomia"
-                ],
-                [
-                  "20:24",
-                  "21",
-                  "Monte Via Largo Fonte Lajinhas"
-                ],
-                [
-                  "20:30",
-                  "21",
-                  "Centro Autonomia"
-                ],
-                [
-                  "20:55",
-                  "22",
-                  "Babosas"
-                ],
-                [
-                  "21:15",
-                  "22",
-                  "Centro Autonomia"
-                ],
-                [
-                  "21:25",
-                  "20",
-                  "Centro Autonomia"
-                ],
-                [
-                  "21:25",
-                  "20",
-                  "Monte Via Corujeira Dentro"
-                ],
-                [
-                  "22:34",
-                  "20",
-                  "Centro Autonomia"
-                ],
-                [
-                  "22:40",
-                  "22",
-                  "Babosas"
-                ],
-                [
-                  "22:56",
-                  "20",
-                  "Monte Corujeira Dentro Até Tanque"
-                ]
-              ],
               "2026-10-11": [
                 [
                   "06:54",
@@ -8668,6 +8285,403 @@
                   "22",
                   "Babosas"
                 ]
+              ],
+              "2026-10-17": [
+                [
+                  "06:43",
+                  "21",
+                  "Monte Via Largo Fonte"
+                ],
+                [
+                  "07:00",
+                  "22",
+                  "Centro Autonomia"
+                ],
+                [
+                  "07:18",
+                  "21",
+                  "Monte Via Largo Fonte Lajinhas"
+                ],
+                [
+                  "07:19",
+                  "20",
+                  "Centro Autonomia"
+                ],
+                [
+                  "07:30",
+                  "21",
+                  "Centro Autonomia"
+                ],
+                [
+                  "07:43",
+                  "21",
+                  "Monte Via Largo Fonte"
+                ],
+                [
+                  "07:45",
+                  "22",
+                  "Babosas"
+                ],
+                [
+                  "07:50",
+                  "22",
+                  "Centro Autonomia"
+                ],
+                [
+                  "07:55",
+                  "21",
+                  "Monte Via Largo Fonte Lajinhas"
+                ],
+                [
+                  "08:15",
+                  "21",
+                  "Centro Autonomia"
+                ],
+                [
+                  "08:29",
+                  "20",
+                  "Centro Autonomia"
+                ],
+                [
+                  "08:40",
+                  "22",
+                  "Babosas"
+                ],
+                [
+                  "08:43",
+                  "21",
+                  "Monte Via Largo Fonte"
+                ],
+                [
+                  "08:50",
+                  "22",
+                  "Centro Autonomia"
+                ],
+                [
+                  "09:10",
+                  "20",
+                  "Monte Via Corujeira Dentro"
+                ],
+                [
+                  "09:15",
+                  "20",
+                  "Centro Autonomia"
+                ],
+                [
+                  "09:33",
+                  "21",
+                  "Monte Via Largo Fonte"
+                ],
+                [
+                  "09:40",
+                  "22",
+                  "Babosas"
+                ],
+                [
+                  "09:43",
+                  "48",
+                  "Monte Via Penteada"
+                ],
+                [
+                  "09:45",
+                  "22",
+                  "Centro Autonomia"
+                ],
+                [
+                  "10:05",
+                  "20",
+                  "Centro Autonomia"
+                ],
+                [
+                  "10:05",
+                  "20",
+                  "Monte Via Corujeira Dentro"
+                ],
+                [
+                  "10:22",
+                  "21",
+                  "Monte Via Largo Fonte"
+                ],
+                [
+                  "10:40",
+                  "22",
+                  "Babosas"
+                ],
+                [
+                  "10:45",
+                  "22",
+                  "Centro Autonomia"
+                ],
+                [
+                  "11:18",
+                  "21",
+                  "Monte Via Largo Fonte"
+                ],
+                [
+                  "11:33",
+                  "48",
+                  "Monte Via Penteada"
+                ],
+                [
+                  "11:40",
+                  "22",
+                  "Babosas"
+                ],
+                [
+                  "11:45",
+                  "22",
+                  "Centro Autonomia"
+                ],
+                [
+                  "11:55",
+                  "20",
+                  "Centro Até ESTR Monumental"
+                ],
+                [
+                  "11:55",
+                  "20",
+                  "Monte Via Corujeira Dentro"
+                ],
+                [
+                  "12:28",
+                  "21",
+                  "Monte Via Largo Fonte Lajinhas"
+                ],
+                [
+                  "12:35",
+                  "21",
+                  "Centro Autonomia"
+                ],
+                [
+                  "12:40",
+                  "22",
+                  "Babosas"
+                ],
+                [
+                  "12:45",
+                  "22",
+                  "Centro Autonomia"
+                ],
+                [
+                  "13:05",
+                  "20",
+                  "Monte Via Corujeira Dentro"
+                ],
+                [
+                  "13:10",
+                  "20",
+                  "Centro Autonomia"
+                ],
+                [
+                  "13:23",
+                  "48",
+                  "Monte Via Penteada"
+                ],
+                [
+                  "13:40",
+                  "20",
+                  "Centro Autonomia"
+                ],
+                [
+                  "13:40",
+                  "22",
+                  "Babosas"
+                ],
+                [
+                  "13:45",
+                  "22",
+                  "Centro Autonomia"
+                ],
+                [
+                  "14:05",
+                  "20",
+                  "Monte Via Corujeira Dentro"
+                ],
+                [
+                  "14:10",
+                  "20",
+                  "Centro Autonomia"
+                ],
+                [
+                  "14:30",
+                  "20",
+                  "Monte Via Corujeira Dentro"
+                ],
+                [
+                  "14:35",
+                  "20",
+                  "Centro Autonomia"
+                ],
+                [
+                  "14:40",
+                  "22",
+                  "Babosas"
+                ],
+                [
+                  "14:45",
+                  "22",
+                  "Centro Autonomia"
+                ],
+                [
+                  "14:54",
+                  "21",
+                  "Monte Via Largo Fonte Lajinhas"
+                ],
+                [
+                  "15:00",
+                  "21",
+                  "Centro Autonomia"
+                ],
+                [
+                  "15:13",
+                  "48",
+                  "Monte Via Penteada"
+                ],
+                [
+                  "15:35",
+                  "20",
+                  "Centro Autonomia"
+                ],
+                [
+                  "15:52",
+                  "21",
+                  "Monte Via Largo Fonte"
+                ],
+                [
+                  "16:10",
+                  "22",
+                  "Babosas"
+                ],
+                [
+                  "16:15",
+                  "22",
+                  "Centro Autonomia"
+                ],
+                [
+                  "16:20",
+                  "20",
+                  "Monte Via Corujeira Dentro"
+                ],
+                [
+                  "16:30",
+                  "20",
+                  "Centro Até ESTR Monumental"
+                ],
+                [
+                  "16:55",
+                  "20",
+                  "Monte Via Corujeira Dentro"
+                ],
+                [
+                  "17:00",
+                  "20",
+                  "Centro Autonomia"
+                ],
+                [
+                  "17:03",
+                  "48",
+                  "Monte Via Penteada"
+                ],
+                [
+                  "17:25",
+                  "20",
+                  "Monte Via Corujeira Dentro"
+                ],
+                [
+                  "17:35",
+                  "20",
+                  "Centro Autonomia"
+                ],
+                [
+                  "17:40",
+                  "22",
+                  "Babosas"
+                ],
+                [
+                  "17:45",
+                  "22",
+                  "Centro Autonomia"
+                ],
+                [
+                  "17:52",
+                  "21",
+                  "Monte Via Largo Fonte"
+                ],
+                [
+                  "18:28",
+                  "21",
+                  "Monte Via Largo Fonte Lajinhas"
+                ],
+                [
+                  "18:45",
+                  "21",
+                  "Centro Autonomia"
+                ],
+                [
+                  "19:10",
+                  "22",
+                  "Babosas"
+                ],
+                [
+                  "19:15",
+                  "22",
+                  "Centro Autonomia"
+                ],
+                [
+                  "19:19",
+                  "20",
+                  "Centro Autonomia"
+                ],
+                [
+                  "20:04",
+                  "20",
+                  "Centro Autonomia"
+                ],
+                [
+                  "20:24",
+                  "21",
+                  "Monte Via Largo Fonte Lajinhas"
+                ],
+                [
+                  "20:30",
+                  "21",
+                  "Centro Autonomia"
+                ],
+                [
+                  "20:55",
+                  "22",
+                  "Babosas"
+                ],
+                [
+                  "21:15",
+                  "22",
+                  "Centro Autonomia"
+                ],
+                [
+                  "21:25",
+                  "20",
+                  "Centro Autonomia"
+                ],
+                [
+                  "21:25",
+                  "20",
+                  "Monte Via Corujeira Dentro"
+                ],
+                [
+                  "22:34",
+                  "20",
+                  "Centro Autonomia"
+                ],
+                [
+                  "22:40",
+                  "22",
+                  "Babosas"
+                ],
+                [
+                  "22:56",
+                  "20",
+                  "Monte Corujeira Dentro Até Tanque"
+                ]
               ]
             }
           },
@@ -9072,48 +9086,6 @@
               "113"
             ],
             "departures": {
-              "2026-10-10": [
-                [
-                  "09:20",
-                  "113",
-                  "Funchal via Caniçal, Machico"
-                ],
-                [
-                  "10:30",
-                  "113",
-                  "Funchal via Caniçal, Machico"
-                ],
-                [
-                  "11:30",
-                  "113",
-                  "Funchal via Caniçal, Machico"
-                ],
-                [
-                  "13:00",
-                  "113",
-                  "Funchal via Caniçal, Machico"
-                ],
-                [
-                  "14:00",
-                  "113",
-                  "Funchal via Caniçal, Machico"
-                ],
-                [
-                  "16:00",
-                  "113",
-                  "Funchal via Caniçal, Machico"
-                ],
-                [
-                  "17:00",
-                  "113",
-                  "Funchal via Caniçal, Machico"
-                ],
-                [
-                  "19:35",
-                  "113",
-                  "Funchal via Caniçal, Machico"
-                ]
-              ],
               "2026-10-11": [
                 [
                   "09:20",
@@ -9430,6 +9402,48 @@
                   "113",
                   "Funchal via Caniçal, Machico"
                 ]
+              ],
+              "2026-10-17": [
+                [
+                  "09:20",
+                  "113",
+                  "Funchal via Caniçal, Machico"
+                ],
+                [
+                  "10:30",
+                  "113",
+                  "Funchal via Caniçal, Machico"
+                ],
+                [
+                  "11:30",
+                  "113",
+                  "Funchal via Caniçal, Machico"
+                ],
+                [
+                  "13:00",
+                  "113",
+                  "Funchal via Caniçal, Machico"
+                ],
+                [
+                  "14:00",
+                  "113",
+                  "Funchal via Caniçal, Machico"
+                ],
+                [
+                  "16:00",
+                  "113",
+                  "Funchal via Caniçal, Machico"
+                ],
+                [
+                  "17:00",
+                  "113",
+                  "Funchal via Caniçal, Machico"
+                ],
+                [
+                  "19:35",
+                  "113",
+                  "Funchal via Caniçal, Machico"
+                ]
               ]
             },
             "source": "hand-read timetable",
@@ -9607,33 +9621,6 @@
               "6"
             ],
             "departures": {
-              "2026-10-10": [
-                [
-                  "08:15",
-                  "6",
-                  "Funchal via Ribeira Brava · from Túnel da Encumeada"
-                ],
-                [
-                  "09:25",
-                  "6",
-                  "São Vicente · Arco de São Jorge"
-                ],
-                [
-                  "15:20",
-                  "6",
-                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
-                ],
-                [
-                  "16:00",
-                  "6",
-                  "Funchal via Ribeira Brava"
-                ],
-                [
-                  "19:20",
-                  "6",
-                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
-                ]
-              ],
               "2026-10-11": [
                 [
                   "08:15",
@@ -9862,6 +9849,33 @@
                 ],
                 [
                   "19:50",
+                  "6",
+                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                ]
+              ],
+              "2026-10-17": [
+                [
+                  "08:15",
+                  "6",
+                  "Funchal via Ribeira Brava · from Túnel da Encumeada"
+                ],
+                [
+                  "09:25",
+                  "6",
+                  "São Vicente · Arco de São Jorge"
+                ],
+                [
+                  "15:20",
+                  "6",
+                  "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
+                ],
+                [
+                  "16:00",
+                  "6",
+                  "Funchal via Ribeira Brava"
+                ],
+                [
+                  "19:20",
                   "6",
                   "São Vicente · Arco de São Jorge · from Túnel da Encumeada"
                 ]

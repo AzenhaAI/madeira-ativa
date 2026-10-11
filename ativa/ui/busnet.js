@@ -117,7 +117,31 @@
   var RANK = { city: 6, town: 5, village: 4, suburb: 3, neighbourhood: 2, hamlet: 2, locality: 1 };
   // Stops for a place, each with its distance from the place's centre (0 for a
   // stop matched by name), so a trip ends in Santana, not at its edge.
+  // A point instead of a name ("32.65,-16.91"): Apple Maps hands the app two
+  // coordinates, and a trail page knows its own ends. The nearest stops within
+  // 1.5 km, or the four nearest within 5 km where the map is thin.
+  function parseLL(s) {
+    var m = String(s || '').match(/^\s*(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)\s*$/);
+    return m ? [+m[1], +m[2]] : null;
+  }
+  function nearStops(ll) {
+    var all = NET.stops.map(function (s, i) { return [i, dist(ll, [s[2], s[3]])]; }).sort(function (x, y) { return x[1] - y[1]; });
+    var pick = all.filter(function (x) { return x[1] <= 1500; }).slice(0, 8);
+    if (!pick.length) pick = all.filter(function (x) { return x[1] <= 5000; }).slice(0, 4);
+    var out = {};
+    pick.forEach(function (x) { out[x[0]] = x[1]; });
+    return out;
+  }
+  // What to call a point in the field: the nearest named place, else the nearest stop.
+  function nearLabel(ll) {
+    var best = null, bd = 3000;
+    NET.places.forEach(function (p) { var d = dist(ll, [p[1], p[2]]); if (d < bd) { bd = d; best = p[0]; } });
+    if (!best) NET.stops.forEach(function (s) { var d = dist(ll, [s[2], s[3]]); if (d < bd || !best) { bd = d; best = s[1]; } });
+    return '📍 ' + t('Near', 'Perto de') + ' ' + best;
+  }
   function candidates(text) {
+    var ll = parseLL(text);
+    if (ll) return nearStops(ll);
     var q = norm(text);
     if (!q) return {};
     var best = null;
@@ -151,7 +175,7 @@
     var fa = document.getElementById('bnFrom'), fb = document.getElementById('bnTo'), box = document.getElementById('bnRes');
     if (!fa.value.trim()) fa.value = fa.placeholder;
     if (!fb.value.trim()) fb.value = fb.placeholder;
-    var a = fa.value, b = fb.value;
+    var a = fa.dataset.ll || fa.value, b = fb.dataset.ll || fb.value;
     var SA = candidates(a), SB = candidates(b);
     if (!Object.keys(SA).length || !Object.keys(SB).length) {
       box.innerHTML = '<p class="empty">' + (!Object.keys(SA).length ? t('No stop found for “' + esc(a) + '”.', 'Nenhuma paragem para «' + esc(a) + '».') : t('No stop found for “' + esc(b) + '”.', 'Nenhuma paragem para «' + esc(b) + '».')) + '</p>';
@@ -289,6 +313,25 @@
         ', ' + (NET.lines.length - city) + ' ' + t('interurban', 'interurbanas') + ') · ' + NET.siga.length + ' ' + t('in the full list below', 'na lista completa abaixo');
       sigaList();
       MA.onLang(function () { if (document.getElementById('bnRes').innerHTML) search(); });
+      // ?from=&to= — a place name or "lat,lon", with an optional fromName/toName
+      // to show instead of the coordinates. Both given: search at once. Only the
+      // destination (Apple Maps from "My Location", a trail's "by bus" button):
+      // fill it and leave the start to the reader.
+      var sp = new URLSearchParams(location.search), any = false;
+      ['from', 'to'].forEach(function (k) {
+        var v = sp.get(k), el = document.getElementById(k === 'from' ? 'bnFrom' : 'bnTo');
+        el.addEventListener('input', function () { delete el.dataset.ll; });
+        if (!v) return;
+        any = true;
+        var ll = parseLL(v);
+        if (ll) { el.dataset.ll = v; el.value = sp.get(k + 'Name') || nearLabel(ll); } else el.value = v;
+      });
+      if (any) {
+        if (sp.get('from') && sp.get('to')) search(); else document.getElementById('bnFrom').focus({ preventScroll: true });
+        // After the trail list below has rendered, or the page is still short and
+        // the browser lands somewhere else.
+        setTimeout(function () { document.getElementById('bnForm').scrollIntoView({ block: 'start' }); }, 600);
+      }
     });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();

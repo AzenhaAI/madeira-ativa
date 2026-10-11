@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-10-10T11:13:17",
-  "count": 122,
+  "fetched": "2026-10-11T11:25:58",
+  "count": 124,
   "items": [
     {
       "id": "114",
@@ -1223,6 +1223,26 @@
       "time": "",
       "place": "Casa do Povo do Curral das Freiras",
       "category": "Traditional feast"
+    },
+    {
+      "id": "370",
+      "title": "Leah Singer & Lee Ranaldo apresentam Contre Jour",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/leah-singer-lee-ranaldo-apresentam-contre-jour",
+      "start": "2026-10-31",
+      "end": "2026-10-31",
+      "time": "21:00",
+      "place": "MUDAS.Museu de Arte Contemporânea da Madeira",
+      "category": "Music"
+    },
+    {
+      "id": "377",
+      "title": "Madeira Piano Fest 2026",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/madeira-piano-fest-2026",
+      "start": "2026-11-07",
+      "end": "2026-10-15",
+      "time": "18:00",
+      "place": "Teatro Municipal Baltazar Dias",
+      "category": "Music"
     }
   ]
 }

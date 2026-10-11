@@ -1,8 +1,8 @@
 {
   "note": "Ship calls at the port of Funchal from APRAM. Times are Madeira local time, as the port publishes them. Accumulates; a call no longer listed before its arrival is marked superseded.",
   "source": "https://apram.pt/movimento-navios?port=ptfnc",
-  "fetched": "2026-10-10T11:28:30",
-  "count": 34,
+  "fetched": "2026-10-11T11:41:49",
+  "count": 36,
   "calls": [
     {
       "ship": "SANTA MARIA MANUELA",
@@ -205,10 +205,30 @@
       "superseded": false
     },
     {
+      "ship": "CEMENT TRADER",
+      "berth": "Funchal - Terminal Cimenteiro",
+      "agent": "Transinsular (Madeira)-Transp. Marit. Insulares, Lda.",
+      "arrival": "2026-10-10T18:30",
+      "from": "Setúbal",
+      "departure": "2026-10-12T16:00",
+      "to": "Setúbal",
+      "superseded": false
+    },
+    {
       "ship": "VENTURA",
       "berth": "Funchal - Terminal Sul",
       "agent": "Blatas, Lda.",
       "arrival": "2026-10-11T07:00",
+      "from": "Santa Cruz De La Palma",
+      "departure": "2026-10-11T17:30",
+      "to": "Cadiz",
+      "superseded": false
+    },
+    {
+      "ship": "VENTURA",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-10-11T07:15",
       "from": "Santa Cruz De La Palma",
       "departure": "2026-10-11T17:30",
       "to": "Cadiz",
