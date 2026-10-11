@@ -327,7 +327,14 @@
         if (ll) { el.dataset.ll = v; el.value = sp.get(k + 'Name') || nearLabel(ll); } else el.value = v;
       });
       if (any) {
-        if (sp.get('from') && sp.get('to')) search(); else document.getElementById('bnFrom').focus({ preventScroll: true });
+        if (sp.get('from') && sp.get('to')) search();
+        else {
+          // Point at the empty start without focusing it: a programmatic focus
+          // inside the app's WebView raised the keyboard and hung the page.
+          var f = document.getElementById('bnFrom');
+          f.placeholder = t('Where from?', 'De onde?');
+          f.style.boxShadow = '0 0 0 2px #2e9e5b';
+        }
         // After the trail list below has rendered, or the page is still short and
         // the browser lands somewhere else.
         setTimeout(function () { document.getElementById('bnForm').scrollIntoView({ block: 'start' }); }, 600);
