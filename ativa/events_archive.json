@@ -1,7 +1,7 @@
 {
   "note": "Past events — preserved so history is never lost on rebuild",
   "generated_at": "2026-10-12",
-  "count": 1912,
+  "count": 1913,
   "events": [
     {
       "mode": "trail",
@@ -15011,6 +15011,14 @@
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/ciclo-de-exposicoes-in-fluxo",
       "event_type": "festival",
       "category": "exhibition"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concert · Funchal",
+      "date": "2026-10-09",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2686",
+      "event_type": "festival"
     },
     {
       "mode": "festivals",

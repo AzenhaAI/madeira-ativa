@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-10-11T11:25:58",
-  "count": 124,
+  "fetched": "2026-10-12T13:13:04",
+  "count": 126,
   "items": [
     {
       "id": "114",
@@ -1105,6 +1105,16 @@
       "category": "Activity"
     },
     {
+      "id": "379",
+      "title": "\"40 Anos | 40 Fotografias\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/40-anos-40-fotografias",
+      "start": "2026-10-13",
+      "end": "2026-11-30",
+      "time": "16:30",
+      "place": "Direção Regional dos Arquivos, das Bibliotecas e do Livro",
+      "category": "Exhibition"
+    },
+    {
       "id": "353",
       "title": "Festival Avesso 2026",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/festival-avesso-2026",
@@ -1153,6 +1163,16 @@
       "time": "18:00",
       "place": "Auditório do Centro de Congressos da Madeira",
       "category": "Music"
+    },
+    {
+      "id": "380",
+      "title": "Dia Internacional do Património Cultural Imaterial",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/conferencias/dia-internacional-do-patrimonio-cultural-imaterial",
+      "start": "2026-10-17",
+      "end": "2026-10-17",
+      "time": "",
+      "place": "Núcleo Histórico de Santo Amaro - Torre do Capitão",
+      "category": "Conference"
     },
     {
       "id": "372",

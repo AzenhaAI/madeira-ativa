@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-10-11T11:25:46",
-  "count": 339,
+  "fetched": "2026-10-12T13:12:52",
+  "count": 345,
   "items": [
     {
       "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
@@ -4265,6 +4265,21 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "halloween-neon-party-2026-10-23",
+      "title": "Halloween Neon Party",
+      "url": "https://www.madeira-unlocked.com/en/events/halloween-neon-party-2026-10-23",
+      "start": "2026-10-23T18:00:00+01:00",
+      "end": "2026-10-23T20:00:00+01:00",
+      "date": "2026-10-23",
+      "time": "18:00",
+      "venue": "OY Family Space & Brunch Cafe",
+      "municipality": "Funchal",
+      "price": 20,
+      "organizer": "JOY Family Space & Brunch Cafe",
+      "category": "family",
+      "source_category": "kids-family"
+    },
+    {
       "id": "screenings-funchal-mulholland-drive-the-boat-2026-10-23",
       "title": "Screenings Funchal: Mulholland Drive + The Boat",
       "url": "https://www.madeira-unlocked.com/en/events/screenings-funchal-mulholland-drive-the-boat-2026-10-23",
@@ -4400,6 +4415,21 @@
       "source_category": "theater"
     },
     {
+      "id": "orientacao-2026-10-25",
+      "title": "Orientação",
+      "url": "https://www.madeira-unlocked.com/en/events/orientacao-2026-10-25",
+      "start": "2026-10-25T09:00:00+00:00",
+      "end": "2026-10-25T13:00:00+00:00",
+      "date": "2026-10-25",
+      "time": "09:00",
+      "venue": "Ilhéu de Câmara de Lobos",
+      "municipality": "Câmara de Lobos",
+      "price": 0,
+      "organizer": "Clube Escola do Estreito",
+      "category": "sport",
+      "source_category": "sport-fitness"
+    },
+    {
       "id": "festival-avesso-2026-2026-10-25",
       "title": "Festival Avesso 2026",
       "url": "https://www.madeira-unlocked.com/en/events/festival-avesso-2026-2026-10-25",
@@ -4518,6 +4548,21 @@
       "organizer": "O Vizinho Restaurante",
       "category": "concert",
       "source_category": "music-concerts"
+    },
+    {
+      "id": "festa-de-halloween-escola-de-magia-2026-10-30",
+      "title": "Festa de Halloween, Escola de Magia",
+      "url": "https://www.madeira-unlocked.com/en/events/festa-de-halloween-escola-de-magia-2026-10-30",
+      "start": "2026-10-30T17:00:00+00:00",
+      "end": "2026-10-30T23:00:00+00:00",
+      "date": "2026-10-30",
+      "time": "17:00",
+      "venue": "Ilhapark, Jardim Panorâmico",
+      "municipality": "Funchal",
+      "price": 15,
+      "organizer": "Ilhapark Madeira",
+      "category": "family",
+      "source_category": "kids-family"
     },
     {
       "id": "elton-john-tribute-2026-10-30",
@@ -4640,6 +4685,21 @@
       "source_category": "kids-family"
     },
     {
+      "id": "madeira-street-battle-2026-10-31",
+      "title": "Madeira Street Battle",
+      "url": "https://www.madeira-unlocked.com/en/events/madeira-street-battle-2026-10-31",
+      "start": "2026-10-31T12:00:00+00:00",
+      "end": "2026-10-31T14:00:00+00:00",
+      "date": "2026-10-31",
+      "time": "12:00",
+      "venue": "Funchal",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "STG Crew",
+      "category": "dance",
+      "source_category": "dance"
+    },
+    {
       "id": "alive-halloween-dance-music-gathering-2026-10-31",
       "title": "Alive, Halloween Dance & Music Gathering",
       "url": "https://www.madeira-unlocked.com/en/events/alive-halloween-dance-music-gathering-2026-10-31",
@@ -4728,6 +4788,21 @@
       "organizer": "OriOasis",
       "category": "sport",
       "source_category": "sport-fitness"
+    },
+    {
+      "id": "sofar-sounds-2026-10-31",
+      "title": "Sofar Sounds",
+      "url": "https://www.madeira-unlocked.com/en/events/sofar-sounds-2026-10-31",
+      "start": "2026-10-31T19:30:00+00:00",
+      "end": "2026-10-31T21:30:00+00:00",
+      "date": "2026-10-31",
+      "time": "19:30",
+      "venue": "revealed to ticket holders 36 hours before the show",
+      "municipality": "Funchal",
+      "price": 19,
+      "organizer": "Sofar Sounds Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "albrecht-mayer-e-orquestra-classica-da-madeira-centenario-dos-bombeiros-voluntarios-madeirenses-2026-10-31",
@@ -4833,6 +4908,21 @@
       "organizer": "Câmara Municipal do Funchal",
       "category": "sport",
       "source_category": "sport-fitness"
+    },
+    {
+      "id": "miss-mrs-madeira-2026-11-01",
+      "title": "Miss & Mrs Madeira",
+      "url": "https://www.madeira-unlocked.com/en/events/miss-mrs-madeira-2026-11-01",
+      "start": "2026-11-01T18:30:00+00:00",
+      "end": "2026-11-01T20:30:00+00:00",
+      "date": "2026-11-01",
+      "time": "18:30",
+      "venue": "Salão Paroquial do Imaculado Coração de Maria",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Concurso Nacional de Beleza",
+      "category": "festival",
+      "source_category": "festivals-parades"
     },
     {
       "id": "bachata-styling-in-couple-solo-2026-11-04",

@@ -140,6 +140,15 @@
     },
     {
       "mode": "festivals",
+      "name": "DOO. DEES VIVAL CORAL Cora de Voc",
+      "date": "2026-10-12",
+      "location": "",
+      "url": "https://t.me/festas_madeira/2685",
+      "event_type": "festival",
+      "category": "festival"
+    },
+    {
+      "mode": "festivals",
       "name": "Da Laurissilva ao Cosmos",
       "date": "2026-10-12",
       "location": "Centro Cultural e de Investigação do Funchal",
@@ -256,6 +265,17 @@
       "location": "Online · miutmadeira.com",
       "url": "https://miutmadeira.com/",
       "event_type": "trail"
+    },
+    {
+      "mode": "festivals",
+      "name": "\"40 Anos | 40 Fotografias\"",
+      "date": "2026-10-13",
+      "location": "Direção Regional dos Arquivos, das Bibliotecas e do Livro",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/40-anos-40-fotografias",
+      "event_type": "festival",
+      "time": "16:30",
+      "category": "exhibition",
+      "date_end": "2026-11-30"
     },
     {
       "mode": "festivals",
@@ -381,6 +401,18 @@
     },
     {
       "mode": "festivals",
+      "name": "FESTIVAL - MUSICA E DANÇA -Tenprrote’ À",
+      "date": "2026-10-16",
+      "location": "São Martinho",
+      "url": "https://t.me/festas_madeira/2687",
+      "event_type": "festival",
+      "time": "14:00",
+      "price": "Free",
+      "organizer": "Associação Cultural e Recreativa Rodopio Pitoresco",
+      "category": "festival"
+    },
+    {
+      "mode": "festivals",
       "name": "Festival Avesso 2026",
       "date": "2026-10-16",
       "location": "Centro Cultural John dos Passos, Ponta do Sol",
@@ -482,15 +514,12 @@
     },
     {
       "mode": "festivals",
-      "name": "Dancilhas, Festival de Música e Dança do Mundo Trad/Folk",
+      "name": "Dia Internacional do Património Cultural Imaterial",
       "date": "2026-10-17",
-      "location": "Jardim da Junta de Freguesia de São Martinho, Funchal",
-      "url": "",
+      "location": "Núcleo Histórico de Santo Amaro - Torre do Capitão",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/conferencias/dia-internacional-do-patrimonio-cultural-imaterial",
       "event_type": "festival",
-      "time": "14:00",
-      "price": "Free",
-      "organizer": "Associação Cultural e Recreativa Rodopio Pitoresco",
-      "category": "folklore"
+      "category": "talk"
     },
     {
       "mode": "festivals",
@@ -685,6 +714,18 @@
       "price": "Free",
       "organizer": "Associação Cultural do Largo do Socorro",
       "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "Dancilhas, Festival de Música e Dança do Mundo Trad/Folk",
+      "date": "2026-10-18",
+      "location": "Montado do Pereiro, Santa Cruz",
+      "url": "",
+      "event_type": "festival",
+      "time": "11:00",
+      "price": "Free",
+      "organizer": "Associação Cultural e Recreativa Rodopio Pitoresco",
+      "category": "folklore"
     },
     {
       "mode": "festivals",
@@ -918,6 +959,18 @@
     },
     {
       "mode": "festivals",
+      "name": "Halloween Neon Party",
+      "date": "2026-10-23",
+      "location": "OY Family Space & Brunch Cafe, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "18:00",
+      "price": "€20",
+      "organizer": "JOY Family Space & Brunch Cafe",
+      "category": "family"
+    },
+    {
+      "mode": "festivals",
       "name": "Infinito",
       "date": "2026-10-23",
       "location": "Largo do Socorro, Funchal",
@@ -1107,11 +1160,15 @@
     },
     {
       "mode": "trail",
-      "name": "Orientação: Orientação Câmara de Lobos (Urbana)",
+      "name": "Orientação",
       "date": "2026-10-25",
-      "location": "Câmara de Lobos",
+      "location": "Ilhéu de Câmara de Lobos",
       "url": "https://aoram.pt/calendario/",
-      "event_type": "orienteering"
+      "event_type": "orienteering",
+      "time": "09:00",
+      "price": "Free",
+      "organizer": "Clube Escola do Estreito",
+      "category": "sport"
     },
     {
       "mode": "festivals",
@@ -1170,6 +1227,18 @@
       "price": "€25",
       "organizer": "MAMMA - Museum of Art and Music of Madeira",
       "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "Festa de Halloween, Escola de Magia",
+      "date": "2026-10-30",
+      "location": "Ilhapark, Jardim Panorâmico, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "17:00",
+      "price": "€15",
+      "organizer": "Ilhapark Madeira",
+      "category": "family"
     },
     {
       "mode": "festivals",
@@ -1310,6 +1379,18 @@
     },
     {
       "mode": "festivals",
+      "name": "Madeira Street Battle",
+      "date": "2026-10-31",
+      "location": "Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "12:00",
+      "price": "Free",
+      "organizer": "STG Crew",
+      "category": "dance"
+    },
+    {
+      "mode": "festivals",
       "name": "Orquestra Clássica da Madeira | Albrecht Mayer & OCM",
       "date": "2026-10-31",
       "location": "Centro Congressos da Madeira",
@@ -1342,6 +1423,18 @@
       "time": "21:00",
       "price": "Free",
       "organizer": "Capoeira Lounge Bar",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "Sofar Sounds",
+      "date": "2026-10-31",
+      "location": "revealed to ticket holders 36 hours before the show, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "19:30",
+      "price": "€19",
+      "organizer": "Sofar Sounds Madeira",
       "category": "concert"
     },
     {
@@ -1427,6 +1520,18 @@
       "location": "Madeira",
       "url": "https://ultra-x.co/pt/madeira/",
       "event_type": "trail"
+    },
+    {
+      "mode": "festivals",
+      "name": "Miss & Mrs Madeira",
+      "date": "2026-11-01",
+      "location": "Salão Paroquial do Imaculado Coração de Maria, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "18:30",
+      "price": "Free",
+      "organizer": "Concurso Nacional de Beleza",
+      "category": "festival"
     },
     {
       "mode": "trail",

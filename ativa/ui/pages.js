@@ -385,6 +385,9 @@
           if (nb.length) s.push('<b>' + t('Next', 'Próximo') + ':</b> ' + nb.map(function (b) { return (b.today ? '' : MA.day(b.day).w + ' ') + b.time + ' ' + esc(b.line) + ' → ' + esc(b.to); }).join(' · '));
           if (e.bus.note) s.push('<small class="sub2">' + esc(e.bus.note[MA.lang()] || e.bus.note.en) + '</small>');
         }
+        // The island planner with this end as the destination, as in the app.
+        if (lines.length || e.bus) s.push('<a href="/ativa/bus?to=' + e.lat.toFixed(5) + ',' + e.lon.toFixed(5) + '&toName=' +
+          encodeURIComponent(T.code + ' · ' + title) + '">🗺 ' + t('Plan the trip here by bus', 'Planear a viagem de autocarro até aqui') + ' →</a>');
         rows += '<dt>' + title + ' · ' + e.elev + ' m</dt><dd>' + s.join('<br>') + '</dd>';
       });
       (a.webcams || []).forEach(function (c) { rows += '<dt>Webcam</dt><dd><a href="' + esc(c.url) + '" target="_blank" rel="noopener">' + esc(c.name) + ' ↗</a></dd>'; });
