@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-10-12T13:13:04",
-  "count": 126,
+  "fetched": "2026-10-15T09:49:43",
+  "count": 134,
   "items": [
     {
       "id": "114",
@@ -1155,6 +1155,46 @@
       "category": "Theatre"
     },
     {
+      "id": "381",
+      "title": "6.ª Edição do “Sopas com História”",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/festas-tradicionais/6-a-edicao-do-sopas-com-historia",
+      "start": "2026-10-16",
+      "end": "2026-10-18",
+      "time": "",
+      "place": "Largo de Nossa Senhora do Bom Caminho",
+      "category": "Traditional feast"
+    },
+    {
+      "id": "386",
+      "title": "VII Mostra do Pão do Porto Santo",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/festas-tradicionais/vii-mostra-do-pao-do-porto-santo",
+      "start": "2026-10-16",
+      "end": "2026-10-18",
+      "time": "19:00",
+      "place": "Praça do Município, Porto Santo",
+      "category": "Traditional feast"
+    },
+    {
+      "id": "391",
+      "title": "Feira do Mar e do Pescador",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/festas-tradicionais/feira-do-mar-e-do-pescador",
+      "start": "2026-10-16",
+      "end": "2026-10-18",
+      "time": "",
+      "place": "Porto do Caniçal",
+      "category": "Traditional feast"
+    },
+    {
+      "id": "388",
+      "title": "Festival Internacional de Órgão da Madeira - A Madeira e o Mundo",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/15a-edicao-do-festival-internacional-de-orgao-da-madeira",
+      "start": "2026-10-16",
+      "end": "2026-10-25",
+      "time": "21:30",
+      "place": "",
+      "category": "Music"
+    },
+    {
       "id": "343",
       "title": "Orquestra Clássica da Madeira | Operazione Tango",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/orquestra-classica-da-madeira-operazione-tango",
@@ -1183,6 +1223,16 @@
       "time": "18:00",
       "place": "Museu de Arte Sacra do Funchal",
       "category": "Conference"
+    },
+    {
+      "id": "383",
+      "title": "OFICINA “Do Caco à Massa”",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/oficina-do-caco-a-massa-2",
+      "start": "2026-10-22",
+      "end": "2026-10-22",
+      "time": "10:00",
+      "place": "Museu Etnográfico da Madeira",
+      "category": "Activity"
     },
     {
       "id": "279",
@@ -1235,6 +1285,16 @@
       "category": "Conference"
     },
     {
+      "id": "382",
+      "title": "Espetáculo \"Ascenção. A Loira da Camacha\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/espetaculo-ascencao-a-loira-da-camacha",
+      "start": "2026-10-30",
+      "end": "2026-11-01",
+      "time": "20:30",
+      "place": "Casa do Povo da Camacha",
+      "category": "Music"
+    },
+    {
       "id": "352",
       "title": "42.ª Festa da Castanha – Curral das Freiras",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/festas-tradicionais/42-a-festa-da-castanha-curral-das-freiras",
@@ -1255,6 +1315,16 @@
       "category": "Music"
     },
     {
+      "id": "385",
+      "title": "Orquestra Clássica da Madeira apresenta concerto com Albrecht Mayer",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/orquestra-classica-da-madeira-apresenta-concerto-com-albrecht-mayer",
+      "start": "2026-10-31",
+      "end": "2026-10-31",
+      "time": "18:00",
+      "place": "Auditório do Centro de Congressos da Madeira",
+      "category": "Music"
+    },
+    {
       "id": "377",
       "title": "Madeira Piano Fest 2026",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/madeira-piano-fest-2026",
@@ -1263,6 +1333,16 @@
       "time": "18:00",
       "place": "Teatro Municipal Baltazar Dias",
       "category": "Music"
+    },
+    {
+      "id": "390",
+      "title": "\"Outra Vez Alice Que Chatice\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/outra-vez-alice-que-chatice",
+      "start": "2026-11-14",
+      "end": "2026-12-27",
+      "time": "18:00",
+      "place": "Cine Teatro de Santo António",
+      "category": "Theatre"
     }
   ]
 }

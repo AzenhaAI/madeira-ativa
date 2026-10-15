@@ -1,8 +1,8 @@
 {
   "note": "Ship calls at the port of Funchal from APRAM. Times are Madeira local time, as the port publishes them. Accumulates; a call no longer listed before its arrival is marked superseded.",
   "source": "https://apram.pt/movimento-navios?port=ptfnc",
-  "fetched": "2026-10-12T13:37:39",
-  "count": 45,
+  "fetched": "2026-10-14T10:43:02",
+  "count": 49,
   "calls": [
     {
       "ship": "SANTA MARIA MANUELA",
@@ -245,10 +245,30 @@
       "superseded": false
     },
     {
+      "ship": "SPIRIT OF ADVENTURE",
+      "berth": "Funchal - Terminal Norte",
+      "agent": "Wilhelmsen Port Services Portugal, S.A.",
+      "arrival": "2026-10-14T06:30",
+      "from": "Portsmouth",
+      "departure": "2026-10-14T17:00",
+      "to": "Santa Cruz De La Palma",
+      "superseded": false
+    },
+    {
       "ship": "CELEBRITY APEX",
       "berth": "Funchal - Terminal Sul",
       "agent": "JFM Shipping, Lda.",
       "arrival": "2026-10-14T07:00",
+      "from": "Santa Cruz De Tenerife",
+      "departure": "2026-10-14T16:00",
+      "to": "Vigo",
+      "superseded": false
+    },
+    {
+      "ship": "CELEBRITY APEX",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-10-14T07:15",
       "from": "Santa Cruz De Tenerife",
       "departure": "2026-10-14T16:00",
       "to": "Vigo",
@@ -345,6 +365,16 @@
       "superseded": false
     },
     {
+      "ship": "LE LAPEROUSE",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-10-21T12:00",
+      "from": "Tangier",
+      "departure": "2026-10-22T13:30",
+      "to": "Santa Cruz De La Palma",
+      "superseded": false
+    },
+    {
       "ship": "MEIN SCHIFF 6",
       "berth": "Funchal - Terminal Sul",
       "agent": "JFM Shipping, Lda.",
@@ -360,7 +390,7 @@
       "agent": "Transinsular (Madeira)-Transp. Marit. Insulares, Lda.",
       "arrival": "2026-10-22T08:00",
       "from": "Porto Santo Island",
-      "departure": "2026-10-22T16:59",
+      "departure": "2026-10-22T08:30",
       "to": "Funchal",
       "superseded": false
     },
@@ -432,6 +462,16 @@
       "from": "Cadiz",
       "departure": "2026-10-29T18:00",
       "to": "Kings Wharf",
+      "superseded": false
+    },
+    {
+      "ship": "ILMA",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-10-29T07:00",
+      "from": "Lisboa",
+      "departure": "2026-10-30T12:00",
+      "to": "Nassau",
       "superseded": false
     },
     {

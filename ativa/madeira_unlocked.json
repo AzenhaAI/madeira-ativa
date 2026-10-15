@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-10-12T13:12:52",
-  "count": 345,
+  "fetched": "2026-10-15T09:49:31",
+  "count": 372,
   "items": [
     {
       "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
@@ -3570,7 +3570,7 @@
       "venue": "Castanheiro Boutique Hotel",
       "municipality": "Funchal",
       "price": 0,
-      "organizer": "Associação InFinito",
+      "organizer": "Associação InFinito - Arte e Comunidade",
       "category": "festival",
       "source_category": "festivals-parades"
     },
@@ -3586,6 +3586,36 @@
       "municipality": "Funchal",
       "price": 25,
       "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "ei-los-que-partem-tribute-to-jose-viale-moutinho-2026-10-15",
+      "title": "Ei-los Que Partem, Tribute to José Viale Moutinho",
+      "url": "https://www.madeira-unlocked.com/en/events/ei-los-que-partem-tribute-to-jose-viale-moutinho-2026-10-15",
+      "start": "2026-10-15T19:00:00+01:00",
+      "end": "2026-10-15T21:00:00+01:00",
+      "date": "2026-10-15",
+      "time": "19:00",
+      "venue": "Galeria Anjos Teixeira",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Galeria Anjos Teixeira",
+      "category": "culture",
+      "source_category": "culture-museums"
+    },
+    {
+      "id": "napa-semitropico-listening-party-dj-set-2026-10-15",
+      "title": "NAPA, Semitrópico Listening Party & DJ Set",
+      "url": "https://www.madeira-unlocked.com/en/events/napa-semitropico-listening-party-dj-set-2026-10-15",
+      "start": "2026-10-15T19:00:00+01:00",
+      "end": "2026-10-15T21:00:00+01:00",
+      "date": "2026-10-15",
+      "time": "19:00",
+      "venue": "Basalto Restaurant, Barreirinha",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Basalto Restaurante",
       "category": "concert",
       "source_category": "music-concerts"
     },
@@ -3623,16 +3653,46 @@
       "id": "sea-and-fisherman-fair-2026-10-16",
       "title": "Sea and Fisherman Fair",
       "url": "https://www.madeira-unlocked.com/en/events/sea-and-fisherman-fair-2026-10-16",
-      "start": "2026-10-16T18:30:00+01:00",
-      "end": "2026-10-17T00:00:00+01:00",
+      "start": "2026-10-16T17:30:00+01:00",
+      "end": "2026-10-17T02:00:00+01:00",
       "date": "2026-10-16",
-      "time": "18:30",
+      "time": "17:30",
       "venue": "Caniçal",
       "municipality": "Machico",
       "price": 0,
       "organizer": "Casa do Povo do Caniçal",
       "category": "festival",
       "source_category": "festivals-parades"
+    },
+    {
+      "id": "anadia-music-sessions-duo-sara-correia-2026-10-16",
+      "title": "Anadia Music Sessions, Duo Sara Correia",
+      "url": "https://www.madeira-unlocked.com/en/events/anadia-music-sessions-duo-sara-correia-2026-10-16",
+      "start": "2026-10-16T18:00:00+01:00",
+      "end": "2026-10-16T19:00:00+01:00",
+      "date": "2026-10-16",
+      "time": "18:00",
+      "venue": "Food Court, Anadia Shopping",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Anadia Shopping",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "pedro-branco-concert-li-polymer-dj-set-2026-10-16",
+      "title": "Pedro Branco Concert & LI-POLYMER DJ Set",
+      "url": "https://www.madeira-unlocked.com/en/events/pedro-branco-concert-li-polymer-dj-set-2026-10-16",
+      "start": "2026-10-16T19:00:00+01:00",
+      "end": "2026-10-17T00:00:00+01:00",
+      "date": "2026-10-16",
+      "time": "19:00",
+      "venue": "Largo do Socorro",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Largo do Socorro",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "soy-kleiii-2026-10-16",
@@ -3648,6 +3708,21 @@
       "organizer": "MQT Prod – Mosquito Rumbero",
       "category": "theatre",
       "source_category": "theater"
+    },
+    {
+      "id": "acoustic-night-at-cheers-live-music-timeless-hits-2026-10-16",
+      "title": "Acoustic Night at Cheers | Live Music & Timeless Hits",
+      "url": "https://www.madeira-unlocked.com/en/events/acoustic-night-at-cheers-live-music-timeless-hits-2026-10-16",
+      "start": "2026-10-16T20:30:00+01:00",
+      "end": "2026-10-16T22:30:00+01:00",
+      "date": "2026-10-16",
+      "time": "20:30",
+      "venue": "Caniço",
+      "municipality": "Santa Cruz",
+      "price": 10,
+      "organizer": "Tania Fridman",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "festival-avesso-2026-2026-10-16",
@@ -3680,21 +3755,6 @@
       "source_category": "movies-cinema"
     },
     {
-      "id": "pedro-branco-concert-li-polymer-dj-set-2026-10-16",
-      "title": "Pedro Branco Concert & LI-POLYMER DJ Set",
-      "url": "https://www.madeira-unlocked.com/en/events/pedro-branco-concert-li-polymer-dj-set-2026-10-16",
-      "start": "2026-10-16T21:00:00+01:00",
-      "end": "2026-10-16T23:00:00+01:00",
-      "date": "2026-10-16",
-      "time": "21:00",
-      "venue": "Largo do Socorro",
-      "municipality": "Funchal",
-      "price": 0,
-      "organizer": "Associação Cultural do Largo do Socorro",
-      "category": "concert",
-      "source_category": "music-concerts"
-    },
-    {
       "id": "ecotrail-funchal-2026-2026-10-17",
       "title": "Ecotrail Funchal 2026",
       "url": "https://www.madeira-unlocked.com/en/events/ecotrail-funchal-2026-2026-10-17",
@@ -3708,6 +3768,36 @@
       "organizer": "Ecotrail Funchal",
       "category": "sport",
       "source_category": "sport-fitness"
+    },
+    {
+      "id": "aventureiros-a-descoberta-2026-10-17",
+      "title": "Aventureiros à descoberta",
+      "url": "https://www.madeira-unlocked.com/en/events/aventureiros-a-descoberta-2026-10-17",
+      "start": "2026-10-17T10:00:00+01:00",
+      "end": "2026-10-17T16:00:00+01:00",
+      "date": "2026-10-17",
+      "time": "10:00",
+      "venue": "Parque Ecológico",
+      "municipality": "Funchal",
+      "price": 40,
+      "organizer": "Rebentos à Descoberta",
+      "category": "family",
+      "source_category": "kids-family"
+    },
+    {
+      "id": "international-day-of-intangible-cultural-heritage-2026-10-17",
+      "title": "International Day of Intangible Cultural Heritage",
+      "url": "https://www.madeira-unlocked.com/en/events/international-day-of-intangible-cultural-heritage-2026-10-17",
+      "start": "2026-10-17T10:00:00+01:00",
+      "end": "2026-10-17T13:00:00+01:00",
+      "date": "2026-10-17",
+      "time": "10:00",
+      "venue": "Torre do Capitão",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Secretaria Regional de Turismo, Ambiente e Cultura",
+      "category": "culture",
+      "source_category": "culture-museums"
     },
     {
       "id": "soap-making-and-natural-painting-workshop-halloween-2026-10-17",
@@ -3740,19 +3830,49 @@
       "source_category": "handicraft-workshops"
     },
     {
-      "id": "sea-and-fisherman-fair-2026-10-17",
-      "title": "Sea and Fisherman Fair",
-      "url": "https://www.madeira-unlocked.com/en/events/sea-and-fisherman-fair-2026-10-17",
-      "start": "2026-10-17T14:00:00+01:00",
-      "end": "2026-10-18T00:00:00+01:00",
+      "id": "bruno-brites-dj-set-estimei-pop-up-2026-10-17",
+      "title": "Bruno Brites DJ Set & Estimei Pop-Up",
+      "url": "https://www.madeira-unlocked.com/en/events/bruno-brites-dj-set-estimei-pop-up-2026-10-17",
+      "start": "2026-10-17T11:00:00+01:00",
+      "end": "2026-10-17T19:00:00+01:00",
       "date": "2026-10-17",
-      "time": "14:00",
-      "venue": "Caniçal",
-      "municipality": "Machico",
+      "time": "11:00",
+      "venue": "Largo do Socorro",
+      "municipality": "Funchal",
       "price": 0,
-      "organizer": "Casa do Povo do Caniçal",
-      "category": "festival",
-      "source_category": "festivals-parades"
+      "organizer": "Associação Cultural do Largo do Socorro",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "popup-estimei-maria-do-carmo-2026-10-17",
+      "title": "PopUp Estimei & Maria do Carmo",
+      "url": "https://www.madeira-unlocked.com/en/events/popup-estimei-maria-do-carmo-2026-10-17",
+      "start": "2026-10-17T11:00:00+01:00",
+      "end": "2026-10-17T19:00:00+01:00",
+      "date": "2026-10-17",
+      "time": "11:00",
+      "venue": "Barreirinha Bar Café",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "POP-UP Estimei & Maria Do Carmo",
+      "category": "market",
+      "source_category": "market"
+    },
+    {
+      "id": "halloween-bisque-painting-2026-10-17",
+      "title": "Halloween Bisque Painting",
+      "url": "https://www.madeira-unlocked.com/en/events/halloween-bisque-painting-2026-10-17",
+      "start": "2026-10-17T11:00:00+01:00",
+      "end": "2026-10-17T13:00:00+01:00",
+      "date": "2026-10-17",
+      "time": "11:00",
+      "venue": "Arttia Studio",
+      "municipality": "Funchal",
+      "price": 5,
+      "organizer": "Arttia Studio",
+      "category": "workshop",
+      "source_category": "handicraft-workshops"
     },
     {
       "id": "dancilhas-festival-de-musica-e-danca-do-mundo-trad-folk-2026-10-17",
@@ -3780,9 +3900,24 @@
       "venue": "Forte de São Tiago",
       "municipality": "Funchal",
       "price": 0,
-      "organizer": "Associação InFinito",
-      "category": "exhibition",
-      "source_category": "art-exhibitions"
+      "organizer": "Associação InFinito - Arte e Comunidade",
+      "category": "festival",
+      "source_category": "festivals-parades"
+    },
+    {
+      "id": "sea-and-fisherman-fair-2026-10-17",
+      "title": "Sea and Fisherman Fair",
+      "url": "https://www.madeira-unlocked.com/en/events/sea-and-fisherman-fair-2026-10-17",
+      "start": "2026-10-17T15:30:00+01:00",
+      "end": "2026-10-18T02:00:00+01:00",
+      "date": "2026-10-17",
+      "time": "15:30",
+      "venue": "Caniçal",
+      "municipality": "Machico",
+      "price": 0,
+      "organizer": "Casa do Povo do Caniçal",
+      "category": "festival",
+      "source_category": "festivals-parades"
     },
     {
       "id": "operazione-tango-2026-10-17",
@@ -3828,6 +3963,36 @@
       "organizer": "Associação AADEM",
       "category": "dance",
       "source_category": "dance"
+    },
+    {
+      "id": "sofar-sounds-madeira-2026-10-17",
+      "title": "Sofar Sounds Madeira",
+      "url": "https://www.madeira-unlocked.com/en/events/sofar-sounds-madeira-2026-10-17",
+      "start": "2026-10-17T19:30:00+01:00",
+      "end": "2026-10-17T21:30:00+01:00",
+      "date": "2026-10-17",
+      "time": "19:30",
+      "venue": "Caniçal, exact location revealed to ticket holders 36 hours before the show",
+      "municipality": "Machico",
+      "price": 19,
+      "organizer": "Sofar Sounds Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "live-music-with-rocky-shore-melodies-2026-10-17",
+      "title": "Live Music with Rocky Shore Melodies",
+      "url": "https://www.madeira-unlocked.com/en/events/live-music-with-rocky-shore-melodies-2026-10-17",
+      "start": "2026-10-17T20:00:00+01:00",
+      "end": "2026-10-17T22:00:00+01:00",
+      "date": "2026-10-17",
+      "time": "20:00",
+      "venue": "Rua Ivens 21",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Hotel Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "festival-de-teatro-de-machico-2026-10-17",
@@ -3890,19 +4055,19 @@
       "source_category": "theater"
     },
     {
-      "id": "bruno-brites-dj-set-estimei-pop-up-2026-10-17",
-      "title": "Bruno Brites DJ Set & Estimei Pop-Up",
-      "url": "https://www.madeira-unlocked.com/en/events/bruno-brites-dj-set-estimei-pop-up-2026-10-17",
+      "id": "papi-titulo-provisorio-2026-10-17",
+      "title": "PAPI [título provisório]",
+      "url": "https://www.madeira-unlocked.com/en/events/papi-titulo-provisorio-2026-10-17",
       "start": "2026-10-17T21:00:00+01:00",
-      "end": "2026-10-17T23:00:00+01:00",
+      "end": "2026-10-17T22:30:00+01:00",
       "date": "2026-10-17",
       "time": "21:00",
-      "venue": "Largo do Socorro",
-      "municipality": "Funchal",
-      "price": 0,
-      "organizer": "Associação Cultural do Largo do Socorro",
-      "category": "concert",
-      "source_category": "music-concerts"
+      "venue": "Centro Cívico do Estreito da Calheta",
+      "municipality": "Calheta",
+      "price": 5,
+      "organizer": "OITO – Oficina de Ideias das Terras do Oeste",
+      "category": "theatre",
+      "source_category": "theater"
     },
     {
       "id": "l-concerts-tres-tristes-tigres-2026-10-17",
@@ -3935,6 +4100,21 @@
       "source_category": "sport-fitness"
     },
     {
+      "id": "outubro-rosa-zumba-with-juan-abreu-2026-10-18",
+      "title": "Outubro Rosa, Zumba with Juan Abreu",
+      "url": "https://www.madeira-unlocked.com/en/events/outubro-rosa-zumba-with-juan-abreu-2026-10-18",
+      "start": "2026-10-18T10:00:00+01:00",
+      "end": "2026-10-18T12:00:00+01:00",
+      "date": "2026-10-18",
+      "time": "10:00",
+      "venue": "Jardim de Santa Luzia",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Ecotrail Funchal",
+      "category": "sport",
+      "source_category": "sport-fitness"
+    },
+    {
       "id": "dancilhas-festival-de-musica-e-danca-do-mundo-trad-folk-2026-10-18",
       "title": "Dancilhas, Festival de Música e Dança do Mundo Trad/Folk",
       "url": "https://www.madeira-unlocked.com/en/events/dancilhas-festival-de-musica-e-danca-do-mundo-trad-folk-2026-10-18",
@@ -3953,10 +4133,10 @@
       "id": "sea-and-fisherman-fair-2026-10-18",
       "title": "Sea and Fisherman Fair",
       "url": "https://www.madeira-unlocked.com/en/events/sea-and-fisherman-fair-2026-10-18",
-      "start": "2026-10-18T13:00:00+01:00",
-      "end": "2026-10-18T23:00:00+01:00",
+      "start": "2026-10-18T15:30:00+01:00",
+      "end": "2026-10-19T00:00:00+01:00",
       "date": "2026-10-18",
-      "time": "13:00",
+      "time": "15:30",
       "venue": "Caniçal",
       "municipality": "Machico",
       "price": 0,
@@ -4025,6 +4205,21 @@
       "source_category": "sport-fitness"
     },
     {
+      "id": "winter-market-12th-edition-2026-10-19",
+      "title": "Winter Market, 12th Edition",
+      "url": "https://www.madeira-unlocked.com/en/events/winter-market-12th-edition-2026-10-19",
+      "start": "2026-10-19T09:00:00+01:00",
+      "end": "2026-10-19T17:00:00+01:00",
+      "date": "2026-10-19",
+      "time": "09:00",
+      "venue": "Fairs and Events Centre, 3rd floor, Mercado dos Lavradores",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Câmara Municipal do Funchal",
+      "category": "market",
+      "source_category": "market"
+    },
+    {
       "id": "canyoning-madeira-meeting-2026-2026-10-20",
       "title": "Canyoning Madeira Meeting 2026",
       "url": "https://www.madeira-unlocked.com/en/events/canyoning-madeira-meeting-2026-2026-10-20",
@@ -4038,6 +4233,21 @@
       "organizer": "Clube Naval do Seixal",
       "category": "sport",
       "source_category": "sport-fitness"
+    },
+    {
+      "id": "winter-market-12th-edition-2026-10-20",
+      "title": "Winter Market, 12th Edition",
+      "url": "https://www.madeira-unlocked.com/en/events/winter-market-12th-edition-2026-10-20",
+      "start": "2026-10-20T09:00:00+01:00",
+      "end": "2026-10-20T17:00:00+01:00",
+      "date": "2026-10-20",
+      "time": "09:00",
+      "venue": "Fairs and Events Centre, 3rd floor, Mercado dos Lavradores",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Câmara Municipal do Funchal",
+      "category": "market",
+      "source_category": "market"
     },
     {
       "id": "com-partiendo-a-papi-2026-10-20",
@@ -4070,6 +4280,21 @@
       "source_category": "sport-fitness"
     },
     {
+      "id": "winter-market-12th-edition-2026-10-21",
+      "title": "Winter Market, 12th Edition",
+      "url": "https://www.madeira-unlocked.com/en/events/winter-market-12th-edition-2026-10-21",
+      "start": "2026-10-21T09:00:00+01:00",
+      "end": "2026-10-21T17:00:00+01:00",
+      "date": "2026-10-21",
+      "time": "09:00",
+      "venue": "Fairs and Events Centre, 3rd floor, Mercado dos Lavradores",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Câmara Municipal do Funchal",
+      "category": "market",
+      "source_category": "market"
+    },
+    {
       "id": "olhar-o-infinito-2026-10-21",
       "title": "Olhar o InFinito",
       "url": "https://www.madeira-unlocked.com/en/events/olhar-o-infinito-2026-10-21",
@@ -4080,9 +4305,9 @@
       "venue": "Fortaleza de São João Baptista do Pico",
       "municipality": "Funchal",
       "price": 0,
-      "organizer": "Associação InFinito",
-      "category": "exhibition",
-      "source_category": "art-exhibitions"
+      "organizer": "Associação InFinito - Arte e Comunidade",
+      "category": "festival",
+      "source_category": "festivals-parades"
     },
     {
       "id": "the-space-between-us-beyond-the-visible-2026-10-21",
@@ -4175,6 +4400,21 @@
       "source_category": "sport-fitness"
     },
     {
+      "id": "winter-market-12th-edition-2026-10-22",
+      "title": "Winter Market, 12th Edition",
+      "url": "https://www.madeira-unlocked.com/en/events/winter-market-12th-edition-2026-10-22",
+      "start": "2026-10-22T09:00:00+01:00",
+      "end": "2026-10-22T17:00:00+01:00",
+      "date": "2026-10-22",
+      "time": "09:00",
+      "venue": "Fairs and Events Centre, 3rd floor, Mercado dos Lavradores",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Câmara Municipal do Funchal",
+      "category": "market",
+      "source_category": "market"
+    },
+    {
       "id": "jazz-divas-2026-10-22",
       "title": "Jazz Divas!",
       "url": "https://www.madeira-unlocked.com/en/events/jazz-divas-2026-10-22",
@@ -4235,6 +4475,21 @@
       "source_category": "sport-fitness"
     },
     {
+      "id": "winter-market-12th-edition-2026-10-23",
+      "title": "Winter Market, 12th Edition",
+      "url": "https://www.madeira-unlocked.com/en/events/winter-market-12th-edition-2026-10-23",
+      "start": "2026-10-23T09:00:00+01:00",
+      "end": "2026-10-23T17:00:00+01:00",
+      "date": "2026-10-23",
+      "time": "09:00",
+      "venue": "Fairs and Events Centre, 3rd floor, Mercado dos Lavradores",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Câmara Municipal do Funchal",
+      "category": "market",
+      "source_category": "market"
+    },
+    {
       "id": "tony-bennett-tribute-2026-10-23",
       "title": "Tony Bennett Tribute",
       "url": "https://www.madeira-unlocked.com/en/events/tony-bennett-tribute-2026-10-23",
@@ -4260,9 +4515,9 @@
       "venue": "Largo do Socorro",
       "municipality": "Funchal",
       "price": 0,
-      "organizer": "Associação Cultural do Largo do Socorro",
-      "category": "concert",
-      "source_category": "music-concerts"
+      "organizer": "Associação InFinito - Arte e Comunidade",
+      "category": "festival",
+      "source_category": "festivals-parades"
     },
     {
       "id": "halloween-neon-party-2026-10-23",
@@ -4280,6 +4535,21 @@
       "source_category": "kids-family"
     },
     {
+      "id": "anadia-music-sessions-duo-sara-correia-2026-10-23",
+      "title": "Anadia Music Sessions, Duo Sara Correia",
+      "url": "https://www.madeira-unlocked.com/en/events/anadia-music-sessions-duo-sara-correia-2026-10-23",
+      "start": "2026-10-23T18:00:00+01:00",
+      "end": "2026-10-23T19:00:00+01:00",
+      "date": "2026-10-23",
+      "time": "18:00",
+      "venue": "Food Court, Anadia Shopping",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Anadia Shopping",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "screenings-funchal-mulholland-drive-the-boat-2026-10-23",
       "title": "Screenings Funchal: Mulholland Drive + The Boat",
       "url": "https://www.madeira-unlocked.com/en/events/screenings-funchal-mulholland-drive-the-boat-2026-10-23",
@@ -4295,6 +4565,51 @@
       "source_category": "movies-cinema"
     },
     {
+      "id": "winter-market-12th-edition-2026-10-24",
+      "title": "Winter Market, 12th Edition",
+      "url": "https://www.madeira-unlocked.com/en/events/winter-market-12th-edition-2026-10-24",
+      "start": "2026-10-24T09:00:00+01:00",
+      "end": "2026-10-24T14:00:00+01:00",
+      "date": "2026-10-24",
+      "time": "09:00",
+      "venue": "Fairs and Events Centre, 3rd floor, Mercado dos Lavradores",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Câmara Municipal do Funchal",
+      "category": "market",
+      "source_category": "market"
+    },
+    {
+      "id": "aventureiros-a-descoberta-2026-10-24",
+      "title": "Aventureiros à descoberta",
+      "url": "https://www.madeira-unlocked.com/en/events/aventureiros-a-descoberta-2026-10-24",
+      "start": "2026-10-24T10:00:00+01:00",
+      "end": "2026-10-24T16:00:00+01:00",
+      "date": "2026-10-24",
+      "time": "10:00",
+      "venue": "Parque Ecológico",
+      "municipality": "Funchal",
+      "price": 40,
+      "organizer": "Rebentos à Descoberta",
+      "category": "family",
+      "source_category": "kids-family"
+    },
+    {
+      "id": "leaf-impressions-pottery-workshop-2026-10-24",
+      "title": "Leaf Impressions Pottery Workshop",
+      "url": "https://www.madeira-unlocked.com/en/events/leaf-impressions-pottery-workshop-2026-10-24",
+      "start": "2026-10-24T11:00:00+01:00",
+      "end": "2026-10-24T12:30:00+01:00",
+      "date": "2026-10-24",
+      "time": "11:00",
+      "venue": "Arttia Studio",
+      "municipality": "Funchal",
+      "price": 25,
+      "organizer": "Arttia Studio",
+      "category": "workshop",
+      "source_category": "handicraft-workshops"
+    },
+    {
       "id": "street-arts-festival-2026-10-24",
       "title": "Street Arts Festival",
       "url": "https://www.madeira-unlocked.com/en/events/street-arts-festival-2026-10-24",
@@ -4308,6 +4623,21 @@
       "organizer": "Madeira Street Arts Festival (MSA Festival)",
       "category": "festival",
       "source_category": "festivals-parades"
+    },
+    {
+      "id": "art-clay-jewellery-workshop-2026-10-24",
+      "title": "Art Clay Jewellery Workshop",
+      "url": "https://www.madeira-unlocked.com/en/events/art-clay-jewellery-workshop-2026-10-24",
+      "start": "2026-10-24T14:30:00+01:00",
+      "end": "2026-10-24T16:30:00+01:00",
+      "date": "2026-10-24",
+      "time": "14:30",
+      "venue": "Calheta's marina",
+      "municipality": "Calheta",
+      "price": 40,
+      "organizer": "Alma Artista Gallery",
+      "category": "exhibition",
+      "source_category": "art-exhibitions"
     },
     {
       "id": "marcelinho-da-lua-2026-10-24",
@@ -4610,6 +4940,21 @@
       "source_category": "kids-family"
     },
     {
+      "id": "anadia-music-sessions-duo-sara-correia-2026-10-30",
+      "title": "Anadia Music Sessions, Duo Sara Correia",
+      "url": "https://www.madeira-unlocked.com/en/events/anadia-music-sessions-duo-sara-correia-2026-10-30",
+      "start": "2026-10-30T18:00:00+00:00",
+      "end": "2026-10-30T19:00:00+00:00",
+      "date": "2026-10-30",
+      "time": "18:00",
+      "venue": "Food Court, Anadia Shopping",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Anadia Shopping",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "o-grande-baile-das-criaturas-do-xico-2026-10-30",
       "title": "O Grande Baile das Criaturas do Xico",
       "url": "https://www.madeira-unlocked.com/en/events/o-grande-baile-das-criaturas-do-xico-2026-10-30",
@@ -4655,6 +5000,36 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "spooky-halloween-party-community-trick-or-treat-2026-10-31-0300",
+      "title": "Spooky Halloween Party & Community Trick or Treat",
+      "url": "https://www.madeira-unlocked.com/en/events/spooky-halloween-party-community-trick-or-treat-2026-10-31-0300",
+      "start": "2026-10-31T03:00:00+00:00",
+      "end": "2026-10-31T06:00:00+00:00",
+      "date": "2026-10-31",
+      "time": "03:00",
+      "venue": "Terracotta Ceramic Cafe",
+      "municipality": "Funchal",
+      "price": 15,
+      "organizer": "Terracotta Ceramic Cafe",
+      "category": "family",
+      "source_category": "kids-family"
+    },
+    {
+      "id": "spooky-halloween-party-community-trick-or-treat-2026-10-31",
+      "title": "Spooky Halloween Party & Community Trick or Treat",
+      "url": "https://www.madeira-unlocked.com/en/events/spooky-halloween-party-community-trick-or-treat-2026-10-31",
+      "start": "2026-10-31T10:00:00+00:00",
+      "end": "2026-10-31T13:00:00+00:00",
+      "date": "2026-10-31",
+      "time": "10:00",
+      "venue": "Terracotta Ceramic Cafe",
+      "municipality": "Funchal",
+      "price": 15,
+      "organizer": "Terracotta Ceramic Cafe",
+      "category": "family",
+      "source_category": "kids-family"
+    },
+    {
       "id": "orientacao-aventura-orienteering-race-ponta-do-sol-2026-10-31",
       "title": "Orientação Aventura - Orienteering Race: Ponta do Sol",
       "url": "https://www.madeira-unlocked.com/en/events/orientacao-aventura-orienteering-race-ponta-do-sol-2026-10-31",
@@ -4683,6 +5058,21 @@
       "organizer": "Pura Vida",
       "category": "family",
       "source_category": "kids-family"
+    },
+    {
+      "id": "flower-vases-pottery-workshop-2026-10-31",
+      "title": "Flower Vases Pottery Workshop",
+      "url": "https://www.madeira-unlocked.com/en/events/flower-vases-pottery-workshop-2026-10-31",
+      "start": "2026-10-31T11:00:00+00:00",
+      "end": "2026-10-31T12:00:00+00:00",
+      "date": "2026-10-31",
+      "time": "11:00",
+      "venue": "Arttia Studio",
+      "municipality": "Funchal",
+      "price": 20,
+      "organizer": "Arttia Studio",
+      "category": "workshop",
+      "source_category": "handicraft-workshops"
     },
     {
       "id": "madeira-street-battle-2026-10-31",
@@ -5073,6 +5463,21 @@
       "organizer": "Commedia a la Carte / Aquele Abraço",
       "category": "theatre",
       "source_category": "theater"
+    },
+    {
+      "id": "madeira-wool-society-november-gathering-inspiration-2026-11-14",
+      "title": "MADEIRA WOOL SOCIETY | NOVEMBER GATHERING: INSPIRATION",
+      "url": "https://www.madeira-unlocked.com/en/events/madeira-wool-society-november-gathering-inspiration-2026-11-14",
+      "start": "2026-11-14T10:00:00+00:00",
+      "end": "2026-11-14T13:00:00+00:00",
+      "date": "2026-11-14",
+      "time": "10:00",
+      "venue": "Caminho da Quinta do Palheiro, 32",
+      "municipality": "Funchal",
+      "price": 15,
+      "organizer": "Oh Lã Lã Fibre Lab",
+      "category": "workshop",
+      "source_category": "handicraft-workshops"
     },
     {
       "id": "madeira-international-mandolin-festival-closing-concert-2026-11-14",

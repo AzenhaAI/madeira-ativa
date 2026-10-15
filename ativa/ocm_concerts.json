@@ -1,7 +1,7 @@
 {
  "note": "Orquestra Clássica da Madeira season, from scripts/fetch_ocm.py. Accumulates.",
  "source": "https://www.ocmadeira.pt/concertos/temporada-atual.html",
- "fetched": "2026-10-12T13:13:06+00:00",
+ "fetched": "2026-10-15T09:49:44+00:00",
  "count": 13,
  "items": [
   {
@@ -72,7 +72,7 @@
    "price": "25.00€",
    "series": "Orquestra Clássica da Madeira",
    "url": "https://www.ocmadeira.pt/concertos/proximos-eventos/orquestra-cla-ssica-da-madeira/280-misha-katz-dmitry-demyashkin.html",
-   "tickets": ""
+   "tickets": "https://www.ticketline.pt/pt/evento/orq-classica-da-madeira-m-katz-d-demyashkin-108848"
   },
   {
    "title": "Quinteto de Sopros \"Solistas OCM\"",
