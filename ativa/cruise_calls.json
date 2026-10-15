@@ -1,8 +1,8 @@
 {
   "note": "Ship calls at the port of Funchal from APRAM. Times are Madeira local time, as the port publishes them. Accumulates; a call no longer listed before its arrival is marked superseded.",
   "source": "https://apram.pt/movimento-navios?port=ptfnc",
-  "fetched": "2026-10-14T10:43:02",
-  "count": 49,
+  "fetched": "2026-10-15T10:24:22",
+  "count": 50,
   "calls": [
     {
       "ship": "SANTA MARIA MANUELA",
@@ -282,6 +282,16 @@
       "from": "Portsmouth",
       "departure": "2026-10-14T17:00",
       "to": "Santa Cruz De La Palma",
+      "superseded": false
+    },
+    {
+      "ship": "ABSA UNO",
+      "berth": "Funchal - Fora das 3 Milhas",
+      "agent": "Transinsular (Madeira)-Transp. Marit. Insulares, Lda.",
+      "arrival": "2026-10-15T07:45",
+      "from": "Motril",
+      "departure": "2026-10-15T22:30",
+      "to": "Motril",
       "superseded": false
     },
     {
