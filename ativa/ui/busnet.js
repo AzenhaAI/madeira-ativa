@@ -82,7 +82,7 @@
       if ((mode === 'city' && !city) || (mode === 'inter' && city)) return;
       var g = L.layerGroup();
       l.paths.forEach(function (p) {
-        L.polyline(decode(p), { color: l.color, weight: city ? 2.5 : 3.5, opacity: city ? 0.7 : 0.85, dashArray: l.approx ? '7 6' : null, renderer: R })
+        L.polyline(decode(p), { color: l.color, weight: city ? 2.5 : 3.5, opacity: hl ? 0.2 : (city ? 0.7 : 0.85), dashArray: l.approx ? '7 6' : null, renderer: R })
           .on('click', function (e) { lineInfo(i, e.latlng); }).addTo(g);
       });
       g.addTo(map); layers[i] = g;
@@ -108,6 +108,7 @@
         .on('click', function () { stopInfo(i); }).addTo(stopLayer);
     });
     stopLayer.addTo(map);
+    if (hl) hl.eachLayer(function (x) { x.bringToFront(); });
     setBadge();
   }
   // On touch the dot itself is not the target: a tap anywhere picks the nearest
@@ -127,6 +128,7 @@
   // start panning (the map starts inert on touch so the page can scroll).
   function setBadge() {
     var txt = !map.dragging.enabled() ? t('Tap the map to move it', 'Toque no mapa para o mover')
+      : hl ? t('Clear route', 'Limpar percurso')
       : map.getZoom() < 12 ? t('Zoom in for Funchal stops', 'Aproxime para ver as paragens do Funchal') : '';
     if (!badge) {
       badge = L.control({ position: 'bottomleft' });
@@ -134,7 +136,7 @@
         var d = L.DomUtil.create('div', 'bn-badge');
         L.DomEvent.disableClickPropagation(d);
         d.onclick = function () {
-          if (!map.dragging.enabled()) wakeMap(); else map.setView([32.648, -16.91], 12);
+          if (!map.dragging.enabled()) wakeMap(); else if (hl) clearRoute(); else map.setView([32.648, -16.91], 12);
         };
         return d;
       };
@@ -178,8 +180,13 @@
   function nearStops(ll) {
     var all = NET.stops.map(function (s, i) { return [i, dist(ll, [s[2], s[3]])]; }).sort(function (x, y) { return x[1] - y[1]; });
     var pick = all.filter(function (x) { return x[1] <= 1500; }).slice(0, 8);
-    if (!pick.length) pick = all.filter(function (x) { return x[1] <= 5000; }).slice(0, 4);
     var out = {};
+    if (!pick.length) {
+      pick = all.filter(function (x) { return x[1] <= 5000; }).slice(0, 4);
+      // Nothing within walking distance: the answer must say so, not offer a
+      // bus to a stop in the next valley as if it were round the corner.
+      if (all.length) out._far = all[0];
+    }
     pick.forEach(function (x) { out[x[0]] = x[1]; });
     return out;
   }
@@ -253,12 +260,13 @@
         'Nenhum autocarro regular serve ' + esc(who) + '. O mapa mostra as linhas mais próximas; a maioria vai de táxi ou excursão a partir da última paragem.') + '</p>';
       return;
     }
-    if (!Object.keys(SA).length || !Object.keys(SB).length) {
+    var SAn = Object.keys(SA).filter(function (k) { return k !== '_far'; }).length, SBn = Object.keys(SB).filter(function (k) { return k !== '_far'; }).length;
+    if (!SAn || !SBn) {
       var miss = !Object.keys(SA).length ? fa.value : fb.value;
       box.innerHTML = '<p class="empty">' + t('No stop found for “' + esc(miss) + '”.', 'Nenhuma paragem para «' + esc(miss) + '».') + ' ' + didYouMean(miss) + '</p>';
       return;
     }
-    var far = function (d, el) { return d > 800 ? ' <span class="bn-far">' + (d >= 1000 ? (d / 1000).toFixed(1) + ' km' : Math.round(d) + ' m') + ' ' + t('from', 'de') + ' ' + esc(el.value.replace(/^📍\s*/, '')) + '</span>' : ''; };
+    var far = function (d, el) { return d > 1000 ? ' <span class="bn-far">' + (d >= 1000 ? (d / 1000).toFixed(1) + ' km' : Math.round(d) + ' m') + ' ' + t('from', 'de') + ' ' + esc(el.value.replace(/^📍\s*/, '')) + '</span>' : ''; };
     var found = {};
     NET.patterns.forEach(function (p) {
       // Among the boarding and alighting stops this pattern serves, the pair
@@ -297,17 +305,39 @@
     res.forEach(function (r, n) {
       departures(r.from, r.line, r.heads, 4).then(function (list) { var el = document.getElementById('bnR' + n); if (el) el.innerHTML = depHtml(list); });
     });
+    // The best answer goes on the map at once; the button brings the map into view.
+    showRoute([res[0]]);
     box.onclick = function (e) {
       var btn = e.target.closest('.bn-show'); if (!btn) return;
-      var r = res[+btn.dataset.r], l = NET.lines[r.line];
-      if (hl) map.removeLayer(hl);
-      // Same renderer as the stops: a layer without one made Leaflet add a
-      // second canvas on top, and nothing underneath could be tapped again.
-      hl = L.layerGroup(l.paths.map(function (p) { return L.polyline(decode(p), { color: l.color, weight: 7, opacity: 0.9, renderer: R, interactive: false }); })
-        .concat([r.from, r.to].map(function (si) { var s = NET.stops[si]; return L.circleMarker([s[2], s[3]], { radius: 9, color: '#fff', weight: 2, fillColor: '#993C1D', fillOpacity: 1, renderer: R, interactive: false }); }))).addTo(map);
-      map.fitBounds(L.latLngBounds([r.from, r.to].map(function (si) { return [NET.stops[si][2], NET.stops[si][3]]; })).pad(0.4));
+      showRoute([res[+btn.dataset.r]]);
       document.getElementById('busmap').scrollIntoView({ behavior: 'smooth', block: 'start' });
     };
+  }
+  // Draws the lines of a trip (one leg, or two with a change) and marks where
+  // to board, change and get off. Same renderer as the stops: a layer without
+  // one made Leaflet add a second canvas on top, and nothing underneath could
+  // be tapped again.
+  function showRoute(legs) {
+    if (hl) map.removeLayer(hl);
+    var parts = [], pts = [];
+    legs.forEach(function (r) {
+      var l = NET.lines[r.line];
+      l.paths.forEach(function (p) { parts.push(L.polyline(decode(p), { color: l.color, weight: 7, opacity: 0.9, renderer: R, interactive: false })); });
+      [r.from, r.to].forEach(function (si) { var s = NET.stops[si]; pts.push([s[2], s[3]]); });
+    });
+    pts.forEach(function (ll, i) {
+      parts.push(L.circleMarker(ll, { radius: 9, color: '#fff', weight: 2, fillColor: i === 0 || i === pts.length - 1 ? '#993C1D' : '#B7791F', fillOpacity: 1, renderer: R, interactive: false }));
+    });
+    hl = L.layerGroup(parts).addTo(map);
+    // The rest of the network fades so the trip reads at a glance.
+    Object.keys(layers).forEach(function (k) { layers[k].eachLayer(function (p) { p.setStyle({ opacity: 0.2 }); }); });
+    map.fitBounds(L.latLngBounds(pts).pad(0.35), { maxZoom: 13 });
+    setBadge();
+  }
+  function clearRoute() {
+    if (!hl) return;
+    map.removeLayer(hl); hl = null;
+    drawLines();
   }
 
   // One change: ride line 1 from A to a stop X, walk at most ~250 m (same grid
@@ -345,7 +375,11 @@
     });
     var res = Object.keys(best).map(function (k) { return best[k]; }).sort(function (x, y) { return x.tot - y.tot; }).slice(0, 5);
     if (!res.length) {
-      box.innerHTML = '<p class="empty">' + t('No route with one change between these two. Try a nearby town, or check the lines on the map.', 'Sem percurso com uma mudança entre os dois. Experimente uma localidade próxima, ou veja as linhas no mapa.') + '</p>';
+      var f = SA._far || SB._far;
+      box.innerHTML = '<p class="empty">' + (f
+        ? t('No bus stop within walking distance of that point: the nearest is ' + esc(NET.stops[f[0]][1]) + ', ' + (f[1] / 1000).toFixed(1) + ' km away, and no scheduled bus comes closer.',
+            'Não há paragem a pé desse ponto: a mais próxima é ' + esc(NET.stops[f[0]][1]) + ', a ' + (f[1] / 1000).toFixed(1) + ' km, e nenhum autocarro regular chega mais perto.')
+        : t('No route with one change between these two. Try a nearby town, or check the lines on the map.', 'Sem percurso com uma mudança entre os dois. Experimente uma localidade próxima, ou veja as linhas no mapa.')) + '</p>';
       return;
     }
     var leg = function (x, last) {
@@ -356,6 +390,7 @@
     box.innerHTML = '<p class="sub">' + t('No direct line — with one change:', 'Sem linha direta — com uma mudança:') + '</p>' + res.map(function (r, n) {
       return '<div class="card bn-r">' + leg(r.a, r.a.at) + '<div class="bn-change">↓ ' + t('change', 'mudança') + (r.a.at !== r.b.from ? ' · ' + t('walk to', 'a pé até') + ' ' + esc(NET.stops[r.b.from][1]) : '') + '</div>' + leg(r.b, r.b.to) + '<div id="bnT' + n + '"></div></div>';
     }).join('');
+    showRoute([{ line: res[0].a.line, from: res[0].a.from, to: res[0].a.at }, { line: res[0].b.line, from: res[0].b.from, to: res[0].b.to }]);
     res.forEach(function (r, n) {
       var heads = {}; heads[r.a.head] = 1;
       departures(r.a.from, r.a.line, heads, 3).then(function (list) { var el = document.getElementById('bnT' + n); if (el && list && list.length) el.innerHTML = '<div class="bn-op">' + t('First leg leaves', 'Primeira parte parte') + ':</div>' + depHtml(list); });
@@ -382,8 +417,13 @@
   function allNames() {
     if (namesCache) return namesCache;
     var seen = {}, out = [];
-    NET.places.forEach(function (p) { if (!seen[p[0]] && RANK[p[3]] >= 3) { seen[p[0]] = 1; out.push(p[0]); } });
-    NET.stops.forEach(function (s) { var n = s[1].replace(/\s*\(.*?\)\s*$/, ''); if (!seen[n]) { seen[n] = 1; out.push(n); } });
+    NET.places.forEach(function (p) { var k = norm(p[0]); if (!seen[k] && RANK[p[3]] >= 3) { seen[k] = 1; out.push(p[0]); } });
+    // Stop names without the operator's codes: "Fundoa Cima  S1A (641)" -> "Fundoa Cima".
+    NET.stops.forEach(function (s) {
+      var n = s[1].replace(/\s*\(.*?\)/g, '').replace(/\s+T-\d+\w*/g, '').replace(/\s+[DS]\d*[A-Z]?$/, '').replace(/\s+/g, ' ').trim();
+      var k = norm(n);
+      if (n.length > 2 && !seen[k]) { seen[k] = 1; out.push(n); }
+    });
     return (namesCache = out);
   }
   // Suggestions under the field. <datalist> never shows in the iPhone app's
