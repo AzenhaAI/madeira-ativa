@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-10-15T09:57:37",
-  "count": 134,
+  "fetched": "2026-10-16T09:53:13",
+  "count": 135,
   "items": [
     {
       "id": "114",
@@ -1142,6 +1142,16 @@
       "end": "2026-10-15",
       "time": "20:30",
       "place": "Solar de São Cristóvão",
+      "category": "Music"
+    },
+    {
+      "id": "392",
+      "title": "7.ª Edição do Festival de Música Antiga",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/7-a-edicao-do-festival-de-musica-antiga",
+      "start": "2026-10-15",
+      "end": "2026-10-17",
+      "time": "",
+      "place": "Teatro Municipal Baltazar Dias",
       "category": "Music"
     },
     {
