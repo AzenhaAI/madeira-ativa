@@ -36,13 +36,25 @@
   }
   // How often a line runs, from its timetable: said on the card, and a rare
   // bus never wins over a frequent one.
-  function svcNote(l) {
-    return l.svc === 'school' ? t('School days only', 'Só em dias de escola')
-      : l.svc === 'weekdays-few' ? t('Weekdays only, a few buses a day', 'Só dias úteis, poucos autocarros por dia')
-      : l.svc === 'weekdays' ? t('Weekdays only', 'Só dias úteis')
-      : l.svc === 'few' ? t('A few buses a day', 'Poucos autocarros por dia') : '';
+  // A city line's pattern carries its weekday trips (GTFS); fewer than four
+  // means the bus is not a way to get anywhere today.
+  function svcOf(l, p) { return l.src === 'gtfs' && p && p.trips != null && p.trips <= 3 ? 'few' : l.svc; }
+  function svcNote(l, p) {
+    var v = svcOf(l, p);
+    return v === 'sundays' ? t('Sundays and holidays only', 'Só domingos e feriados')
+      : v === 'weekends' ? t('Weekends only', 'Só fins de semana')
+      : v === 'school' ? t('School days only', 'Só em dias de escola')
+      : v === 'weekdays-few' ? t('Weekdays only, a few buses a day', 'Só dias úteis, poucos autocarros por dia')
+      : v === 'weekdays' ? t('Weekdays only', 'Só dias úteis')
+      : v === 'few' ? t('A few buses a day', 'Poucos autocarros por dia') : '';
   }
-  function svcCost(l) { return l.svc === 'school' ? 120 : l.svc === 'weekdays-few' || l.svc === 'few' ? 60 : l.svc === 'weekdays' ? 15 : 0; }
+  function svcCost(l, p) {
+    var v = svcOf(l, p);
+    return v === 'school' || v === 'sundays' ? 120 : v === 'weekends' ? 80 : v === 'weekdays-few' || v === 'few' ? 60 : v === 'weekdays' ? 15 : 0;
+  }
+  function plural(n, one, many) { return n + ' ' + (n === 1 ? one : many); }
+  // OSM joins alternative names with ";" ("Rua do Matadouro;03 - Campo da Barca").
+  function stopName(i) { return NET.stops[i][1].split(';')[0].trim(); }
   function km(m) { var v = (m / 1000).toFixed(1); return (MA.lang && MA.lang() !== 'en' ? v.replace('.', ',') : v) + ' km'; }
   function norm(s) { return String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, ' ').trim(); }
   // How a name sounds, so "Canico", "Caniso" and "Caniço" meet, and "Machiko"
@@ -401,9 +413,9 @@
   // (a city bus stops every ~400 m); an interurban bus also costs the wait.
   function legCost(p, i, k) {
     var l = NET.lines[p.line], n = stopCount(p, i, k);
-    if (l.src === 'gtfs') return n;
+    if (l.src === 'gtfs') return n + svcCost(l, p) / 2;
     var a = NET.stops[p.stops[i]], b = NET.stops[p.stops[k]];
-    return Math.max(n, dist([a[2], a[3]], [b[2], b[3]]) / 600) + 8 + svcCost(l) / 2;
+    return Math.max(n, dist([a[2], a[3]], [b[2], b[3]]) / 600) + 8 + svcCost(l, p) / 2 + (/^aerobus$/i.test(l.ref) ? 12 : 0);
   }
   // OSM maps a stop twice (the pole and the platform): count names, not nodes.
   function stopCount(p, i, k) {
@@ -436,7 +448,7 @@
     if (!fa.value.trim()) fa.value = fa.dataset.example || '';
     if (!fb.value.trim()) fb.value = fb.dataset.example || '';
     clearRoute();
-    TLEGS = [];
+    TLEGS = []; SEARCH++;
     var sug = document.getElementById('bnSug'); if (sug) sug.hidden = true;
     // What was typed -> what the data calls it ("Caniso" -> Caniço), said aloud.
     var notes = [];
@@ -492,9 +504,11 @@
     // How far a stop may be from what was typed before it is worth saying:
     // Funchal is a city (the Rodoeste station is a kilometre from its centre).
     var limit = function (el, S) {
+      // Funchal is big (its stations are a kilometre from the centre); other
+      // towns are small, and 900 m out of Câmara de Lobos is worth saying.
       if (S._spot || ll_of(el)) return 300;
       var q = norm(el.value), p = NET.places.filter(function (x) { return norm(x[0]) === q; })[0];
-      return p ? (q === 'funchal' ? 2500 : p[3] === 'city' ? 900 : p[3] === 'town' ? 800 : 600) : 800;
+      return p ? (q === 'funchal' ? 2500 : p[3] === 'city' || p[3] === 'town' ? 600 : 500) : 800;
     };
     var la = limit(fa, SA), lb = limit(fb, SB);
     var far = function (d, el, lim) { return d > lim ? ' <span class="bn-far">' + (d >= 1000 ? km(d) : Math.round(d) + ' m') + ' ' + t('from', 'de') + ' ' + esc(el.value.replace(/^📍\s*/, '')) + '</span>' : ''; };
@@ -530,20 +544,20 @@
     var seenRef = {};
     var res = Object.keys(found).map(function (k) { return found[k]; })
       .sort(function (x, y) {
-        var cx = x.sc + (NET.lines[x.line].approx ? 300 : 0) + svcCost(NET.lines[x.line]) * 20, cy = y.sc + (NET.lines[y.line].approx ? 300 : 0) + svcCost(NET.lines[y.line]) * 20;
+        var cx = x.sc + (NET.lines[x.line].approx ? 300 : 0) + svcCost(NET.lines[x.line], x.pat) * 20, cy = y.sc + (NET.lines[y.line].approx ? 300 : 0) + svcCost(NET.lines[y.line], y.pat) * 20;
         return (cx - cy) || (x.c - y.c);
       })
       .filter(function (r) { var l = NET.lines[r.line], k = l.ref + '|' + (l.op || ''); if (seenRef[k]) return false; seenRef[k] = 1; return true; }).slice(0, 8);
     if (!res.length) { transfers(SA, SB, box, head); return; }
     // A direct ride of 30+ stops, or only rare buses: a change may be the real answer.
-    var slog = res.every(function (r) { return r.c > 30 || svcCost(NET.lines[r.line]) >= 60; });
+    var slog = res.every(function (r) { return r.c > 30 || svcCost(NET.lines[r.line], r.pat) >= 60; });
     box.innerHTML = head + res.map(function (r, n) {
       var l = NET.lines[r.line];
-      var num = r.pat && r.pat.num, alt = r.pat && r.pat.alt, sv = svcNote(l);
+      var num = r.pat && r.pat.num, alt = r.pat && r.pat.alt, sv = svcNote(l, r.pat);
       return '<div class="card bn-r"><div>' + chip(r.line, num) + ' <b>' + esc(r.head || l.name) + '</b>' + (l.approx ? ' <span class="bn-approx">' + t('approx. route', 'percurso aprox.') + '</span>' : '') + '</div>' +
         (sv ? '<div class="bn-op bn-svc">⚠️ ' + esc(sv) + '</div>' : '') +
         (l.title ? '<div class="bn-op bn-title">' + esc(l.title) + (l.op ? ' · ' + esc(l.op) : '') + (alt && alt.length ? ' · ' + t('also numbered', 'também') + ' ' + esc(alt.join(', ')) : '') + '</div>' : '') +
-        '<div class="bn-op">' + t('Board at', 'Embarque em') + ' <b>' + esc(NET.stops[r.from][1]) + '</b>' + far(SA[r.from], fa, la) + ' → <b>' + esc(NET.stops[r.to][1]) + '</b>' + far(SB[r.to], fb, lb) + (l.src === 'gtfs' ? ' · ' + r.n + ' ' + t('stops', 'paragens') : '') + '</div>' +
+        '<div class="bn-op">' + t('Board at', 'Embarque em') + ' <b>' + esc(NET.stops[r.from][1]) + '</b>' + far(SA[r.from], fa, la) + ' → <b>' + esc(NET.stops[r.to][1]) + '</b>' + far(SB[r.to], fb, lb) + (l.src === 'gtfs' ? ' · ' + plural(r.n, t('stop', 'paragem'), t('stops', 'paragens')) : '') + '</div>' +
         (r.part && r.part.length ? '<div class="bn-op bn-far">' + fmt(t('Only some buses go via {0} — check the timetable.', 'Só alguns autocarros passam por {0} — veja o horário.'), esc(r.part.join(', '))) + '</div>' : '') +
         (lb < 2500 && l.src !== 'gtfs' ? otherStops(r, SB) : '') +
         '<div id="bnR' + n + '"></div>' +
@@ -554,7 +568,8 @@
       // Only the Funchal GTFS lines have departures per stop; a CAM line from a
       // city stop would read "no more departures", which is not true.
       if (NET.lines[r.line].src !== 'gtfs') return;
-      departures(r.from, r.line, r.heads, 4).then(function (list) { var el = document.getElementById('bnR' + n); if (el) el.innerHTML = depHtml(list); });
+      var token = SEARCH;
+      departures(r.from, r.line, r.heads, 4).then(function (list) { var el = document.getElementById('bnR' + n); if (el && token === SEARCH) el.innerHTML = depHtml(list); });
     });
     // The best answer goes on the map at once; the button brings the map into view.
     showRoute([res[0]]);
@@ -585,9 +600,26 @@
         pts0.forEach(function (q, k) { var x = dist(q, a), y = dist(q, b); if (x < da) { da = x; ia = k; } if (y < db) { db = y; ib = k; } });
         if (!best || da + db < best.d) best = { d: da + db, seg: pts0.slice(Math.min(ia, ib), Math.max(ia, ib) + 1) };
       });
-      var seg = best && best.d < 3000 && best.seg.length > 1 ? best.seg : [a, b];
-      parts.push(L.polyline(seg, { color: l.color, weight: 7, opacity: 0.9, renderer: R, interactive: false, dashArray: best && best.d < 3000 ? null : '8 8' }));
-      seg.forEach(function (q) { fitPts.push(q); });
+      var segs = [];
+      if (best && best.d < 3000 && best.seg.length > 1) segs = [best.seg];
+      // OSM draws many lines as separate pieces of road: when no one piece
+      // runs from boarding to alighting, every piece between the two is drawn.
+      var span = dist(a, b);
+      var covered = segs.length ? dist(segs[0][0], segs[0][segs[0].length - 1]) : 0;
+      if (covered < 0.6 * span) {
+        var box = L.latLngBounds([a, b]).pad(0.15);
+        segs = [];
+        l.paths.forEach(function (p) {
+          var pts0 = decode(p).filter(function (q) { return box.contains(q); });
+          if (pts0.length > 1) segs.push(pts0);
+        });
+      }
+      if (!segs.length) segs = [[a, b]];
+      segs.forEach(function (seg) {
+        var straight = seg.length === 2 && seg[0] === a;
+        parts.push(L.polyline(seg, { color: l.color, weight: 7, opacity: 0.9, renderer: R, interactive: false, dashArray: straight ? '8 8' : null }));
+        seg.forEach(function (q) { fitPts.push(q); });
+      });
       pts.push(a); pts.push(b);
     });
     pts.forEach(function (ll, i) {
@@ -607,13 +639,19 @@
 
   // One change: ride line 1 from A to a stop X, walk at most ~250 m (same grid
   // cell or a neighbour), ride line 2 from X to B. Ranked by stops ridden.
+  // Funchal's interurban terminals (Rodoeste station, the SAM terminal on
+  // Avenida do Mar) and the timetables' "Funchal" are 1–1.5 km apart: a walk
+  // across the centre, which a change there has to allow.
+  var HUB = [32.6497, -16.9087];
+  function hub(s) { return s[5] !== 'gtfs' && dist(HUB, [s[2], s[3]]) < 1200; }
   function cellKey(s) { return Math.round(s[2] / 0.0025) + ':' + Math.round(s[3] / 0.0025); }
   function near(s) {
     var a = Math.round(s[2] / 0.0025), b = Math.round(s[3] / 0.0025), out = [];
     for (var i = -1; i <= 1; i++) for (var j = -1; j <= 1; j++) out.push((a + i) + ':' + (b + j));
+    if (hub(s)) out.push('FNC');
     return out;
   }
-  var TLEGS = [];
+  var TLEGS = [], SEARCH = 0;
   function mapIntoView() {
     var m = document.getElementById('busmap'), y = m.getBoundingClientRect().top + window.scrollY - 8;
     window.scrollTo({ top: y, behavior: 'smooth' });
@@ -626,14 +664,23 @@
       return [la / ks.length, lo / ks.length];
     };
     var cA = centre(SA), cB = centre(SB), direct = dist(cA, cB);
+    var bIds = Object.keys(SB).filter(function (k) { return k[0] !== '_'; });
+    var arrived = function (si) {
+      var s0 = NET.stops[si];
+      return si in SB || bIds.some(function (k) { return dist([s0[2], s0[3]], [NET.stops[k][2], NET.stops[k][3]]) < 900; });
+    };
     var reach = {};   // cell -> best first leg
     NET.patterns.forEach(function (p) {
       var i = -1;
       for (var k = 0; k < p.stops.length; k++) {
         if (i < 0) { if (p.stops[k] in SA) i = k; continue; }
         var key = cellKey(NET.stops[p.stops[k]]), n = stopCount(p, i, k);
-        var n2 = legCost(p, i, k);
-        if (!reach[key] || n2 < reach[key].n2) reach[key] = { line: p.line, head: p.head, num: p.num, from: p.stops[i], at: p.stops[k], n: n, n2: n2 };
+        var n2 = legCost(p, i, k), st0 = NET.stops[p.stops[k]];
+        if (stopName(p.stops[i]) === stopName(p.stops[k])) continue;  // a loop back to where it started
+        var keys = hub(st0) ? [key, 'FNC'] : [key];
+        keys.forEach(function (kk) {
+          if (!reach[kk] || n2 < reach[kk].n2) reach[kk] = { line: p.line, head: p.head, num: p.num, pat: p, from: p.stops[i], at: p.stops[k], n: n, n2: n2 };
+        });
       }
     });
     var best = {};
@@ -650,7 +697,13 @@
           var via = NET.stops[q.stops[m]];
           if (dist(cA, [via[2], via[3]]) + dist([via[2], via[3]], cB) > 1.8 * direct + 4000) continue;
           var tot = r.n2 + legCost(q, m, j) + 3, key = r.line + '>' + q.line;
-          if (!best[key] || tot < best[key].tot) best[key] = { a: r, b: { line: q.line, head: q.head, num: q.num, from: q.stops[m], to: q.stops[j], n: stopCount(q, m, j) }, tot: tot };
+          if (stopName(q.stops[m]) === stopName(q.stops[j])) continue;
+          // The first bus already brings you there (Santana → Funchal, then
+          // "one stop on a city bus"): not a change worth offering.
+          if (arrived(r.at)) continue;
+          var walk = dist([NET.stops[r.at][2], NET.stops[r.at][3]], [NET.stops[q.stops[m]][2], NET.stops[q.stops[m]][3]]);
+          tot += walk / 250;
+          if (!best[key] || tot < best[key].tot) best[key] = { a: r, b: { line: q.line, head: q.head, num: q.num, pat: q, from: q.stops[m], to: q.stops[j], n: stopCount(q, m, j) }, tot: tot };
         }
       }
     });
@@ -665,16 +718,16 @@
       return;
     }
     var leg = function (x, last) {
-      var l = NET.lines[x.line], sv = svcNote(l);
+      var l = NET.lines[x.line], sv = svcNote(l, x.pat);
       return '<div class="bn-leg"><div>' + chip(x.line, x.num) + ' <b>' + esc(x.head || l.name) + '</b></div>' + (sv ? '<div class="bn-op bn-svc">⚠️ ' + esc(sv) + '</div>' : '') +
-        '<div class="bn-op">' + esc(NET.stops[x.from][1]) + ' → <b>' + esc(NET.stops[last][1]) + '</b>' + (l.src === 'gtfs' ? ' · ' + x.n + ' ' + t('stops', 'paragens') : '') +
+        '<div class="bn-op">' + esc(stopName(x.from)) + ' → <b>' + esc(stopName(last)) + '</b>' + (l.src === 'gtfs' ? ' · ' + plural(x.n, t('stop', 'paragem'), t('stops', 'paragens')) : '') +
         (l.src !== 'gtfs' && l.url ? ' · <a href="' + esc(l.url) + '" target="_blank" rel="noopener">' + t('Timetable', 'Horário') + ' ↗</a>' : '') + '</div></div>';
     };
     var base = TLEGS.length;
     res.forEach(function (r) { TLEGS.push([{ line: r.a.line, from: r.a.from, to: r.a.at }, { line: r.b.line, from: r.b.from, to: r.b.to }]); });
     box.innerHTML = head + '<p class="sub">' + (extra ? t('Or with one change:', 'Ou com uma mudança:') : t('No direct line — with one change:', 'Sem linha direta — com uma mudança:')) + '</p>' + res.map(function (r, n) {
-      return '<div class="card bn-r">' + leg(r.a, r.a.at) + '<div class="bn-change">↓ ' + t('change', 'mudança') + ' ' + t('at', 'em') + ' <b>' + esc(NET.stops[r.a.at][1]) + '</b>' +
-        (r.a.at !== r.b.from ? ' · ' + t('walk to', 'a pé até') + ' <b>' + esc(NET.stops[r.b.from][1]) + '</b> (' + Math.round(dist([NET.stops[r.a.at][2], NET.stops[r.a.at][3]], [NET.stops[r.b.from][2], NET.stops[r.b.from][3]]) / 10) * 10 + ' m)' : '') + '</div>' +
+      return '<div class="card bn-r">' + leg(r.a, r.a.at) + '<div class="bn-change">↓ ' + t('Change at', 'Mude em') + ' <b>' + esc(stopName(r.a.at)) + '</b>' +
+        (r.a.at !== r.b.from ? ' · ' + t('walk to', 'a pé até') + ' <b>' + esc(stopName(r.b.from)) + '</b> (' + Math.round(dist([NET.stops[r.a.at][2], NET.stops[r.a.at][3]], [NET.stops[r.b.from][2], NET.stops[r.b.from][3]]) / 10) * 10 + ' m)' : '') + '</div>' +
         leg(r.b, r.b.to) + '<div id="bnT' + (base + n) + '"></div><button type="button" class="btn ghost bn-show" data-t="' + (base + n) + '">' + t('Show on map', 'Ver no mapa') + '</button></div>';
     }).join('');
     if (!extra) {
@@ -684,7 +737,8 @@
     res.forEach(function (r, n) {
       var heads = {}; heads[r.a.head] = 1;
       if (NET.lines[r.a.line].src !== 'gtfs') return;
-      departures(r.a.from, r.a.line, heads, 3).then(function (list) { var el = document.getElementById('bnT' + (base + n)); if (el && list && list.length) el.innerHTML = '<div class="bn-op">' + t('First leg leaves', 'Primeira parte parte') + ':</div>' + depHtml(list); });
+      var token = SEARCH;
+      departures(r.a.from, r.a.line, heads, 3).then(function (list) { var el = document.getElementById('bnT' + (base + n)); if (el && list && list.length && token === SEARCH) el.innerHTML = '<div class="bn-op">' + t('First bus leaves', 'O primeiro autocarro parte') + ':</div>' + depHtml(list); });
     });
   }
 
