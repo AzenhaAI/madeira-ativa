@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-10-16T09:53:13",
-  "count": 135,
+  "fetched": "2026-10-18T09:40:10",
+  "count": 136,
   "items": [
     {
       "id": "114",
@@ -1203,6 +1203,16 @@
       "time": "21:30",
       "place": "",
       "category": "Music"
+    },
+    {
+      "id": "389",
+      "title": "\"31 de Fevereiro com a Ribeira Seca - II\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/31-de-fevereiro-com-a-ribeira-seca-ii",
+      "start": "2026-10-16",
+      "end": "2027-01-09",
+      "time": "",
+      "place": "Casa da Cultura de Santa Cruz",
+      "category": "Exhibition"
     },
     {
       "id": "343",

@@ -1,7 +1,7 @@
 {
   "note": "Official distance, difficulty, walking time and start/end from Visit Madeira's page for each PR route.",
-  "fetched": "2026-10-09T12:13:37",
-  "count": 32,
+  "fetched": "2026-10-17T09:48:05",
+  "count": 34,
   "trails": {
     "PR 1.1|Madeira": {
       "distance": "8.2 km",
@@ -209,6 +209,21 @@
       "start_end": "Queimadas Forest Park / Caldeirão do Inferno",
       "duration_min": 390,
       "url": "https://visitmadeira.com/en/what-to-do/nature-seekers/activities/hiking/pr-9-levada-do-caldeirao-verde/"
+    },
+    "PR 9.1|Madeira": {
+      "distance": "1.9 km",
+      "duration": "45 minutes",
+      "start_end": "Queimadas Park / Pico das Pedras",
+      "duration_min": 45,
+      "url": "https://visitmadeira.com/en/what-to-do/nature-seekers/activities/hiking/pr-91-levada-do-caldeirao-verde-um-caminho-para-todos/"
+    },
+    "PR1|Porto Santo": {
+      "distance": "2.7 km",
+      "difficulty": "Moderate",
+      "duration": "1:30 hours",
+      "start_end": "ER 120 / Terra Chã",
+      "duration_min": 90,
+      "url": "https://visitmadeira.com/en/what-to-do/nature-seekers/activities/hiking/ps-pr-1-vereda-do-pico-branco-e-terra-cha/"
     },
     "PR 1|Madeira": {
       "distance": "6.1 km (VW)",

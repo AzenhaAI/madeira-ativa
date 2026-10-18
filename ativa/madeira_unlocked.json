@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-10-16T09:53:01",
-  "count": 388,
+  "fetched": "2026-10-18T09:39:57",
+  "count": 389,
   "items": [
     {
       "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
@@ -3942,7 +3942,7 @@
       "end": "2026-10-18T02:00:00+01:00",
       "date": "2026-10-17",
       "time": "15:30",
-      "venue": "Caniçal",
+      "venue": "Porto do Caniçal",
       "municipality": "Machico",
       "price": 0,
       "organizer": "Casa do Povo do Caniçal",
@@ -4064,7 +4064,7 @@
       "time": "21:00",
       "venue": "Cinemas NOS Fórum Madeira",
       "municipality": "Funchal",
-      "price": 0,
+      "price": 4.9,
       "organizer": "Screenings Funchal",
       "category": "cinema",
       "source_category": "movies-cinema"
@@ -4709,7 +4709,7 @@
       "time": "21:00",
       "venue": "Cinemas NOS Fórum Madeira",
       "municipality": "Funchal",
-      "price": 0,
+      "price": 4.9,
       "organizer": "Screenings Funchal",
       "category": "cinema",
       "source_category": "movies-cinema"
@@ -4889,7 +4889,7 @@
       "time": "21:00",
       "venue": "Cinemas NOS Fórum Madeira",
       "municipality": "Funchal",
-      "price": 0,
+      "price": 4.9,
       "organizer": "Screenings Funchal",
       "category": "cinema",
       "source_category": "movies-cinema"
@@ -5189,7 +5189,7 @@
       "time": "21:00",
       "venue": "Cinemas NOS Fórum Madeira",
       "municipality": "Funchal",
-      "price": 0,
+      "price": 4.9,
       "organizer": "Screenings Funchal",
       "category": "cinema",
       "source_category": "movies-cinema"
@@ -5208,21 +5208,6 @@
       "organizer": "APCA - Agência de Promoção da Cultura Atlântica",
       "category": "concert",
       "source_category": "music-concerts"
-    },
-    {
-      "id": "spooky-halloween-party-community-trick-or-treat-2026-10-31-0300",
-      "title": "Spooky Halloween Party & Community Trick or Treat",
-      "url": "https://www.madeira-unlocked.com/en/events/spooky-halloween-party-community-trick-or-treat-2026-10-31-0300",
-      "start": "2026-10-31T03:00:00+00:00",
-      "end": "2026-10-31T06:00:00+00:00",
-      "date": "2026-10-31",
-      "time": "03:00",
-      "venue": "Terracotta Ceramic Cafe",
-      "municipality": "Funchal",
-      "price": 15,
-      "organizer": "Terracotta Ceramic Cafe",
-      "category": "family",
-      "source_category": "kids-family"
     },
     {
       "id": "spooky-halloween-party-community-trick-or-treat-2026-10-31",
@@ -5298,6 +5283,21 @@
       "organizer": "STG Crew",
       "category": "dance",
       "source_category": "dance"
+    },
+    {
+      "id": "spooky-halloween-party-community-trick-or-treat-2026-10-31-0300",
+      "title": "Spooky Halloween Party & Community Trick or Treat",
+      "url": "https://www.madeira-unlocked.com/en/events/spooky-halloween-party-community-trick-or-treat-2026-10-31-0300",
+      "start": "2026-10-31T15:00:00+00:00",
+      "end": "2026-10-31T18:00:00+00:00",
+      "date": "2026-10-31",
+      "time": "15:00",
+      "venue": "Terracotta Ceramic Cafe",
+      "municipality": "Funchal",
+      "price": 15,
+      "organizer": "Terracotta Ceramic Cafe",
+      "category": "family",
+      "source_category": "kids-family"
     },
     {
       "id": "alive-halloween-dance-music-gathering-2026-10-31",
@@ -5459,7 +5459,7 @@
       "time": "21:00",
       "venue": "Cinemas NOS Fórum Madeira",
       "municipality": "Funchal",
-      "price": 0,
+      "price": 4.9,
       "organizer": "Screenings Funchal",
       "category": "cinema",
       "source_category": "movies-cinema"
@@ -5816,6 +5816,21 @@
       "start": "2026-12-09T18:30:00+00:00",
       "end": "2026-12-09T19:30:00+00:00",
       "date": "2026-12-09",
+      "time": "18:30",
+      "venue": "Funchal, Marina (below beerhouse)",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Level Up Dance Studio",
+      "category": "dance",
+      "source_category": "dance"
+    },
+    {
+      "id": "bachata-styling-in-couple-solo-2026-12-16",
+      "title": "Bachata Styling (in Couple & Solo)",
+      "url": "https://www.madeira-unlocked.com/en/events/bachata-styling-in-couple-solo-2026-12-16",
+      "start": "2026-12-16T18:30:00+00:00",
+      "end": "2026-12-16T19:30:00+00:00",
+      "date": "2026-12-16",
       "time": "18:30",
       "venue": "Funchal, Marina (below beerhouse)",
       "municipality": "Funchal",

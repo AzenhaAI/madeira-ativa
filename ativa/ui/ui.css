@@ -275,3 +275,14 @@ html.dark .promo{background:#B8743A;color:#1E0E04}html.dark .promo-txt small{col
 .ex{display:flex;justify-content:space-between;gap:8px;font-size:var(--fs-xs);color:var(--soft);margin-top:4px}
 .ex span:last-child{text-align:right}
 .row.pick .d.wx b{font-size:22px;line-height:1.1}.row.pick .d.wx .tp{font-size:var(--fs-s);padding:0 6px;margin-top:2px}
+
+.bl-old{display:inline-block;margin-left:3px;font-size:11px;color:var(--mute,#6b7280);text-decoration:line-through;text-decoration-thickness:1px}
+.bn-title{font-size:var(--fs-xs)}
+.bn-note{margin:4px 0 8px;line-height:1.45}
+.bn-note .bl{margin:0 1px}
+.bn-dym{display:inline-flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:6px}
+#bnMode{flex-wrap:wrap;overflow-x:visible}
+.bn-pay{margin:8px 0 12px}.bn-pay summary{cursor:pointer;line-height:1.45}.bn-pay ul{margin:8px 0 4px;padding-left:18px;display:grid;gap:6px}.bn-pay li{line-height:1.45}
+.bn-leg{display:block}.bn-leg .bl{display:inline-block;width:auto}
+.bn-change{margin:4px 0;color:var(--mute,#6b7280);font-size:var(--fs-xs)}
+.bn-svc{color:#8a5a00}

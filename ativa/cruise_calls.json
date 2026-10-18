@@ -1,8 +1,8 @@
 {
   "note": "Ship calls at the port of Funchal from APRAM. Times are Madeira local time, as the port publishes them. Accumulates; a call no longer listed before its arrival is marked superseded.",
   "source": "https://apram.pt/movimento-navios?port=ptfnc",
-  "fetched": "2026-10-16T10:15:19",
-  "count": 51,
+  "fetched": "2026-10-18T09:59:05",
+  "count": 54,
   "calls": [
     {
       "ship": "SANTA MARIA MANUELA",
@@ -305,6 +305,16 @@
       "superseded": false
     },
     {
+      "ship": "HMCS MONCTON",
+      "berth": "Funchal - Terminal Norte",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-10-15T09:00",
+      "from": "Portos Desconhecidos / Alto Mar (Ao Largo)",
+      "departure": "2026-10-19T19:00",
+      "to": "Portos Desconhecidos / Alto Mar (Ao Largo)",
+      "superseded": false
+    },
+    {
       "ship": "CELEBRITY XCEL",
       "berth": "Funchal - Terminal Sul",
       "agent": "JFM Shipping, Lda.",
@@ -332,6 +342,16 @@
       "from": "Santa Cruz De Tenerife",
       "departure": "2026-10-19T22:00",
       "to": "Puerto Del Rosario-Fuerteventura",
+      "superseded": false
+    },
+    {
+      "ship": "BRITANNIA",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-10-20T07:00",
+      "from": "Southampton",
+      "departure": "2026-10-20T17:00",
+      "to": "Santa Cruz De La Palma",
       "superseded": false
     },
     {
@@ -405,6 +425,16 @@
       "superseded": false
     },
     {
+      "ship": "SORLANDET",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Wilhelmsen Port Services Portugal, S.A.",
+      "arrival": "2026-10-22T14:30",
+      "from": "Vigo",
+      "departure": "2026-10-28T18:00",
+      "to": "Portos Desconhecidos / Alto Mar (Ao Largo)",
+      "superseded": false
+    },
+    {
       "ship": "SILVER MUSE",
       "berth": "Funchal - Terminal Norte",
       "agent": "Agência Ferraz - J. M. Ferraz Simões, Lda.",
@@ -460,7 +490,7 @@
       "agent": "Blatas, Lda.",
       "arrival": "2026-10-28T08:00",
       "from": "Valencia",
-      "departure": "2026-10-28T17:00",
+      "departure": "2026-10-28T18:00",
       "to": "Philipsburg",
       "superseded": false
     },
