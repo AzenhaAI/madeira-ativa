@@ -52,6 +52,8 @@
     var v = svcOf(l, p);
     return v === 'school' || v === 'sundays' ? 120 : v === 'weekends' ? 80 : v === 'weekdays-few' || v === 'few' ? 60 : v === 'weekdays' ? 15 : 0;
   }
+  // Weekday buses per direction (timetables): 3 a day costs far more than 20.
+  function freqCost(l) { return l.freq ? Math.min(40, 60 / l.freq) : 0; }
   function plural(n, one, many) { return n + ' ' + (n === 1 ? one : many); }
   // OSM joins alternative names with ";" ("Rua do Matadouro;03 - Campo da Barca").
   function stopName(i) { return NET.stops[i][1].split(';')[0].trim(); }
@@ -415,7 +417,7 @@
     var l = NET.lines[p.line], n = stopCount(p, i, k);
     if (l.src === 'gtfs') return n + svcCost(l, p) / 2;
     var a = NET.stops[p.stops[i]], b = NET.stops[p.stops[k]];
-    return Math.max(n, dist([a[2], a[3]], [b[2], b[3]]) / 600) + 8 + svcCost(l, p) / 2 + (/^aerobus$/i.test(l.ref) ? 12 : 0);
+    return Math.max(n, dist([a[2], a[3]], [b[2], b[3]]) / 600) + 8 + svcCost(l, p) / 2 + freqCost(l) + (/^aerobus$/i.test(l.ref) ? 12 : 0);
   }
   // OSM maps a stop twice (the pole and the platform): count names, not nodes.
   function stopCount(p, i, k) {
@@ -486,7 +488,7 @@
     [[SA, fa], [SB, fb]].forEach(function (x) {
       var S = x[0], f = S._far;
       var road = S._spot && S._spot[6];
-      if (S._spot && ((f && f[1] > 1000) || (road && road.length && road[0][1] > 1200))) {
+      if (S._spot && (road && road.length ? road[0][1] > 1500 : f && f[1] > 1000)) {
         var list = (road && road.length ? road : f ? [[f[0], f[1]]] : []).map(function (r) {
           var st = NET.stops[r[0]];
           return '<b>' + esc(st[1].replace(/\s*\([^)]*\d[^)]*\)/g, '')) + '</b> ' + st[4].slice(0, 3).map(function (li) { return chip(li); }).join(' ') + ' — ' + km(r[1]) + (road ? ' ' + t('by road', 'por estrada') : '');
@@ -544,13 +546,17 @@
     var seenRef = {};
     var res = Object.keys(found).map(function (k) { return found[k]; })
       .sort(function (x, y) {
-        var cx = x.sc + (NET.lines[x.line].approx ? 300 : 0) + svcCost(NET.lines[x.line], x.pat) * 20, cy = y.sc + (NET.lines[y.line].approx ? 300 : 0) + svcCost(NET.lines[y.line], y.pat) * 20;
+        var lx = NET.lines[x.line], ly = NET.lines[y.line];
+        var cx = x.sc + (lx.approx ? 300 : 0) + (svcCost(lx, x.pat) + freqCost(lx)) * 20, cy = y.sc + (ly.approx ? 300 : 0) + (svcCost(ly, y.pat) + freqCost(ly)) * 20;
         return (cx - cy) || (x.c - y.c);
       })
       .filter(function (r) { var l = NET.lines[r.line], k = l.ref + '|' + (l.op || ''); if (seenRef[k]) return false; seenRef[k] = 1; return true; }).slice(0, 8);
     if (!res.length) { transfers(SA, SB, box, head); return; }
     // A direct ride of 30+ stops, or only rare buses: a change may be the real answer.
-    var slog = res.every(function (r) { return r.c > 30 || svcCost(NET.lines[r.line], r.pat) >= 60; });
+    var slog = res.every(function (r) {
+      var l = NET.lines[r.line];
+      return (l.src === 'gtfs' && r.n > 30) || svcCost(l, r.pat) >= 60 || (l.freq && l.freq < 2);
+    });
     box.innerHTML = head + res.map(function (r, n) {
       var l = NET.lines[r.line];
       var num = r.pat && r.pat.num, alt = r.pat && r.pat.alt, sv = svcNote(l, r.pat);
@@ -575,7 +581,8 @@
     showRoute([res[0]]);
     if (slog) {
       var more = document.createElement('div'); more.id = 'bnMore'; box.appendChild(more);
-      transfers(SA, SB, more, '', true);
+      var onDirect = {}; res.forEach(function (r) { onDirect[r.line] = 1; });
+      transfers(SA, SB, more, '', true, onDirect);
     }
     box.onclick = function (e) {
       var btn = e.target.closest('.bn-show'); if (!btn) return;
@@ -656,8 +663,8 @@
     var m = document.getElementById('busmap'), y = m.getBoundingClientRect().top + window.scrollY - 8;
     window.scrollTo({ top: y, behavior: 'smooth' });
   }
-  function transfers(SA, SB, box, head, extra) {
-    head = head || '';
+  function transfers(SA, SB, box, head, extra, directLines) {
+    head = head || ''; directLines = directLines || {};
     var centre = function (S) {
       var ks = Object.keys(S).filter(function (k) { return k[0] !== '_'; }), la = 0, lo = 0;
       ks.forEach(function (k) { la += NET.stops[k][2]; lo += NET.stops[k][3]; });
@@ -665,6 +672,11 @@
     };
     var cA = centre(SA), cB = centre(SB), direct = dist(cA, cB);
     var bIds = Object.keys(SB).filter(function (k) { return k[0] !== '_'; });
+    var aIds = Object.keys(SA).filter(function (k) { return k[0] !== '_'; });
+    var walkFromStart = function (si) {
+      var s0 = NET.stops[si];
+      return si in SA || aIds.some(function (k) { return dist([s0[2], s0[3]], [NET.stops[k][2], NET.stops[k][3]]) < 400; });
+    };
     var arrived = function (si) {
       var s0 = NET.stops[si];
       return si in SB || bIds.some(function (k) { return dist([s0[2], s0[3]], [NET.stops[k][2], NET.stops[k][3]]) < 900; });
@@ -675,8 +687,11 @@
       for (var k = 0; k < p.stops.length; k++) {
         if (i < 0) { if (p.stops[k] in SA) i = k; continue; }
         var key = cellKey(NET.stops[p.stops[k]]), n = stopCount(p, i, k);
-        var n2 = legCost(p, i, k), st0 = NET.stops[p.stops[k]];
+        var n2 = legCost(p, i, k), st0 = NET.stops[p.stops[k]], sti = NET.stops[p.stops[i]];
         if (stopName(p.stops[i]) === stopName(p.stops[k])) continue;  // a loop back to where it started
+        if (directLines[p.line]) continue;  // this bus goes there itself
+        if (dist([st0[2], st0[3]], cB) > dist([sti[2], sti[3]], cB) - 500) continue;  // not getting closer
+        if (dist([st0[2], st0[3]], [sti[2], sti[3]]) < 700) continue;  // a walk, not a ride
         var keys = hub(st0) ? [key, 'FNC'] : [key];
         keys.forEach(function (kk) {
           if (!reach[kk] || n2 < reach[kk].n2) reach[kk] = { line: p.line, head: p.head, num: p.num, pat: p, from: p.stops[i], at: p.stops[k], n: n, n2: n2 };
@@ -701,6 +716,12 @@
           // The first bus already brings you there (Santana → Funchal, then
           // "one stop on a city bus"): not a change worth offering.
           if (arrived(r.at)) continue;
+          // The change stop is a walk from where you are (in Funchal, to the
+          // SAM terminal): board the second bus there instead.
+          if (walkFromStart(q.stops[m])) continue;
+          if (directLines[q.line]) continue;  // the second bus itself runs from the start
+          var mq = NET.stops[q.stops[m]], jq = NET.stops[q.stops[j]];
+          if (dist([jq[2], jq[3]], cB) > dist([mq[2], mq[3]], cB) - 500) continue;
           var walk = dist([NET.stops[r.at][2], NET.stops[r.at][3]], [NET.stops[q.stops[m]][2], NET.stops[q.stops[m]][3]]);
           tot += walk / 250;
           if (!best[key] || tot < best[key].tot) best[key] = { a: r, b: { line: q.line, head: q.head, num: q.num, pat: q, from: q.stops[m], to: q.stops[j], n: stopCount(q, m, j) }, tot: tot };
