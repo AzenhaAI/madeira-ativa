@@ -29,6 +29,8 @@
                  de: 'KI-Antworten können falsch sein — die Fakten unten sind die Quelle.', ru: 'ИИ может ошибаться — опирайтесь на факты ниже.' },
     noAnswer:  { en: 'I can answer about a trail (by name or PR code), where to go today, the weather and what’s on. Try one of the examples above.',
                  pt: 'Posso responder sobre um percurso (pelo nome ou código PR), onde ir hoje, o tempo e o que se passa. Experimente um dos exemplos acima.' , de: 'Ich kann zu einem Weg (Name oder PR-Code), zum Ziel für heute, zum Wetter und zu Events antworten. Probier eines der Beispiele oben.', ru: 'Я могу рассказать о тропе (по названию или коду PR), подсказать, куда пойти сегодня, какая погода и что происходит. Попробуйте один из примеров выше.' },
+    glance:    { en: 'Before you ask — today at a glance', pt: 'Antes de perguntar — o dia em resumo',
+                 de: 'Bevor du fragst — der Tag im Überblick', ru: 'Прежде чем спросить — день вкратце' },
     failed:    { en: 'One of the live sources did not answer. Try again in a moment.',
                  pt: 'Uma das fontes em direto não respondeu. Tente de novo daqui a pouco.',
                  de: 'Eine der Live-Quellen hat nicht geantwortet. Versuch es gleich noch einmal.', ru: 'Один из источников данных не ответил. Попробуйте ещё раз чуть позже.' },
@@ -488,6 +490,17 @@
       .observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
     var q0 = new URLSearchParams(location.search).get('q');
     if (q0) { input.value = q0; run(q0); }
+    else {
+      // An empty page under the examples read as broken. Before any
+      // question, the same ranking the "where to go today" answer uses —
+      // live weather on three trails — fills it. No model call: this is
+      // the facts layer alone, and the first real question replaces it.
+      answer('today').then(function (html) {
+        if (last) return;
+        out.innerHTML = '<p class="a-glance">' + t('glance') + '</p>' + html;
+        out.hidden = false;
+      }).catch(function () {});
+    }
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
 })();

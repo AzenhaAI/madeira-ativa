@@ -1,7 +1,7 @@
 {
   "note": "Ship calls at the port of Funchal from APRAM. Times are Madeira local time, as the port publishes them. Accumulates; a call no longer listed before its arrival is marked superseded.",
   "source": "https://apram.pt/movimento-navios?port=ptfnc",
-  "fetched": "2026-10-18T09:59:05",
+  "fetched": "2026-10-19T11:21:46",
   "count": 54,
   "calls": [
     {
@@ -431,7 +431,7 @@
       "arrival": "2026-10-22T14:30",
       "from": "Vigo",
       "departure": "2026-10-28T18:00",
-      "to": "Portos Desconhecidos / Alto Mar (Ao Largo)",
+      "to": "Sevilla",
       "superseded": false
     },
     {

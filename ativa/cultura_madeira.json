@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-10-19T10:49:48",
-  "count": 137,
+  "fetched": "2026-10-19T11:37:09",
+  "count": 138,
   "items": [
     {
       "id": "114",
@@ -1242,6 +1242,16 @@
       "end": "2026-10-19",
       "time": "18:00",
       "place": "Museu de Arte Sacra do Funchal",
+      "category": "Conference"
+    },
+    {
+      "id": "394",
+      "title": "VIII Encontro de Boas Práticas Museológicas",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/conferencias/viii-encontro-de-boas-praticas-museologicas",
+      "start": "2026-10-21",
+      "end": "2026-10-24",
+      "time": "",
+      "place": "",
       "category": "Conference"
     },
     {

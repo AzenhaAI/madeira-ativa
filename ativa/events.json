@@ -433,6 +433,16 @@
     },
     {
       "mode": "festivals",
+      "name": "VIII Encontro de Boas Práticas Museológicas",
+      "date": "2026-10-21",
+      "location": "Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/conferencias/viii-encontro-de-boas-praticas-museologicas",
+      "event_type": "festival",
+      "category": "talk",
+      "date_end": "2026-10-24"
+    },
+    {
+      "mode": "festivals",
       "name": "Winter Market, 12th Edition",
       "date": "2026-10-21",
       "location": "Fairs and Events Centre, 3rd floor, Mercado dos Lavradores, Funchal",
@@ -1707,7 +1717,39 @@
       "date": "2026-11-22",
       "location": "Ponta do Sol, Madeira",
       "url": "https://adnrace.pt/",
-      "event_type": ""
+      "event_type": "",
+      "registration": {
+        "opens": "2026-09-01",
+        "closes": "2026-10-25",
+        "closes_at": "23:59",
+        "status": "open",
+        "url": "https://lap2go.com/pt/event/adn-race-ponta-do-sol-2026",
+        "distances": [
+          {
+            "name": "trail longo | 25km",
+            "closed": false
+          },
+          {
+            "name": "trail sprint | 15km",
+            "closed": false
+          }
+        ],
+        "prices": [
+          {
+            "distance": "trail longo",
+            "from": "2026-09-01",
+            "until": "2026-10-25",
+            "eur": 32.0
+          },
+          {
+            "distance": "trail sprint",
+            "from": "2026-09-01",
+            "until": "2026-10-25",
+            "eur": 22.0
+          }
+        ],
+        "source": "lap2go"
+      }
     },
     {
       "mode": "festivals",
