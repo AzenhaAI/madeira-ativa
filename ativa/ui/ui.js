@@ -19,6 +19,14 @@
     // German comes from window.MA_DE (de.js, built from scripts/data/strings_de.json),
     // keyed by the English; a string not translated yet stays English.
     t: function (en, pt) { var l = MA.lang(); return l === 'pt' ? (pt == null ? en : pt) : l === 'de' ? ((window.MA_DE || {})[en] || en) : l === 'ru' ? ((window.MA_RU || {})[en] || en) : en; },
+    // "161 событие", "44 маршрута": Russian counts need one of three forms.
+    // Elsewhere: the number and the translated word.
+    n: function (num, en, pt) {
+      var f = MA.lang() === 'ru' && (window.MA_RU_N || {})[en];
+      if (!f) return num + ' ' + MA.t(en, pt);
+      var a = Math.abs(num) % 100, b = a % 10;
+      return num + ' ' + (a > 10 && a < 20 ? f[2] : b === 1 ? f[0] : b >= 2 && b <= 4 ? f[1] : f[2]);
+    },
     onLang: function (fn) { listeners.push(fn); },
     setLang: function (l) {
       if (LANGS.indexOf(l) < 0) l = 'en';
@@ -49,7 +57,7 @@
   function retitle() {
     var b = document.body; if (!b || b.dataset.page === 'trail') return;
     var l = MA.lang();
-    document.title = l === 'pt' ? (b.dataset.titlePt || titleEn) : l === 'de' ? (b.dataset.titleDe || titleEn) : titleEn;
+    document.title = l === 'pt' ? (b.dataset.titlePt || titleEn) : l === 'de' ? (b.dataset.titleDe || titleEn) : l === 'ru' ? (b.dataset.titleRu || titleEn) : titleEn;
   }
 
   // ---- theme

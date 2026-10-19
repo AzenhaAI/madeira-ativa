@@ -16,80 +16,101 @@
 (function () {
   var data = { levadas: null, events: null };
   var lang = 'en';
-  // German rides on the English: lang stays en/pt for the data, de picks the
-  // German word wherever a table has one.
+  // German and Russian ride on the English: lang stays en/pt for the data, de
+  // or ru picks that language's word wherever a table has one.
   var de = false;
+  var ru = false;
 
   var T = {
-    thinking:  { en: 'Looking it up…', pt: 'A procurar…', de: 'Suche…' },
-    aiWriting: { en: 'Writing a short answer…', pt: 'A escrever uma resposta curta…', de: 'Schreibe eine kurze Antwort…' },
+    thinking:  { en: 'Looking it up…', pt: 'A procurar…', de: 'Suche…', ru: 'Ищу…' },
+    aiWriting: { en: 'Writing a short answer…', pt: 'A escrever uma resposta curta…', de: 'Schreibe eine kurze Antwort…', ru: 'Пишу короткий ответ…' },
     aiNote:    { en: 'AI answers can be wrong — the facts below are the source.',
                  pt: 'As respostas da IA podem ter erros — a fonte são os factos em baixo.',
-                 de: 'KI-Antworten können falsch sein — die Fakten unten sind die Quelle.' },
+                 de: 'KI-Antworten können falsch sein — die Fakten unten sind die Quelle.', ru: 'ИИ может ошибаться — опирайтесь на факты ниже.' },
     noAnswer:  { en: 'I can answer about a trail (by name or PR code), where to go today, the weather and what’s on. Try one of the examples above.',
-                 pt: 'Posso responder sobre um percurso (pelo nome ou código PR), onde ir hoje, o tempo e o que se passa. Experimente um dos exemplos acima.' , de: 'Ich kann zu einem Weg (Name oder PR-Code), zum Ziel für heute, zum Wetter und zu Events antworten. Probier eines der Beispiele oben.' },
+                 pt: 'Posso responder sobre um percurso (pelo nome ou código PR), onde ir hoje, o tempo e o que se passa. Experimente um dos exemplos acima.' , de: 'Ich kann zu einem Weg (Name oder PR-Code), zum Ziel für heute, zum Wetter und zu Events antworten. Probier eines der Beispiele oben.', ru: 'Я могу рассказать о тропе (по названию или коду PR), подсказать, куда пойти сегодня, какая погода и что происходит. Попробуйте один из примеров выше.' },
     failed:    { en: 'One of the live sources did not answer. Try again in a moment.',
                  pt: 'Uma das fontes em direto não respondeu. Tente de novo daqui a pouco.',
-                 de: 'Eine der Live-Quellen hat nicht geantwortet. Versuch es gleich noch einmal.' },
-    open:      { en: 'is open', pt: 'está aberto' , de: 'ist geöffnet' },
-    partial:   { en: 'is partly open', pt: 'está parcialmente aberto' , de: 'ist teilweise geöffnet' },
-    closed:    { en: 'is closed', pt: 'está encerrado' , de: 'ist gesperrt' },
-    statusSrc: { en: 'IFCN, updated', pt: 'IFCN, atualizado a' , de: 'IFCN, aktualisiert' },
-    walk:      { en: 'Walk', pt: 'Percurso' , de: 'Strecke' },
-    stOpen:    { en: 'Open', pt: 'Aberto' , de: 'Geöffnet' },
-    stPartial: { en: 'Partly open', pt: 'Parcialmente aberto' , de: 'Teilweise geöffnet' },
-    stClosed:  { en: 'Closed', pt: 'Encerrado' , de: 'Gesperrt' },
-    carParksBoth: { en: 'car parks at both ends', pt: 'parques nos dois extremos' , de: 'Parkplätze an beiden Enden' },
-    and:       { en: 'and', pt: 'e' , de: 'und' },
-    away:      { en: 'away', pt: 'de distância' , de: 'entfernt' },
-    oneWay:    { en: 'one way', pt: 'só ida' , de: 'Streckenwanderung' },
-    loop:      { en: 'loop', pt: 'circular' , de: 'Rundweg' },
-    climb:     { en: 'climb', pt: 'subida' , de: 'Aufstieg' },
-    nowAt:     { en: 'Now on the trail', pt: 'Agora no percurso' , de: 'Jetzt am Weg' },
-    rainToday: { en: 'chance of rain 9:00–17:00', pt: 'probabilidade de chuva 9:00–17:00' , de: 'Regenrisiko 9:00–17:00' },
-    wind:      { en: 'wind', pt: 'vento' , de: 'Wind' },
-    noWarn:    { en: 'No IPMA warning for its zone.', pt: 'Sem aviso do IPMA para a sua zona.' , de: 'Keine IPMA-Warnung für die Zone.' },
-    getThere:  { en: 'Getting there', pt: 'Como chegar' , de: 'Anfahrt' },
-    carPark:   { en: 'car park', pt: 'parque' , de: 'Parkplatz' },
-    atUpper:   { en: 'at the upper end', pt: 'no extremo superior' , de: 'am oberen Ende' },
-    atLower:   { en: 'at the lower end', pt: 'no extremo inferior' , de: 'am unteren Ende' },
-    atOneEnd:  { en: 'at one end', pt: 'num extremo' , de: 'an einem Ende' },
-    atStart:   { en: 'at the start', pt: 'no início' , de: 'am Start' },
-    bus:       { en: 'bus', pt: 'autocarro' , de: 'Bus' },
-    buses:     { en: 'buses', pt: 'autocarros' , de: 'Busse' },
-    noBus:     { en: 'no bus route mapped near either end', pt: 'sem linha de autocarro mapeada perto dos extremos' , de: 'keine Buslinie in der Nähe der Enden kartiert' },
-    trailPage: { en: 'Full trail page', pt: 'Página do percurso' , de: 'Ganze Wegseite' },
-    nextBus:   { en: 'Next bus', pt: 'Próximo autocarro' , de: 'Nächster Bus' },
-    onPath:    { en: 'On the path', pt: 'No trilho' , de: 'Auf dem Weg' },
-    pathSrc:   { en: 'OpenStreetMap; route mapped on', pt: 'OpenStreetMap; percurso mapeado em' , de: 'OpenStreetMap; kartiert auf' },
-    webcam:    { en: 'Live webcam', pt: 'Webcam em direto' , de: 'Live-Webcam' },
-    todayHead: { en: 'Best bets for today', pt: 'Melhores opções para hoje' , de: 'Die besten Optionen für heute' },
+                 de: 'Eine der Live-Quellen hat nicht geantwortet. Versuch es gleich noch einmal.', ru: 'Один из источников данных не ответил. Попробуйте ещё раз чуть позже.' },
+    open:      { en: 'is open', pt: 'está aberto' , de: 'ist geöffnet', ru: 'открыта' },
+    partial:   { en: 'is partly open', pt: 'está parcialmente aberto' , de: 'ist teilweise geöffnet', ru: 'частично открыта' },
+    closed:    { en: 'is closed', pt: 'está encerrado' , de: 'ist gesperrt', ru: 'закрыта' },
+    statusSrc: { en: 'IFCN, updated', pt: 'IFCN, atualizado a' , de: 'IFCN, aktualisiert', ru: 'IFCN, обновлено' },
+    walk:      { en: 'Walk', pt: 'Percurso' , de: 'Strecke', ru: 'Маршрут' },
+    stOpen:    { en: 'Open', pt: 'Aberto' , de: 'Geöffnet', ru: 'Открыта' },
+    stPartial: { en: 'Partly open', pt: 'Parcialmente aberto' , de: 'Teilweise geöffnet', ru: 'Частично открыта' },
+    stClosed:  { en: 'Closed', pt: 'Encerrado' , de: 'Gesperrt', ru: 'Закрыта' },
+    carParksBoth: { en: 'car parks at both ends', pt: 'parques nos dois extremos' , de: 'Parkplätze an beiden Enden', ru: 'парковки на обоих концах' },
+    and:       { en: 'and', pt: 'e' , de: 'und', ru: 'и' },
+    away:      { en: 'away', pt: 'de distância' , de: 'entfernt', ru: 'от тропы' },
+    oneWay:    { en: 'one way', pt: 'só ida' , de: 'Streckenwanderung', ru: 'в одну сторону' },
+    loop:      { en: 'loop', pt: 'circular' , de: 'Rundweg', ru: 'кольцевой' },
+    climb:     { en: 'climb', pt: 'subida' , de: 'Aufstieg', ru: 'набор высоты' },
+    nowAt:     { en: 'Now on the trail', pt: 'Agora no percurso' , de: 'Jetzt am Weg', ru: 'Сейчас на тропе' },
+    rainToday: { en: 'chance of rain 9:00–17:00', pt: 'probabilidade de chuva 9:00–17:00' , de: 'Regenrisiko 9:00–17:00', ru: 'вероятность дождя 9:00–17:00' },
+    wind:      { en: 'wind', pt: 'vento' , de: 'Wind', ru: 'ветер' },
+    noWarn:    { en: 'No IPMA warning for its zone.', pt: 'Sem aviso do IPMA para a sua zona.' , de: 'Keine IPMA-Warnung für die Zone.', ru: 'Для её зоны нет предупреждений IPMA.' },
+    getThere:  { en: 'Getting there', pt: 'Como chegar' , de: 'Anfahrt', ru: 'Как добраться' },
+    carPark:   { en: 'car park', pt: 'parque' , de: 'Parkplatz', ru: 'парковка' },
+    atUpper:   { en: 'at the upper end', pt: 'no extremo superior' , de: 'am oberen Ende', ru: 'у верхнего конца' },
+    atLower:   { en: 'at the lower end', pt: 'no extremo inferior' , de: 'am unteren Ende', ru: 'у нижнего конца' },
+    atOneEnd:  { en: 'at one end', pt: 'num extremo' , de: 'an einem Ende', ru: 'у одного из концов' },
+    atStart:   { en: 'at the start', pt: 'no início' , de: 'am Start', ru: 'у старта' },
+    bus:       { en: 'bus', pt: 'autocarro' , de: 'Bus', ru: 'автобус' },
+    buses:     { en: 'buses', pt: 'autocarros' , de: 'Busse', ru: 'автобусы' },
+    noBus:     { en: 'no bus route mapped near either end', pt: 'sem linha de autocarro mapeada perto dos extremos' , de: 'keine Buslinie in der Nähe der Enden kartiert', ru: 'рядом с концами тропы автобусных линий не найдено' },
+    trailPage: { en: 'Full trail page', pt: 'Página do percurso' , de: 'Ganze Wegseite', ru: 'Страница тропы' },
+    nextBus:   { en: 'Next bus', pt: 'Próximo autocarro' , de: 'Nächster Bus', ru: 'Ближайший автобус' },
+    onPath:    { en: 'On the path', pt: 'No trilho' , de: 'Auf dem Weg', ru: 'На тропе' },
+    pathSrc:   { en: 'OpenStreetMap; route mapped on', pt: 'OpenStreetMap; percurso mapeado em' , de: 'OpenStreetMap; kartiert auf', ru: 'OpenStreetMap; на карте отмечено' },
+    webcam:    { en: 'Live webcam', pt: 'Webcam em direto' , de: 'Live-Webcam', ru: 'Веб-камера онлайн' },
+    todayHead: { en: 'Best bets for today', pt: 'Melhores opções para hoje' , de: 'Die besten Optionen für heute', ru: 'Лучшее на сегодня' },
     todayWarn: { en: 'Every Madeira zone has a warning today — these are the least affected.',
-                 pt: 'Todas as zonas da Madeira têm aviso hoje — estes são os menos afetados.' , de: 'Für jede Zone Madeiras gilt heute eine Warnung — diese sind am wenigsten betroffen.' },
-    moreToday: { en: 'Full ranking on the Levadas page', pt: 'Lista completa na página das Levadas' , de: 'Ganze Rangliste auf der Levadas-Seite' },
-    weatherHd: { en: 'Weather now', pt: 'Tempo agora' , de: 'Wetter jetzt' },
-    coast:     { en: 'Funchal', pt: 'Funchal' , de: 'Funchal' },
-    summit:    { en: 'Pico do Arieiro', pt: 'Pico do Arieiro' , de: 'Pico do Arieiro' },
-    sea:       { en: 'sea', pt: 'mar' , de: 'Meer' },
-    waves:     { en: 'waves', pt: 'ondas' , de: 'Wellen' },
-    warnings:  { en: 'IPMA warnings', pt: 'Avisos IPMA' , de: 'IPMA-Warnungen' },
+                 pt: 'Todas as zonas da Madeira têm aviso hoje — estes são os menos afetados.' , de: 'Für jede Zone Madeiras gilt heute eine Warnung — diese sind am wenigsten betroffen.', ru: 'Сегодня предупреждения действуют во всех зонах Мадейры — эти затронуты меньше всего.' },
+    moreToday: { en: 'Full ranking on the Levadas page', pt: 'Lista completa na página das Levadas' , de: 'Ganze Rangliste auf der Levadas-Seite', ru: 'Полный рейтинг на странице левад' },
+    weatherHd: { en: 'Weather now', pt: 'Tempo agora' , de: 'Wetter jetzt', ru: 'Погода сейчас' },
+    coast:     { en: 'Funchal', pt: 'Funchal' , de: 'Funchal', ru: 'Funchal' },
+    summit:    { en: 'Pico do Arieiro', pt: 'Pico do Arieiro' , de: 'Pico do Arieiro', ru: 'Pico do Arieiro' },
+    sea:       { en: 'sea', pt: 'mar' , de: 'Meer', ru: 'море' },
+    waves:     { en: 'waves', pt: 'ondas' , de: 'Wellen', ru: 'волны' },
+    warnings:  { en: 'IPMA warnings', pt: 'Avisos IPMA' , de: 'IPMA-Warnungen', ru: 'Предупреждения IPMA' },
     noWarnAll: { en: 'No yellow, orange or red IPMA warning for Madeira right now.',
-                 pt: 'Sem avisos amarelos, laranja ou vermelhos do IPMA para a Madeira neste momento.' , de: 'Derzeit keine gelbe, orange oder rote IPMA-Warnung für Madeira.' },
-    eventsHd:  { en: 'What’s on', pt: 'O que se passa' , de: 'Was los ist' },
-    noEvents:  { en: 'Nothing in the calendar for that period.', pt: 'Nada no calendário para esse período.' , de: 'Für diesen Zeitraum steht nichts im Kalender.' },
-    allEvents: { en: 'Full calendar', pt: 'Calendário completo' , de: 'Ganzer Kalender' },
-    today:     { en: 'today', pt: 'hoje' , de: 'heute' },
-    tomorrow:  { en: 'tomorrow', pt: 'amanhã' , de: 'morgen' },
-    weekend:   { en: 'this weekend', pt: 'este fim de semana' , de: 'an diesem Wochenende' },
-    week:      { en: 'in the next 7 days', pt: 'nos próximos 7 dias' , de: 'in den nächsten 7 Tagen' },
-    moreEv:    { en: 'more', pt: 'mais' , de: 'weitere' },
-    placeholder: { en: 'Vereda do Areeiro, where to go today, weather…', pt: 'Vereda do Areeiro, onde ir hoje, tempo…', de: 'Vereda do Areeiro, wohin heute, Wetter…' },
+                 pt: 'Sem avisos amarelos, laranja ou vermelhos do IPMA para a Madeira neste momento.' , de: 'Derzeit keine gelbe, orange oder rote IPMA-Warnung für Madeira.', ru: 'Сейчас для Мадейры нет жёлтых, оранжевых или красных предупреждений IPMA.' },
+    eventsHd:  { en: 'What’s on', pt: 'O que se passa' , de: 'Was los ist', ru: 'Афиша' },
+    noEvents:  { en: 'Nothing in the calendar for that period.', pt: 'Nada no calendário para esse período.' , de: 'Für diesen Zeitraum steht nichts im Kalender.', ru: 'На этот период в календаре ничего нет.' },
+    allEvents: { en: 'Full calendar', pt: 'Calendário completo' , de: 'Ganzer Kalender', ru: 'Весь календарь' },
+    today:     { en: 'today', pt: 'hoje' , de: 'heute', ru: 'сегодня' },
+    tomorrow:  { en: 'tomorrow', pt: 'amanhã' , de: 'morgen', ru: 'завтра' },
+    weekend:   { en: 'this weekend', pt: 'este fim de semana' , de: 'an diesem Wochenende', ru: 'в эти выходные' },
+    week:      { en: 'in the next 7 days', pt: 'nos próximos 7 dias' , de: 'in den nächsten 7 Tagen', ru: 'в ближайшие 7 дней' },
+    moreEv:    { en: 'more', pt: 'mais' , de: 'weitere', ru: 'ещё' },
+    placeholder: { en: 'Vereda do Areeiro, where to go today, weather…', pt: 'Vereda do Areeiro, onde ir hoje, tempo…', de: 'Vereda do Areeiro, wohin heute, Wetter…', ru: 'Vereda do Areeiro, куда пойти сегодня, погода…' },
   };
   var DAYS = { en: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'], pt: ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb'],
-               de: ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'] };
+               de: ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'], ru: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'] };
+  // Warning levels as adjectives agreeing with "предупреждение" (ipma.js has no
+  // Russian), and the bare level names for the list.
+  var RU_LEVEL = { red: 'Красное', orange: 'Оранжевое', yellow: 'Жёлтое' };
+  var RU_LEVEL_NAME = { red: 'Красный', orange: 'Оранжевый', yellow: 'Жёлтый' };
+  // IPMA warning types (keyed by IPMA's Portuguese name) and zones, same reason.
+  var RU_IPMA = {
+    'Trovoada': 'Гроза', 'Precipitação': 'Сильный дождь', 'Vento': 'Ветер', 'Agitação Marítima': 'Сильное волнение',
+    'Nevoeiro': 'Туман', 'Tempo Quente': 'Жара', 'Tempo Frio': 'Холод', 'Neve': 'Снег',
+    MRM: 'Горы', MCN: 'Северное побережье', MCS: 'Южное побережье', MPS: 'Porto Santo',
+  };
 
-  function L(o) { return (de && o.de) || o[lang]; }
-  function tri(en, pt, dd) { return de ? dd : lang === 'pt' ? pt : en; }
+  function L(o) { return (ru && o.ru) || (de && o.de) || o[lang]; }
+  function tri(en, pt, dd, rr) { return ru ? rr : de ? dd : lang === 'pt' ? pt : en; }
+  // Russian units and decimal comma; every other language keeps what it had.
+  function U(u) { return ru ? ({ m: 'м', km: 'км', 'km/h': 'км/ч' })[u] : u; }
+  function num(x) { return ru ? String(x).replace('.', ',') : String(x); }
+  // 1 событие, 2 события, 5 событий.
+  function plural(n, one, few, many) {
+    var a = n % 10, b = n % 100;
+    return a === 1 && b !== 11 ? one : a >= 2 && a <= 4 && (b < 12 || b > 14) ? few : many;
+  }
+  function lvName(lv, key) { return ru ? (lv.ru || RU_LEVEL_NAME[key] || lv.en) : L(lv); }
+  function ipmaL(o, key) { return ru ? (o.ru || RU_IPMA[key] || o.en) : L(o); }
   function t(k) { return L(T[k] || {}) || k; }
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function norm(s) { return String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); }
@@ -101,7 +122,7 @@
     return new Intl.DateTimeFormat('sv-SE', { timeZone: 'Atlantic/Madeira', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
   }
   function addDays(iso, n) { var d = new Date(iso + 'T00:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); }
-  function dayLabel(iso) { var d = new Date(iso + 'T00:00:00Z'); return DAYS[de ? 'de' : lang][d.getUTCDay()] + ' ' + d.getUTCDate(); }
+  function dayLabel(iso) { var d = new Date(iso + 'T00:00:00Z'); return DAYS[ru ? 'ru' : de ? 'de' : lang][d.getUTCDay()] + ' ' + d.getUTCDate(); }
   function emo(c) { return c >= 95 ? '⛈' : c >= 80 ? '🌧' : c >= 61 ? '🌧' : c >= 51 ? '🌦' : c >= 45 ? '🌫' : c === 3 ? '☁️' : c >= 1 ? '🌤' : '☀️'; }
 
   function load(name, url) {
@@ -182,21 +203,21 @@
         var hp = (w.hourly && w.hourly.precipitation_probability) || [];
         var day = hp.slice(9, 18).filter(function (x) { return x != null; });
         rain = day.length ? Math.max.apply(null, day) : null;
-        s.push(Math.round(w.current.temperature_2m) + '° ' + tri('on the trail now', 'no percurso agora', 'jetzt am Weg') +
-          (rain != null ? ', ' + rain + '% ' + tri('max chance of rain today', 'de chuva máx. hoje', 'max. Regenrisiko heute') : '') + '.');
+        s.push(Math.round(w.current.temperature_2m) + '° ' + tri('on the trail now', 'no percurso agora', 'jetzt am Weg', 'сейчас на тропе') +
+          (rain != null ? ', ' + rain + '% ' + tri('max chance of rain today', 'de chuva máx. hoje', 'max. Regenrisiko heute', 'макс. вероятность дождя сегодня') : '') + '.');
       }
-      s.push((time ? time + ', ' : '') + L(df).toLowerCase() + ', ' + (l.distance_km || '?') + ' km.');
+      s.push((time ? time + ', ' : '') + L(df).toLowerCase() + ', ' + num(l.distance_km || '?') + ' ' + U('km') + '.');
       var reach = reachSentence(ends);
       if (reach) s.push(reach);
 
       var html = '<p class="a-sum">' + s.join(' ') + '</p><dl class="a-facts">';
       var badge = l.status === 'closed' ? t('stClosed') : l.status === 'partial' ? t('stPartial') : t('stOpen');
-      html += '<dt>' + tri('Status', 'Estado', 'Status') + '</dt><dd><span class="a-badge ' + esc(l.status) + '">' + badge + '</span></dd>';
-      html += '<dt>' + t('walk') + '</dt><dd>' + (l.distance_km || '?') + ' km · ↑' + (l.ascent_m || 0) + ' m ' + t('climb') +
+      html += '<dt>' + tri('Status', 'Estado', 'Status', 'Статус') + '</dt><dd><span class="a-badge ' + esc(l.status) + '">' + badge + '</span></dd>';
+      html += '<dt>' + t('walk') + '</dt><dd>' + num(l.distance_km || '?') + ' ' + U('km') + ' · ↑' + (l.ascent_m || 0) + ' ' + U('m') + ' ' + t('climb') +
         (time ? ' · ⏱ ' + time : '') + ' · ' + L(df) + ' · ' + (l.roundtrip ? t('loop') : t('oneWay')) + '</dd>';
       if (w && w.current) {
         html += '<dt>' + t('nowAt') + '</dt><dd>' + emo(w.current.weather_code) + ' ' + Math.round(w.current.temperature_2m) + '° · ' +
-          Math.round(w.current.wind_speed_10m) + ' km/h ' + t('wind') + (rain != null ? ' · ' + rain + '% ' + t('rainToday') : '') + '</dd>';
+          Math.round(w.current.wind_speed_10m) + ' ' + U('km/h') + ' ' + t('wind') + (rain != null ? ' · ' + rain + '% ' + t('rainToday') : '') + '</dd>';
       }
       html += '<dt>IPMA</dt><dd>' + (warn ? warnSentence(warn) : t('noWarn')) + '</dd>';
       if (reach) html += '<dt>' + t('getThere') + '</dt><dd>' + reach + '</dd>';
@@ -208,7 +229,7 @@
         }).join(' · ') + ' (' + esc(e.bus.stop.replace(/\s*\([^)]*\)\s*$/, '')) + ')</dd>';
       });
       // Railings, narrow ledges, tunnels — the question a tester asked first.
-      var pf = pathFacts(l.exposure, de ? 'de' : lang);
+      var pf = pathFacts(l.exposure, ru ? 'ru' : de ? 'de' : lang);
       if (pf.length) html += '<dt>' + t('onPath') + '</dt><dd>' + pf.map(esc).join('; ') + '. <span class="a-soft">(' +
         t('pathSrc') + ' ' + l.exposure.mapped_pct + '%)</span></dd>';
       ((l.access && l.access.webcams) || []).forEach(function (c) {
@@ -222,10 +243,10 @@
   function warnSentence(warn) {
     var api = window.AtivaIPMA; if (!api) return '';
     var lv = api.LEVELS[warn.level];
-    var types = warn.types.map(function (x) { var tt = api.TYPES[x]; return tt ? L(tt).toLowerCase() : x.toLowerCase(); }).join(', ');
-    var zone = L(api.ZONES[warn.zone]).toLowerCase();
+    var types = warn.types.map(function (x) { var tt = api.TYPES[x]; return tt ? ipmaL(tt, x).toLowerCase() : x.toLowerCase(); }).join(', ');
+    var zone = ipmaL(api.ZONES[warn.zone], warn.zone).toLowerCase();
     return '<span style="color:' + lv.colour + ';font-weight:700">⚠ ' +
-      tri(lv.en + ' IPMA warning', 'Aviso ' + lv.pt.toLowerCase() + ' do IPMA', 'IPMA-Warnstufe ' + lv.de) + ': ' + esc(types) + ' — ' + esc(zone) + '.</span>';
+      tri(lv.en + ' IPMA warning', 'Aviso ' + lv.pt.toLowerCase() + ' do IPMA', 'IPMA-Warnstufe ' + lv.de, RU_LEVEL[warn.level] + ' предупреждение IPMA') + ': ' + esc(types) + ' — ' + esc(zone) + '.</span>';
   }
 
   // "car park 83 m from the lower end" / "parque a 83 m do extremo inferior".
@@ -233,7 +254,9 @@
     var en = { upper: 'the upper end', lower: 'the lower end', one: 'one end', start: 'the start' };
     var pt = { upper: 'do extremo superior', lower: 'do extremo inferior', one: 'de um dos extremos', start: 'do início' };
     var dd = { upper: 'vom oberen Ende', lower: 'vom unteren Ende', one: 'von einem Ende', start: 'vom Start' };
-    return tri('car park ' + dist + ' m from ' + en[end], 'parque a ' + dist + ' m ' + pt[end], 'Parkplatz ' + dist + ' m ' + dd[end]);
+    var rr = { upper: 'от верхнего конца', lower: 'от нижнего конца', one: 'от одного из концов', start: 'от старта' };
+    return tri('car park ' + dist + ' m from ' + en[end], 'parque a ' + dist + ' m ' + pt[end], 'Parkplatz ' + dist + ' m ' + dd[end],
+      'парковка в ' + dist + ' м ' + rr[end]);
   }
 
   function reachSentence(ends) {
@@ -253,7 +276,7 @@
       // tested read the bracketed figure as an altitude, and so might a reader.
       ends.forEach(function (e, i) { if (e.parking) bits.push(parkAt(e.parking.dist, ends.length === 1 ? 'start' : i === 0 ? 'upper' : 'lower')); });
     } else if (parks[0] != null && parks[1] != null) {
-      bits.push(t('carParksBoth') + ' (' + parks[0] + ' m ' + t('and') + ' ' + parks[1] + ' m ' + t('away') + ')');
+      bits.push(t('carParksBoth') + ' (' + parks[0] + ' ' + U('m') + ' ' + t('and') + ' ' + parks[1] + ' ' + U('m') + ' ' + t('away') + ')');
     } else if (parks[0] != null || parks[1] != null) {
       bits.push(parkAt(parks[0] != null ? parks[0] : parks[1], 'one'));
     }
@@ -279,14 +302,14 @@
       var allWarned = picks.every(function (p) { return p.warn && p.warn.severe; });
       var sum = picks.map(function (p) {
         return esc(p.l.code + ' ' + p.l.name) + ' (' + Math.round(p.temp) + '°, ' + p.rain + '% ' +
-          tri('rain', 'chuva', 'Regen') + (walkTime(p.l) ? ', ' + walkTime(p.l) : '') + ')';
+          tri('rain', 'chuva', 'Regen', 'дождя') + (walkTime(p.l) ? ', ' + walkTime(p.l) : '') + ')';
       });
-      var html = '<p class="a-sum">' + tri('Today: ', 'Hoje: ', 'Heute: ') + sum.join('; ') + '.' +
+      var html = '<p class="a-sum">' + tri('Today: ', 'Hoje: ', 'Heute: ', 'Сегодня: ') + sum.join('; ') + '.' +
         (allWarned ? ' ' + t('todayWarn') : '') + '</p><ol class="a-list">';
       picks.forEach(function (p) {
         html += '<li><a href="/ativa/trail/' + slugify(p.l.code + ' ' + p.l.name) + '"><b>' + esc(p.l.code) + '</b> ' + esc(p.l.name) + '</a>' +
-          '<span>' + emo(p.code) + ' ' + Math.round(p.temp) + '° · ' + p.rain + '% ' + tri('rain', 'chuva', 'Regen') + ' · ' +
-          Math.round(p.wind) + ' km/h · ' + L(difficulty(p.l)) + (walkTime(p.l) ? ' · ⏱ ' + walkTime(p.l) : '') + '</span>' +
+          '<span>' + emo(p.code) + ' ' + Math.round(p.temp) + '° · ' + p.rain + '% ' + tri('rain', 'chuva', 'Regen', 'дождя') + ' · ' +
+          Math.round(p.wind) + ' ' + U('km/h') + ' · ' + L(difficulty(p.l)) + (walkTime(p.l) ? ' · ⏱ ' + walkTime(p.l) : '') + '</span>' +
           (p.warn ? '<span>' + warnSentence(p.warn) + '</span>' : '') + '</li>';
       });
       return html + '</ol><p class="a-links"><a href="/ativa/levada">' + t('moreToday') + ' →</a></p>';
@@ -302,10 +325,10 @@
       var pts = Array.isArray(res[0]) ? res[0] : [];
       var coast = pts[0] && pts[0].current, peak = pts[1] && pts[1].current, m = res[1] && res[1].current;
       var parts = [];
-      if (coast) parts.push(t('coast') + ' ' + emo(coast.weather_code) + ' ' + Math.round(coast.temperature_2m) + '°, ' + Math.round(coast.wind_speed_10m) + ' km/h');
-      if (peak) parts.push(t('summit') + ' ' + emo(peak.weather_code) + ' ' + Math.round(peak.temperature_2m) + '°, ' + Math.round(peak.wind_speed_10m) + ' km/h');
-      if (m && m.sea_surface_temperature != null) parts.push(t('sea') + ' ' + m.sea_surface_temperature.toFixed(1) + '°' +
-        (m.wave_height != null ? ', ' + t('waves') + ' ' + m.wave_height.toFixed(1) + ' m' : ''));
+      if (coast) parts.push(t('coast') + ' ' + emo(coast.weather_code) + ' ' + Math.round(coast.temperature_2m) + '°, ' + Math.round(coast.wind_speed_10m) + ' ' + U('km/h'));
+      if (peak) parts.push(t('summit') + ' ' + emo(peak.weather_code) + ' ' + Math.round(peak.temperature_2m) + '°, ' + Math.round(peak.wind_speed_10m) + ' ' + U('km/h'));
+      if (m && m.sea_surface_temperature != null) parts.push(t('sea') + ' ' + num(m.sea_surface_temperature.toFixed(1)) + '°' +
+        (m.wave_height != null ? ', ' + t('waves') + ' ' + num(m.wave_height.toFixed(1)) + ' ' + U('m') : ''));
       var warns = res[2] || [];
       var api = window.AtivaIPMA, rows = {};
       warns.forEach(function (w) {
@@ -314,13 +337,14 @@
       });
       var wl = Object.keys(rows).map(function (k) {
         var r = rows[k], lv = api.LEVELS[r.w.awarenessLevelID], ty = api.TYPES[r.w.awarenessTypeName];
-        return '<li><span style="color:' + lv.colour + ';font-weight:700">' + L(lv) + '</span> · ' +
-          esc(ty ? L(ty) : r.w.awarenessTypeName) + ' — ' + r.z.sort(function (a, b) {
+        return '<li><span style="color:' + lv.colour + ';font-weight:700">' + lvName(lv, r.w.awarenessLevelID) + '</span> · ' +
+          esc(ty ? ipmaL(ty, r.w.awarenessTypeName) : r.w.awarenessTypeName) + ' — ' + r.z.sort(function (a, b) {
             return ['MRM', 'MCN', 'MCS', 'MPS'].indexOf(a) - ['MRM', 'MCN', 'MCS', 'MPS'].indexOf(b);
-          }).map(function (z) { return L(api.ZONES[z]); }).join(', ') + '</li>';
+          }).map(function (z) { return ipmaL(api.ZONES[z], z); }).join(', ') + '</li>';
       });
       var html = '<p class="a-sum">' + (parts.length ? parts.join(' · ') + '.' : t('failed')) + ' ' +
-        (wl.length ? tri(wl.length + ' IPMA warning' + (wl.length > 1 ? 's' : '') + ' in force.', wl.length + ' aviso(s) do IPMA em vigor.', wl.length + ' IPMA-Warnung' + (wl.length > 1 ? 'en' : '') + ' aktiv.') : t('noWarnAll')) + '</p>';
+        (wl.length ? tri(wl.length + ' IPMA warning' + (wl.length > 1 ? 's' : '') + ' in force.', wl.length + ' aviso(s) do IPMA em vigor.', wl.length + ' IPMA-Warnung' + (wl.length > 1 ? 'en' : '') + ' aktiv.',
+          plural(wl.length, 'Действует', 'Действуют', 'Действует') + ' ' + wl.length + ' ' + plural(wl.length, 'предупреждение', 'предупреждения', 'предупреждений') + ' IPMA.') : t('noWarnAll')) + '</p>';
       if (wl.length) html += '<p class="a-sub">' + t('warnings') + '</p><ul class="a-list">' + wl.join('') + '</ul>';
       return html;
     });
@@ -353,7 +377,8 @@
       }).sort(function (a, b) { return (a.date + (a.time || '')).localeCompare(b.date + (b.time || '')); });
       if (!list.length) return '<p class="a-sum">' + t('noEvents') + '</p><p class="a-links"><a href="/ativa/">' + t('allEvents') + ' →</a></p>';
       var shown = list.slice(0, 8);
-      var html = '<p class="a-sum">' + list.length + ' ' + (list.length === 1 ? tri('event', 'evento', 'Event') : tri('events', 'eventos', 'Events')) +
+      var html = '<p class="a-sum">' + list.length + ' ' + (list.length === 1 ? tri('event', 'evento', 'Event', 'событие') :
+        tri('events', 'eventos', 'Events', plural(list.length, 'событие', 'события', 'событий'))) +
         ' ' + label + '.' + '</p><ul class="a-list">';
       shown.forEach(function (e) {
         var name = String(e.name || '').replace(/^"|"$/g, '');
@@ -404,10 +429,13 @@
     if (!form) return;
     function setLang() {
       var hl = document.documentElement.lang || 'en';
-      lang = hl === 'pt' ? 'pt' : 'en'; de = hl === 'de';
+      lang = hl === 'pt' ? 'pt' : 'en'; de = hl === 'de'; ru = hl === 'ru';
       input.placeholder = t('placeholder');
     }
     setLang();
+    // The menu switch: keep the placeholder in step (the observer below also
+    // re-runs the last question).
+    if (window.MA && MA.onLang) MA.onLang(setLang);
     var last = '';
     function run(qs) {
       if (!qs.trim()) return;
@@ -440,7 +468,7 @@
       fetch('/ativa/api/ask', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ q: qs, lang: de ? 'de' : lang, facts: facts }),
+        body: JSON.stringify({ q: qs, lang: ru ? 'ru' : de ? 'de' : lang, facts: facts }),
       }).then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
         if (qs !== last) return;
         if (!j || !j.answer) { box.remove(); return; }

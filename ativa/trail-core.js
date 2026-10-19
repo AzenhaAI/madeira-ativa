@@ -7,10 +7,10 @@
 // own script. Language-specific wording stays in the pages.
 
 var DIFF = [
-  { max: 8,   level: 1, en: 'Easy',     pt: 'Fácil', de: 'Leicht',    color: '#2e9e5b' },
-  { max: 15,  level: 2, en: 'Moderate', pt: 'Moderado', de: 'Mittel', color: '#c8912f' },
-  { max: 24,  level: 3, en: 'Hard',     pt: 'Difícil', de: 'Schwer',  color: '#d2691e' },
-  { max: 1e9, level: 4, en: 'Severe',   pt: 'Severo', de: 'Sehr schwer',   color: '#b23a2e' },
+  { max: 8,   level: 1, en: 'Easy',     pt: 'Fácil', de: 'Leicht', ru: 'Лёгкий',    color: '#2e9e5b' },
+  { max: 15,  level: 2, en: 'Moderate', pt: 'Moderado', de: 'Mittel', ru: 'Средний', color: '#c8912f' },
+  { max: 24,  level: 3, en: 'Hard',     pt: 'Difícil', de: 'Schwer', ru: 'Сложный',  color: '#d2691e' },
+  { max: 1e9, level: 4, en: 'Severe',   pt: 'Severo', de: 'Sehr schwer', ru: 'Очень сложный',   color: '#b23a2e' },
 ];
 function effort(l) { return (l.distance_km || 0) + (l.ascent_m || 0) / 100; }
 // Official difficulty first — Visit Madeira's, the one on the trailhead board.
@@ -194,26 +194,33 @@ function nextBuses(departures, n) {
 // scripts/build_trail_exposure.py): railing, narrow ledge, tunnels, demanding
 // ground. Returns short phrases in the reader's language; nothing is said about
 // what was not mapped except how much that is.
+// 1 тоннель, 2 тоннеля, 5 тоннелей.
+function ruPlural(n, one, few, many) {
+  var a = Math.abs(n) % 100, b = a % 10;
+  return a > 10 && a < 20 ? many : b === 1 ? one : b >= 2 && b <= 4 ? few : many;
+}
 function pathFacts(x, lang) {
   if (!x || !x.length_km) return [];
-  var pt = lang === 'pt', de = lang === 'de', out = [];
+  var pt = lang === 'pt', de = lang === 'de', ru = lang === 'ru', out = [];
   // Under a third of the route mapped: too little to speak of railings at all
   // ("no railing recorded" read as "there are none").
   if ((x.mapped_pct || 0) < 30) {
-    out.push(pt ? 'Corrimãos: percurso pouco mapeado para dizer' : de ? 'Geländer: zu wenig der Strecke kartiert, um es zu sagen' : 'Railings: too little of the route is mapped to say');
+    out.push(pt ? 'Corrimãos: percurso pouco mapeado para dizer' : de ? 'Geländer: zu wenig der Strecke kartiert, um es zu sagen' : ru ? 'Перила: маршрут нанесён на карту слишком мало, чтобы судить' : 'Railings: too little of the route is mapped to say');
   } else if (x.railing_pct || x.no_railing_pct) {
     var unknown = Math.max(0, 100 - x.railing_pct - x.no_railing_pct);
     out.push(pt
       ? 'Corrimão registado em ' + x.railing_pct + '% do percurso, sem corrimão em ' + x.no_railing_pct + '%, desconhecido em ' + unknown + '%'
       : de ? 'Geländer auf ' + x.railing_pct + ' % der Strecke erfasst, keines auf ' + x.no_railing_pct + ' %, unbekannt auf ' + unknown + ' %'
+      : ru ? 'Перила отмечены на ' + x.railing_pct + '% маршрута, их нет на ' + x.no_railing_pct + '%, неизвестно на ' + unknown + '%'
       : 'Railing recorded on ' + x.railing_pct + '% of the route, none on ' + x.no_railing_pct + '%, unknown on ' + unknown + '%');
   } else {
-    out.push(pt ? 'Sem registo de corrimão em nenhum troço' : de ? 'Auf keinem Abschnitt ein Geländer erfasst' : 'No railing recorded on any section');
+    out.push(pt ? 'Sem registo de corrimão em nenhum troço' : de ? 'Auf keinem Abschnitt ein Geländer erfasst' : ru ? 'Перила не отмечены ни на одном участке' : 'No railing recorded on any section');
   }
-  if (x.narrow_pct) out.push(pt ? x.narrow_pct + '% do trilho com 0,5 m de largura ou menos' : de ? x.narrow_pct + ' % des Weges 0,5 m breit oder schmaler' : x.narrow_pct + '% of the path 0.5 m wide or less');
+  if (x.narrow_pct) out.push(pt ? x.narrow_pct + '% do trilho com 0,5 m de largura ou menos' : de ? x.narrow_pct + ' % des Weges 0,5 m breit oder schmaler' : ru ? x.narrow_pct + '% тропы шириной 0,5 м и уже' : x.narrow_pct + '% of the path 0.5 m wide or less');
   if (x.tunnels) out.push(pt ? x.tunnels + (x.tunnels > 1 ? ' túneis' : ' túnel') + ' (' + x.tunnel_m + ' m) — leve lanterna'
                              : de ? x.tunnels + (x.tunnels > 1 ? ' Tunnel' : ' Tunnel') + ' (' + x.tunnel_m + ' m) — Stirnlampe mitnehmen'
+                             : ru ? x.tunnels + ' ' + ruPlural(x.tunnels, 'тоннель', 'тоннеля', 'тоннелей') + ' (' + x.tunnel_m + ' м) — возьмите фонарик'
                              : x.tunnels + (x.tunnels > 1 ? ' tunnels' : ' tunnel') + ' (' + x.tunnel_m + ' m) — bring a torch');
-  if (x.demanding_pct) out.push(pt ? x.demanding_pct + '% em terreno de montanha exigente' : de ? x.demanding_pct + ' % anspruchsvolles Bergterrain' : x.demanding_pct + '% demanding mountain terrain');
+  if (x.demanding_pct) out.push(pt ? x.demanding_pct + '% em terreno de montanha exigente' : de ? x.demanding_pct + ' % anspruchsvolles Bergterrain' : ru ? x.demanding_pct + '% сложного горного рельефа' : x.demanding_pct + '% demanding mountain terrain');
   return out;
 }

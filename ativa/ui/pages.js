@@ -40,6 +40,7 @@
     if (!x) return '';
     if (MA.lang() === 'pt') return String(x).replace(/\bhours\b/g, 'horas').replace(/\bhour\b/g, 'hora').replace(/\bminutes\b/g, 'minutos');
     if (MA.lang() === 'de') return String(x).replace(/\bhours?\b/g, 'Std.').replace(/\bminutes\b/g, 'Min.');
+    if (MA.lang() === 'ru') return String(x).replace(/\bhours?\b/g, 'ч').replace(/\bminutes\b/g, 'мин')
     return x;
   }
   function time(l) { var o = l.official || {}; return dur(o.duration); }
@@ -217,7 +218,7 @@
           (!text || (e.name + ' ' + (e.location || '')).toLowerCase().indexOf(text) >= 0);
       });
       var later = E.filter(function (e) { return e.date > r[1] && (kind === 'all' || kindOf(e) === kind); }).length;
-      $('#count').textContent = list.length + ' ' + t('events', 'eventos') + (later ? ' · ' + later + ' ' + t('later', 'mais tarde') : '');
+      $('#count').textContent = MA.n(list.length, 'events', 'eventos') + (later ? ' · ' + later + ' ' + t('later', 'mais tarde') : '');
       var out = '', month = '';
       list.forEach(function (e) {
         var m = e.date.slice(0, 7);
@@ -267,7 +268,7 @@
         if (sort === 'time') return ((b.official || {}).duration_min || 0) - ((a.official || {}).duration_min || 0);
         return (a.island === 'Porto Santo') - (b.island === 'Porto Santo') || MA.codeSort(a.code, b.code);
       });
-      $('#count').textContent = list.length + ' ' + t('trails', 'percursos');
+      $('#count').textContent = MA.n(list.length, 'trails', 'percursos');
       $('#list').innerHTML = list.map(function (l) { return trailRow(l); }).join('') || '<p class="empty">' + t('No trail matches.', 'Nenhum percurso corresponde.') + '</p>';
       paintToday();
     }
@@ -479,14 +480,14 @@
     MA.get('/ativa/levadas.json').then(function (j) { L = (j && j.levadas) || []; rerender(paint); });
     function paint() {
       var list = L.filter(function (l) { return window.reachableByBus && reachableByBus(l); }).sort(function (a, b) { return MA.codeSort(a.code, b.code); });
-      $('#count').textContent = list.length + ' ' + t('trails with a bus at one end or both', 'percursos com autocarro num extremo ou em ambos');
+      $('#count').textContent = MA.n(list.length, 'trails with a bus at one end or both', 'percursos com autocarro num extremo ou em ambos');
       $('#list').innerHTML = list.map(function (l) {
         var rows = '';
         ((l.access || {}).ends || []).forEach(function (e) {
           if (!((e.lines && e.lines.length) || e.bus)) return;
           var s = [];
           var lines = (e.lines || []).map(function (x) { return x.timetable ? '<a href="' + esc(x.timetable) + '" target="_blank" rel="noopener">' + esc(x.line) + '</a>' : esc(x.line); });
-          if (lines.length) s.push(t('Lines', 'Linhas') + ' ' + lines.join(', '));
+          if (lines.length) s.push((lines.length === 1 ? t('Line', 'Linha') : t('Lines', 'Linhas')) + ' ' + lines.join(', '));
           if (e.bus) {
             s.push(t('Stop', 'Paragem') + ' ' + esc(e.bus.stop.replace(/\s*\([^)]*\)\s*$/, '')) + ', ' + e.bus.dist + ' m');
             var nb = window.nextBuses ? nextBuses(e.bus.departures, 3) : [];
