@@ -495,11 +495,14 @@
       // question, the same ranking the "where to go today" answer uses —
       // live weather on three trails — fills it. No model call: this is
       // the facts layer alone, and the first real question replaces it.
+      // A line at once, so the space under the chips is not blank while
+      // the three trails are being ranked (the weather for each is live).
+      out.innerHTML = '<p class="a-glance">' + t('glance') + '</p><p class="a-wait">' + t('thinking') + '</p>';
+      out.hidden = false;
       answer('today').then(function (html) {
         if (last) return;
         out.innerHTML = '<p class="a-glance">' + t('glance') + '</p>' + html;
-        out.hidden = false;
-      }).catch(function () {});
+      }).catch(function () { if (!last) out.hidden = true; });
     }
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
