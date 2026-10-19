@@ -103,13 +103,13 @@
   function home() {
     var today = MA.today(), data = {};
     Promise.all([
-      MA.get('/ativa/api/om/forecast?latitude=32.648,32.735,32.698&longitude=-16.908,-16.929,-16.774&elevation=50,1818,58&current=temperature_2m,weather_code,wind_speed_10m,wind_gusts_10m,wind_direction_10m'),
+      MA.get('/ativa/api/om/forecast?latitude=32.648,32.735,32.698,32.867&longitude=-16.908,-16.929,-16.774,-17.169&elevation=50,1818,58,20&current=temperature_2m,weather_code,wind_speed_10m,wind_gusts_10m,wind_direction_10m&daily=sunrise,sunset&forecast_days=1&timezone=Atlantic%2FMadeira'),
       MA.get('/ativa/api/om/marine?latitude=32.63&longitude=-16.92&current=wave_height,sea_surface_temperature&timezone=Atlantic%2FMadeira'),
       MA.get('/ativa/trails_status.json'), MA.get('/ativa/cruise_calls.json'),
       MA.get('https://api.ipma.pt/open-data/forecast/warnings/warnings_www.json'),
-      MA.get('/ativa/events.json'), MA.get('/ativa/levadas.json'),
+      MA.get('/ativa/events.json'), MA.get('/ativa/levadas.json'), MA.get('/ativa/island.json'),
     ]).then(function (r) {
-      data = { wx: r[0] || [], sea: r[1] && r[1].current, st: r[2], ships: r[3], warn: r[4] || [], ev: r[5], lev: r[6] };
+      data = { wx: r[0] || [], sea: r[1] && r[1].current, st: r[2], ships: r[3], warn: r[4] || [], ev: r[5], lev: r[6], isl: r[7] };
       rerender(paint);
       if (data.lev && window.rankToday) rankToday(data.lev.levadas).then(function (p) { data.picks = p; paintTrails(); paint(); }).catch(paintTrails);
       else paintTrails();
@@ -122,8 +122,100 @@
     }
     var CAMS = [['Pico do Arieiro', 'https://www.netmadeira.com/webcams-madeira/pico-do-arieiro', 'Arieiro'], ['Rabaçal', 'https://www.netmadeira.com/webcams-madeira/rabacal-madeira', 'Rabaçal'],
       ['Achada do Teixeira', 'https://www.netmadeira.com/webcams-madeira/achada-do-teixeira', 'Teixeira']];
+
+    // ---- the face: a photo by the hour, the island with the weather on it,
+    // and what today is good for. Same rules as the app.
+    function sky(code) { if (code == null) return ''; return code >= 61 ? t('rain', 'chuva') : code >= 51 ? t('showers', 'aguaceiros') : code >= 45 ? t('fog', 'nevoeiro') : code === 3 ? t('cloud', 'nublado') : code >= 1 ? t('clear', 'limpo') : t('sunny', 'sol'); }
+    function hm(iso) { return iso && iso.length >= 16 ? iso.slice(11, 16) : ''; }
+    function hours(iso) { return iso ? +iso.slice(11, 13) + (+iso.slice(14, 16)) / 60 : null; }
+    function dayPart() {
+      var d0 = data.wx[0] && data.wx[0].daily, sr = hours(d0 && d0.sunrise && d0.sunrise[0]) || 7.5, ss = hours(d0 && d0.sunset && d0.sunset[0]) || 18.5;
+      var now = new Date(new Intl.DateTimeFormat('sv-SE', { timeZone: 'Atlantic/Madeira', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date()).replace(' ', 'T') + ':00');
+      var h = now.getHours() + now.getMinutes() / 60;
+      if (h < sr - 0.5 || h >= ss + 1.2) return 'night';
+      if (h < 12) return 'morning';
+      if (h < ss - 1) return 'afternoon';
+      return 'evening';
+    }
+    function paintHero() {
+      var el = $('#hero'); if (!el) return;
+      var p = data.wx[1] && data.wx[1].current, code = p ? p.weather_code : 0, cloudy = code === 3 || (code >= 45 && code <= 48);
+      var part = dayPart();
+      var pool = part === 'morning' ? (cloudy ? ['cloud_ridge', 'morning_rays', 'cloud_sea'] : ['morning_umbrella', 'morning_rays', 'day_rocks'])
+        : part === 'afternoon' ? (cloudy ? ['cloud_sea', 'cloud_ridge', 'day_valley', 'day_terraces'] : ['day_terraces', 'day_tallship', 'day_plane', 'day_valley', 'day_rocks', 'cloud_sea'])
+        : part === 'evening' ? ['evening_banana', 'evening_redsun'] : ['night_sea', 'evening_redsun'];
+      var doy = Math.floor((new Date(today + 'T00:00:00Z') - new Date(today.slice(0, 4) + '-01-01T00:00:00Z')) / 864e5);
+      var greet = part === 'morning' ? t('Good morning', 'Bom dia') : part === 'afternoon' ? t('Good afternoon', 'Boa tarde') : part === 'evening' ? t('Good evening', 'Boa tarde') : t('Good night', 'Boa noite');
+      var c = data.wx[0] && data.wx[0].current, d0 = data.wx[0] && data.wx[0].daily, dd = MA.day(today);
+      var arr = (data.lev && data.lev.levadas) || [], open = arr.filter(function (x) { return x.status === 'open'; }).length;
+      var parts = [dd.w + ' ' + dd.d + ' ' + dd.m];
+      if (c) parts.push(Math.round(c.temperature_2m) + '° ' + t('in Funchal', 'no Funchal'));
+      if (part === 'morning' && d0) parts.push(t('sunrise', 'nascer do sol') + ' ' + hm(d0.sunrise[0]));
+      if (part === 'evening' && d0) parts.push(t('sunset', 'pôr do sol') + ' ' + hm(d0.sunset[0]));
+      if (open && part !== 'evening') parts.push(MA.n(open, 'levadas open', 'levadas abertas'));
+      el.innerHTML = '<img src="/ativa/hero/' + pool[doy % pool.length] + '.jpg" alt="Madeira" loading="eager"><div class="ov"><b>' + greet + '</b><small>' + esc(parts.join(' · ')) + '</small></div>';
+      el.hidden = false;
+    }
+    function scores() {
+      var c = data.wx[0] && data.wx[0].current, p = data.wx[1] && data.wx[1].current, a = data.wx[2] && data.wx[2].current, sea = data.sea;
+      var sc = p ? p.weather_code : 0, cc = c ? c.weather_code : 0, rain = sc >= 51 || cc >= 51, fog = sc >= 45 && sc <= 48, cloudRidge = sc === 3 || fog;
+      var gusts = a ? a.wind_gusts_10m || 0 : 0, cross = a && a.wind_gusts_10m != null ? a.wind_gusts_10m * Math.abs(Math.sin((a.wind_direction_10m - 50) * Math.PI / 180)) : null;
+      var severe = data.warn.some(function (x) { return (x.awarenessLevelID === 'orange' || x.awarenessLevelID === 'red') && new Date(x.endTime) > new Date(); });
+      var cl = function (v) { return Math.max(1, Math.min(5, v)); }, out = [];
+      var h = 5, hw = [];
+      if (rain) { h -= 3; hw.push(t('wet on the trails', 'molhado nas veredas')); } else hw.push(t('dry', 'seco'));
+      if (p && p.temperature_2m < 5) { h -= 1; hw.push(t('cold on the summit', 'frio no cume')); }
+      if (fog) { h -= 1; hw.push(t('ridge in cloud', 'cumeada nas nuvens')); }
+      if (gusts > 55) { h -= 1; hw.push(t('gusts', 'rajadas') + ' ' + Math.round(gusts)); }
+      if (severe) { h -= 2; hw.push(t('IPMA warning', 'aviso IPMA')); }
+      out.push(['🥾', t('Hiking', 'Caminhadas'), cl(h), hw.join(' · ')]);
+      var st = sea ? sea.sea_surface_temperature : 21, wv = sea ? sea.wave_height : 1, b = st >= 22 ? 4 : st >= 20 ? 3 : 2, bw = [t('sea', 'mar') + ' ' + st.toFixed(1) + '°'];
+      if (cc <= 1 && !rain) b += 1;
+      if (wv > 2.5) { b -= 2; bw.push(t('sea too rough', 'mar demasiado agitado')); } else { if (wv > 1.5) b -= 1; bw.push(t('waves', 'ondas') + ' ' + wv.toFixed(1) + ' m'); }
+      if (rain) { b -= 2; bw.push(t('rain', 'chuva')); }
+      if (c && c.wind_speed_10m > 30) { b -= 1; bw.push(t('strong wind', 'vento forte')); }
+      out.push(['🏖', t('Beach', 'Praia'), cl(b), bw.join(' · ')]);
+      var v = sc <= 1 ? 5 : sc === 2 ? 3 : 1, vw = [];
+      if (rain) { v = 1; vw.push(t('rain', 'chuva')); } else if (cloudRidge) { vw.push(t('ridge in cloud', 'cumeada nas nuvens'), t('try the coast', 'tente a costa')); } else if (sc === 2) vw.push(t('cloud', 'nublado')); else vw.push(t('ridge clear', 'cumeada limpa'));
+      out.push(['👁', t('Viewpoints', 'Miradouros'), cl(v), vw.join(' · ')]);
+      var fl = cross == null ? 4 : cross >= 28 ? 1 : cross >= 20 ? 3 : 5, fw = [];
+      if (gusts > 60) fl = 1;
+      if (cross == null) fw.push(t('calm', 'calmo')); else if (cross >= 28) fw.push(t('crosswind over the limit', 'vento cruzado acima do limite'), t('diversions likely', 'desvios prováveis')); else if (cross >= 20) fw.push(t('gusts', 'rajadas') + ' ' + Math.round(gusts), t('delays', 'atrasos')); else fw.push(t('calm for landings', 'calmo para aterrar'));
+      out.push(['✈', t('Flights', 'Voos'), cl(fl), fw.join(' · ')]);
+      return out;
+    }
+    function paintFace() {
+      var el = $('#face'), isl = data.isl, c = data.wx[0] && data.wx[0].current; if (!el || !isl || !c) return;
+      var p = data.wx[1] && data.wx[1].current, a = data.wx[2] && data.wx[2].current, nn = data.wx[3] && data.wx[3].current, sea = data.sea;
+      var P = isl.pts, W = isl.w, H = isl.h, padX = 120, padT = 64, padB = 96;
+      var cloudy = p && (p.weather_code === 3 || (p.weather_code >= 45 && p.weather_code <= 48) || p.weather_code >= 51);
+      var dark = document.documentElement.classList.contains('dark');
+      var land1 = dark ? '#2E7A5E' : '#9CCBB4', land2 = dark ? '#1E4A3B' : '#CFE6DB', seaC = dark ? '#6FA8D6' : '#2F6F9E', cloudC = dark ? '#5A6065' : '#B9BEC2', green = dark ? '#7FC79C' : '#0F6E56', terra = dark ? '#E0885F' : '#993C1D', ink = dark ? '#E7ECE6' : '#15201A';
+      var s = '<svg viewBox="' + (-padX) + ' ' + (-padT) + ' ' + (W + 2 * padX) + ' ' + (H + padT + padB) + '" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="' + t('The island now', 'A ilha agora') + '">';
+      s += '<defs><clipPath id="islc"><path d="' + isl.path + '"/></clipPath><linearGradient id="islg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="' + land1 + '"/><stop offset="1" stop-color="' + land2 + '"/></linearGradient></defs>';
+      s += '<path d="' + isl.path + '" fill="none" stroke="' + seaC + '" stroke-opacity=".22" stroke-width="40" stroke-linejoin="round"/>';
+      s += '<path d="' + isl.path + '" fill="url(#islg)" stroke="' + green + '" stroke-width="5" stroke-linejoin="round"/>';
+      if (cloudy) s += '<g clip-path="url(#islc)"><path d="M-100 -50 L1100 -50 L1100 150 Q 900 215 700 190 Q 500 165 300 230 Q 150 270 -100 240 Z" fill="' + cloudC + '" opacity=".55"/><path d="M-100 -50 L1100 -50 L1100 60 Q 800 120 500 90 Q 250 60 -100 120 Z" fill="' + cloudC + '" opacity=".5"/></g>';
+      s += '<path d="M' + P.arieiro[0] + ' ' + P.arieiro[1] + ' L' + P.picoruivo[0] + ' ' + P.picoruivo[1] + '" stroke="' + ink + '" stroke-opacity=".35" stroke-width="5" stroke-dasharray="10 12"/>';
+      var dot = function (q, col, r) { r = r || 24; return '<circle cx="' + q[0] + '" cy="' + q[1] + '" r="' + (r + 14) + '" fill="' + col + '" opacity=".18"/><circle cx="' + q[0] + '" cy="' + q[1] + '" r="' + r + '" fill="' + col + '" stroke="' + (dark ? '#171E19' : '#fff') + '" stroke-width="7"/>'; };
+      var lab = function (x, y, big, sub, anchor, col) { anchor = anchor || 'start'; return '<text x="' + x + '" y="' + y + '" class="big" text-anchor="' + anchor + '"' + (col ? ' style="fill:' + col + '"' : '') + '>' + esc(big) + '</text><text x="' + x + '" y="' + (y + 31) + '" class="sub" text-anchor="' + anchor + '">' + esc(sub) + '</text>'; };
+      var f = P.funchal, ap = P.airport, pm = P.portomoniz, ar = P.arieiro;
+      s += dot(f, green) + lab(f[0], f[1] + 74, Math.round(c.temperature_2m) + '°', 'Funchal · ' + Math.round(c.wind_speed_10m) + ' km/h', 'middle');
+      if (p) s += dot(ar, ink, 20) + lab(ar[0] + 36, ar[1] + 4, Math.round(p.temperature_2m) + '°', 'Pico do Arieiro · ' + sky(p.weather_code));
+      if (a && a.wind_gusts_10m != null) { var cross = a.wind_gusts_10m * Math.abs(Math.sin((a.wind_direction_10m - 50) * Math.PI / 180)); s += dot(ap, terra) + lab(ap[0] + 44, ap[1] + 18, '✈ ' + Math.round(a.wind_speed_10m) + ' / ' + Math.round(a.wind_gusts_10m), cross >= 28 ? t('diversions likely', 'desvios prováveis') : cross >= 20 ? t('gusty', 'rajadas') + ' · ' + t('delays', 'atrasos') : t('calm for landings', 'calmo para aterrar')); }
+      if (nn) s += dot(pm, seaC, 20) + lab(pm[0] + 36, pm[1] + 54, Math.round(nn.temperature_2m) + '°', 'Porto Moniz · ' + sky(nn.weather_code));
+      if (sea) s += lab(f[0] - 330, f[1] + 64, '🌊 ' + sea.sea_surface_temperature.toFixed(1) + '°', t('sea', 'mar') + ' · ' + t('waves', 'ondas') + ' ' + sea.wave_height.toFixed(1) + ' m', 'middle', seaC);
+      s += '</svg>';
+      var sc = scores(), colOf = function (n) { return n >= 4 ? green : n === 3 ? '#D9A441' : terra; };
+      s += '<div class="gd">' + sc.map(function (x) { return '<button type="button" title="' + esc(x[3]) + '"><span class="gl"><span>' + x[0] + '</span>' + esc(x[1]) + '</span><span class="dots">' + [0, 1, 2, 3, 4].map(function (i) { return '<i' + (i < x[2] ? ' style="background:' + colOf(x[2]) + '"' : '') + '></i>'; }).join('') + '</span><span class="why">' + esc(x[3]) + '</span></button>'; }).join('') + '</div>';
+      el.innerHTML = s; el.hidden = false;
+      el.querySelectorAll('.gd button').forEach(function (b) { b.onclick = function () { el.classList.toggle('why'); }; });
+    }
     function paint() {
+      paintHero(); paintFace();
+      var face = !!(data.isl && data.wx[0] && data.wx[0].current);
       var c = data.wx[0] && data.wx[0].current, p = data.wx[1] && data.wx[1].current, a = data.wx[2] && data.wx[2].current, h = '';
+      if (face) { c = null; p = null; a = null; data.sea = data.sea && null; }
       if (c) h += cell(MA.emo(c.weather_code), 'Funchal', '<div class="val"><span class="tp ' + tcls(c.temperature_2m) + '">' + Math.round(c.temperature_2m) + '°</span> <small>' + Math.round(c.wind_speed_10m) + ' km/h</small></div>');
       if (p) h += cell(MA.emo(p.weather_code), 'Pico do Arieiro', '<div class="val"><span class="tp ' + tcls(p.temperature_2m) + '">' + Math.round(p.temperature_2m) + '°</span> <small>1818 m</small></div>');
       if (data.sea) {
