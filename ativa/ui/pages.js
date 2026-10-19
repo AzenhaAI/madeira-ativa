@@ -215,11 +215,12 @@
       paintHero(); paintFace();
       var face = !!(data.isl && data.wx[0] && data.wx[0].current);
       var c = data.wx[0] && data.wx[0].current, p = data.wx[1] && data.wx[1].current, a = data.wx[2] && data.wx[2].current, h = '';
-      if (face) { c = null; p = null; a = null; data.sea = data.sea && null; }
+      var seaCell = data.sea;
+      if (face) { c = null; p = null; a = null; seaCell = null; }
       if (c) h += cell(MA.emo(c.weather_code), 'Funchal', '<div class="val"><span class="tp ' + tcls(c.temperature_2m) + '">' + Math.round(c.temperature_2m) + '°</span> <small>' + Math.round(c.wind_speed_10m) + ' km/h</small></div>');
       if (p) h += cell(MA.emo(p.weather_code), 'Pico do Arieiro', '<div class="val"><span class="tp ' + tcls(p.temperature_2m) + '">' + Math.round(p.temperature_2m) + '°</span> <small>1818 m</small></div>');
-      if (data.sea) {
-        var wv = data.sea.wave_height;
+      if (seaCell) {
+        var wv = seaCell.wave_height;
         h += cell('🌊', t('Sea', 'Mar'), '<div class="val"><span class="tp ' + tcls(data.sea.sea_surface_temperature) + '">' + data.sea.sea_surface_temperature.toFixed(1) + '°</span> <small class="' + (wv >= 2.5 ? 'k-bad' : wv >= 1.5 ? 'k-warn' : 'k-ok') + '">' + t('waves', 'ondas') + ' ' + wv.toFixed(1) + ' m</small></div>');
       }
       if (a && a.wind_gusts_10m != null) {
