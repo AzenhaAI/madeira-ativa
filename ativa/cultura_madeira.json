@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-10-18T09:40:10",
-  "count": 136,
+  "fetched": "2026-10-19T10:49:48",
+  "count": 137,
   "items": [
     {
       "id": "114",
@@ -1293,6 +1293,16 @@
       "time": "",
       "place": "Teatro Municipal Baltazar Dias",
       "category": "Theatre"
+    },
+    {
+      "id": "393",
+      "title": "Danças Históricas no Solar de São Cristóvão",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/dancas-historicas-no-solar-de-sao-cristovao",
+      "start": "2026-10-28",
+      "end": "2026-10-28",
+      "time": "16:00",
+      "place": "Solar de São Cristóvão",
+      "category": "Music"
     },
     {
       "id": "368",

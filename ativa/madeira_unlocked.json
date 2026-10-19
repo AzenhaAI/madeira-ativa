@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-10-18T09:39:57",
-  "count": 389,
+  "fetched": "2026-10-19T10:49:36",
+  "count": 391,
   "items": [
     {
       "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
@@ -4550,6 +4550,21 @@
       "source_category": "market"
     },
     {
+      "id": "do-caco-a-massa-traditional-stone-and-bread-workshop-2026-10-22",
+      "title": "Do Caco à Massa, Traditional Stone and Bread Workshop",
+      "url": "https://www.madeira-unlocked.com/en/events/do-caco-a-massa-traditional-stone-and-bread-workshop-2026-10-22",
+      "start": "2026-10-22T10:00:00+01:00",
+      "end": "2026-10-22T12:30:00+01:00",
+      "date": "2026-10-22",
+      "time": "10:00",
+      "venue": "Museu Etnográfico da Madeira",
+      "municipality": "Ribeira Brava",
+      "price": 0,
+      "organizer": "Museu Etnográfico da Madeira",
+      "category": "workshop",
+      "source_category": "handicraft-workshops"
+    },
+    {
       "id": "jazz-divas-2026-10-22",
       "title": "Jazz Divas!",
       "url": "https://www.madeira-unlocked.com/en/events/jazz-divas-2026-10-22",
@@ -4713,6 +4728,21 @@
       "organizer": "Screenings Funchal",
       "category": "cinema",
       "source_category": "movies-cinema"
+    },
+    {
+      "id": "conservatory-80th-anniversary-gala-2026-10-23",
+      "title": "Conservatory 80th Anniversary Gala",
+      "url": "https://www.madeira-unlocked.com/en/events/conservatory-80th-anniversary-gala-2026-10-23",
+      "start": "2026-10-23T21:00:00+01:00",
+      "end": "2026-10-23T22:30:00+01:00",
+      "date": "2026-10-23",
+      "time": "21:00",
+      "venue": "Centro de Congressos da Madeira",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "O Conservatório – Escola das Artes da Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "madeira-international-organ-festival-2026-10-23",

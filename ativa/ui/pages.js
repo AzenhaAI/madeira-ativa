@@ -45,13 +45,28 @@
   }
   function time(l) { var o = l.official || {}; return dur(o.duration); }
 
+  // The registration window a race publishes (lap2go): one short line, only
+  // while it matters — before it closes, or "full" while it is still open.
+  function regLine(e) {
+    var r = e.registration; if (!r || !r.closes) return '';
+    var today = MA.today(), c = MA.day(r.closes), o = r.opens ? MA.day(r.opens) : null;
+    var days = Math.round((new Date(r.closes + 'T00:00:00Z') - new Date(today + 'T00:00:00Z')) / 864e5);
+    var txt, cls = 'reg';
+    if (r.status === 'closed' || days < 0) { txt = t('Registration closed', 'Inscrições encerradas'); cls += ' off'; }
+    else if (r.status === 'soon' && o) txt = fmt(t('Registration opens {0} {1}', 'Inscrições abrem a {0} {1}'), o.d, o.m);
+    else if (r.status === 'full') { txt = t('Sold out', 'Esgotado'); cls += ' off'; }
+    else if (days <= 7) { txt = days === 0 ? t('Registration closes today', 'Inscrições terminam hoje') : fmt(t('Registration closes in {0} days', 'Inscrições terminam em {0} dias'), days); cls += ' hot'; }
+    else txt = fmt(t('Registration until {0} {1}', 'Inscrições até {0} {1}'), c.d, c.m);
+    return '<span class="' + cls + '">' + esc(txt) + '</span>';
+  }
+  function fmt(s) { var a = arguments; return s.replace(/\{(\d)\}/g, function (_, i) { return a[+i + 1]; }); }
   function eventRow(e) {
     var d = MA.day(e.date);
     var price = /^(free|grátis|gratuito|entrada livre)$/i.test(e.price || '') ? t('Free', 'Grátis') : e.price;
     var meta = [e.time, e.location, price].filter(Boolean).join(' · ');
     return '<a class="row" href="' + esc(e.url || '#') + '"' + (e.url ? ' target="_blank" rel="noopener"' : '') + '>' +
       '<div class="d"><b>' + d.d + '</b><span>' + d.m + '</span></div>' +
-      '<div class="t"><b>' + esc(e.name) + '</b><span>' + esc(d.w + (meta ? ' · ' + meta : '')) + '</span></div>' +
+      '<div class="t"><b>' + esc(e.name) + '</b><span>' + esc(d.w + (meta ? ' · ' + meta : '')) + '</span>' + regLine(e) + '</div>' +
       '<div class="k">' + esc(kindLabel(e)) + '</div></a>';
   }
   function trailRow(l, extra) {
@@ -453,7 +468,7 @@
         var d = MA.day(e.date), meta = [e.time, e.location, e.price].filter(Boolean).join(' · ');
         var c = CATS[e.category];
         return '<a class="row" href="' + esc(e.url || '#') + '"' + (e.url ? ' target="_blank" rel="noopener"' : '') + '><div class="d"><b>' + d.d + '</b><span>' + d.m + '</span></div>' +
-          '<div class="t"><b>' + esc(e.name) + '</b><span>' + esc(d.w + (meta ? ' · ' + meta : '')) + '</span></div><div class="k">' + esc(c ? t(c[0], c[1]) : '') + '</div></a>';
+          '<div class="t"><b>' + esc(e.name) + '</b><span>' + esc(d.w + (meta ? ' · ' + meta : '')) + '</span>' + regLine(e) + '</div><div class="k">' + esc(c ? t(c[0], c[1]) : '') + '</div></a>';
       }).join('') || '<p class="empty">' + t('Nothing in this category.', 'Nada nesta categoria.') + '</p>';
     }
   }

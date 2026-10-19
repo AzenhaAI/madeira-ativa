@@ -1,8 +1,8 @@
 {
   "note": "Cultural events harvested from t.me/festas_madeira. Accumulates: the channel only exposes recent posts.",
   "source": "https://t.me/s/festas_madeira",
-  "fetched": "2026-10-18T09:40:22",
-  "count": 292,
+  "fetched": "2026-10-19T10:50:01",
+  "count": 293,
   "categories": {
     "concerto": "Concert",
     "arraial": "Arraial",
@@ -4531,7 +4531,7 @@
         "concerto"
       ],
       "place": "Feirasegastronomia",
-      "poster": "https://cdn4.telesco.pe/file/K1xvLNeLRwhbjrQ8Qd7J5bkuPIGAit3e4QPq3Nx6TYSNW1pFdpneAvDm-L3uM7DBsickiezsdWdcg65fqfMxcPFJHCgn8VJ_g41vSkSojg2k4SIkmNIBMtFeJM_Uk3WmosERCQg4jSd809_j6oga782K1nHey53s-B9TxJFFXEiWfNWFeISisBEAF2PPH-CdsLSnxgT1KNDIxPxo-itfLe8N2uQ0nA5OkV7fdKHU9jtANdpqct8tMK-UM-eLhpdVZBfg1rwxqm-ayaFBmZ5aQNGQxo5Snwkfnyns_72ye-oyg6cmYpN5n1D40Ok66zmCx_gD-qhiyYoBHHK-TDVhig.jpg",
+      "poster": "https://cdn4.telesco.pe/file/EOaEkZIheO9QMmjRlWVD2DhIGTrrQkzm6_s9uiI647VoJvQYz928v1hYEMWGqxcdGBfsyM_uPxL_wWOfS3bSlcSQjncrRqE5oYkpWG7RYcy_qhaO9gmrb980EjKh8Xp-PcxpSFgWoK0QDr_73Elgljn4NxlVZsPqZ52Lb8ijC7pPahe9kpij6w449RjrzKC6CaEBI0O0aLf2DGGAGFvvDpl1wM3kfg4fOoDPEJBgQvVzJtsnXHwV3FWDOzTW2ThCtBLUYkSt7ouFDUDGRgslcr2qSuTJng1C9uJh2tXyw3OWUO-AaPIaLdAJQOafCkiaPAP186yfyydF7G7VLsoq-A.jpg",
       "published": "2026-10-13T09:04:09+00:00",
       "poster_text": "",
       "name": "",
@@ -4655,7 +4655,7 @@
         "família"
       ],
       "place": "Funchal",
-      "poster": "https://cdn4.telesco.pe/file/vuJnkEV2maibtzb5JKv3tfOs_Zd0lbGqKDc9Ba4IN5VXamkNgNiLPgaoC3WNU3Lx61V2_MYceoEswd-7jmPyxnhu0fjmm1xLjx_QdvDAWEIEICbxWHinAyDLX_u00OVfCHoFxhnrA9bSDWge4XTLZGZ7MS1HJa4Coh45WM6Y51AM68W3XnA5xYCjJT3s-voMzJ89SvIy5QzrNLmShBXNDul5Nn1SLzJnumvNpp3d1D-37UXAtufoni6TB7X0yJLfozuqBoBUshU5aYN8tlhC90XOOw68K6xHDvflmNVO9W2JDPBsYra72DMY0lfdDoxCUmiAKlrxSGQaLoNtQVzjzw.jpg",
+      "poster": "https://cdn4.telesco.pe/file/uVU7sKDZ3kmGHXEH1H7pvJ31wcWcR_p0aFqyA0WDgXHxrKhOyr4inTuSc_I3xNkS5vCXdMSEgkAIMpaV7T0Z1tgRQgqyze2wjNLRUGfDUAaZBxmES-pHrNLXghVqvy4U-KSI-8XHDGncPbRvN1CglZUCVoCjGf-5PghSkMi0BhlADBeljdscUqG-rcK2_beN-FELLTa-V3w_eFJoPO_4UyBib10tZz5hib-TpA6p70nbc3e_c9W0NHUvNvRa4YAG3wUxIdWSbcMfw-35gpRTyU1lwXDh0lRtjV52GVuEujt4IG_3jkUWsNSRxxhtj_l_ZyPeTMHAkRd0R0ptdvVLSg.jpg",
       "published": "2026-10-13T09:31:12+00:00",
       "poster_text": "",
       "name": "",
@@ -4735,6 +4735,32 @@
       "poster_text": "16 — 25 our oct 20% e\nfestivaldeorgao. madeira gov.pt\n\nestival\n\nINTBPRNACIONAL\ndeOrgao\nda MADEIRA\n\nMADEIRA INTERNATIONAL ORGAN FESTIVAL\n\n[Eiras\n\ngs",
       "name": "festivaldeorgao. madeira gov.pt estival INTBPRNACIONAL",
       "title": "Concert"
+    },
+    {
+      "post": "https://t.me/festas_madeira/2708",
+      "dates": [
+        "2026-10-16",
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "categories": [
+        "concerto",
+        "festival",
+        "espetáculo"
+      ],
+      "place": "Funchal",
+      "poster": "https://cdn4.telesco.pe/file/DtFp1Ey_O9ZT9hL4Rx-iWrEIdIm1tT4rFzAs0DiUDuZYERT1obNpTNswST1Ic3FuhKjo90AQg3rnSCLjnT2DED22fQJVid_eYIJMmS9v2f52qk8XNL3hKKg5cXCdJ61NtIdxHEJdMTPrPDV8UgiQuhMtBZxmkDJwWEOmnsUqVM7AXry-Cwd1pFpsmKfivVuTzImXRNI4eExx7MlDsr6UDTOPbWyJBiHWImJurp_Rgujl6qocdZi2Pdbm9TsfhA4GXFoaN02DGVOyqtcTa81XslcLOPEd3TiKK5qFdh-aAqVj5YoL5Rhd-ahcWS1_lrrtDA2eyVvHPdy35oISd13ULA.jpg",
+      "published": "2026-10-18T17:24:15+00:00",
+      "poster_text": "16 OUT, 21H30\n\nSOBRE OS OMBROS DE GIGANTES\n\nON THE SHOULDERS OF GIANTS\nHomenagens musicais Musical Homages\nAlexander Paine, drgão orgar\n\nlereja de São João Evangelista (Colégio), Funchal\n\n17 OUT, 21H30\n\nTRAVESSIAS CROSSINGS\n\nDa Europa barroca à América do Sul\n\nFrom Baroque Europe to South America\n\nElisa Freixo, órgão orpar\nIgreja de Nossa Senhora da Conceição, Machico\n\n18 OUT, 18h00\n\nO VENTO DO SUL THE SOUTH WIND\nAlexander Pane, órgão orgar\n\nlareja de Nossa Senhora da Luz, Porta do Sol\n\n19 our, 21H30\n\nENCONTROS ENCOUNTERS\nPortugal, Espanha e América do Sul\nPortugal, Spain and South America\n\nElisa Freixo, órgão organ\nleroja de São João Evangoista (Colégio), Funchal\n\n20 OUT, 21H30\nDA ILHA AO HORIZONTE\nFROM THE ISLAND TO THE HORIZON\n\nGregório Gomes, órgão crzan.\nAna dos Santos, mezzo-soprano\n\nIgreja de Santa Luzia, Funchal\n\n21 OUT, 21H30)\n\nSONS DE UM MUNDO NOVO\n\nSOUNDS FROM A NEW WORLD\n\nórgão organ\n\nlereja de São João Evangelista (Colégio), Funchal\n\ncecaenço\n\nE\n\nSecretaria Reino\nde Turis\nDip ep\n\n22 our, 21H30\nCORREA DE ARAUXO,\nFACULTAD ORGANICA (1626)\n\nJavier Antigas, érgão organ\nSimegn Galdut,sacabuxa seckbut\n\nIgreja do Convento de Santa Clara do Funchal\n\n23 our, 21H30\nO SOPRO E O TEMPO\nTHE WIND AND THE TIME\n\nAntônio Esteireiro, órgão orzan\nGonçalo Pescada, acordeão accordion\n\nIgreja de São Martinho, Funchal\n\n24 our, 21H30\n\nINSULANA\n\nPoema épico para soprano, órgão e cordas\nEpic poem for soprano, organ and strings\natyeja Gabrel, soprano\n\nLaura Silva Mendes, órgão organ\n\nOrquestra Clássica da Madeira\n\nFunchal, Sé\n\n25 our, 11H30\nMISSA DOMINICAL SUNDAY MASS\n\nPatiyeja Gabrl, soprano\nJoão Vaz, órgão de coro\nLaura Silva Mendes, órgã\n\nSé do Funchal\n\noir organ\n\n25 our, 18h00\nATRAVESSANDO O ATLÂNTICO\nCROSSING THE ATLANTIC\n\nMarco Brescia, érsão oven\nEnsemble Favola 'Argo\nIgreja do Convento de Santa Clara do Funchal\n\nFestivaldeorzao.madeira.gov. pt",
+      "name": "lereja de São João Evangelista (Colégio), Funchal",
+      "title": "Concert · Funchal"
     },
     {
       "post": "https://t.me/festas_madeira/2464",
@@ -4876,7 +4902,7 @@
         "festival"
       ],
       "place": "Santa Cruz",
-      "poster": "https://cdn4.telesco.pe/file/agoiLCUK3cHzN9DO9gym_NDkX3F3KVlycuGE2QrRU7CHVPnjJ2_NBxJ0XuVgM1OM3zt_-ufvEKo4vNxELVN_4fO3Hu4mT2QRBNukKAGpk890nzEEdH9qz0Shg7hpjURFtr-0K7otxbPcJvHqt5B6wuou9mG8cdLA5triTdyjcBWWtU1m0fsj6YvMGOpVI0b7G58tT5r9zGCCfVDx_GFFl7z0fggYbvbFYWi6IUYHXGRp9vT7RNcwECNAGuylJfDOJfnP8nLGUNXDdKDARMhHNeQjs-2M4z6ljG_5h9MQ2wFInVNb3oog_a0jPhwTYT1Qg0rVTX34Aicksa3QyGl4iA.jpg",
+      "poster": "https://cdn4.telesco.pe/file/kaPv3q0LT9IDGamnRbVQivZTHUMdgd-lGZ_d0JYkgInohc5FbanbyJWdyZRzOiQdF6rV9Qngp9pzSjuGO2rJipsrIOrhC80Sv4iR5AtBtUf45xrABgOhqL9v-Amefz1p_z8td4J1qTR5b8AU5-pcoAGdnnRx2RBVoDNcnG6TfptD_NfqLJkH_jYa_gQ4RHlmgxPAcr7Alyd4r6jCvn-scMicw5G7lyjCgPXI_EEz4csI96ETUsapbnGT-S-gNGCbchDxY4JVtU99GmycZnk2hnHbZHQ9sz4CuLdCsAwCwODSKBRstV3RZ6yfLDf4KkMy2HgvpJZP_Apxkyvy0iYyLg.jpg",
       "published": "2026-10-13T09:04:05+00:00",
       "poster_text": "",
       "name": "",
@@ -4896,7 +4922,7 @@
         "oficina"
       ],
       "place": "Funchal",
-      "poster": "https://cdn4.telesco.pe/file/H0gP020-vE7CQqnB5W-Oir4_-G_IoWMlG1xHoHU6t0LmRLFANHvAYw6QpRZVMR9_Z_vE4JNveD-MkEauvToi7wE8GbAGpcEezVHZGhA8owqSrNZnTv-Zaom_Y7IuQWQ09pyRDCTJOSb3CWj1gkP_FbwwvO9uHOQqsxPjBZ5JoZWQxX3uYY38ry-7GxxWznEKrMxS_pE69J6l7fihkzRZEZ8Z_iDQ6RhDhayHt4gruIcRg4zV6wUq8t8uCNHDth7oNiE_603bQTLIIS9wQ18xe2c0fWazqz06t6C5Z_queUkAJDkymNM4pKyHSiELgRi7SVMdGiXSsxyNDeEjpAXpnA.jpg",
+      "poster": "https://cdn4.telesco.pe/file/QACm4FGBLtw1IJzaunokAOK-7_8iNAC5ydS0b-hqMI85v_5LnctS78h4PMc32jFXTj7qcInWHURhOJYcayOjitBxtjqozZBZ7cSN4saF6pouh50zqafsuBSfkEcIihsFcfUrBvlsw0-2zheLoFuyi7mZGZnQAaGV9P74_HoaBSp2NvCfuYc6VwyEYuUjqI8fXWw7arWzw6u1ZyCEGTQm7hEyHVAlb3KwVIhYNPJVZbjKgVaE2ZgDg4nQlHECQkohBCBe0b1xvHOekzCUTUzYT48qTGicM4_Df3Sfk2s-kWqnvFii21KcRaaXszpR4y6up0xrIiHwdHpTyruKrfTgpw.jpg",
       "published": "2026-10-13T09:31:06+00:00",
       "poster_text": "",
       "name": "",
