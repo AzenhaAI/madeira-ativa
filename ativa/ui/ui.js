@@ -4,7 +4,11 @@
 // keeps them in step afterwards.
 (function () {
   var html = document.documentElement;
-  var LANGS = ['en', 'pt', 'de'];
+  // Russian is the fourth, reached from the menu only: the header keeps
+  // EN / PT / DE, and any of those brings you back.
+  var LANGS = ['en', 'pt', 'de', 'ru'];
+  var NEXT_LANG = { en: 'pt', pt: 'de', de: 'ru', ru: 'en' };
+  var LANG_NAME = { en: 'English', pt: 'Português', de: 'Deutsch', ru: 'Русский' };
 
   function store(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
 
@@ -14,14 +18,14 @@
     lang: function () { return LANGS.indexOf(html.lang) > 0 ? html.lang : 'en'; },
     // German comes from window.MA_DE (de.js, built from scripts/data/strings_de.json),
     // keyed by the English; a string not translated yet stays English.
-    t: function (en, pt) { var l = MA.lang(); return l === 'pt' ? (pt == null ? en : pt) : l === 'de' ? ((window.MA_DE || {})[en] || en) : en; },
+    t: function (en, pt) { var l = MA.lang(); return l === 'pt' ? (pt == null ? en : pt) : l === 'de' ? ((window.MA_DE || {})[en] || en) : l === 'ru' ? ((window.MA_RU || {})[en] || en) : en; },
     onLang: function (fn) { listeners.push(fn); },
     setLang: function (l) {
       if (LANGS.indexOf(l) < 0) l = 'en';
       html.lang = l; store('lang', l);
       document.querySelectorAll('.seg [data-set]').forEach(function (b) { b.classList.toggle('on', b.dataset.set === l); });
       listeners.forEach(function (fn) { try { fn(l); } catch (e) { console.error(e); } });
-      retitle();
+      retitle(); paintLangNext();
     },
     esc: function (s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); },
     get: function (u) { return fetch(u).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }); },
@@ -30,8 +34,8 @@
     day: function (iso) {
       var d = new Date(iso + 'T00:00:00Z');
       var l = MA.lang();
-      var W = l === 'pt' ? ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb'] : l === 'de' ? ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'] : ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-      var M = l === 'pt' ? ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'] : l === 'de' ? ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'] : ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      var W = l === 'pt' ? ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb'] : l === 'de' ? ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'] : l === 'ru' ? ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'] : ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+      var M = l === 'pt' ? ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'] : l === 'de' ? ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'] : l === 'ru' ? ['янв', 'фев', 'мар', 'апр', 'мая', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'] : ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
       return { d: d.getUTCDate(), w: W[d.getUTCDay()], m: M[d.getUTCMonth()] };
     },
     emo: function (c) { return c >= 95 ? '⛈' : c >= 80 ? '🌧' : c >= 61 ? '🌧' : c >= 51 ? '🌦' : c >= 45 ? '🌫' : c === 3 ? '☁️' : c >= 1 ? '🌤' : '☀️'; },
@@ -65,6 +69,10 @@
   }
 
   // ---- menu
+  // The language row in the menu names the next language in the cycle.
+  function paintLangNext() {
+    document.querySelectorAll('[data-lang-next]').forEach(function (b) { b.textContent = '🌐 ' + LANG_NAME[NEXT_LANG[MA.lang()]]; });
+  }
   function openMenu(open) {
     var d = document.getElementById('drawer'), s = document.getElementById('scrim');
     if (!d) return;
@@ -73,9 +81,10 @@
   }
 
   document.addEventListener('click', function (e) {
-    var t = e.target.closest('[data-set],[data-theme-btn],[data-menu],[data-close],#scrim');
+    var t = e.target.closest('[data-set],[data-lang-next],[data-theme-btn],[data-menu],[data-close],#scrim');
     if (!t) return;
     if (t.dataset.set) { MA.setLang(t.dataset.set); }
+    else if (t.hasAttribute('data-lang-next')) { MA.setLang(NEXT_LANG[MA.lang()]); openMenu(false); }
     else if (t.hasAttribute('data-theme-btn')) { toggleTheme(); }
     else if (t.hasAttribute('data-menu')) { openMenu(true); }
     else { openMenu(false); }
@@ -86,6 +95,7 @@
     document.querySelectorAll('.seg [data-set]').forEach(function (b) { b.classList.toggle('on', b.dataset.set === MA.lang()); });
     paintTheme();
     retitle();
+    paintLangNext();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', ready); else ready();
 })();

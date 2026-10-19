@@ -286,3 +286,10 @@ html.dark .promo{background:#B8743A;color:#1E0E04}html.dark .promo-txt small{col
 .bn-leg{display:block}.bn-leg .bl{display:inline-block;width:auto}
 .bn-change{margin:4px 0;color:var(--mute,#6b7280);font-size:var(--fs-xs)}
 .bn-svc{color:#8a5a00}
+
+/* Russian: its own twin where there is one, else the English (never PT/DE) */
+html:not([lang="ru"]) [data-l="ru"],html:not([lang="ru"]) [data-lang="ru"]{display:none!important}
+html[lang="ru"] [data-l="pt"],html[lang="ru"] [data-l="de"],html[lang="ru"] [data-lang="pt"],html[lang="ru"] [data-lang="de"]{display:none!important}
+html[lang="ru"] [data-l="en"]:has(+ [data-l="pt"] + [data-l="ru"]),html[lang="ru"] [data-l="en"]:has(+ [data-l="pt"] + [data-l="de"] + [data-l="ru"]),
+html[lang="ru"] [data-lang="en"]:has(+ [data-lang="pt"] + [data-lang="ru"]),html[lang="ru"] [data-lang="en"]:has(+ [data-lang="pt"] + [data-lang="de"] + [data-lang="ru"]){display:none!important}
+.lang-next{display:block;width:100%;text-align:left;margin-top:14px;padding:12px 4px;border:0;border-top:1px solid var(--line);background:none;color:var(--ink);font:600 15px/1.3 Inter,system-ui,sans-serif;cursor:pointer}
