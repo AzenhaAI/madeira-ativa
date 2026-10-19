@@ -596,6 +596,7 @@
   // be tapped again.
   function showRoute(legs) {
     if (hl) map.removeLayer(hl);
+    map.closePopup();  // a stop's popup from the last route would sit on the new one
     var parts = [], pts = [], fitPts = [];
     legs.forEach(function (r) {
       var l = NET.lines[r.line], A = NET.stops[r.from], B = NET.stops[r.to], a = [A[2], A[3]], b = [B[2], B[3]];
