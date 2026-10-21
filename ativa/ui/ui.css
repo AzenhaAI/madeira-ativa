@@ -253,6 +253,7 @@ html.dark .t3{background:#3D3417;color:#F4DB8A}html.dark .t4{background:#45291A;
 .bn-sug:hover{border-color:#2e9e5b}
 .bn-badge{background:rgba(15,110,86,.92);color:#fff;font:600 13px/1.2 Inter,system-ui,sans-serif;padding:8px 12px;border-radius:999px;box-shadow:0 2px 8px rgba(0,0,0,.25);cursor:pointer;margin:0 0 10px 10px}
 .bn-far{color:#993C1D;font-size:var(--fs-xs)}
+.bn-via{font-size:var(--fs-xs);line-height:1.5;background:var(--sunk);border-radius:10px;padding:8px 10px;margin-top:6px}.bn-via b{font-weight:600}.bn-via .bn-soft{color:var(--soft);margin-top:2px}
 .bn-approx{font-size:var(--fs-xs);color:var(--soft);border:1px solid var(--line);border-radius:999px;padding:1px 7px;vertical-align:middle}
 @media (max-width:600px){.busmap{height:56vh;min-height:320px}.bn-pop{min-width:0}.leaflet-popup-content{margin:10px 14px;max-height:40vh;overflow:auto}}
 .bn-leg{display:flex;flex-direction:column;gap:2px}
@@ -307,7 +308,7 @@ html[lang="ru"] [data-lang="en"]:has(+ [data-lang="pt"] + [data-lang="ru"]),html
 .gd{display:flex;border-top:1px solid var(--line);margin-top:6px;padding:8px 0 4px}
 .gd>button{flex:1;min-width:0;background:none;border:0;padding:0 2px;font:inherit;color:var(--ink);cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:3px;overflow:hidden}
 .gd .gl{font-size:var(--fs-xs);font-weight:600;display:flex;align-items:center;gap:3px;max-width:100%;white-space:nowrap}.gd .gl span{font-size:15px}
-@media (max-width:359px){.gd .gl{font-size:10px}.gd .gl span{font-size:13px}}
+@media (max-width:420px){.gd .gl{font-size:10px;gap:2px}.gd .gl span{font-size:13px}}
 .gd .dots{display:flex;gap:3px}.gd .dots i{width:6px;height:6px;border-radius:50%;background:var(--line);display:block}
 .gd .why{font-size:10px;color:var(--soft);text-align:center;line-height:1.2;max-width:100%;display:none}
 .face.why .gd .why{display:block}

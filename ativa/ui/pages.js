@@ -130,8 +130,10 @@
     function hours(iso) { return iso ? +iso.slice(11, 13) + (+iso.slice(14, 16)) / 60 : null; }
     function dayPart() {
       var d0 = data.wx[0] && data.wx[0].daily, sr = hours(d0 && d0.sunrise && d0.sunrise[0]) || 7.5, ss = hours(d0 && d0.sunset && d0.sunset[0]) || 18.5;
-      var now = new Date(new Intl.DateTimeFormat('sv-SE', { timeZone: 'Atlantic/Madeira', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date()).replace(' ', 'T') + ':00');
-      var h = now.getHours() + now.getMinutes() / 60;
+      // Madeira's clock as numbers; the earlier "02:22" string made an
+      // Invalid Date and every hour read as evening.
+      var hp = new Intl.DateTimeFormat('en-GB', { timeZone: 'Atlantic/Madeira', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date()).split(':');
+      var h = (+hp[0] % 24) + (+hp[1]) / 60;
       if (h < sr - 0.5 || h >= ss + 1.2) return 'night';
       if (h < 12) return 'morning';
       if (h < ss - 1) return 'afternoon';
@@ -187,7 +189,7 @@
     function paintFace() {
       var el = $('#face'), isl = data.isl, c = data.wx[0] && data.wx[0].current; if (!el || !isl || !c) return;
       var p = data.wx[1] && data.wx[1].current, a = data.wx[2] && data.wx[2].current, nn = data.wx[3] && data.wx[3].current, sea = data.sea;
-      var P = isl.pts, W = isl.w, H = isl.h, padX = 120, padT = 64, padB = 96;
+      var P = isl.pts, W = isl.w, H = isl.h, padX = 170, padT = 64, padB = 96;
       var cloudy = p && (p.weather_code === 3 || (p.weather_code >= 45 && p.weather_code <= 48) || p.weather_code >= 51);
       var dark = document.documentElement.classList.contains('dark');
       var land1 = dark ? '#2E7A5E' : '#9CCBB4', land2 = dark ? '#1E4A3B' : '#CFE6DB', seaC = dark ? '#6FA8D6' : '#2F6F9E', cloudC = dark ? '#5A6065' : '#B9BEC2', green = dark ? '#7FC79C' : '#0F6E56', terra = dark ? '#E0885F' : '#993C1D', ink = dark ? '#E7ECE6' : '#15201A';
@@ -198,18 +200,35 @@
       if (cloudy) s += '<g clip-path="url(#islc)"><path d="M-100 -50 L1100 -50 L1100 150 Q 900 215 700 190 Q 500 165 300 230 Q 150 270 -100 240 Z" fill="' + cloudC + '" opacity=".55"/><path d="M-100 -50 L1100 -50 L1100 60 Q 800 120 500 90 Q 250 60 -100 120 Z" fill="' + cloudC + '" opacity=".5"/></g>';
       s += '<path d="M' + P.arieiro[0] + ' ' + P.arieiro[1] + ' L' + P.picoruivo[0] + ' ' + P.picoruivo[1] + '" stroke="' + ink + '" stroke-opacity=".35" stroke-width="5" stroke-dasharray="10 12"/>';
       var dot = function (q, col, r) { r = r || 24; return '<circle cx="' + q[0] + '" cy="' + q[1] + '" r="' + (r + 14) + '" fill="' + col + '" opacity=".18"/><circle cx="' + q[0] + '" cy="' + q[1] + '" r="' + r + '" fill="' + col + '" stroke="' + (dark ? '#171E19' : '#fff') + '" stroke-width="7"/>'; };
-      var lab = function (x, y, big, sub, anchor, col) { anchor = anchor || 'start'; return '<text x="' + x + '" y="' + y + '" class="big" text-anchor="' + anchor + '"' + (col ? ' style="fill:' + col + '"' : '') + '>' + esc(big) + '</text><text x="' + x + '" y="' + (y + 31) + '" class="sub" text-anchor="' + anchor + '">' + esc(sub) + '</text>'; };
+      var lab = function (x, y, big, sub, anchor, col, act) { anchor = anchor || 'start'; var da = act ? ' data-act="' + act + '" style="cursor:pointer' + (col ? ';fill:' + col : '') + '"' : (col ? ' style="fill:' + col + '"' : ''); return '<text x="' + x + '" y="' + y + '" class="big" text-anchor="' + anchor + '"' + da + '>' + esc(big) + '</text><text x="' + x + '" y="' + (y + 31) + '" class="sub" text-anchor="' + anchor + '"' + (act ? ' data-act="' + act + '" style="cursor:pointer"' : '') + '>' + esc(sub) + '</text>'; };
       var f = P.funchal, ap = P.airport, pm = P.portomoniz, ar = P.arieiro;
-      s += dot(f, green) + lab(f[0], f[1] + 74, Math.round(c.temperature_2m) + '°', 'Funchal · ' + Math.round(c.wind_speed_10m) + ' km/h', 'middle');
-      if (p) s += dot(ar, ink, 20) + lab(ar[0] + 36, ar[1] + 4, Math.round(p.temperature_2m) + '°', 'Pico do Arieiro · ' + sky(p.weather_code));
-      if (a && a.wind_gusts_10m != null) { var cross = a.wind_gusts_10m * Math.abs(Math.sin((a.wind_direction_10m - 50) * Math.PI / 180)); s += dot(ap, terra) + lab(ap[0] + 44, ap[1] + 18, '✈ ' + Math.round(a.wind_speed_10m) + ' / ' + Math.round(a.wind_gusts_10m), cross >= 28 ? t('diversions likely', 'desvios prováveis') : cross >= 20 ? t('gusty', 'rajadas') + ' · ' + t('delays', 'atrasos') : t('calm for landings', 'calmo para aterrar')); }
+      s += dot(f, green) + lab(f[0], f[1] + 74, Math.round(c.temperature_2m) + '°', 'Funchal · ' + Math.round(c.wind_speed_10m) + ' km/h', 'middle', null, 'day');
+      if (p) s += dot(ar, ink, 20) + lab(ar[0] + 36, ar[1] + 4, Math.round(p.temperature_2m) + '°', 'Pico do Arieiro · ' + sky(p.weather_code), null, null, 'arieiro');
+      if (a && a.wind_gusts_10m != null) { var cross = a.wind_gusts_10m * Math.abs(Math.sin((a.wind_direction_10m - 50) * Math.PI / 180)); s += dot(ap, terra) + lab(ap[0] + 44, ap[1] + 18, '✈ ' + Math.round(a.wind_speed_10m) + ' / ' + Math.round(a.wind_gusts_10m), cross >= 28 ? t('diversions likely', 'desvios prováveis') : cross >= 20 ? t('gusty', 'rajadas') + ' · ' + t('delays', 'atrasos') : t('calm for landings', 'calmo para aterrar'), null, null, 'air'); }
       if (nn) s += dot(pm, seaC, 20) + lab(pm[0] + 36, pm[1] + 54, Math.round(nn.temperature_2m) + '°', 'Porto Moniz · ' + sky(nn.weather_code));
-      if (sea) s += lab(f[0] - 330, f[1] + 64, '🌊 ' + sea.sea_surface_temperature.toFixed(1) + '°', t('sea', 'mar') + ' · ' + t('waves', 'ondas') + ' ' + sea.wave_height.toFixed(1) + ' m', 'middle', seaC);
+      if (sea) s += lab(f[0] - 330, f[1] + 64, '🌊 ' + sea.sea_surface_temperature.toFixed(1) + '°', t('sea', 'mar') + ' · ' + t('waves', 'ondas') + ' ' + sea.wave_height.toFixed(1) + ' m', 'middle', seaC, 'day');
+      // Tap targets over the points (a finger is bigger than a dot).
+      var hit = function (q, act) { return '<circle cx="' + q[0] + '" cy="' + q[1] + '" r="95" fill="transparent" data-act="' + act + '" style="cursor:pointer"/>'; };
+      s += hit(f, 'day') + hit(ap, 'air') + hit(ar, 'arieiro') + hit([f[0] - 330, f[1] + 40], 'day');
       s += '</svg>';
       var sc = scores(), colOf = function (n) { return n >= 4 ? green : n === 3 ? '#D9A441' : terra; };
       s += '<div class="gd">' + sc.map(function (x) { return '<button type="button" title="' + esc(x[3]) + '"><span class="gl"><span>' + x[0] + '</span>' + esc(x[1]) + '</span><span class="dots">' + [0, 1, 2, 3, 4].map(function (i) { return '<i' + (i < x[2] ? ' style="background:' + colOf(x[2]) + '"' : '') + '></i>'; }).join('') + '</span><span class="why">' + esc(x[3]) + '</span></button>'; }).join('') + '</div>';
       el.innerHTML = s; el.hidden = false;
       el.querySelectorAll('.gd button').forEach(function (b) { b.onclick = function () { el.classList.toggle('why'); }; });
+      // The island answers taps like the app's: Funchal and the sea open the
+      // reasons for the day, the airport the flight board, Pico do Arieiro
+      // its webcam; anywhere else on the drawing opens the map.
+      var svgEl = el.querySelector('svg');
+      if (svgEl) {
+        svgEl.style.cursor = 'pointer';
+        svgEl.addEventListener('click', function (e) {
+          var act = e.target && e.target.getAttribute && e.target.getAttribute('data-act');
+          if (act === 'day') { el.classList.add('why'); var g = el.querySelector('.gd'); if (g) g.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); }
+          else if (act === 'air') window.open('https://www.flightradar24.com/airport/fnc', '_blank', 'noopener');
+          else if (act === 'arieiro') window.open('https://www.netmadeira.com/webcams-madeira/pico-do-arieiro', '_blank', 'noopener');
+          else location.href = '/ativa/maps/' + location.search;
+        });
+      }
     }
     function paint() {
       paintHero(); paintFace();

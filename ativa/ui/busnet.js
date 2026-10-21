@@ -24,6 +24,39 @@
   }
   // Sentences with the name inside stay whole for translation (de.js looks up
   // the English template, not the pieces around a name).
+  // Which departures pass a footnoted town ("g – via Gaula"), as the
+  // timetable prints them: today's list first, the other day types after.
+  // Without that data the old warning stays.
+  function viaNote(r) {
+    var vt = r.pat && r.pat.vt, names = r.part;
+    if (!vt) return '<div class="bn-op bn-far">' + fmt(t('Only some buses go via {0} — check the timetable.', 'Só alguns autocarros passam por {0} — veja o horário.'), esc(names.join(', '))) + '</div>';
+    var wd = new Intl.DateTimeFormat('en-GB', { timeZone: 'Atlantic/Madeira', weekday: 'short' }).format(new Date());
+    var today = wd === 'Sat' ? 'sa' : wd === 'Sun' ? 'su' : 'wd';
+    var label = { wd: t('weekdays', 'dias úteis'), sa: t('Saturday', 'sábado'), su: t('Sunday', 'domingo') };
+    // Towns the same buses pass (Caniço and Gaula ride together) share one
+    // block: "Via Caniço and Gaula".
+    var groups = [], seen = {};
+    names.forEach(function (n) {
+      var v = vt[n]; if (!v) return;
+      var key = JSON.stringify(v[today] || null);
+      if (seen[key] != null) { groups[seen[key]].push(n); return; }
+      seen[key] = groups.length; groups.push([n]);
+    });
+    return groups.map(function (g) {
+      var n = g.length > 1 ? g.slice(0, -1).join(', ') + ' ' + t('and', 'e') + ' ' + g[g.length - 1] : g[0];
+      var v = vt[g[0]]; if (!v) return '';
+      // Today's day type only: the weekday lists are complete, the weekend
+      // ones in the notes often are not, so other days go to the timetable.
+      var rows = v[today] && v[today].length ? '<div><b>' + esc(label[today]) + ':</b> ' + v[today].map(esc).join(' · ') + '</div>' : '';
+      // Weekend lists in the notes are not always complete, so a missing day
+      // sends to the timetable rather than claiming there is no bus.
+      if (!(v[today] && v[today].length))
+        return '<div class="bn-op bn-far">' + fmt(t('Only on some days via {0} — check the timetable.', 'Só em alguns dias por {0} — veja o horário.'), esc(n)) + '</div>';
+      var none = '';
+      return '<div class="bn-op bn-via">' + fmt(t('Via {0}, departures from {1}:', 'Por {0}, partidas de {1}:'), '<b>' + esc(n) + '</b>', esc(r.pat.vo || '')) + none + rows +
+        '<div class="bn-soft">' + fmt(t('The other buses of this line do not stop in {0}.', 'Os outros autocarros desta linha não param em {0}.'), esc(n)) + '</div></div>';
+    }).join('');
+  }
   function fmt(s) { var a = arguments; return s.replace(/\{(\d)\}/g, function (_, i) { return a[+i + 1]; }); }
   function hhmm(m) { m = m % 1440; return ('0' + Math.floor(m / 60)).slice(-2) + ':' + ('0' + m % 60).slice(-2); }
   // SIGA renumbered every line in 2026 (23 -> 701, 139 -> 340…). The buses and
@@ -57,7 +90,7 @@
   function plural(n, one, many) { return n + ' ' + (n === 1 ? one : many); }
   // OSM joins alternative names with ";" ("Rua do Matadouro;03 - Campo da Barca").
   function stopName(i) { return NET.stops[i][1].split(';')[0].trim(); }
-  function km(m) { var v = (m / 1000).toFixed(1); return (MA.lang && MA.lang() !== 'en' ? v.replace('.', ',') : v) + ' km'; }
+  function km(m) { var v = (m / 1000).toFixed(1); return (MA.lang && MA.lang() !== 'en' ? v.replace('.', ',') : v) + (MA.lang && MA.lang() === 'ru' ? ' км' : ' km'); }
   function norm(s) { return String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, ' ').trim(); }
   // How a name sounds, so "Canico", "Caniso" and "Caniço" meet, and "Machiko"
   // finds Machico: ç/z/ss -> s, c and qu -> k (s before e/i), Portuguese ch -> x,
@@ -396,7 +429,11 @@
         if (i in out || !s[4].length) return;
         named0.forEach(function (k) {
           var d = dist([NET.stops[k][2], NET.stops[k][3]], [s[2], s[3]]);
-          if ((d < 400 || (s[5] === 'siga' && d < 700)) && (!(i in out) || d < out[i])) out[i] = d;
+          // Interurban stops get a longer walk: from the Teleférico the
+          // buses east leave from the SAM terminal 1.2 km along the seafront,
+          // and a 15-minute walk to a direct bus beats two buses with a change.
+          var inter = s[4].some(function (li) { return NET.lines[li] && NET.lines[li].src !== 'gtfs'; });
+          if ((d < 400 || (s[5] === 'siga' && d < 700) || (inter && d < 1300)) && (!(i in out) || d < out[i])) out[i] = d;
         });
       });
     }
@@ -557,14 +594,48 @@
       var l = NET.lines[r.line];
       return (l.src === 'gtfs' && r.n > 30) || svcCost(l, r.pat) >= 60 || (l.freq && l.freq < 2);
     });
-    box.innerHTML = head + res.map(function (r, n) {
+    // Every line through a footnoted town, merged: the next few departures
+    // that actually stop there, whatever the line.
+    var summary = '';
+    (function () {
+      var wd = new Intl.DateTimeFormat('en-GB', { timeZone: 'Atlantic/Madeira', weekday: 'short' }).format(new Date());
+      var day = wd === 'Sat' ? 'sa' : wd === 'Sun' ? 'su' : 'wd';
+      var hm = new Intl.DateTimeFormat('en-GB', { timeZone: 'Atlantic/Madeira', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date());
+      var town = null, all = [];
+      res.forEach(function (r) {
+        if (!r.part || !r.part.length || !r.pat || !r.pat.vt) return;
+        var n = r.part[0], v = r.pat.vt[n];
+        if (!v || !v[day]) return;
+        town = town || n;
+        if (n !== town) return;
+        var l = NET.lines[r.line];
+        var no = [r.pat.num, l.new, l.ref].filter(function (x) { return x && /^\d/.test(String(x)); })[0] || l.ref;
+        v[day].forEach(function (tm) { all.push([tm, no]); });
+      });
+      if (!town || all.length < 2) return;
+      // Only where the merged list is the whole truth: on weekdays (the
+      // weekend lists in the notes are partial), when every card boards at its
+      // line's first stop (otherwise the times are not at the boarding stop),
+      // and when no card serves the town on every trip (the Aerobus to the
+      // airport would be missing from a list of footnoted buses).
+      if (day !== 'wd') return;
+      if (res.some(function (r) { return !r.part || !r.part.length; })) return;
+      if (res.some(function (r) { return r.pat && r.pat.vt && r.pat.stops && r.from !== r.pat.stops[0]; })) return;
+      all.sort(function (a, b) { return a[0] < b[0] ? -1 : 1; });
+      var next = all.filter(function (x) { return x[0] >= hm; }).slice(0, 6);
+      summary = '<div class="card bn-via"><b>' + fmt(t('Next buses via {0}', 'Próximos autocarros por {0}'), esc(town)) + '</b> · ' +
+        fmt(t('Buses today: {0}', 'Autocarros hoje: {0}'), all.length) + '<div>' +
+        (next.length ? next.map(function (x) { return '<b>' + esc(x[0]) + '</b> ' + esc(String(x[1])); }).join(' · ') : (wd === 'Fri' ? t('No more today.', 'Hoje já não há.') : t('No more today — first tomorrow:', 'Hoje já não há — o primeiro amanhã:') + ' ' + esc(all[0][0]))) +
+        '</div><div class="bn-soft">' + t('Departure times from the first stop of each line, as SIGA prints them.', 'Horas de partida da primeira paragem de cada linha, como a SIGA as publica.') + '</div></div>';
+    })();
+    box.innerHTML = head + summary + res.map(function (r, n) {
       var l = NET.lines[r.line];
       var num = r.pat && r.pat.num, alt = r.pat && r.pat.alt, sv = svcNote(l, r.pat);
       return '<div class="card bn-r"><div>' + chip(r.line, num) + ' <b>' + esc(r.head || l.name) + '</b>' + (l.approx ? ' <span class="bn-approx">' + t('approx. route', 'percurso aprox.') + '</span>' : '') + '</div>' +
         (sv ? '<div class="bn-op bn-svc">⚠️ ' + esc(sv) + '</div>' : '') +
         (l.title ? '<div class="bn-op bn-title">' + esc(l.title) + (l.op ? ' · ' + esc(l.op) : '') + (alt && alt.length ? ' · ' + t('also numbered', 'também') + ' ' + esc(alt.join(', ')) : '') + '</div>' : '') +
         '<div class="bn-op">' + t('Board at', 'Embarque em') + ' <b>' + esc(NET.stops[r.from][1]) + '</b>' + far(SA[r.from], fa, la) + ' → <b>' + esc(NET.stops[r.to][1]) + '</b>' + far(SB[r.to], fb, lb) + (l.src === 'gtfs' ? ' · ' + plural(r.n, t('stop', 'paragem'), t('stops', 'paragens')) : '') + '</div>' +
-        (r.part && r.part.length ? '<div class="bn-op bn-far">' + fmt(t('Only some buses go via {0} — check the timetable.', 'Só alguns autocarros passam por {0} — veja o horário.'), esc(r.part.join(', '))) + '</div>' : '') +
+        (r.part && r.part.length ? viaNote(r) : '') +
         (lb < 2500 && l.src !== 'gtfs' ? otherStops(r, SB) : '') +
         '<div id="bnR' + n + '"></div>' +
         (l.src !== 'gtfs' ? '<div class="bn-op">' + t('Times: ', 'Horas: ') + (l.url ? '<a href="' + esc(l.url) + '" target="_blank" rel="noopener">' + t('timetable', 'horário') + ' (SIGA) ↗</a>' : t('on the operator’s timetable', 'no horário do operador')) + '</div>' : '') +
