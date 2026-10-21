@@ -1,8 +1,8 @@
 {
   "note": "Cultural events harvested from t.me/festas_madeira. Accumulates: the channel only exposes recent posts.",
   "source": "https://t.me/s/festas_madeira",
-  "fetched": "2026-10-20T10:07:57",
-  "count": 299,
+  "fetched": "2026-10-21T10:14:16",
+  "count": 302,
   "categories": {
     "concerto": "Concert",
     "arraial": "Arraial",
@@ -4867,7 +4867,7 @@
         "concerto"
       ],
       "place": "Funchal",
-      "poster": "https://cdn4.telesco.pe/file/sPhm9T9bU2vtqlpz7df28agz5_BEzCvqUJecSYA4YyWsE3W-ED9DgkPmIafkWQQR5F-0WFDkYOQaRIJcHtONdXgQsDf2zfcE9DS89GjN4j5vrKuHnN_GJdY7ZXcx6xVKeOjcDcxmAjglTP0lj7iqvmeAJ4SvhXF0ONUr82TzcxkYK-NAqMgzI12doK0tpyTfCM6G-fgUMUOclojDjMjDF9lP_ExLknGGl6ww9yFxL80i6QMaAT1cEI5stEArJIE3DpUGWlUz48LroI3dAEQEU-CkbANNiRGVDTnJhl7k5TP3INFM-yfQoDz0KhXfCPurTlmyTg-TwRGAhmZjMAZSUA.jpg",
+      "poster": "https://cdn4.telesco.pe/file/NLpHCZcyckiEAXin6Ols9q9r_ha9jCzubuL-sK2hXuGvFnS9i-u6CGR15dwJB6KaSJ1v-TjwPmlNXkLH1Y-13Yqe0XewtUwrbKj_L3rgFBHpyVAkTStqo9EsSmpXgTEoNfpDKd085_5IlBPGZWMLfxAU6KLgoQztmxHpGMS97Vsyw1XEgaGQFxvP2m8iyO29uAEM6O1FvIm0cWbbI6Onop7mBMH9GGgwA3m691zut5OqSNDz-FrGPilrFgL5By4rlDo3fYlmu_BxD8qIyT14-eH_swvxzt7_ZRH8fSR9og2GIawVIHpUL5uKT31SOAAOrMMBA5D52aQEPvebguektg.jpg",
       "published": "2026-10-20T09:34:53+00:00",
       "poster_text": "",
       "name": "",
@@ -4938,6 +4938,36 @@
       "poster_text": "",
       "name": "",
       "title": "Festival · Santa Cruz"
+    },
+    {
+      "post": "https://t.me/festas_madeira/2716",
+      "dates": [
+        "2026-10-24"
+      ],
+      "categories": [
+        "concerto"
+      ],
+      "place": "Câmara De Lobos",
+      "poster": "https://cdn4.telesco.pe/file/Xk96aazbWTX6wE-Zb13nfehtS58a_lIr-Usz9HtDnKdatj1mHxCLEy1PqpD6lBoOTRURwEjst31PAU2zlnlMbxg4TxHgY91fORquz787usACNqcBMXfeaMyEr2pa2nBgWBs_U92kjaaNDZd35fVPJEYHDN_Q3zOiAkq4o0vf3OzNQvgLYmHYw3SnlAwLJCyv84qWnpWyxBUsVoMAUaQ_Si1pv3GzzTPUiNTzAP0UsZbXq4TIG7LjF-KTAo--fVXeowseVTI9q_ERp4W8gMo678pkeBUtnuBdGsYwkK67TfJqParxbrADUZvfFDaYYuLJtCK6sDUYrmFiLAGWtyQUVQ.jpg",
+      "published": "2026-10-21T09:00:41+00:00",
+      "poster_text": "Cultura nos Mercados\nSECA PIPAS\n\n24 de outubro\n10h\n\nMERCADO MUNICIPAL DE\nCÂMARA DE LOBOS\n\n25 de outubro\n\n9h30\n\nMERCADO MUNICIPAL\nESTREITO DE C.º DE LOBOS",
+      "name": "Cultura nos Mercados SECA PIPAS",
+      "title": "Cultura nos Mercados SECA PIPAS"
+    },
+    {
+      "post": "https://t.me/festas_madeira/2717",
+      "dates": [
+        "2026-10-24"
+      ],
+      "categories": [
+        "desporto"
+      ],
+      "place": "Câmara De Lobos",
+      "poster": "https://cdn4.telesco.pe/file/I1uspqIWn4sh8MbD3Uz41491CU2qT68eJqIMF_rruopzAtNZsaDyrjc-x3XAu9101JD0Cer0HnFmSm94AXuWOXi8lZvfagfRiyJlTWhWaUl8Q6CMcdwburq7bJdl1UgfmhPme46FtrBr2ur2oVme7ZsJx_J4aUjyPAAQZ1w3v_31a5KqgYUcWhcqstWpIlZY5qrh2PizKbXRscopQos2KsT5JdyqCZw_zlCY_YDx-xsjh-4BaGgNthQGXww53iYGoYizUegtQt1-FakINFziUaretn_1udRYncsjazWNjQNBgAHWOjyF0v52InMboUlnPptLxOoHLxFrMPgSRJnw-Q.jpg",
+      "published": "2026-10-21T09:00:41+00:00",
+      "poster_text": ">”:\nE CORRIDA: E\n\n2026\n\n24 OUT 2026",
+      "name": "E CORRIDA: E",
+      "title": "E CORRIDA: E"
     },
     {
       "post": "https://t.me/festas_madeira/2694",
@@ -5041,7 +5071,7 @@
         "literatura"
       ],
       "place": "Câmara De Lobos",
-      "poster": "https://cdn4.telesco.pe/file/aBVrRxnQ5YluQwEBEi-rKmBIOjSvuj0_YbvxgHos5754zZvznLUl160kW1sajU47dy3diYMqAaMMuX7R6NZFOk_6vsAwlz4zXwNENB7O17YbMUheweBAsLrZcj_L7lXhSO4esAokYxdQJg1-PVyCEaA9RPcOTOcWP24qHnjRqvVtf4DGh439L2UIXXBDciPQ0qcedwcW-RF2Be6ovw_ZPEIqUKQNb2BZlN--9JsrzbLTV5BZZu1bpUP2Vubqe5rMfdA78jdNQeQ7W9m40Xf7-3xVAMq5by3OS5fKY4D9nfLsssHSyn5zMKZKSjzEoYnKrpovbNNsWiZpJC8GsdFAow.jpg",
+      "poster": "https://cdn4.telesco.pe/file/W9AQ8Ip32aSoAr1rpJLgTAs6fOp00FKGvkXXCYgryODkBpTtrhGOQBZJi9l0Hft_1uBxUF2wAC3v3PiT6OTG73KgdUB3bD2R3n03o10kmEFlZYZCDk4CYg2g9OLdnopDtkPXu0ur215bPEjf0USTXNvHnokdyE-vZtsNKdoiycD-t7S-BYfiO27Z6Ic8Z2IUOL3ry8fG8Nevbq9Dju9OhBh1v4vt4993GjcoaAFiL2Qt3poAygOARpgtBu-PG_oIl6EOxJr6OdBjfP6Py9nBP0r50de7GshykBxXxIGFEtGOAwJsvpGx9sZJfrjNf19LVDt6JN1rvZqo8B5LzvIbOw.jpg",
       "published": "2026-10-20T09:00:43+00:00",
       "poster_text": "",
       "name": "",
@@ -5110,6 +5140,24 @@
       "poster_text": "Eua\nNavi\n\nwd\nae 1\n\nsm\nE)\n\nBILHETES\nLOJAGÂUDEAMUS\n\nQUINA LOCAL DO\nCONCERTO 28€\n\nGAUDEAMUs STORE\nOR ATTHEEONCERE\nVENUE 25€\n\nM/6\n\nCENTRO DE CONGRESSOS\nSect i DA MADEIRA 18H\n\nPRINCIPAL OBOIST OF THE BERLIN PHILHARMONIC\n\nINTEGRADO NO 100º ANIVERSÁRIO DA ASSOCIAÇÃO\nHUMANITÁRIA DOS BOMBEIROS VOLUNTÁRIOS MADEIRENSES\n\nÉ é ED — sa\n\nim",
       "name": "Eua Navi",
       "title": "Eua Navi"
+    },
+    {
+      "post": "https://t.me/festas_madeira/2715",
+      "dates": [
+        "2026-11-05",
+        "2026-11-06",
+        "2026-11-07",
+        "2026-11-08"
+      ],
+      "categories": [
+        "exposição"
+      ],
+      "place": "Sé",
+      "poster": "https://cdn4.telesco.pe/file/ntgesscddKnc5JMoHhivW8ElUlyKvs5HbMSy__AzyQcnZG771fM8UAJF_jgq6S0zsW_SMb7OmBhGlxUG_l58ddyyicCoYGJsqphg1C6hZ5DujNWmlAJGjw5Xss7gMi7HqelIZPX4JikJg9247CbLBJqX4EptKc6BUSuPYHfZw_LlHXMfPjzDSRRGRtEPURLfNpYcqczl02VVIEi7UljqUxmEkhdub4FGz-Qv_Kndv8ve5xUAqbFbuPse-OuShR3ZUn_uJtB19SgH_HXQpUkuzSdiQw_FBhNog0xDC226rZpz10mgLnpv6T7yhLW1DbX9epx9RuFjgIM1hZ9GPt-8Qw.jpg",
+      "published": "2026-10-21T09:00:11+00:00",
+      "poster_text": "cC ON TRE JOUR\n\nLEAH SINGER & LEE RANALDO\nDe 5 de novembro de 2026 a 8 de janeiro de 2027\n\nm:::: Galeria Tratuário\n\nnão PSB cimaves DIARIO",
+      "name": "não PSB cimaves DIARIO",
+      "title": "Exhibition · Sé"
     },
     {
       "post": "https://t.me/festas_madeira/2700",

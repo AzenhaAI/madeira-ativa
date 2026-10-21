@@ -1,8 +1,8 @@
 {
   "note": "Ship calls at the port of Funchal from APRAM. Times are Madeira local time, as the port publishes them. Accumulates; a call no longer listed before its arrival is marked superseded.",
   "source": "https://apram.pt/movimento-navios?port=ptfnc",
-  "fetched": "2026-10-19T11:21:46",
-  "count": 54,
+  "fetched": "2026-10-21T10:41:32",
+  "count": 60,
   "calls": [
     {
       "ship": "SANTA MARIA MANUELA",
@@ -345,6 +345,16 @@
       "superseded": false
     },
     {
+      "ship": "SORLANDET",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Wilhelmsen Port Services Portugal, S.A.",
+      "arrival": "2026-10-19T17:45",
+      "from": "Vigo",
+      "departure": "2026-10-28T18:00",
+      "to": "Sevilla",
+      "superseded": false
+    },
+    {
       "ship": "BRITANNIA",
       "berth": "Funchal - Terminal Sul",
       "agent": "Blatas, Lda.",
@@ -352,6 +362,16 @@
       "from": "Southampton",
       "departure": "2026-10-20T17:00",
       "to": "Santa Cruz De La Palma",
+      "superseded": false
+    },
+    {
+      "ship": "SANTA MARIA MANUELA",
+      "berth": "Funchal - Fora das 3 Milhas",
+      "agent": "Transinsular (Madeira)-Transp. Marit. Insulares, Lda.",
+      "arrival": "2026-10-20T07:45",
+      "from": "Porto Santo Island",
+      "departure": "2026-10-21T18:00",
+      "to": "Funchal",
       "superseded": false
     },
     {
@@ -372,6 +392,16 @@
       "from": "Porto Santo Island",
       "departure": "2026-10-21T17:00",
       "to": "Santa Cruz De La Palma",
+      "superseded": false
+    },
+    {
+      "ship": "HANSEATIC SPIRIT",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-10-20T20:50",
+      "from": "Porto Santo Island",
+      "departure": "2026-10-22T06:00",
+      "to": "San Sebastian De La Gomera",
       "superseded": false
     },
     {
@@ -420,7 +450,17 @@
       "agent": "Transinsular (Madeira)-Transp. Marit. Insulares, Lda.",
       "arrival": "2026-10-22T08:00",
       "from": "Porto Santo Island",
-      "departure": "2026-10-22T08:30",
+      "departure": "2026-10-22T10:00",
+      "to": "Funchal",
+      "superseded": false
+    },
+    {
+      "ship": "SANTA MARIA MANUELA",
+      "berth": "Funchal - Terminal Norte",
+      "agent": "Transinsular (Madeira)-Transp. Marit. Insulares, Lda.",
+      "arrival": "2026-10-22T12:30",
+      "from": "Funchal",
+      "departure": "2026-10-22T19:00",
       "to": "Funchal",
       "superseded": false
     },
@@ -432,7 +472,7 @@
       "from": "Vigo",
       "departure": "2026-10-28T18:00",
       "to": "Sevilla",
-      "superseded": false
+      "superseded": true
     },
     {
       "ship": "SILVER MUSE",
@@ -442,6 +482,26 @@
       "from": "Lisboa",
       "departure": "2026-10-24T13:30",
       "to": "Dakar",
+      "superseded": false
+    },
+    {
+      "ship": "SANTA MARIA MANUELA",
+      "berth": "Funchal - Fora das 3 Milhas",
+      "agent": "Transinsular (Madeira)-Transp. Marit. Insulares, Lda.",
+      "arrival": "2026-10-23T08:00",
+      "from": "Funchal",
+      "departure": "2026-10-27T22:00",
+      "to": "Funchal",
+      "superseded": false
+    },
+    {
+      "ship": "KISMET",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-10-23T12:00",
+      "from": "London",
+      "departure": "2026-10-25T12:00",
+      "to": "Portos Desconhecidos / Alto Mar (Ao Largo)",
       "superseded": false
     },
     {
@@ -481,7 +541,7 @@
       "arrival": "2026-10-28T08:00",
       "from": "Funchal",
       "departure": "2026-10-30T09:00",
-      "to": "Tenerife",
+      "to": "Santa Cruz De Tenerife",
       "superseded": false
     },
     {

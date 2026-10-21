@@ -139,14 +139,40 @@
       if (h < ss - 1) return 'afternoon';
       return 'evening';
     }
+    // Photo pools by the time of day and the sky; same as the app
+    // (lib/home_face.dart, _heroPools). Wide, so pictures rarely repeat.
+    var HERO = {
+      morning: {
+        clear: ['morning_umbrella', 'morning_rays', 'day_rocks', 'ps_ferry', 'day_cloudfall_village', 'ps_ferry_wake', 'day_levada'],
+        cloud: ['morning_funchal_sea', 'cloud_ridge', 'morning_rays', 'cloud_sea', 'day_cloudfall_ridge', 'day_cloudfall_village', 'ps_beach_clouds'],
+        fog: ['fog_valley', 'fog_heath', 'cloud_sea', 'cloud_eucalyptus', 'day_levada'],
+        rain: ['morning_funchal_sea', 'grey_sea', 'rain_yachts', 'fog_valley', 'day_levada']
+      },
+      afternoon: {
+        clear: ['day_terraces', 'day_tallship', 'day_plane', 'day_valley', 'day_rocks', 'cloud_sea', 'ps_ferry', 'ps_ferry_wake', 'ps_beach_clouds', 'day_cloudfall_village', 'day_cloudfall_ridge', 'day_levada'],
+        cloud: ['cloud_sea', 'cloud_ridge', 'day_valley', 'day_terraces', 'day_cloudfall_village', 'day_cloudfall_ridge', 'ps_beach_clouds', 'cloud_eucalyptus', 'day_levada', 'rain_yachts'],
+        fog: ['fog_valley', 'fog_heath', 'cloud_eucalyptus', 'cloud_sea', 'day_levada'],
+        rain: ['rain_yachts', 'grey_sea', 'fog_valley', 'fog_heath', 'day_levada']
+      },
+      evening: {
+        clear: ['evening_banana', 'evening_redsun', 'dusk_islets'], cloud: ['dusk_islets', 'evening_banana', 'evening_redsun'],
+        fog: ['dusk_islets', 'evening_banana'], rain: ['dusk_islets', 'evening_banana']
+      },
+      night: {
+        clear: ['night_sea', 'evening_redsun', 'dusk_islets'], cloud: ['night_sea', 'dusk_islets'],
+        fog: ['night_sea', 'dusk_islets'], rain: ['night_sea', 'dusk_islets']
+      }
+    };
     function paintHero() {
       var el = $('#hero'); if (!el) return;
-      var p = data.wx[1] && data.wx[1].current, code = p ? p.weather_code : 0, cloudy = code === 3 || (code >= 45 && code <= 48);
+      var cw = data.wx[0] && data.wx[0].current, sw = data.wx[1] && data.wx[1].current;
+      var cc = cw ? cw.weather_code : 0, sc = sw ? sw.weather_code : 0;
+      var skyNow = cc >= 51 ? 'rain' : (cc >= 45 && cc <= 48) || (sc >= 45 && sc <= 48) ? 'fog' : cc === 3 || sc === 3 ? 'cloud' : 'clear';
       var part = dayPart();
-      var pool = part === 'morning' ? (cloudy ? ['cloud_ridge', 'morning_rays', 'cloud_sea'] : ['morning_umbrella', 'morning_rays', 'day_rocks'])
-        : part === 'afternoon' ? (cloudy ? ['cloud_sea', 'cloud_ridge', 'day_valley', 'day_terraces'] : ['day_terraces', 'day_tallship', 'day_plane', 'day_valley', 'day_rocks', 'cloud_sea'])
-        : part === 'evening' ? ['evening_banana', 'evening_redsun'] : ['night_sea', 'evening_redsun'];
+      var pool = HERO[part][skyNow];
       var doy = Math.floor((new Date(today + 'T00:00:00Z') - new Date(today.slice(0, 4) + '-01-01T00:00:00Z')) / 864e5);
+      var pi = { morning: 0, afternoon: 1, evening: 2, night: 3 }[part];
+      var photo = pool[(doy + pi * 3) % pool.length];
       var greet = part === 'morning' ? t('Good morning', 'Bom dia') : part === 'afternoon' ? t('Good afternoon', 'Boa tarde') : part === 'evening' ? t('Good evening', 'Boa tarde') : t('Good night', 'Boa noite');
       var c = data.wx[0] && data.wx[0].current, d0 = data.wx[0] && data.wx[0].daily, dd = MA.day(today);
       var arr = (data.lev && data.lev.levadas) || [], open = arr.filter(function (x) { return x.status === 'open'; }).length;
@@ -155,7 +181,7 @@
       if (part === 'morning' && d0) parts.push(t('sunrise', 'nascer do sol') + ' ' + hm(d0.sunrise[0]));
       if (part === 'evening' && d0) parts.push(t('sunset', 'pôr do sol') + ' ' + hm(d0.sunset[0]));
       if (open && part !== 'evening') parts.push(MA.n(open, 'levadas open', 'levadas abertas'));
-      el.innerHTML = '<img src="/ativa/hero/' + pool[doy % pool.length] + '.jpg" alt="Madeira" loading="eager"><div class="ov"><b>' + greet + '</b><small>' + esc(parts.join(' · ')) + '</small></div>';
+      el.innerHTML = '<img src="/ativa/hero/' + photo + '.jpg" alt="Madeira" loading="eager"><div class="ov"><b>' + greet + '</b><small>' + esc(parts.join(' · ')) + '</small></div>';
       el.hidden = false;
     }
     function scores() {

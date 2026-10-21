@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-10-20T10:07:44",
-  "count": 138,
+  "fetched": "2026-10-21T10:14:01",
+  "count": 139,
   "items": [
     {
       "id": "114",
@@ -1373,6 +1373,16 @@
       "time": "18:00",
       "place": "Teatro Municipal Baltazar Dias",
       "category": "Music"
+    },
+    {
+      "id": "397",
+      "title": "\"Sons e Sabores da Madeira\" 2026",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/sons-e-sabores-da-madeira-2026",
+      "start": "2026-11-13",
+      "end": "2026-11-15",
+      "time": "",
+      "place": "Santa Cruz - Centro",
+      "category": "Other"
     },
     {
       "id": "390",

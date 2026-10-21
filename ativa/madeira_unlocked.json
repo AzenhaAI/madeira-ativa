@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-10-20T10:07:31",
-  "count": 427,
+  "fetched": "2026-10-21T10:13:47",
+  "count": 450,
   "items": [
     {
       "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
@@ -5030,6 +5030,21 @@
       "source_category": "kids-family"
     },
     {
+      "id": "ha-festa-no-bairro-community-arts-celebration-2026-10-25",
+      "title": "Há Festa no Bairro, Community Arts Celebration",
+      "url": "https://www.madeira-unlocked.com/en/events/ha-festa-no-bairro-community-arts-celebration-2026-10-25",
+      "start": "2026-10-25T11:00:00+00:00",
+      "end": "2026-10-25T18:15:00+00:00",
+      "date": "2026-10-25",
+      "time": "11:00",
+      "venue": "Bairro da Palmeira",
+      "municipality": "Câmara de Lobos",
+      "price": 0,
+      "organizer": "Madeira Art Fest",
+      "category": "festival",
+      "source_category": "festivals-parades"
+    },
+    {
       "id": "madeira-international-organ-festival-2026-10-25",
       "title": "Madeira International Organ Festival",
       "url": "https://www.madeira-unlocked.com/en/events/madeira-international-organ-festival-2026-10-25",
@@ -5135,6 +5150,21 @@
       "source_category": "culture-museums"
     },
     {
+      "id": "the-emperor-s-new-clothes-o-rei-vai-nu-2026-10-28-1500",
+      "title": "The Emperor’s New Clothes, O Rei Vai Nu",
+      "url": "https://www.madeira-unlocked.com/en/events/the-emperor-s-new-clothes-o-rei-vai-nu-2026-10-28-1500",
+      "start": "2026-10-28T15:00:00+00:00",
+      "end": "2026-10-28T16:00:00+00:00",
+      "date": "2026-10-28",
+      "time": "15:00",
+      "venue": "Teatro Municipal Baltazar Dias",
+      "municipality": "Funchal",
+      "price": 4,
+      "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
+      "category": "theatre",
+      "source_category": "theater"
+    },
+    {
       "id": "bachata-styling-in-couple-solo-2026-10-28",
       "title": "Bachata Styling (in Couple & Solo)",
       "url": "https://www.madeira-unlocked.com/en/events/bachata-styling-in-couple-solo-2026-10-28",
@@ -5148,6 +5178,21 @@
       "organizer": "Level Up Dance Studio",
       "category": "dance",
       "source_category": "dance"
+    },
+    {
+      "id": "the-emperor-s-new-clothes-o-rei-vai-nu-2026-10-29-1500",
+      "title": "The Emperor’s New Clothes, O Rei Vai Nu",
+      "url": "https://www.madeira-unlocked.com/en/events/the-emperor-s-new-clothes-o-rei-vai-nu-2026-10-29-1500",
+      "start": "2026-10-29T15:00:00+00:00",
+      "end": "2026-10-29T16:00:00+00:00",
+      "date": "2026-10-29",
+      "time": "15:00",
+      "venue": "Teatro Municipal Baltazar Dias",
+      "municipality": "Funchal",
+      "price": 4,
+      "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
+      "category": "theatre",
+      "source_category": "theater"
     },
     {
       "id": "concertos-no-vizinho-francisco-lopes-2026-10-29",
@@ -5178,6 +5223,21 @@
       "organizer": "Direção Regional dos Arquivos",
       "category": "family",
       "source_category": "kids-family"
+    },
+    {
+      "id": "the-emperor-s-new-clothes-o-rei-vai-nu-2026-10-30-1500",
+      "title": "The Emperor’s New Clothes, O Rei Vai Nu",
+      "url": "https://www.madeira-unlocked.com/en/events/the-emperor-s-new-clothes-o-rei-vai-nu-2026-10-30-1500",
+      "start": "2026-10-30T15:00:00+00:00",
+      "end": "2026-10-30T16:00:00+00:00",
+      "date": "2026-10-30",
+      "time": "15:00",
+      "venue": "Teatro Municipal Baltazar Dias",
+      "municipality": "Funchal",
+      "price": 4,
+      "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
+      "category": "theatre",
+      "source_category": "theater"
     },
     {
       "id": "festa-de-halloween-escola-de-magia-2026-10-30",
@@ -5690,6 +5750,36 @@
       "source_category": "festivals-parades"
     },
     {
+      "id": "the-emperor-s-new-clothes-o-rei-vai-nu-2026-11-03-1500",
+      "title": "The Emperor’s New Clothes, O Rei Vai Nu",
+      "url": "https://www.madeira-unlocked.com/en/events/the-emperor-s-new-clothes-o-rei-vai-nu-2026-11-03-1500",
+      "start": "2026-11-03T15:00:00+00:00",
+      "end": "2026-11-03T16:00:00+00:00",
+      "date": "2026-11-03",
+      "time": "15:00",
+      "venue": "Teatro Municipal Baltazar Dias",
+      "municipality": "Funchal",
+      "price": 4,
+      "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
+      "category": "theatre",
+      "source_category": "theater"
+    },
+    {
+      "id": "the-emperor-s-new-clothes-o-rei-vai-nu-2026-11-04-1500",
+      "title": "The Emperor’s New Clothes, O Rei Vai Nu",
+      "url": "https://www.madeira-unlocked.com/en/events/the-emperor-s-new-clothes-o-rei-vai-nu-2026-11-04-1500",
+      "start": "2026-11-04T15:00:00+00:00",
+      "end": "2026-11-04T16:00:00+00:00",
+      "date": "2026-11-04",
+      "time": "15:00",
+      "venue": "Teatro Municipal Baltazar Dias",
+      "municipality": "Funchal",
+      "price": 4,
+      "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
+      "category": "theatre",
+      "source_category": "theater"
+    },
+    {
       "id": "bachata-styling-in-couple-solo-2026-11-04",
       "title": "Bachata Styling (in Couple & Solo)",
       "url": "https://www.madeira-unlocked.com/en/events/bachata-styling-in-couple-solo-2026-11-04",
@@ -5703,6 +5793,36 @@
       "organizer": "Level Up Dance Studio",
       "category": "dance",
       "source_category": "dance"
+    },
+    {
+      "id": "the-emperor-s-new-clothes-o-rei-vai-nu-2026-11-05-1500",
+      "title": "The Emperor’s New Clothes, O Rei Vai Nu",
+      "url": "https://www.madeira-unlocked.com/en/events/the-emperor-s-new-clothes-o-rei-vai-nu-2026-11-05-1500",
+      "start": "2026-11-05T15:00:00+00:00",
+      "end": "2026-11-05T16:00:00+00:00",
+      "date": "2026-11-05",
+      "time": "15:00",
+      "venue": "Teatro Municipal Baltazar Dias",
+      "municipality": "Funchal",
+      "price": 4,
+      "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
+      "category": "theatre",
+      "source_category": "theater"
+    },
+    {
+      "id": "the-emperor-s-new-clothes-o-rei-vai-nu-2026-11-06-2000",
+      "title": "The Emperor’s New Clothes, O Rei Vai Nu",
+      "url": "https://www.madeira-unlocked.com/en/events/the-emperor-s-new-clothes-o-rei-vai-nu-2026-11-06-2000",
+      "start": "2026-11-06T20:00:00+00:00",
+      "end": "2026-11-06T21:00:00+00:00",
+      "date": "2026-11-06",
+      "time": "20:00",
+      "venue": "Teatro Municipal Baltazar Dias",
+      "municipality": "Funchal",
+      "price": 4,
+      "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
+      "category": "theatre",
+      "source_category": "theater"
     },
     {
       "id": "abm-miudos-o-meu-guarda-chuva-2026-11-07",
@@ -5746,6 +5866,21 @@
       "municipality": "Funchal",
       "price": 6.27,
       "organizer": "OMNI Fest",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "madeira-pianofest-2026-11-07",
+      "title": "Madeira PianoFest",
+      "url": "https://www.madeira-unlocked.com/en/events/madeira-pianofest-2026-11-07",
+      "start": "2026-11-07T18:00:00+00:00",
+      "end": "2026-11-07T20:00:00+00:00",
+      "date": "2026-11-07",
+      "time": "18:00",
+      "venue": "Teatro Municipal Baltazar Dias",
+      "municipality": "Funchal",
+      "price": 20,
+      "organizer": "Associação dos Amigos do Conservatório de Música da Madeira",
       "category": "concert",
       "source_category": "music-concerts"
     },
@@ -5825,6 +5960,21 @@
       "source_category": "sport-fitness"
     },
     {
+      "id": "madeira-pianofest-2026-11-08",
+      "title": "Madeira PianoFest",
+      "url": "https://www.madeira-unlocked.com/en/events/madeira-pianofest-2026-11-08",
+      "start": "2026-11-08T18:00:00+00:00",
+      "end": "2026-11-08T20:00:00+00:00",
+      "date": "2026-11-08",
+      "time": "18:00",
+      "venue": "Teatro Municipal Baltazar Dias",
+      "municipality": "Funchal",
+      "price": 20,
+      "organizer": "Associação dos Amigos do Conservatório de Música da Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "mountain-bike-meeting-guided-enduro-and-wine-tasting-2026-11-09",
       "title": "Mountain Bike Meeting, Guided Enduro and Wine Tasting",
       "url": "https://www.madeira-unlocked.com/en/events/mountain-bike-meeting-guided-enduro-and-wine-tasting-2026-11-09",
@@ -5883,6 +6033,21 @@
       "organizer": "Paróquia de São Martinho",
       "category": "festival",
       "source_category": "festivals-parades"
+    },
+    {
+      "id": "madeira-pianofest-2026-11-11",
+      "title": "Madeira PianoFest",
+      "url": "https://www.madeira-unlocked.com/en/events/madeira-pianofest-2026-11-11",
+      "start": "2026-11-11T18:00:00+00:00",
+      "end": "2026-11-11T20:00:00+00:00",
+      "date": "2026-11-11",
+      "time": "18:00",
+      "venue": "Teatro Municipal Baltazar Dias",
+      "municipality": "Funchal",
+      "price": 20,
+      "organizer": "Associação dos Amigos do Conservatório de Música da Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "bachata-styling-in-couple-solo-2026-11-11",
@@ -6035,6 +6200,21 @@
       "source_category": "festivals-parades"
     },
     {
+      "id": "madeira-pianofest-2026-11-14",
+      "title": "Madeira PianoFest",
+      "url": "https://www.madeira-unlocked.com/en/events/madeira-pianofest-2026-11-14",
+      "start": "2026-11-14T18:00:00+00:00",
+      "end": "2026-11-14T20:00:00+00:00",
+      "date": "2026-11-14",
+      "time": "18:00",
+      "venue": "Teatro Municipal Baltazar Dias",
+      "municipality": "Funchal",
+      "price": 20,
+      "organizer": "Associação dos Amigos do Conservatório de Música da Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "commedia-2026-nem-sempre-usamos-inteligencia-artificial-2026-11-14",
       "title": "CommedIA 2026 – Nem sempre usamos Inteligência Artificial",
       "url": "https://www.madeira-unlocked.com/en/events/commedia-2026-nem-sempre-usamos-inteligencia-artificial-2026-11-14",
@@ -6080,6 +6260,66 @@
       "source_category": "sport-fitness"
     },
     {
+      "id": "madeira-pianofest-2026-11-15",
+      "title": "Madeira PianoFest",
+      "url": "https://www.madeira-unlocked.com/en/events/madeira-pianofest-2026-11-15",
+      "start": "2026-11-15T18:00:00+00:00",
+      "end": "2026-11-15T20:00:00+00:00",
+      "date": "2026-11-15",
+      "time": "18:00",
+      "venue": "Teatro Municipal Baltazar Dias",
+      "municipality": "Funchal",
+      "price": 20,
+      "organizer": "Associação dos Amigos do Conservatório de Música da Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "christmas-arrangement-workshop-2026-11-16",
+      "title": "Christmas Arrangement Workshop",
+      "url": "https://www.madeira-unlocked.com/en/events/christmas-arrangement-workshop-2026-11-16",
+      "start": "2026-11-16T18:30:00+00:00",
+      "end": "2026-11-16T20:30:00+00:00",
+      "date": "2026-11-16",
+      "time": "18:30",
+      "venue": "Casa do Povo da Serra de Água headquarters",
+      "municipality": "Ribeira Brava",
+      "price": 15,
+      "organizer": "Casa do Povo da Serra de Água",
+      "category": "workshop",
+      "source_category": "handicraft-workshops"
+    },
+    {
+      "id": "alice-again-how-annoying-2026-11-17-1515",
+      "title": "Alice Again? How Annoying!",
+      "url": "https://www.madeira-unlocked.com/en/events/alice-again-how-annoying-2026-11-17-1515",
+      "start": "2026-11-17T15:15:00+00:00",
+      "end": "2026-11-17T16:45:00+00:00",
+      "date": "2026-11-17",
+      "time": "15:15",
+      "venue": "Cine Teatro de Santo António",
+      "municipality": "Funchal",
+      "price": 5,
+      "organizer": "ATEF – Associação Teatro Experimental do Funchal",
+      "category": "theatre",
+      "source_category": "theater"
+    },
+    {
+      "id": "alice-again-how-annoying-2026-11-18-0930",
+      "title": "Alice Again? How Annoying!",
+      "url": "https://www.madeira-unlocked.com/en/events/alice-again-how-annoying-2026-11-18-0930",
+      "start": "2026-11-18T09:30:00+00:00",
+      "end": "2026-11-18T11:00:00+00:00",
+      "date": "2026-11-18",
+      "time": "09:30",
+      "venue": "Cine Teatro de Santo António",
+      "municipality": "Funchal",
+      "price": 5,
+      "organizer": "ATEF – Associação Teatro Experimental do Funchal",
+      "category": "theatre",
+      "source_category": "theater"
+    },
+    {
       "id": "bachata-styling-in-couple-solo-2026-11-18",
       "title": "Bachata Styling (in Couple & Solo)",
       "url": "https://www.madeira-unlocked.com/en/events/bachata-styling-in-couple-solo-2026-11-18",
@@ -6093,6 +6333,36 @@
       "organizer": "Level Up Dance Studio",
       "category": "dance",
       "source_category": "dance"
+    },
+    {
+      "id": "alice-again-how-annoying-2026-11-19-1515",
+      "title": "Alice Again? How Annoying!",
+      "url": "https://www.madeira-unlocked.com/en/events/alice-again-how-annoying-2026-11-19-1515",
+      "start": "2026-11-19T15:15:00+00:00",
+      "end": "2026-11-19T16:45:00+00:00",
+      "date": "2026-11-19",
+      "time": "15:15",
+      "venue": "Cine Teatro de Santo António",
+      "municipality": "Funchal",
+      "price": 5,
+      "organizer": "ATEF – Associação Teatro Experimental do Funchal",
+      "category": "theatre",
+      "source_category": "theater"
+    },
+    {
+      "id": "alice-again-how-annoying-2026-11-20-0930",
+      "title": "Alice Again? How Annoying!",
+      "url": "https://www.madeira-unlocked.com/en/events/alice-again-how-annoying-2026-11-20-0930",
+      "start": "2026-11-20T09:30:00+00:00",
+      "end": "2026-11-20T11:00:00+00:00",
+      "date": "2026-11-20",
+      "time": "09:30",
+      "venue": "Cine Teatro de Santo António",
+      "municipality": "Funchal",
+      "price": 5,
+      "organizer": "ATEF – Associação Teatro Experimental do Funchal",
+      "category": "theatre",
+      "source_category": "theater"
     },
     {
       "id": "bora-ler-young-readers-book-club-november-2026-11-20",
@@ -6170,6 +6440,36 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "alice-again-how-annoying-2026-11-24-1515",
+      "title": "Alice Again? How Annoying!",
+      "url": "https://www.madeira-unlocked.com/en/events/alice-again-how-annoying-2026-11-24-1515",
+      "start": "2026-11-24T15:15:00+00:00",
+      "end": "2026-11-24T16:45:00+00:00",
+      "date": "2026-11-24",
+      "time": "15:15",
+      "venue": "Cine Teatro de Santo António",
+      "municipality": "Funchal",
+      "price": 5,
+      "organizer": "ATEF – Associação Teatro Experimental do Funchal",
+      "category": "theatre",
+      "source_category": "theater"
+    },
+    {
+      "id": "alice-again-how-annoying-2026-11-25-0930",
+      "title": "Alice Again? How Annoying!",
+      "url": "https://www.madeira-unlocked.com/en/events/alice-again-how-annoying-2026-11-25-0930",
+      "start": "2026-11-25T09:30:00+00:00",
+      "end": "2026-11-25T11:00:00+00:00",
+      "date": "2026-11-25",
+      "time": "09:30",
+      "venue": "Cine Teatro de Santo António",
+      "municipality": "Funchal",
+      "price": 5,
+      "organizer": "ATEF – Associação Teatro Experimental do Funchal",
+      "category": "theatre",
+      "source_category": "theater"
+    },
+    {
       "id": "bachata-styling-in-couple-solo-2026-11-25",
       "title": "Bachata Styling (in Couple & Solo)",
       "url": "https://www.madeira-unlocked.com/en/events/bachata-styling-in-couple-solo-2026-11-25",
@@ -6183,6 +6483,36 @@
       "organizer": "Level Up Dance Studio",
       "category": "dance",
       "source_category": "dance"
+    },
+    {
+      "id": "alice-again-how-annoying-2026-11-26-1515",
+      "title": "Alice Again? How Annoying!",
+      "url": "https://www.madeira-unlocked.com/en/events/alice-again-how-annoying-2026-11-26-1515",
+      "start": "2026-11-26T15:15:00+00:00",
+      "end": "2026-11-26T16:45:00+00:00",
+      "date": "2026-11-26",
+      "time": "15:15",
+      "venue": "Cine Teatro de Santo António",
+      "municipality": "Funchal",
+      "price": 5,
+      "organizer": "ATEF – Associação Teatro Experimental do Funchal",
+      "category": "theatre",
+      "source_category": "theater"
+    },
+    {
+      "id": "alice-again-how-annoying-2026-11-27-0930",
+      "title": "Alice Again? How Annoying!",
+      "url": "https://www.madeira-unlocked.com/en/events/alice-again-how-annoying-2026-11-27-0930",
+      "start": "2026-11-27T09:30:00+00:00",
+      "end": "2026-11-27T11:00:00+00:00",
+      "date": "2026-11-27",
+      "time": "09:30",
+      "venue": "Cine Teatro de Santo António",
+      "municipality": "Funchal",
+      "price": 5,
+      "organizer": "ATEF – Associação Teatro Experimental do Funchal",
+      "category": "theatre",
+      "source_category": "theater"
     },
     {
       "id": "maritimo-vs-cd-nacional-madeira-derby-2026-11-27",
@@ -6393,6 +6723,21 @@
       "organizer": "Leonor Oliveira",
       "category": "workshop",
       "source_category": "handicraft-workshops"
+    },
+    {
+      "id": "paul-do-mar-children-s-christmas-party-2026-12-19",
+      "title": "Paul do Mar Children’s Christmas Party",
+      "url": "https://www.madeira-unlocked.com/en/events/paul-do-mar-children-s-christmas-party-2026-12-19",
+      "start": "2026-12-19T16:00:00+00:00",
+      "end": "2026-12-19T18:00:00+00:00",
+      "date": "2026-12-19",
+      "time": "16:00",
+      "venue": "Edifício Poeta Vasco da Gama Rodrigues",
+      "municipality": "Calheta",
+      "price": 0,
+      "organizer": "Casa do Povo do Paul do Mar",
+      "category": "family",
+      "source_category": "kids-family"
     },
     {
       "id": "exposicao-voltas-2026-12-19",
