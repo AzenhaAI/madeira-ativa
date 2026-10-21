@@ -205,7 +205,7 @@
       out.push(['🏖', t('Beach', 'Praia'), cl(b), bw.join(' · ')]);
       var v = sc <= 1 ? 5 : sc === 2 ? 3 : 1, vw = [];
       if (rain) { v = 1; vw.push(t('rain', 'chuva')); } else if (cloudRidge) { vw.push(t('ridge in cloud', 'cumeada nas nuvens'), t('try the coast', 'tente a costa')); } else if (sc === 2) vw.push(t('cloud', 'nublado')); else vw.push(t('ridge clear', 'cumeada limpa'));
-      out.push(['👁', t('Viewpoints', 'Miradouros'), cl(v), vw.join(' · ')]);
+      out.push(['👁', t('Views', 'Vistas'), cl(v), vw.join(' · ')]);
       var fl = cross == null ? 4 : cross >= 28 ? 1 : cross >= 20 ? 3 : 5, fw = [];
       if (gusts > 60) fl = 1;
       if (cross == null) fw.push(t('calm', 'calmo')); else if (cross >= 28) fw.push(t('crosswind over the limit', 'vento cruzado acima do limite'), t('diversions likely', 'desvios prováveis')); else if (cross >= 20) fw.push(t('gusts', 'rajadas') + ' ' + Math.round(gusts), t('delays', 'atrasos')); else fw.push(t('calm for landings', 'calmo para aterrar'));
