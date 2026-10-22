@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-10-21T10:14:01",
-  "count": 139,
+  "fetched": "2026-10-22T10:14:28",
+  "count": 141,
   "items": [
     {
       "id": "114",
@@ -1315,6 +1315,16 @@
       "category": "Music"
     },
     {
+      "id": "399",
+      "title": "Visitas e Oficinas Exposição Itinerante \"(In)fluxo\" no Porto Santo",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/visitas-e-oficinas-exposicao-itinerante-in-fluxo-no-porto-santo",
+      "start": "2026-10-28",
+      "end": "2026-10-31",
+      "time": "",
+      "place": "Sala de exposições da Assembleia Municipal do Porto Santo",
+      "category": "Activity"
+    },
+    {
       "id": "368",
       "title": "MadIT 2026 - Madeira Innovation Talks – Contadores de Histórias de Inovação - Para Partilhar & Inspirar",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/conferencias/madit-2026-madeira-innovation-talks-contadores-de-historias-de-inovacao-para-partilhar-inspirar",
@@ -1362,6 +1372,16 @@
       "end": "2026-10-31",
       "time": "18:00",
       "place": "Auditório do Centro de Congressos da Madeira",
+      "category": "Music"
+    },
+    {
+      "id": "396",
+      "title": "\"Halloween Voices\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/halloween-voices",
+      "start": "2026-10-31",
+      "end": "2026-10-31",
+      "time": "21:00",
+      "place": "Centro Cívico do Estreito de Câmara de Lobos",
       "category": "Music"
     },
     {

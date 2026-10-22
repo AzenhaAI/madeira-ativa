@@ -1,8 +1,8 @@
 {
   "note": "Cultural events harvested from t.me/festas_madeira. Accumulates: the channel only exposes recent posts.",
   "source": "https://t.me/s/festas_madeira",
-  "fetched": "2026-10-21T10:14:16",
-  "count": 302,
+  "fetched": "2026-10-22T10:14:44",
+  "count": 307,
   "categories": {
     "concerto": "Concert",
     "arraial": "Arraial",
@@ -4867,7 +4867,7 @@
         "concerto"
       ],
       "place": "Funchal",
-      "poster": "https://cdn4.telesco.pe/file/NLpHCZcyckiEAXin6Ols9q9r_ha9jCzubuL-sK2hXuGvFnS9i-u6CGR15dwJB6KaSJ1v-TjwPmlNXkLH1Y-13Yqe0XewtUwrbKj_L3rgFBHpyVAkTStqo9EsSmpXgTEoNfpDKd085_5IlBPGZWMLfxAU6KLgoQztmxHpGMS97Vsyw1XEgaGQFxvP2m8iyO29uAEM6O1FvIm0cWbbI6Onop7mBMH9GGgwA3m691zut5OqSNDz-FrGPilrFgL5By4rlDo3fYlmu_BxD8qIyT14-eH_swvxzt7_ZRH8fSR9og2GIawVIHpUL5uKT31SOAAOrMMBA5D52aQEPvebguektg.jpg",
+      "poster": "https://cdn4.telesco.pe/file/rhWDCsFC1Wz_DpzkuxfGyXYQyQFT1_RAO1rLGsLtbkRkNpl_cr7hEI_SKNKVCYPnY0wDLgMa_PxMfHwCs2Y6jg6EsfAMciaA5BMyXmlV5gC6OtoFUmKDcGLHWLBkkBIJeuBeSYXMeZZ_7qOhNkVW7cwQPXd57u4hz2YjO4wzTD4_8ujuNtY4FqyzotvnCgJxhRuL5sHn2gxP3I7yAdGJu_Myb_E6OKcGW4U4yltnuhfjbdjrHp6veXmG7V16qLYLZvPtuINP7na-s7qpJCjlY52Drkhr8VYWMba3GbHr_8Bj6lJOutYgSuaC8WE56j_jhi0O2eiSOLYui5JlVJUrNQ.jpg",
       "published": "2026-10-20T09:34:53+00:00",
       "poster_text": "",
       "name": "",
@@ -5031,6 +5031,40 @@
       "title": "Caminho de São Cristóvão, nº dt Caramanchão, Machico"
     },
     {
+      "post": "https://t.me/festas_madeira/2720",
+      "dates": [
+        "2026-10-28",
+        "2026-10-29",
+        "2026-10-30",
+        "2026-10-31"
+      ],
+      "categories": [
+        "exposição",
+        "oficina"
+      ],
+      "place": "Porto Santo",
+      "poster": "https://cdn4.telesco.pe/file/JMAyBMWknIA9xWgNBz_-CljHSsIh7A7qSzBbFYORlTcHQSEwFdpYE318ZXxGbfKppub4bvGRNVii4KAy-Vw7taa3_0tUlt9hb8Tk3NIWx4q27CUXcwVzL6Ny3rmOQUV9eLJT8GhmWq6LqESev5UmbNVR3um0Kb3GfuCuieHHSDQTyEpcaeFl33HztailOXajhJgejZmJicz6ZbC5VhEYKVQfaGgf0nxurgfri91dzQtuXesbKikwNAHpgDP2X1wXoPVyCi398EP5mTJls5arGLl0opag4fCmt-Th7L4-_dMr373luSLRIc1USqM0pIV3K7SJiN2KpkVKVn3UX5-ixQ.jpg",
+      "published": "2026-10-22T09:00:11+00:00",
+      "poster_text": "Visitas e oficinas\n\nPorto Santo - (In)fluxo'\n\n28, 29, 30 outubro\n\n7\n\nMUDAS. Museu de Arte Contemporânea da Madeira",
+      "name": "MUDAS. Museu de Arte Contemporânea da Madeira",
+      "title": "MUDAS. Museu de Arte Contemporânea da Madeira"
+    },
+    {
+      "post": "https://t.me/festas_madeira/2722",
+      "dates": [
+        "2026-10-28"
+      ],
+      "categories": [
+        "literatura"
+      ],
+      "place": "Câmara De Lobos",
+      "poster": "https://cdn4.telesco.pe/file/sQyP9hAuYqH4PWFcRGxTSCgGMWB8O0DiSMeUvLtQfSHy2IEKmLNi9TST8DmvmpnB-RZiwA79CkGMbb0Z0iALKkvmXk22Tcr7Gp9jc2huxh_uMDaOu9lm0M3EJoLX6qBz-4NnPcBfjCzcLbK2PSd7Yj4QC06Pw1_emgfWaYbXtukcGzOM3K0lNX-RhVEmJkWhCYU9bsGNOlu1A-Pjshz_5wWodolbHaYpA3KBXol5IMwIhkaAYldQua6FA1fMCa3nlfjAU6AjX6gs5N6B3Ahao9P1OLgLNlOD57pVjUupl_my2tUVDZv15d8L5mi7MLOkKgIBqf4I9v2vXRi83QxSww.jpg",
+      "published": "2026-10-22T09:00:33+00:00",
+      "poster_text": "“CABO GIRÃO E\n\nSÉ DO FUNCHAL:\nDOIS MONUMENTOS\nUNIDOS PELO MESMO\nTIPO DE PEDRA”\n\n28 de outubro\n10h00\n\nResidência A\nCâmara de Lol\n\nPROGRAMA",
+      "name": "CABO GIRÃO E SÉ DO FUNCHAL: DOIS MONUMENTOS UNIDOS PELO MESMO",
+      "title": "CABO GIRÃO E SÉ DO FUNCHAL: DOIS MONUMENTOS UNIDOS PELO MESMO"
+    },
+    {
       "post": "https://t.me/festas_madeira/2662",
       "dates": [
         "2026-10-30"
@@ -5071,11 +5105,26 @@
         "literatura"
       ],
       "place": "Câmara De Lobos",
-      "poster": "https://cdn4.telesco.pe/file/W9AQ8Ip32aSoAr1rpJLgTAs6fOp00FKGvkXXCYgryODkBpTtrhGOQBZJi9l0Hft_1uBxUF2wAC3v3PiT6OTG73KgdUB3bD2R3n03o10kmEFlZYZCDk4CYg2g9OLdnopDtkPXu0ur215bPEjf0USTXNvHnokdyE-vZtsNKdoiycD-t7S-BYfiO27Z6Ic8Z2IUOL3ry8fG8Nevbq9Dju9OhBh1v4vt4993GjcoaAFiL2Qt3poAygOARpgtBu-PG_oIl6EOxJr6OdBjfP6Py9nBP0r50de7GshykBxXxIGFEtGOAwJsvpGx9sZJfrjNf19LVDt6JN1rvZqo8B5LzvIbOw.jpg",
+      "poster": "https://cdn4.telesco.pe/file/OJ1zKZ6hIoqmc6acCfFOu5qICXHwOvza4ncIWMoc0x4MKCqMiFriFmYPRnE42bondDQYKAj9dHMS2cNsC4jvnKptPpLINwO1a849XBTYjigA-V8Zdu8LkxienspJFoA-PJ6cviqnJlgKPowAnCsdRJ9VjM9PBYQ2PITh6SCzfS1e8E9geOwGl3noUVHt2Wk-kLaY008e8ZQbWUckIMeXzjk5eNQY3bDOftwt5DKFgzv6kdVAeInD25AlBGQs1XrN7gSBL4FNcZ3nDoYAMKWwE-IxHU6lKt-whQr7xmssg-oKymhEFEkcQxcLwEBiKqMhW8QQw-ynzXwtUq1l9ES1hQ.jpg",
       "published": "2026-10-20T09:00:43+00:00",
       "poster_text": "",
       "name": "",
       "title": "Literature · Câmara De Lobos"
+    },
+    {
+      "post": "https://t.me/festas_madeira/2719",
+      "dates": [
+        "2026-10-30"
+      ],
+      "categories": [
+        "concerto"
+      ],
+      "place": "São Roque Do Faial",
+      "poster": "https://cdn4.telesco.pe/file/tAgxrBuezMfIuPwosJWm8kB5FiWp7mI3xbOgJTDGh0EskEFG3VLztYYoNUd7zyKN-ire66RrhDbaXcuKmu5fYm8JFfeHtSvmC0rlmaGq5Z2u2U4rOxx6kY9EJhbHajkUZ_ZRKuP7zDdu894804WLC91VEjLGH0RloVfpumYhjOqOPwMqhArW1_slPhOXxT973FxJq69o2vo9VZjq-trreC2-u2JdRuKrBh5vu5ssVf9uEfQAj5-CLuCAJyr2pakO_jJ0niwCc8noy5Sv61HMcgCrzP9_5GaW1YaYaiXjJ2SLRdQSlnucsVAdr-Z2v29-aKy2wsiMhFV1xzH4-b7xeA.jpg",
+      "published": "2026-10-22T08:19:25+00:00",
+      "poster_text": "[IJEncontroldeJMúsica Popular\nfemjlerras[dojCedro Gordo\n\n19:30H - sede da Casa do Povo de São Roque do Faial\n« Grupo de Tocares e Cantares “Camponeses” da\nCasa do Povo de São Roque do Faial\n* Grupo de Cantares da Casa do Povo da Tabua\n« Grupo de Tocares e Cantares da Casa do Povo do\nJardim da Serra\n« Grupo de Cantares do Paúl do Mar\n\nhe Dee antares do\n| Gets Paúl do Mor\n\naga Fo\nao",
+      "name": "IJEncontroldeJMúsica Popular femjlerras[dojCedro Gordo",
+      "title": "IJEncontroldeJMúsica Popular femjlerras[dojCedro Gordo"
     },
     {
       "post": "https://t.me/festas_madeira/2443",
@@ -5237,6 +5286,24 @@
       "title": "Concert · Santa Cruz"
     },
     {
+      "post": "https://t.me/festas_madeira/2718",
+      "dates": [
+        "2026-11-13",
+        "2026-11-14"
+      ],
+      "categories": [
+        "concerto",
+        "arraial",
+        "família"
+      ],
+      "place": "Ponta Delgada",
+      "poster": "https://cdn4.telesco.pe/file/bOArdszEPUfewqoS1Om0kMb9FodcjKFwEAG9Rn2aLg4G_MedijZAmeshq5a9S8v_r-_e1L5WHE6lyEs-DF0lJGUjBcGhLz7J_nkNlpqwqi8MBA9XtnMY2Eqa0bdCFvpbmig3D8-EBe3kIbUX0mEvoGKBOWR1uKJaukCqQkOqOtzMp5SuqB0q4ybE63EuQUmnjdWOvbfMZS16KmVyGdGIxQNX6Pc4etAAh-oXaWcI6d1pKuBpbt1cbT49r8N5QLi4UNyZg7McTadWo1bEtDK2XVQ4Ty7Go4Gc4eRJKVKx6BQcxHqcn3Sq-vY_L7DJHIjKSjTes6-xA8lWB09uXBoeFA.jpg",
+      "published": "2026-10-22T08:19:17+00:00",
+      "poster_text": "SEXTA-FEIRA | 13 NOV\n\n18h00 - MÚSICA AMBIENTE\n20h00 OS LORDES\n23h00 - DJ SÉRGIO SOARES\n01H30 - ENCERRAMENTO\n\nés]\n\n19h00\n\n14h00\n15h00\n19h00\n\n21h00\n22H30.\nonto\n\nE\n\nnovembro\nPONTA DELGADA\n\nSÁBADO | 14 NOV\n\nDEMONSTRAÇÃO TÉNIS DE MESA\nEESGRIMA\nDEMONSTRAÇÃO DANÇA SENIOR\nMÚSICAS DO ARCO DA VELHA\nLEVEL UP DANCE STUDIO\n\n— WORKSHOP DE BACHATA\nJOÃO VINAGRE\nIRMÃOS CORAGEM\nENCERRAMENTO",
+      "name": "18h00 - MÚSICA AMBIENTE",
+      "title": "Concert · Ponta Delgada"
+    },
+    {
       "post": "https://t.me/festas_madeira/2698",
       "dates": [
         "2026-11-22"
@@ -5251,6 +5318,21 @@
       "poster_text": "CONCERTO SDE\n\nSANTA\nCECILIA\n\nEM HONRA DA PADROEIRA DA MUSICA\n\n22 Novembro 2026\n16h80\n\nIgreja de Nossa Sennhora do Monte\n\n>)TICKETLNE\nBithete Adulto - 1500€",
       "name": "CONCERTO SDE SANTA CECILIA",
       "title": "CONCERTO SDE SANTA CECILIA"
+    },
+    {
+      "post": "https://t.me/festas_madeira/2721",
+      "dates": [
+        "2026-12-19"
+      ],
+      "categories": [
+        "religioso"
+      ],
+      "place": "Machico",
+      "poster": "https://cdn4.telesco.pe/file/OFtcqKWXSeNBfz4O4Tkf0kHJVXD2V_ARaTQ8Ei2LMIgykl7zSXSZbgrtecVEDfxCJ_bKFgZfYxDwbCDiq6442JczodHql9YNj00YyE0ZGb1Kxi7h5Y4tvTI2idp7mcgrTYvw-uZYJL3zswsSFDWgBnwQPpILIT_5HD4tDokQgnez2JISnEmbTBM_HqCv1AUXM-tc1zVyFCAU_YBfW4Wj7AWchdQPWTO9tinv5gItMVoCM8VQp-gWXNMTqPNDVloOS0daRAHtcp3gSx3MtrwftxmtrPdiPvKCHf-CrQ5J7Z_uDDJMkSPVeV1RCNyj8phdDhxAMyqibmDuvR8FYXcz-A.jpg",
+      "published": "2026-10-22T09:00:32+00:00",
+      "poster_text": "Notte do e\n€1CAAO\n\nMACHICO 2026\nLARGO DA PRAÇA\n\n;\nEP) MACHICO J “\nsé\n1 | Li,\n. }",
+      "name": "Notte do e",
+      "title": "Notte do e"
     },
     {
       "post": "https://t.me/festas_madeira/2576",

@@ -3,7 +3,8 @@
 <head>
 <!-- shell: framed by /ativa-next, which brings its own header -->
 <script>if(/[?&]shell=1/.test(location.search))document.documentElement.classList.add('shell')</script><style>html.shell .header-bar,html.shell .back-link,html.shell .topbar{display:none!important}html.shell #map{top:0!important}</style>
-<script>(function(){var l=null;try{l=localStorage.getItem("lang");if(l!=="pt"&&l!=="en"){l="en"}}catch(e){l="en"}document.documentElement.lang=l;})();</script>
+<!-- Language: ?lang= (en/pt/de/ru) when a page embeds the map, else the embedding page's own, else the saved choice (en/pt). -->
+<script>(function(){var ok=/^(en|pt|de|ru)$/,q=new URLSearchParams(location.search).get("lang"),l=null;if(!ok.test(q||"")){try{q=window.parent!==window?window.parent.document.documentElement.lang:null}catch(e){q=null}}if(ok.test(q||""))l=q;else{try{l=localStorage.getItem("lang")}catch(e){}if(l!=="pt")l="en"}document.documentElement.lang=l;})();</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Madeira Trails Map — Interactive · Madeira Ativa</title>
@@ -206,7 +207,14 @@ body {
 .back-link:hover { color: #fff; background: rgba(40,40,40,0.9); }
 
 [lang="pt"] [data-lang="en"],
-[lang="en"] [data-lang="pt"] { display: none !important; }
+[lang="en"] [data-lang="pt"],
+[lang="de"] [data-lang="pt"],
+[lang="ru"] [data-lang="pt"] { display: none !important; }
+/* Embedded on a touch screen: the map sleeps until tapped, so a swipe scrolls the page. */
+.map-hint { position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 1000; max-width: 80%; text-align: center;
+  background: rgba(31,77,50,0.88); color: #fff; font: 600 12px/1.3 'Inter', sans-serif;
+  padding: 6px 10px; border-radius: 14px; pointer-events: none; }
+.map-hint[hidden] { display: none; }
 .lang-toggle {
   position: fixed;
   top: 56px;
@@ -430,6 +438,74 @@ const map = L.map('map', {
   attributionControl: false,
 });
 
+// German and Russian for this page's words, keyed by the English: in those
+// languages the English twin takes the translation and the Portuguese stays
+// hidden. Russian and German reach the map only from a page that embeds it.
+const I18N = {
+  de: {
+    'Madeira Trails': 'Madeiras Wanderwege', 'trails': 'Wege', 'Main': 'Start', 'Popular Trails on Madeira': 'Beliebte Trails auf Madeira',
+    'Legend': 'Legende', 'Trail status': 'Wegstatus', 'Open': 'Offen', 'Partially open': 'Teilweise offen', 'Closed': 'Gesperrt',
+    'Other layers': 'Weitere Ebenen', 'Race course': 'Rennstrecke', 'Popularity': 'Beliebtheit', 'All levadas': 'Alle Levadas',
+    'Base layers': 'Grundebenen', 'Roads': 'Straßen', 'Tunnels': 'Tunnel', 'Cities': 'Orte', 'Race': 'Rennen',
+    'Walking trails': 'Wanderwege', 'Closures': 'Sperrungen', '(longest route)': '(längste Strecke)', 'Also:': 'Außerdem:',
+    'Tap the map to move it': 'Tippen, um die Karte zu bewegen',
+  },
+  ru: {
+    'Madeira Trails': 'Маршруты Мадейры', 'trails': 'маршрутов', 'Main': 'Главная', 'Popular Trails on Madeira': 'Популярные маршруты Мадейры',
+    'Legend': 'Легенда', 'Trail status': 'Состояние маршрута', 'Open': 'Открыт', 'Partially open': 'Частично открыт', 'Closed': 'Закрыт',
+    'Other layers': 'Другие слои', 'Race course': 'Трасса забега', 'Popularity': 'Популярность', 'All levadas': 'Все левады',
+    'Base layers': 'Базовые слои', 'Roads': 'Дороги', 'Tunnels': 'Туннели', 'Cities': 'Города', 'Race': 'Забеги',
+    'Walking trails': 'Пешие маршруты', 'Closures': 'Закрытия', '(longest route)': '(самый длинный вариант)', 'Also:': 'Также:',
+    'Tap the map to move it': 'Нажмите на карту, чтобы двигать её',
+  },
+};
+function tx(en, pt) {
+  const l = document.documentElement.lang;
+  return l === 'pt' ? pt : ((I18N[l] || {})[en] || en);
+}
+function paintLang() {
+  document.querySelectorAll('[data-lang="en"]').forEach(el => {
+    if (el.dataset.en == null) el.dataset.en = el.textContent;
+    el.textContent = (I18N[document.documentElement.lang] || {})[el.dataset.en] || el.dataset.en;
+  });
+}
+paintLang();
+// The embedding page passes a language switch on (same origin only).
+window.addEventListener('message', e => {
+  if (e.origin !== location.origin || !e.data || !/^(en|pt|de|ru)$/.test(e.data.lang || '')) return;
+  document.documentElement.lang = e.data.lang;
+  paintLang();
+});
+
+// A map laid out while its frame had no size yet (a lazily loaded or hidden
+// iframe) stays an empty grey box until Leaflet measures again.
+if ('ResizeObserver' in window) new ResizeObserver(() => map.invalidateSize()).observe(document.getElementById('map'));
+window.addEventListener('load', () => map.invalidateSize());
+
+// Embedded (embed=1) on a touch screen, one finger over the map scrolls the
+// page instead of panning it: dragging and pinch wait for a tap on the map,
+// and go back to sleep when the page scrolls on. With dragging and touch zoom
+// off, Leaflet drops its touch-action: none and the browser scrolls.
+// Desktop (a mouse) keeps dragging from the start.
+if (isEmbed && window.matchMedia && matchMedia('(hover: none) and (pointer: coarse)').matches) {
+  const hint = document.createElement('div');
+  hint.className = 'map-hint';
+  hint.setAttribute('data-lang', 'en');
+  hint.textContent = 'Tap the map to move it';
+  document.body.appendChild(hint);
+  const pt = document.createElement('div');
+  pt.className = 'map-hint';
+  pt.setAttribute('data-lang', 'pt');
+  pt.textContent = 'Toque no mapa para o mover';
+  document.body.appendChild(pt);
+  paintLang();
+  const sleep = () => { map.dragging.disable(); map.touchZoom.disable(); hint.hidden = pt.hidden = false; };
+  const wake = () => { map.dragging.enable(); map.touchZoom.enable(); hint.hidden = pt.hidden = true; };
+  sleep();
+  map.getContainer().addEventListener('click', wake);
+  try { window.parent.addEventListener('scroll', () => { if (map.dragging.enabled()) sleep(); }, { passive: true }); } catch (e) {}
+}
+
 L.control.zoom({ position: 'topright' }).addTo(map);
 L.control.attribution({ position: 'bottomright', prefix: false })
   .addAttribution('&copy; <a href="https://openstreetmap.org">OSM</a>')
@@ -537,7 +613,6 @@ function pickLayer(name) {
   applySelection();
 }
 
-const isPtLang = () => (document.documentElement.lang || 'en') === 'pt';
 
 const WALK_STYLE = {
   open:    { color: '#2e9e5b', dash: null,  label: { en: 'Open', pt: 'Aberto' } },
@@ -553,7 +628,6 @@ function codeKey(c) { return String(c || '').replace(/\s+/g, '').toUpperCase(); 
 function drawTrail(t, layer, register) {
   const s = WALK_STYLE[t.status] || WALK_STYLE.open;
   const weight = t.status === 'open' ? 3 : 4;
-  const lang = isPtLang() ? 'pt' : 'en';
   const key = codeKey(t.code);
   t.lines.forEach(line => {
     const pl = L.polyline(line, {
@@ -561,7 +635,7 @@ function drawTrail(t, layer, register) {
     }).addTo(layer);
     pl.bindTooltip(`${t.code} — ${t.name}`, { sticky: true, className: 'trail-tip' });
     pl.bindPopup(
-      `<h3>${t.code} — ${t.name}</h3><p style="color:${s.color};font-weight:700;">${s.label[lang]}</p>`,
+      `<h3>${t.code} — ${t.name}</h3><p style="color:${s.color};font-weight:700;">${tx(s.label.en, s.label.pt)}</p>`,
       { className: 'race-popup' }
     );
     pl.on('mouseover', function() { this.setStyle({ weight: weight + 2, opacity: 1 }); });
@@ -635,9 +709,9 @@ fetch('tracks.json')
 
       line.bindTooltip(name, { sticky: true, className: 'trail-tip' });
 
-      let popupHtml = `<h3>${name}</h3><p>~${km} km (longest route)</p>`;
+      let popupHtml = `<h3>${name}</h3><p>~${km} ${document.documentElement.lang === 'ru' ? 'км' : 'km'} ${tx('(longest route)', '(percurso mais longo)')}</p>`;
       if (track.variants && track.variants.length) {
-        popupHtml += `<p style="margin-top:4px;color:#ccc;">Also: ${track.variants.join(', ')}</p>`;
+        popupHtml += `<p style="margin-top:4px;color:#ccc;">${tx('Also:', 'Também:')} ${track.variants.join(', ')}</p>`;
       }
       line.bindPopup(popupHtml, { className: 'race-popup' });
 
@@ -690,11 +764,11 @@ function toggleLang() {
     btn.textContent = 'PT';
     localStorage.setItem('lang', 'en');
   }
+  paintLang();
 }
 (function() {
-  const saved = localStorage.getItem('lang');
-  if (saved === 'pt') {
-    document.documentElement.lang = 'pt';
+  // The language itself is set in <head>; the toggle offers the other one.
+  if (document.documentElement.lang === 'pt') {
     const btn = document.querySelector('.lang-toggle');
     if (btn) btn.textContent = 'EN';
   }
