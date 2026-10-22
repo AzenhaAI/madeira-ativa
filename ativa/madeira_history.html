@@ -62,6 +62,28 @@ if (!new URLSearchParams(location.search).has('app')) {
 
 
   .era, .story { scroll-margin-top: 56px; }
+  .gset { margin: 0 0 26px; }
+  .gset h3 { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 21px; margin: 0; }
+  .gset .g-year { font-size: 12px; font-weight: 800; letter-spacing: .08em; color: var(--gold); text-transform: uppercase; }
+  .gset .g-sub { font-size: 13px; color: var(--soft); margin: 2px 0 8px; line-height: 1.45; }
+  .gstrip { display: flex; gap: 8px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px; scrollbar-width: thin; }
+  .gstrip button { flex: 0 0 auto; scroll-snap-align: start; border: 0; padding: 0; background: none; cursor: pointer; text-align: left; width: 150px; }
+  .gstrip img { width: 150px; height: 112px; object-fit: cover; border-radius: 10px; border: 1px solid var(--line); background: #e9e4d8; display: block; }
+  .gstrip span { display: block; font-size: 11.5px; color: var(--soft); margin-top: 4px; line-height: 1.3; }
+  .gstrip a { flex: 0 0 auto; width: 110px; text-decoration: none; color: var(--soft); font-size: 11px; line-height: 1.3; }
+  .gstrip a img { width: 110px; height: 82px; }
+  .g-src { font-size: 11.5px; color: var(--soft); }
+  .g-src a { color: var(--accent); }
+  .lb { position: fixed; inset: 0; z-index: 200; background: rgba(12,14,12,.94); display: flex; align-items: center; justify-content: center; }
+  .lb[hidden] { display: none; }
+  .lb figure { margin: 0; max-width: 96vw; max-height: 92vh; display: flex; flex-direction: column; align-items: center; }
+  .lb img { max-width: 96vw; max-height: 80vh; width: auto; min-height: 0; border: 0; border-radius: 4px; background: none; touch-action: pan-y; }
+  .lb figcaption { color: #e9e6dc; font-size: 14px; text-align: center; margin-top: 10px; max-width: 760px; padding: 0 12px; }
+  .lb figcaption small { display: block; color: #a9a597; font-size: 12px; margin-top: 3px; }
+  .lb button { position: absolute; background: rgba(255,255,255,.12); color: #fff; border: 0; border-radius: 50%; width: 44px; height: 44px; font-size: 28px; line-height: 1; cursor: pointer; }
+  .lb-x { top: 14px; right: 14px; } .lb-p { left: 10px; top: 50%; } .lb-n { right: 10px; top: 50%; }
+  @media (max-width: 560px) { .lb-p, .lb-n { top: auto; bottom: 18px; } }
+
   h1 { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: clamp(30px, 6vw, 46px); letter-spacing: -0.02em; margin: 18px 0 6px; }
   .sub { color: var(--soft); font-size: 16px; margin: 0 0 30px; line-height: 1.5; }
   .era {
@@ -104,6 +126,7 @@ if (!new URLSearchParams(location.search).has('app')) {
   .gal { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin: 14px 0 6px; }
   .gal figure { margin: 0; }
   .tl-chip { display: flex; align-items: center; gap: 15px; text-decoration: none; color: #fff; margin: 4px 0 26px; padding: 20px 24px; border-radius: 18px; border: 2.5px solid rgba(255,255,255,0.45); background: linear-gradient(90deg, #1F4D32, #6B8763 30%, #c8912f 70%, #b23a2e); box-shadow: 0 6px 20px rgba(21,32,26,0.22), inset 0 0 0 1px rgba(0,0,0,0.06); transition: transform 0.15s, box-shadow 0.15s; }
+  .tl-pics { background: linear-gradient(90deg, #4a3423, #8a6a43 35%, #b08b54 70%, #6b4f33); margin-top: -12px; }
   .tl-chip:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(21,32,26,0.30); }
   .tl-chip-ico { font-size: 30px; flex-shrink: 0; filter: drop-shadow(0 1px 3px rgba(0,0,0,0.3)); }
   .tl-chip-txt { flex: 1; font-size: clamp(15px, 2.3vw, 18px); line-height: 1.3; text-shadow: 0 1px 3px rgba(0,0,0,0.28); }
@@ -232,6 +255,11 @@ h1{font:500 var(--h1)/1.15 Fraunces,Georgia,serif!important;margin:24px 0 8px!im
     <span class="tl-chip-txt"><b><span data-l="en">The whole timeline</span><span data-l="pt">A cronologia completa</span><span data-l="de">Die ganze Zeitleiste</span><span data-l="ru">Вся хронология</span></b> — <span data-l="en">six centuries at a glance, 1419 → 2026</span><span data-l="pt">seis séculos num relance, 1419 → 2026</span><span data-l="de">Sechs Jahrhunderte auf einen Blick, 1419 → 2026</span><span data-l="ru">шесть веков одним взглядом, 1419 → 2026</span></span>
     <span class="tl-chip-arr">→</span>
   </a>
+  <a class="tl-chip tl-pics" href="#pictures">
+    <span class="tl-chip-ico">🖼</span>
+    <span class="tl-chip-txt"><b><span data-l="en">Madeira in old pictures</span><span data-l="pt">A Madeira em imagens antigas</span><span data-l="de">Madeira in alten Bildern</span><span data-l="ru">Мадейра в старых рисунках</span></b> — <span data-l="en">five galleries of engravings, lithographs and paintings, 1821–1854</span><span data-l="pt">cinco galerias de gravuras, litografias e pinturas, 1821–1854</span><span data-l="de">fünf Galerien mit Stichen, Lithografien und Gemälden, 1821–1854</span><span data-l="ru">пять галерей гравюр, литографий и картин, 1821–1854</span></span>
+    <span class="tl-chip-arr">→</span>
+  </a>
 
   
   
@@ -285,8 +313,8 @@ h1{font:500 var(--h1)/1.15 Fraunces,Georgia,serif!important;margin:24px 0 8px!im
       </figure>
       <div class="gal">
       <figure>
-      <img loading="lazy" src="/ativa/history/art-madeira-from-sea.jpg" alt="Colour lithograph of the island of Madeira seen from the sea with ships">
-      <figcaption><span data-l="en"><b>“Madeira” from the sea</b> — the green island rising from the Atlantic, the classic first sight from a ship's deck. Coloured lithograph, <b>19th century</b>; artist unrecorded. Public domain.</span><span data-l="pt"><b>“Madeira” vista do mar</b> — a ilha verde a erguer-se do Atlântico, a clássica primeira vista do convés. Litografia colorida, <b>séc. XIX</b>; autor não identificado. Domínio público.</span><span data-l="de"><b>„Madeira“ vom Meer aus</b> — die grüne Insel, die aus dem Atlantik aufsteigt, der klassische erste Anblick vom Schiffsdeck. Kolorierte Lithografie, <b>19. Jahrhundert</b>; Künstler unbekannt. Gemeinfrei.</span><span data-l="ru"><b>«Мадейра» с моря</b> — зелёный остров, встающий из Атлантики, классический первый вид с палубы корабля. Цветная литография, <b>XIX век</b>; автор неизвестен. Общественное достояние.</span></figcaption>
+      <img loading="lazy" src="/ativa/history/gallery/bulwer-1827/02.jpg" alt="Lithograph of Funchal seen from the anchorage, after James Bulwer, 1827">
+      <figcaption><span data-l="en"><b>Funchal from the anchorage, 1825</b> — the first sight from a ship’s deck: the town strung along the shore under the mountains, sails in the roadstead. Lithograph after a sketch by the <b>Rev. James Bulwer</b>, from <i>Views in the Madeiras</i>, London, <b>1827</b>. Public domain.</span><span data-l="pt"><b>O Funchal visto do ancoradouro, 1825</b> — a primeira vista do convés: a cidade ao longo da costa sob as montanhas, velas no porto. Litografia segundo um esboço do <b>Rev. James Bulwer</b>, de <i>Views in the Madeiras</i>, Londres, <b>1827</b>. Domínio público.</span><span data-l="de"><b>Funchal vom Ankerplatz, 1825</b> — der erste Blick vom Schiffsdeck: die Stadt am Ufer unter den Bergen, Segel auf der Reede. Lithografie nach einer Skizze von <b>Rev. James Bulwer</b>, aus <i>Views in the Madeiras</i>, London, <b>1827</b>. Gemeinfrei.</span><span data-l="ru"><b>Фуншал с якорной стоянки, 1825</b> — первое, что видно с палубы: город вдоль берега под горами, паруса на рейде. Литография по наброску <b>преподобного Джеймса Булвера</b> из <i>Views in the Madeiras</i>, Лондон, <b>1827</b>. Общественное достояние.</span></figcaption>
     </figure>
       <figure>
       <img loading="lazy" src="/ativa/history/1842-creole-wreck-storm.jpg" alt="Brown-ink drawing of the brig Creole wrecked on the rocks at Madeira, 1842">
@@ -306,8 +334,8 @@ h1{font:500 var(--h1)/1.15 Fraunces,Georgia,serif!important;margin:24px 0 8px!im
       </div>
       <div class="gal">
       <figure>
-      <img loading="lazy" src="/ativa/history/art-arrieiro-1821.jpg" alt="Hand-coloured 1821 plate of an arrieiro carrying a heavy load on a mountain path">
-      <figcaption><span data-l="en"><b>“An Arrieiro upon the Road”</b> — a carrier bent under a full load on a cliff path; before wheels, everything on Madeira moved on a back. Plate from <i>A History of Madeira</i>, R. Ackermann, London, <b>1821</b>. Public domain.</span><span data-l="pt"><b>“Um arrieiro na estrada”</b> — um carregador curvado sob a carga numa vereda; antes das rodas, tudo se movia às costas. Gravura de <i>A History of Madeira</i>, R. Ackermann, Londres, <b>1821</b>. Domínio público.</span><span data-l="de"><b>“An Arrieiro upon the Road”</b> — ein Lastenträger, unter voller Last gebeugt auf einem Klippenpfad; vor den Rädern wurde auf Madeira alles auf dem Rücken transportiert. Stich aus <i>A History of Madeira</i>, R. Ackermann, London, <b>1821</b>. Gemeinfrei.</span><span data-l="ru"><b>«Арриейро в пути»</b> — носильщик, согнувшийся под полной ношей на тропе над обрывом; до появления колёс всё на Мадейре перемещалось на чьей-то спине. Гравюра из <i>A History of Madeira</i>, R. Ackermann, Лондон, <b>1821</b>. Общественное достояние.</span></figcaption>
+      <img loading="lazy" src="/ativa/history/gallery/ackermann-1821/13.jpg" alt="Hand-coloured 1821 plate: a carrier under a full load on a cliff path, his companion clutching the rock">
+      <figcaption><span data-l="en"><b>“An Accident upon the Road”</b> — on a cliff path one carrier steadies himself on his staff under a full load while his companion clutches at the rock; before wheels, everything on Madeira moved on a back. Plate from <i>A History of Madeira</i>, R. Ackermann, London, <b>1821</b>. Public domain.</span><span data-l="pt"><b>“Um acidente no caminho”</b> — numa vereda à beira da arriba, um carregador firma-se no bordão sob a carga enquanto o companheiro se agarra à rocha; antes das rodas, tudo se movia às costas. Gravura de <i>A History of Madeira</i>, R. Ackermann, Londres, <b>1821</b>. Domínio público.</span><span data-l="de"><b>„Ein Unfall unterwegs“</b> — auf einem Klippenpfad stützt sich ein Träger unter voller Last auf seinen Stock, während sein Gefährte sich am Fels festklammert; vor den Rädern wurde auf Madeira alles auf dem Rücken getragen. Stich aus <i>A History of Madeira</i>, R. Ackermann, London, <b>1821</b>. Gemeinfrei.</span><span data-l="ru"><b>«Происшествие в дороге»</b> — на тропе над обрывом носильщик опирается на посох под полной ношей, а его спутник хватается за скалу; до появления колёс всё на Мадейре перемещалось на чьей-то спине. Гравюра из <i>A History of Madeira</i>, Р. Аккерман, Лондон, <b>1821</b>. Общественное достояние.</span></figcaption>
     </figure>
       <figure>
       <img loading="lazy" src="/ativa/history/art-monte-sledge-c1900.jpg" alt="Colour postcard of the Monte toboggan with two carreiros and a passenger">
@@ -372,20 +400,20 @@ h1{font:500 var(--h1)/1.15 Fraunces,Georgia,serif!important;margin:24px 0 8px!im
     </div>
     <div class="story-body">
       <figure>
-        <img loading="lazy" src="/ativa/history/2010-atlantic-fireworks.jpg" alt="Atlantic Festival fireworks over Funchal bay at night">
-        <figcaption><span data-l="en">Fireworks over the amphitheatre bay — the Atlantic Festival's June pyromusical, a rehearsal for the record-breaking New Year that crowns the island's year of festas. Photo: Michael Gaylard, CC BY 2.0.</span><span data-l="pt">Fogo sobre a baía-anfiteatro — o piromusical de junho do Festival do Atlântico, ensaio para a passagem de ano recordista que coroa o ano de festas da ilha. Foto: Michael Gaylard, CC BY 2.0.</span><span data-l="de">Feuerwerk über der Amphitheater-Bucht — das Pyromusical des Atlantic Festival im Juni, eine Generalprobe für das rekordverdächtige Neujahr, das das Festas-Jahr der Insel krönt. Foto: Michael Gaylard, CC BY 2.0.</span><span data-l="ru">Фейерверк над бухтой-амфитеатром — июньское пиромузыкальное шоу Атлантического фестиваля, репетиция рекордного Нового года, которым завершается праздничный год острова. Фото: Michael Gaylard, CC BY 2.0.</span></figcaption>
-      </figure>
+      <img loading="lazy" src="/ativa/history/gallery/ackermann-1821/10.jpg" alt="Hand-coloured 1821 plate: three country musicians with machete, rabeca and viola">
+      <figcaption><span data-l="en"><b>“Country Musicians”, 1821</b> — machete, rabeca fiddle and viola on the way to a festa; the same trio of instruments still plays at every arraial. Hand-coloured plate from <i>A History of Madeira</i>, R. Ackermann, London, <b>1821</b>. Public domain.</span><span data-l="pt"><b>«Músicos do campo», 1821</b> — machete, rabeca e viola a caminho de uma festa; o mesmo trio ainda toca em todos os arraiais. Gravura colorida à mão de <i>A History of Madeira</i>, R. Ackermann, Londres, <b>1821</b>. Domínio público.</span><span data-l="de"><b>„Musikanten vom Land“, 1821</b> — Machete, Rabeca-Geige und Viola auf dem Weg zu einer Festa; dasselbe Trio spielt noch heute bei jedem Arraial. Handkolorierter Stich aus <i>A History of Madeira</i>, R. Ackermann, London, <b>1821</b>. Gemeinfrei.</span><span data-l="ru"><b>«Деревенские музыканты», 1821</b> — машете, скрипка-рабека и виола по дороге на праздник; то же трио и сегодня играет на каждом арраяле. Раскрашенная гравюра из <i>A History of Madeira</i>, Р. Аккерман, Лондон, <b>1821</b>. Общественное достояние.</span></figcaption>
+    </figure>
       <div class="gal">
       <figure>
-      <img loading="lazy" src="/ativa/history/art-costume-peasants-1821.jpg" alt="Hand-coloured 1821 plate: a woman with a basket and a man playing a machete under a tree">
+      <img loading="lazy" src="/ativa/history/gallery/ackermann-1821/07.jpg" alt="Hand-coloured 1821 plate: a woman with a basket and a man playing a machete under a tree">
       <figcaption><span data-l="en"><b>Peasants in usual costume</b> — a woman with a laden basket, a man strumming the <i>machete</i> (the little Madeiran guitar that fathered the ukulele). Hand-coloured aquatint from <i>A History of Madeira</i> (verses by William Combe), published by Rudolph Ackermann, London, <b>1821</b>; the plates are unsigned. Public domain.</span><span data-l="pt"><b>Camponeses em traje comum</b> — uma mulher com um cesto e um homem a tocar <i>machete</i> (a viola madeirense que deu origem ao ukulele). Água-tinta aguarelada de <i>A History of Madeira</i> (versos de William Combe), editada por Rudolph Ackermann, Londres, <b>1821</b>; gravuras não assinadas. Domínio público.</span><span data-l="de"><b>Bauern in typischer Tracht</b> — eine Frau mit vollem Korb, ein Mann, der die <i>Machete</i> zupft (die kleine madeirische Gitarre, Vorläuferin der Ukulele). Handkolorierte Aquatinta aus <i>A History of Madeira</i> (Verse von William Combe), veröffentlicht von Rudolph Ackermann, London, <b>1821</b>; die Platten sind nicht signiert. Gemeinfrei.</span><span data-l="ru"><b>Крестьяне в повседневной одежде</b> — женщина с полной корзиной и мужчина, перебирающий струны <i>machete</i> (маленькой мадейрской гитары, от которой произошло укулеле). Раскрашенная вручную акватинта из <i>A History of Madeira</i> (стихи William Combe), изд. Rudolph Ackermann, Лондон, <b>1821</b>; гравюры не подписаны. Общественное достояние.</span></figcaption>
     </figure>
       <figure>
-      <img loading="lazy" src="/ativa/history/art-costume-western-1821.jpg" alt="Hand-coloured 1821 plate of a couple in the costume of western Madeira">
+      <img loading="lazy" src="/ativa/history/gallery/ackermann-1821/08.jpg" alt="Hand-coloured 1821 plate of a couple in the costume of western Madeira">
       <figcaption><span data-l="en"><b>Costume of the western island</b> — a couple from Madeira's far west in their Sunday best. Hand-coloured plate from <i>A History of Madeira</i>, R. Ackermann, London, <b>1821</b>. Public domain.</span><span data-l="pt"><b>Traje do poente da ilha</b> — um casal do extremo oeste da Madeira em traje domingueiro. Gravura aguarelada de <i>A History of Madeira</i>, R. Ackermann, Londres, <b>1821</b>. Domínio público.</span><span data-l="de"><b>Tracht der Westinsel</b> — ein Paar aus dem äußersten Westen Madeiras in Sonntagskleidung. Handkolorierte Platte aus <i>A History of Madeira</i>, R. Ackermann, London, <b>1821</b>. Gemeinfrei.</span><span data-l="ru"><b>Костюмы западной Мадейры</b> — пара с дальнего запада острова в праздничной одежде. Раскрашенная вручную гравюра из <i>A History of Madeira</i>, R. Ackermann, Лондон, <b>1821</b>. Общественное достояние.</span></figcaption>
     </figure>
       <figure>
-      <img loading="lazy" src="/ativa/history/art-farmer-daughter-1821.jpg" alt="Hand-coloured 1821 plate: a farmer and his daughter on the way to town">
+      <img loading="lazy" src="/ativa/history/gallery/ackermann-1821/05.jpg" alt="Hand-coloured 1821 plate: a farmer and his daughter on the way to town">
       <figcaption><span data-l="en"><b>“A Farmer &amp; his Daughter going to Town”</b> — over the mountain to Funchal market in Sunday clothes. Plate from <i>A History of Madeira</i>, R. Ackermann, London, <b>1821</b>. Public domain.</span><span data-l="pt"><b>“Um lavrador e a sua filha a caminho da vila”</b> — pela serra até ao mercado do Funchal, em traje domingueiro. Gravura de <i>A History of Madeira</i>, R. Ackermann, Londres, <b>1821</b>. Domínio público.</span><span data-l="de"><b>“Ein Bauer &amp; seine Tochter auf dem Weg in die Stadt”</b> — über den Berg zum Markt in Funchal, im Sonntagsstaat. Tafel aus <i>A History of Madeira</i>, R. Ackermann, London, <b>1821</b>. Gemeinfrei.</span><span data-l="ru"><b>“A Farmer &amp; his Daughter going to Town”</b> («Фермер с дочерью идут в город») — через гору на рынок Funchal в праздничной одежде. Гравюра из <i>A History of Madeira</i>, R. Ackermann, Лондон, <b>1821</b>. Общественное достояние.</span></figcaption>
     </figure>
       </div>
@@ -405,16 +433,6 @@ h1{font:500 var(--h1)/1.15 Fraunces,Georgia,serif!important;margin:24px 0 8px!im
       <h3><span data-l="en">The island kitchen</span><span data-l="pt">A cozinha da ilha</span><span data-l="de">Die Inselküche</span><span data-l="ru">Кухня острова</span></h3></div>
     </div>
     <div class="story-body">
-      <div class="fig-pair">
-        <figure>
-          <img loading="lazy" src="/ativa/history/2012-bolo-do-caco.jpg" alt="Baker in a traditional carapuça hat turning bolo do caco flatbreads on the griddle at a bamboo stall">
-          <figcaption><span data-l="en">A baker in the traditional <i>carapuça</i> cap turns <b>bolo do caco</b> rounds on the hot plate of a bamboo festa stall — the sweet-potato flatbread was originally baked on a shard (<i>caco</i>) of basalt. Photo: Stephen Colebourne, CC BY 2.0.</span><span data-l="pt">Um padeiro de carapuça vira <b>bolos do caco</b> na chapa de uma banca de festa em bambu — o pão de batata-doce cozia-se originalmente sobre um caco de basalto. Foto: Stephen Colebourne, CC BY 2.0.</span><span data-l="de">Ein Bäcker mit der traditionellen <i>carapuça</i>-Mütze wendet <b>bolo do caco</b>-Fladen auf der heißen Platte eines Bambusstands bei der Festa — das Süßkartoffel-Fladenbrot wurde ursprünglich auf einer Scherbe (<i>caco</i>) aus Basalt gebacken. Foto: Stephen Colebourne, CC BY 2.0.</span><span data-l="ru">Пекарь в традиционной шапочке <i>carapuça</i> переворачивает лепёшки <b>bolo do caco</b> на раскалённой плите бамбукового праздничного ларька — эту лепёшку на батате изначально пекли на осколке (<i>caco</i>) базальта. Фото: Stephen Colebourne, CC BY 2.0.</span></figcaption>
-        </figure>
-        <figure>
-          <img loading="lazy" src="/ativa/history/2012-arraial.jpg" alt="Night arraial in Santo António, Funchal — strings of lights, paper garlands and an espetada fire">
-          <figcaption><span data-l="en">An arraial after dark in Santo António — strings of bulbs, paper garlands, and on the left the fire where the espetada skewers glow. This is where the island's kitchen lives. Photo: PESP / Wikimedia, CC BY-SA 3.0.</span><span data-l="pt">Arraial noturno em Santo António — lâmpadas em fio, grinaldas de papel e, à esquerda, o fogo onde as espetadas brilham. É aqui que mora a cozinha da ilha. Foto: PESP / Wikimedia, CC BY-SA 3.0.</span><span data-l="de">Ein Arraial (Volksfest) bei Nacht in Santo António — Lichterketten, Papiergirlanden, und links das Feuer, an dem die Espetada-Spieße glühen. Hier lebt die Küche der Insel. Foto: PESP / Wikimedia, CC BY-SA 3.0.</span><span data-l="ru">Arraial после заката в Santo António — гирлянды лампочек, бумажные флажки, а слева огонь, на котором светятся шампуры эспетады. Здесь живёт кухня острова. Фото: PESP / Wikimedia, CC BY-SA 3.0.</span></figcaption>
-        </figure>
-      </div>
       <div class="gal">
       <figure>
       <img loading="lazy" src="/ativa/history/1900s-whale-ashore.jpg" alt="A whale being butchered on the shingle at Porto Moniz, photograph circa 1900">
@@ -469,7 +487,12 @@ h1{font:500 var(--h1)/1.15 Fraunces,Georgia,serif!important;margin:24px 0 8px!im
     </div>
   </div>
 
-  <h2 class="stories-title" id="timeline"><span data-l="en">The timeline</span><span data-l="pt">A linha do tempo</span><span data-l="de">Die Zeitleiste</span><span data-l="ru">Хронология</span></h2>
+  <h2 class="stories-title" id="pictures"><span data-l="en">Madeira in old pictures</span><span data-l="pt">A Madeira em imagens antigas</span><span data-l="de">Madeira in alten Bildern</span><span data-l="ru">Мадейра в старых рисунках</span></h2>
+<p class="stories-sub"><span data-l="en">How travellers and artists saw the island two centuries ago — whole sets from five books and painters, in the public domain. Tap a picture to open it full screen and swipe through.</span><span data-l="pt">Como viajantes e artistas viram a ilha há dois séculos — conjuntos completos de cinco livros e pintores, em domínio público. Toque numa imagem para a abrir em ecrã inteiro e deslizar.</span><span data-l="de">Wie Reisende und Künstler die Insel vor zwei Jahrhunderten sahen — ganze Serien aus fünf Büchern und Werken, gemeinfrei. Bild antippen, um es im Vollbild zu öffnen und zu blättern.</span><span data-l="ru">Каким остров видели путешественники и художники двести лет назад — полные наборы из пяти книг и работ, в общественном достоянии. Нажмите на картинку, чтобы открыть на весь экран и листать.</span></p>
+<div id="oldPics"></div>
+<div class="lb" id="lb" hidden><button type="button" class="lb-x" aria-label="Close">×</button><button type="button" class="lb-p" aria-label="Previous">‹</button><button type="button" class="lb-n" aria-label="Next">›</button><figure><img alt=""><figcaption></figcaption></figure></div>
+
+<h2 class="stories-title" id="timeline"><span data-l="en">The timeline</span><span data-l="pt">A linha do tempo</span><span data-l="de">Die Zeitleiste</span><span data-l="ru">Хронология</span></h2>
   <p class="stories-sub"><span data-l="en">Six hundred years in six chapters — worth a slow scroll.</span><span data-l="pt">Seiscentos anos em seis capítulos — vale a pena descer devagar.</span><span data-l="de">Sechshundert Jahre in sechs Kapiteln — lohnt sich zum langsamen Scrollen.</span><span data-l="ru">Шестьсот лет в шести главах — листайте не спеша.</span></p>
 
   <div class="timearrow" aria-hidden="true">
@@ -491,16 +514,16 @@ h1{font:500 var(--h1)/1.15 Fraunces,Georgia,serif!important;margin:24px 0 8px!im
     <figcaption><span data-l="en"><b>Funchal beach &amp; forts</b> — boats drawn up on the shingle, the little seafront batteries, ships riding in the roadstead. Hand-coloured aquatint, <b>early 19th century</b>; artist unrecorded. Public domain.</span><span data-l="pt"><b>Praia e fortes do Funchal</b> — botes puxados para o calhau, as pequenas baterias da frente-mar, navios fundeados. Água-tinta aguarelada, <b>início do séc. XIX</b>; autor não identificado. Domínio público.</span><span data-l="de"><b>Strand &amp; Festungen von Funchal</b> — auf dem Kies hochgezogene Boote, die kleinen Küstenbatterien, Schiffe auf der Reede. Handkolorierte Aquatinta, <b>frühes 19. Jahrhundert</b>; Künstler unbekannt. Gemeinfrei.</span><span data-l="ru"><b>Пляж &amp; форты Funchal</b> — лодки, вытащенные на гальку, маленькие береговые батареи, корабли на рейде. Раскрашенная вручную акватинта, <b>начало XIX века</b>; автор неизвестен. Общественное достояние.</span></figcaption>
     </figure>
     <figure>
-    <img loading="lazy" src="/ativa/history/art-bay-funchal-steel-engraving.jpg" alt="Hand-coloured steel engraving of Funchal bay with a red lateen-sailed boat among the fleet">
-    <figcaption><span data-l="en"><b>The Bay and Town of Funchal</b> — a boat with a red lateen sail among the anchored fleet under the mountains. Hand-coloured steel engraving, <b>mid-19th century</b>; artist unrecorded. Public domain.</span><span data-l="pt"><b>A baía e a cidade do Funchal</b> — um barco de vela latina vermelha entre a frota fundeada sob as montanhas. Gravura a aço aguarelada, <b>meados do séc. XIX</b>; autor não identificado. Domínio público.</span><span data-l="de"><b>Die Bucht und Stadt Funchal</b> — ein Boot mit rotem Lateinersegel zwischen der vor Anker liegenden Flotte unter den Bergen. Handkolorierter Stahlstich, <b>Mitte des 19. Jahrhunderts</b>; Künstler unbekannt. Gemeinfrei.</span><span data-l="ru"><b>Бухта и город Funchal</b> — лодка с красным латинским парусом среди стоящих на якоре судов под горами. Раскрашенная вручную гравюра на стали, <b>середина XIX века</b>; автор неизвестен. Общественное достояние.</span></figcaption>
+      <img loading="lazy" src="/ativa/history/gallery/picken-1840/02.jpg" alt="Hand-coloured lithograph of Funchal from the bay by Andrew Picken, 1840">
+      <figcaption><span data-l="en"><b>Funchal from the Bay, 1840</b> — boats and a brig in the open roadstead, the white town under the mountains. Hand-coloured lithograph by <b>Andrew Picken</b>, from <i>Madeira Illustrated</i>, London, <b>1840</b>. Public domain.</span><span data-l="pt"><b>O Funchal visto da baía, 1840</b> — botes e um brigue no porto aberto, a cidade branca sob as montanhas. Litografia colorida à mão de <b>Andrew Picken</b>, de <i>Madeira Illustrated</i>, Londres, <b>1840</b>. Domínio público.</span><span data-l="de"><b>Funchal von der Bucht, 1840</b> — Boote und eine Brigg auf der offenen Reede, die weiße Stadt unter den Bergen. Handkolorierte Lithografie von <b>Andrew Picken</b>, aus <i>Madeira Illustrated</i>, London, <b>1840</b>. Gemeinfrei.</span><span data-l="ru"><b>Фуншал с моря, 1840</b> — лодки и бриг на открытом рейде, белый город под горами. Раскрашенная литография <b>Эндрю Пикена</b> из <i>Madeira Illustrated</i>, Лондон, <b>1840</b>. Общественное достояние.</span></figcaption>
     </figure>
     <figure>
-    <img loading="lazy" src="/ativa/history/art-bay-ships-litho.jpg" alt="Colour lithograph of Funchal bay with sailing ships and mountains">
-    <figcaption><span data-l="en"><b>Funchal bay</b> — sailing ships at anchor under the amphitheatre of mountains. Hand-coloured lithograph, <b>mid-19th century</b>; artist unrecorded. Public domain.</span><span data-l="pt"><b>Baía do Funchal</b> — veleiros fundeados sob o anfiteatro de montanhas. Litografia aguarelada, <b>meados do séc. XIX</b>; autor não identificado. Domínio público.</span><span data-l="de"><b>Bucht von Funchal</b> — Segelschiffe vor Anker unter dem Amphitheater der Berge. Handkolorierte Lithografie, <b>Mitte des 19. Jahrhunderts</b>; Künstler unbekannt. Gemeinfrei.</span><span data-l="ru"><b>Бухта Funchal</b> — парусники на якоре под амфитеатром гор. Раскрашенная вручную литография, <b>середина XIX века</b>; автор неизвестен. Общественное достояние.</span></figcaption>
+      <img loading="lazy" src="/ativa/history/gallery/bryullov-1850/03.jpg" alt="Karl Bryullov, the Pico fort above Funchal, 1849-1850">
+      <figcaption><span data-l="en"><b>The Pico fort above Funchal, 1849–1850</b> — painted by the Russian artist <b>Karl Bryullov</b> during the year he spent in Funchal for his health. Public domain.</span><span data-l="pt"><b>O Forte do Pico sobre o Funchal, 1849–1850</b> — pintado pelo russo <b>Karl Briullov</b> durante o ano que passou no Funchal a tratar-se. Domínio público.</span><span data-l="de"><b>Die Festung Pico über Funchal, 1849–1850</b> — gemalt vom russischen Künstler <b>Karl Brjullow</b> während seines Kuraufenthalts in Funchal. Gemeinfrei.</span><span data-l="ru"><b>Крепость Пику над Фуншалом, 1849–1850</b> — работа <b>Карла Брюллова</b>, написанная за год, что он лечился в Фуншале. Общественное достояние.</span></figcaption>
     </figure>
     <figure>
-    <img loading="lazy" src="/ativa/history/art-picken-funchal-1840.jpg" alt="Lithograph of Funchal above the bay with a basket-seller and a family picnicking, Andrew Picken 1840">
-    <figcaption><span data-l="en"><b>Funchal above the bay, 1840</b> — a basket-seller and a family at their meal on the cliff, the town and its chimneys below. Lithograph drawn from nature and on stone by <b>Andrew Picken</b> (1815–1845), printed by Day &amp; Haghe, from <i>Madeira Illustrated</i>, London, <b>1840</b>. Public domain.</span><span data-l="pt"><b>O Funchal sobre a baía, 1840</b> — um vendedor de cestos e uma família à refeição na arriba, a cidade e as chaminés em baixo. Litografia desenhada do natural e sobre pedra por <b>Andrew Picken</b> (1815–1845), impressa por Day &amp; Haghe, de <i>Madeira Illustrated</i>, Londres, <b>1840</b>. Domínio público.</span><span data-l="de"><b>Funchal über der Bucht, 1840</b> — ein Korbverkäufer und eine Familie beim Essen auf der Klippe, darunter die Stadt mit ihren Schornsteinen. Lithografie, nach der Natur und direkt auf den Stein gezeichnet von <b>Andrew Picken</b> (1815–1845), gedruckt von Day &amp; Haghe, aus <i>Madeira Illustrated</i>, London, <b>1840</b>. Gemeinfrei.</span><span data-l="ru"><b>Funchal над бухтой, 1840</b> — торговец корзинами и семья за трапезой на обрыве, внизу город с его трубами. Литография: с натуры и на камне рисовал <b>Andrew Picken</b> (1815–1845), печать Day &amp; Haghe, из альбома <i>Madeira Illustrated</i>, Лондон, <b>1840</b>. Общественное достояние.</span></figcaption>
+    <img loading="lazy" src="/ativa/history/gallery/picken-1840/03.jpg" alt="Lithograph of Funchal above the bay with a basket-seller and a family picnicking, Andrew Picken 1840">
+    <figcaption><span data-l="en"><b>Funchal from São Lázaro, 1840</b> — a basket-seller and a family at their meal on the cliff, the town and its chimneys below. Hand-coloured lithograph drawn from nature and on stone by <b>Andrew Picken</b> (1815–1845), printed by Day &amp; Haghe, from <i>Madeira Illustrated</i>, London, <b>1840</b>. Public domain.</span><span data-l="pt"><b>O Funchal visto de São Lázaro, 1840</b> — um vendedor de cestos e uma família à refeição na arriba, a cidade e as chaminés em baixo. Litografia colorida à mão, desenhada do natural e sobre pedra por <b>Andrew Picken</b> (1815–1845), impressa por Day &amp; Haghe, de <i>Madeira Illustrated</i>, Londres, <b>1840</b>. Domínio público.</span><span data-l="de"><b>Funchal über der Bucht, 1840</b> — ein Korbverkäufer und eine Familie beim Essen auf der Klippe, darunter die Stadt mit ihren Schornsteinen. Lithografie, nach der Natur und direkt auf den Stein gezeichnet von <b>Andrew Picken</b> (1815–1845), gedruckt von Day &amp; Haghe, aus <i>Madeira Illustrated</i>, London, <b>1840</b>. Gemeinfrei.</span><span data-l="ru"><b>Funchal над бухтой, 1840</b> — торговец корзинами и семья за трапезой на обрыве, внизу город с его трубами. Литография: с натуры и на камне рисовал <b>Andrew Picken</b> (1815–1845), печать Day &amp; Haghe, из альбома <i>Madeira Illustrated</i>, Лондон, <b>1840</b>. Общественное достояние.</span></figcaption>
     </figure>
     <figure>
     <img loading="lazy" src="/ativa/history/art-funchal-watercolor-1877.jpg" alt="Watercolour over Funchal's tiled roofs and a church spire to the terraced hills, dated 1877">
@@ -515,8 +538,8 @@ h1{font:500 var(--h1)/1.15 Fraunces,Georgia,serif!important;margin:24px 0 8px!im
     <figcaption><span data-l="en"><b>The Bay and Town of Funchal, 1874</b> — the amphitheatre and tall ships in the open roadstead, before any harbour wall. Wood engraving, <i>The Illustrated London News</i>, 28 February 1874. Public domain.</span><span data-l="pt"><b>A baía e a cidade do Funchal, 1874</b> — o anfiteatro e veleiros na baía aberta, antes de qualquer molhe. Gravura em madeira, <i>The Illustrated London News</i>, 28 de fevereiro de 1874. Domínio público.</span><span data-l="de"><b>Die Bucht und Stadt Funchal, 1874</b> — das Amphitheater und hohe Segelschiffe auf offener Reede, noch ohne Hafenmauer. Holzstich, <i>The Illustrated London News</i>, 28. Februar 1874. Gemeinfrei.</span><span data-l="ru"><b>Бухта и город Funchal, 1874</b> — амфитеатр и высокие парусники на открытом рейде, ещё до всякого мола. Гравюра на дереве, <i>The Illustrated London News</i>, 28 февраля 1874. Общественное достояние.</span></figcaption>
     </figure>
     <figure>
-    <img loading="lazy" src="/ativa/history/art-boats-in-surf.jpg" alt="Watercolour of rowing boats landing through heavy surf at Funchal">
-    <figcaption><span data-l="en"><b>Landing through the surf</b> — before the harbour wall, everyone came ashore in boats hauled up the beach through the swell. Watercolour, 19th century; artist unrecorded. Public domain.</span><span data-l="pt"><b>Desembarcar na rebentação</b> — antes do molhe, chegava-se a terra em botes puxados para o calhau. Aguarela, séc. XIX; autor não identificado. Domínio público.</span><span data-l="de"><b>Landung durch die Brandung</b> — vor der Hafenmauer kamen alle an Land, in Booten, die durch die Dünung den Strand hinaufgezogen wurden. Aquarell, 19. Jahrhundert; Künstler unbekannt. Gemeinfrei.</span><span data-l="ru"><b>Высадка через прибой</b> — до постройки портового мола все сходили на берег в лодках, которые вытаскивали на пляж прямо сквозь волны. Акварель, XIX век; автор неизвестен. Общественное достояние.</span></figcaption>
+      <img loading="lazy" src="/ativa/history/gallery/ackermann-1821/26.jpg" alt="Hand-coloured 1821 plate: West View of Loo Fort, Funchal bay">
+      <figcaption><span data-l="en"><b>West View of Loo Fort, 1821</b> — the little fort on its rock in Funchal bay, boats under sail all around; the rock now anchors the harbour pier. Hand-coloured plate from <i>A History of Madeira</i>, R. Ackermann, London, <b>1821</b>. Public domain.</span><span data-l="pt"><b>O Forte do Ilhéu visto de oeste, 1821</b> — o pequeno forte no seu rochedo na baía do Funchal, rodeado de barcos à vela; hoje o ilhéu segura o molhe do porto. Gravura colorida à mão de <i>A History of Madeira</i>, R. Ackermann, Londres, <b>1821</b>. Domínio público.</span><span data-l="de"><b>Das Loo-Fort von Westen, 1821</b> — das kleine Fort auf seinem Felsen in der Bucht von Funchal, ringsum Segelboote; heute trägt der Fels die Hafenmole. Handkolorierter Stich aus <i>A History of Madeira</i>, R. Ackermann, London, <b>1821</b>. Gemeinfrei.</span><span data-l="ru"><b>Форт на скале Лу с запада, 1821</b> — маленький форт на скале в бухте Фуншала, вокруг лодки под парусами; сегодня на эту скалу опирается портовый мол. Раскрашенная гравюра из <i>A History of Madeira</i>, Р. Аккерман, Лондон, <b>1821</b>. Общественное достояние.</span></figcaption>
     </figure>
     </div>
 
@@ -525,11 +548,11 @@ h1{font:500 var(--h1)/1.15 Fraunces,Georgia,serif!important;margin:24px 0 8px!im
     <h2><span data-l="en">Clearing a vertical island</span><span data-l="pt">Arrotear uma ilha vertical</span><span data-l="de">Eine vertikale Insel erobern</span><span data-l="ru">Освоение вертикального острова</span></h2>
     <div class="fig-pair">
       <figure>
-        <img src="/ativa/history/1821-rural-occupations.jpg" alt="Rural occupations on Madeira — plate from A History of Madeira, 1821">
+        <img src="/ativa/history/gallery/ackermann-1821/06.jpg" alt="Rural occupations on Madeira — plate from A History of Madeira, 1821">
         <figcaption><span data-l="en">Three women at their daily chores outside a stone cottage among young banana plants: one kneads in a wicker basin, the old woman spins wool with a drop spindle — a cat asleep on her lap — the third grinds grain at a hand mill. Hand-coloured plate, “A History of Madeira”, London, 1821. Public domain.</span><span data-l="pt">Três mulheres nas lidas diárias junto a uma casa de pedra: uma amassa numa gamela, a velhinha fia lã com um fuso — um gato ao colo — a terceira mói grão num moinho de mão. Gravura aguarelada, “A History of Madeira”, Londres, 1821. Domínio público.</span><span data-l="de">Drei Frauen bei ihrer Tagesarbeit vor einem Steinhaus zwischen jungen Bananenpflanzen: eine knetet in einem Korbbecken, die alte Frau spinnt Wolle mit der Handspindel – eine schlafende Katze auf ihrem Schoß –, die dritte mahlt Getreide in einer Handmühle. Handkolorierter Stich, “A History of Madeira”, London, 1821. Gemeinfrei.</span><span data-l="ru">Три женщины за ежедневной работой у каменного домика среди молодых бананов: одна месит тесто в плетёной лохани, старуха прядёт шерсть на веретене — у неё на коленях спит кошка, — третья мелет зерно на ручной мельнице. Раскрашенная вручную гравюра, «A History of Madeira», Лондон, 1821. Общественное достояние.</span></figcaption>
       </figure>
       <figure>
-        <img loading="lazy" src="/ativa/history/art-cottage-interior-1821.jpg" alt="Hand-coloured 1821 plate showing the interior of a Madeiran cottage">
+        <img loading="lazy" src="/ativa/history/gallery/ackermann-1821/01.jpg" alt="Hand-coloured 1821 plate showing the interior of a Madeiran cottage">
         <figcaption><span data-l="en">Inside that one-room world — hearth, bed and family all in a single space. Hand-coloured plate from <i>A History of Madeira</i>, R. Ackermann, London, 1821. Public domain.</span><span data-l="pt">Dentro desse mundo de uma só divisão — lareira, cama e família num só espaço. Gravura aguarelada de <i>A History of Madeira</i>, R. Ackermann, Londres, 1821. Domínio público.</span><span data-l="de">Im Inneren dieser Einraumwelt – Herd, Bett und Familie auf einem einzigen Raum. Handkolorierter Stich aus <i>A History of Madeira</i>, R. Ackermann, London, 1821. Gemeinfrei.</span><span data-l="ru">Внутри этого мира в одну комнату — очаг, кровать и вся семья в одном пространстве. Раскрашенная вручную гравюра из <i>A History of Madeira</i>, R. Ackermann, Лондон, 1821. Общественное достояние.</span></figcaption>
       </figure>
     </div>
@@ -565,7 +588,7 @@ h1{font:500 var(--h1)/1.15 Fraunces,Georgia,serif!important;margin:24px 0 8px!im
     <h2><span data-l="en">Moving without wheels</span><span data-l="pt">Mover-se sem rodas</span><span data-l="de">Fortbewegung ohne Räder</span><span data-l="ru">Без колёс</span></h2>
     <div class="fig-pair">
       <figure>
-        <img loading="lazy" src="/ativa/history/1821-hammock-travel.jpg" alt="Travelling by hammock on Madeira — plate from A History of Madeira, 1821">
+        <img loading="lazy" src="/ativa/history/gallery/ackermann-1821/20.jpg" alt="Travelling by hammock on Madeira — plate from A History of Madeira, 1821">
         <figcaption><span data-l="en">A lady reclines in a fringed hammock slung from a single pole, two barefoot carriers at either end; behind, a gentleman follows on horseback while his groom trots alongside holding the horse's tail uphill. Plate, 1821. Public domain.</span><span data-l="pt">Uma senhora recostada numa rede franjada, pendurada num só pau, com dois carregadores descalços; atrás, um cavalheiro a cavalo, com o arrieiro agarrado à cauda na subida. Gravura, 1821. Domínio público.</span><span data-l="de">Eine Dame ruht in einer gefransten Hängematte, die an einer einzigen Stange hängt, zwei barfüßige Träger an jedem Ende; dahinter folgt ein Herr zu Pferd, während sein Stallbursche bergauf nebenher trabt und den Pferdeschwanz hält. Stich, 1821. Gemeinfrei.</span><span data-l="ru">Дама полулежит в гамаке с бахромой, подвешенном на одном шесте, по босому носильщику с каждого конца; позади едет верхом джентльмен, а его грум трусит рядом, на подъёме держась за хвост лошади. Гравюра, 1821. Общественное достояние.</span></figcaption>
       </figure>
       <figure>
@@ -634,6 +657,52 @@ if (location.hash) {
   if (t0) { var c0 = t0.closest('.story'); if (c0) c0.classList.add('open'); }
 }
 
+// Madeira in old pictures: galleries from /ativa/history/gallery/gallery.json
+(function () {
+  var box = document.getElementById('oldPics'), lb = document.getElementById('lb'), G = null, cur = null, idx = 0;
+  if (!box || !lb) return;
+  var L = function (x) { var l = MA.lang(); return MA.esc(x ? (x[l] || x.en) : ''); };
+  var base = '/ativa/history/gallery/';
+  function render() {
+    if (!G) return;
+    box.innerHTML = G.galleries.map(function (g, gi) {
+      var strip = g.items.map(function (it, i) {
+        return g.preview_only
+          ? '<a href="' + it.link + '" target="_blank" rel="noopener"><img loading="lazy" alt="" src="' + base + it.thumb + '"><span>' + L(it.title) + '</span></a>'
+          : '<button type="button" data-g="' + gi + '" data-i="' + i + '"><img loading="lazy" alt="' + L(it.title) + '" src="' + base + it.thumb + '"><span>' + L(it.title) + '</span></button>';
+      }).join('');
+      return '<div class="gset" id="g-' + g.id + '"><span class="g-year">' + MA.esc(g.year) + '</span><h3>' + L(g.title) + '</h3><p class="g-sub">' + L(g.sub) + '</p>' +
+        '<div class="gstrip">' + strip + '</div><div class="g-src">' + MA.esc(g.source) + ' · <a href="' + g.url + '" target="_blank" rel="noopener">' + MA.esc(g.licence) + '</a></div></div>';
+    }).join('');
+  }
+  function show() {
+    var it = cur.items[idx];
+    lb.querySelector('img').src = base + it.img;
+    lb.querySelector('figcaption').innerHTML = L(it.title) + '<small>' + L(cur.title) + ', ' + MA.esc(cur.year) + ' · ' + (idx + 1) + ' / ' + cur.items.length + '</small>';
+  }
+  function step(d) { idx = (idx + d + cur.items.length) % cur.items.length; show(); }
+  function close() { lb.hidden = true; document.body.style.overflow = ''; }
+  box.addEventListener('click', function (e) {
+    var b = e.target.closest('button[data-g]'); if (!b) return;
+    cur = G.galleries[+b.dataset.g]; idx = +b.dataset.i; show(); lb.hidden = false; document.body.style.overflow = 'hidden';
+  });
+  lb.querySelector('.lb-x').onclick = close;
+  lb.querySelector('.lb-p').onclick = function () { step(-1); };
+  lb.querySelector('.lb-n').onclick = function () { step(1); };
+  lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+  document.addEventListener('keydown', function (e) {
+    if (lb.hidden) return;
+    if (e.key === 'Escape') close(); else if (e.key === 'ArrowLeft') step(-1); else if (e.key === 'ArrowRight') step(1);
+  });
+  var x0 = null;
+  lb.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+  lb.addEventListener('touchend', function (e) {
+    if (x0 === null) return; var dx = e.changedTouches[0].clientX - x0; x0 = null;
+    if (Math.abs(dx) > 40) step(dx < 0 ? 1 : -1);
+  });
+  MA.onLang(function () { render(); if (!lb.hidden) show(); });
+  MA.get(base + 'gallery.json').then(function (d) { G = d; render(); });
+})();
 </script>
 <div class="stores"><a class="store store-ios" href="https://apps.apple.com/app/madeira-ativa/id6796836699" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.4 12.8c0-2.1 1.7-3.1 1.8-3.2-1-1.4-2.5-1.6-3-1.6-1.3-.1-2.5.7-3.1.7-.7 0-1.7-.7-2.8-.7-1.4 0-2.7.8-3.4 2.1-1.5 2.6-.4 6.4 1.1 8.5.7 1 1.5 2.2 2.7 2.1 1.1 0 1.5-.7 2.8-.7s1.7.7 2.8.7c1.2 0 1.9-1 2.6-2.1.8-1.2 1.1-2.3 1.2-2.4 0 0-2.7-1-2.7-3.4ZM14.3 6.6c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.6.7-1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2Z"/></svg><span><small><span data-l="en">Download on the</span><span data-l="pt">Descarregar na</span><span data-l="de">Laden im</span><span data-l="ru">Загрузите в</span></small>App Store</span></a><a class="store store-android" href="https://play.google.com/store/apps/details?id=ai.azenha.ativa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d7fe" d="M4.6 2.6a1 1 0 0 0-.5.9v17a1 1 0 0 0 .5.9l9.1-9.4-9.1-9.4Z"/><path fill="#00f076" d="m14.8 10.9 2.9-3-9.9-5.6 7 8.6Z"/><path fill="#ff3a44" d="m14.8 13.1-7 8.6 9.9-5.6-2.9-3Z"/><path fill="#ffd500" d="m18.9 10.9-2.4-1.4-3 3.5 3 3.5 2.4-1.4c.9-.5.9-1.7 0-2.2Z"/></svg><span><small><span data-l="en">Get it on</span><span data-l="pt">Disponível no</span><span data-l="de">Jetzt bei</span><span data-l="ru">Доступно в</span></small>Google Play</span></a></div>
 <footer class="foot"><span>Madeira Ativa · azenha.ai</span><a href="/ativa/sources"><span data-l="en">Sources</span><span data-l="pt">Fontes</span><span data-l="de">Quellen</span><span data-l="ru">Источники</span></a><a href="/ativa/privacy"><span data-l="en">Privacy</span><span data-l="pt">Privacidade</span><span data-l="de">Datenschutz</span><span data-l="ru">Конфиденциальность</span></a><a href="/apps/"><span data-l="en">All apps</span><span data-l="pt">Todas as apps</span><span data-l="de">Alle Apps</span><span data-l="ru">Все приложения</span></a><a href="mailto:agent@azenha.ai">agent@azenha.ai</a><a href="/ativa-101026/"><span data-l="en">Previous version</span><span data-l="pt">Versão anterior</span><span data-l="de">Vorherige Version</span><span data-l="ru">Предыдущая версия</span></a></footer>

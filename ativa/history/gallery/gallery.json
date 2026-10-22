@@ -1,0 +1,896 @@
+{
+ "title": {
+  "en": "Madeira in old pictures",
+  "pt": "A Madeira em imagens antigas",
+  "de": "Madeira in alten Bildern",
+  "ru": "Мадейра в старых рисунках"
+ },
+ "galleries": [
+  {
+   "id": "ackermann-1821",
+   "year": "1821",
+   "title": {
+    "en": "A History of Madeira",
+    "pt": "A History of Madeira",
+    "de": "A History of Madeira",
+    "ru": "A History of Madeira"
+   },
+   "sub": {
+    "en": "27 hand-coloured engravings of island life, R. Ackermann, London, 1821",
+    "pt": "27 gravuras coloridas à mão da vida na ilha, R. Ackermann, Londres, 1821",
+    "de": "27 handkolorierte Stiche vom Inselleben, R. Ackermann, London, 1821",
+    "ru": "27 раскрашенных вручную гравюр о жизни острова, Р. Аккерман, Лондон, 1821"
+   },
+   "source": "Wellcome Collection copy, Internet Archive",
+   "url": "https://archive.org/details/b22009231",
+   "licence": "Public domain",
+   "items": [
+    {
+     "img": "ackermann-1821/01.jpg",
+     "thumb": "ackermann-1821/t_01.jpg",
+     "w": 1600,
+     "h": 1020,
+     "title": {
+      "en": "Inside of a Cottage",
+      "pt": "Interior de uma casa",
+      "de": "In einer Hütte",
+      "ru": "В крестьянском доме"
+     }
+    },
+    {
+     "img": "ackermann-1821/02.jpg",
+     "thumb": "ackermann-1821/t_02.jpg",
+     "w": 1600,
+     "h": 1030,
+     "title": {
+      "en": "Rural Toil",
+      "pt": "Trabalho no campo",
+      "de": "Feldarbeit",
+      "ru": "Сельский труд"
+     }
+    },
+    {
+     "img": "ackermann-1821/03.jpg",
+     "thumb": "ackermann-1821/t_03.jpg",
+     "w": 1600,
+     "h": 1054,
+     "title": {
+      "en": "Peasants going to Market",
+      "pt": "Camponeses a caminho do mercado",
+      "de": "Bauern auf dem Weg zum Markt",
+      "ru": "Крестьяне идут на рынок"
+     }
+    },
+    {
+     "img": "ackermann-1821/04.jpg",
+     "thumb": "ackermann-1821/t_04.jpg",
+     "w": 1600,
+     "h": 1054,
+     "title": {
+      "en": "Manner of Cultivating the Ground",
+      "pt": "Maneira de cultivar a terra",
+      "de": "Wie das Land bestellt wird",
+      "ru": "Как обрабатывают землю"
+     }
+    },
+    {
+     "img": "ackermann-1821/05.jpg",
+     "thumb": "ackermann-1821/t_05.jpg",
+     "w": 1600,
+     "h": 1054,
+     "title": {
+      "en": "A Farmer and his Daughter going to Town",
+      "pt": "Um lavrador e a filha a caminho da cidade",
+      "de": "Ein Bauer und seine Tochter auf dem Weg in die Stadt",
+      "ru": "Фермер с дочерью идут в город"
+     }
+    },
+    {
+     "img": "ackermann-1821/06.jpg",
+     "thumb": "ackermann-1821/t_06.jpg",
+     "w": 1600,
+     "h": 1054,
+     "title": {
+      "en": "Rural Occupations",
+      "pt": "Ocupações rurais",
+      "de": "Ländliche Arbeiten",
+      "ru": "Сельские занятия"
+     }
+    },
+    {
+     "img": "ackermann-1821/07.jpg",
+     "thumb": "ackermann-1821/t_07.jpg",
+     "w": 1600,
+     "h": 1054,
+     "title": {
+      "en": "Peasants in usual Costume",
+      "pt": "Camponeses no traje habitual",
+      "de": "Bauern in üblicher Tracht",
+      "ru": "Крестьяне в обычном платье"
+     }
+    },
+    {
+     "img": "ackermann-1821/08.jpg",
+     "thumb": "ackermann-1821/t_08.jpg",
+     "w": 1600,
+     "h": 1054,
+     "title": {
+      "en": "Costume of the Western Inhabitants",
+      "pt": "Traje dos habitantes do oeste",
+      "de": "Tracht der Bewohner des Westens",
+      "ru": "Костюм жителей запада острова"
+     }
+    },
+    {
+     "img": "ackermann-1821/09.jpg",
+     "thumb": "ackermann-1821/t_09.jpg",
+     "w": 1600,
+     "h": 1054,
+     "title": {
+      "en": "Fishermen",
+      "pt": "Pescadores",
+      "de": "Fischer",
+      "ru": "Рыбаки"
+     }
+    },
+    {
+     "img": "ackermann-1821/10.jpg",
+     "thumb": "ackermann-1821/t_10.jpg",
+     "w": 1600,
+     "h": 1054,
+     "title": {
+      "en": "Country Musicians",
+      "pt": "Músicos do campo",
+      "de": "Musikanten vom Land",
+      "ru": "Деревенские музыканты"
+     }
+    },
+    {
+     "img": "ackermann-1821/11.jpg",
+     "thumb": "ackermann-1821/t_11.jpg",
+     "w": 1600,
+     "h": 1054,
+     "title": {
+      "en": "Bringing Wine to Town",
+      "pt": "Trazer o vinho para a cidade",
+      "de": "Wein wird in die Stadt gebracht",
+      "ru": "Вино везут в город"
+     }
+    },
+    {
+     "img": "ackermann-1821/12.jpg",
+     "thumb": "ackermann-1821/t_12.jpg",
+     "w": 1600,
+     "h": 1054,
+     "title": {
+      "en": "Drawing Pipes by means of the Sledge",
+      "pt": "Pipas puxadas em corsa",
+      "de": "Fässer auf dem Schlitten",
+      "ru": "Бочки на санях"
+     }
+    },
+    {
+     "img": "ackermann-1821/13.jpg",
+     "thumb": "ackermann-1821/t_13.jpg",
+     "w": 1600,
+     "h": 1032,
+     "title": {
+      "en": "An Accident upon the Road",
+      "pt": "Um acidente no caminho",
+      "de": "Ein Unfall unterwegs",
+      "ru": "Происшествие в дороге"
+     }
+    },
+    {
+     "img": "ackermann-1821/14.jpg",
+     "thumb": "ackermann-1821/t_14.jpg",
+     "w": 1600,
+     "h": 1043,
+     "title": {
+      "en": "A Prior of St Francis and a Lay Brother",
+      "pt": "Um prior de São Francisco e um irmão leigo",
+      "de": "Ein Prior des hl. Franziskus und ein Laienbruder",
+      "ru": "Приор ордена святого Франциска и послушник"
+     }
+    },
+    {
+     "img": "ackermann-1821/15.jpg",
+     "thumb": "ackermann-1821/t_15.jpg",
+     "w": 1600,
+     "h": 1032,
+     "title": {
+      "en": "A Franciscan Friar collecting Alms",
+      "pt": "Um frade franciscano a pedir esmola",
+      "de": "Ein Franziskaner sammelt Almosen",
+      "ru": "Францисканец собирает подаяние"
+     }
+    },
+    {
+     "img": "ackermann-1821/16.jpg",
+     "thumb": "ackermann-1821/t_16.jpg",
+     "w": 1600,
+     "h": 1032,
+     "title": {
+      "en": "Priests in different Attire",
+      "pt": "Padres em diferentes trajes",
+      "de": "Priester in verschiedener Kleidung",
+      "ru": "Священники в разных облачениях"
+     }
+    },
+    {
+     "img": "ackermann-1821/17.jpg",
+     "thumb": "ackermann-1821/t_17.jpg",
+     "w": 1600,
+     "h": 1032,
+     "title": {
+      "en": "Lay Sisters of Our Lady of Mount Carmel",
+      "pt": "Irmãs leigas de Nossa Senhora do Carmo",
+      "de": "Laienschwestern Unserer Lieben Frau vom Berge Karmel",
+      "ru": "Послушницы ордена кармелиток"
+     }
+    },
+    {
+     "img": "ackermann-1821/18.jpg",
+     "thumb": "ackermann-1821/t_18.jpg",
+     "w": 1600,
+     "h": 1032,
+     "title": {
+      "en": "A Nun and her Attendant",
+      "pt": "Uma freira e a sua criada",
+      "de": "Eine Nonne und ihre Begleiterin",
+      "ru": "Монахиня и её служанка"
+     }
+    },
+    {
+     "img": "ackermann-1821/19.jpg",
+     "thumb": "ackermann-1821/t_19.jpg",
+     "w": 1600,
+     "h": 1032,
+     "title": {
+      "en": "A Lady and her Servant going to Church",
+      "pt": "Uma senhora e a criada a caminho da igreja",
+      "de": "Eine Dame und ihre Dienerin auf dem Weg zur Kirche",
+      "ru": "Дама со служанкой идут в церковь"
+     }
+    },
+    {
+     "img": "ackermann-1821/20.jpg",
+     "thumb": "ackermann-1821/t_20.jpg",
+     "w": 1600,
+     "h": 1032,
+     "title": {
+      "en": "Travelling in Hammocks",
+      "pt": "Viajar de rede",
+      "de": "Reisen in der Hängematte",
+      "ru": "Путешествие в гамаке"
+     }
+    },
+    {
+     "img": "ackermann-1821/21.jpg",
+     "thumb": "ackermann-1821/t_21.jpg",
+     "w": 1600,
+     "h": 1032,
+     "title": {
+      "en": "Visiting among the Ladies at Funchal",
+      "pt": "Visitas entre as senhoras do Funchal",
+      "de": "Damenbesuch in Funchal",
+      "ru": "Визиты дам в Фуншале"
+     }
+    },
+    {
+     "img": "ackermann-1821/22.jpg",
+     "thumb": "ackermann-1821/t_22.jpg",
+     "w": 1600,
+     "h": 1032,
+     "title": {
+      "en": "Members of the Senate",
+      "pt": "Membros da Câmara",
+      "de": "Mitglieder des Stadtrats",
+      "ru": "Члены городского совета"
+     }
+    },
+    {
+     "img": "ackermann-1821/23.jpg",
+     "thumb": "ackermann-1821/t_23.jpg",
+     "w": 1600,
+     "h": 1032,
+     "title": {
+      "en": "The Senate in mourning dress for the King",
+      "pt": "A Câmara em luto pelo Rei",
+      "de": "Der Stadtrat in Trauer um den König",
+      "ru": "Совет в траурном облачении по королю"
+     }
+    },
+    {
+     "img": "ackermann-1821/24.jpg",
+     "thumb": "ackermann-1821/t_24.jpg",
+     "w": 1600,
+     "h": 1032,
+     "title": {
+      "en": "An Officer and Private of the Funchal Garrison",
+      "pt": "Oficial e soldado da guarnição do Funchal",
+      "de": "Offizier und Soldat der Garnison Funchal",
+      "ru": "Офицер и рядовой гарнизона Фуншала"
+     }
+    },
+    {
+     "img": "ackermann-1821/25.jpg",
+     "thumb": "ackermann-1821/t_25.jpg",
+     "w": 1600,
+     "h": 1032,
+     "title": {
+      "en": "Drilling",
+      "pt": "Exercícios militares",
+      "de": "Exerzieren",
+      "ru": "Строевые учения"
+     }
+    },
+    {
+     "img": "ackermann-1821/26.jpg",
+     "thumb": "ackermann-1821/t_26.jpg",
+     "w": 1600,
+     "h": 1073,
+     "title": {
+      "en": "West View of Loo Fort",
+      "pt": "O Forte do Ilhéu visto de oeste",
+      "de": "Das Loo-Fort von Westen",
+      "ru": "Форт на скале Лу с запада"
+     }
+    }
+   ]
+  },
+  {
+   "id": "bulwer-1827",
+   "year": "1827",
+   "title": {
+    "en": "Views in the Madeiras",
+    "pt": "Views in the Madeiras",
+    "de": "Views in the Madeiras",
+    "ru": "Views in the Madeiras"
+   },
+   "sub": {
+    "en": "Lithographs after Rev. James Bulwer’s sketches of 1825, London, 1827 — 5 of the 26 plates found online",
+    "pt": "Litografias segundo os esboços do Rev. James Bulwer de 1825, Londres, 1827 — 5 das 26 estampas disponíveis",
+    "de": "Lithografien nach Skizzen von Rev. James Bulwer (1825), London, 1827 — 5 der 26 Tafeln sind online",
+    "ru": "Литографии по наброскам преподобного Джеймса Булвера 1825 года, Лондон, 1827 — в сети 5 из 26 листов"
+   },
+   "source": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/Category:James_Bulwer",
+   "licence": "Public domain",
+   "items": [
+    {
+     "img": "bulwer-1827/01.jpg",
+     "thumb": "bulwer-1827/t_01.jpg",
+     "w": 802,
+     "h": 1200,
+     "title": {
+      "en": "Title page",
+      "pt": "Página de rosto",
+      "de": "Titelblatt",
+      "ru": "Титульный лист"
+     }
+    },
+    {
+     "img": "bulwer-1827/02.jpg",
+     "thumb": "bulwer-1827/t_02.jpg",
+     "w": 1050,
+     "h": 716,
+     "title": {
+      "en": "Funchal from the Anchorage",
+      "pt": "O Funchal visto do ancoradouro",
+      "de": "Funchal vom Ankerplatz",
+      "ru": "Фуншал с якорной стоянки"
+     }
+    },
+    {
+     "img": "bulwer-1827/03.jpg",
+     "thumb": "bulwer-1827/t_03.jpg",
+     "w": 1200,
+     "h": 816,
+     "title": {
+      "en": "The Peak Castle (Pico fort)",
+      "pt": "O Forte do Pico",
+      "de": "Die Festung Pico",
+      "ru": "Крепость Пику"
+     }
+    },
+    {
+     "img": "bulwer-1827/04.jpg",
+     "thumb": "bulwer-1827/t_04.jpg",
+     "w": 1100,
+     "h": 904,
+     "title": {
+      "en": "Calheta",
+      "pt": "Calheta",
+      "de": "Calheta",
+      "ru": "Калета"
+     }
+    },
+    {
+     "img": "bulwer-1827/05.jpg",
+     "thumb": "bulwer-1827/t_05.jpg",
+     "w": 1104,
+     "h": 807,
+     "title": {
+      "en": "The Town of Porto Santo",
+      "pt": "A vila do Porto Santo",
+      "de": "Der Ort Porto Santo",
+      "ru": "Городок Порту-Санту"
+     }
+    }
+   ]
+  },
+  {
+   "id": "picken-1840",
+   "year": "1840",
+   "title": {
+    "en": "Madeira Illustrated",
+    "pt": "Madeira Illustrated",
+    "de": "Madeira Illustrated",
+    "ru": "Madeira Illustrated"
+   },
+   "sub": {
+    "en": "Hand-coloured lithographs by Andrew Picken, drawn on the island 1837–1839, London, 1840",
+    "pt": "Litografias coloridas à mão de Andrew Picken, desenhadas na ilha em 1837–1839, Londres, 1840",
+    "de": "Handkolorierte Lithografien von Andrew Picken, auf der Insel 1837–1839 gezeichnet, London, 1840",
+    "ru": "Раскрашенные литографии Эндрю Пикена, нарисованные на острове в 1837–1839, Лондон, 1840"
+   },
+   "source": "Biblioteca Nacional de Portugal",
+   "url": "https://bndigital.bnportugal.gov.pt/viewer/35516",
+   "licence": "Public domain",
+   "items": [
+    {
+     "img": "picken-1840/01.jpg",
+     "thumb": "picken-1840/t_01.jpg",
+     "w": 1114,
+     "h": 1600,
+     "title": {
+      "en": "Map of Madeira",
+      "pt": "Mapa da Madeira",
+      "de": "Karte von Madeira",
+      "ru": "Карта Мадейры"
+     }
+    },
+    {
+     "img": "picken-1840/02.jpg",
+     "thumb": "picken-1840/t_02.jpg",
+     "w": 1600,
+     "h": 1114,
+     "title": {
+      "en": "Funchal from the Bay",
+      "pt": "O Funchal visto da baía",
+      "de": "Funchal von der Bucht",
+      "ru": "Фуншал с моря"
+     }
+    },
+    {
+     "img": "picken-1840/03.jpg",
+     "thumb": "picken-1840/t_03.jpg",
+     "w": 1600,
+     "h": 1117,
+     "title": {
+      "en": "Funchal from São Lázaro",
+      "pt": "O Funchal visto de São Lázaro",
+      "de": "Funchal von São Lázaro",
+      "ru": "Фуншал со стороны Сан-Лазару"
+     }
+    },
+    {
+     "img": "picken-1840/04.jpg",
+     "thumb": "picken-1840/t_04.jpg",
+     "w": 1600,
+     "h": 1115,
+     "title": {
+      "en": "Funchal from the East",
+      "pt": "O Funchal visto de leste",
+      "de": "Funchal von Osten",
+      "ru": "Фуншал с востока"
+     }
+    },
+    {
+     "img": "picken-1840/05.jpg",
+     "thumb": "picken-1840/t_05.jpg",
+     "w": 1110,
+     "h": 1600,
+     "title": {
+      "en": "Câmara de Lobos — the Sea-Wolf’s Den",
+      "pt": "Câmara de Lobos — o covil dos lobos-marinhos",
+      "de": "Câmara de Lobos — die Höhle der Seewölfe",
+      "ru": "Камара-ди-Лобуш — логово морских волков"
+     }
+    },
+    {
+     "img": "picken-1840/06.jpg",
+     "thumb": "picken-1840/t_06.jpg",
+     "w": 1600,
+     "h": 1099,
+     "title": {
+      "en": "Curral — the Nuns’ Fold",
+      "pt": "Curral das Freiras",
+      "de": "Curral das Freiras — Tal der Nonnen",
+      "ru": "Куррал-даш-Фрейраш — долина монахинь"
+     }
+    },
+    {
+     "img": "picken-1840/07.jpg",
+     "thumb": "picken-1840/t_07.jpg",
+     "w": 1600,
+     "h": 1092,
+     "title": {
+      "en": "Ravine of São Jorge",
+      "pt": "Ribeira de São Jorge",
+      "de": "Schlucht von São Jorge",
+      "ru": "Ущелье Сан-Жорже"
+     }
+    },
+    {
+     "img": "picken-1840/08.jpg",
+     "thumb": "picken-1840/t_08.jpg",
+     "w": 1600,
+     "h": 1079,
+     "title": {
+      "en": "Penha d’Águia — the Eagle’s Rock",
+      "pt": "Penha d’Águia",
+      "de": "Penha d’Águia — der Adlerfelsen",
+      "ru": "Пенья-д’Агиа — Орлиная скала"
+     }
+    },
+    {
+     "img": "picken-1840/09.jpg",
+     "thumb": "picken-1840/t_09.jpg",
+     "w": 1066,
+     "h": 1600,
+     "title": {
+      "en": "O Rabaçal",
+      "pt": "O Rabaçal",
+      "de": "Rabaçal",
+      "ru": "Рабасал"
+     }
+    }
+   ]
+  },
+  {
+   "id": "bryullov-1850",
+   "year": "1849–1850",
+   "title": {
+    "en": "Karl Bryullov on Madeira",
+    "pt": "Karl Briullov na Madeira",
+    "de": "Karl Brjullow auf Madeira",
+    "ru": "Карл Брюллов на Мадейре"
+   },
+   "sub": {
+    "en": "The Russian painter spent nearly a year in Funchal for his health, 1849–1850",
+    "pt": "O pintor russo passou quase um ano no Funchal a tratar-se, 1849–1850",
+    "de": "Der russische Maler verbrachte 1849–1850 fast ein Jahr zur Kur in Funchal",
+    "ru": "Русский художник почти год лечился в Фуншале, 1849–1850"
+   },
+   "source": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/w/index.php?search=Briullov+Madeira",
+   "licence": "Public domain",
+   "items": [
+    {
+     "img": "bryullov-1850/01.jpg",
+     "thumb": "bryullov-1850/t_01.jpg",
+     "w": 800,
+     "h": 647,
+     "title": {
+      "en": "Landscape on the island of Madeira, 1850",
+      "pt": "Paisagem da ilha da Madeira, 1850",
+      "de": "Landschaft auf Madeira, 1850",
+      "ru": "Пейзаж на острове Мадейра, 1850"
+     }
+    },
+    {
+     "img": "bryullov-1850/02.jpg",
+     "thumb": "bryullov-1850/t_02.jpg",
+     "w": 591,
+     "h": 480,
+     "title": {
+      "en": "Landscape on the island of Madeira, second version",
+      "pt": "Paisagem da ilha da Madeira, segunda versão",
+      "de": "Landschaft auf Madeira, zweite Fassung",
+      "ru": "Пейзаж на острове Мадейра, второй вариант"
+     }
+    },
+    {
+     "img": "bryullov-1850/03.jpg",
+     "thumb": "bryullov-1850/t_03.jpg",
+     "w": 1200,
+     "h": 994,
+     "title": {
+      "en": "The Pico fort, Funchal",
+      "pt": "O Forte do Pico, Funchal",
+      "de": "Die Festung Pico, Funchal",
+      "ru": "Крепость Пику, Фуншал"
+     }
+    },
+    {
+     "img": "bryullov-1850/04.jpg",
+     "thumb": "bryullov-1850/t_04.jpg",
+     "w": 907,
+     "h": 1200,
+     "title": {
+      "en": "Riders: the Mussards, painted on Madeira, 1849",
+      "pt": "Cavaleiros: os Mussard, pintado na Madeira, 1849",
+      "de": "Reiter: die Mussards, auf Madeira gemalt, 1849",
+      "ru": "Всадники. Портрет Мюссаров, написан на Мадейре, 1849"
+     }
+    },
+    {
+     "img": "bryullov-1850/05.jpg",
+     "thumb": "bryullov-1850/t_05.jpg",
+     "w": 1334,
+     "h": 1600,
+     "title": {
+      "en": "Dr. António Alves da Silva, his doctor in Funchal, 1850",
+      "pt": "Dr. António Alves da Silva, o seu médico no Funchal, 1850",
+      "de": "Dr. António Alves da Silva, sein Arzt in Funchal, 1850",
+      "ru": "Доктор Антониу Алвеш да Силва, его врач в Фуншале, 1850"
+     }
+    }
+   ]
+  },
+  {
+   "id": "franca-1853",
+   "year": "1853–1854",
+   "title": {
+    "en": "Isabella de França’s Journal",
+    "pt": "O Diário de Isabella de França",
+    "de": "Isabella de Franças Tagebuch",
+    "ru": "Дневник Изабеллы де Франсы"
+   },
+   "sub": {
+    "en": "Watercolours of a visit to Madeira, 1853–1854 — small previews; the full images are released on request by the repository",
+    "pt": "Aguarelas de uma visita à Madeira, 1853–1854 — pré-visualizações; as imagens completas são cedidas a pedido pelo repositório",
+    "de": "Aquarelle eines Madeira-Besuchs, 1853–1854 — kleine Vorschauen; die vollen Bilder gibt das Repositorium auf Anfrage",
+    "ru": "Акварели поездки на Мадейру 1853–1854 — маленькие превью; полные изображения репозиторий выдаёт по запросу"
+   },
+   "source": "CETAPS repository, University of Porto",
+   "url": "https://cetapsrepository.letras.up.pt",
+   "licence": "CC BY",
+   "preview_only": true,
+   "items": [
+    {
+     "thumb": "franca-1853/t_01.jpg",
+     "title": {
+      "en": "Landing the Ladies at Gravesend",
+      "pt": "Desembarque das senhoras em Gravesend",
+      "de": "Die Damen gehen in Gravesend an Land",
+      "ru": "Высадка дам в Грейвзенде"
+     },
+     "link": "https://cetapsrepository.letras.up.pt/entities/publication/3c5296af-5a5a-4527-9dd1-b80fee5950a9"
+    },
+    {
+     "thumb": "franca-1853/t_02.jpg",
+     "title": {
+      "en": "Landing in Funchal",
+      "pt": "Desembarque no Funchal",
+      "de": "Landung in Funchal",
+      "ru": "Высадка в Фуншале"
+     },
+     "link": "https://cetapsrepository.letras.up.pt/entities/publication/dd7e0acd-b40d-469b-a2e6-ea066b49976f"
+    },
+    {
+     "thumb": "franca-1853/t_03.jpg",
+     "title": {
+      "en": "The Entrance to Funchal",
+      "pt": "A entrada no Funchal",
+      "de": "Die Einfahrt nach Funchal",
+      "ru": "Вход в Фуншал"
+     },
+     "link": "https://cetapsrepository.letras.up.pt/entities/publication/c746f43c-c913-4d17-be73-4a843093f2ee"
+    },
+    {
+     "thumb": "franca-1853/t_04.jpg",
+     "title": {
+      "en": "Going up to the Mount",
+      "pt": "A subida ao Monte",
+      "de": "Hinauf zum Monte",
+      "ru": "Подъём на Монте"
+     },
+     "link": "https://cetapsrepository.letras.up.pt/entities/publication/3ad92a57-2a3b-4938-970c-f31cbd82d46f"
+    },
+    {
+     "thumb": "franca-1853/t_05.jpg",
+     "title": {
+      "en": "Coming down from the Mount",
+      "pt": "A descida do Monte",
+      "de": "Hinunter vom Monte",
+      "ru": "Спуск с Монте"
+     },
+     "link": "https://cetapsrepository.letras.up.pt/entities/publication/7107609b-d98a-43e4-8d5e-93372affe747"
+    },
+    {
+     "thumb": "franca-1853/t_06.jpg",
+     "title": {
+      "en": "The Feitor's Homage",
+      "pt": "A homenagem do feitor",
+      "de": "Die Huldigung des Verwalters",
+      "ru": "Почтение управляющего"
+     },
+     "link": "https://cetapsrepository.letras.up.pt/entities/publication/d6ed7ced-49f7-4e6a-94cf-2d3243953140"
+    },
+    {
+     "thumb": "franca-1853/t_07.jpg",
+     "title": {
+      "en": "Embarkation from Funchal",
+      "pt": "Embarque no Funchal",
+      "de": "Einschiffung in Funchal",
+      "ru": "Посадка на корабль в Фуншале"
+     },
+     "link": "https://cetapsrepository.letras.up.pt/entities/publication/7547e8ea-159d-4a6a-b166-adf1fc5fae03"
+    },
+    {
+     "thumb": "franca-1853/t_08.jpg",
+     "title": {
+      "en": "Descent to the Rabaçal",
+      "pt": "Descida para o Rabaçal",
+      "de": "Abstieg zum Rabaçal",
+      "ru": "Спуск к Рабасалу"
+     },
+     "link": "https://cetapsrepository.letras.up.pt/entities/publication/98ff547a-48c9-4e8f-b612-8c5e4f9f9ae7"
+    },
+    {
+     "thumb": "franca-1853/t_09.jpg",
+     "title": {
+      "en": "Embarkation from Calheta",
+      "pt": "Embarque na Calheta",
+      "de": "Einschiffung in Calheta",
+      "ru": "Посадка на корабль в Калете"
+     },
+     "link": "https://cetapsrepository.letras.up.pt/entities/publication/9267054b-7d49-4f61-8c41-3341975ff4f9"
+    },
+    {
+     "thumb": "franca-1853/t_10.jpg",
+     "title": {
+      "en": "The Pinheiros. 3000 feet above the sea",
+      "pt": "Os Pinheiros, a 900 m sobre o mar",
+      "de": "Die Pinheiros, 900 m über dem Meer",
+      "ru": "Пиньейруш, 900 м над морем"
+     },
+     "link": "https://cetapsrepository.letras.up.pt/entities/publication/2a268e55-6034-4443-b735-cd9ff29e8b07"
+    },
+    {
+     "thumb": "franca-1853/t_11.jpg",
+     "title": {
+      "en": "Rosa and Faisca",
+      "pt": "Rosa e Faísca",
+      "de": "Rosa und Faísca",
+      "ru": "Роза и Фаишка"
+     },
+     "link": "https://cetapsrepository.letras.up.pt/entities/publication/495b09b7-a767-4d59-a895-d4606acc6d11"
+    },
+    {
+     "thumb": "franca-1853/t_12.jpg",
+     "title": {
+      "en": "The Lazaretto",
+      "pt": "O Lazareto",
+      "de": "Das Lazarett",
+      "ru": "Лазарет"
+     },
+     "link": "https://cetapsrepository.letras.up.pt/entities/publication/f205c274-dbff-409d-9598-381ea2aaadf2"
+    },
+    {
+     "thumb": "franca-1853/t_13.jpg",
+     "title": {
+      "en": "Theodosia",
+      "pt": "Teodósia",
+      "de": "Theodosia",
+      "ru": "Теодозия"
+     },
+     "link": "https://cetapsrepository.letras.up.pt/entities/publication/493cbded-fd4f-4181-a1c9-1ead2f1e5548"
+    },
+    {
+     "thumb": "franca-1853/t_14.jpg",
+     "title": {
+      "en": "Ladeira das Neves. Road to Caniço",
+      "pt": "Ladeira das Neves, caminho do Caniço",
+      "de": "Ladeira das Neves, Weg nach Caniço",
+      "ru": "Ладейра-даш-Невеш, дорога на Канису"
+     },
+     "link": "https://cetapsrepository.letras.up.pt/entities/publication/8658244a-3e3f-4fb2-8f11-6c6747ae2186"
+    },
+    {
+     "thumb": "franca-1853/t_15.jpg",
+     "title": {
+      "en": "«A Senhora há-de ter paciência». Road to the Curral",
+      "pt": "«A Senhora há-de ter paciência», caminho do Curral",
+      "de": "„Die Dame muss Geduld haben“, Weg zum Curral",
+      "ru": "«Сеньоре придётся потерпеть», дорога в Куррал"
+     },
+     "link": "https://cetapsrepository.letras.up.pt/entities/publication/c2d57c0e-220d-4055-b500-e6c14b313ed3"
+    },
+    {
+     "thumb": "franca-1853/t_16.jpg",
+     "title": {
+      "en": "Going to a Ball",
+      "pt": "A caminho de um baile",
+      "de": "Auf dem Weg zum Ball",
+      "ru": "По дороге на бал"
+     },
+     "link": "https://cetapsrepository.letras.up.pt/entities/publication/91be5d98-9f8b-4777-aabf-1af3b0e8d928"
+    },
+    {
+     "thumb": "franca-1853/t_17.jpg",
+     "title": {
+      "en": "The Broken Head",
+      "pt": "A cabeça partida",
+      "de": "Der zerbrochene Kopf",
+      "ru": "Разбитая голова"
+     },
+     "link": "https://cetapsrepository.letras.up.pt/entities/publication/43722653-54d6-49b6-9a89-da7e34c55ee9"
+    },
+    {
+     "thumb": "franca-1853/t_18.jpg",
+     "title": {
+      "en": "(double page 1/2) — Returning from a Picnic at Camacha",
+      "pt": "Regresso de um piquenique na Camacha (1/2)",
+      "de": "Rückkehr vom Picknick in Camacha (1/2)",
+      "ru": "Возвращение с пикника в Камаше (1/2)"
+     },
+     "link": "https://cetapsrepository.letras.up.pt/entities/publication/17a90283-f3cb-4e94-88f3-8e0e270560a0"
+    },
+    {
+     "thumb": "franca-1853/t_19.jpg",
+     "title": {
+      "en": "(double page 2/2) — Returning from a Picnic at Camacha",
+      "pt": "Regresso de um piquenique na Camacha (2/2)",
+      "de": "Rückkehr vom Picknick in Camacha (2/2)",
+      "ru": "Возвращение с пикника в Камаше (2/2)"
+     },
+     "link": "https://cetapsrepository.letras.up.pt/entities/publication/730b7802-dfd3-44fd-b7ff-770e97b6b68f"
+    },
+    {
+     "thumb": "franca-1853/t_20.jpg",
+     "title": {
+      "en": "The Triumphal Car. Sto Antonio da Serra",
+      "pt": "O carro triunfal, Santo António da Serra",
+      "de": "Der Triumphwagen, Santo António da Serra",
+      "ru": "Триумфальная колесница, Санту-Антониу-да-Серра"
+     },
+     "link": "https://cetapsrepository.letras.up.pt/entities/publication/fa7c6591-38ac-4831-a46d-eac97c4fcb8b"
+    },
+    {
+     "thumb": "franca-1853/t_21.jpg",
+     "title": {
+      "en": "The Arrival in Lisbon",
+      "pt": "A chegada a Lisboa",
+      "de": "Die Ankunft in Lissabon",
+      "ru": "Прибытие в Лиссабон"
+     },
+     "link": "https://cetapsrepository.letras.up.pt/entities/publication/2b7aec40-1949-416b-8dd2-8ca679c11c6e"
+    },
+    {
+     "thumb": "franca-1853/t_22.jpg",
+     "title": {
+      "en": "Fountain at Cintra",
+      "pt": "Fonte em Sintra",
+      "de": "Brunnen in Sintra",
+      "ru": "Фонтан в Синтре"
+     },
+     "link": "https://cetapsrepository.letras.up.pt/entities/publication/cd4cdad6-3e9b-4650-b7fb-f3b69491307a"
+    },
+    {
+     "thumb": "franca-1853/t_23.jpg",
+     "title": {
+      "en": "Cintra. Road to the Cork Convent",
+      "pt": "Sintra, caminho do Convento dos Capuchos",
+      "de": "Sintra, Weg zum Korkkloster",
+      "ru": "Синтра, дорога к Пробковому монастырю"
+     },
+     "link": "https://cetapsrepository.letras.up.pt/entities/publication/c0f68660-8784-4613-b08e-6425d0876248"
+    },
+    {
+     "thumb": "franca-1853/t_24.jpg",
+     "title": {
+      "en": "St. George",
+      "pt": "São Jorge",
+      "de": "São Jorge",
+      "ru": "Сан-Жорже"
+     },
+     "link": "https://cetapsrepository.letras.up.pt/entities/publication/09b645c6-b542-4206-86c0-4f61a6a38957"
+    }
+   ]
+  }
+ ]
+}
