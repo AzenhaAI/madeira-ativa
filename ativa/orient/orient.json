@@ -1,0 +1,3316 @@
+{
+ "title": {
+  "en": "Orienteering basics",
+  "pt": "Orientação: o básico",
+  "de": "Orientierungslauf: Grundlagen",
+  "ru": "Ориентирование: основы"
+ },
+ "symbols": [
+  {
+   "title": {
+    "en": "Landforms (brown)",
+    "pt": "Relevo (castanho)",
+    "de": "Geländeformen (braun)",
+    "ru": "Рельеф (коричневый)"
+   },
+   "items": [
+    {
+     "code": "101",
+     "name": {
+      "en": "Contour",
+      "pt": "Curva de nível",
+      "de": "Höhenlinie",
+      "ru": "Горизонталь"
+     },
+     "hint": {
+      "en": "Line of equal height, usually 5 m apart",
+      "pt": "Linha da mesma altitude, em geral a cada 5 m",
+      "de": "Linie gleicher Höhe, meist alle 5 m",
+      "ru": "Линия равной высоты, обычно через 5 м"
+     },
+     "img": "sym/s0.png"
+    },
+    {
+     "code": "102",
+     "name": {
+      "en": "Index contour",
+      "pt": "Curva mestra",
+      "de": "Zählkurve",
+      "ru": "Утолщённая горизонталь"
+     },
+     "hint": {
+      "en": "Every fifth contour, drawn thicker",
+      "pt": "Cada quinta curva, mais grossa",
+      "de": "Jede fünfte Höhenlinie, dicker",
+      "ru": "Каждая пятая горизонталь, толще"
+     },
+     "img": "sym/s1.png"
+    },
+    {
+     "code": "103",
+     "name": {
+      "en": "Form line",
+      "pt": "Curva auxiliar",
+      "de": "Hilfshöhenlinie",
+      "ru": "Полугоризонталь"
+     },
+     "hint": {
+      "en": "Half a contour: shows a small shape",
+      "pt": "Meia curva: mostra uma forma pequena",
+      "de": "Halbe Stufe: zeigt kleine Formen",
+      "ru": "Половина сечения: мелкие формы"
+     },
+     "img": "sym/s2.png"
+    },
+    {
+     "code": "",
+     "name": {
+      "en": "Slope line",
+      "pt": "Indicador de declive",
+      "de": "Gefällsstrich",
+      "ru": "Бергштрих"
+     },
+     "hint": {
+      "en": "Tick on a contour, points downhill",
+      "pt": "Traço na curva, aponta para baixo",
+      "de": "Strich an der Höhenlinie, zeigt bergab",
+      "ru": "Штрих на горизонтали, смотрит под уклон"
+     },
+     "img": "sym/s3.png"
+    },
+    {
+     "code": "104",
+     "name": {
+      "en": "Earth bank",
+      "pt": "Escarpa de terra",
+      "de": "Böschung",
+      "ru": "Земляной обрыв"
+     },
+     "hint": {
+      "en": "Steep earth step, ticks point down",
+      "pt": "Degrau de terra, traços para baixo",
+      "de": "Steile Erdstufe, Striche zeigen hinab",
+      "ru": "Крутой уступ, штрихи вниз"
+     },
+     "img": "sym/s4.png"
+    },
+    {
+     "code": "107",
+     "name": {
+      "en": "Erosion gully",
+      "pt": "Ravina",
+      "de": "Erosionsrinne",
+      "ru": "Промоина"
+     },
+     "hint": {
+      "en": "Dry ditch cut by water",
+      "pt": "Vala seca aberta pela água",
+      "de": "Vom Wasser ausgewaschener Graben",
+      "ru": "Сухая канава, промытая водой"
+     },
+     "img": "sym/s5.png"
+    },
+    {
+     "code": "109",
+     "name": {
+      "en": "Small knoll",
+      "pt": "Pequeno cabeço",
+      "de": "Kuppe",
+      "ru": "Бугор"
+     },
+     "hint": {
+      "en": "Hill too small for a contour",
+      "pt": "Elevação pequena demais para curva",
+      "de": "Hügel, zu klein für eine Höhenlinie",
+      "ru": "Холмик меньше сечения рельефа"
+     },
+     "img": "sym/s6.png"
+    },
+    {
+     "code": "110",
+     "name": {
+      "en": "Elongated knoll",
+      "pt": "Cabeço alongado",
+      "de": "Längliche Kuppe",
+      "ru": "Вытянутый бугор"
+     },
+     "hint": {
+      "en": "Small long hump",
+      "pt": "Pequena lomba comprida",
+      "de": "Kleiner länglicher Rücken",
+      "ru": "Небольшая продолговатая горка"
+     },
+     "img": "sym/s7.png"
+    },
+    {
+     "code": "111",
+     "name": {
+      "en": "Small depression",
+      "pt": "Pequena depressão",
+      "de": "Kleine Senke",
+      "ru": "Западина"
+     },
+     "hint": {
+      "en": "Shallow hollow without steep sides",
+      "pt": "Concavidade suave",
+      "de": "Flache Mulde ohne steile Ränder",
+      "ru": "Неглубокое понижение"
+     },
+     "img": "sym/s8.png"
+    },
+    {
+     "code": "112",
+     "name": {
+      "en": "Pit",
+      "pt": "Buraco",
+      "de": "Grube",
+      "ru": "Яма"
+     },
+     "hint": {
+      "en": "Hole with steep sides",
+      "pt": "Buraco de lados íngremes",
+      "de": "Grube mit steilen Rändern",
+      "ru": "Яма с крутыми краями"
+     },
+     "img": "sym/s9.png"
+    },
+    {
+     "code": "113",
+     "name": {
+      "en": "Broken ground",
+      "pt": "Terreno irregular",
+      "de": "Unruhiger Boden",
+      "ru": "Неровная поверхность"
+     },
+     "hint": {
+      "en": "Many small pits and humps: slower",
+      "pt": "Muitas covas e lombas: mais lento",
+      "de": "Viele kleine Löcher und Buckel: langsamer",
+      "ru": "Много мелких ям и бугров: медленнее"
+     },
+     "img": "sym/s10.png"
+    },
+    {
+     "code": "115",
+     "name": {
+      "en": "Special land feature",
+      "pt": "Objeto de relevo especial",
+      "de": "Besondere Geländeform",
+      "ru": "Особый объект рельефа"
+     },
+     "hint": {
+      "en": "Explained in the map legend",
+      "pt": "Explicado na legenda do mapa",
+      "de": "In der Kartenlegende erklärt",
+      "ru": "Пояснён в легенде карты"
+     },
+     "img": "sym/s11.png"
+    }
+   ]
+  },
+  {
+   "title": {
+    "en": "Rock and boulders (black)",
+    "pt": "Rochas e pedras (preto)",
+    "de": "Fels und Steine (schwarz)",
+    "ru": "Скалы и камни (чёрный)"
+   },
+   "items": [
+    {
+     "code": "201",
+     "name": {
+      "en": "Impassable cliff",
+      "pt": "Falésia intransponível",
+      "de": "Unpassierbare Felswand",
+      "ru": "Непреодолимая скала"
+     },
+     "hint": {
+      "en": "Never cross it: dangerous",
+      "pt": "Nunca atravessar: perigoso",
+      "de": "Nie überqueren: gefährlich",
+      "ru": "Не пересекать: опасно"
+     },
+     "img": "sym/s12.png"
+    },
+    {
+     "code": "202",
+     "name": {
+      "en": "Cliff",
+      "pt": "Falésia",
+      "de": "Felswand",
+      "ru": "Скала"
+     },
+     "hint": {
+      "en": "Rock face you can cross with care",
+      "pt": "Rocha que se passa com cuidado",
+      "de": "Felsstufe, vorsichtig passierbar",
+      "ru": "Скальный уступ, преодолим осторожно"
+     },
+     "img": "sym/s13.png"
+    },
+    {
+     "code": "203",
+     "name": {
+      "en": "Rocky pit",
+      "pt": "Cova rochosa",
+      "de": "Felsloch",
+      "ru": "Каменная яма"
+     },
+     "hint": {
+      "en": "Hole in rock",
+      "pt": "Buraco na rocha",
+      "de": "Loch im Fels",
+      "ru": "Яма в скале"
+     },
+     "img": "sym/s14.png"
+    },
+    {
+     "code": "204",
+     "name": {
+      "en": "Boulder",
+      "pt": "Rocha",
+      "de": "Stein",
+      "ru": "Камень"
+     },
+     "hint": {
+      "en": "Rock taller than about 1 m",
+      "pt": "Pedra com mais de cerca de 1 m",
+      "de": "Fels höher als etwa 1 m",
+      "ru": "Камень выше примерно 1 м"
+     },
+     "img": "sym/s15.png"
+    },
+    {
+     "code": "205",
+     "name": {
+      "en": "Large boulder",
+      "pt": "Pedra grande",
+      "de": "Großer Felsblock",
+      "ru": "Большой камень"
+     },
+     "hint": {
+      "en": "Very big rock, a clear landmark",
+      "pt": "Rocha muito grande, bom ponto de referência",
+      "de": "Sehr großer Fels, klarer Anhaltspunkt",
+      "ru": "Очень большой камень, явный ориентир"
+     },
+     "img": "sym/s16.png"
+    },
+    {
+     "code": "208",
+     "name": {
+      "en": "Boulder field",
+      "pt": "Zona de pedras",
+      "de": "Blockfeld",
+      "ru": "Каменное поле"
+     },
+     "hint": {
+      "en": "Many boulders together: slow",
+      "pt": "Muitas pedras juntas: lento",
+      "de": "Viele Blöcke beisammen: langsam",
+      "ru": "Россыпь камней: медленно"
+     },
+     "img": "sym/s17.png"
+    },
+    {
+     "code": "210",
+     "name": {
+      "en": "Stony ground",
+      "pt": "Terreno pedregoso",
+      "de": "Steiniger Boden",
+      "ru": "Каменистая поверхность"
+     },
+     "hint": {
+      "en": "Loose stones: watch your ankles",
+      "pt": "Pedras soltas: cuidado com os tornozelos",
+      "de": "Lose Steine: Knöchel beachten",
+      "ru": "Мелкие камни: береги щиколотки"
+     },
+     "img": "sym/s18.png"
+    },
+    {
+     "code": "214",
+     "name": {
+      "en": "Bare rock",
+      "pt": "Afloramento rochoso",
+      "de": "Offener Fels",
+      "ru": "Открытая скала"
+     },
+     "hint": {
+      "en": "Rock surface without soil",
+      "pt": "Rocha sem terra",
+      "de": "Fels ohne Erdschicht",
+      "ru": "Скальная поверхность без почвы"
+     },
+     "img": "sym/s19.png"
+    }
+   ]
+  },
+  {
+   "title": {
+    "en": "Water and marsh (blue)",
+    "pt": "Água e pântano (azul)",
+    "de": "Gewässer und Sumpf (blau)",
+    "ru": "Вода и болото (синий)"
+   },
+   "items": [
+    {
+     "code": "301",
+     "name": {
+      "en": "Uncrossable water",
+      "pt": "Água intransponível",
+      "de": "Unpassierbares Gewässer",
+      "ru": "Непреодолимый водоём"
+     },
+     "hint": {
+      "en": "Black edge: you may not cross",
+      "pt": "Contorno preto: proibido atravessar",
+      "de": "Schwarzer Rand: nicht überqueren",
+      "ru": "Чёрная кромка: пересекать нельзя"
+     },
+     "img": "sym/s20.png"
+    },
+    {
+     "code": "302",
+     "name": {
+      "en": "Shallow water",
+      "pt": "Água pouco funda",
+      "de": "Seichtes Gewässer",
+      "ru": "Мелкий водоём"
+     },
+     "hint": {
+      "en": "You can wade through",
+      "pt": "Pode-se atravessar a vau",
+      "de": "Durchwatbar",
+      "ru": "Можно перейти вброд"
+     },
+     "img": "sym/s21.png"
+    },
+    {
+     "code": "304",
+     "name": {
+      "en": "Crossable watercourse",
+      "pt": "Linha de água",
+      "de": "Bach, überquerbar",
+      "ru": "Ручей"
+     },
+     "hint": {
+      "en": "Stream or levada you can cross",
+      "pt": "Ribeira ou levada que se atravessa",
+      "de": "Bach oder Levada, überquerbar",
+      "ru": "Ручей или левада, можно пересечь"
+     },
+     "img": "sym/s22.png"
+    },
+    {
+     "code": "305",
+     "name": {
+      "en": "Small watercourse",
+      "pt": "Pequena linha de água",
+      "de": "Kleiner Bach",
+      "ru": "Маленький ручей"
+     },
+     "hint": {
+      "en": "Narrow ditch with water",
+      "pt": "Vala estreita com água",
+      "de": "Schmaler Graben mit Wasser",
+      "ru": "Узкая канава с водой"
+     },
+     "img": "sym/s23.png"
+    },
+    {
+     "code": "308",
+     "name": {
+      "en": "Marsh",
+      "pt": "Pântano",
+      "de": "Sumpf",
+      "ru": "Болото"
+     },
+     "hint": {
+      "en": "Wet ground: slow and muddy",
+      "pt": "Terreno encharcado: lento",
+      "de": "Nasser Boden: langsam",
+      "ru": "Сырая земля: медленно"
+     },
+     "img": "sym/s24.png"
+    },
+    {
+     "code": "311",
+     "name": {
+      "en": "Well, fountain",
+      "pt": "Poço, fonte",
+      "de": "Brunnen",
+      "ru": "Колодец, фонтан"
+     },
+     "hint": {
+      "en": "Built water point",
+      "pt": "Ponto de água construído",
+      "de": "Gebaute Wasserstelle",
+      "ru": "Обустроенный источник воды"
+     },
+     "img": "sym/s25.png"
+    },
+    {
+     "code": "312",
+     "name": {
+      "en": "Spring",
+      "pt": "Nascente",
+      "de": "Quelle",
+      "ru": "Родник"
+     },
+     "hint": {
+      "en": "Where a stream starts",
+      "pt": "Onde nasce a água",
+      "de": "Wo ein Bach entspringt",
+      "ru": "Начало ручья"
+     },
+     "img": "sym/s26.png"
+    },
+    {
+     "code": "313",
+     "name": {
+      "en": "Special water feature",
+      "pt": "Objeto de água especial",
+      "de": "Besonderes Gewässerobjekt",
+      "ru": "Особый водный объект"
+     },
+     "hint": {
+      "en": "Explained in the map legend",
+      "pt": "Explicado na legenda do mapa",
+      "de": "In der Kartenlegende erklärt",
+      "ru": "Пояснён в легенде карты"
+     },
+     "img": "sym/s27.png"
+    }
+   ]
+  },
+  {
+   "title": {
+    "en": "Vegetation (yellow, white, green)",
+    "pt": "Vegetação (amarelo, branco, verde)",
+    "de": "Vegetation (gelb, weiß, grün)",
+    "ru": "Растительность (жёлтый, белый, зелёный)"
+   },
+   "items": [
+    {
+     "code": "401",
+     "name": {
+      "en": "Open land",
+      "pt": "Área aberta",
+      "de": "Offenes Gelände",
+      "ru": "Открытая местность"
+     },
+     "hint": {
+      "en": "Meadow or field: fast",
+      "pt": "Prado ou campo: rápido",
+      "de": "Wiese oder Feld: schnell",
+      "ru": "Луг или поле: быстро"
+     },
+     "img": "sym/s28.png"
+    },
+    {
+     "code": "402",
+     "name": {
+      "en": "Semi-open land",
+      "pt": "Área semi-aberta",
+      "de": "Halboffenes Gelände",
+      "ru": "Открытая местность с отдельными деревьями"
+     },
+     "hint": {
+      "en": "Open, with scattered trees",
+      "pt": "Aberto, com árvores dispersas",
+      "de": "Offen, vereinzelte Bäume",
+      "ru": "Открыто, редкие деревья"
+     },
+     "img": "sym/s29.png"
+    },
+    {
+     "code": "403",
+     "name": {
+      "en": "Rough open land",
+      "pt": "Aberto com mato",
+      "de": "Raues offenes Gelände",
+      "ru": "Полуоткрытая местность"
+     },
+     "hint": {
+      "en": "Heather, long grass: slower",
+      "pt": "Urze, erva alta: mais lento",
+      "de": "Heide, hohes Gras: langsamer",
+      "ru": "Вереск, высокая трава: медленнее"
+     },
+     "img": "sym/s30.png"
+    },
+    {
+     "code": "405",
+     "name": {
+      "en": "Forest",
+      "pt": "Floresta",
+      "de": "Wald",
+      "ru": "Лес"
+     },
+     "hint": {
+      "en": "White = forest you can run through",
+      "pt": "Branco = floresta onde se corre bem",
+      "de": "Weiß = gut belaufbarer Wald",
+      "ru": "Белый = лес, где хорошо бежать"
+     },
+     "img": "sym/s31.png"
+    },
+    {
+     "code": "406",
+     "name": {
+      "en": "Slow running",
+      "pt": "Corrida lenta",
+      "de": "Langsam belaufbar",
+      "ru": "Медленный бег"
+     },
+     "hint": {
+      "en": "Light green: about 60–80% of speed",
+      "pt": "Verde claro: cerca de 60–80% da velocidade",
+      "de": "Hellgrün: etwa 60–80 % Tempo",
+      "ru": "Светло-зелёный: 60–80% скорости"
+     },
+     "img": "sym/s32.png"
+    },
+    {
+     "code": "408",
+     "name": {
+      "en": "Walk",
+      "pt": "Andar",
+      "de": "Gehen",
+      "ru": "Шагом"
+     },
+     "hint": {
+      "en": "Mid green: you can only walk",
+      "pt": "Verde médio: só a andar",
+      "de": "Mittelgrün: nur gehen",
+      "ru": "Средний зелёный: только шагом"
+     },
+     "img": "sym/s33.png"
+    },
+    {
+     "code": "410",
+     "name": {
+      "en": "Fight",
+      "pt": "Passagem difícil",
+      "de": "Dickicht",
+      "ru": "Продирание"
+     },
+     "hint": {
+      "en": "Dark green: go round. On sprint maps: no entry",
+      "pt": "Verde escuro: contornar. No sprint: proibido",
+      "de": "Dunkelgrün: umlaufen. Im Sprint: verboten",
+      "ru": "Тёмно-зелёный: обходи. В спринте: нельзя"
+     },
+     "img": "sym/s34.png"
+    },
+    {
+     "code": "407",
+     "name": {
+      "en": "Undergrowth",
+      "pt": "Vegetação rasteira",
+      "de": "Unterholz",
+      "ru": "Подлесок"
+     },
+     "hint": {
+      "en": "Stripes: low bushes slow you down",
+      "pt": "Riscas: arbustos baixos atrasam",
+      "de": "Streifen: niedriges Gestrüpp bremst",
+      "ru": "Полосы: низкий кустарник тормозит"
+     },
+     "img": "sym/s35.png"
+    },
+    {
+     "code": "413",
+     "name": {
+      "en": "Orchard",
+      "pt": "Pomar",
+      "de": "Obstgarten",
+      "ru": "Сад"
+     },
+     "hint": {
+      "en": "Trees in rows",
+      "pt": "Árvores em filas",
+      "de": "Bäume in Reihen",
+      "ru": "Деревья рядами"
+     },
+     "img": "sym/s36.png"
+    },
+    {
+     "code": "414",
+     "name": {
+      "en": "Vineyard",
+      "pt": "Vinha",
+      "de": "Weinberg",
+      "ru": "Виноградник"
+     },
+     "hint": {
+      "en": "Rows of vines on terraces: run along them",
+      "pt": "Filas de vinha em poios: corre ao longo delas",
+      "de": "Rebzeilen auf Terrassen: entlang laufen",
+      "ru": "Ряды лозы на террасах: беги вдоль"
+     },
+     "img": "sym/s37.png"
+    },
+    {
+     "code": "",
+     "name": {
+      "en": "Hedge",
+      "pt": "Sebe",
+      "de": "Hecke",
+      "ru": "Живая изгородь"
+     },
+     "hint": {
+      "en": "Line of dense bushes: usually cannot pass",
+      "pt": "Linha de arbustos densos: em geral não se passa",
+      "de": "Dichte Buschreihe: meist nicht passierbar",
+      "ru": "Ряд плотных кустов: обычно не пройти"
+     },
+     "img": "sym/s38.png"
+    },
+    {
+     "code": "412",
+     "name": {
+      "en": "Cultivated land",
+      "pt": "Terreno cultivado",
+      "de": "Kulturland",
+      "ru": "Сельхозугодья"
+     },
+     "hint": {
+      "en": "Crops: usually do not cross",
+      "pt": "Culturas: em geral não atravessar",
+      "de": "Feldfrüchte: meist nicht betreten",
+      "ru": "Посевы: обычно не пересекать"
+     },
+     "img": "sym/s39.png"
+    },
+    {
+     "code": "416",
+     "name": {
+      "en": "Vegetation boundary",
+      "pt": "Limite de vegetação",
+      "de": "Vegetationsgrenze",
+      "ru": "Граница растительности"
+     },
+     "hint": {
+      "en": "Clear edge, e.g. forest to field",
+      "pt": "Limite nítido, p. ex. mata e campo",
+      "de": "Deutliche Grenze, z. B. Wald/Feld",
+      "ru": "Чёткая граница, напр. лес/поле"
+     },
+     "img": "sym/s40.png"
+    },
+    {
+     "code": "417",
+     "name": {
+      "en": "Prominent tree",
+      "pt": "Árvore notável",
+      "de": "Markanter Baum",
+      "ru": "Отдельное дерево"
+     },
+     "hint": {
+      "en": "A tree you will notice",
+      "pt": "Árvore que se destaca",
+      "de": "Auffälliger Baum",
+      "ru": "Заметное дерево"
+     },
+     "img": "sym/s41.png"
+    },
+    {
+     "code": "418",
+     "name": {
+      "en": "Prominent bush",
+      "pt": "Arbusto notável",
+      "de": "Markanter Busch",
+      "ru": "Отдельный куст"
+     },
+     "hint": {
+      "en": "A bush you will notice",
+      "pt": "Arbusto que se destaca",
+      "de": "Auffälliger Busch",
+      "ru": "Заметный куст"
+     },
+     "img": "sym/s42.png"
+    }
+   ]
+  },
+  {
+   "title": {
+    "en": "Man-made features and sprint (black, grey, olive)",
+    "pt": "Construções e sprint (preto, cinza, oliva)",
+    "de": "Bauwerke und Sprint (schwarz, grau, oliv)",
+    "ru": "Постройки и спринт (чёрный, серый, оливковый)"
+   },
+   "items": [
+    {
+     "code": "501",
+     "name": {
+      "en": "Paved area",
+      "pt": "Alcatrão, área pavimentada",
+      "de": "Befestigte Fläche",
+      "ru": "Площадка с покрытием"
+     },
+     "hint": {
+      "en": "Square, car park, asphalt",
+      "pt": "Praça, parque, asfalto",
+      "de": "Platz, Parkplatz, Asphalt",
+      "ru": "Площадь, парковка, асфальт"
+     },
+     "img": "sym/s43.png"
+    },
+    {
+     "code": "502",
+     "name": {
+      "en": "Wide road",
+      "pt": "Estrada larga",
+      "de": "Breite Straße",
+      "ru": "Широкая дорога"
+     },
+     "hint": {
+      "en": "Two black edges",
+      "pt": "Dois limites pretos",
+      "de": "Zwei schwarze Ränder",
+      "ru": "Две чёрные кромки"
+     },
+     "img": "sym/s44.png"
+    },
+    {
+     "code": "504",
+     "name": {
+      "en": "Vehicle track",
+      "pt": "Caminho de terra",
+      "de": "Fahrweg",
+      "ru": "Грунтовая дорога"
+     },
+     "hint": {
+      "en": "Dirt road for cars",
+      "pt": "Estradão para carros",
+      "de": "Unbefestigter Weg für Autos",
+      "ru": "Грунтовка для машин"
+     },
+     "img": "sym/s45.png"
+    },
+    {
+     "code": "505",
+     "name": {
+      "en": "Footpath",
+      "pt": "Caminho, carreiro",
+      "de": "Pfad",
+      "ru": "Тропа"
+     },
+     "hint": {
+      "en": "Clear path",
+      "pt": "Trilho bem visível",
+      "de": "Deutlicher Pfad",
+      "ru": "Хорошо заметная тропа"
+     },
+     "img": "sym/s46.png"
+    },
+    {
+     "code": "506",
+     "name": {
+      "en": "Small path",
+      "pt": "Vereda",
+      "de": "Kleiner Pfad",
+      "ru": "Малая тропа"
+     },
+     "hint": {
+      "en": "Faint path, easy to lose",
+      "pt": "Vereda ténue, fácil de perder",
+      "de": "Schwacher Pfad, leicht zu verlieren",
+      "ru": "Слабая тропа, легко потерять"
+     },
+     "img": "sym/s47.png"
+    },
+    {
+     "code": "509",
+     "name": {
+      "en": "Railway",
+      "pt": "Via férrea",
+      "de": "Eisenbahn",
+      "ru": "Железная дорога"
+     },
+     "hint": {
+      "en": "Usually forbidden to cross",
+      "pt": "Em geral proibido atravessar",
+      "de": "Meist verboten zu queren",
+      "ru": "Обычно пересекать нельзя"
+     },
+     "img": "sym/s48.png"
+    },
+    {
+     "code": "510",
+     "name": {
+      "en": "Power line",
+      "pt": "Linha elétrica",
+      "de": "Stromleitung",
+      "ru": "ЛЭП"
+     },
+     "hint": {
+      "en": "A good line to follow",
+      "pt": "Boa linha para seguir",
+      "de": "Gute Leitlinie",
+      "ru": "Хороший ориентир-линия"
+     },
+     "img": "sym/s49.png"
+    },
+    {
+     "code": "513",
+     "name": {
+      "en": "Wall",
+      "pt": "Muro transponível",
+      "de": "Mauer",
+      "ru": "Стена"
+     },
+     "hint": {
+      "en": "Low wall you may cross",
+      "pt": "Muro baixo que se pode passar",
+      "de": "Niedrige, passierbare Mauer",
+      "ru": "Низкая стенка, можно перелезть"
+     },
+     "img": "sym/s50.png"
+    },
+    {
+     "code": "515",
+     "name": {
+      "en": "Impassable wall",
+      "pt": "Muro intransponível",
+      "de": "Unpassierbare Mauer",
+      "ru": "Непреодолимая стена"
+     },
+     "hint": {
+      "en": "Thick line: forbidden to cross",
+      "pt": "Linha grossa: proibido passar",
+      "de": "Dicke Linie: nicht überqueren",
+      "ru": "Толстая линия: пересекать нельзя"
+     },
+     "img": "sym/s51.png"
+    },
+    {
+     "code": "516",
+     "name": {
+      "en": "Fence",
+      "pt": "Cerca transponível",
+      "de": "Zaun",
+      "ru": "Забор"
+     },
+     "hint": {
+      "en": "Fence you may climb",
+      "pt": "Vedação que se pode transpor",
+      "de": "Überkletterbarer Zaun",
+      "ru": "Забор, можно перелезть"
+     },
+     "img": "sym/s52.png"
+    },
+    {
+     "code": "518",
+     "name": {
+      "en": "Impassable fence",
+      "pt": "Cerca intransponível",
+      "de": "Unpassierbarer Zaun",
+      "ru": "Непреодолимый забор"
+     },
+     "hint": {
+      "en": "Forbidden to cross",
+      "pt": "Proibido transpor",
+      "de": "Nicht überqueren",
+      "ru": "Пересекать нельзя"
+     },
+     "img": "sym/s53.png"
+    },
+    {
+     "code": "519",
+     "name": {
+      "en": "Crossing point",
+      "pt": "Passagem",
+      "de": "Durchgang",
+      "ru": "Проход"
+     },
+     "hint": {
+      "en": "Gate or gap in a wall or fence",
+      "pt": "Portão ou abertura",
+      "de": "Tor oder Lücke",
+      "ru": "Калитка или проём"
+     },
+     "img": "sym/s54.png"
+    },
+    {
+     "code": "520",
+     "name": {
+      "en": "Private area",
+      "pt": "Zona privada",
+      "de": "Privatgelände",
+      "ru": "Частная территория"
+     },
+     "hint": {
+      "en": "Olive: gardens, private land, no entry",
+      "pt": "Oliva: jardins, privado, proibido",
+      "de": "Oliv: Gärten, Privatgrund, verboten",
+      "ru": "Оливковый: сады, частная земля, нельзя"
+     },
+     "img": "sym/s55.png"
+    },
+    {
+     "code": "521",
+     "name": {
+      "en": "Building",
+      "pt": "Casa",
+      "de": "Gebäude",
+      "ru": "Здание"
+     },
+     "hint": {
+      "en": "You cannot pass through",
+      "pt": "Não se atravessa",
+      "de": "Nicht durchlaufbar",
+      "ru": "Насквозь не пройти"
+     },
+     "img": "sym/s56.png"
+    },
+    {
+     "code": "522",
+     "name": {
+      "en": "Canopy, passage",
+      "pt": "Coberto",
+      "de": "Überdachung, Durchgang",
+      "ru": "Навес, проход"
+     },
+     "hint": {
+      "en": "Light grey: you can run under it",
+      "pt": "Cinza claro: pode-se passar por baixo",
+      "de": "Hellgrau: darunter laufen erlaubt",
+      "ru": "Светло-серый: можно пробежать под ним"
+     },
+     "img": "sym/s57.png"
+    },
+    {
+     "code": "532",
+     "name": {
+      "en": "Stairway",
+      "pt": "Escadas",
+      "de": "Treppe",
+      "ru": "Лестница"
+     },
+     "hint": {
+      "en": "Steps; the long lines are its sides",
+      "pt": "Degraus; as linhas longas são os lados",
+      "de": "Stufen; die langen Linien sind die Ränder",
+      "ru": "Ступени; длинные линии — края"
+     },
+     "img": "sym/s58.png"
+    },
+    {
+     "code": "",
+     "name": {
+      "en": "Tunnel",
+      "pt": "Túnel",
+      "de": "Tunnel",
+      "ru": "Тоннель"
+     },
+     "hint": {
+      "en": "A way under a road or building",
+      "pt": "Passagem por baixo de estrada ou casa",
+      "de": "Weg unter Straße oder Gebäude",
+      "ru": "Проход под дорогой или домом"
+     },
+     "img": "sym/s59.png"
+    },
+    {
+     "code": "524",
+     "name": {
+      "en": "High tower",
+      "pt": "Torre grande",
+      "de": "Hoher Turm",
+      "ru": "Высокая башня"
+     },
+     "hint": {
+      "en": "Seen from far: a good landmark",
+      "pt": "Vê-se de longe: boa referência",
+      "de": "Weit sichtbar: guter Anhaltspunkt",
+      "ru": "Видна издалека: хороший ориентир"
+     },
+     "img": "sym/s60.png"
+    },
+    {
+     "code": "525",
+     "name": {
+      "en": "Small tower",
+      "pt": "Torre pequena",
+      "de": "Kleiner Turm",
+      "ru": "Малая вышка"
+     },
+     "hint": {
+      "en": "Hunting stand, small mast",
+      "pt": "Posto de caça, pequeno mastro",
+      "de": "Hochsitz, kleiner Mast",
+      "ru": "Охотничья вышка, мачта"
+     },
+     "img": "sym/s61.png"
+    },
+    {
+     "code": "531",
+     "name": {
+      "en": "Special man-made feature",
+      "pt": "Objeto artificial especial",
+      "de": "Besonderes Bauwerk",
+      "ru": "Особый искусственный объект"
+     },
+     "hint": {
+      "en": "Explained in the map legend",
+      "pt": "Explicado na legenda do mapa",
+      "de": "In der Kartenlegende erklärt",
+      "ru": "Пояснён в легенде карты"
+     },
+     "img": "sym/s62.png"
+    }
+   ]
+  },
+  {
+   "title": {
+    "en": "Special features and map lines",
+    "pt": "Elementos especiais e linhas do mapa",
+    "de": "Sonderzeichen und Kartenlinien",
+    "ru": "Особые знаки и линии карты"
+   },
+   "items": [
+    {
+     "code": "",
+     "name": {
+      "en": "Special features",
+      "pt": "Elementos especiais",
+      "de": "Sonderzeichen",
+      "ru": "Особые объекты"
+     },
+     "hint": {
+      "en": "Brown △ landform, green × vegetation, black ×/○ man-made, blue □/× water: the map legend says what",
+      "pt": "Triângulo castanho relevo, × verde vegetação, ×/○ preto artificial, □/× azul água: a legenda diz o quê",
+      "de": "Braunes △ Gelände, grünes × Vegetation, schwarzes ×/○ Bauwerk, blaues □/× Wasser: die Legende sagt was",
+      "ru": "Коричневый △ — рельеф, зелёный × — растительность, чёрные ×/○ — постройки, синие □/× — вода: что именно, скажет легенда"
+     },
+     "img": "sym/s63.png"
+    },
+    {
+     "code": "601",
+     "name": {
+      "en": "Magnetic north lines",
+      "pt": "Linhas do norte magnético",
+      "de": "Nordlinien",
+      "ru": "Линии магнитного севера"
+     },
+     "hint": {
+      "en": "Blue or black lines; the top of the map is magnetic north",
+      "pt": "Linhas azuis ou pretas; o topo do mapa é o norte magnético",
+      "de": "Blaue oder schwarze Linien; oben ist magnetisch Nord",
+      "ru": "Синие или чёрные линии; верх карты — магнитный север"
+     },
+     "img": "sym/s64.png"
+    },
+    {
+     "code": "714",
+     "name": {
+      "en": "Dangerous or forbidden area",
+      "pt": "Zona perigosa ou proibida",
+      "de": "Gefährliches oder verbotenes Gebiet",
+      "ru": "Опасная или запретная зона"
+     },
+     "hint": {
+      "en": "Red-purple cross-hatching, often a busy road: do not cross",
+      "pt": "Grelha vermelha-roxa, muitas vezes estrada com trânsito: não atravessar",
+      "de": "Rot-violettes Gitter, oft eine befahrene Straße: nicht queren",
+      "ru": "Красно-пурпурная сетка, часто оживлённая дорога: не пересекать"
+     },
+     "img": "sym/s65.png"
+    }
+   ]
+  },
+  {
+   "title": {
+    "en": "Your course (purple)",
+    "pt": "O teu percurso (roxo)",
+    "de": "Deine Bahn (violett)",
+    "ru": "Твоя дистанция (пурпурный)"
+   },
+   "items": [
+    {
+     "code": "701",
+     "name": {
+      "en": "Start",
+      "pt": "Partida",
+      "de": "Start",
+      "ru": "Старт"
+     },
+     "hint": {
+      "en": "Triangle: where you begin",
+      "pt": "Triângulo: onde começas",
+      "de": "Dreieck: hier beginnst du",
+      "ru": "Треугольник: отсюда начинаешь"
+     },
+     "img": "sym/s66.png"
+    },
+    {
+     "code": "703",
+     "name": {
+      "en": "Control",
+      "pt": "Ponto de controlo",
+      "de": "Posten",
+      "ru": "КП"
+     },
+     "hint": {
+      "en": "The flag is at the centre of the circle",
+      "pt": "A baliza está no centro do círculo",
+      "de": "Der Posten steht im Kreismittelpunkt",
+      "ru": "Призма в центре круга"
+     },
+     "img": "sym/s67.png"
+    },
+    {
+     "code": "704",
+     "name": {
+      "en": "Control number",
+      "pt": "Número do ponto",
+      "de": "Postennummer",
+      "ru": "Номер КП"
+     },
+     "hint": {
+      "en": "Visit the controls in this order",
+      "pt": "Visita os pontos por esta ordem",
+      "de": "Posten in dieser Reihenfolge anlaufen",
+      "ru": "Бери КП в этом порядке"
+     },
+     "img": "sym/s68.png"
+    },
+    {
+     "code": "705",
+     "name": {
+      "en": "Course line",
+      "pt": "Linha do percurso",
+      "de": "Bahnlinie",
+      "ru": "Линия дистанции"
+     },
+     "hint": {
+      "en": "Joins controls; not a route to follow",
+      "pt": "Liga os pontos; não é o caminho",
+      "de": "Verbindet Posten; keine Route",
+      "ru": "Соединяет КП; это не путь"
+     },
+     "img": "sym/s69.png"
+    },
+    {
+     "code": "706",
+     "name": {
+      "en": "Finish",
+      "pt": "Chegada",
+      "de": "Ziel",
+      "ru": "Финиш"
+     },
+     "hint": {
+      "en": "Double circle",
+      "pt": "Círculo duplo",
+      "de": "Doppelkreis",
+      "ru": "Двойной круг"
+     },
+     "img": "sym/s70.png"
+    },
+    {
+     "code": "707",
+     "name": {
+      "en": "Marked route",
+      "pt": "Percurso balizado",
+      "de": "Markierte Strecke",
+      "ru": "Маркированный участок"
+     },
+     "hint": {
+      "en": "Follow the tapes",
+      "pt": "Segue as fitas",
+      "de": "Den Bändern folgen",
+      "ru": "Беги по разметке"
+     },
+     "img": "sym/s71.png"
+    },
+    {
+     "code": "708",
+     "name": {
+      "en": "Out-of-bounds boundary",
+      "pt": "Limite interdito",
+      "de": "Sperrgrenze",
+      "ru": "Запретная граница"
+     },
+     "hint": {
+      "en": "Thick purple line: do not cross",
+      "pt": "Linha roxa grossa: não atravessar",
+      "de": "Dicke violette Linie: nicht queren",
+      "ru": "Толстая пурпурная линия: не пересекать"
+     },
+     "img": "sym/s72.png"
+    },
+    {
+     "code": "709",
+     "name": {
+      "en": "Out-of-bounds area",
+      "pt": "Área interdita",
+      "de": "Sperrgebiet",
+      "ru": "Запрещённая зона"
+     },
+     "hint": {
+      "en": "Purple stripes: no entry, ever",
+      "pt": "Riscas roxas: nunca entrar",
+      "de": "Violette Streifen: nie betreten",
+      "ru": "Пурпурные полосы: входить нельзя"
+     },
+     "img": "sym/s73.png"
+    },
+    {
+     "code": "710",
+     "name": {
+      "en": "Crossing point",
+      "pt": "Ponto de passagem",
+      "de": "Übergangsstelle",
+      "ru": "Пункт перехода"
+     },
+     "hint": {
+      "en": "Cross only here",
+      "pt": "Atravessar só aqui",
+      "de": "Nur hier queren",
+      "ru": "Переходить только здесь"
+     },
+     "img": "sym/s74.png"
+    },
+    {
+     "code": "712",
+     "name": {
+      "en": "First aid",
+      "pt": "Primeiros socorros",
+      "de": "Erste Hilfe",
+      "ru": "Медпункт"
+     },
+     "hint": {
+      "en": "Help is here",
+      "pt": "Aqui há ajuda",
+      "de": "Hier gibt es Hilfe",
+      "ru": "Здесь помогут"
+     },
+     "img": "sym/s75.png"
+    }
+   ]
+  }
+ ],
+ "cd": [
+  {
+   "col": "C",
+   "title": {
+    "en": "Which of several similar features",
+    "pt": "Qual de vários objetos iguais",
+    "de": "Welches von mehreren gleichen Objekten",
+    "ru": "Какой из похожих объектов"
+   },
+   "note": {
+    "en": "Only when several alike are inside the circle. The arrow shows the compass direction: ↘︎ means \"the south-eastern one\".",
+    "pt": "Só quando há vários iguais no círculo. A seta aponta o rumo: ↘︎ quer dizer «o mais a sudeste».",
+    "de": "Nur wenn mehrere gleiche im Kreis liegen. Der Pfeil zeigt die Himmelsrichtung: ↘︎ heißt „der südöstlichste“.",
+    "ru": "Только если в круге несколько похожих. Стрелка показывает сторону света: ↘︎ — «юго-восточный»."
+   },
+   "items": [
+    {
+     "id": "n",
+     "name": {
+      "en": "Northern",
+      "pt": "O mais a norte",
+      "de": "Nördlicher",
+      "ru": "Северный"
+     },
+     "img": "cd/cd_n.png"
+    },
+    {
+     "id": "se",
+     "name": {
+      "en": "South-eastern",
+      "pt": "O mais a sudeste",
+      "de": "Südöstlicher",
+      "ru": "Юго-восточный"
+     },
+     "img": "cd/cd_se.png"
+    },
+    {
+     "id": "w",
+     "name": {
+      "en": "Western",
+      "pt": "O mais a oeste",
+      "de": "Westlicher",
+      "ru": "Западный"
+     },
+     "img": "cd/cd_w.png"
+    },
+    {
+     "id": "upper",
+     "name": {
+      "en": "Upper (directly above another)",
+      "pt": "Superior (por cima de outro)",
+      "de": "Oberer (direkt über einem anderen)",
+      "ru": "Верхний (прямо над другим)"
+     },
+     "img": "cd/cd_upper.png"
+    },
+    {
+     "id": "lower",
+     "name": {
+      "en": "Lower",
+      "pt": "Inferior",
+      "de": "Unterer",
+      "ru": "Нижний"
+     },
+     "img": "cd/cd_lower.png"
+    },
+    {
+     "id": "middle",
+     "name": {
+      "en": "Middle one",
+      "pt": "O do meio",
+      "de": "Mittlerer",
+      "ru": "Средний"
+     },
+     "img": "cd/cd_middle.png"
+    }
+   ]
+  },
+  {
+   "col": "D",
+   "title": {
+    "en": "The control feature: ground",
+    "pt": "O objeto: relevo",
+    "de": "Das Postenobjekt: Gelände",
+    "ru": "Объект: рельеф"
+   },
+   "note": {
+    "en": "",
+    "pt": "",
+    "de": "",
+    "ru": ""
+   },
+   "items": [
+    {
+     "id": "terrace",
+     "name": {
+      "en": "Terrace (poio)",
+      "pt": "Socalco, poio",
+      "de": "Terrasse",
+      "ru": "Терраса"
+     },
+     "img": "cd/cd_terrace.png"
+    },
+    {
+     "id": "spur",
+     "name": {
+      "en": "Spur",
+      "pt": "Esporão",
+      "de": "Sporn",
+      "ru": "Отрог"
+     },
+     "img": "cd/cd_spur.png"
+    },
+    {
+     "id": "reentrant",
+     "name": {
+      "en": "Re-entrant (small valley)",
+      "pt": "Reentrância (vale pequeno)",
+      "de": "Einbuchtung (kleines Tal)",
+      "ru": "Лощина"
+     },
+     "img": "cd/cd_reentrant.png"
+    },
+    {
+     "id": "earthbank",
+     "name": {
+      "en": "Earth bank",
+      "pt": "Escarpa de terra",
+      "de": "Böschung",
+      "ru": "Земляной обрыв"
+     },
+     "img": "cd/cd_earthbank.png"
+    },
+    {
+     "id": "earthwall",
+     "name": {
+      "en": "Earth wall",
+      "pt": "Muro de terra",
+      "de": "Erdwall",
+      "ru": "Земляной вал"
+     },
+     "img": "cd/cd_earthwall.png"
+    },
+    {
+     "id": "gully",
+     "name": {
+      "en": "Erosion gully",
+      "pt": "Ravina",
+      "de": "Erosionsrinne",
+      "ru": "Промоина"
+     },
+     "img": "cd/cd_gully.png"
+    },
+    {
+     "id": "hill",
+     "name": {
+      "en": "Hill",
+      "pt": "Monte",
+      "de": "Hügel",
+      "ru": "Холм"
+     },
+     "img": "cd/cd_hill.png"
+    },
+    {
+     "id": "knoll",
+     "name": {
+      "en": "Knoll",
+      "pt": "Cabeço",
+      "de": "Kuppe",
+      "ru": "Бугор"
+     },
+     "img": "cd/cd_knoll.png"
+    },
+    {
+     "id": "saddle",
+     "name": {
+      "en": "Saddle",
+      "pt": "Colo",
+      "de": "Sattel",
+      "ru": "Седловина"
+     },
+     "img": "cd/cd_saddle.png"
+    },
+    {
+     "id": "depression",
+     "name": {
+      "en": "Depression",
+      "pt": "Depressão",
+      "de": "Senke",
+      "ru": "Котловина"
+     },
+     "img": "cd/cd_depression.png"
+    },
+    {
+     "id": "smalldep",
+     "name": {
+      "en": "Small depression",
+      "pt": "Pequena depressão",
+      "de": "Kleine Senke",
+      "ru": "Западина"
+     },
+     "img": "cd/cd_smalldep.png"
+    },
+    {
+     "id": "pit",
+     "name": {
+      "en": "Pit",
+      "pt": "Buraco",
+      "de": "Grube",
+      "ru": "Яма"
+     },
+     "img": "cd/cd_pit.png"
+    }
+   ]
+  },
+  {
+   "col": "D",
+   "title": {
+    "en": "Rock and water",
+    "pt": "Rochas e água",
+    "de": "Fels und Wasser",
+    "ru": "Скалы и вода"
+   },
+   "note": {
+    "en": "",
+    "pt": "",
+    "de": "",
+    "ru": ""
+   },
+   "items": [
+    {
+     "id": "cliff",
+     "name": {
+      "en": "Cliff, rock face",
+      "pt": "Falésia",
+      "de": "Felswand",
+      "ru": "Скала"
+     },
+     "img": "cd/cd_cliff.png"
+    },
+    {
+     "id": "boulder",
+     "name": {
+      "en": "Boulder",
+      "pt": "Rocha",
+      "de": "Stein",
+      "ru": "Камень"
+     },
+     "img": "cd/cd_boulder.png"
+    },
+    {
+     "id": "boulders",
+     "name": {
+      "en": "Boulder cluster",
+      "pt": "Grupo de pedras",
+      "de": "Steingruppe",
+      "ru": "Группа камней"
+     },
+     "img": "cd/cd_boulders.png"
+    },
+    {
+     "id": "boulderfield",
+     "name": {
+      "en": "Boulder field",
+      "pt": "Zona de pedras",
+      "de": "Blockfeld",
+      "ru": "Каменное поле"
+     },
+     "img": "cd/cd_boulderfield.png"
+    },
+    {
+     "id": "stony",
+     "name": {
+      "en": "Stony ground",
+      "pt": "Terreno pedregoso",
+      "de": "Steiniger Boden",
+      "ru": "Каменистая поверхность"
+     },
+     "img": "cd/cd_stony.png"
+    },
+    {
+     "id": "barerock",
+     "name": {
+      "en": "Bare rock",
+      "pt": "Afloramento rochoso",
+      "de": "Offener Fels",
+      "ru": "Скальная площадка"
+     },
+     "img": "cd/cd_barerock.png"
+    },
+    {
+     "id": "trench",
+     "name": {
+      "en": "Trench",
+      "pt": "Trincheira",
+      "de": "Graben",
+      "ru": "Траншея"
+     },
+     "img": "cd/cd_trench.png"
+    },
+    {
+     "id": "lake",
+     "name": {
+      "en": "Lake",
+      "pt": "Lago",
+      "de": "See",
+      "ru": "Озеро"
+     },
+     "img": "cd/cd_lake.png"
+    },
+    {
+     "id": "watercourse",
+     "name": {
+      "en": "Stream, levada, watercourse",
+      "pt": "Ribeira, levada, linha de água",
+      "de": "Bach, Levada",
+      "ru": "Ручей, левада"
+     },
+     "img": "cd/cd_watercourse.png"
+    },
+    {
+     "id": "ditch",
+     "name": {
+      "en": "Ditch, minor water channel",
+      "pt": "Vala",
+      "de": "Wassergraben",
+      "ru": "Канава"
+     },
+     "img": "cd/cd_ditch.png"
+    },
+    {
+     "id": "marsh",
+     "name": {
+      "en": "Marsh",
+      "pt": "Pântano",
+      "de": "Sumpf",
+      "ru": "Болото"
+     },
+     "img": "cd/cd_marsh.png"
+    },
+    {
+     "id": "well",
+     "name": {
+      "en": "Well",
+      "pt": "Poço",
+      "de": "Brunnen",
+      "ru": "Колодец"
+     },
+     "img": "cd/cd_well.png"
+    },
+    {
+     "id": "spring",
+     "name": {
+      "en": "Spring",
+      "pt": "Nascente",
+      "de": "Quelle",
+      "ru": "Родник"
+     },
+     "img": "cd/cd_spring.png"
+    },
+    {
+     "id": "tank",
+     "name": {
+      "en": "Water tank, trough",
+      "pt": "Tanque, bebedouro",
+      "de": "Wasserbehälter, Trog",
+      "ru": "Резервуар, корыто"
+     },
+     "img": "cd/cd_tank.png"
+    }
+   ]
+  },
+  {
+   "col": "D",
+   "title": {
+    "en": "Vegetation",
+    "pt": "Vegetação",
+    "de": "Vegetation",
+    "ru": "Растительность"
+   },
+   "note": {
+    "en": "",
+    "pt": "",
+    "de": "",
+    "ru": ""
+   },
+   "items": [
+    {
+     "id": "open",
+     "name": {
+      "en": "Open land",
+      "pt": "Área aberta",
+      "de": "Offenes Gelände",
+      "ru": "Открытое место"
+     },
+     "img": "cd/cd_open.png"
+    },
+    {
+     "id": "semiopen",
+     "name": {
+      "en": "Semi-open land",
+      "pt": "Área semi-aberta",
+      "de": "Halboffenes Gelände",
+      "ru": "Полуоткрытое место"
+     },
+     "img": "cd/cd_semiopen.png"
+    },
+    {
+     "id": "clearing",
+     "name": {
+      "en": "Clearing",
+      "pt": "Clareira",
+      "de": "Lichtung",
+      "ru": "Поляна"
+     },
+     "img": "cd/cd_clearing.png"
+    },
+    {
+     "id": "thicket",
+     "name": {
+      "en": "Thicket; in sprint also a single bush",
+      "pt": "Mata densa; no sprint também um arbusto",
+      "de": "Dickicht; im Sprint auch ein Busch",
+      "ru": "Заросли; в спринте и отдельный куст"
+     },
+     "img": "cd/cd_thicket.png"
+    },
+    {
+     "id": "hedge",
+     "name": {
+      "en": "Hedge, line of trees",
+      "pt": "Sebe, fila de árvores",
+      "de": "Hecke, Baumreihe",
+      "ru": "Живая изгородь, ряд деревьев"
+     },
+     "img": "cd/cd_hedge.png"
+    },
+    {
+     "id": "vegboundary",
+     "name": {
+      "en": "Vegetation boundary",
+      "pt": "Limite de vegetação",
+      "de": "Vegetationsgrenze",
+      "ru": "Граница растительности"
+     },
+     "img": "cd/cd_vegboundary.png"
+    },
+    {
+     "id": "tree",
+     "name": {
+      "en": "Prominent tree",
+      "pt": "Árvore isolada",
+      "de": "Markanter Baum",
+      "ru": "Отдельное дерево"
+     },
+     "img": "cd/cd_tree.png"
+    }
+   ]
+  },
+  {
+   "col": "D",
+   "title": {
+    "en": "Man-made: town sprint",
+    "pt": "Construções: sprint urbano",
+    "de": "Bauwerke: Stadtsprint",
+    "ru": "Постройки: городской спринт"
+   },
+   "note": {
+    "en": "",
+    "pt": "",
+    "de": "",
+    "ru": ""
+   },
+   "items": [
+    {
+     "id": "road",
+     "name": {
+      "en": "Road",
+      "pt": "Estrada",
+      "de": "Straße",
+      "ru": "Дорога"
+     },
+     "img": "cd/cd_road.png"
+    },
+    {
+     "id": "path",
+     "name": {
+      "en": "Path, track",
+      "pt": "Caminho, carreiro",
+      "de": "Weg, Pfad",
+      "ru": "Тропа, грунтовка"
+     },
+     "img": "cd/cd_path.png"
+    },
+    {
+     "id": "ride",
+     "name": {
+      "en": "Ride (cleared line in forest)",
+      "pt": "Aceiro",
+      "de": "Schneise",
+      "ru": "Просека"
+     },
+     "img": "cd/cd_ride.png"
+    },
+    {
+     "id": "bridge",
+     "name": {
+      "en": "Bridge",
+      "pt": "Ponte",
+      "de": "Brücke",
+      "ru": "Мост"
+     },
+     "img": "cd/cd_bridge.png"
+    },
+    {
+     "id": "powerline",
+     "name": {
+      "en": "Power line",
+      "pt": "Linha elétrica",
+      "de": "Stromleitung",
+      "ru": "ЛЭП"
+     },
+     "img": "cd/cd_powerline.png"
+    },
+    {
+     "id": "tunnel",
+     "name": {
+      "en": "Tunnel",
+      "pt": "Túnel",
+      "de": "Tunnel",
+      "ru": "Тоннель"
+     },
+     "img": "cd/cd_tunnel.png"
+    },
+    {
+     "id": "wall",
+     "name": {
+      "en": "Stone wall",
+      "pt": "Muro",
+      "de": "Mauer",
+      "ru": "Каменная стена"
+     },
+     "img": "cd/cd_wall.png"
+    },
+    {
+     "id": "fence",
+     "name": {
+      "en": "Fence",
+      "pt": "Cerca, vedação",
+      "de": "Zaun",
+      "ru": "Забор"
+     },
+     "img": "cd/cd_fence.png"
+    },
+    {
+     "id": "crossing",
+     "name": {
+      "en": "Crossing point: gate, stile, gap",
+      "pt": "Passagem: portão, abertura",
+      "de": "Durchgang: Tor, Lücke",
+      "ru": "Проход: калитка, проём"
+     },
+     "img": "cd/cd_crossing.png"
+    },
+    {
+     "id": "building",
+     "name": {
+      "en": "Building",
+      "pt": "Casa, edifício",
+      "de": "Gebäude",
+      "ru": "Здание"
+     },
+     "img": "cd/cd_building.png"
+    },
+    {
+     "id": "paved",
+     "name": {
+      "en": "Paved area: square, car park",
+      "pt": "Zona alcatroada: largo, parque",
+      "de": "Befestigte Fläche: Platz, Parkplatz",
+      "ru": "Площадка с покрытием: площадь, парковка"
+     },
+     "img": "cd/cd_paved.png"
+    },
+    {
+     "id": "ruin",
+     "name": {
+      "en": "Ruin",
+      "pt": "Ruína",
+      "de": "Ruine",
+      "ru": "Руины"
+     },
+     "img": "cd/cd_ruin.png"
+    },
+    {
+     "id": "tower",
+     "name": {
+      "en": "Tower",
+      "pt": "Torre",
+      "de": "Turm",
+      "ru": "Вышка"
+     },
+     "img": "cd/cd_tower.png"
+    },
+    {
+     "id": "cairn",
+     "name": {
+      "en": "Boundary stone, cairn, survey point",
+      "pt": "Marco, marco geodésico",
+      "de": "Grenzstein, Vermessungspunkt",
+      "ru": "Межевой камень, геопункт"
+     },
+     "img": "cd/cd_cairn.png"
+    },
+    {
+     "id": "monument",
+     "name": {
+      "en": "Monument, statue",
+      "pt": "Monumento, estátua",
+      "de": "Denkmal, Statue",
+      "ru": "Памятник, статуя"
+     },
+     "img": "cd/cd_monument.png"
+    },
+    {
+     "id": "canopy",
+     "name": {
+      "en": "Canopy, covered passage",
+      "pt": "Coberto, passagem coberta",
+      "de": "Überdachung, Durchgang",
+      "ru": "Навес, крытый проход"
+     },
+     "img": "cd/cd_canopy.png"
+    },
+    {
+     "id": "stairway",
+     "name": {
+      "en": "Stairway",
+      "pt": "Escadas",
+      "de": "Treppe",
+      "ru": "Лестница"
+     },
+     "img": "cd/cd_stairway.png"
+    },
+    {
+     "id": "oob",
+     "name": {
+      "en": "Out of bounds: flower bed",
+      "pt": "Interdito: canteiro",
+      "de": "Sperrgebiet: Blumenbeet",
+      "ru": "Запретная зона: клумба"
+     },
+     "img": "cd/cd_oob.png"
+    },
+    {
+     "id": "specialx",
+     "name": {
+      "en": "Special item X: see the event notes",
+      "pt": "Objeto especial X: ver as instruções",
+      "de": "Spezialobjekt X: siehe Wettkampfinformation",
+      "ru": "Особый объект X: см. информацию к старту"
+     },
+     "note": {
+      "en": "On Madeira sheets often a bench, post or bin",
+      "pt": "Nas provas da Madeira muitas vezes banco, poste ou caixote do lixo",
+      "de": "Auf Madeira oft Bank, Pfosten oder Mülleimer",
+      "ru": "На Мадейре часто скамейка, столб или урна"
+     },
+     "img": "cd/cd_specialx.png"
+    },
+    {
+     "id": "specialo",
+     "name": {
+      "en": "Special item O: see the event notes",
+      "pt": "Objeto especial O: ver as instruções",
+      "de": "Spezialobjekt O: siehe Wettkampfinformation",
+      "ru": "Особый объект O: см. информацию к старту"
+     },
+     "img": "cd/cd_specialo.png"
+    }
+   ]
+  },
+  {
+   "col": "E",
+   "title": {
+    "en": "Appearance",
+    "pt": "Aspeto",
+    "de": "Aussehen",
+    "ru": "Особенности"
+   },
+   "note": {
+    "en": "",
+    "pt": "",
+    "de": "",
+    "ru": ""
+   },
+   "items": [
+    {
+     "id": "low",
+     "name": {
+      "en": "Low, flat",
+      "pt": "Baixo",
+      "de": "Niedrig",
+      "ru": "Низкий"
+     },
+     "img": "cd/cd_low.png"
+    },
+    {
+     "id": "shallow",
+     "name": {
+      "en": "Shallow",
+      "pt": "Pouco fundo",
+      "de": "Flach",
+      "ru": "Мелкий"
+     },
+     "img": "cd/cd_shallow.png"
+    },
+    {
+     "id": "deep",
+     "name": {
+      "en": "Deep",
+      "pt": "Fundo",
+      "de": "Tief",
+      "ru": "Глубокий"
+     },
+     "img": "cd/cd_deep.png"
+    },
+    {
+     "id": "overgrown",
+     "name": {
+      "en": "Overgrown",
+      "pt": "Com vegetação",
+      "de": "Überwachsen",
+      "ru": "Заросший"
+     },
+     "img": "cd/cd_overgrown.png"
+    },
+    {
+     "id": "rocky",
+     "name": {
+      "en": "Rocky, stony",
+      "pt": "Rochoso",
+      "de": "Felsig",
+      "ru": "Каменистый"
+     },
+     "img": "cd/cd_rocky.png"
+    },
+    {
+     "id": "ruined",
+     "name": {
+      "en": "Ruined, fallen",
+      "pt": "Em ruínas",
+      "de": "Verfallen",
+      "ru": "Разрушенный"
+     },
+     "img": "cd/cd_ruined.png"
+    }
+   ]
+  },
+  {
+   "col": "F",
+   "title": {
+    "en": "Size and combinations",
+    "pt": "Dimensões e combinações",
+    "de": "Größe und Kombinationen",
+    "ru": "Размер и сочетания"
+   },
+   "note": {
+    "en": "Crossing and junction need two features: one in D, the other in E. Path + path + X = two paths cross.",
+    "pt": "Cruzamento e junção pedem dois objetos: um em D, outro em E. Caminho + caminho + X = dois caminhos cruzam-se.",
+    "de": "Kreuzung und Einmündung brauchen zwei Objekte: eins in D, eins in E. Weg + Weg + X = zwei Wege kreuzen sich.",
+    "ru": "Для пересечения и развилки нужны два объекта: в D и в E. Тропа + тропа + X — две тропы пересекаются."
+   },
+   "items": [
+    {
+     "id": "height",
+     "name": {
+      "en": "Height or depth, metres",
+      "pt": "Altura ou profundidade, m",
+      "de": "Höhe oder Tiefe, m",
+      "ru": "Высота или глубина, м"
+     },
+     "img": "cd/cd_height.png"
+    },
+    {
+     "id": "size",
+     "name": {
+      "en": "Size, metres",
+      "pt": "Dimensões, m",
+      "de": "Größe, m",
+      "ru": "Размер, м"
+     },
+     "img": "cd/cd_size.png"
+    },
+    {
+     "id": "xcross",
+     "name": {
+      "en": "Crossing",
+      "pt": "Cruzamento",
+      "de": "Kreuzung",
+      "ru": "Пересечение"
+     },
+     "img": "cd/cd_xcross.png"
+    },
+    {
+     "id": "junction",
+     "name": {
+      "en": "Junction (meet or fork)",
+      "pt": "Junção, bifurcação",
+      "de": "Einmündung, Gabelung",
+      "ru": "Развилка, примыкание"
+     },
+     "img": "cd/cd_junction.png"
+    },
+    {
+     "id": "bend",
+     "name": {
+      "en": "Bend",
+      "pt": "Curva",
+      "de": "Biegung",
+      "ru": "Изгиб, поворот"
+     },
+     "img": "cd/cd_bend.png"
+    }
+   ]
+  },
+  {
+   "col": "G",
+   "title": {
+    "en": "Where the flag is",
+    "pt": "Onde está a baliza",
+    "de": "Wo der Posten hängt",
+    "ru": "Где стоит призма"
+   },
+   "note": {
+    "en": "Empty means the centre (for a cliff: its foot). The symbol turns to show the side: on Madeira sheets a right angle with a dot is a corner pointing NE, SE, SW or NW; a dot inside the angle is the inside corner, outside it the outside corner.",
+    "pt": "Vazio quer dizer o centro (numa falésia: a base). O símbolo roda para mostrar o lado: nas folhas da Madeira um ângulo reto com ponto é um canto virado a NE, SE, SO ou NO; ponto dentro do ângulo = canto interior, fora = canto exterior.",
+    "de": "Leer heißt Mitte (bei einer Felswand: der Fuß). Das Zeichen dreht sich zur Seite: auf Madeira-Blättern ist ein rechter Winkel mit Punkt eine Ecke nach NO, SO, SW oder NW; Punkt im Winkel = Innenecke, außen = Außenecke.",
+    "ru": "Пусто — центр объекта (у скалы — подножие). Знак поворачивается в нужную сторону: на мадейрских листах прямой угол с точкой — угол, смотрящий на СВ, ЮВ, ЮЗ или СЗ; точка внутри угла — внутренний угол, снаружи — внешний."
+   },
+   "items": [
+    {
+     "id": "side",
+     "name": {
+      "en": "Side (here north-east side)",
+      "pt": "Lado (aqui nordeste)",
+      "de": "Seite (hier Nordost)",
+      "ru": "Сторона (здесь северо-восточная)"
+     },
+     "img": "cd/cd_side.png"
+    },
+    {
+     "id": "edge",
+     "name": {
+      "en": "Edge (here south-east edge)",
+      "pt": "Borda (aqui sudeste)",
+      "de": "Rand (hier Südost)",
+      "ru": "Край (здесь юго-восточный)"
+     },
+     "img": "cd/cd_edge.png"
+    },
+    {
+     "id": "part",
+     "name": {
+      "en": "Part (here west part)",
+      "pt": "Parte (aqui oeste)",
+      "de": "Teil (hier West)",
+      "ru": "Часть (здесь западная)"
+     },
+     "img": "cd/cd_part.png"
+    },
+    {
+     "id": "cornerIn",
+     "name": {
+      "en": "Corner, inside (here east)",
+      "pt": "Canto interior (aqui leste)",
+      "de": "Innenecke (hier Ost)",
+      "ru": "Внутренний угол (здесь восточный)"
+     },
+     "img": "cd/cd_cornerIn.png"
+    },
+    {
+     "id": "cornerOut",
+     "name": {
+      "en": "Corner, outside (here south)",
+      "pt": "Canto exterior (aqui sul)",
+      "de": "Außenecke (hier Süd)",
+      "ru": "Внешний угол (здесь южный)"
+     },
+     "img": "cd/cd_cornerOut.png"
+    },
+    {
+     "id": "cornerInNE",
+     "name": {
+      "en": "Corner as a right angle (north-east, inside)",
+      "pt": "Canto em ângulo reto (nordeste, interior)",
+      "de": "Ecke als rechter Winkel (Nordost, innen)",
+      "ru": "Угол прямым углом (северо-восточный, внутренний)"
+     },
+     "img": "cd/cd_cornerInNE.png"
+    },
+    {
+     "id": "tip",
+     "name": {
+      "en": "Tip (here south-west)",
+      "pt": "Ponta (aqui sudoeste)",
+      "de": "Spitze (hier Südwest)",
+      "ru": "Острый край (здесь юго-западный)"
+     },
+     "img": "cd/cd_tip.png"
+    },
+    {
+     "id": "end",
+     "name": {
+      "en": "End (here north-west end)",
+      "pt": "Extremidade (aqui noroeste)",
+      "de": "Ende (hier Nordwest)",
+      "ru": "Конец (здесь северо-западный)"
+     },
+     "img": "cd/cd_end.png"
+    },
+    {
+     "id": "upperpart",
+     "name": {
+      "en": "Upper part",
+      "pt": "Parte superior",
+      "de": "Oberer Teil",
+      "ru": "Верхняя часть"
+     },
+     "img": "cd/cd_upperpart.png"
+    },
+    {
+     "id": "lowerpart",
+     "name": {
+      "en": "Lower part",
+      "pt": "Parte inferior",
+      "de": "Unterer Teil",
+      "ru": "Нижняя часть"
+     },
+     "img": "cd/cd_lowerpart.png"
+    },
+    {
+     "id": "top",
+     "name": {
+      "en": "Top",
+      "pt": "Topo",
+      "de": "Oben",
+      "ru": "Верх, вершина"
+     },
+     "img": "cd/cd_top.png"
+    },
+    {
+     "id": "foot",
+     "name": {
+      "en": "Foot",
+      "pt": "Base, pé",
+      "de": "Fuß",
+      "ru": "Подножие"
+     },
+     "img": "cd/cd_foot.png"
+    },
+    {
+     "id": "beneath",
+     "name": {
+      "en": "Beneath",
+      "pt": "Por baixo",
+      "de": "Darunter",
+      "ru": "Под объектом"
+     },
+     "img": "cd/cd_beneath.png"
+    },
+    {
+     "id": "between",
+     "name": {
+      "en": "Between the two features in D and E",
+      "pt": "Entre os dois objetos de D e E",
+      "de": "Zwischen den Objekten in D und E",
+      "ru": "Между объектами из D и E"
+     },
+     "img": "cd/cd_between.png"
+    }
+   ]
+  },
+  {
+   "col": "H",
+   "title": {
+    "en": "Other",
+    "pt": "Outros",
+    "de": "Sonstiges",
+    "ru": "Прочее"
+   },
+   "note": {
+    "en": "",
+    "pt": "",
+    "de": "",
+    "ru": ""
+   },
+   "items": [
+    {
+     "id": "firstaid",
+     "name": {
+      "en": "First aid",
+      "pt": "Primeiros socorros",
+      "de": "Erste Hilfe",
+      "ru": "Медпомощь"
+     },
+     "img": "cd/cd_firstaid.png"
+    },
+    {
+     "id": "refresh",
+     "name": {
+      "en": "Refreshments",
+      "pt": "Abastecimento",
+      "de": "Verpflegung",
+      "ru": "Пункт питания"
+     },
+     "img": "cd/cd_refresh.png"
+    },
+    {
+     "id": "manned",
+     "name": {
+      "en": "Manned control",
+      "pt": "Ponto com controlador",
+      "de": "Besetzter Posten",
+      "ru": "КП с судьёй"
+     },
+     "img": "cd/cd_manned.png"
+    }
+   ]
+  }
+ ],
+ "classes": {
+  "intro": {
+   "en": "Orienteering races are split into classes (\"escalões\") by sex and age, plus open courses for anyone. Here is how to choose one and what the entry form asks.",
+   "pt": "As provas dividem-se em escalões por sexo e idade, mais percursos abertos para todos. Eis como escolher e o que pede a inscrição.",
+   "de": "OL-Läufe sind nach Geschlecht und Alter in Kategorien („escalões“) geteilt, dazu offene Bahnen für alle. So wählst du und das fragt die Anmeldung.",
+   "ru": "Старты делятся на группы («escalões») по полу и возрасту, плюс открытые дистанции для всех. Как выбрать и что спрашивает форма заявки."
+  },
+  "finder": {
+   "en": "Which class is mine?",
+   "pt": "Qual é o meu escalão?",
+   "de": "Welche Kategorie ist meine?",
+   "ru": "Какая группа моя?"
+  },
+  "names": {
+   "title": {
+    "en": "Reading a class name",
+    "pt": "Como se lê um escalão",
+    "de": "Kategorien lesen",
+    "ru": "Как читать название группы"
+   },
+   "items": [
+    {
+     "key": "H · D",
+     "text": {
+      "en": "H = Homens, men; D = Damas, women. Some Madeira races write M/F or Masculino/Feminino.",
+      "pt": "H = Homens; D = Damas. Algumas provas escrevem M/F ou Masculino/Feminino.",
+      "de": "H = Homens, Männer; D = Damas, Frauen. Manche Läufe schreiben M/F.",
+      "ru": "H — Homens, мужчины; D — Damas, женщины. Иногда пишут M/F или Masculino/Feminino."
+     }
+    },
+    {
+     "key": "12 … 20",
+     "text": {
+      "en": "Juniors: the oldest age you may be that year. H14 is for boys who turn 13 or 14. Juniors may run an older class, never a younger one.",
+      "pt": "Juniores: a idade máxima nesse ano. H14 é para quem faz 13 ou 14. Pode-se correr num escalão mais velho, nunca mais novo.",
+      "de": "Jugend: das Höchstalter im Jahr. H14 ist für Jungen, die 13 oder 14 werden. Älter laufen geht, jünger nicht.",
+      "ru": "Юниоры: максимальный возраст в этом году. H14 — для тех, кому исполняется 13 или 14. Можно бежать в старшей группе, в младшей — нельзя."
+     }
+    },
+    {
+     "key": "21 · E",
+     "text": {
+      "en": "Seniors. Elite (HE/DE) is the longest and hardest course and counts for the ranking; most racers run 21A.",
+      "pt": "Seniores. Elite (HE/DE) é o percurso mais longo e difícil e conta para o ranking; a maioria corre 21A.",
+      "de": "Hauptklasse. Elite (HE/DE) ist die längste und schwerste Bahn und zählt für die Rangliste; die meisten laufen 21A.",
+      "ru": "Взрослые. Элита (HE/DE) — самая длинная и сложная дистанция, идёт в рейтинг; большинство бежит 21A."
+     }
+    },
+    {
+     "key": "A · B",
+     "text": {
+      "en": "21A is long and technical; 21B (or HB/DB) is shorter and a little easier — a good first ranked class for adults.",
+      "pt": "21A é longo e técnico; 21B (ou HB/DB) é mais curto e um pouco mais fácil — bom primeiro escalão de competição para adultos.",
+      "de": "21A ist lang und technisch; 21B (HB/DB) ist kürzer und etwas leichter — gut als erste Wertungsklasse für Erwachsene.",
+      "ru": "21A — длинная и техничная; 21B (HB/DB) короче и чуть проще — хорошая первая зачётная группа для взрослых."
+     }
+    },
+    {
+     "key": "35 … 80",
+     "text": {
+      "en": "Veterans: the youngest age that year. H45 is for men who turn 45 to 49. You may run a younger class (H35, H21), never an older one. Small races merge classes: \"D35 / H45 / H20\" is one course.",
+      "pt": "Veteranos: a idade mínima nesse ano. H45 é para quem faz 45 a 49. Podes correr num escalão mais novo (H35, H21), nunca mais velho. Provas pequenas juntam escalões: «D35 / H45 / H20» é um só percurso.",
+      "de": "Senioren: das Mindestalter im Jahr. H45 ist für Männer, die 45 bis 49 werden. Jünger laufen geht (H35, H21), älter nicht. Kleine Läufe legen zusammen: „D35 / H45 / H20“ ist eine Bahn.",
+      "ru": "Ветераны: минимальный возраст в этом году. H45 — кому исполняется 45–49. Можно бежать в младшей (H35, H21), в старшей — нельзя. На маленьких стартах группы объединяют: «D35 / H45 / H20» — одна дистанция."
+     }
+    },
+    {
+     "key": "T10",
+     "text": {
+      "en": "Children up to 10, boys and girls together, often with a parent.",
+      "pt": "Crianças até 10 anos, rapazes e raparigas juntos, muitas vezes com um adulto.",
+      "de": "Kinder bis 10, gemeinsam, oft mit einem Elternteil.",
+      "ru": "Дети до 10 лет, мальчики и девочки вместе, часто с родителем."
+     }
+    },
+    {
+     "key": "Ranking",
+     "text": {
+      "en": "\"Ranking Competition\" classes count for the FPO / regional ranking. \"Extra-Competition\" have results but no ranking points. Open courses have neither.",
+      "pt": "«Ranking Competição» conta para o ranking FPO / regional. «Extra-Competição» tem resultados mas sem pontos. Os abertos não têm nenhum.",
+      "de": "„Ranking Competição“ zählt für die FPO- bzw. Regionalrangliste, „Extra-Competição“ hat Ergebnisse ohne Punkte, offene Bahnen keins von beiden.",
+      "ru": "«Ranking Competição» — идёт в рейтинг FPO / региона. «Extra-Competição» — результат есть, очков нет. Открытые — ни того, ни другого."
+     }
+    }
+   ]
+  },
+  "open": {
+   "title": {
+    "en": "Open courses: no age, no licence",
+    "pt": "Percursos abertos: sem idade, sem licença",
+    "de": "Offene Bahnen: ohne Alter, ohne Lizenz",
+    "ru": "Открытые дистанции: без возраста и лицензии"
+   },
+   "items": [
+    {
+     "key": "Branco",
+     "text": {
+      "en": "Initiation. Very short, along paths and taped lines. First time ever, or with small children.",
+      "pt": "Iniciação. Muito curto, por caminhos e fitas. Primeira vez, ou com crianças pequenas.",
+      "de": "Einsteiger. Sehr kurz, auf Wegen und markierten Linien. Das erste Mal oder mit kleinen Kindern.",
+      "ru": "Знакомство. Очень коротко, по дорожкам и разметке. Впервые или с маленькими детьми."
+     },
+     "chip": "#ffffff"
+    },
+    {
+     "key": "Verde",
+     "text": {
+      "en": "Easy (\"Fácil\"). Controls on paths and obvious features. Good first race for adults.",
+      "pt": "Fácil. Pontos em caminhos e objetos evidentes. Boa primeira prova para adultos.",
+      "de": "Leicht („Fácil“). Posten an Wegen und deutlichen Objekten. Gut als erster Lauf für Erwachsene.",
+      "ru": "Лёгкая («Fácil»). КП на дорожках и явных объектах. Хороший первый старт для взрослых."
+     },
+     "chip": "#3a9b3a"
+    },
+    {
+     "key": "Amarelo",
+     "text": {
+      "en": "Medium (\"Médio\"). Some route choice and controls off the paths.",
+      "pt": "Médio. Alguma escolha de caminho e pontos fora dos trilhos.",
+      "de": "Mittel („Médio“). Etwas Routenwahl, Posten abseits der Wege.",
+      "ru": "Средняя («Médio»). Есть выбор пути, КП в стороне от дорожек."
+     },
+     "chip": "#ffc20e"
+    },
+    {
+     "key": "Vermelho",
+     "text": {
+      "en": "Hard (\"Difícil\"). The same technical level as the ranked adult courses, just without the ranking.",
+      "pt": "Difícil. O mesmo nível técnico dos escalões de competição, só sem ranking.",
+      "de": "Schwer („Difícil“). Technisch wie die Wertungsklassen, nur ohne Rangliste.",
+      "ru": "Сложная («Difícil»). Техника как у зачётных взрослых дистанций, только без рейтинга."
+     },
+     "chip": "#d32f2f"
+    }
+   ],
+   "intro": {
+    "en": "Open (\"Aberto\") courses are for anyone, any age, alone or in a pair. On Madeira the colours go from easy to hard: Branco, Verde, Amarelo, Vermelho. Some organisers also write Fácil / Médio / Difícil.",
+    "pt": "Os percursos abertos são para todos, qualquer idade, sozinho ou a pares. Na Madeira as cores vão do fácil ao difícil: Branco, Verde, Amarelo, Vermelho. Alguns escrevem também Fácil / Médio / Difícil.",
+    "de": "Offene Bahnen („Aberto“) sind für alle, jedes Alter, allein oder zu zweit. Auf Madeira von leicht nach schwer: Branco, Verde, Amarelo, Vermelho. Manche schreiben auch Fácil / Médio / Difícil.",
+    "ru": "Открытые («Aberto») — для всех, любого возраста, одному или парой. На Мадейре цвета от лёгкого к сложному: Branco, Verde, Amarelo, Vermelho. Иногда пишут Fácil / Médio / Difícil."
+   },
+   "warn": {
+    "en": "Colours are not the same everywhere: in mainland Portugal and abroad the order can differ, and small races pair them with junior classes (\"D12 / H12 / Aberto Verde\"). The length and climb in the technical table tell you more than the colour.",
+    "pt": "As cores não são iguais em todo o lado: no continente e no estrangeiro a ordem pode mudar, e provas pequenas juntam-nas a juniores («D12 / H12 / Aberto Verde»). Distância e desnível na tabela técnica dizem mais do que a cor.",
+    "de": "Die Farben sind nicht überall gleich: auf dem Festland und im Ausland kann die Reihenfolge abweichen, kleine Läufe koppeln sie an Jugendklassen („D12 / H12 / Aberto Verde“). Länge und Steigung in der Tabelle sagen mehr als die Farbe.",
+    "ru": "Цвета не везде одинаковы: на континенте и за границей порядок бывает другим, а на маленьких стартах их объединяют с юниорами («D12 / H12 / Aberto Verde»). Длина и набор в технической таблице скажут больше цвета."
+   }
+  },
+  "rogaine": {
+   "title": {
+    "en": "Rogaine and score classes",
+    "pt": "Rogaine e escalões de pontuação",
+    "de": "Rogaine- und Score-Kategorien",
+    "ru": "Рогейн и score: группы"
+   },
+   "text": {
+    "en": "In a rogaine or score race you run in a team of two or more, with a time limit (1 h, 1 h 20, 3 h). Classes are by team: Absoluto (open age), Veteranos, Super Veteranos, each Masculino, Feminino or Misto. \"Aberto 1h20\" is the open course with that time limit. Late arrival costs points, usually 1 per started minute.",
+    "pt": "Num rogaine ou prova de pontuação corre-se em equipa de dois ou mais, com tempo limite (1 h, 1 h 20, 3 h). Escalões por equipa: Absoluto, Veteranos, Super Veteranos, cada um Masculino, Feminino ou Misto. «Aberto 1h20» é o percurso aberto com esse limite. Atraso custa pontos, em geral 1 por minuto começado.",
+    "de": "Beim Rogaine oder Score-OL läuft man im Team ab zwei, mit Zeitlimit (1 h, 1 h 20, 3 h). Kategorien nach Team: Absoluto, Veteranos, Super Veteranos, jeweils Masculino, Feminino oder Misto. „Aberto 1h20“ ist die offene Bahn mit diesem Limit. Verspätung kostet Punkte, meist 1 je angefangene Minute.",
+    "ru": "В рогейне и score бегут командой от двух человек с лимитом времени (1 ч, 1 ч 20, 3 ч). Группы — по составу команды: Absoluto, Veteranos, Super Veteranos, каждая Masculino, Feminino или Misto. «Aberto 1h20» — открытая дистанция с таким лимитом. Опоздание стоит очков, обычно 1 за каждую начатую минуту."
+   }
+  },
+  "entry": {
+   "title": {
+    "en": "The entry form on orioasis.pt",
+    "pt": "A inscrição no orioasis.pt",
+    "de": "Die Anmeldung auf orioasis.pt",
+    "ru": "Форма заявки на orioasis.pt"
+   },
+   "items": [
+    {
+     "key": "Clube",
+     "text": {
+      "en": "No club? Pick \"Individual POR\". You can still enter every race.",
+      "pt": "Sem clube? Escolhe «Individual POR». Podes inscrever-te em todas as provas.",
+      "de": "Kein Verein? „Individual POR“ wählen. Alle Läufe stehen trotzdem offen.",
+      "ru": "Без клуба — «Individual POR». Записываться можно на всё."
+     }
+    },
+    {
+     "key": "SI",
+     "text": {
+      "en": "Your SPORTident chip number. No chip? Leave it empty and choose \"Aluguer\" (rental, 1–3 €); you get one at the desk.",
+      "pt": "O número do teu chip SPORTident. Sem chip? Deixa vazio e escolhe «Aluguer» (1–3 €); recebes no secretariado.",
+      "de": "Deine SPORTident-Chipnummer. Keiner? Leer lassen und „Aluguer“ (Miete, 1–3 €) wählen; Ausgabe im Wettkampfbüro.",
+      "ru": "Номер чипа SPORTident. Нет своего — оставь пустым и выбери «Aluguer» (прокат, 1–3 €), выдадут в секретариате."
+     }
+    },
+    {
+     "key": "Taxa",
+     "text": {
+      "en": "Fee per stage. Without an FPO licence (\"não federado\") it is a little higher: it includes the day insurance.",
+      "pt": "Taxa por etapa. Sem licença FPO («não federado») é um pouco mais alta: inclui o seguro do dia.",
+      "de": "Gebühr pro Etappe. Ohne FPO-Lizenz („não federado“) etwas höher: Tagesversicherung inklusive.",
+      "ru": "Взнос за этап. Без лицензии FPO («não federado») чуть дороже — включает страховку на день."
+     }
+    },
+    {
+     "key": "Limite",
+     "text": {
+      "en": "Entry deadlines: \"com desconto\" is the cheap one; after \"inscrições online\" you can only ask the organiser.",
+      "pt": "Prazos: «com desconto» é o mais barato; depois de «inscrições online» só pedindo à organização.",
+      "de": "Meldeschluss: „com desconto“ ist der günstige; nach „inscrições online“ nur noch beim Veranstalter.",
+      "ru": "Сроки: «com desconto» — со скидкой; после «inscrições online» — только через организатора."
+     }
+    },
+    {
+     "key": "AVC",
+     "text": {
+      "en": "Waiting for your club to confirm. Individuals skip this step.",
+      "pt": "Aguarda validação do clube. Individuais saltam este passo.",
+      "de": "Wartet auf den Verein. Einzelstarter überspringen das.",
+      "ru": "Ждёт подтверждения клуба. У индивидуалов этого шага нет."
+     },
+     "chip": "#f4a3a3"
+    },
+    {
+     "key": "AVO",
+     "text": {
+      "en": "Waiting for the organiser — usually it means \"not paid yet\". Some clubs want a transfer to the IBAN on the event page, others take the fee at the desk on the day, sometimes cash only.",
+      "pt": "Aguarda a organização — em geral quer dizer «ainda não pago». Alguns clubes pedem transferência para o IBAN da prova, outros cobram no secretariado no dia, às vezes só em dinheiro.",
+      "de": "Wartet auf den Veranstalter — meist heißt das „noch nicht bezahlt“. Manche Vereine wollen eine Überweisung auf die IBAN der Eventseite, andere kassieren am Lauftag im Büro, manchmal nur bar.",
+      "ru": "Ждёт организатора — обычно значит «ещё не оплачено». Одни клубы просят перевод на IBAN со страницы старта, другие берут взнос в секретариате в день старта, иногда только наличными."
+     },
+     "chip": "#5b6cf0"
+    },
+    {
+     "key": "OK",
+     "text": {
+      "en": "Confirmed. Your name will be on the start list, published a day or two before.",
+      "pt": "Confirmada. O teu nome aparece na lista de partidas, publicada um ou dois dias antes.",
+      "de": "Bestätigt. Dein Name steht auf der Startliste, die ein bis zwei Tage vorher erscheint.",
+      "ru": "Подтверждено. Ты в стартовом протоколе, его публикуют за день-два."
+     },
+     "chip": "#bff0c4"
+    }
+   ]
+  },
+  "words": {
+   "title": {
+    "en": "Words on the sheets",
+    "pt": "Palavras das folhas",
+    "de": "Begriffe auf den Blättern",
+    "ru": "Слова на листах"
+   },
+   "items": [
+    {
+     "key": "Escalão",
+     "text": {
+      "en": "Class",
+      "pt": "Categoria por sexo e idade",
+      "de": "Kategorie",
+      "ru": "Группа"
+     }
+    },
+    {
+     "key": "Percurso",
+     "text": {
+      "en": "Course: the line of controls you run",
+      "pt": "Sequência de pontos a fazer",
+      "de": "Bahn: die Postenfolge",
+      "ru": "Дистанция: последовательность КП"
+     }
+    },
+    {
+     "key": "Secretariado",
+     "text": {
+      "en": "Event office: chips, maps for later, results",
+      "pt": "Onde se levantam chips e se veem resultados",
+      "de": "Wettkampfbüro: Chips, Ergebnisse",
+      "ru": "Секретариат: чипы, результаты"
+     }
+    },
+    {
+     "key": "Partida",
+     "text": {
+      "en": "Start",
+      "pt": "Início da prova",
+      "de": "Start",
+      "ru": "Старт"
+     }
+    },
+    {
+     "key": "Chegada",
+     "text": {
+      "en": "Finish",
+      "pt": "Fim da prova",
+      "de": "Ziel",
+      "ru": "Финиш"
+     }
+    },
+    {
+     "key": "Baliza · Ponto",
+     "text": {
+      "en": "Control: the orange and white flag",
+      "pt": "A bandeira laranja e branca",
+      "de": "Posten: der orange-weiße Schirm",
+      "ru": "КП: оранжево-белая призма"
+     }
+    },
+    {
+     "key": "Picar",
+     "text": {
+      "en": "To punch: put the chip into the unit",
+      "pt": "Pôr o chip na estação",
+      "de": "Stempeln: Chip in die Station",
+      "ru": "Отметиться: вставить чип в станцию"
+     }
+    },
+    {
+     "key": "Descarga",
+     "text": {
+      "en": "Downloading your chip after the finish",
+      "pt": "Ler o chip depois da chegada",
+      "de": "Auslesen nach dem Ziel",
+      "ru": "Считывание чипа после финиша"
+     }
+    },
+    {
+     "key": "Sinalética",
+     "text": {
+      "en": "Control descriptions",
+      "pt": "Descrição dos pontos em símbolos",
+      "de": "Postenbeschreibung",
+      "ru": "Легенда КП"
+     }
+    },
+    {
+     "key": "Escala",
+     "text": {
+      "en": "Scale: 1:4000 means 1 cm = 40 m",
+      "pt": "1:4000 quer dizer 1 cm = 40 m",
+      "de": "Maßstab: 1:4000 heißt 1 cm = 40 m",
+      "ru": "Масштаб: 1:4000 — 1 см = 40 м"
+     }
+    },
+    {
+     "key": "Equidistância",
+     "text": {
+      "en": "Contour interval: height between brown lines",
+      "pt": "Diferença de altura entre curvas",
+      "de": "Äquidistanz: Höhe zwischen den braunen Linien",
+      "ru": "Сечение рельефа: высота между коричневыми линиями"
+     }
+    },
+    {
+     "key": "Desnível",
+     "text": {
+      "en": "Climb along the best route, in metres",
+      "pt": "Subida pelo melhor caminho, em metros",
+      "de": "Steigung auf der besten Route, in Metern",
+      "ru": "Набор высоты по оптимальному пути, м"
+     }
+    },
+    {
+     "key": "Aluguer",
+     "text": {
+      "en": "Rental (of the chip)",
+      "pt": "Aluguer do chip",
+      "de": "Miete (des Chips)",
+      "ru": "Прокат (чипа)"
+     }
+    },
+    {
+     "key": "PM · DSQ",
+     "text": {
+      "en": "Mispunch / disqualified: a control missing or wrong order",
+      "pt": "Ponto em falta ou fora de ordem",
+      "de": "Fehlstempel / disqualifiziert",
+      "ru": "Пропуск КП / снят"
+     }
+    },
+    {
+     "key": "Partida em massa",
+     "text": {
+      "en": "Mass start: everyone at once",
+      "pt": "Todos partem ao mesmo tempo",
+      "de": "Massenstart",
+      "ru": "Общий старт"
+     }
+    },
+    {
+     "key": "Estafeta",
+     "text": {
+      "en": "Relay",
+      "pt": "Prova por equipas em revezamento",
+      "de": "Staffel",
+      "ru": "Эстафета"
+     }
+    },
+    {
+     "key": "Boleias",
+     "text": {
+      "en": "Car sharing to the venue",
+      "pt": "Partilha de carro até à prova",
+      "de": "Mitfahrgelegenheit",
+      "ru": "Попутки до места старта"
+     }
+    },
+    {
+     "key": "Reprodução interdita",
+     "text": {
+      "en": "Copying the map is not allowed",
+      "pt": "Não é permitido copiar o mapa",
+      "de": "Vervielfältigung verboten",
+      "ru": "Копировать карту запрещено"
+     }
+    }
+   ]
+  },
+  "foot": {
+   "en": "Class rules follow the Portuguese federation (FPO) and the Madeira races of 2023–2026; each event can differ, so check its \"Informações\" page.",
+   "pt": "As regras seguem a FPO e as provas da Madeira de 2023–2026; cada prova pode variar, confirma em «Informações».",
+   "de": "Die Regeln folgen dem portugiesischen Verband (FPO) und den Madeira-Läufen 2023–2026; jede Veranstaltung kann abweichen, „Informações“ prüfen.",
+   "ru": "Правила — по федерации FPO и стартам Мадейры 2023–2026; у каждого старта бывают отличия, смотри «Informações»."
+  }
+ },
+ "race": {
+  "steps": [
+   {
+    "title": {
+     "en": "Sign up",
+     "pt": "Inscrição",
+     "de": "Anmelden",
+     "ru": "Заявка"
+    },
+    "text": {
+     "en": "Pick a class by age and level. Most races have an open or beginner course: no licence needed.",
+     "pt": "Escolhe o escalão por idade e nível. Quase todas as provas têm um percurso aberto ou de iniciação: sem licença.",
+     "de": "Wähle eine Kategorie nach Alter und Niveau. Fast immer gibt es eine offene oder Anfängerbahn: ohne Lizenz.",
+     "ru": "Выбери группу по возрасту и уровню. Почти везде есть открытая или новичковая дистанция: лицензия не нужна."
+    }
+   },
+   {
+    "title": {
+     "en": "The chip",
+     "pt": "O chip",
+     "de": "Der Chip",
+     "ru": "Чип"
+    },
+    "text": {
+     "en": "An electronic card on your finger (SPORTident). Rent one at the desk if you have none.",
+     "pt": "Um cartão eletrónico no dedo (SPORTident). Aluga-se no secretariado.",
+     "de": "Ein elektronischer Chip am Finger (SPORTident). Im Wettkampfbüro ausleihen.",
+     "ru": "Электронный чип на палец (SPORTident). Можно взять напрокат в секретариате."
+    }
+   },
+   {
+    "title": {
+     "en": "Start time",
+     "pt": "Hora de partida",
+     "de": "Startzeit",
+     "ru": "Время старта"
+    },
+    "text": {
+     "en": "Everyone starts alone, a minute or more apart. Clear and check your chip in the start boxes.",
+     "pt": "Cada um parte sozinho, com um minuto ou mais de intervalo. Limpa e verifica o chip nas boxes de partida.",
+     "de": "Jeder startet allein, mit einer Minute Abstand oder mehr. In den Startboxen Chip löschen und prüfen.",
+     "ru": "Стартуют по одному, с интервалом в минуту или больше. В стартовом коридоре очисти и проверь чип."
+    }
+   },
+   {
+    "title": {
+     "en": "Map at the start",
+     "pt": "Mapa na partida",
+     "de": "Karte am Start",
+     "ru": "Карта на старте"
+    },
+    "text": {
+     "en": "You see the map only when your clock starts. Find the triangle, then control 1.",
+     "pt": "Só vês o mapa quando o teu tempo começa. Encontra o triângulo e depois o ponto 1.",
+     "de": "Die Karte siehst du erst, wenn deine Zeit läuft. Dreieck finden, dann Posten 1.",
+     "ru": "Карту видишь только когда пошло твоё время. Найди треугольник, потом КП 1."
+    }
+   },
+   {
+    "title": {
+     "en": "Controls",
+     "pt": "Pontos",
+     "de": "Posten",
+     "ru": "КП"
+    },
+    "text": {
+     "en": "An orange and white flag with a unit. Check the code, put the chip in until it beeps or flashes.",
+     "pt": "Uma baliza laranja e branca com uma estação. Confirma o código e pica até apitar ou piscar.",
+     "de": "Ein orange-weißer Posten mit Station. Code prüfen, Chip hineinhalten, bis es piept oder blinkt.",
+     "ru": "Оранжево-белая призма со станцией. Сверь код и отметься до писка или вспышки."
+    }
+   },
+   {
+    "title": {
+     "en": "Your own route",
+     "pt": "O teu caminho",
+     "de": "Deine Route",
+     "ru": "Свой путь"
+    },
+    "text": {
+     "en": "Between controls you choose the way. Paths are longer but faster; straight is shorter but rougher.",
+     "pt": "Entre pontos escolhes o caminho. Trilhos são mais longos mas rápidos; a direito é mais curto mas duro.",
+     "de": "Zwischen den Posten wählst du den Weg. Wege sind länger, aber schneller; gerade ist kürzer, aber rauer.",
+     "ru": "Путь между КП выбираешь сам. По тропам дальше, но быстрее; напрямик короче, но тяжелее."
+    }
+   },
+   {
+    "title": {
+     "en": "Finish and download",
+     "pt": "Chegada e descarga",
+     "de": "Ziel und Auslesen",
+     "ru": "Финиш и считывание"
+    },
+    "text": {
+     "en": "Punch the finish, then read out your chip at the desk — even if you gave up. They count everyone back in.",
+     "pt": "Pica a chegada e descarrega o chip no secretariado — mesmo se desististe. Assim sabem que voltaste.",
+     "de": "Ziel stempeln, dann Chip auslesen — auch bei Aufgabe. So weiß man, dass du zurück bist.",
+     "ru": "Отметься на финише и считай чип — даже если сошёл. Так знают, что ты вернулся."
+    }
+   }
+  ],
+  "sheet": [
+   {
+    "en": "Scale 1:6000 (printed «Escala») — 1 cm on the map is 60 m. Sprint maps are 1:4000 (sometimes 1:3000); local town races also use 1:5000 or 1:6000 like this one; forest races 1:15000 or 1:10000.",
+    "pt": "Escala 1:6000 — 1 cm no mapa são 60 m. Mapas de sprint 1:4000 (às vezes 1:3000); provas urbanas locais também usam 1:5000 ou 1:6000, como esta; floresta 1:15000 ou 1:10000.",
+    "de": "Maßstab 1:6000 (auf dem Blatt «Escala») — 1 cm auf der Karte sind 60 m. Sprintkarten 1:4000 (manchmal 1:3000); lokale Stadtläufe auch 1:5000 oder 1:6000 wie hier; Wald 1:15000 oder 1:10000.",
+    "ru": "Масштаб 1:6000 — 1 см на карте = 60 м. Спринт — 1:4000 (иногда 1:3000); местные городские старты — также 1:5000 или 1:6000, как здесь; лес — 1:15000 или 1:10000."
+   },
+   {
+    "en": "Contour interval 10 m (printed «Equidistância»): each brown line is 10 m higher or lower than the next. Lines close together mean steep.",
+    "pt": "Equidistância 10 m — cada curva castanha fica 10 m acima ou abaixo da seguinte. Curvas juntas = íngreme.",
+    "de": "Äquidistanz 10 m (auf dem Blatt «Equidistância»): jede braune Linie liegt 10 m höher oder tiefer als die nächste. Enge Linien = steil.",
+    "ru": "Сечение 10 м (на листе «Equidistância») — каждая коричневая линия на 10 м выше или ниже соседней. Частые линии — круто."
+   },
+   {
+    "en": "The blue lines point to magnetic north; hold the map so they match the compass.",
+    "pt": "As linhas azuis apontam o norte magnético; segura o mapa alinhado com a bússola.",
+    "de": "Die blauen Linien zeigen nach magnetisch Nord; Karte nach dem Kompass ausrichten.",
+    "ru": "Синие линии показывают магнитный север; держи карту по компасу."
+   },
+   {
+    "en": "Boxes R1, R2, R3: if a SPORTident unit does not beep, punch the pin punch hanging at the control into the next free box.",
+    "pt": "Quadrados R1, R2, R3: se a estação SPORTident não apitar, pica com o picotador do ponto no quadrado livre seguinte.",
+    "de": "Felder R1, R2, R3: piept die SPORTident-Station nicht, mit der Stiftzange am Posten ins nächste freie Feld stanzen.",
+    "ru": "Клетки R1, R2, R3: если станция SPORTident не пищит, пробей компостером на КП следующую свободную клетку."
+   },
+   {
+    "en": "Rogaine: no order and no fixed course. Column A shows the points: the code without its last digit (code 152 = 15 points). Collect as many as you can before the time is up.",
+    "pt": "Rogaine: sem ordem nem percurso fixo. A coluna A mostra os pontos: o código sem o último algarismo (código 152 = 15 pontos). Junta o máximo antes do fim do tempo.",
+    "de": "Rogaine: keine Reihenfolge, keine feste Bahn. Spalte A zeigt die Punkte: der Code ohne die letzte Ziffer (Code 152 = 15 Punkte). So viele wie möglich in der Zeit sammeln.",
+    "ru": "Рогейн: без порядка и без заданной дистанции. В столбце A — очки: код без последней цифры (код 152 = 15 очков). Набери как можно больше до конца времени."
+   }
+  ],
+  "rules": [
+   {
+    "en": "Phones and GPS may not be used to navigate. A compass is allowed.",
+    "pt": "Telemóvel e GPS não podem ser usados para navegar. A bússola é permitida.",
+    "de": "Handy und GPS dürfen nicht zur Navigation dienen. Ein Kompass ist erlaubt.",
+    "ru": "Телефон и GPS для навигации нельзя. Компас можно."
+   },
+   {
+    "en": "Purple stripes and olive green are out of bounds: entering means disqualification.",
+    "pt": "Riscas roxas e verde-oliva são interditos: entrar dá desclassificação.",
+    "de": "Violette Streifen und Olivgrün sind gesperrt: Betreten heißt Disqualifikation.",
+    "ru": "Пурпурные полосы и оливковый — запрет: зашёл — дисквалификация."
+   },
+   {
+    "en": "Miss a control or punch in the wrong order and you get no result (mispunch).",
+    "pt": "Falhar um ponto ou a ordem dá desclassificação.",
+    "de": "Ein fehlender Posten oder falsche Reihenfolge: keine Wertung.",
+    "ru": "Пропуск КП или нарушение порядка — без результата."
+   },
+   {
+    "en": "Carry a whistle on long forest courses. Someone hurt always comes before your time.",
+    "pt": "Leva um apito nos percursos longos. Um ferido vem sempre antes do teu tempo.",
+    "de": "Auf langen Waldbahnen eine Pfeife mitnehmen. Verletzte gehen immer vor.",
+    "ru": "На длинных лесных дистанциях бери свисток. Помочь пострадавшему важнее результата."
+   },
+   {
+    "en": "Do not lead or follow others on purpose.",
+    "pt": "Não guies nem sigas os outros de propósito.",
+    "de": "Nicht absichtlich führen oder folgen.",
+    "ru": "Не веди других и не иди за другими специально."
+   }
+  ]
+ },
+ "tips": {
+  "intro": {
+   "en": "What experienced runners on Madeira keep telling newcomers, gathered from three seasons of race talk (2023–2026).",
+   "pt": "O que os orientistas experientes da Madeira repetem aos principiantes, recolhido em três épocas de conversas depois das provas (2023–2026).",
+   "de": "Was erfahrene Läufer auf Madeira Neulingen immer wieder sagen, gesammelt aus drei Saisons Gesprächen nach den Läufen (2023–2026).",
+   "ru": "Что опытные ориентировщики Мадейры повторяют новичкам — собрано из разговоров после стартов за три сезона (2023–2026)."
+  },
+  "sections": [
+   {
+    "title": {
+     "en": "The five that matter most",
+     "pt": "Os cinco mais importantes",
+     "de": "Die fünf wichtigsten",
+     "ru": "Пять главных"
+    },
+    "items": [
+     {
+      "en": "Check the control code before you punch, and wait for the beep or flash. Missed and wrong controls cost more places than slow legs.",
+      "pt": "Confirma o código antes de picar e espera pelo apito ou luz. Pontos falhados ou trocados custam mais lugares do que pernas lentas.",
+      "de": "Code prüfen, bevor du stempelst, und auf Piepen oder Blinken warten. Fehlende oder falsche Posten kosten mehr Plätze als langsame Strecken.",
+      "ru": "Сверь код до отметки и дождись писка или вспышки. Пропущенные и чужие КП стоят больше мест, чем медленные перегоны."
+     },
+     {
+      "en": "Plan every leg: an attack point near the control, the features you will pass, and a stopper behind it — a stream, a road, a change of slope.",
+      "pt": "Planeia cada perna: um ponto de ataque perto do ponto, os objetos por onde passas e um «travão» depois dele — ribeira, estrada, mudança de declive.",
+      "de": "Jede Strecke planen: Angriffspunkt nahe am Posten, die Objekte unterwegs und ein Auffangobjekt dahinter — Bach, Straße, Hangknick.",
+      "ru": "Планируй каждый перегон: точка атаки у КП, ориентиры по пути и «стоппер» за КП — ручей, дорога, перегиб склона."
+     },
+     {
+      "en": "Count contours before going straight. On Madeira the road or the level path is often as fast and far kinder to the legs.",
+      "pt": "Conta as curvas antes de ir a direito. Na Madeira a estrada ou o caminho plano é muitas vezes tão rápido e poupa as pernas.",
+      "de": "Höhenlinien zählen, bevor du gerade gehst. Auf Madeira ist die Straße oder der flache Weg oft genauso schnell und schont die Beine.",
+      "ru": "Сначала посчитай горизонтали, потом иди напрямик. На Мадейре дорога или ровная тропа часто не медленнее и щадит ноги."
+     },
+     {
+      "en": "Do not follow other runners. They are usually on another course.",
+      "pt": "Não sigas os outros. Quase sempre estão noutro percurso.",
+      "de": "Anderen nicht folgen. Sie sind fast immer auf einer anderen Bahn.",
+      "ru": "Не беги за другими — они почти всегда на другой дистанции."
+     },
+     {
+      "en": "After the race, compare your splits and your GPS track with the winners. One bad control usually decides your place.",
+      "pt": "Depois da prova, compara os parciais e o teu traçado GPS com os vencedores. Um ponto mau decide quase sempre o lugar.",
+      "de": "Nach dem Lauf Zwischenzeiten und GPS-Spur mit den Siegern vergleichen. Meist entscheidet ein einziger schlechter Posten.",
+      "ru": "После старта сравни сплиты и GPS-трек с победителями. Обычно место решает один неудачный КП."
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "At the start",
+     "pt": "Na partida",
+     "de": "Am Start",
+     "ru": "На старте"
+    },
+    "items": [
+     {
+      "en": "Arrive an hour early. The start is often 0.5–2 km uphill from the event office, and mountain venues have little parking.",
+      "pt": "Chega uma hora antes. A partida fica muitas vezes a 0,5–2 km a subir do secretariado e na serra há pouco estacionamento.",
+      "de": "Eine Stunde früher da sein. Der Start liegt oft 0,5–2 km bergauf vom Wettkampfbüro, in den Bergen gibt es wenig Parkplätze.",
+      "ru": "Приезжай за час. Старт часто в 0,5–2 км в гору от секретариата, а в горах мало парковки."
+     },
+     {
+      "en": "Clear, check, then punch start when your minute comes. At the end: finish, then download the chip — even if you gave up.",
+      "pt": "Limpar, verificar e picar a partida no teu minuto. No fim: chegada e descarga do chip — mesmo se desististe.",
+      "de": "Löschen, prüfen, zur Startminute Start stempeln. Am Ende: Ziel, dann Chip auslesen — auch bei Aufgabe.",
+      "ru": "Очистка, проверка, отметка старта в свою минуту. В конце — финиш и считывание чипа, даже если сошёл."
+     },
+     {
+      "en": "Check the map shows your course or class before you run.",
+      "pt": "Confirma que o mapa tem o teu percurso ou escalão antes de partir.",
+      "de": "Prüfe, ob die Karte deine Bahn oder Kategorie zeigt.",
+      "ru": "Убедись, что на карте твоя дистанция или группа."
+     },
+     {
+      "en": "First glance: scale and contour interval, then where the last controls and the finish are.",
+      "pt": "Primeiro olhar: escala e equidistância, depois onde ficam os últimos pontos e a chegada.",
+      "de": "Erster Blick: Maßstab und Äquidistanz, dann wo die letzten Posten und das Ziel liegen.",
+      "ru": "Первый взгляд: масштаб и сечение, потом где последние КП и финиш."
+     },
+     {
+      "en": "The control is in the centre of the circle, not where the number is printed.",
+      "pt": "O ponto está no centro do círculo, não onde está o número.",
+      "de": "Der Posten ist in der Kreismitte, nicht bei der Zahl.",
+      "ru": "КП — в центре кружка, а не там, где напечатан номер."
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Technique",
+     "pt": "Técnica",
+     "de": "Technik",
+     "ru": "Техника"
+    },
+    "items": [
+     {
+      "en": "Aim off on purpose: set your direction a little to one side, so at the catching feature you know which way to turn.",
+      "pt": "Desvia de propósito: aponta um pouco para um lado, para saberes para onde virar ao chegar ao «travão».",
+      "de": "Absichtlich vorhalten: leicht seitlich zielen, dann weißt du am Auffangobjekt, wohin du abbiegst.",
+      "ru": "Намеренно смещай направление в сторону, чтобы у стоппера знать, куда поворачивать."
+     },
+     {
+      "en": "Use lines as handrails: walls, fences, streams, levadas, power lines, vegetation edges.",
+      "pt": "Usa linhas como corrimão: muros, vedações, ribeiras, levadas, linhas elétricas, limites de vegetação.",
+      "de": "Linien als Geländer nutzen: Mauern, Zäune, Bäche, Levadas, Stromleitungen, Vegetationsgrenzen.",
+      "ru": "Используй линии как перила: стены, заборы, ручьи, левады, ЛЭП, границы растительности."
+     },
+     {
+      "en": "Slow down near the control and read its description. Read the next leg while you punch.",
+      "pt": "Abranda perto do ponto e lê a sinalética. Lê a perna seguinte enquanto picas.",
+      "de": "Vor dem Posten langsamer werden und die Beschreibung lesen. Beim Stempeln schon die nächste Strecke lesen.",
+      "ru": "У КП сбавь ход и прочитай легенду. Следующий перегон читай, пока отмечаешься."
+     },
+     {
+      "en": "Parallel errors are the classic trap: the stream, path bend or road just beside the right one.",
+      "pt": "O erro paralelo é a armadilha clássica: a ribeira, curva ou estrada mesmo ao lado da certa.",
+      "de": "Parallelfehler sind die klassische Falle: der Bach, die Kurve oder Straße gleich neben der richtigen.",
+      "ru": "Классическая ловушка — параллельная ошибка: соседний ручей, изгиб тропы или дорога рядом с нужной."
+     },
+     {
+      "en": "Lost? Go back to the last point you were sure of, or to a big line like a road. Do not wander.",
+      "pt": "Perdido? Volta ao último ponto de que tinhas certeza, ou a uma linha grande como uma estrada. Não andes às voltas.",
+      "de": "Verlaufen? Zurück zum letzten sicheren Punkt oder zu einer großen Linie wie einer Straße. Nicht herumirren.",
+      "ru": "Потерялся — вернись к последней точной точке или к крупной линии вроде дороги. Не кружи."
+     },
+     {
+      "en": "Faint paths come and go; trust big features and direction more than every small path.",
+      "pt": "Trilhos fracos aparecem e desaparecem; confia mais nos objetos grandes e na direção.",
+      "de": "Schwache Pfade kommen und gehen; großen Objekten und der Richtung mehr trauen.",
+      "ru": "Слабые тропинки то есть, то нет — доверяй крупным объектам и направлению."
+     },
+     {
+      "en": "When unsure, take the route you understand, even if it is longer.",
+      "pt": "Na dúvida, escolhe o caminho que percebes, mesmo que seja mais longo.",
+      "de": "Im Zweifel die Route nehmen, die du verstehst, auch wenn sie länger ist.",
+      "ru": "Сомневаешься — выбирай понятный путь, даже если он длиннее."
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "In Madeira's towns",
+     "pt": "Nas vilas da Madeira",
+     "de": "In Madeiras Orten",
+     "ru": "В городах Мадейры"
+    },
+    "items": [
+     {
+      "en": "Town courses are steep: stairs, terraces, gardens and dead-end lanes. Read the contours in town too.",
+      "pt": "Os percursos urbanos são íngremes: escadas, socalcos, quintais e becos sem saída. Lê as curvas também na vila.",
+      "de": "Stadtbahnen sind steil: Treppen, Terrassen, Gärten, Sackgassen. Auch in der Stadt die Höhenlinien lesen.",
+      "ru": "Городские дистанции крутые: лестницы, террасы, огороды, тупики. Читай горизонтали и в городе."
+     },
+     {
+      "en": "Never cross a thick black wall or a fence drawn as impassable, even if you could climb it: disqualification.",
+      "pt": "Nunca atravesses um muro preto grosso ou vedação intransponível, mesmo que dê para trepar: desclassificação.",
+      "de": "Nie eine dicke schwarze Mauer oder einen unpassierbaren Zaun queren, auch wenn es ginge: Disqualifikation.",
+      "ru": "Не пересекай толстую чёрную стену и непреодолимый забор, даже если можно перелезть: дисквалификация."
+     },
+     {
+      "en": "Olive green is private or out of bounds, not rough ground.",
+      "pt": "Verde-oliva é privado ou interdito, não terreno difícil.",
+      "de": "Olivgrün ist privat oder gesperrt, kein schwieriges Gelände.",
+      "ru": "Оливковый — частная или запретная зона, а не трудная местность."
+     },
+     {
+      "en": "Car parks and lifts are not shortcuts. A building without contours can hide a raised deck or roof with a control on it.",
+      "pt": "Parques de estacionamento e elevadores não são atalhos. Um edifício sem curvas pode esconder um terraço ou cobertura com um ponto.",
+      "de": "Parkhäuser und Aufzüge sind keine Abkürzungen. Ein Gebäude ohne Höhenlinien kann ein Deck oder Dach mit Posten sein.",
+      "ru": "Парковки и лифты — не срезка. Здание без горизонталей может оказаться крышей или террасой с КП."
+     },
+     {
+      "en": "Many controls stand close together and courses cross: check the code every time.",
+      "pt": "Muitos pontos ficam juntos e os percursos cruzam-se: confirma sempre o código.",
+      "de": "Viele Posten stehen dicht beieinander, Bahnen kreuzen sich: immer den Code prüfen.",
+      "ru": "Много КП рядом, дистанции пересекаются — каждый раз сверяй код."
+     },
+     {
+      "en": "Watch for traps: closed staircases, locked gates, passages under roofs, levada tunnels, multi-level streets.",
+      "pt": "Cuidado com armadilhas: escadas fechadas, portões trancados, passagens cobertas, túneis de levada, ruas em vários níveis.",
+      "de": "Auf Fallen achten: gesperrte Treppen, verschlossene Tore, überdachte Durchgänge, Levada-Tunnel, Straßen auf mehreren Ebenen.",
+      "ru": "Ловушки: закрытые лестницы, запертые калитки, проходы под крышей, тоннели левад, улицы в несколько уровней."
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Forest and mountains",
+     "pt": "Floresta e serra",
+     "de": "Wald und Berge",
+     "ru": "Лес и горы"
+    },
+    "items": [
+     {
+      "en": "Laurel forest, brambles and dark green can cost 20–40 minutes. Prefer paths, roads and spurs unless the forest is open.",
+      "pt": "Laurissilva, silvas e verde escuro podem custar 20–40 minutos. Prefere trilhos, estradas e esporões, salvo floresta aberta.",
+      "de": "Lorbeerwald, Brombeeren und Dunkelgrün kosten leicht 20–40 Minuten. Lieber Wege, Straßen und Rücken, außer im offenen Wald.",
+      "ru": "Лаврисилва, ежевика и тёмная зелень могут стоить 20–40 минут. Выбирай тропы, дороги и отроги, если лес не открытый."
+     },
+     {
+      "en": "Short black lines all over a slope are terrace walls. Pick a distinctive tree or boulder as your attack point.",
+      "pt": "Pequenas linhas pretas pela encosta são muros de socalcos. Escolhe uma árvore ou pedra marcante como ponto de ataque.",
+      "de": "Viele kurze schwarze Linien am Hang sind Terrassenmauern. Einen markanten Baum oder Felsen als Angriffspunkt wählen.",
+      "ru": "Множество коротких чёрных линий на склоне — стенки террас. Бери за точку атаки заметное дерево или камень."
+     },
+     {
+      "en": "A route down into a deep valley and up again is usually a trap; contour along the spur instead.",
+      "pt": "Descer a um vale fundo e voltar a subir é quase sempre armadilha; contorna pelo esporão.",
+      "de": "Tief ins Tal und wieder hinauf ist meist eine Falle; lieber am Rücken entlang höhenlinienparallel.",
+      "ru": "Спуск в глубокую долину и подъём обратно — обычно ловушка; лучше обойти по отрогу."
+     },
+     {
+      "en": "In fog, walk. Run only when you are sure of direction and distance.",
+      "pt": "Com nevoeiro, anda. Corre só quando tens certeza da direção e da distância.",
+      "de": "Im Nebel gehen. Nur laufen, wenn Richtung und Entfernung sicher sind.",
+      "ru": "В тумане иди шагом. Беги, только если уверен в направлении и расстоянии."
+     },
+     {
+      "en": "Mainland Portugal is another world: bigger scales, 2.5 m contours, runnable white forest. Recalibrate.",
+      "pt": "O continente é outro mundo: escalas maiores, curvas de 2,5 m, floresta branca corrível. Recalibra.",
+      "de": "Das Festland ist eine andere Welt: größere Maßstäbe, 2,5-m-Linien, belaufbarer weißer Wald. Neu einstellen.",
+      "ru": "Континент — другой мир: другие масштабы, сечение 2,5 м, белый беговой лес. Перестраивайся."
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Rogaine and score",
+     "pt": "Rogaine e pontuação",
+     "de": "Rogaine und Score",
+     "ru": "Рогейн и score"
+    },
+    "items": [
+     {
+      "en": "Points are the code without its last digit: 152 is worth 15.",
+      "pt": "Os pontos são o código sem o último algarismo: 152 vale 15.",
+      "de": "Punkte sind der Code ohne letzte Ziffer: 152 ist 15 wert.",
+      "ru": "Очки — код без последней цифры: 152 = 15 очков."
+     },
+     {
+      "en": "Late costs points — usually 1 a minute — and after about 10 minutes the whole result.",
+      "pt": "O atraso custa pontos — em geral 1 por minuto — e após cerca de 10 minutos o resultado inteiro.",
+      "de": "Verspätung kostet Punkte — meist 1 pro Minute — und nach etwa 10 Minuten das ganze Ergebnis.",
+      "ru": "Опоздание стоит очков — обычно 1 в минуту, а примерно после 10 минут — весь результат."
+     },
+     {
+      "en": "Plan a big loop with a decision point halfway: there, add a far control or cut home.",
+      "pt": "Planeia uma volta grande com um ponto de decisão a meio: aí juntas um ponto longe ou cortas para casa.",
+      "de": "Eine große Schleife mit Entscheidungspunkt zur Hälfte planen: dort einen fernen Posten dazu oder abkürzen.",
+      "ru": "Планируй большой круг с точкой решения на середине: там добавляешь дальний КП или срезаешь к финишу."
+     },
+     {
+      "en": "Think in clusters and points per minute, not single controls. Do not pass a cheap control right on your line.",
+      "pt": "Pensa em grupos de pontos e pontos por minuto, não em pontos soltos. Não passes ao lado de um ponto barato no teu caminho.",
+      "de": "In Gruppen und Punkten pro Minute denken, nicht in Einzelposten. Keinen billigen Posten direkt am Weg auslassen.",
+      "ru": "Считай кластеры и очки в минуту, а не отдельные КП. Не пропускай дешёвый КП прямо на пути."
+     },
+     {
+      "en": "Finish high and run the last controls downhill. Measure the climb back before going for the farthest one.",
+      "pt": "Acaba em cima e faz os últimos pontos a descer. Mede a subida de regresso antes de ir ao ponto mais longe.",
+      "de": "Oben enden, die letzten Posten bergab. Vor dem fernsten Posten den Rückweg-Anstieg abschätzen.",
+      "ru": "Заканчивай наверху, последние КП — под гору. Перед самым дальним КП прикинь подъём обратно."
+     },
+     {
+      "en": "Mistakes rise with speed in the second half. Re-plan rather than rush; no gambles through bushes near the limit.",
+      "pt": "Os erros aumentam com a pressa na segunda metade. Replaneia em vez de correr; nada de atalhos pelo mato perto do fim.",
+      "de": "In der zweiten Hälfte steigen die Fehler mit dem Tempo. Neu planen statt hetzen; kurz vor Schluss keine Abkürzung durchs Gebüsch.",
+      "ru": "Во второй половине ошибки растут со скоростью. Лучше перепланируй, чем спеши; никаких срезок через кусты под конец."
+     },
+     {
+      "en": "The team moves at its slowest member's pace. Walk the climbs, run the flats and descents.",
+      "pt": "A equipa anda ao ritmo do mais lento. Sobe a andar, corre no plano e nas descidas.",
+      "de": "Das Team läuft im Tempo des Langsamsten. Anstiege gehen, Flaches und Bergab laufen.",
+      "ru": "Команда движется со скоростью самого медленного. Подъёмы — шагом, равнину и спуски — бегом."
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Kit",
+     "pt": "Equipamento",
+     "de": "Ausrüstung",
+     "ru": "Снаряжение"
+    },
+    "items": [
+     {
+      "en": "A thumb compass on the map hand. Red points north — and check yours against a friend's once.",
+      "pt": "Bússola de polegar na mão do mapa. O vermelho aponta o norte — e compara a tua com a de um amigo.",
+      "de": "Daumenkompass an der Kartenhand. Rot zeigt nach Norden — einmal mit dem eines Freundes vergleichen.",
+      "ru": "Компас на большой палец руки с картой. Красная стрелка — север; разок сверь с компасом друга."
+     },
+     {
+      "en": "Firm trail shoes grip on rock and roots better than soft cushioned ones. Long legs or socks against brambles.",
+      "pt": "Sapatilhas de trail firmes agarram melhor em pedra e raízes do que as muito macias. Pernas tapadas contra as silvas.",
+      "de": "Feste Trailschuhe greifen auf Fels und Wurzeln besser als weich gedämpfte. Lange Hosen oder Stutzen gegen Brombeeren.",
+      "ru": "Жёсткие трейловые кроссовки держат на камнях и корнях лучше мягких. Длинные штаны или гетры от ежевики."
+     },
+     {
+      "en": "Winter uplands sit at 5–10 °C with fog: windbreaker, dry clothes, spare shoes.",
+      "pt": "No inverno as serras ficam a 5–10 °C com nevoeiro: corta-vento, roupa seca, sapatilhas extra.",
+      "de": "Im Winter hat das Hochland 5–10 °C und Nebel: Windjacke, trockene Kleidung, Ersatzschuhe.",
+      "ru": "Зимой в горах 5–10 °C и туман: ветровка, сухая одежда, запасная обувь."
+     },
+     {
+      "en": "Night stages: a headlamp you can tilt, charged the day before.",
+      "pt": "Etapas noturnas: frontal inclinável, carregado na véspera.",
+      "de": "Nachtetappen: neigbare Stirnlampe, am Vortag geladen.",
+      "ru": "Ночные этапы: налобный фонарь с наклоном, заряженный накануне."
+     },
+     {
+      "en": "A holder for the control descriptions on your wrist or arm.",
+      "pt": "Um porta-sinalética no pulso ou no braço.",
+      "de": "Eine Halterung für die Postenbeschreibung am Handgelenk oder Arm.",
+      "ru": "Держатель для легенды на запястье или руке."
+     },
+     {
+      "en": "A GPS watch, started before the start punch, gives you a track to compare later.",
+      "pt": "Um relógio GPS, ligado antes de picar a partida, dá-te o traçado para comparar.",
+      "de": "Eine GPS-Uhr, vor dem Startstempel gestartet, liefert die Spur zum Vergleichen.",
+      "ru": "GPS-часы, включённые до отметки старта, дадут трек для сравнения."
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "After the race",
+     "pt": "Depois da prova",
+     "de": "Nach dem Lauf",
+     "ru": "После старта"
+    },
+    "items": [
+     {
+      "en": "Before you hand in the chip, make sure every control is punched. You may go back for a missed one only in order and before the readout.",
+      "pt": "Antes de entregar o chip, confirma que picaste todos. Só podes voltar a um ponto falhado pela ordem e antes da descarga.",
+      "de": "Vor der Abgabe prüfen, ob alle Posten gestempelt sind. Zurück zu einem fehlenden nur in Reihenfolge und vor dem Auslesen.",
+      "ru": "Прежде чем сдать чип, проверь все отметки. Вернуться за пропущенным КП можно только по порядку и до считывания."
+     },
+     {
+      "en": "Splits show whether you lost time to navigation or to speed. A leg 30 % slower than the best was a mistake, not your legs.",
+      "pt": "Os parciais mostram se perdeste tempo na navegação ou na velocidade. Uma perna 30 % mais lenta que a melhor foi erro, não pernas.",
+      "de": "Zwischenzeiten zeigen, ob Navigation oder Tempo Zeit gekostet hat. 30 % langsamer als der Beste war ein Fehler, nicht die Beine.",
+      "ru": "Сплиты показывают, где ушло время — на навигацию или на скорость. Перегон на 30 % медленнее лучшего — ошибка, а не ноги."
+     },
+     {
+      "en": "Livelox lets you replay your route against the winners leg by leg. Trust the official splits for times.",
+      "pt": "O Livelox mostra o teu caminho contra os vencedores, perna a perna. Para tempos, confia nos parciais oficiais.",
+      "de": "Livelox spielt deine Route gegen die Sieger ab, Strecke für Strecke. Für Zeiten den offiziellen Splits trauen.",
+      "ru": "Livelox показывает твой путь рядом с победителями по перегонам. Время — по официальным сплитам."
+     },
+     {
+      "en": "Keep your map and draw your route on it. Post a hard leg and ask others how they would run it — that is how clubs learn.",
+      "pt": "Guarda o mapa e desenha o teu caminho. Partilha uma perna difícil e pergunta como os outros a fariam — é assim que os clubes aprendem.",
+      "de": "Karte behalten, Route einzeichnen. Eine schwierige Strecke teilen und fragen, wie andere sie laufen würden — so lernen Vereine.",
+      "ru": "Сохрани карту и нарисуй свой путь. Выложи сложный перегон и спроси, как пошли бы другие — так учатся клубы."
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Common beginner mistakes",
+     "pt": "Erros comuns de principiante",
+     "de": "Typische Anfängerfehler",
+     "ru": "Типичные ошибки новичков"
+    },
+    "items": [
+     {
+      "en": "Missing a control \"on the way\", often the second-to-last.",
+      "pt": "Falhar um ponto «de passagem», muitas vezes o penúltimo.",
+      "de": "Einen Posten „unterwegs“ auslassen, oft den vorletzten.",
+      "ru": "Пропустить КП «по пути», часто предпоследний."
+     },
+     {
+      "en": "Punching a nearby control of another course, or a similar number (134 for 143).",
+      "pt": "Picar um ponto vizinho de outro percurso, ou um número parecido (134 em vez de 143).",
+      "de": "Einen nahen Posten einer anderen Bahn stempeln oder eine ähnliche Nummer (134 statt 143).",
+      "ru": "Отметиться на соседнем КП чужой дистанции или с похожим номером (134 вместо 143)."
+     },
+     {
+      "en": "Reading a pit as a hill without checking the description.",
+      "pt": "Ler uma cova como um morro sem ver a sinalética.",
+      "de": "Eine Senke als Kuppe lesen, ohne die Beschreibung zu prüfen.",
+      "ru": "Принять яму за холм, не заглянув в легенду."
+     },
+     {
+      "en": "Running off the edge of the map.",
+      "pt": "Sair do mapa.",
+      "de": "Über den Kartenrand hinauslaufen.",
+      "ru": "Выбежать за край карты."
+     },
+     {
+      "en": "Forgetting clear and check, the chip, the compass or the watch — or arriving after your start minute.",
+      "pt": "Esquecer limpar e verificar, o chip, a bússola ou o relógio — ou chegar depois do minuto de partida.",
+      "de": "Löschen und Prüfen, Chip, Kompass oder Uhr vergessen — oder nach der Startminute ankommen.",
+      "ru": "Забыть очистку и проверку, чип, компас или часы — или опоздать к своей минуте."
+     },
+     {
+      "en": "Getting overconfident after a clean race and losing ten minutes twice the next day.",
+      "pt": "Ficar confiante demais após uma prova limpa e perder dez minutos duas vezes no dia seguinte.",
+      "de": "Nach einem sauberen Lauf übermütig werden und am nächsten Tag zweimal zehn Minuten verlieren.",
+      "ru": "Расслабиться после чистого старта и назавтра дважды потерять по десять минут."
+     }
+    ]
+   }
+  ]
+ }
+}
