@@ -1,7 +1,18 @@
 {
   "note": "Annual races not yet announced by their organisers. Rebuilt daily.",
-  "generated_at": "2026-10-22",
+  "generated_at": "2026-10-24",
   "items": [
+    {
+      "name": "ADN Race Ponta do Sol",
+      "mode": "trail",
+      "expected": "Expected in November 2026",
+      "watch_dates": [
+        "2026-11-01"
+      ],
+      "location": "Ponta do Sol, Madeira",
+      "status": "watching for a confirmed 2026 date (known schedule)",
+      "url": "https://adnrace.pt/"
+    },
     {
       "name": "Funchal Vertical Kilometer",
       "mode": "trail",

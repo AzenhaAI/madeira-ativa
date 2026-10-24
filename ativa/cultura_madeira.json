@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-10-22T10:14:28",
-  "count": 141,
+  "fetched": "2026-10-24T09:35:47",
+  "count": 142,
   "items": [
     {
       "id": "114",
@@ -1343,6 +1343,16 @@
       "time": "20:30",
       "place": "Casa do Povo da Camacha",
       "category": "Music"
+    },
+    {
+      "id": "402",
+      "title": "4.º Seminário DRABL/CEHA-AV | Recursos Hídricos – Captação, Uso e Património",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/conferencias/4-o-seminario-drabl-ceha-av-recursos-hidricos-captacao-uso-e-patrimonio",
+      "start": "2026-10-30",
+      "end": "2026-10-30",
+      "time": "15:00",
+      "place": "Centro De Estudos Historia do Atlântico",
+      "category": "Conference"
     },
     {
       "id": "352",

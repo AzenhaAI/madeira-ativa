@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-10-22T10:14:16",
-  "count": 451,
+  "fetched": "2026-10-24T09:35:33",
+  "count": 467,
   "items": [
     {
       "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
@@ -4670,21 +4670,6 @@
       "source_category": "music-concerts"
     },
     {
-      "id": "infinito-2026-10-23",
-      "title": "Infinito",
-      "url": "https://www.madeira-unlocked.com/en/events/infinito-2026-10-23",
-      "start": "2026-10-23T18:00:00+01:00",
-      "end": "2026-10-24T00:00:00+01:00",
-      "date": "2026-10-23",
-      "time": "18:00",
-      "venue": "Largo do Socorro",
-      "municipality": "Funchal",
-      "price": 0,
-      "organizer": "Associação InFinito - Arte e Comunidade",
-      "category": "festival",
-      "source_category": "festivals-parades"
-    },
-    {
       "id": "halloween-neon-party-2026-10-23",
       "title": "Halloween Neon Party",
       "url": "https://www.madeira-unlocked.com/en/events/halloween-neon-party-2026-10-23",
@@ -4713,6 +4698,36 @@
       "organizer": "Anadia Shopping",
       "category": "concert",
       "source_category": "music-concerts"
+    },
+    {
+      "id": "infinito-2026-10-23",
+      "title": "Infinito",
+      "url": "https://www.madeira-unlocked.com/en/events/infinito-2026-10-23",
+      "start": "2026-10-23T19:00:00+01:00",
+      "end": "2026-10-24T01:00:00+01:00",
+      "date": "2026-10-23",
+      "time": "19:00",
+      "venue": "Largo do Socorro",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação InFinito - Arte e Comunidade",
+      "category": "festival",
+      "source_category": "festivals-parades"
+    },
+    {
+      "id": "bachata-workshop-with-marta-oskar-2026-10-23",
+      "title": "Bachata Workshop with Marta & Oskar",
+      "url": "https://www.madeira-unlocked.com/en/events/bachata-workshop-with-marta-oskar-2026-10-23",
+      "start": "2026-10-23T20:00:00+01:00",
+      "end": "2026-10-23T21:30:00+01:00",
+      "date": "2026-10-23",
+      "time": "20:00",
+      "venue": "BrunchVille Marina",
+      "municipality": "Funchal",
+      "price": 10,
+      "organizer": "Marta and Oskar",
+      "category": "dance",
+      "source_category": "dance"
     },
     {
       "id": "screenings-funchal-mulholland-drive-the-boat-2026-10-23",
@@ -4775,6 +4790,21 @@
       "source_category": "market"
     },
     {
+      "id": "mibe-ii-madeira-international-bird-exhibition-2026-10-24",
+      "title": "MIBE II, Madeira International Bird Exhibition",
+      "url": "https://www.madeira-unlocked.com/en/events/mibe-ii-madeira-international-bird-exhibition-2026-10-24",
+      "start": "2026-10-24T09:00:00+01:00",
+      "end": "2026-10-24T21:00:00+01:00",
+      "date": "2026-10-24",
+      "time": "09:00",
+      "venue": "Pavilhão Gimnodesportivo dos Trabalhadores",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Ornitológica da Madeira",
+      "category": "exhibition",
+      "source_category": "art-exhibitions"
+    },
+    {
       "id": "aventureiros-a-descoberta-2026-10-24",
       "title": "Aventureiros à descoberta",
       "url": "https://www.madeira-unlocked.com/en/events/aventureiros-a-descoberta-2026-10-24",
@@ -4820,6 +4850,21 @@
       "source_category": "kids-family"
     },
     {
+      "id": "yoga-clothing-swap-2026-10-24",
+      "title": "Yoga Clothing Swap",
+      "url": "https://www.madeira-unlocked.com/en/events/yoga-clothing-swap-2026-10-24",
+      "start": "2026-10-24T12:00:00+01:00",
+      "end": "2026-10-24T15:00:00+01:00",
+      "date": "2026-10-24",
+      "time": "12:00",
+      "venue": "MyZen Yoga Studio",
+      "municipality": "Funchal",
+      "price": 5,
+      "organizer": "MyZen",
+      "category": "market",
+      "source_category": "market"
+    },
+    {
       "id": "street-arts-festival-2026-10-24",
       "title": "Street Arts Festival",
       "url": "https://www.madeira-unlocked.com/en/events/street-arts-festival-2026-10-24",
@@ -4848,6 +4893,21 @@
       "organizer": "Alma Artista Gallery",
       "category": "exhibition",
       "source_category": "art-exhibitions"
+    },
+    {
+      "id": "sunset-social-2026-10-24",
+      "title": "SUNSET SOCIAL",
+      "url": "https://www.madeira-unlocked.com/en/events/sunset-social-2026-10-24",
+      "start": "2026-10-24T17:00:00+01:00",
+      "end": "2026-10-24T21:00:00+01:00",
+      "date": "2026-10-24",
+      "time": "17:00",
+      "venue": "SAL Pop Up — Complexo Balnear da Ribeira Brava, Madeira, Portugal.",
+      "municipality": "Ribeira Brava",
+      "price": 0,
+      "organizer": "Sal Pop-Up",
+      "category": "dance",
+      "source_category": "dance"
     },
     {
       "id": "marcelinho-da-lua-2026-10-24",
@@ -5013,6 +5073,21 @@
       "organizer": "Clube Escola do Estreito",
       "category": "sport",
       "source_category": "sport-fitness"
+    },
+    {
+      "id": "120th-community-hike-paulo-special-2026-10-25",
+      "title": "120th Community Hike, Paulo Special",
+      "url": "https://www.madeira-unlocked.com/en/events/120th-community-hike-paulo-special-2026-10-25",
+      "start": "2026-10-25T10:00:00+00:00",
+      "end": "2026-10-25T14:00:00+00:00",
+      "date": "2026-10-25",
+      "time": "10:00",
+      "venue": "Meeting point, Katrepa’s Bar",
+      "municipality": "Machico",
+      "price": 5,
+      "organizer": "Madeira Hikes",
+      "category": "hiking",
+      "source_category": "hiking"
     },
     {
       "id": "festival-avesso-2026-2026-10-25",
@@ -5183,6 +5258,21 @@
       "id": "bachata-styling-in-couple-solo-2026-10-28",
       "title": "Bachata Styling (in Couple & Solo)",
       "url": "https://www.madeira-unlocked.com/en/events/bachata-styling-in-couple-solo-2026-10-28",
+      "start": "2026-10-28T18:30:00+00:00",
+      "end": "2026-10-28T19:30:00+00:00",
+      "date": "2026-10-28",
+      "time": "18:30",
+      "venue": "Funchal, Marina (below beerhouse)",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Level Up Dance Studio",
+      "category": "dance",
+      "source_category": "dance"
+    },
+    {
+      "id": "kizomba-beginners-open-level-2026-10-28",
+      "title": "Kizomba Beginners/ Open Level",
+      "url": "https://www.madeira-unlocked.com/en/events/kizomba-beginners-open-level-2026-10-28",
       "start": "2026-10-28T18:30:00+00:00",
       "end": "2026-10-28T19:30:00+00:00",
       "date": "2026-10-28",
@@ -5555,6 +5645,21 @@
       "source_category": "festivals-parades"
     },
     {
+      "id": "madeira-street-arts-festival-2026-10-31",
+      "title": "Madeira Street Arts Festival",
+      "url": "https://www.madeira-unlocked.com/en/events/madeira-street-arts-festival-2026-10-31",
+      "start": "2026-10-31T16:30:00+00:00",
+      "end": "2026-10-31T22:00:00+00:00",
+      "date": "2026-10-31",
+      "time": "16:30",
+      "venue": "Marginal da Calheta",
+      "municipality": "Calheta",
+      "price": 0,
+      "organizer": "Madeira Street Arts Festival (MSA Festival)",
+      "category": "festival",
+      "source_category": "festivals-parades"
+    },
+    {
       "id": "wizard-night-bz-2026-10-31",
       "title": "Wizard Night, BZ",
       "url": "https://www.madeira-unlocked.com/en/events/wizard-night-bz-2026-10-31",
@@ -5810,6 +5915,21 @@
       "source_category": "dance"
     },
     {
+      "id": "kizomba-beginners-open-level-2026-11-04",
+      "title": "Kizomba Beginners/ Open Level",
+      "url": "https://www.madeira-unlocked.com/en/events/kizomba-beginners-open-level-2026-11-04",
+      "start": "2026-11-04T18:30:00+00:00",
+      "end": "2026-11-04T19:30:00+00:00",
+      "date": "2026-11-04",
+      "time": "18:30",
+      "venue": "Funchal, Marina (below beerhouse)",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Level Up Dance Studio",
+      "category": "dance",
+      "source_category": "dance"
+    },
+    {
       "id": "the-emperor-s-new-clothes-o-rei-vai-nu-2026-11-05-1500",
       "title": "The Emperor’s New Clothes, O Rei Vai Nu",
       "url": "https://www.madeira-unlocked.com/en/events/the-emperor-s-new-clothes-o-rei-vai-nu-2026-11-05-1500",
@@ -5823,6 +5943,21 @@
       "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
       "category": "theatre",
       "source_category": "theater"
+    },
+    {
+      "id": "opening-of-dear-lourdes-an-exhibition-by-leah-singer-lee-ranaldo-2026-11-05",
+      "title": "Opening of \"Dear Lourdes,\" | An exhibition by Leah Singer & Lee Ranaldo",
+      "url": "https://www.madeira-unlocked.com/en/events/opening-of-dear-lourdes-an-exhibition-by-leah-singer-lee-ranaldo-2026-11-05",
+      "start": "2026-11-05T18:00:00+00:00",
+      "end": "2026-11-05T19:30:00+00:00",
+      "date": "2026-11-05",
+      "time": "18:00",
+      "venue": "Galeria Tratuário",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "APCA - Agência de Promoção da Cultura Atlântica",
+      "category": "exhibition",
+      "source_category": "art-exhibitions"
     },
     {
       "id": "the-emperor-s-new-clothes-o-rei-vai-nu-2026-11-06-2000",
@@ -6068,6 +6203,21 @@
       "id": "bachata-styling-in-couple-solo-2026-11-11",
       "title": "Bachata Styling (in Couple & Solo)",
       "url": "https://www.madeira-unlocked.com/en/events/bachata-styling-in-couple-solo-2026-11-11",
+      "start": "2026-11-11T18:30:00+00:00",
+      "end": "2026-11-11T19:30:00+00:00",
+      "date": "2026-11-11",
+      "time": "18:30",
+      "venue": "Funchal, Marina (below beerhouse)",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Level Up Dance Studio",
+      "category": "dance",
+      "source_category": "dance"
+    },
+    {
+      "id": "kizomba-beginners-open-level-2026-11-11",
+      "title": "Kizomba Beginners/ Open Level",
+      "url": "https://www.madeira-unlocked.com/en/events/kizomba-beginners-open-level-2026-11-11",
       "start": "2026-11-11T18:30:00+00:00",
       "end": "2026-11-11T19:30:00+00:00",
       "date": "2026-11-11",
@@ -6350,6 +6500,21 @@
       "source_category": "dance"
     },
     {
+      "id": "kizomba-beginners-open-level-2026-11-18",
+      "title": "Kizomba Beginners/ Open Level",
+      "url": "https://www.madeira-unlocked.com/en/events/kizomba-beginners-open-level-2026-11-18",
+      "start": "2026-11-18T18:30:00+00:00",
+      "end": "2026-11-18T19:30:00+00:00",
+      "date": "2026-11-18",
+      "time": "18:30",
+      "venue": "Funchal, Marina (below beerhouse)",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Level Up Dance Studio",
+      "category": "dance",
+      "source_category": "dance"
+    },
+    {
       "id": "alice-again-how-annoying-2026-11-19-1515",
       "title": "Alice Again? How Annoying!",
       "url": "https://www.madeira-unlocked.com/en/events/alice-again-how-annoying-2026-11-19-1515",
@@ -6500,6 +6665,21 @@
       "source_category": "dance"
     },
     {
+      "id": "kizomba-beginners-open-level-2026-11-25",
+      "title": "Kizomba Beginners/ Open Level",
+      "url": "https://www.madeira-unlocked.com/en/events/kizomba-beginners-open-level-2026-11-25",
+      "start": "2026-11-25T18:30:00+00:00",
+      "end": "2026-11-25T19:30:00+00:00",
+      "date": "2026-11-25",
+      "time": "18:30",
+      "venue": "Funchal, Marina (below beerhouse)",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Level Up Dance Studio",
+      "category": "dance",
+      "source_category": "dance"
+    },
+    {
       "id": "alice-again-how-annoying-2026-11-26-1515",
       "title": "Alice Again? How Annoying!",
       "url": "https://www.madeira-unlocked.com/en/events/alice-again-how-annoying-2026-11-26-1515",
@@ -6590,6 +6770,21 @@
       "source_category": "dance"
     },
     {
+      "id": "kizomba-beginners-open-level-2026-12-02",
+      "title": "Kizomba Beginners/ Open Level",
+      "url": "https://www.madeira-unlocked.com/en/events/kizomba-beginners-open-level-2026-12-02",
+      "start": "2026-12-02T18:30:00+00:00",
+      "end": "2026-12-02T19:30:00+00:00",
+      "date": "2026-12-02",
+      "time": "18:30",
+      "venue": "Funchal, Marina (below beerhouse)",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Level Up Dance Studio",
+      "category": "dance",
+      "source_category": "dance"
+    },
+    {
       "id": "abm-bebes-december-baby-story-session-2026-12-03",
       "title": "ABM Bebés, December Baby Story Session",
       "url": "https://www.madeira-unlocked.com/en/events/abm-bebes-december-baby-story-session-2026-12-03",
@@ -6638,6 +6833,21 @@
       "id": "bachata-styling-in-couple-solo-2026-12-09",
       "title": "Bachata Styling (in Couple & Solo)",
       "url": "https://www.madeira-unlocked.com/en/events/bachata-styling-in-couple-solo-2026-12-09",
+      "start": "2026-12-09T18:30:00+00:00",
+      "end": "2026-12-09T19:30:00+00:00",
+      "date": "2026-12-09",
+      "time": "18:30",
+      "venue": "Funchal, Marina (below beerhouse)",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Level Up Dance Studio",
+      "category": "dance",
+      "source_category": "dance"
+    },
+    {
+      "id": "kizomba-beginners-open-level-2026-12-09",
+      "title": "Kizomba Beginners/ Open Level",
+      "url": "https://www.madeira-unlocked.com/en/events/kizomba-beginners-open-level-2026-12-09",
       "start": "2026-12-09T18:30:00+00:00",
       "end": "2026-12-09T19:30:00+00:00",
       "date": "2026-12-09",
@@ -6710,6 +6920,21 @@
       "source_category": "dance"
     },
     {
+      "id": "kizomba-beginners-open-level-2026-12-16",
+      "title": "Kizomba Beginners/ Open Level",
+      "url": "https://www.madeira-unlocked.com/en/events/kizomba-beginners-open-level-2026-12-16",
+      "start": "2026-12-16T18:30:00+00:00",
+      "end": "2026-12-16T19:30:00+00:00",
+      "date": "2026-12-16",
+      "time": "18:30",
+      "venue": "Funchal, Marina (below beerhouse)",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Level Up Dance Studio",
+      "category": "dance",
+      "source_category": "dance"
+    },
+    {
       "id": "abm-christmas-celebration-as-memorias-do-godofredo-2026-12-19",
       "title": "ABM Christmas Celebration, As Memórias do Godofredo",
       "url": "https://www.madeira-unlocked.com/en/events/abm-christmas-celebration-as-memorias-do-godofredo-2026-12-19",
@@ -6768,6 +6993,21 @@
       "organizer": "Leonor Oliveira",
       "category": "exhibition",
       "source_category": "art-exhibitions"
+    },
+    {
+      "id": "kizomba-beginners-open-level-2026-12-23",
+      "title": "Kizomba Beginners/ Open Level",
+      "url": "https://www.madeira-unlocked.com/en/events/kizomba-beginners-open-level-2026-12-23",
+      "start": "2026-12-23T18:30:00+00:00",
+      "end": "2026-12-23T19:30:00+00:00",
+      "date": "2026-12-23",
+      "time": "18:30",
+      "venue": "Funchal, Marina (below beerhouse)",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Level Up Dance Studio",
+      "category": "dance",
+      "source_category": "dance"
     }
   ]
 }

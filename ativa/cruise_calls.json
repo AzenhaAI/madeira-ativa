@@ -1,7 +1,7 @@
 {
   "note": "Ship calls at the port of Funchal from APRAM. Times are Madeira local time, as the port publishes them. Accumulates; a call no longer listed before its arrival is marked superseded.",
   "source": "https://apram.pt/movimento-navios?port=ptfnc",
-  "fetched": "2026-10-22T10:44:59",
+  "fetched": "2026-10-24T09:53:46",
   "count": 60,
   "calls": [
     {
