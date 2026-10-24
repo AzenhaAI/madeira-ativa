@@ -60,13 +60,23 @@
     return '<span class="' + cls + '">' + esc(txt) + '</span>';
   }
   function fmt(s) { var a = arguments; return s.replace(/\{(\d)\}/g, function (_, i) { return a[+i + 1]; }); }
+  // Time, or "until 30 Nov" for a run with no start time; place; price, or an
+  // honest "price not listed" on a cultural event (Kirill, 24.10.2026: it
+  // was not clear when, where and whether it is free).
+  function evMeta(e) {
+    var price = /^(free|grátis|gratuito|entrada livre)$/i.test(e.price || '') ? t('Free', 'Grátis') : e.price;
+    if (!price && e.mode === 'festivals') price = t('Price not listed', 'Preço não indicado');
+    var when = e.time;
+    if (!when && e.date_end && e.date_end > e.date) { var u = MA.day(e.date_end); when = fmt(t('until {0} {1}', 'até {0} {1}'), u.d, u.m); }
+    return [when, e.location, price].filter(Boolean).join(' · ');
+  }
+  function aboutLine(e) { return e.about ? '<span class="ab">' + esc(e.about) + '</span>' : ''; }
   function eventRow(e) {
     var d = MA.day(e.date);
-    var price = /^(free|grátis|gratuito|entrada livre)$/i.test(e.price || '') ? t('Free', 'Grátis') : e.price;
-    var meta = [e.time, e.location, price].filter(Boolean).join(' · ');
+    var meta = evMeta(e);
     return '<a class="row" href="' + esc(e.url || '#') + '"' + (e.url ? ' target="_blank" rel="noopener"' : '') + '>' +
       '<div class="d"><b>' + d.d + '</b><span>' + d.m + '</span></div>' +
-      '<div class="t"><b>' + esc(e.name) + '</b><span>' + esc(d.w + (meta ? ' · ' + meta : '')) + '</span>' + regLine(e) + '</div>' +
+      '<div class="t"><b>' + esc(e.name) + '</b><span>' + esc(d.w + (meta ? ' · ' + meta : '')) + '</span>' + aboutLine(e) + regLine(e) + '</div>' +
       '<div class="k">' + esc(kindLabel(e)) + '</div></a>';
   }
   function trailRow(l, extra) {
@@ -603,10 +613,10 @@
       chips($('#cats'), items, cat, function (v) { cat = v; paint(); });
       var list = E.filter(function (e) { var c = CATS[e.category] ? e.category : 'other'; return cat === 'all' || c === cat; }).slice(0, 120);
       $('#list').innerHTML = list.map(function (e) {
-        var d = MA.day(e.date), meta = [e.time, e.location, e.price].filter(Boolean).join(' · ');
+        var d = MA.day(e.date), meta = evMeta(e);
         var c = CATS[e.category];
         return '<a class="row" href="' + esc(e.url || '#') + '"' + (e.url ? ' target="_blank" rel="noopener"' : '') + '><div class="d"><b>' + d.d + '</b><span>' + d.m + '</span></div>' +
-          '<div class="t"><b>' + esc(e.name) + '</b><span>' + esc(d.w + (meta ? ' · ' + meta : '')) + '</span>' + regLine(e) + '</div><div class="k">' + esc(c ? t(c[0], c[1]) : '') + '</div></a>';
+          '<div class="t"><b>' + esc(e.name) + '</b><span>' + esc(d.w + (meta ? ' · ' + meta : '')) + '</span>' + aboutLine(e) + regLine(e) + '</div><div class="k">' + esc(c ? t(c[0], c[1]) : '') + '</div></a>';
       }).join('') || '<p class="empty">' + t('Nothing in this category.', 'Nada nesta categoria.') + '</p>';
     }
   }
