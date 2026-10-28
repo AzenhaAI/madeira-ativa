@@ -100,6 +100,7 @@ html.app .o-nav{top:0}html.app .o-sec{scroll-margin-top:52px}
     ['classes', ['Classes & entry', 'Escalões e inscrição', 'Kategorien & Anmeldung', 'Группы и заявка']],
     ['race', ['How a race works', 'Como é uma prova', 'So läuft ein Wettkampf', 'Как проходит старт']],
     ['tips', ['Club tips', 'Dicas', 'Tipps', 'Советы']],
+    ['compass', ['Compass', 'Bússola', 'Kompass', 'Компас']],
     ['practice', ['Practise', 'Treinar', 'Üben', 'Тренировка']],
   ];
   var born = 1990, women = false;
@@ -176,8 +177,21 @@ html.app .o-nav{top:0}html.app .o-sec{scroll-margin-top:52px}
         return '<div class="o-grp">' + L(s.title) + '</div>' + (i === 0 ? '<div class="o-top"><ol>' + li + '</ol></div>' : '<ul class="o-list">' + li + '</ul>');
       }).join('') + '</section>';
 
+    // compass: the how-to and Madeira's declination, as in the app's Compass
+    // tab (the live dial needs the phone's sensor, so it stays in the app)
+    h += '<section class="o-sec" id="compass"><h2>' + T.apply(null, SECS[5][1]) + '</h2><ol class="o-steps">' +
+      [T('Turn the map so its north lines point the way the compass says north.', 'Roda o mapa até as linhas de norte apontarem para o norte da bússola.', 'Karte drehen, bis die Nordlinien zum Kompassnorden zeigen.', 'Поверни карту, чтобы линии севера смотрели на север компаса.'),
+       T('Find on the map the direction from you to the control and read its angle from north.', 'No mapa, vê a direção de ti até ao ponto e o seu ângulo a partir do norte.', 'Auf der Karte die Richtung von dir zum Posten und ihren Winkel ab Nord ablesen.', 'Найди на карте направление от себя к КП и его угол от севера.'),
+       T('Turn until the compass shows that angle and walk where it points. Pick a tree or rock on the line and run to it.', 'Roda até a bússola mostrar esse ângulo e segue para onde aponta. Escolhe uma árvore ou pedra na linha e corre até ela.', 'Drehen, bis der Kompass diesen Winkel zeigt, und in Zeigerichtung gehen. Einen Baum oder Fels auf der Linie anpeilen und hinlaufen.', 'Повернись, пока компас не покажет этот угол, и иди, куда он указывает. Выбери на линии дерево или камень и беги к нему.')
+      ].map(function (x) { return '<li>' + x + '</li>'; }).join('') + '</ol><p class="o-note">' +
+      T('Orienteering maps are drawn to magnetic north, so a compass bearing needs no correction. On Madeira true north is about 4° to the right of magnetic north: on an ordinary topographic map, add 4° to the map angle. The app has a live compass that locks a bearing.',
+        'Os mapas de orientação são desenhados para o norte magnético, por isso o rumo da bússola não precisa de correção. Na Madeira o norte verdadeiro fica cerca de 4° à direita do magnético: num mapa topográfico comum, soma 4° ao ângulo do mapa. A aplicação tem uma bússola que fixa o rumo.',
+        'OL-Karten sind nach magnetisch Nord ausgerichtet, ein Kompasskurs braucht also keine Korrektur. Auf Madeira liegt geografisch Nord etwa 4° rechts von magnetisch Nord: bei einer normalen topografischen Karte 4° zum Kartenwinkel addieren. Die App hat einen Kompass, der den Kurs festhält.',
+        'Карты для ориентирования рисуют по магнитному северу, поэтому азимут по компасу не нужно поправлять. На Мадейре истинный север примерно на 4° правее магнитного: для обычной топокарты прибавь 4° к углу по карте. В приложении есть компас, который запоминает азимут.') +
+      '</p></section>';
+
     // practice in the app
-    h += '<section class="o-sec" id="practice"><h2>' + T.apply(null, SECS[5][1]) + '</h2><div class="card o-cta">' +
+    h += '<section class="o-sec" id="practice"><h2>' + T.apply(null, SECS[6][1]) + '</h2><div class="card o-cta">' +
       '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="var(--green)" stroke-width="2"/><path fill="var(--terra)" d="M12 4l2.2 8L12 20l-2.2-8z"/></svg><div>' +
       T('The app has quick drills: map symbols both ways, control descriptions, contours (hill or pit, which point is higher, how much climb) and route choice on generated maps with real running times. Ten questions a round, new ones every time.',
         'A aplicação tem treinos rápidos: símbolos nos dois sentidos, sinalética, curvas de nível (morro ou cova, qual ponto é mais alto, quanto se sobe) e escolha de caminho em mapas gerados com tempos reais. Dez perguntas por ronda, sempre novas.',
