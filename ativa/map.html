@@ -373,6 +373,9 @@ body {
   <button class="btn-ovl" id="btn-all" onclick="toggleOverlay('all', this)" style="display:none;">
     <span class="dot" style="background:#1f78b4"></span> <span data-lang="en">All levadas</span><span data-lang="pt">Todas as levadas</span>
   </button>
+  <button class="btn-ovl" onclick="toggleOverlay('buses', this)">
+    <span class="dot" style="background:#0B5241"></span> <span data-lang="en">Buses</span><span data-lang="pt">Autocarros</span>
+  </button>
   <button class="btn-ovl" onclick="toggleOverlay('cities', this)">
     <span class="dot" style="background:#3b6ea5"></span> <span data-lang="en">Cities</span><span data-lang="pt">Cidades</span>
   </button>
@@ -447,7 +450,7 @@ const I18N = {
     'Legend': 'Legende', 'Trail status': 'Wegstatus', 'Open': 'Offen', 'Partially open': 'Teilweise offen', 'Closed': 'Gesperrt',
     'Other layers': 'Weitere Ebenen', 'Race course': 'Rennstrecke', 'Popularity': 'Beliebtheit', 'All levadas': 'Alle Levadas',
     'Base layers': 'Grundebenen', 'Roads': 'Straßen', 'Tunnels': 'Tunnel', 'Cities': 'Orte', 'Race': 'Rennen',
-    'Walking trails': 'Wanderwege', 'Closures': 'Sperrungen', '(longest route)': '(längste Strecke)', 'Also:': 'Außerdem:',
+    'Walking trails': 'Wanderwege', 'Closures': 'Sperrungen', 'Buses': 'Busse', 'Plan a ride here': 'Fahrt hierher planen', 'Bus stop for': 'Haltestelle für', '(longest route)': '(längste Strecke)', 'Also:': 'Außerdem:',
     'Tap the map to move it': 'Tippen, um die Karte zu bewegen',
   },
   ru: {
@@ -455,7 +458,7 @@ const I18N = {
     'Legend': 'Легенда', 'Trail status': 'Состояние маршрута', 'Open': 'Открыт', 'Partially open': 'Частично открыт', 'Closed': 'Закрыт',
     'Other layers': 'Другие слои', 'Race course': 'Трасса забега', 'Popularity': 'Популярность', 'All levadas': 'Все левады',
     'Base layers': 'Базовые слои', 'Roads': 'Дороги', 'Tunnels': 'Туннели', 'Cities': 'Города', 'Race': 'Забеги',
-    'Walking trails': 'Пешие маршруты', 'Closures': 'Закрытия', '(longest route)': '(самый длинный вариант)', 'Also:': 'Также:',
+    'Walking trails': 'Пешие маршруты', 'Closures': 'Закрытия', 'Buses': 'Автобусы', 'Plan a ride here': 'Спланировать поездку сюда', 'Bus stop for': 'Остановка у маршрута', '(longest route)': '(самый длинный вариант)', 'Also:': 'Также:',
     'Tap the map to move it': 'Нажмите на карту, чтобы двигать её',
   },
 };
@@ -546,6 +549,28 @@ function loadOverpassLayer(name, btn) {
     }).catch(() => {});
 }
 
+// Buses, as in the app's map: for each trailhead the nearest stop of the bus
+// planner's network, one marker per stop; a tap plans a ride there.
+let busLayer = null;
+function loadBusLayer(btn) {
+  fetch('/ativa/bus/network.json').then(r => r.json()).then(d => {
+    const seen = new Set(), g = L.layerGroup();
+    (d.spots || []).forEach(sp => {
+      if (sp[3] !== 'trail' || sp.length < 7 || !(sp[6] || []).length) return;
+      const idx = sp[6][0][0]; if (seen.has(idx)) return; seen.add(idx);
+      const st = d.stops[idx]; if (!st) return;
+      const icon = L.divIcon({ className: '', iconSize: [26, 26], iconAnchor: [13, 13],
+        html: '<div style="width:26px;height:26px;border-radius:50%;background:#0B5241;border:2px solid #fff;display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px">🚌</div>' });
+      const lang = document.documentElement.lang || 'en';
+      const href = '/ativa/bus?lang=' + lang + '&to=' + st[2].toFixed(5) + ',' + st[3].toFixed(5) + (new URLSearchParams(location.search).has('app') ? '&app=1' : '');
+      L.marker([st[2], st[3]], { icon }).bindPopup('<b>' + st[1] + '</b><br>' + tx('Bus stop for', 'Paragem para') + ' ' + sp[0] +
+        '<br><a href="' + href + '" target="_top">' + tx('Plan a ride here', 'Planear a viagem para aqui') + ' →</a>').addTo(g);
+    });
+    busLayer = g;
+    if (btn.classList.contains('active')) g.addTo(map);
+  }).catch(() => {});
+}
+
 function toggleOverlay(name, btn) {
   const on = !btn.classList.contains('active');
   btn.classList.toggle('active', on);
@@ -554,6 +579,9 @@ function toggleOverlay(name, btn) {
   else if (name === 'all') {
     if (on) { allLevadasLayer ? allLevadasLayer.addTo(map) : loadOverpassLayer('all', btn); }
     else if (allLevadasLayer) map.removeLayer(allLevadasLayer);
+  } else if (name === 'buses') {
+    if (on) { busLayer ? busLayer.addTo(map) : loadBusLayer(btn); }
+    else if (busLayer) map.removeLayer(busLayer);
   } else if (name === 'tunnels') {
     if (on) { tunnelsLayer ? tunnelsLayer.addTo(map) : loadOverpassLayer('tunnels', btn); }
     else if (tunnelsLayer) map.removeLayer(tunnelsLayer);

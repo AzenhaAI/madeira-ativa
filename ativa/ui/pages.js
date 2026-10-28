@@ -375,6 +375,8 @@
     function paint() {
       chips($('#periods'), P.map(function (p) { return [p[0], t(p[1], p[2])]; }), per, function (v) { per = v; paint(); });
       chips($('#kinds'), K.map(function (k) { return [k[0], t(k[1], k[2])]; }), kind, function (v) { kind = v; paint(); });
+      // Under Orient, the shelf leads to the basics, as in the app.
+      var os = $('#orientShelf'); if (os) os.hidden = kind !== 'orienteering';
       var r = range();
       var list = E.filter(function (e) {
         return e.date >= r[0] && e.date <= r[1] && (kind === 'all' || kindOf(e) === kind) &&
