@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-10-24T13:40:14",
-  "count": 142,
+  "fetched": "2026-10-26T11:10:18",
+  "count": 144,
   "items": [
     {
       "id": "114",
@@ -1395,6 +1395,16 @@
       "category": "Music"
     },
     {
+      "id": "395",
+      "title": "\"Dear Lourdes,\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/dear-lourdes",
+      "start": "2026-11-05",
+      "end": "2027-01-08",
+      "time": "18:00",
+      "place": "Galeria Tratuário",
+      "category": "Exhibition"
+    },
+    {
       "id": "377",
       "title": "Madeira Piano Fest 2026",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/madeira-piano-fest-2026",
@@ -1423,6 +1433,16 @@
       "time": "18:00",
       "place": "Cine Teatro de Santo António",
       "category": "Theatre"
+    },
+    {
+      "id": "384",
+      "title": "Concerto de Santa Cecília",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concerto-de-santa-cecilia",
+      "start": "2026-11-22",
+      "end": "2026-11-22",
+      "time": "16:30",
+      "place": "Igreja de Nossa Senhora do Monte",
+      "category": "Music"
     }
   ]
 }

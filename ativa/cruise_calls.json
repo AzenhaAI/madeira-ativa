@@ -1,8 +1,8 @@
 {
   "note": "Ship calls at the port of Funchal from APRAM. Times are Madeira local time, as the port publishes them. Accumulates; a call no longer listed before its arrival is marked superseded.",
   "source": "https://apram.pt/movimento-navios?port=ptfnc",
-  "fetched": "2026-10-24T09:53:46",
-  "count": 60,
+  "fetched": "2026-10-26T11:38:34",
+  "count": 61,
   "calls": [
     {
       "ship": "SANTA MARIA MANUELA",
@@ -473,6 +473,16 @@
       "departure": "2026-10-28T18:00",
       "to": "Sevilla",
       "superseded": true
+    },
+    {
+      "ship": "SANTA MARIA MANUELA",
+      "berth": "Funchal - Fora das 3 Milhas",
+      "agent": "Transinsular (Madeira)-Transp. Marit. Insulares, Lda.",
+      "arrival": "2026-10-23T00:30",
+      "from": "Funchal",
+      "departure": "2026-10-27T22:00",
+      "to": "Funchal",
+      "superseded": false
     },
     {
       "ship": "SILVER MUSE",

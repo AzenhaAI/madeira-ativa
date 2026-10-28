@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-10-24T13:39:57",
-  "count": 467,
+  "fetched": "2026-10-26T11:10:05",
+  "count": 475,
   "items": [
     {
       "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
@@ -5075,6 +5075,21 @@
       "source_category": "sport-fitness"
     },
     {
+      "id": "seca-pipas-culture-in-the-markets-2026-10-25",
+      "title": "Seca Pipas, Culture in the Markets",
+      "url": "https://www.madeira-unlocked.com/en/events/seca-pipas-culture-in-the-markets-2026-10-25",
+      "start": "2026-10-25T09:30:00+00:00",
+      "end": "2026-10-25T11:30:00+00:00",
+      "date": "2026-10-25",
+      "time": "09:30",
+      "venue": "Mercado Municipal do Estreito de Câmara de Lobos",
+      "municipality": "Câmara de Lobos",
+      "price": 0,
+      "organizer": "Câmara Municipal de Câmara de Lobos",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "120th-community-hike-paulo-special-2026-10-25",
       "title": "120th Community Hike, Paulo Special",
       "url": "https://www.madeira-unlocked.com/en/events/120th-community-hike-paulo-special-2026-10-25",
@@ -5084,6 +5099,21 @@
       "time": "10:00",
       "venue": "Meeting point, Katrepa’s Bar",
       "municipality": "Machico",
+      "price": 5,
+      "organizer": "Madeira Hikes",
+      "category": "hiking",
+      "source_category": "hiking"
+    },
+    {
+      "id": "120th-community-hike-paulo-special-pr-18-2026-10-25",
+      "title": "120th Community Hike, Paulo Special - PR 18",
+      "url": "https://www.madeira-unlocked.com/en/events/120th-community-hike-paulo-special-pr-18-2026-10-25",
+      "start": "2026-10-25T10:00:00+00:00",
+      "end": "2026-10-25T15:00:00+00:00",
+      "date": "2026-10-25",
+      "time": "10:00",
+      "venue": "Meeting at Quinta Levada do Rei",
+      "municipality": "Santana",
       "price": 5,
       "organizer": "Madeira Hikes",
       "category": "hiking",
@@ -5240,6 +5270,21 @@
       "source_category": "culture-museums"
     },
     {
+      "id": "sunset-brazilian-music-2026-10-27",
+      "title": "Sunset & Brazilian Music",
+      "url": "https://www.madeira-unlocked.com/en/events/sunset-brazilian-music-2026-10-27",
+      "start": "2026-10-27T19:00:00+00:00",
+      "end": "2026-10-27T21:00:00+00:00",
+      "date": "2026-10-27",
+      "time": "19:00",
+      "venue": "Centro Cívico, Cultural e Social da Ribeira Seca",
+      "municipality": "Machico",
+      "price": 0,
+      "organizer": "Raquel Lombardi Cultural and Social Solidarity Association",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "the-emperor-s-new-clothes-o-rei-vai-nu-2026-10-28-1500",
       "title": "The Emperor’s New Clothes, O Rei Vai Nu",
       "url": "https://www.madeira-unlocked.com/en/events/the-emperor-s-new-clothes-o-rei-vai-nu-2026-10-28-1500",
@@ -5390,21 +5435,6 @@
       "source_category": "music-concerts"
     },
     {
-      "id": "mordo-mia-rufia-dj-sets-2026-10-30",
-      "title": "Mordo Mia & Rufia DJ Sets",
-      "url": "https://www.madeira-unlocked.com/en/events/mordo-mia-rufia-dj-sets-2026-10-30",
-      "start": "2026-10-30T17:30:00+00:00",
-      "end": "2026-10-30T19:30:00+00:00",
-      "date": "2026-10-30",
-      "time": "17:30",
-      "venue": "Largo do Socorro",
-      "municipality": "Funchal",
-      "price": 0,
-      "organizer": "Associação Cultural do Largo do Socorro",
-      "category": "concert",
-      "source_category": "music-concerts"
-    },
-    {
       "id": "halloween-party-with-maleficent-2026-10-30",
       "title": "Halloween Party with Maleficent",
       "url": "https://www.madeira-unlocked.com/en/events/halloween-party-with-maleficent-2026-10-30",
@@ -5450,6 +5480,21 @@
       "source_category": "kids-family"
     },
     {
+      "id": "mordo-mia-rufia-dj-sets-2026-10-30",
+      "title": "Mordo Mia & Rufia DJ Sets",
+      "url": "https://www.madeira-unlocked.com/en/events/mordo-mia-rufia-dj-sets-2026-10-30",
+      "start": "2026-10-30T21:00:00+00:00",
+      "end": "2026-10-31T02:00:00+00:00",
+      "date": "2026-10-30",
+      "time": "21:00",
+      "venue": "Largo do Socorro",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Largo do Socorro",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "screenings-funchal-first-image-david-lynch-dumbland-2026-10-30",
       "title": "Screenings Funchal: First Image: David Lynch + Dumbland",
       "url": "https://www.madeira-unlocked.com/en/events/screenings-funchal-first-image-david-lynch-dumbland-2026-10-30",
@@ -5478,6 +5523,21 @@
       "organizer": "APCA - Agência de Promoção da Cultura Atlântica",
       "category": "concert",
       "source_category": "music-concerts"
+    },
+    {
+      "id": "halloween-cycling-marathon-2026-10-31",
+      "title": "Halloween Cycling Marathon",
+      "url": "https://www.madeira-unlocked.com/en/events/halloween-cycling-marathon-2026-10-31",
+      "start": "2026-10-31T09:15:00+00:00",
+      "end": "2026-10-31T11:15:00+00:00",
+      "date": "2026-10-31",
+      "time": "09:15",
+      "venue": "Fitness Factory Funchal",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Fitness Factory Funchal",
+      "category": "sport",
+      "source_category": "sport-fitness"
     },
     {
       "id": "spooky-halloween-party-community-trick-or-treat-2026-10-31",
@@ -5658,6 +5718,21 @@
       "organizer": "Madeira Street Arts Festival (MSA Festival)",
       "category": "festival",
       "source_category": "festivals-parades"
+    },
+    {
+      "id": "adriana-joao-and-rufia-2026-10-31",
+      "title": "Adriana João and Rufia",
+      "url": "https://www.madeira-unlocked.com/en/events/adriana-joao-and-rufia-2026-10-31",
+      "start": "2026-10-31T17:00:00+00:00",
+      "end": "2026-10-31T20:00:00+00:00",
+      "date": "2026-10-31",
+      "time": "17:00",
+      "venue": "PORTA33 garden",
+      "municipality": "Funchal",
+      "price": 10,
+      "organizer": "Pitanga Discos",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "wizard-night-bz-2026-10-31",
@@ -6350,6 +6425,21 @@
       "source_category": "kids-family"
     },
     {
+      "id": "ceramics-workshops-with-elisa-sousa-2026-11-14-1500",
+      "title": "Ceramics Workshops with Elisa Sousa",
+      "url": "https://www.madeira-unlocked.com/en/events/ceramics-workshops-with-elisa-sousa-2026-11-14-1500",
+      "start": "2026-11-14T15:00:00+00:00",
+      "end": "2026-11-14T18:00:00+00:00",
+      "date": "2026-11-14",
+      "time": "15:00",
+      "venue": "Jardim do Mar",
+      "municipality": "Calheta",
+      "price": 18,
+      "organizer": "Elisa Sousa",
+      "category": "workshop",
+      "source_category": "handicraft-workshops"
+    },
+    {
       "id": "madeira-international-mandolin-festival-closing-concert-2026-11-14",
       "title": "Madeira International Mandolin Festival - Closing concert",
       "url": "https://www.madeira-unlocked.com/en/events/madeira-international-mandolin-festival-closing-concert-2026-11-14",
@@ -6423,6 +6513,21 @@
       "organizer": "Clube Naval do Seixal",
       "category": "sport",
       "source_category": "sport-fitness"
+    },
+    {
+      "id": "ceramics-workshops-with-elisa-sousa-2026-11-15-1500",
+      "title": "Ceramics Workshops with Elisa Sousa",
+      "url": "https://www.madeira-unlocked.com/en/events/ceramics-workshops-with-elisa-sousa-2026-11-15-1500",
+      "start": "2026-11-15T15:00:00+00:00",
+      "end": "2026-11-15T18:00:00+00:00",
+      "date": "2026-11-15",
+      "time": "15:00",
+      "venue": "Jardim do Mar",
+      "municipality": "Calheta",
+      "price": 18,
+      "organizer": "Elisa Sousa",
+      "category": "workshop",
+      "source_category": "handicraft-workshops"
     },
     {
       "id": "madeira-pianofest-2026-11-15",
@@ -6753,6 +6858,21 @@
       "organizer": "Direção Regional dos Arquivos",
       "category": "family",
       "source_category": "kids-family"
+    },
+    {
+      "id": "moda-funchal-autumn-and-winter-2026-11-28",
+      "title": "Moda Funchal, Autumn and Winter",
+      "url": "https://www.madeira-unlocked.com/en/events/moda-funchal-autumn-and-winter-2026-11-28",
+      "start": "2026-11-28T15:00:00+00:00",
+      "end": "2026-11-28T20:30:00+00:00",
+      "date": "2026-11-28",
+      "time": "15:00",
+      "venue": "Marina do Funchal",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Moda Funchal",
+      "category": "exhibition",
+      "source_category": "art-exhibitions"
     },
     {
       "id": "bachata-styling-in-couple-solo-2026-12-02",
