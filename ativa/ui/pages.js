@@ -207,9 +207,9 @@
       if (gusts > 55) { h -= 1; hw.push(t('gusts', 'rajadas') + ' ' + Math.round(gusts)); }
       if (severe) { h -= 2; hw.push(t('IPMA warning', 'aviso IPMA')); }
       out.push(['🥾', t('Hiking', 'Caminhadas'), cl(h), hw.join(' · '), '/ativa/levada', t('Trails', 'Percursos')]);
-      var st = sea ? sea.sea_surface_temperature : 21, wv = sea ? sea.wave_height : 1, b = st >= 22 ? 4 : st >= 20 ? 3 : 2, bw = [t('sea', 'mar') + ' ' + st.toFixed(1) + '°'];
+      var st = sea ? sea.sea_surface_temperature : 21, wv = sea ? sea.wave_height : 1, b = st >= 22 ? 4 : st >= 20 ? 3 : 2, bw = [t('sea', 'mar') + ' ' + dec1(st) + '°'];
       if (cc <= 1 && !rain) b += 1;
-      if (wv > 2.5) { b -= 2; bw.push(t('sea too rough', 'mar demasiado agitado')); } else { if (wv > 1.5) b -= 1; bw.push(t('waves', 'ondas') + ' ' + wv.toFixed(1) + ' m'); }
+      if (wv > 2.5) { b -= 2; bw.push(t('sea too rough', 'mar demasiado agitado')); } else { if (wv > 1.5) b -= 1; bw.push(t('waves', 'ondas') + ' ' + dec1(wv) + ' m'); }
       if (rain) { b -= 2; bw.push(t('rain', 'chuva')); }
       if (c && c.wind_speed_10m > 30) { b -= 1; bw.push(t('strong wind', 'vento forte')); }
       out.push(['🏖', t('Beach', 'Praia'), cl(b), bw.join(' · ')]);
@@ -242,7 +242,7 @@
       if (p) s += dot(ar, ink, 20) + lab(ar[0] + 36, ar[1] + 4, Math.round(p.temperature_2m) + '°', 'Pico do Arieiro · ' + sky(p.weather_code), null, null, 'arieiro');
       if (a && a.wind_gusts_10m != null) { var cross = a.wind_gusts_10m * Math.abs(Math.sin((a.wind_direction_10m - 50) * Math.PI / 180)); s += dot(ap, terra) + lab(ap[0] + 44, ap[1] + 18, '✈ ' + Math.round(a.wind_speed_10m) + ' / ' + Math.round(a.wind_gusts_10m), cross >= 28 ? t('diversions likely', 'desvios prováveis') : cross >= 20 ? t('gusty', 'rajadas') + ' · ' + t('delays', 'atrasos') : t('calm for landings', 'calmo para aterrar'), null, null, 'air'); }
       if (nn) s += dot(pm, seaC, 20) + lab(pm[0] + 36, pm[1] + 54, Math.round(nn.temperature_2m) + '°', 'Porto Moniz · ' + sky(nn.weather_code));
-      if (sea) s += lab(f[0] - 330, f[1] + 64, '🌊 ' + sea.sea_surface_temperature.toFixed(1) + '°', t('sea', 'mar') + ' · ' + t('waves', 'ondas') + ' ' + sea.wave_height.toFixed(1) + ' m', 'middle', seaC, 'day');
+      if (sea) s += lab(f[0] - 330, f[1] + 64, '🌊 ' + dec1(sea.sea_surface_temperature) + '°', t('sea', 'mar') + ' · ' + t('waves', 'ondas') + ' ' + dec1(sea.wave_height) + ' m', 'middle', seaC, 'day');
       // Tap targets over the points (a finger is bigger than a dot).
       var hit = function (q, act) { return '<circle cx="' + q[0] + '" cy="' + q[1] + '" r="95" fill="transparent" data-act="' + act + '" style="cursor:pointer"/>'; };
       s += hit(f, 'day') + hit(ap, 'air') + hit(ar, 'arieiro') + hit([f[0] - 330, f[1] + 40], 'day');
@@ -282,7 +282,7 @@
       if (p) h += cell(MA.emo(p.weather_code), 'Pico do Arieiro', '<div class="val"><span class="tp ' + tcls(p.temperature_2m) + '">' + Math.round(p.temperature_2m) + '°</span> <small>1818 m</small></div>');
       if (seaCell) {
         var wv = seaCell.wave_height;
-        h += cell('🌊', t('Sea', 'Mar'), '<div class="val"><span class="tp ' + tcls(data.sea.sea_surface_temperature) + '">' + data.sea.sea_surface_temperature.toFixed(1) + '°</span> <small class="' + (wv >= 2.5 ? 'k-bad' : wv >= 1.5 ? 'k-warn' : 'k-ok') + '">' + t('waves', 'ondas') + ' ' + wv.toFixed(1) + ' m</small></div>');
+        h += cell('🌊', t('Sea', 'Mar'), '<div class="val"><span class="tp ' + tcls(data.sea.sea_surface_temperature) + '">' + dec1(data.sea.sea_surface_temperature) + '°</span> <small class="' + (wv >= 2.5 ? 'k-bad' : wv >= 1.5 ? 'k-warn' : 'k-ok') + '">' + t('waves', 'ondas') + ' ' + dec1(wv) + ' m</small></div>');
       }
       if (a && a.wind_gusts_10m != null) {
         var cross = Math.round(a.wind_gusts_10m * Math.abs(Math.sin((a.wind_direction_10m - 50) * Math.PI / 180)));
@@ -580,7 +580,7 @@
       $('#there').innerHTML = rows ? '<h2>' + t('How to get there', 'Como chegar') + '</h2><div class="card"><dl class="kv">' + rows + '</dl></div>' : '';
       $('#ask').href = '/ativa/ask?q=' + encodeURIComponent(T.code + ' ' + T.name);
       $('#official').innerHTML = T.url_en ? '<a href="' + esc(MA.lang() === 'pt' ? (T.url_pt || T.url_en) : T.url_en) + '" target="_blank" rel="noopener">' + t('Official route page', 'Página oficial do percurso') + ' ↗</a>' : '';
-      $('#near').innerHTML = (T._near || []).map(function (n) { return trailRow(n[0], n[1].toFixed(1) + ' km ' + t('away', 'de distância')); }).join('');
+      $('#near').innerHTML = (T._near || []).map(function (n) { return trailRow(n[0], dec1(n[1]) + ' km ' + t('away', 'de distância')); }).join('');
       paintWx();
     }
   }
@@ -687,6 +687,9 @@
   // APRAM's port calls, day by day. Cruise ships lead with an estimate of the
   // people ashore (normal capacity from ship_capacity.json); the ferry,
   // freight and cement carriers follow in small type.
+  // One decimal the way each language writes it: 22.9 in English, 22,9 elsewhere.
+  function dec1(v) { var x = (+v).toFixed(1); return MA.lang() === 'en' ? x : x.replace('.', ','); }
+
   function ships() {
     var calls = null, cap = {};
     Promise.all([MA.get('/ativa/cruise_calls.json'), MA.get('/ativa/ship_capacity.json')]).then(function (r) {

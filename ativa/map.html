@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <!-- shell: framed by /ativa-next, which brings its own header -->
-<script>if(/[?&]shell=1/.test(location.search))document.documentElement.classList.add('shell')</script><style>html.shell .header-bar,html.shell .back-link,html.shell .topbar{display:none!important}html.shell #map{top:0!important}</style>
+<script>if(/[?&]shell=1/.test(location.search))document.documentElement.classList.add('shell')</script><style>html.shell .header-bar,html.shell .back-link,html.shell .topbar,html.shell .lang-toggle{display:none!important}html.shell #map{top:0!important}</style>
 <!-- Language: ?lang= (en/pt/de/ru) when a page embeds the map, else the embedding page's own, else the saved choice (en/pt). -->
 <script>(function(){var ok=/^(en|pt|de|ru)$/,q=new URLSearchParams(location.search).get("lang"),l=null;if(!ok.test(q||"")){try{q=window.parent!==window?window.parent.document.documentElement.lang:null}catch(e){q=null}}if(ok.test(q||""))l=q;else{try{l=localStorage.getItem("lang")}catch(e){}if(l!=="pt")l="en"}document.documentElement.lang=l;})();</script>
 <meta charset="UTF-8">
