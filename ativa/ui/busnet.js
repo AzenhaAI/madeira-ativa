@@ -1151,6 +1151,40 @@
     box.dataset.for = el.id;
   }
 
+  // "I'm at a stop": the phone's position instead of the name on the pole.
+  // The signs print a stop name and codes (H17, SMS 3599) that no open data
+  // carries, so the nearest stop is found by distance. Within 250 m it is the
+  // start and its next buses open on the map; further away, the point itself
+  // with the walk to the stops counted.
+  function here() {
+    var msg = document.getElementById('bnHereMsg'), f = document.getElementById('bnFrom');
+    var fail = function () { msg.textContent = t('Location is off. Type the stop name printed at the top of the sign instead.', 'A localização está desligada. Escreva o nome da paragem impresso no topo do sinal.'); };
+    if (!navigator.geolocation) { fail(); return; }
+    msg.textContent = t('Finding you…', 'A localizar…');
+    navigator.geolocation.getCurrentPosition(function (pos) {
+      var ll = [pos.coords.latitude, pos.coords.longitude], best = -1, bd = Infinity;
+      NET.stops.forEach(function (s, i) { var d = dist(ll, [s[2], s[3]]); if (d < bd) { bd = d; best = i; } });
+      if (best < 0 || bd > 20000) { msg.textContent = t('You seem to be off the island.', 'Parece estar fora da ilha.'); return; }
+      var s = NET.stops[best];
+      if (bd <= 250) {
+        f.dataset.ll = s[2] + ',' + s[3];
+        f.value = f.dataset.label = '📍 ' + legStop(best);
+        msg.textContent = fmt(t('{0} m from you', 'a {0} m de si'), Math.round(bd / 10) * 10);
+        map.setView([s[2], s[3]], 17);
+        stopInfo(best);
+      } else {
+        f.dataset.ll = ll[0].toFixed(5) + ',' + ll[1].toFixed(5);
+        f.value = f.dataset.label = nearLabel(ll);
+        msg.textContent = fmt(t('Nearest stop: {0}, {1} m away', 'Paragem mais próxima: {0}, a {1} m'), legStop(best), Math.round(bd / 10) * 10);
+        map.setView(ll, 16);
+      }
+      delete f.dataset.example; f.style.boxShadow = '';
+      var to = document.getElementById('bnTo');
+      if (to.value.trim()) search();
+      else { to.placeholder = t('Where to?', 'Para onde?'); delete to.dataset.example; to.style.boxShadow = '0 0 0 2px #2e9e5b'; }
+    }, fail, { enableHighAccuracy: true, timeout: 12000, maximumAge: 30000 });
+  }
+
   function init() {
     if (!window.L || !document.getElementById('busmap')) return;
     var form = document.getElementById('bnForm'), pending = false;
@@ -1197,6 +1231,7 @@
       document.getElementById('bnCount').textContent = NET.lines.length + ' ' + t('lines on the map', 'linhas no mapa') + ' (' + city + ' ' + t('Funchal city', 'urbanas do Funchal') +
         ', ' + (NET.lines.length - city) + ' ' + t('interurban', 'interurbanas') + ') · ' + NET.siga.length + ' ' + t('in the full list below', 'na lista completa abaixo');
       sigaList();
+      document.getElementById('bnHere').onclick = here;
       MA.onLang(function () { if (document.getElementById('bnRes').innerHTML) search(); });
       // ?from=&to= — a place name or "lat,lon", with an optional fromName/toName
       // to show instead of the coordinates. Both given: search at once. Only the
