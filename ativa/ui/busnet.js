@@ -542,7 +542,7 @@
                 ' <span class="bn-soft">' + t('towards', 'sentido') + ' ' + esc(l.head || NET.lines[l.line].name) + '</span></li>' +
                 (l.walkAfter && l !== lastLeg ? '<li class="bn-walk">' + walkTxt(l.walkAfter) + ' → ' + esc(legStop(j.legs[i + 1].from)) + '</li>' : '');
             }).join('') + (endWalk > 0 ? '<li class="bn-walk">' + walkTxt(endWalk) + (destName ? ' → ' + esc(destName) : '') + '</li>' : '') + '</ol>' +
-            (j.legs.some(function (l) { return l.estDep || l.estArr; }) ? '<div class="bn-soft">' + t('≈ estimated: the timetable prints only the departure from the terminus.', '≈ estimado: o horário só indica a partida do terminal.') + '</div>' : '') +
+            (j.legs.some(function (l) { return l.estDep || l.estArr; }) ? '<div class="bn-soft">' + t('≈ estimated: the timetable prints no time for this stop.', '≈ estimado: o horário não indica hora para esta paragem.') + '</div>' : '') +
             '<button type="button" class="btn ghost bn-show" data-tt="' + n + '">' + t('Show on map', 'Ver no mapa') + '</button></div>';
         }).join('') +
         '<p class="bn-soft">' + t('Timetables as the operators publish them; buses can run late, and on the day the operator’s sheet wins.', 'Horários como os operadores os publicam; os autocarros podem atrasar-se e, no dia, vale o horário do operador.') + '</p>';
