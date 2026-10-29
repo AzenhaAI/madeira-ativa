@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-10-26T11:10:18",
-  "count": 144,
+  "fetched": "2026-10-29T11:34:09",
+  "count": 148,
   "items": [
     {
       "id": "114",
@@ -1325,6 +1325,16 @@
       "category": "Activity"
     },
     {
+      "id": "410",
+      "title": "“Rituais de Passagem: A MORTE”",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/rituais-de-passagem-a-morte",
+      "start": "2026-10-29",
+      "end": "2026-12-05",
+      "time": "16:00",
+      "place": "Museu Etnográfico da Madeira",
+      "category": "Exhibition"
+    },
+    {
       "id": "368",
       "title": "MadIT 2026 - Madeira Innovation Talks – Contadores de Histórias de Inovação - Para Partilhar & Inspirar",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/conferencias/madit-2026-madeira-innovation-talks-contadores-de-historias-de-inovacao-para-partilhar-inspirar",
@@ -1395,6 +1405,16 @@
       "category": "Music"
     },
     {
+      "id": "407",
+      "title": "Ciclo de Concertos \"Ilha Secreta - Fachos de Música\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/ciclo-de-concertos-ilha-secreta-fachos-de-musica-2",
+      "start": "2026-10-31",
+      "end": "2026-10-31",
+      "time": "17:00",
+      "place": "Casa - Museu Frederico de Freitas",
+      "category": "Music"
+    },
+    {
       "id": "395",
       "title": "\"Dear Lourdes,\"",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/dear-lourdes",
@@ -1412,6 +1432,26 @@
       "end": "2026-10-15",
       "time": "18:00",
       "place": "Teatro Municipal Baltazar Dias",
+      "category": "Music"
+    },
+    {
+      "id": "405",
+      "title": "Concertos Novembro | Orquestra Clássica da Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concertos-novembro-orquestra-classica-da-madeira",
+      "start": "2026-11-07",
+      "end": "2026-11-21",
+      "time": "",
+      "place": "",
+      "category": "Music"
+    },
+    {
+      "id": "404",
+      "title": "Orquestra Clássica da Madeira em Concerto Especial com Misha Katz e Dmitry Demyashkin",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/orquestra-classica-da-madeira-em-concerto-especial-com-misha-katz-e-dmitry-demyashkin",
+      "start": "2026-11-07",
+      "end": "2026-11-07",
+      "time": "18:00",
+      "place": "Auditório do Centro de Congressos da Madeira",
       "category": "Music"
     },
     {

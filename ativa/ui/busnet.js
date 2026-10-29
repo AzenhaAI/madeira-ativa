@@ -263,6 +263,259 @@
     });
   }
 
+  // ---- timed planner
+  // Every trip with its minutes (ativa/bus/timed.json, scripts/bus_timed.py):
+  // Funchal's GTFS and the interurban timetables read off SIGA's PDFs. A
+  // RAPTOR search: round k is the best arrival at every stop with k buses,
+  // walking between stops a few minutes apart in between.
+  var TIMED = null, TDAY = {};
+  var WALK = 75, DETOUR = 1.3, CHANGE_M = 450, LONG_CHANGE_M = 1600, MAX_ROUNDS = 3;
+  function loadTimed() {
+    if (!TIMED) TIMED = MA.get('/ativa/bus/timed.json');
+    return TIMED;
+  }
+  function walkMin(m) { return Math.max(1, Math.ceil(m * DETOUR / WALK)); }
+  // What kind of day it is for the buses: weekday, Saturday or Sunday, a
+  // holiday, a school day, and the days some sheets run as a Saturday.
+  function dayInfo(T, iso) {
+    var d = new Date(iso + 'T12:00:00Z'), w = d.getUTCDay(), c = T.calendar;
+    var term = c.school_term.some(function (r) { return iso >= r[0] && iso <= r[1]; });
+    return { iso: iso, mmdd: iso.slice(5), type: w === 0 ? 'sun' : w === 6 ? 'sat' : 'wd', hol: c.holidays.indexOf(iso) >= 0, term: term,
+      carnival: c.carnival.indexOf(iso) >= 0, maundy: c.maundy_thursday.indexOf(iso) >= 0, svc: (NET.services || {})[iso] || [] };
+  }
+  function runs(spec, D) {
+    if (spec.svc) return D.svc.indexOf(spec.svc) >= 0;
+    if (spec.ns && spec.ns.indexOf(D.mmdd) >= 0) return false;
+    if (spec.s === 'term' && !D.term) return false;
+    if (spec.s === 'holidays' && D.term) return false;
+    var type = D.type;
+    var as = spec.as || [];
+    if (as.indexOf(D.mmdd) >= 0 || (D.carnival && as.indexOf('carnival') >= 0) || (D.maundy && as.indexOf('maundy-thursday') >= 0)) type = 'sat';
+    if (D.hol) {
+      if (spec.h === 'no') return false;
+      if (spec.h === 'also') return true;
+      type = 'sun';
+    }
+    return spec.d.indexOf(type) >= 0;
+  }
+  // The day's trips per route, and which routes call at each stop.
+  function dayTable(T, iso) {
+    if (TDAY[iso]) return TDAY[iso];
+    var D = dayInfo(T, iso), ok = T.days.map(function (s) { return runs(s, D); });
+    var routes = [], at = {};
+    T.routes.forEach(function (r, ri) {
+      var trips = r.trips.filter(function (x) { return ok[x[2]]; }).map(function (x) {
+        var p = r.prof[x[1]];
+        return { t: p.o.map(function (o) { return o < 0 ? -1 : x[0] + o; }), e: p.e || [] };
+      });
+      if (!trips.length) return;
+      var k = routes.length;
+      routes.push({ r: r, trips: trips });
+      r.stops.forEach(function (s, i) { (at[s] = at[s] || []).push([k, i]); });
+    });
+    return (TDAY[iso] = { routes: routes, at: at, D: D });
+  }
+  // Stops a short walk apart, for changes (grid of ~500 m cells).
+  var NEAR = null;
+  function nearTable() {
+    if (NEAR) return NEAR;
+    var cell = {}, key = function (la, lo) { return Math.floor(la / 0.0045) + ':' + Math.floor(lo / 0.0053); };
+    NET.stops.forEach(function (s, i) { var k = key(s[2], s[3]); (cell[k] = cell[k] || []).push(i); });
+    NEAR = NET.stops.map(function (s, i) {
+      var a = Math.floor(s[2] / 0.0045), b = Math.floor(s[3] / 0.0053), out = [];
+      for (var x = -1; x <= 1; x++) for (var y = -1; y <= 1; y++) (cell[(a + x) + ':' + (b + y)] || []).forEach(function (j) {
+        if (j === i) return;
+        var d = dist([s[2], s[3]], [NET.stops[j][2], NET.stops[j][3]]);
+        if (d <= CHANGE_M) out.push([j, walkMin(d)]);
+      });
+      return out;
+    });
+    // Between two interurban stops a longer walk is a change people make:
+    // the Rodoeste station and the SAM terminal are 1.4 km apart in Funchal.
+    var inter = [];
+    NET.stops.forEach(function (st, i) { if (st[4].some(function (li) { return NET.lines[li] && NET.lines[li].src !== 'gtfs'; })) inter.push(i); });
+    inter.forEach(function (i) {
+      inter.forEach(function (j) {
+        if (i === j) return;
+        var d = dist([NET.stops[i][2], NET.stops[i][3]], [NET.stops[j][2], NET.stops[j][3]]);
+        if (d > CHANGE_M && d <= LONG_CHANGE_M) NEAR[i].push([j, walkMin(d)]);
+      });
+    });
+    return NEAR;
+  }
+  // One search: the earliest arrival at the destination with 1, 2 or 3 buses.
+  function raptor(day, SA, SB, t0) {
+    var near = nearTable(), R = day.routes;
+    var best = {}, rounds = [], marked = {};
+    var r0 = {};
+    Object.keys(SA).forEach(function (k) {
+      if (k[0] === '_') return;
+      var s = +k, a = t0 + walkMin(SA[k]);
+      if (best[s] == null || a < best[s]) { best[s] = a; r0[s] = { walk: walkMin(SA[k]), arr: a }; marked[s] = 1; }
+    });
+    rounds.push(r0);
+    // Best arrival with at most k-1 buses, and the round that set it.
+    var reach = {}, reachK = {};
+    Object.keys(r0).forEach(function (st) { reach[st] = r0[st].arr; reachK[st] = 0; });
+    var target = Infinity;
+    var dest = Object.keys(SB).filter(function (k) { return k[0] !== '_'; }).map(function (k) { return [+k, walkMin(SB[k])]; });
+    for (var k = 1; k <= MAX_ROUNDS; k++) {
+      var cur = {}, Q = {};
+      Object.keys(marked).forEach(function (s) {
+        (day.at[s] || []).forEach(function (x) { if (Q[x[0]] == null || x[1] < Q[x[0]]) Q[x[0]] = x[1]; });
+      });
+      marked = {};
+      Object.keys(Q).forEach(function (rk) {
+        var route = R[rk], stops = route.r.stops, trip = null, board = -1, bstop = -1, bk = 0;
+        for (var i = Q[rk]; i < stops.length; i++) {
+          var s = stops[i];
+          if (trip && trip.t[i] >= 0) {
+            var a = trip.t[i];
+            if (a < (best[s] == null ? Infinity : best[s]) && a < target) {
+              best[s] = a; cur[s] = { arr: a, route: +rk, trip: trip, from: board, to: i, bstop: bstop, bk: bk }; marked[s] = 1;
+            }
+          }
+          // Catch an earlier trip here? One minute to change buses.
+          var ready = reach[s] != null ? reach[s] + (reachK[s] > 0 ? 1 : 0) : null;
+          if (ready == null) continue;
+          if (trip && trip.t[i] >= 0 && trip.t[i] < ready) continue;
+          // The earliest trip here at or after ready, if earlier than the one on.
+          var pickT = null;
+          for (var j = 0; j < route.trips.length; j++) {
+            var tt = route.trips[j].t[i];
+            if (tt >= 0 && tt >= ready && (!pickT || tt < pickT.t[i])) pickT = route.trips[j];
+          }
+          if (pickT && (!trip || trip.t[i] < 0 || pickT.t[i] < trip.t[i])) { trip = pickT; board = i; bstop = s; bk = reachK[s]; }
+        }
+      });
+      // Walk to a stop nearby before the next bus.
+      Object.keys(cur).forEach(function (s) {
+        near[s].forEach(function (n) {
+          var a = cur[s].arr + n[1];
+          if (a < (best[n[0]] == null ? Infinity : best[n[0]]) && !cur[n[0]]) {
+            best[n[0]] = a; cur[n[0]] = { arr: a, walkFrom: +s, walk: n[1] }; marked[n[0]] = 1;
+          }
+        });
+      });
+      rounds.push(cur);
+      Object.keys(cur).forEach(function (st) { if (reach[st] == null || cur[st].arr < reach[st]) { reach[st] = cur[st].arr; reachK[st] = k; } });
+      dest.forEach(function (d) { var x = cur[d[0]]; if (x && x.arr + d[1] < target) target = x.arr + d[1]; });
+      if (!Object.keys(marked).length) break;
+    }
+    // The best journey per number of buses, kept only when it arrives sooner.
+    var out = [], bestArr = Infinity;
+    for (var k2 = 1; k2 < rounds.length; k2++) {
+      var pick = null;
+      dest.forEach(function (d) {
+        var x = rounds[k2][d[0]];
+        if (x && (!pick || x.arr + d[1] < pick.arr)) pick = { stop: d[0], walk: d[1], arr: x.arr + d[1] };
+      });
+      if (!pick || pick.arr >= bestArr) continue;
+      var legs = backtrack(rounds, k2, pick.stop, day);
+      if (!legs) continue;
+      bestArr = pick.arr;
+      out.push({ legs: legs, arr: pick.arr, walkEnd: pick.walk, dep: legs[0].dep - legs[0].walkBefore, buses: legs.length });
+    }
+    return out;
+  }
+  function backtrack(rounds, k, s, day) {
+    var legs = [], guard = 0;
+    while (k > 0 && guard++ < 20) {
+      var x = rounds[k][s];
+      if (!x) return null;
+      var walkAfter = 0;
+      if (x.walkFrom != null) { walkAfter = x.walk; s = x.walkFrom; x = rounds[k][s]; if (!x || x.route == null) return null; }
+      var route = day.routes[x.route];
+      legs.unshift({ line: route.r.line, head: route.r.head, from: x.bstop, to: route.r.stops[x.to], dep: x.trip.t[x.from], arr: x.trip.t[x.to],
+        estDep: x.trip.e.indexOf(x.from) >= 0, estArr: x.trip.e.indexOf(x.to) >= 0, n: x.to - x.from, walkAfter: walkAfter, walkBefore: 0, page: route.r.page });
+      s = x.bstop; k = x.bk;
+    }
+    var o = rounds[0][s];
+    if (!o) return null;
+    legs[0].walkBefore = o.walk;
+    return legs;
+  }
+  function madeiraNowIso() {
+    var p = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Atlantic/Madeira', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date());
+    return { date: p.slice(0, 10), min: +p.slice(11, 13) * 60 + +p.slice(14, 16) };
+  }
+  function dur(m) {
+    var ru = MA.lang && MA.lang() === 'ru', h = ru ? ' ч ' : ' h ', mn = ru ? ' мин' : ' min';
+    return m >= 60 ? Math.floor(m / 60) + h + ('0' + m % 60).slice(-2) + mn : m + mn;
+  }
+  // "09 - SAM Terminal" -> "SAM Terminal": the Aerobus' stop numbers read as noise here.
+  function legStop(i) { return stopName(i).replace(/^\d+\s*-\s*/, ''); }
+  function walkTxt(m) { return '🚶 ' + fmt(t('{0} min walk', '{0} min a pé'), m); }
+  // Several departures: the best journey, then the next ones leaving later.
+  function timedPlan(SA, SB) {
+    var el = document.getElementById('bnTimed');
+    if (!el) return;
+    var token = SEARCH;
+    var ti = document.getElementById('bnTime'), di = document.getElementById('bnDate');
+    var now = madeiraNowIso(), iso = (di && di.value) || now.date;
+    var t0 = ti && ti.value ? +ti.value.slice(0, 2) * 60 + +ti.value.slice(3, 5) : (iso === now.date ? now.min : 6 * 60);
+    el.innerHTML = '<p class="sub">' + t('Looking up departures…', 'A procurar partidas…') + '</p>';
+    loadTimed().then(function (T) {
+      if (token !== SEARCH) return;
+      if (!T) { el.innerHTML = ''; return; }
+      var search = function (iso, from) {
+        var day = dayTable(T, iso), found = [], seen = {};
+        for (var n = 0; n < 6 && found.length < 4; n++) {
+          var js = raptor(day, SA, SB, from);
+          if (!js.length) break;
+          js.forEach(function (j) {
+            var k = j.legs.map(function (l) { return l.line + '@' + l.dep; }).join('|');
+            if (!seen[k]) { seen[k] = 1; found.push(j); }
+          });
+          from = Math.min.apply(null, js.map(function (j) { return j.legs[0].dep; })) - js[0].legs[0].walkBefore + 1;
+        }
+        return found;
+      };
+      var found = search(iso, t0), late = false;
+      // The last bus has gone: the first ones of the next day instead of a
+      // dead end in the evening.
+      if (!found.length) {
+        var nx = new Date(iso + 'T12:00:00Z');
+        nx.setUTCDate(nx.getUTCDate() + 1);
+        var iso2 = nx.toISOString().slice(0, 10);
+        found = search(iso2, 0);
+        if (found.length) { late = true; iso = iso2; t0 = 0; }
+      }
+      // Earliest arrival first; among equal ones, fewer buses.
+      found.sort(function (a, b) { return a.arr - b.arr || a.buses - b.buses; });
+      // A journey loses to one that arrives no later and either leaves no
+      // earlier or takes fewer buses (a one-stop hop instead of a short walk).
+      found = found.filter(function (j, i) { return !found.some(function (o, k) {
+        return k !== i && o.arr <= j.arr && ((o.dep >= j.dep && o.buses <= j.buses && (k < i || o.arr < j.arr || o.dep > j.dep || o.buses < j.buses)) || o.buses < j.buses);
+      }); }).slice(0, 4);
+      TLEGS_T = found.map(function (j) { return j.legs.map(function (l) { return { line: l.line, from: l.from, to: l.to }; }); });
+      if (!found.length) {
+        el.innerHTML = '<div class="card bn-timed"><b>' + t('No bus connection found for that time.', 'Sem ligação de autocarro para essa hora.') + '</b> ' +
+          '<span class="bn-soft">' + t('Try an earlier time, another day, or the lines below.', 'Experimente mais cedo, outro dia ou as linhas abaixo.') + '</span></div>';
+        return;
+      }
+      var hhmm2 = function (m, est) { return (est ? '≈' : '') + hhmm(m); };
+      el.innerHTML = '<h3 class="bn-h">' + (late ? t('No more buses that day — the first ones next morning', 'Já não há autocarros nesse dia — os primeiros na manhã seguinte') + ', ' + MA.day(iso).w + ' ' + MA.day(iso).d + ' ' + MA.day(iso).m : iso === now.date && !(ti && ti.value) ? t('Next connections', 'Próximas ligações') : fmt(t('Connections from {0}', 'Ligações a partir das {0}'), hhmm(t0) + (iso !== now.date ? ', ' + MA.day(iso).w + ' ' + MA.day(iso).d + ' ' + MA.day(iso).m : ''))) + '</h3>' +
+        found.map(function (j, n) {
+          var changes = j.legs.length - 1;
+          return '<div class="card bn-timed"><div class="bn-th"><b>' + hhmm2(j.dep) + ' → ' + hhmm2(j.arr, j.legs[j.legs.length - 1].estArr) + '</b> <span class="bn-soft">' + dur(j.arr - j.dep) + ' · ' +
+            (changes ? plural(changes, t('change', 'transbordo'), t('changes', 'transbordos')) : t('direct', 'direto')) + '</span></div>' +
+            '<ol class="bn-legs">' + j.legs.map(function (l, i) {
+              var w = (i === 0 ? l.walkBefore : 0);
+              return (w > 1 ? '<li class="bn-walk">' + walkTxt(w) + ' → ' + esc(legStop(l.from)) + '</li>' : '') +
+                '<li>' + chip(l.line) + ' <b>' + hhmm2(l.dep, l.estDep) + '</b> ' + esc(legStop(l.from)) + ' → <b>' + hhmm2(l.arr, l.estArr) + '</b> ' + esc(legStop(l.to)) +
+                ' <span class="bn-soft">' + t('towards', 'sentido') + ' ' + esc(l.head || NET.lines[l.line].name) + '</span></li>' +
+                (l.walkAfter ? '<li class="bn-walk">' + walkTxt(l.walkAfter) + (j.legs[i + 1] ? ' → ' + esc(legStop(j.legs[i + 1].from)) : '') + '</li>' : '');
+            }).join('') + (j.walkEnd > 1 ? '<li class="bn-walk">' + walkTxt(j.walkEnd) + '</li>' : '') + '</ol>' +
+            (j.legs.some(function (l) { return l.estDep || l.estArr; }) ? '<div class="bn-soft">' + t('≈ estimated: the timetable prints only the departure from the terminus.', '≈ estimado: o horário só indica a partida do terminal.') + '</div>' : '') +
+            '<button type="button" class="btn ghost bn-show" data-tt="' + n + '">' + t('Show on map', 'Ver no mapa') + '</button></div>';
+        }).join('') +
+        '<p class="bn-soft">' + t('Timetables as the operators publish them; buses can run late, and on the day the operator’s sheet wins.', 'Horários como os operadores os publicam; os autocarros podem atrasar-se e, no dia, vale o horário do operador.') + '</p>';
+      if (TLEGS_T[0]) showRoute(TLEGS_T[0]);
+    });
+  }
+  var TLEGS_T = [];
+
   // ---- From → To
   var RANK = { city: 6, town: 5, village: 4, suburb: 3, neighbourhood: 2, hamlet: 2, locality: 1 };
   // Stops for a place, each with its distance from the place's centre (0 for a
@@ -554,6 +807,8 @@
     var gq = function (el) { return ll_of(el) || (el.value + ', Madeira'); };
     var gmaps = '<a class="bn-gmaps" href="https://www.google.com/maps/dir/?api=1&travelmode=transit&origin=' + encodeURIComponent(gq(fa)) + '&destination=' + encodeURIComponent(gq(fb)) + '" target="_blank" rel="noopener">' + t('Compare in Google Maps', 'Comparar no Google Maps') + ' ↗</a>';
     var head = (notes.length ? '<p class="sub bn-note">' + notes.join('<br>') + '</p>' : '') + '<p class="sub">' + gmaps + '</p>';
+    // The timed answer leads; the lines that go there follow it.
+    head += '<div id="bnTimed"></div>';
     var found = {};
     NET.patterns.forEach(function (p) {
       // Among the boarding and alighting stops this pattern serves, the pair
@@ -588,7 +843,7 @@
         return (cx - cy) || (x.c - y.c);
       })
       .filter(function (r) { var l = NET.lines[r.line], k = l.ref + '|' + (l.op || ''); if (seenRef[k]) return false; seenRef[k] = 1; return true; }).slice(0, 8);
-    if (!res.length) { transfers(SA, SB, box, head); return; }
+    if (!res.length) { transfers(SA, SB, box, head); timedPlan(SA, SB); return; }
     // A direct ride of 30+ stops, or only rare buses: a change may be the real answer.
     var slog = res.every(function (r) {
       var l = NET.lines[r.line];
@@ -650,6 +905,7 @@
     });
     // The best answer goes on the map at once; the button brings the map into view.
     showRoute([res[0]]);
+    timedPlan(SA, SB);
     if (slog) {
       var more = document.createElement('div'); more.id = 'bnMore'; box.appendChild(more);
       var onDirect = {}; res.forEach(function (r) { onDirect[r.line] = 1; });
@@ -657,7 +913,8 @@
     }
     box.onclick = function (e) {
       var btn = e.target.closest('.bn-show'); if (!btn) return;
-      if (btn.dataset.t != null) showRoute(TLEGS[+btn.dataset.t]); else showRoute([res[+btn.dataset.r]]);
+      if (btn.dataset.tt != null) showRoute(TLEGS_T[+btn.dataset.tt]);
+      else if (btn.dataset.t != null) showRoute(TLEGS[+btn.dataset.t]); else showRoute([res[+btn.dataset.r]]);
       mapIntoView();
     };
   }
@@ -825,7 +1082,7 @@
     }).join('');
     if (!extra) {
       showRoute(TLEGS[base]);
-      box.onclick = function (e) { var btn = e.target.closest('.bn-show'); if (!btn) return; showRoute(TLEGS[+btn.dataset.t]); mapIntoView(); };
+      box.onclick = function (e) { var btn = e.target.closest('.bn-show'); if (!btn) return; showRoute(btn.dataset.tt != null ? TLEGS_T[+btn.dataset.tt] : TLEGS[+btn.dataset.t]); mapIntoView(); };
     }
     res.forEach(function (r, n) {
       var heads = {}; heads[r.a.head] = 1;

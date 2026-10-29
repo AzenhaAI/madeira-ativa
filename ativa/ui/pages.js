@@ -206,7 +206,7 @@
       if (fog) { h -= 1; hw.push(t('ridge in cloud', 'cumeada nas nuvens')); }
       if (gusts > 55) { h -= 1; hw.push(t('gusts', 'rajadas') + ' ' + Math.round(gusts)); }
       if (severe) { h -= 2; hw.push(t('IPMA warning', 'aviso IPMA')); }
-      out.push(['🥾', t('Hiking', 'Caminhadas'), cl(h), hw.join(' · ')]);
+      out.push(['🥾', t('Hiking', 'Caminhadas'), cl(h), hw.join(' · '), '/ativa/levada', t('Trails', 'Percursos')]);
       var st = sea ? sea.sea_surface_temperature : 21, wv = sea ? sea.wave_height : 1, b = st >= 22 ? 4 : st >= 20 ? 3 : 2, bw = [t('sea', 'mar') + ' ' + st.toFixed(1) + '°'];
       if (cc <= 1 && !rain) b += 1;
       if (wv > 2.5) { b -= 2; bw.push(t('sea too rough', 'mar demasiado agitado')); } else { if (wv > 1.5) b -= 1; bw.push(t('waves', 'ondas') + ' ' + wv.toFixed(1) + ' m'); }
@@ -215,11 +215,11 @@
       out.push(['🏖', t('Beach', 'Praia'), cl(b), bw.join(' · ')]);
       var v = sc <= 1 ? 5 : sc === 2 ? 3 : 1, vw = [];
       if (rain) { v = 1; vw.push(t('rain', 'chuva')); } else if (cloudRidge) { vw.push(t('ridge in cloud', 'cumeada nas nuvens'), t('try the coast', 'tente a costa')); } else if (sc === 2) vw.push(t('cloud', 'nublado')); else vw.push(t('ridge clear', 'cumeada limpa'));
-      out.push(['👁', t('Views', 'Vistas'), cl(v), vw.join(' · ')]);
+      out.push(['👁', t('Views', 'Vistas'), cl(v), vw.join(' · '), '/ativa/webcams', 'Webcams']);
       var fl = cross == null ? 4 : cross >= 28 ? 1 : cross >= 20 ? 3 : 5, fw = [];
       if (gusts > 60) fl = 1;
       if (cross == null) fw.push(t('calm', 'calmo')); else if (cross >= 28) fw.push(t('crosswind over the limit', 'vento cruzado acima do limite'), t('diversions likely', 'desvios prováveis')); else if (cross >= 20) fw.push(t('gusts', 'rajadas') + ' ' + Math.round(gusts), t('delays', 'atrasos')); else fw.push(t('calm for landings', 'calmo para aterrar'));
-      out.push(['✈', t('Flights', 'Voos'), cl(fl), fw.join(' · ')]);
+      out.push(['✈', t('Flights', 'Voos'), cl(fl), fw.join(' · '), 'https://www.aeroportomadeira.pt/en/fnc/flights-destinations/find-flights/real-time-arrivals', t('Arrivals', 'Chegadas')]);
       return out;
     }
     function paintFace() {
@@ -248,9 +248,15 @@
       s += hit(f, 'day') + hit(ap, 'air') + hit(ar, 'arieiro') + hit([f[0] - 330, f[1] + 40], 'day');
       s += '</svg>';
       var sc = scores(), colOf = function (n) { return n >= 4 ? green : n === 3 ? '#D9A441' : terra; };
-      s += '<div class="gd">' + sc.map(function (x) { return '<button type="button" title="' + esc(x[3]) + '"><span class="gl"><span>' + x[0] + '</span>' + esc(x[1]) + '</span><span class="dots">' + [0, 1, 2, 3, 4].map(function (i) { return '<i' + (i < x[2] ? ' style="background:' + colOf(x[2]) + '"' : '') + '></i>'; }).join('') + '</span><span class="why">' + esc(x[3]) + '</span></button>'; }).join('') + '</div>';
+      s += '<div class="gd">' + sc.map(function (x) { return '<button type="button" title="' + esc(x[3]) + '"><span class="gl"><span>' + x[0] + '</span>' + esc(x[1]) + '</span><span class="dots">' + [0, 1, 2, 3, 4].map(function (i) { return '<i' + (i < x[2] ? ' style="background:' + colOf(x[2]) + '"' : '') + '></i>'; }).join('') + '</span><span class="why">' + esc(x[3]) + (x[4] ? ' <b class="go">' + esc(x[5]) + ' ›</b>' : '') + '</span></button>'; }).join('') + '</div>';
       el.innerHTML = s; el.hidden = false;
-      el.querySelectorAll('.gd button').forEach(function (b) { b.onclick = function () { el.classList.toggle('why'); }; });
+      // First tap shows the reasons; with them shown, a verdict that has a
+      // place to go (views → webcams, flights → arrivals board) goes there.
+      el.querySelectorAll('.gd button').forEach(function (b, i) { b.onclick = function () {
+        var go = sc[i] && sc[i][4];
+        if (go && el.classList.contains('why')) { if (/^https?:/.test(go)) window.open(go, '_blank', 'noopener'); else location.href = go + location.search; }
+        else el.classList.toggle('why');
+      }; });
       // The island answers taps like the app's: Funchal and the sea open the
       // reasons for the day, the airport the flight board, Pico do Arieiro
       // its webcam; anywhere else on the drawing opens the map.
@@ -260,7 +266,7 @@
         svgEl.addEventListener('click', function (e) {
           var act = e.target && e.target.getAttribute && e.target.getAttribute('data-act');
           if (act === 'day') { el.classList.add('why'); var g = el.querySelector('.gd'); if (g) g.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); }
-          else if (act === 'air') window.open('https://www.flightradar24.com/airport/fnc', '_blank', 'noopener');
+          else if (act === 'air') window.open('https://www.aeroportomadeira.pt/en/fnc/flights-destinations/find-flights/real-time-arrivals', '_blank', 'noopener');
           else if (act === 'arieiro') window.open('https://www.netmadeira.com/webcams-madeira/pico-do-arieiro', '_blank', 'noopener');
           else location.href = '/ativa/maps/' + location.search;
         });
@@ -282,7 +288,7 @@
         var cross = Math.round(a.wind_gusts_10m * Math.abs(Math.sin((a.wind_direction_10m - 50) * Math.PI / 180)));
         var k = cross >= 28 ? 'k-bad' : cross >= 20 ? 'k-warn' : 'k-ok';
         h += cell('✈️', t('Airport', 'Aeroporto'), '<div class="val ' + k + '">' + (cross >= 28 ? t('diversions likely', 'desvios prováveis') : cross >= 20 ? t('gusty', 'rajadas') : t('calm', 'calmo')) +
-          '</div><small class="sub2">' + t('crosswind', 'vento cruzado') + ' ' + cross + ' km/h</small>', '', 'https://www.flightradar24.com/airport/fnc', true);
+          '</div><small class="sub2">' + t('crosswind', 'vento cruzado') + ' ' + cross + ' km/h</small>', '', 'https://www.aeroportomadeira.pt/en/fnc/flights-destinations/find-flights/real-time-arrivals', true);
       }
       if (data.st) {
         // Levadas by status, each number a link to that list; under it today's best open ones.
@@ -315,7 +321,7 @@
             }).join('');
         };
         var body = line(today, t('Today', 'Hoje')) + line(tmr, t('Tomorrow', 'Amanhã'));
-        if (body) h += '<div class="nc wide-cell"><a class="cell-link" href="https://apram.pt/movimento-navios?port=ptfnc" target="_blank" rel="noopener"><span class="ni" aria-hidden="true">🛳️</span><div class="nb"><div class="lbl">' + t('Port of Funchal', 'Porto do Funchal') + ' ↗</div><div class="ships">' + body + '</div></div></a></div>';
+        if (body) h += '<div class="nc wide-cell"><a class="cell-link" href="/ativa/ships"><span class="ni" aria-hidden="true">🛳️</span><div class="nb"><div class="lbl">' + t('Port of Funchal', 'Porto do Funchal') + ' ›</div><div class="ships">' + body + '</div></div></a></div>';
       }
       $('#now').innerHTML = h || '<div class="wide-cell empty">' + t('Live data did not load.', 'Os dados em direto não carregaram.') + '</div>';
       var Z = { MRM: ['mountains', 'montanha'], MCN: ['north coast', 'costa norte'], MCS: ['south coast', 'costa sul'], MPS: ['Porto Santo', 'Porto Santo'] };
@@ -624,18 +630,98 @@
   }
 
   // ------------------------------------------------------------ webcams
+  // Every NetMadeira camera, grouped by where the weather differs: the
+  // summits (above or in the cloud), the north coast, the south and the east.
+  // A camera near a trailhead also lists the trails it watches over.
+  var CAM_GROUPS = [
+    [['Summits and high ground', 'Picos e serras'], [
+      ['Pico do Arieiro', 'pico-do-arieiro', 1818], ['Achada do Teixeira', 'achada-do-teixeira', 1592],
+      ['Eira do Serrado', 'eira-do-serrado', 1095], ['Rabaçal', 'rabacal-madeira', 1064],
+      ['Funchal – Parque Ecológico', 'funchal-parque-ecologico', 1000], ['Santo da Serra – Golf', 'santo-da-serra-golf', 680],
+      ['Portela – Porto da Cruz', 'portela-porto-da-cruz', 620], ['Monte', 'monte', 550], ['Palheiro Golf', 'palheiro-golf', 500]]],
+    [['North coast', 'Costa norte'], [
+      ['Porto Moniz', 'porto-moniz'], ['Seixal', 'seixal'], ['São Jorge', 'sao-jorge'], ['Ponta Delgada', 'ponta-delgada'],
+      ['Boaventura', 'boaventura'], ['Santana – Parque Temático', 'santana-parque-tematico'], ['Praia do Faial', 'praia-faial']]],
+    [['South coast', 'Costa sul'], [
+      ['Funchal – Baía', 'funchal-baia-do-funchal'], ['Funchal – Lido', 'funchal-lido'], ['Funchal – Pontinha', 'funchal-pontinha'],
+      ['Câmara de Lobos', 'camara-de-lobos'], ['Câmara de Lobos – Baía', 'camara-de-lobos-baia'], ['Praia do Vigário', 'praia-do-vigario'],
+      ['Ribeira Brava', 'ribeira-brava'], ['Ponta do Sol', 'ponta-do-sol']]],
+    [['East', 'Leste'], [['Machico', 'machico'], ['Caniçal', 'canical'], ['Santa Cruz', 'santa-cruz']]],
+    [['Porto Santo', 'Porto Santo'], [['Porto Santo', 'porto-santo']]]
+  ];
   function webcams() {
     var L = [];
     MA.get('/ativa/levadas.json').then(function (j) { L = (j && j.levadas) || []; rerender(paint); });
+    rerender(paint);
     function paint() {
-      var cams = {};
-      L.forEach(function (l) { ((l.access || {}).webcams || []).forEach(function (c) { (cams[c.url] = cams[c.url] || { c: c, t: [] }).t.push(l); }); });
-      $('#list').innerHTML = Object.values(cams).sort(function (a, b) { return a.c.name.localeCompare(b.c.name); }).map(function (x) {
-        return '<div class="card"><div style="display:flex;align-items:center;gap:12px;justify-content:space-between;flex-wrap:wrap"><b>' + esc(x.c.name) + '</b>' +
-          '<a class="btn" href="' + esc(x.c.url) + '" target="_blank" rel="noopener">' + t('Watch live', 'Ver em direto') + ' ↗</a></div>' +
-          '<div class="chips" style="margin-top:10px">' + x.t.sort(function (a, b) { return MA.codeSort(a.code, b.code); }).map(function (l) {
-            return '<a class="chip" href="' + MA.trailUrl(l.code) + '">' + esc(l.code + ' ' + l.name) + '</a>'; }).join('') + '</div></div>';
+      var trails = {};
+      L.forEach(function (l) { ((l.access || {}).webcams || []).forEach(function (c) { var k = c.url.replace(/\/+$/, '').split('/').pop(); (trails[k] = trails[k] || []).push(l); }); });
+      $('#list').innerHTML = CAM_GROUPS.map(function (g) {
+        return '<h2>' + t(g[0][0], g[0][1]) + '</h2>' + g[1].map(function (c) {
+          var tl = (trails[c[1]] || []).sort(function (a, b) { return MA.codeSort(a.code, b.code); });
+          return '<div class="card"><div style="display:flex;align-items:center;gap:12px;justify-content:space-between;flex-wrap:wrap"><span><b>' + esc(c[0]) + '</b>' +
+            (c[2] ? ' <small class="sub2">' + c[2] + (MA.lang() === 'ru' ? ' м' : ' m') + '</small>' : '') + '</span>' +
+            '<a class="btn" href="https://www.netmadeira.com/webcams-madeira/' + c[1] + '" target="_blank" rel="noopener">' + t('Watch live', 'Ver em direto') + ' ↗</a></div>' +
+            (tl.length ? '<div class="chips" style="margin-top:10px">' + tl.map(function (l) {
+              return '<a class="chip" href="' + MA.trailUrl(l.code) + '">' + esc(l.code + ' ' + l.name) + '</a>'; }).join('') + '</div>' : '') + '</div>';
+        }).join('');
       }).join('');
+    }
+  }
+
+  // ------------------------------------------------------------ ships
+  // APRAM's port calls, day by day. Cruise ships lead with an estimate of the
+  // people ashore (normal capacity from ship_capacity.json); the ferry,
+  // freight and cement carriers follow in small type.
+  function ships() {
+    var calls = null, cap = {};
+    Promise.all([MA.get('/ativa/cruise_calls.json'), MA.get('/ativa/ship_capacity.json')]).then(function (r) {
+      calls = ((r[0] && r[0].calls) || []).filter(function (x) { return x.superseded !== true && x.superseded !== 'True' && x.arrival && x.departure; });
+      cap = (r[1] && r[1].ships) || {};
+      rerender(paint);
+    });
+    // Terminal Norte also takes the small cruise ships (Amadea, Silver Muse),
+    // so the capacity list decides first and the berth only after it.
+    function kind(x) {
+      var c = cap[x.ship.toUpperCase()];
+      if (c) return c.kind === 'sail' ? t('tall ship', 'veleiro') : c.kind === 'expedition' ? t('expedition ship', 'navio de expedição') : t('cruise', 'cruzeiro');
+      return /Sul/.test(x.berth) ? t('cruise', 'cruzeiro') : /Cimenteiro/.test(x.berth) ? t('cement carrier', 'cimenteiro') : /Norte/.test(x.berth) ? t('ferry / cargo', 'ferry / carga') : t('at anchor', 'ao largo');
+    }
+    function passenger(x) { return !!cap[x.ship.toUpperCase()] || /Sul/.test(x.berth); }
+    function paint() {
+      if (!calls) return;
+      var today = MA.today(), last = calls.reduce(function (m, x) { return x.departure.slice(0, 10) > m ? x.departure.slice(0, 10) : m; }, today);
+      var out = [];
+      for (var day = today, i = 0; day <= last && i < 21; day = MA.addDays(day, 1), i++) {
+        var on = calls.filter(function (x) { return x.arrival.slice(0, 10) <= day && x.departure.slice(0, 10) >= day; });
+        // One card line per ship: APRAM splits a stay over midnight in two.
+        var seen = {}; on = on.filter(function (x) { var k = x.ship.toUpperCase(); if (seen[k]) return false; seen[k] = 1; return true; });
+        var pax = on.filter(passenger), other = on.filter(function (x) { return !passenger(x); });
+        var known = 0, unknown = 0;
+        pax.forEach(function (x) { var c = cap[x.ship.toUpperCase()]; if (c && c.pax) known += c.pax; else unknown++; });
+        var badge = known >= 5000 ? ['bad', t('Very busy', 'Muito movimentado')] : known >= 2500 ? ['warn', t('Busy', 'Movimentado')]
+          : pax.length ? ['mute', t('Cruise day', 'Dia de cruzeiro')] : ['ok', t('Quiet', 'Calmo')];
+        var D = MA.day(day), hrs = function (x) {
+          // A stay over midnight: "until 18:00" on its last day, "from 08:00" on its first.
+          var a = x.arrival.slice(0, 10) === day, d = x.departure.slice(0, 10) === day;
+          return a && d ? x.arrival.slice(11, 16) + '–' + x.departure.slice(11, 16) : a ? t('from {0}', 'desde {0}').replace('{0}', x.arrival.slice(11, 16))
+            : d ? t('until {0}', 'até {0}').replace('{0}', x.departure.slice(11, 16)) : t('all day', 'todo o dia');
+        };
+        var row = function (x, small) {
+          var c = cap[x.ship.toUpperCase()];
+          return '<div class="shiprow' + (small ? ' small' : '') + '"><span><b>' + esc(x.ship) + '</b> <small class="sub2">' + kind(x) + ' · ' + hrs(x) +
+            (x.from || x.to ? ' · ' + esc(x.from || '?') + ' → ' + esc(x.to || '?') : '') + '</small></span>' +
+            (c && c.pax ? '<span class="pax">' + c.pax.toLocaleString(MA.lang() === 'en' ? 'en-GB' : 'pt-PT') + ' ' + t('pax', 'pass.') + '</span>' : '') + '</div>';
+        };
+        out.push('<div class="card' + (i === 0 ? ' today' : '') + '"><div class="dayhead"><span><b>' + D.w + ', ' + D.d + ' ' + D.m + '</b>' +
+          (i === 0 ? ' <small class="sub2">' + t('today', 'hoje') + '</small>' : i === 1 ? ' <small class="sub2">' + t('tomorrow', 'amanhã') + '</small>' : '') + '</span>' +
+          '<span class="pill ' + badge[0] + '">' + badge[1] + '</span></div>' +
+          (known ? '<p class="sub" style="margin:2px 0 6px">' + t('about {0} passengers ashore', 'cerca de {0} passageiros em terra').replace('{0}', (Math.round(known / 100) * 100).toLocaleString(MA.lang() === 'en' ? 'en-GB' : 'pt-PT')) + (unknown ? ' +' : '') + '</p>' : '') +
+          pax.sort(function (a, b) { return a.arrival < b.arrival ? -1 : 1; }).map(function (x) { return row(x); }).join('') +
+          (other.length ? other.map(function (x) { return row(x, true); }).join('') : '') +
+          (!on.length ? '<p class="sub" style="margin:4px 0 0">' + t('No ships listed.', 'Sem navios previstos.') + '</p>' : '') + '</div>');
+      }
+      $('#list').innerHTML = out.join('');
     }
   }
 
@@ -667,6 +753,6 @@
     }
   }
 
-  var INIT = { home: home, events: events, levadas: levadas, trail: trail, news: news, webcams: webcams, bus: bus };
+  var INIT = { home: home, events: events, levadas: levadas, trail: trail, news: news, webcams: webcams, ships: ships, bus: bus };
   if (INIT[page]) INIT[page]();
 })();

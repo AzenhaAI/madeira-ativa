@@ -1,6 +1,6 @@
 {
   "note": "Per trail, from OpenStreetMap ways, by length: how much is mapped at all, railing present / recorded absent, path 0.5 m wide or less, demanding mountain hiking (SAC T3+), tunnels. Unmapped length is unknown, not safe.",
-  "built": "2026-10-26T11:44:18",
+  "built": "2026-10-29T11:51:47",
   "trails": {
     "PR 6|Madeira": {
       "length_km": 4.4,
@@ -123,14 +123,14 @@
       "tunnel_m": 0
     },
     "PR 10|Madeira": {
-      "length_km": 11.3,
+      "length_km": 11.6,
       "mapped_pct": 94,
       "railing_pct": 0,
       "no_railing_pct": 0,
       "narrow_pct": 0,
       "demanding_pct": 0,
-      "tunnels": 6,
-      "tunnel_m": 100
+      "tunnels": 7,
+      "tunnel_m": 115
     },
     "PR 13|Madeira": {
       "length_km": 11.1,

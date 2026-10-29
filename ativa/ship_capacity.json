@@ -1,0 +1,714 @@
+{
+ "note": "Passenger capacity at double occupancy (lower berths), for the 'passengers ashore' estimate on the ships page. One source per ship.",
+ "built": "2026-10-28",
+ "ships": {
+  "CELEBRITY XCEL": {
+   "pax": 3276,
+   "max": 3950,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Celebrity-Xcel-2195"
+  },
+  "CELEBRITY APEX": {
+   "pax": 2918,
+   "max": 3521,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Celebrity-Apex-1587"
+  },
+  "AMADEA": {
+   "pax": 508,
+   "max": 624,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Amadea-555"
+  },
+  "NORWEGIAN ESCAPE": {
+   "pax": 4266,
+   "max": 5218,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Norwegian-Escape-878"
+  },
+  "NIEUW STATENDAM": {
+   "pax": 2666,
+   "max": 3214,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/ms-Nieuw-Statendam-1337"
+  },
+  "IONA": {
+   "pax": 5206,
+   "max": 6264,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Iona-1858"
+  },
+  "MSC VIRTUOSA": {
+   "pax": 4810,
+   "max": 6334,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/MSC-Virtuosa-1981"
+  },
+  "NORWEGIAN STAR": {
+   "pax": 2348,
+   "max": 2813,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Norwegian-Star-706"
+  },
+  "VENTURA": {
+   "pax": 3078,
+   "max": 3727,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Ventura-669"
+  },
+  "NORWEGIAN VIVA": {
+   "pax": 3219,
+   "max": 3950,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Norwegian-Viva-2217"
+  },
+  "AZURA": {
+   "pax": 3100,
+   "max": 3737,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Azura-741"
+  },
+  "SORLANDET": {
+   "pax": 74,
+   "kind": "sail",
+   "src": "https://sailtraininginternational.org/vessel/sorlandet/",
+   "note": "sail-training trainees on voyage (plus 26 permanent crew); 150 passengers on local-waters day sails"
+  },
+  "BRITANNIA": {
+   "pax": 3647,
+   "max": 4406,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Britannia-1028"
+  },
+  "HANSEATIC SPIRIT": {
+   "pax": 199,
+   "max": 230,
+   "kind": "expedition",
+   "src": "https://www.cruisemapper.com/ships/Hanseatic-Spirit-1867"
+  },
+  "LIBERTY OF THE SEAS": {
+   "pax": 3814,
+   "max": 4567,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731"
+  },
+  "LE LAPEROUSE": {
+   "pax": 184,
+   "max": 264,
+   "kind": "expedition",
+   "src": "https://www.cruisemapper.com/ships/Le-Laperouse-1506"
+  },
+  "MEIN SCHIFF 6": {
+   "pax": 2534,
+   "max": 2700,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Mein-Schiff-6-1333"
+  },
+  "KISMET": {
+   "pax": 12,
+   "kind": "cruise",
+   "src": "https://www.boatinternational.com/yachts/news/lurssen-superyacht-kismet-project-jag-delivered",
+   "note": "private charter motor yacht (122 m Luerssen, 2024), guests not cruise passengers"
+  },
+  "BOLETTE": {
+   "pax": 1338,
+   "max": 1656,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Fred-Olsen-Bolette-544"
+  },
+  "MSC MERAVIGLIA": {
+   "pax": 4488,
+   "max": 5386,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/MSC-Meraviglia-1187"
+  },
+  "AIDAPRIMA": {
+   "pax": 3286,
+   "max": 3400,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/AIDAprima-747"
+  },
+  "VIKING SEA": {
+   "pax": 928,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Viking-Sea-1032"
+  },
+  "ILMA": {
+   "pax": 448,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Ritz-Carlton-Ilma-2101"
+  },
+  "SEVEN SEAS MARINER": {
+   "pax": 708,
+   "max": 779,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Seven-Seas-Mariner-605"
+  },
+  "ARCADIA": {
+   "pax": 2094,
+   "max": 2458,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Arcadia-626"
+  },
+  "MEIN SCHIFF 3": {
+   "pax": 2506,
+   "max": 2700,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Mein-Schiff-3-816"
+  },
+  "MSC GRANDIOSA": {
+   "pax": 4888,
+   "max": 6334,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/MSC-Grandiosa-1008"
+  },
+  "BOREALIS": {
+   "pax": 1360,
+   "max": 1685,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Fred-Olsen-Borealis-717"
+  },
+  "NATIONAL GEOGRAPHIC ENDURANCE": {
+   "pax": 126,
+   "max": 148,
+   "kind": "expedition",
+   "src": "https://www.cruisemapper.com/ships/National-Geographic-Endurance-1711"
+  },
+  "SPIRIT OF ADVENTURE": {
+   "pax": 999,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Spirit-of-Adventure-2140"
+  },
+  "ROYAL CLIPPER": {
+   "pax": 227,
+   "kind": "sail",
+   "src": "https://www.cruisemapper.com/ships/Royal-Clipper-808",
+   "note": "guests on a commercial sailing cruise ship"
+  },
+  "SILVER MUSE": {
+   "pax": 612,
+   "max": 734,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Silver-Muse-1206"
+  },
+  "GULDEN LEEUW": {
+   "pax": 60,
+   "kind": "sail",
+   "src": "https://sailtraininginternational.org/vessel/gulden-leeuw/",
+   "note": "sail-training trainees on voyage (plus 24 permanent crew); up to 200 passengers on day sails"
+  },
+  "ARTANIA": {
+   "pax": 1188,
+   "max": 1260,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Artania-554"
+  },
+  "EXPLORA I": {
+   "pax": 922,
+   "max": 1473,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/MSC-Explora-1-2014"
+  },
+  "AIDASTELLA": {
+   "pax": 2194,
+   "max": 2700,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/AIDAstella-715"
+  },
+  "AIDANOVA": {
+   "pax": 5400,
+   "max": 6600,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/AIDAnova-1854"
+  },
+  "AIDAPERLA": {
+   "pax": 3286,
+   "max": 3400,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/AIDAperla-1243"
+  },
+  "AIDAMAR": {
+   "pax": 2194,
+   "max": 2686,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/AIDAmar-663"
+  },
+  "AIDASOL": {
+   "pax": 2194,
+   "max": 2686,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/AIDAsol-732"
+  },
+  "AIDABELLA": {
+   "pax": 2050,
+   "max": 2500,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/AIDAbella-653"
+  },
+  "AIDADIVA": {
+   "pax": 2050,
+   "max": 2500,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/AIDAdiva-659"
+  },
+  "AIDABLU": {
+   "pax": 2192,
+   "max": 2500,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/AIDAblu-624"
+  },
+  "AIDACOSMA": {
+   "pax": 5400,
+   "max": 6600,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/AIDAcosma-2076"
+  },
+  "MSC EURIBIA": {
+   "pax": 4828,
+   "max": 6327,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/MSC-Euribia-2204"
+  },
+  "MSC WORLD EUROPA": {
+   "pax": 5240,
+   "max": 6782,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/MSC-World-Europa-2183"
+  },
+  "MSC POESIA": {
+   "pax": 2550,
+   "max": 3060,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/MSC-Poesia-643"
+  },
+  "MSC ORCHESTRA": {
+   "pax": 2550,
+   "max": 3060,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/MSC-Orchestra-619"
+  },
+  "MSC SPLENDIDA": {
+   "pax": 3274,
+   "max": 4363,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/MSC-Splendida-675"
+  },
+  "MSC PREZIOSA": {
+   "pax": 3502,
+   "max": 4378,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/MSC-Preziosa-788"
+  },
+  "MSC FANTASIA": {
+   "pax": 3274,
+   "max": 3929,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/MSC-Fantasia-736"
+  },
+  "MSC SEASIDE": {
+   "pax": 4134,
+   "max": 5336,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/MSC-Seaside-1205"
+  },
+  "COSTA FAVOLOSA": {
+   "pax": 3014,
+   "max": 3617,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Costa-Favolosa-599"
+  },
+  "COSTA FASCINOSA": {
+   "pax": 3014,
+   "max": 3617,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Costa-Fascinosa-590"
+  },
+  "COSTA PACIFICA": {
+   "pax": 3014,
+   "max": 3780,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Costa-Pacifica-679"
+  },
+  "COSTA TOSCANA": {
+   "pax": 5322,
+   "max": 6338,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Costa-Toscana-2079"
+  },
+  "COSTA SMERALDA": {
+   "pax": 5282,
+   "max": 6554,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Costa-Smeralda-2027"
+  },
+  "ARVIA": {
+   "pax": 5206,
+   "max": 6264,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Arvia-2158"
+  },
+  "AURORA": {
+   "pax": 1874,
+   "max": 2258,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Aurora-648"
+  },
+  "QUEEN MARY 2": {
+   "pax": 2726,
+   "max": 3271,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Queen-Mary-2-721"
+  },
+  "QUEEN VICTORIA": {
+   "pax": 2074,
+   "max": 2489,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Queen-Victoria-630"
+  },
+  "QUEEN ANNE": {
+   "pax": 2996,
+   "max": 3353,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Queen-Anne-2141"
+  },
+  "QUEEN ELIZABETH": {
+   "pax": 2081,
+   "max": 2503,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Queen-Elizabeth-620"
+  },
+  "MEIN SCHIFF 1": {
+   "pax": 2534,
+   "max": 2894,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Mein-Schiff-1-743"
+  },
+  "MEIN SCHIFF 2": {
+   "pax": 2534,
+   "max": 2894,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Mein-Schiff-2-738"
+  },
+  "MEIN SCHIFF 4": {
+   "pax": 2506,
+   "max": 2700,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Mein-Schiff-4-1031"
+  },
+  "MEIN SCHIFF 5": {
+   "pax": 2534,
+   "max": 2700,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Mein-Schiff-5-1070"
+  },
+  "MEIN SCHIFF 7": {
+   "pax": 2534,
+   "max": 2894,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Mein-Schiff-7-1570"
+  },
+  "BALMORAL": {
+   "pax": 1350,
+   "max": 1420,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Fred-Olsen-Balmoral-596"
+  },
+  "VIKING STAR": {
+   "pax": 930,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Viking-Star-974"
+  },
+  "VIKING SKY": {
+   "pax": 928,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Viking-Sky-972"
+  },
+  "VIKING JUPITER": {
+   "pax": 928,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Viking-Jupiter-1980"
+  },
+  "VIKING MARS": {
+   "pax": 928,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Viking-Mars-2199"
+  },
+  "VIKING VENUS": {
+   "pax": 930,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Viking-Venus-1967"
+  },
+  "VIKING NEPTUNE": {
+   "pax": 928,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Viking-Neptune-2198"
+  },
+  "VIKING SATURN": {
+   "pax": 928,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Viking-Saturn-1966"
+  },
+  "ANTHEM OF THE SEAS": {
+   "pax": 4168,
+   "max": 4825,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Anthem-of-the-Seas-801"
+  },
+  "SYMPHONY OF THE SEAS": {
+   "pax": 5518,
+   "max": 6780,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Symphony-Of-The-Seas-1730"
+  },
+  "ODYSSEY OF THE SEAS": {
+   "pax": 4284,
+   "max": 5510,
+   "kind": "cruise",
+   "src": "https://en.wikipedia.org/wiki/Odyssey_of_the_Seas"
+  },
+  "INDEPENDENCE OF THE SEAS": {
+   "pax": 3836,
+   "max": 4603,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Independence-Of-The-Seas-531"
+  },
+  "ENCHANTED PRINCESS": {
+   "pax": 3668,
+   "max": 4402,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Enchanted-Princess-2156"
+  },
+  "SKY PRINCESS": {
+   "pax": 3668,
+   "max": 4610,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Sky-Princess-2154"
+  },
+  "MARELLA DISCOVERY": {
+   "pax": 1830,
+   "max": 2074,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Marella-Discovery-712"
+  },
+  "MARELLA EXPLORER": {
+   "pax": 1924,
+   "max": 2681,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Marella-Explorer-1814"
+  },
+  "MARELLA VOYAGER": {
+   "pax": 1912,
+   "max": 2669,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Marella-Voyager-682"
+  },
+  "VASCO DA GAMA": {
+   "pax": 1260,
+   "max": 1512,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Vasco-da-Gama-Nicko-575"
+  },
+  "RENAISSANCE": {
+   "pax": 1285,
+   "max": 1510,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/CFC-Renaissance-670"
+  },
+  "CROWN PRINCESS": {
+   "pax": 3062,
+   "max": 3674,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Crown-Princess-660"
+  },
+  "EUROPA": {
+   "pax": 408,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/ms-Europa-728"
+  },
+  "EUROPA 2": {
+   "pax": 516,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/ms-Europa-2-571"
+  },
+  "HAMBURG": {
+   "pax": 394,
+   "max": 420,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/MS-Hamburg-1012"
+  },
+  "VIKING POLARIS": {
+   "pax": 378,
+   "kind": "expedition",
+   "src": "https://www.cruisemapper.com/ships/Viking-Polaris-1809"
+  },
+  "SEABOURN OVATION": {
+   "pax": 604,
+   "kind": "cruise",
+   "src": "https://en.wikipedia.org/wiki/MV_Seabourn_Ovation"
+  },
+  "SILVER DAWN": {
+   "pax": 576,
+   "max": 691,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Silver-Dawn-1991"
+  },
+  "NORWEGIAN EPIC": {
+   "pax": 4244,
+   "max": 5093,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Norwegian-Epic-642"
+  },
+  "NORWEGIAN DAWN": {
+   "pax": 2340,
+   "max": 2808,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Norwegian-Dawn-699"
+  },
+  "NORWEGIAN PRIMA": {
+   "pax": 3215,
+   "max": 3950,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Norwegian-Prima-2216"
+  },
+  "CARNIVAL PRIDE": {
+   "pax": 2124,
+   "max": 2549,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Carnival-Pride-655"
+  },
+  "CELEBRITY SILHOUETTE": {
+   "pax": 2902,
+   "max": 3475,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Celebrity-Silhouette-537"
+  },
+  "CELEBRITY REFLECTION": {
+   "pax": 3046,
+   "max": 3655,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Celebrity-Reflection-685"
+  },
+  "CELEBRITY BEYOND": {
+   "pax": 3276,
+   "max": 3950,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Celebrity-Beyond-1690"
+  },
+  "ROTTERDAM": {
+   "pax": 2668,
+   "max": 3218,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/ms-Rotterdam-2166"
+  },
+  "ZUIDERDAM": {
+   "pax": 1970,
+   "max": 2364,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/ms-Zuiderdam-647"
+  },
+  "VOLENDAM": {
+   "pax": 1432,
+   "max": 1718,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/ms-Volendam-708"
+  },
+  "SUN PRINCESS": {
+   "pax": 4320,
+   "max": 5189,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Sun-Princess-2167"
+  },
+  "ALLURA": {
+   "pax": 1218,
+   "max": 1469,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Oceania-Allura-2126"
+  },
+  "VISTA": {
+   "pax": 1218,
+   "max": 1469,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Oceania-Vista-2123"
+  },
+  "MARINA": {
+   "pax": 1258,
+   "max": 1447,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Oceania-Marina-606"
+  },
+  "SIRENA": {
+   "pax": 698,
+   "max": 803,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Oceania-Sirena-591"
+  },
+  "SPIRIT OF DISCOVERY": {
+   "pax": 999,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Spirit-of-Discovery-1829"
+  },
+  "AMBITION": {
+   "pax": 1248,
+   "max": 1428,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Ambition-761"
+  },
+  "AMBIENCE": {
+   "pax": 1596,
+   "max": 1915,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Ambience-552"
+  },
+  "SEVEN SEAS SPLENDOR": {
+   "pax": 754,
+   "max": 829,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Seven-Seas-Splendor-2153"
+  },
+  "SEVEN SEAS GRANDEUR": {
+   "pax": 754,
+   "max": 829,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Seven-Seas-Grandeur-2155"
+  },
+  "STAR PRIDE": {
+   "pax": 343,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Star-Pride-668"
+  },
+  "STAR LEGEND": {
+   "pax": 343,
+   "kind": "cruise",
+   "src": "https://www.cruisemapper.com/ships/Star-Legend-564"
+  },
+  "SEA CLOUD SPIRIT": {
+   "pax": 136,
+   "kind": "sail",
+   "src": "https://www.cruisemapper.com/ships/Sea-Cloud-Spirit-1957"
+  },
+  "STAR FLYER": {
+   "pax": 170,
+   "kind": "sail",
+   "src": "https://www.cruisemapper.com/ships/Star-Flyer-810"
+  },
+  "WIND SURF": {
+   "pax": 376,
+   "kind": "sail",
+   "src": "https://www.cruisemapper.com/ships/Wind-Surf-714"
+  },
+  "LE BOREAL": {
+   "pax": 264,
+   "kind": "expedition",
+   "src": "https://en.wikipedia.org/wiki/Le_Boreal"
+  },
+  "LE CHAMPLAIN": {
+   "pax": 184,
+   "max": 264,
+   "kind": "expedition",
+   "src": "https://www.cruisemapper.com/ships/Le-Champlain-1505"
+  }
+ },
+ "missing": [
+  "SS ALVA"
+ ]
+}

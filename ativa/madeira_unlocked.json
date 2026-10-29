@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-10-26T11:10:05",
-  "count": 475,
+  "fetched": "2026-10-29T11:33:53",
+  "count": 495,
   "items": [
     {
       "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
@@ -5465,6 +5465,21 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "festa-de-laser-tag-edicao-halloween-2026-10-30",
+      "title": "Festa de Laser Tag: Edição Halloween",
+      "url": "https://www.madeira-unlocked.com/en/events/festa-de-laser-tag-edicao-halloween-2026-10-30",
+      "start": "2026-10-30T18:00:00+00:00",
+      "end": "2026-10-30T19:30:00+00:00",
+      "date": "2026-10-30",
+      "time": "18:00",
+      "venue": "JOY Family Space and Brunch",
+      "municipality": "Funchal",
+      "price": 25,
+      "organizer": "JOY Family Space & Brunch Cafe",
+      "category": "family",
+      "source_category": "kids-family"
+    },
+    {
       "id": "o-grande-baile-das-criaturas-do-xico-2026-10-30",
       "title": "O Grande Baile das Criaturas do Xico",
       "url": "https://www.madeira-unlocked.com/en/events/o-grande-baile-das-criaturas-do-xico-2026-10-30",
@@ -5480,6 +5495,21 @@
       "source_category": "kids-family"
     },
     {
+      "id": "tango-soiree-2026-10-30",
+      "title": "Tango Soirée",
+      "url": "https://www.madeira-unlocked.com/en/events/tango-soiree-2026-10-30",
+      "start": "2026-10-30T19:30:00+00:00",
+      "end": "2026-10-30T22:30:00+00:00",
+      "date": "2026-10-30",
+      "time": "19:30",
+      "venue": "Hotel Madeira, R. Ivens 21, São Martinho, 9000-046 Funchal",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Hotel Madeira",
+      "category": "dance",
+      "source_category": "dance"
+    },
+    {
       "id": "mordo-mia-rufia-dj-sets-2026-10-30",
       "title": "Mordo Mia & Rufia DJ Sets",
       "url": "https://www.madeira-unlocked.com/en/events/mordo-mia-rufia-dj-sets-2026-10-30",
@@ -5490,7 +5520,7 @@
       "venue": "Largo do Socorro",
       "municipality": "Funchal",
       "price": 0,
-      "organizer": "Associação Cultural do Largo do Socorro",
+      "organizer": "Associação Cultural do Socorro",
       "category": "concert",
       "source_category": "music-concerts"
     },
@@ -5525,6 +5555,21 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "walking-football-porto-santo-2026-10-31",
+      "title": "Walking Football - Porto Santo",
+      "url": "https://www.madeira-unlocked.com/en/events/walking-football-porto-santo-2026-10-31",
+      "start": "2026-10-31T09:00:00+00:00",
+      "end": "2026-10-31T11:00:00+00:00",
+      "date": "2026-10-31",
+      "time": "09:00",
+      "venue": "Estádio José Lino Pestana",
+      "municipality": "Porto Santo",
+      "price": 0,
+      "organizer": "Inter Madeira Walking Football",
+      "category": "sport",
+      "source_category": "sport-fitness"
+    },
+    {
       "id": "halloween-cycling-marathon-2026-10-31",
       "title": "Halloween Cycling Marathon",
       "url": "https://www.madeira-unlocked.com/en/events/halloween-cycling-marathon-2026-10-31",
@@ -5551,6 +5596,36 @@
       "municipality": "Funchal",
       "price": 15,
       "organizer": "Terracotta Ceramic Cafe",
+      "category": "family",
+      "source_category": "kids-family"
+    },
+    {
+      "id": "festa-de-halloween-no-mundo-magico-da-cristal-eventos-2026-10-31",
+      "title": "Festa de Halloween no Mundo Mágico da Cristal Eventos",
+      "url": "https://www.madeira-unlocked.com/en/events/festa-de-halloween-no-mundo-magico-da-cristal-eventos-2026-10-31",
+      "start": "2026-10-31T10:00:00+00:00",
+      "end": "2026-10-31T20:00:00+00:00",
+      "date": "2026-10-31",
+      "time": "10:00",
+      "venue": "Cristal Eventos",
+      "municipality": "Santa Cruz",
+      "price": 5,
+      "organizer": "Cristal Eventos Madeira",
+      "category": "family",
+      "source_category": "kids-family"
+    },
+    {
+      "id": "veganique-especial-familias-dia-mundial-do-veganismo-2026-10-31",
+      "title": "VEGANIQUE Especial Famílias - Dia Mundial do Veganismo",
+      "url": "https://www.madeira-unlocked.com/en/events/veganique-especial-familias-dia-mundial-do-veganismo-2026-10-31",
+      "start": "2026-10-31T10:00:00+00:00",
+      "end": "2026-10-31T12:00:00+00:00",
+      "date": "2026-10-31",
+      "time": "10:00",
+      "venue": "Santa Catarina Children's Park and Playground",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação VegMadeira",
       "category": "family",
       "source_category": "kids-family"
     },
@@ -5700,9 +5775,24 @@
       "venue": "Rua da Levada de St. Luzia 31C",
       "municipality": "Funchal",
       "price": 25,
-      "organizer": "Mahdi Hlewi",
+      "organizer": "Mahdi Hléwi",
       "category": "festival",
       "source_category": "festivals-parades"
+    },
+    {
+      "id": "halloween-at-santa-catarina-park-2026-10-31",
+      "title": "Halloween at Santa Catarina Park",
+      "url": "https://www.madeira-unlocked.com/en/events/halloween-at-santa-catarina-park-2026-10-31",
+      "start": "2026-10-31T16:00:00+00:00",
+      "end": "2026-10-31T18:00:00+00:00",
+      "date": "2026-10-31",
+      "time": "16:00",
+      "venue": "Parque de Santa Catarina",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Câmara Municipal do Funchal",
+      "category": "family",
+      "source_category": "kids-family"
     },
     {
       "id": "madeira-street-arts-festival-2026-10-31",
@@ -5735,6 +5825,36 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "zouk-bootcamp-entry-level-2026-10-31",
+      "title": "Zouk Bootcamp (Entry Level)",
+      "url": "https://www.madeira-unlocked.com/en/events/zouk-bootcamp-entry-level-2026-10-31",
+      "start": "2026-10-31T17:00:00+00:00",
+      "end": "2026-10-31T20:00:00+00:00",
+      "date": "2026-10-31",
+      "time": "17:00",
+      "venue": "Come Together",
+      "municipality": "Funchal",
+      "price": 29,
+      "organizer": "Dance Together Madeira",
+      "category": "dance",
+      "source_category": "dance"
+    },
+    {
+      "id": "ilha-secreta-fachos-de-musica-2026-10-31",
+      "title": "Ilha Secreta - Fachos de Música",
+      "url": "https://www.madeira-unlocked.com/en/events/ilha-secreta-fachos-de-musica-2026-10-31",
+      "start": "2026-10-31T17:00:00+00:00",
+      "end": "2026-10-31T18:00:00+00:00",
+      "date": "2026-10-31",
+      "time": "17:00",
+      "venue": "House Museum of Frederico de Freitas",
+      "municipality": "Funchal",
+      "price": 2,
+      "organizer": "Associação Cultural, Criativa e Artística da Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "wizard-night-bz-2026-10-31",
       "title": "Wizard Night, BZ",
       "url": "https://www.madeira-unlocked.com/en/events/wizard-night-bz-2026-10-31",
@@ -5745,7 +5865,7 @@
       "venue": "Largo do Socorro",
       "municipality": "Funchal",
       "price": 0,
-      "organizer": "Associação Cultural do Largo do Socorro",
+      "organizer": "Associação Cultural do Socorro",
       "category": "concert",
       "source_category": "music-concerts"
     },
@@ -5760,9 +5880,54 @@
       "venue": "Centro de Congressos da Madeira",
       "municipality": "Funchal",
       "price": 25,
-      "organizer": "Associação Orquestra Clássica da Madeira",
+      "organizer": "Orquestra Clássica da Madeira",
       "category": "concert",
       "source_category": "music-concerts"
+    },
+    {
+      "id": "festival-internacional-de-guitarras-da-madeira-2026-10-31",
+      "title": "Festival Internacional de Guitarras da Madeira",
+      "url": "https://www.madeira-unlocked.com/en/events/festival-internacional-de-guitarras-da-madeira-2026-10-31",
+      "start": "2026-10-31T18:00:00+00:00",
+      "end": "2026-10-31T19:30:00+00:00",
+      "date": "2026-10-31",
+      "time": "18:00",
+      "venue": "Captain's Tower",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural e de Solidariedade Social Raquel Lombardi",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "o-livro-do-alem-2026-10-31",
+      "title": "O Livro do Além",
+      "url": "https://www.madeira-unlocked.com/en/events/o-livro-do-alem-2026-10-31",
+      "start": "2026-10-31T19:00:00+00:00",
+      "end": "2026-10-31T21:00:00+00:00",
+      "date": "2026-10-31",
+      "time": "19:00",
+      "venue": "Biblioteca Municipal de Santa Cruz",
+      "municipality": "Santa Cruz",
+      "price": 0,
+      "organizer": "Município De Santa Cruz",
+      "category": "culture",
+      "source_category": "culture-museums"
+    },
+    {
+      "id": "dmitry-romanov-new-chapters-2026-10-31",
+      "title": "Dmitry Romanov: New Chapters",
+      "url": "https://www.madeira-unlocked.com/en/events/dmitry-romanov-new-chapters-2026-10-31",
+      "start": "2026-10-31T19:00:00+00:00",
+      "end": "2026-10-31T20:00:00+00:00",
+      "date": "2026-10-31",
+      "time": "19:00",
+      "venue": "Madeira Creative House",
+      "municipality": "Funchal",
+      "price": 54.6,
+      "organizer": "Creative House Madeira",
+      "category": "theatre",
+      "source_category": "theater"
     },
     {
       "id": "orientacao-noturna-orienteering-race-ponta-do-sol-2026-10-31",
@@ -5795,6 +5960,21 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "halloween-karaoke-2026-10-31",
+      "title": "Halloween Karaoke",
+      "url": "https://www.madeira-unlocked.com/en/events/halloween-karaoke-2026-10-31",
+      "start": "2026-10-31T19:30:00+00:00",
+      "end": "2026-10-31T21:30:00+00:00",
+      "date": "2026-10-31",
+      "time": "19:30",
+      "venue": "VELVET Lounge Bar",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "VELVET Lounge Bar",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "albrecht-mayer-e-orquestra-classica-da-madeira-centenario-dos-bombeiros-voluntarios-madeirenses-2026-10-31",
       "title": "Albrecht Mayer e Orquestra Clássica da Madeira, Centenário dos Bombeiros Voluntários Madeirenses",
       "url": "https://www.madeira-unlocked.com/en/events/albrecht-mayer-e-orquestra-classica-da-madeira-centenario-dos-bombeiros-voluntarios-madeirenses-2026-10-31",
@@ -5806,6 +5986,21 @@
       "municipality": "Funchal",
       "price": 25,
       "organizer": "Associação Orquestra Clássica da Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "halloween-blues-night-big-double-blues-2026-10-31",
+      "title": "Halloween Blues Night - Big Double Blues",
+      "url": "https://www.madeira-unlocked.com/en/events/halloween-blues-night-big-double-blues-2026-10-31",
+      "start": "2026-10-31T20:30:00+00:00",
+      "end": "2026-10-31T22:30:00+00:00",
+      "date": "2026-10-31",
+      "time": "20:30",
+      "venue": "Local Pub",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Local Pub",
       "category": "concert",
       "source_category": "music-concerts"
     },
@@ -5885,6 +6080,21 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "halloween-voices-2026-10-31",
+      "title": "Halloween Voices",
+      "url": "https://www.madeira-unlocked.com/en/events/halloween-voices-2026-10-31",
+      "start": "2026-10-31T21:00:00+00:00",
+      "end": "2026-10-31T22:00:00+00:00",
+      "date": "2026-10-31",
+      "time": "21:00",
+      "venue": "Centro Cívico do Estreito de Câmara de Lobos",
+      "municipality": "Câmara de Lobos",
+      "price": 0,
+      "organizer": "O Conservatório – Escola das Artes da Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "chestnut-festival-2026-2026-11-01-1200",
       "title": "Chestnut Festival 2026",
       "url": "https://www.madeira-unlocked.com/en/events/chestnut-festival-2026-2026-11-01-1200",
@@ -5911,6 +6121,21 @@
       "municipality": "Funchal",
       "price": 2,
       "organizer": "Câmara Municipal do Funchal",
+      "category": "sport",
+      "source_category": "sport-fitness"
+    },
+    {
+      "id": "walk-with-a-doc-zarco-em-machico-2026-11-01",
+      "title": "Walk with a Doc: Zarco em Machico",
+      "url": "https://www.madeira-unlocked.com/en/events/walk-with-a-doc-zarco-em-machico-2026-11-01",
+      "start": "2026-11-01T16:00:00+00:00",
+      "end": "2026-11-01T17:15:00+00:00",
+      "date": "2026-11-01",
+      "time": "16:00",
+      "venue": "Promenade",
+      "municipality": "Machico",
+      "price": 0,
+      "organizer": "Liga Portuguesa Contra O Cancro",
       "category": "sport",
       "source_category": "sport-fitness"
     },
@@ -6106,6 +6331,21 @@
       "municipality": "Funchal",
       "price": 20,
       "organizer": "Associação dos Amigos do Conservatório de Música da Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "festival-internacional-de-guitarras-da-madeira-2026-11-07",
+      "title": "Festival Internacional de Guitarras da Madeira",
+      "url": "https://www.madeira-unlocked.com/en/events/festival-internacional-de-guitarras-da-madeira-2026-11-07",
+      "start": "2026-11-07T18:00:00+00:00",
+      "end": "2026-11-07T19:30:00+00:00",
+      "date": "2026-11-07",
+      "time": "18:00",
+      "venue": "Captain's Tower",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural e de Solidariedade Social Raquel Lombardi",
       "category": "concert",
       "source_category": "music-concerts"
     },
@@ -6390,7 +6630,7 @@
       "venue": "Centro de Juventude do Funchal",
       "municipality": "Funchal",
       "price": 20,
-      "organizer": "Associação Portal das Artes",
+      "organizer": "Portal das Artes",
       "category": "festival",
       "source_category": "festivals-parades"
     },
@@ -6495,7 +6735,7 @@
       "venue": "Centro de Juventude do Funchal",
       "municipality": "Funchal",
       "price": 20,
-      "organizer": "Associação Portal das Artes",
+      "organizer": "Portal das Artes",
       "category": "festival",
       "source_category": "festivals-parades"
     },
@@ -6693,6 +6933,21 @@
       "organizer": "Madeira Fashion Weekend",
       "category": "festival",
       "source_category": "festivals-parades"
+    },
+    {
+      "id": "nem-mais-1-minuto-de-silencio-2026-11-21",
+      "title": "Nem Mais 1 Minuto de Silêncio",
+      "url": "https://www.madeira-unlocked.com/en/events/nem-mais-1-minuto-de-silencio-2026-11-21",
+      "start": "2026-11-21T21:00:00+00:00",
+      "end": "2026-11-21T22:30:00+00:00",
+      "date": "2026-11-21",
+      "time": "21:00",
+      "venue": "MUDAS - Museu de Arte Contemporânea da Madeira",
+      "municipality": "Calheta",
+      "price": 0,
+      "organizer": "Associação One",
+      "category": "dance",
+      "source_category": "dance"
     },
     {
       "id": "adn-race-2026-11-22",
@@ -6920,6 +7175,21 @@
       "source_category": "kids-family"
     },
     {
+      "id": "the-living-local-workshop-2026-12-04",
+      "title": "The living local workshop",
+      "url": "https://www.madeira-unlocked.com/en/events/the-living-local-workshop-2026-12-04",
+      "start": "2026-12-04T18:00:00+00:00",
+      "end": "2026-12-04T21:00:00+00:00",
+      "date": "2026-12-04",
+      "time": "18:00",
+      "venue": "Down town funchal across from Bazar do povo",
+      "municipality": "Funchal",
+      "price": 55,
+      "organizer": "Made-ira Natural",
+      "category": "workshop",
+      "source_category": "handicraft-workshops"
+    },
+    {
       "id": "abm-miudos-oh-nao-outro-livro-sobre-o-pai-natal-2026-12-05",
       "title": "ABM Miúdos, Oh, Não! Outro Livro Sobre o Pai Natal!",
       "url": "https://www.madeira-unlocked.com/en/events/abm-miudos-oh-nao-outro-livro-sobre-o-pai-natal-2026-12-05",
@@ -6933,6 +7203,21 @@
       "organizer": "Direção Regional dos Arquivos",
       "category": "family",
       "source_category": "kids-family"
+    },
+    {
+      "id": "the-living-local-workshop-2026-12-05",
+      "title": "The living local workshop",
+      "url": "https://www.madeira-unlocked.com/en/events/the-living-local-workshop-2026-12-05",
+      "start": "2026-12-05T11:00:00+00:00",
+      "end": "2026-12-05T14:00:00+00:00",
+      "date": "2026-12-05",
+      "time": "11:00",
+      "venue": "Down town funchal across from Bazar do povo",
+      "municipality": "Funchal",
+      "price": 55,
+      "organizer": "Made-ira Natural",
+      "category": "workshop",
+      "source_category": "handicraft-workshops"
     },
     {
       "id": "duobandonica-2026-12-05",
@@ -7128,6 +7413,21 @@
       "organizer": "Level Up Dance Studio",
       "category": "dance",
       "source_category": "dance"
+    },
+    {
+      "id": "madeira-classical-orchestra-2026-12-28",
+      "title": "Madeira Classical Orchestra",
+      "url": "https://www.madeira-unlocked.com/en/events/madeira-classical-orchestra-2026-12-28",
+      "start": "2026-12-28T18:00:00+00:00",
+      "end": "2026-12-28T19:30:00+00:00",
+      "date": "2026-12-28",
+      "time": "18:00",
+      "venue": "Teatro Municipal Baltazar Dias",
+      "municipality": "Funchal",
+      "price": 32,
+      "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
+      "category": "concert",
+      "source_category": "music-concerts"
     }
   ]
 }
