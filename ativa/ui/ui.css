@@ -259,7 +259,9 @@ html.dark .t3{background:#3D3417;color:#F4DB8A}html.dark .t4{background:#45291A;
 .bn-leg{display:flex;flex-direction:column;gap:2px}
 
 /* small phones: the header fits 320px */
-@media (max-width:359px){.hd{gap:6px}.hd .name{font-size:15px}.seg button{padding:6px 7px}}
+/* Four languages in the pill: on a phone the name and the buttons give way, the menu button stays on screen. */
+@media (max-width:420px){.hd{gap:6px}.hd .brand{gap:7px;min-width:0}.hd .name{font-size:15px}.seg button{padding:6px 7px}}
+@media (max-width:359px){.hd .name{display:none}}
 @media (max-width:339px){.hd .name{display:none}}
 @media (max-width:400px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .nowgrid>.nc:last-child:nth-child(odd):not(.wide-cell){grid-column:1/-1}

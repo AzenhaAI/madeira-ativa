@@ -706,6 +706,11 @@
    "max": 264,
    "kind": "expedition",
    "src": "https://www.cruisemapper.com/ships/Le-Champlain-1505"
+  },
+  "SANTA MARIA MANUELA": {
+   "kind": "sail",
+   "src": "https://pt.wikipedia.org/wiki/Santa_Maria_Manuela",
+   "note": "Portuguese four-masted schooner used for sail training and charters; berths at Terminal Norte; passenger count not published"
   }
  },
  "missing": [

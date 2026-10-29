@@ -117,9 +117,9 @@
       MA.get('/ativa/api/om/marine?latitude=32.63&longitude=-16.92&current=wave_height,sea_surface_temperature&timezone=Atlantic%2FMadeira'),
       MA.get('/ativa/trails_status.json'), MA.get('/ativa/cruise_calls.json'),
       MA.get('https://api.ipma.pt/open-data/forecast/warnings/warnings_www.json'),
-      MA.get('/ativa/events.json'), MA.get('/ativa/levadas.json'), MA.get('/ativa/island.json'),
+      MA.get('/ativa/events.json'), MA.get('/ativa/levadas.json'), MA.get('/ativa/island.json'), MA.get('/ativa/ship_capacity.json'),
     ]).then(function (r) {
-      data = { wx: r[0] || [], sea: r[1] && r[1].current, st: r[2], ships: r[3], warn: r[4] || [], ev: r[5], lev: r[6], isl: r[7] };
+      data = { wx: r[0] || [], sea: r[1] && r[1].current, st: r[2], ships: r[3], warn: r[4] || [], ev: r[5], lev: r[6], isl: r[7], cap: (r[8] && r[8].ships) || {} };
       rerender(paint);
       if (data.lev && window.rankToday) rankToday(data.lev.levadas).then(function (p) { data.picks = p; paintTrails(); paint(); }).catch(paintTrails);
       else paintTrails();
@@ -306,20 +306,28 @@
         // Funchal (crowds in town, coaches at Pico do Arieiro and PR 6), so it
         // leads; ferries and freight follow in small type.
         var tmr = MA.addDays(today, 1), seen = {};
-        var cruise = function (x) { return /Sul/.test(x.berth); };
-        var kind = function (b) { return /Cimenteiro/.test(b) ? t('cement carrier', 'cimenteiro') : /Norte/.test(b) ? t('ferry / cargo', 'ferry / carga') : t('at anchor', 'ao largo'); };
+        // The capacity list first, as on the ships page: a tall ship or a small
+        // cruise ship also berths at Terminal Norte.
+        var capOf = function (x) { return data.cap[x.ship.toUpperCase()]; };
+        var cruise = function (x) { var c = capOf(x); return c ? c.kind !== 'sail' : /Sul/.test(x.berth); };
+        var kind = function (b, x) {
+          var c = x && capOf(x);
+          if (c) return c.kind === 'sail' ? t('tall ship', 'veleiro') : c.kind === 'expedition' ? t('expedition ship', 'navio de expedição') : t('cruise', 'cruzeiro');
+          return /Cimenteiro/.test(b) ? t('cement carrier', 'cimenteiro') : /Norte/.test(b) ? t('ferry / cargo', 'ferry / carga') : t('at anchor', 'ao largo');
+        };
         var calls = data.ships.calls.filter(function (x) { return x.superseded !== true && x.superseded !== 'True' && x.arrival && x.departure; });
         var on = function (day) { return calls.filter(function (x) { return x.arrival.slice(0, 10) <= day && x.departure.slice(0, 10) >= day; }); };
         var hrs = function (x, day) { return x.arrival.slice(0, 10) === day ? x.arrival.slice(11, 16) + '–' + (x.departure.slice(0, 10) === day ? x.departure.slice(11, 16) : MA.day(x.departure.slice(0, 10)).w + ' ' + x.departure.slice(11, 16)) : ''; };
         var line = function (day, label) {
-          // One line per ship; a ship staying over shows on its first day only.
+          // One line per ship and day: APRAM splits a stay over midnight in two.
+          seen = {};
           var nowIso = MA.today() + 'T' + new Intl.DateTimeFormat('en-GB', { timeZone: 'Atlantic/Madeira', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date());
           return on(day).filter(function (x) { return day !== today || x.departure.slice(0, 16) > nowIso; })
             .filter(function (x) { var k2 = x.ship.toUpperCase(); if (seen[k2]) return false; seen[k2] = 1; return true; })
             .sort(function (x, y) { return cruise(y) - cruise(x); })
             .map(function (x) {
               var hh = hrs(x, day);
-              return '<div><span class="when">' + label + ':</span> <b>' + esc(x.ship) + '</b> <small>' + (cruise(x) ? t('cruise', 'cruzeiro') : kind(x.berth)) + (hh ? ' · ' + hh : '') + '</small></div>';
+              return '<div><span class="when">' + label + ':</span> <b>' + esc(x.ship) + '</b> <small>' + kind(x.berth, x) + (hh ? ' · ' + hh : '') + '</small></div>';
             }).join('');
         };
         var body = line(today, t('Today', 'Hoje')) + line(tmr, t('Tomorrow', 'Amanhã'));
@@ -705,7 +713,7 @@
         var seen = {}; on = on.filter(function (x) { var k = x.ship.toUpperCase(); if (seen[k]) return false; seen[k] = 1; return true; });
         var pax = on.filter(passenger), other = on.filter(function (x) { return !passenger(x); });
         var known = 0, unknown = 0;
-        pax.forEach(function (x) { var c = cap[x.ship.toUpperCase()]; if (c && c.pax) known += c.pax; else unknown++; });
+        pax.forEach(function (x) { var c = cap[x.ship.toUpperCase()]; if (c && c.pax) known += c.pax; else if (!c || c.kind !== 'sail') unknown++; });
         var badge = known >= 5000 ? ['bad', t('Very busy', 'Muito movimentado')] : known >= 2500 ? ['warn', t('Busy', 'Movimentado')]
           : pax.length ? ['mute', t('Cruise day', 'Dia de cruzeiro')] : ['ok', t('Quiet', 'Calmo')];
         var D = MA.day(day), hrs = function (x) {
