@@ -295,10 +295,10 @@
         // Counted from levadas.json, the list the links open, so the numbers match it.
         var arr = (data.lev && data.lev.levadas) || data.st.trails || [], n = function (k) { return arr.filter(function (x) { return x.status === k; }).length; };
         var lk = function (f, num, en, pt, dot) { return '<a href="/ativa/levada?f=' + f + '"><i class="dot ' + dot + '"></i><b>' + num + '</b> ' + t(en, pt) + '</a>'; };
-        h += '<div class="nc wide-cell"><span class="ni" aria-hidden="true">🥾</span><div class="nb"><div class="lbl">Levadas</div><div class="val st3">' + lk('open', n('open'), 'open', 'abertas', 'ok') +
+        h += '<div class="nc wide-cell"><span class="ni" aria-hidden="true">🥾</span><div class="nb"><div class="lbl">' + t('Levadas', 'Levadas') + '</div><div class="val st3">' + lk('open', n('open'), 'open', 'abertas', 'ok') +
           ' · ' + lk('partial', n('partial'), 'partly', 'parciais', 'warn') + ' · ' + lk('closed', n('closed'), 'closed', 'encerradas', 'bad') + '</div></div></div>';
       }
-      h += '<div class="nc wide-cell"><span class="ni" aria-hidden="true">📷</span><div class="nb"><a class="cell-link" href="/ativa/webcams"><div class="lbl">Webcams</div><div class="val">' +
+      h += '<div class="nc wide-cell"><span class="ni" aria-hidden="true">📷</span><div class="nb"><a class="cell-link" href="/ativa/webcams"><div class="lbl">' + t('Webcams', 'Webcams') + '</div><div class="val">' +
         t('Live views of the island', 'Vistas em direto da ilha') + ' <small>›</small></div></a></div><div class="camq">' +
         CAMS.slice(0, 3).map(function (x) { return '<a href="' + x[1] + '" target="_blank" rel="noopener" title="' + esc(x[0]) + '" aria-label="' + esc(x[0]) + '"><span>📷</span><small>' + esc(x[2]) + '</small></a>'; }).join('') + '</div></div>';
       if (data.ships && data.ships.calls) {
@@ -313,7 +313,9 @@
         var hrs = function (x, day) { return x.arrival.slice(0, 10) === day ? x.arrival.slice(11, 16) + '–' + (x.departure.slice(0, 10) === day ? x.departure.slice(11, 16) : MA.day(x.departure.slice(0, 10)).w + ' ' + x.departure.slice(11, 16)) : ''; };
         var line = function (day, label) {
           // One line per ship; a ship staying over shows on its first day only.
-          return on(day).filter(function (x) { var k2 = x.ship.toUpperCase(); if (seen[k2]) return false; seen[k2] = 1; return true; })
+          var nowIso = MA.today() + 'T' + new Intl.DateTimeFormat('en-GB', { timeZone: 'Atlantic/Madeira', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date());
+          return on(day).filter(function (x) { return day !== today || x.departure.slice(0, 16) > nowIso; })
+            .filter(function (x) { var k2 = x.ship.toUpperCase(); if (seen[k2]) return false; seen[k2] = 1; return true; })
             .sort(function (x, y) { return cruise(y) - cruise(x); })
             .map(function (x) {
               var hh = hrs(x, day);
@@ -326,11 +328,15 @@
       $('#now').innerHTML = h || '<div class="wide-cell empty">' + t('Live data did not load.', 'Os dados em direto não carregaram.') + '</div>';
       var Z = { MRM: ['mountains', 'montanha'], MCN: ['north coast', 'costa norte'], MCS: ['south coast', 'costa sul'], MPS: ['Porto Santo', 'Porto Santo'] };
       var LV = { yellow: ['Yellow', 'Amarelo'], orange: ['Orange', 'Laranja'], red: ['Red', 'Vermelho'] };
+      // IPMA names the hazard in Portuguese only.
+      var HZ = { 'precipitação': 'heavy rain', 'vento': 'wind', 'agitação marítima': 'rough sea', 'nevoeiro': 'fog', 'tempo quente': 'hot weather',
+        'tempo frio': 'cold weather', 'neve': 'snow', 'trovoada': 'thunderstorms' };
+      var hz = function (x) { var p = x.awarenessTypeName.toLowerCase(); return HZ[p] ? t(HZ[p], p) : p; };
       var seenW = {}, w = data.warn.filter(function (x) { return Z[x.idAreaAviso] && LV[x.awarenessLevelID] && new Date(x.endTime) > new Date(); })
         .filter(function (x) { var k = x.awarenessTypeName + x.awarenessLevelID; if (seenW[k]) return false; seenW[k] = 1; return true; });
       var al = $('#alert');
       if (w.length) {
-        al.innerHTML = '⚠ ' + esc(w.slice(0, 2).map(function (x) { var l = LV[x.awarenessLevelID]; return t(l[0] + ' warning', 'Aviso ' + l[1].toLowerCase()) + ': ' + x.awarenessTypeName.toLowerCase() + ' — ' + t(Z[x.idAreaAviso][0], Z[x.idAreaAviso][1]); }).join(' · '));
+        al.innerHTML = '⚠ ' + esc(w.slice(0, 2).map(function (x) { var l = LV[x.awarenessLevelID]; return t(l[0] + ' warning', 'Aviso ' + l[1].toLowerCase()) + ': ' + hz(x) + ' — ' + t(Z[x.idAreaAviso][0], Z[x.idAreaAviso][1]); }).join(' · '));
         al.className = 'alert' + (w.some(function (x) { return x.awarenessLevelID !== 'yellow'; }) ? ' bad' : '');
         al.hidden = false;
       } else al.hidden = true;
@@ -687,6 +693,7 @@
       if (c) return c.kind === 'sail' ? t('tall ship', 'veleiro') : c.kind === 'expedition' ? t('expedition ship', 'navio de expedição') : t('cruise', 'cruzeiro');
       return /Sul/.test(x.berth) ? t('cruise', 'cruzeiro') : /Cimenteiro/.test(x.berth) ? t('cement carrier', 'cimenteiro') : /Norte/.test(x.berth) ? t('ferry / cargo', 'ferry / carga') : t('at anchor', 'ao largo');
     }
+    function port(p) { return p ? p.replace(/'S\b/g, "'s") : '?'; }
     function passenger(x) { return !!cap[x.ship.toUpperCase()] || /Sul/.test(x.berth); }
     function paint() {
       if (!calls) return;
@@ -710,13 +717,13 @@
         var row = function (x, small) {
           var c = cap[x.ship.toUpperCase()];
           return '<div class="shiprow' + (small ? ' small' : '') + '"><span><b>' + esc(x.ship) + '</b> <small class="sub2">' + kind(x) + ' · ' + hrs(x) +
-            (x.from || x.to ? ' · ' + esc(x.from || '?') + ' → ' + esc(x.to || '?') : '') + '</small></span>' +
+            (x.from || x.to ? ' · ' + esc(port(x.from)) + ' → ' + esc(port(x.to)) : '') + '</small></span>' +
             (c && c.pax ? '<span class="pax">' + c.pax.toLocaleString(MA.lang() === 'en' ? 'en-GB' : 'pt-PT') + ' ' + t('pax', 'pass.') + '</span>' : '') + '</div>';
         };
         out.push('<div class="card' + (i === 0 ? ' today' : '') + '"><div class="dayhead"><span><b>' + D.w + ', ' + D.d + ' ' + D.m + '</b>' +
           (i === 0 ? ' <small class="sub2">' + t('today', 'hoje') + '</small>' : i === 1 ? ' <small class="sub2">' + t('tomorrow', 'amanhã') + '</small>' : '') + '</span>' +
           '<span class="pill ' + badge[0] + '">' + badge[1] + '</span></div>' +
-          (known ? '<p class="sub" style="margin:2px 0 6px">' + t('about {0} passengers ashore', 'cerca de {0} passageiros em terra').replace('{0}', (Math.round(known / 100) * 100).toLocaleString(MA.lang() === 'en' ? 'en-GB' : 'pt-PT')) + (unknown ? ' +' : '') + '</p>' : '') +
+          (known ? '<p class="sub" style="margin:2px 0 6px">' + t('about {0} passengers ashore', 'cerca de {0} passageiros em terra').replace('{0}', (Math.round(known / 100) * 100).toLocaleString(MA.lang() === 'en' ? 'en-GB' : 'pt-PT') + (unknown ? '+' : '')) + '</p>' : '') +
           pax.sort(function (a, b) { return a.arrival < b.arrival ? -1 : 1; }).map(function (x) { return row(x); }).join('') +
           (other.length ? other.map(function (x) { return row(x, true); }).join('') : '') +
           (!on.length ? '<p class="sub" style="margin:4px 0 0">' + t('No ships listed.', 'Sem navios previstos.') + '</p>' : '') + '</div>');

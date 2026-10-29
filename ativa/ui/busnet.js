@@ -254,7 +254,7 @@
   }
   function stopInfo(i) {
     var s = NET.stops[i];
-    var html = '<div class="bn-pop"><b>' + esc(s[1]) + '</b><div class="bn-lines">' + s[4].map(chip).join(' ') + '</div><div class="bn-wait">…</div></div>';
+    var html = '<div class="bn-pop"><b>' + esc(legStop(i)) + '</b><div class="bn-lines">' + s[4].map(chip).join(' ') + '</div><div class="bn-wait">…</div></div>';
     var pop = L.popup({ maxWidth: 300 }).setLatLng([s[2], s[3]]).setContent(html).openOn(map);
     departures(i, null, null, window.innerWidth < 600 ? 4 : 8).then(function (list) {
       var extra = s[4].filter(function (li) { return NET.lines[li].src !== 'gtfs' && NET.lines[li].url; })
@@ -274,7 +274,8 @@
     if (!TIMED) TIMED = MA.get('/ativa/bus/timed.json');
     return TIMED;
   }
-  function walkMin(m) { return Math.max(1, Math.ceil(m * DETOUR / WALK)); }
+  // A stop matched by name, or a few metres off, costs no walk at all.
+  function walkMin(m) { return m < 50 ? 0 : Math.max(1, Math.ceil(m * DETOUR / WALK)); }
   // What kind of day it is for the buses: weekday, Saturday or Sunday, a
   // holiday, a school day, and the days some sheets run as a Saturday.
   function dayInfo(T, iso) {
@@ -359,6 +360,9 @@
     Object.keys(r0).forEach(function (st) { reach[st] = r0[st].arr; reachK[st] = 0; });
     var target = Infinity;
     var dest = Object.keys(SB).filter(function (k) { return k[0] !== '_'; }).map(function (k) { return [+k, walkMin(SB[k])]; });
+    // The long walk between interurban terminals is a change, not a way to
+    // finish a trip: from the SAM terminal to Lido a city bus beats 34 minutes on foot.
+    var endOk = function (x) { return x && (x.walkFrom == null || x.walk <= walkMin(CHANGE_M)); };
     for (var k = 1; k <= MAX_ROUNDS; k++) {
       var cur = {}, Q = {};
       Object.keys(marked).forEach(function (s) {
@@ -376,7 +380,7 @@
             }
           }
           // Catch an earlier trip here? One minute to change buses.
-          var ready = reach[s] != null ? reach[s] + (reachK[s] > 0 ? 1 : 0) : null;
+          var ready = reach[s] != null ? reach[s] + (reachK[s] > 0 || (r0[s] && r0[s].walk > 0) ? 1 : 0) : null;
           if (ready == null) continue;
           if (trip && trip.t[i] >= 0 && trip.t[i] < ready) continue;
           // The earliest trip here at or after ready, if earlier than the one on.
@@ -399,7 +403,7 @@
       });
       rounds.push(cur);
       Object.keys(cur).forEach(function (st) { if (reach[st] == null || cur[st].arr < reach[st]) { reach[st] = cur[st].arr; reachK[st] = k; } });
-      dest.forEach(function (d) { var x = cur[d[0]]; if (x && x.arr + d[1] < target) target = x.arr + d[1]; });
+      dest.forEach(function (d) { var x = cur[d[0]]; if (endOk(x) && x.arr + d[1] < target) target = x.arr + d[1]; });
       if (!Object.keys(marked).length) break;
     }
     // The best journey per number of buses, kept only when it arrives sooner.
@@ -408,13 +412,14 @@
       var pick = null;
       dest.forEach(function (d) {
         var x = rounds[k2][d[0]];
-        if (x && (!pick || x.arr + d[1] < pick.arr)) pick = { stop: d[0], walk: d[1], arr: x.arr + d[1] };
+        if (endOk(x) && (!pick || x.arr + d[1] < pick.arr)) pick = { stop: d[0], walk: d[1], arr: x.arr + d[1] };
       });
       if (!pick || pick.arr >= bestArr) continue;
       var legs = backtrack(rounds, k2, pick.stop, day);
       if (!legs) continue;
       bestArr = pick.arr;
-      out.push({ legs: legs, arr: pick.arr, walkEnd: pick.walk, dep: legs[0].dep - legs[0].walkBefore, buses: legs.length });
+      out.push({ legs: legs, arr: pick.arr, walkEnd: pick.walk, dep: legs[0].dep - legs[0].walkBefore, buses: legs.length,
+        walk: legs.reduce(function (a, l) { return a + l.walkBefore + l.walkAfter; }, 0) + pick.walk });
     }
     return out;
   }
@@ -444,7 +449,13 @@
     return m >= 60 ? Math.floor(m / 60) + h + ('0' + m % 60).slice(-2) + mn : m + mn;
   }
   // "09 - SAM Terminal" -> "SAM Terminal": the Aerobus' stop numbers read as noise here.
-  function legStop(i) { return stopName(i).replace(/^\d+\s*-\s*/, ''); }
+  // Also the operator's pole codes "(156A)", "T-42" and the side of the road
+  // ("  S", "  D"): "Estrada do Aeroporto  S" reads as "Estrada do Aeroporto".
+  function legStop(i) {
+    var n = stopName(i);
+    return n.replace(/^\d+\s*-\s*/, '').replace(/\s*\([^)]*\d[^)]*\)/g, '').replace(/\s+T-\d+\w*/g, '')
+      .replace(/\s{2,}[SDE]$/, '').replace(/\s+/g, ' ').trim() || n;
+  }
   function walkTxt(m) { return '🚶 ' + fmt(t('{0} min walk', '{0} min a pé'), m); }
   // Several departures: the best journey, then the next ones leaving later.
   function timedPlan(SA, SB) {
@@ -458,13 +469,31 @@
     loadTimed().then(function (T) {
       if (token !== SEARCH) return;
       if (!T) { el.innerHTML = ''; return; }
+      // Porto Santo is another island: the ferry, not a bus, joins the two.
+      var isPS = function (S) { var ks = Object.keys(S).filter(function (k) { return k[0] !== '_'; }); return ks.length && ks.every(function (k) { return NET.stops[+k][2] > 32.95; }); };
+      if (isPS(SA) !== isPS(SB)) {
+        el.innerHTML = '<div class="card bn-timed"><b>' + t('Porto Santo is another island.', 'Porto Santo é outra ilha.') + '</b> <span class="bn-soft">' +
+          t('Take the Porto Santo Line ferry from Funchal harbour (about 2 h 30 min) or a flight from the airport; the buses on each island start at the harbour.', 'Apanhe o ferry da Porto Santo Line no porto do Funchal (cerca de 2 h 30 min) ou um voo no aeroporto; os autocarros de cada ilha partem do porto.') + '</span></div>';
+        TLEGS_T = [];
+        return;
+      }
+      // Start and end share a stop a short walk from both: no bus to look for.
+      var onFoot = Infinity;
+      Object.keys(SA).forEach(function (k) { if (k[0] !== '_' && SB[k] != null) onFoot = Math.min(onFoot, SA[k] + SB[k]); });
+      if (onFoot <= 600) {
+        el.innerHTML = '<div class="card bn-timed"><b>' + t('You are almost there.', 'Já está quase lá.') + '</b> <span class="bn-soft">' +
+          fmt(t('About {0} on foot — no bus needed.', 'Cerca de {0} a pé — não precisa de autocarro.'), dur(Math.max(1, walkMin(onFoot)))) + '</span></div>';
+        TLEGS_T = [];
+        return;
+      }
       var search = function (iso, from) {
         var day = dayTable(T, iso), found = [], seen = {};
         for (var n = 0; n < 6 && found.length < 4; n++) {
           var js = raptor(day, SA, SB, from);
           if (!js.length) break;
           js.forEach(function (j) {
-            var k = j.legs.map(function (l) { return l.line + '@' + l.dep; }).join('|');
+            // The same bus can come from two sources (Funchal's GTFS and a SIGA sheet).
+            var k = j.legs.map(function (l) { return (NET.lines[l.line].new || NET.lines[l.line].ref || l.line) + '@' + Math.round(l.dep / 5); }).join('|');
             if (!seen[k]) { seen[k] = 1; found.push(j); }
           });
           from = Math.min.apply(null, js.map(function (j) { return j.legs[0].dep; })) - js[0].legs[0].walkBefore + 1;
@@ -485,8 +514,10 @@
       found.sort(function (a, b) { return a.arr - b.arr || a.buses - b.buses; });
       // A journey loses to one that arrives no later and either leaves no
       // earlier or takes fewer buses (a one-stop hop instead of a short walk).
+      // Twenty minutes on foot weigh about as much as one more bus.
+      var effort = function (j) { return j.buses + j.walk / 20; };
       found = found.filter(function (j, i) { return !found.some(function (o, k) {
-        return k !== i && o.arr <= j.arr && ((o.dep >= j.dep && o.buses <= j.buses && (k < i || o.arr < j.arr || o.dep > j.dep || o.buses < j.buses)) || o.buses < j.buses);
+        return k !== i && o.arr <= j.arr && ((o.dep >= j.dep && effort(o) <= effort(j) && (k < i || o.arr < j.arr || o.dep > j.dep || effort(o) < effort(j))) || (o.buses < j.buses && o.walk <= j.walk + 10));
       }); }).slice(0, 4);
       TLEGS_T = found.map(function (j) { return j.legs.map(function (l) { return { line: l.line, from: l.from, to: l.to }; }); });
       if (!found.length) {
@@ -494,19 +525,23 @@
           '<span class="bn-soft">' + t('Try an earlier time, another day, or the lines below.', 'Experimente mais cedo, outro dia ou as linhas abaixo.') + '</span></div>';
         return;
       }
-      var hhmm2 = function (m, est) { return (est ? '≈' : '') + hhmm(m); };
-      el.innerHTML = '<h3 class="bn-h">' + (late ? t('No more buses that day — the first ones next morning', 'Já não há autocarros nesse dia — os primeiros na manhã seguinte') + ', ' + MA.day(iso).w + ' ' + MA.day(iso).d + ' ' + MA.day(iso).m : iso === now.date && !(ti && ti.value) ? t('Next connections', 'Próximas ligações') : fmt(t('Connections from {0}', 'Ligações a partir das {0}'), hhmm(t0) + (iso !== now.date ? ', ' + MA.day(iso).w + ' ' + MA.day(iso).d + ' ' + MA.day(iso).m : ''))) + '</h3>' +
+      var hhmm2 = function (m, est) { return (est ? '≈' : '') + hhmm(m) + (m >= 1440 ? ' (+1)' : ''); };
+      var destName = (document.getElementById('bnTo').value || '').replace(/^📍\s*/, '').trim();
+      el.innerHTML = '<h3 class="bn-h">' + (late ? t('No more buses after that time — the first ones next morning', 'Sem autocarros depois dessa hora — os primeiros na manhã seguinte') + ', ' + MA.day(iso).w + ' ' + MA.day(iso).d + ' ' + MA.day(iso).m : iso === now.date && !(ti && ti.value) ? t('Next connections', 'Próximas ligações') : fmt(t('Connections from {0}', 'Ligações a partir das {0}'), hhmm(t0) + (iso !== now.date ? ', ' + MA.day(iso).w + ' ' + MA.day(iso).d + ' ' + MA.day(iso).m : ''))) + '</h3>' +
         found.map(function (j, n) {
-          var changes = j.legs.length - 1;
+          var changes = j.legs.length - 1, lastLeg = j.legs[j.legs.length - 1];
+          // The last change of stops and the walk from there are one walk to where you are going.
+          var endWalk = (lastLeg.walkAfter || 0) + (j.walkEnd || 0);
+          var walked = j.legs.reduce(function (a, l, i) { return a + (i === 0 ? l.walkBefore : 0) + (l !== lastLeg ? l.walkAfter || 0 : 0); }, 0) + endWalk;
           return '<div class="card bn-timed"><div class="bn-th"><b>' + hhmm2(j.dep) + ' → ' + hhmm2(j.arr, j.legs[j.legs.length - 1].estArr) + '</b> <span class="bn-soft">' + dur(j.arr - j.dep) + ' · ' +
-            (changes ? plural(changes, t('change', 'transbordo'), t('changes', 'transbordos')) : t('direct', 'direto')) + '</span></div>' +
+            (changes ? plural(changes, t('change', 'transbordo'), t('changes', 'transbordos')) : t('direct', 'direto')) + (walked >= 10 ? ' · 🚶 ' + dur(walked) : '') + '</span></div>' +
             '<ol class="bn-legs">' + j.legs.map(function (l, i) {
               var w = (i === 0 ? l.walkBefore : 0);
-              return (w > 1 ? '<li class="bn-walk">' + walkTxt(w) + ' → ' + esc(legStop(l.from)) + '</li>' : '') +
+              return (w > 0 ? '<li class="bn-walk">' + walkTxt(w) + ' → ' + esc(legStop(l.from)) + '</li>' : '') +
                 '<li>' + chip(l.line) + ' <b>' + hhmm2(l.dep, l.estDep) + '</b> ' + esc(legStop(l.from)) + ' → <b>' + hhmm2(l.arr, l.estArr) + '</b> ' + esc(legStop(l.to)) +
                 ' <span class="bn-soft">' + t('towards', 'sentido') + ' ' + esc(l.head || NET.lines[l.line].name) + '</span></li>' +
-                (l.walkAfter ? '<li class="bn-walk">' + walkTxt(l.walkAfter) + (j.legs[i + 1] ? ' → ' + esc(legStop(j.legs[i + 1].from)) : '') + '</li>' : '');
-            }).join('') + (j.walkEnd > 1 ? '<li class="bn-walk">' + walkTxt(j.walkEnd) + '</li>' : '') + '</ol>' +
+                (l.walkAfter && l !== lastLeg ? '<li class="bn-walk">' + walkTxt(l.walkAfter) + ' → ' + esc(legStop(j.legs[i + 1].from)) + '</li>' : '');
+            }).join('') + (endWalk > 0 ? '<li class="bn-walk">' + walkTxt(endWalk) + (destName ? ' → ' + esc(destName) : '') + '</li>' : '') + '</ol>' +
             (j.legs.some(function (l) { return l.estDep || l.estArr; }) ? '<div class="bn-soft">' + t('≈ estimated: the timetable prints only the departure from the terminus.', '≈ estimado: o horário só indica a partida do terminal.') + '</div>' : '') +
             '<button type="button" class="btn ghost bn-show" data-tt="' + n + '">' + t('Show on map', 'Ver no mapa') + '</button></div>';
         }).join('') +
@@ -716,6 +751,8 @@
     return n;
   }
   function search() {
+    var sug = document.getElementById('bnSug');
+    if (sug) sug.hidden = true;
     searchCore();
     var box = document.getElementById('bnRes');
     if (box && box.getBoundingClientRect().top > window.innerHeight * 0.7) box.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -889,7 +926,7 @@
       return '<div class="card bn-r"><div>' + chip(r.line, num) + ' <b>' + esc(r.head || l.name) + '</b>' + (l.approx ? ' <span class="bn-approx">' + t('approx. route', 'percurso aprox.') + '</span>' : '') + '</div>' +
         (sv ? '<div class="bn-op bn-svc">⚠️ ' + esc(sv) + '</div>' : '') +
         (l.title ? '<div class="bn-op bn-title">' + esc(l.title) + (l.op ? ' · ' + esc(l.op) : '') + (alt && alt.length ? ' · ' + t('also numbered', 'também') + ' ' + esc(alt.join(', ')) : '') + '</div>' : '') +
-        '<div class="bn-op">' + t('Board at', 'Embarque em') + ' <b>' + esc(NET.stops[r.from][1]) + '</b>' + far(SA[r.from], fa, la) + ' → <b>' + esc(NET.stops[r.to][1]) + '</b>' + far(SB[r.to], fb, lb) + (l.src === 'gtfs' ? ' · ' + plural(r.n, t('stop', 'paragem'), t('stops', 'paragens')) : '') + '</div>' +
+        '<div class="bn-op">' + t('Board at', 'Embarque em') + ' <b>' + esc(legStop(r.from)) + '</b>' + far(SA[r.from], fa, la) + ' → <b>' + esc(legStop(r.to)) + '</b>' + far(SB[r.to], fb, lb) + (l.src === 'gtfs' ? ' · ' + plural(r.n, t('stop', 'paragem'), t('stops', 'paragens')) : '') + '</div>' +
         (r.part && r.part.length ? viaNote(r) : '') +
         (lb < 2500 && l.src !== 'gtfs' ? otherStops(r, SB) : '') +
         '<div id="bnR' + n + '"></div>' +
@@ -1070,14 +1107,14 @@
     var leg = function (x, last) {
       var l = NET.lines[x.line], sv = svcNote(l, x.pat);
       return '<div class="bn-leg"><div>' + chip(x.line, x.num) + ' <b>' + esc(x.head || l.name) + '</b></div>' + (sv ? '<div class="bn-op bn-svc">⚠️ ' + esc(sv) + '</div>' : '') +
-        '<div class="bn-op">' + esc(stopName(x.from)) + ' → <b>' + esc(stopName(last)) + '</b>' + (l.src === 'gtfs' ? ' · ' + plural(x.n, t('stop', 'paragem'), t('stops', 'paragens')) : '') +
+        '<div class="bn-op">' + esc(legStop(x.from)) + ' → <b>' + esc(legStop(last)) + '</b>' + (l.src === 'gtfs' ? ' · ' + plural(x.n, t('stop', 'paragem'), t('stops', 'paragens')) : '') +
         (l.src !== 'gtfs' && l.url ? ' · <a href="' + esc(l.url) + '" target="_blank" rel="noopener">' + t('Timetable', 'Horário') + ' ↗</a>' : '') + '</div></div>';
     };
     var base = TLEGS.length;
     res.forEach(function (r) { TLEGS.push([{ line: r.a.line, from: r.a.from, to: r.a.at }, { line: r.b.line, from: r.b.from, to: r.b.to }]); });
     box.innerHTML = head + '<p class="sub">' + (extra ? t('Or with one change:', 'Ou com uma mudança:') : t('No direct line — with one change:', 'Sem linha direta — com uma mudança:')) + '</p>' + res.map(function (r, n) {
-      return '<div class="card bn-r">' + leg(r.a, r.a.at) + '<div class="bn-change">↓ ' + t('Change at', 'Mude em') + ' <b>' + esc(stopName(r.a.at)) + '</b>' +
-        (r.a.at !== r.b.from ? ' · ' + t('walk to', 'a pé até') + ' <b>' + esc(stopName(r.b.from)) + '</b> (' + Math.round(dist([NET.stops[r.a.at][2], NET.stops[r.a.at][3]], [NET.stops[r.b.from][2], NET.stops[r.b.from][3]]) / 10) * 10 + ' m)' : '') + '</div>' +
+      return '<div class="card bn-r">' + leg(r.a, r.a.at) + '<div class="bn-change">↓ ' + t('Change at', 'Mude em') + ' <b>' + esc(legStop(r.a.at)) + '</b>' +
+        (r.a.at !== r.b.from ? ' · ' + t('walk to', 'a pé até') + ' <b>' + esc(legStop(r.b.from)) + '</b> (' + Math.round(dist([NET.stops[r.a.at][2], NET.stops[r.a.at][3]], [NET.stops[r.b.from][2], NET.stops[r.b.from][3]]) / 10) * 10 + ' m)' : '') + '</div>' +
         leg(r.b, r.b.to) + '<div id="bnT' + (base + n) + '"></div><button type="button" class="btn ghost bn-show" data-t="' + (base + n) + '">' + t('Show on map', 'Ver no mapa') + '</button></div>';
     }).join('');
     if (!extra) {
@@ -1232,8 +1269,12 @@
         drawLines();
       };
       var city = NET.lines.filter(function (l) { return l.src === 'gtfs'; }).length;
-      document.getElementById('bnCount').textContent = NET.lines.length + ' ' + t('lines on the map', 'linhas no mapa') + ' (' + city + ' ' + t('Funchal city', 'urbanas do Funchal') +
-        ', ' + (NET.lines.length - city) + ' ' + t('interurban', 'interurbanas') + ') · ' + NET.siga.length + ' ' + t('in the full list below', 'na lista completa abaixo');
+      var count = function () {
+        document.getElementById('bnCount').textContent = NET.lines.length + ' ' + t('lines on the map', 'linhas no mapa') + ' (' + city + ' ' + t('Funchal city', 'urbanas do Funchal') +
+          ', ' + (NET.lines.length - city) + ' ' + t('interurban', 'interurbanas') + ') · ' + NET.siga.length + ' ' + t('in the full list below', 'na lista completa abaixo');
+      };
+      count();
+      MA.onLang(count);
       sigaList();
       document.getElementById('bnHere').onclick = here;
       MA.onLang(function () { if (document.getElementById('bnRes').innerHTML) search(); });
