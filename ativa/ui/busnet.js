@@ -1170,7 +1170,7 @@
         f.dataset.ll = s[2] + ',' + s[3];
         f.value = f.dataset.label = '📍 ' + legStop(best);
         msg.textContent = fmt(t('{0} m from you', 'a {0} m de si'), Math.round(bd / 10) * 10);
-        map.setView([s[2], s[3]], 17);
+        map.setView([s[2], s[3]], 17, { animate: false });
         stopInfo(best);
       } else {
         f.dataset.ll = ll[0].toFixed(5) + ',' + ll[1].toFixed(5);
@@ -1181,7 +1181,11 @@
       delete f.dataset.example; f.style.boxShadow = '';
       var to = document.getElementById('bnTo');
       if (to.value.trim()) search();
-      else { to.placeholder = t('Where to?', 'Para onde?'); delete to.dataset.example; to.style.boxShadow = '0 0 0 2px #2e9e5b'; }
+      else {
+        to.placeholder = t('Where to?', 'Para onde?'); delete to.dataset.example; to.style.boxShadow = '0 0 0 2px #2e9e5b';
+        // The button sits under the map: bring the stop's next buses into view.
+        document.getElementById('busmap').scrollIntoView({ block: 'start' });
+      }
     }, fail, { enableHighAccuracy: true, timeout: 12000, maximumAge: 30000 });
   }
 
