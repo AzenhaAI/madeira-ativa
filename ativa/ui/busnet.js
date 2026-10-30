@@ -1195,10 +1195,18 @@
   // with the walk to the stops counted.
   function here() {
     var msg = document.getElementById('bnHereMsg'), f = document.getElementById('bnFrom');
-    var fail = function () { msg.textContent = t('Location is off. Type the stop name printed at the top of the sign instead.', 'A localização está desligada. Escreva o nome da paragem impresso no topo do sinal.'); };
-    if (!navigator.geolocation) { fail(); return; }
+    var off = function () { msg.textContent = t('Location is off. Type the stop name printed at the top of the sign instead.', 'A localização está desligada. Escreva o nome da paragem impresso no topo do sinal.'); };
+    if (!navigator.geolocation) { off(); return; }
     msg.textContent = t('Finding you…', 'A localizar…');
-    navigator.geolocation.getCurrentPosition(function (pos) {
+    // Android's WebView runs the timeout while its permission dialog is up, so
+    // a first "Allow" that took a few seconds came back as a timeout: one more
+    // try once the position is ours to ask for.
+    var tries = 0, fail = function (e) {
+      if (e && e.code !== 1 && ++tries < 2) { navigator.geolocation.getCurrentPosition(got, fail, { enableHighAccuracy: true, timeout: 20000, maximumAge: 60000 }); return; }
+      if (e && e.code !== 1) msg.textContent = t('No position yet. Step outside or try again, or type the stop name printed at the top of the sign.', 'Ainda sem posição. Saia para a rua ou tente de novo, ou escreva o nome da paragem impresso no topo do sinal.');
+      else off();
+    };
+    var got = function (pos) {
       var ll = [pos.coords.latitude, pos.coords.longitude], best = -1, bd = Infinity;
       NET.stops.forEach(function (s, i) { var d = dist(ll, [s[2], s[3]]); if (d < bd) { bd = d; best = i; } });
       if (best < 0 || bd > 20000) { msg.textContent = t('You seem to be off the island.', 'Parece estar fora da ilha.'); return; }
@@ -1223,7 +1231,8 @@
         // The button sits under the map: bring the stop's next buses into view.
         document.getElementById('busmap').scrollIntoView({ block: 'start' });
       }
-    }, fail, { enableHighAccuracy: true, timeout: 12000, maximumAge: 30000 });
+    };
+    navigator.geolocation.getCurrentPosition(got, fail, { enableHighAccuracy: true, timeout: 12000, maximumAge: 30000 });
   }
 
   function init() {
