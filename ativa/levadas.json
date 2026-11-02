@@ -98,7 +98,7 @@
           {
             "lat": 32.7603,
             "lon": -16.94154,
-            "elev": 1722,
+            "elev": 1692,
             "parking": null,
             "bus": null,
             "lines": []
@@ -106,7 +106,7 @@
           {
             "lat": 32.80594,
             "lon": -16.91146,
-            "elev": 459,
+            "elev": 507,
             "parking": null,
             "bus": null,
             "lines": [
@@ -210,7 +210,7 @@
           {
             "lat": 32.76014,
             "lon": -16.94334,
-            "elev": 1731,
+            "elev": 1819,
             "parking": null,
             "bus": null,
             "lines": []
@@ -218,7 +218,7 @@
           {
             "lat": 32.76488,
             "lon": -16.92108,
-            "elev": 1571,
+            "elev": 1580,
             "parking": {
               "dist": 20,
               "name": "Achada do Teixeira",
@@ -368,7 +368,7 @@
           {
             "lat": 32.76026,
             "lon": -16.94158,
-            "elev": 1722,
+            "elev": 1782,
             "parking": null,
             "bus": null,
             "lines": []
@@ -376,7 +376,7 @@
           {
             "lat": 32.75427,
             "lon": -17.01856,
-            "elev": 973,
+            "elev": 990,
             "parking": {
               "dist": 83,
               "name": "",
@@ -800,7 +800,7 @@
           {
             "lat": 32.73518,
             "lon": -16.88626,
-            "elev": 891,
+            "elev": 881,
             "parking": {
               "dist": 24,
               "name": "",
@@ -1175,7 +1175,7 @@
           {
             "lat": 32.74572,
             "lon": -16.82641,
-            "elev": 612,
+            "elev": 625,
             "parking": {
               "dist": 91,
               "name": "",
@@ -1271,7 +1271,7 @@
           {
             "lat": 32.73538,
             "lon": -16.88622,
-            "elev": 891,
+            "elev": 882,
             "parking": {
               "dist": 43,
               "name": "",
@@ -1646,7 +1646,7 @@
           {
             "lat": 32.74159,
             "lon": -16.89032,
-            "elev": 776,
+            "elev": 874,
             "parking": {
               "dist": 397,
               "name": "",
@@ -1794,7 +1794,7 @@
           {
             "lat": 32.76715,
             "lon": -17.10772,
-            "elev": 1420,
+            "elev": 1416,
             "parking": {
               "dist": 35,
               "name": "",
@@ -1808,7 +1808,7 @@
           {
             "lat": 32.81032,
             "lon": -17.14043,
-            "elev": 1168,
+            "elev": 1132,
             "parking": {
               "dist": 172,
               "name": "",
@@ -1877,7 +1877,7 @@
           {
             "lat": 32.77274,
             "lon": -17.12268,
-            "elev": 1325,
+            "elev": 1308,
             "parking": null,
             "bus": null,
             "lines": []
@@ -1885,7 +1885,7 @@
           {
             "lat": 32.76555,
             "lon": -17.1259,
-            "elev": 994,
+            "elev": 977,
             "parking": null,
             "bus": null,
             "lines": []
@@ -1995,7 +1995,7 @@
           {
             "lat": 32.79968,
             "lon": -17.14471,
-            "elev": 911,
+            "elev": 1110,
             "parking": null,
             "bus": null,
             "lines": []
@@ -2003,7 +2003,7 @@
           {
             "lat": 32.82592,
             "lon": -17.15793,
-            "elev": 838,
+            "elev": 849,
             "parking": {
               "dist": 45,
               "name": "",
@@ -2088,7 +2088,7 @@
           {
             "lat": 32.82592,
             "lon": -17.15793,
-            "elev": 838,
+            "elev": 821,
             "parking": {
               "dist": 45,
               "name": "",
@@ -2102,7 +2102,7 @@
           {
             "lat": 32.84416,
             "lon": -17.15506,
-            "elev": 441,
+            "elev": 475,
             "parking": {
               "dist": 443,
               "name": "",
@@ -2195,7 +2195,7 @@
           {
             "lat": 32.78836,
             "lon": -17.07713,
-            "elev": 713,
+            "elev": 683,
             "parking": null,
             "bus": null,
             "lines": []
@@ -2203,7 +2203,7 @@
           {
             "lat": 32.77907,
             "lon": -17.04932,
-            "elev": 618,
+            "elev": 608,
             "parking": {
               "dist": 139,
               "name": "",
@@ -2353,7 +2353,7 @@
           {
             "lat": 32.77212,
             "lon": -17.06469,
-            "elev": 1297,
+            "elev": 1324,
             "parking": null,
             "bus": null,
             "lines": []
@@ -2361,7 +2361,7 @@
           {
             "lat": 32.7542,
             "lon": -17.01914,
-            "elev": 973,
+            "elev": 994,
             "parking": {
               "dist": 30,
               "name": "",
@@ -2743,7 +2743,7 @@
           {
             "lat": 32.79576,
             "lon": -16.93691,
-            "elev": 674,
+            "elev": 654,
             "parking": null,
             "bus": null,
             "lines": []
@@ -2751,7 +2751,7 @@
           {
             "lat": 32.81695,
             "lon": -16.92462,
-            "elev": 531,
+            "elev": 547,
             "parking": {
               "dist": 11,
               "name": "",
@@ -2832,7 +2832,7 @@
           {
             "lat": 32.75248,
             "lon": -17.21693,
-            "elev": 520,
+            "elev": 473,
             "parking": {
               "dist": 27,
               "name": "Parking Hotel Jardim Atlântico",
@@ -2898,7 +2898,7 @@
           {
             "lat": 32.75296,
             "lon": -17.22401,
-            "elev": 38,
+            "elev": 92,
             "parking": {
               "dist": 69,
               "name": "",
@@ -3115,7 +3115,7 @@
           {
             "lat": 32.74257,
             "lon": -16.96608,
-            "elev": 701,
+            "elev": 695,
             "parking": null,
             "bus": {
               "dist": 124,
@@ -3873,7 +3873,7 @@
           {
             "lat": 32.78216,
             "lon": -16.97857,
-            "elev": 485,
+            "elev": 461,
             "parking": null,
             "bus": null,
             "lines": []
@@ -3956,16 +3956,16 @@
       "access": {
         "ends": [
           {
-            "lat": 33.08104,
-            "lon": -16.33306,
-            "elev": 352,
+            "lat": 33.09042,
+            "lon": -16.32319,
+            "elev": 342,
             "parking": null,
             "bus": null
           },
           {
-            "lat": 33.09042,
-            "lon": -16.32319,
-            "elev": 350,
+            "lat": 33.08104,
+            "lon": -16.33306,
+            "elev": 247,
             "parking": null,
             "bus": null
           }
@@ -4038,14 +4038,14 @@
           {
             "lat": 33.08104,
             "lon": -16.33306,
-            "elev": 352,
+            "elev": 363,
             "parking": null,
             "bus": null
           },
           {
             "lat": 33.09042,
             "lon": -16.32319,
-            "elev": 350,
+            "elev": 319,
             "parking": null,
             "bus": null
           }
@@ -4116,7 +4116,7 @@
           {
             "lat": 32.75437,
             "lon": -17.01816,
-            "elev": 955,
+            "elev": 961,
             "parking": {
               "dist": 122,
               "name": "",
@@ -4406,7 +4406,7 @@
           {
             "lat": 32.77437,
             "lon": -17.02378,
-            "elev": 293,
+            "elev": 313,
             "parking": {
               "dist": 371,
               "name": "",
@@ -4466,7 +4466,7 @@
           {
             "lat": 32.75796,
             "lon": -17.01837,
-            "elev": 863,
+            "elev": 872,
             "parking": {
               "dist": 128,
               "name": "",
@@ -4756,7 +4756,7 @@
           {
             "lat": 32.7592,
             "lon": -17.02071,
-            "elev": 811,
+            "elev": 843,
             "parking": {
               "dist": 366,
               "name": "",
@@ -5114,7 +5114,7 @@
           {
             "lat": 32.75667,
             "lon": -17.01682,
-            "elev": 886,
+            "elev": 880,
             "parking": {
               "dist": 143,
               "name": "",
@@ -5404,7 +5404,7 @@
           {
             "lat": 32.76041,
             "lon": -17.01502,
-            "elev": 805,
+            "elev": 869,
             "parking": {
               "dist": 155,
               "name": "",
@@ -5736,7 +5736,7 @@
           {
             "lat": 32.65863,
             "lon": -16.84394,
-            "elev": 305,
+            "elev": 296,
             "parking": {
               "dist": 384,
               "name": "",
@@ -5750,7 +5750,7 @@
           {
             "lat": 32.65374,
             "lon": -16.84323,
-            "elev": 279,
+            "elev": 276,
             "parking": {
               "dist": 69,
               "name": "",
@@ -5898,7 +5898,7 @@
           {
             "lat": 32.73514,
             "lon": -16.92885,
-            "elev": 1785,
+            "elev": 1784,
             "parking": {
               "dist": 28,
               "name": "",
@@ -5912,7 +5912,7 @@
           {
             "lat": 32.70134,
             "lon": -16.90301,
-            "elev": 1134,
+            "elev": 1160,
             "parking": {
               "dist": 41,
               "name": "",
@@ -6039,7 +6039,7 @@
           {
             "lat": 32.70134,
             "lon": -16.90301,
-            "elev": 1134,
+            "elev": 1146,
             "parking": {
               "dist": 41,
               "name": "",
@@ -6075,7 +6075,7 @@
           {
             "lat": 32.67661,
             "lon": -16.90229,
-            "elev": 584,
+            "elev": 585,
             "parking": {
               "dist": 31,
               "name": "",
@@ -10811,7 +10811,7 @@
           {
             "lat": 32.75399,
             "lon": -17.13297,
-            "elev": 1276,
+            "elev": 1259,
             "parking": {
               "dist": 133,
               "name": "",
@@ -10825,7 +10825,7 @@
           {
             "lat": 32.76554,
             "lon": -17.12552,
-            "elev": 1022,
+            "elev": 978,
             "parking": null,
             "bus": null,
             "lines": []
@@ -10916,7 +10916,7 @@
           {
             "lat": 32.75399,
             "lon": -17.13297,
-            "elev": 1276,
+            "elev": 1259,
             "parking": {
               "dist": 133,
               "name": "",
@@ -10930,7 +10930,7 @@
           {
             "lat": 32.76013,
             "lon": -17.12341,
-            "elev": 1122,
+            "elev": 1129,
             "parking": null,
             "bus": null,
             "lines": []
@@ -11022,7 +11022,7 @@
           {
             "lat": 32.7569,
             "lon": -17.11199,
-            "elev": 1334,
+            "elev": 1328,
             "parking": null,
             "bus": null,
             "lines": []
@@ -11030,7 +11030,7 @@
           {
             "lat": 32.75399,
             "lon": -17.13297,
-            "elev": 1276,
+            "elev": 1275,
             "parking": {
               "dist": 133,
               "name": "",
@@ -11122,7 +11122,7 @@
           {
             "lat": 32.7577,
             "lon": -17.12053,
-            "elev": 1267,
+            "elev": 1176,
             "parking": null,
             "bus": null,
             "lines": []
@@ -11130,7 +11130,7 @@
           {
             "lat": 32.76095,
             "lon": -17.13357,
-            "elev": 1068,
+            "elev": 1112,
             "parking": null,
             "bus": null,
             "lines": []
@@ -11225,7 +11225,7 @@
           {
             "lat": 32.77145,
             "lon": -17.15371,
-            "elev": 1055,
+            "elev": 1172,
             "parking": {
               "dist": 289,
               "name": "",
@@ -11239,7 +11239,7 @@
           {
             "lat": 32.75882,
             "lon": -17.13435,
-            "elev": 1048,
+            "elev": 1047,
             "parking": {
               "dist": 437,
               "name": "Rabaçal",
@@ -11335,7 +11335,7 @@
           {
             "lat": 32.76244,
             "lon": -17.09942,
-            "elev": 1411,
+            "elev": 1416,
             "parking": {
               "dist": 31,
               "name": "",
@@ -11349,7 +11349,7 @@
           {
             "lat": 32.76472,
             "lon": -17.12693,
-            "elev": 984,
+            "elev": 1014,
             "parking": null,
             "bus": null,
             "lines": []
@@ -11417,7 +11417,7 @@
           {
             "lat": 32.76165,
             "lon": -17.13494,
-            "elev": 1048,
+            "elev": 1018,
             "parking": null,
             "bus": null,
             "lines": []
@@ -11425,7 +11425,7 @@
           {
             "lat": 32.75372,
             "lon": -17.14914,
-            "elev": 1005,
+            "elev": 987,
             "parking": {
               "dist": 6,
               "name": "",
@@ -11501,7 +11501,7 @@
           {
             "lat": 32.75462,
             "lon": -17.13399,
-            "elev": 1282,
+            "elev": 1276,
             "parking": {
               "dist": 32,
               "name": "Rabaçal",
@@ -11515,7 +11515,7 @@
           {
             "lat": 32.75588,
             "lon": -17.14237,
-            "elev": 1035,
+            "elev": 985,
             "parking": null,
             "bus": null,
             "lines": []
@@ -11581,7 +11581,7 @@
           {
             "lat": 32.74832,
             "lon": -17.12539,
-            "elev": 1282,
+            "elev": 1287,
             "parking": null,
             "bus": null,
             "lines": []
@@ -11589,7 +11589,7 @@
           {
             "lat": 32.75373,
             "lon": -17.13315,
-            "elev": 1276,
+            "elev": 1271,
             "parking": {
               "dist": 121,
               "name": "",
@@ -11689,7 +11689,7 @@
           {
             "lat": 32.74326,
             "lon": -16.70104,
-            "elev": 81,
+            "elev": 71,
             "parking": {
               "dist": 12,
               "name": "",
@@ -12085,7 +12085,7 @@
           {
             "lat": 32.74244,
             "lon": -16.68273,
-            "elev": 44,
+            "elev": 59,
             "parking": null,
             "bus": null,
             "lines": []
@@ -12213,7 +12213,7 @@
           {
             "lat": 32.76759,
             "lon": -16.94834,
-            "elev": 1107,
+            "elev": 1074,
             "parking": null,
             "bus": null,
             "lines": []
@@ -12221,7 +12221,7 @@
           {
             "lat": 32.78371,
             "lon": -16.90597,
-            "elev": 893,
+            "elev": 897,
             "parking": {
               "dist": 88,
               "name": "",
@@ -12301,7 +12301,7 @@
           {
             "lat": 32.78095,
             "lon": -16.90706,
-            "elev": 917,
+            "elev": 895,
             "parking": {
               "dist": 309,
               "name": "",
@@ -12315,7 +12315,7 @@
           {
             "lat": 32.77972,
             "lon": -16.89667,
-            "elev": 869,
+            "elev": 887,
             "parking": {
               "dist": 32,
               "name": "",
@@ -12409,14 +12409,14 @@
           {
             "lat": 33.09379,
             "lon": -16.29959,
-            "elev": 375,
+            "elev": 329,
             "parking": null,
             "bus": null
           },
           {
             "lat": 33.09668,
             "lon": -16.31475,
-            "elev": 171,
+            "elev": 298,
             "parking": null,
             "bus": null
           }
@@ -12508,7 +12508,7 @@
           {
             "lat": 32.73547,
             "lon": -16.92873,
-            "elev": 1785,
+            "elev": 1830,
             "parking": {
               "dist": 60,
               "name": "",
@@ -12522,7 +12522,7 @@
           {
             "lat": 32.76014,
             "lon": -16.94334,
-            "elev": 1731,
+            "elev": 1763,
             "parking": null,
             "bus": null,
             "lines": []
@@ -12680,7 +12680,7 @@
           {
             "lat": 32.71097,
             "lon": -16.98685,
-            "elev": 1239,
+            "elev": 1261,
             "parking": {
               "dist": 9,
               "name": "",
@@ -12694,7 +12694,7 @@
           {
             "lat": 32.75333,
             "lon": -17.02107,
-            "elev": 996,
+            "elev": 948,
             "parking": {
               "dist": 3,
               "name": "Startpoint PR12",
@@ -13073,7 +13073,7 @@
           {
             "lat": 32.72598,
             "lon": -16.92474,
-            "elev": 1663,
+            "elev": 1622,
             "parking": {
               "dist": 470,
               "name": "",
@@ -13087,7 +13087,7 @@
           {
             "lat": 32.6953,
             "lon": -16.90936,
-            "elev": 982,
+            "elev": 969,
             "parking": null,
             "bus": null,
             "lines": []
@@ -13169,7 +13169,7 @@
           {
             "lat": 32.74843,
             "lon": -17.21012,
-            "elev": 563,
+            "elev": 549,
             "parking": {
               "dist": 517,
               "name": "Parque Público",
@@ -13227,7 +13227,7 @@
           {
             "lat": 32.73775,
             "lon": -17.21153,
-            "elev": 44,
+            "elev": 42,
             "parking": {
               "dist": 88,
               "name": "",
@@ -13325,7 +13325,7 @@
           {
             "lat": 32.75762,
             "lon": -17.0604,
-            "elev": 1553,
+            "elev": 1542,
             "parking": {
               "dist": 96,
               "name": "",
@@ -13339,7 +13339,7 @@
           {
             "lat": 32.74032,
             "lon": -17.06092,
-            "elev": 1518,
+            "elev": 1535,
             "parking": null,
             "bus": null,
             "lines": []
@@ -13456,7 +13456,7 @@
           {
             "lat": 32.78763,
             "lon": -17.13819,
-            "elev": 1056,
+            "elev": 1220,
             "parking": null,
             "bus": null,
             "lines": []
@@ -13464,7 +13464,7 @@
           {
             "lat": 32.74584,
             "lon": -17.14723,
-            "elev": 819,
+            "elev": 846,
             "parking": {
               "dist": 348,
               "name": "",
@@ -13558,14 +13558,14 @@
           {
             "lat": 33.07503,
             "lon": -16.32034,
-            "elev": 138,
+            "elev": 143,
             "parking": null,
             "bus": null
           },
           {
             "lat": 33.08382,
             "lon": -16.34086,
-            "elev": 130,
+            "elev": 104,
             "parking": null,
             "bus": null
           }
@@ -13693,7 +13693,7 @@
           {
             "lat": 32.81815,
             "lon": -17.20248,
-            "elev": 922,
+            "elev": 930,
             "parking": null,
             "bus": null,
             "lines": []
@@ -13701,7 +13701,7 @@
           {
             "lat": 32.85176,
             "lon": -17.16648,
-            "elev": 403,
+            "elev": 409,
             "parking": {
               "dist": 25,
               "name": "",
