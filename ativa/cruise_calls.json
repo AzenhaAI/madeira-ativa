@@ -1,8 +1,8 @@
 {
   "note": "Ship calls at the port of Funchal from APRAM. Times are Madeira local time, as the port publishes them. Accumulates; a call no longer listed before its arrival is marked superseded.",
   "source": "https://apram.pt/movimento-navios?port=ptfnc",
-  "fetched": "2026-10-29T11:48:59",
-  "count": 76,
+  "fetched": "2026-11-01T12:03:53",
+  "count": 77,
   "calls": [
     {
       "ship": "SANTA MARIA MANUELA",
@@ -648,10 +648,20 @@
       "ship": "GULDEN LEEUW",
       "berth": "Funchal - Terminal Norte",
       "agent": "Wilhelmsen Port Services Portugal, S.A.",
+      "arrival": "2026-10-30T12:15",
+      "from": "Villagarcia De Arosa",
+      "departure": "2026-11-02T12:00",
+      "to": "Santa Cruz De Tenerife",
+      "superseded": false
+    },
+    {
+      "ship": "GULDEN LEEUW",
+      "berth": "Funchal - Terminal Norte",
+      "agent": "Wilhelmsen Port Services Portugal, S.A.",
       "arrival": "2026-10-30T15:00",
       "from": "Villagarcia De Arosa",
       "departure": "2026-11-02T18:00",
-      "to": "Portos Desconhecidos / Alto Mar (Ao Largo)",
+      "to": "Santa Cruz De Tenerife",
       "superseded": false
     },
     {

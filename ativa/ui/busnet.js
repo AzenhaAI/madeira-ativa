@@ -1300,8 +1300,18 @@
         if (ll) { el.dataset.ll = v; el.value = el.dataset.label = sp.get(k + 'Name') || nearLabel(ll); } else el.value = v;
         delete el.dataset.example;
       });
+      // &at=09:30 and &date=2026-11-04 fill "Leave at", for a link to a
+      // given journey.
+      var at = sp.get('at'), on = sp.get('date');
+      if (at && /^\d{1,2}:\d{2}$/.test(at)) document.getElementById('bnTime').value = at.padStart(5, '0');
+      if (on && /^\d{4}-\d{2}-\d{2}$/.test(on)) document.getElementById('bnDate').value = on;
       if (any) {
-        if (sp.get('from') && sp.get('to')) search();
+        if (sp.get('from') && sp.get('to')) {
+          search();
+          // A link to a journey wants the journey: the question and the
+          // departures under it, not the page's introduction.
+          (document.getElementById('bnForm').previousElementSibling || document.getElementById('bnForm')).scrollIntoView({ block: 'start' });
+        }
         else {
           // Point at the empty start without focusing it: a programmatic focus
           // inside the app's WebView raised the keyboard and hung the page.

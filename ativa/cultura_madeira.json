@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-10-29T11:34:09",
-  "count": 148,
+  "fetched": "2026-11-02T13:33:05",
+  "count": 153,
   "items": [
     {
       "id": "114",
@@ -1339,7 +1339,7 @@
       "title": "MadIT 2026 - Madeira Innovation Talks – Contadores de Histórias de Inovação - Para Partilhar & Inspirar",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/conferencias/madit-2026-madeira-innovation-talks-contadores-de-historias-de-inovacao-para-partilhar-inspirar",
       "start": "2026-10-30",
-      "end": "2026-10-30",
+      "end": "2026-11-01",
       "time": "09:30",
       "place": "Auditório do Centro de Congressos da Madeira",
       "category": "Conference"
@@ -1415,6 +1415,16 @@
       "category": "Music"
     },
     {
+      "id": "411",
+      "title": "Espetáculo “A Lâmpada Mágica – Uma História de Natal”",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/espetaculo-a-lampada-magica-uma-historia-de-natal",
+      "start": "2026-11-04",
+      "end": "2026-11-06",
+      "time": "21:00",
+      "place": "Auditório do Centro de Congressos da Madeira",
+      "category": "Theatre"
+    },
+    {
       "id": "395",
       "title": "\"Dear Lourdes,\"",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/dear-lourdes",
@@ -1422,6 +1432,16 @@
       "end": "2027-01-08",
       "time": "18:00",
       "place": "Galeria Tratuário",
+      "category": "Exhibition"
+    },
+    {
+      "id": "406",
+      "title": "\"Profundo: Light, Layer, & Form\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/profundo-light-layer-form",
+      "start": "2026-11-06",
+      "end": "2027-01-05",
+      "time": "18:00",
+      "place": "Galeria Restock",
       "category": "Exhibition"
     },
     {
@@ -1455,6 +1475,26 @@
       "category": "Music"
     },
     {
+      "id": "414",
+      "title": "V Encontro de Bandas de Santana 2026",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/v-encontro-de-bandas-de-santana",
+      "start": "2026-11-08",
+      "end": "2026-11-08",
+      "time": "15:00",
+      "place": "Polidesportivo do Faial",
+      "category": "Music"
+    },
+    {
+      "id": "412",
+      "title": "\"Duas Casas, Um Só Coração\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/duas-casas-um-so-coracao",
+      "start": "2026-11-12",
+      "end": "2026-11-12",
+      "time": "19:00",
+      "place": "Fórum Machico",
+      "category": "Theatre"
+    },
+    {
       "id": "397",
       "title": "\"Sons e Sabores da Madeira\" 2026",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/sons-e-sabores-da-madeira-2026",
@@ -1482,6 +1522,16 @@
       "end": "2026-11-22",
       "time": "16:30",
       "place": "Igreja de Nossa Senhora do Monte",
+      "category": "Music"
+    },
+    {
+      "id": "413",
+      "title": "Concerto de Natal 2026",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concerto-de-natal-2026",
+      "start": "2026-12-12",
+      "end": "2026-12-13",
+      "time": "18:00",
+      "place": "Auditório do Centro de Congressos da Madeira",
       "category": "Music"
     }
   ]
