@@ -1322,7 +1322,7 @@
         }
         // After the trail list below has rendered, or the page is still short and
         // the browser lands somewhere else.
-        setTimeout(function () { document.getElementById('bnForm').scrollIntoView({ block: 'start' }); }, 600);
+        setTimeout(function () { var f = document.getElementById('bnForm'); (f.previousElementSibling || f).scrollIntoView({ block: 'start' }); }, 600);
       }
     });
   }
