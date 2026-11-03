@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-11-02T13:33:05",
-  "count": 153,
+  "fetched": "2026-11-03T12:49:12",
+  "count": 155,
   "items": [
     {
       "id": "114",
@@ -1415,6 +1415,16 @@
       "category": "Music"
     },
     {
+      "id": "417",
+      "title": "Coletiva na Galeria ESPAÇOMAR",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/pequenos-rumores-na-casa-dos-passaros",
+      "start": "2026-11-03",
+      "end": "2027-02-12",
+      "time": "18:00",
+      "place": "Galeria Espaçomar - Escola Básica Secundária Gonçalves Zarco (EBSGZ)",
+      "category": "Exhibition"
+    },
+    {
       "id": "411",
       "title": "Espetáculo “A Lâmpada Mágica – Uma História de Natal”",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/espetaculo-a-lampada-magica-uma-historia-de-natal",
@@ -1513,6 +1523,16 @@
       "time": "18:00",
       "place": "Cine Teatro de Santo António",
       "category": "Theatre"
+    },
+    {
+      "id": "415",
+      "title": "Festival Internacional de Bandolins da Madeira | Suzuna Takahashi e Sotiris Athanasiou",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/festival-internacional-de-bandolins-da-madeira-suzuna-takahashi-e-sotiris-athanasiou",
+      "start": "2026-11-14",
+      "end": "2026-11-14",
+      "time": "18:00",
+      "place": "Museu Henrique e Francisco Franco",
+      "category": "Music"
     },
     {
       "id": "384",

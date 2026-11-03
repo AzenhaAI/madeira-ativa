@@ -113,6 +113,12 @@
   "time": "",
   "fetched": "2026-11-01"
  },
+ "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/pequenos-rumores-na-casa-dos-passaros": {
+  "about": "A Galeria espaçomar, reabre as suas portas com a inauguração da exposição \"Pequenos.Rumores.Na.Casa.Dos.Pássaros\". Uma mostra que reúne cerca de 54 obras de mais de 20 artistas, com direção artística de Paulo Sérgio BEJu.",
+  "price": "",
+  "time": "",
+  "fetched": "2026-11-03"
+ },
  "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/profundo-light-layer-form": {
   "about": "De Malcom Dare. Indo além da fotografia clássica, os seus mais recentes trabalhos exploram a construção física e visual da profundidade, desafiando as fronteiras entre imagem, pintura e objeto.",
   "price": "",
@@ -159,7 +165,7 @@
   "about": "Em homenagem a Santa Cecília, padroeira dos músicos, a Banda Municipal do Funchal – Artistas Funchalenses apresenta um concerto especial na Igreja de Nossa Senhora do Monte, num momento de celebração da música enquanto expressão de fé…",
   "price": "",
   "time": "",
-  "fetched": "2026-10-26"
+  "fetched": "2026-11-03"
  },
  "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concertos-de-outubro-orquestra-classica-da-madeira": {
   "about": "Dias 1, 3, 6, 10, 17, 21 e 31 de outubro Dia 1 de outubro | 20h00 Auditório do Centro de Congressos da Madeira No âmbito das celebrações dos 50 Anos da Autonomia da Região Autónoma da Madeira, a Orquestra Clássica da Madeira, sob a direção…",
@@ -190,6 +196,12 @@
   "price": "",
   "time": "",
   "fetched": "2026-11-01"
+ },
+ "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/festival-internacional-de-bandolins-da-madeira-suzuna-takahashi-e-sotiris-athanasiou": {
+  "about": "",
+  "price": "Free",
+  "time": "",
+  "fetched": "2026-11-03"
  },
  "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/festival-internacional-de-guitarras-da-madeira-8a-edicao": {
   "about": "O Festival Internacional de Guitarras da Madeira está de regresso.",
@@ -273,7 +285,7 @@
   "about": "O Festival de Teatro de Machico está de regresso para a sua 22.ª edição, reafirmando-se como um dos momentos de destaque da programação cultural do concelho.",
   "price": "",
   "time": "",
-  "fetched": "2026-10-26"
+  "fetched": "2026-11-03"
  },
  "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/o-rei-vai-nu": {
   "about": "A Companhia Contigo Teatro, apresenta a peça \"O Rei vai Nu\", inspirada no conto clássico do célebre escritor dinamarquês Hans Christian Andersen. Com dramaturgia e encenação de Diogo Correia Pinto.",

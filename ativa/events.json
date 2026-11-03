@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-02",
+  "generated_at": "2026-11-03",
   "events": [
     {
       "mode": "festivals",
       "name": "\"31 de Fevereiro com a Ribeira Seca - II\"",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "location": "Casa da Cultura de Santa Cruz",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/31-de-fevereiro-com-a-ribeira-seca-ii",
       "event_type": "festival",
@@ -15,7 +15,7 @@
     {
       "mode": "festivals",
       "name": "\"40 Anos | 40 Fotografias\"",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "location": "Direção Regional dos Arquivos, das Bibliotecas e do Livro",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/40-anos-40-fotografias",
       "event_type": "festival",
@@ -26,7 +26,7 @@
     {
       "mode": "festivals",
       "name": "\"Detalhes Invisíveis\"",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "location": "Casa da Cultura de Câmara de Lobos",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/detalhes-invisiveis",
       "event_type": "festival",
@@ -37,7 +37,7 @@
     {
       "mode": "festivals",
       "name": "\"Imagens e Memórias do Porto Santo\"",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "location": "Câmara Municipal do Porto Santo",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/imagens-e-memorias-do-porto-santo",
       "event_type": "festival",
@@ -49,7 +49,7 @@
     {
       "mode": "festivals",
       "name": "\"Mudar a Escola para Mudar o Mundo\"",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "location": "PORTA 33",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/mudar-a-escola-para-mudar-o-mundo",
       "event_type": "festival",
@@ -60,7 +60,7 @@
     {
       "mode": "festivals",
       "name": "\"O Caminho nas Águas. Depois da Última Ceia\"",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "location": "Núcleo Histórico de Santo Amaro - Torre do Capitão",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/o-caminho-nas-aguas-depois-da-ultima-ceia",
       "event_type": "festival",
@@ -70,20 +70,20 @@
     },
     {
       "mode": "festivals",
-      "name": "Coco Screening",
-      "date": "2026-11-02",
-      "location": "Beanup Specialty Coffee & Brunch, Funchal",
-      "url": "",
+      "name": "Coletiva na Galeria ESPAÇOMAR",
+      "date": "2026-11-03",
+      "location": "Galeria Espaçomar - Escola Básica Secundária Gonçalves Zarco (EBSGZ)",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/pequenos-rumores-na-casa-dos-passaros",
       "event_type": "festival",
-      "time": "18:30",
-      "price": "Free",
-      "organizer": "Beanup Coffee & Brunch",
-      "category": "cinema"
+      "time": "18:00",
+      "category": "exhibition",
+      "date_end": "2027-02-12",
+      "about": "A Galeria espaçomar, reabre as suas portas com a inauguração da exposição \"Pequenos.Rumores.Na.Casa.Dos.Pássaros\". Uma mostra que reúne cerca de 54 obras de mais de 20 artistas, com direção artística de Paulo Sérgio BEJu."
     },
     {
       "mode": "festivals",
       "name": "Duo Bandonica – Projeto Artístico “Fala-me de Música”",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "location": "Madeira",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/duo-bandonica-projeto-artistico-fala-me-de-musica1",
       "event_type": "festival",
@@ -95,7 +95,7 @@
     {
       "mode": "festivals",
       "name": "Exhibition · Funchal",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "location": "Funchal",
       "url": "https://t.me/festas_madeira/2600",
       "event_type": "festival",
@@ -104,7 +104,7 @@
     {
       "mode": "festivals",
       "name": "Festival Internacional de Guitarras da Madeira - 8ª Edição",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "location": "Madeira",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/festival-internacional-de-guitarras-da-madeira-8a-edicao",
       "event_type": "festival",
@@ -115,7 +115,7 @@
     {
       "mode": "festivals",
       "name": "Festival de Teatro de Machico 2026",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "location": "Fórum Machico",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/festival-de-teatro-de-machico-2026",
       "event_type": "festival",
@@ -126,7 +126,7 @@
     {
       "mode": "festivals",
       "name": "Formação gratuita Teórico-prática",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "location": "São Vicente",
       "url": "https://t.me/festas_madeira/2522",
       "event_type": "festival",
@@ -135,7 +135,7 @@
     {
       "mode": "festivals",
       "name": "Oficinas de Desenho Out. 2026 - Jun. 2027",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "location": "PORTA33",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/oficinas-de-desenho",
       "event_type": "festival",
@@ -146,7 +146,7 @@
     {
       "mode": "festivals",
       "name": "Programa InfantoJuvenil Out · Nov · Dez 2026",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "location": "Direção Regional dos Arquivos, das Bibliotecas e do Livro",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/programa-infantojuvenil-out-nov-dez-2026",
       "event_type": "festival",
@@ -157,7 +157,7 @@
     {
       "mode": "festivals",
       "name": "“Blessed Ground”",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "location": "Museu de Fotografia da Madeira - Atelier Vicente's",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/blessed-ground",
       "event_type": "festival",
@@ -168,7 +168,7 @@
     {
       "mode": "festivals",
       "name": "“Nostalgic Madeira Music”",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "location": "Instituto do Vinho da Madeira",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/nostalgic-madeira-music",
       "event_type": "festival",
@@ -179,7 +179,7 @@
     {
       "mode": "festivals",
       "name": "“O Rei vai Nu”",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "location": "Teatro Municipal Baltazar Dias",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/o-rei-vai-nu",
       "event_type": "festival",
@@ -193,7 +193,7 @@
     {
       "mode": "festivals",
       "name": "“Rituais de Passagem: A MORTE”",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "location": "Museu Etnográfico da Madeira",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/rituais-de-passagem-a-morte",
       "event_type": "festival",
@@ -227,6 +227,15 @@
     },
     {
       "mode": "festivals",
+      "name": "Family · Sé",
+      "date": "2026-11-04",
+      "location": "Sé",
+      "url": "https://t.me/festas_madeira/2750",
+      "event_type": "festival",
+      "category": "family"
+    },
+    {
+      "mode": "festivals",
       "name": "Kizomba Beginners/ Open Level",
       "date": "2026-11-04",
       "location": "Funchal, Marina (below beerhouse)",
@@ -239,15 +248,15 @@
     },
     {
       "mode": "festivals",
-      "name": "The Emperor’s New Clothes, O Rei Vai Nu",
+      "name": "PIANO MAN",
       "date": "2026-11-04",
-      "location": "Teatro Municipal Baltazar Dias, Funchal",
+      "location": "MAMMA – Museum of Art and Music of Madeira, Funchal",
       "url": "",
       "event_type": "festival",
-      "time": "15:00",
-      "price": "€4",
-      "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
-      "category": "theatre"
+      "time": "17:30",
+      "price": "€25",
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert"
     },
     {
       "mode": "festivals",
@@ -265,12 +274,60 @@
     },
     {
       "mode": "festivals",
+      "name": "Ella Fitzgerald to Louis Armstrong",
+      "date": "2026-11-05",
+      "location": "MAMMA – Museum of Art and Music of Madeira, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "18:30",
+      "price": "€25",
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
       "name": "Exhibition · Sé",
       "date": "2026-11-05",
       "location": "Sé",
       "url": "https://t.me/festas_madeira/2715",
       "event_type": "festival",
       "category": "exhibition"
+    },
+    {
+      "mode": "festivals",
+      "name": "The Emperor’s New Clothes, O Rei Vai Nu",
+      "date": "2026-11-05",
+      "location": "Teatro Municipal Baltazar Dias, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "15:00",
+      "price": "€4",
+      "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
+      "category": "theatre"
+    },
+    {
+      "mode": "festivals",
+      "name": "VIDA PERPÉTUA",
+      "date": "2026-11-05",
+      "location": "Largo do Socorro · T1, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "18:30",
+      "price": "Free",
+      "organizer": "Associação Cultural do Socorro",
+      "category": "culture"
+    },
+    {
+      "mode": "festivals",
+      "name": "insuLAR: SALL1M",
+      "date": "2026-11-05",
+      "location": "Largo do Socorro · T1, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "21:00",
+      "price": "Free",
+      "organizer": "Associação Cultural do Socorro",
+      "category": "concert"
     },
     {
       "mode": "festivals",
@@ -304,15 +361,39 @@
     },
     {
       "mode": "festivals",
-      "name": "The Emperor’s New Clothes, O Rei Vai Nu",
+      "name": "SOUNDVIEW: LI-POLYMER + GLITCH VISUAL ARTISTS",
       "date": "2026-11-06",
-      "location": "Teatro Municipal Baltazar Dias, Funchal",
+      "location": "Largo do Socorro · T1, Funchal",
       "url": "",
       "event_type": "festival",
-      "time": "20:00",
-      "price": "€4",
-      "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
-      "category": "theatre"
+      "time": "21:00",
+      "price": "Free",
+      "organizer": "Associação Cultural do Socorro",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "Simon & Garfunkel",
+      "date": "2026-11-06",
+      "location": "MAMMA – Museum of Art and Music of Madeira, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "17:30",
+      "price": "€25",
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "Tango Soirée",
+      "date": "2026-11-06",
+      "location": "Hotel Madeira, R. Ivens 21, São Martinho, 9000-046 Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "19:30",
+      "price": "Free",
+      "organizer": "Hotel Madeira",
+      "category": "dance"
     },
     {
       "mode": "festivals",
@@ -346,6 +427,30 @@
       "url": "https://t.me/festas_madeira/2745",
       "event_type": "festival",
       "category": "arraial"
+    },
+    {
+      "mode": "festivals",
+      "name": "Atlas Round Table | Reinvention",
+      "date": "2026-11-07",
+      "location": "Pátio Brunch & Bistrô, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "11:00",
+      "price": "Free",
+      "organizer": "Atlas Round Table",
+      "category": "culture"
+    },
+    {
+      "mode": "festivals",
+      "name": "CAETANO NERVOSO",
+      "date": "2026-11-07",
+      "location": "Largo do Socorro · Árvore, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "19:00",
+      "price": "Free",
+      "organizer": "Associação Cultural do Socorro",
+      "category": "concert"
     },
     {
       "mode": "festivals",
@@ -414,6 +519,18 @@
     },
     {
       "mode": "festivals",
+      "name": "Madeira Embroidery Workshop",
+      "date": "2026-11-07",
+      "location": "Centro Cívico do Estreito de Câmara de Lobos",
+      "url": "",
+      "event_type": "festival",
+      "time": "10:00",
+      "price": "€50",
+      "organizer": "Bailha",
+      "category": "workshop"
+    },
+    {
+      "mode": "festivals",
       "name": "Madeira Piano Fest 2026",
       "date": "2026-11-07",
       "location": "Teatro Municipal Baltazar Dias",
@@ -451,9 +568,9 @@
     },
     {
       "mode": "festivals",
-      "name": "Orquestra Clássica da Madeira | Misha Katz & Dmitry Demyashkin",
+      "name": "Orquestra Clássica da Madeira: Concerto com Dmitry Demyashkin & Misha Katz",
       "date": "2026-11-07",
-      "location": "Centro Congressos da Madeira",
+      "location": "Centro de Congressos da Madeira, Funchal",
       "url": "https://www.ticketline.pt/pt/evento/orq-classica-da-madeira-m-katz-d-demyashkin-108848",
       "event_type": "festival",
       "time": "18:00",
@@ -533,6 +650,39 @@
     },
     {
       "mode": "festivals",
+      "name": "BANDA MUNICIPAL DE MACHICO",
+      "date": "2026-11-08",
+      "location": "Faial",
+      "url": "https://t.me/festas_madeira/2751",
+      "event_type": "festival",
+      "category": "folklore"
+    },
+    {
+      "mode": "festivals",
+      "name": "How to Read a Fleece: First Steps in Choosing Wood Wool",
+      "date": "2026-11-08",
+      "location": "Caminho da Quinta do Palheiro, 32, 9060-255, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "10:00",
+      "price": "€21.15",
+      "organizer": "Oh Lã Lã Fiber Lab",
+      "category": "workshop"
+    },
+    {
+      "mode": "festivals",
+      "name": "MAMMA MIA!",
+      "date": "2026-11-08",
+      "location": "MAMMA – Museum of Art and Music of Madeira, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "18:00",
+      "price": "€25",
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
       "name": "Porto Moniz Stand Up Comedy Fest",
       "date": "2026-11-08",
       "location": "Centro Multiusos do Porto Moniz",
@@ -542,6 +692,18 @@
       "price": "Free",
       "organizer": "Município do Porto Moniz",
       "category": "theatre"
+    },
+    {
+      "mode": "festivals",
+      "name": "Rock Style NEW!",
+      "date": "2026-11-08",
+      "location": "English Church, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "18:00",
+      "price": "€20",
+      "organizer": "Madeira Concerts",
+      "category": "concert"
     },
     {
       "mode": "festivals",
@@ -621,6 +783,18 @@
     },
     {
       "mode": "festivals",
+      "name": "LATIN JAZZ",
+      "date": "2026-11-11",
+      "location": "MAMMA, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "18:00",
+      "price": "€25",
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
       "name": "Madeira PianoFest",
       "date": "2026-11-11",
       "location": "Teatro Municipal Baltazar Dias, Funchal",
@@ -666,6 +840,27 @@
       "price": "Free",
       "category": "theatre",
       "about": "A Comissão de Proteção de Crianças e Jovens de Machico, com a colaboração da Câmara Municipal de Machico leva ao palco do Fórum Machico, a peça de teatro \"Duas Casas, Um Só Coração\", do grupo de teatro ADVESSOS, da Associação Avesso e…"
+    },
+    {
+      "mode": "festivals",
+      "name": "DUQS CASAS, UMSO",
+      "date": "2026-11-12",
+      "location": "Machico",
+      "url": "https://t.me/festas_madeira/2752",
+      "event_type": "festival",
+      "category": "family"
+    },
+    {
+      "mode": "festivals",
+      "name": "LISTENING TO LIGHT de MARIA ALVES",
+      "date": "2026-11-12",
+      "location": "Largo do Socorro · T1, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "19:00",
+      "price": "Free",
+      "organizer": "Associação Cultural do Socorro",
+      "category": "concert"
     },
     {
       "mode": "festivals",
@@ -733,6 +928,30 @@
       "category": "concert"
     },
     {
+      "mode": "festivals",
+      "name": "NIKO SVETIEV",
+      "date": "2026-11-13",
+      "location": "Largo do Socorro · Árvore, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "19:00",
+      "price": "Free",
+      "organizer": "Associação Cultural do Socorro",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "Ser una Portu Venezolana es una Vaina Muito Arreicha! - Katy Martins",
+      "date": "2026-11-13",
+      "location": "Casa da Cultura de Câmara de Lobos",
+      "url": "",
+      "event_type": "festival",
+      "time": "20:00",
+      "price": "Free",
+      "organizer": "Mira",
+      "category": "theatre"
+    },
+    {
       "mode": "pro",
       "name": "Mountain Bike Meeting, Guided Enduro and Mill Visit",
       "date": "2026-11-13",
@@ -782,6 +1001,18 @@
     },
     {
       "mode": "festivals",
+      "name": "DMR JAZZ",
+      "date": "2026-11-14",
+      "location": "Largo do Socorro · T1, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "21:00",
+      "price": "Free",
+      "organizer": "Associação Cultural do Socorro",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
       "name": "EXPRESSA-te Arts Festival",
       "date": "2026-11-14",
       "location": "Centro de Juventude do Funchal",
@@ -791,6 +1022,17 @@
       "price": "€20",
       "organizer": "Portal das Artes",
       "category": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Festival Internacional de Bandolins da Madeira | Suzuna Takahashi e Sotiris Athanasiou",
+      "date": "2026-11-14",
+      "location": "Museu Henrique e Francisco Franco",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/festival-internacional-de-bandolins-da-madeira-suzuna-takahashi-e-sotiris-athanasiou",
+      "event_type": "festival",
+      "time": "18:00",
+      "price": "Free",
+      "category": "concert"
     },
     {
       "mode": "festivals",
@@ -827,6 +1069,15 @@
       "price": "€20",
       "organizer": "Associação dos Amigos do Conservatório de Música da Madeira",
       "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "Museu Henrique e Francisco Franco",
+      "date": "2026-11-14",
+      "location": "Santa Luzia",
+      "url": "https://t.me/festas_madeira/2753",
+      "event_type": "festival",
+      "category": "festival"
     },
     {
       "mode": "festivals",
@@ -897,6 +1148,18 @@
       "event_type": "orienteering"
     },
     {
+      "mode": "festivals",
+      "name": "FROM QUEEN TO CHESS",
+      "date": "2026-11-15",
+      "location": "MAMMA – Museum of Art and Music of Madeira, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "18:00",
+      "price": "€25",
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert"
+    },
+    {
       "mode": "trail",
       "name": "Orientação: V Ori dos Castanheiros (Urbana)",
       "date": "2026-11-15",
@@ -927,6 +1190,18 @@
       "price": "€5",
       "organizer": "ATEF – Associação Teatro Experimental do Funchal",
       "category": "theatre"
+    },
+    {
+      "mode": "festivals",
+      "name": "BIG DOUBLE BLUES",
+      "date": "2026-11-18",
+      "location": "MAMMA, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "18:00",
+      "price": "€25",
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert"
     },
     {
       "mode": "festivals",
@@ -978,6 +1253,18 @@
     },
     {
       "mode": "festivals",
+      "name": "Jazz Divas!",
+      "date": "2026-11-19",
+      "location": "MAMMA – Museum of Art and Music of Madeira, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "18:30",
+      "price": "€25",
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
       "name": "Bora Ler! Young Readers’ Book Club, November",
       "date": "2026-11-20",
       "location": "Arquivo e Biblioteca da Madeira, Funchal",
@@ -990,6 +1277,18 @@
     },
     {
       "mode": "festivals",
+      "name": "FURIOUS FLETCH",
+      "date": "2026-11-20",
+      "location": "Largo do Socorro · Árvore, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "19:00",
+      "price": "Free",
+      "organizer": "Associação Cultural do Socorro",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
       "name": "Fantasy & Echoes of Low Brass",
       "date": "2026-11-20",
       "location": "Conservatório - Escola Profissional das Artes da Madeira, Eng.º Luiz Peter Clode, Funchal",
@@ -998,6 +1297,30 @@
       "time": "20:30",
       "price": "Free",
       "organizer": "O Conservatório – Escola das Artes da Madeira",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "NOMADIS Dance Debut Performance",
+      "date": "2026-11-20",
+      "location": "Fórum Machico",
+      "url": "",
+      "event_type": "festival",
+      "time": "19:00",
+      "price": "Free",
+      "organizer": "NOMADIS Dance",
+      "category": "dance"
+    },
+    {
+      "mode": "festivals",
+      "name": "Tony Bennett Tribute",
+      "date": "2026-11-20",
+      "location": "MAMMA – Museum of Art and Music of Madeira, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "17:30",
+      "price": "€25",
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
       "category": "concert"
     },
     {
@@ -1019,6 +1342,18 @@
       "price": "Free",
       "organizer": "Direção Regional dos Arquivos",
       "category": "family"
+    },
+    {
+      "mode": "festivals",
+      "name": "ART'MNISTIA - MADEIRA ART FEST",
+      "date": "2026-11-21",
+      "location": "Largo do Socorro, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "17:00",
+      "price": "Free",
+      "organizer": "Associação Cultural do Socorro",
+      "category": "festival"
     },
     {
       "mode": "festivals",
@@ -1102,6 +1437,18 @@
     },
     {
       "mode": "festivals",
+      "name": "Chakras Drag Show",
+      "date": "2026-11-22",
+      "location": "Largo do Socorro · T1, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "17:30",
+      "price": "Free",
+      "organizer": "Associação Cultural do Socorro",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
       "name": "Concerto de Santa Cecília",
       "date": "2026-11-22",
       "location": "Igreja de Nossa Senhora do Monte",
@@ -1181,6 +1528,42 @@
     },
     {
       "mode": "festivals",
+      "name": "Coltrane to Wayne Shorter",
+      "date": "2026-11-26",
+      "location": "MAMMA – Museum of Art and Music of Madeira, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "18:00",
+      "price": "€25",
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "100M BARREIRINHA: LLAMA VIRGEM",
+      "date": "2026-11-27",
+      "location": "Largo do Socorro · Lálém, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "21:00",
+      "price": "Free",
+      "organizer": "Associação Cultural do Socorro",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "Elton John Tribute",
+      "date": "2026-11-27",
+      "location": "MAMMA – Museum of Art and Music of Madeira, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "17:30",
+      "price": "€25",
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
       "name": "Susteined Wind Sounds",
       "date": "2026-11-27",
       "location": "Conservatório - Escola Profissional das Artes da Madeira, Eng.º Luiz Peter Clode, Funchal",
@@ -1217,6 +1600,18 @@
     },
     {
       "mode": "festivals",
+      "name": "ENXURRADA 4UATRO",
+      "date": "2026-11-28",
+      "location": "Largo do Socorro, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "18:30",
+      "price": "Free",
+      "organizer": "Associação Cultural do Socorro",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
       "name": "Moda Funchal, Autumn and Winter",
       "date": "2026-11-28",
       "location": "Marina do Funchal",
@@ -1226,6 +1621,30 @@
       "price": "Free",
       "organizer": "Moda Funchal",
       "category": "exhibition"
+    },
+    {
+      "mode": "festivals",
+      "name": "Oficina Criativa - Edição Natal",
+      "date": "2026-11-28",
+      "location": "ALMA, Santa Cruz",
+      "url": "",
+      "event_type": "festival",
+      "time": "15:00",
+      "price": "Free",
+      "organizer": "Pó de Arroz",
+      "category": "workshop"
+    },
+    {
+      "mode": "festivals",
+      "name": "ROCK IN MAMMA CONCERT",
+      "date": "2026-11-28",
+      "location": "MAMMA – Museum of Art and Music of Madeira, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "18:00",
+      "price": "€25",
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert"
     },
     {
       "mode": "festivals",
@@ -1246,6 +1665,18 @@
       "location": "Calheta",
       "url": "https://aoram.pt/calendario/",
       "event_type": "orienteering"
+    },
+    {
+      "mode": "festivals",
+      "name": "Decorative Rattan Wreath Workshop",
+      "date": "2026-11-29",
+      "location": "Casa dos Amigos, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "12:00",
+      "price": "€35",
+      "organizer": "Nataly Johnson",
+      "category": "workshop"
     },
     {
       "mode": "pro",
@@ -1270,6 +1701,18 @@
       "location": "Feiras",
       "url": "https://t.me/festas_madeira/2747",
       "event_type": "festival",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "ROUGE SAUVAGE",
+      "date": "2026-11-30",
+      "location": "Largo do Socorro · Árvore, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "19:00",
+      "price": "Free",
+      "organizer": "Associação Cultural do Socorro",
       "category": "concert"
     },
     {
@@ -1396,7 +1839,7 @@
       "location": "Mother Church of Ribeira Brava / Church of São Bento",
       "url": "",
       "event_type": "festival",
-      "time": "16:00",
+      "time": "20:00",
       "price": "Free",
       "organizer": "O Conservatório – Escola das Artes da Madeira",
       "category": "concert"
@@ -1530,6 +1973,15 @@
       "about": "O DIÁRIO de Notícias da Madeira apresenta, em coorganização com a Orquestra Clássica da Madeira, o tradicional Concerto de Natal, integrado nas comemorações dos 150 anos do DIÁRIO."
     },
     {
+      "mode": "festivals",
+      "name": "NI CIAT IVAS",
+      "date": "2026-12-12",
+      "location": "Sé",
+      "url": "https://t.me/festas_madeira/2754",
+      "event_type": "festival",
+      "category": "concert"
+    },
+    {
       "mode": "trail",
       "name": "Orientação: XMAS (Extra)",
       "date": "2026-12-12",
@@ -1651,6 +2103,18 @@
       "time": "21:00",
       "price": "€20",
       "organizer": "Orquestra Clássica da Madeira",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "CONCERTO ESPECIAL NATAL - Madeira Mandolin Orchestra",
+      "date": "2026-12-18",
+      "location": "Assembleia Legislativa da Madeira, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "21:00",
+      "price": "€30",
+      "organizer": "Madeira Mandolin Orchestra",
       "category": "concert"
     },
     {
@@ -1876,6 +2340,18 @@
       "time": "21:00",
       "price": "€25",
       "organizer": "Madeira Guitar Nights: Funchal Guitar Quartet in Concert",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "CONCERTO ESPECIAL  ANO NOVO - Madeira Mandolin Orchestra",
+      "date": "2027-01-01",
+      "location": "Assembleia Legislativa da Madeira, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "18:00",
+      "price": "€30",
+      "organizer": "Madeira Mandolin Orchestra",
       "category": "concert"
     },
     {

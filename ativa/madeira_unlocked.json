@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-11-02T13:32:53",
-  "count": 512,
+  "fetched": "2026-11-03T12:49:01",
+  "count": 552,
   "items": [
     {
       "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
@@ -6260,6 +6260,21 @@
       "source_category": "theater"
     },
     {
+      "id": "piano-man-2026-11-04",
+      "title": "PIANO MAN",
+      "url": "https://www.madeira-unlocked.com/en/events/piano-man-2026-11-04",
+      "start": "2026-11-04T17:30:00+00:00",
+      "end": "2026-11-04T18:30:00+00:00",
+      "date": "2026-11-04",
+      "time": "17:30",
+      "venue": "MAMMA - Museum of Modern Art of Madeira",
+      "municipality": "Funchal",
+      "price": 25,
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "bachata-styling-in-couple-solo-2026-11-04",
       "title": "Bachata Styling (in Couple & Solo)",
       "url": "https://www.madeira-unlocked.com/en/events/bachata-styling-in-couple-solo-2026-11-04",
@@ -6320,6 +6335,81 @@
       "source_category": "art-exhibitions"
     },
     {
+      "id": "ella-fitzgerald-to-louis-armstrong-2026-11-05",
+      "title": "Ella Fitzgerald to Louis Armstrong",
+      "url": "https://www.madeira-unlocked.com/en/events/ella-fitzgerald-to-louis-armstrong-2026-11-05",
+      "start": "2026-11-05T18:30:00+00:00",
+      "end": "2026-11-05T19:30:00+00:00",
+      "date": "2026-11-05",
+      "time": "18:30",
+      "venue": "MAMMA - Museum of Modern Art of Madeira",
+      "municipality": "Funchal",
+      "price": 25,
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "vida-perpetua-2026-11-05",
+      "title": "VIDA PERPÉTUA",
+      "url": "https://www.madeira-unlocked.com/en/events/vida-perpetua-2026-11-05",
+      "start": "2026-11-05T18:30:00+00:00",
+      "end": "2026-11-05T20:30:00+00:00",
+      "date": "2026-11-05",
+      "time": "18:30",
+      "venue": "Largo do Socorro · T1",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Socorro",
+      "category": "culture",
+      "source_category": "culture-museums"
+    },
+    {
+      "id": "insular-sall1m-2026-11-05",
+      "title": "insuLAR: SALL1M",
+      "url": "https://www.madeira-unlocked.com/en/events/insular-sall1m-2026-11-05",
+      "start": "2026-11-05T21:00:00+00:00",
+      "end": "2026-11-05T23:00:00+00:00",
+      "date": "2026-11-05",
+      "time": "21:00",
+      "venue": "Largo do Socorro · T1",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Socorro",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "simon-garfunkel-2026-11-06",
+      "title": "Simon & Garfunkel",
+      "url": "https://www.madeira-unlocked.com/en/events/simon-garfunkel-2026-11-06",
+      "start": "2026-11-06T17:30:00+00:00",
+      "end": "2026-11-06T18:30:00+00:00",
+      "date": "2026-11-06",
+      "time": "17:30",
+      "venue": "MAMMA - Museum of Modern Art of Madeira",
+      "municipality": "Funchal",
+      "price": 25,
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "tango-soiree-2026-11-06",
+      "title": "Tango Soirée",
+      "url": "https://www.madeira-unlocked.com/en/events/tango-soiree-2026-11-06",
+      "start": "2026-11-06T19:30:00+00:00",
+      "end": "2026-11-06T22:30:00+00:00",
+      "date": "2026-11-06",
+      "time": "19:30",
+      "venue": "Hotel Madeira, R. Ivens 21, São Martinho, 9000-046 Funchal",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Hotel Madeira",
+      "category": "dance",
+      "source_category": "dance"
+    },
+    {
       "id": "the-emperor-s-new-clothes-o-rei-vai-nu-2026-11-06-2000",
       "title": "The Emperor’s New Clothes, O Rei Vai Nu",
       "url": "https://www.madeira-unlocked.com/en/events/the-emperor-s-new-clothes-o-rei-vai-nu-2026-11-06-2000",
@@ -6335,6 +6425,36 @@
       "source_category": "theater"
     },
     {
+      "id": "soundview-li-polymer-glitch-visual-artists-2026-11-06",
+      "title": "SOUNDVIEW: LI-POLYMER + GLITCH VISUAL ARTISTS",
+      "url": "https://www.madeira-unlocked.com/en/events/soundview-li-polymer-glitch-visual-artists-2026-11-06",
+      "start": "2026-11-06T21:00:00+00:00",
+      "end": "2026-11-07T01:00:00+00:00",
+      "date": "2026-11-06",
+      "time": "21:00",
+      "venue": "Largo do Socorro · T1",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Socorro",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "madeira-embroidery-workshop-2026-11-07",
+      "title": "Madeira Embroidery Workshop",
+      "url": "https://www.madeira-unlocked.com/en/events/madeira-embroidery-workshop-2026-11-07",
+      "start": "2026-11-07T10:00:00+00:00",
+      "end": "2026-11-07T13:00:00+00:00",
+      "date": "2026-11-07",
+      "time": "10:00",
+      "venue": "Centro Cívico do Estreito de Câmara de Lobos",
+      "municipality": "Câmara de Lobos",
+      "price": 50,
+      "organizer": "Bailha",
+      "category": "workshop",
+      "source_category": "handicraft-workshops"
+    },
+    {
       "id": "abm-miudos-o-meu-guarda-chuva-2026-11-07",
       "title": "ABM Miúdos, O Meu Guarda-Chuva",
       "url": "https://www.madeira-unlocked.com/en/events/abm-miudos-o-meu-guarda-chuva-2026-11-07",
@@ -6348,6 +6468,21 @@
       "organizer": "Direção Regional dos Arquivos",
       "category": "family",
       "source_category": "kids-family"
+    },
+    {
+      "id": "atlas-round-table-reinvention-2026-11-07",
+      "title": "Atlas Round Table | Reinvention",
+      "url": "https://www.madeira-unlocked.com/en/events/atlas-round-table-reinvention-2026-11-07",
+      "start": "2026-11-07T11:00:00+00:00",
+      "end": "2026-11-07T13:00:00+00:00",
+      "date": "2026-11-07",
+      "time": "11:00",
+      "venue": "Pátio Brunch & Bistrô",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Atlas Round Table",
+      "category": "culture",
+      "source_category": "culture-museums"
     },
     {
       "id": "the-crafting-circle-2026-11-07",
@@ -6440,6 +6575,21 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "orquestra-classica-da-madeira-concerto-com-dmitry-demyashkin-misha-katz-2026-11-07",
+      "title": "Orquestra Clássica da Madeira: Concerto com Dmitry Demyashkin & Misha Katz",
+      "url": "https://www.madeira-unlocked.com/en/events/orquestra-classica-da-madeira-concerto-com-dmitry-demyashkin-misha-katz-2026-11-07",
+      "start": "2026-11-07T18:00:00+00:00",
+      "end": "2026-11-07T19:30:00+00:00",
+      "date": "2026-11-07",
+      "time": "18:00",
+      "venue": "Centro de Congressos da Madeira",
+      "municipality": "Funchal",
+      "price": 25,
+      "organizer": "Orquestra Clássica da Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "duo-bandonica-fala-me-de-musica-2026-11-07",
       "title": "Duo Bandonica Fala-me de Música",
       "url": "https://www.madeira-unlocked.com/en/events/duo-bandonica-fala-me-de-musica-2026-11-07",
@@ -6466,6 +6616,21 @@
       "municipality": "Funchal",
       "price": 0,
       "organizer": "ABM Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "caetano-nervoso-2026-11-07",
+      "title": "CAETANO NERVOSO",
+      "url": "https://www.madeira-unlocked.com/en/events/caetano-nervoso-2026-11-07",
+      "start": "2026-11-07T19:00:00+00:00",
+      "end": "2026-11-07T21:00:00+00:00",
+      "date": "2026-11-07",
+      "time": "19:00",
+      "venue": "Largo do Socorro · Árvore",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Socorro",
       "category": "concert",
       "source_category": "music-concerts"
     },
@@ -6515,6 +6680,21 @@
       "source_category": "sport-fitness"
     },
     {
+      "id": "how-to-read-a-fleece-first-steps-in-choosing-wood-wool-2026-11-08",
+      "title": "How to Read a Fleece: First Steps in Choosing Wood Wool",
+      "url": "https://www.madeira-unlocked.com/en/events/how-to-read-a-fleece-first-steps-in-choosing-wood-wool-2026-11-08",
+      "start": "2026-11-08T10:00:00+00:00",
+      "end": "2026-11-08T12:00:00+00:00",
+      "date": "2026-11-08",
+      "time": "10:00",
+      "venue": "Caminho da Quinta do Palheiro, 32, 9060-255",
+      "municipality": "Funchal",
+      "price": 21.15,
+      "organizer": "Oh Lã Lã Fiber Lab",
+      "category": "workshop",
+      "source_category": "handicraft-workshops"
+    },
+    {
       "id": "porto-moniz-stand-up-comedy-fest-2026-11-08",
       "title": "Porto Moniz Stand Up Comedy Fest",
       "url": "https://www.madeira-unlocked.com/en/events/porto-moniz-stand-up-comedy-fest-2026-11-08",
@@ -6541,6 +6721,36 @@
       "municipality": "Funchal",
       "price": 20,
       "organizer": "Associação dos Amigos do Conservatório de Música da Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "mamma-mia-2026-11-08",
+      "title": "MAMMA MIA!",
+      "url": "https://www.madeira-unlocked.com/en/events/mamma-mia-2026-11-08",
+      "start": "2026-11-08T18:00:00+00:00",
+      "end": "2026-11-08T19:00:00+00:00",
+      "date": "2026-11-08",
+      "time": "18:00",
+      "venue": "MAMMA - Museum of Modern Art of Madeira",
+      "municipality": "Funchal",
+      "price": 25,
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "rock-style-new-2026-11-08",
+      "title": "Rock Style NEW!",
+      "url": "https://www.madeira-unlocked.com/en/events/rock-style-new-2026-11-08",
+      "start": "2026-11-08T18:00:00+00:00",
+      "end": "2026-11-08T19:00:00+00:00",
+      "date": "2026-11-08",
+      "time": "18:00",
+      "venue": "English Church",
+      "municipality": "Funchal",
+      "price": 20,
+      "organizer": "Madeira Concerts",
       "category": "concert",
       "source_category": "music-concerts"
     },
@@ -6620,6 +6830,21 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "latin-jazz-2026-11-11",
+      "title": "LATIN JAZZ",
+      "url": "https://www.madeira-unlocked.com/en/events/latin-jazz-2026-11-11",
+      "start": "2026-11-11T18:00:00+00:00",
+      "end": "2026-11-11T19:00:00+00:00",
+      "date": "2026-11-11",
+      "time": "18:00",
+      "venue": "MAMMA",
+      "municipality": "Funchal",
+      "price": 25,
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "bachata-styling-in-couple-solo-2026-11-11",
       "title": "Bachata Styling (in Couple & Solo)",
       "url": "https://www.madeira-unlocked.com/en/events/bachata-styling-in-couple-solo-2026-11-11",
@@ -6665,6 +6890,21 @@
       "source_category": "sport-fitness"
     },
     {
+      "id": "listening-to-light-de-maria-alves-2026-11-12",
+      "title": "LISTENING TO LIGHT de MARIA ALVES",
+      "url": "https://www.madeira-unlocked.com/en/events/listening-to-light-de-maria-alves-2026-11-12",
+      "start": "2026-11-12T19:00:00+00:00",
+      "end": "2026-11-12T21:00:00+00:00",
+      "date": "2026-11-12",
+      "time": "19:00",
+      "venue": "Largo do Socorro · T1",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Socorro",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "mountain-bike-meeting-guided-enduro-and-mill-visit-2026-11-13",
       "title": "Mountain Bike Meeting, Guided Enduro and Mill Visit",
       "url": "https://www.madeira-unlocked.com/en/events/mountain-bike-meeting-guided-enduro-and-mill-visit-2026-11-13",
@@ -6680,6 +6920,21 @@
       "source_category": "sport-fitness"
     },
     {
+      "id": "niko-svetiev-2026-11-13",
+      "title": "NIKO SVETIEV",
+      "url": "https://www.madeira-unlocked.com/en/events/niko-svetiev-2026-11-13",
+      "start": "2026-11-13T19:00:00+00:00",
+      "end": "2026-11-13T23:00:00+00:00",
+      "date": "2026-11-13",
+      "time": "19:00",
+      "venue": "Largo do Socorro · Árvore",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Socorro",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "madeira-nights-a-tribute-to-celso-rodrigues-2026-11-13",
       "title": "Madeira Nights - A Tribute to Celso Rodrigues",
       "url": "https://www.madeira-unlocked.com/en/events/madeira-nights-a-tribute-to-celso-rodrigues-2026-11-13",
@@ -6693,6 +6948,21 @@
       "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
       "category": "concert",
       "source_category": "music-concerts"
+    },
+    {
+      "id": "ser-una-portu-venezolana-es-una-vaina-muito-arreicha-katy-martins-2026-11-13",
+      "title": "Ser una Portu Venezolana es una Vaina Muito Arreicha! - Katy Martins",
+      "url": "https://www.madeira-unlocked.com/en/events/ser-una-portu-venezolana-es-una-vaina-muito-arreicha-katy-martins-2026-11-13",
+      "start": "2026-11-13T20:00:00+00:00",
+      "end": "2026-11-13T22:00:00+00:00",
+      "date": "2026-11-13",
+      "time": "20:00",
+      "venue": "Casa da Cultura de Câmara de Lobos",
+      "municipality": "Câmara de Lobos",
+      "price": 0,
+      "organizer": "Mira",
+      "category": "theatre",
+      "source_category": "theater"
     },
     {
       "id": "guitar-recital-2026-11-13",
@@ -6845,6 +7115,21 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "quinteto-de-sopros-solistas-ocm-2026-11-14",
+      "title": "Quinteto de Sopros Solistas OCM",
+      "url": "https://www.madeira-unlocked.com/en/events/quinteto-de-sopros-solistas-ocm-2026-11-14",
+      "start": "2026-11-14T18:00:00+00:00",
+      "end": "2026-11-14T19:00:00+00:00",
+      "date": "2026-11-14",
+      "time": "18:00",
+      "venue": "Capela da Fundação Princesa Dona Maria Amélia",
+      "municipality": "Funchal",
+      "price": 20,
+      "organizer": "Orquestra Clássica da Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "commedia-2026-nem-sempre-usamos-inteligencia-artificial-2026-11-14",
       "title": "CommedIA 2026 – Nem sempre usamos Inteligência Artificial",
       "url": "https://www.madeira-unlocked.com/en/events/commedia-2026-nem-sempre-usamos-inteligencia-artificial-2026-11-14",
@@ -6858,6 +7143,21 @@
       "organizer": "Commedia a la Carte / Aquele Abraço",
       "category": "theatre",
       "source_category": "theater"
+    },
+    {
+      "id": "dmr-jazz-2026-11-14",
+      "title": "DMR JAZZ",
+      "url": "https://www.madeira-unlocked.com/en/events/dmr-jazz-2026-11-14",
+      "start": "2026-11-14T21:00:00+00:00",
+      "end": "2026-11-14T23:00:00+00:00",
+      "date": "2026-11-14",
+      "time": "21:00",
+      "venue": "Largo do Socorro · T1",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Socorro",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "expressa-te-arts-festival-2026-11-15",
@@ -6920,6 +7220,21 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "from-queen-to-chess-2026-11-15",
+      "title": "FROM QUEEN TO CHESS",
+      "url": "https://www.madeira-unlocked.com/en/events/from-queen-to-chess-2026-11-15",
+      "start": "2026-11-15T18:00:00+00:00",
+      "end": "2026-11-15T19:00:00+00:00",
+      "date": "2026-11-15",
+      "time": "18:00",
+      "venue": "MAMMA - Museum of Modern Art of Madeira",
+      "municipality": "Funchal",
+      "price": 25,
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "christmas-arrangement-workshop-2026-11-16",
       "title": "Christmas Arrangement Workshop",
       "url": "https://www.madeira-unlocked.com/en/events/christmas-arrangement-workshop-2026-11-16",
@@ -6965,6 +7280,21 @@
       "source_category": "theater"
     },
     {
+      "id": "big-double-blues-2026-11-18",
+      "title": "BIG DOUBLE BLUES",
+      "url": "https://www.madeira-unlocked.com/en/events/big-double-blues-2026-11-18",
+      "start": "2026-11-18T18:00:00+00:00",
+      "end": "2026-11-18T19:00:00+00:00",
+      "date": "2026-11-18",
+      "time": "18:00",
+      "venue": "MAMMA",
+      "municipality": "Funchal",
+      "price": 25,
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "bachata-styling-in-couple-solo-2026-11-18",
       "title": "Bachata Styling (in Couple & Solo)",
       "url": "https://www.madeira-unlocked.com/en/events/bachata-styling-in-couple-solo-2026-11-18",
@@ -6995,6 +7325,21 @@
       "source_category": "dance"
     },
     {
+      "id": "quinteto-de-sopros-atlantida-2026-11-18",
+      "title": "Quinteto de Sopros Atlântida",
+      "url": "https://www.madeira-unlocked.com/en/events/quinteto-de-sopros-atlantida-2026-11-18",
+      "start": "2026-11-18T21:00:00+00:00",
+      "end": "2026-11-18T22:15:00+00:00",
+      "date": "2026-11-18",
+      "time": "21:00",
+      "venue": "Savoy Palace",
+      "municipality": "Funchal",
+      "price": 20,
+      "organizer": "Orquestra Clássica da Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "alice-again-how-annoying-2026-11-19-1515",
       "title": "Alice Again? How Annoying!",
       "url": "https://www.madeira-unlocked.com/en/events/alice-again-how-annoying-2026-11-19-1515",
@@ -7008,6 +7353,21 @@
       "organizer": "ATEF – Associação Teatro Experimental do Funchal",
       "category": "theatre",
       "source_category": "theater"
+    },
+    {
+      "id": "jazz-divas-2026-11-19",
+      "title": "Jazz Divas!",
+      "url": "https://www.madeira-unlocked.com/en/events/jazz-divas-2026-11-19",
+      "start": "2026-11-19T18:30:00+00:00",
+      "end": "2026-11-19T19:30:00+00:00",
+      "date": "2026-11-19",
+      "time": "18:30",
+      "venue": "MAMMA - Museum of Modern Art of Madeira",
+      "municipality": "Funchal",
+      "price": 25,
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "alice-again-how-annoying-2026-11-20-0930",
@@ -7025,6 +7385,21 @@
       "source_category": "theater"
     },
     {
+      "id": "tony-bennett-tribute-2026-11-20",
+      "title": "Tony Bennett Tribute",
+      "url": "https://www.madeira-unlocked.com/en/events/tony-bennett-tribute-2026-11-20",
+      "start": "2026-11-20T17:30:00+00:00",
+      "end": "2026-11-20T18:30:00+00:00",
+      "date": "2026-11-20",
+      "time": "17:30",
+      "venue": "MAMMA - Museum of Modern Art of Madeira",
+      "municipality": "Funchal",
+      "price": 25,
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "bora-ler-young-readers-book-club-november-2026-11-20",
       "title": "Bora Ler! Young Readers’ Book Club, November",
       "url": "https://www.madeira-unlocked.com/en/events/bora-ler-young-readers-book-club-november-2026-11-20",
@@ -7038,6 +7413,36 @@
       "organizer": "Direção Regional dos Arquivos",
       "category": "family",
       "source_category": "kids-family"
+    },
+    {
+      "id": "furious-fletch-2026-11-20",
+      "title": "FURIOUS FLETCH",
+      "url": "https://www.madeira-unlocked.com/en/events/furious-fletch-2026-11-20",
+      "start": "2026-11-20T19:00:00+00:00",
+      "end": "2026-11-20T23:00:00+00:00",
+      "date": "2026-11-20",
+      "time": "19:00",
+      "venue": "Largo do Socorro · Árvore",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Socorro",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "nomadis-dance-debut-performance-2026-11-20",
+      "title": "NOMADIS Dance Debut Performance",
+      "url": "https://www.madeira-unlocked.com/en/events/nomadis-dance-debut-performance-2026-11-20",
+      "start": "2026-11-20T19:00:00+00:00",
+      "end": "2026-11-20T20:30:00+00:00",
+      "date": "2026-11-20",
+      "time": "19:00",
+      "venue": "Fórum Machico",
+      "municipality": "Machico",
+      "price": 0,
+      "organizer": "NOMADIS Dance",
+      "category": "dance",
+      "source_category": "dance"
     },
     {
       "id": "fantasy-echoes-of-low-brass-2026-11-20",
@@ -7070,6 +7475,21 @@
       "source_category": "kids-family"
     },
     {
+      "id": "art-mnistia-madeira-art-fest-2026-11-21",
+      "title": "ART'MNISTIA - MADEIRA ART FEST",
+      "url": "https://www.madeira-unlocked.com/en/events/art-mnistia-madeira-art-fest-2026-11-21",
+      "start": "2026-11-21T17:00:00+00:00",
+      "end": "2026-11-21T19:00:00+00:00",
+      "date": "2026-11-21",
+      "time": "17:00",
+      "venue": "Largo do Socorro",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Socorro",
+      "category": "festival",
+      "source_category": "festivals-parades"
+    },
+    {
       "id": "fashion-weekend-10th-anniversary-2026-11-21",
       "title": "Fashion Weekend, 10th Anniversary",
       "url": "https://www.madeira-unlocked.com/en/events/fashion-weekend-10th-anniversary-2026-11-21",
@@ -7083,6 +7503,21 @@
       "organizer": "Madeira Fashion Weekend",
       "category": "festival",
       "source_category": "festivals-parades"
+    },
+    {
+      "id": "legno-duo-2026-11-21",
+      "title": "Legno Duo",
+      "url": "https://www.madeira-unlocked.com/en/events/legno-duo-2026-11-21",
+      "start": "2026-11-21T18:00:00+00:00",
+      "end": "2026-11-21T19:00:00+00:00",
+      "date": "2026-11-21",
+      "time": "18:00",
+      "venue": "The Legislative Assembly of Madeira",
+      "municipality": "Funchal",
+      "price": 20,
+      "organizer": "Orquestra Clássica da Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "nem-mais-1-minuto-de-silencio-2026-11-21",
@@ -7126,6 +7561,21 @@
       "municipality": "Funchal",
       "price": 15,
       "organizer": "Banda Municipal do Funchal – Artistas Funchalenses",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "chakras-drag-show-2026-11-22",
+      "title": "Chakras Drag Show",
+      "url": "https://www.madeira-unlocked.com/en/events/chakras-drag-show-2026-11-22",
+      "start": "2026-11-22T17:30:00+00:00",
+      "end": "2026-11-22T19:30:00+00:00",
+      "date": "2026-11-22",
+      "time": "17:30",
+      "venue": "Largo do Socorro · T1",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Socorro",
       "category": "concert",
       "source_category": "music-concerts"
     },
@@ -7205,6 +7655,21 @@
       "source_category": "theater"
     },
     {
+      "id": "coltrane-to-wayne-shorter-2026-11-26",
+      "title": "Coltrane to Wayne Shorter",
+      "url": "https://www.madeira-unlocked.com/en/events/coltrane-to-wayne-shorter-2026-11-26",
+      "start": "2026-11-26T18:00:00+00:00",
+      "end": "2026-11-26T19:00:00+00:00",
+      "date": "2026-11-26",
+      "time": "18:00",
+      "venue": "MAMMA - Museum of Modern Art of Madeira",
+      "municipality": "Funchal",
+      "price": 25,
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "alice-again-how-annoying-2026-11-27-0930",
       "title": "Alice Again? How Annoying!",
       "url": "https://www.madeira-unlocked.com/en/events/alice-again-how-annoying-2026-11-27-0930",
@@ -7218,6 +7683,21 @@
       "organizer": "ATEF – Associação Teatro Experimental do Funchal",
       "category": "theatre",
       "source_category": "theater"
+    },
+    {
+      "id": "elton-john-tribute-2026-11-27",
+      "title": "Elton John Tribute",
+      "url": "https://www.madeira-unlocked.com/en/events/elton-john-tribute-2026-11-27",
+      "start": "2026-11-27T17:30:00+00:00",
+      "end": "2026-11-27T18:30:00+00:00",
+      "date": "2026-11-27",
+      "time": "17:30",
+      "venue": "MAMMA - Museum of Modern Art of Madeira",
+      "municipality": "Funchal",
+      "price": 25,
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "maritimo-vs-cd-nacional-madeira-derby-2026-11-27",
@@ -7246,6 +7726,21 @@
       "municipality": "Funchal",
       "price": 0,
       "organizer": "O Conservatório – Escola das Artes da Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "100m-barreirinha-llama-virgem-2026-11-27",
+      "title": "100M BARREIRINHA: LLAMA VIRGEM",
+      "url": "https://www.madeira-unlocked.com/en/events/100m-barreirinha-llama-virgem-2026-11-27",
+      "start": "2026-11-27T21:00:00+00:00",
+      "end": "2026-11-28T01:00:00+00:00",
+      "date": "2026-11-27",
+      "time": "21:00",
+      "venue": "Largo do Socorro · Lálém",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Socorro",
       "category": "concert",
       "source_category": "music-concerts"
     },
@@ -7293,6 +7788,81 @@
       "organizer": "Moda Funchal",
       "category": "exhibition",
       "source_category": "art-exhibitions"
+    },
+    {
+      "id": "oficina-criativa-edicao-natal-2026-11-28",
+      "title": "Oficina Criativa - Edição Natal",
+      "url": "https://www.madeira-unlocked.com/en/events/oficina-criativa-edicao-natal-2026-11-28",
+      "start": "2026-11-28T15:00:00+00:00",
+      "end": "2026-11-28T16:30:00+00:00",
+      "date": "2026-11-28",
+      "time": "15:00",
+      "venue": "ALMA",
+      "municipality": "Santa Cruz",
+      "price": 0,
+      "organizer": "Pó de Arroz",
+      "category": "workshop",
+      "source_category": "handicraft-workshops"
+    },
+    {
+      "id": "rock-in-mamma-concert-2026-11-28",
+      "title": "ROCK IN MAMMA CONCERT",
+      "url": "https://www.madeira-unlocked.com/en/events/rock-in-mamma-concert-2026-11-28",
+      "start": "2026-11-28T18:00:00+00:00",
+      "end": "2026-11-28T19:00:00+00:00",
+      "date": "2026-11-28",
+      "time": "18:00",
+      "venue": "MAMMA - Museum of Modern Art of Madeira",
+      "municipality": "Funchal",
+      "price": 25,
+      "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "enxurrada-4uatro-2026-11-28",
+      "title": "ENXURRADA 4UATRO",
+      "url": "https://www.madeira-unlocked.com/en/events/enxurrada-4uatro-2026-11-28",
+      "start": "2026-11-28T18:30:00+00:00",
+      "end": "2026-11-28T20:30:00+00:00",
+      "date": "2026-11-28",
+      "time": "18:30",
+      "venue": "Largo do Socorro",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Socorro",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "decorative-rattan-wreath-workshop-2026-11-29",
+      "title": "Decorative Rattan Wreath Workshop",
+      "url": "https://www.madeira-unlocked.com/en/events/decorative-rattan-wreath-workshop-2026-11-29",
+      "start": "2026-11-29T12:00:00+00:00",
+      "end": "2026-11-29T19:30:00+00:00",
+      "date": "2026-11-29",
+      "time": "12:00",
+      "venue": "Casa dos Amigos",
+      "municipality": "Funchal",
+      "price": 35,
+      "organizer": "Nataly Johnson",
+      "category": "workshop",
+      "source_category": "handicraft-workshops"
+    },
+    {
+      "id": "rouge-sauvage-2026-11-30",
+      "title": "ROUGE SAUVAGE",
+      "url": "https://www.madeira-unlocked.com/en/events/rouge-sauvage-2026-11-30",
+      "start": "2026-11-30T19:00:00+00:00",
+      "end": "2026-11-30T21:00:00+00:00",
+      "date": "2026-11-30",
+      "time": "19:00",
+      "venue": "Largo do Socorro · Árvore",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação Cultural do Socorro",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "bachata-styling-in-couple-solo-2026-12-02",
@@ -7400,21 +7970,6 @@
       "source_category": "handicraft-workshops"
     },
     {
-      "id": "concerto-de-natal-ensemble-de-clarinetes-2026-12-05",
-      "title": "Concerto de Natal - Ensemble de Clarinetes",
-      "url": "https://www.madeira-unlocked.com/en/events/concerto-de-natal-ensemble-de-clarinetes-2026-12-05",
-      "start": "2026-12-05T16:00:00+00:00",
-      "end": "2026-12-05T18:04:00+00:00",
-      "date": "2026-12-05",
-      "time": "16:00",
-      "venue": "Mother Church of Ribeira Brava / Church of São Bento",
-      "municipality": "Ribeira Brava",
-      "price": 0,
-      "organizer": "O Conservatório – Escola das Artes da Madeira",
-      "category": "concert",
-      "source_category": "music-concerts"
-    },
-    {
       "id": "duobandonica-2026-12-05",
       "title": "DUOBANDONICA",
       "url": "https://www.madeira-unlocked.com/en/events/duobandonica-2026-12-05",
@@ -7426,6 +7981,21 @@
       "municipality": "Funchal",
       "price": 0,
       "organizer": "ABM Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "concerto-de-natal-ensemble-de-clarinetes-2026-12-05",
+      "title": "Concerto de Natal - Ensemble de Clarinetes",
+      "url": "https://www.madeira-unlocked.com/en/events/concerto-de-natal-ensemble-de-clarinetes-2026-12-05",
+      "start": "2026-12-05T20:00:00+00:00",
+      "end": "2026-12-05T21:00:00+00:00",
+      "date": "2026-12-05",
+      "time": "20:00",
+      "venue": "Mother Church of Ribeira Brava / Church of São Bento",
+      "municipality": "Ribeira Brava",
+      "price": 0,
+      "organizer": "O Conservatório – Escola das Artes da Madeira",
       "category": "concert",
       "source_category": "music-concerts"
     },
@@ -7546,6 +8116,21 @@
       "municipality": "Funchal",
       "price": 0,
       "organizer": "O Conservatório – Escola das Artes da Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "concerto-especial-natal-madeira-mandolin-orchestra-2026-12-18",
+      "title": "CONCERTO ESPECIAL NATAL - Madeira Mandolin Orchestra",
+      "url": "https://www.madeira-unlocked.com/en/events/concerto-especial-natal-madeira-mandolin-orchestra-2026-12-18",
+      "start": "2026-12-18T21:00:00+00:00",
+      "end": "2026-12-18T22:00:00+00:00",
+      "date": "2026-12-18",
+      "time": "21:00",
+      "venue": "Assembleia Legislativa da Madeira",
+      "municipality": "Funchal",
+      "price": 30,
+      "organizer": "Madeira Mandolin Orchestra",
       "category": "concert",
       "source_category": "music-concerts"
     },
@@ -7681,6 +8266,21 @@
       "municipality": "Funchal",
       "price": 25,
       "organizer": "Madeira Guitar Nights: Funchal Guitar Quartet in Concert",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "concerto-especial-ano-novo-madeira-mandolin-orchestra-2027-01-01",
+      "title": "CONCERTO ESPECIAL  ANO NOVO - Madeira Mandolin Orchestra",
+      "url": "https://www.madeira-unlocked.com/en/events/concerto-especial-ano-novo-madeira-mandolin-orchestra-2027-01-01",
+      "start": "2027-01-01T18:00:00+00:00",
+      "end": "2027-01-01T19:00:00+00:00",
+      "date": "2027-01-01",
+      "time": "18:00",
+      "venue": "Assembleia Legislativa da Madeira",
+      "municipality": "Funchal",
+      "price": 30,
+      "organizer": "Madeira Mandolin Orchestra",
       "category": "concert",
       "source_category": "music-concerts"
     }
