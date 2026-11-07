@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-11-03T12:49:12",
-  "count": 155,
+  "fetched": "2026-11-07T11:47:03",
+  "count": 169,
   "items": [
     {
       "id": "114",
@@ -1365,6 +1365,16 @@
       "category": "Conference"
     },
     {
+      "id": "427",
+      "title": "Exposição itinerante \"INTRA - Olhar para Nós\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/exposicao-itinerante-da-intra-olhar-para-nos",
+      "start": "2026-10-30",
+      "end": "2026-11-30",
+      "time": "",
+      "place": "Galeria Pimenta 22",
+      "category": "Exhibition"
+    },
+    {
       "id": "352",
       "title": "42.ª Festa da Castanha – Curral das Freiras",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/festas-tradicionais/42-a-festa-da-castanha-curral-das-freiras",
@@ -1425,16 +1435,6 @@
       "category": "Exhibition"
     },
     {
-      "id": "411",
-      "title": "Espetáculo “A Lâmpada Mágica – Uma História de Natal”",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/espetaculo-a-lampada-magica-uma-historia-de-natal",
-      "start": "2026-11-04",
-      "end": "2026-11-06",
-      "time": "21:00",
-      "place": "Auditório do Centro de Congressos da Madeira",
-      "category": "Theatre"
-    },
-    {
       "id": "395",
       "title": "\"Dear Lourdes,\"",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/dear-lourdes",
@@ -1442,6 +1442,16 @@
       "end": "2027-01-08",
       "time": "18:00",
       "place": "Galeria Tratuário",
+      "category": "Exhibition"
+    },
+    {
+      "id": "423",
+      "title": "“Che Cosa Sono le Nuvole?”",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/che-cosa-sono-le-nuvole",
+      "start": "2026-11-05",
+      "end": "2027-02-28",
+      "time": "17:30",
+      "place": "Núcleo Histórico de Santo Amaro - Torre do Capitão",
       "category": "Exhibition"
     },
     {
@@ -1453,6 +1463,26 @@
       "time": "18:00",
       "place": "Galeria Restock",
       "category": "Exhibition"
+    },
+    {
+      "id": "418",
+      "title": "Encontro com o Cinema | \"Noite e Dia\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/encontro-com-o-cinema-noite-e-dia",
+      "start": "2026-11-06",
+      "end": "2026-11-06",
+      "time": "21:00",
+      "place": "Centro Cultural John dos Passos",
+      "category": "Other"
+    },
+    {
+      "id": "429",
+      "title": "\"Casa de Bonecas\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/casa-de-bonecas",
+      "start": "2026-11-06",
+      "end": "2026-11-07",
+      "time": "21:00",
+      "place": "Casa da Cultura de Câmara de Lobos",
+      "category": "Theatre"
     },
     {
       "id": "377",
@@ -1485,6 +1515,26 @@
       "category": "Music"
     },
     {
+      "id": "420",
+      "title": "Atelier de Expressão Plástica - Técnicas de pintura acrílica sobre tela",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/atelier-de-expressao-plastica-tecnicas-de-pintura-acrilica-sobre-tela",
+      "start": "2026-11-07",
+      "end": "2026-11-07",
+      "time": "10:00",
+      "place": "MUDAS.Museu de Arte Contemporânea da Madeira",
+      "category": "Activity"
+    },
+    {
+      "id": "422",
+      "title": "O Coro Infantil do Conservatório, celebra 39 anos com concerto especial",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/o-coro-infantil-do-conservatorio-celebra-39-anos-com-concerto-especial",
+      "start": "2026-11-07",
+      "end": "2026-11-07",
+      "time": "16:30",
+      "place": "Igreja de São João Evangelista",
+      "category": "Music"
+    },
+    {
       "id": "414",
       "title": "V Encontro de Bandas de Santana 2026",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/v-encontro-de-bandas-de-santana",
@@ -1493,6 +1543,16 @@
       "time": "15:00",
       "place": "Polidesportivo do Faial",
       "category": "Music"
+    },
+    {
+      "id": "425",
+      "title": "2.ª Edição da MAM. Mostra de animações feitas na Madeira-26",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/2-a-edicao-da-mam-mostra-de-animacoes-feitas-na-madeira-26",
+      "start": "2026-11-09",
+      "end": "2026-11-09",
+      "time": "12:45",
+      "place": "Universidade da Madeira - Campus da Penteada",
+      "category": "Other"
     },
     {
       "id": "412",
@@ -1505,6 +1565,16 @@
       "category": "Theatre"
     },
     {
+      "id": "431",
+      "title": "Festival Travessuras Culturais 2026",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/festival-travessuras-culturais",
+      "start": "2026-11-12",
+      "end": "2026-11-15",
+      "time": "",
+      "place": "Centro da Ponta do Sol",
+      "category": "Other"
+    },
+    {
       "id": "397",
       "title": "\"Sons e Sabores da Madeira\" 2026",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/sons-e-sabores-da-madeira-2026",
@@ -1512,6 +1582,36 @@
       "end": "2026-11-15",
       "time": "",
       "place": "Santa Cruz - Centro",
+      "category": "Other"
+    },
+    {
+      "id": "421",
+      "title": "Ciclo de Recitais dos alunos do Conservatório",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/ciclo-de-recitais-dos-alunos-do-conservatorio",
+      "start": "2026-11-13",
+      "end": "2026-12-18",
+      "time": "",
+      "place": "Conservatório - Escola Profissional das Artes da Madeira Eng. Luiz Peter Clode",
+      "category": "Music"
+    },
+    {
+      "id": "426",
+      "title": "\"Noites da Madeira\" - Uma Homenagem a Celso Rodrigues",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/noites-da-madeira-homenagem-a-celso-rodrigues",
+      "start": "2026-11-13",
+      "end": "2026-11-13",
+      "time": "20:00",
+      "place": "Teatro Municipal Baltazar Dias",
+      "category": "Music"
+    },
+    {
+      "id": "430",
+      "title": "IV BAG'USTOS - Encontros de Tradição",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/iv-bagustos-encontros-de-tradicao",
+      "start": "2026-11-13",
+      "end": "2026-11-14",
+      "time": "20:30",
+      "place": "Largo da Igreja - Jardim do Mar",
       "category": "Other"
     },
     {
@@ -1535,6 +1635,16 @@
       "category": "Music"
     },
     {
+      "id": "428",
+      "title": "Mudar a Escola para Mudar o Mundo — Encontro de pensamento e práticas pedagógicas",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/conferencias/mudar-a-escola-para-mudar-o-mundo-encontro-de-pensamento-e-praticas-pedagogicas",
+      "start": "2026-11-14",
+      "end": "2026-11-22",
+      "time": "",
+      "place": "PORTA 33",
+      "category": "Conference"
+    },
+    {
       "id": "384",
       "title": "Concerto de Santa Cecília",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concerto-de-santa-cecilia",
@@ -1545,6 +1655,26 @@
       "category": "Music"
     },
     {
+      "id": "424",
+      "title": "XXXII Semana Cultural da Ilha",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/xxxii-semana-cultural-da-ilha",
+      "start": "2026-11-22",
+      "end": "2026-11-29",
+      "time": "",
+      "place": "Casa do Povo da Ilha, Santana",
+      "category": "Other"
+    },
+    {
+      "id": "411",
+      "title": "Espetáculo “A Lâmpada Mágica – Uma História de Natal”",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/espetaculo-a-lampada-magica-uma-historia-de-natal",
+      "start": "2026-12-04",
+      "end": "2026-12-06",
+      "time": "21:00",
+      "place": "Auditório do Centro de Congressos da Madeira",
+      "category": "Theatre"
+    },
+    {
       "id": "413",
       "title": "Concerto de Natal 2026",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concerto-de-natal-2026",
@@ -1553,6 +1683,16 @@
       "time": "18:00",
       "place": "Auditório do Centro de Congressos da Madeira",
       "category": "Music"
+    },
+    {
+      "id": "419",
+      "title": "Oficina de Natal \"Lapinha-Luminária\", inspirada na exposição \"Dear Lourdes,\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/oficina-de-natal-lapinha-luminaria-inspirada-na-exposicao-dear-lourdes-de-leah-singer-e-lee-ranaldo",
+      "start": "2026-12-21",
+      "end": "2026-12-22",
+      "time": "10:00",
+      "place": "Galeria Tratuário",
+      "category": "Activity"
     }
   ]
 }

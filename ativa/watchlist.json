@@ -1,29 +1,7 @@
 {
   "note": "Annual races not yet announced by their organisers. Rebuilt daily.",
-  "generated_at": "2026-11-03",
+  "generated_at": "2026-11-07",
   "items": [
-    {
-      "name": "ADN Race Ponta do Sol",
-      "mode": "trail",
-      "expected": "Expected in November 2026",
-      "watch_dates": [
-        "2026-11-03"
-      ],
-      "location": "Ponta do Sol, Madeira",
-      "status": "watching for a confirmed 2026 date (known schedule)",
-      "url": "https://adnrace.pt/"
-    },
-    {
-      "name": "Volta à Cidade do Funchal",
-      "mode": "road",
-      "expected": "Expected in December 2026",
-      "watch_dates": [
-        "2026-12-01"
-      ],
-      "location": "Funchal, Madeira",
-      "status": "watching for a confirmed 2026 date (known schedule)",
-      "url": "https://www.voltacidade.com/"
-    },
     {
       "name": "Funchal Vertical Kilometer",
       "mode": "trail",

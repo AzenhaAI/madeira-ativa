@@ -1,8 +1,8 @@
 {
   "note": "Ship calls at the port of Funchal from APRAM. Times are Madeira local time, as the port publishes them. Accumulates; a call no longer listed before its arrival is marked superseded.",
   "source": "https://apram.pt/movimento-navios?port=ptfnc",
-  "fetched": "2026-11-01T12:03:53",
-  "count": 77,
+  "fetched": "2026-11-07T12:01:59",
+  "count": 96,
   "calls": [
     {
       "ship": "SANTA MARIA MANUELA",
@@ -745,6 +745,16 @@
       "superseded": false
     },
     {
+      "ship": "AIDAprima",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-11-05T07:00",
+      "from": "Puerto Del Rosario-Fuerteventura",
+      "departure": "2026-11-05T23:00",
+      "to": "Las Palmas (Gran Canaria)",
+      "superseded": false
+    },
+    {
       "ship": "EXPLORA I",
       "berth": "Funchal - Terminal Norte",
       "agent": "JFM Shipping, Lda.",
@@ -752,6 +762,26 @@
       "from": "Cadiz",
       "departure": "2026-11-05T18:00",
       "to": "Saint John'S",
+      "superseded": false
+    },
+    {
+      "ship": "EXPLORA I",
+      "berth": "Funchal - Terminal Norte",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-11-05T08:10",
+      "from": "Cadiz",
+      "departure": "2026-11-05T18:00",
+      "to": "Saint John'S",
+      "superseded": false
+    },
+    {
+      "ship": "KAPITAN GLOWACKI",
+      "berth": "Funchal - Fundeadouro",
+      "agent": "Wilhelmsen Port Services Portugal, S.A.",
+      "arrival": "2026-11-05T08:30",
+      "from": "Cascais",
+      "departure": "2026-11-06T17:00",
+      "to": "Porto Santo Island",
       "superseded": false
     },
     {
@@ -765,6 +795,146 @@
       "superseded": false
     },
     {
+      "ship": "NORWEGIAN STAR",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-11-06T08:50",
+      "from": "Santa Cruz De Tenerife",
+      "departure": "2026-11-06T19:00",
+      "to": "Lisboa",
+      "superseded": false
+    },
+    {
+      "ship": "MEIN SCHIFF 7",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-11-06T12:55",
+      "from": "Las Palmas (Gran Canaria)",
+      "departure": "2026-11-07T11:00",
+      "to": "Santa Cruz De La Palma",
+      "superseded": false
+    },
+    {
+      "ship": "MEIN SCHIFF 7",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-11-07T08:45",
+      "from": "Las Palmas (Gran Canaria)",
+      "departure": "2026-11-07T15:00",
+      "to": "Santa Cruz De La Palma",
+      "superseded": false
+    },
+    {
+      "ship": "QUEEN ANNE",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-11-08T07:00",
+      "from": "Ponta Delgada",
+      "departure": "2026-11-08T18:00",
+      "to": "Lisboa",
+      "superseded": true
+    },
+    {
+      "ship": "MEIN SCHIFF RELAX",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-11-09T05:30",
+      "from": "Lisboa",
+      "departure": "2026-11-09T18:00",
+      "to": "Santa Cruz De La Palma",
+      "superseded": false
+    },
+    {
+      "ship": "AZURA",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-11-09T07:00",
+      "from": "Santa Cruz De Tenerife",
+      "departure": "2026-11-09T17:30",
+      "to": "Las Palmas (Gran Canaria)",
+      "superseded": true
+    },
+    {
+      "ship": "AIDAblu",
+      "berth": "Funchal - Terminal Norte",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-11-10T06:00",
+      "from": "Las Palmas (Gran Canaria)",
+      "departure": "2026-11-11T18:00",
+      "to": "Puerto Del Rosario-Fuerteventura",
+      "superseded": false
+    },
+    {
+      "ship": "VASCO DA GAMA",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Transinsular (Madeira)-Transp. Marit. Insulares, Lda.",
+      "arrival": "2026-11-10T08:00",
+      "from": "Portos Desconhecidos / Alto Mar (Ao Largo)",
+      "departure": "2026-11-10T19:00",
+      "to": "Portos Desconhecidos / Alto Mar (Ao Largo)",
+      "superseded": false
+    },
+    {
+      "ship": "SKY PRINCESS",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-11-10T08:00",
+      "from": "Vigo",
+      "departure": "2026-11-10T16:30",
+      "to": "San Juan",
+      "superseded": false
+    },
+    {
+      "ship": "LOHANKA",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-11-10T16:30",
+      "from": "Casablanca",
+      "departure": "2026-11-14T06:30",
+      "to": "Santa Cruz De Tenerife",
+      "superseded": false
+    },
+    {
+      "ship": "IONA",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-11-11T06:30",
+      "from": "Southampton",
+      "departure": "2026-11-11T16:30",
+      "to": "Santa Cruz De Tenerife",
+      "superseded": false
+    },
+    {
+      "ship": "LE DUMONT D'URVILLE",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-11-11T11:30",
+      "from": "Portos Desconhecidos / Alto Mar (Ao Largo)",
+      "departure": "2026-11-12T12:00",
+      "to": "Portos Desconhecidos / Alto Mar (Ao Largo)",
+      "superseded": false
+    },
+    {
+      "ship": "SEABOURN QUEST",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-11-12T07:00",
+      "from": "Lisboa",
+      "departure": "2026-11-12T22:30",
+      "to": "Miami",
+      "superseded": false
+    },
+    {
+      "ship": "QUEEN VICTORIA",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-11-15T06:00",
+      "from": "Southampton",
+      "departure": "2026-11-15T16:00",
+      "to": "Santa Cruz De Tenerife",
+      "superseded": false
+    },
+    {
       "ship": "STAR LEGEND",
       "berth": "Funchal - Terminal Norte",
       "agent": "Blatas, Lda.",
@@ -772,6 +942,26 @@
       "from": "Casablanca",
       "departure": "2026-11-16T23:00",
       "to": "Bridgetown",
+      "superseded": false
+    },
+    {
+      "ship": "AMBITION",
+      "berth": "Funchal - Terminal Norte",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-11-19T07:00",
+      "from": "Vigo",
+      "departure": "2026-11-19T17:00",
+      "to": "Santa Cruz De La Palma",
+      "superseded": false
+    },
+    {
+      "ship": "SILVER SPIRIT",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Agência Ferraz - J. M. Ferraz Simões, Lda.",
+      "arrival": "2026-11-24T07:00",
+      "from": "Lisboa",
+      "departure": "2026-11-24T23:00",
+      "to": "Santa Cruz De La Palma",
       "superseded": false
     }
   ]

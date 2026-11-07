@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-11-03T12:49:01",
-  "count": 552,
+  "fetched": "2026-11-07T11:46:49",
+  "count": 589,
   "items": [
     {
       "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
@@ -6245,6 +6245,21 @@
       "source_category": "theater"
     },
     {
+      "id": "groovy-music-social-club-the-beginning-side-a-2026-11-03",
+      "title": "Groovy Music & Social Club: The Beginning - Side A",
+      "url": "https://www.madeira-unlocked.com/en/events/groovy-music-social-club-the-beginning-side-a-2026-11-03",
+      "start": "2026-11-03T16:30:00+00:00",
+      "end": "2026-11-07T01:00:00+00:00",
+      "date": "2026-11-03",
+      "time": "16:30",
+      "venue": "Groovy",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Groovy",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "the-emperor-s-new-clothes-o-rei-vai-nu-2026-11-04-1500",
       "title": "The Emperor’s New Clothes, O Rei Vai Nu",
       "url": "https://www.madeira-unlocked.com/en/events/the-emperor-s-new-clothes-o-rei-vai-nu-2026-11-04-1500",
@@ -6335,6 +6350,21 @@
       "source_category": "art-exhibitions"
     },
     {
+      "id": "abm-bebes-sessao-de-historias-2026-11-05",
+      "title": "ABM Bebés - Sessão de Histórias",
+      "url": "https://www.madeira-unlocked.com/en/events/abm-bebes-sessao-de-historias-2026-11-05",
+      "start": "2026-11-05T18:00:00+00:00",
+      "end": "2026-11-05T19:30:00+00:00",
+      "date": "2026-11-05",
+      "time": "18:00",
+      "venue": "Madeira Archives and Library",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Direção Regional dos Arquivos",
+      "category": "family",
+      "source_category": "kids-family"
+    },
+    {
       "id": "ella-fitzgerald-to-louis-armstrong-2026-11-05",
       "title": "Ella Fitzgerald to Louis Armstrong",
       "url": "https://www.madeira-unlocked.com/en/events/ella-fitzgerald-to-louis-armstrong-2026-11-05",
@@ -6376,6 +6406,21 @@
       "municipality": "Funchal",
       "price": 0,
       "organizer": "Associação Cultural do Socorro",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "insular-sallim-2026-11-05",
+      "title": "insuLAR : SALLIM",
+      "url": "https://www.madeira-unlocked.com/en/events/insular-sallim-2026-11-05",
+      "start": "2026-11-05T21:30:00+00:00",
+      "end": "2026-11-06T01:00:00+00:00",
+      "date": "2026-11-05",
+      "time": "21:30",
+      "venue": "Barreirinha Bar Café",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Barreirinha",
       "category": "concert",
       "source_category": "music-concerts"
     },
@@ -6438,6 +6483,21 @@
       "organizer": "Associação Cultural do Socorro",
       "category": "concert",
       "source_category": "music-concerts"
+    },
+    {
+      "id": "screenings-funchal-naza-2026-11-06",
+      "title": "Screenings Funchal: Naza",
+      "url": "https://www.madeira-unlocked.com/en/events/screenings-funchal-naza-2026-11-06",
+      "start": "2026-11-06T21:00:00+00:00",
+      "end": "2026-11-06T22:20:00+00:00",
+      "date": "2026-11-06",
+      "time": "21:00",
+      "venue": "Cinemas NOS Fórum Madeira",
+      "municipality": "Funchal",
+      "price": 4.9,
+      "organizer": "Screenings Funchal",
+      "category": "cinema",
+      "source_category": "movies-cinema"
     },
     {
       "id": "madeira-embroidery-workshop-2026-11-07",
@@ -6665,6 +6725,51 @@
       "source_category": "theater"
     },
     {
+      "id": "screenings-funchal-naza-2026-11-07",
+      "title": "Screenings Funchal: Naza",
+      "url": "https://www.madeira-unlocked.com/en/events/screenings-funchal-naza-2026-11-07",
+      "start": "2026-11-07T21:00:00+00:00",
+      "end": "2026-11-07T22:20:00+00:00",
+      "date": "2026-11-07",
+      "time": "21:00",
+      "venue": "Cinemas NOS Fórum Madeira",
+      "municipality": "Funchal",
+      "price": 4.9,
+      "organizer": "Screenings Funchal",
+      "category": "cinema",
+      "source_category": "movies-cinema"
+    },
+    {
+      "id": "the-beatles-by-the-beetlers-2026-11-07",
+      "title": "The Beatles by the Beetlers",
+      "url": "https://www.madeira-unlocked.com/en/events/the-beatles-by-the-beetlers-2026-11-07",
+      "start": "2026-11-07T21:00:00+00:00",
+      "end": "2026-11-07T22:00:00+00:00",
+      "date": "2026-11-07",
+      "time": "21:00",
+      "venue": "Capoeira Lounge",
+      "municipality": "Santa Cruz",
+      "price": 0,
+      "organizer": "Capoeira Lounge Bar",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "funchal-city-race-2026-11-08",
+      "title": "Funchal City Race",
+      "url": "https://www.madeira-unlocked.com/en/events/funchal-city-race-2026-11-08",
+      "start": "2026-11-08T08:45:00+00:00",
+      "end": "2026-11-08T12:30:00+00:00",
+      "date": "2026-11-08",
+      "time": "08:45",
+      "venue": "Meeting point at Rua Dr. António José de Almeida",
+      "municipality": "Funchal",
+      "price": 3,
+      "organizer": "Clube Aventura da Madeira",
+      "category": "sport",
+      "source_category": "sport-fitness"
+    },
+    {
       "id": "mountain-bike-meeting-arrival-and-welcome-2026-11-08",
       "title": "Mountain Bike Meeting, Arrival and Welcome",
       "url": "https://www.madeira-unlocked.com/en/events/mountain-bike-meeting-arrival-and-welcome-2026-11-08",
@@ -6690,7 +6795,7 @@
       "venue": "Caminho da Quinta do Palheiro, 32, 9060-255",
       "municipality": "Funchal",
       "price": 21.15,
-      "organizer": "Oh Lã Lã Fiber Lab",
+      "organizer": "Oh Lã Lã Fibre Lab",
       "category": "workshop",
       "source_category": "handicraft-workshops"
     },
@@ -6785,6 +6890,36 @@
       "source_category": "sport-fitness"
     },
     {
+      "id": "tmbd-tome-curta-metragem-de-andre-fournier-2026-11-10",
+      "title": "TMBD: Tomé: Curta-metragem de André Fournier",
+      "url": "https://www.madeira-unlocked.com/en/events/tmbd-tome-curta-metragem-de-andre-fournier-2026-11-10",
+      "start": "2026-11-10T19:00:00+00:00",
+      "end": "2026-11-10T19:45:00+00:00",
+      "date": "2026-11-10",
+      "time": "19:00",
+      "venue": "Teatro Municipal Baltazar Dias",
+      "municipality": "Funchal",
+      "price": 11,
+      "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
+      "category": "cinema",
+      "source_category": "movies-cinema"
+    },
+    {
+      "id": "tome-um-filme-de-andre-fournier-2026-11-10",
+      "title": "Tomé - Um Filme de André Fournier",
+      "url": "https://www.madeira-unlocked.com/en/events/tome-um-filme-de-andre-fournier-2026-11-10",
+      "start": "2026-11-10T19:00:00+00:00",
+      "end": "2026-11-10T19:20:00+00:00",
+      "date": "2026-11-10",
+      "time": "19:00",
+      "venue": "Teatro Municipal Baltazar Dias",
+      "municipality": "Funchal",
+      "price": 11.89,
+      "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
+      "category": "cinema",
+      "source_category": "movies-cinema"
+    },
+    {
       "id": "mountain-bike-meeting-guided-enduro-and-traditional-lunch-2026-11-11",
       "title": "Mountain Bike Meeting, Guided Enduro and Traditional Lunch",
       "url": "https://www.madeira-unlocked.com/en/events/mountain-bike-meeting-guided-enduro-and-traditional-lunch-2026-11-11",
@@ -6813,6 +6948,21 @@
       "organizer": "Paróquia de São Martinho",
       "category": "festival",
       "source_category": "festivals-parades"
+    },
+    {
+      "id": "saint-martin-lantern-festival-2026-11-11-old",
+      "title": "Saint Martin - Lantern Festival",
+      "url": "https://www.madeira-unlocked.com/en/events/saint-martin-lantern-festival-2026-11-11-old",
+      "start": "2026-11-11T17:30:00+00:00",
+      "end": "2026-11-11T18:30:00+00:00",
+      "date": "2026-11-11",
+      "time": "17:30",
+      "venue": "Parque de Santa Catarina",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Melanie Müller-Hoffmann",
+      "category": "family",
+      "source_category": "kids-family"
     },
     {
       "id": "madeira-pianofest-2026-11-11",
@@ -6920,6 +7070,21 @@
       "source_category": "sport-fitness"
     },
     {
+      "id": "festa-do-dentinho-2026-11-13",
+      "title": "Festa do Dentinho",
+      "url": "https://www.madeira-unlocked.com/en/events/festa-do-dentinho-2026-11-13",
+      "start": "2026-11-13T18:00:00+00:00",
+      "end": "2026-11-14T01:30:00+00:00",
+      "date": "2026-11-13",
+      "time": "18:00",
+      "venue": "Ponta Delgada",
+      "municipality": "São Vicente",
+      "price": 0,
+      "organizer": "Associação Desportiva e Recreativa da Ponta Delgada",
+      "category": "festival",
+      "source_category": "festivals-parades"
+    },
+    {
       "id": "niko-svetiev-2026-11-13",
       "title": "NIKO SVETIEV",
       "url": "https://www.madeira-unlocked.com/en/events/niko-svetiev-2026-11-13",
@@ -6965,6 +7130,21 @@
       "source_category": "theater"
     },
     {
+      "id": "tmbd-tome-noites-da-madeira-homenagem-a-celso-rodrigues-2026-11-13",
+      "title": "TMBD: Tomé: Noites da Madeira - Homenagem a Celso Rodrigues",
+      "url": "https://www.madeira-unlocked.com/en/events/tmbd-tome-noites-da-madeira-homenagem-a-celso-rodrigues-2026-11-13",
+      "start": "2026-11-13T20:00:00+00:00",
+      "end": "2026-11-13T21:00:00+00:00",
+      "date": "2026-11-13",
+      "time": "20:00",
+      "venue": "Teatro Municipal Baltazar Dias",
+      "municipality": "Funchal",
+      "price": 12,
+      "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "guitar-recital-2026-11-13",
       "title": "Guitar Recital",
       "url": "https://www.madeira-unlocked.com/en/events/guitar-recital-2026-11-13",
@@ -6993,6 +7173,21 @@
       "organizer": "Commedia a la Carte / Aquele Abraço",
       "category": "theatre",
       "source_category": "theater"
+    },
+    {
+      "id": "screenings-funchal-a-bola-negra-2026-11-13",
+      "title": "Screenings Funchal: A Bola Negra",
+      "url": "https://www.madeira-unlocked.com/en/events/screenings-funchal-a-bola-negra-2026-11-13",
+      "start": "2026-11-13T21:00:00+00:00",
+      "end": "2026-11-13T23:35:00+00:00",
+      "date": "2026-11-13",
+      "time": "21:00",
+      "venue": "Cinemas NOS Fórum Madeira",
+      "municipality": "Funchal",
+      "price": 4.9,
+      "organizer": "Screenings Funchal",
+      "category": "cinema",
+      "source_category": "movies-cinema"
     },
     {
       "id": "mountain-bike-meeting-outdoor-adventures-and-farewell-party-2026-11-14",
@@ -7025,6 +7220,21 @@
       "source_category": "festivals-parades"
     },
     {
+      "id": "expressa-te-arts-festival-day-2-3-2026-11-14",
+      "title": "EXPRESSA-te Arts Festival | Day 2/3",
+      "url": "https://www.madeira-unlocked.com/en/events/expressa-te-arts-festival-day-2-3-2026-11-14",
+      "start": "2026-11-14T09:30:00+00:00",
+      "end": "2026-11-14T21:30:00+00:00",
+      "date": "2026-11-14",
+      "time": "09:30",
+      "venue": "Centro de Juventude do Funchal",
+      "municipality": "Funchal",
+      "price": 20,
+      "organizer": "Portal das Artes",
+      "category": "festival",
+      "source_category": "festivals-parades"
+    },
+    {
       "id": "madeira-wool-society-november-gathering-inspiration-2026-11-14",
       "title": "MADEIRA WOOL SOCIETY | NOVEMBER GATHERING: INSPIRATION",
       "url": "https://www.madeira-unlocked.com/en/events/madeira-wool-society-november-gathering-inspiration-2026-11-14",
@@ -7040,6 +7250,21 @@
       "source_category": "handicraft-workshops"
     },
     {
+      "id": "naza-viva-2026-11-14",
+      "title": "Naza Viva",
+      "url": "https://www.madeira-unlocked.com/en/events/naza-viva-2026-11-14",
+      "start": "2026-11-14T10:00:00+00:00",
+      "end": "2026-11-14T13:00:00+00:00",
+      "date": "2026-11-14",
+      "time": "10:00",
+      "venue": "Parque Urbano da Nazaré",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Município do Funchal",
+      "category": "family",
+      "source_category": "kids-family"
+    },
+    {
       "id": "abm-miudos-o-meu-guarda-chuva-with-sign-language-2026-11-14",
       "title": "ABM Miúdos, O Meu Guarda-Chuva, with Sign Language",
       "url": "https://www.madeira-unlocked.com/en/events/abm-miudos-o-meu-guarda-chuva-with-sign-language-2026-11-14",
@@ -7053,6 +7278,21 @@
       "organizer": "Direção Regional dos Arquivos",
       "category": "family",
       "source_category": "kids-family"
+    },
+    {
+      "id": "orienteering-jardim-do-mar-2026-2026-11-14",
+      "title": "Orienteering Jardim do Mar 2026",
+      "url": "https://www.madeira-unlocked.com/en/events/orienteering-jardim-do-mar-2026-2026-11-14",
+      "start": "2026-11-14T14:00:00+00:00",
+      "end": "2026-11-14T17:00:00+00:00",
+      "date": "2026-11-14",
+      "time": "14:00",
+      "venue": "Jardim do Mar",
+      "municipality": "Calheta",
+      "price": 0,
+      "organizer": "Clube de Montanha do Funchal (CNSV)",
+      "category": "sport",
+      "source_category": "sport-fitness"
     },
     {
       "id": "structured-pouring-workshop-2026-11-14",
@@ -7130,6 +7370,21 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "fado-night-2026-11-14",
+      "title": "Fado Night",
+      "url": "https://www.madeira-unlocked.com/en/events/fado-night-2026-11-14",
+      "start": "2026-11-14T20:00:00+00:00",
+      "end": "2026-11-14T22:00:00+00:00",
+      "date": "2026-11-14",
+      "time": "20:00",
+      "venue": "Capoeira Lounge, R. Baden Powell, 9125-031 Caniço",
+      "municipality": "Santa Cruz",
+      "price": 0,
+      "organizer": "Capoeira Lounge Bar",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "commedia-2026-nem-sempre-usamos-inteligencia-artificial-2026-11-14",
       "title": "CommedIA 2026 – Nem sempre usamos Inteligência Artificial",
       "url": "https://www.madeira-unlocked.com/en/events/commedia-2026-nem-sempre-usamos-inteligencia-artificial-2026-11-14",
@@ -7160,9 +7415,69 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "screenings-funchal-a-bola-negra-2026-11-14",
+      "title": "Screenings Funchal: A Bola Negra",
+      "url": "https://www.madeira-unlocked.com/en/events/screenings-funchal-a-bola-negra-2026-11-14",
+      "start": "2026-11-14T21:00:00+00:00",
+      "end": "2026-11-14T23:35:00+00:00",
+      "date": "2026-11-14",
+      "time": "21:00",
+      "venue": "Cinemas NOS Fórum Madeira",
+      "municipality": "Funchal",
+      "price": 4.9,
+      "organizer": "Screenings Funchal",
+      "category": "cinema",
+      "source_category": "movies-cinema"
+    },
+    {
+      "id": "the-beatles-by-the-beetlers-2026-11-14",
+      "title": "The Beatles by the Beetlers",
+      "url": "https://www.madeira-unlocked.com/en/events/the-beatles-by-the-beetlers-2026-11-14",
+      "start": "2026-11-14T21:00:00+00:00",
+      "end": "2026-11-14T22:00:00+00:00",
+      "date": "2026-11-14",
+      "time": "21:00",
+      "venue": "Capoeira Lounge",
+      "municipality": "Santa Cruz",
+      "price": 0,
+      "organizer": "Capoeira Lounge Bar",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "v-ori-dos-castanheiros-2026-11-15",
+      "title": "V Ori dos Castanheiros",
+      "url": "https://www.madeira-unlocked.com/en/events/v-ori-dos-castanheiros-2026-11-15",
+      "start": "2026-11-15T08:30:00+00:00",
+      "end": "2026-11-15T13:00:00+00:00",
+      "date": "2026-11-15",
+      "time": "08:30",
+      "venue": "Curral das Freiras",
+      "municipality": "Câmara de Lobos",
+      "price": 0,
+      "organizer": "Grupo Desportivo do Estreito",
+      "category": "sport",
+      "source_category": "sport-fitness"
+    },
+    {
       "id": "expressa-te-arts-festival-2026-11-15",
       "title": "EXPRESSA-te Arts Festival",
       "url": "https://www.madeira-unlocked.com/en/events/expressa-te-arts-festival-2026-11-15",
+      "start": "2026-11-15T09:30:00+00:00",
+      "end": "2026-11-15T21:00:00+00:00",
+      "date": "2026-11-15",
+      "time": "09:30",
+      "venue": "Centro de Juventude do Funchal",
+      "municipality": "Funchal",
+      "price": 20,
+      "organizer": "Portal das Artes",
+      "category": "festival",
+      "source_category": "festivals-parades"
+    },
+    {
+      "id": "expressa-te-arts-festival-day-3-3-2026-11-15",
+      "title": "EXPRESSA-te Arts Festival | Day 3/3",
+      "url": "https://www.madeira-unlocked.com/en/events/expressa-te-arts-festival-day-3-3-2026-11-15",
       "start": "2026-11-15T09:30:00+00:00",
       "end": "2026-11-15T21:00:00+00:00",
       "date": "2026-11-15",
@@ -7325,6 +7640,21 @@
       "source_category": "dance"
     },
     {
+      "id": "tatsuru-arai-re-solarization-2026-11-18",
+      "title": "Tatsuru Arai - Re-Solarization",
+      "url": "https://www.madeira-unlocked.com/en/events/tatsuru-arai-re-solarization-2026-11-18",
+      "start": "2026-11-18T19:00:00+00:00",
+      "end": "2026-11-18T19:41:00+00:00",
+      "date": "2026-11-18",
+      "time": "19:00",
+      "venue": "Centro Cultural John Dos Passos",
+      "municipality": "Ponta do Sol",
+      "price": 10,
+      "organizer": "APCA - Agência de Promoção da Cultura Atlântica",
+      "category": "exhibition",
+      "source_category": "art-exhibitions"
+    },
+    {
       "id": "quinteto-de-sopros-atlantida-2026-11-18",
       "title": "Quinteto de Sopros Atlântida",
       "url": "https://www.madeira-unlocked.com/en/events/quinteto-de-sopros-atlantida-2026-11-18",
@@ -7460,6 +7790,21 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "screenings-funchal-confidente-2026-11-20",
+      "title": "Screenings Funchal: Confidente",
+      "url": "https://www.madeira-unlocked.com/en/events/screenings-funchal-confidente-2026-11-20",
+      "start": "2026-11-20T21:00:00+00:00",
+      "end": "2026-11-20T22:16:00+00:00",
+      "date": "2026-11-20",
+      "time": "21:00",
+      "venue": "Cinemas NOS Fórum Madeira",
+      "municipality": "Funchal",
+      "price": 4.9,
+      "organizer": "Screenings Funchal",
+      "category": "cinema",
+      "source_category": "movies-cinema"
+    },
+    {
       "id": "abm-miudos-problemas-de-gato-2026-11-21",
       "title": "ABM Miúdos, Problemas de Gato",
       "url": "https://www.madeira-unlocked.com/en/events/abm-miudos-problemas-de-gato-2026-11-21",
@@ -7535,6 +7880,21 @@
       "source_category": "dance"
     },
     {
+      "id": "screenings-funchal-confidente-2026-11-21",
+      "title": "Screenings Funchal: Confidente",
+      "url": "https://www.madeira-unlocked.com/en/events/screenings-funchal-confidente-2026-11-21",
+      "start": "2026-11-21T21:00:00+00:00",
+      "end": "2026-11-21T22:16:00+00:00",
+      "date": "2026-11-21",
+      "time": "21:00",
+      "venue": "Cinemas NOS Fórum Madeira",
+      "municipality": "Funchal",
+      "price": 4.9,
+      "organizer": "Screenings Funchal",
+      "category": "cinema",
+      "source_category": "movies-cinema"
+    },
+    {
       "id": "adn-race-2026-11-22",
       "title": "ADN Race",
       "url": "https://www.madeira-unlocked.com/en/events/adn-race-2026-11-22",
@@ -7578,6 +7938,21 @@
       "organizer": "Associação Cultural do Socorro",
       "category": "concert",
       "source_category": "music-concerts"
+    },
+    {
+      "id": "exposicao-de-arte-hellyxmas-fabio-diniz-art-2026-11-23",
+      "title": "Exposição de Arte HELLYXMAS - Fábio Diniz Art",
+      "url": "https://www.madeira-unlocked.com/en/events/exposicao-de-arte-hellyxmas-fabio-diniz-art-2026-11-23",
+      "start": "2026-11-23T18:30:00+00:00",
+      "end": "2026-11-23T20:30:00+00:00",
+      "date": "2026-11-23",
+      "time": "18:30",
+      "venue": "R. Latino Coelho 57",
+      "municipality": "Funchal",
+      "price": null,
+      "organizer": "Fábio Diniz Art",
+      "category": "exhibition",
+      "source_category": "art-exhibitions"
     },
     {
       "id": "alice-again-how-annoying-2026-11-24-1515",
@@ -7700,6 +8075,21 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "tmbd-alice-no-pais-do-teatro-2026-11-27",
+      "title": "TMBD: Alice no país do... Teatro",
+      "url": "https://www.madeira-unlocked.com/en/events/tmbd-alice-no-pais-do-teatro-2026-11-27",
+      "start": "2026-11-27T20:00:00+00:00",
+      "end": "2026-11-27T21:00:00+00:00",
+      "date": "2026-11-27",
+      "time": "20:00",
+      "venue": "Teatro Municipal Baltazar Dias",
+      "municipality": "Funchal",
+      "price": 10,
+      "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
+      "category": "theatre",
+      "source_category": "theater"
+    },
+    {
       "id": "maritimo-vs-cd-nacional-madeira-derby-2026-11-27",
       "title": "Marítimo vs CD Nacional, Madeira Derby",
       "url": "https://www.madeira-unlocked.com/en/events/maritimo-vs-cd-nacional-madeira-derby-2026-11-27",
@@ -7745,6 +8135,36 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "screenings-funchal-entroncamento-2026-11-27",
+      "title": "Screenings Funchal: Entroncamento",
+      "url": "https://www.madeira-unlocked.com/en/events/screenings-funchal-entroncamento-2026-11-27",
+      "start": "2026-11-27T21:00:00+00:00",
+      "end": "2026-11-27T23:11:00+00:00",
+      "date": "2026-11-27",
+      "time": "21:00",
+      "venue": "Cinemas NOS Fórum Madeira",
+      "municipality": "Funchal",
+      "price": 4.9,
+      "organizer": "Screenings Funchal",
+      "category": "cinema",
+      "source_category": "movies-cinema"
+    },
+    {
+      "id": "death-cafe-madeira-field-trip-2026-11-28",
+      "title": "Death Cafe Madeira - Field Trip",
+      "url": "https://www.madeira-unlocked.com/en/events/death-cafe-madeira-field-trip-2026-11-28",
+      "start": "2026-11-28T10:30:00+00:00",
+      "end": "2026-11-28T13:00:00+00:00",
+      "date": "2026-11-28",
+      "time": "10:30",
+      "venue": "Ethnographic Museum of Madeira",
+      "municipality": "Ribeira Brava",
+      "price": 0,
+      "organizer": "Leila",
+      "category": "exhibition",
+      "source_category": "art-exhibitions"
+    },
+    {
       "id": "abm-miudos-problemas-de-gato-with-sign-language-2026-11-28",
       "title": "ABM Miúdos, Problemas de Gato, with Sign Language",
       "url": "https://www.madeira-unlocked.com/en/events/abm-miudos-problemas-de-gato-with-sign-language-2026-11-28",
@@ -7758,6 +8178,21 @@
       "organizer": "Direção Regional dos Arquivos",
       "category": "family",
       "source_category": "kids-family"
+    },
+    {
+      "id": "calheta-orienteering-2026-11-28",
+      "title": "Calheta Orienteering",
+      "url": "https://www.madeira-unlocked.com/en/events/calheta-orienteering-2026-11-28",
+      "start": "2026-11-28T13:00:00+00:00",
+      "end": "2026-11-28T17:00:00+00:00",
+      "date": "2026-11-28",
+      "time": "13:00",
+      "venue": "Campo de Futebol dos Prazeres",
+      "municipality": "Calheta",
+      "price": 3,
+      "organizer": "Clube Aventura da Madeira",
+      "category": "sport",
+      "source_category": "sport-fitness"
     },
     {
       "id": "stories-in-english-the-smartest-giant-in-town-2026-11-28",
@@ -7833,6 +8268,51 @@
       "organizer": "Associação Cultural do Socorro",
       "category": "concert",
       "source_category": "music-concerts"
+    },
+    {
+      "id": "fado-night-2026-11-28",
+      "title": "Fado Night",
+      "url": "https://www.madeira-unlocked.com/en/events/fado-night-2026-11-28",
+      "start": "2026-11-28T20:00:00+00:00",
+      "end": "2026-11-28T22:00:00+00:00",
+      "date": "2026-11-28",
+      "time": "20:00",
+      "venue": "Capoeira Lounge, Rua Baden Powell, Caniço de Baixo",
+      "municipality": "Santa Cruz",
+      "price": 0,
+      "organizer": "Capoeira Lounge Bar",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "tmbd-alice-no-pais-do-teatro-2026-11-28",
+      "title": "TMBD: Alice no país do... Teatro",
+      "url": "https://www.madeira-unlocked.com/en/events/tmbd-alice-no-pais-do-teatro-2026-11-28",
+      "start": "2026-11-28T20:00:00+00:00",
+      "end": "2026-11-28T21:00:00+00:00",
+      "date": "2026-11-28",
+      "time": "20:00",
+      "venue": "Teatro Municipal Baltazar Dias",
+      "municipality": "Funchal",
+      "price": 10,
+      "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
+      "category": "theatre",
+      "source_category": "theater"
+    },
+    {
+      "id": "screenings-funchal-entroncamento-2026-11-28",
+      "title": "Screenings Funchal: Entroncamento",
+      "url": "https://www.madeira-unlocked.com/en/events/screenings-funchal-entroncamento-2026-11-28",
+      "start": "2026-11-28T21:00:00+00:00",
+      "end": "2026-11-28T23:11:00+00:00",
+      "date": "2026-11-28",
+      "time": "21:00",
+      "venue": "Cinemas NOS Fórum Madeira",
+      "municipality": "Funchal",
+      "price": 4.9,
+      "organizer": "Screenings Funchal",
+      "category": "cinema",
+      "source_category": "movies-cinema"
     },
     {
       "id": "decorative-rattan-wreath-workshop-2026-11-29",
@@ -7925,6 +8405,21 @@
       "source_category": "handicraft-workshops"
     },
     {
+      "id": "tmbd-alice-no-pais-do-teatro-2026-12-04",
+      "title": "TMBD: Alice no país do... Teatro",
+      "url": "https://www.madeira-unlocked.com/en/events/tmbd-alice-no-pais-do-teatro-2026-12-04",
+      "start": "2026-12-04T20:00:00+00:00",
+      "end": "2026-12-04T21:00:00+00:00",
+      "date": "2026-12-04",
+      "time": "20:00",
+      "venue": "Teatro Municipal Baltazar Dias",
+      "municipality": "Funchal",
+      "price": 10,
+      "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
+      "category": "theatre",
+      "source_category": "theater"
+    },
+    {
       "id": "everlasting-sound-2026-12-04",
       "title": "Everlasting Sound",
       "url": "https://www.madeira-unlocked.com/en/events/everlasting-sound-2026-12-04",
@@ -8000,6 +8495,36 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "tmbd-alice-no-pais-do-teatro-2026-12-05",
+      "title": "TMBD: Alice no país do... Teatro",
+      "url": "https://www.madeira-unlocked.com/en/events/tmbd-alice-no-pais-do-teatro-2026-12-05",
+      "start": "2026-12-05T20:00:00+00:00",
+      "end": "2026-12-05T21:00:00+00:00",
+      "date": "2026-12-05",
+      "time": "20:00",
+      "venue": "Teatro Municipal Baltazar Dias",
+      "municipality": "Funchal",
+      "price": 10,
+      "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
+      "category": "theatre",
+      "source_category": "theater"
+    },
+    {
+      "id": "a-historia-do-natal-coral-2026-12-06",
+      "title": "A História do Natal Coral",
+      "url": "https://www.madeira-unlocked.com/en/events/a-historia-do-natal-coral-2026-12-06",
+      "start": "2026-12-06T18:00:00+00:00",
+      "end": "2026-12-06T19:10:00+00:00",
+      "date": "2026-12-06",
+      "time": "18:00",
+      "venue": "Sacred Art Museum of Funchal",
+      "municipality": "Funchal",
+      "price": 21.48,
+      "organizer": "Associação dos Amigos do Conservatório de Música da Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "bachata-styling-in-couple-solo-2026-12-09",
       "title": "Bachata Styling (in Couple & Solo)",
       "url": "https://www.madeira-unlocked.com/en/events/bachata-styling-in-couple-solo-2026-12-09",
@@ -8058,6 +8583,21 @@
       "organizer": "Direção Regional dos Arquivos",
       "category": "family",
       "source_category": "kids-family"
+    },
+    {
+      "id": "concerto-de-natal-2026-12-12",
+      "title": "Concerto de Natal",
+      "url": "https://www.madeira-unlocked.com/en/events/concerto-de-natal-2026-12-12",
+      "start": "2026-12-12T20:00:00+00:00",
+      "end": "2026-12-12T21:15:00+00:00",
+      "date": "2026-12-12",
+      "time": "20:00",
+      "venue": "Igreja do Sagrado Coração de Jesus",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "O Conservatório – Escola das Artes da Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "maritimo-vs-rio-ave-fc-2026-12-13",
@@ -8236,6 +8776,21 @@
       "municipality": "Funchal",
       "price": 25,
       "organizer": "Madeira Guitar Nights: Funchal Guitar Quartet in Concert",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "com-musica-para-o-ano-novo-2026-12-30",
+      "title": "Com Música para o Ano Novo",
+      "url": "https://www.madeira-unlocked.com/en/events/com-musica-para-o-ano-novo-2026-12-30",
+      "start": "2026-12-30T18:00:00+00:00",
+      "end": "2026-12-30T19:30:00+00:00",
+      "date": "2026-12-30",
+      "time": "18:00",
+      "venue": "Teatro Municipal Baltazar Dias",
+      "municipality": "Funchal",
+      "price": 20,
+      "organizer": "Associação dos Amigos do Conservatório de Música da Madeira",
       "category": "concert",
       "source_category": "music-concerts"
     },

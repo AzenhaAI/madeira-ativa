@@ -1,7 +1,7 @@
 {
  "note": "Orquestra Clássica da Madeira season, from scripts/fetch_ocm.py. Accumulates.",
  "source": "https://www.ocmadeira.pt/concertos/temporada-atual.html",
- "fetched": "2026-11-03T12:49:14+00:00",
+ "fetched": "2026-11-07T11:47:05+00:00",
  "count": 14,
  "items": [
   {
@@ -139,10 +139,10 @@
    "date": "2027-02-07",
    "time": "18:00",
    "place": "Teatro Municipal Baltazar Dias",
-   "price": "25.00€",
+   "price": "30.00€",
    "series": "Orquestra Clássica da Madeira",
    "url": "https://www.ocmadeira.pt/concertos/proximos-eventos/orquestra-cla-ssica-da-madeira/286-concerto-de-carnaval.html",
-   "tickets": ""
+   "tickets": "https://www.ticketline.pt/evento/concerto-de-carnaval-109174"
   }
  ]
 }

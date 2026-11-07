@@ -1,4 +1,16 @@
 {
+ "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/atelier-de-expressao-plastica-tecnicas-de-pintura-acrilica-sobre-tela": {
+  "about": "Neste atelier, os participantes inspirados em algumas obras do acervo do MUDAS.Museu e na paisagem arquitectónica e natural circundante, são convidados a desenvolver uma proposta de desconstrução da imagem visível através da exploração de…",
+  "price": "Free",
+  "time": "",
+  "fetched": "2026-11-04"
+ },
+ "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/oficina-de-natal-lapinha-luminaria-inspirada-na-exposicao-dear-lourdes-de-leah-singer-e-lee-ranaldo": {
+  "about": "De Leah Singer e Lee Ranaldo. Público-alvo: dos 6 aos 16 anos Mediação: Maria Jardim Nesta oficina de Natal, inspirada na exposição \"Dear Lourdes,\" de Leah Singer e Lee Ranaldo, os participantes são convidados a explorar a luz, as sombras…",
+  "price": "",
+  "time": "",
+  "fetched": "2026-11-04"
+ },
  "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/oficinas-de-desenho": {
   "about": "Prática do desenho como atividade de mapeamento das relações perceptivas com o mundo e com o próprio universo do pensamento.",
   "price": "",
@@ -29,6 +41,12 @@
   "time": "",
   "fetched": "2026-11-01"
  },
+ "https://cultura.madeira.gov.pt/index.php/agenda-cultural/conferencias/mudar-a-escola-para-mudar-o-mundo-encontro-de-pensamento-e-praticas-pedagogicas": {
+  "about": "No âmbito da exposição \"Mudar a Escola para Mudar o Mundo\". Uma coprodução com o Plano Nacional das Artes (PNA). Participação sujeita a inscrição prévia. Programa Inscrição",
+  "price": "",
+  "time": "",
+  "fetched": "2026-11-05"
+ },
  "https://cultura.madeira.gov.pt/index.php/agenda-cultural/conferencias/viii-encontro-de-boas-praticas-museologicas": {
   "about": "A Região Autónoma da Madeira acolhe, entre os dias 21 e 24 de outubro, o VIII Encontro de Boas Práticas Museológicas, sob o tema «Periferias, desafios do trabalho em rede: entre o local e o global».",
   "price": "",
@@ -52,6 +70,12 @@
   "price": "",
   "time": "17:00",
   "fetched": "2026-11-01"
+ },
+ "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/che-cosa-sono-le-nuvole": {
+  "about": "No dia 5 de novembro, a Torre do Capitão - Núcleo Histórico e Museológico de Santo Amaro, acolhe a abertura da exposição itinerante “Che Cosa Sono le Nuvole?”, do artista plástico madeirense Nuno Henrique Este projeto integra o ciclo…",
+  "price": "",
+  "time": "",
+  "fetched": "2026-11-05"
  },
  "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/ciclo-de-exposicoes-in-fluxo": {
   "about": "Terceira exposição do ciclo itinerante (IN)FLUXO.",
@@ -88,6 +112,12 @@
   "price": "",
   "time": "",
   "fetched": "2026-11-01"
+ },
+ "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/exposicao-itinerante-da-intra-olhar-para-nos": {
+  "about": "Esta edição conta com a participação de 26 artistas de diversos países, como Portugal, Alemanha, França, Itália, Ucrânia, Romênia, Espanha, Venezuela, Japão e Argentina.",
+  "price": "",
+  "time": "",
+  "fetched": "2026-11-05"
  },
  "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/ilhas-revisitadas": {
   "about": "Das artistas Joana Viveiros e Rosa Cabral, vencedoras da open call \"Ilhas Revisitadas\".",
@@ -129,7 +159,7 @@
   "about": "O Museu Etnográfico da Madeira inaugura, dia 29 de outubro, a exposição temporária “Rituais de Passagem: A MORTE”.",
   "price": "",
   "time": "",
-  "fetched": "2026-10-29"
+  "fetched": "2026-11-06"
  },
  "https://cultura.madeira.gov.pt/index.php/agenda-cultural/festas-tradicionais/42-a-festa-da-castanha-curral-das-freiras": {
   "about": "O Curral das Freiras volta a celebrar uma das suas tradições mais emblemáticas, a Festa da Castanha.",
@@ -155,6 +185,12 @@
   "time": "",
   "fetched": "2026-10-28"
  },
+ "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/ciclo-de-recitais-dos-alunos-do-conservatorio": {
+  "about": "Dias 13, 20 e 27 de novembro e 4 e 18 de dezembro | 20h30. Entrada livre, limitada à lotação da sala.",
+  "price": "Free",
+  "time": "",
+  "fetched": "2026-11-05"
+ },
  "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concerto-de-natal-2026": {
   "about": "O DIÁRIO de Notícias da Madeira apresenta, em coorganização com a Orquestra Clássica da Madeira, o tradicional Concerto de Natal, integrado nas comemorações dos 150 anos do DIÁRIO.",
   "price": "",
@@ -177,7 +213,7 @@
   "about": "Calendarização: Dia 7 de novembro | 18h00. Auditório do Centro de Congressos da Madeira. Maestro: Misha Katz. Solista: Dmitry Demyashkin. Dia 14 de novembro | 18h00. Capela da Fundação Princesa Dona Maria Amélia.",
   "price": "",
   "time": "",
-  "fetched": "2026-10-28"
+  "fetched": "2026-11-05"
  },
  "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/dancas-historicas-no-solar-de-sao-cristovao": {
   "about": "No próximo dia 28 de outubro, pelas 16h00, o Solar de São Cristóvão, em Machico, será palco de uma tarde especial, marcada pela elegância, pelo ritmo e pelo encanto das danças de outras épocas.",
@@ -227,11 +263,23 @@
   "time": "",
   "fetched": "2026-11-01"
  },
+ "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/noites-da-madeira-homenagem-a-celso-rodrigues": {
+  "about": "Produção e Direção Artística: Miguel Pires A Madeira tem sido, ao longo de décadas, um destino turístico de referência internacional.",
+  "price": "",
+  "time": "",
+  "fetched": "2026-11-05"
+ },
  "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/nostalgic-madeira-music": {
   "about": "Evento inédito e verdadeiramente singular, a realizar-se todas as quintas-feiras no Instituto do Vinho, do Bordado e do Artesanato da Madeira.",
   "price": "",
   "time": "20:30",
   "fetched": "2026-11-01"
+ },
+ "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/o-coro-infantil-do-conservatorio-celebra-39-anos-com-concerto-especial": {
+  "about": "O Coro Infantil do Conservatório - Escola Profissional das Artes da Madeira Eng. Luiz Peter Clode, celebra o seu 39.º aniversário com um momento musical especial, na Igreja de São João Evangelista (Colégio).",
+  "price": "Free",
+  "time": "16:30",
+  "fetched": "2026-11-05"
  },
  "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/orquestra-classica-da-madeira-apresenta-concerto-com-albrecht-mayer": {
   "about": "A Orquestra Clássica da Madeira apresenta um concerto muito especial com Albrecht Mayer, solista principal da Berliner Philharmoniker, um dos oboístas mais famosos do mundo, amplamente reconhecido como o oboísta principal da Orquestra…",
@@ -243,7 +291,7 @@
   "about": "Maestro: Misha Katz. Solista: Dmitry Demyashkin.",
   "price": "",
   "time": "",
-  "fetched": "2026-10-29"
+  "fetched": "2026-11-06"
  },
  "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/v-encontro-de-bandas-de-santana": {
   "about": "Com a participação da Filarmónica do Faial, Banda Municipal de Santana e a banda convidada Banda Municipal de Machico. Entrada livre.",
@@ -251,17 +299,53 @@
   "time": "",
   "fetched": "2026-11-02"
  },
+ "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/2-a-edicao-da-mam-mostra-de-animacoes-feitas-na-madeira-26": {
+  "about": "Na Sala do Senado (piso -2) do Campus Universitário da Penteada da Universidade da Madeira (UMa).",
+  "price": "Free",
+  "time": "",
+  "fetched": "2026-11-05"
+ },
  "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/8-a-edicao-do-madeira-street-arts-festival": {
   "about": "Madeira Street Arts Festival chega pela 1.ª vez a Santa Cruz. A abertura da 8.ª edição terá lugar no próximo dia 24 de outubro, com destaque para o chileno Karcocha, que transforma o quotidiano em comédia e convida o público a participar…",
   "price": "",
   "time": "",
   "fetched": "2026-10-24"
  },
+ "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/encontro-com-o-cinema-noite-e-dia": {
+  "about": "Na próxima sexta, o Encontro com o Cinema leva-nos até à Londres de 1910 com \"Noite e Dia\", de Tina Gharavi, baseado no romance de Virginia Woolf.",
+  "price": "",
+  "time": "",
+  "fetched": "2026-11-04"
+ },
+ "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/festival-travessuras-culturais": {
+  "about": "O Festival Travessuras Culturais celebra a sua 10.ª edição, e este ano sob o tema “Escolher Viver”.",
+  "price": "",
+  "time": "",
+  "fetched": "2026-11-06"
+ },
+ "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/iv-bagustos-encontros-de-tradicao": {
+  "about": "A Oficina de Ideias das Terras do Oeste - Associação Cultural, apresenta IV BAG'USTOS - Encontros de Tradição.",
+  "price": "",
+  "time": "",
+  "fetched": "2026-11-06"
+ },
  "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/sons-e-sabores-da-madeira-2026": {
   "about": "Santa Cruz volta a ser palco do Sons e Sabores da Madeira, que celebra a sua 13.ª edição! Serão três dias de festa, dedicados aos sabores autênticos da nossa terra, à alegria da música e à riqueza da nossa identidade cultural.",
   "price": "",
   "time": "",
   "fetched": "2026-11-01"
+ },
+ "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/xxxii-semana-cultural-da-ilha": {
+  "about": "A Casa do Povo da Ilha, organiza entre os dias 22 e 29 de novembro, a sua XXXII Semana Cultural da Ilha. A edição de 2026, tem como temática central “Clareira de Cultura”.",
+  "price": "",
+  "time": "",
+  "fetched": "2026-11-05"
+ },
+ "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/casa-de-bonecas": {
+  "about": "A Associação Palco Vazio, apresenta a peça \"Casa de Bonecas\" com sessões, dia 6 de novembro, pelas 21h00, e no dia 7 de novembro, em sessão dupla, pelas 17h00 e pelas 20h30.",
+  "price": "",
+  "time": "",
+  "fetched": "2026-11-06"
  },
  "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/duas-casas-um-so-coracao": {
   "about": "A Comissão de Proteção de Crianças e Jovens de Machico, com a colaboração da Câmara Municipal de Machico leva ao palco do Fórum Machico, a peça de teatro \"Duas Casas, Um Só Coração\", do grupo de teatro ADVESSOS, da Associação Avesso e…",
@@ -364,6 +448,12 @@
   "price": "",
   "time": "",
   "fetched": "2026-11-01"
+ },
+ "https://www.ticketline.pt/evento/concerto-de-carnaval-109174": {
+  "about": "",
+  "price": "",
+  "time": "18:00",
+  "fetched": "2026-11-05"
  },
  "https://www.ticketline.pt/evento/concerto-fim-de-ano-106607": {
   "about": "",
