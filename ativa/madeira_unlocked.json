@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-11-07T11:46:49",
-  "count": 589,
+  "fetched": "2026-11-10T13:33:33",
+  "count": 600,
   "items": [
     {
       "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
@@ -6800,6 +6800,21 @@
       "source_category": "handicraft-workshops"
     },
     {
+      "id": "v-encontro-de-bandas-de-santana-2026-11-08",
+      "title": "V Encontro de Bandas de Santana",
+      "url": "https://www.madeira-unlocked.com/en/events/v-encontro-de-bandas-de-santana-2026-11-08",
+      "start": "2026-11-08T15:00:00+00:00",
+      "end": "2026-11-08T18:00:00+00:00",
+      "date": "2026-11-08",
+      "time": "15:00",
+      "venue": "Faial Sports Complex",
+      "municipality": "Santana",
+      "price": 0,
+      "organizer": "Secretaria Regional de Turismo, Ambiente e Cultura",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "porto-moniz-stand-up-comedy-fest-2026-11-08",
       "title": "Porto Moniz Stand Up Comedy Fest",
       "url": "https://www.madeira-unlocked.com/en/events/porto-moniz-stand-up-comedy-fest-2026-11-08",
@@ -6894,7 +6909,7 @@
       "title": "TMBD: Tomé: Curta-metragem de André Fournier",
       "url": "https://www.madeira-unlocked.com/en/events/tmbd-tome-curta-metragem-de-andre-fournier-2026-11-10",
       "start": "2026-11-10T19:00:00+00:00",
-      "end": "2026-11-10T19:45:00+00:00",
+      "end": "2026-11-10T19:20:00+00:00",
       "date": "2026-11-10",
       "time": "19:00",
       "venue": "Teatro Municipal Baltazar Dias",
@@ -7053,6 +7068,21 @@
       "organizer": "Associação Cultural do Socorro",
       "category": "concert",
       "source_category": "music-concerts"
+    },
+    {
+      "id": "duas-casas-um-so-coracao-2026-11-12",
+      "title": "Duas Casas, Um Só Coração",
+      "url": "https://www.madeira-unlocked.com/en/events/duas-casas-um-so-coracao-2026-11-12",
+      "start": "2026-11-12T19:00:00+00:00",
+      "end": "2026-11-12T20:30:00+00:00",
+      "date": "2026-11-12",
+      "time": "19:00",
+      "venue": "Auditorium Forum",
+      "municipality": "Machico",
+      "price": 5,
+      "organizer": "Forum Machico",
+      "category": "theatre",
+      "source_category": "theater"
     },
     {
       "id": "mountain-bike-meeting-guided-enduro-and-mill-visit-2026-11-13",
@@ -7265,6 +7295,21 @@
       "source_category": "kids-family"
     },
     {
+      "id": "a-day-at-cantinho-na-floresta-2026-11-14-1000",
+      "title": "A Day at Cantinho na Floresta",
+      "url": "https://www.madeira-unlocked.com/en/events/a-day-at-cantinho-na-floresta-2026-11-14-1000",
+      "start": "2026-11-14T10:00:00+00:00",
+      "end": "2026-11-14T16:30:00+00:00",
+      "date": "2026-11-14",
+      "time": "10:00",
+      "venue": "Forest school Cantinho na Floresta - Forest kindergarten and day care",
+      "municipality": "Funchal",
+      "price": 25,
+      "organizer": "Cantinho na Floresta",
+      "category": "family",
+      "source_category": "kids-family"
+    },
+    {
       "id": "abm-miudos-o-meu-guarda-chuva-with-sign-language-2026-11-14",
       "title": "ABM Miúdos, O Meu Guarda-Chuva, with Sign Language",
       "url": "https://www.madeira-unlocked.com/en/events/abm-miudos-o-meu-guarda-chuva-with-sign-language-2026-11-14",
@@ -7278,6 +7323,21 @@
       "organizer": "Direção Regional dos Arquivos",
       "category": "family",
       "source_category": "kids-family"
+    },
+    {
+      "id": "desfile-da-festa-da-castanha-2026-11-14",
+      "title": "Desfile da Festa da Castanha",
+      "url": "https://www.madeira-unlocked.com/en/events/desfile-da-festa-da-castanha-2026-11-14",
+      "start": "2026-11-14T12:00:00+00:00",
+      "end": "2026-11-14T14:00:00+00:00",
+      "date": "2026-11-14",
+      "time": "12:00",
+      "venue": "Curral das Freiras",
+      "municipality": "Câmara de Lobos",
+      "price": 0,
+      "organizer": "Casa do Povo do Curral das Freiras",
+      "category": "festival",
+      "source_category": "festivals-parades"
     },
     {
       "id": "orienteering-jardim-do-mar-2026-2026-11-14",
@@ -7308,6 +7368,21 @@
       "organizer": "Alma Artista Gallery",
       "category": "exhibition",
       "source_category": "art-exhibitions"
+    },
+    {
+      "id": "workshops-mercadinho-da-camacha-postal-bordado-2026-11-14",
+      "title": "Workshops Mercadinho da Camacha: Postal bordado",
+      "url": "https://www.madeira-unlocked.com/en/events/workshops-mercadinho-da-camacha-postal-bordado-2026-11-14",
+      "start": "2026-11-14T14:30:00+00:00",
+      "end": "2026-11-14T16:30:00+00:00",
+      "date": "2026-11-14",
+      "time": "14:30",
+      "venue": "Mercadinho da Camacha",
+      "municipality": "Santa Cruz",
+      "price": 15,
+      "organizer": "Ao Sabor da Onda",
+      "category": "workshop",
+      "source_category": "handicraft-workshops"
     },
     {
       "id": "ceramics-workshops-with-elisa-sousa-2026-11-14-1500",
@@ -7383,6 +7458,21 @@
       "organizer": "Capoeira Lounge Bar",
       "category": "concert",
       "source_category": "music-concerts"
+    },
+    {
+      "id": "afro-latin-fusion-2026-11-14",
+      "title": "Afro-Latin Fusion",
+      "url": "https://www.madeira-unlocked.com/en/events/afro-latin-fusion-2026-11-14",
+      "start": "2026-11-14T20:00:00+00:00",
+      "end": "2026-11-14T23:00:00+00:00",
+      "date": "2026-11-14",
+      "time": "20:00",
+      "venue": "Hotel Madeira, R. Ivens 21, São Martinho, 9000-046 Funchal",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Hotel Madeira",
+      "category": "dance",
+      "source_category": "dance"
     },
     {
       "id": "commedia-2026-nem-sempre-usamos-inteligencia-artificial-2026-11-14",
@@ -7655,6 +7745,21 @@
       "source_category": "art-exhibitions"
     },
     {
+      "id": "re-solarization-audiovisual-performance-by-tatsuru-arai-2026-11-18",
+      "title": "Re-Solarization | Audiovisual performance by Tatsuru Arai",
+      "url": "https://www.madeira-unlocked.com/en/events/re-solarization-audiovisual-performance-by-tatsuru-arai-2026-11-18",
+      "start": "2026-11-18T19:00:00+00:00",
+      "end": "2026-11-18T19:45:00+00:00",
+      "date": "2026-11-18",
+      "time": "19:00",
+      "venue": "Centro Cultural John Dos Passos",
+      "municipality": "Ponta do Sol",
+      "price": 10,
+      "organizer": "APCA - Agência de Promoção da Cultura Atlântica",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "quinteto-de-sopros-atlantida-2026-11-18",
       "title": "Quinteto de Sopros Atlântida",
       "url": "https://www.madeira-unlocked.com/en/events/quinteto-de-sopros-atlantida-2026-11-18",
@@ -7683,6 +7788,21 @@
       "organizer": "ATEF – Associação Teatro Experimental do Funchal",
       "category": "theatre",
       "source_category": "theater"
+    },
+    {
+      "id": "oficina-de-tinturaria-tecnica-botanica-em-seda-2026-11-19",
+      "title": "Oficina de Tinturaria: Técnica Botânica em Seda",
+      "url": "https://www.madeira-unlocked.com/en/events/oficina-de-tinturaria-tecnica-botanica-em-seda-2026-11-19",
+      "start": "2026-11-19T16:00:00+00:00",
+      "end": "2026-11-19T19:00:00+00:00",
+      "date": "2026-11-19",
+      "time": "16:00",
+      "venue": "Casa da Semente",
+      "municipality": "Funchal",
+      "price": 45,
+      "organizer": "Casa da Semente",
+      "category": "workshop",
+      "source_category": "handicraft-workshops"
     },
     {
       "id": "jazz-divas-2026-11-19",
@@ -7803,6 +7923,21 @@
       "organizer": "Screenings Funchal",
       "category": "cinema",
       "source_category": "movies-cinema"
+    },
+    {
+      "id": "concurso-rainha-da-bateria-roda-de-samba-2026-11-20",
+      "title": "Concurso Rainha da Bateria & Roda de Samba",
+      "url": "https://www.madeira-unlocked.com/en/events/concurso-rainha-da-bateria-roda-de-samba-2026-11-20",
+      "start": "2026-11-20T21:30:00+00:00",
+      "end": "2026-11-21T01:00:00+00:00",
+      "date": "2026-11-20",
+      "time": "21:30",
+      "venue": "Pico dos Barcelos viewpoint",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação de Animação Tramas e Enredos",
+      "category": "dance",
+      "source_category": "dance"
     },
     {
       "id": "abm-miudos-problemas-de-gato-2026-11-21",
@@ -8028,6 +8163,21 @@
       "organizer": "ATEF – Associação Teatro Experimental do Funchal",
       "category": "theatre",
       "source_category": "theater"
+    },
+    {
+      "id": "oficina-de-tinturaria-tecnica-de-picasso-2026-11-26",
+      "title": "Oficina de Tinturaria: Técnica de Picasso",
+      "url": "https://www.madeira-unlocked.com/en/events/oficina-de-tinturaria-tecnica-de-picasso-2026-11-26",
+      "start": "2026-11-26T16:00:00+00:00",
+      "end": "2026-11-26T19:00:00+00:00",
+      "date": "2026-11-26",
+      "time": "16:00",
+      "venue": "Casa da Semente",
+      "municipality": "Funchal",
+      "price": 50,
+      "organizer": "Casa da Semente",
+      "category": "workshop",
+      "source_category": "handicraft-workshops"
     },
     {
       "id": "coltrane-to-wayne-shorter-2026-11-26",
@@ -8328,6 +8478,21 @@
       "organizer": "Nataly Johnson",
       "category": "workshop",
       "source_category": "handicraft-workshops"
+    },
+    {
+      "id": "sofar-sounds-secret-concert-2026-11-29",
+      "title": "Sofar Sounds Secret Concert",
+      "url": "https://www.madeira-unlocked.com/en/events/sofar-sounds-secret-concert-2026-11-29",
+      "start": "2026-11-29T19:30:00+00:00",
+      "end": "2026-11-29T22:30:00+00:00",
+      "date": "2026-11-29",
+      "time": "19:30",
+      "venue": "Secret location",
+      "municipality": "Câmara de Lobos",
+      "price": 19,
+      "organizer": "Sofar Sounds Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
     },
     {
       "id": "rouge-sauvage-2026-11-30",

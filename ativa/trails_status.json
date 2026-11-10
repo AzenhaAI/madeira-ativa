@@ -1,39 +1,21 @@
 {
-  "fetched": "2026-11-07T13:14:29",
-  "source_updated": "2026-11-06",
+  "fetched": "2026-11-10T13:52:22",
+  "source_updated": "2026-11-09",
   "source_stale_days": 1,
   "source": "https://ifcn.madeira.gov.pt/pt/atividades-de-natureza/percursos-pedestres-recomendados/percursos-pedestres-recomendados.html",
   "notice": "https://ifcn.madeira.gov.pt/pt/atividades-de-natureza/percursos-pedestres-recomendados/percursos-pedestres-recomendados.html",
   "announcement": {
-    "title": "PERCURSOS PEDESTRES TEMPORÁRIAMENTE ENCERRADOS",
-    "text": "O Instituto das Florestas e Conservação da Natureza informa que todos os percursos pedestres classificados da Região Autónoma da Madeira estarão encerrados no dia 8 de novembro de 2026 , na sequência do aviso meteorológico emitido pelo Instituto Português do Mar e da Atmosfera (IPMA)\nA medida pretende salvaguardar a segurança dos utilizadores, face às condições meteorológicas previstas e aos riscos associados à circulação em espaços naturais e florestais\nDurante o mesmo período, estará igualmente encerrada a Estrada Florestal que liga a Eira do Serrado ao Pico do Areeiro\nO IFCN recomenda o cumprimento rigoroso das orientações emitidas pelas autoridades de Proteção Civil e apela à adoção de comportamentos responsáveis. Nesse dia, não deverão ser realizadas quaisquer atividades lúdicas ou desportivas em espaços florestais\nO IFCN agradece a compreensão e a colaboração de todos"
+    "title": "Solicita-se a atenção para o novo modelo de taxas e reservas no acesso aos Percursos pedestres classificados, em vigor desde o dia 01 de janeiro de 2026, podendo ser consultado as FAQ's para esclarecimento do mesmo",
+    "text": ""
   },
   "counts": {
-    "open": 0,
-    "partial": 0,
-    "closed": 44
+    "open": 33,
+    "partial": 3,
+    "closed": 8
   },
   "total": 44,
   "alerts": [
     {
-      "code": "PR 1",
-      "name": "Vereda do Areeiro",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 1.1",
-      "name": "Vereda da Ilha",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 1.2",
-      "name": "Vereda do Pico Ruivo",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
       "code": "PR 1.3",
       "name": "Vereda da Encumeada",
       "status": "closed",
@@ -46,92 +28,14 @@
       "island": "Madeira"
     },
     {
-      "code": "PR 11",
-      "name": "Vereda dos Balcões",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 12",
-      "name": "Caminho Real da Encumeada",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 13",
-      "name": "Vereda do Fanal",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 13.1",
-      "name": "Vereda da Palha Carga",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 14",
-      "name": "Levada dos Cedros",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 15",
-      "name": "Vereda da Ribeira da Janela",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
       "code": "PR 16",
       "name": "Levada Fajã do Rodrigues",
       "status": "closed",
       "island": "Madeira"
     },
     {
-      "code": "PR 17",
-      "name": "Caminho do Pináculo e Folhadal",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 18",
-      "name": "Levada do Rei",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 19",
-      "name": "Caminho Real do Paul do Mar",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 2",
-      "name": "Vereda do Urzal",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
       "code": "PR 20",
       "name": "Vereda do Jardim do Mar",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 21",
-      "name": "Caminho do Norte",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 22",
-      "name": "Vereda do Chão dos Louros",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 23",
-      "name": "Levada da Azenha",
       "status": "closed",
       "island": "Madeira"
     },
@@ -148,146 +52,38 @@
       "island": "Madeira"
     },
     {
-      "code": "PR 3",
-      "name": "Vereda do Burro",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 3.1",
-      "name": "Caminho Real do Monte",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 4",
-      "name": "Levada do Barreiro",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 5",
-      "name": "Vereda das Funduras",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 6",
-      "name": "Levada das 25 Fontes",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 6.1",
-      "name": "Levada do Risco",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 6.2",
-      "name": "Levada do Alecrim",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 6.3",
-      "name": "Vereda da Lagoa do Vento",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 6.4",
-      "name": "Levada Velha do Rabaçal",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 6.5",
-      "name": "Vereda do Pico Fernandes",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 6.6",
-      "name": "Vereda do Túnel do Cavalo",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 6.7",
-      "name": "Vereda da Câmara de Carga do Rabaçal",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 6.8",
-      "name": "Levada do Paul II – Um Caminho para todos",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
       "code": "PR 7",
       "name": "Levada do Moinho",
       "status": "closed",
       "island": "Madeira"
     },
     {
-      "code": "PR 8",
-      "name": "Vereda da Ponta de S. Lourenço",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 9",
-      "name": "Levada do Caldeirão Verde",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 9.1",
-      "name": "Levada do Caldeirão Verde - Um Caminho para todos",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 1",
-      "name": "Vereda do Pico Branco e Terra Chã",
-      "status": "closed",
-      "island": "Porto Santo"
-    },
-    {
-      "code": "PR 2",
-      "name": "Vereda do Pico do Castelo",
-      "status": "closed",
-      "island": "Porto Santo"
-    },
-    {
       "code": "PR 3",
       "name": "Levada do Pico Castelo",
       "status": "closed",
       "island": "Porto Santo"
+    },
+    {
+      "code": "PR 1",
+      "name": "Vereda do Areeiro — Pico do Areeiro – Pico Ruivo * Vereda oeste (pelos túneis) * Vereda este (pelo Pico das Torres) - Encerrado",
+      "status": "partial",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 12",
+      "name": "Caminho Real da Encumeada — Boca da Corrida – Encumeada",
+      "status": "partial",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 4",
+      "name": "Levada do Barreiro — Poço da Neve – Casa do Barreiro",
+      "status": "partial",
+      "island": "Madeira"
     }
   ],
   "trails": [
     {
-      "code": "PR 1",
-      "name": "Vereda do Areeiro",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 1.1",
-      "name": "Vereda da Ilha",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 1.2",
-      "name": "Vereda do Pico Ruivo",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
       "code": "PR 1.3",
       "name": "Vereda da Encumeada",
       "status": "closed",
@@ -300,92 +96,14 @@
       "island": "Madeira"
     },
     {
-      "code": "PR 11",
-      "name": "Vereda dos Balcões",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 12",
-      "name": "Caminho Real da Encumeada",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 13",
-      "name": "Vereda do Fanal",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 13.1",
-      "name": "Vereda da Palha Carga",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 14",
-      "name": "Levada dos Cedros",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 15",
-      "name": "Vereda da Ribeira da Janela",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
       "code": "PR 16",
       "name": "Levada Fajã do Rodrigues",
       "status": "closed",
       "island": "Madeira"
     },
     {
-      "code": "PR 17",
-      "name": "Caminho do Pináculo e Folhadal",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 18",
-      "name": "Levada do Rei",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 19",
-      "name": "Caminho Real do Paul do Mar",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 2",
-      "name": "Vereda do Urzal",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
       "code": "PR 20",
       "name": "Vereda do Jardim do Mar",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 21",
-      "name": "Caminho do Norte",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 22",
-      "name": "Vereda do Chão dos Louros",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 23",
-      "name": "Levada da Azenha",
       "status": "closed",
       "island": "Madeira"
     },
@@ -402,123 +120,219 @@
       "island": "Madeira"
     },
     {
-      "code": "PR 3",
-      "name": "Vereda do Burro",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 3.1",
-      "name": "Caminho Real do Monte",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 4",
-      "name": "Levada do Barreiro",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 5",
-      "name": "Vereda das Funduras",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 6",
-      "name": "Levada das 25 Fontes",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 6.1",
-      "name": "Levada do Risco",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 6.2",
-      "name": "Levada do Alecrim",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 6.3",
-      "name": "Vereda da Lagoa do Vento",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 6.4",
-      "name": "Levada Velha do Rabaçal",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 6.5",
-      "name": "Vereda do Pico Fernandes",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 6.6",
-      "name": "Vereda do Túnel do Cavalo",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 6.7",
-      "name": "Vereda da Câmara de Carga do Rabaçal",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
-      "code": "PR 6.8",
-      "name": "Levada do Paul II – Um Caminho para todos",
-      "status": "closed",
-      "island": "Madeira"
-    },
-    {
       "code": "PR 7",
       "name": "Levada do Moinho",
       "status": "closed",
       "island": "Madeira"
     },
     {
+      "code": "PR 3",
+      "name": "Levada do Pico Castelo",
+      "status": "closed",
+      "island": "Porto Santo"
+    },
+    {
+      "code": "PR 1",
+      "name": "Vereda do Areeiro — Pico do Areeiro – Pico Ruivo * Vereda oeste (pelos túneis) * Vereda este (pelo Pico das Torres) - Encerrado",
+      "status": "partial",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 12",
+      "name": "Caminho Real da Encumeada — Boca da Corrida – Encumeada",
+      "status": "partial",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 4",
+      "name": "Levada do Barreiro — Poço da Neve – Casa do Barreiro",
+      "status": "partial",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 1.1",
+      "name": "Vereda da Ilha",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 1.2",
+      "name": "Vereda do Pico Ruivo",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 11",
+      "name": "Vereda dos Balcões",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 13",
+      "name": "Vereda do Fanal",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 13.1",
+      "name": "Vereda da Palha Carga",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 14",
+      "name": "Levada dos Cedros",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 15",
+      "name": "Vereda da Ribeira da Janela",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 17",
+      "name": "Caminho do Pináculo e Folhadal",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 18",
+      "name": "Levada do Rei",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 19",
+      "name": "Caminho Real do Paul do Mar",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 2",
+      "name": "Vereda do Urzal",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 21",
+      "name": "Caminho do Norte",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 22",
+      "name": "Vereda do Chão dos Louros",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 23",
+      "name": "Levada da Azenha",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 3",
+      "name": "Vereda do Burro",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 3.1",
+      "name": "Caminho Real do Monte",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 5",
+      "name": "Vereda das Funduras",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 6",
+      "name": "Levada das 25 Fontes",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 6.1",
+      "name": "Levada do Risco",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 6.2",
+      "name": "Levada do Alecrim",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 6.3",
+      "name": "Vereda da Lagoa do Vento",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 6.4",
+      "name": "Levada Velha do Rabaçal",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 6.5",
+      "name": "Vereda do Pico Fernandes",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 6.6",
+      "name": "Vereda do Túnel do Cavalo",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 6.7",
+      "name": "Vereda da Câmara de Carga do Rabaçal",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
+      "code": "PR 6.8",
+      "name": "Levada do Paul II – Um Caminho para todos",
+      "status": "open",
+      "island": "Madeira"
+    },
+    {
       "code": "PR 8",
       "name": "Vereda da Ponta de S. Lourenço",
-      "status": "closed",
+      "status": "open",
       "island": "Madeira"
     },
     {
       "code": "PR 9",
       "name": "Levada do Caldeirão Verde",
-      "status": "closed",
+      "status": "open",
       "island": "Madeira"
     },
     {
       "code": "PR 9.1",
       "name": "Levada do Caldeirão Verde - Um Caminho para todos",
-      "status": "closed",
+      "status": "open",
       "island": "Madeira"
     },
     {
       "code": "PR 1",
       "name": "Vereda do Pico Branco e Terra Chã",
-      "status": "closed",
+      "status": "open",
       "island": "Porto Santo"
     },
     {
       "code": "PR 2",
       "name": "Vereda do Pico do Castelo",
-      "status": "closed",
-      "island": "Porto Santo"
-    },
-    {
-      "code": "PR 3",
-      "name": "Levada do Pico Castelo",
-      "status": "closed",
+      "status": "open",
       "island": "Porto Santo"
     }
   ]

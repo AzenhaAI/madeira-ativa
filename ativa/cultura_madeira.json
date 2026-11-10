@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-11-07T11:47:03",
-  "count": 169,
+  "fetched": "2026-11-10T13:33:49",
+  "count": 176,
   "items": [
     {
       "id": "114",
@@ -1555,6 +1555,16 @@
       "category": "Other"
     },
     {
+      "id": "435",
+      "title": "XXII Concurso “Tocar do Búzio”",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/xxii-concurso-tocar-do-buzio",
+      "start": "2026-11-10",
+      "end": "2026-11-10",
+      "time": "19:00",
+      "place": "Casa do Povo de São Roque do Faial, Santana",
+      "category": "Activity"
+    },
+    {
       "id": "412",
       "title": "\"Duas Casas, Um Só Coração\"",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/duas-casas-um-so-coracao",
@@ -1615,6 +1625,26 @@
       "category": "Other"
     },
     {
+      "id": "436",
+      "title": "5.º Seminário DRABL/CEHA-AV | A LEPRA NA HISTÓRIA DE PORTUGAL",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/conferencias/5-o-seminario-drabl-ceha-av-a-lepra-na-historia-de-portugal",
+      "start": "2026-11-13",
+      "end": "2026-11-13",
+      "time": "14:00",
+      "place": "Centro De Estudos Historia do Atlântico",
+      "category": "Conference"
+    },
+    {
+      "id": "438",
+      "title": "CommedIA a La Carte 2026",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/commedia-a-la-carte-2026",
+      "start": "2026-11-13",
+      "end": "2026-11-14",
+      "time": "21:00",
+      "place": "Auditório do Centro de Congressos da Madeira",
+      "category": "Theatre"
+    },
+    {
       "id": "390",
       "title": "\"Outra Vez Alice Que Chatice\"",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/outra-vez-alice-que-chatice",
@@ -1643,6 +1673,46 @@
       "time": "",
       "place": "PORTA 33",
       "category": "Conference"
+    },
+    {
+      "id": "434",
+      "title": "A Orquestra Clássica da Madeira apresenta o Quinteto de Sopros \"Solistas OCM\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/a-orquestra-classica-da-madeira-apresenta-o-quinteto-de-sopros-solistas-ocm",
+      "start": "2026-11-14",
+      "end": "2026-11-14",
+      "time": "18:00",
+      "place": "Capela da Fundação Princesa Dona Maria Amélia",
+      "category": "Music"
+    },
+    {
+      "id": "432",
+      "title": "Concerto \"Tradição Bandolinística\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concerto-tradicao-bandolinistica",
+      "start": "2026-11-14",
+      "end": "2026-11-14",
+      "time": "20:30",
+      "place": "Casa do Povo da Camacha",
+      "category": "Music"
+    },
+    {
+      "id": "437",
+      "title": "Oficina Licores d'Festa - \"Eduardinho\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/oficina-licores-dfesta-eduardinho",
+      "start": "2026-11-14",
+      "end": "2026-11-14",
+      "time": "10:30",
+      "place": "Museu Etnográfico da Madeira",
+      "category": "Activity"
+    },
+    {
+      "id": "433",
+      "title": "Espetáculo Solidário \"Nem Mais 1 Minuto de Silêncio\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/nem-mais-1-minuto-de-silencio",
+      "start": "2026-11-19",
+      "end": "2026-11-21",
+      "time": "15:00",
+      "place": "MUDAS.Museu de Arte Contemporânea da Madeira",
+      "category": "Music"
     },
     {
       "id": "384",
