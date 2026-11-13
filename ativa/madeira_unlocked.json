@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-11-10T13:33:33",
-  "count": 600,
+  "fetched": "2026-11-13T13:09:46",
+  "count": 603,
   "items": [
     {
       "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
@@ -7190,6 +7190,21 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "iv-bagustos-encontros-de-tradicao-2026-11-13",
+      "title": "IV Bagustos - Encontros de Tradição",
+      "url": "https://www.madeira-unlocked.com/en/events/iv-bagustos-encontros-de-tradicao-2026-11-13",
+      "start": "2026-11-13T20:30:00+00:00",
+      "end": "2026-11-13T22:00:00+00:00",
+      "date": "2026-11-13",
+      "time": "20:30",
+      "venue": "Largo da Igreja - Jardim do Mar",
+      "municipality": "Calheta",
+      "price": 0,
+      "organizer": "TÚNEL 8",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "commedia-2026-nem-sempre-usamos-inteligencia-artificial-2026-11-13",
       "title": "CommedIA 2026 – Nem sempre usamos Inteligência Artificial",
       "url": "https://www.madeira-unlocked.com/en/events/commedia-2026-nem-sempre-usamos-inteligencia-artificial-2026-11-13",
@@ -8045,6 +8060,21 @@
       "source_category": "sport-fitness"
     },
     {
+      "id": "fimo-clay-workshop-2026-11-22",
+      "title": "Fimo Clay Workshop",
+      "url": "https://www.madeira-unlocked.com/en/events/fimo-clay-workshop-2026-11-22",
+      "start": "2026-11-22T10:30:00+00:00",
+      "end": "2026-11-22T12:30:00+00:00",
+      "date": "2026-11-22",
+      "time": "10:30",
+      "venue": "Joy Family Space & Brunch",
+      "municipality": "Funchal",
+      "price": 25,
+      "organizer": "JOY Family Space & Brunch Cafe",
+      "category": "workshop",
+      "source_category": "handicraft-workshops"
+    },
+    {
       "id": "saint-cecilia-concert-2026-11-22",
       "title": "Saint Cecilia Concert",
       "url": "https://www.madeira-unlocked.com/en/events/saint-cecilia-concert-2026-11-22",
@@ -8465,6 +8495,21 @@
       "source_category": "movies-cinema"
     },
     {
+      "id": "funchal-city-sessions-13-aires-2026-11-28",
+      "title": "Funchal City Sessions #13 AIRES",
+      "url": "https://www.madeira-unlocked.com/en/events/funchal-city-sessions-13-aires-2026-11-28",
+      "start": "2026-11-28T21:30:00+00:00",
+      "end": "2026-11-28T23:30:00+00:00",
+      "date": "2026-11-28",
+      "time": "21:30",
+      "venue": "Galeria Tratuário",
+      "municipality": "Funchal",
+      "price": 2,
+      "organizer": "APCA - Agência de Promoção da Cultura Atlântica",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "decorative-rattan-wreath-workshop-2026-11-29",
       "title": "Decorative Rattan Wreath Workshop",
       "url": "https://www.madeira-unlocked.com/en/events/decorative-rattan-wreath-workshop-2026-11-29",
@@ -8622,7 +8667,7 @@
       "end": "2026-12-05T14:00:00+00:00",
       "date": "2026-12-05",
       "time": "11:00",
-      "venue": "Down town funchal across from Bazar do povo",
+      "venue": "Down town funchal",
       "municipality": "Funchal",
       "price": 55,
       "organizer": "Made-ira Natural",

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-10",
+  "generated_at": "2026-11-13",
   "events": [
     {
       "mode": "festivals",
       "name": "\"31 de Fevereiro com a Ribeira Seca - II\"",
-      "date": "2026-11-10",
+      "date": "2026-11-13",
       "location": "Casa da Cultura de Santa Cruz",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/31-de-fevereiro-com-a-ribeira-seca-ii",
       "event_type": "festival",
@@ -15,7 +15,7 @@
     {
       "mode": "festivals",
       "name": "\"40 Anos | 40 Fotografias\"",
-      "date": "2026-11-10",
+      "date": "2026-11-13",
       "location": "Direção Regional dos Arquivos, das Bibliotecas e do Livro",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/40-anos-40-fotografias",
       "event_type": "festival",
@@ -26,7 +26,7 @@
     {
       "mode": "festivals",
       "name": "\"Dear Lourdes,\"",
-      "date": "2026-11-10",
+      "date": "2026-11-13",
       "location": "Galeria Tratuário",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/dear-lourdes",
       "event_type": "festival",
@@ -36,19 +36,8 @@
     },
     {
       "mode": "festivals",
-      "name": "\"Detalhes Invisíveis\"",
-      "date": "2026-11-10",
-      "location": "Casa da Cultura de Câmara de Lobos",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/detalhes-invisiveis",
-      "event_type": "festival",
-      "category": "exhibition",
-      "date_end": "2026-11-11",
-      "about": "Pintura e cerâmica de Luz Henriques O que fica por dizer quando não conseguimos ver?"
-    },
-    {
-      "mode": "festivals",
       "name": "\"Imagens e Memórias do Porto Santo\"",
-      "date": "2026-11-10",
+      "date": "2026-11-13",
       "location": "Câmara Municipal do Porto Santo",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/imagens-e-memorias-do-porto-santo",
       "event_type": "festival",
@@ -56,409 +45,6 @@
       "category": "exhibition",
       "date_end": "2026-12-31",
       "about": "A mostra reúne mais de 130 fotografias antigas que retratam quase um século da história e do quotidiano da \"ilha dourada\". Os registos abrangem um período que vai desde o final do século XIX até à década de 1970. Entrada livre"
-    },
-    {
-      "mode": "festivals",
-      "name": "\"Mudar a Escola para Mudar o Mundo\"",
-      "date": "2026-11-10",
-      "location": "PORTA 33",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/mudar-a-escola-para-mudar-o-mundo",
-      "event_type": "festival",
-      "category": "exhibition",
-      "date_end": "2027-03-06",
-      "about": "Projeto artístico-pedagógico desenvolvido por Carlos Bunga e Ainhoa González, em colaboração com a Porta 33."
-    },
-    {
-      "mode": "festivals",
-      "name": "\"O Caminho nas Águas. Depois da Última Ceia\"",
-      "date": "2026-11-10",
-      "location": "Núcleo Histórico de Santo Amaro - Torre do Capitão",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/o-caminho-nas-aguas-depois-da-ultima-ceia",
-      "event_type": "festival",
-      "category": "exhibition",
-      "date_end": "2027-01-30",
-      "about": "Da artista Carla Cabral. Curadoria: Márcia de Sousa. Ciclo dedicado à arte contemporânea com a chancela do MUDAS.Museu de Arte Contemporânea da Madeira."
-    },
-    {
-      "mode": "festivals",
-      "name": "\"Profundo: Light, Layer, & Form\"",
-      "date": "2026-11-10",
-      "location": "Galeria Restock",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/profundo-light-layer-form",
-      "event_type": "festival",
-      "category": "exhibition",
-      "date_end": "2027-01-05",
-      "about": "De Malcom Dare. Indo além da fotografia clássica, os seus mais recentes trabalhos exploram a construção física e visual da profundidade, desafiando as fronteiras entre imagem, pintura e objeto."
-    },
-    {
-      "mode": "festivals",
-      "name": "Arraial · São Martinho",
-      "date": "2026-11-10",
-      "location": "São Martinho",
-      "url": "https://t.me/festas_madeira/2745",
-      "event_type": "festival",
-      "category": "arraial"
-    },
-    {
-      "mode": "festivals",
-      "name": "CENTRO CULTURAL E DE CONGRESSOS DO PORTO SANTO",
-      "date": "2026-11-10",
-      "location": "Feiras",
-      "url": "https://t.me/festas_madeira/2733",
-      "event_type": "festival",
-      "category": "exhibition"
-    },
-    {
-      "mode": "festivals",
-      "name": "Coletiva na Galeria ESPAÇOMAR",
-      "date": "2026-11-10",
-      "location": "Galeria Espaçomar - Escola Básica Secundária Gonçalves Zarco (EBSGZ)",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/pequenos-rumores-na-casa-dos-passaros",
-      "event_type": "festival",
-      "category": "exhibition",
-      "date_end": "2027-02-12",
-      "about": "A Galeria espaçomar, reabre as suas portas com a inauguração da exposição \"Pequenos.Rumores.Na.Casa.Dos.Pássaros\". Uma mostra que reúne cerca de 54 obras de mais de 20 artistas, com direção artística de Paulo Sérgio BEJu."
-    },
-    {
-      "mode": "festivals",
-      "name": "Concertos Novembro | Orquestra Clássica da Madeira",
-      "date": "2026-11-10",
-      "location": "Madeira",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concertos-novembro-orquestra-classica-da-madeira",
-      "event_type": "festival",
-      "category": "concert",
-      "date_end": "2026-11-21",
-      "about": "Calendarização: Dia 7 de novembro | 18h00. Auditório do Centro de Congressos da Madeira. Maestro: Misha Katz. Solista: Dmitry Demyashkin. Dia 14 de novembro | 18h00. Capela da Fundação Princesa Dona Maria Amélia."
-    },
-    {
-      "mode": "festivals",
-      "name": "Duo Bandonica – Projeto Artístico “Fala-me de Música”",
-      "date": "2026-11-10",
-      "location": "Madeira",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/duo-bandonica-projeto-artistico-fala-me-de-musica1",
-      "event_type": "festival",
-      "price": "Free",
-      "category": "concert",
-      "date_end": "2026-12-05",
-      "about": "Fala-me de Música” nasce do encontro artístico e profundamente romântico entre a bandolinista Francisca Abreu e o acordeonista Alessio Ferrari, dois músicos provenientes de mundos culturais diferentes, mas unidos por uma sensibilidade…"
-    },
-    {
-      "mode": "festivals",
-      "name": "Exhibition · Funchal",
-      "date": "2026-11-10",
-      "location": "Funchal",
-      "url": "https://t.me/festas_madeira/2600",
-      "event_type": "festival",
-      "category": "exhibition"
-    },
-    {
-      "mode": "festivals",
-      "name": "Exposição itinerante \"INTRA - Olhar para Nós\"",
-      "date": "2026-11-10",
-      "location": "Galeria Pimenta 22",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/exposicao-itinerante-da-intra-olhar-para-nos",
-      "event_type": "festival",
-      "category": "exhibition",
-      "date_end": "2026-11-30",
-      "about": "Esta edição conta com a participação de 26 artistas de diversos países, como Portugal, Alemanha, França, Itália, Ucrânia, Romênia, Espanha, Venezuela, Japão e Argentina."
-    },
-    {
-      "mode": "festivals",
-      "name": "Family · São Roque Do Faial",
-      "date": "2026-11-10",
-      "location": "São Roque Do Faial",
-      "url": "https://t.me/festas_madeira/2773",
-      "event_type": "festival",
-      "category": "family"
-    },
-    {
-      "mode": "festivals",
-      "name": "Madeira Piano Fest 2026",
-      "date": "2026-11-10",
-      "location": "Teatro Municipal Baltazar Dias",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/madeira-piano-fest-2026",
-      "event_type": "festival",
-      "price": "€20 · 3 concerts €51 · 5 concerts €75",
-      "category": "concert",
-      "date_end": "2026-11-15",
-      "about": "O Teatro Municipal Baltazar Dias volta a acolher o Madeira Piano Fest, de 7 a 15 de novembro."
-    },
-    {
-      "mode": "festivals",
-      "name": "Oficinas de Desenho Out. 2026 - Jun. 2027",
-      "date": "2026-11-10",
-      "location": "PORTA33",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/oficinas-de-desenho",
-      "event_type": "festival",
-      "category": "workshop",
-      "date_end": "2027-06-30",
-      "about": "Prática do desenho como atividade de mapeamento das relações perceptivas com o mundo e com o próprio universo do pensamento."
-    },
-    {
-      "mode": "festivals",
-      "name": "Programa InfantoJuvenil Out · Nov · Dez 2026",
-      "date": "2026-11-10",
-      "location": "Direção Regional dos Arquivos, das Bibliotecas e do Livro",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/programa-infantojuvenil-out-nov-dez-2026",
-      "event_type": "festival",
-      "category": "family",
-      "date_end": "2026-12-19",
-      "about": "De outubro a dezembro, há muitas histórias para descobrir, momentos para partilhar e atividades para viver em família. O programa inclui: ABM Bebés. ABM Miúdos. BORA LER. Sessões de Histórias em Inglês. Festa de Natal."
-    },
-    {
-      "mode": "festivals",
-      "name": "RobertAndres Baltazar Dias",
-      "date": "2026-11-10",
-      "location": "Sé",
-      "url": "https://t.me/festas_madeira/2680",
-      "event_type": "festival",
-      "category": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "TMBD: Tomé: Curta-metragem de André Fournier",
-      "date": "2026-11-10",
-      "location": "Teatro Municipal Baltazar Dias, Funchal",
-      "url": "",
-      "event_type": "festival",
-      "time": "19:00",
-      "price": "€11",
-      "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
-      "category": "cinema"
-    },
-    {
-      "mode": "festivals",
-      "name": "Tomé - Um Filme de André Fournier",
-      "date": "2026-11-10",
-      "location": "Teatro Municipal Baltazar Dias, Funchal",
-      "url": "",
-      "event_type": "festival",
-      "time": "19:00",
-      "price": "€11.89",
-      "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
-      "category": "cinema"
-    },
-    {
-      "mode": "festivals",
-      "name": "XXII Concurso “Tocar do Búzio”",
-      "date": "2026-11-10",
-      "location": "Casa do Povo de São Roque do Faial, Santana",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/xxii-concurso-tocar-do-buzio",
-      "event_type": "festival",
-      "time": "19:00",
-      "category": "workshop",
-      "about": "A Casa do Povo de São Roque do Faial, realiza mais uma edição do Concurso “Tocar do Búzio”, uma iniciativa que procura preservar a tradição de tocar búzios na véspera de São Martinho."
-    },
-    {
-      "mode": "festivals",
-      "name": "“Blessed Ground”",
-      "date": "2026-11-10",
-      "location": "Museu de Fotografia da Madeira - Atelier Vicente's",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/blessed-ground",
-      "event_type": "festival",
-      "category": "exhibition",
-      "date_end": "2027-01-30",
-      "about": "O Museu de Fotografia da Madeira – Atelier Vicente’s, inaugura dia 8 de outubro, quinta-feira, pelas 17h00, a exposição “Blessed Ground”, do fotógrafo documental e fotojornalista Ricardo Lopes."
-    },
-    {
-      "mode": "festivals",
-      "name": "“Che Cosa Sono le Nuvole?”",
-      "date": "2026-11-10",
-      "location": "Núcleo Histórico de Santo Amaro - Torre do Capitão",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/che-cosa-sono-le-nuvole",
-      "event_type": "festival",
-      "category": "exhibition",
-      "date_end": "2027-02-28",
-      "about": "No dia 5 de novembro, a Torre do Capitão - Núcleo Histórico e Museológico de Santo Amaro, acolhe a abertura da exposição itinerante “Che Cosa Sono le Nuvole?”, do artista plástico madeirense Nuno Henrique Este projeto integra o ciclo…"
-    },
-    {
-      "mode": "festivals",
-      "name": "“Nostalgic Madeira Music”",
-      "date": "2026-11-10",
-      "location": "Instituto do Vinho da Madeira",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/nostalgic-madeira-music",
-      "event_type": "festival",
-      "category": "concert",
-      "date_end": "2026-12-18",
-      "about": "Evento inédito e verdadeiramente singular, a realizar-se todas as quintas-feiras no Instituto do Vinho, do Bordado e do Artesanato da Madeira."
-    },
-    {
-      "mode": "festivals",
-      "name": "“Rituais de Passagem: A MORTE”",
-      "date": "2026-11-10",
-      "location": "Museu Etnográfico da Madeira",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/rituais-de-passagem-a-morte",
-      "event_type": "festival",
-      "category": "exhibition",
-      "date_end": "2026-12-05",
-      "about": "O Museu Etnográfico da Madeira inaugura, dia 29 de outubro, a exposição temporária “Rituais de Passagem: A MORTE”."
-    },
-    {
-      "mode": "pro",
-      "name": "Mountain Bike Meeting, Guided Enduro and City Bike Tour",
-      "date": "2026-11-10",
-      "location": "Southern riding areas and Funchal, Porto Moniz",
-      "url": "",
-      "event_type": "",
-      "time": "10:00",
-      "price": "€1000",
-      "organizer": "Clube Naval do Seixal",
-      "category": "sport"
-    },
-    {
-      "mode": "road",
-      "name": "Sao Martinho (5.5 km)",
-      "date": "2026-11-10",
-      "location": "Madeira",
-      "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/11/MC-27_Quadro.pdf",
-      "event_type": "running"
-    },
-    {
-      "mode": "festivals",
-      "name": "Bachata Styling (in Couple & Solo)",
-      "date": "2026-11-11",
-      "location": "Funchal, Marina (below beerhouse)",
-      "url": "",
-      "event_type": "festival",
-      "time": "18:30",
-      "price": "Free",
-      "organizer": "Level Up Dance Studio",
-      "category": "dance"
-    },
-    {
-      "mode": "festivals",
-      "name": "Kizomba Beginners/ Open Level",
-      "date": "2026-11-11",
-      "location": "Funchal, Marina (below beerhouse)",
-      "url": "",
-      "event_type": "festival",
-      "time": "18:30",
-      "price": "Free",
-      "organizer": "Level Up Dance Studio",
-      "category": "dance"
-    },
-    {
-      "mode": "festivals",
-      "name": "LATIN JAZZ",
-      "date": "2026-11-11",
-      "location": "MAMMA, Funchal",
-      "url": "",
-      "event_type": "festival",
-      "time": "18:00",
-      "price": "€25",
-      "organizer": "MAMMA - Museum of Art and Music of Madeira",
-      "category": "concert"
-    },
-    {
-      "mode": "festivals",
-      "name": "Madeira PianoFest",
-      "date": "2026-11-11",
-      "location": "Teatro Municipal Baltazar Dias, Funchal",
-      "url": "",
-      "event_type": "festival",
-      "time": "18:00",
-      "price": "€20",
-      "organizer": "Associação dos Amigos do Conservatório de Música da Madeira",
-      "category": "concert"
-    },
-    {
-      "mode": "festivals",
-      "name": "Saint Martin - Lantern Festival",
-      "date": "2026-11-11",
-      "location": "Parque de Santa Catarina, Funchal",
-      "url": "",
-      "event_type": "festival",
-      "time": "17:30",
-      "price": "Free",
-      "organizer": "Melanie Müller-Hoffmann",
-      "category": "family"
-    },
-    {
-      "mode": "festivals",
-      "name": "Saint Martin’s Day (Festa de São Martinho) 2026",
-      "date": "2026-11-11",
-      "location": "Igreja Paroquial de São Martinho and surrounding parish area, Funchal",
-      "url": "",
-      "event_type": "festival",
-      "time": "12:00",
-      "price": "Free",
-      "organizer": "Paróquia de São Martinho",
-      "category": "arraial"
-    },
-    {
-      "mode": "festivals",
-      "name": "\"Duas Casas, Um Só Coração\"",
-      "date": "2026-11-12",
-      "location": "Fórum Machico",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/duas-casas-um-so-coracao",
-      "event_type": "festival",
-      "time": "19:00",
-      "price": "€5",
-      "organizer": "Forum Machico",
-      "category": "theatre",
-      "about": "A Comissão de Proteção de Crianças e Jovens de Machico, com a colaboração da Câmara Municipal de Machico leva ao palco do Fórum Machico, a peça de teatro \"Duas Casas, Um Só Coração\", do grupo de teatro ADVESSOS, da Associação Avesso e…"
-    },
-    {
-      "mode": "festivals",
-      "name": "DUQS CASAS, UMSO",
-      "date": "2026-11-12",
-      "location": "Machico",
-      "url": "https://t.me/festas_madeira/2752",
-      "event_type": "festival",
-      "category": "family"
-    },
-    {
-      "mode": "festivals",
-      "name": "DURANTE TODO O FESTIVAL",
-      "date": "2026-11-12",
-      "location": "Ponta Do Sol",
-      "url": "https://t.me/festas_madeira/2769",
-      "event_type": "festival",
-      "category": "festival"
-    },
-    {
-      "mode": "festivals",
-      "name": "Festival Travessuras Culturais 2026",
-      "date": "2026-11-12",
-      "location": "Centro da Ponta do Sol",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/festival-travessuras-culturais",
-      "event_type": "festival",
-      "category": "festival",
-      "date_end": "2026-11-15",
-      "about": "O Festival Travessuras Culturais celebra a sua 10.ª edição, e este ano sob o tema “Escolher Viver”."
-    },
-    {
-      "mode": "festivals",
-      "name": "LISTENING TO LIGHT de MARIA ALVES",
-      "date": "2026-11-12",
-      "location": "Largo do Socorro · T1, Funchal",
-      "url": "",
-      "event_type": "festival",
-      "time": "19:00",
-      "price": "Free",
-      "organizer": "Associação Cultural do Socorro",
-      "category": "concert"
-    },
-    {
-      "mode": "festivals",
-      "name": "Vila da Ponta do Sol",
-      "date": "2026-11-12",
-      "location": "Ponta Do Sol",
-      "url": "https://t.me/festas_madeira/2768",
-      "event_type": "festival",
-      "category": "festival"
-    },
-    {
-      "mode": "pro",
-      "name": "Mountain Bike Meeting, Guided Enduro and Traditional Celebration",
-      "date": "2026-11-12",
-      "location": "Western riding areas, Cais da Ponta do Sol, Porto Moniz",
-      "url": "",
-      "event_type": "",
-      "time": "10:00",
-      "price": "€1000",
-      "organizer": "Clube Naval do Seixal",
-      "category": "sport"
     },
     {
       "mode": "festivals",
@@ -472,6 +58,28 @@
       "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
       "category": "concert",
       "about": "Produção e Direção Artística: Miguel Pires A Madeira tem sido, ao longo de décadas, um destino turístico de referência internacional."
+    },
+    {
+      "mode": "festivals",
+      "name": "\"O Caminho nas Águas. Depois da Última Ceia\"",
+      "date": "2026-11-13",
+      "location": "Núcleo Histórico de Santo Amaro - Torre do Capitão",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/o-caminho-nas-aguas-depois-da-ultima-ceia",
+      "event_type": "festival",
+      "category": "exhibition",
+      "date_end": "2027-01-30",
+      "about": "Da artista Carla Cabral. Curadoria: Márcia de Sousa. Ciclo dedicado à arte contemporânea com a chancela do MUDAS.Museu de Arte Contemporânea da Madeira."
+    },
+    {
+      "mode": "festivals",
+      "name": "\"Profundo: Light, Layer, & Form\"",
+      "date": "2026-11-13",
+      "location": "Galeria Restock",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/profundo-light-layer-form",
+      "event_type": "festival",
+      "category": "exhibition",
+      "date_end": "2027-01-05",
+      "about": "De Malcom Dare. Indo além da fotografia clássica, os seus mais recentes trabalhos exploram a construção física e visual da profundidade, desafiando as fronteiras entre imagem, pintura e objeto."
     },
     {
       "mode": "festivals",
@@ -498,6 +106,15 @@
     },
     {
       "mode": "festivals",
+      "name": "CENTRO CULTURAL E DE CONGRESSOS DO PORTO SANTO",
+      "date": "2026-11-13",
+      "location": "Feiras",
+      "url": "https://t.me/festas_madeira/2733",
+      "event_type": "festival",
+      "category": "exhibition"
+    },
+    {
+      "mode": "festivals",
       "name": "Centro de Estudos de História do Atlântico — Alberto Vieira",
       "date": "2026-11-13",
       "location": "São Pedro",
@@ -516,6 +133,17 @@
       "category": "concert",
       "date_end": "2026-12-18",
       "about": "Dias 13, 20 e 27 de novembro e 4 e 18 de dezembro | 20h30. Entrada livre, limitada à lotação da sala."
+    },
+    {
+      "mode": "festivals",
+      "name": "Coletiva na Galeria ESPAÇOMAR",
+      "date": "2026-11-13",
+      "location": "Galeria Espaçomar - Escola Básica Secundária Gonçalves Zarco (EBSGZ)",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/pequenos-rumores-na-casa-dos-passaros",
+      "event_type": "festival",
+      "category": "exhibition",
+      "date_end": "2027-02-12",
+      "about": "A Galeria espaçomar, reabre as suas portas com a inauguração da exposição \"Pequenos.Rumores.Na.Casa.Dos.Pássaros\". Uma mostra que reúne cerca de 54 obras de mais de 20 artistas, com direção artística de Paulo Sérgio BEJu."
     },
     {
       "mode": "festivals",
@@ -543,12 +171,66 @@
     },
     {
       "mode": "festivals",
+      "name": "Concertos Novembro | Orquestra Clássica da Madeira",
+      "date": "2026-11-13",
+      "location": "Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concertos-novembro-orquestra-classica-da-madeira",
+      "event_type": "festival",
+      "category": "concert",
+      "date_end": "2026-11-21",
+      "about": "Calendarização: Dia 7 de novembro | 18h00. Auditório do Centro de Congressos da Madeira. Maestro: Misha Katz. Solista: Dmitry Demyashkin. Dia 14 de novembro | 18h00. Capela da Fundação Princesa Dona Maria Amélia."
+    },
+    {
+      "mode": "festivals",
       "name": "Culture · Porto Da Cruz",
       "date": "2026-11-13",
       "location": "Porto Da Cruz",
       "url": "https://t.me/festas_madeira/2780",
       "event_type": "festival",
       "category": "culture"
+    },
+    {
+      "mode": "festivals",
+      "name": "Duo Bandonica – Projeto Artístico “Fala-me de Música”",
+      "date": "2026-11-13",
+      "location": "Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/duo-bandonica-projeto-artistico-fala-me-de-musica1",
+      "event_type": "festival",
+      "price": "Free",
+      "category": "concert",
+      "date_end": "2026-12-05",
+      "about": "Fala-me de Música” nasce do encontro artístico e profundamente romântico entre a bandolinista Francisca Abreu e o acordeonista Alessio Ferrari, dois músicos provenientes de mundos culturais diferentes, mas unidos por uma sensibilidade…"
+    },
+    {
+      "mode": "festivals",
+      "name": "Exhibition · Funchal",
+      "date": "2026-11-13",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2600",
+      "event_type": "festival",
+      "category": "exhibition"
+    },
+    {
+      "mode": "festivals",
+      "name": "Exposição itinerante \"INTRA - Olhar para Nós\"",
+      "date": "2026-11-13",
+      "location": "Galeria Pimenta 22",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/exposicao-itinerante-da-intra-olhar-para-nos",
+      "event_type": "festival",
+      "category": "exhibition",
+      "date_end": "2026-11-30",
+      "about": "Esta edição conta com a participação de 26 artistas de diversos países, como Portugal, Alemanha, França, Itália, Ucrânia, Romênia, Espanha, Venezuela, Japão e Argentina."
+    },
+    {
+      "mode": "festivals",
+      "name": "Exposição “Rituais de Passagem: A MORTE”",
+      "date": "2026-11-13",
+      "location": "Museu Etnográfico da Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/rituais-de-passagem-a-morte",
+      "event_type": "festival",
+      "category": "exhibition",
+      "date_end": "2026-12-05",
+      "about": "O Museu Etnográfico da Madeira inaugura, dia 29 de outubro, a exposição temporária “Rituais de Passagem: A MORTE”."
     },
     {
       "mode": "festivals",
@@ -561,6 +243,17 @@
       "price": "Free",
       "organizer": "Associação Desportiva e Recreativa da Ponta Delgada",
       "category": "arraial"
+    },
+    {
+      "mode": "festivals",
+      "name": "Festival Travessuras Culturais 2026",
+      "date": "2026-11-13",
+      "location": "Centro da Ponta do Sol",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/festival-travessuras-culturais",
+      "event_type": "festival",
+      "category": "festival",
+      "date_end": "2026-11-15",
+      "about": "O Festival Travessuras Culturais celebra a sua 10.ª edição, e este ano sob o tema “Escolher Viver”."
     },
     {
       "mode": "festivals",
@@ -591,6 +284,8 @@
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/iv-bagustos-encontros-de-tradicao",
       "event_type": "festival",
       "time": "20:30",
+      "price": "Free",
+      "organizer": "TÚNEL 8",
       "category": "culture",
       "date_end": "2026-11-14",
       "about": "A Oficina de Ideias das Terras do Oeste - Associação Cultural, apresenta IV BAG'USTOS - Encontros de Tradição."
@@ -609,6 +304,18 @@
     },
     {
       "mode": "festivals",
+      "name": "Madeira Piano Fest 2026",
+      "date": "2026-11-13",
+      "location": "Teatro Municipal Baltazar Dias",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/madeira-piano-fest-2026",
+      "event_type": "festival",
+      "price": "€20 · 3 concerts €51 · 5 concerts €75",
+      "category": "concert",
+      "date_end": "2026-11-15",
+      "about": "O Teatro Municipal Baltazar Dias volta a acolher o Madeira Piano Fest, de 7 a 15 de novembro."
+    },
+    {
+      "mode": "festivals",
       "name": "NIKO SVETIEV",
       "date": "2026-11-13",
       "location": "Largo do Socorro · Árvore, Funchal",
@@ -618,6 +325,37 @@
       "price": "Free",
       "organizer": "Associação Cultural do Socorro",
       "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "Oficinas de Desenho Out. 2026 - Jun. 2027",
+      "date": "2026-11-13",
+      "location": "PORTA33",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/oficinas-de-desenho",
+      "event_type": "festival",
+      "category": "workshop",
+      "date_end": "2027-06-30",
+      "about": "Prática do desenho como atividade de mapeamento das relações perceptivas com o mundo e com o próprio universo do pensamento."
+    },
+    {
+      "mode": "festivals",
+      "name": "Programa InfantoJuvenil Out · Nov · Dez 2026",
+      "date": "2026-11-13",
+      "location": "Direção Regional dos Arquivos, das Bibliotecas e do Livro",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/programa-infantojuvenil-out-nov-dez-2026",
+      "event_type": "festival",
+      "category": "family",
+      "date_end": "2026-12-19",
+      "about": "De outubro a dezembro, há muitas histórias para descobrir, momentos para partilhar e atividades para viver em família. O programa inclui: ABM Bebés. ABM Miúdos. BORA LER. Sessões de Histórias em Inglês. Festa de Natal."
+    },
+    {
+      "mode": "festivals",
+      "name": "RobertAndres Baltazar Dias",
+      "date": "2026-11-13",
+      "location": "Sé",
+      "url": "https://t.me/festas_madeira/2680",
+      "event_type": "festival",
+      "category": "festival"
     },
     {
       "mode": "festivals",
@@ -642,6 +380,81 @@
       "price": "Free",
       "organizer": "Mira",
       "category": "theatre"
+    },
+    {
+      "mode": "festivals",
+      "name": "Show · Sé",
+      "date": "2026-11-13",
+      "location": "Sé",
+      "url": "https://t.me/festas_madeira/2781",
+      "event_type": "festival",
+      "category": "show"
+    },
+    {
+      "mode": "festivals",
+      "name": "Vila da Ponta do Sol",
+      "date": "2026-11-13",
+      "location": "Ponta Do Sol",
+      "url": "https://t.me/festas_madeira/2768",
+      "event_type": "festival",
+      "category": "festival"
+    },
+    {
+      "mode": "festivals",
+      "name": "Vídeo - Dança \"Uma dança de algibeira_ {rasto de ti}\"",
+      "date": "2026-11-13",
+      "location": "Museu A Cidade do Açúcar",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/video-danca-uma-danca-de-algibeira-rasto-de-ti",
+      "event_type": "festival",
+      "time": "19:00",
+      "price": "Free",
+      "category": "dance",
+      "about": "Com interpretação de Natércia Kuprian e captação e direção de imagem de André Vieira Moniz."
+    },
+    {
+      "mode": "festivals",
+      "name": "“Blessed Ground”",
+      "date": "2026-11-13",
+      "location": "Museu de Fotografia da Madeira - Atelier Vicente's",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/blessed-ground",
+      "event_type": "festival",
+      "category": "exhibition",
+      "date_end": "2027-01-30",
+      "about": "O Museu de Fotografia da Madeira – Atelier Vicente’s, inaugura dia 8 de outubro, quinta-feira, pelas 17h00, a exposição “Blessed Ground”, do fotógrafo documental e fotojornalista Ricardo Lopes."
+    },
+    {
+      "mode": "festivals",
+      "name": "“Che Cosa Sono le Nuvole?” de Nuno Henrique",
+      "date": "2026-11-13",
+      "location": "Núcleo Histórico de Santo Amaro - Torre do Capitão",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/che-cosa-sono-le-nuvole",
+      "event_type": "festival",
+      "category": "exhibition",
+      "date_end": "2027-02-28",
+      "about": "No dia 5 de novembro, a Torre do Capitão - Núcleo Histórico e Museológico de Santo Amaro, acolhe a abertura da exposição itinerante “Che Cosa Sono le Nuvole?”, do artista plástico madeirense Nuno Henrique Este projeto integra o ciclo…"
+    },
+    {
+      "mode": "festivals",
+      "name": "“Nostalgic Madeira Music”",
+      "date": "2026-11-13",
+      "location": "Instituto do Vinho da Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/nostalgic-madeira-music",
+      "event_type": "festival",
+      "category": "concert",
+      "date_end": "2026-12-18",
+      "about": "Evento inédito e verdadeiramente singular, a realizar-se todas as quintas-feiras no Instituto do Vinho, do Bordado e do Artesanato da Madeira."
+    },
+    {
+      "mode": "pro",
+      "name": "Mountain Bike Meeting, Guided Enduro and Mill Visit",
+      "date": "2026-11-13",
+      "location": "Southern riding areas, Porto da Cruz mill, Porto Moniz",
+      "url": "",
+      "event_type": "",
+      "time": "10:00",
+      "price": "€1000",
+      "organizer": "Clube Naval do Seixal",
+      "category": "sport"
     },
     {
       "mode": "festivals",
@@ -916,6 +729,37 @@
     },
     {
       "mode": "festivals",
+      "name": "Venha celebrar connosco a fé. atradição-e a alegria",
+      "date": "2026-11-14",
+      "location": "",
+      "url": "https://t.me/festas_madeira/2784",
+      "event_type": "festival",
+      "category": "arraial"
+    },
+    {
+      "mode": "festivals",
+      "name": "Visita Temática e Oficina de Expressão Plástica \"Se as árvores do nosso Jardim falassem\"",
+      "date": "2026-11-14",
+      "location": "Museu da Quinta das Cruzes",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/visita-tematica-e-oficina-de-expressao-plastica-se-as-arvores-do-nosso-jardim-falassem",
+      "event_type": "festival",
+      "time": "10:30",
+      "category": "workshop",
+      "about": "Destinatários: Crianças entre os 06 aos 10 anos acompanhadas por adulto."
+    },
+    {
+      "mode": "festivals",
+      "name": "Visitas Dançadas \"em forma de gesto\" com Natércia Kuprian",
+      "date": "2026-11-14",
+      "location": "Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/visitas-dancadas-em-forma-de-gesto-com-natercia-kuprian",
+      "event_type": "festival",
+      "category": "culture",
+      "date_end": "2026-11-28",
+      "about": "Os elementos visuais são o mote para a experimentação do movimento dançado. Vivenciar as obras da exposição a partir da expressão do corpo. VISITA DANÇADA - 14 NOV // GALERIA DOS PRAZERES - Calheta Sessão às 9h30 - Público em geral."
+    },
+    {
+      "mode": "festivals",
       "name": "Workshops Mercadinho da Camacha: Postal bordado",
       "date": "2026-11-14",
       "location": "Mercadinho da Camacha, Santa Cruz",
@@ -1024,6 +868,18 @@
     },
     {
       "mode": "festivals",
+      "name": "Danças Históricas no Solar de São Cristóvão",
+      "date": "2026-11-17",
+      "location": "Solar de São Cristóvão",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/dancas-historicas-no-solar-de-sao-cristovao-2",
+      "event_type": "festival",
+      "time": "11:30",
+      "price": "Free",
+      "category": "concert",
+      "about": "O Solar de São Cristóvão, em Machico, será palco de uma apresentação de danças históricas de outros tempos, no próximo dia 17 de novembro (terça-feira), pelas 11h30."
+    },
+    {
+      "mode": "festivals",
       "name": "BIG DOUBLE BLUES",
       "date": "2026-11-18",
       "location": "MAMMA, Funchal",
@@ -1045,6 +901,18 @@
       "price": "Free",
       "organizer": "Level Up Dance Studio",
       "category": "dance"
+    },
+    {
+      "mode": "festivals",
+      "name": "Conferência “MADEIRA 73 – Uma Canção no Cinema”",
+      "date": "2026-11-18",
+      "location": "Museu da Quinta das Cruzes",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/conferencias/conferencia-madeira-73-uma-cancao-no-cinema",
+      "event_type": "festival",
+      "time": "15:00",
+      "price": "Free",
+      "category": "talk",
+      "about": "Apresentada por Vítor Sardinha. A Madeira foi ao longo do séc. XX cenário para muitos filmes."
     },
     {
       "mode": "festivals",
@@ -1330,6 +1198,18 @@
       "time": "16:30",
       "category": "concert",
       "about": "Em homenagem a Santa Cecília, padroeira dos músicos, a Banda Municipal do Funchal – Artistas Funchalenses apresenta um concerto especial na Igreja de Nossa Senhora do Monte, num momento de celebração da música enquanto expressão de fé…"
+    },
+    {
+      "mode": "festivals",
+      "name": "Fimo Clay Workshop",
+      "date": "2026-11-22",
+      "location": "Joy Family Space & Brunch, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "10:30",
+      "price": "€25",
+      "organizer": "JOY Family Space & Brunch Cafe",
+      "category": "workshop"
     },
     {
       "mode": "festivals",
@@ -1623,6 +1503,18 @@
       "time": "20:00",
       "price": "Free",
       "organizer": "Capoeira Lounge Bar",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "Funchal City Sessions #13 AIRES",
+      "date": "2026-11-28",
+      "location": "Galeria Tratuário, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "21:30",
+      "price": "€2",
+      "organizer": "APCA - Agência de Promoção da Cultura Atlântica",
       "category": "concert"
     },
     {
@@ -2586,6 +2478,17 @@
       "location": "Madeira",
       "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/11/MC-27_Quadro.pdf",
       "event_type": "running"
+    },
+    {
+      "mode": "festivals",
+      "name": "III Colóquio Literatura Madeirense 2027",
+      "date": "2027-03-10",
+      "location": "Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/conferencias/iii-coloquio-literatura-madeirense-2027",
+      "event_type": "festival",
+      "category": "talk",
+      "date_end": "2027-03-12",
+      "about": "Em 2027 completam-se 100 anos de dois relevantes acontecimentos editoriais em Portugal, que, a vários níveis, se relacionam com o sistema literário madeirense: o lançamento do n.º 1 de Presença."
     },
     {
       "mode": "pro",

@@ -1,8 +1,8 @@
 {
   "note": "Ship calls at the port of Funchal from APRAM. Times are Madeira local time, as the port publishes them. Accumulates; a call no longer listed before its arrival is marked superseded.",
   "source": "https://apram.pt/movimento-navios?port=ptfnc",
-  "fetched": "2026-11-10T13:52:20",
-  "count": 105,
+  "fetched": "2026-11-13T14:36:23",
+  "count": 125,
   "calls": [
     {
       "ship": "SANTA MARIA MANUELA",
@@ -840,7 +840,7 @@
       "agent": "JFM Shipping, Lda.",
       "arrival": "2026-11-08T10:10",
       "from": "Casablanca",
-      "departure": "2026-11-14T06:30",
+      "departure": "2026-11-13T09:00",
       "to": "Santa Cruz De Tenerife",
       "superseded": false
     },
@@ -935,10 +935,30 @@
       "superseded": true
     },
     {
+      "ship": "AMERSTROOM",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-11-12T18:30",
+      "from": "Porto Santo Island",
+      "departure": "2026-11-13T15:30",
+      "to": "Porto Santo Island",
+      "superseded": false
+    },
+    {
       "ship": "SEVEN SEAS GRANDEUR",
       "berth": "Funchal - Terminal Norte",
       "agent": "JFM Shipping, Lda.",
       "arrival": "2026-11-13T08:00",
+      "from": "Gibraltar",
+      "departure": "2026-11-13T16:00",
+      "to": "Kings Wharf",
+      "superseded": false
+    },
+    {
+      "ship": "SEVEN SEAS GRANDEUR",
+      "berth": "Funchal - Terminal Norte",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-11-13T08:10",
       "from": "Gibraltar",
       "departure": "2026-11-13T16:00",
       "to": "Kings Wharf",
@@ -965,6 +985,26 @@
       "superseded": false
     },
     {
+      "ship": "VOLENDAM",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-11-15T07:00",
+      "from": "Cadiz",
+      "departure": "2026-11-15T17:00",
+      "to": "Manhattan/New York",
+      "superseded": false
+    },
+    {
+      "ship": "AIDAprima",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-11-16T06:00",
+      "from": "Las Palmas (Gran Canaria)",
+      "departure": "2026-11-16T23:00",
+      "to": "Santa Cruz De Tenerife",
+      "superseded": false
+    },
+    {
       "ship": "AZURA",
       "berth": "Funchal - Terminal Sul",
       "agent": "Blatas, Lda.",
@@ -972,6 +1012,16 @@
       "from": "Santa Cruz De Tenerife",
       "departure": "2026-11-16T22:00",
       "to": "Puerto Del Rosario-Fuerteventura",
+      "superseded": false
+    },
+    {
+      "ship": "LASATA",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Transinsular (Madeira)-Transp. Marit. Insulares, Lda.",
+      "arrival": "2026-11-16T09:00",
+      "from": "Gibraltar",
+      "departure": "2026-11-16T11:00",
+      "to": "Falmouth",
       "superseded": false
     },
     {
@@ -990,7 +1040,7 @@
       "agent": "JFM Shipping, Lda.",
       "arrival": "2026-11-18T07:00",
       "from": "Santa Cruz De La Palma",
-      "departure": "2026-11-18T22:00",
+      "departure": "2026-11-18T23:00",
       "to": "Santa Cruz De Tenerife",
       "superseded": false
     },
@@ -1035,12 +1085,112 @@
       "superseded": false
     },
     {
+      "ship": "EUROPA",
+      "berth": "Funchal - Terminal Norte",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-11-22T15:00",
+      "from": "Santa Cruz De La Palma",
+      "departure": "2026-11-23T17:00",
+      "to": "Lisboa",
+      "superseded": false
+    },
+    {
+      "ship": "AZURA",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-11-23T06:30",
+      "from": "Santa Cruz De Tenerife",
+      "departure": "2026-11-23T22:00",
+      "to": "Las Palmas (Gran Canaria)",
+      "superseded": false
+    },
+    {
       "ship": "SILVER SPIRIT",
       "berth": "Funchal - Terminal Sul",
       "agent": "Agência Ferraz - J. M. Ferraz Simões, Lda.",
       "arrival": "2026-11-24T07:00",
       "from": "Lisboa",
       "departure": "2026-11-24T23:00",
+      "to": "Santa Cruz De La Palma",
+      "superseded": false
+    },
+    {
+      "ship": "AIDAblu",
+      "berth": "Funchal - Terminal Norte",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-11-24T10:00",
+      "from": "Santa Cruz De La Palma",
+      "departure": "2026-11-25T18:00",
+      "to": "Puerto Del Rosario-Fuerteventura",
+      "superseded": false
+    },
+    {
+      "ship": "SEVEN SEAS NAVIGATOR",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-11-27T08:00",
+      "from": "Las Palmas",
+      "departure": "2026-11-27T18:00",
+      "to": "La Palma",
+      "superseded": false
+    },
+    {
+      "ship": "MARINA",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-11-30T08:00",
+      "from": "Malaga",
+      "departure": "2026-11-30T16:00",
+      "to": "San Juan",
+      "superseded": false
+    },
+    {
+      "ship": "MEIN SCHIFF RELAX",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-12-02T07:00",
+      "from": "Santa Cruz De La Palma",
+      "departure": "2026-12-02T22:00",
+      "to": "Santa Cruz De Tenerife",
+      "superseded": false
+    },
+    {
+      "ship": "BOREALIS",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-12-03T07:00",
+      "from": "Santa Cruz De La Palma",
+      "departure": "2026-12-03T18:00",
+      "to": "Lisboa",
+      "superseded": false
+    },
+    {
+      "ship": "BALMORAL",
+      "berth": "Funchal - Terminal Norte",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-12-03T16:30",
+      "from": "Lanzarote",
+      "departure": "2026-12-04T17:30",
+      "to": "Lisboa",
+      "superseded": false
+    },
+    {
+      "ship": "MEIN SCHIFF 7",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-12-11T18:00",
+      "from": "Las Palmas (Gran Canaria)",
+      "departure": "2026-12-12T19:00",
+      "to": "Santa Cruz De Tenerife",
+      "superseded": false
+    },
+    {
+      "ship": "BOLETTE",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-12-12T08:30",
+      "from": "Leixões",
+      "departure": "2026-12-12T18:30",
       "to": "Santa Cruz De La Palma",
       "superseded": false
     },
@@ -1052,6 +1202,56 @@
       "from": "Barcelona",
       "departure": "2026-12-12T18:00",
       "to": "Philipsburg",
+      "superseded": false
+    },
+    {
+      "ship": "MEIN SCHIFF RELAX",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-12-16T07:00",
+      "from": "Santa Cruz De La Palma",
+      "departure": "2026-12-16T22:00",
+      "to": "Santa Cruz De Tenerife",
+      "superseded": false
+    },
+    {
+      "ship": "EXPLORA II",
+      "berth": "Funchal - Terminal Norte",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-12-18T09:00",
+      "from": "San Sebastian De La Gomera",
+      "departure": "2026-12-19T18:00",
+      "to": "Lisboa",
+      "superseded": false
+    },
+    {
+      "ship": "SIRENA",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-12-19T10:00",
+      "from": "Santa Cruz De La Palma",
+      "departure": "2026-12-19T18:00",
+      "to": "Lisboa",
+      "superseded": false
+    },
+    {
+      "ship": "MEIN SCHIFF 7",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-12-20T08:00",
+      "from": "Santa Cruz De Tenerife",
+      "departure": "2026-12-20T23:00",
+      "to": "Lisboa",
+      "superseded": false
+    },
+    {
+      "ship": "MEIN SCHIFF RELAX",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-12-30T07:00",
+      "from": "Santa Cruz De La Palma",
+      "departure": "2026-12-30T22:00",
+      "to": "Santa Cruz De Tenerife",
       "superseded": false
     }
   ]

@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-11-10T13:33:49",
-  "count": 176,
+  "fetched": "2026-11-13T13:09:58",
+  "count": 182,
   "items": [
     {
       "id": "114",
@@ -1326,7 +1326,7 @@
     },
     {
       "id": "410",
-      "title": "“Rituais de Passagem: A MORTE”",
+      "title": "Exposição “Rituais de Passagem: A MORTE”",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/rituais-de-passagem-a-morte",
       "start": "2026-10-29",
       "end": "2026-12-05",
@@ -1446,7 +1446,7 @@
     },
     {
       "id": "423",
-      "title": "“Che Cosa Sono le Nuvole?”",
+      "title": "“Che Cosa Sono le Nuvole?” de Nuno Henrique",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/che-cosa-sono-le-nuvole",
       "start": "2026-11-05",
       "end": "2027-02-28",
@@ -1645,6 +1645,16 @@
       "category": "Theatre"
     },
     {
+      "id": "439",
+      "title": "Vídeo - Dança \"Uma dança de algibeira_ {rasto de ti}\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/video-danca-uma-danca-de-algibeira-rasto-de-ti",
+      "start": "2026-11-13",
+      "end": "2026-11-13",
+      "time": "19:00",
+      "place": "Museu A Cidade do Açúcar",
+      "category": "Other"
+    },
+    {
       "id": "390",
       "title": "\"Outra Vez Alice Que Chatice\"",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/outra-vez-alice-que-chatice",
@@ -1705,6 +1715,46 @@
       "category": "Activity"
     },
     {
+      "id": "440",
+      "title": "Visitas Dançadas \"em forma de gesto\" com Natércia Kuprian",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/visitas-dancadas-em-forma-de-gesto-com-natercia-kuprian",
+      "start": "2026-11-14",
+      "end": "2026-11-28",
+      "time": "",
+      "place": "",
+      "category": "Other"
+    },
+    {
+      "id": "443",
+      "title": "Visita Temática e Oficina de Expressão Plástica \"Se as árvores do nosso Jardim falassem\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/visita-tematica-e-oficina-de-expressao-plastica-se-as-arvores-do-nosso-jardim-falassem",
+      "start": "2026-11-14",
+      "end": "2026-11-14",
+      "time": "10:30",
+      "place": "Museu da Quinta das Cruzes",
+      "category": "Activity"
+    },
+    {
+      "id": "441",
+      "title": "Danças Históricas no Solar de São Cristóvão",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/dancas-historicas-no-solar-de-sao-cristovao-2",
+      "start": "2026-11-17",
+      "end": "2026-11-17",
+      "time": "11:30",
+      "place": "Solar de São Cristóvão",
+      "category": "Music"
+    },
+    {
+      "id": "442",
+      "title": "Conferência “MADEIRA 73 – Uma Canção no Cinema”",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/conferencias/conferencia-madeira-73-uma-cancao-no-cinema",
+      "start": "2026-11-18",
+      "end": "2026-11-18",
+      "time": "15:00",
+      "place": "Museu da Quinta das Cruzes",
+      "category": "Conference"
+    },
+    {
       "id": "433",
       "title": "Espetáculo Solidário \"Nem Mais 1 Minuto de Silêncio\"",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/nem-mais-1-minuto-de-silencio",
@@ -1763,6 +1813,16 @@
       "time": "10:00",
       "place": "Galeria Tratuário",
       "category": "Activity"
+    },
+    {
+      "id": "444",
+      "title": "III Colóquio Literatura Madeirense 2027",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/conferencias/iii-coloquio-literatura-madeirense-2027",
+      "start": "2027-03-10",
+      "end": "2027-03-12",
+      "time": "",
+      "place": "",
+      "category": "Conference"
     }
   ]
 }

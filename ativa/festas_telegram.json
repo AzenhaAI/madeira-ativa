@@ -1,8 +1,8 @@
 {
   "note": "Cultural events harvested from t.me/festas_madeira. Accumulates: the channel only exposes recent posts.",
   "source": "https://t.me/s/festas_madeira",
-  "fetched": "2026-11-10T13:34:08",
-  "count": 364,
+  "fetched": "2026-11-13T13:10:09",
+  "count": 368,
   "categories": {
     "concerto": "Concert",
     "arraial": "Arraial",
@@ -5854,6 +5854,21 @@
       "title": "DURANTE TODO O FESTIVAL -"
     },
     {
+      "post": "https://t.me/festas_madeira/2783",
+      "dates": [
+        "2026-11-12"
+      ],
+      "categories": [
+        "literatura"
+      ],
+      "place": "Câmara De Lobos",
+      "poster": "https://cdn4.telesco.pe/file/nNS1RFRr3792k7dNKApFDwNrAu4VobC_jhnafrqXBURHO4u9dDlznpgdTLAUm3kqYuXG2RuRf6PDpxnDfcCPe6uJFRnN2XbBadgeGMxBQbeVYzJwYpNq39lLWu761KBbi6siHdg7s9lmQOkXE_IHNKlXg78aCnUTukZC_MP6gFZRnONxNTjJLmYmqmW_r2vTab-0cbWpeeQBLcGI0VdGlj_fx8hxMGQZTwaJSK63XTMrXxKE37ixKxEHcaKindNp1BXkN9PgEPNGtlwQPId86wR1VqGpKvyMnhs2AJJMQF_VI_fKEtnDccsBJKxnRQVR6FyXr5Sp86T-BaN-GJDZQQ.jpg",
+      "published": "2026-11-11T10:00:41+00:00",
+      "poster_text": "Casa da Cultura\nde Câmara de Lobos\n\n12 de novembro\n15h00\n\n50EVO\n\n‘Fossa De Logos\n\nLAN\n\nCAMENTO\nDO LIVRO",
+      "name": "Casa da Cultura de Câmara de Lobos",
+      "title": "Casa da Cultura de Câmara de Lobos"
+    },
+    {
       "post": "https://t.me/festas_madeira/2710",
       "dates": [
         "2026-11-13",
@@ -5949,6 +5964,22 @@
       "poster_text": "asnove\n\n14 NOV\nreap, Madeira Despique ~ Gente Antiga\ntimes. Missa campal perros\nzor, Grupo Cultural e Recreativo\nCP de Santo António da Serra\n100. Tuna de Machim\noo. Montereal Band\nJoão Quintino\nFogo de artifício\n\nAS NOV.\nProva de Vinhos\nCantares da Ribeira CCCS-\nGrupo de Cantares e Co\nAss. Fiha do Barqueiro 4 |\nGrupo de Cantares e Degpiaves\ndo Porto da Cruz\n\ns EI Corazón Mariachi\n\n‘Argos da Música.\n\ncetura",
       "name": "reap, Madeira Despique ~ Gente Antiga",
       "title": "Cultural event · Porto Da Cruz"
+    },
+    {
+      "post": "https://t.me/festas_madeira/2781",
+      "dates": [
+        "2026-11-13",
+        "2026-11-14"
+      ],
+      "categories": [
+        "espetáculo"
+      ],
+      "place": "Sé",
+      "poster": "https://cdn4.telesco.pe/file/eJjkBE7rhTqJV-k9i4QvmiT-V7MWMt4P7AeXVxFeRBxdTDDe9mxjs0b3RLA_dmIaxnQVoQ9_3aw8c3MBHSxwzJWgm6bhPd90Uwl3urvxnpDBE8XGa0cAPGd6ZV_0qVLO3JLgf6sDedBt3HGsPy4Q3DTVT2m0feyS2F59dZU8xEYNkChttTrWYYE0fLg4NYfNoIR1KDaDC75N0NmQLyP8QftRMJm522-QoVEWrnPcAtQL1d8iPqYlBxEg5fN2LrjMYLnZL9xnyMpNrxl8VziE5sCplLM87R5PnqbrIp1AGb0DEWdIJf2OA-lA0vgLaSzu2H_8N2GLKosTZNwjFGsLMw.jpg",
+      "published": "2026-11-11T10:00:15+00:00",
+      "poster_text": "",
+      "name": "",
+      "title": "Show · Sé"
     },
     {
       "post": "https://t.me/festas_madeira/2753",
@@ -6064,6 +6095,41 @@
       "poster_text": "Cutlura nos Mercados\nAMIGOS DA GAITA\n\n14 de novembro\n10h\n\nMERCADO MUNICIPAL DE\nCÂMARA DE LOBOS\n\n15 de novembro\n9h30\n\nMERCADO MUNICIPAL\nESTREITO DE C.º DE LOBOS",
       "name": "Cutlura nos Mercados AMIGOS DA GAITA",
       "title": "Cutlura nos Mercados AMIGOS DA GAITA"
+    },
+    {
+      "post": "https://t.me/festas_madeira/2782",
+      "dates": [
+        "2026-11-14"
+      ],
+      "categories": [
+        "festival",
+        "oficina"
+      ],
+      "place": "Ribeira Brava",
+      "poster": "https://cdn4.telesco.pe/file/Awmqmm8nqy-_P1Q5gkvAXXXMxS98QdzlMYya9v50mcfFEgBY3s7KQ_KJuk653q8XBz4eMztIOBADxw4Qhcu4MXWh9aBCRdJNgZd-SOaEq8cTu1ICbmVcERI8diW4clAdVRQ9SyAbHv8nQJqdO5JvCE0MhMK_BjzeOxbC9KMWbDpUAwwSJSscgdu3FME0VyCYs4B3C00riOsfOr-I61QPhQmPeV3DW_ALPFqkOhBCN_2n6IJfVCVttEeSyuxpgmvZIHU4AqrQBke6BO4fAvAsi54mrvc4Ky3cUqnVF8XFaM_czUOZk2zRczLKsHok5s2CEBIi1f3vXdeIduhzBRK_Gg.jpg",
+      "published": "2026-11-11T10:00:22+00:00",
+      "poster_text": "Licores d’ Festa\n“Eduardinho” ês\n\n14 novembro\n10h30 - 12h00 ——\n\nInscrição Gratuita\nAté 12 novembro\n\n291 145 326\nsemuseuetnografico@gmailcom\n(maximo de 12 participantes)\n\nMUSEU\nLNG\n\nMADEIRA",
+      "name": "Licores d’ Festa",
+      "title": "Licores d’ Festa"
+    },
+    {
+      "post": "https://t.me/festas_madeira/2784",
+      "dates": [
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "categories": [
+        "concerto",
+        "arraial",
+        "religioso",
+        "família"
+      ],
+      "place": "",
+      "poster": "https://cdn4.telesco.pe/file/QX9IbPfuT4qaZd9AVX9rQ9cRN2dixed526mLJxtRnQqT05vm8KgY027FHnBSqpVDGlt6KZAP9a3b8nFAy23IY4GCiOxBKjTYj4BJgYZXiltPcN7ibNA2uMR1Rkn2KenjeVTtPrMp8MddMXpF0b1sRMpqMa4GgIvfnIvnB5sJaasraqGAdK-icnWbvkCvJDUtqw0vgvzWtYatin8kO-4OjxqMsr4lMPIW4bEaFVkl5qUSFsoBiXu62Qg_yea0WyxnnIOXsqCnDvqyl03IdyBVTrK7qBto2gXm5q6m7gIpOXmmb-dKsZkyeKjLsCdKe4vxYnxpHnZ6EgpD_tezfUSsiw.jpg",
+      "published": "2026-11-13T09:09:17+00:00",
+      "poster_text": "FESTA DE\n\nPARÓQUIA\nDO\n\nCARVALHAL\n\n> E 0S TRADICIONAIS COMES E BEBES!\n\n~ »\n\n| Ce\n\nVenha celebrar connosco a fé. atradição-e a alegria\n\nEUA AAA",
+      "name": "Venha celebrar connosco a fé. atradição-e a alegria",
+      "title": "Venha celebrar connosco a fé. atradição-e a alegria"
     },
     {
       "post": "https://t.me/festas_madeira/2771",
