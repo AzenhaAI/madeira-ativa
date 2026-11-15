@@ -1,8 +1,8 @@
 {
   "note": "Cultural events harvested from t.me/festas_madeira. Accumulates: the channel only exposes recent posts.",
   "source": "https://t.me/s/festas_madeira",
-  "fetched": "2026-11-15T10:52:34",
-  "count": 370,
+  "fetched": "2026-11-15T19:06:19",
+  "count": 372,
   "categories": {
     "concerto": "Concert",
     "arraial": "Arraial",
@@ -33,6 +33,23 @@
     "tradicao": "Tradition"
   },
   "items": [
+    {
+      "post": "https://t.me/festas_madeira/2787",
+      "dates": [
+        "2026-03-10",
+        "2026-03-11",
+        "2026-03-12"
+      ],
+      "categories": [
+        "literatura"
+      ],
+      "place": "Funchal",
+      "poster": "https://cdn4.telesco.pe/file/sAVzwDg__dV-6ZVmC4kK9nfrvFp2S-Nc9oupK-7F4gFiXnTolOkZL279KEWRBRjv0bCCSR2zd8hYZPgOsbxzv9GmEA597Qfx3cyauFp_ACmQawQGP_953QLNBo_b8GywlqU4I02z1O1NCte55Zy-wwpOr1pnzJntbIE1JYqrdzIN5weTfAQuoIccYjVj1eOf8BQnhoDi1ztuyHud8B0GBvg5xzIcS3EMUEMLXH66gcz7fe0RXmGbLHiH2x3C7psMocNNnjtOM_3lAYAK95-2JCJxbgNevd1NgreM_mP98vytCj1FVnqnPxaTQzi3ylo6uLVPGyO_xE3_ll7XWF_mcA.jpg",
+      "published": "2026-11-15T16:18:42+00:00",
+      "poster_text": "Il COLÓQUIO\n\nFUNCHAL -\n\n10 A 12.03.2027",
+      "name": "",
+      "title": "Literature · Funchal"
+    },
     {
       "post": "https://t.me/festas_madeira/2400",
       "dates": [
@@ -382,7 +399,7 @@
       "poster": "https://cdn4.telesco.pe/file/lRG07I4YYiFaLCKFgYOySmBHL6Z_Zvty-brvBq3-ZsqG9GShiprMVwqau8n2suUNj-Sy9zDy_pI9cRbYJfwirTCLCVRy7_Xs8i6nWdRPiLXBb1OPK8EONYGtebduhSU9UffOw8SyqEuP-VIid2htsT_OdDn2czUtVux0g12eS3lEMSeyNYxKYDfq6QdPTB_Vu4rBXSXbHN79_truO-X5UuslODGKPIoEoxO-nI_MpxmkfdC_hib9fpCKcMmeDF4f7KY-SoWoqs-Wf_6qDPse5SZ2OaBrM8thYPIrC5Ui6SNlsqNbUvHZ29-yEEDZMVPRvvjIllTys-n1gHCJbpXasQ.jpg",
       "published": "2026-08-21T08:38:54+00:00",
       "poster_text": "PauldoMiar\n\n+ Daz2e28 de Agosto.\n\n“Festa do\n\n9, 15:00. romacem\n“F 19:00 Missa E novena\n\n20:00 BANDA MUNICIPAL PALLENSE\n\nJá 21:00. ricakDO MADEIRA E BANDA\n\nO 2230 oy waca\n\n“F 17:00 wissa E PROCISSÃO\n19:00 BANDA MUNICIPAL PALLENS\n\nSê 21:00 MáRCIO AMARO E BANDA\nO 2230 wsos\n\nMÁRCIO AMARO\nE BANDA",
-      "name": "PauldoMiar Daz2e28 de Agosto. Festa do",
+      "name": "Pauldo Miar Daz2e28 de Agosto. Festa do",
       "title": "Concert · Paul Do Mar"
     },
     {
@@ -502,8 +519,8 @@
       "poster": "https://cdn4.telesco.pe/file/KCY7kyyMk1xzobaUyAqEtauo_CNuzh8DcMIKvahMnYwzDYRKpiPD4Pl6ep1j_0URfG_Ao3ky1rqqFE0N-GvYoJEzzBFuGynpDvKj9Ca6fNVNWhKv0HlQH5eahN-FtfdcPYybCpaYGekDr2Ed0wd5Gog6QpYDCZaI_tPfNyvLUSRizhVVmeNJnkuJFlGw3NrkF8yX8Cky8OFWtBgvkqGsqiq3UZ3YLWl80AywIesF1SLKsXKfEByVsxm4E5_v3kWREuKmDZsY7NgSiOjR5IcTJkVssX37HVNNDW7z8-AiAqFNP0VewEorgsdbi9mIN0kmbAhrFw3DnDrgAxXIEt6Ohg.jpg",
       "published": "2026-08-28T11:03:49+00:00",
       "poster_text": "FESTA EM HONRA DO\n\nSANTÍSSIMO\nACRAMENTO\n\nTRavição\na\n\nune\naa ens EMT\n\nBi Li “tt\nTRÍDUO DO SENHOR * AMIZADES que Ficam:\n\nari fia, 26,\n\nRicardo Madeira\nDu cleo\n\nE E AGOSTO\n\nQ CAMACHA MADE\n\nVENHA CELEBRAR C",
-      "name": "FESTA EM HONRA DO SANTÍSSIMO ACRAMENTO TRavição",
-      "title": "FESTA EM HONRA DO SANTÍSSIMO ACRAMENTO TRavição"
+      "name": "FESTA EM HONRA DO SANTÍSSIMO",
+      "title": "FESTA EM HONRA DO SANTÍSSIMO"
     },
     {
       "post": "https://t.me/festas_madeira/2430",
@@ -899,8 +916,8 @@
       "poster": "https://cdn4.telesco.pe/file/UzFbf-SX7VqGzBZTcUhyI0aYA2GROpNbCishtWVDrsgJ2wLQpYhOORpuzFyWA4iUPRXF87REoOGNcaDGeIkcMijCK5i-bU9QDiX89Ny9MbS40-d5AK5iOzViTZbAtN6D5ghMuNWVCl65aVB8F__euKcQuUoxRa7LEDuPRB7FlCLsnbu_q50FiQSLyVaKHkZmoChWc0K2v98PfRyatyTD5t80nIR4mGUtsoWsjaG1Epzu4Rmz5RZYDSMieQ47Uao7k3q3jLSV_imBUrKTsmmfjhFMunCjtK2aMnzXICXG7HI1QHqSDeNLU1ygPXm8GxLCq_iihVVMyocBN51zaQ_ISw.jpg",
       "published": "2026-09-10T09:07:35+00:00",
       "poster_text": "Sofia Ferra\nFado\n\nMais informações: wwwselolea.com\n\nAETOIÇA madeira",
-      "name": "Mais informações: wwwselolea.com",
-      "title": "Concert"
+      "name": "Sofia Ferra Fado",
+      "title": "Sofia Ferra Fado"
     },
     {
       "post": "https://t.me/festas_madeira/2439",
@@ -1920,7 +1937,7 @@
       "published": "2026-09-17T08:49:42+00:00",
       "poster_text": "ERCADO\n\n17.09 | 17h00",
       "name": "ERCADO",
-      "title": "ERCADO"
+      "title": "Exhibition · Mercadinho"
     },
     {
       "post": "https://t.me/festas_madeira/2401",
@@ -2139,7 +2156,7 @@
       "published": "2026-09-17T09:00:19+00:00",
       "poster_text": "Será as obras d, ervaladas\n\ncom p elemento rquestra\n\nApoios Organizaç",
       "name": "Será as obras d, ervaladas com p elemento rquestra",
-      "title": "Será as obras d, ervaladas com p elemento rquestra"
+      "title": "Concert · Camacha"
     },
     {
       "post": "https://t.me/festas_madeira/2600",
@@ -2524,7 +2541,7 @@
       "published": "2026-09-15T09:14:39+00:00",
       "poster_text": "19\n\nE\n12h80\n16h00.\n165\n17h30\n17830\n18h00\n18h30\n19h30\n20h30\nZito\n23h00\n‘oon00\n\n20\n\n10h00\nnho\n12h00\n12h30\n12has\n13h00\nums\nvans\n15h00\n\n15mã0\n16h00.\n12h00.\n18h30\n20h00\n22h00,\n\n412 FESTA”\n\nPERO\n\nPONTA DO PARGO\n\n= Tradição e Fuluro =\n\nSETEMBRO\n\nAbertura da 41> Feira Agrícola da Festa do Pero\nAções de Valorização do Pero (Coainha/Sidra/Arvores)\n\nMisa Igreja Paroquial da Ponta do Fargo\n\nGrupo Folclore da Calheta\n\n1º comida de Atletismo da Festa do Pêro\n\nO Burico e o seu Acordedo Mágico.\n\nGrupo de Cordas da aja de Ovelha.\n\nEntrega de Prémios - 1º corrida de Atltismo da Festa do Pêro.\nGrupo \"Amigos do Cantar” - (Porto Santo)\n\n‘Marcelo Camacho (One Men Show)\n\nEmesto Macedo e sua Banda\n\nDjFábio Costa\n\nEncerramento\n\nSETEMBRO\n\nAbertura do Evento com 2 Banda Municipal Pavlense\nMissa solenizada pelo Grupo Coral da Ponta do Pargo\nGrupo folclore da Calheta\nEmissão em Direto - Radio Calheta.\nGrupo Folclore da Ponta do Sol\nEmissão em Direto Abraço da Madeira - RTP Antena 1\nGrupo Folclore do Porto Santo\nO Búzico e o seu Acordeão Mágico\nIntervenção das Entidades Oflas, com entrega de prémios aos Agricultores.\ne participantes do 5 Torneio de Dominó d Festa do Pero.\nCortejo Alegárico e Etnográfico (Usos e Costumes)\nalitro\nYosi Pinto\n‘Roakaso Trbuto Xutos & Pontapés.\nAlvaro Florença & Banda\nEncerramento\n\nEus [Dom 58",
       "name": "Zito nho ums vans",
-      "title": "Zito nho ums vans"
+      "title": "Concert · Ponta Do Pargo"
     },
     {
       "post": "https://t.me/festas_madeira/2583",
@@ -3134,7 +3151,7 @@
       "published": "2026-09-24T00:34:12+00:00",
       "poster_text": "5»\n\nA Garota Não\ncme\n\njos da For\nAGON é CME\n\nO Legado de Manuel\n\nLuiz Vieira (1926-2026)\nO Fauno das Montanhas.",
       "name": "A Garota Não cme jos da For AGON é CME",
-      "title": "A Garota Não cme jos da For AGON é CME"
+      "title": "Literature · Funchal"
     },
     {
       "post": "https://t.me/festas_madeira/2620",
@@ -4216,7 +4233,7 @@
       "published": "2026-10-01T09:00:55+00:00",
       "poster_text": "1 outubro'26\n\nCANIÇAL\nmuseudabaleiadamadeira\n\n14h00 - Receção e apresentação dos participantes\n\n14h30 - Histórias com memórias\nTertúi\n\nA 15h30 - Dramatização da história “A pequena Baleia-de-Bryde\"\ne Serviços educativos - MBM\n\n16h00 = Júlio Nunes\nE Autor da música “A minha terra é o Caniçal”\n\n446 16h30 - Apresentação dos stands\n\nuf 17100 Espetáculo de dança\nADARS - Associação de Dança e Artes Recreativas Skazka\n\nPROGRAMA\n\\\n\n44h30 - Associação Cultural e Recreativa Rodopio Pitoresco\n\n<< Artes & ofícios no Petiscos\n\nja no Museu RM Associação Calhau\nA mom\n\nEcos Machico\nRebentos à descoberta (ish - oh)\nSPEA\n\nSalty Art Madeira\n\nmio o jm\n\nJardim do Museu da Baleia da Madeira (sto opto nan",
       "name": "CANIÇAL museudabaleiadamadeira",
-      "title": "CANIÇAL museudabaleiadamadeira"
+      "title": "Family · Caniçal"
     },
     {
       "post": "https://t.me/festas_madeira/2659",
@@ -4443,7 +4460,7 @@
       "poster": "https://cdn4.telesco.pe/file/e9sDjI7nfYfxvv-rY0cLj_3fMwQkL5pBRZ6Etrq0Dy_4IhBPu6EDIl4gVTJNcqBU_CeGaAHYCkmybTA6FefyrD7ANTHyCFhBxOtLiOotJ_Pud2-6gEu7_uAIZm55rbmjXWEklqbQD1l8MeqfemjWNfPoETgKX9thAQh7V4ZVCDnzB477DXhamPQUspGJNglLcgFqA9gv_dI6X2gx9Mw-cb1V0h90EaZf1Q4oXMHLn65T-eiBeMnZA4j5tjkV4ulU1zPw0uZVtJnPjpNt7UoLncf6bXI_YJFV9ig98GHKxD67ApIupkyToqQ3ifC0CTV8W5LXQ59Gl6Al5r5g5bmYwA.jpg",
       "published": "2026-10-13T09:00:10+00:00",
       "poster_text": "Pe aa 13.10 —\n=\" — 30.11\n\nExposição 2026\n\nltinerante\n\n40 anos\n\n40 fotografias",
-      "name": "Exposição 2026 ltinerante",
+      "name": "Exposição 2026 itinerante",
       "title": "Exhibition · Santo António"
     },
     {
@@ -4623,7 +4640,7 @@
       "published": "2026-10-08T09:00:08+00:00",
       "poster_text": "OFITE sm. ZÉ ABREU\n\nseem\n291 910 040\nSOFITOS\n\n“Mm\n\nIGOUT 2H T7OUT 2H 180UT 174194\nCENTRO CÍVICO DO ESTREITO\n\nAUDITÓRIO MAESTRO JOÃO VICTOR COSTA\nDo lmss 00270 (Are EIA €",
       "name": "OFITE sm. ZÉ ABREU SOFITOS CENTRO CÍVICO DO ESTREITO",
-      "title": "OFITE sm. ZÉ ABREU SOFITOS CENTRO CÍVICO DO ESTREITO"
+      "title": "Workshop · Estreito De Câmara De Lobos"
     },
     {
       "post": "https://t.me/festas_madeira/2687",
@@ -4733,8 +4750,8 @@
       "poster": "https://cdn4.telesco.pe/file/CDQ0yaKy8oBcQL2mYge1ujq91keqA6CLjNRms7EakxA0ybDC8Ttalv5irCGB1MavLD_YCVuH_EYY2C_PrswK20LjPg3U8omh_-gRuFvFlUawRuMhXbiohcVHBwKNmccDC092hzPwf0bkXjBUcGmt9No8c6Xdd6TQRwjRW0EtMAZ1ERaAtCzzIl25o6HgUfBJxOTo9jP7j95o5EA_akVDCecA23JH3sLgPVju1zNdqUbK0GYJ64fZTbTz4ib05rHYjkM3JingQOkXkpvvYZ8NbrZ34ruU4fEZOW5ppXrgeIacI2gbdXiL-TbkvOZ_ksN-rIV8plIdShdUN9BI618hdA.jpg",
       "published": "2026-10-15T09:03:45+00:00",
       "poster_text": "16 — 25 our oct 20% e\nfestivaldeorgao. madeira gov.pt\n\nestival\n\nINTBPRNACIONAL\ndeOrgao\nda MADEIRA\n\nMADEIRA INTERNATIONAL ORGAN FESTIVAL\n\n[Eiras\n\ngs",
-      "name": "festivaldeorgao. madeira gov.pt estival INTBPRNACIONAL",
-      "title": "Concert"
+      "name": "MADEIRA INTERNATIONAL ORGAN FESTIVAL",
+      "title": "MADEIRA INTERNATIONAL ORGAN FESTIVAL"
     },
     {
       "post": "https://t.me/festas_madeira/2708",
@@ -4806,7 +4823,7 @@
       "published": "2026-09-24T09:00:17+00:00",
       "poster_text": "Orquestra CLássica pa Mapeira\n\nÉ MA\n\n| se\né\nNADEZHDA\nNESTEROVA\n\n7.10.26\n\nMARIO STEFANO\nPIETRODARCHI\n\nCONCERTO 25€ DA MADEIRA 15H\n\nese “Xi\n\nis 4 j\nAESTRO Ansa\n\nMARTIN ANDRÉ\n\nPUCCINI . VERDI. T 1. BIZET . PIAZZOLLA\nE-= 2 : :",
       "name": "Orquestra CLássica pa Mapeira",
-      "title": "Orquestra CLássica pa Mapeira"
+      "title": "Concert · Sé"
     },
     {
       "post": "https://t.me/festas_madeira/2693",
@@ -5249,7 +5266,7 @@
       "published": "2026-10-22T08:19:25+00:00",
       "poster_text": "[IJEncontroldeJMúsica Popular\nfemjlerras[dojCedro Gordo\n\n19:30H - sede da Casa do Povo de São Roque do Faial\n« Grupo de Tocares e Cantares “Camponeses” da\nCasa do Povo de São Roque do Faial\n* Grupo de Cantares da Casa do Povo da Tabua\n« Grupo de Tocares e Cantares da Casa do Povo do\nJardim da Serra\n« Grupo de Cantares do Paúl do Mar\n\nhe Dee antares do\n| Gets Paúl do Mor\n\naga Fo\nao",
       "name": "IJEncontroldeJMúsica Popular femjlerras[dojCedro Gordo",
-      "title": "IJEncontroldeJMúsica Popular femjlerras[dojCedro Gordo"
+      "title": "Concert · São Roque Do Faial"
     },
     {
       "post": "https://t.me/festas_madeira/2726",
@@ -5327,7 +5344,7 @@
       "published": "2026-09-29T09:00:28+00:00",
       "poster_text": "festaQ da © os &\n. Apto AÊ:\n\n2 Sp sã\n“ E —",
       "name": "Apto AÊ:",
-      "title": "Apto AÊ:"
+      "title": "Festival · Curral Das Freiras"
     },
     {
       "post": "https://t.me/festas_madeira/2663",
@@ -5373,8 +5390,8 @@
       "poster": "https://cdn4.telesco.pe/file/HieAaDcc4-Blumst40Mtdn_xshU7vTRtUojyvHd3wh2iO1FY7VTU-oC9ugNe5kWxUzxFiP_0Lb18ONsQlb775T7Yu3CjjwWqA0lp2GnDYt9_CvqIxpt9TBJEX1xkljirkb6KsOc9NW2UYFPW96HdXF281fzwHWUft8FiPaLeQ2hjKXZdLvElhLFYIHhkCS3R6YL6-QEsq9FYd_HQePCEzoUx9Jfybkn8C8ya8cZs11BisOJrqSO0EzdvitEtNS3IIwX2jfbEnKPUSb9M4ccrYGokFGCVgXvME1H2jMLJ-50zwy5UmKKSL1839eOXCuYZ9wBkOLI0fm4EmoSKDKmTfA.jpg",
       "published": "2026-10-27T10:00:37+00:00",
       "poster_text": ". FADO. BEIRA-MAR\n\n_ Mónica Pinto\n\n& ASSOCIAÇÃO de FADO da MADEIRA\n\n31 OUT | CASA DA CULTURA DE CAMARA DE LOBOS | 21100\na I I\n\nENTRADA LIVRE FREE ADMISSION\n\nPT a",
-      "name": "FADO. BEIRA-MAR _ Mónica Pinto ASSOCIAÇÃO de FADO da MADEIRA",
-      "title": "FADO. BEIRA-MAR _ Mónica Pinto ASSOCIAÇÃO de FADO da MADEIRA"
+      "name": "FADO. BEIRA-MAR Mónica Pinto ASSOCIAÇÃO de FADO da MADEIRA",
+      "title": "FADO. BEIRA-MAR Mónica Pinto ASSOCIAÇÃO de FADO da MADEIRA"
     },
     {
       "post": "https://t.me/festas_madeira/2736",
@@ -5488,8 +5505,8 @@
       "poster": "https://cdn4.telesco.pe/file/ntgesscddKnc5JMoHhivW8ElUlyKvs5HbMSy__AzyQcnZG771fM8UAJF_jgq6S0zsW_SMb7OmBhGlxUG_l58ddyyicCoYGJsqphg1C6hZ5DujNWmlAJGjw5Xss7gMi7HqelIZPX4JikJg9247CbLBJqX4EptKc6BUSuPYHfZw_LlHXMfPjzDSRRGRtEPURLfNpYcqczl02VVIEi7UljqUxmEkhdub4FGz-Qv_Kndv8ve5xUAqbFbuPse-OuShR3ZUn_uJtB19SgH_HXQpUkuzSdiQw_FBhNog0xDC226rZpz10mgLnpv6T7yhLW1DbX9epx9RuFjgIM1hZ9GPt-8Qw.jpg",
       "published": "2026-10-21T09:00:11+00:00",
       "poster_text": "cC ON TRE JOUR\n\nLEAH SINGER & LEE RANALDO\nDe 5 de novembro de 2026 a 8 de janeiro de 2027\n\nm:::: Galeria Tratuário\n\nnão PSB cimaves DIARIO",
-      "name": "não PSB cimaves DIARIO",
-      "title": "Exhibition · Sé"
+      "name": "LEAH SINGER & LEE RANALDO",
+      "title": "LEAH SINGER & LEE RANALDO"
     },
     {
       "post": "https://t.me/festas_madeira/2759",
@@ -5503,8 +5520,8 @@
       "poster": "https://cdn4.telesco.pe/file/FR_QXE28Qw6XZob0Gn6SDYGloUi7b5sxahUSjHubRSSz2kGB-zWRMOWfqtYLq66A_4dDU6ucfWw1Z_LBPCcXXQOW8pWn3Gn4nyUxGHP0Z7sEKQ-ngP0s1Vo_RG82hCJ-NoHFTzAqDXfReVYqSOJMM91BmlwIOxcXEj19QWuPq-PabHX7flRmeqL5LItGgqsZi5MpdgO96JkkXjDgP4b07tmye3D1ck5vMkkKd4XM1cMi9MxC_roEw0L4ZRJ4092oD_2_AqMozAMre5Eie1G7IiNX8gqP-dNuc6e3OX2tHEEFADO0YI8SS-C1itGAGHkmSXQ2JOocgmtQk4t-355PJg.jpg",
       "published": "2026-11-05T10:00:09+00:00",
       "poster_text": "|\n| \"NOV ‘26 - FEV ‘27\nEXPOSIÇÃO EXi4BITI©\n\n_ Che’Cosa\nno lé Nuvole?\n\n= DE NUNO HENRIQUE\n\nie |\nTORRE DO CAPITÃO\n\n. | NÚCLEO HISTÓRICO E\nDPSBQLÓGICO DE SANTO AMARO,\n\nCICLO DE ARgE CONTEMPOBÉNEA COM\nA DIREÇÃO ARTISMEADO MUDAS MUSEU\nMEE CONTEMPORÂNEA",
-      "name": "EXPOSIÇÃO EXi4BITI©",
-      "title": "Exhibition · Santo António"
+      "name": "EXPOSIÇÃO Che’Cosa",
+      "title": "EXPOSIÇÃO Che’Cosa"
     },
     {
       "post": "https://t.me/festas_madeira/2700",
@@ -5608,8 +5625,8 @@
       "poster": "https://cdn4.telesco.pe/file/RQECFYRbS4rgxZ9e6Y5gAXbdF4i6dZ8AjLNtWKcyb9a_B8u_jWXxiCWcIGAHKOS720qW2AcVeb9qO0AEBgdzIGHj8sfhnFLCJxCtNAqrikKHzaQaL8eY3sdWImnR3dBr5jN1gQ4oPEMorreaFTPUnjg6XiWfnGObddC7MQ5V5oYW3v0icRE6g_Lpi2wuMtLZOUf6jJ3HSeW9hWhFZL3RbUt7pWOdPEKs-T4xm1e-0gh2uQJ9CECU8eDaccLqht3A5b70H28m2HVyhxDUHkka0Sw_W5xdXtH-BYAAQd2kWQCr7XnBJxBzS0qSA6oUOKnk3I_QWMCSGBKvY-UVZPIOlQ.jpg",
       "published": "2026-10-10T09:00:10+00:00",
       "poster_text": "ADEIRA\nPIANO\nFEST\n\n2026 ARFRos\nTeatro Municipal\n\npi Municinal Theatre\nRobertAndres Baltazar Dias\n\nEfrança france\n\não Costa\nFerreira\n\nPortugal!\n\nRecital de\nlane a auatro mos\n\nFour bands plano recital\n\nNOW “rm coreto e necanre™\n\nDomingo. rat Di att\nSuntay de atras\n\noN Murray McLachtan\n| sede Sealant\nE) FSA Kathryn Page\n\nHingiaerra/ England\n\nRecital de\ng piano a quatro mãos\nFour hans piano recital\n\n\"Os ctássicas para unto me”\nuz NOM “Tre lassistor plan four hanes\n\nEEE em ri\n\n\\\n\nGiilsin Onay\nCrurquia/ Tipe\n\nYolande\n|) Kouznetsov\n\n/ França / France)\n\nRecital de piano\n\nPiano recital\n\napos gra\n\nNow “ocular\nArteira\n\nweanestar sê coma rosea orem\n\n—\n\nHaria Loatelli\n\n(tia aly\n\nRecital de piano\n\nPiano recital\n\nI\n\nSe\n\nE\nSunday | Bras et\n\nGD BrANDY lago,",
-      "name": "RobertAndres Baltazar Dias",
-      "title": "RobertAndres Baltazar Dias"
+      "name": "Robert Andres Baltazar Dias",
+      "title": "Robert Andres Baltazar Dias"
     },
     {
       "post": "https://t.me/festas_madeira/2709",
@@ -5818,7 +5835,7 @@
       "published": "2026-11-03T10:00:20+00:00",
       "poster_text": "DUQS CASAS,\nUMSO coração\n\n12 NOVEMERO 2026/19 HORAS\nFÓRUMMACHICO",
       "name": "DUQS CASAS, UMSO",
-      "title": "DUQS CASAS, UMSO"
+      "title": "Family · Machico"
     },
     {
       "post": "https://t.me/festas_madeira/2768",
@@ -5975,7 +5992,7 @@
         "espetáculo"
       ],
       "place": "Sé",
-      "poster": "https://cdn4.telesco.pe/file/ag-oRsINjEfuAy5EME6xuiI0nErWfADLhJO-mtlkk_pSsXnn7aDrUoh5BtZpeNvxzdDQ1N8lOX9PXIeEfacnc5bJBuQGMnwKj70q8z_LaMQPtKQQrwF8UC1vDl2QBwiqDRqVXGLEYbtH507RPHnCxSkbSzYixS2N1byHThFvBiYb702xd3KJyhzcE-jYnqZTx6ndkev9PvMNVrAPLpzG92k0vfOhikdG3ddjVTJwUHyYjgKs8iteiTbsuHhtwBdfl74A5xvRRbQLR2DCKOakwb7WOMQbceFI-15BopdoB5GRzafMyrPRUbc8pUW_Olvo8EXoS_PKwNXKhqw3Qwfbmg.jpg",
+      "poster": "https://cdn4.telesco.pe/file/jkOXT2bbAn-PXYRbQkAx2yQLDMe8cksWZXCvsJgw9KmC-2ZdaM0IARKGVfA3nfPlwE_69vPcJWf-i09Z47_WBcBh_ScIKHdhKKS1O6U5LkFSgvyEI1ZQpAVoqtX7VU89T5hxC93pfJK0xtVVzlLmc6ee3mLWtvkyXA4zq25ISVlFy9svPaQJL1O92_Eks3aJaqK0dhUqzP7RqbGJUpGFeyHLQSV2R3D0coYp8H-rgOhEajQPDVOrAHr9U44Am1dmB1jd0yaPJBmrFSLACq2jlsXua9rdRHmsB2T1ZMCP95I84MMWtNA5chdA0BPlC6JCyLZk5WiyVuN5h03a1dCTCg.jpg",
       "published": "2026-11-11T10:00:15+00:00",
       "poster_text": "",
       "name": "",
@@ -6190,7 +6207,24 @@
       "published": "2026-11-10T10:00:41+00:00",
       "poster_text": "M12\nA ASS jO ONE\nAl TA\n\nNem. Minuto de\nmais. silêncio\n\n€ à\nYSsM Ohe\n\nMudas.Museu de Arte\nContemporânea da Madeira\n\n19.11 | 20.11\n\n15h00 Nhoo\n\nPara mais informações: issmadeira-comunicacao@seg-social.pt",
       "name": "A ASS jO ONE",
-      "title": "A ASS jO ONE"
+      "title": "Show · Ponta Do Sol"
+    },
+    {
+      "post": "https://t.me/festas_madeira/2788",
+      "dates": [
+        "2026-11-21",
+        "2026-11-22"
+      ],
+      "categories": [
+        "espetáculo",
+        "família"
+      ],
+      "place": "Funchal",
+      "poster": "//telegram.org/img/emoji/40/F09F8EAD.png",
+      "published": "2026-11-15T16:19:00+00:00",
+      "poster_text": "",
+      "name": "",
+      "title": "Show · Funchal"
     },
     {
       "post": "https://t.me/festas_madeira/2698",
@@ -6272,8 +6306,8 @@
       "poster": "https://cdn4.telesco.pe/file/neWf3kD77_hwDiAuUSm7SfJz8r816yNZhNyNZkuysQorugYLaurxa7K37iwp5bi7YyDfAHHLxt9f3YCOORNDTWjLCKngBN18sgmMlUGlj_3Sb9OBn_-ru7J-upi1xDP0cb0_rJTBQ7KKHWRjPYqZsBfD80xaTOE8pouSjD3OLFe1Rv96n49JHslgxSpnMkdKBtAvSNbbahWoilx1BU-H3NMf82nUsR5wT8eo6Qv7sRftpEQylbZaPkGxTzpRHAZiR9qfnETw8ZnZPu_UZ5gKVGCffDgbarh4Xn8F7NoqM4zV8Z_y3E5ZQCHb3ZmRt2eNqaZoMGGFUO2p0YcKAlYGkg.jpg",
       "published": "2026-11-05T10:00:28+00:00",
       "poster_text": "PROGRAMA —\n\n18h00 Recação dos paricivanhos\n\nEA\nBlodiversidade ale ersidate ecológica e naturalidade das espécies\nElisa Teixeira, Sociedade Portugiiesa para o Estudo cos Aves\ne\nBoas práticas de utilização das áreas protegidas da Madeira: -\nprevençã o de espécies invasoras na Madeira\n\nElisa Portuguesa para o Estudo cas Aves",
-      "name": "Blodiversidade ale ersidate ecológica e naturalidade das espécies",
-      "title": "Blodiversidade ale ersidate ecológica e naturalidade das espécies"
+      "name": "Biodiversidade ecológica e naturalidade das espécies",
+      "title": "Biodiversidade ecológica e naturalidade das espécies"
     },
     {
       "post": "https://t.me/festas_madeira/2766",
@@ -6287,8 +6321,8 @@
       "poster": "https://cdn4.telesco.pe/file/ein9Ev1NTs79hew3U91VBY-ifj0h98BUXR6YJf2xfjNMrM58je3t2tkDSCImOJG4q8XMixVBBF2pHSaX0jPSHorIlLHB6LHlEQKTsin8MsjlAGhzKZN10wIfyomY7VzOmby5rTFikNP0Z9PzY_vKu2REO-PJbU3-oxnm3WrRXegXu4uSG0hC0p-bwKGpolTXsG8TxFwHnWDB-GImfPWXN7RoIwmn4o9AI_g1FBpKQSFQZn6nUCURWjq8vNDnsYTH8r3NOQHSngEWKeE9i9Jipi00CvoY7bnJUEjE2rXnTAyTSJTIdrWybGmWUh2x0TkPg8WF68h0MktuJ9h-BegRaw.jpg",
       "published": "2026-11-06T10:00:32+00:00",
       "poster_text": "——_ FORUM\nINTERNACIONAL\nDE ESTUDOS GLOBAIS\n\nINSTITUIGOES\n\nPROTAGONISTAS\npa GLOBALIZAGAO\n\n25-27 / NOVEMBRO / 2026\n\nMuseu da Imprensa\nCâmara de Lobos, Ilha da Madeira\n\né 17 de novembro de 2026",
-      "name": "INTERNACIONAL DE ESTUDOS GLOBAIS INSTITUIGOES",
-      "title": "INTERNACIONAL DE ESTUDOS GLOBAIS INSTITUIGOES"
+      "name": "FORUM INTERNACIONAL DE ESTUDOS GLOBAIS INSTITUIÇÕES",
+      "title": "FORUM INTERNACIONAL DE ESTUDOS GLOBAIS INSTITUIÇÕES"
     },
     {
       "post": "https://t.me/festas_madeira/2747",
@@ -6304,8 +6338,8 @@
       "poster": "https://cdn4.telesco.pe/file/UozRzsy9cUcGf6IcsNaU-5P7DBk9U4giKM-ZyFCNPjdPcj3ZuTrK4e5cYkyDKtFR-qLhA6t6mJ0ZVsj0l0uVopa-KJvnAICenYLFCwE25bHBA66WMBLNCzIAEgfeq_I6hz2fDxfgllcOEwiOpyG_SPVS8_tPt2eZXf3NGoQZYkActWB9Yjru_iJKldigN53ImPMm0cXaCtPtHA2r_9GRDu1ZTzH6njbAUbyROakE0EOHOoeMKSt0GSNiED7-BxzG7i_1qv9xj13z-urYPwY-R0Cg4BJErZhxTnfeUTFlJqxWaczhInB6f5xkp7yN60g0mNpVaTF-_cM0IZn2S0gr7w.jpg",
       "published": "2026-10-30T10:34:25+00:00",
       "poster_text": "a\n\n* ME RCADINHO |\n\n~> DE —>\n\nNATAL\n\n* ARCO DA CALHETA “\n\nMais informações: maisculturaassociacao@gmail.com | acd.arcodacalheta O gmail.com\n\nOrganização: Apoios:\n\né cultura > A ts\n\nlua Dea\nde Koda Cla",
-      "name": "Mais informações: maisculturaassociacao@gmail.com | acd.arcodacalheta O gmail.com",
-      "title": "Concert · Feiras"
+      "name": "NATAL ARCO DA CALHETA",
+      "title": "NATAL ARCO DA CALHETA"
     },
     {
       "post": "https://t.me/festas_madeira/2754",
@@ -6321,7 +6355,7 @@
       "published": "2026-11-03T10:00:33+00:00",
       "poster_text": "NI”\nCIAT\nIVAS\n\n72\n\n‘\n[onouesta\n\nCrássica pa\nMapeiral\n\nANSA\n\nORQUESTR MADEIRA\nCRISTINA ALBERTO\nBARBOSA SOUSA\n\n(Si |i FORUM Nes\n\nDERA",
       "name": "NI” CIAT IVAS",
-      "title": "NI” CIAT IVAS"
+      "title": "Concert · Sé"
     },
     {
       "post": "https://t.me/festas_madeira/2721",

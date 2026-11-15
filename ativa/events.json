@@ -254,22 +254,12 @@
       "location": "Teatro Municipal Baltazar Dias",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/madeira-piano-fest-2026",
       "event_type": "festival",
+      "time": "18:00",
       "price": "€20 · 3 concerts €51 · 5 concerts €75",
+      "organizer": "Associação dos Amigos do Conservatório de Música da Madeira",
       "category": "concert",
       "date_end": "2026-11-15",
       "about": "O Teatro Municipal Baltazar Dias volta a acolher o Madeira Piano Fest, de 7 a 15 de novembro."
-    },
-    {
-      "mode": "festivals",
-      "name": "Madeira PianoFest",
-      "date": "2026-11-15",
-      "location": "Teatro Municipal Baltazar Dias, Funchal",
-      "url": "",
-      "event_type": "festival",
-      "time": "18:00",
-      "price": "€20",
-      "organizer": "Associação dos Amigos do Conservatório de Música da Madeira",
-      "category": "concert"
     },
     {
       "mode": "festivals",
@@ -295,7 +285,7 @@
     },
     {
       "mode": "festivals",
-      "name": "RobertAndres Baltazar Dias",
+      "name": "Robert Andres Baltazar Dias",
       "date": "2026-11-15",
       "location": "Sé",
       "url": "https://t.me/festas_madeira/2680",
@@ -508,24 +498,6 @@
     },
     {
       "mode": "festivals",
-      "name": "A ASS jO ONE",
-      "date": "2026-11-19",
-      "location": "Ponta Do Sol",
-      "url": "https://t.me/festas_madeira/2777",
-      "event_type": "festival",
-      "category": "show"
-    },
-    {
-      "mode": "festivals",
-      "name": "A ASS ‘ONE Nem. minuto de mais silêncio",
-      "date": "2026-11-19",
-      "location": "Calheta",
-      "url": "https://t.me/festas_madeira/2771",
-      "event_type": "festival",
-      "category": "concert"
-    },
-    {
-      "mode": "festivals",
       "name": "Alice Again? How Annoying!",
       "date": "2026-11-19",
       "location": "Cine Teatro de Santo António, Funchal",
@@ -547,6 +519,15 @@
       "category": "concert",
       "date_end": "2026-11-21",
       "about": "Para assinalar o Dia Internacional para a Eliminação da Violência contra as Mulheres (25 de novembro), o Instituto de Segurança Social da Madeira promove o espetáculo de dança contemporânea \"Nem Mais 1 Minuto de Silêncio\", produzido pela…"
+    },
+    {
+      "mode": "festivals",
+      "name": "Espetáculo · Ponta Do Sol",
+      "date": "2026-11-19",
+      "location": "Ponta Do Sol",
+      "url": "https://t.me/festas_madeira/2777",
+      "event_type": "festival",
+      "category": "show"
     },
     {
       "mode": "festivals",
@@ -690,6 +671,15 @@
     },
     {
       "mode": "festivals",
+      "name": "Espetáculo · Funchal",
+      "date": "2026-11-21",
+      "location": "Funchal",
+      "url": "https://t.me/festas_madeira/2788",
+      "event_type": "festival",
+      "category": "show"
+    },
+    {
+      "mode": "festivals",
       "name": "Fashion Weekend, 10th Anniversary",
       "date": "2026-11-21",
       "location": "Quinta Palmeira Gardens, Funchal",
@@ -725,6 +715,18 @@
       "category": "concert"
     },
     {
+      "mode": "festivals",
+      "name": "Pottery Workshop in Porto Moniz",
+      "date": "2026-11-21",
+      "location": "Ola Art Studio, Santa, Porto Moniz",
+      "url": "",
+      "event_type": "festival",
+      "time": "14:00",
+      "price": "€35",
+      "organizer": "Ola Art Studio",
+      "category": "workshop"
+    },
+    {
       "mode": "road",
       "name": "Corrida das Castanhas (4.5 km)",
       "date": "2026-11-21",
@@ -752,8 +754,19 @@
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concerto-de-santa-cecilia",
       "event_type": "festival",
       "time": "16:30",
+      "price": "€15",
+      "organizer": "Banda Municipal do Funchal – Artistas Funchalenses",
       "category": "concert",
       "about": "Em homenagem a Santa Cecília, padroeira dos músicos, a Banda Municipal do Funchal – Artistas Funchalenses apresenta um concerto especial na Igreja de Nossa Senhora do Monte, num momento de celebração da música enquanto expressão de fé…"
+    },
+    {
+      "mode": "festivals",
+      "name": "Espetáculo · Ilha",
+      "date": "2026-11-22",
+      "location": "Ilha",
+      "url": "https://t.me/festas_madeira/2761",
+      "event_type": "festival",
+      "category": "show"
     },
     {
       "mode": "festivals",
@@ -775,27 +788,6 @@
       "url": "https://t.me/festas_madeira/2762",
       "event_type": "festival",
       "category": "concert"
-    },
-    {
-      "mode": "festivals",
-      "name": "Saint Cecilia Concert",
-      "date": "2026-11-22",
-      "location": "Igreja de Nossa Senhora do Monte, Funchal",
-      "url": "",
-      "event_type": "festival",
-      "time": "16:30",
-      "price": "€15",
-      "organizer": "Banda Municipal do Funchal – Artistas Funchalenses",
-      "category": "concert"
-    },
-    {
-      "mode": "festivals",
-      "name": "Show · Ilha",
-      "date": "2026-11-22",
-      "location": "Ilha",
-      "url": "https://t.me/festas_madeira/2761",
-      "event_type": "festival",
-      "category": "show"
     },
     {
       "mode": "festivals",
@@ -877,7 +869,7 @@
     },
     {
       "mode": "festivals",
-      "name": "Blodiversidade ale ersidate ecológica e naturalidade das espécies",
+      "name": "Biodiversidade ecológica e naturalidade das espécies",
       "date": "2026-11-24",
       "location": "Machico",
       "url": "https://t.me/festas_madeira/2763",
@@ -898,7 +890,7 @@
     },
     {
       "mode": "festivals",
-      "name": "INTERNACIONAL DE ESTUDOS GLOBAIS INSTITUIGOES",
+      "name": "FORUM INTERNACIONAL DE ESTUDOS GLOBAIS INSTITUIÇÕES",
       "date": "2026-11-25",
       "location": "Câmara De Lobos",
       "url": "https://t.me/festas_madeira/2766",
@@ -1175,7 +1167,7 @@
     },
     {
       "mode": "festivals",
-      "name": "Concert · Feiras",
+      "name": "NATAL ARCO DA CALHETA",
       "date": "2026-11-30",
       "location": "Feiras",
       "url": "https://t.me/festas_madeira/2747",
@@ -1479,7 +1471,7 @@
     },
     {
       "mode": "festivals",
-      "name": "NI CIAT IVAS",
+      "name": "Concerto · Sé",
       "date": "2026-12-12",
       "location": "Sé",
       "url": "https://t.me/festas_madeira/2754",
@@ -1676,7 +1668,7 @@
     },
     {
       "mode": "festivals",
-      "name": "Religious · Machico",
+      "name": "Religioso · Machico",
       "date": "2026-12-19",
       "location": "Machico",
       "url": "https://t.me/festas_madeira/2721",
@@ -1698,15 +1690,6 @@
       "location": "Madeira",
       "url": "https://atletismodamadeira.pt/wp-content/uploads/2026/11/MC-27_Quadro.pdf",
       "event_type": "running"
-    },
-    {
-      "mode": "festivals",
-      "name": "OFICINA DE NATAL + VISITA GUIADA LAPINHA LUMIN",
-      "date": "2026-12-21",
-      "location": "Sé",
-      "url": "https://t.me/festas_madeira/2758",
-      "event_type": "festival",
-      "category": "exhibition"
     },
     {
       "mode": "festivals",
@@ -1740,18 +1723,6 @@
       "url": "https://www.madeira-web.com/en/whats-on/madeira-events.html",
       "event_type": "festival",
       "category": "market"
-    },
-    {
-      "mode": "festivals",
-      "name": "Madeira Classical Orchestra",
-      "date": "2026-12-28",
-      "location": "Teatro Municipal Baltazar Dias, Funchal",
-      "url": "",
-      "event_type": "festival",
-      "time": "18:00",
-      "price": "€32",
-      "organizer": "TEATRO MUNICIPAL BALTAZAR DIAS",
-      "category": "concert"
     },
     {
       "mode": "festivals",
@@ -1918,7 +1889,7 @@
     },
     {
       "mode": "festivals",
-      "name": "Sport · Funchal",
+      "name": "Desporto · Funchal",
       "date": "2027-01-31",
       "location": "Funchal",
       "url": "https://t.me/festas_madeira/2576",
@@ -2535,7 +2506,7 @@
     },
     {
       "mode": "festivals",
-      "name": "Sport · Funchal",
+      "name": "Desporto · Funchal",
       "date": "2028-09-19",
       "location": "Funchal",
       "url": "https://t.me/festas_madeira/2589",
