@@ -953,7 +953,12 @@ function estimateKm(pts) {
     return events
       .filter(e => (e.date >= t0 || (e.date_end || '') >= t0) && ahead(e))
       .map(e => ({ e, p: geocode(e.location) }))
-      .filter(x => x.p && !seen[x.e.name] && (seen[x.e.name] = 1))
+      .filter(x => {
+        // One event from two sources ("Madeira PianoFest" / "Madeira Piano Fest 2026"):
+        // same day, same letters once spaces and years are gone.
+        const k = x.e.date + '|' + fold(x.e.name).replace(/20\d\d/g, '').replace(/[^a-z]/g, '');
+        return x.p && !seen[k] && (seen[k] = 1);
+      })
       .map(x => Object.assign(x, { d: km(here, x.p) }))
       .sort((a, b) => Math.round(a.d * 2) - Math.round(b.d * 2) || (key(a.e) < key(b.e) ? -1 : key(a.e) > key(b.e) ? 1 : 0))
       .slice(0, 3);
