@@ -97,6 +97,16 @@
       '<div class="t"><b>' + esc(l.code + ' · ' + l.name) + '</b><span>' + esc(bits) + '</span></div>' +
       '<div class="k">' + statusPill(l.status) + '</div></a>';
   }
+  // The feed dates a running exhibition or festival to the day it was built,
+  // so a feed built yesterday still says yesterday. Keep such an event, as
+  // today's, until its last day — the app does the same (fetchEvents).
+  function upcoming(list) {
+    var today = MA.today();
+    return list.map(function (e) {
+      if (e.date < today && (e.date_end || '') >= today) { var c = Object.assign({}, e); c.date = today; return c; }
+      return e;
+    }).filter(function (e) { return e.date >= today; });
+  }
   function dedupe(list) {
     var seen = {};
     return list.filter(function (e) { var k = e.date + '|' + e.name; if (seen[k]) return false; seen[k] = 1; return true; });
@@ -348,7 +358,7 @@
         al.className = 'alert' + (w.some(function (x) { return x.awarenessLevelID !== 'yellow'; }) ? ' bad' : '');
         al.hidden = false;
       } else al.hidden = true;
-      var E = dedupe(((data.ev && data.ev.events) || []).filter(function (e) { return e.date >= today; }));
+      var E = dedupe(upcoming((data.ev && data.ev.events) || []));
       // Sport first, the way the app's home mixes it: a Saturday with six
       // village festas would otherwise push every race off the list.
       var sport = E.filter(function (e) { return kindOf(e) !== 'festivals'; }).slice(0, 4);
@@ -382,7 +392,7 @@
     var q = new URLSearchParams(location.search);
     var per = q.get('p') || '3mo', kind = q.get('k') || 'all', text = '', E = [], W = [];
     Promise.all([MA.get('/ativa/events.json'), MA.get('/ativa/watchlist.json')]).then(function (r) {
-      E = dedupe(((r[0] && r[0].events) || []).filter(function (e) { return e.date >= MA.today(); }));
+      E = dedupe(upcoming((r[0] && r[0].events) || []));
       W = (r[1] && r[1].items) || [];
       rerender(paint);
     });
@@ -623,7 +633,7 @@
   function festas() {
     var cat = 'all', E = [];
     MA.get('/ativa/events.json').then(function (j) {
-      E = dedupe(((j && j.events) || []).filter(function (e) { return e.mode === 'festivals' && e.date >= MA.today(); }));
+      E = dedupe(upcoming(((j && j.events) || []).filter(function (e) { return e.mode === 'festivals'; })));
       rerender(paint);
     });
     function paint() {
