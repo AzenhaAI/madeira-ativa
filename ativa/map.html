@@ -483,7 +483,7 @@ const I18N = {
     'No position yet. Step outside or try again.': 'Noch keine Position. Geh ins Freie oder versuch es noch einmal.',
     'You seem to be outside Madeira': 'Du scheinst außerhalb Madeiras zu sein', 'Nearest events': 'Veranstaltungen in der Nähe',
     'No upcoming events with a known place.': 'Keine kommenden Veranstaltungen mit bekanntem Ort.',
-    'Your position stays on this device.': 'Dein Standort bleibt auf diesem Gerät.', 'until': 'bis', 'today': 'heute', 'Details': 'Details', 'Close': 'Schließen',
+    'Your position stays on this device.': 'Dein Standort bleibt auf diesem Gerät.', 'in {p}': 'in {p}', 'until': 'bis', 'today': 'heute', 'Details': 'Details', 'Close': 'Schließen',
   },
   ru: {
     'Madeira Trails': 'Маршруты Мадейры', 'trails': 'маршрутов', 'Main': 'Главная', 'Popular Trails on Madeira': 'Популярные маршруты Мадейры',
@@ -497,7 +497,7 @@ const I18N = {
     'No position yet. Step outside or try again.': 'Позиция пока не найдена. Выйдите на улицу или попробуйте ещё раз.',
     'You seem to be outside Madeira': 'Похоже, вы не на Мадейре', 'Nearest events': 'Ближайшие события',
     'No upcoming events with a known place.': 'Нет предстоящих событий с известным местом.',
-    'Your position stays on this device.': 'Ваше местоположение не покидает устройство.', 'until': 'до', 'today': 'сегодня', 'Details': 'Подробнее', 'Close': 'Закрыть',
+    'Your position stays on this device.': 'Ваше местоположение не покидает устройство.', 'in {p}': '{p}, рядом с вами', 'until': 'до', 'today': 'сегодня', 'Details': 'Подробнее', 'Close': 'Закрыть',
   },
 };
 function tx(en, pt) {
@@ -828,7 +828,7 @@ function estimateKm(pts) {
   // Event places are free text; the app places them with the same small
   // gazetteer (lib/gazetteer.dart): lowercase, accents off, longest key wins.
   const PLACES = {
-    'funchal': [32.6669, -16.9241], 'camara de lobos': [32.6500, -16.9770], 'curral das freiras': [32.7200, -16.9640],
+    'funchal': [32.6490, -16.9085], 'camara de lobos': [32.6500, -16.9770], 'curral das freiras': [32.7200, -16.9640],
     'santa cruz': [32.6883, -16.7930], 'camacha': [32.6790, -16.8480], 'machico': [32.7176, -16.7690],
     'porto da cruz': [32.7710, -16.8300], 'santana': [32.8010, -16.8880], 'sao vicente': [32.7970, -17.0440],
     'seixal': [32.8250, -17.1030], 'porto moniz': [32.8660, -17.1670], 'fanal': [32.8140, -17.1360],
@@ -836,7 +836,19 @@ function estimateKm(pts) {
     'porto santo': [33.0700, -16.3400], 'pico do arieiro': [32.7357, -16.9285], 'pico ruivo': [32.7586, -16.9419],
     'monte': [32.6720, -16.9000], 'estadio dos barreiros': [32.6452, -16.9250], 'parque de santa catarina': [32.6460, -16.9180],
     'praca do povo': [32.6440, -16.9080], 'estadio do maritimo': [32.6470, -16.9350],
+    'baltazar dias': [32.6481, -16.9076], 'assembleia legislativa da madeira': [32.6469, -16.9076],
+    'largo do socorro': [32.6467, -16.8995], 'forum madeira': [32.6377, -16.9373], 'funchal, marina': [32.6452, -16.9093],
   };
+  // A whole town, not a place in it: too rough for "0.3 km", so "in Funchal".
+  const TOWNS = { 'funchal': 'Funchal', 'camara de lobos': 'Câmara de Lobos', 'santa cruz': 'Santa Cruz', 'camacha': 'Camacha',
+    'machico': 'Machico', 'porto da cruz': 'Porto da Cruz', 'santana': 'Santana', 'sao vicente': 'São Vicente', 'seixal': 'Seixal',
+    'porto moniz': 'Porto Moniz', 'calheta': 'Calheta', 'ponta do sol': 'Ponta do Sol', 'ribeira brava': 'Ribeira Brava',
+    'porto santo': 'Porto Santo', 'monte': 'Monte', 'curral das freiras': 'Curral das Freiras' };
+  function townOf(loc) {
+    const n = fold(loc); let best = null;
+    Object.keys(PLACES).forEach(k => { if (n.indexOf(k) >= 0 && (!best || k.length > best.length)) best = k; });
+    return best && TOWNS[best] || null;
+  }
   const fold = s => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
   function geocode(loc) {
     const n = fold(loc); let best = null;
@@ -856,11 +868,17 @@ function estimateKm(pts) {
     'No position yet. Step outside or try again.': 'Ainda sem posição. Saia para a rua ou tente de novo.',
     'You seem to be outside Madeira': 'Parece estar fora da Madeira', 'Nearest events': 'Eventos mais próximos',
     'No upcoming events with a known place.': 'Sem eventos próximos com local conhecido.',
-    'Your position stays on this device.': 'A sua posição fica neste dispositivo.', 'until': 'até', 'today': 'hoje', 'Details': 'Detalhes', 'Close': 'Fechar' })[en] || en);
+    'Your position stays on this device.': 'A sua posição fica neste dispositivo.', 'in {p}': 'em {p}', 'until': 'até', 'today': 'hoje', 'Details': 'Detalhes', 'Close': 'Fechar' })[en] || en);
   const locale = () => ({ pt: 'pt-PT', de: 'de-DE', ru: 'ru-RU' })[getLang()] || 'en-GB';
   const today = () => new Date().toLocaleDateString('en-CA', { timeZone: 'Atlantic/Madeira' });
-  const dayLabel = iso => new Date(iso + 'T12:00:00Z').toLocaleDateString(locale(), { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' });
+  const dayLabel = iso => new Date(iso + 'T12:00:00Z').toLocaleDateString(locale(), Object.assign({ weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' },
+    iso.slice(0, 4) !== today().slice(0, 4) ? { year: 'numeric' } : {}));
   const kmLabel = d => (d < 10 ? d.toFixed(1).replace('.', getLang() === 'en' ? '.' : ',') : Math.round(d)) + ' ' + (getLang() === 'ru' ? 'км' : 'km');
+  function farLabel(x) {
+    const town = townOf(x.e.location);
+    if (town && x.d < 4) return T('in {p}').replace('{p}', town);
+    return (town ? '~' : '') + kmLabel(x.d);
+  }
   function whenLabel(e) {
     const t0 = today();
     if (e.date < t0) return T('until') + ' ' + dayLabel(e.date_end);
@@ -901,7 +919,7 @@ function estimateKm(pts) {
       const near = nearest();
       if (!near) h += '<div class="nr-msg">' + esc(T('Finding you…')) + '</div>';
       else if (!near.length) h += '<div class="nr-msg">' + esc(T('No upcoming events with a known place.')) + '</div>';
-      else h += near.map((x, i) => '<button type="button" class="nr-ev" data-i="' + i + '"><b>' + esc(x.e.name) + '</b><span class="km">' + kmLabel(x.d) +
+      else h += near.map((x, i) => '<button type="button" class="nr-ev" data-i="' + i + '"><b>' + esc(x.e.name) + '</b><span class="km">' + esc(farLabel(x)) +
         '</span><small>' + esc(whenLabel(x.e) + (x.e.location ? ' · ' + x.e.location : '')) + '</small></button>').join('');
       h += '<div class="nr-foot">' + esc(T('Your position stays on this device.')) + '</div>';
     }
