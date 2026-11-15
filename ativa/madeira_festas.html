@@ -253,6 +253,8 @@ html.dark .fx .festa .month{background:rgba(20,27,22,0.85);color:#e7ded0}
     if (!EVS) return;
     var today = MA.today();
     var items = EVS.filter(function (e) { return e.mode === 'festivals' && (e.date >= today || (e.date_end || '') >= today); })
+      // A running festival is today's, not the day the feed was built.
+      .map(function (e) { return e.date < today ? Object.assign({}, e, { date: today }) : e; })
       .filter(function (e) { return CAT === 'all' || eventCat(e.name) === CAT; })
       .sort(function (a, b) { return a.date < b.date ? -1 : 1; }).slice(0, 12);
     if (!items.length) { box.innerHTML = '<div class="up-empty">' + MA.t('No confirmed events right now.', 'Sem eventos confirmados de momento.') + '</div>'; return; }
