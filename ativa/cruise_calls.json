@@ -1,8 +1,8 @@
 {
   "note": "Ship calls at the port of Funchal from APRAM. Times are Madeira local time, as the port publishes them. Accumulates; a call no longer listed before its arrival is marked superseded.",
   "source": "https://apram.pt/movimento-navios?port=ptfnc",
-  "fetched": "2026-11-13T14:36:23",
-  "count": 125,
+  "fetched": "2026-11-14T12:36:10",
+  "count": 129,
   "calls": [
     {
       "ship": "SANTA MARIA MANUELA",
@@ -975,6 +975,16 @@
       "superseded": false
     },
     {
+      "ship": "NORWEGIAN STAR",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-11-14T08:10",
+      "from": "Santa Cruz De La Palma",
+      "departure": "2026-11-14T18:00",
+      "to": "Leixões",
+      "superseded": false
+    },
+    {
       "ship": "QUEEN VICTORIA",
       "berth": "Funchal - Terminal Sul",
       "agent": "Blatas, Lda.",
@@ -1075,6 +1085,16 @@
       "superseded": false
     },
     {
+      "ship": "VENTURA",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-11-21T06:45",
+      "from": "Southampton",
+      "departure": "2026-11-21T16:30",
+      "to": "Santa Cruz De Tenerife",
+      "superseded": false
+    },
+    {
       "ship": "MEIN SCHIFF 7",
       "berth": "Funchal - Terminal Sul",
       "agent": "JFM Shipping, Lda.",
@@ -1115,6 +1135,16 @@
       "superseded": false
     },
     {
+      "ship": "AIDAprima",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-11-24T07:00",
+      "from": "Puerto Del Rosario-Fuerteventura",
+      "departure": "2026-11-24T23:00",
+      "to": "Santa Cruz De Tenerife",
+      "superseded": false
+    },
+    {
       "ship": "AIDAblu",
       "berth": "Funchal - Terminal Norte",
       "agent": "Blatas, Lda.",
@@ -1122,6 +1152,16 @@
       "from": "Santa Cruz De La Palma",
       "departure": "2026-11-25T18:00",
       "to": "Puerto Del Rosario-Fuerteventura",
+      "superseded": false
+    },
+    {
+      "ship": "IONA",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-11-25T07:00",
+      "from": "Southampton",
+      "departure": "2026-11-25T16:30",
+      "to": "Santa Cruz De Tenerife",
       "superseded": false
     },
     {

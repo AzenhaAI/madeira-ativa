@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-11-13T13:09:46",
-  "count": 603,
+  "fetched": "2026-11-15T10:52:11",
+  "count": 607,
   "items": [
     {
       "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
@@ -7130,6 +7130,21 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "open-mic-2026-11-13",
+      "title": "Open Mic",
+      "url": "https://www.madeira-unlocked.com/en/events/open-mic-2026-11-13",
+      "start": "2026-11-13T19:00:00+00:00",
+      "end": "2026-11-13T22:00:00+00:00",
+      "date": "2026-11-13",
+      "time": "19:00",
+      "venue": "Flamingo - Cocktail Bar",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Sé Boutique Hotel",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "madeira-nights-a-tribute-to-celso-rodrigues-2026-11-13",
       "title": "Madeira Nights - A Tribute to Celso Rodrigues",
       "url": "https://www.madeira-unlocked.com/en/events/madeira-nights-a-tribute-to-celso-rodrigues-2026-11-13",
@@ -7344,7 +7359,7 @@
       "title": "Desfile da Festa da Castanha",
       "url": "https://www.madeira-unlocked.com/en/events/desfile-da-festa-da-castanha-2026-11-14",
       "start": "2026-11-14T12:00:00+00:00",
-      "end": "2026-11-14T14:00:00+00:00",
+      "end": "2026-11-14T20:00:00+00:00",
       "date": "2026-11-14",
       "time": "12:00",
       "venue": "Curral das Freiras",
@@ -7610,6 +7625,36 @@
       "source_category": "sport-fitness"
     },
     {
+      "id": "festa-da-castanha-da-serra-2026-2026-11-15",
+      "title": "Festa da Castanha da Serra 2026",
+      "url": "https://www.madeira-unlocked.com/en/events/festa-da-castanha-da-serra-2026-2026-11-15",
+      "start": "2026-11-15T10:00:00+00:00",
+      "end": "2026-11-15T18:00:00+00:00",
+      "date": "2026-11-15",
+      "time": "10:00",
+      "venue": "Chão Boieiro",
+      "municipality": "Ribeira Brava",
+      "price": 0,
+      "organizer": "Associação Desportiva do Campanário (ADC)",
+      "category": "festival",
+      "source_category": "festivals-parades"
+    },
+    {
+      "id": "festival-travessuras-culturais-10-edicao-2026-11-15",
+      "title": "Festival Travessuras Culturais - 10ª Edição",
+      "url": "https://www.madeira-unlocked.com/en/events/festival-travessuras-culturais-10-edicao-2026-11-15",
+      "start": "2026-11-15T10:00:00+00:00",
+      "end": "2026-11-15T18:00:00+00:00",
+      "date": "2026-11-15",
+      "time": "10:00",
+      "venue": "Campo da Praia, Centro Cultural John dos Passos",
+      "municipality": "Ponta do Sol",
+      "price": 10,
+      "organizer": "Associação Travessias Culturais",
+      "category": "festival",
+      "source_category": "festivals-parades"
+    },
+    {
       "id": "ceramics-workshops-with-elisa-sousa-2026-11-15-1500",
       "title": "Ceramics Workshops with Elisa Sousa",
       "url": "https://www.madeira-unlocked.com/en/events/ceramics-workshops-with-elisa-sousa-2026-11-15-1500",
@@ -7668,6 +7713,21 @@
       "organizer": "Casa do Povo da Serra de Água",
       "category": "workshop",
       "source_category": "handicraft-workshops"
+    },
+    {
+      "id": "dancas-historicas-no-solar-de-sao-cristovao-2026-11-17",
+      "title": "Danças Históricas no Solar de São Cristóvão",
+      "url": "https://www.madeira-unlocked.com/en/events/dancas-historicas-no-solar-de-sao-cristovao-2026-11-17",
+      "start": "2026-11-17T11:30:00+00:00",
+      "end": "2026-11-17T13:30:00+00:00",
+      "date": "2026-11-17",
+      "time": "11:30",
+      "venue": "Solar de São Cristóvão",
+      "municipality": "Machico",
+      "price": 0,
+      "organizer": "Associação Cultural, Recreativa e Artística, Baile Histórico",
+      "category": "dance",
+      "source_category": "dance"
     },
     {
       "id": "alice-again-how-annoying-2026-11-17-1515",
