@@ -436,6 +436,16 @@
     var F = [['all', 'All', 'Todos'], ['open', 'Open', 'Abertos'], ['partial', 'Partly open', 'Parciais'], ['closed', 'Closed', 'Encerrados'], ['bus', 'By bus', 'De autocarro'], ['ps', 'Porto Santo', 'Porto Santo']];
     var S = [['code', 'Number', 'Número'], ['dist', 'Distance', 'Distância'], ['climb', 'Climb', 'Subida'], ['time', 'Time', 'Duração']];
     var f = q.get('f') || 'all', sort = 'code', text = '', L = [], picks = null;
+    // Two toggles from the OpenStreetMap exposure data (scripts/build_trail_exposure.py),
+    // combined (AND) with the filter above. The same rules as the app's trail list:
+    // a trail without exposure data never passes either one.
+    var X = [['tunnels', 'No tunnels', 'Sem túneis'], ['edges', 'No exposed edges', 'Sem bordas expostas']];
+    var xon = { tunnels: /tunnels/.test(q.get('x') || ''), edges: /edges/.test(q.get('x') || '') };
+    function noTunnels(l) { var x = l.exposure; return !!x && x.tunnels === 0; }
+    // PR 10 Levada do Furado passes on the OSM figures but has narrow ledges
+    // over drops (Kirill, 15.11.2026) — kept out by hand; the app does the same.
+    var EDGES_OUT = { 'PR 10': 1 };
+    function noEdges(l) { var x = l.exposure; return !!x && !EDGES_OUT[l.code] && x.mapped_pct >= 50 && x.no_railing_pct <= 2 && x.narrow_pct <= 2 && x.demanding_pct <= 2; }
     MA.get('/ativa/levadas.json').then(function (j) {
       L = (j && j.levadas) || [];
       rerender(paint);
@@ -451,7 +461,15 @@
     function paint() {
       chips($('#filters'), F.map(function (x) { return [x[0], t(x[1], x[2])]; }), f, function (v) { f = v; paint(); });
       chips($('#sorts'), S.map(function (x) { return [x[0], t(x[1], x[2])]; }), sort, function (v) { sort = v; paint(); });
+      var xf = $('#xfilters');
+      xf.innerHTML = X.map(function (x) {
+        return '<button type="button" class="chip' + (xon[x[0]] ? ' on' : '') + '" aria-pressed="' + xon[x[0]] + '" data-v="' + x[0] + '">' + (xon[x[0]] ? '✓ ' : '') + esc(t(x[1], x[2])) + '</button>';
+      }).join('');
+      xf.onclick = function (e) { var b = e.target.closest('.chip'); if (b) { xon[b.dataset.v] = !xon[b.dataset.v]; paint(); } };
+      $('#xnote').hidden = !(xon.tunnels || xon.edges);
       var list = L.filter(function (l) {
+        if (xon.tunnels && !noTunnels(l)) return false;
+        if (xon.edges && !noEdges(l)) return false;
         if (f === 'ps') { if (l.island !== 'Porto Santo') return false; }
         else if (f === 'bus') { if (!(window.reachableByBus && reachableByBus(l))) return false; }
         else if (f !== 'all' && l.status !== f) return false;

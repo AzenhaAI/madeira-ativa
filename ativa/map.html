@@ -280,6 +280,32 @@ body {
 /* Inside the home page's small teaser on a phone the legend and the layer pill
    sit on top of each other; the full map is one tap away. */
 @media (max-width: 520px) { html.embed #legend, html.embed .controls { display: none !important; } }
+/* Where am I: a locate button under the zoom, a blue dot, and a small card
+   with the nearest upcoming events. The position never leaves the page. */
+.locate-btn { width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; background: #fff; border: 0; cursor: pointer; color: #1a73e8; }
+.locate-btn:hover { background: #f4f4f4; }
+.locate-btn svg { width: 20px; height: 20px; }
+.locate-btn.busy svg { animation: loc-spin 1s linear infinite; }
+@keyframes loc-spin { to { transform: rotate(360deg); } }
+#near { position: fixed; left: 12px; bottom: calc(84px + var(--tabbar, 0px)); z-index: 1001; width: 300px; max-width: calc(100% - 24px);
+  background: rgba(20,20,20,0.94); color: #e8e8e8; border: 1px solid rgba(255,255,255,0.12); border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4); font: 13px/1.35 'Inter', sans-serif; padding: 10px 12px; }
+#near[hidden] { display: none; }
+#near .nr-head { display: flex; align-items: center; gap: 8px; font-weight: 700; }
+#near .nr-x { margin-left: auto; background: none; border: 0; color: inherit; font-size: 18px; line-height: 1; cursor: pointer; padding: 2px 4px; opacity: .7; }
+#near .nr-msg { margin-top: 4px; color: #bbb; }
+#near button.nr-ev { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 2px 10px; width: 100%; text-align: left; background: rgba(255,255,255,0.06);
+  border: 0; border-radius: 8px; color: inherit; font: inherit; padding: 7px 9px; margin-top: 6px; cursor: pointer; }
+#near button.nr-ev:hover { background: rgba(255,255,255,0.12); }
+#near .nr-ev b { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#near .nr-ev .km { font-weight: 700; color: #6fb8ff; white-space: nowrap; }
+#near .nr-ev small { grid-column: 1 / -1; color: #aaa; font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#near .nr-foot { margin-top: 6px; font-size: 11px; color: #888; }
+html.light #near { background: rgba(255,255,255,0.97); color: #15201A; border-color: #DAD3C5; box-shadow: 0 4px 20px rgba(0,0,0,0.12); }
+html.light #near .nr-msg, html.light #near .nr-ev small, html.light #near .nr-foot { color: #5c6b60; }
+html.light #near button.nr-ev { background: rgba(31,77,50,0.06); }
+html.light #near .nr-ev .km { color: #1a73e8; }
+@media (max-width: 480px) { #near { left: 8px; right: 8px; width: auto; max-width: none; bottom: calc(70px + var(--tabbar, 0px)); } }
 </style>
   <!-- Analytics stay off when the app embeds this page. The app opens it with
        ?app=1, and both the store listing and azenha.ai/ativa/privacy promise no
@@ -452,6 +478,12 @@ const I18N = {
     'Base layers': 'Grundebenen', 'Roads': 'Straßen', 'Tunnels': 'Tunnel', 'Cities': 'Orte', 'Race': 'Rennen',
     'Walking trails': 'Wanderwege', 'Closures': 'Sperrungen', 'Buses': 'Busse', 'Plan a ride here': 'Fahrt hierher planen', 'Bus stop for': 'Haltestelle für', '(longest route)': '(längste Strecke)', 'Also:': 'Außerdem:',
     'Tap the map to move it': 'Tippen, um die Karte zu bewegen',
+    'Show my location': 'Meinen Standort zeigen', 'Finding you…': 'Standort wird gesucht…', 'You are here': 'Du bist hier',
+    'Location is off, so the map cannot show where you are.': 'Der Standort ist aus, die Karte kann dich nicht zeigen.',
+    'No position yet. Step outside or try again.': 'Noch keine Position. Geh ins Freie oder versuch es noch einmal.',
+    'You seem to be outside Madeira': 'Du scheinst außerhalb Madeiras zu sein', 'Nearest events': 'Veranstaltungen in der Nähe',
+    'No upcoming events with a known place.': 'Keine kommenden Veranstaltungen mit bekanntem Ort.',
+    'Your position stays on this device.': 'Dein Standort bleibt auf diesem Gerät.', 'until': 'bis', 'today': 'heute', 'Details': 'Details', 'Close': 'Schließen',
   },
   ru: {
     'Madeira Trails': 'Маршруты Мадейры', 'trails': 'маршрутов', 'Main': 'Главная', 'Popular Trails on Madeira': 'Популярные маршруты Мадейры',
@@ -460,6 +492,12 @@ const I18N = {
     'Base layers': 'Базовые слои', 'Roads': 'Дороги', 'Tunnels': 'Туннели', 'Cities': 'Города', 'Race': 'Забеги',
     'Walking trails': 'Пешие маршруты', 'Closures': 'Закрытия', 'Buses': 'Автобусы', 'Plan a ride here': 'Спланировать поездку сюда', 'Bus stop for': 'Остановка у маршрута', '(longest route)': '(самый длинный вариант)', 'Also:': 'Также:',
     'Tap the map to move it': 'Нажмите на карту, чтобы двигать её',
+    'Show my location': 'Показать моё местоположение', 'Finding you…': 'Ищем вас…', 'You are here': 'Вы здесь',
+    'Location is off, so the map cannot show where you are.': 'Геопозиция выключена, карта не может показать, где вы.',
+    'No position yet. Step outside or try again.': 'Позиция пока не найдена. Выйдите на улицу или попробуйте ещё раз.',
+    'You seem to be outside Madeira': 'Похоже, вы не на Мадейре', 'Nearest events': 'Ближайшие события',
+    'No upcoming events with a known place.': 'Нет предстоящих событий с известным местом.',
+    'Your position stays on this device.': 'Ваше местоположение не покидает устройство.', 'until': 'до', 'today': 'сегодня', 'Details': 'Подробнее', 'Close': 'Закрыть',
   },
 };
 function tx(en, pt) {
@@ -471,6 +509,7 @@ function paintLang() {
     if (el.dataset.en == null) el.dataset.en = el.textContent;
     el.textContent = (I18N[document.documentElement.lang] || {})[el.dataset.en] || el.dataset.en;
   });
+  if (window.paintLocate) window.paintLocate();
 }
 paintLang();
 // The embedding page passes a language switch on (same origin only).
@@ -778,6 +817,169 @@ function estimateKm(pts) {
   }
   return Math.round(total);
 }
+
+// ---------------------------------------------------------- where am I
+// A locate button (as the bus page's "I'm at a stop"): the phone's position as
+// a blue dot with its accuracy, then the three nearest upcoming events that
+// have a known place. The position is used only in this page: nothing is
+// fetched with it and nothing about it goes to analytics.
+(function () {
+  if (isEmbed || !navigator.geolocation) return;
+  // Event places are free text; the app places them with the same small
+  // gazetteer (lib/gazetteer.dart): lowercase, accents off, longest key wins.
+  const PLACES = {
+    'funchal': [32.6669, -16.9241], 'camara de lobos': [32.6500, -16.9770], 'curral das freiras': [32.7200, -16.9640],
+    'santa cruz': [32.6883, -16.7930], 'camacha': [32.6790, -16.8480], 'machico': [32.7176, -16.7690],
+    'porto da cruz': [32.7710, -16.8300], 'santana': [32.8010, -16.8880], 'sao vicente': [32.7970, -17.0440],
+    'seixal': [32.8250, -17.1030], 'porto moniz': [32.8660, -17.1670], 'fanal': [32.8140, -17.1360],
+    'calheta': [32.7180, -17.1770], 'ponta do sol': [32.6810, -17.1010], 'ribeira brava': [32.6740, -17.0620],
+    'porto santo': [33.0700, -16.3400], 'pico do arieiro': [32.7357, -16.9285], 'pico ruivo': [32.7586, -16.9419],
+    'monte': [32.6720, -16.9000], 'estadio dos barreiros': [32.6452, -16.9250], 'parque de santa catarina': [32.6460, -16.9180],
+    'praca do povo': [32.6440, -16.9080], 'estadio do maritimo': [32.6470, -16.9350],
+  };
+  const fold = s => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+  function geocode(loc) {
+    const n = fold(loc); let best = null;
+    Object.keys(PLACES).forEach(k => { if (n.indexOf(k) >= 0 && (!best || k.length > best.length)) best = k; });
+    return best ? PLACES[best] : null;
+  }
+  function km(a, b) {
+    const r = Math.PI / 180, dLat = (b[0] - a[0]) * r, dLon = (b[1] - a[1]) * r;
+    const h = Math.sin(dLat / 2) ** 2 + Math.cos(a[0] * r) * Math.cos(b[0] * r) * Math.sin(dLon / 2) ** 2;
+    return 6371 * 2 * Math.atan2(Math.sqrt(h), Math.sqrt(1 - h));
+  }
+  // Madeira, Porto Santo and the Desertas.
+  const onIsland = ll => ll[0] > 32.35 && ll[0] < 33.2 && ll[1] > -17.35 && ll[1] < -16.2;
+  const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+  const T = en => tx(en, ({ 'Show my location': 'Mostrar a minha localização', 'Finding you…': 'A localizar…', 'You are here': 'Está aqui',
+    'Location is off, so the map cannot show where you are.': 'A localização está desligada, o mapa não pode mostrar onde está.',
+    'No position yet. Step outside or try again.': 'Ainda sem posição. Saia para a rua ou tente de novo.',
+    'You seem to be outside Madeira': 'Parece estar fora da Madeira', 'Nearest events': 'Eventos mais próximos',
+    'No upcoming events with a known place.': 'Sem eventos próximos com local conhecido.',
+    'Your position stays on this device.': 'A sua posição fica neste dispositivo.', 'until': 'até', 'today': 'hoje', 'Details': 'Detalhes', 'Close': 'Fechar' })[en] || en);
+  const locale = () => ({ pt: 'pt-PT', de: 'de-DE', ru: 'ru-RU' })[getLang()] || 'en-GB';
+  const today = () => new Date().toLocaleDateString('en-CA', { timeZone: 'Atlantic/Madeira' });
+  const dayLabel = iso => new Date(iso + 'T12:00:00Z').toLocaleDateString(locale(), { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' });
+  const kmLabel = d => (d < 10 ? d.toFixed(1).replace('.', getLang() === 'en' ? '.' : ',') : Math.round(d)) + ' ' + (getLang() === 'ru' ? 'км' : 'km');
+  function whenLabel(e) {
+    const t0 = today();
+    if (e.date < t0) return T('until') + ' ' + dayLabel(e.date_end);
+    return (e.date === t0 ? T('today') + ' · ' : '') + dayLabel(e.date) + (e.time ? ' · ' + e.time : '');
+  }
+
+  if (isLight) document.documentElement.classList.add('light');
+  const card = document.createElement('div');
+  card.id = 'near'; card.hidden = true; card.setAttribute('role', 'status'); card.setAttribute('aria-live', 'polite');
+  document.body.appendChild(card);
+  const dot = L.layerGroup().addTo(map);
+  let btn = null, state = null, here = null, events = null, evPopup = null;
+
+  const Locate = L.Control.extend({
+    options: { position: 'topright' },
+    onAdd() {
+      const box = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
+      btn = L.DomUtil.create('button', 'locate-btn', box);
+      btn.type = 'button';
+      btn.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm8.94 3A8.99 8.99 0 0 0 13 3.06V1h-2v2.06A8.99 8.99 0 0 0 3.06 11H1v2h2.06A8.99 8.99 0 0 0 11 20.94V23h2v-2.06A8.99 8.99 0 0 0 20.94 13H23v-2h-2.06zM12 19a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>';
+      L.DomEvent.disableClickPropagation(box);
+      L.DomEvent.on(btn, 'click', locate);
+      return box;
+    },
+  });
+  new Locate().addTo(map);
+
+  function paint() {
+    if (btn) { btn.setAttribute('aria-label', T('Show my location')); btn.title = T('Show my location'); }
+    if (!state) { card.hidden = true; return; }
+    let h = '<div class="nr-head"><span>' + esc(state === 'list' ? T('Nearest events') : '📍') + '</span>' +
+      '<button type="button" class="nr-x" aria-label="' + esc(T('Close')) + '">×</button></div>';
+    if (state === 'busy') h += '<div class="nr-msg">' + esc(T('Finding you…')) + '</div>';
+    else if (state === 'off') h += '<div class="nr-msg">' + esc(T('Location is off, so the map cannot show where you are.')) + '</div>';
+    else if (state === 'fail') h += '<div class="nr-msg">' + esc(T('No position yet. Step outside or try again.')) + '</div>';
+    else if (state === 'away') h += '<div class="nr-msg">' + esc(T('You seem to be outside Madeira')) + '</div>';
+    else if (state === 'list') {
+      const near = nearest();
+      if (!near) h += '<div class="nr-msg">' + esc(T('Finding you…')) + '</div>';
+      else if (!near.length) h += '<div class="nr-msg">' + esc(T('No upcoming events with a known place.')) + '</div>';
+      else h += near.map((x, i) => '<button type="button" class="nr-ev" data-i="' + i + '"><b>' + esc(x.e.name) + '</b><span class="km">' + kmLabel(x.d) +
+        '</span><small>' + esc(whenLabel(x.e) + (x.e.location ? ' · ' + x.e.location : '')) + '</small></button>').join('');
+      h += '<div class="nr-foot">' + esc(T('Your position stays on this device.')) + '</div>';
+    }
+    card.innerHTML = h;
+    card.hidden = false;
+  }
+  window.paintLocate = paint;
+  paint();
+
+  card.addEventListener('click', ev => {
+    if (ev.target.closest('.nr-x')) { state = null; paint(); return; }
+    const b = ev.target.closest('.nr-ev');
+    if (b) { const x = (nearest() || [])[+b.dataset.i]; if (x) openEvent(x); }
+  });
+
+  // Upcoming (today or later; a running exhibition or festival until its
+  // last day), with a place the gazetteer knows, one per name, nearest first.
+  function nearest() {
+    if (!events || !here) return null;
+    const t0 = today(), seen = {};
+    // A timed event that began over two hours ago today is over (same rule
+    // as the app's Coming up); multi-day runs stay, their time is opening hours.
+    const hm = new Intl.DateTimeFormat('en-GB', { timeZone: 'Atlantic/Madeira', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date()).split(':');
+    const nowMin = +hm[0] * 60 + +hm[1];
+    const ahead = e => {
+      if (e.date > t0 || (e.date_end || '') > t0) return true;
+      const m = /(\d{1,2})\s*[:hH]\s*(\d{2})/.exec(e.time || '');
+      return !m || +m[1] * 60 + +m[2] + 120 >= nowMin;
+    };
+    const key = e => e.date + ' ' + (e.time || '99');
+    return events
+      .filter(e => (e.date >= t0 || (e.date_end || '') >= t0) && ahead(e))
+      .map(e => ({ e, p: geocode(e.location) }))
+      .filter(x => x.p && !seen[x.e.name] && (seen[x.e.name] = 1))
+      .map(x => Object.assign(x, { d: km(here, x.p) }))
+      .sort((a, b) => Math.round(a.d * 2) - Math.round(b.d * 2) || (key(a.e) < key(b.e) ? -1 : key(a.e) > key(b.e) ? 1 : 0))
+      .slice(0, 3);
+  }
+
+  // The event's own popup, in the map's popup style: name, when, where, a link.
+  function openEvent(x) {
+    const e = x.e;
+    const html = '<h3>' + esc(e.name) + '</h3><p>' + esc(whenLabel(e)) + '</p>' + (e.location ? '<p>' + esc(e.location) + '</p>' : '') +
+      (e.url ? '<p style="margin-top:4px"><a href="' + esc(e.url) + '" target="_blank" rel="noopener" style="color:#ff6b35;font-weight:600">' + esc(T('Details')) + ' →</a></p>' : '');
+    if (evPopup) map.closePopup(evPopup);
+    map.setView(x.p, Math.max(map.getZoom(), 13));
+    evPopup = L.popup({ className: 'race-popup', maxWidth: 260 }).setLatLng(x.p).setContent(html).openOn(map);
+  }
+
+  function locate() {
+    state = 'busy'; paint(); btn.classList.add('busy');
+    if (!events) fetch('events.json').then(r => r.json()).then(d => { events = (d && d.events) || []; if (state === 'list') paint(); }).catch(() => { events = []; if (state === 'list') paint(); });
+    // Android's WebView runs the timeout while its permission dialog is up, so
+    // a first "Allow" that took a few seconds came back as a timeout: one more
+    // try once the position is ours to ask for (busnet.js does the same).
+    let tries = 0;
+    const opts = { enableHighAccuracy: true, timeout: 15000, maximumAge: 30000 };
+    const fail = err => {
+      if (err && err.code !== 1 && ++tries < 2) { navigator.geolocation.getCurrentPosition(got, fail, opts); return; }
+      btn.classList.remove('busy');
+      state = err && err.code === 1 ? 'off' : 'fail'; paint();
+    };
+    const got = pos => {
+      btn.classList.remove('busy');
+      const ll = [pos.coords.latitude, pos.coords.longitude];
+      if (!onIsland(ll)) { here = null; dot.clearLayers(); state = 'away'; paint(); return; }
+      here = ll;
+      dot.clearLayers();
+      L.circle(ll, { radius: Math.min(pos.coords.accuracy || 0, 3000), color: '#1a73e8', weight: 1, fillColor: '#1a73e8', fillOpacity: 0.12, interactive: false }).addTo(dot);
+      L.circleMarker(ll, { radius: 8, color: '#fff', weight: 3, fillColor: '#1a73e8', fillOpacity: 1 }).bindTooltip(T('You are here')).addTo(dot);
+      map.setView(ll, 13, { animate: false });
+      state = 'list'; paint();
+      // On a phone the card covers the lower part of the map: lift the dot above it.
+      if (window.innerWidth <= 480) map.panBy([0, Math.round(card.offsetHeight / 2)], { animate: false });
+    };
+    navigator.geolocation.getCurrentPosition(got, fail, opts);
+  }
+})();
 
 function getLang() { return document.documentElement.lang || 'en'; }
 function toggleLang() {

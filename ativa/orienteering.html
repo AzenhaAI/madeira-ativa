@@ -10,10 +10,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/ativa/ui/ui.css?v=20261115a">
-<script src="/ativa/ui/de.js?v=20261115a"></script>
-<script src="/ativa/ui/ru.js?v=20261115a"></script>
-<script src="/ativa/ui/ui.js?v=20261115a"></script>
+<link rel="stylesheet" href="/ativa/ui/ui.css?v=20261115b">
+<script src="/ativa/ui/de.js?v=20261115b"></script>
+<script src="/ativa/ui/ru.js?v=20261115b"></script>
+<script src="/ativa/ui/ui.js?v=20261115b"></script>
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://azenha.ai/ativa/orienteering">
 <meta property="og:type" content="website">
@@ -77,6 +77,26 @@ ul.o-list li{margin:6px 0}
 .o-cta svg{flex:0 0 auto;width:44px;height:44px}
 .o-note{font-size:var(--fs-s);color:var(--soft)}
 html.dark .o-sym img,html.dark .o-cd img{filter:none}
+.o-sheet{overflow-x:auto;margin:6px 0 8px}
+.o-sheet table{border-collapse:collapse;background:#fff}
+.o-sheet td{width:34px;height:34px;padding:0;border:1px solid #b0b0b0;text-align:center;vertical-align:middle;color:#1c1b17;font-size:12px;font-weight:600}
+.o-sheet td.n{font-weight:800}
+.o-sheet td div{width:34px;height:34px;overflow:hidden}
+.o-sheet img{display:block;width:34px;height:34px}
+.o-sheet svg{display:block;width:34px;height:34px}
+.o-ex{margin:2px 0;font-size:var(--fs-s)}
+.o-ex b{color:var(--green-ink)}
+.o-drills{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px}
+.o-drills .card{margin:0}
+.o-drills b{display:block}
+.o-drills .o-note{display:block}
+.o-drills .o-cta svg{width:28px;height:28px}
+.o-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.o-links a{font-size:var(--fs-s);font-weight:600;padding:7px 12px;border:1px solid var(--line);border-radius:999px;color:var(--ink);text-decoration:none;background:var(--panel)}
+.o-links a:hover{border-color:var(--green)}
+.o-ev{margin-top:6px}
+.o-ev .row + .row{margin-top:6px}
+.o-stores{margin:var(--s3) 0}
 html.app .o-nav{top:0}html.app .o-sec{scroll-margin-top:52px}
 </style>
 <h1><span data-l="en">Orienteering basics</span><span data-l="pt">Orientação: o básico</span><span data-l="de">Orientierungslauf: Grundlagen</span><span data-l="ru">Ориентирование: основы</span></h1>
@@ -91,7 +111,7 @@ html.app .o-nav{top:0}html.app .o-sec{scroll-margin-top:52px}
 
 <script>
 (function () {
-  var D = null, Q = '';
+  var D = null, Q = '', NEXT = null;
   var L = function (x) { if (!x) return ''; var l = MA.lang(); return MA.esc(x[l] || x.en || ''); };
   var T = function (en, pt, de, ru) { var l = MA.lang(); return l === 'pt' ? pt : l === 'de' ? de : l === 'ru' ? ru : en; };
   var SECS = [
@@ -100,21 +120,65 @@ html.app .o-nav{top:0}html.app .o-sec{scroll-margin-top:52px}
     ['classes', ['Classes & entry', 'Escalões e inscrição', 'Kategorien & Anmeldung', 'Группы и заявка']],
     ['race', ['How a race works', 'Como é uma prova', 'So läuft ein Wettkampf', 'Как проходит старт']],
     ['tips', ['Club tips', 'Dicas', 'Tipps', 'Советы']],
+    ['practice', ['Drills', 'Treino', 'Übungen', 'Тренировка']],
     ['compass', ['Compass', 'Bússola', 'Kompass', 'Компас']],
-    ['practice', ['Practise', 'Treinar', 'Üben', 'Тренировка']],
   ];
   var born = 1990, women = false;
+  // The line under the finder's answer, as in the app's class finder.
+  var NOTE = {
+    kid: ['Children start in T10, often with a parent. From 11 the age classes begin.', 'As crianças começam no T10, muitas vezes com um adulto. A partir dos 11 começam os escalões.', 'Kinder starten in T10, oft mit Begleitung. Ab 11 beginnen die Altersklassen.', 'Дети начинают с T10, часто с родителем. С 11 лет — возрастные группы.'],
+    junior: ['Juniors may move up to an older class, never down. If a race has no class of exactly your age, take the next older one.', 'Os juniores podem subir para um escalão mais velho, nunca descer. Se não houver o teu, escolhe o seguinte mais velho.', 'Jugendliche dürfen älter laufen, nie jünger. Fehlt deine Klasse, die nächstältere nehmen.', 'Юниоры могут бежать в старшей группе, но не в младшей. Нет твоей — бери ближайшую старшую.'],
+    adult: ['Not sure of your level? 21B, or an open course (Verde, Amarelo, Vermelho) without ranking.', 'Não sabes o teu nível? 21B, ou um percurso aberto (Verde, Amarelo, Vermelho) sem ranking.', 'Unsicher? 21B oder eine offene Bahn (Verde, Amarelo, Vermelho) ohne Rangliste.', 'Не уверен в уровне — 21B или открытая дистанция (Verde, Amarelo, Vermelho) без рейтинга.'],
+    vet: ['Veterans may run any younger class, never an older one. Small races merge classes, so look for your class inside a pair like "D35 / H45".', 'Os veteranos podem correr em qualquer escalão mais novo, nunca mais velho. Provas pequenas juntam escalões: procura o teu dentro de pares como «D35 / H45».', 'Senioren dürfen jede jüngere Klasse laufen, nie eine ältere. Kleine Läufe legen Klassen zusammen: deine steckt dann in Paaren wie „D35 / H45“.', 'Ветеранам можно в любую младшую группу, в старшую нельзя. На маленьких стартах группы объединяют: ищи свою в паре вроде «D35 / H45».'],
+  };
+  // A worked control description sheet in the style of the Madeira town
+  // races (the app's example sheet): number, code, columns C–G, the meaning.
+  // Images are the column pictograms in /ativa/orient/cd/; "side" there is
+  // drawn north-east and turned here for the other sides.
+  var SHEET = [
+    ['start', '', '', 'crossing', '', '', '', ['Start at the gate (crossing point)', 'Partida junto ao portão (passagem)', 'Start am Tor (Durchgang)', 'Старт у калитки (проход)']],
+    ['1', '61', '', 'canopy', '', '', 'cornerInNE', ['Canopy, north-east corner, inside', 'Coberto, canto nordeste interior', 'Überdachung, Nordost-Innenecke', 'Навес, северо-восточный внутренний угол']],
+    ['2', '69', '', 'cairn', '', '', 'side@90', ['Survey stone, south-east side', 'Marco, lado sudeste', 'Vermessungsstein, Südostseite', 'Геопункт, юго-восточная сторона']],
+    ['3', '74', 'n', 'tree', '', '', 'side@-45', ['The northern prominent tree, north side', 'A árvore isolada mais a norte, lado norte', 'Der nördliche markante Baum, Nordseite', 'Северное из деревьев, северная сторона']],
+    ['4', '82', '', 'specialx', '', '', 'side@45', ['Special item X, east side', 'Objeto especial X, lado leste', 'Spezialobjekt X, Ostseite', 'Особый объект X, восточная сторона']],
+    ['5', '88', '', 'stairway', '', '', 'foot', ['Stairway, foot', 'Escadas, em baixo', 'Treppe, Fuß', 'Лестница, внизу']],
+    ['6', '94', 'middle', 'tree', '', '', 'side@225', ['The middle tree, west side', 'A árvore do meio, lado oeste', 'Der mittlere Baum, Westseite', 'Среднее дерево, западная сторона']],
+    ['7', '51', '', 'path', 'path', 'junction', '', ['Path junction', 'Junção de caminhos', 'Wegeinmündung', 'Развилка троп']],
+    ['8', '95', '', 'path', 'watercourse', 'xcross', '', ['Path crosses the stream (levada)', 'O caminho cruza a ribeira (levada)', 'Weg kreuzt den Bach (Levada)', 'Тропа пересекает ручей (леваду)']],
+    ['9', '43', '', 'path', '', 'bend', '', ['Path bend', 'Curva do caminho', 'Wegbiegung', 'Изгиб тропы']],
+    ['10', '72', 'n', 'building', '', '', 'cornerOut', ['The northern building, south corner, outside', 'O edifício mais a norte, canto sul exterior', 'Das nördliche Gebäude, Süd-Außenecke', 'Северное здание, южный внешний угол']],
+  ];
+  var STORE_IOS = 'https://apps.apple.com/app/madeira-ativa/id6796836699', STORE_PLAY = 'https://play.google.com/store/apps/details?id=ai.azenha.ativa';
+  function cdCell(id) {
+    if (!id) return '<td></td>';
+    if (id === 'start') return '<td><svg viewBox="0 0 34 34" aria-label="start"><path d="M17 7 26 24H8z" fill="none" stroke="#1c1b17" stroke-width="1.6"/></svg></td>';
+    var rot = id.split('@');
+    return '<td><div><img loading="lazy" alt="" src="/ativa/orient/cd/cd_' + rot[0] + '.png"' + (rot[1] ? ' style="transform:rotate(' + rot[1] + 'deg)"' : '') + '></div></td>';
+  }
+  function sheet() {
+    var head = '<tr>' + 'ABCDEFGH'.split('').map(function (c) { return '<td class="n">' + c + '</td>'; }).join('') + '</tr>';
+    var body = SHEET.map(function (r) {
+      return '<tr>' + (r[0] === 'start' ? cdCell('start') : '<td class="n">' + r[0] + '</td>') + '<td>' + r[1] + '</td>' +
+        r.slice(2, 7).map(cdCell).join('') + '<td></td></tr>';
+    }).join('');
+    return '<div class="o-sheet"><table role="presentation">' + head + body + '</table></div>' +
+      SHEET.map(function (r) { return '<div class="o-ex"><b>' + (r[0] === 'start' ? '▷' : r[0]) + (r[1] ? ' · ' + r[1] : '') + '</b> — ' + MA.esc(T.apply(null, r[7])) + '</div>'; }).join('');
+  }
+  function stores() {
+    return '<div class="stores o-stores"><a class="store store-ios" href="' + STORE_IOS + '" target="_blank" rel="noopener"><span><small>' + T('Download on the', 'Descarregar na', 'Laden im', 'Загрузить в') + '</small>App Store</span></a>' +
+      '<a class="store store-android" href="' + STORE_PLAY + '" target="_blank" rel="noopener"><span><small>' + T('Get it on', 'Disponível no', 'Jetzt bei', 'Доступно в') + '</small>Google Play</span></a></div>';
+  }
 
   function pick() {
     var year = +MA.today().slice(0, 4), age = year - born, s = women ? 'D' : 'H';
     var J = [10, 12, 14, 16, 18, 20], V = [35, 40, 45, 50, 55, 60, 65, 70, 75, 80];
     var elite = (women ? 'Damas' : 'Homens') + ' Elite';
-    if (age <= 10) return { own: 'T10', ok: [s + '12'] };
+    if (age <= 10) return { own: 'T10', ok: [s + '12'], note: NOTE.kid };
     if (age <= 20) { var o = J.filter(function (a) { return a >= age; })[0];
-      return { own: s + o, ok: J.filter(function (a) { return a > o; }).map(function (a) { return s + a; }).concat([s + '21B']) }; }
-    if (age < 35) return { own: s + '21A', ok: [s + '21B', elite] };
+      return { own: s + o, ok: J.filter(function (a) { return a > o; }).map(function (a) { return s + a; }).concat([s + '21B']), note: NOTE.junior }; }
+    if (age < 35) return { own: s + '21A', ok: [s + '21B', elite], note: NOTE.adult };
     var v = V.filter(function (a) { return a <= age; }).pop();
-    return { own: s + v, ok: V.filter(function (a) { return a < v; }).reverse().map(function (a) { return s + a; }).concat([s + '21A', s + '21B', elite]) };
+    return { own: s + v, ok: V.filter(function (a) { return a < v; }).reverse().map(function (a) { return s + a; }).concat([s + '21A', s + '21B', elite]), note: NOTE.vet };
   }
 
   function rows(items) {
@@ -131,7 +195,7 @@ html.app .o-nav{top:0}html.app .o-sec{scroll-margin-top:52px}
       ' <input id="oBorn" type="number" inputmode="numeric" min="1930" max="' + (year - 6) + '" value="' + born + '"></label>' +
       '<select id="oSex"><option value="h"' + (women ? '' : ' selected') + '>' + T('Men', 'Homens', 'Männer', 'Мужчины') + '</option><option value="d"' + (women ? ' selected' : '') + '>' + T('Women', 'Damas', 'Frauen', 'Женщины') + '</option></select></div>' +
       '<div class="o-res" id="oRes">' + T('In ' + year + ' you turn ' + (year - born) + '. Your class: ', 'Em ' + year + ' fazes ' + (year - born) + ' anos. O teu escalão: ', year + ' wirst du ' + (year - born) + '. Deine Kategorie: ', 'В ' + year + ' тебе исполняется ' + (year - born) + '. Твоя группа: ') +
-      '<span class="big">' + p.own + '</span><br><span class="o-note">' + T('Also allowed: ', 'Também podes: ', 'Auch erlaubt: ', 'Можно и в: ') + p.ok.join(', ') + '</span></div></div>';
+      '<span class="big">' + p.own + '</span><br><span class="o-note">' + T('Also allowed: ', 'Também podes: ', 'Auch erlaubt: ', 'Можно и в: ') + p.ok.join(', ') + '</span><br><span class="o-note">' + T.apply(null, p.note) + '</span></div></div>';
   }
 
   function render() {
@@ -143,16 +207,37 @@ html.app .o-nav{top:0}html.app .o-sec{scroll-margin-top:52px}
     var q = Q.trim().toLowerCase();
     var hit = function (s) { return !q || s.code.indexOf(q) >= 0 || ['en', 'pt', 'de', 'ru'].some(function (l) { return (s.name[l] || '').toLowerCase().indexOf(q) >= 0; }) || (s.hint[MA.lang()] || '').toLowerCase().indexOf(q) >= 0; };
     h += '<section class="o-sec" id="symbols"><h2>' + T.apply(null, SECS[0][1]) + '</h2>' +
+      '<p class="o-note">' + T('Every orienteering map uses the same international symbols (IOF). Colour tells the kind of thing: brown is the ground, black is rock and anything built, blue is water, yellow is open, green is hard going, purple is your course.',
+        'Todos os mapas de orientação usam os mesmos símbolos internacionais (IOF). A cor diz o tipo: castanho é o relevo, preto é rocha e construções, azul é água, amarelo é aberto, verde é difícil de passar, roxo é o teu percurso.',
+        'Jede OL-Karte nutzt dieselben internationalen Zeichen (IOF). Die Farbe verrät die Art: braun ist Gelände, schwarz Fels und Bauwerke, blau Wasser, gelb offen, grün schwer belaufbar, violett deine Bahn.',
+        'На всех картах для ориентирования одни и те же международные знаки (IOF). Цвет говорит о типе: коричневый — рельеф, чёрный — скалы и постройки, синий — вода, жёлтый — открытое, зелёный — трудная проходимость, пурпурный — твоя дистанция.') + '</p>' +
       '<input class="o-search" id="oQ" type="search" placeholder="' + T('Find a symbol: stairs, wall, marsh…', 'Procurar: escadas, muro, pântano…', 'Suchen: Treppe, Mauer, Sumpf…', 'Найти знак: лестница, стена, болото…') + '" value="' + MA.esc(Q) + '">' +
-      '<div id="oSyms">' + symbols(hit) + '</div></section>';
+      '<div id="oSyms">' + symbols(hit) + '</div><p class="o-note">' +
+      T('Symbols from the IOF standards ISOM 2017-2 (forest) and ISSprOM 2019-2 (sprint), simplified. The map you get at a race has its own legend: check it.',
+        'Símbolos das normas IOF ISOM 2017-2 (floresta) e ISSprOM 2019-2 (sprint), simplificados. O mapa da prova tem a sua legenda: confirma.',
+        'Zeichen nach den IOF-Normen ISOM 2017-2 (Wald) und ISSprOM 2019-2 (Sprint), vereinfacht. Die Wettkampfkarte hat ihre eigene Legende: prüfen.',
+        'Знаки по стандартам IOF ISOM 2017-2 (лес) и ISSprOM 2019-2 (спринт), упрощённо. У карты соревнований своя легенда: сверяйся с ней.') + '</p></section>';
 
     // control descriptions
-    h += '<section class="o-sec" id="cd"><h2>' + T.apply(null, SECS[1][1]) + '</h2>' + D.cd.map(function (g) {
+    h += '<section class="o-sec" id="cd"><h2>' + T.apply(null, SECS[1][1]) + '</h2><p class="o-note">' +
+      T('Next to the map you get a sheet of little pictures, one row per control. It says exactly where the flag stands. Every symbol on the Santana, Ponta do Sol, Estreito and Ribeira Brava sheets is below.',
+        'Junto ao mapa vem a sinalética: uma linha por ponto, com pequenos desenhos que dizem exatamente onde está a baliza. Todos os símbolos das folhas de Santana, Ponta do Sol, Estreito e Ribeira Brava estão abaixo.',
+        'Neben der Karte bekommst du die Postenbeschreibung: eine Zeile pro Posten, kleine Bilder, die genau sagen, wo der Posten steht. Alle Zeichen der Blätter aus Santana, Ponta do Sol, Estreito und Ribeira Brava stehen unten.',
+        'К карте выдают легенду: строка на каждый КП, картинки точно говорят, где стоит призма. Все значки с листов Сантаны, Понта-ду-Сол, Эштрейту и Рибейра-Бравы — ниже.') + '</p>' +
+      '<div class="o-grp">' + T('An example sheet, Madeira town style', 'Folha de exemplo, estilo urbano da Madeira', 'Beispielblatt im Stil der Madeira-Stadtläufe', 'Пример листа в стиле городских стартов Мадейры') + '</div>' + sheet() +
+      '<p class="o-note">' + T('Columns: A the control number, B its code, C which of several similar features, D the feature, E its appearance or a second feature, F size or combination, G where the flag is, H anything else.',
+        'Colunas: A o número do ponto, B o código, C qual de vários objetos iguais, D o objeto, E o aspeto ou um segundo objeto, F dimensões ou combinação, G onde está a baliza, H outros.',
+        'Spalten: A die Postennummer, B der Code, C welches von mehreren gleichen Objekten, D das Objekt, E sein Aussehen oder ein zweites Objekt, F Größe oder Kombination, G wo der Posten hängt, H Sonstiges.',
+        'Столбцы: A — номер КП, B — его код, C — какой из похожих объектов, D — объект, E — его вид или второй объект, F — размер или сочетание, G — где стоит призма, H — прочее.') + ' ' +
+      T('On a real sheet, above and below the table: the header "10 | 2,8 km | 30" is course, length and climb in metres. "– – 40 m – → △": walk 40 m from the timed start to the start triangle. "○ – – 85 m – → ◎": follow the tapes 85 m from the last control to the finish.',
+        'Numa folha real, acima e abaixo da tabela: o cabeçalho «10 | 2,8 km | 30» é percurso, distância, desnível em metros. «– – 40 m – → △»: 40 m da partida cronometrada até ao triângulo. «○ – – 85 m – → ◎»: seguir as fitas 85 m do último ponto até à chegada.',
+        'Auf einem echten Blatt über und unter der Tabelle: die Kopfzeile „10 | 2,8 km | 30“ ist Bahn, Länge, Steigung in Metern. „– – 40 m – → △“: 40 m vom Zeitstart zum Startdreieck. „○ – – 85 m – → ◎“: 85 m den Bändern vom letzten Posten ins Ziel folgen.',
+        'На настоящем листе над и под таблицей: шапка «10 | 2,8 km | 30» — это дистанция, длина, набор высоты в метрах. «– – 40 m – → △»: от старта по времени 40 м до треугольника. «○ – – 85 m – → ◎»: от последнего КП 85 м по разметке до финиша.') + '</p>' + D.cd.map(function (g) {
       return '<div class="o-grp">' + MA.esc(g.col) + ' · ' + L(g.title) + '</div>' + (L(g.note) ? '<p class="o-note">' + L(g.note) + '</p>' : '') +
         '<div class="o-grid">' + g.items.map(function (it) {
           return '<div class="o-sym o-cd"><img loading="lazy" alt="" src="/ativa/orient/' + it.img + '"><span><b>' + L(it.name) + '</b>' + (it.note ? '<small>' + L(it.note) + '</small>' : '') + '</span></div>';
         }).join('') + '</div>';
-    }).join('') + '</section>';
+    }).join('') + '<p class="o-note">' + T('Symbols after the IOF International Specification for Control Descriptions 2018.', 'Símbolos segundo a norma IOF de sinalética 2018.', 'Zeichen nach der IOF-Norm für Postenbeschreibungen 2018.', 'Значки по стандарту IOF для легенд КП 2018 года.') + '</p></section>';
 
     // classes
     h += '<section class="o-sec" id="classes"><h2>' + T.apply(null, SECS[2][1]) + '</h2><p class="o-note">' + L(c.intro) + '</p>' +
@@ -168,7 +253,13 @@ html.app .o-nav{top:0}html.app .o-sec{scroll-margin-top:52px}
     h += '<section class="o-sec" id="race"><h2>' + T.apply(null, SECS[3][1]) + '</h2><ol class="o-steps">' +
       D.race.steps.map(function (s) { return '<li><b>' + L(s.title) + '</b>' + L(s.text) + '</li>'; }).join('') + '</ol>' +
       '<div class="o-grp">' + T('On the map sheet', 'Na folha do mapa', 'Auf dem Kartenblatt', 'На листе карты') + '</div><ul class="o-list">' + D.race.sheet.map(function (x) { return '<li>' + L(x) + '</li>'; }).join('') + '</ul>' +
-      '<div class="o-grp">' + T('Rules', 'Regras', 'Regeln', 'Правила') + '</div><ul class="o-list">' + D.race.rules.map(function (x) { return '<li>' + L(x) + '</li>'; }).join('') + '</ul></section>';
+      '<div class="o-grp">' + T('Rules', 'Regras', 'Regeln', 'Правила') + '</div><ul class="o-list">' + D.race.rules.map(function (x) { return '<li>' + L(x) + '</li>'; }).join('') + '</ul>' +
+      '<div class="o-grp">' + T('Next orienteering events', 'Próximas provas de orientação', 'Nächste OL-Läufe', 'Ближайшие старты по ориентированию') + '</div><div class="o-ev">' +
+      (NEXT == null ? '<div class="skel"></div>' : !NEXT.length ? '<p class="o-note">' + T('None in the calendar right now.', 'Nenhuma no calendário de momento.', 'Gerade keine im Kalender.', 'Сейчас в календаре нет.') + '</p>' :
+        NEXT.map(function (e) { var d = MA.day(e.date);
+          return '<a class="row" href="' + MA.esc(e.url || '/ativa/events?k=orienteering') + '"' + (e.url ? ' target="_blank" rel="noopener"' : '') + '><div class="d"><b>' + d.d + '</b><span>' + d.m + '</span></div>' +
+            '<div class="t"><b>' + MA.esc(e.name) + '</b><span>' + MA.esc([d.w, e.location].filter(Boolean).join(' · ')) + '</span></div><div class="k">🧭</div></a>'; }).join('')) +
+      '</div><div class="o-links"><a href="https://aoram.pt" target="_blank" rel="noopener">AORAM — Madeira ↗</a><a href="https://www.fpo.pt" target="_blank" rel="noopener">' + T('Portuguese federation', 'Federação (FPO)', 'Portugiesischer Verband', 'Федерация Португалии') + ' ↗</a></div></section>';
 
     // tips
     h += '<section class="o-sec" id="tips"><h2>' + T.apply(null, SECS[4][1]) + '</h2><p class="o-note">' + L(D.tips.intro) + '</p>' +
@@ -177,9 +268,22 @@ html.app .o-nav{top:0}html.app .o-sec{scroll-margin-top:52px}
         return '<div class="o-grp">' + L(s.title) + '</div>' + (i === 0 ? '<div class="o-top"><ol>' + li + '</ol></div>' : '<ul class="o-list">' + li + '</ul>');
       }).join('') + '</section>';
 
+    // drills: the app's four quizzes (they need the app's drawing and scoring)
+    h += '<section class="o-sec" id="practice"><h2>' + T.apply(null, SECS[5][1]) + '</h2><p class="o-note">' +
+      T('In the app: ten questions a round, new ones every time. Two minutes on the bus is enough.', 'Na aplicação: dez perguntas por ronda, sempre novas. Dois minutos no autocarro chegam.', 'In der App: zehn Fragen pro Runde, jedes Mal neue. Zwei Minuten im Bus reichen.', 'В приложении: десять вопросов за раунд, каждый раз новые. Хватит двух минут в автобусе.') + '</p><div class="o-drills">' +
+      [['M12 2 6.5 11h11zM17.5 13.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM3 13.5h8v8H3z', ['Map symbols', 'Símbolos do mapa', 'Kartenzeichen', 'Знаки карты'], ['What does it mean? And the other way round.', 'O que significa? E ao contrário.', 'Was bedeutet es? Und umgekehrt.', 'Что это значит? И наоборот.']],
+       ['M20 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM8 20H4v-4h4zm0-6H4v-4h4zm0-6H4V4h4zm6 12h-4v-4h4zm0-6h-4v-4h4zm0-6h-4V4h4zm6 12h-4v-4h4zm0-6h-4v-4h4zm0-6h-4V4h4z', ['Control descriptions', 'Sinalética', 'Postenbeschreibung', 'Легенды КП'], ['Read the little pictures on the sheet.', 'Lê os desenhos da folha.', 'Die kleinen Bilder lesen.', 'Читаем значки легенды.']],
+       ['M14 6l-3.75 5 2.85 3.8-1.6 1.2C9.81 13.75 7 10 7 10l-6 8h22z', ['Contours', 'Curvas de nível', 'Höhenlinien', 'Рельеф'], ['Hill or pit, higher or lower, steep or gentle.', 'Morro ou cova, mais alto ou mais baixo, íngreme ou suave.', 'Kuppe oder Senke, höher oder tiefer, steil oder flach.', 'Холм или яма, выше или ниже, круто или полого.']],
+       ['M9.78 11.16l-1.42 1.42a7.28 7.28 0 0 1-1.79-2.94l1.94-.49c.32.89.77 1.5 1.27 2.01zM11 6 7 2 3 6h3.02c.02.81.08 1.54.19 2.17l1.94-.49C8.08 7.2 8.03 6.63 8.02 6zm10 0-4-4-4 4h2.99c-.1 3.68-1.28 4.75-2.54 5.88-.5.44-1.01.92-1.45 1.55-.34-.49-.73-.88-1.13-1.24L9.46 13.6c.93.85 1.54 1.54 1.54 3.4v5h2v-5c0-2.02.71-2.66 1.79-3.63 1.38-1.24 3.08-2.78 3.2-7.37z', ['Route choice', 'Escolha de caminho', 'Routenwahl', 'Выбор пути'], ['Straight through the green or round on the path?', 'A direito pelo verde ou à volta pelo caminho?', 'Gerade durchs Grün oder außen herum auf dem Weg?', 'Напрямик через зелёнку или в обход по тропе?']]
+      ].map(function (x) { return '<div class="card o-cta"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="var(--green)" d="' + x[0] + '"/></svg><div><b>' + T.apply(null, x[1]) + '</b><span class="o-note">' + T.apply(null, x[2]) + '</span></div></div>'; }).join('') +
+      '</div>' + stores() + '<p class="o-note">' + T('Symbols after the IOF standards ISOM 2017-2, ISSprOM 2019-2 and the Control Descriptions 2018, drawn for Madeira Ativa.',
+        'Símbolos segundo as normas IOF ISOM 2017-2, ISSprOM 2019-2 e Sinalética 2018, desenhados para a Madeira Ativa.',
+        'Zeichen nach den IOF-Normen ISOM 2017-2, ISSprOM 2019-2 und Postenbeschreibung 2018, für Madeira Ativa gezeichnet.',
+        'Знаки по стандартам IOF ISOM 2017-2, ISSprOM 2019-2 и легенд КП 2018, нарисованы для Madeira Ativa.') + '</p></section>';
+
     // compass: the how-to and Madeira's declination, as in the app's Compass
     // tab (the live dial needs the phone's sensor, so it stays in the app)
-    h += '<section class="o-sec" id="compass"><h2>' + T.apply(null, SECS[5][1]) + '</h2><ol class="o-steps">' +
+    h += '<section class="o-sec" id="compass"><h2>' + T.apply(null, SECS[6][1]) + '</h2><ol class="o-steps">' +
       [T('Turn the map so its north lines point the way the compass says north.', 'Roda o mapa até as linhas de norte apontarem para o norte da bússola.', 'Karte drehen, bis die Nordlinien zum Kompassnorden zeigen.', 'Поверни карту, чтобы линии севера смотрели на север компаса.'),
        T('Find on the map the direction from you to the control and read its angle from north.', 'No mapa, vê a direção de ti até ao ponto e o seu ângulo a partir do norte.', 'Auf der Karte die Richtung von dir zum Posten und ihren Winkel ab Nord ablesen.', 'Найди на карте направление от себя к КП и его угол от севера.'),
        T('Turn until the compass shows that angle and walk where it points. Pick a tree or rock on the line and run to it.', 'Roda até a bússola mostrar esse ângulo e segue para onde aponta. Escolhe uma árvore ou pedra na linha e corre até ela.', 'Drehen, bis der Kompass diesen Winkel zeigt, und in Zeigerichtung gehen. Einen Baum oder Fels auf der Linie anpeilen und hinlaufen.', 'Повернись, пока компас не покажет этот угол, и иди, куда он указывает. Выбери на линии дерево или камень и беги к нему.')
@@ -188,19 +292,10 @@ html.app .o-nav{top:0}html.app .o-sec{scroll-margin-top:52px}
         'Os mapas de orientação são desenhados para o norte magnético, por isso o rumo da bússola não precisa de correção. Na Madeira o norte verdadeiro fica cerca de 4° à direita do magnético: num mapa topográfico comum, soma 4° ao ângulo do mapa. A aplicação tem uma bússola que fixa o rumo.',
         'OL-Karten sind nach magnetisch Nord ausgerichtet, ein Kompasskurs braucht also keine Korrektur. Auf Madeira liegt geografisch Nord etwa 4° rechts von magnetisch Nord: bei einer normalen topografischen Karte 4° zum Kartenwinkel addieren. Die App hat einen Kompass, der den Kurs festhält.',
         'Карты для ориентирования рисуют по магнитному северу, поэтому азимут по компасу не нужно поправлять. На Мадейре истинный север примерно на 4° правее магнитного: для обычной топокарты прибавь 4° к углу по карте. В приложении есть компас, который запоминает азимут.') +
-      '</p></section>';
-
-    // practice in the app
-    h += '<section class="o-sec" id="practice"><h2>' + T.apply(null, SECS[6][1]) + '</h2><div class="card o-cta">' +
-      '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="var(--green)" stroke-width="2"/><path fill="var(--terra)" d="M12 4l2.2 8L12 20l-2.2-8z"/></svg><div>' +
-      T('The app has quick drills: map symbols both ways, control descriptions, contours (hill or pit, which point is higher, how much climb) and route choice on generated maps with real running times. Ten questions a round, new ones every time.',
-        'A aplicação tem treinos rápidos: símbolos nos dois sentidos, sinalética, curvas de nível (morro ou cova, qual ponto é mais alto, quanto se sobe) e escolha de caminho em mapas gerados com tempos reais. Dez perguntas por ronda, sempre novas.',
-        'Die App hat kurze Übungen: Kartenzeichen in beide Richtungen, Postenbeschreibungen, Höhenlinien (Kuppe oder Senke, welcher Punkt höher, wie viel Anstieg) und Routenwahl auf erzeugten Karten mit echten Laufzeiten. Zehn Fragen pro Runde, immer neue.',
-        'В приложении есть быстрые упражнения: знаки в обе стороны, легенды КП, рельеф (холм или яма, какая точка выше, сколько набора) и выбор пути на сгенерированных картах с реальным временем. Десять вопросов за раунд, каждый раз новые.') +
-      '</div></div><p class="o-note">' + T('Symbols after the IOF standards ISOM 2017-2, ISSprOM 2019-2 and the Control Descriptions 2018, drawn for Madeira Ativa.',
-        'Símbolos segundo as normas IOF ISOM 2017-2, ISSprOM 2019-2 e Sinalética 2018, desenhados para a Madeira Ativa.',
-        'Zeichen nach den IOF-Normen ISOM 2017-2, ISSprOM 2019-2 und Postenbeschreibung 2018, für Madeira Ativa gezeichnet.',
-        'Знаки по стандартам IOF ISOM 2017-2, ISSprOM 2019-2 и легенд КП 2018, нарисованы для Madeira Ativa.') + '</p></section>';
+      '</p><p class="o-note">' + T('The live compass needs the phone\'s sensor, so it lives in the app (Orienteering → Compass): the dial turns with you, "Lock this bearing" holds a course and it tells you to turn left or right to stay on it.',
+        'A bússola ao vivo precisa do sensor do telemóvel, por isso está na aplicação (Orientação → Bússola): o mostrador roda contigo, «Fixar este rumo» guarda o rumo e diz-te para virar à esquerda ou à direita para o manter.',
+        'Der Live-Kompass braucht den Sensor des Handys, darum ist er in der App (Orientierungslauf → Kompass): die Scheibe dreht sich mit, „Kurs festhalten“ merkt sich den Kurs und sagt dir, ob du nach links oder rechts musst.',
+        'Живому компасу нужен датчик телефона, поэтому он в приложении (Ориентирование → Компас): шкала поворачивается вместе с тобой, «Запомнить азимут» держит курс и подсказывает, куда повернуть — левее или правее.') + '</p>' + stores() + '</section>';
 
     document.getElementById('oBody').innerHTML = h;
     wire();
@@ -235,6 +330,13 @@ html.app .o-nav{top:0}html.app .o-sec{scroll-margin-top:52px}
   }
 
   MA.onLang(render);
+  MA.get('/ativa/events.json').then(function (j) {
+    var today = MA.today();
+    NEXT = ((j && j.events) || []).filter(function (e) {
+      return (e.event_type === 'orienteering' || /^Orientação/.test(e.name || '') || (e.url || '').indexOf('aoram.pt') >= 0) && e.date >= today;
+    }).sort(function (a, b) { return a.date < b.date ? -1 : a.date > b.date ? 1 : 0; }).slice(0, 6);
+    if (D) { var y = window.scrollY; render(); window.scrollTo(0, y); }
+  });
   MA.get('/ativa/orient/orient.json').then(function (d) {
     D = d;
     if (!D) { document.getElementById('oBody').innerHTML = '<p class="o-note">' + T('Could not load. Try again later.', 'Não foi possível carregar.', 'Konnte nicht laden.', 'Не удалось загрузить.') + '</p>'; return; }
@@ -249,8 +351,8 @@ html.app .o-nav{top:0}html.app .o-sec{scroll-margin-top:52px}
 <div class="scrim" id="scrim" hidden></div>
 <aside class="drawer" id="drawer" hidden><div class="drawer-hd"><b>Madeira Ativa</b><button type="button" class="icon-btn" data-theme-btn></button><button type="button" class="icon-btn" data-close aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.4 5 5 6.4 10.6 12 5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4 17.6 5 12 10.6z"/></svg></button></div><nav><div class="grp"><span data-l="en">Explore</span><span data-l="pt">Explorar</span><span data-l="de">Entdecken</span><span data-l="ru">Обзор</span></div><a href="/ativa/"><span data-l="en">Home</span><span data-l="pt">Início</span><span data-l="de">Start</span><span data-l="ru">Главная</span></a><a href="/ativa/events"><span data-l="en">Events</span><span data-l="pt">Eventos</span><span data-l="de">Veranstaltungen</span><span data-l="ru">События</span></a><a href="/ativa/levada">Levadas</a><a href="/ativa/maps/"><span data-l="en">Map</span><span data-l="pt">Mapa</span><span data-l="de">Karte</span><span data-l="ru">Карта</span></a><a href="/ativa/maps/3d"><span data-l="en">3D map</span><span data-l="pt">Mapa 3D</span><span data-l="de">3D-Karte</span><span data-l="ru">3D-карта</span></a><a href="/ativa/maps/fly"><span data-l="en">3D flyover</span><span data-l="pt">Voo 3D</span><span data-l="de">3D-Überflug</span><span data-l="ru">3D-облёт</span></a><a href="/ativa/maps/aerial"><span data-l="en">Aerial view</span><span data-l="pt">Vista aérea</span><span data-l="de">Luftaufnahme</span><span data-l="ru">Вид сверху</span></a><a href="/ativa/webcams">Webcams</a><a href="/ativa/bus"><span data-l="en">Trails by bus</span><span data-l="pt">Percursos de autocarro</span><span data-l="de">Wanderwege per Bus</span><span data-l="ru">Маршруты на автобусе</span></a><div class="grp"><span data-l="en">Read</span><span data-l="pt">Ler</span><span data-l="de">Lesen</span><span data-l="ru">Читать</span></div><a href="/ativa/madeira_news"><span data-l="en">News</span><span data-l="pt">Notícias</span><span data-l="de">News</span><span data-l="ru">Новости</span></a><a href="/ativa/madeira_festas">Festas</a><a href="/ativa/madeira_history"><span data-l="en">History</span><span data-l="pt">História</span><span data-l="de">Geschichte</span><span data-l="ru">История</span></a><a href="/ativa/madeira_stat"><span data-l="en">Trail stats</span><span data-l="pt">Estatísticas</span><span data-l="de">Trail-Statistik</span><span data-l="ru">Статистика трейлов</span></a><a href="/ativa/orienteering"><span data-l="en">Orienteering basics</span><span data-l="pt">Orientação: o básico</span></a><a href="/ativa/ask">Ask AI</a><div class="grp"><span data-l="en">More</span><span data-l="pt">Mais</span><span data-l="de">Mehr</span><span data-l="ru">Ещё</span></div><a href="https://t.me/madeira_ebot" target="_blank" rel="noopener"><span data-l="en">Telegram bot</span><span data-l="pt">Bot do Telegram</span><span data-l="de">Telegram-Bot</span><span data-l="ru">Telegram-бот</span></a><a href="https://t.me/madeira_ativa" target="_blank" rel="noopener"><span data-l="en">Weekly digest</span><span data-l="pt">Resumo semanal</span><span data-l="de">Wöchentlicher Überblick</span><span data-l="ru">Дайджест недели</span></a><a href="/ativa/sources"><span data-l="en">Sources and licences</span><span data-l="pt">Fontes e licenças</span><span data-l="de">Quellen und Lizenzen</span><span data-l="ru">Источники и лицензии</span></a><a href="/ativa/privacy"><span data-l="en">Privacy</span><span data-l="pt">Privacidade</span><span data-l="de">Datenschutz</span><span data-l="ru">Конфиденциальность</span></a><a href="/ativa/support"><span data-l="en">Support</span><span data-l="pt">Apoio</span><span data-l="de">Support</span><span data-l="ru">Поддержка</span></a><a href="mailto:agent@azenha.ai"><span data-l="en">Contact</span><span data-l="pt">Contacto</span><span data-l="de">Kontakt</span><span data-l="ru">Контакты</span></a><a href="/studio/"><span data-l="en">About Azenha.ai studio</span><span data-l="pt">Sobre o estúdio Azenha.ai</span><span data-l="de">Über das Studio Azenha.ai</span><span data-l="ru">О студии Azenha.ai</span></a><button type="button" class="lang-next" data-lang-next></button></nav></aside>
 <nav class="bar" aria-label="Sections"><a href="/ativa/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 12h3v8h5v-6h4v6h5v-8h3z"/></svg><span><span data-l="en">Home</span><span data-l="pt">Início</span><span data-l="de">Start</span><span data-l="ru">Главная</span></span></a><a href="/ativa/ask"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8zM5 16l.9 2.1L8 19l-2.1.9L5 22l-.9-2.1L2 19l2.1-.9zM19 14l.7 1.6 1.6.7-1.6.7L19 18.6l-.7-1.6-1.6-.7 1.6-.7z"/></svg><span>Ask AI</span></a><a href="/ativa/events"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H4v18h16V4h-3V2h-2v2H9V2zm-1 7h12v11H6zm2 2v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm-8 4v2h2v-2zm4 0v2h2v-2z"/></svg><span><span data-l="en">Events</span><span data-l="pt">Eventos</span><span data-l="de">Veranstaltungen</span><span data-l="ru">События</span></span></a><a href="/ativa/maps/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4 9 2 3 4v18l6-2 6 2 6-2V2zm-5 .4 4 1.3v13.9l-4-1.3zM5 5.4l3-1v13.9l-3 1zm14 13.2-3 1V5.7l3-1z"/></svg><span><span data-l="en">Map</span><span data-l="pt">Mapa</span><span data-l="de">Karte</span><span data-l="ru">Карта</span></span></a><a href="/ativa/levada"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 5.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM9.8 8.9 7 23h2.1l1.8-8 2.1 2v6h2v-7.5l-2.1-2 .6-3c1.3 1.5 3.3 2.5 5.5 2.5v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1L6 10.3V15h2v-3.4z"/></svg><span>Levadas</span></a><a href="/ativa/madeira_news"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3h16v18H4zm2 2v14h12V5zm2 2h8v2H8zm0 4h8v2H8zm0 4h5v2H8z"/></svg><span><span data-l="en">News</span><span data-l="pt">Notícias</span><span data-l="de">News</span><span data-l="ru">Новости</span></span></a></nav>
-<script src="/ativa/trail-core.js?v=20261115a"></script>
-<script src="/ativa/ui/pages.js?v=20261115a" defer></script>
+<script src="/ativa/trail-core.js?v=20261115b"></script>
+<script src="/ativa/ui/pages.js?v=20261115b" defer></script>
 <script>if ('serviceWorker' in navigator && !new URLSearchParams(location.search).has('app')) navigator.serviceWorker.register('/ativa/service-worker.js');</script>
 </body>
 </html>
