@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-11-15T19:05:59",
-  "count": 608,
+  "fetched": "2026-11-16T07:13:41",
+  "count": 609,
   "items": [
     {
       "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
@@ -8037,7 +8037,7 @@
       "end": "2026-11-21T16:30:00+00:00",
       "date": "2026-11-21",
       "time": "14:00",
-      "venue": "Ola Art Studio, Santa, Porto Moniz",
+      "venue": "Ola Art Studio, Santa",
       "municipality": "Porto Moniz",
       "price": 35,
       "organizer": "Ola Art Studio",
@@ -9123,6 +9123,21 @@
       "organizer": "Madeira Mandolin Orchestra",
       "category": "concert",
       "source_category": "music-concerts"
+    },
+    {
+      "id": "madeira-orienteering-festival-2027-stage-3-night-sprint-2027-01-09",
+      "title": "Madeira Orienteering Festival 2027: Stage 3 Night Sprint",
+      "url": "https://www.madeira-unlocked.com/en/events/madeira-orienteering-festival-2027-stage-3-night-sprint-2027-01-09",
+      "start": "2027-01-09T18:15:00+00:00",
+      "end": "2027-01-09T20:30:00+00:00",
+      "date": "2027-01-09",
+      "time": "18:15",
+      "venue": "Madeira Botanical Garden",
+      "municipality": "Funchal",
+      "price": 5,
+      "organizer": "Clube de Montanha do Funchal (CNSV)",
+      "category": "sport",
+      "source_category": "sport-fitness"
     }
   ]
 }

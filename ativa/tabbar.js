@@ -9,21 +9,36 @@
   var q = new URLSearchParams(location.search);
   if (q.has('app') || q.has('embed') || /; wv\)/.test(navigator.userAgent)) return;
   var pt = (document.documentElement.lang || 'en') === 'pt';
+  // Labels in the page's language. The language URLs (/ativa/pt/, /ativa/de/,
+  // /ativa/ru/) keep the reader there: Home and Levadas lead to the same
+  // language's page; the others exist in one copy that switches in place.
+  var LABELS = {
+    en: ['Home', 'Ask AI', 'Events', 'Map', 'Levadas', 'News'],
+    pt: ['Início', 'Ask AI', 'Eventos', 'Mapa', 'Levadas', 'Notícias'],
+    de: ['Start', 'Ask AI', 'Veranstaltungen', 'Karte', 'Levadas', 'News'],
+    ru: ['Главная', 'Ask AI', 'События', 'Карта', 'Левады', 'Новости'],
+  };
+  function labels() { return LABELS[document.documentElement.lang] || LABELS.en; }
+  var urlLang = (location.pathname.match(/^\/ativa\/(pt|de|ru)(\/|$)/) || [])[1];
+  var root = urlLang ? '/ativa/' + urlLang + '/' : '/ativa/';
   var TABS = [
-    ['/ativa/', pt ? 'Início' : 'Home', 'M12 3 2 12h3v8h5v-6h4v6h5v-8h3z'],
+    [root, pt ? 'Início' : 'Home', 'M12 3 2 12h3v8h5v-6h4v6h5v-8h3z'],
     ['/ativa/ask', 'Ask AI', 'M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8zM5 16l.9 2.1L8 19l-2.1.9L5 22l-.9-2.1L2 19l2.1-.9zM19 14l.7 1.6 1.6.7-1.6.7L19 18.6l-.7-1.6-1.6-.7 1.6-.7z'],
-    ['/ativa/#events', pt ? 'Eventos' : 'Events', 'M7 2v2H4v18h16V4h-3V2h-2v2H9V2zm-1 7h12v11H6zm2 2v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm-8 4v2h2v-2zm4 0v2h2v-2z'],
+    [urlLang ? root + 'events' : '/ativa/#events', pt ? 'Eventos' : 'Events', 'M7 2v2H4v18h16V4h-3V2h-2v2H9V2zm-1 7h12v11H6zm2 2v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm-8 4v2h2v-2zm4 0v2h2v-2z'],
     ['/ativa/map', pt ? 'Mapa' : 'Map', 'M15 4 9 2 3 4v18l6-2 6 2 6-2V2zm-5 .4 4 1.3v13.9l-4-1.3zM5 5.4l3-1v13.9l-3 1zm14 13.2-3 1V5.7l3-1z'],
-    ['/ativa/levada', 'Levadas', 'M13.5 5.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM9.8 8.9 7 23h2.1l1.8-8 2.1 2v6h2v-7.5l-2.1-2 .6-3c1.3 1.5 3.3 2.5 5.5 2.5v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1L6 10.3V15h2v-3.4z'],
+    [root + 'levada', 'Levadas', 'M13.5 5.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM9.8 8.9 7 23h2.1l1.8-8 2.1 2v6h2v-7.5l-2.1-2 .6-3c1.3 1.5 3.3 2.5 5.5 2.5v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1L6 10.3V15h2v-3.4z'],
     ['/ativa/madeira_news', pt ? 'Notícias' : 'News', 'M4 3h16v18H4zm2 2v14h12V5zm2 2h8v2H8zm0 4h8v2H8zm0 4h5v2H8z'],
   ];
-  var here = location.pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/ativa';
+  TABS.forEach(function (t, i) { t[1] = labels()[i]; });
+  // Matching is done on the English path: /ativa/ru/trail/x lights Levadas like /ativa/trail/x.
+  var unprefix = function (u) { return u.replace(/^\/ativa\/(pt|de|ru)(?=\/|$)/, '/ativa'); };
+  var here = unprefix(location.pathname).replace(/\.html$/, '').replace(/\/$/, '') || '/ativa';
   var active = TABS.length - 1;
   // The longest matching prefix wins, so a trail page lights Levadas and the
   // home page only lights Home. Events is Home's calendar, lit only by its hash.
   var best = -1;
   TABS.forEach(function (t, i) {
-    var p = t[0].replace(/\/$/, '').split('#')[0];
+    var p = unprefix(t[0]).replace(/\/$/, '').split('#')[0];
     if (t[0].indexOf('#') >= 0) { if (location.hash === '#events' && here === '/ativa') { best = 99; active = i; } return; }
     if ((here === p || here.indexOf(p + '/') === 0 || (p === '/ativa/levada' && here.indexOf('/ativa/trail') === 0)) && p.length > best) { best = p.length; active = i; }
   });
@@ -112,7 +127,9 @@
 
   // Russian lines (scripts/i18n_ru.py) stay in the pages but hidden: the
   // language menu was removed on 9 Oct 2026 until it works on a phone.
+  // A Russian page (/ativa/ru/…) is Russian by its URL and keeps its language.
   (function () {
+    if (document.documentElement.lang === 'ru') return;
     var st = document.createElement('style');
     st.textContent = '[data-lang="ru"]{display:none!important}';
     document.head.appendChild(st);
@@ -141,8 +158,7 @@
 
   // Pages switch language in place; relabel without rebuilding.
   new MutationObserver(function () {
-    var p = (document.documentElement.lang || 'en') === 'pt';
-    var labels = [p ? 'Início' : 'Home', 'Ask AI', p ? 'Eventos' : 'Events', p ? 'Mapa' : 'Map', 'Levadas', p ? 'Notícias' : 'News'];
-    bar.querySelectorAll('span').forEach(function (s, i) { s.textContent = labels[i]; });
+    var l = labels();
+    bar.querySelectorAll('span').forEach(function (s, i) { s.textContent = l[i]; });
   }).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
 })();

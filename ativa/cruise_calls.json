@@ -1,8 +1,8 @@
 {
   "note": "Ship calls at the port of Funchal from APRAM. Times are Madeira local time, as the port publishes them. Accumulates; a call no longer listed before its arrival is marked superseded.",
   "source": "https://apram.pt/movimento-navios?port=ptfnc",
-  "fetched": "2026-11-15T13:03:20",
-  "count": 129,
+  "fetched": "2026-11-16T14:05:51",
+  "count": 131,
   "calls": [
     {
       "ship": "SANTA MARIA MANUELA",
@@ -1005,6 +1005,16 @@
       "superseded": false
     },
     {
+      "ship": "STAR LEGEND",
+      "berth": "Funchal - Terminal Norte",
+      "agent": "Blatas, Lda.",
+      "arrival": "2026-11-15T13:00",
+      "from": "Casablanca",
+      "departure": "2026-11-16T23:00",
+      "to": "Bridgetown",
+      "superseded": false
+    },
+    {
       "ship": "AIDAprima",
       "berth": "Funchal - Terminal Sul",
       "agent": "Blatas, Lda.",
@@ -1022,6 +1032,16 @@
       "from": "Santa Cruz De Tenerife",
       "departure": "2026-11-16T22:00",
       "to": "Puerto Del Rosario-Fuerteventura",
+      "superseded": false
+    },
+    {
+      "ship": "LASATA",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "Transinsular (Madeira)-Transp. Marit. Insulares, Lda.",
+      "arrival": "2026-11-16T08:30",
+      "from": "Gibraltar",
+      "departure": "2026-11-16T11:00",
+      "to": "Falmouth",
       "superseded": false
     },
     {
@@ -1070,7 +1090,7 @@
       "agent": "JFM Shipping, Lda.",
       "arrival": "2026-11-19T08:00",
       "from": "Barcelona",
-      "departure": "2026-11-19T17:00",
+      "departure": "2026-11-19T18:00",
       "to": "Lanzarote",
       "superseded": false
     },

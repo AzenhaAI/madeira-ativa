@@ -164,6 +164,7 @@ html.ios .store-android,html.android .store-ios{display:none}
 
 .foot{margin-top:var(--s3);padding-top:var(--s4);border-top:1px solid var(--line);color:var(--soft);font-size:var(--fs-xs);display:flex;flex-wrap:wrap;gap:6px 14px}
 .foot a{color:var(--soft);padding:8px 0}
+#alt-lang{display:inline-flex;flex-wrap:wrap;gap:6px 14px}
 
 /* launch banner (home): one bright strip for a new feature, same as the app */
 .promo{display:flex;align-items:center;gap:10px;margin-top:12px;padding:12px 14px;border-radius:var(--r);background:#F2A65A;color:#3A1A08;text-decoration:none}

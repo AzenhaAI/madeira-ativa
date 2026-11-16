@@ -12,6 +12,31 @@
 
   function store(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
 
+  // Home, Levadas, Events and Bus also live at /ativa/pt/, /ativa/de/ and
+  // /ativa/ru/, so search has a page in each language to show. On those pages
+  // and their English originals the URL decides the language: choosing another
+  // goes to that language's address (the twins carry only their own language).
+  // Elsewhere, and inside the app (?app=1), the page switches in place as before.
+  var TWIN_PAGES = { '': '', 'index.html': '', 'levada': 'levada', 'events': 'events', 'bus': 'bus' };
+  function crossLang(l) {
+    if (html.classList.contains('app')) return false;
+    var m = location.pathname.match(/^\/ativa(?:\/(pt|de|ru))?(?:\/(.*))?$/);
+    if (!m || !Object.prototype.hasOwnProperty.call(TWIN_PAGES, (m[2] || '').replace(/\/$/, ''))) return false;
+    var here = m[1] || 'en', sub = TWIN_PAGES[(m[2] || '').replace(/\/$/, '')];
+    if (here === l) return false;
+    var q = new URLSearchParams(location.search); q.delete('lang');
+    store('lang', l);
+    var s = q.toString();
+    location.href = '/ativa/' + (l === 'en' ? '' : l + '/') + sub + (s ? '?' + s : '') + location.hash;
+    return true;
+  }
+
+  // The footer's language links are plain links; following one is a choice too.
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('#alt-lang a[hreflang]');
+    if (a) store('lang', a.getAttribute('hreflang').slice(0, 2));
+  });
+
   // ---- language
   var listeners = [];
   window.MA = {
@@ -30,6 +55,7 @@
     onLang: function (fn) { listeners.push(fn); },
     setLang: function (l) {
       if (LANGS.indexOf(l) < 0) l = 'en';
+      if (crossLang(l)) return;
       html.lang = l; store('lang', l);
       document.querySelectorAll('.seg [data-set]').forEach(function (b) { b.classList.toggle('on', b.dataset.set === l); });
       listeners.forEach(function (fn) { try { fn(l); } catch (e) { console.error(e); } });
