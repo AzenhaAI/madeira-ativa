@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-11-17T08:28:12",
-  "count": 185,
+  "fetched": "2026-11-17T21:20:31",
+  "count": 190,
   "items": [
     {
       "id": "114",
@@ -1775,6 +1775,16 @@
       "category": "Music"
     },
     {
+      "id": "453",
+      "title": "Concerto do Duo Plectro a Bec, “A Ilha que se Escuta”",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concerto-do-duo-plectro-a-bec-a-ilha-que-se-escuta",
+      "start": "2026-11-20",
+      "end": "2026-11-20",
+      "time": "19:00",
+      "place": "Museu Etnográfico da Madeira",
+      "category": "Music"
+    },
+    {
       "id": "447",
       "title": "Visita Temática e Oficina de Expressão Plástica: \"Se as árvores do nosso Jardim falassem...\"",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/visita-tematica-e-oficina-de-expressao-plastica-se-as-arvores-do-nosso-jardim-falassem-2",
@@ -1783,6 +1793,26 @@
       "time": "10:30",
       "place": "Museu da Quinta das Cruzes",
       "category": "Activity"
+    },
+    {
+      "id": "454",
+      "title": "Oficina “Olhares com Natureza”",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/oficina-olhares-com-natureza",
+      "start": "2026-11-21",
+      "end": "2026-11-21",
+      "time": "11:00",
+      "place": "Museu Henrique e Francisco Franco",
+      "category": "Activity"
+    },
+    {
+      "id": "451",
+      "title": "Apresentação do Documentário \"A História Florestal da Ilha do Porto Santo\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/apresentacao-do-documentario-a-historia-florestal-da-ilha-do-porto-santo",
+      "start": "2026-11-21",
+      "end": "2026-11-21",
+      "time": "18:00",
+      "place": "Centro Cultural e de Congressos do Porto Santo",
+      "category": "Other"
     },
     {
       "id": "384",
@@ -1803,6 +1833,26 @@
       "time": "",
       "place": "Casa do Povo da Ilha, Santana",
       "category": "Other"
+    },
+    {
+      "id": "450",
+      "title": "Noites Musicais 2026",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/noites-musicais-2027",
+      "start": "2026-11-22",
+      "end": "2026-11-22",
+      "time": "21:00",
+      "place": "Fórum Machico",
+      "category": "Music"
+    },
+    {
+      "id": "452",
+      "title": "Aires na 13.ª Edição do Funchal City Sessions",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/aires-na-13-a-edicao-do-funchal-city-sessions",
+      "start": "2026-11-28",
+      "end": "2026-11-28",
+      "time": "21:30",
+      "place": "Galeria Tratuário",
+      "category": "Music"
     },
     {
       "id": "411",

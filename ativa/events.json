@@ -93,6 +93,15 @@
     },
     {
       "mode": "festivals",
+      "name": "Ciclo Uma tradução de ações em peças, curadoria de Miguel Angelo Martins",
+      "date": "2026-11-17",
+      "location": "Santa Maria Maior",
+      "url": "https://t.me/festas_madeira/2792",
+      "event_type": "festival",
+      "category": "exhibition"
+    },
+    {
+      "mode": "festivals",
       "name": "Ciclo de Concertos – Escola das Artes da Madeira",
       "date": "2026-11-17",
       "location": "Salão Nobre do Conservatório - Escola Profissional das Artes da Madeira, Funchal",
@@ -423,6 +432,18 @@
     },
     {
       "mode": "festivals",
+      "name": "Saint Martin - Lantern Festival",
+      "date": "2026-11-19",
+      "location": "Parque de Santa Catarina, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "17:30",
+      "price": "Free",
+      "organizer": "Nina Suza",
+      "category": "family"
+    },
+    {
+      "mode": "festivals",
       "name": "Bora Ler! Young Readers’ Book Club, November",
       "date": "2026-11-20",
       "location": "Arquivo e Biblioteca da Madeira, Funchal",
@@ -432,6 +453,18 @@
       "price": "Free",
       "organizer": "Direção Regional dos Arquivos",
       "category": "family"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concerto do Duo Plectro a Bec, “A Ilha que se Escuta”",
+      "date": "2026-11-20",
+      "location": "Museu Etnográfico da Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concerto-do-duo-plectro-a-bec-a-ilha-que-se-escuta",
+      "event_type": "festival",
+      "time": "19:00",
+      "price": "Free",
+      "category": "concert",
+      "about": "Dia 20 de novembro, pelas 19h00, o Museu Etnográfico da Madeira, recebe o Duo Plectro a Bec, com o concerto \"A Ilha que se Escuta\". Já no dia 21 de novembro, às 17h00, o Duo sobe ao placo da Capela da Imaculada Conceição, Câmara de Lobos."
     },
     {
       "mode": "festivals",
@@ -456,6 +489,15 @@
       "category": "concert",
       "date_end": "2026-11-21",
       "about": "Nos dias 20 e 21 de novembro, o Teatro Municipal Baltazar Dias, recebe o espetáculo \"As Ilhas Desconhecidas\", uma criação teatral inspirada na obra de Raul Brandão, com encenação de Sara Gonçalves e música original de Mário Laginha."
+    },
+    {
+      "mode": "festivals",
+      "name": "Exposição · Água De Pena",
+      "date": "2026-11-20",
+      "location": "Água De Pena",
+      "url": "https://t.me/festas_madeira/2793",
+      "event_type": "festival",
+      "category": "exhibition"
     },
     {
       "mode": "festivals",
@@ -564,12 +606,42 @@
     },
     {
       "mode": "festivals",
+      "name": "Apresentação do Documentário \"A História Florestal da Ilha do Porto Santo\"",
+      "date": "2026-11-21",
+      "location": "Centro Cultural e de Congressos do Porto Santo",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/apresentacao-do-documentario-a-historia-florestal-da-ilha-do-porto-santo",
+      "event_type": "festival",
+      "time": "18:00",
+      "price": "Free",
+      "category": "cinema",
+      "about": "Com realização de Francisco Manso. Guião de Francisco Castro Rego e Natália Nunes. Entrada livre."
+    },
+    {
+      "mode": "festivals",
+      "name": "Destinatários: Famílias com",
+      "date": "2026-11-21",
+      "location": "São Pedro",
+      "url": "https://t.me/festas_madeira/2791",
+      "event_type": "festival",
+      "category": "workshop"
+    },
+    {
+      "mode": "festivals",
       "name": "Espetáculo · Funchal",
       "date": "2026-11-21",
       "location": "Funchal",
       "url": "https://t.me/festas_madeira/2788",
       "event_type": "festival",
       "category": "show"
+    },
+    {
+      "mode": "festivals",
+      "name": "Exposição · Caniçal",
+      "date": "2026-11-21",
+      "location": "Caniçal",
+      "url": "https://t.me/festas_madeira/2794",
+      "event_type": "festival",
+      "category": "exhibition"
     },
     {
       "mode": "festivals",
@@ -606,6 +678,17 @@
       "price": "€20",
       "organizer": "Orquestra Clássica da Madeira",
       "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "Oficina “Olhares com Natureza”",
+      "date": "2026-11-21",
+      "location": "Museu Henrique e Francisco Franco",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/oficina-olhares-com-natureza",
+      "event_type": "festival",
+      "time": "11:00",
+      "category": "workshop",
+      "about": "Para famílias e público em geral, com Sandra Carvalho, um convite à descoberta das cores, formas e possibilidades criativas que podemos encontrar nos materiais do nosso dia-a-dia, miúdos e graúdos são desafiados a observar, experimentar e…"
     },
     {
       "mode": "festivals",
@@ -684,6 +767,18 @@
       "price": "€25",
       "organizer": "JOY Family Space & Brunch Cafe",
       "category": "workshop"
+    },
+    {
+      "mode": "festivals",
+      "name": "Noites Musicais 2026",
+      "date": "2026-11-22",
+      "location": "Fórum Machico",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/noites-musicais-2027",
+      "event_type": "festival",
+      "time": "21:00",
+      "price": "Free",
+      "category": "concert",
+      "about": "A Câmara Municipal de Machico promove, no próximo dia 22 de novembro, pelas 21h00, na Sala Multiusos do Fórum Machico, a última sessão do projeto “Noites Musicais 2026”."
     },
     {
       "mode": "festivals",
@@ -936,6 +1031,19 @@
     },
     {
       "mode": "festivals",
+      "name": "Aires na 13.ª Edição do Funchal City Sessions",
+      "date": "2026-11-28",
+      "location": "Galeria Tratuário",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/aires-na-13-a-edicao-do-funchal-city-sessions",
+      "event_type": "festival",
+      "time": "21:30",
+      "price": "€2",
+      "organizer": "APCA - Agência de Promoção da Cultura Atlântica",
+      "category": "concert",
+      "about": "Aires apresenta-se no dia 28 de novembro, na Galeria Tratuário, para a 13.ª edição do Funchal City Sessions."
+    },
+    {
+      "mode": "festivals",
       "name": "Death Cafe Madeira - Field Trip",
       "date": "2026-11-28",
       "location": "Ethnographic Museum of Madeira, Ribeira Brava",
@@ -968,18 +1076,6 @@
       "time": "20:00",
       "price": "Free",
       "organizer": "Capoeira Lounge Bar",
-      "category": "concert"
-    },
-    {
-      "mode": "festivals",
-      "name": "Funchal City Sessions #13 AIRES",
-      "date": "2026-11-28",
-      "location": "Galeria Tratuário, Funchal",
-      "url": "",
-      "event_type": "festival",
-      "time": "21:30",
-      "price": "€2",
-      "organizer": "APCA - Agência de Promoção da Cultura Atlântica",
       "category": "concert"
     },
     {

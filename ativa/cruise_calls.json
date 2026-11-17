@@ -1,8 +1,8 @@
 {
   "note": "Ship calls at the port of Funchal from APRAM. Times are Madeira local time, as the port publishes them. Accumulates; a call no longer listed before its arrival is marked superseded.",
   "source": "https://apram.pt/movimento-navios?port=ptfnc",
-  "fetched": "2026-11-16T14:05:51",
-  "count": 131,
+  "fetched": "2026-11-17T14:59:25",
+  "count": 134,
   "calls": [
     {
       "ship": "SANTA MARIA MANUELA",
@@ -1090,7 +1090,7 @@
       "agent": "JFM Shipping, Lda.",
       "arrival": "2026-11-19T08:00",
       "from": "Barcelona",
-      "departure": "2026-11-19T18:00",
+      "departure": "2026-11-19T17:00",
       "to": "Lanzarote",
       "superseded": false
     },
@@ -1312,6 +1312,36 @@
       "from": "Santa Cruz De La Palma",
       "departure": "2026-12-30T22:00",
       "to": "Santa Cruz De Tenerife",
+      "superseded": false
+    },
+    {
+      "ship": "BALMORAL",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-12-30T14:00",
+      "from": "Santa Cruz De La Palma",
+      "departure": "2026-12-31T23:59",
+      "to": "Lisboa",
+      "superseded": false
+    },
+    {
+      "ship": "MEIN SCHIFF 3",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2026-12-31T07:00",
+      "from": "Lisboa",
+      "departure": "2027-01-01T01:00",
+      "to": "Santa Cruz De Tenerife",
+      "superseded": false
+    },
+    {
+      "ship": "MEIN SCHIFF 7",
+      "berth": "Funchal - Terminal Sul",
+      "agent": "JFM Shipping, Lda.",
+      "arrival": "2027-01-01T01:30",
+      "from": "Santa Cruz De La Palma",
+      "departure": "2027-01-02T14:00",
+      "to": "San Sebastian De La Gomera",
       "superseded": false
     }
   ]

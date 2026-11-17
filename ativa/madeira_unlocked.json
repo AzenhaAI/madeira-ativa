@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-11-17T08:27:58",
-  "count": 612,
+  "fetched": "2026-11-17T21:20:18",
+  "count": 613,
   "items": [
     {
       "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
@@ -7893,6 +7893,21 @@
       "organizer": "Casa da Semente",
       "category": "workshop",
       "source_category": "handicraft-workshops"
+    },
+    {
+      "id": "saint-martin-lantern-festival-2026-11-19",
+      "title": "Saint Martin - Lantern Festival",
+      "url": "https://www.madeira-unlocked.com/en/events/saint-martin-lantern-festival-2026-11-19",
+      "start": "2026-11-19T17:30:00+00:00",
+      "end": "2026-11-19T18:30:00+00:00",
+      "date": "2026-11-19",
+      "time": "17:30",
+      "venue": "Parque de Santa Catarina",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Nina Suza",
+      "category": "family",
+      "source_category": "kids-family"
     },
     {
       "id": "jazz-divas-2026-11-19",
