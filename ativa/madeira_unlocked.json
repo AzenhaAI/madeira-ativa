@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-11-16T07:13:41",
-  "count": 609,
+  "fetched": "2026-11-17T08:27:58",
+  "count": 612,
   "items": [
     {
       "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
@@ -7835,6 +7835,21 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "remote-east-coasters-hangout-musical-jam-session-2026-11-18",
+      "title": "Remote East Coasters Hangout: Musical Jam Session",
+      "url": "https://www.madeira-unlocked.com/en/events/remote-east-coasters-hangout-musical-jam-session-2026-11-18",
+      "start": "2026-11-18T19:30:00+00:00",
+      "end": "2026-11-18T22:00:00+00:00",
+      "date": "2026-11-18",
+      "time": "19:30",
+      "venue": "Tapyshots",
+      "municipality": "Machico",
+      "price": 0,
+      "organizer": "Remote Eastcoaster Community",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "quinteto-de-sopros-atlantida-2026-11-18",
       "title": "Quinteto de Sopros Atlântida",
       "url": "https://www.madeira-unlocked.com/en/events/quinteto-de-sopros-atlantida-2026-11-18",
@@ -7970,6 +7985,21 @@
       "source_category": "dance"
     },
     {
+      "id": "melro-preto-jam-session-comeback-2026-11-20",
+      "title": "Melro Preto Jam Session — Comeback",
+      "url": "https://www.madeira-unlocked.com/en/events/melro-preto-jam-session-comeback-2026-11-20",
+      "start": "2026-11-20T19:00:00+00:00",
+      "end": "2026-11-20T23:00:00+00:00",
+      "date": "2026-11-20",
+      "time": "19:00",
+      "venue": "Museu Café e Petisco",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "ASSOCIAÇÃO DE JAZZ DA MADEIRA - MELRO PRETO",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "fantasy-echoes-of-low-brass-2026-11-20",
       "title": "Fantasy & Echoes of Low Brass",
       "url": "https://www.madeira-unlocked.com/en/events/fantasy-echoes-of-low-brass-2026-11-20",
@@ -8013,6 +8043,21 @@
       "organizer": "Associação de Animação Tramas e Enredos",
       "category": "dance",
       "source_category": "dance"
+    },
+    {
+      "id": "veganique-especial-familias-2026-11-21",
+      "title": "VEGANIQUE Especial Famílias",
+      "url": "https://www.madeira-unlocked.com/en/events/veganique-especial-familias-2026-11-21",
+      "start": "2026-11-21T10:00:00+00:00",
+      "end": "2026-11-21T12:00:00+00:00",
+      "date": "2026-11-21",
+      "time": "10:00",
+      "venue": "Santa Catarina Children's Park and Playground",
+      "municipality": "Funchal",
+      "price": 0,
+      "organizer": "Associação VegMadeira",
+      "category": "family",
+      "source_category": "kids-family"
     },
     {
       "id": "abm-miudos-problemas-de-gato-2026-11-21",

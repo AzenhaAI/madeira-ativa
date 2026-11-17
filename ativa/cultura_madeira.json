@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-11-16T07:13:53",
-  "count": 182,
+  "fetched": "2026-11-17T08:28:12",
+  "count": 185,
   "items": [
     {
       "id": "114",
@@ -1765,6 +1765,26 @@
       "category": "Music"
     },
     {
+      "id": "448",
+      "title": "Espetáculo: \"As Ilhas Desconhecidas\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/espetaculo-as-ilhas-desconhecidas",
+      "start": "2026-11-20",
+      "end": "2026-11-21",
+      "time": "19:00",
+      "place": "Teatro Municipal Baltazar Dias",
+      "category": "Music"
+    },
+    {
+      "id": "447",
+      "title": "Visita Temática e Oficina de Expressão Plástica: \"Se as árvores do nosso Jardim falassem...\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/visita-tematica-e-oficina-de-expressao-plastica-se-as-arvores-do-nosso-jardim-falassem-2",
+      "start": "2026-11-21",
+      "end": "2026-11-21",
+      "time": "10:30",
+      "place": "Museu da Quinta das Cruzes",
+      "category": "Activity"
+    },
+    {
       "id": "384",
       "title": "Concerto de Santa Cecília",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concerto-de-santa-cecilia",
@@ -1802,6 +1822,16 @@
       "end": "2026-12-13",
       "time": "18:00",
       "place": "Auditório do Centro de Congressos da Madeira",
+      "category": "Music"
+    },
+    {
+      "id": "445",
+      "title": "Musical \"Já é meia-noite?\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/musical-ja-e-meia-noite",
+      "start": "2026-12-17",
+      "end": "2026-12-20",
+      "time": "19:00",
+      "place": "Teatro Municipal Baltazar Dias",
       "category": "Music"
     },
     {
