@@ -201,6 +201,9 @@
       if (part === 'morning' && d0) parts.push(t('sunrise', 'nascer do sol') + ' ' + hm(d0.sunrise[0]));
       if (part === 'evening' && d0) parts.push(t('sunset', 'pôr do sol') + ' ' + hm(d0.sunset[0]));
       if (open && part !== 'evening') parts.push(MA.n(open, 'levadas open', 'levadas abertas'));
+      // Something that changes every day, so a return visit shows news (SEO session goal, 17.11.2026).
+      var evToday = (((data.ev && data.ev.events) || []).filter(function (e) { return e.date === today; })).length;
+      if (evToday) parts.push(MA.n(evToday, 'events today', 'eventos hoje'));
       el.innerHTML = '<img src="/ativa/hero/' + photo + '.jpg" alt="Madeira" loading="eager"><div class="ov"><b>' + greet + '</b><small>' + esc(parts.join(' · ')) + '</small></div>';
       el.hidden = false;
     }

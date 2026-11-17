@@ -339,3 +339,7 @@ html[lang="ru"] [data-lang="en"]:has(+ [data-lang="pt"] + [data-lang="ru"]),html
 .bn-legs{list-style:none;margin:8px 0;padding:0;display:grid;gap:6px;font-variant-numeric:tabular-nums}
 .bn-legs li{min-width:0}
 .bn-legs .bn-walk{color:var(--soft);font-size:var(--fs-s)}
+
+/* Install the site, where the browser offers it (track.js unhides the button). */
+.pwa-row{margin:0 0 var(--s3)}
+.pwa-btn{font:600 var(--fs-s)/1 Inter,system-ui,sans-serif;color:var(--green-ink);background:none;border:1px solid var(--line);border-radius:999px;padding:8px 14px;cursor:pointer}
