@@ -106,15 +106,22 @@
 </style>
 <script>(function(){var t=null;try{t=localStorage.getItem("ma-theme")}catch(e){}document.documentElement.classList.add(t==="dark"?"dark":"light");})();</script>
 <script>(function(){var l=null;try{l=localStorage.getItem("lang")}catch(e){}var q=new URLSearchParams(location.search);if(q.get("lang")==="en"||q.has("app"))return;var to={"pt":"/ativa/pt/trail/pr-15-vereda-da-ribeira-da-janela","de":"/ativa/de/trail/pr-15-vereda-da-ribeira-da-janela","ru":"/ativa/ru/trail/pr-15-vereda-da-ribeira-da-janela"};if(l==="pt"||l==="de"||l==="ru")location.replace(to[l]+location.search+location.hash);})();</script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M2PTQLF903"></script>
   <script>
+    // Visit counters only outside the app: the app opens our pages with ?app=1
+    // (privacy policy, "The website"); the flag is kept for the visit, so a
+    // link followed inside the app stays uncounted too.
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-M2PTQLF903', { content_group: 'ativa' });
-  </script>
-  <script>
-    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","xr4rlyhxyo");
+    (function () {
+      var inApp = new URLSearchParams(location.search).has('app');
+      try { if (inApp) sessionStorage.setItem('inApp', '1'); else inApp = sessionStorage.getItem('inApp') === '1'; } catch (e) {}
+      if (inApp) return;
+      var s = document.createElement('script'); s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-M2PTQLF903'; document.head.appendChild(s);
+      gtag('js', new Date());
+      gtag('config', 'G-M2PTQLF903', { content_group: 'ativa' });
+      (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","xr4rlyhxyo");
+    })();
   </script>
 </head>
 <body>

@@ -780,12 +780,20 @@ fetch('/ativa/levadas.json')
 })();
 </script>
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M2PTQLF903"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-M2PTQLF903', { content_group: 'ativa' });
-  </script>
+<script>
+// Google Analytics only outside the app: the app opens our pages with ?app=1
+// (privacy policy, "The website"); the flag is kept for the visit so a link
+// followed inside the app stays uncounted too.
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function () {
+  var inApp = new URLSearchParams(location.search).has('app');
+  try { if (inApp) sessionStorage.setItem('inApp', '1'); else inApp = sessionStorage.getItem('inApp') === '1'; } catch (e) {}
+  if (inApp) return;
+  var s = document.createElement('script'); s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-M2PTQLF903'; document.head.appendChild(s);
+  gtag('js', new Date()); gtag('config', 'G-M2PTQLF903', { content_group: 'ativa' });
+})();
+</script>
 </body>
 </html>
