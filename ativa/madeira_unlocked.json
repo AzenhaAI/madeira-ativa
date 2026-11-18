@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-11-17T21:20:18",
-  "count": 613,
+  "fetched": "2026-11-18T07:55:34",
+  "count": 616,
   "items": [
     {
       "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
@@ -7940,6 +7940,21 @@
       "source_category": "theater"
     },
     {
+      "id": "inauguracao-oficial-macpadel-2026-11-20",
+      "title": "Inauguração Oficial MACPADEL",
+      "url": "https://www.madeira-unlocked.com/en/events/inauguracao-oficial-macpadel-2026-11-20",
+      "start": "2026-11-20T15:00:00+00:00",
+      "end": "2026-11-20T17:00:00+00:00",
+      "date": "2026-11-20",
+      "time": "15:00",
+      "venue": "Lobos Park - Parque Desportivo de Câmara de Lobos",
+      "municipality": "Câmara de Lobos",
+      "price": 0,
+      "organizer": "MACPADEL",
+      "category": "sport",
+      "source_category": "sport-fitness"
+    },
+    {
       "id": "tony-bennett-tribute-2026-11-20",
       "title": "Tony Bennett Tribute",
       "url": "https://www.madeira-unlocked.com/en/events/tony-bennett-tribute-2026-11-20",
@@ -8150,6 +8165,21 @@
       "source_category": "music-concerts"
     },
     {
+      "id": "string-trio-concert-riverdance-danny-boy-secret-garden-2026-11-21",
+      "title": "String Trio Concert: Riverdance, Danny Boy & Secret Garden",
+      "url": "https://www.madeira-unlocked.com/en/events/string-trio-concert-riverdance-danny-boy-secret-garden-2026-11-21",
+      "start": "2026-11-21T18:00:00+00:00",
+      "end": "2026-11-21T19:00:00+00:00",
+      "date": "2026-11-21",
+      "time": "18:00",
+      "venue": "Holy Trinity Church",
+      "municipality": "Funchal",
+      "price": 20,
+      "organizer": "Madeira Concerts",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
       "id": "nem-mais-1-minuto-de-silencio-2026-11-21",
       "title": "Nem Mais 1 Minuto de Silêncio",
       "url": "https://www.madeira-unlocked.com/en/events/nem-mais-1-minuto-de-silencio-2026-11-21",
@@ -8236,6 +8266,21 @@
       "municipality": "Funchal",
       "price": 0,
       "organizer": "Associação Cultural do Socorro",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "noites-musicais-quarteto-pedro-marques-2026-11-22",
+      "title": "Noites Musicais: Quarteto Pedro Marques",
+      "url": "https://www.madeira-unlocked.com/en/events/noites-musicais-quarteto-pedro-marques-2026-11-22",
+      "start": "2026-11-22T21:00:00+00:00",
+      "end": "2026-11-22T22:30:00+00:00",
+      "date": "2026-11-22",
+      "time": "21:00",
+      "venue": "Auditorium Forum",
+      "municipality": "Machico",
+      "price": 0,
+      "organizer": "Câmara Municipal de Machico",
       "category": "concert",
       "source_category": "music-concerts"
     },

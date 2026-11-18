@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-17",
+  "generated_at": "2026-11-18",
   "events": [
     {
       "mode": "festivals",
       "name": "\"31 de Fevereiro com a Ribeira Seca - II\"",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "location": "Casa da Cultura de Santa Cruz",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/31-de-fevereiro-com-a-ribeira-seca-ii",
       "event_type": "festival",
@@ -15,7 +15,7 @@
     {
       "mode": "festivals",
       "name": "\"40 Anos | 40 Fotografias\"",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "location": "Direção Regional dos Arquivos, das Bibliotecas e do Livro",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/40-anos-40-fotografias",
       "event_type": "festival",
@@ -26,7 +26,7 @@
     {
       "mode": "festivals",
       "name": "\"Dear Lourdes,\"",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "location": "Galeria Tratuário",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/dear-lourdes",
       "event_type": "festival",
@@ -37,7 +37,7 @@
     {
       "mode": "festivals",
       "name": "\"Imagens e Memórias do Porto Santo\"",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "location": "Câmara Municipal do Porto Santo",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/imagens-e-memorias-do-porto-santo",
       "event_type": "festival",
@@ -49,7 +49,7 @@
     {
       "mode": "festivals",
       "name": "\"O Caminho nas Águas. Depois da Última Ceia\"",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "location": "Núcleo Histórico de Santo Amaro - Torre do Capitão",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/o-caminho-nas-aguas-depois-da-ultima-ceia",
       "event_type": "festival",
@@ -60,7 +60,7 @@
     {
       "mode": "festivals",
       "name": "\"Outra Vez Alice Que Chatice\"",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "location": "Cine Teatro de Santo António",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/teatro/outra-vez-alice-que-chatice",
       "event_type": "festival",
@@ -71,7 +71,7 @@
     {
       "mode": "festivals",
       "name": "\"Profundo: Light, Layer, & Form\"",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "location": "Galeria Restock",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/profundo-light-layer-form",
       "event_type": "festival",
@@ -82,212 +82,14 @@
     {
       "mode": "festivals",
       "name": "Alice Again? How Annoying!",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "location": "Cine Teatro de Santo António, Funchal",
       "url": "",
       "event_type": "festival",
-      "time": "15:15",
+      "time": "09:30",
       "price": "€5",
       "organizer": "ATEF – Associação Teatro Experimental do Funchal",
       "category": "theatre"
-    },
-    {
-      "mode": "festivals",
-      "name": "Ciclo Uma tradução de ações em peças, curadoria de Miguel Angelo Martins",
-      "date": "2026-11-17",
-      "location": "Santa Maria Maior",
-      "url": "https://t.me/festas_madeira/2792",
-      "event_type": "festival",
-      "category": "exhibition"
-    },
-    {
-      "mode": "festivals",
-      "name": "Ciclo de Concertos – Escola das Artes da Madeira",
-      "date": "2026-11-17",
-      "location": "Salão Nobre do Conservatório - Escola Profissional das Artes da Madeira, Funchal",
-      "url": "https://eventsmadeira.com/evento/ciclo-de-concertos-escola-das-artes-da-madeira/",
-      "event_type": "festival",
-      "category": "concert",
-      "date_end": "2026-12-18",
-      "about": "O Conservatório – Escola das Artes da Madeira, Eng.º Luiz Peter Clode, retoma o Ciclo de Concertos para o ano letivo 2026/2027. Este ciclo conta com uma série de atuações protagonizadas pelos alunos dos Cursos Profissionais de…"
-    },
-    {
-      "mode": "festivals",
-      "name": "Ciclo de Recitais dos alunos do Conservatório",
-      "date": "2026-11-17",
-      "location": "Conservatório - Escola Profissional das Artes da Madeira Eng. Luiz Peter Clode",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/ciclo-de-recitais-dos-alunos-do-conservatorio",
-      "event_type": "festival",
-      "price": "Free",
-      "category": "concert",
-      "date_end": "2026-12-18",
-      "about": "Dias 13, 20 e 27 de novembro e 4 e 18 de dezembro | 20h30. Entrada livre, limitada à lotação da sala."
-    },
-    {
-      "mode": "festivals",
-      "name": "Coletiva na Galeria ESPAÇOMAR",
-      "date": "2026-11-17",
-      "location": "Galeria Espaçomar - Escola Básica Secundária Gonçalves Zarco (EBSGZ)",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/pequenos-rumores-na-casa-dos-passaros",
-      "event_type": "festival",
-      "category": "exhibition",
-      "date_end": "2027-02-12",
-      "about": "A Galeria espaçomar, reabre as suas portas com a inauguração da exposição \"Pequenos.Rumores.Na.Casa.Dos.Pássaros\". Uma mostra que reúne cerca de 54 obras de mais de 20 artistas, com direção artística de Paulo Sérgio BEJu."
-    },
-    {
-      "mode": "festivals",
-      "name": "Concerto “Fala-me de Música” – Duo Bandonica",
-      "date": "2026-11-17",
-      "location": "Madeira",
-      "url": "https://eventsmadeira.com/evento/concerto-fala-me-de-musica-duo-bandonica/",
-      "event_type": "festival",
-      "price": "Free",
-      "category": "concert",
-      "date_end": "2026-12-05",
-      "about": "A ABM Madeira promove o concerto “Fala-me de Música” – Duo Bandonica, no âmbito da temporada 2026, integrando um conjunto de apresentações em diversos municípios da Região Autónoma da Madeira. O projeto reúne a bandolinista Francisca Abreu…"
-    },
-    {
-      "mode": "festivals",
-      "name": "Concertos Novembro | Orquestra Clássica da Madeira",
-      "date": "2026-11-17",
-      "location": "Madeira",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concertos-novembro-orquestra-classica-da-madeira",
-      "event_type": "festival",
-      "category": "concert",
-      "date_end": "2026-11-21",
-      "about": "Calendarização: Dia 7 de novembro | 18h00. Auditório do Centro de Congressos da Madeira. Maestro: Misha Katz. Solista: Dmitry Demyashkin. Dia 14 de novembro | 18h00. Capela da Fundação Princesa Dona Maria Amélia."
-    },
-    {
-      "mode": "festivals",
-      "name": "Concertos Semanais da Orquestra de Bandolins",
-      "date": "2026-11-17",
-      "location": "Assembleia Legislativa Regional - Igreja Inglesa, Funchal",
-      "url": "https://eventsmadeira.com/evento/concertos-semanais-da-orquestra-de-bandolins/",
-      "event_type": "festival",
-      "category": "concert",
-      "date_end": "2026-11-25",
-      "about": "Reconhecida como a Orquestra de Bandolins mais antiga e mais jovem da Europa, uma distinção de relevância numa região de excelência no seio da comunidade europeia, a Orquestra de Bandolins da Madeira® apresenta-se na Temporada Artística…"
-    },
-    {
-      "mode": "festivals",
-      "name": "Danças Históricas no Solar de São Cristóvão",
-      "date": "2026-11-17",
-      "location": "Solar de São Cristóvão",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/dancas-historicas-no-solar-de-sao-cristovao-2",
-      "event_type": "festival",
-      "time": "11:30",
-      "price": "Free",
-      "organizer": "Associação Cultural, Recreativa e Artística, Baile Histórico",
-      "category": "concert",
-      "about": "O Solar de São Cristóvão, em Machico, será palco de uma apresentação de danças históricas de outros tempos, no próximo dia 17 de novembro (terça-feira), pelas 11h30."
-    },
-    {
-      "mode": "festivals",
-      "name": "Exposição Waterline",
-      "date": "2026-11-17",
-      "location": "Museu de História Natural, Funchal",
-      "url": "https://eventsmadeira.com/evento/exposicao-waterline/",
-      "event_type": "festival",
-      "category": "exhibition",
-      "date_end": "2028-06-20",
-      "about": "O Museu de História Natural do Funchal acolhe a exposição subordinada ao tema “Waterline” da autoria de Gonçalo Gomes, numa mostra que apresenta imagens inéditas e exclusivas da biodiversidade marinha do arquipélago da Madeira.Esta…"
-    },
-    {
-      "mode": "festivals",
-      "name": "Exposição itinerante \"INTRA - Olhar para Nós\"",
-      "date": "2026-11-17",
-      "location": "Galeria Pimenta 22",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/exposicao-itinerante-da-intra-olhar-para-nos",
-      "event_type": "festival",
-      "category": "exhibition",
-      "date_end": "2026-11-30",
-      "about": "Esta edição conta com a participação de 26 artistas de diversos países, como Portugal, Alemanha, França, Itália, Ucrânia, Romênia, Espanha, Venezuela, Japão e Argentina."
-    },
-    {
-      "mode": "festivals",
-      "name": "Exposição “Rituais de Passagem: A MORTE”",
-      "date": "2026-11-17",
-      "location": "Museu Etnográfico da Madeira",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/rituais-de-passagem-a-morte",
-      "event_type": "festival",
-      "category": "exhibition",
-      "date_end": "2026-12-05",
-      "about": "Os ritos de passagem marcam fases biológicas e sociais do indivíduo em sociedade, sendo os três momentos principais o nascimento, o casamento e a morte."
-    },
-    {
-      "mode": "festivals",
-      "name": "MUDAR A ESCOLA PARA MUDAR O MUNDO",
-      "date": "2026-11-17",
-      "location": "Porto Santo",
-      "url": "https://t.me/festas_madeira/2765",
-      "event_type": "festival",
-      "category": "exhibition"
-    },
-    {
-      "mode": "festivals",
-      "name": "Oficinas de Desenho Out. 2026 - Jun. 2027",
-      "date": "2026-11-17",
-      "location": "PORTA33",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/oficinas-de-desenho",
-      "event_type": "festival",
-      "category": "workshop",
-      "date_end": "2027-06-30",
-      "about": "Prática do desenho como atividade de mapeamento das relações perceptivas com o mundo e com o próprio universo do pensamento."
-    },
-    {
-      "mode": "festivals",
-      "name": "Programa InfantoJuvenil Out · Nov · Dez 2026",
-      "date": "2026-11-17",
-      "location": "Direção Regional dos Arquivos, das Bibliotecas e do Livro",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/programa-infantojuvenil-out-nov-dez-2026",
-      "event_type": "festival",
-      "category": "family",
-      "date_end": "2026-12-19",
-      "about": "De outubro a dezembro, há muitas histórias para descobrir, momentos para partilhar e atividades para viver em família. O programa inclui: ABM Bebés. ABM Miúdos. BORA LER. Sessões de Histórias em Inglês. Festa de Natal."
-    },
-    {
-      "mode": "festivals",
-      "name": "Visitas Dançadas \"em forma de gesto\" com Natércia Kuprian",
-      "date": "2026-11-17",
-      "location": "Madeira",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/visitas-dancadas-em-forma-de-gesto-com-natercia-kuprian",
-      "event_type": "festival",
-      "category": "culture",
-      "date_end": "2026-11-28",
-      "about": "Os elementos visuais são o mote para a experimentação do movimento dançado. Vivenciar as obras da exposição a partir da expressão do corpo. VISITA DANÇADA - 14 NOV // GALERIA DOS PRAZERES - Calheta Sessão às 9h30 - Público em geral."
-    },
-    {
-      "mode": "festivals",
-      "name": "“Blessed Ground”",
-      "date": "2026-11-17",
-      "location": "Museu de Fotografia da Madeira - Atelier Vicente's",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/blessed-ground",
-      "event_type": "festival",
-      "category": "exhibition",
-      "date_end": "2027-01-30",
-      "about": "O Museu de Fotografia da Madeira – Atelier Vicente’s, inaugura dia 8 de outubro, quinta-feira, pelas 17h00, a exposição “Blessed Ground”, do fotógrafo documental e fotojornalista Ricardo Lopes."
-    },
-    {
-      "mode": "festivals",
-      "name": "“Che Cosa Sono le Nuvole?” de Nuno Henrique",
-      "date": "2026-11-17",
-      "location": "Núcleo Histórico de Santo Amaro - Torre do Capitão",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/che-cosa-sono-le-nuvole",
-      "event_type": "festival",
-      "category": "exhibition",
-      "date_end": "2027-02-28",
-      "about": "No dia 5 de novembro, a Torre do Capitão - Núcleo Histórico e Museológico de Santo Amaro, acolhe a abertura da exposição itinerante “Che Cosa Sono le Nuvole?”, do artista plástico madeirense Nuno Henrique Este projeto integra o ciclo…"
-    },
-    {
-      "mode": "festivals",
-      "name": "“Nostalgic Madeira Music”",
-      "date": "2026-11-17",
-      "location": "Instituto do Vinho da Madeira",
-      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/nostalgic-madeira-music",
-      "event_type": "festival",
-      "category": "concert",
-      "date_end": "2026-12-18",
-      "about": "Evento inédito e verdadeiramente singular, a realizar-se todas as quintas-feiras no Instituto do Vinho, do Bordado e do Artesanato da Madeira."
     },
     {
       "mode": "festivals",
@@ -315,6 +117,83 @@
     },
     {
       "mode": "festivals",
+      "name": "Ciclo Uma tradução de ações em peças, curadoria de Miguel Angelo Martins",
+      "date": "2026-11-18",
+      "location": "Santa Maria Maior",
+      "url": "https://t.me/festas_madeira/2792",
+      "event_type": "festival",
+      "category": "exhibition"
+    },
+    {
+      "mode": "festivals",
+      "name": "Ciclo de Concertos – Escola das Artes da Madeira",
+      "date": "2026-11-18",
+      "location": "Salão Nobre do Conservatório - Escola Profissional das Artes da Madeira, Funchal",
+      "url": "https://eventsmadeira.com/evento/ciclo-de-concertos-escola-das-artes-da-madeira/",
+      "event_type": "festival",
+      "category": "concert",
+      "date_end": "2026-12-18",
+      "about": "O Conservatório – Escola das Artes da Madeira, Eng.º Luiz Peter Clode, retoma o Ciclo de Concertos para o ano letivo 2026/2027. Este ciclo conta com uma série de atuações protagonizadas pelos alunos dos Cursos Profissionais de…"
+    },
+    {
+      "mode": "festivals",
+      "name": "Ciclo de Recitais dos alunos do Conservatório",
+      "date": "2026-11-18",
+      "location": "Conservatório - Escola Profissional das Artes da Madeira Eng. Luiz Peter Clode",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/ciclo-de-recitais-dos-alunos-do-conservatorio",
+      "event_type": "festival",
+      "price": "Free",
+      "category": "concert",
+      "date_end": "2026-12-18",
+      "about": "Dias 13, 20 e 27 de novembro e 4 e 18 de dezembro | 20h30. Entrada livre, limitada à lotação da sala."
+    },
+    {
+      "mode": "festivals",
+      "name": "Coletiva na Galeria ESPAÇOMAR",
+      "date": "2026-11-18",
+      "location": "Galeria Espaçomar - Escola Básica Secundária Gonçalves Zarco (EBSGZ)",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/pequenos-rumores-na-casa-dos-passaros",
+      "event_type": "festival",
+      "category": "exhibition",
+      "date_end": "2027-02-12",
+      "about": "A Galeria espaçomar, reabre as suas portas com a inauguração da exposição \"Pequenos.Rumores.Na.Casa.Dos.Pássaros\". Uma mostra que reúne cerca de 54 obras de mais de 20 artistas, com direção artística de Paulo Sérgio BEJu."
+    },
+    {
+      "mode": "festivals",
+      "name": "Concerto “Fala-me de Música” – Duo Bandonica",
+      "date": "2026-11-18",
+      "location": "Madeira",
+      "url": "https://eventsmadeira.com/evento/concerto-fala-me-de-musica-duo-bandonica/",
+      "event_type": "festival",
+      "price": "Free",
+      "category": "concert",
+      "date_end": "2026-12-05",
+      "about": "A ABM Madeira promove o concerto “Fala-me de Música” – Duo Bandonica, no âmbito da temporada 2026, integrando um conjunto de apresentações em diversos municípios da Região Autónoma da Madeira. O projeto reúne a bandolinista Francisca Abreu…"
+    },
+    {
+      "mode": "festivals",
+      "name": "Concertos Novembro | Orquestra Clássica da Madeira",
+      "date": "2026-11-18",
+      "location": "Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concertos-novembro-orquestra-classica-da-madeira",
+      "event_type": "festival",
+      "category": "concert",
+      "date_end": "2026-11-21",
+      "about": "Calendarização: Dia 7 de novembro | 18h00. Auditório do Centro de Congressos da Madeira. Maestro: Misha Katz. Solista: Dmitry Demyashkin. Dia 14 de novembro | 18h00. Capela da Fundação Princesa Dona Maria Amélia."
+    },
+    {
+      "mode": "festivals",
+      "name": "Concertos Semanais da Orquestra de Bandolins",
+      "date": "2026-11-18",
+      "location": "Assembleia Legislativa Regional - Igreja Inglesa, Funchal",
+      "url": "https://eventsmadeira.com/evento/concertos-semanais-da-orquestra-de-bandolins/",
+      "event_type": "festival",
+      "category": "concert",
+      "date_end": "2026-11-25",
+      "about": "Reconhecida como a Orquestra de Bandolins mais antiga e mais jovem da Europa, uma distinção de relevância numa região de excelência no seio da comunidade europeia, a Orquestra de Bandolins da Madeira® apresenta-se na Temporada Artística…"
+    },
+    {
+      "mode": "festivals",
       "name": "Conferência “MADEIRA 73 – Uma Canção no Cinema”",
       "date": "2026-11-18",
       "location": "Museu da Quinta das Cruzes",
@@ -324,6 +203,39 @@
       "price": "Free",
       "category": "talk",
       "about": "Apresentada por Vítor Sardinha. A Madeira foi ao longo do séc. XX cenário para muitos filmes."
+    },
+    {
+      "mode": "festivals",
+      "name": "Exposição Waterline",
+      "date": "2026-11-18",
+      "location": "Museu de História Natural, Funchal",
+      "url": "https://eventsmadeira.com/evento/exposicao-waterline/",
+      "event_type": "festival",
+      "category": "exhibition",
+      "date_end": "2028-06-20",
+      "about": "O Museu de História Natural do Funchal acolhe a exposição subordinada ao tema “Waterline” da autoria de Gonçalo Gomes, numa mostra que apresenta imagens inéditas e exclusivas da biodiversidade marinha do arquipélago da Madeira.Esta…"
+    },
+    {
+      "mode": "festivals",
+      "name": "Exposição itinerante \"INTRA - Olhar para Nós\"",
+      "date": "2026-11-18",
+      "location": "Galeria Pimenta 22",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/exposicao-itinerante-da-intra-olhar-para-nos",
+      "event_type": "festival",
+      "category": "exhibition",
+      "date_end": "2026-11-30",
+      "about": "Esta edição conta com a participação de 26 artistas de diversos países, como Portugal, Alemanha, França, Itália, Ucrânia, Romênia, Espanha, Venezuela, Japão e Argentina."
+    },
+    {
+      "mode": "festivals",
+      "name": "Exposição “Rituais de Passagem: A MORTE”",
+      "date": "2026-11-18",
+      "location": "Museu Etnográfico da Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/rituais-de-passagem-a-morte",
+      "event_type": "festival",
+      "category": "exhibition",
+      "date_end": "2026-12-05",
+      "about": "Os ritos de passagem marcam fases biológicas e sociais do indivíduo em sociedade, sendo os três momentos principais o nascimento, o casamento e a morte."
     },
     {
       "mode": "festivals",
@@ -339,6 +251,15 @@
     },
     {
       "mode": "festivals",
+      "name": "MUDAR A ESCOLA PARA MUDAR O MUNDO",
+      "date": "2026-11-18",
+      "location": "Porto Santo",
+      "url": "https://t.me/festas_madeira/2765",
+      "event_type": "festival",
+      "category": "exhibition"
+    },
+    {
+      "mode": "festivals",
       "name": "OCM Música de Câmara | Quinteto de sopros Atlântida",
       "date": "2026-11-18",
       "location": "Savoy Palace",
@@ -348,6 +269,28 @@
       "price": "€20",
       "organizer": "Orquestra Clássica da Madeira",
       "category": "concert"
+    },
+    {
+      "mode": "festivals",
+      "name": "Oficinas de Desenho Out. 2026 - Jun. 2027",
+      "date": "2026-11-18",
+      "location": "PORTA33",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/oficinas-de-desenho",
+      "event_type": "festival",
+      "category": "workshop",
+      "date_end": "2027-06-30",
+      "about": "Prática do desenho como atividade de mapeamento das relações perceptivas com o mundo e com o próprio universo do pensamento."
+    },
+    {
+      "mode": "festivals",
+      "name": "Programa InfantoJuvenil Out · Nov · Dez 2026",
+      "date": "2026-11-18",
+      "location": "Direção Regional dos Arquivos, das Bibliotecas e do Livro",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/programa-infantojuvenil-out-nov-dez-2026",
+      "event_type": "festival",
+      "category": "family",
+      "date_end": "2026-12-19",
+      "about": "De outubro a dezembro, há muitas histórias para descobrir, momentos para partilhar e atividades para viver em família. O programa inclui: ABM Bebés. ABM Miúdos. BORA LER. Sessões de Histórias em Inglês. Festa de Natal."
     },
     {
       "mode": "festivals",
@@ -375,15 +318,47 @@
     },
     {
       "mode": "festivals",
-      "name": "Alice Again? How Annoying!",
-      "date": "2026-11-19",
-      "location": "Cine Teatro de Santo António, Funchal",
-      "url": "",
+      "name": "Visitas Dançadas \"em forma de gesto\" com Natércia Kuprian",
+      "date": "2026-11-18",
+      "location": "Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/outros-eventos/visitas-dancadas-em-forma-de-gesto-com-natercia-kuprian",
       "event_type": "festival",
-      "time": "15:15",
-      "price": "€5",
-      "organizer": "ATEF – Associação Teatro Experimental do Funchal",
-      "category": "theatre"
+      "category": "culture",
+      "date_end": "2026-11-28",
+      "about": "Os elementos visuais são o mote para a experimentação do movimento dançado. Vivenciar as obras da exposição a partir da expressão do corpo. VISITA DANÇADA - 14 NOV // GALERIA DOS PRAZERES - Calheta Sessão às 9h30 - Público em geral."
+    },
+    {
+      "mode": "festivals",
+      "name": "“Blessed Ground”",
+      "date": "2026-11-18",
+      "location": "Museu de Fotografia da Madeira - Atelier Vicente's",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/blessed-ground",
+      "event_type": "festival",
+      "category": "exhibition",
+      "date_end": "2027-01-30",
+      "about": "O Museu de Fotografia da Madeira – Atelier Vicente’s, inaugura dia 8 de outubro, quinta-feira, pelas 17h00, a exposição “Blessed Ground”, do fotógrafo documental e fotojornalista Ricardo Lopes."
+    },
+    {
+      "mode": "festivals",
+      "name": "“Che Cosa Sono le Nuvole?” de Nuno Henrique",
+      "date": "2026-11-18",
+      "location": "Núcleo Histórico de Santo Amaro - Torre do Capitão",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/che-cosa-sono-le-nuvole",
+      "event_type": "festival",
+      "category": "exhibition",
+      "date_end": "2027-02-28",
+      "about": "No dia 5 de novembro, a Torre do Capitão - Núcleo Histórico e Museológico de Santo Amaro, acolhe a abertura da exposição itinerante “Che Cosa Sono le Nuvole?”, do artista plástico madeirense Nuno Henrique Este projeto integra o ciclo…"
+    },
+    {
+      "mode": "festivals",
+      "name": "“Nostalgic Madeira Music”",
+      "date": "2026-11-18",
+      "location": "Instituto do Vinho da Madeira",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/nostalgic-madeira-music",
+      "event_type": "festival",
+      "category": "concert",
+      "date_end": "2026-12-18",
+      "about": "Evento inédito e verdadeiramente singular, a realizar-se todas as quintas-feiras no Instituto do Vinho, do Bordado e do Artesanato da Madeira."
     },
     {
       "mode": "festivals",
@@ -441,6 +416,18 @@
       "price": "Free",
       "organizer": "Nina Suza",
       "category": "family"
+    },
+    {
+      "mode": "festivals",
+      "name": "Alice Again? How Annoying!",
+      "date": "2026-11-20",
+      "location": "Cine Teatro de Santo António, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "09:30",
+      "price": "€5",
+      "organizer": "ATEF – Associação Teatro Experimental do Funchal",
+      "category": "theatre"
     },
     {
       "mode": "festivals",
@@ -581,6 +568,18 @@
       "event_type": "swimming_kids"
     },
     {
+      "mode": "other",
+      "name": "Inauguração Oficial MACPADEL",
+      "date": "2026-11-20",
+      "location": "Lobos Park - Parque Desportivo de Câmara de Lobos",
+      "url": "",
+      "event_type": "",
+      "time": "15:00",
+      "price": "Free",
+      "organizer": "MACPADEL",
+      "category": "sport"
+    },
+    {
       "mode": "festivals",
       "name": "ABM Miúdos, Problemas de Gato",
       "date": "2026-11-21",
@@ -704,6 +703,18 @@
     },
     {
       "mode": "festivals",
+      "name": "String Trio Concert: Riverdance, Danny Boy & Secret Garden",
+      "date": "2026-11-21",
+      "location": "Holy Trinity Church, Funchal",
+      "url": "",
+      "event_type": "festival",
+      "time": "18:00",
+      "price": "€20",
+      "organizer": "Madeira Concerts",
+      "category": "concert"
+    },
+    {
+      "mode": "festivals",
       "name": "VEGANIQUE Especial Famílias",
       "date": "2026-11-21",
       "location": "Santa Catarina Children's Park and Playground, Funchal",
@@ -770,13 +781,14 @@
     },
     {
       "mode": "festivals",
-      "name": "Noites Musicais 2026",
+      "name": "Noites Musicais: Quarteto Pedro Marques",
       "date": "2026-11-22",
-      "location": "Fórum Machico",
+      "location": "Auditorium Forum, Machico",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/noites-musicais-2027",
       "event_type": "festival",
       "time": "21:00",
       "price": "Free",
+      "organizer": "Câmara Municipal de Machico",
       "category": "concert",
       "about": "A Câmara Municipal de Machico promove, no próximo dia 22 de novembro, pelas 21h00, na Sala Multiusos do Fórum Machico, a última sessão do projeto “Noites Musicais 2026”."
     },
