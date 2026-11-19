@@ -1,8 +1,8 @@
 {
   "note": "Cultural agenda of the Regional Directorate for Culture. Accumulates: the site lists only what is current. Dates carry no year on the page and are derived from the printed weekday, which identifies the year uniquely.",
   "source": "https://cultura.madeira.gov.pt/index.php/agenda-cultural",
-  "fetched": "2026-11-18T07:55:46",
-  "count": 190,
+  "fetched": "2026-11-19T07:55:39",
+  "count": 193,
   "items": [
     {
       "id": "114",
@@ -1785,6 +1785,16 @@
       "category": "Music"
     },
     {
+      "id": "458",
+      "title": "Espetáculo \"Menu de Degustação\"",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/espetaculo-menu-de-degustacao",
+      "start": "2026-11-20",
+      "end": "2026-11-20",
+      "time": "19:00",
+      "place": "Fórum Machico",
+      "category": "Music"
+    },
+    {
       "id": "447",
       "title": "Visita Temática e Oficina de Expressão Plástica: \"Se as árvores do nosso Jardim falassem...\"",
       "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/visita-tematica-e-oficina-de-expressao-plastica-se-as-arvores-do-nosso-jardim-falassem-2",
@@ -1813,6 +1823,26 @@
       "time": "18:00",
       "place": "Centro Cultural e de Congressos do Porto Santo",
       "category": "Other"
+    },
+    {
+      "id": "459",
+      "title": "Atelier de Expressão Plástica “II Embossing: entre água e relevo”",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/atelier-de-expressao-plastica-ii-embossing-entre-agua-e-relevo",
+      "start": "2026-11-21",
+      "end": "2026-11-21",
+      "time": "10:00",
+      "place": "MUDAS.Museu de Arte Contemporânea da Madeira",
+      "category": "Activity"
+    },
+    {
+      "id": "457",
+      "title": "A Orquestra Clássica da Madeira apresenta concerto de Música de Câmara com o Legno Duo",
+      "url": "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/a-orquestra-classica-da-madeira-apresenta-concerto-de-musica-de-camara-com-o-legno-duo",
+      "start": "2026-11-21",
+      "end": "2026-11-21",
+      "time": "18:00",
+      "place": "Assembleia Legislativa da Região Autónoma da Madeira",
+      "category": "Music"
     },
     {
       "id": "384",

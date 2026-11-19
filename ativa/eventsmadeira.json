@@ -1,8 +1,8 @@
 {
  "note": "eventsmadeira.com events with dates read off each page, from scripts/fetch_eventsmadeira.py. Past editions accumulate.",
  "source": "https://eventsmadeira.com/wp-json/wp/v2/event",
- "fetched": "2026-11-18T07:56:30+00:00",
- "count": 229,
+ "fetched": "2026-11-19T07:56:23+00:00",
+ "count": 231,
  "items": [
   {
    "id": 2732,
@@ -4104,6 +4104,30 @@
    "fetched": "2026-11-15"
   },
   {
+   "id": 30425,
+   "lang": "pt",
+   "title": "Espetáculo – As Ilhas Desconhecidas",
+   "title_en": "Show – The Unknown Islands",
+   "url": "https://eventsmadeira.com/evento/espetaculo-as-ilhas-desconhecidas/",
+   "url_en": "https://eventsmadeira.com/en/event/show-the-unknown-islands/",
+   "start": "2026-11-20",
+   "start_time": "19:00",
+   "end": "2026-11-21",
+   "end_time": "21:00",
+   "venue": "Teatro Municipal Baltazar Dias",
+   "municipalities": [
+    "Funchal"
+   ],
+   "categories": [
+    "musica",
+    "teatro"
+   ],
+   "about": "Nos dias 20 e 21 de novembro, o Teatro Municipal Baltazar Dias recebe o espetáculo «As Ilhas Desconhecidas», uma criação teatral inspirada na obra de Raul Brandão, com encenação e versão teatral de Sara Gonçalves e música original de Mário.",
+   "free": false,
+   "modified": "2026-11-18T10:10:47",
+   "fetched": "2026-11-18"
+  },
+  {
    "id": 26349,
    "lang": "pt",
    "title": "Concerto de Música de Câmara Legno Duo | OCM",
@@ -5093,6 +5117,39 @@
    "free": false,
    "modified": "2026-06-01T11:33:26",
    "fetched": "2026-11-15"
+  },
+  {
+   "id": 10524,
+   "lang": "pt",
+   "title": "Dia Internacional dos Museus",
+   "title_en": "International Museum Day",
+   "url": "https://eventsmadeira.com/evento/dia-internacional-dos-museus/",
+   "url_en": "https://eventsmadeira.com/en/event/international-museum-day/",
+   "start": "2027-05-18",
+   "start_time": "",
+   "end": "2027-05-21",
+   "end_time": "23:59",
+   "venue": "",
+   "municipalities": [
+    "Calheta",
+    "Câmara de Lobos",
+    "Funchal",
+    "Machico",
+    "Ponta do Sol",
+    "Porto Moniz",
+    "Porto Santo",
+    "Ribeira Brava",
+    "Santa Cruz",
+    "Santana",
+    "São Vicente"
+   ],
+   "categories": [
+    "cultura"
+   ],
+   "about": "Este ano, o Dia Internacional dos Museus, que se celebra no dia 18 de maio, numa alusão à relação que se pode criar entre o visitante de um determinado museu e as coleções expostas. Os museus são gratuitos neste dia, sendo possível.",
+   "free": false,
+   "modified": "2026-11-18T17:01:01",
+   "fetched": "2026-11-18"
   },
   {
    "id": 10367,

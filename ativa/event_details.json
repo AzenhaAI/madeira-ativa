@@ -1,4 +1,10 @@
 {
+ "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/atelier-de-expressao-plastica-ii-embossing-entre-agua-e-relevo": {
+  "about": "Inspirada na exposição da coleção do Museu, esta atividade de expressão plástica convida os participantes a explorar a natureza e a paisagem através da técnica de embossing, gravação, baixo-relevo e aguarela sobre papel.",
+  "price": "Free",
+  "time": "",
+  "fetched": "2026-11-18"
+ },
  "https://cultura.madeira.gov.pt/index.php/agenda-cultural/atividades/atelier-de-expressao-plastica-tecnicas-de-pintura-acrilica-sobre-tela": {
   "about": "Neste atelier, os participantes inspirados em algumas obras do acervo do MUDAS.Museu e na paisagem arquitectónica e natural circundante, são convidados a desenvolver uma proposta de desconstrução da imagem visível através da exploração de…",
   "price": "Free",
@@ -195,7 +201,7 @@
   "about": "A Galeria espaçomar, reabre as suas portas com a inauguração da exposição \"Pequenos.Rumores.Na.Casa.Dos.Pássaros\". Uma mostra que reúne cerca de 54 obras de mais de 20 artistas, com direção artística de Paulo Sérgio BEJu.",
   "price": "",
   "time": "",
-  "fetched": "2026-11-11"
+  "fetched": "2026-11-19"
  },
  "https://cultura.madeira.gov.pt/index.php/agenda-cultural/exposicoes/profundo-light-layer-form": {
   "about": "De Malcom Dare. Indo além da fotografia clássica, os seus mais recentes trabalhos exploram a construção física e visual da profundidade, desafiando as fronteiras entre imagem, pintura e objeto.",
@@ -226,6 +232,12 @@
   "price": "",
   "time": "",
   "fetched": "2026-10-24"
+ },
+ "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/a-orquestra-classica-da-madeira-apresenta-concerto-de-musica-de-camara-com-o-legno-duo": {
+  "about": "Formado por Duarte Santos e Joana Costa. Integrado nas comemorações do 60.º Aniversário do Lions Clube do Funchal.",
+  "price": "",
+  "time": "",
+  "fetched": "2026-11-18"
  },
  "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/a-orquestra-classica-da-madeira-apresenta-o-quinteto-de-sopros-solistas-ocm": {
   "about": "Quinteto formado por Epsie Thompson (flauta), Mikhail Shimorin (oboé), Francisco Loreto (clarinete), Décio Escórcio (fagote) e Péter Víg (trompa).",
@@ -261,7 +273,7 @@
   "about": "Em homenagem a Santa Cecília, padroeira dos músicos, a Banda Municipal do Funchal – Artistas Funchalenses apresenta um concerto especial na Igreja de Nossa Senhora do Monte, num momento de celebração da música enquanto expressão de fé…",
   "price": "",
   "time": "",
-  "fetched": "2026-11-11"
+  "fetched": "2026-11-19"
  },
  "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/concerto-do-duo-plectro-a-bec-a-ilha-que-se-escuta": {
   "about": "Dia 20 de novembro, pelas 19h00, o Museu Etnográfico da Madeira, recebe o Duo Plectro a Bec, com o concerto \"A Ilha que se Escuta\". Já no dia 21 de novembro, às 17h00, o Duo sobe ao placo da Capela da Imaculada Conceição, Câmara de Lobos.",
@@ -316,6 +328,12 @@
   "price": "",
   "time": "",
   "fetched": "2026-11-01"
+ },
+ "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/espetaculo-menu-de-degustacao": {
+  "about": "A NOMADIS Dance estreia-se na Madeira com o \"Menu de Degustação\", um espetáculo de dança contemporânea.",
+  "price": "",
+  "time": "",
+  "fetched": "2026-11-18"
  },
  "https://cultura.madeira.gov.pt/index.php/agenda-cultural/musica/festival-internacional-de-bandolins-da-madeira-suzuna-takahashi-e-sotiris-athanasiou": {
   "about": "",
@@ -616,6 +634,12 @@
   "price": "",
   "time": "",
   "fetched": "2026-11-16"
+ },
+ "https://eventsmadeira.com/evento/dia-internacional-dos-museus/": {
+  "about": "Este ano, o Dia Internacional dos Museus, que se celebra no dia 18 de maio, numa alusão à relação que se pode criar entre o visitante de um determinado museu e as coleções expostas. Os museus são gratuitos neste dia, sendo possível...",
+  "price": "Free",
+  "time": "",
+  "fetched": "2026-11-19"
  },
  "https://eventsmadeira.com/evento/dia-mundial-do-turismo/": {
   "about": "A Madeira, enquanto destino turístico de excelência, associa-se às comemorações do Dia Mundial do Turismo, que se assinala no dia 27 de setembro.",

@@ -1,8 +1,8 @@
 {
   "note": "One-off events from madeira-unlocked.com, in Ativa's categories only. Facts from the page's schema.org markup; no editorial text. Accumulates.",
   "source": "https://www.madeira-unlocked.com/sitemap/events.xml",
-  "fetched": "2026-11-18T07:55:34",
-  "count": 616,
+  "fetched": "2026-11-19T07:55:30",
+  "count": 617,
   "items": [
     {
       "id": "visita-livre-na-quinta-pedagogica-da-camacha-2026-01-01",
@@ -8000,21 +8000,6 @@
       "source_category": "music-concerts"
     },
     {
-      "id": "nomadis-dance-debut-performance-2026-11-20",
-      "title": "NOMADIS Dance Debut Performance",
-      "url": "https://www.madeira-unlocked.com/en/events/nomadis-dance-debut-performance-2026-11-20",
-      "start": "2026-11-20T19:00:00+00:00",
-      "end": "2026-11-20T20:30:00+00:00",
-      "date": "2026-11-20",
-      "time": "19:00",
-      "venue": "Fórum Machico",
-      "municipality": "Machico",
-      "price": 0,
-      "organizer": "NOMADIS Dance",
-      "category": "dance",
-      "source_category": "dance"
-    },
-    {
       "id": "melro-preto-jam-session-comeback-2026-11-20",
       "title": "Melro Preto Jam Session — Comeback",
       "url": "https://www.madeira-unlocked.com/en/events/melro-preto-jam-session-comeback-2026-11-20",
@@ -8028,6 +8013,21 @@
       "organizer": "ASSOCIAÇÃO DE JAZZ DA MADEIRA - MELRO PRETO",
       "category": "concert",
       "source_category": "music-concerts"
+    },
+    {
+      "id": "nomadis-dance-debut-performance-2026-11-20",
+      "title": "NOMADIS Dance Debut Performance",
+      "url": "https://www.madeira-unlocked.com/en/events/nomadis-dance-debut-performance-2026-11-20",
+      "start": "2026-11-20T19:30:00+00:00",
+      "end": "2026-11-20T20:15:00+00:00",
+      "date": "2026-11-20",
+      "time": "19:30",
+      "venue": "Fórum Machico",
+      "municipality": "Machico",
+      "price": 0,
+      "organizer": "NOMADIS Dance",
+      "category": "dance",
+      "source_category": "dance"
     },
     {
       "id": "fantasy-echoes-of-low-brass-2026-11-20",
@@ -8431,6 +8431,21 @@
       "municipality": "Funchal",
       "price": 25,
       "organizer": "MAMMA - Museum of Art and Music of Madeira",
+      "category": "concert",
+      "source_category": "music-concerts"
+    },
+    {
+      "id": "red-spectrum-by-boris-chimp-504-audiovisual-performance-2026-11-27",
+      "title": "RED SPECTRUM by Boris Chimp 504 - Audiovisual Performance",
+      "url": "https://www.madeira-unlocked.com/en/events/red-spectrum-by-boris-chimp-504-audiovisual-performance-2026-11-27",
+      "start": "2026-11-27T19:00:00+00:00",
+      "end": "2026-11-27T20:00:00+00:00",
+      "date": "2026-11-27",
+      "time": "19:00",
+      "venue": "Fórum Machico",
+      "municipality": "Machico",
+      "price": 10,
+      "organizer": "APCA - Agência de Promoção da Cultura Atlântica",
       "category": "concert",
       "source_category": "music-concerts"
     },

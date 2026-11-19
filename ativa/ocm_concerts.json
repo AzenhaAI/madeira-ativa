@@ -1,8 +1,8 @@
 {
  "note": "Orquestra Clássica da Madeira season, from scripts/fetch_ocm.py. Accumulates.",
  "source": "https://www.ocmadeira.pt/concertos/temporada-atual.html",
- "fetched": "2026-11-18T07:55:48+00:00",
- "count": 14,
+ "fetched": "2026-11-19T07:55:41+00:00",
+ "count": 15,
  "items": [
   {
    "title": "Quinteto de Sopros \"Solistas OCM\" convida Anikó Harangi",
@@ -133,6 +133,16 @@
    "series": "Orquestra Clássica da Madeira",
    "url": "https://www.ocmadeira.pt/concertos/proximos-eventos/orquestra-cla-ssica-da-madeira/278-concerto-fim-de-ano-2026.html",
    "tickets": "https://www.ticketline.pt/evento/concerto-fim-de-ano-106607"
+  },
+  {
+   "title": "Concerto de Ano Novo",
+   "date": "2027-01-01",
+   "time": "17:00",
+   "place": "Teatro Municipal Baltazar Dias",
+   "price": "35.00€",
+   "series": "Concerto de Ano Novo",
+   "url": "https://www.ocmadeira.pt/concertos/proximos-eventos/orquestra-cla-ssica-da-madeira/287-concerto-de-ano-novo.html",
+   "tickets": "https://www.ticketline.pt/evento/concerto-ano-novo-2027-106749"
   },
   {
    "title": "Concerto de Carnaval",

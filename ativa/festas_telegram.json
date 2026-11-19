@@ -1,8 +1,8 @@
 {
   "note": "Cultural events harvested from t.me/festas_madeira. Accumulates: the channel only exposes recent posts.",
   "source": "https://t.me/s/festas_madeira",
-  "fetched": "2026-11-18T07:56:36",
-  "count": 378,
+  "fetched": "2026-11-19T07:56:28",
+  "count": 382,
   "categories": {
     "concerto": "Concert",
     "arraial": "Arraial",
@@ -5992,7 +5992,7 @@
         "espetáculo"
       ],
       "place": "Sé",
-      "poster": "https://cdn4.telesco.pe/file/oJM4fBFIyMqFxl_hlc2KG4OZfaVRdwvP8n9HWGxuacP9xJSHyclhgqYEf2_Jf_zI06B5wFtZ-JrX36Or_rzhqz-mxwuh5eFmboghzvT-AitaFxkU4xSwwl8yTAxhd9k4fr81TZX3U8E4boHcdtpBmGSmpIQWv7PKYVUUWSuZIbr_7cRpEOp4g6F5OrIzFR13ZNetCgnc8ukRl9Mi1L4E0Ky1XWjPeqqUT3TRvUI9L6m5ud-J9taQkH9WQRo1Mr4YWeQVaNB36FHfQqOovd4ufMNYsPKYC0o-2O7MujRDJhSdS57zxaXK1Owk_H72aZc3aCROYUVJyah39yAr41ik-A.jpg",
+      "poster": "https://cdn4.telesco.pe/file/LU_wRVFMNJfFdWmxBshsOdRDYkravMPlLOpLfB7YJKCp6gZq2dK8znWr6ef6b4VSpQzcjNVgovHnApU4XRJW8gt9bT_1JEqjVZP1jCO6XVjvlPWC__OyaU8tA0YIpS9Eu8xL73Te1HB2_4ke25fuXyQRIcZdQEqkOKYndqXsCieOtOGXnqaPjzP_Y8_raCDIa1e69TQOvgD6n9u-ERCGkx_dzoss9S2khuOl_4CKfWDDb5Fk_ewtaaS0NQvSMiYwit-v_EF_M6xXQZ0_7bTtwyAd0S59JbJ81dj3MDt9ACS-Ga4bDEAaV3JLhI63gWNNB88sz9YQtz0KMSYUWdi2Bg.jpg",
       "published": "2026-11-11T10:00:15+00:00",
       "poster_text": "",
       "name": "",
@@ -6265,6 +6265,22 @@
       "title": "Exhibition · Água De Pena"
     },
     {
+      "post": "https://t.me/festas_madeira/2798",
+      "dates": [
+        "2026-11-20"
+      ],
+      "categories": [
+        "concerto",
+        "literatura"
+      ],
+      "place": "Ribeira Brava",
+      "poster": "https://cdn4.telesco.pe/file/RFJzl6bZd3n8b1qAaIYxyjtK2uLUnnWBdxoRjFYpSGqN0Rvjt8xBFJyTSMhwzNtt3gTQV5ZzZI3rKNLtc9PiMnclNbhlUlcdk8c4qFzXnyLS5LuhucJjB2qCAeLI6eWMqhReuZRDnSP9hIm2ZEnqNtY42mSefpJrSxhp4D6s6TvgASilXlzehEWhQdY_jFClpHztFq_99053qGc7vmyFXmIg2PMuCcJvzuzY_QpKaAG1Oem5aRN-wOLtZTR0G-K7TltBfzfH8R6uEAeJWVLeJ7HelHrSBSiwUDBXN6BvYMii3s-kkZ6HRJmVAY4UCNUIILlXlCdJtiUA61tkSg34oQ.jpg",
+      "published": "2026-11-18T10:01:26+00:00",
+      "poster_text": "",
+      "name": "",
+      "title": "Concert · Ribeira Brava"
+    },
+    {
       "post": "https://t.me/festas_madeira/2788",
       "dates": [
         "2026-11-21",
@@ -6305,11 +6321,27 @@
         "exposição"
       ],
       "place": "Caniçal",
-      "poster": "https://cdn4.telesco.pe/file/LEzRa6fuiLFNesvpsQ8q6PllnqWTk-yMZ1gO2WfDgsw8xmGrngCvOuiqrEitjiuVMmlLbH0bEVQt7beblVgfdCDSIwgFu74g9_k1Gt1dtButqV80FuQBYDTZUwwKeGUVYvDP2TTYc0MNtsRfFtnz40YW9XUlvh1NoJhd6N_EAjjZCocnAM7JnnCbpSFwtXatnt8-HP5Vewu9QGXdvSyGsVQLmCBD8QH-DY3GMjBBg7ZUpYAZu48-dnFOeIKciNxC5wLjzB-bfRCMwst7RvzMM9OfhrrTHtpVWTN2yeOQFeKPzdJHLxbDV1EjGGpjO2PeWwVD6_kxXV7I-LK-kRwM6g.jpg",
+      "poster": "https://cdn4.telesco.pe/file/knUy4kwouZhAQUoD_AJ7PgRNLK4S5dzPuJvaugRPxveBOXux2seDlozFmDQq0HXxK0FXgb7JsVj1E6VVr_0xr5KSIJjihaP2zcwQcKEn1JpupKecKBTZz1H5rGrdaSugSDLZUEq7VPl3dOjnirwRwBqZLmnog67NbCo3w21h0Cnw3lzMfINqXOCmmUCxPQv76wJjcKsYVrp0Jz0WA0qCS0Q6qbKCZdNDAevdvCXtcTedanIpogoZ8AV4ElLFTpUQNQU0gPFjqcebPw_KIC8QtXRKOhiUo4YXYDJEhy0XrziMd8cbwrlVGjmUf870gwABtoEYfM8OyZIi377Lu3iIeA.jpg",
       "published": "2026-11-17T10:00:33+00:00",
       "poster_text": "",
       "name": "",
       "title": "Exhibition · Caniçal"
+    },
+    {
+      "post": "https://t.me/festas_madeira/2799",
+      "dates": [
+        "2026-11-21"
+      ],
+      "categories": [
+        "oficina",
+        "família"
+      ],
+      "place": "Santa Luzia",
+      "poster": "https://cdn4.telesco.pe/file/FP-iNszMQm2g2L6OxwUQrhnQ7ZNOi0lo1uXSft5aRbYW6K_AqttaeffuIP4JTgr_t2RhqA7PJoP8lyCFU9rL71CYrdYdeC4fe9JRPyP-oVV-zvS9KKoxbsJFsMIoNup3bU-48Xyw1knrASEsFEa_WfFvWV5rVJ33YJm8JSVGL5ixGgRxslMf4bE4JIFSmiYPxWyjHhoTHUGRIG51AOrIKggHEcKbDHw_AkvJsN__Ko2oD13QtoKnaNFkL52hT8vBpGpnvgQtbCCOMBeM8Z1yWdYd404IEjQy4T60pNwYswH2H1E8QaRvFGO8QxYuCQIdsClye08lgZMxRbiXHQgWuA.jpg",
+      "published": "2026-11-18T10:01:42+00:00",
+      "poster_text": "60 min. funchalpt ESCUTO\n\nSe \\\\\nOlhaRes com o É\n\nNaTuReZa",
+      "name": "60 min. funchalpt ESCUTO",
+      "title": "Workshop · Santa Luzia"
     },
     {
       "post": "https://t.me/festas_madeira/2698",
@@ -6410,6 +6442,25 @@
       "title": "FORUM INTERNACIONAL DE ESTUDOS GLOBAIS INSTITUIÇÕES"
     },
     {
+      "post": "https://t.me/festas_madeira/2795",
+      "dates": [
+        "2026-11-26",
+        "2026-11-27",
+        "2026-11-28",
+        "2026-11-29",
+        "2026-11-30"
+      ],
+      "categories": [
+        "exposição"
+      ],
+      "place": "Sé",
+      "poster": "https://cdn4.telesco.pe/file/R1Fp8demvdLD1J80gYs4I3-9WIsenAU4FVDKbVHMcZ5vCZil1sSGX5yPKXIw71qNWyhpN6gotz9diNGkf_q7_y5YSci59h_0SG_IKsGS1oDW5RRTtQb7GgGqCSLEoC1Jfbp0E2QpXFH2QVIsG148h0DAERGilekvGmc3MkCsdHuUXLtfk3BnPAE7zxNi-TPSkg7WbCyZLjur3X1yPyq-V1cZwmQrGboS3KGIzE8LPbj3Fi5fdlZAbJjGbURl5KTRB9o1FWGex8CQfxvtd_HNkT7hY_3bqQx2VoJoX1d5nNICctlVIFcFJdchv7ectCuaL0CWlOgEBiRHE0s-OXU7dA.jpg",
+      "published": "2026-11-18T10:00:26+00:00",
+      "poster_text": "exposição tenporária\ntemporary exhibit\n\n'dasenhos de | dravings by\nricardo veloza\nmargarida Lemos\n\nwT\n\nmAse at",
+      "name": "exposição tenporária temporary exhibit",
+      "title": "Exhibition · Sé"
+    },
+    {
       "post": "https://t.me/festas_madeira/2747",
       "dates": [
         "2026-11-30",
@@ -6425,6 +6476,21 @@
       "poster_text": "a\n\n* ME RCADINHO |\n\n~> DE —>\n\nNATAL\n\n* ARCO DA CALHETA “\n\nMais informações: maisculturaassociacao@gmail.com | acd.arcodacalheta O gmail.com\n\nOrganização: Apoios:\n\né cultura > A ts\n\nlua Dea\nde Koda Cla",
       "name": "NATAL ARCO DA CALHETA",
       "title": "NATAL ARCO DA CALHETA"
+    },
+    {
+      "post": "https://t.me/festas_madeira/2796",
+      "dates": [
+        "2026-12-07"
+      ],
+      "categories": [
+        "festival"
+      ],
+      "place": "Machico",
+      "poster": "https://cdn4.telesco.pe/file/slc-Z2xoEe_OeEvH4cglCCQ1awXUIsKy01JO-yjzBDhjMy8jv3bNjhcDBfh8fDDnOGlx0Y1Fy1aCFlG_X0GBa1iSVtkY3Mhdu2EQoEgSgOsj6xtGtlm36ogUeeuSEKmPAtUC8tbYzLiFxGHAwGnc7XEi0igZp9573z6PT4nYQGpIjgqQGEpGMvFQI8v6kRyB-0pXrf6PSrGKMctfBg_LryFcbvWLZQjYcdOKBSfI7snKxbr2a2zSF36-9mBLbtAa_kmmBHnuwfI7tJdnjQdqhwDh3lvzz0fwmR2c-J4nj6FSKHYV1jhwV2PwZkTjxzRPncR4WEQ3XWtBUV2tSFRS1w.jpg",
+      "published": "2026-11-18T10:00:40+00:00",
+      "poster_text": "MERCADINHO\n\nwe NATAL\nMACHICO\n\nChristmas MARKET\n\n7 DEZ 2026 A 10 JAN 2027\n\nSEGUNDA A QUINTA - 18H AS 23H | SEXTAS - 18H AS 24H\nSÁBADOS - IGH ÀS 24H | DOMINGOS - IGH > 23H\n\nPRAÇA DO FÓRUM\n\nProdutos típicos, artesanato e comes e bebes!\n\nwe\nMACHICO\n\nCAMARA MUNIOPAL,",
+      "name": "MERCADINHO",
+      "title": "MERCADINHO"
     },
     {
       "post": "https://t.me/festas_madeira/2754",
@@ -6454,7 +6520,7 @@
         "concerto"
       ],
       "place": "Sé",
-      "poster": "https://cdn4.telesco.pe/file/sKgp5XS4gNJ3ApM6T1SA93f_XWRII3pPSx8hSYed-pTqhGSXa499PY8qyRLQL2fZMI0qhWGB2g_LtubkaxHmlXd2uBsvq0BIIP9BMrtdK62SYCvkS7SrdwR9UGABGtJrS7AuwRLNodlfzm3hA8ecfAuEFX0Ajlh_XbjMFzNZOnaOOpYaVEMLhXD9CFKSrS0_gQ5kmR1bxvt28N35AjhNG1UUPGBd39mf9gZYISMitmCCfxzGb8IfKYoMJ8OI9t1ndC71AfmovtgvyE0i3js_uFgo-HD47rCDtx3FFtNkLO0UJFoX9kZb5KWE045QeI8XVHrO3i63n8vbqTWB8H6UIA.jpg",
+      "poster": "https://cdn4.telesco.pe/file/jZZAPnwLH0O8eqVXHLs41J3na73StbMvw8NCHSAPGlx-Bg32vbHHxA6ZFe6UZR4Z2zXe4Ku4un3-6_pRvIcJNJUqLgsIdyVnMY0LGzgnuWyQeLeDoZAHRoCSHif2glUakSj0Fw_cVb2_1cslmYQDJ3KtymgxXxkFOnv55eyckh3QwJoPqJTSeg8T4b5thOAHOrFKCx-0a9XPFssY1OcwCBWxjVg5IUczxiQxr2INTgrsS5jbaXcMoU5remvZNpqnJh5kr0qJXHsKrlYq6WkykYH_kkYG6fMY4_S9_x_J7Ehejf4uujs_V56oyjWtsvwWBjV_q-pMqYC0SjL9XFKz6Q.jpg",
       "published": "2026-11-16T10:00:10+00:00",
       "poster_text": "",
       "name": "",
